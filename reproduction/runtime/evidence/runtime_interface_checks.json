@@ -1,0 +1,106 @@
+{
+  "scope": "official decision-network and feature-interface validation only",
+  "official_source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "training_model_kwargs": {
+    "num_multifinger_type": 1,
+    "num_multifinger_depth": 4,
+    "num_two_finger_angle": 12,
+    "num_two_finger_depth": 5
+  },
+  "not_grasp_reproduction": true,
+  "inputs": "deterministic synthetic tensors; no scientific success-rate claim",
+  "weights": "random initialization; no trained checkpoint loaded",
+  "hardware_actions": "none; CPU tensors only; no robot entrypoint imported",
+  "environment_modified": false,
+  "python": "3.12.14 (main, Sep 29 2026, 15:01:18) [Clang 22.1.3 ]",
+  "python_executable": "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+  "platform": "Linux-7.0.0-22-generic-x86_64-with-glibc2.39",
+  "torch": "2.11.0+cu130",
+  "torch_cuda_built": "13.0",
+  "packages": {
+    "MinkowskiEngine": null,
+    "graspnetAPI": null,
+    "knn_pytorch": null,
+    "pointnet2": null,
+    "open3d": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/open3d/__init__.py",
+    "numpy": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/__init__.py",
+    "scipy": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/scipy/__init__.py"
+  },
+  "source_files": {
+    "decision": {
+      "path": "models/minkowski_graspnet.py",
+      "sha256": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d"
+    },
+    "representation": {
+      "path": "models/minkowski_graspnet_single_point.py",
+      "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26"
+    },
+    "loss": {
+      "path": "models/loss.py",
+      "sha256": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8"
+    },
+    "dataset": {
+      "path": "dataset/multifinger_hand.py",
+      "sha256": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e"
+    },
+    "robot": {
+      "path": "robot_allegro.py",
+      "sha256": "ed5255ff6a5bbf632553fff4081b592523033698bc46f5ad5ccb057241ebf974"
+    }
+  },
+  "checks": {
+    "official_decision_forward_backward": {
+      "passed": true,
+      "input_shape": [
+        8,
+        480
+      ],
+      "output_shape": [
+        8,
+        1,
+        240
+      ],
+      "parameters": 2740944,
+      "loss": 0.6094782948493958,
+      "loss_formula": "MSE(selected depth output, real-grasp binary result); original code, synthetic labels here",
+      "selected_output_indices": [
+        0,
+        5,
+        10,
+        15,
+        16,
+        1,
+        6,
+        11
+      ],
+      "finite_gradients": true,
+      "optimizer_steps": 0
+    },
+    "official_inference_class": {
+      "passed": true,
+      "output_shape": [
+        8,
+        1,
+        20
+      ]
+    },
+    "released_train_to_inference_shape_compatibility": {
+      "passed": false,
+      "expected_blocker_verified": true,
+      "training_default_output_channels": 240,
+      "inference_default_output_channels": 20,
+      "original_exception": "Error(s) in loading state_dict for MinkowskiGraspNetMultifingerType1Inference:\n\tsize mismatch for conv7.weight: copying a param with shape torch.Size([240, 512, 1]) from checkpoint, the shape in current model is torch.Size([20, 512, 1]).\n\tsize mismatch for conv7.bias: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([20]).\n\tsize mismatch for bn7.weight: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([20]).\n\tsize mismatch for bn7.bias: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([20]).\n\tsize mismatch for bn7.running_mean: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([20]).\n\tsize mismatch for bn7.running_var: copying a param with shape torch.Size([240]) from checkpoint, the shape in current model is torch.Size([20]).",
+      "interpretation": "Released training entry defaults are not directly compatible with released robot inference class. Check published checkpoint architecture before changing source."
+    },
+    "training_vs_robot_feature_canonicalization": {
+      "passed": true,
+      "cases": 24,
+      "coverage": "all 12 training angle types x both 180-degree flips",
+      "assumed_angle_mapping": "robot 48-bin angle = 12 + 2 * training angle type",
+      "feature_width": 480,
+      "maximum_error": 0.0,
+      "boundary": "Synthetic records validate source convention only; downloaded dataset convention still needs verification."
+    }
+  },
+  "runtime_seconds": 0.09232021804200485
+}
