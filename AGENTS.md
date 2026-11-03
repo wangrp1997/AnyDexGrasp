@@ -55,3 +55,14 @@
 已知元数据错误：mesh_scene旧visual_boundary称纯色/未用原纹理，实际上OBJ导出保留原纹理。APPEARANCE_ERRATUM是执行后补录，六个导出纹理RGBA像素与原完全一致；当前source_assets未单列生成MTL/PNG。未来生成前应更正描述并补依赖，改source后需新生成场景，不能复用旧signature或谎称补录执行前存在。此次实际RGBD/候选/物理核验有效，冻结source和原始图像均保留。
 
 目前仍未接UR/Boya，不是原论文实机成功率复现。不要重跑依赖/下载/31模型/方块时间网格/已完成12场景；不自动扩物体或把topK重试混进本轮成绩。下一步先看原碰撞全拒和香蕉单侧接触问题，控制/资产近似与网络候选责任尚未隔离。CanonDex继续不修改/执行/push。仅轻量本地commit，大输出不提交，只有作者upstream不可push。
+
+
+## 2026-11-04 后续：四非成功场景机制诊断完成，原8/12不变
+
+见`reproduction/simulation/REAL_MESH_TARGETED_DIAGNOSTICS.md`及`evidence/failure_diagnostics_20261104/`。统一静态图/既有香蕉帧/实际轨迹/负载对照曲线在`outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/index.html`。新工具为diagnose_original_dh3_{collision,source_mechanisms,depth}、render_failure_diagnostics、run_banana_load_ablation和audit_banana_load_ablation；原算法与accepted controller未改。
+
+两碗73/83、87/88种子来自桌面，原robot_dh3.py逐seed objectness过滤被注释；该发布demo还限制向下25.84°，不能据此认定整个论文架构不能侧抓。6代表原voxel mask重放逐位一致。杯#12唯一标记点在连续源手凸包扫掠之外，但未执行/未证明整个姿态可抓。原PCL15层法向扩展最多11.25mm，检测full-depth与原执行减position/100×5mm语义不同，忠实基线保留。碗#79执行源STL距桌+0.237mm、native凸几何含margin为−0.759mm，是边界；碗#83有14.616mm物体重合，不能全放宽。
+
+香蕉0°接触→电机0.6Nm饱和→共同轴0.394rad停滞得到存档trace支持。固定一次6.25s/12000步负载移除对照，保留手姿/桌/自碰/两电机/九gear和全部前12000行原指令（逐数组相同），仅第一步前移除香蕉，主轴到1.154rad，4.9505s后指间自接触，无手桌。独立审计通过，明确非抓取成绩/非真实机构辨识。论文说4DoF2motors欠驱动，当前gear仅2独立坐标；四DoF计数口径/被动拓扑未明，不凭空去gear或加各指电机。累计366300实际步/258.5s混合dt；原12结果仍8/12，没执行被拒候选。
+
+后续先单列明确版本的objectness过滤和collision/execution深度对齐对照，再确认DH3被动机构/受载模型。当前没有这些修复已救回的结论，不扩对象、不重跑旧12、不把诊断分割真值送入网络；不再重复本轮零步几何诊断和负载对照。原metadata appearance erratum未来新输入前仍需处理。v1静态回执宽度列错/v2已正；负载v1JSON tuple/list预检零步失败/v2完成，全部留档。CanonDex继续不动，只轻量本地提交，只有作者upstream不push。

@@ -1,0 +1,490 @@
+{
+  "scope": "Targeted four non-success scenes of frozen 12-scene original-top1 cohort",
+  "source_script_sha256": "f1af6e1674cb865799980ef92b54747576be30a5442576db01660449fa847d44",
+  "cohort_summary_sha256": "11b0e41dc816dfaaa992a7a46ce6bfc3bc128219f293c3a69a2627a15c26a11a",
+  "static_cases": [
+    {
+      "scene_id": "mug_yaw090",
+      "choice": "highest_score",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/mug_yaw090/scene_manifest.json",
+      "scene_manifest_sha256": "8696e6665d4b6dfa9f0a3c4e87ecda9367097434493340a06eee40b587764536",
+      "collision_archive_sha256": "c955d741e962ea8b2fb1194e7581a0c1c196416878ec01e9e3c1254b9967c1e7",
+      "camera_points_sha256": "413d9c860b80b2dcaf7d0e3624eebb7a70836946f2d17db087f3c514b2565fe6",
+      "adapter_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+      "pre_collision_index": 0,
+      "mapped_index": 0,
+      "score": 2.1598989963531494,
+      "hand_type": 4,
+      "width_m": 0.063,
+      "registers": [
+        95.0,
+        100.0
+      ],
+      "original_depth_m": 0.04999999888241291,
+      "port_backoff_m": 0.00475,
+      "approach_world": [
+        0.07661311306673912,
+        -0.02803543760868743,
+        -0.9966666670177711
+      ],
+      "port_target_world_m": [
+        -0.009727667452122883,
+        0.09600517894124574,
+        0.22004902504792415
+      ],
+      "gate_overlap_count": 103,
+      "static_port_geometry_distances": {
+        "object": {
+          "query_radius_m": 0.03,
+          "min_distance_m": -0.01090321656190108,
+          "per_link_min_m": {
+            "base_Link": 0.022606010416841148,
+            "finger1_base_Link": 0.01809573909559683,
+            "finger1_Link": -0.00935116863737353,
+            "finger1_tip_Link": 0.01105395487262927,
+            "finger1_outlet_Link": 0.005891431212348362,
+            "finger2_base_Link": 0.006571827123527801,
+            "finger2_Link": 0.0012052984566071653,
+            "finger2_tip_Link": 0.006551364018605555,
+            "finger2_outlet_Link": 0.016699479545814758,
+            "finger3_base_Link": 0.010519064105766692,
+            "finger3_Link": -0.01090321656190108,
+            "finger3_tip_Link": 0.012386057631471166,
+            "finger3_outlet_Link": 0.004400171848729632
+          },
+          "penetrating_links": [
+            "finger1_Link",
+            "finger3_Link"
+          ]
+        },
+        "table": {
+          "query_radius_m": 0.03,
+          "min_distance_m": 0.018478965131483303,
+          "per_link_min_m": {
+            "finger1_tip_Link": 0.028317919676821734,
+            "finger2_tip_Link": 0.023492930355062495,
+            "finger3_tip_Link": 0.018478965131483303
+          },
+          "penetrating_links": []
+        }
+      },
+      "images": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/mug_yaw090_highest_score_front.png",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/mug_yaw090_highest_score_rear.png"
+      ],
+      "card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/mug_yaw090_highest_score.jpg",
+      "physical_steps": 0,
+      "boundary": "Static original-register FK in frozen observed scene; red points belong to original swept/infilled voxel gate, not necessarily the hand surface shown. Convex closest distances are not source-triangle contact or proof of safety/lift."
+    },
+    {
+      "scene_id": "mug_yaw090",
+      "choice": "fewest_overlaps",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/mug_yaw090/scene_manifest.json",
+      "scene_manifest_sha256": "8696e6665d4b6dfa9f0a3c4e87ecda9367097434493340a06eee40b587764536",
+      "collision_archive_sha256": "c955d741e962ea8b2fb1194e7581a0c1c196416878ec01e9e3c1254b9967c1e7",
+      "camera_points_sha256": "413d9c860b80b2dcaf7d0e3624eebb7a70836946f2d17db087f3c514b2565fe6",
+      "adapter_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+      "pre_collision_index": 12,
+      "mapped_index": 12,
+      "score": 1.109082818031311,
+      "hand_type": 4,
+      "width_m": 0.063,
+      "registers": [
+        95.0,
+        100.0
+      ],
+      "original_depth_m": 0.029999999329447746,
+      "port_backoff_m": 0.00475,
+      "approach_world": [
+        0.18257284393111273,
+        -0.22683927700930165,
+        -0.9566666603706868
+      ],
+      "port_target_world_m": [
+        -0.05463000279583337,
+        0.14881274168316685,
+        0.2301505454432401
+      ],
+      "gate_overlap_count": 1,
+      "static_port_geometry_distances": {
+        "object": {
+          "query_radius_m": 0.03,
+          "min_distance_m": 0.0005772397395208853,
+          "per_link_min_m": {
+            "finger1_base_Link": 0.028946931089837237,
+            "finger1_Link": 0.01684982662907341,
+            "finger1_tip_Link": 0.0005772397395208853,
+            "finger1_outlet_Link": 0.02297939711871845,
+            "finger2_base_Link": 0.02636604429125293,
+            "finger2_Link": 0.019301108720008793,
+            "finger2_tip_Link": 0.010166053191082887,
+            "finger3_base_Link": 0.028923563137513375,
+            "finger3_Link": 0.028511760272278495
+          },
+          "penetrating_links": []
+        },
+        "table": {
+          "query_radius_m": 0.03,
+          "min_distance_m": 0.02361537056279308,
+          "per_link_min_m": {
+            "finger3_tip_Link": 0.02361537056279308
+          },
+          "penetrating_links": []
+        }
+      },
+      "images": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/mug_yaw090_fewest_overlaps_front.png",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/mug_yaw090_fewest_overlaps_rear.png"
+      ],
+      "card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/mug_yaw090_fewest_overlaps.jpg",
+      "physical_steps": 0,
+      "boundary": "Static original-register FK in frozen observed scene; red points belong to original swept/infilled voxel gate, not necessarily the hand surface shown. Convex closest distances are not source-triangle contact or proof of safety/lift."
+    },
+    {
+      "scene_id": "bowl_yaw000",
+      "choice": "highest_score",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/scene_manifest.json",
+      "scene_manifest_sha256": "fce616c882cb79cf62265a257b0957438407e5339a4676d91efca18718924566",
+      "collision_archive_sha256": "4ec8613275d7cb8498bd4a499c02ee209d067761b17fbfea90fcd1fefe70bf8a",
+      "camera_points_sha256": "8c8667f0f45599b93cce22e1dd261c4372ad2850bbf06df3db278404ac447e86",
+      "adapter_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+      "pre_collision_index": 0,
+      "mapped_index": 0,
+      "score": 1.6552317142486572,
+      "hand_type": 4,
+      "width_m": 0.063,
+      "registers": [
+        95.0,
+        100.0
+      ],
+      "original_depth_m": 0.019999999552965164,
+      "port_backoff_m": 0.00475,
+      "approach_world": [
+        -0.21479670158189149,
+        0.11385240116804561,
+        -0.970000003988562
+      ],
+      "port_target_world_m": [
+        0.20093969909346937,
+        -0.04644242090683056,
+        0.16880500406044083
+      ],
+      "gate_overlap_count": 71,
+      "static_port_geometry_distances": {
+        "object": {
+          "query_radius_m": 0.03,
+          "min_distance_m": null,
+          "per_link_min_m": {},
+          "penetrating_links": []
+        },
+        "table": {
+          "query_radius_m": 0.03,
+          "min_distance_m": -0.027641291602726013,
+          "per_link_min_m": {
+            "finger1_Link": 0.005290704584845362,
+            "finger1_tip_Link": -0.027639795890033035,
+            "finger1_outlet_Link": 0.012515780878354378,
+            "finger2_Link": 0.028862297228009814,
+            "finger2_tip_Link": -0.007119241122689218,
+            "finger3_Link": 0.005289200913126334,
+            "finger3_tip_Link": -0.027641291602726013,
+            "finger3_outlet_Link": 0.016497020378392603
+          },
+          "penetrating_links": [
+            "finger1_tip_Link",
+            "finger2_tip_Link",
+            "finger3_tip_Link"
+          ]
+        }
+      },
+      "images": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw000_highest_score_front.png",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw000_highest_score_rear.png"
+      ],
+      "card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw000_highest_score.jpg",
+      "physical_steps": 0,
+      "boundary": "Static original-register FK in frozen observed scene; red points belong to original swept/infilled voxel gate, not necessarily the hand surface shown. Convex closest distances are not source-triangle contact or proof of safety/lift."
+    },
+    {
+      "scene_id": "bowl_yaw000",
+      "choice": "fewest_overlaps",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/scene_manifest.json",
+      "scene_manifest_sha256": "fce616c882cb79cf62265a257b0957438407e5339a4676d91efca18718924566",
+      "collision_archive_sha256": "4ec8613275d7cb8498bd4a499c02ee209d067761b17fbfea90fcd1fefe70bf8a",
+      "camera_points_sha256": "8c8667f0f45599b93cce22e1dd261c4372ad2850bbf06df3db278404ac447e86",
+      "adapter_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+      "pre_collision_index": 79,
+      "mapped_index": 79,
+      "score": 0.8560972213745117,
+      "hand_type": 2,
+      "width_m": 0.07962232083082199,
+      "registers": [
+        79.0,
+        67.0
+      ],
+      "original_depth_m": 0.029999999329447746,
+      "port_backoff_m": 0.00395,
+      "approach_world": [
+        -0.03992616057999557,
+        0.3096867834901313,
+        -0.9499999988594089
+      ],
+      "port_target_world_m": [
+        0.0520037665151342,
+        -0.015619882577687962,
+        0.212048083776416
+      ],
+      "gate_overlap_count": 9,
+      "static_port_geometry_distances": {
+        "object": {
+          "query_radius_m": 0.03,
+          "min_distance_m": 0.0039391798700337015,
+          "per_link_min_m": {
+            "finger1_base_Link": 0.02772746718079082,
+            "finger1_Link": 0.0039391798700337015,
+            "finger1_tip_Link": 0.013665941218803492,
+            "finger1_outlet_Link": 0.019295100498980408,
+            "finger2_Link": 0.018035749860958322,
+            "finger2_tip_Link": 0.017357879775903716,
+            "finger3_tip_Link": 0.025143880641328685
+          },
+          "penetrating_links": []
+        },
+        "table": {
+          "query_radius_m": 0.03,
+          "min_distance_m": -0.000759103760663354,
+          "per_link_min_m": {
+            "finger1_tip_Link": -0.000759103760663354,
+            "finger2_tip_Link": 0.01442995693108084,
+            "finger3_tip_Link": 0.029807393214544835
+          },
+          "penetrating_links": [
+            "finger1_tip_Link"
+          ]
+        }
+      },
+      "images": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw000_fewest_overlaps_front.png",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw000_fewest_overlaps_rear.png"
+      ],
+      "card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw000_fewest_overlaps.jpg",
+      "physical_steps": 0,
+      "boundary": "Static original-register FK in frozen observed scene; red points belong to original swept/infilled voxel gate, not necessarily the hand surface shown. Convex closest distances are not source-triangle contact or proof of safety/lift."
+    },
+    {
+      "scene_id": "bowl_yaw090",
+      "choice": "highest_score",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw090/scene_manifest.json",
+      "scene_manifest_sha256": "711ed627a389146199a3e66d6a7c82364ddf1af4bea5d2383797a7af1e3afaca",
+      "collision_archive_sha256": "6438093fc786f4765f80727c114def4487f1e117284250376223c9d94aab56c3",
+      "camera_points_sha256": "9cbbe61234df435f60d09dacaf6d45827eeecd2ecf91f23bd4e3e04345e4aa12",
+      "adapter_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+      "pre_collision_index": 0,
+      "mapped_index": 0,
+      "score": 1.498291015625,
+      "hand_type": 1,
+      "width_m": 0.099,
+      "registers": [
+        89.0,
+        0.0
+      ],
+      "original_depth_m": 0.019999999552965164,
+      "port_backoff_m": 0.00445,
+      "approach_world": [
+        -0.12854596841877405,
+        -0.05810279712659755,
+        -0.9899999994794672
+      ],
+      "port_target_world_m": [
+        0.09900616376316523,
+        0.008509312274474002,
+        0.18205149212484553
+      ],
+      "gate_overlap_count": 182,
+      "static_port_geometry_distances": {
+        "object": {
+          "query_radius_m": 0.03,
+          "min_distance_m": -0.013823496922627014,
+          "per_link_min_m": {
+            "base_Link": 0.014881581012552566,
+            "finger2_base_Link": 0.004262079112580565,
+            "finger2_Link": -0.013823496922627014,
+            "finger2_tip_Link": -0.0131948392858237,
+            "finger2_outlet_Link": -0.0031328262776641265
+          },
+          "penetrating_links": [
+            "finger2_Link",
+            "finger2_tip_Link",
+            "finger2_outlet_Link"
+          ]
+        },
+        "table": {
+          "query_radius_m": 0.03,
+          "min_distance_m": -0.021883389634124614,
+          "per_link_min_m": {
+            "finger1_Link": 0.012327304316231547,
+            "finger1_tip_Link": -0.021883389634124614,
+            "finger1_outlet_Link": 0.02159355947211325,
+            "finger2_Link": 0.018203131558270517,
+            "finger2_tip_Link": -0.016173550638028843,
+            "finger2_outlet_Link": 0.025704543448911377,
+            "finger3_Link": 0.019871805624197797,
+            "finger3_tip_Link": -0.014348053075405296,
+            "finger3_outlet_Link": 0.0289672477740614
+          },
+          "penetrating_links": [
+            "finger1_tip_Link",
+            "finger2_tip_Link",
+            "finger3_tip_Link"
+          ]
+        }
+      },
+      "images": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw090_highest_score_front.png",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw090_highest_score_rear.png"
+      ],
+      "card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw090_highest_score.jpg",
+      "physical_steps": 0,
+      "boundary": "Static original-register FK in frozen observed scene; red points belong to original swept/infilled voxel gate, not necessarily the hand surface shown. Convex closest distances are not source-triangle contact or proof of safety/lift."
+    },
+    {
+      "scene_id": "bowl_yaw090",
+      "choice": "fewest_overlaps",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw090/scene_manifest.json",
+      "scene_manifest_sha256": "711ed627a389146199a3e66d6a7c82364ddf1af4bea5d2383797a7af1e3afaca",
+      "collision_archive_sha256": "6438093fc786f4765f80727c114def4487f1e117284250376223c9d94aab56c3",
+      "camera_points_sha256": "9cbbe61234df435f60d09dacaf6d45827eeecd2ecf91f23bd4e3e04345e4aa12",
+      "adapter_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+      "pre_collision_index": 83,
+      "mapped_index": 83,
+      "score": 0.858583927154541,
+      "hand_type": 4,
+      "width_m": 0.063,
+      "registers": [
+        95.0,
+        100.0
+      ],
+      "original_depth_m": 0.019999999552965164,
+      "port_backoff_m": 0.00475,
+      "approach_world": [
+        -0.03985441780866526,
+        0.17738991674147392,
+        -0.9833333325071337
+      ],
+      "port_target_world_m": [
+        -0.008779672319565127,
+        -0.0246879958599426,
+        0.2135408179787215
+      ],
+      "gate_overlap_count": 38,
+      "static_port_geometry_distances": {
+        "object": {
+          "query_radius_m": 0.03,
+          "min_distance_m": -0.014616430243214231,
+          "per_link_min_m": {
+            "finger2_Link": -0.0008769750863417169,
+            "finger2_tip_Link": -0.014616430243214231,
+            "finger2_outlet_Link": 0.014093860159734102,
+            "finger3_Link": 0.018708230555836147,
+            "finger3_tip_Link": 0.00683326309056421
+          },
+          "penetrating_links": [
+            "finger2_Link",
+            "finger2_tip_Link"
+          ]
+        },
+        "table": {
+          "query_radius_m": 0.03,
+          "min_distance_m": 0.008190316177242765,
+          "per_link_min_m": {
+            "finger1_tip_Link": 0.008190316177242765,
+            "finger2_tip_Link": 0.019025680414916146
+          },
+          "penetrating_links": []
+        }
+      },
+      "images": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw090_fewest_overlaps_front.png",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw090_fewest_overlaps_rear.png"
+      ],
+      "card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/bowl_yaw090_fewest_overlaps.jpg",
+      "physical_steps": 0,
+      "boundary": "Static original-register FK in frozen observed scene; red points belong to original swept/infilled voxel gate, not necessarily the hand surface shown. Convex closest distances are not source-triangle contact or proof of safety/lift."
+    }
+  ],
+  "banana": {
+    "plot": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/banana_recorded_traces.png",
+    "recorded_frames_card": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/banana_recorded_frames.jpg",
+    "sources": [
+      {
+        "scene_id": "banana_yaw000",
+        "trace_sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae",
+        "controller_sha256": "5e3cfb3c2c18c0b9e3b4efe7a57c222aa966eeb707ca75345f08ee0e2608f4f1",
+        "display_stride_steps": 8
+      },
+      {
+        "scene_id": "banana_yaw090",
+        "trace_sha256": "20529bfac7c39a8be7c1c1c9c0effa30983ca1de575654556da3cfa4a05e5b63",
+        "controller_sha256": "3aa2a1d426e3ec0e45365c0772576f0c3e405cba5a5d0fb22a24a1ce5978644c",
+        "display_stride_steps": 8
+      }
+    ],
+    "frame_sources": [
+      {
+        "scene_id": "banana_yaw000",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/frames/frame_00070.png",
+        "sha256": "5cebb0d7c590bf2b7a580051b465cdaf73ac24bb5a66f3cc2d284e492aaa0ad4",
+        "time_s": 3.5005208333333333
+      },
+      {
+        "scene_id": "banana_yaw000",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/frames/frame_00110.png",
+        "sha256": "b09a9ad9c4765ec1dc058ab317405ad4fb086b2f637e8fa77111f736eb8d91d4",
+        "time_s": 5.500520833333333
+      },
+      {
+        "scene_id": "banana_yaw000",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/frames/frame_00135.png",
+        "sha256": "b515fbe3003cae4d8528b83d40ff19f5026f4142a91905d3d58a73a2c4aeca29",
+        "time_s": 6.750520833333333
+      },
+      {
+        "scene_id": "banana_yaw000",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/frames/frame_00146.png",
+        "sha256": "72fb7196615976a9a7279761cdf9643b3c4d365015793c6fa03c2342edb0de51",
+        "time_s": 7.300520833333334
+      },
+      {
+        "scene_id": "banana_yaw090",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/frames/frame_00070.png",
+        "sha256": "a4ae947e03e8c80330eca2cac8b57a59df39278cfe531faa28b8d4a7c66385ba",
+        "time_s": 3.5005208333333333
+      },
+      {
+        "scene_id": "banana_yaw090",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/frames/frame_00110.png",
+        "sha256": "2546ab3725b1d3c7c8f788671bf5d57edbf5386c86c9cedad1d1f3cb74ae00ae",
+        "time_s": 5.500520833333333
+      },
+      {
+        "scene_id": "banana_yaw090",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/frames/frame_00135.png",
+        "sha256": "e84e22207bb4c26ce5cdc262dcfb7af3bff588fae91bc544f9f539eea1b9ab3d",
+        "time_s": 6.750520833333333
+      },
+      {
+        "scene_id": "banana_yaw090",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/frames/frame_00146.png",
+        "sha256": "c4f1f4c1ca150787c2546686b5f48b47a3ab32be2ef8abcfbbaea38552f44975",
+        "time_s": 7.300520833333334
+      }
+    ],
+    "new_physics_steps": 0
+  },
+  "new_network_forwards": 0,
+  "new_collision_admission_calls": 0,
+  "new_physics_steps": 0,
+  "static_native_distance_queries": 12,
+  "wall_seconds": 4.213520262972452,
+  "baseline_results_modified": false
+}

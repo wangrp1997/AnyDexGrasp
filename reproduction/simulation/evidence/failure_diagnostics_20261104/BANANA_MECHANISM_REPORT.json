@@ -1,0 +1,353 @@
+{
+  "scope": "AnyDex only; existing banana yaw000 failed versus yaw090 valid lift. Source/trace diagnosis, no new intervention or hardware test.",
+  "sources": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/papers/AnyDexGrasp_2502.16420v1_source.tar",
+      "sha256": "9b3c0626b85305a07812856f69d2507ff98877ee7d301a2a22c4703ebb08f6a0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3.py",
+      "sha256": "de81039f476391133a82608d8b1fa0f5857c6147ee52195faf6bf8d92217f0b9"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+      "sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/urdf/dh3_urdf.urdf",
+      "sha256": "37c638ad84d68a0ff4af4943a2c2d668912d0f1eda85786cbcf3e09069022cd2"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_time_refinement_smoke.py",
+      "sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/KINEMATIC_CONSTRAINT_MODEL.md",
+      "sha256": "12147c6f56a713e0ade0afca429648e120f4813b21114d5eb01ee56c26688340"
+    }
+  ],
+  "paper": {
+    "url": "https://arxiv.org/abs/2502.16420",
+    "version": "2502.16420v1",
+    "source_tar_member": "sections/results.tex",
+    "lines": {
+      "hand_specification": 90,
+      "preshapes_and_force_limited_closure": 100
+    },
+    "reported_DoF": 4,
+    "reported_motors": 2,
+    "reported_underactuated": true,
+    "counting_convention_defined_here": false,
+    "exact_excerpt_evidence": "/tmp/anydex_banana_diag_paper_extract.json"
+  },
+  "primary_manufacturer": {
+    "url": "https://www.dh-robotics.com/product/ag",
+    "english_url": "https://en.dh-robotics.com/product/ag",
+    "retrieval_date": "2026-11-04",
+    "supported": "AG family includingDH3 advertised envelope-adaptive linkage grasping; DH3 drive listed gear+screw-nut+linkage.",
+    "not_supported": "No identified inter-finger differential matrix, passive-joint definition, contact-loaded joint trajectories, spring/damping law or transmission ratio was found on this product page. Adaptive wording alone does not prove independent finger adaptation."
+  },
+  "source_vs_port": [
+    {
+      "status": "proven_source",
+      "finding": "The released preshape generator evaluates each finger flexion from one position register and selected base rotations from the rotation register, and generates mesh poses using resetJointState rather than load-dependent dynamic actuation.",
+      "references": [
+        "generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py:99-134",
+        "generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py:205-220"
+      ]
+    },
+    {
+      "status": "proven_source",
+      "finding": "Original URDF has11 movable joints,9 mimic declarations, no transmission elements or joint dynamics. finger2/3 flexion mimic finger1 with multiplier1; tip/outlet constraints and several zero-width/zero-effort declarations make it a geometric artifact rather than a calibrated loaded mechanism.",
+      "references": [
+        "generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/urdf/dh3_urdf.urdf:397",
+        "generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/urdf/dh3_urdf.urdf:645"
+      ]
+    },
+    {
+      "status": "proven_port",
+      "finding": "Current accepted controller applies2 active motors and9 ideal gear constraints to11 coordinates; rank9 implies a nominal2-dimensional configuration subspace. It applies the preshape affine relation as a loaded rigid transmission.",
+      "references": [
+        "reproduction/simulation/dh3_time_refinement_smoke.py:208",
+        "reproduction/simulation/dh3_time_refinement_smoke.py:267-278",
+        "reproduction/simulation/KINEMATIC_CONSTRAINT_MODEL.md"
+      ]
+    },
+    {
+      "status": "conditional_inference",
+      "finding": "If the paper4DoF count uses independent mechanical coordinates, this2DoF port omits2 passive freedoms. The paper does not identify the4 coordinates or its counting convention, so neither which equalities are wrong nor which passive mechanism should replace them is established."
+    },
+    {
+      "status": "proven_source",
+      "finding": "Original hardware API sends position/rotation and force70/speed100 registers. close_gripper sends position0 and waits, without individual joint torque control or SI mapping. These registers do not identify the current.6/.3Nm motor limits.",
+      "references": [
+        "ur_toolbox/ur_toolbox/robot/DH3/DH3.py:141-151",
+        "ur_toolbox/ur_toolbox/robot/DH3/DH3.py:169-213"
+      ]
+    }
+  ],
+  "trace_summary": {
+    "failed_scene": "banana_yaw000",
+    "first_finger2_positive_contact_s": 3.58125,
+    "first_position_motor_saturation_s": 3.6609375,
+    "at_first_contact": {
+      "label": "first_finger2_contact",
+      "step": 6876,
+      "time_s": 3.58125,
+      "phase": "close",
+      "flex1_rad": 0.3830760339932984,
+      "flex2_rad": 0.3830758061579488,
+      "flex3_rad": 0.38307645835574344,
+      "flex1_velocity_rad_s": 0.10635487850372102,
+      "flex1_target_rad": 0.3833909064110722,
+      "position_motor_torque_Nm": 0.1283230438843917,
+      "gear_residual_max_rad": 1.9138615747815724e-05,
+      "gear_reaction_Nm": {
+        "finger1_outlet_joint": -0.0005081984019100065,
+        "finger1_tip_joint": 1.1571719033275252e-05,
+        "finger2_joint": 0.19460240022224465,
+        "finger2_outlet_joint": -0.0008156237627853878,
+        "finger2_tip_joint": -0.05311000214652796,
+        "finger3_base_joint": -0.0007661615909850888,
+        "finger3_joint": -0.00432116587491818,
+        "finger3_outlet_joint": -0.000685781215905823,
+        "finger3_tip_joint": 0.00024594993489214837
+      },
+      "positive_object_contacts": [
+        {
+          "hand_link": 6,
+          "normal_N": 2.6336227156116436,
+          "distance_m": -8.704059491650154e-06
+        }
+      ]
+    },
+    "at_contact_plus_100ms": {
+      "label": "contact_plus_100ms",
+      "step": 7068,
+      "time_s": 3.68125,
+      "phase": "close",
+      "flex1_rad": 0.3953458667256457,
+      "flex2_rad": 0.3958342608382689,
+      "flex3_rad": 0.39529809558060514,
+      "flex1_velocity_rad_s": 0.009211062380631222,
+      "flex1_target_rad": 0.4008185191329404,
+      "position_motor_torque_Nm": 0.6,
+      "gear_residual_max_rad": 0.0033686061486183916,
+      "gear_reaction_Nm": {
+        "finger1_outlet_joint": -0.0005038026820715499,
+        "finger1_tip_joint": 2.7723521284959943e-05,
+        "finger2_joint": 0.9155552556772739,
+        "finger2_outlet_joint": -0.0008122401621306216,
+        "finger2_tip_joint": -0.28498924843560886,
+        "finger3_base_joint": -0.000640109003515662,
+        "finger3_joint": -0.004349460715610253,
+        "finger3_outlet_joint": -0.0006822111290014299,
+        "finger3_tip_joint": 0.00026297666358768496
+      },
+      "positive_object_contacts": [
+        {
+          "hand_link": 6,
+          "normal_N": 11.28914124846377,
+          "distance_m": -8.874739770924813e-06
+        }
+      ]
+    },
+    "at_close_end": {
+      "label": "close_end",
+      "step": 10560,
+      "time_s": 5.5,
+      "phase": "close",
+      "flex1_rad": 0.39507169099552664,
+      "flex2_rad": 0.3953156729567585,
+      "flex3_rad": 0.3950505634420852,
+      "flex1_velocity_rad_s": -0.002976500632411702,
+      "flex1_target_rad": 1.3329998059119226,
+      "position_motor_torque_Nm": 0.6,
+      "gear_residual_max_rad": 0.0015629721555454612,
+      "gear_reaction_Nm": {
+        "finger1_outlet_joint": -0.0004994729216763428,
+        "finger1_tip_joint": 1.9692127750286648e-05,
+        "finger2_joint": 0.8465072675818617,
+        "finger2_outlet_joint": -0.0008079565233127985,
+        "finger2_tip_joint": -0.22084095122434838,
+        "finger3_base_joint": -0.000641204695915128,
+        "finger3_joint": -0.004306869721205288,
+        "finger3_outlet_joint": -0.0006783979662233787,
+        "finger3_tip_joint": 0.0002559763414158595
+      },
+      "positive_object_contacts": [
+        {
+          "hand_link": 6,
+          "normal_N": 11.73345259534534,
+          "distance_m": -9.514738410943472e-06
+        }
+      ]
+    },
+    "at_hold_end": {
+      "label": "hold_end",
+      "step": 12000,
+      "time_s": 6.25,
+      "phase": "hold_closed",
+      "flex1_rad": 0.3940223205713744,
+      "flex2_rad": 0.39422640112812557,
+      "flex3_rad": 0.39400548390449397,
+      "flex1_velocity_rad_s": -0.000628993515245702,
+      "flex1_target_rad": 1.333,
+      "position_motor_torque_Nm": 0.6,
+      "gear_residual_max_rad": 0.0013041215684816976,
+      "gear_reaction_Nm": {
+        "finger1_outlet_joint": -0.0005008832878396016,
+        "finger1_tip_joint": 1.9917040712367315e-05,
+        "finger2_joint": 0.8226906120151152,
+        "finger2_outlet_joint": -0.0008091880674549612,
+        "finger2_tip_joint": -0.19866700440261761,
+        "finger3_base_joint": -0.000642689203874305,
+        "finger3_joint": -0.004315201517473622,
+        "finger3_outlet_joint": -0.0006797122688520635,
+        "finger3_tip_joint": 0.00025622821782533253
+      },
+      "positive_object_contacts": [
+        {
+          "hand_link": 6,
+          "normal_N": 12.620035360213109,
+          "distance_m": -9.630644826356313e-06
+        }
+      ]
+    },
+    "blocked_windows": [
+      {
+        "time_window_s": [
+          3.7,
+          4.0
+        ],
+        "steps": 576,
+        "flex1_start_rad": 0.39560579070493607,
+        "flex1_end_rad": 0.39529035449754496,
+        "flex1_range_rad": 0.0004021848533171668,
+        "mean_abs_flex1_velocity_rad_s": 0.004895092692157276,
+        "position_motor_mean_torque_Nm": 0.6,
+        "fraction_position_motor_abs_at_0_6Nm": 1.0,
+        "mean_abs_joint_position_error_rad": 0.06436855612852284,
+        "gear_reaction_abs_peak_Nm": {
+          "finger1_outlet_joint": 0.0022849021100570213,
+          "finger1_tip_joint": 0.003064645504420582,
+          "finger2_joint": 0.9058405053624271,
+          "finger2_outlet_joint": 0.0025941588238092158,
+          "finger2_tip_joint": 0.2608085698583539,
+          "finger3_base_joint": 0.000977879488141947,
+          "finger3_joint": 0.023458674066621613,
+          "finger3_outlet_joint": 0.002466479152642671,
+          "finger3_tip_joint": 0.0033055287222383497
+        },
+        "gear_max_residual_rad": 0.003294722337889411,
+        "positive_object_contact_link_counts": {
+          "6": 576
+        },
+        "object_positive_contact_steps": 576,
+        "hand_self_positive_contact_rows": 0
+      },
+      {
+        "time_window_s": [
+          4.0,
+          5.5
+        ],
+        "steps": 2880,
+        "flex1_start_rad": 0.3952903675444575,
+        "flex1_end_rad": 0.39507169099552664,
+        "flex1_range_rad": 0.0021466172838965902,
+        "mean_abs_flex1_velocity_rad_s": 0.005496918076558868,
+        "position_motor_mean_torque_Nm": 0.5993132388823668,
+        "fraction_position_motor_abs_at_0_6Nm": 0.9986111111111111,
+        "mean_abs_joint_position_error_rad": 0.6020131602168495,
+        "gear_reaction_abs_peak_Nm": {
+          "finger1_outlet_joint": 0.007727991558592189,
+          "finger1_tip_joint": 0.0136761543501222,
+          "finger2_joint": 1.055464114219279,
+          "finger2_outlet_joint": 0.008035791661499599,
+          "finger2_tip_joint": 0.2776267119646855,
+          "finger3_base_joint": 0.0024691202676296155,
+          "finger3_joint": 0.08174348933521504,
+          "finger3_outlet_joint": 0.007903692582532961,
+          "finger3_tip_joint": 0.013438603979505278
+        },
+        "gear_max_residual_rad": 0.003196497844788093,
+        "positive_object_contact_link_counts": {
+          "6": 2876
+        },
+        "object_positive_contact_steps": 2876,
+        "hand_self_positive_contact_rows": 0
+      },
+      {
+        "time_window_s": [
+          5.5,
+          6.25
+        ],
+        "steps": 1440,
+        "flex1_start_rad": 0.3950701573669979,
+        "flex1_end_rad": 0.3940223205713744,
+        "flex1_range_rad": 0.002760641846085765,
+        "mean_abs_flex1_velocity_rad_s": 0.009046334492225213,
+        "position_motor_mean_torque_Nm": 0.5991082523738436,
+        "fraction_position_motor_abs_at_0_6Nm": 0.9979166666666667,
+        "mean_abs_joint_position_error_rad": 0.9376273311576382,
+        "gear_reaction_abs_peak_Nm": {
+          "finger1_outlet_joint": 0.010215191820097988,
+          "finger1_tip_joint": 0.018253838714642156,
+          "finger2_joint": 1.061768422416814,
+          "finger2_outlet_joint": 0.009907151423021286,
+          "finger2_tip_joint": 0.29518232993221905,
+          "finger3_base_joint": 0.0030798652371772342,
+          "finger3_joint": 0.11046579657753637,
+          "finger3_outlet_joint": 0.010037877536554137,
+          "finger3_tip_joint": 0.018020257741722577
+        },
+        "gear_max_residual_rad": 0.002186751581845059,
+        "positive_object_contact_link_counts": {
+          "6": 1437
+        },
+        "object_positive_contact_steps": 1437,
+        "hand_self_positive_contact_rows": 0
+      }
+    ],
+    "derived_master_joint_bounds_rad": [
+      0,
+      1.333
+    ],
+    "hand_table_contacts_during_failed_trial": 0,
+    "hand_self_contacts_during_close_hold": 0,
+    "gear_cap_Nm": 100,
+    "trial_peak_gear_reaction_Nm": 1.3335348273043366,
+    "trial_max_gear_residual_rad": 0.006598708112531604,
+    "failed_velocity_gate_peak_rad_s": 1.743813467292402,
+    "trace_evidence": "/tmp/anydex_banana_diag_trace.json",
+    "trace_evidence_sha256": "09be1a0289d5dc55c1a5659e675210598df4007ef6f01e095a8c442c9be3db91"
+  },
+  "causal_boundary": {
+    "established": [
+      "The close command was present and its target advanced to1.333rad. The motor did not stop by command; its measured applied torque became saturated at the explicitly declared.6Nm limit.",
+      "In the rigid loaded port, finger2 contact and its gear reaction rise precede the common flexion stall. The three flexion coordinates remain coupled. No hand-table/selfcontact or joint limit explains this close/hold stall.",
+      "No gear-row reaction approached100Nm, so increasing that structural ceiling cannot be justified as the observed saturation fix.",
+      "The successful yaw090 trial uses another original selected type/width/pose and first establishes object contacts during lift after a hand-table blockage; it is not a matched rotation-only or transmission-only experiment."
+    ],
+    "consistent_inference": "Unilateral early finger2 loading plus the port hard equalities prevents the other fingers independently completing enclosure before lift. This is strongly consistent with the model and observed transmission reactions, but no counterfactual has yet isolated it as the sole cause.",
+    "not_established": [
+      "True DH3 has a particular inter-finger differential or per-finger compliance law.",
+      "Real DH3 would fail at this exact pose, or that the original AnyDex network is intrinsically defective.",
+      "A freely released joint or three independently controlled finger motors faithfully reproduces the2-motor device.",
+      "The saved normal-force magnitudes close a full force/moment balance; contact positions/normals were not recorded, and gravity/inertial/friction terms are not reconstructed.",
+      "The paper4DoF label and URDF link/mimic count use an identical definition."
+    ]
+  },
+  "minimal_next_intervention": {
+    "status": "proposal_only_not_executed",
+    "first": "One exact-pose no-object closing control, using the frozen failed candidate, all current motor/gear/wrist/geometry/time settings unchanged, stopping after the existing6.25s prelift segment. Remove only object presence before integration; preserve table/selfcollision. It is a diagnostic absence-of-contact control, not a grasp or success-rate trial.",
+    "prediction": "If the shared flexion advances far beyond~.395rad once that contact is absent, it strengthens that object contact loaded/stalled the current port. Hand self/table stops remain separately logged. If it still stalls near.395, investigate another constraint/controller cause before replacing transmission.",
+    "boundaries": "This control still does not identify real DH3 dynamics. Do not increment the12-scene denominator or use it as a grasp success. No network rerun is needed.",
+    "model_correction_gate": "Before a hardware-fidelity correction, identify which4 coordinates and load-dependent transmission apply. Do not arbitrarily delete cross-finger gears or add independent motors.",
+    "conditional_hypothesis": "Only after topology evidence, a separately labeled4DoF/2-motor diagnostic can retain each finger closed linkage and replace verified cross-finger equalities with a passive power-consistent differential. A possible coordinate hypothesis s=(f1+f2+f3)/3 plus2 passive differences would distribute one actuator effort tau_s as tau_s/3 per finger so sum(tau_i*f_dot_i)=tau_s*s_dot; springs/friction/limits must be identified or predeclared as unknown diagnostic assumptions. This is a candidate model, not a DH3 specification.",
+    "paired_validation": "Freeze the new model before testing and retain current banana000+090 as baselines; rerun exactly the same selected poses and commands once each only if this later intervention is authorized. Report enclosure timing/contacts/effort/constraint work and all outcomes; no gain/pose/force sweep or success-selected model."
+  },
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "controller_modified": false
+}

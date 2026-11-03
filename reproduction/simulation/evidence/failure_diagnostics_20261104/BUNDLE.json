@@ -1,0 +1,105 @@
+{
+  "scope": "Four targeted non-success cases, unchanged twelve-scene baseline plus one non-grasp load ablation",
+  "previous_cohort_successes": 8,
+  "previous_cohort_denominator": 12,
+  "new_network_forwards": 0,
+  "new_physical_grasp_attempts": 0,
+  "new_load_ablation_runs": 1,
+  "new_actual_physics_steps": 12000,
+  "new_physical_seconds": 6.25,
+  "cumulative_mixed_dt_steps": 366300,
+  "cumulative_mixed_dt_physical_seconds": 258.5,
+  "static_render_versions": [
+    "dh3_real_mesh_failure_diagnostics_20261104_v1",
+    "dh3_real_mesh_failure_diagnostics_20261104_v2"
+  ],
+  "static_render_wall_seconds": [
+    4.781980803003535,
+    4.213520262972452
+  ],
+  "static_native_distance_queries": 24,
+  "collision_diagnostic_historical_cpu_voxel_queries": 18,
+  "collision_diagnostic_historical_unsigned_distance_queries": 72,
+  "collision_diagnostic_historical_wall_seconds": 17.814,
+  "lightweight_receipts": [
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/collision_attribution_v3/RESULTS.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/COLLISION_SUMMARY.json",
+      "sha256": "686b033dbe7ed18d3f7086d62721c45e2fa9be4c65c46360cac5f83f0288b74e",
+      "bytes": 11007
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/collision_attribution_v3/MECHANISM_FINDINGS.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/SOURCE_MECHANISMS.json",
+      "sha256": "680606d6db18f246a6e4d3d61862351340415f5b0bbb33715ca32b76f501ec5a",
+      "bytes": 21817
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/collision_attribution_v3/DEPTH_SEMANTICS.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/DEPTH_SEMANTICS.json",
+      "sha256": "beb492cc7dfbe623d28abb6eccd414309964edf90ca91a2e8e6d078508e04795",
+      "bytes": 3977
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/diagnostic_sources/anydex_asset_diag_findings.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/STATIC_GEOMETRY_SUMMARY.json",
+      "sha256": "148d8ebbcb1a4972ea256492333d8944f0d49b1e0a7bf2127d1bb2acdce6d4aa",
+      "bytes": 8521
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/diagnostic_sources/anydex_banana_diag_report.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/BANANA_MECHANISM_REPORT.json",
+      "sha256": "5fd237e938979c80f4ef006f1188fc5257c419ddf17af8ef75d7587106e9f0be",
+      "bytes": 17660
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/diagnostic_sources/anydex_banana_diag_trace.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/BANANA_TRACE_METRICS.json",
+      "sha256": "09be1a0289d5dc55c1a5659e675210598df4007ef6f01e095a8c442c9be3db91",
+      "bytes": 40416
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/diagnostic_sources/anydex_banana_diag_paper_extract.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/PAPER_EXTRACT.json",
+      "sha256": "0297008443b447bb1714ea0a0d003b1beace0a7ca7f5c68827fd8fd4e3736cfd",
+      "bytes": 718
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_failure_diagnostics_20261104_v2/RESULTS.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/STATIC_RENDER_RESULTS.json",
+      "sha256": "f7b08541d033f0b0fad4b09821b10eb8f0a6d8b591d3f98bd797a27999e3c334",
+      "bytes": 22004
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_banana_no_object_ablation_20261104_v2/PLAN.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/LOAD_ABLATION_PLAN.json",
+      "sha256": "b5be57c277083ee911a5050cd8fd47cb363bfb9f49e6a854282841432e89443d",
+      "bytes": 1495
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_banana_no_object_ablation_20261104_v2/RESULTS.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/LOAD_ABLATION_RESULTS.json",
+      "sha256": "ee6ad396cb222d914cfe3c5260328c86f35b2d9785d8859f88402a9ec699a289",
+      "bytes": 1437
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_banana_no_object_ablation_20261104_v2_audit/RESULTS.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/LOAD_ABLATION_AUDIT.json",
+      "sha256": "86f679e4801c4b9b5773743d60927d3e2ce96ec0bf96cf84acb7e12b8ad4015c",
+      "bytes": 1142
+    },
+    {
+      "acquired_from": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_banana_no_object_ablation_20261104_v1/PREFLIGHT_FAILURE.json",
+      "committed_copy": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/failure_diagnostics_20261104/LOAD_ABLATION_PREFLIGHT_FAILURE.json",
+      "sha256": "c6a561b66abe09a758c8b44fe0db8dc0c93328a1d5d6249f10c0d1369b65c1fd",
+      "bytes": 253
+    }
+  ],
+  "immutable_receipt_boundary": "Some diagnostic receipts name original /tmp acquisition paths. Copies retain exact original bytes/SHA; archives above and diagnostic_sources preserve those artifacts without claiming paths existed before acquisition.",
+  "source_unchanged": [
+    "original AnyDexGrasp algorithm",
+    "accepted dh3_time_refinement_smoke.py controller",
+    "original twelve-scene inputs and outcomes"
+  ],
+  "no_original_success_score_replacement": true
+}

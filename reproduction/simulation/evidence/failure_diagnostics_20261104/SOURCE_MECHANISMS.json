@@ -1,0 +1,1321 @@
+{
+  "status": "original_source_and_saved_collision_mechanisms_verified",
+  "source": {
+    "path": "/tmp/anydex_collision_diag_findings.py",
+    "sha256": "62ccbd7af257e834059d7d08f0a5056e1d3b19ea12af13bc1ae6970e75db1aa5",
+    "bytes": 6185
+  },
+  "original_robot_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+    "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "bytes": 41530
+  },
+  "original_orientation_gate": {
+    "line": 389,
+    "expression": "(preds[:, 9] > 0.9) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)",
+    "approach_z_camera_min": 0.9,
+    "max_angle_from_world_down_deg": 25.841932763167126,
+    "implication": "This original robot demo admits near-downward approaches only; no side grasp survives this unmodified gate in the frozen camera orientation."
+  },
+  "original_objectness_filter": {
+    "active_objectness_per_seed_subscripts": [],
+    "source_excerpt": [
+      {
+        "line": 84,
+        "text": "        cloud_mask_i = (coords[:, 0] == i)"
+      },
+      {
+        "line": 85,
+        "text": "        seed_inds_i = seed_inds[i]"
+      },
+      {
+        "line": 86,
+        "text": "        objectness_mask_i = objectness_mask[cloud_mask_i][seed_inds_i]  # (Ns,)"
+      },
+      {
+        "line": 87,
+        "text": ""
+      },
+      {
+        "line": 88,
+        "text": "        if objectness_mask_i.any() == False:"
+      },
+      {
+        "line": 89,
+        "text": "            continue"
+      },
+      {
+        "line": 90,
+        "text": ""
+      },
+      {
+        "line": 91,
+        "text": "        seed_xyz_i = seed_xyz[i] # [objectness_mask_i]  # (Ns', 3)"
+      },
+      {
+        "line": 92,
+        "text": "        point_features_i = point_features[i] # [objectness_mask_i]"
+      },
+      {
+        "line": 93,
+        "text": "        "
+      },
+      {
+        "line": 94,
+        "text": "        seed_inds_i = seed_inds_i # [objectness_mask_i]"
+      },
+      {
+        "line": 95,
+        "text": "        before_generator_i = before_generator[i] # [objectness_mask_i]"
+      },
+      {
+        "line": 96,
+        "text": "        grasp_view_xyz_i = grasp_view_xyz[i] # [objectness_mask_i]  # (Ns', 3)"
+      },
+      {
+        "line": 97,
+        "text": "        grasp_view_inds_i = grasp_view_inds[i] # [objectness_mask_i]"
+      },
+      {
+        "line": 98,
+        "text": "        grasp_view_scores_i = grasp_view_scores[i] # [objectness_mask_i]"
+      },
+      {
+        "line": 99,
+        "text": "        grasp_scores_i = grasp_scores[i] # [objectness_mask_i]  # (Ns', A, D)"
+      },
+      {
+        "line": 100,
+        "text": "        grasp_widths_i = grasp_widths[i] # [objectness_mask_i] # (Ns', A, D)"
+      },
+      {
+        "line": 101,
+        "text": "        "
+      },
+      {
+        "line": 102,
+        "text": "        Ns, A, D = grasp_scores_i.size()"
+      },
+      {
+        "line": 103,
+        "text": "        grasp_features_two_finger_i = grasp_features_two_finger[i] # [objectness_mask_i] # (Ns', 3 + C)"
+      },
+      {
+        "line": 104,
+        "text": "        grasp_scores_i_A_D = copy.deepcopy(grasp_scores_i).view(Ns, -1)"
+      }
+    ],
+    "implication": "Original parser tests any objectness-positive seed but leaves per-seed masking commented out. Saved background/table seeds can therefore survive; this is author code, not a new adapter filtering choice."
+  },
+  "scene_findings": [
+    {
+      "scene_id": "mug_yaw090",
+      "candidate_count": 48,
+      "seed_renderer_body_counts": {
+        "table": 6,
+        "object": 42
+      },
+      "seed_depth_matches_saved_pixel_max_error_m": 1.4543533322086688e-08,
+      "candidate_seed_uv": [
+        [
+          656,
+          187
+        ],
+        [
+          596,
+          284
+        ],
+        [
+          580,
+          246
+        ],
+        [
+          591,
+          210
+        ],
+        [
+          581,
+          257
+        ],
+        [
+          580,
+          240
+        ],
+        [
+          586,
+          270
+        ],
+        [
+          642,
+          359
+        ],
+        [
+          580,
+          240
+        ],
+        [
+          654,
+          363
+        ],
+        [
+          693,
+          223
+        ],
+        [
+          632,
+          170
+        ],
+        [
+          632,
+          170
+        ],
+        [
+          693,
+          223
+        ],
+        [
+          596,
+          284
+        ],
+        [
+          693,
+          223
+        ],
+        [
+          654,
+          363
+        ],
+        [
+          642,
+          359
+        ],
+        [
+          580,
+          246
+        ],
+        [
+          693,
+          223
+        ],
+        [
+          636,
+          164
+        ],
+        [
+          632,
+          170
+        ],
+        [
+          683,
+          204
+        ],
+        [
+          646,
+          189
+        ],
+        [
+          636,
+          164
+        ],
+        [
+          617,
+          187
+        ],
+        [
+          581,
+          257
+        ],
+        [
+          642,
+          359
+        ],
+        [
+          674,
+          199
+        ],
+        [
+          617,
+          187
+        ],
+        [
+          580,
+          246
+        ],
+        [
+          636,
+          164
+        ],
+        [
+          580,
+          241
+        ],
+        [
+          646,
+          189
+        ],
+        [
+          683,
+          204
+        ],
+        [
+          661,
+          193
+        ],
+        [
+          596,
+          284
+        ],
+        [
+          654,
+          189
+        ],
+        [
+          580,
+          240
+        ],
+        [
+          591,
+          210
+        ],
+        [
+          636,
+          164
+        ],
+        [
+          642,
+          359
+        ],
+        [
+          683,
+          204
+        ],
+        [
+          652,
+          171
+        ],
+        [
+          638,
+          164
+        ],
+        [
+          693,
+          223
+        ],
+        [
+          617,
+          187
+        ],
+        [
+          596,
+          204
+        ]
+      ],
+      "candidate_seed_renderer_body_id": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "approach_angle_from_world_down_deg": {
+        "min": 4.679481031074704,
+        "median": 16.246255074921905,
+        "max": 25.40026416578648
+      },
+      "expanded_two_finger_width_above_mapped_hand_width_count": 48,
+      "original_overlap_origin": {
+        "table_only": 0,
+        "object_only": 37,
+        "both": 11,
+        "min_table_overlaps": 0,
+        "min_object_overlaps": 1,
+        "min_total_overlaps": 1
+      },
+      "saved_diagnosis": {
+        "path": "/tmp/anydex_collision_diag_v3/mug_yaw090.json",
+        "sha256": "699f094508ece64f14a47d182ec8e240a53bf40974292e00f2524e83638dbb6a",
+        "bytes": 81560
+      }
+    },
+    {
+      "scene_id": "bowl_yaw000",
+      "candidate_count": 83,
+      "seed_renderer_body_counts": {
+        "table": 73,
+        "object": 10
+      },
+      "seed_depth_matches_saved_pixel_max_error_m": 8.583068866752086e-09,
+      "candidate_seed_uv": [
+        [
+          819,
+          378
+        ],
+        [
+          749,
+          348
+        ],
+        [
+          475,
+          365
+        ],
+        [
+          515,
+          311
+        ],
+        [
+          620,
+          341
+        ],
+        [
+          436,
+          316
+        ],
+        [
+          825,
+          294
+        ],
+        [
+          524,
+          323
+        ],
+        [
+          475,
+          365
+        ],
+        [
+          436,
+          316
+        ],
+        [
+          618,
+          340
+        ],
+        [
+          819,
+          378
+        ],
+        [
+          756,
+          332
+        ],
+        [
+          489,
+          240
+        ],
+        [
+          618,
+          340
+        ],
+        [
+          513,
+          326
+        ],
+        [
+          496,
+          314
+        ],
+        [
+          798,
+          397
+        ],
+        [
+          816,
+          342
+        ],
+        [
+          816,
+          342
+        ],
+        [
+          687,
+          383
+        ],
+        [
+          512,
+          325
+        ],
+        [
+          798,
+          397
+        ],
+        [
+          819,
+          343
+        ],
+        [
+          825,
+          294
+        ],
+        [
+          489,
+          240
+        ],
+        [
+          478,
+          214
+        ],
+        [
+          819,
+          378
+        ],
+        [
+          474,
+          290
+        ],
+        [
+          802,
+          384
+        ],
+        [
+          823,
+          331
+        ],
+        [
+          515,
+          311
+        ],
+        [
+          593,
+          330
+        ],
+        [
+          802,
+          384
+        ],
+        [
+          802,
+          384
+        ],
+        [
+          816,
+          342
+        ],
+        [
+          512,
+          325
+        ],
+        [
+          478,
+          214
+        ],
+        [
+          756,
+          332
+        ],
+        [
+          563,
+          369
+        ],
+        [
+          515,
+          311
+        ],
+        [
+          524,
+          323
+        ],
+        [
+          461,
+          290
+        ],
+        [
+          493,
+          357
+        ],
+        [
+          461,
+          290
+        ],
+        [
+          524,
+          323
+        ],
+        [
+          498,
+          348
+        ],
+        [
+          449,
+          290
+        ],
+        [
+          498,
+          348
+        ],
+        [
+          474,
+          290
+        ],
+        [
+          478,
+          214
+        ],
+        [
+          449,
+          290
+        ],
+        [
+          618,
+          340
+        ],
+        [
+          563,
+          369
+        ],
+        [
+          515,
+          311
+        ],
+        [
+          819,
+          378
+        ],
+        [
+          749,
+          348
+        ],
+        [
+          630,
+          342
+        ],
+        [
+          524,
+          323
+        ],
+        [
+          436,
+          316
+        ],
+        [
+          512,
+          325
+        ],
+        [
+          449,
+          277
+        ],
+        [
+          630,
+          342
+        ],
+        [
+          630,
+          342
+        ],
+        [
+          618,
+          340
+        ],
+        [
+          819,
+          378
+        ],
+        [
+          470,
+          303
+        ],
+        [
+          496,
+          314
+        ],
+        [
+          515,
+          311
+        ],
+        [
+          489,
+          240
+        ],
+        [
+          478,
+          214
+        ],
+        [
+          493,
+          357
+        ],
+        [
+          493,
+          357
+        ],
+        [
+          489,
+          240
+        ],
+        [
+          798,
+          397
+        ],
+        [
+          464,
+          217
+        ],
+        [
+          512,
+          325
+        ],
+        [
+          449,
+          277
+        ],
+        [
+          524,
+          323
+        ],
+        [
+          721,
+          302
+        ],
+        [
+          825,
+          294
+        ],
+        [
+          453,
+          179
+        ],
+        [
+          474,
+          290
+        ]
+      ],
+      "candidate_seed_renderer_body_id": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "approach_angle_from_world_down_deg": {
+        "min": 4.679481078490949,
+        "median": 8.109614732213398,
+        "max": 18.19487254805766
+      },
+      "expanded_two_finger_width_above_mapped_hand_width_count": 82,
+      "original_overlap_origin": {
+        "table_only": 28,
+        "object_only": 3,
+        "both": 52,
+        "min_table_overlaps": 0,
+        "min_object_overlaps": 0,
+        "min_total_overlaps": 9
+      },
+      "saved_diagnosis": {
+        "path": "/tmp/anydex_collision_diag_v3/bowl_yaw000.json",
+        "sha256": "36449ca33abbb67b7778f2a481a182129222daeaa1568f4537efec93203712b4",
+        "bytes": 120927
+      }
+    },
+    {
+      "scene_id": "bowl_yaw090",
+      "candidate_count": 88,
+      "seed_renderer_body_counts": {
+        "table": 87,
+        "object": 1
+      },
+      "seed_depth_matches_saved_pixel_max_error_m": 1.3351440453224228e-08,
+      "candidate_seed_uv": [
+        [
+          731,
+          354
+        ],
+        [
+          436,
+          284
+        ],
+        [
+          847,
+          293
+        ],
+        [
+          423,
+          290
+        ],
+        [
+          475,
+          365
+        ],
+        [
+          443,
+          293
+        ],
+        [
+          436,
+          284
+        ],
+        [
+          733,
+          348
+        ],
+        [
+          795,
+          384
+        ],
+        [
+          449,
+          277
+        ],
+        [
+          751,
+          354
+        ],
+        [
+          557,
+          357
+        ],
+        [
+          480,
+          356
+        ],
+        [
+          449,
+          277
+        ],
+        [
+          534,
+          353
+        ],
+        [
+          534,
+          353
+        ],
+        [
+          429,
+          316
+        ],
+        [
+          816,
+          342
+        ],
+        [
+          480,
+          342
+        ],
+        [
+          827,
+          365
+        ],
+        [
+          480,
+          356
+        ],
+        [
+          765,
+          323
+        ],
+        [
+          780,
+          350
+        ],
+        [
+          795,
+          384
+        ],
+        [
+          816,
+          342
+        ],
+        [
+          506,
+          284
+        ],
+        [
+          475,
+          379
+        ],
+        [
+          451,
+          307
+        ],
+        [
+          493,
+          357
+        ],
+        [
+          480,
+          342
+        ],
+        [
+          465,
+          318
+        ],
+        [
+          475,
+          365
+        ],
+        [
+          557,
+          357
+        ],
+        [
+          465,
+          318
+        ],
+        [
+          650,
+          385
+        ],
+        [
+          480,
+          342
+        ],
+        [
+          768,
+          313
+        ],
+        [
+          470,
+          303
+        ],
+        [
+          513,
+          346
+        ],
+        [
+          506,
+          284
+        ],
+        [
+          476,
+          323
+        ],
+        [
+          802,
+          384
+        ],
+        [
+          461,
+          338
+        ],
+        [
+          443,
+          293
+        ],
+        [
+          455,
+          290
+        ],
+        [
+          802,
+          384
+        ],
+        [
+          493,
+          357
+        ],
+        [
+          449,
+          277
+        ],
+        [
+          480,
+          356
+        ],
+        [
+          451,
+          307
+        ],
+        [
+          498,
+          348
+        ],
+        [
+          443,
+          293
+        ],
+        [
+          475,
+          379
+        ],
+        [
+          795,
+          384
+        ],
+        [
+          455,
+          290
+        ],
+        [
+          847,
+          293
+        ],
+        [
+          498,
+          348
+        ],
+        [
+          506,
+          284
+        ],
+        [
+          436,
+          284
+        ],
+        [
+          806,
+          332
+        ],
+        [
+          731,
+          354
+        ],
+        [
+          816,
+          342
+        ],
+        [
+          534,
+          353
+        ],
+        [
+          557,
+          357
+        ],
+        [
+          436,
+          284
+        ],
+        [
+          830,
+          353
+        ],
+        [
+          534,
+          353
+        ],
+        [
+          443,
+          293
+        ],
+        [
+          461,
+          338
+        ],
+        [
+          434,
+          205
+        ],
+        [
+          768,
+          313
+        ],
+        [
+          534,
+          353
+        ],
+        [
+          557,
+          357
+        ],
+        [
+          736,
+          348
+        ],
+        [
+          780,
+          350
+        ],
+        [
+          751,
+          354
+        ],
+        [
+          476,
+          323
+        ],
+        [
+          506,
+          284
+        ],
+        [
+          821,
+          351
+        ],
+        [
+          513,
+          346
+        ],
+        [
+          805,
+          374
+        ],
+        [
+          650,
+          385
+        ],
+        [
+          830,
+          353
+        ],
+        [
+          653,
+          342
+        ],
+        [
+          449,
+          203
+        ],
+        [
+          807,
+          308
+        ],
+        [
+          434,
+          205
+        ],
+        [
+          455,
+          290
+        ]
+      ],
+      "candidate_seed_renderer_body_id": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "approach_angle_from_world_down_deg": {
+        "min": 4.679481078490949,
+        "median": 8.10961476356444,
+        "max": 14.069867908288943
+      },
+      "expanded_two_finger_width_above_mapped_hand_width_count": 88,
+      "original_overlap_origin": {
+        "table_only": 44,
+        "object_only": 1,
+        "both": 43,
+        "min_table_overlaps": 0,
+        "min_object_overlaps": 0,
+        "min_total_overlaps": 38
+      },
+      "saved_diagnosis": {
+        "path": "/tmp/anydex_collision_diag_v3/bowl_yaw090.json",
+        "sha256": "ab9a036004a2735a9ce7ca3587778061932dbef946fee72b246999508faaac14",
+        "bytes": 126552
+      }
+    }
+  ],
+  "diagnostic_receipt": {
+    "path": "/tmp/anydex_collision_diag_v3/RESULTS.json",
+    "sha256": "686b033dbe7ed18d3f7086d62721c45e2fa9be4c65c46360cac5f83f0288b74e",
+    "bytes": 11007
+  },
+  "main_conclusions": [
+    "Mug090: every rejected candidate overlaps object-labeled visible points; 37 only object and11 also table. Candidate12 is rejected by exactly1 object point, contributed by endpoint PCL only. This point is5.859mm from original triangle surfaces and outside every link convex envelope throughout the whole piecewise linear0-to7cm approach, including diagnostic0.5mm envelope inflation. This certifies conservatism of that flagged point, not a grasp success or complete-scene collision-free certificate.",
+    "Bowl000 and bowl090 include many table/background proposals. Their highest-scoring original source-hand meshes extend31.254mm and25.294mm below the table, respectively. This is a pose-placement defect in these candidates, not solely voxel contact tolerance.",
+    "Six representative original voxel masks replay bit-exactly; their5/7cm copies contribute no flagged point. Most rejection cells contain endpoint PCL samples. The cumulative0,-2,-5,-7cm source behavior is real but does not explain these six rejections by itself.",
+    "Original hand PCL includes up to11.25mm of estimated-normal offsets before3mm voxelization; normals are not explicitly oriented inward. Occupied PCL voxels are therefore not interchangeable with exact material intersection. Original source meshes are non-watertight, so unsigned distances are never mislabeled as signed penetration."
+  ],
+  "additional_network_forwards": 0,
+  "additional_physical_steps": 0,
+  "additional_renders": 0,
+  "additional_collision_queries": 0,
+  "production_artifacts_modified": false,
+  "original_gate_modified": false,
+  "boundary": "Post-hoc diagnosis only. No original gate is relaxed, no candidate executed, no original result or success denominator changed. Convex-envelope containment is inconclusive; only outside certificates are used."
+}

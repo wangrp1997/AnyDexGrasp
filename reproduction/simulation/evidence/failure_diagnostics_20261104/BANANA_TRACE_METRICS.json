@@ -1,0 +1,953 @@
+{
+  "scope": "Two original-top1 banana trials, existing trace only; no causal intervention performed",
+  "objects": [
+    {
+      "scene": "banana_yaw000",
+      "all_saved_contact_rows_include_hand": true,
+      "saved_contact_rows": 37167,
+      "explicit_hand_object_pair_filter": true,
+      "source": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/CONTROLLER.json",
+          "sha256": "5e3cfb3c2c18c0b9e3b4efe7a57c222aa966eeb707ca75345f08ee0e2608f4f1"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/RESULTS.json",
+          "sha256": "c211d4902a58591766db08f42ae32165f1cb96c463b664dbfdf54134f3299eaa"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/trace.npz",
+          "sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/contacts.npy",
+          "sha256": "00282371ddcd1102538bb1cdc1dd527d29af7f4f0559f1f1cbb8c517575a9ca8"
+        }
+      ],
+      "first_finger2_positive_contact_time_s": 3.58125,
+      "first_saturation_after_finger2_contact_time_s": 3.6609374999999997,
+      "snapshots": [
+        {
+          "label": "first_finger2_contact",
+          "step": 6876,
+          "time_s": 3.58125,
+          "phase": "close",
+          "flex1_rad": 0.3830760339932984,
+          "flex2_rad": 0.3830758061579488,
+          "flex3_rad": 0.38307645835574344,
+          "flex1_velocity_rad_s": 0.10635487850372102,
+          "flex1_target_rad": 0.3833909064110722,
+          "position_motor_torque_Nm": 0.1283230438843917,
+          "gear_residual_max_rad": 1.9138615747815724e-05,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0005081984019100065,
+            "finger1_tip_joint": 1.1571719033275252e-05,
+            "finger2_joint": 0.19460240022224465,
+            "finger2_outlet_joint": -0.0008156237627853878,
+            "finger2_tip_joint": -0.05311000214652796,
+            "finger3_base_joint": -0.0007661615909850888,
+            "finger3_joint": -0.00432116587491818,
+            "finger3_outlet_joint": -0.000685781215905823,
+            "finger3_tip_joint": 0.00024594993489214837
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 6,
+              "normal_N": 2.6336227156116436,
+              "distance_m": -8.704059491650154e-06
+            }
+          ]
+        },
+        {
+          "label": "last_before_contact",
+          "step": 6875,
+          "time_s": 3.5807291666666665,
+          "phase": "close",
+          "flex1_rad": 0.38302064082741105,
+          "flex2_rad": 0.3830206277725573,
+          "flex3_rad": 0.3830206380290794,
+          "flex1_velocity_rad_s": 0.10594854697446837,
+          "flex1_target_rad": 0.38333333619362175,
+          "position_motor_torque_Nm": -0.01397278897884577,
+          "gear_residual_max_rad": 6.41139010770786e-08,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0005082039079548503,
+            "finger1_tip_joint": 9.517278502994455e-06,
+            "finger2_joint": -0.005241443878678849,
+            "finger2_outlet_joint": -0.0008145059850187083,
+            "finger2_tip_joint": 0.0004169662807644079,
+            "finger3_base_joint": -0.0006700580055964255,
+            "finger3_joint": -0.004320707802447014,
+            "finger3_outlet_joint": -0.0006858450129117915,
+            "finger3_tip_joint": 0.0002458167380361125
+          },
+          "positive_object_contacts": []
+        },
+        {
+          "label": "contact_plus_10ms",
+          "step": 6895,
+          "time_s": 3.5911458333333335,
+          "phase": "close",
+          "flex1_rad": 0.3841984526617592,
+          "flex2_rad": 0.3841895473350822,
+          "flex3_rad": 0.38420218755074,
+          "flex1_velocity_rad_s": 0.11960243336713407,
+          "flex1_target_rad": 0.3845523212090741,
+          "position_motor_torque_Nm": -0.012866509524413514,
+          "gear_residual_max_rad": 9.195396904021491e-05,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0005069163145667232,
+            "finger1_tip_joint": 9.694377528573001e-06,
+            "finger2_joint": -0.003716394305911263,
+            "finger2_outlet_joint": -0.0008134266596448847,
+            "finger2_tip_joint": 1.160803556636462e-05,
+            "finger3_base_joint": -0.0006585534981019718,
+            "finger3_joint": -0.004314822281901299,
+            "finger3_outlet_joint": -0.0006846848362358436,
+            "finger3_tip_joint": 0.0002460671124552035
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 6,
+              "normal_N": 0.01967421066416293,
+              "distance_m": -9.983714807576097e-06
+            }
+          ]
+        },
+        {
+          "label": "contact_plus_100ms",
+          "step": 7068,
+          "time_s": 3.68125,
+          "phase": "close",
+          "flex1_rad": 0.3953458667256457,
+          "flex2_rad": 0.3958342608382689,
+          "flex3_rad": 0.39529809558060514,
+          "flex1_velocity_rad_s": 0.009211062380631222,
+          "flex1_target_rad": 0.4008185191329404,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 0.0033686061486183916,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0005038026820715499,
+            "finger1_tip_joint": 2.7723521284959943e-05,
+            "finger2_joint": 0.9155552556772739,
+            "finger2_outlet_joint": -0.0008122401621306216,
+            "finger2_tip_joint": -0.28498924843560886,
+            "finger3_base_joint": -0.000640109003515662,
+            "finger3_joint": -0.004349460715610253,
+            "finger3_outlet_joint": -0.0006822111290014299,
+            "finger3_tip_joint": 0.00026297666358768496
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 6,
+              "normal_N": 11.28914124846377,
+              "distance_m": -8.874739770924813e-06
+            }
+          ]
+        },
+        {
+          "label": "close_end",
+          "step": 10560,
+          "time_s": 5.5,
+          "phase": "close",
+          "flex1_rad": 0.39507169099552664,
+          "flex2_rad": 0.3953156729567585,
+          "flex3_rad": 0.3950505634420852,
+          "flex1_velocity_rad_s": -0.002976500632411702,
+          "flex1_target_rad": 1.3329998059119226,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 0.0015629721555454612,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0004994729216763428,
+            "finger1_tip_joint": 1.9692127750286648e-05,
+            "finger2_joint": 0.8465072675818617,
+            "finger2_outlet_joint": -0.0008079565233127985,
+            "finger2_tip_joint": -0.22084095122434838,
+            "finger3_base_joint": -0.000641204695915128,
+            "finger3_joint": -0.004306869721205288,
+            "finger3_outlet_joint": -0.0006783979662233787,
+            "finger3_tip_joint": 0.0002559763414158595
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 6,
+              "normal_N": 11.73345259534534,
+              "distance_m": -9.514738410943472e-06
+            }
+          ]
+        },
+        {
+          "label": "hold_end",
+          "step": 12000,
+          "time_s": 6.25,
+          "phase": "hold_closed",
+          "flex1_rad": 0.3940223205713744,
+          "flex2_rad": 0.39422640112812557,
+          "flex3_rad": 0.39400548390449397,
+          "flex1_velocity_rad_s": -0.000628993515245702,
+          "flex1_target_rad": 1.333,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 0.0013041215684816976,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0005008832878396016,
+            "finger1_tip_joint": 1.9917040712367315e-05,
+            "finger2_joint": 0.8226906120151152,
+            "finger2_outlet_joint": -0.0008091880674549612,
+            "finger2_tip_joint": -0.19866700440261761,
+            "finger3_base_joint": -0.000642689203874305,
+            "finger3_joint": -0.004315201517473622,
+            "finger3_outlet_joint": -0.0006797122688520635,
+            "finger3_tip_joint": 0.00025622821782533253
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 6,
+              "normal_N": 12.620035360213109,
+              "distance_m": -9.630644826356313e-06
+            }
+          ]
+        }
+      ],
+      "windows": [
+        {
+          "time_window_s": [
+            3.5,
+            3.58125
+          ],
+          "steps": 156,
+          "flex1_start_rad": 0.3788526416593443,
+          "flex1_end_rad": 0.3830760339932984,
+          "flex1_range_rad": 0.004223392333954135,
+          "mean_abs_flex1_velocity_rad_s": 0.05198021334161149,
+          "position_motor_mean_torque_Nm": -0.0131223440466567,
+          "fraction_position_motor_abs_at_0_6Nm": 0.0,
+          "mean_abs_joint_position_error_rad": 0.00015341504202697064,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.000521420164772917,
+            "finger1_tip_joint": 1.9161892440060604e-05,
+            "finger2_joint": 0.19460240022224465,
+            "finger2_outlet_joint": 0.0008269688616992354,
+            "finger2_tip_joint": 0.05311000214652796,
+            "finger3_base_joint": 0.0007661615909850888,
+            "finger3_joint": 0.004421918718937158,
+            "finger3_outlet_joint": 0.0006986242594208181,
+            "finger3_tip_joint": 0.000255470844125284
+          },
+          "gear_max_residual_rad": 1.9138615747815724e-05,
+          "positive_object_contact_link_counts": {
+            "6": 1
+          },
+          "object_positive_contact_steps": 1,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            3.58125,
+            3.68125
+          ],
+          "steps": 192,
+          "flex1_start_rad": 0.383131862258848,
+          "flex1_end_rad": 0.3953458667256457,
+          "flex1_range_rad": 0.012471880736928342,
+          "mean_abs_flex1_velocity_rad_s": 0.13812904160708447,
+          "position_motor_mean_torque_Nm": 0.16427513711676403,
+          "fraction_position_motor_abs_at_0_6Nm": 0.203125,
+          "mean_abs_joint_position_error_rad": 0.0010360298164531854,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.008878272364736128,
+            "finger1_tip_joint": 0.014306172807734581,
+            "finger2_joint": 1.1335681516403882,
+            "finger2_outlet_joint": 0.009184008942993437,
+            "finger2_tip_joint": 0.3253290903166955,
+            "finger3_base_joint": 0.002346263501491981,
+            "finger3_joint": 0.09393567064684565,
+            "finger3_outlet_joint": 0.009046300663563659,
+            "finger3_tip_joint": 0.014522987695742035
+          },
+          "gear_max_residual_rad": 0.0033686061486183916,
+          "positive_object_contact_link_counts": {
+            "6": 131
+          },
+          "object_positive_contact_steps": 131,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            3.7,
+            4.0
+          ],
+          "steps": 576,
+          "flex1_start_rad": 0.39560579070493607,
+          "flex1_end_rad": 0.39529035449754496,
+          "flex1_range_rad": 0.0004021848533171668,
+          "mean_abs_flex1_velocity_rad_s": 0.004895092692157276,
+          "position_motor_mean_torque_Nm": 0.6,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 0.06436855612852284,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.0022849021100570213,
+            "finger1_tip_joint": 0.003064645504420582,
+            "finger2_joint": 0.9058405053624271,
+            "finger2_outlet_joint": 0.0025941588238092158,
+            "finger2_tip_joint": 0.2608085698583539,
+            "finger3_base_joint": 0.000977879488141947,
+            "finger3_joint": 0.023458674066621613,
+            "finger3_outlet_joint": 0.002466479152642671,
+            "finger3_tip_joint": 0.0033055287222383497
+          },
+          "gear_max_residual_rad": 0.003294722337889411,
+          "positive_object_contact_link_counts": {
+            "6": 576
+          },
+          "object_positive_contact_steps": 576,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            4.0,
+            5.5
+          ],
+          "steps": 2880,
+          "flex1_start_rad": 0.3952903675444575,
+          "flex1_end_rad": 0.39507169099552664,
+          "flex1_range_rad": 0.0021466172838965902,
+          "mean_abs_flex1_velocity_rad_s": 0.005496918076558868,
+          "position_motor_mean_torque_Nm": 0.5993132388823668,
+          "fraction_position_motor_abs_at_0_6Nm": 0.9986111111111111,
+          "mean_abs_joint_position_error_rad": 0.6020131602168495,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.007727991558592189,
+            "finger1_tip_joint": 0.0136761543501222,
+            "finger2_joint": 1.055464114219279,
+            "finger2_outlet_joint": 0.008035791661499599,
+            "finger2_tip_joint": 0.2776267119646855,
+            "finger3_base_joint": 0.0024691202676296155,
+            "finger3_joint": 0.08174348933521504,
+            "finger3_outlet_joint": 0.007903692582532961,
+            "finger3_tip_joint": 0.013438603979505278
+          },
+          "gear_max_residual_rad": 0.003196497844788093,
+          "positive_object_contact_link_counts": {
+            "6": 2876
+          },
+          "object_positive_contact_steps": 2876,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            5.5,
+            6.25
+          ],
+          "steps": 1440,
+          "flex1_start_rad": 0.3950701573669979,
+          "flex1_end_rad": 0.3940223205713744,
+          "flex1_range_rad": 0.002760641846085765,
+          "mean_abs_flex1_velocity_rad_s": 0.009046334492225213,
+          "position_motor_mean_torque_Nm": 0.5991082523738436,
+          "fraction_position_motor_abs_at_0_6Nm": 0.9979166666666667,
+          "mean_abs_joint_position_error_rad": 0.9376273311576382,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.010215191820097988,
+            "finger1_tip_joint": 0.018253838714642156,
+            "finger2_joint": 1.061768422416814,
+            "finger2_outlet_joint": 0.009907151423021286,
+            "finger2_tip_joint": 0.29518232993221905,
+            "finger3_base_joint": 0.0030798652371772342,
+            "finger3_joint": 0.11046579657753637,
+            "finger3_outlet_joint": 0.010037877536554137,
+            "finger3_tip_joint": 0.018020257741722577
+          },
+          "gear_max_residual_rad": 0.002186751581845059,
+          "positive_object_contact_link_counts": {
+            "6": 1437
+          },
+          "object_positive_contact_steps": 1437,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            6.25,
+            6.6
+          ],
+          "steps": 672,
+          "flex1_start_rad": 0.394021998905303,
+          "flex1_end_rad": 0.4693666827725833,
+          "flex1_range_rad": 0.07559127966769086,
+          "mean_abs_flex1_velocity_rad_s": 0.21669896367153196,
+          "position_motor_mean_torque_Nm": 0.5875867286267371,
+          "fraction_position_motor_abs_at_0_6Nm": 0.9776785714285714,
+          "mean_abs_joint_position_error_rad": 0.9156944521996246,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.006829810984517142,
+            "finger1_tip_joint": 0.011034363531364277,
+            "finger2_joint": 1.13969378088309,
+            "finger2_outlet_joint": 0.007137946478496142,
+            "finger2_tip_joint": 0.37176620122527504,
+            "finger3_base_joint": 0.036215187008058834,
+            "finger3_joint": 0.3149759409720699,
+            "finger3_outlet_joint": 0.006999744797749925,
+            "finger3_tip_joint": 0.1337631454395724
+          },
+          "gear_max_residual_rad": 0.0035210422703094157,
+          "positive_object_contact_link_counts": {
+            "6": 659,
+            "10": 10
+          },
+          "object_positive_contact_steps": 659,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            6.6,
+            7.3
+          ],
+          "steps": 1344,
+          "flex1_start_rad": 0.46959967352139576,
+          "flex1_end_rad": 0.9744619149617482,
+          "flex1_range_rad": 0.5048622414403524,
+          "mean_abs_flex1_velocity_rad_s": 0.7218252132852515,
+          "position_motor_mean_torque_Nm": 0.3808038543102438,
+          "fraction_position_motor_abs_at_0_6Nm": 0.5178571428571429,
+          "mean_abs_joint_position_error_rad": 0.6148784166774914,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.006764970854339135,
+            "finger1_tip_joint": 0.4375377772307615,
+            "finger2_joint": 1.1490295175940146,
+            "finger2_outlet_joint": 0.007116808383296726,
+            "finger2_tip_joint": 0.4572938420229278,
+            "finger3_base_joint": 0.11331790310131112,
+            "finger3_joint": 1.3335348273043366,
+            "finger3_outlet_joint": 0.006962414968752301,
+            "finger3_tip_joint": 0.5765978082273592
+          },
+          "gear_max_residual_rad": 0.006598708112531604,
+          "positive_object_contact_link_counts": {
+            "10": 1018,
+            "6": 790,
+            "2": 412
+          },
+          "object_positive_contact_steps": 1174,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            9.75,
+            10.25
+          ],
+          "steps": 960,
+          "flex1_start_rad": 1.154391418820257,
+          "flex1_end_rad": 1.1543913740928842,
+          "flex1_range_rad": 3.0168053521961724e-07,
+          "mean_abs_flex1_velocity_rad_s": 9.815391262982826e-05,
+          "position_motor_mean_torque_Nm": 0.5999999999999999,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 0.17860850591473856,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.0004380872097219319,
+            "finger1_tip_joint": 0.03555934671877151,
+            "finger2_joint": 0.00023543020596521048,
+            "finger2_outlet_joint": 0.00010075015970796774,
+            "finger2_tip_joint": 0.0005068266318232256,
+            "finger3_base_joint": 0.3274645429274314,
+            "finger3_joint": 0.36402215869886445,
+            "finger3_outlet_joint": 0.0002472527029246296,
+            "finger3_tip_joint": 0.049391106309276796
+          },
+          "gear_max_residual_rad": 0.00021558318397540965,
+          "positive_object_contact_link_counts": {},
+          "object_positive_contact_steps": 0,
+          "hand_self_positive_contact_rows": 960
+        }
+      ],
+      "trace_limitations": [
+        "Only positive-contact normal force, scalar friction magnitudes, body/link ids and penetration were saved; contact point positions/normals were not saved. Normal-force-to-joint moment and complete dynamic force balance cannot be reconstructed from these records alone.",
+        "Motor_torque is Bullet reported applied actuator torque, not measured DH3 hardware current/force. Gear reaction is this ideal constraint solver readback, not an original DH3 transmission sensor."
+      ]
+    },
+    {
+      "scene": "banana_yaw090",
+      "all_saved_contact_rows_include_hand": true,
+      "saved_contact_rows": 96242,
+      "explicit_hand_object_pair_filter": true,
+      "source": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/CONTROLLER.json",
+          "sha256": "3aa2a1d426e3ec0e45365c0772576f0c3e405cba5a5d0fb22a24a1ce5978644c"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/RESULTS.json",
+          "sha256": "04ee27589683a7bfafb98d594fa89335480f63cffaf0e35f903358a1514f382f"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/trace.npz",
+          "sha256": "20529bfac7c39a8be7c1c1c9c0effa30983ca1de575654556da3cfa4a05e5b63"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/contacts.npy",
+          "sha256": "b198cf3ec144c6275d7f9fd5647751f7337d7002694452c0964c46382d81ec0e"
+        }
+      ],
+      "first_finger2_positive_contact_time_s": 6.960416666666666,
+      "first_saturation_after_finger2_contact_time_s": 6.960416666666666,
+      "snapshots": [
+        {
+          "label": "first_finger2_contact",
+          "step": 13364,
+          "time_s": 6.960416666666666,
+          "phase": "lift",
+          "flex1_rad": 0.6660072574263547,
+          "flex2_rad": 0.6659989077931905,
+          "flex3_rad": 0.66603294231105,
+          "flex1_velocity_rad_s": 0.40755935201362437,
+          "flex1_target_rad": 1.333,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 0.00034025057101794154,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.005190535336793562,
+            "finger1_tip_joint": 0.009211724022515029,
+            "finger2_joint": 0.6862745194700987,
+            "finger2_outlet_joint": -0.005000708844727634,
+            "finger2_tip_joint": -0.2634964894120294,
+            "finger3_base_joint": -0.0827195565714965,
+            "finger3_joint": 0.43789378824144476,
+            "finger3_outlet_joint": -0.004849319337467377,
+            "finger3_tip_joint": -0.1679664038490169
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 10,
+              "normal_N": 8.009724197619203,
+              "distance_m": -9.938990820318038e-06
+            },
+            {
+              "hand_link": 6,
+              "normal_N": 8.664775034703089,
+              "distance_m": -4.8728718907708784e-08
+            }
+          ]
+        },
+        {
+          "label": "last_before_contact",
+          "step": 13363,
+          "time_s": 6.959895833333333,
+          "phase": "lift",
+          "flex1_rad": 0.6657949869305143,
+          "flex2_rad": 0.6657853196872165,
+          "flex3_rad": 0.6658214702045419,
+          "flex1_velocity_rad_s": 0.99998441216411,
+          "flex1_target_rad": 1.333,
+          "position_motor_torque_Nm": 0.008546825648123245,
+          "gear_residual_max_rad": 0.00035177451173662444,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.00045027320154644956,
+            "finger1_tip_joint": 0.0003740550121162725,
+            "finger2_joint": -0.0018347251991810674,
+            "finger2_outlet_joint": -0.0002603498193645763,
+            "finger2_tip_joint": 0.00014956787274179043,
+            "finger3_base_joint": -0.004320334841581459,
+            "finger3_joint": 0.023653894918020092,
+            "finger3_outlet_joint": -0.00010948920770705324,
+            "finger3_tip_joint": -0.009132035374368658
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 10,
+              "normal_N": 0.4275318810694536,
+              "distance_m": -9.938881451433526e-06
+            }
+          ]
+        },
+        {
+          "label": "contact_plus_10ms",
+          "step": 13383,
+          "time_s": 6.9703124999999995,
+          "phase": "lift",
+          "flex1_rad": 0.6685923683147477,
+          "flex2_rad": 0.6686144916714933,
+          "flex3_rad": 0.6686093748699736,
+          "flex1_velocity_rad_s": 0.007926469761840636,
+          "flex1_target_rad": 1.333,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 0.00029838094552114836,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0004567513474453993,
+            "finger1_tip_joint": -0.10342067023689784,
+            "finger2_joint": 0.6124142228410127,
+            "finger2_outlet_joint": -0.0002639359829816511,
+            "finger2_tip_joint": -0.21786011884258139,
+            "finger3_base_joint": -0.025151340722578002,
+            "finger3_joint": 0.15604643082794545,
+            "finger3_outlet_joint": -0.00011031114553892674,
+            "finger3_tip_joint": -0.04952593327303987
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 2,
+              "normal_N": 6.050491448385574,
+              "distance_m": -1.1092151923924509e-05
+            },
+            {
+              "hand_link": 10,
+              "normal_N": 2.365141535594031,
+              "distance_m": -1.0109595667412713e-05
+            },
+            {
+              "hand_link": 6,
+              "normal_N": 7.523347137140437,
+              "distance_m": -9.907237203823146e-06
+            }
+          ]
+        },
+        {
+          "label": "contact_plus_100ms",
+          "step": 13556,
+          "time_s": 7.060416666666667,
+          "phase": "lift",
+          "flex1_rad": 0.6687223034693929,
+          "flex2_rad": 0.6687586900684508,
+          "flex3_rad": 0.6686805759414612,
+          "flex1_velocity_rad_s": 0.0004939141538462955,
+          "flex1_target_rad": 1.333,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 0.000586308707525407,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0004461071617322527,
+            "finger1_tip_joint": -0.10850593383298636,
+            "finger2_joint": 0.6222134048166725,
+            "finger2_outlet_joint": -0.0002561401538141419,
+            "finger2_tip_joint": -0.22059035497380833,
+            "finger3_base_joint": -0.03379352223124073,
+            "finger3_joint": 0.13494868472682348,
+            "finger3_outlet_joint": -0.00010521845562614316,
+            "finger3_tip_joint": -0.042646796392414296
+          },
+          "positive_object_contacts": [
+            {
+              "hand_link": 2,
+              "normal_N": 6.380086759786981,
+              "distance_m": -1.0980093385053816e-05
+            },
+            {
+              "hand_link": 10,
+              "normal_N": 2.0735324423016896,
+              "distance_m": -1.0480175149413502e-05
+            },
+            {
+              "hand_link": 6,
+              "normal_N": 7.677186175837772,
+              "distance_m": -9.916980338272674e-06
+            }
+          ]
+        },
+        {
+          "label": "close_end",
+          "step": 10560,
+          "time_s": 5.5,
+          "phase": "close",
+          "flex1_rad": 0.1812419397474018,
+          "flex2_rad": 0.18124140603710592,
+          "flex3_rad": 0.18122807202772664,
+          "flex1_velocity_rad_s": -0.0023088129959231143,
+          "flex1_target_rad": 1.332999728847539,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 1.4514200069731809e-05,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0009791622781313875,
+            "finger1_tip_joint": 0.0003616636641747866,
+            "finger2_joint": -0.00513559509004648,
+            "finger2_outlet_joint": -0.0008341905931630932,
+            "finger2_tip_joint": 0.00013712217273175467,
+            "finger3_base_joint": -0.000981450394484415,
+            "finger3_joint": 0.7973748347531978,
+            "finger3_outlet_joint": -0.0007189988009974592,
+            "finger3_tip_joint": -0.17110554071348938
+          },
+          "positive_object_contacts": []
+        },
+        {
+          "label": "hold_end",
+          "step": 12000,
+          "time_s": 6.25,
+          "phase": "hold_closed",
+          "flex1_rad": 0.1812419397474018,
+          "flex2_rad": 0.18124140603710592,
+          "flex3_rad": 0.18122807202772664,
+          "flex1_velocity_rad_s": -0.002308812995923497,
+          "flex1_target_rad": 1.333,
+          "position_motor_torque_Nm": 0.6,
+          "gear_residual_max_rad": 1.4514200069731809e-05,
+          "gear_reaction_Nm": {
+            "finger1_outlet_joint": -0.0009791622781314248,
+            "finger1_tip_joint": 0.0003616636641749612,
+            "finger2_joint": -0.0051355950900469184,
+            "finger2_outlet_joint": -0.0008341905931630872,
+            "finger2_tip_joint": 0.00013712217273185212,
+            "finger3_base_joint": -0.0009814503944845477,
+            "finger3_joint": 0.7973748347531999,
+            "finger3_outlet_joint": -0.000718998800997462,
+            "finger3_tip_joint": -0.17110554071348985
+          },
+          "positive_object_contacts": []
+        }
+      ],
+      "windows": [
+        {
+          "time_window_s": [
+            3.5,
+            6.960416666666666
+          ],
+          "steps": 6644,
+          "flex1_start_rad": 1.062548589933852e-09,
+          "flex1_end_rad": 0.6660072574263547,
+          "flex1_range_rad": 0.6660072563638061,
+          "mean_abs_flex1_velocity_rad_s": 0.1934779489190741,
+          "position_motor_mean_torque_Nm": 0.46499405327512466,
+          "fraction_position_motor_abs_at_0_6Nm": 0.7755869957856713,
+          "mean_abs_joint_position_error_rad": 0.7463687837788794,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.005190535336793562,
+            "finger1_tip_joint": 0.07580660511525553,
+            "finger2_joint": 0.6862745194700987,
+            "finger2_outlet_joint": 0.005000708844727634,
+            "finger2_tip_joint": 0.2634964894120294,
+            "finger3_base_joint": 0.1943654327990831,
+            "finger3_joint": 0.8882363193558309,
+            "finger3_outlet_joint": 0.004849319337467377,
+            "finger3_tip_joint": 0.2000255911776477
+          },
+          "gear_max_residual_rad": 0.001708152767254334,
+          "positive_object_contact_link_counts": {
+            "2": 6,
+            "10": 109,
+            "6": 1
+          },
+          "object_positive_contact_steps": 115,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            6.960416666666666,
+            7.060416666666666
+          ],
+          "steps": 191,
+          "flex1_start_rad": 0.6661150997631864,
+          "flex1_end_rad": 0.6687220462224377,
+          "flex1_range_rad": 0.0026069464592513025,
+          "mean_abs_flex1_velocity_rad_s": 0.02730424360942301,
+          "position_motor_mean_torque_Nm": 0.6,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 0.6643945566248948,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.0034697800031355907,
+            "finger1_tip_joint": 0.17899835662142405,
+            "finger2_joint": 1.0568641471771012,
+            "finger2_outlet_joint": 0.0032784105087383573,
+            "finger2_tip_joint": 0.3833453355961463,
+            "finger3_base_joint": 0.0713355549889713,
+            "finger3_joint": 0.40149107892826347,
+            "finger3_outlet_joint": 0.003124578561648514,
+            "finger3_tip_joint": 0.14426037983428924
+          },
+          "gear_max_residual_rad": 0.0005861696648900017,
+          "positive_object_contact_link_counts": {
+            "10": 188,
+            "6": 191,
+            "2": 182
+          },
+          "object_positive_contact_steps": 191,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            3.7,
+            4.0
+          ],
+          "steps": 576,
+          "flex1_start_rad": 0.03627698957255337,
+          "flex1_end_rad": 0.181241398958111,
+          "flex1_range_rad": 0.14496558820747976,
+          "mean_abs_flex1_velocity_rad_s": 0.48397078459095944,
+          "position_motor_mean_torque_Nm": 0.051481937563653234,
+          "fraction_position_motor_abs_at_0_6Nm": 0.11284722222222222,
+          "mean_abs_joint_position_error_rad": 0.003045512669448516,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.004195868531113807,
+            "finger1_tip_joint": 0.005098878856275864,
+            "finger2_joint": 0.038899909571347466,
+            "finger2_outlet_joint": 0.004051235259509827,
+            "finger2_tip_joint": 0.004874531361514466,
+            "finger3_base_joint": 0.008841890135954081,
+            "finger3_joint": 0.8882363193558309,
+            "finger3_outlet_joint": 0.003937116051745744,
+            "finger3_tip_joint": 0.19297064599383015
+          },
+          "gear_max_residual_rad": 1.4207671295118907e-05,
+          "positive_object_contact_link_counts": {},
+          "object_positive_contact_steps": 0,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            4.0,
+            5.5
+          ],
+          "steps": 2880,
+          "flex1_start_rad": 0.18124204155792292,
+          "flex1_end_rad": 0.1812419397474018,
+          "flex1_range_rad": 1.6778755471125173e-06,
+          "mean_abs_flex1_velocity_rad_s": 0.0015393407199571132,
+          "position_motor_mean_torque_Nm": 0.5999999999999999,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 0.6829293697430925,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.000979181195340116,
+            "finger1_tip_joint": 0.00036169101348726375,
+            "finger2_joint": 0.005135775504929547,
+            "finger2_outlet_joint": 0.000834208515570118,
+            "finger2_tip_joint": 0.00013714713648785122,
+            "finger3_base_joint": 0.0042616441326665125,
+            "finger3_joint": 0.7973748347532967,
+            "finger3_outlet_joint": 0.0007190124206786479,
+            "finger3_tip_joint": 0.17110554071353845
+          },
+          "gear_max_residual_rad": 1.5194963803255579e-05,
+          "positive_object_contact_link_counts": {},
+          "object_positive_contact_steps": 0,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            5.5,
+            6.25
+          ],
+          "steps": 1440,
+          "flex1_start_rad": 0.18124255947832266,
+          "flex1_end_rad": 0.1812419397474018,
+          "flex1_range_rad": 1.2025067687160274e-06,
+          "mean_abs_flex1_velocity_rad_s": 0.0015392086639517569,
+          "position_motor_mean_torque_Nm": 0.5999999999999999,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 1.151757452840035,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.0009791622781314677,
+            "finger1_tip_joint": 0.0003616636641750183,
+            "finger2_joint": 0.005135595090046987,
+            "finger2_outlet_joint": 0.0008341905931631235,
+            "finger2_tip_joint": 0.00013712217273188765,
+            "finger3_base_joint": 0.004261644132589345,
+            "finger3_joint": 0.7973748347532014,
+            "finger3_outlet_joint": 0.000718998800997506,
+            "finger3_tip_joint": 0.17110554071349013
+          },
+          "gear_max_residual_rad": 1.5194963803255579e-05,
+          "positive_object_contact_link_counts": {},
+          "object_positive_contact_steps": 0,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            6.25,
+            6.6
+          ],
+          "steps": 672,
+          "flex1_start_rad": 0.18124255947832266,
+          "flex1_end_rad": 0.31046380257987455,
+          "flex1_range_rad": 0.12922158892509872,
+          "mean_abs_flex1_velocity_rad_s": 0.36921139755725974,
+          "position_motor_mean_torque_Nm": 0.5999999999999999,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 1.1098260352374343,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.0009822389835884573,
+            "finger1_tip_joint": 0.00037412779969759073,
+            "finger2_joint": 0.005142704732817335,
+            "finger2_outlet_joint": 0.0008360662242153348,
+            "finger2_tip_joint": 0.00014859433803163686,
+            "finger3_base_joint": 0.004413907480674367,
+            "finger3_joint": 0.8154292107266792,
+            "finger3_outlet_joint": 0.000720169312053121,
+            "finger3_tip_joint": 0.19030933992911675
+          },
+          "gear_max_residual_rad": 1.519449591613764e-05,
+          "positive_object_contact_link_counts": {},
+          "object_positive_contact_steps": 0,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            6.6,
+            7.3
+          ],
+          "steps": 1344,
+          "flex1_start_rad": 0.3108810059706356,
+          "flex1_end_rad": 0.6688350847031006,
+          "flex1_range_rad": 0.357954078732465,
+          "mean_abs_flex1_velocity_rad_s": 0.5119609953255303,
+          "position_motor_mean_torque_Nm": 0.3447567772641308,
+          "fraction_position_motor_abs_at_0_6Nm": 0.5565476190476191,
+          "mean_abs_joint_position_error_rad": 0.7580731752673823,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.005190535336793562,
+            "finger1_tip_joint": 0.17899835662142405,
+            "finger2_joint": 1.0568641471771012,
+            "finger2_outlet_joint": 0.005000708844727634,
+            "finger2_tip_joint": 0.3833453355961463,
+            "finger3_base_joint": 0.1943654327990831,
+            "finger3_joint": 0.8250188058613553,
+            "finger3_outlet_joint": 0.004849319337467377,
+            "finger3_tip_joint": 0.2000255911776477
+          },
+          "gear_max_residual_rad": 0.001708152767254334,
+          "positive_object_contact_link_counts": {
+            "2": 649,
+            "10": 758,
+            "6": 653
+          },
+          "object_positive_contact_steps": 767,
+          "hand_self_positive_contact_rows": 0
+        },
+        {
+          "time_window_s": [
+            9.75,
+            10.25
+          ],
+          "steps": 960,
+          "flex1_start_rad": 0.669196592025937,
+          "flex1_end_rad": 0.6691868773487668,
+          "flex1_range_rad": 1.4347884167209557e-05,
+          "mean_abs_flex1_velocity_rad_s": 9.411773502280162e-05,
+          "position_motor_mean_torque_Nm": 0.5999999999999999,
+          "fraction_position_motor_abs_at_0_6Nm": 1.0,
+          "mean_abs_joint_position_error_rad": 0.6638082787416943,
+          "gear_reaction_abs_peak_Nm": {
+            "finger1_outlet_joint": 0.0004451707607107797,
+            "finger1_tip_joint": 0.1344918677740609,
+            "finger2_joint": 0.6888720359498333,
+            "finger2_outlet_joint": 0.000255854848504094,
+            "finger2_tip_joint": 0.24251168030443673,
+            "finger3_base_joint": 0.2110856256809213,
+            "finger3_joint": 0.017684560718101677,
+            "finger3_outlet_joint": 0.00010533898927964571,
+            "finger3_tip_joint": 0.003933502249839035
+          },
+          "gear_max_residual_rad": 0.001172169501037823,
+          "positive_object_contact_link_counts": {
+            "10": 960,
+            "6": 960,
+            "2": 960
+          },
+          "object_positive_contact_steps": 960,
+          "hand_self_positive_contact_rows": 0
+        }
+      ],
+      "trace_limitations": [
+        "Only positive-contact normal force, scalar friction magnitudes, body/link ids and penetration were saved; contact point positions/normals were not saved. Normal-force-to-joint moment and complete dynamic force balance cannot be reconstructed from these records alone.",
+        "Motor_torque is Bullet reported applied actuator torque, not measured DH3 hardware current/force. Gear reaction is this ideal constraint solver readback, not an original DH3 transmission sensor."
+      ]
+    }
+  ],
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "wall_seconds": 0.16184508497826755,
+  "script_sha256": "c3ce91750fdb00d46ef68c452f30d3bd847519ae20489792973ddd401c9e9c17"
+}

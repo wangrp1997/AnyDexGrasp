@@ -1,0 +1,82 @@
+{
+  "status": "original_depth_semantics_compared",
+  "source": {
+    "path": "/tmp/anydex_collision_diag_depth.py",
+    "sha256": "33f72a1620e21707aecf18b1338402505fc2397e15de56e929663619707279dd"
+  },
+  "original_execution_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+    "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+  },
+  "author_collision_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+    "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1"
+  },
+  "rows": [
+    {
+      "scene": "mug_yaw090",
+      "candidate_label": "highest_original_score",
+      "candidate_index": 0,
+      "original_collision_full_depth_m": 0.04999999888241291,
+      "original_DH3_execution_backoff_m": 0.00475,
+      "original_execution_effective_depth_m": 0.04524999888241291,
+      "collision_mesh_min_world_z_m": 0.014745019508078883,
+      "analytically_depth_corrected_source_mesh_min_world_z_m": 0.019479186176413296
+    },
+    {
+      "scene": "mug_yaw090",
+      "candidate_label": "fewest_total_overlaps_tie_highest_score",
+      "candidate_index": 12,
+      "original_collision_full_depth_m": 0.029999999329447746,
+      "original_DH3_execution_backoff_m": 0.00475,
+      "original_execution_effective_depth_m": 0.025249999329447746,
+      "collision_mesh_min_world_z_m": 0.020071981067334876,
+      "analytically_depth_corrected_source_mesh_min_world_z_m": 0.02461614770409564
+    },
+    {
+      "scene": "bowl_yaw000",
+      "candidate_label": "highest_original_score",
+      "candidate_index": 0,
+      "original_collision_full_depth_m": 0.019999999552965164,
+      "original_DH3_execution_backoff_m": 0.00475,
+      "original_execution_effective_depth_m": 0.015249999552965163,
+      "collision_mesh_min_world_z_m": -0.031253929981730266,
+      "analytically_depth_corrected_source_mesh_min_world_z_m": -0.026646429962784598
+    },
+    {
+      "scene": "bowl_yaw000",
+      "candidate_label": "fewest_total_overlaps_tie_highest_score",
+      "candidate_index": 79,
+      "original_collision_full_depth_m": 0.029999999329447746,
+      "original_DH3_execution_backoff_m": 0.00395,
+      "original_execution_effective_depth_m": 0.026049999329447744,
+      "collision_mesh_min_world_z_m": -0.003515846170595527,
+      "analytically_depth_corrected_source_mesh_min_world_z_m": 0.00023665382489913844
+    },
+    {
+      "scene": "bowl_yaw090",
+      "candidate_label": "highest_original_score",
+      "candidate_index": 0,
+      "original_collision_full_depth_m": 0.019999999552965164,
+      "original_DH3_execution_backoff_m": 0.00445,
+      "original_execution_effective_depth_m": 0.015549999552965165,
+      "collision_mesh_min_world_z_m": -0.025293910854599755,
+      "analytically_depth_corrected_source_mesh_min_world_z_m": -0.020888410856916124
+    },
+    {
+      "scene": "bowl_yaw090",
+      "candidate_label": "fewest_total_overlaps_tie_highest_score",
+      "candidate_index": 83,
+      "original_collision_full_depth_m": 0.019999999552965164,
+      "original_DH3_execution_backoff_m": 0.00475,
+      "original_execution_effective_depth_m": 0.015249999552965163,
+      "collision_mesh_min_world_z_m": 0.004519964119388764,
+      "analytically_depth_corrected_source_mesh_min_world_z_m": 0.009190797448797649
+    }
+  ],
+  "finding": "Author collision uses full DH3 depth, while author DH3 execution subtracts position_register/100*5mm. Thus the original collision proxy is roughly4-4.75mm deeper than the corresponding original executed source-hand pose for these six examples. This discrepancy exists in original code and was retained in the faithful reproduction.",
+  "boundary": "Analytic rigid translation of saved source meshes only. These are not executed poses or observed physical outcomes; no gate is changed or bypassed.",
+  "additional_network_forwards": 0,
+  "additional_physical_steps": 0,
+  "additional_collision_queries": 0
+}

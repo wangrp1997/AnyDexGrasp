@@ -1,0 +1,27 @@
+{
+  "scope": "Exactly one no-banana prelift load ablation, not a grasp evaluation",
+  "source_trial": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000",
+  "source_controller_sha256": "5e3cfb3c2c18c0b9e3b4efe7a57c222aa966eeb707ca75345f08ee0e2608f4f1",
+  "source_trace_sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae",
+  "source_code_sha256": "f5e6714ff0ad9911bde51e49f0eb334be44f911d58ed8cb9289f11ac9d7ebf2d",
+  "accepted_controller_sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239",
+  "scene_manifest_sha256": "5423e5d2c2e48e48532902b8e10e088afdf63c9024d19a17af513592b1a4b48e",
+  "intervention": "After zero-step scene identity verification and original-ID hand creation remove only object body before any integration",
+  "retained": [
+    "table",
+    "gravity",
+    "self collision",
+    "two motors",
+    "nine ideal gear constraints",
+    "time step",
+    "solver settings",
+    "original hand pose and complete prelift control script"
+  ],
+  "duration_s": 6.25,
+  "expected_actual_steps": 12000,
+  "object_state_after_first_step_changes_forbidden": true,
+  "stopping_rule": "Stop at 6.25s before lift; no rerun, retuning or object replacement",
+  "measured_comparison": "Does shared flexion pass the previously blocked 0.395rad? Compare original stored first12000 control targets exactly.",
+  "no_grasp_success_claim": true,
+  "hardware_identification_claim": false
+}
