@@ -427,3 +427,23 @@ the separate depth convention remains as in the author API. No calibrated
 robot wrist execution or grasp/lift happened. Actual pipeline, final selection
 and independent receipts are archived as `evidence/dh3_eleven_branch_*` and
 `evidence/dh3_identity_final_selection_20261103.json`.
+
+## Original DH3 kinematics and physics-model boundary
+
+`SIMULATION_HAND_READINESS.md` and its JSON evidence distinguish the released
+hardware register controller, original affine geometry and unvalidated
+physical model. The zero-step audit found positive CAD inertias but conflicts
+among lookup poses, URDF joint limits and mimic equations; both the released
+lookup and original Excel lack a measured position0 closed pose.
+
+The original kinematic formula is now directly usable through
+`dh3_author_kinematics.joint_angles(position,rotation)` and
+`closure_path(start_position,rotation,samples)`. It AST-extracts unchanged
+`rate` and `pos_scope`, validates the source SHA and exactly reproduces all355
+published joint arrays. Running the module saves the selected `[94,67]` to
+`[0,67]` geometric path. This is zero-physics motion geometry, with no claimed
+real duration/force or measured closed endpoint. Original fixed-joint slot4
+is retained in the12-value array and is never made movable. Before a future
+physics adapter, the original generator's position-only link2/3 swaps also
+need explicit geometry consistency checks. No simulation grasp or URDF repair
+is included.

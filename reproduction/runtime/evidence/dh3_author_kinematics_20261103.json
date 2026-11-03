@@ -1,0 +1,154 @@
+{
+  "status": "author_kinematics_validated",
+  "scope": "Pure original geometry mapping and a parameterized geometric closure path only",
+  "source": {
+    "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+    "source": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+    "source_sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+    "original_rate_line": 96,
+    "original_pos_scope_line": 101,
+    "rate_and_pos_scope_AST_unchanged": true,
+    "pos_scope": [
+      [
+        -1.08,
+        0.43
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ],
+      [
+        1.08,
+        -0.43
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ]
+    ],
+    "position_input_range": [
+      0,
+      95
+    ],
+    "rotation_input_range": [
+      0,
+      100
+    ],
+    "rotation_boundary": "The original denominator is0..95; released rotations also include100. This interface preserves the original affine evaluation for100.",
+    "fixed_joint_slot": {
+      "zero_based_index": 4,
+      "name": "finger2_base_joint",
+      "formula_value_rad": 1.0,
+      "URDF_type": "fixed",
+      "physically_actuated": false,
+      "boundary": "The original twelve-value array retains1 here. The fixed joint ignores this value for URDF FK; it is not made movable."
+    },
+    "physics_steps": 0,
+    "real_hardware_connected": false,
+    "closed0_boundary": "Position0 is the original hardware close command and is evaluable by the author formula. No measured position0 pose exists in released lookup/XLSX; this is a geometric formula endpoint, not validated actuation/contact dynamics.",
+    "mesh_frame_boundary": "Original get_meshes swaps position xyz only for links2/3,6/7,10/11 while preserving each rotation. Raw URDF FK is not automatically equivalent to the original assembled collision mesh; that geometry consistency must be checked before a physics port."
+  },
+  "published_lookup": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/width_12D_angle_2D_angle.json",
+    "sha256": "097929420ba7bfcbf3614ab193a7d85dec4bd95c76aca6a96c9dca1ec7ed2a5a",
+    "slots_compared": 355,
+    "per_type_slots": {
+      "pose1": 105,
+      "pose2": 85,
+      "pose3": 107,
+      "pose4": 58
+    },
+    "all_twelve_values_exactly_equal": true,
+    "maximum_absolute_error": 0.0
+  },
+  "selected_top1": {
+    "selection_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_eleven_branch_20261103_v1/selection/RESULTS.json",
+    "sha256": "201ffa9c4427f75fd0cfa55ad29dae6095cf5e5cbce80c395781e4a124d56349",
+    "position": 94.0,
+    "rotation": 67.0,
+    "hand_type": 2,
+    "width_m": 0.09
+  },
+  "path": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_author_kinematics_20261103_v1/selected_top1_to_position0_geometric_path.npz",
+    "sha256": "9371c320b5a534728ea8a6e8e1acba639c6395840169573e9e9e9d753255f09e",
+    "bytes": 4740,
+    "samples": 96,
+    "start_registers": [
+      94.0,
+      67.0
+    ],
+    "end_registers": [
+      0,
+      67.0
+    ],
+    "first_geometry_rad": [
+      -0.015052631578947429,
+      0.014031578947368395,
+      0.01052631578947369,
+      0.0010526315789473745,
+      1.0,
+      0.014031578947368395,
+      0.01052631578947369,
+      0.0010526315789473745,
+      0.015052631578947429,
+      0.014031578947368395,
+      0.01052631578947369,
+      0.0010526315789473745
+    ],
+    "last_geometry_rad": [
+      -0.015052631578947429,
+      1.333,
+      0.06,
+      0.1,
+      1.0,
+      1.333,
+      0.06,
+      0.1,
+      0.015052631578947429,
+      1.333,
+      0.06,
+      0.1
+    ],
+    "time_seconds_specified": false,
+    "forces_or_torques_specified": false,
+    "real_closed_pose_measurement": false,
+    "URDF_limits_or_mimic_modified": false
+  },
+  "physics_steps": 0,
+  "physical_grasps_executed": 0,
+  "hardware_module_imported": false,
+  "CanonDex_modified": false
+}

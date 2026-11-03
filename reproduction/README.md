@@ -31,8 +31,10 @@
 
 ## 接续
 
+原手动力学/控制的实际零步审计见[runtime/SIMULATION_HAND_READINESS.md](runtime/SIMULATION_HAND_READINESS.md)，场景数据与无需下载的最小合成输入见[场景附录](SIMULATION_SCENE_INPUT_APPENDIX.md)。官方2D→12D公式已提供并在355槽全部精确匹配；缺项是已验证的物理驱动/接触模型及一致的URDF配套，不是重新训练表示网络。
+
 1. 保留已完成原DH3完整离线结果；不要重复从下载、依赖编译或单帧前向开始。原手碰撞只检查可见点云，未证明臂可达或抬升。
 2. [官方没有桌面动态仿真](SIMULATION_AND_CONTROL.md)，只有真实UR5+D415/三手和资产准备工具，不直接运行硬件robot/collect脚本。
 3. 再做明确标注的原手仿真移植或Boya适配；不能冒充论文真实抓取成功率复现。
 
-复用已有解释器，依赖局部放`outputs/native_deps`，未新建环境、未改共享Isaac/Torch或系统头。模型/数据/PDF/二进制/大日志/视频不提交，只提交轻量工具、来源和凭据。仅有作者`upstream`，不向作者推送。CanonDex批次保持暂停，259件不恢复。
+复用已有解释器，依赖局部放`outputs/native_deps`，未新建环境、未改共享Isaac/Torch或系统头。模型/数据/PDF/二进制/大日志/视频不提交，只提交轻量工具、来源和凭据。仅有作者`upstream`，不向作者推送。CanonDex由另一服务器维护；本任务已按要求pull其最新代码，后续只处理独立AnyDex仓库，不派发原项目批次。

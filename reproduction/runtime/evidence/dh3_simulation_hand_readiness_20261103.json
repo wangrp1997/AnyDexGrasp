@@ -1,0 +1,1457 @@
+{
+  "scope": "Original DH3 zero-step physics-model readiness, not grasp execution",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "simulation_steps": 0,
+  "physical_grasps_executed": 0,
+  "robot_connection": false,
+  "hardware_module_imported": false,
+  "author_sources_modified": false,
+  "CanonDex_modified": false,
+  "source_files": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/urdf/dh3_urdf.urdf",
+      "sha256": "37c638ad84d68a0ff4af4943a2c2d668912d0f1eda85786cbcf3e09069022cd2",
+      "bytes": 18828
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3.py",
+      "sha256": "de81039f476391133a82608d8b1fa0f5857c6147ee52195faf6bf8d92217f0b9",
+      "bytes": 6119
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+      "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+      "bytes": 20836
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+      "sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+      "bytes": 13713
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/width_12D_angle_2D_angle.json",
+      "sha256": "097929420ba7bfcbf3614ab193a7d85dec4bd95c76aca6a96c9dca1ec7ed2a5a",
+      "bytes": 439709
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_routine_to_angle-use.xlsx",
+      "sha256": "091d9cc346093833c1b5ca470c9f43c5391278090d9418dc100f3488bd92c2f6",
+      "bytes": 16022
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/base_Link.STL",
+      "sha256": "afa731ade17aa5b910a41173d4f62c7bcfdbf7ce1a2f77f4a770c3c770b0a91a",
+      "bytes": 2140484
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_Link.STL",
+      "sha256": "a3521cd83d2520474edf82a702a793b78211e8607aad1fcd6b69e8f2b4f6074c",
+      "bytes": 66284
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_base_Link.STL",
+      "sha256": "375fb35dfd9abbbe9f389d93c2654f44216744ff056127ea5593c264d21340a7",
+      "bytes": 125784
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_outlet_Link.STL",
+      "sha256": "5269b9b0e42f9dd48c0ed8e76b3f33b80e318d87b554a836cc75c1749fcffa47",
+      "bytes": 126784
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_tip_Link.STL",
+      "sha256": "470d3a1264e83ead3030441432b410f26574e56c09133eae090a6dbb405b8910",
+      "bytes": 143984
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_Link.STL",
+      "sha256": "e02334aa8b9b8dcf482e668f4552894a4109e2f77bb64d326656cc912e0336da",
+      "bytes": 66284
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_base_Link.STL",
+      "sha256": "73c06ea4438dd545631228c9d30fe3cd809d61a8f83cd6b0452bc9f08fd408d1",
+      "bytes": 125784
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_outlet_Link.STL",
+      "sha256": "d9d95241e943181687bc03159c615ade9f6f93f306aaa81928f9ec0597e280b6",
+      "bytes": 126784
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_tip_Link.STL",
+      "sha256": "b7ad921393bf0194c3430fa2129e7796586c482e93f9c59b97c7bce48ba0b00d",
+      "bytes": 143984
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_Link.STL",
+      "sha256": "90e1f9cbb54bf798f0a74395cdb587dda6ace80eb0590096c695a0ab0613e16a",
+      "bytes": 66284
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_base_Link.STL",
+      "sha256": "f0b842f71070e386389ced5ae8c19b1bc880a502f157bff9122ba6cbacb686b0",
+      "bytes": 125784
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_outlet_Link.STL",
+      "sha256": "a279206af38e2a5f5e251ebde5d34664e640310cd4d97c14d8587b484be1dd0a",
+      "bytes": 126784
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_tip_Link.STL",
+      "sha256": "35323709b8994f8e097e53abaacd20c8bb3e09485410b06f85bc2b8f9233e6a0",
+      "bytes": 143984
+    }
+  ],
+  "original_hardware_control": {
+    "preshape_position_rotation_registers": [
+      94.0,
+      67.0
+    ],
+    "recorded_original_method_writes": [
+      [
+        "SetTargetPosition",
+        94
+      ],
+      [
+        "SetTargetRotation",
+        67
+      ],
+      [
+        "SetTargetPosition",
+        0
+      ]
+    ],
+    "recorded_original_sleep_seconds": [
+      0.9,
+      0.2
+    ],
+    "initial_force_register": 70,
+    "initial_speed_register": 100,
+    "register_to_SI_force_torque_speed_calibration_present": false,
+    "type_specific_close_targets": false,
+    "close_behavior": "Position register0; rotation register retained. Physical firmware supplies its own actuation/contact response.",
+    "method_constructor_executed": false,
+    "recording_interface_only": true,
+    "DH3_target_backoff_m": 0.0047,
+    "selected_stored_depth_m": 0.03,
+    "selected_net_target_depth_shift_m": 0.0253
+  },
+  "geometric_calibration": {
+    "original_2D_to_12D_ranges": [
+      [
+        -1.08,
+        0.43
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ],
+      [
+        1.08,
+        -0.43
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ]
+    ],
+    "published_slots": 355,
+    "all_published_12D_match_original_linear_formula_max_error": 0.0,
+    "per_type": {
+      "pose1": {
+        "slots": 105,
+        "position_register_range": [
+          7.0,
+          95.0
+        ],
+        "rotation_register_values": [
+          0.0
+        ]
+      },
+      "pose2": {
+        "slots": 85,
+        "position_register_range": [
+          5.0,
+          95.0
+        ],
+        "rotation_register_values": [
+          67.0
+        ]
+      },
+      "pose3": {
+        "slots": 107,
+        "position_register_range": [
+          9.0,
+          95.0
+        ],
+        "rotation_register_values": [
+          100.0
+        ]
+      },
+      "pose4": {
+        "slots": 58,
+        "position_register_range": [
+          2.0,
+          95.0
+        ],
+        "rotation_register_values": [
+          100.0
+        ]
+      }
+    },
+    "original_excel_inspection": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_routine_to_angle-use.xlsx",
+      "reader": "stdlib ZIP/XML only; no package installed",
+      "sheets": [
+        {
+          "sheet": "xl/worksheets/sheet1.xml",
+          "rows_including_header": 113,
+          "headers": {
+            "A1": "width",
+            "B1": "position",
+            "C1": "rotation"
+          },
+          "column_B_position0_rows": [],
+          "position0_count": 0
+        },
+        {
+          "sheet": "xl/worksheets/sheet2.xml",
+          "rows_including_header": 113,
+          "headers": {
+            "A1": "width",
+            "B1": "position",
+            "C1": "rotation"
+          },
+          "column_B_position0_rows": [],
+          "position0_count": 0
+        },
+        {
+          "sheet": "xl/worksheets/sheet3.xml",
+          "rows_including_header": 113,
+          "headers": {
+            "A1": "width",
+            "B1": "position",
+            "C1": "rotation"
+          },
+          "column_B_position0_rows": [],
+          "position0_count": 0
+        },
+        {
+          "sheet": "xl/worksheets/sheet4.xml",
+          "rows_including_header": 113,
+          "headers": {
+            "A1": "width",
+            "B1": "position",
+            "C1": "rotation"
+          },
+          "column_B_position0_rows": [],
+          "position0_count": 0
+        }
+      ],
+      "position0_present": false
+    },
+    "selected_opening_12D_rad": [
+      -0.015052631578947429,
+      0.014031578947368395,
+      0.01052631578947369,
+      0.0010526315789473745,
+      1.0,
+      0.014031578947368395,
+      0.01052631578947369,
+      0.0010526315789473745,
+      0.015052631578947429,
+      0.014031578947368395,
+      0.01052631578947369,
+      0.0010526315789473745
+    ],
+    "position0_formula_endpoint_12D_rad": [
+      -0.015052631578947429,
+      1.333,
+      0.06,
+      0.1,
+      1.0,
+      1.333,
+      0.06,
+      0.1,
+      0.015052631578947429,
+      1.333,
+      0.06,
+      0.1
+    ],
+    "position0_is_in_released_lookup": false,
+    "boundary": "Linear 2D-to-12D is the original offline mesh calibration, not identified underactuated actuator dynamics. Position0 endpoint is computed from that formula, not a released closed-hand dynamic target."
+  },
+  "URDF": {
+    "CAD_exporter": "SolidWorks URDF Exporter",
+    "links": [
+      {
+        "name": "base_Link",
+        "mass_kg": 0.359681668644718,
+        "inertia_eigenvalues_kg_m2": [
+          0.0004218308611077148,
+          0.0004260930519610691,
+          0.0005527012719637853
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/base_Link.STL"
+      },
+      {
+        "name": "finger1_base_Link",
+        "mass_kg": 0.00832299911583519,
+        "inertia_eigenvalues_kg_m2": [
+          9.132607060107977e-07,
+          1.1401592976875656e-06,
+          1.776151039804448e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger1_base_Link.STL"
+      },
+      {
+        "name": "finger1_Link",
+        "mass_kg": 0.00557906977988049,
+        "inertia_eigenvalues_kg_m2": [
+          4.5356172144983494e-07,
+          1.3061675562027e-06,
+          1.694898272405227e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger1_Link.STL"
+      },
+      {
+        "name": "finger1_tip_Link",
+        "mass_kg": 0.0107564294883422,
+        "inertia_eigenvalues_kg_m2": [
+          4.5909832727680697e-07,
+          1.350111080258426e-06,
+          1.5081747971486763e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger1_tip_Link.STL"
+      },
+      {
+        "name": "finger1_outlet_Link",
+        "mass_kg": 0.00494212097275844,
+        "inertia_eigenvalues_kg_m2": [
+          7.642901694353844e-08,
+          7.4768979996243e-07,
+          7.521260518743142e-07
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger1_outlet_Link.STL"
+      },
+      {
+        "name": "finger2_base_Link",
+        "mass_kg": 0.00832299911583519,
+        "inertia_eigenvalues_kg_m2": [
+          9.132607060107603e-07,
+          1.1401592976875194e-06,
+          1.7761510398044382e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger2_base_Link.STL"
+      },
+      {
+        "name": "finger2_Link",
+        "mass_kg": 0.00557906977988033,
+        "inertia_eigenvalues_kg_m2": [
+          4.5356172144982806e-07,
+          1.3061675562026498e-06,
+          1.69489827240518e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger2_Link.STL"
+      },
+      {
+        "name": "finger2_tip_Link",
+        "mass_kg": 0.0107564295938579,
+        "inertia_eigenvalues_kg_m2": [
+          4.5909832371346917e-07,
+          1.3501110875417528e-06,
+          1.5081747987144978e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger2_tip_Link.STL"
+      },
+      {
+        "name": "finger2_outlet_Link",
+        "mass_kg": 0.00494212190694487,
+        "inertia_eigenvalues_kg_m2": [
+          7.642903077556172e-08,
+          7.476905551617351e-07,
+          7.521268070923649e-07
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger2_outlet_Link.STL"
+      },
+      {
+        "name": "finger3_base_Link",
+        "mass_kg": 0.00832299911583507,
+        "inertia_eigenvalues_kg_m2": [
+          9.132607060107982e-07,
+          1.14015929768756e-06,
+          1.7761510398044484e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger3_base_Link.STL"
+      },
+      {
+        "name": "finger3_Link",
+        "mass_kg": 0.0055790697798808,
+        "inertia_eigenvalues_kg_m2": [
+          4.535617214498587e-07,
+          1.3061675562028103e-06,
+          1.6948982724053503e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger3_Link.STL"
+      },
+      {
+        "name": "finger3_tip_Link",
+        "mass_kg": 0.0107564399961694,
+        "inertia_eigenvalues_kg_m2": [
+          4.5909850269467204e-07,
+          1.3501126232512841e-06,
+          1.5081762577834606e-06
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger3_tip_Link.STL"
+      },
+      {
+        "name": "finger3_outlet_Link",
+        "mass_kg": 0.00494212514535466,
+        "inertia_eigenvalues_kg_m2": [
+          7.642904834385985e-08,
+          7.476902385099177e-07,
+          7.521265383024667e-07
+        ],
+        "positive_definite": true,
+        "principal_moment_triangle_condition": true,
+        "collision_mesh": "package://dh3_urdf/meshes/finger3_outlet_Link.STL"
+      }
+    ],
+    "joints": [
+      {
+        "index": 0,
+        "name": "finger1_base_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": -1.0,
+          "upper": 0.54,
+          "effort": 100.0,
+          "velocity": 100.0
+        },
+        "mimic": null,
+        "dynamics": null
+      },
+      {
+        "index": 1,
+        "name": "finger1_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 1.16,
+          "effort": 100.0,
+          "velocity": 100.0
+        },
+        "mimic": null,
+        "dynamics": null
+      },
+      {
+        "index": 2,
+        "name": "finger1_tip_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": -1.0,
+          "upper": 1.0,
+          "effort": 100.0,
+          "velocity": 100.0
+        },
+        "mimic": {
+          "joint": "finger1_joint",
+          "multiplier": "-1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 3,
+        "name": "finger1_outlet_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_joint",
+          "multiplier": "-1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 4,
+        "name": "finger2_base_joint",
+        "type": "fixed",
+        "limit": null,
+        "mimic": null,
+        "dynamics": null
+      },
+      {
+        "index": 5,
+        "name": "finger2_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_joint",
+          "multiplier": "1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 6,
+        "name": "finger2_tip_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_tip_joint",
+          "multiplier": "1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 7,
+        "name": "finger2_outlet_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_outlet_joint",
+          "multiplier": "1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 8,
+        "name": "finger3_base_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_base_joint",
+          "multiplier": "-1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 9,
+        "name": "finger3_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_joint",
+          "multiplier": "1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 10,
+        "name": "finger3_tip_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_tip_joint",
+          "multiplier": "1",
+          "offset": "0"
+        },
+        "dynamics": null
+      },
+      {
+        "index": 11,
+        "name": "finger3_outlet_joint",
+        "type": "revolute",
+        "limit": {
+          "lower": 0.0,
+          "upper": 0.0,
+          "effort": 0.0,
+          "velocity": 0.0
+        },
+        "mimic": {
+          "joint": "finger1_outlet_joint",
+          "multiplier": "1",
+          "offset": "0"
+        },
+        "dynamics": null
+      }
+    ],
+    "all_link_masses_positive": true,
+    "all_inertia_positive_definite": true,
+    "all_inertia_triangle_conditions_pass": true,
+    "mass_sum_kg": 0.44848354243529254,
+    "revolute_count": 11,
+    "mimic_count": 9,
+    "zero_range_effort_velocity_joints": [
+      "finger1_outlet_joint",
+      "finger2_joint",
+      "finger2_tip_joint",
+      "finger2_outlet_joint",
+      "finger3_base_joint",
+      "finger3_joint",
+      "finger3_tip_joint",
+      "finger3_outlet_joint"
+    ],
+    "selected_open_limit_violations": [
+      {
+        "index": 3,
+        "name": "finger1_outlet_joint",
+        "value_rad": 0.0010526315789473745,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 5,
+        "name": "finger2_joint",
+        "value_rad": 0.014031578947368395,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 6,
+        "name": "finger2_tip_joint",
+        "value_rad": 0.01052631578947369,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 7,
+        "name": "finger2_outlet_joint",
+        "value_rad": 0.0010526315789473745,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 8,
+        "name": "finger3_base_joint",
+        "value_rad": 0.015052631578947429,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 9,
+        "name": "finger3_joint",
+        "value_rad": 0.014031578947368395,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 10,
+        "name": "finger3_tip_joint",
+        "value_rad": 0.01052631578947369,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 11,
+        "name": "finger3_outlet_joint",
+        "value_rad": 0.0010526315789473745,
+        "lower": 0.0,
+        "upper": 0.0
+      }
+    ],
+    "geometric_position0_limit_violations": [
+      {
+        "index": 1,
+        "name": "finger1_joint",
+        "value_rad": 1.333,
+        "lower": 0.0,
+        "upper": 1.16
+      },
+      {
+        "index": 3,
+        "name": "finger1_outlet_joint",
+        "value_rad": 0.1,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 5,
+        "name": "finger2_joint",
+        "value_rad": 1.333,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 6,
+        "name": "finger2_tip_joint",
+        "value_rad": 0.06,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 7,
+        "name": "finger2_outlet_joint",
+        "value_rad": 0.1,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 8,
+        "name": "finger3_base_joint",
+        "value_rad": 0.015052631578947429,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 9,
+        "name": "finger3_joint",
+        "value_rad": 1.333,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 10,
+        "name": "finger3_tip_joint",
+        "value_rad": 0.06,
+        "lower": 0.0,
+        "upper": 0.0
+      },
+      {
+        "index": 11,
+        "name": "finger3_outlet_joint",
+        "value_rad": 0.1,
+        "lower": 0.0,
+        "upper": 0.0
+      }
+    ],
+    "selected_open_mimic_mismatches": [
+      {
+        "index": 2,
+        "name": "finger1_tip_joint",
+        "opening_rad": 0.01052631578947369,
+        "mimic_expected_rad": -0.014031578947368395,
+        "difference_rad": 0.024557894736842084
+      },
+      {
+        "index": 3,
+        "name": "finger1_outlet_joint",
+        "opening_rad": 0.0010526315789473745,
+        "mimic_expected_rad": -0.014031578947368395,
+        "difference_rad": 0.01508421052631577
+      }
+    ],
+    "explicit_contact_materials_present": false,
+    "transmission_count": 0
+  },
+  "PyBullet_zero_step": {
+    "module_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet.cpython-312-x86_64-linux-gnu.so",
+    "api_version": 202010061,
+    "connection": "DIRECT private",
+    "bodies": {
+      "default": {
+        "body_id": 0,
+        "joints": [
+          {
+            "index": 0,
+            "name": "finger1_base_joint",
+            "joint_type": 0,
+            "lower": -1.0,
+            "upper": 0.54,
+            "max_force": 100.0,
+            "max_velocity": 100.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00832299911583519,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              2.286913526422215e-06,
+              2.297321165529173e-06,
+              3.457508626085079e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 1,
+            "name": "finger1_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 1.16,
+            "max_force": 100.0,
+            "max_velocity": 100.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00557906977988049,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.5463298003844511e-06,
+              2.7855697671894344e-06,
+              2.104228207588129e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 2,
+            "name": "finger1_tip_joint",
+            "joint_type": 0,
+            "lower": -1.0,
+            "upper": 1.0,
+            "max_force": 100.0,
+            "max_velocity": 100.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0107564294883422,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              4.121629210675679e-06,
+              4.180765177977781e-06,
+              2.0470854503648495e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 3,
+            "name": "finger1_outlet_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00494212097275844,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.1133961270708188e-06,
+              2.4704009157641852e-06,
+              1.6092588873679082e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 4,
+            "name": "finger2_base_joint",
+            "joint_type": 4,
+            "lower": 0.0,
+            "upper": -1.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00832299911583519,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              2.286913526422215e-06,
+              2.297321165529173e-06,
+              3.457508626085079e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 5,
+            "name": "finger2_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00557906977988033,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.5463298003853767e-06,
+              2.785569767189355e-06,
+              2.104228207589039e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 6,
+            "name": "finger2_tip_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0107564295938579,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              4.121629251106995e-06,
+              4.1807652189891935e-06,
+              2.0470854704458306e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 7,
+            "name": "finger2_outlet_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00494212190694487,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.113396337530975e-06,
+              2.4704013827327244e-06,
+              1.6092591915587248e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 8,
+            "name": "finger3_base_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00832299911583507,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              2.2867393972436e-06,
+              2.2971470363505577e-06,
+              3.4575086260850295e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 9,
+            "name": "finger3_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0055790697798808,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.5463298003845384e-06,
+              2.7855697671895895e-06,
+              2.104228207588247e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 10,
+            "name": "finger3_tip_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0107564399961694,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              4.121633237045914e-06,
+              4.180769262117234e-06,
+              2.04708745013812e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 11,
+            "name": "finger3_outlet_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00494212514535466,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.1133970671029419e-06,
+              2.470403001505425e-06,
+              1.609260246053296e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          }
+        ],
+        "joint_count": 12,
+        "num_constraints": 0
+      },
+      "file_inertia": {
+        "body_id": 1,
+        "joints": [
+          {
+            "index": 0,
+            "name": "finger1_base_joint",
+            "joint_type": 0,
+            "lower": -1.0,
+            "upper": 0.54,
+            "max_force": 100.0,
+            "max_velocity": 100.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00832299911583519,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              9.132607060107977e-07,
+              1.1401592976875652e-06,
+              1.7761510398044481e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 1,
+            "name": "finger1_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 1.16,
+            "max_force": 100.0,
+            "max_velocity": 100.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00557906977988049,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              4.5356172144983494e-07,
+              1.3061675562027e-06,
+              1.694898272405227e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 2,
+            "name": "finger1_tip_joint",
+            "joint_type": 0,
+            "lower": -1.0,
+            "upper": 1.0,
+            "max_force": 100.0,
+            "max_velocity": 100.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0107564294883422,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.5081747971486765e-06,
+              1.3501110802584255e-06,
+              4.590983272768069e-07
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 3,
+            "name": "finger1_outlet_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00494212097275844,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              7.642901694353853e-08,
+              7.521260518743143e-07,
+              7.476897999624302e-07
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 4,
+            "name": "finger2_base_joint",
+            "joint_type": 4,
+            "lower": 0.0,
+            "upper": -1.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00832299911583519,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              9.132607060107602e-07,
+              1.1401592976875188e-06,
+              1.776151039804438e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 5,
+            "name": "finger2_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00557906977988033,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              4.53561721449828e-07,
+              1.30616755620265e-06,
+              1.6948982724051798e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 6,
+            "name": "finger2_tip_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0107564295938579,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.508174798714498e-06,
+              1.3501110875417524e-06,
+              4.590983237134687e-07
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 7,
+            "name": "finger2_outlet_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00494212190694487,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              7.64290307755616e-08,
+              7.521268070923644e-07,
+              7.476905551617351e-07
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 8,
+            "name": "finger3_base_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00832299911583507,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              9.132607060107981e-07,
+              1.1401592976875599e-06,
+              1.7761510398044481e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 9,
+            "name": "finger3_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0055790697798808,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              4.535617214498586e-07,
+              1.30616755620281e-06,
+              1.6948982724053503e-06
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 10,
+            "name": "finger3_tip_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.0107564399961694,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              1.5081762577834603e-06,
+              1.3501126232512835e-06,
+              4.5909850269467215e-07
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          },
+          {
+            "index": 11,
+            "name": "finger3_outlet_joint",
+            "joint_type": 0,
+            "lower": 0.0,
+            "upper": 0.0,
+            "max_force": 0.0,
+            "max_velocity": 0.0,
+            "joint_damping": 0.0,
+            "joint_friction": 0.0,
+            "mass_kg": 0.00494212514535466,
+            "lateral_friction": 0.5,
+            "local_inertia_diagonal": [
+              7.642904834385979e-08,
+              7.521265383024667e-07,
+              7.476902385099176e-07
+            ],
+            "restitution": 0.0,
+            "rolling_friction": 0.0,
+            "spinning_friction": 0.0,
+            "contact_damping": -1.0,
+            "contact_stiffness": -1.0,
+            "collision_shape_count": 1
+          }
+        ],
+        "joint_count": 12,
+        "num_constraints": 0
+      }
+    },
+    "mimic_reset_probe": {
+      "command": "resetJointState(finger1_joint,0.5)",
+      "before": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "after": [
+        0.0,
+        0.5,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "other_mimicked_joint_states_unchanged": true
+    },
+    "lookup_can_be_teleported_beyond_declared_limits": true,
+    "no_step_guard_calls": 0
+  },
+  "conclusion": "Ready for original geometric/FK reproduction; not yet a validated original physical DH3 simulation. Raw URDF limits/mimic and the offline lookup are incompatible, and device force/speed commands lack SI actuator calibration. A separately versioned, explicitly validated physics/control port is required."
+}

@@ -1,0 +1,127 @@
+{
+  "recorded_unix": 1793700309.790229,
+  "scope": "Read-only scene/object input audit; no new simulation/render/forward/training/download",
+  "demo_contains_object_poses": true,
+  "demo_pose_shape": [
+    3,
+    4,
+    9
+  ],
+  "demo_cls_indexes_one_based": [
+    1,
+    3,
+    6,
+    9,
+    23,
+    27,
+    52,
+    62,
+    39
+  ],
+  "corresponding_graspnet_model_directories": [
+    "000",
+    "002",
+    "005",
+    "008",
+    "022",
+    "026",
+    "051",
+    "061",
+    "038"
+  ],
+  "max_pose_rotation_orthogonality_error": 5.960464477539063e-08,
+  "missing_for_demo_physical_scene": [
+    "corresponding complete object CAD/texture",
+    "camera/table/world extrinsics",
+    "dynamic mass/inertia/friction declarations",
+    "initialization and execution protocol"
+  ],
+  "author_144_CAD_public_link_found": false,
+  "author_CAD_availability": "Supplementary figure caption: available upon request",
+  "official_graspnet_model_package_public": true,
+  "official_models_package_advertised_size_GB": 4.3,
+  "official_models_package_downloaded": false,
+  "minimum_new_downloads_required_for_synthetic_cube_smoke": 0,
+  "existing_cube_side_m": 0.05,
+  "existing_cube_mass_kg": 0.1,
+  "existing_source_cube_inertia_diagonal": [
+    1,
+    1,
+    1
+  ],
+  "new_adapter_proposed_uniform_cube_inertia_diagonal": [
+    4.166666666666668e-05,
+    4.166666666666668e-05,
+    4.166666666666668e-05
+  ],
+  "synthetic_cube_world_center_m": [
+    0,
+    0.08,
+    0.025
+  ],
+  "synthetic_camera_world_position_m": [
+    0,
+    0,
+    0.5
+  ],
+  "synthetic_camera_R_WC": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "synthetic_protocol_executed": false,
+  "files": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/meta.mat",
+      "bytes": 881,
+      "sha256": "9ed5451d1f3b34c2f78f9912e16c004b416a20fce22f950fdfc0a1245d06c5d4"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/supp.tex",
+      "bytes": 9236,
+      "sha256": "5216f8a53c46f7b4d05bcec292c3ad35591ea9dd513374adcaea9203161e680a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/dataset/graspnet.py",
+      "bytes": 24422,
+      "sha256": "496a386221d4fe54d9c3226b1d3f97e53fcc98582f50cfd63582ef394d6e4d90"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/metadata/graspnet_datasets.html",
+      "bytes": 23269,
+      "sha256": "5a879b799ad4ec42932ed67da8bc01d78b885dedefc9555f3c2f29ed4b7a0dbe"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet_data/cube.obj",
+      "bytes": 836,
+      "sha256": "bc49d37fdba98c976719f0e3d2a59192558c45e66dcfbba6ab3e17fe773fe00d"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet_data/cube_small.urdf",
+      "bytes": 732,
+      "sha256": "67cdb8697ea1478d83b5910d690f207ca9dc19604733ed336fd3c675a2b5da65"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet_data/plane.urdf",
+      "bytes": 684,
+      "sha256": "0854ed06ba0b15079ba05396b4138f366dc784d670583d96230f3b5a4105bae2"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet_data/plane100.obj",
+      "bytes": 365,
+      "sha256": "0ef1366701af4d234af4f98789249ec6e9383914d9497c85d8113d9a445bf4da"
+    }
+  ]
+}
