@@ -1,0 +1,23 @@
+{
+  "scope": "Static affine-subspace verification, zero physics",
+  "joint_order": [
+    "finger1_base_joint",
+    "finger1_joint",
+    "finger1_outlet_joint",
+    "finger1_tip_joint",
+    "finger2_joint",
+    "finger2_outlet_joint",
+    "finger2_tip_joint",
+    "finger3_base_joint",
+    "finger3_joint",
+    "finger3_outlet_joint",
+    "finger3_tip_joint"
+  ],
+  "C_rank": 9,
+  "configuration_dimension": 2,
+  "max_abs_C_A": 0.0,
+  "max_abs_C_b_minus_d": 0.0,
+  "source_controller_receipt": "outputs/dh3_cube_physics_20261103_v1/CONTROLLER.json",
+  "boundary": "Algebraic geometric relation only, not a measured rigid transmission/contact model",
+  "new_physics_steps": 0
+}

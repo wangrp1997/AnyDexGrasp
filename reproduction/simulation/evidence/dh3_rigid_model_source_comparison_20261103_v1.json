@@ -1,0 +1,34 @@
+{
+  "status": "original_finite_variant_to_rigid_variant_source_comparison_verified",
+  "original_frozen_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_cube_physics_20261103_v1/controller_source_frozen.py",
+    "sha256": "8d0a0f0180c223f626813fa84d3adae63509807c93136796258b2e5c23f8fb0e"
+  },
+  "rigid_frozen_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_rigid_cube_physics_20261103_v1/controller_source_frozen.py",
+    "sha256": "bad3f61d58b2861b109080eca0c72bb252f9f3e8c3c529bc956aa3cafe5a2c6d"
+  },
+  "model_sha256": "571f31eef67c719a5fb21f9adef9ed939374de314b4f8d04c5dba4f92025f4fd",
+  "model_prior_source_hash_verified": true,
+  "AST_identical": {
+    "CoupledDH3.__init__": true,
+    "CoupledDH3.com_target": true,
+    "CoupledDH3.command": true,
+    "CoupledDH3.observe": true,
+    "affine_map": true,
+    "configure": true,
+    "smooth": true,
+    "run_cube.entire_integration_loop": true,
+    "run_empty.entire_integration_loop": true
+  },
+  "only_PhysicsAssumptions_field_changed": [
+    "gear_max_torque_Nm"
+  ],
+  "changed_values": [
+    0.8,
+    100.0
+  ],
+  "boundary": "Initialization force/gear construction, joint commands, observations, solver configure and full integration loops are unchanged AST. New model/receipt/metric/CLI scaffolding is separate from these methods.",
+  "new_physics_steps": 0,
+  "new_forward_passes": 0
+}

@@ -1,5 +1,7 @@
 # Original DH3 simulation readiness
 
+更新：本文保留此前原模型/源码审计；后续独立DH3单方块物理烟测已通过，当前结果见[仿真说明](../simulation/README.md)。
+
 The original DH3 is ready for the already completed geometry/inference
 reproduction. Its released assets are **not yet a validated physical DH3
 simulation**. This audit loaded the unchanged URDF twice in private PyBullet
@@ -164,3 +166,22 @@ inference collision gate. A later separately versioned port needs explicit
 per-link geometry comparison; merely increasing joint limits does not make
 it validated. No URDF edit, geometry-port implementation or dynamic test was
 performed in this stage.
+
+## Later geometric adaptation completed
+
+The next authorized stage resolved the original position-only link swap with
+an explicit static tree adapter, documented in
+`../simulation/DH3_GEOMETRY_ADAPTER.md`. All355 preshapes plus96 formula closure
+points now match every original entity STL vertex (max3.2514e-8m); original
+13 entity inertias/STLs remain unchanged, with one zero-mass coordinate helper.
+This solves geometry alignment without per-frame mesh resets. Original URDF
+observations above remain unchanged, and this later geometry check does not
+by itself validate dynamic coupling, hardware force calibration or lifting.
+
+The later exact adapter's zero-mass helper was found dynamically locked in
+PyBullet by separate controller diagnostics. The single helperless v2 keeps
+all13 original entity inertias/STLs and bounds the third-tip source-Z
+approximation:451-case/all-vertex maximum0.122001µm, below1µm. Its explicit
+joint map and geometry evidence are documented in
+`../simulation/DH3_GEOMETRY_ADAPTER.md`; no helper mass, mesh scaling or
+control/scene change is introduced by that alternative.

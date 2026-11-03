@@ -1,0 +1,372 @@
+{
+  "scope": "Static original-geometry URDF adapter; dynamic controller independently specified",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "source_URDF": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/urdf/dh3_urdf.urdf",
+  "source_URDF_sha256": "37c638ad84d68a0ff4af4943a2c2d668912d0f1eda85786cbcf3e09069022cd2",
+  "source_generator": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+  "source_generator_sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+  "kinematic_source": {
+    "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+    "source": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+    "source_sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+    "original_rate_line": 96,
+    "original_pos_scope_line": 101,
+    "rate_and_pos_scope_AST_unchanged": true,
+    "pos_scope": [
+      [
+        -1.08,
+        0.43
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ],
+      [
+        1.08,
+        -0.43
+      ],
+      [
+        1.333,
+        0.0
+      ],
+      [
+        0.06,
+        0.01
+      ],
+      [
+        0.1,
+        0
+      ]
+    ],
+    "position_input_range": [
+      0,
+      95
+    ],
+    "rotation_input_range": [
+      0,
+      100
+    ],
+    "rotation_boundary": "The original denominator is0..95; released rotations also include100. This interface preserves the original affine evaluation for100.",
+    "fixed_joint_slot": {
+      "zero_based_index": 4,
+      "name": "finger2_base_joint",
+      "formula_value_rad": 1.0,
+      "URDF_type": "fixed",
+      "physically_actuated": false,
+      "boundary": "The original twelve-value array retains1 here. The fixed joint ignores this value for URDF FK; it is not made movable."
+    },
+    "physics_steps": 0,
+    "real_hardware_connected": false,
+    "closed0_boundary": "Position0 is the original hardware close command and is evaluable by the author formula. No measured position0 pose exists in released lookup/XLSX; this is a geometric formula endpoint, not validated actuation/contact dynamics.",
+    "mesh_frame_boundary": "Original get_meshes swaps position xyz only for links2/3,6/7,10/11 while preserving each rotation. Raw URDF FK is not automatically equivalent to the original assembled collision mesh; that geometry consistency must be checked before a physics port."
+  },
+  "output_URDF": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_geometry_adapter_20261103_v1/dh3_author_geometry.urdf",
+  "output_URDF_sha256": "dd83244e48f7b147959f256e21c15344d86be78956c0e0b25bab1991400a93ce",
+  "movable_joint_map": {
+    "finger1_base_joint": {
+      "weights_author12": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger1_joint": {
+      "weights_author12": [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger1_outlet_joint": {
+      "weights_author12": [
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger1_tip_joint": {
+      "weights_author12": [
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger2_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger2_outlet_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger2_tip_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger3_base_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger3_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger3_outlet_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger3_author_counterflex_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "offset_rad": 0.0
+    },
+    "finger3_tip_joint": {
+      "weights_author12": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "offset_rad": 0.0
+    }
+  },
+  "fixed_original_joint": {
+    "name": "finger2_base_joint",
+    "author_index": 4,
+    "formula_value": 1.0,
+    "kept_fixed": true
+  },
+  "helper_frames": [
+    {
+      "helper": "finger3_author_counterflex_frame",
+      "mass_kg": 0.0,
+      "Z_origin_delta_rad": 3.6732050998633525e-06,
+      "reason": "Original main/outlet rpy differ. Counterflex before this fixed delta preserves both exact source rotations."
+    }
+  ],
+  "original_entity_links": 13,
+  "total_links": 14,
+  "original_13_entity_inertials_preserved": true,
+  "original_meshes_unchanged": true,
+  "mesh_files": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/base_Link.STL",
+      "sha256": "afa731ade17aa5b910a41173d4f62c7bcfdbf7ce1a2f77f4a770c3c770b0a91a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_Link.STL",
+      "sha256": "a3521cd83d2520474edf82a702a793b78211e8607aad1fcd6b69e8f2b4f6074c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_base_Link.STL",
+      "sha256": "375fb35dfd9abbbe9f389d93c2654f44216744ff056127ea5593c264d21340a7"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_outlet_Link.STL",
+      "sha256": "5269b9b0e42f9dd48c0ed8e76b3f33b80e318d87b554a836cc75c1749fcffa47"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_tip_Link.STL",
+      "sha256": "470d3a1264e83ead3030441432b410f26574e56c09133eae090a6dbb405b8910"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_Link.STL",
+      "sha256": "e02334aa8b9b8dcf482e668f4552894a4109e2f77bb64d326656cc912e0336da"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_base_Link.STL",
+      "sha256": "73c06ea4438dd545631228c9d30fe3cd809d61a8f83cd6b0452bc9f08fd408d1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_outlet_Link.STL",
+      "sha256": "d9d95241e943181687bc03159c615ade9f6f93f306aaa81928f9ec0597e280b6"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_tip_Link.STL",
+      "sha256": "b7ad921393bf0194c3430fa2129e7796586c482e93f9c59b97c7bce48ba0b00d"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_Link.STL",
+      "sha256": "90e1f9cbb54bf798f0a74395cdb587dda6ace80eb0590096c695a0ab0613e16a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_base_Link.STL",
+      "sha256": "f0b842f71070e386389ced5ae8c19b1bc880a502f157bff9122ba6cbacb686b0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_outlet_Link.STL",
+      "sha256": "a279206af38e2a5f5e251ebde5d34664e640310cd4d97c14d8587b484be1dd0a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_tip_Link.STL",
+      "sha256": "35323709b8994f8e097e53abaacd20c8bb3e09485410b06f85bc2b8f9233e6a0"
+    }
+  ],
+  "limit_policy": "Only geometry envelopes recomputed from original affine position[0,95]/rotation[0,100] domain. Original existing effort/velocity retained, including zeros; these are not validated motor limits.",
+  "mimic_policy": "Original incompatible mimic tags removed. This explicit linear joint map defines geometry; use a separately validated dynamic coupling/controller.",
+  "no_per_frame_mesh_pose_override": true,
+  "physics_steps": 0,
+  "dynamic_validity_claim": false
+}

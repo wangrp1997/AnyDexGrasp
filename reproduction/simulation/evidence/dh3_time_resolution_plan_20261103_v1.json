@@ -1,0 +1,481 @@
+{
+  "model_id": "DH3_frozen_time_resolution_plan_v1",
+  "frozen_before_new_physics": true,
+  "physics_steps": 0,
+  "controller_source": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_time_resolution_smoke.py",
+  "controller_source_sha256": "4326610c547bd3315be52c9c3652407da5b8a49fc020a131ee06b4f65814a463",
+  "prior_controller_source": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_physics_smoke.py",
+  "prior_controller_source_sha256": "8180bc71c7e7c3202e992b83366c23ab859961f61835b836c7f08e3b1d8ce204",
+  "adapter_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_geometry_adapter_20261103_v2/ADAPTER.json",
+  "adapter_manifest_sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7",
+  "URDF_sha256": "9252f472a4c341419dba438261eda50652209d0e6def4f270cb947c84816de8a",
+  "source_meshes": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/base_Link.STL",
+      "sha256": "afa731ade17aa5b910a41173d4f62c7bcfdbf7ce1a2f77f4a770c3c770b0a91a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_Link.STL",
+      "sha256": "a3521cd83d2520474edf82a702a793b78211e8607aad1fcd6b69e8f2b4f6074c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_base_Link.STL",
+      "sha256": "375fb35dfd9abbbe9f389d93c2654f44216744ff056127ea5593c264d21340a7"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_outlet_Link.STL",
+      "sha256": "5269b9b0e42f9dd48c0ed8e76b3f33b80e318d87b554a836cc75c1749fcffa47"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_tip_Link.STL",
+      "sha256": "470d3a1264e83ead3030441432b410f26574e56c09133eae090a6dbb405b8910"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_Link.STL",
+      "sha256": "e02334aa8b9b8dcf482e668f4552894a4109e2f77bb64d326656cc912e0336da"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_base_Link.STL",
+      "sha256": "73c06ea4438dd545631228c9d30fe3cd809d61a8f83cd6b0452bc9f08fd408d1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_outlet_Link.STL",
+      "sha256": "d9d95241e943181687bc03159c615ade9f6f93f306aaa81928f9ec0597e280b6"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_tip_Link.STL",
+      "sha256": "b7ad921393bf0194c3430fa2129e7796586c482e93f9c59b97c7bce48ba0b00d"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_Link.STL",
+      "sha256": "90e1f9cbb54bf798f0a74395cdb587dda6ace80eb0590096c695a0ab0613e16a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_base_Link.STL",
+      "sha256": "f0b842f71070e386389ced5ae8c19b1bc880a502f157bff9122ba6cbacb686b0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_outlet_Link.STL",
+      "sha256": "a279206af38e2a5f5e251ebde5d34664e640310cd4d97c14d8587b484be1dd0a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_tip_Link.STL",
+      "sha256": "35323709b8994f8e097e53abaacd20c8bb3e09485410b06f85bc2b8f9233e6a0"
+    }
+  ],
+  "engineering_rating_gear_row_cap_Nm": 100.0,
+  "motor_and_wrist_unchanged": true,
+  "parameters": {
+    "dt": 0.004166666666666667,
+    "solver_iterations": 100,
+    "non_contact_inner_iterations": 20,
+    "gravity_m_s2": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "position_motor_max_torque_Nm": 0.6,
+    "rotation_motor_max_torque_Nm": 0.3,
+    "position_motor_max_velocity_rad_s": 1.0,
+    "rotation_motor_max_velocity_rad_s": 0.5,
+    "gear_max_torque_Nm": 100.0,
+    "gear_erp": 0.2,
+    "wrist_max_force_per_row_N_or_Nm": 30.0,
+    "wrist_erp": 0.2,
+    "position_gain": 0.15,
+    "velocity_gain": 1.0,
+    "contact_lateral_friction": 0.5,
+    "contact_restitution": 0.0,
+    "geometric_margin_m": 0.001
+  },
+  "comparison_protocol": "Exactly these three runs, with cap100/inner20/forces/collisions/physical-time control/gates fixed; no unlimited dt or success-driven search",
+  "bound_status": "The geometry radius/diameter is a triangle-inequality bound. Wrench-times-diameter is an engineering load scale only, NOT a rigorous constraint-multiplier upper bound or hardware identification.",
+  "load_scale_terms": {
+    "hand_mass_kg": 0.4484835424352925,
+    "frozen_cube_mass_kg": 0.1,
+    "gravity_norm_m_s2": 9.81,
+    "geometry_radius_bound_about_baseLink_m": 0.2327899422838477,
+    "geometry_diameter_bound_m": 0.4655798845676954,
+    "wrist_force_norm_scale_N": 51.96152422706631,
+    "wrist_torque_norm_scale_Nm": 51.96152422706631,
+    "active_motor_absolute_torque_sum_Nm": 0.8999999999999999,
+    "formula": "sqrt(3)*30 + D*(sqrt(3)*30 + (m_hand+.1)*9.81) + .6+.3",
+    "engineering_moment_scale_Nm": 79.55887477057729,
+    "selection": "100Nm predeclared finite ideal-structure numerical ceiling, chosen above this engineering load scale; not adjusted after a new trial"
+  },
+  "per_link_radius_bounds": {
+    "base_Link": {
+      "tree_origin_path_length_m": 0.0,
+      "max_mesh_vertex_local_norm_m": 0.12228133329467498,
+      "local_COM_norm_m": 0.03656048695707625,
+      "all_relevant_points_radius_bound_m": 0.12228133329467498
+    },
+    "finger1_base_Link": {
+      "tree_origin_path_length_m": 0.10986506903026104,
+      "max_mesh_vertex_local_norm_m": 0.029176713817235883,
+      "local_COM_norm_m": 0.005359403045959161,
+      "all_relevant_points_radius_bound_m": 0.1390417828474969
+    },
+    "finger1_Link": {
+      "tree_origin_path_length_m": 0.1327308925719575,
+      "max_mesh_vertex_local_norm_m": 0.06458446639989526,
+      "local_COM_norm_m": 0.03015209559908169,
+      "all_relevant_points_radius_bound_m": 0.19731535897185276
+    },
+    "finger1_tip_Link": {
+      "tree_origin_path_length_m": 0.18773131334307525,
+      "max_mesh_vertex_local_norm_m": 0.04505670904806131,
+      "local_COM_norm_m": 0.018461794801053866,
+      "all_relevant_points_radius_bound_m": 0.23278802239113655
+    },
+    "finger1_outlet_Link": {
+      "tree_origin_path_length_m": 0.1263430955094848,
+      "max_mesh_vertex_local_norm_m": 0.060168517529601936,
+      "local_COM_norm_m": 0.025842190124172434,
+      "all_relevant_points_radius_bound_m": 0.18651161303908675
+    },
+    "finger2_base_Link": {
+      "tree_origin_path_length_m": 0.1098631222248849,
+      "max_mesh_vertex_local_norm_m": 0.029176713817235883,
+      "local_COM_norm_m": 0.005359403045959182,
+      "all_relevant_points_radius_bound_m": 0.13903983604212078
+    },
+    "finger2_Link": {
+      "tree_origin_path_length_m": 0.13272894576658137,
+      "max_mesh_vertex_local_norm_m": 0.06458446639989526,
+      "local_COM_norm_m": 0.030152095599082593,
+      "all_relevant_points_radius_bound_m": 0.19731341216647663
+    },
+    "finger2_tip_Link": {
+      "tree_origin_path_length_m": 0.18772936653769912,
+      "max_mesh_vertex_local_norm_m": 0.04505670904806131,
+      "local_COM_norm_m": 0.018461794460523314,
+      "all_relevant_points_radius_bound_m": 0.23278607558576042
+    },
+    "finger2_outlet_Link": {
+      "tree_origin_path_length_m": 0.12634114870410867,
+      "max_mesh_vertex_local_norm_m": 0.060168517529601936,
+      "local_COM_norm_m": 0.025842184195558487,
+      "all_relevant_points_radius_bound_m": 0.18650966623371062
+    },
+    "finger3_base_Link": {
+      "tree_origin_path_length_m": 0.10986699959496482,
+      "max_mesh_vertex_local_norm_m": 0.029176713817235883,
+      "local_COM_norm_m": 0.005359403045959046,
+      "all_relevant_points_radius_bound_m": 0.1390437134122007
+    },
+    "finger3_Link": {
+      "tree_origin_path_length_m": 0.13273281246466864,
+      "max_mesh_vertex_local_norm_m": 0.06458446639989526,
+      "local_COM_norm_m": 0.030152095599081826,
+      "all_relevant_points_radius_bound_m": 0.1973172788645639
+    },
+    "finger3_tip_Link": {
+      "tree_origin_path_length_m": 0.1877332332357864,
+      "max_mesh_vertex_local_norm_m": 0.04505670904806131,
+      "local_COM_norm_m": 0.01846179823286502,
+      "all_relevant_points_radius_bound_m": 0.2327899422838477
+    },
+    "finger3_outlet_Link": {
+      "tree_origin_path_length_m": 0.1263450260741886,
+      "max_mesh_vertex_local_norm_m": 0.060168517529601936,
+      "local_COM_norm_m": 0.025842201901786682,
+      "all_relevant_points_radius_bound_m": 0.18651354360379052
+    }
+  },
+  "joint_order": [
+    "finger1_base_joint",
+    "finger1_joint",
+    "finger1_outlet_joint",
+    "finger1_tip_joint",
+    "finger2_joint",
+    "finger2_outlet_joint",
+    "finger2_tip_joint",
+    "finger3_base_joint",
+    "finger3_joint",
+    "finger3_outlet_joint",
+    "finger3_tip_joint"
+  ],
+  "masters": [
+    "finger1_joint",
+    "finger1_base_joint"
+  ],
+  "A": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.037509377344336,
+      0.0
+    ],
+    [
+      1.0750187546886723,
+      0.0
+    ],
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.037509377344336,
+      0.0
+    ],
+    [
+      1.0750187546886723,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0
+    ],
+    [
+      1.0,
+      0.0
+    ],
+    [
+      1.037509377344336,
+      0.0
+    ],
+    [
+      1.0750187546886723,
+      0.0
+    ]
+  ],
+  "b": [
+    0.0,
+    0.0,
+    0.010000000000000231,
+    0.0,
+    0.0,
+    0.010000000000000231,
+    0.0,
+    0.0,
+    0.0,
+    0.010000000000000231,
+    0.0
+  ],
+  "C": [
+    [
+      0.0,
+      -1.037509377344336,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0750187546886723,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.037509377344336,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0750187546886723,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.037509377344336,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      -1.0750187546886723,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "constraint_offsets": [
+    0.010000000000000231,
+    0.0,
+    0.0,
+    0.010000000000000231,
+    0.0,
+    0.0,
+    0.0,
+    0.010000000000000231,
+    0.0
+  ],
+  "constraint_matrix_rank": 9,
+  "CA_max_abs": 0.0,
+  "Cb_minus_offset_max_abs": 0.0,
+  "constraint_singular_values": [
+    3.1138839241419145,
+    1.4142135623730954,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0000000000000002,
+    1.0,
+    1.0,
+    0.9999999999999999,
+    0.9999999999999997
+  ],
+  "mechanics": {
+    "coordinate_relation": "q=A*u+b; C*q=offset; C*A=0; rank(C)=9",
+    "dynamics": "M*qdd+h=B*tau+J_contact^T*f+C^T*lambda",
+    "ideal_constraint_power": "lambda^T*C*qdot=0 when the ideal kinematic relation holds exactly",
+    "cap_interpretation": "Gear lambda is an internal structural multiplier, not an additional motor command. The prior .8Nm numerical ceiling permits transmission slip and is not an identified clutch model.",
+    "nonideal_boundary": "Finite cap, ERP and finite solver iterations can violate the ideal relation and create correction work. Contact/impact/constraint conditioning prevents this load scale proving a global multiplier bound.",
+    "work_measure": "sum(abs(lambda_k * (e_k-e_(k-1)))), e=Cq-offset; sampled correction-work proxy only, not a rigorous energy upper bound"
+  },
+  "acceptance_unchanged": {
+    "max_gear_residual_rad": 0.01,
+    "peak_joint_velocity_rad_s": 1.5,
+    "max_wrist_COM_error_m": 0.002,
+    "active_motor_torque_caps_Nm": [
+      0.6,
+      0.3
+    ],
+    "gear_row_reaction_cap_Nm": 100.0,
+    "finite": true,
+    "empty_tracking_alternative": "Actual non-neighbor selfcontact plus master speed<.05rad/s; remaining target error always reported",
+    "cube_observed_lift_m": 0.05,
+    "cube_final_lowest_world_z_m": 0.04,
+    "cube_positive_final_contacts": true
+  },
+  "primary_engine_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/sources/pybullet-3.2.7/src/BulletDynamics/Featherstone/btMultiBodyGearConstraint.cpp",
+    "sha256": "4b76e497e0a0100583fc05fef55b14ab89452725d9972e1014bd6a391c564b4a",
+    "jacobian_lines": [
+      107,
+      108
+    ],
+    "symmetric_constraint_impulse_call_line": 146
+  },
+  "hardware_claim": false,
+  "original_author_controller_claim": false,
+  "prior_rigid_model": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_rigid_transmission_model_20261103_v1/MODEL.json",
+    "sha256": "571f31eef67c719a5fb21f9adef9ed939374de314b4f8d04c5dba4f92025f4fd"
+  },
+  "time_resolution_plan": {
+    "reference_observation_time_step_s": 0.004166666666666667,
+    "num_sub_steps_per_recorded_step": 1,
+    "control_physical_functions_and_durations_unchanged": true,
+    "source_scene_manifest_unchanged": true,
+    "candidate_and_RGBD_reused_without_new_inference": true,
+    "frame_rate_fps": 20,
+    "planned_runs": [
+      {
+        "mode": "cube",
+        "hz": 480,
+        "time_step_s": 0.0020833333333333333,
+        "expected_steps": 4920,
+        "frame_stride_steps": 24,
+        "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt480_cube_physics_20261103_v1"
+      },
+      {
+        "mode": "cube",
+        "hz": 960,
+        "time_step_s": 0.0010416666666666667,
+        "expected_steps": 9840,
+        "frame_stride_steps": 48,
+        "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt960_cube_physics_20261103_v1"
+      },
+      {
+        "mode": "empty",
+        "hz": 960,
+        "time_step_s": 0.0010416666666666667,
+        "expected_steps": 7920,
+        "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt960_empty_physics_20261103_v1"
+      }
+    ],
+    "inference_status": "No new network/collision candidate search; same original cube top1",
+    "scope": "Exactly these three runs, with cap100/inner20/forces/collisions/physical-time control/gates fixed; no unlimited dt or success-driven search",
+    "order_hypothesis": "For smooth static load and fixed effective mass/ERP, bias acceleration scales beta*e/dt^2, suggesting e~dt^2. Nonsmooth friction/contact switching/impacts do not ensure this order; data must establish or reject it.",
+    "recording": "Every actual integration step saves q,v,contact,reaction. No hidden numSubSteps>1.20fps stride24/48. Work/power proxy uses actual dt."
+  }
+}

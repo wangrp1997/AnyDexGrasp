@@ -1,0 +1,36 @@
+{
+  "previous_evidence_unchanged": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/dh3_rigid_transmission_independent_audit_20261103_v1.json",
+    "bytes": 44815,
+    "sha256": "7d2d36f0eca466148269cf308cf9f463ed411a510096356c1c51abfa26ac98a1"
+  },
+  "previous_audit_source_preserved": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/source_snapshots/audit_dh3_physics_trace_3c60d92a8b255291.py",
+    "bytes": 29847,
+    "sha256": "3c60d92a8b255291c6c9267a9dcfab7d065dd7bc1de355e74c694ed854f3e2e0"
+  },
+  "current_audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_dh3_physics_trace.py",
+    "bytes": 37954,
+    "sha256": "b601a7ba24b2fa7a88d2dac92f0d9df13a9e54c8fdb3275a4bd86f6ce4e7dc74"
+  },
+  "new_time_series_evidence": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/dh3_time_resolution_independent_audit_20261103_v1.json",
+    "bytes": 90666,
+    "sha256": "cd5212c412f865d4d10e50a8d4ea8b79cbfda60a0e4cf23af4feb6d1b837eb59"
+  },
+  "fine_comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/dh3_time_resolution_finest_comparison_20261103_v1.json",
+    "bytes": 892,
+    "sha256": "de6c8c1474e09648580b8b01014d314b48f89e4c2bd30e0f13dd45757080e698"
+  },
+  "changes": [
+    "Actual dt and numSubSteps engine readback and explicit pre-integration scene override",
+    "Frozen timestep plan SHA links and per-run expected step budget",
+    "Common step-start physical-time command bit identity across timestep grids",
+    "All-step continuous register/joint/wrist COM target reconstruction",
+    "Actual dt media stride and contact windows"
+  ],
+  "new_physics_steps": 0,
+  "new_network_forwards": 0
+}

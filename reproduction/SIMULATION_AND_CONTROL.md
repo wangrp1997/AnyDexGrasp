@@ -1,5 +1,7 @@
 # 官方仿真与真实闭合/路径接口核对
 
+更新：本文保留此前原模型/源码审计；后续独立DH3单方块物理烟测已通过，当前结果见[仿真说明](simulation/README.md)。
+
 官方源码本地根目录：`/home/wangrenpeng/AnyDexGrasp/`。本报告所有官方相对源码路径均以此目录为基准。静态探针、论文源/源码SHA等原始证据在 `outputs/paper_code_audit/`；CanonDex原始工作目录保留。
 
 

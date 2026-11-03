@@ -1,0 +1,70 @@
+{
+  "status": "saved_synthetic_frame_and_original_selection_binding_verified",
+  "scene_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_scene_20261103_v2/scene_manifest.json",
+    "sha256": "48dc4fa6f7cb9a5e525eb13cd3cd84cbc578bc3c1c045c9f50691ba80b9660f1"
+  },
+  "pipeline_RESULTS": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_dh3_eleven_branch_20261103_v2/RESULTS.json",
+    "sha256": "8dc0e7ac6307b6e4f238e437e05886d10522672c3d90ccf6afc6e84b69abc289"
+  },
+  "selection_RESULTS": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_dh3_eleven_branch_20261103_v2/selection/RESULTS.json",
+    "sha256": "5895bcd1ac2e33580d4f853695ba3ce13ac9be086809d71e5b627ebcd0f2915c"
+  },
+  "scene_signature_sha256": "4c8cb83692cf654ee4b1f4050ea1711adc3a7134eefa98aa25e41bfa1e17837e",
+  "checks": {
+    "all_scene_render_files_and_assets_SHA": true,
+    "all_stage_receipt_SHA_links": true,
+    "camera_depth_calibration_and_transforms": true,
+    "identity_points_exact_original_depth_pixel_bits": true,
+    "original_truncation_voxel_keys_complete_unique": true,
+    "original_seeded_11_transform_recipe_bits": true,
+    "original_branch_concatenation_bits": true,
+    "parser_column_bridge_bits": true,
+    "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+    "nonempty_original_PCL_SHA": true,
+    "original_argsort_top10_and_top1_array_bits": true
+  },
+  "observed": {
+    "valid_depth_pixels": 921600,
+    "identity_scene_voxels": 22663,
+    "branch_candidates": [
+      28,
+      33,
+      26,
+      36,
+      19,
+      27,
+      23,
+      24,
+      24,
+      44,
+      39
+    ],
+    "merged_candidates": 323,
+    "collision_input": 400,
+    "collision_admitted": 111,
+    "top1_pre_collision_index": 3,
+    "top1_type": 4,
+    "top1_raw_learned_score": 1.580128788948059
+  },
+  "timing_seconds": {
+    "representation_model_load": 1.564772684010677,
+    "eleven_original_get_grasp_branches": 15.980291921994649,
+    "original_hand_stage": 2.70938502199715,
+    "collision_asset_preparation": 1.0108406619983725,
+    "original_collision": 13.007094205007888,
+    "total": 35.647393889026716
+  },
+  "timing_boundary": "15.980s eleven get_grasp branches; 35.647s pipeline internal total includes load/scoring/collision",
+  "audit_new_network_forwards": 0,
+  "audit_new_collision_queries": 0,
+  "audit_new_renders": 0,
+  "audit_physical_steps": 0,
+  "boundary": "Saved-artifact integrity, not an independent grasp-success or force-closure proof",
+  "audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py",
+    "sha256": "da39899407085cb197e98f08d4e8f4b89cd4f51f1fc9e0777f8f30722c026ed3"
+  }
+}

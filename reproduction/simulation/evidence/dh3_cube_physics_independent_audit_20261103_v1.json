@@ -1,0 +1,906 @@
+{
+  "status": "all_saved_physics_traces_independently_verified",
+  "runs": [
+    {
+      "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_cube_physics_20261103_v1",
+      "mode": "cube",
+      "status": "saved_trace_independently_verified",
+      "source_snapshot_sha256": "8d0a0f0180c223f626813fa84d3adae63509807c93136796258b2e5c23f8fb0e",
+      "source_snapshot_acquisition": "recovered by reversing later CLI/metadata-only patch and matched pre-existing receipt SHA",
+      "source_control_flow": {
+        "constraint_creation_calls_only_hand_initialization": [
+          125,
+          137
+        ],
+        "joint_reset_calls_only_hand_initialization": [
+          92
+        ],
+        "runtime_reset_guard_raises": true,
+        "mode_step_call_sites": 1,
+        "media_step_call_sites": 0,
+        "boundary": "Frozen source control-flow plus recorded initial constraint inventory; no per-step constraint inventory was recorded"
+      },
+      "physics_steps": 2460,
+      "physical_seconds": 10.25,
+      "finite": true,
+      "mechanism": {
+        "residuals_recomputed_from_all_q_bit_exact": true,
+        "max_residual_rad": 0.11520746169073592,
+        "per_gear_max_residual_rad": {
+          "finger1_outlet_joint": 0.01150857526950555,
+          "finger1_tip_joint": 0.02751638967744019,
+          "finger2_joint": 0.11520746169073592,
+          "finger2_outlet_joint": 0.014199516088003072,
+          "finger2_tip_joint": 0.06906425404283689,
+          "finger3_base_joint": 0.0071927169700890525,
+          "finger3_joint": 0.01826714791404138,
+          "finger3_outlet_joint": 0.01997579503278868,
+          "finger3_tip_joint": 0.0195171829293469
+        },
+        "peak_joint_velocity_rad_s": 5.784229148853608,
+        "motor_torque_bounds_pass": true,
+        "gear_reaction_bounds_pass": true,
+        "wrist_reaction_per_row_bound_pass": true,
+        "wrist_position_tracking_pass": true,
+        "peak_wrist_reaction_per_row": [
+          7.937592346883389,
+          7.680170732202887,
+          10.418147457961203,
+          0.7044511920465826,
+          1.7649676158870062,
+          0.27783463586412205
+        ],
+        "correction_work_absolute_upper_proxy_J": 0.22577080273189146,
+        "peak_residual": {
+          "step": 1574,
+          "time_s": 6.558333333333334,
+          "phase": "lift",
+          "dependent": "finger2_joint",
+          "signed_residual_rad": -0.11520746169073592,
+          "gear_reaction_Nm": 0.8,
+          "simultaneous_positive_normal_contacts": [
+            {
+              "other_body": "object",
+              "hand_link": "finger2_Link",
+              "normal_force_N": 0.3723190122023402,
+              "signed_distance_m": 0.00022217709968214085
+            },
+            {
+              "other_body": "table",
+              "hand_link": "finger2_tip_Link",
+              "normal_force_N": 14.772678373622389,
+              "signed_distance_m": -8.050411412387977e-06
+            },
+            {
+              "other_body": "table",
+              "hand_link": "finger2_tip_Link",
+              "normal_force_N": 0.15512871187090865,
+              "signed_distance_m": -9.396041694417073e-06
+            }
+          ]
+        }
+      },
+      "constraints": {
+        "recorded_count": 10,
+        "hand_body_id": 2,
+        "only_hand_to_world_wrist_and_internal_gears": true
+      },
+      "declared_limits": {
+        "dt": 0.004166666666666667,
+        "solver_iterations": 100,
+        "non_contact_inner_iterations": 20,
+        "gravity_m_s2": [
+          0.0,
+          0.0,
+          -9.81
+        ],
+        "position_motor_max_torque_Nm": 0.6,
+        "rotation_motor_max_torque_Nm": 0.3,
+        "position_motor_max_velocity_rad_s": 1.0,
+        "rotation_motor_max_velocity_rad_s": 0.5,
+        "gear_max_torque_Nm": 0.8,
+        "gear_erp": 0.2,
+        "wrist_max_force_per_row_N_or_Nm": 30.0,
+        "wrist_erp": 0.2,
+        "position_gain": 0.15,
+        "velocity_gain": 1.0,
+        "contact_lateral_friction": 0.5,
+        "contact_restitution": 0.0,
+        "geometric_margin_m": 0.001
+      },
+      "checks": {
+        "trace_SHA": true,
+        "controller_SHA": true,
+        "frozen_source_SHA": true,
+        "adapter_and_URDF_SHA": true
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "a3ead40cc934aee49b5092b52bfc4af6d6db4c760da258119e9f2fbc26db7dc3",
+        "CONTROLLER.json": "006278ab662d88737cf0a60fc378e03d92a7d356ff2c00095568f66f3a14ca95",
+        "SOURCE_SNAPSHOT.json": "be24526aa26b25c63890c451de6f9a2c0f83c8e668f88fdc32d1eea5aaff5cca",
+        "trace.npz": "a09ca4c0228ebeb908256715df46fd3a5e6d2998e341c41037b9f90149f92c33",
+        "contacts.npy": "2ce12e4e7cef48cf4027f4747d9bab822e5d5e79ce07fe47295fb1eabf9cd253",
+        "frames.json": "d84fbeea9650a4a224967795f350ea8867f6a28960690acdff36d78daca4ff19"
+      },
+      "phases": [
+        {
+          "phase": "hold_open",
+          "steps": 120,
+          "first_last_steps": [
+            1,
+            120
+          ],
+          "max_gear_residual_rad": 5.177044414440082e-15,
+          "peak_joint_velocity_rad_s": 7.961706016422494e-14,
+          "max_wrist_COM_error_m": 0.0,
+          "peak_gear_reaction_Nm": 0.005853444973154482,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "object_lift_first_last_m": [
+            -9.975073303327558e-06,
+            -1.1393415382119493e-05
+          ]
+        },
+        {
+          "phase": "approach",
+          "steps": 720,
+          "first_last_steps": [
+            121,
+            840
+          ],
+          "max_gear_residual_rad": 5.25504958089451e-15,
+          "peak_joint_velocity_rad_s": 5.762607418917139e-15,
+          "max_wrist_COM_error_m": 0.00058324181241425,
+          "peak_gear_reaction_Nm": 0.005881006546548937,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "object_lift_first_last_m": [
+            -1.139342105999433e-05,
+            -1.1393545115090387e-05
+          ]
+        },
+        {
+          "phase": "close",
+          "steps": 480,
+          "first_last_steps": [
+            841,
+            1320
+          ],
+          "max_gear_residual_rad": 0.014122515552951631,
+          "peak_joint_velocity_rad_s": 1.2598538057180426,
+          "max_wrist_COM_error_m": 1.4401791838135514e-05,
+          "peak_gear_reaction_Nm": 0.8,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 355,
+            "positive_normal_rows": 346,
+            "peak_normal_force_N": 13.733979666484043,
+            "min_signed_distance_m": -0.0004912652683843055
+          },
+          "object_lift_first_last_m": [
+            -1.139354519793731e-05,
+            -1.000000000001694e-05
+          ]
+        },
+        {
+          "phase": "hold_closed",
+          "steps": 180,
+          "first_last_steps": [
+            1321,
+            1500
+          ],
+          "max_gear_residual_rad": 0.011103732444792458,
+          "peak_joint_velocity_rad_s": 4.4494158540899176e-07,
+          "max_wrist_COM_error_m": 3.85127577604203e-06,
+          "peak_gear_reaction_Nm": 0.7883226861026508,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 180,
+            "positive_normal_rows": 180,
+            "peak_normal_force_N": 13.207418724016387,
+            "min_signed_distance_m": -0.0002443304107348082
+          },
+          "object_lift_first_last_m": [
+            -1.000000000001694e-05,
+            -1.000000000001694e-05
+          ]
+        },
+        {
+          "phase": "lift",
+          "steps": 720,
+          "first_last_steps": [
+            1501,
+            2220
+          ],
+          "max_gear_residual_rad": 0.11520746169073592,
+          "peak_joint_velocity_rad_s": 5.784229148853608,
+          "max_wrist_COM_error_m": 0.0008332712907530037,
+          "peak_gear_reaction_Nm": 0.8,
+          "hand_object": {
+            "rows": 3688,
+            "positive_normal_rows": 2448,
+            "peak_normal_force_N": 8.724555405983457,
+            "min_signed_distance_m": -0.000331480257009282
+          },
+          "hand_table": {
+            "rows": 226,
+            "positive_normal_rows": 189,
+            "peak_normal_force_N": 14.772678373622389,
+            "min_signed_distance_m": -0.00043101646399486265
+          },
+          "object_lift_first_last_m": [
+            -1.000000000001694e-05,
+            0.091502623852321
+          ]
+        },
+        {
+          "phase": "hold_lift",
+          "steps": 240,
+          "first_last_steps": [
+            2221,
+            2460
+          ],
+          "max_gear_residual_rad": 0.0022329665200919724,
+          "peak_joint_velocity_rad_s": 0.005724105066534649,
+          "max_wrist_COM_error_m": 2.0614158536269476e-05,
+          "peak_gear_reaction_Nm": 0.26914247890645115,
+          "hand_object": {
+            "rows": 1440,
+            "positive_normal_rows": 960,
+            "peak_normal_force_N": 4.623928462991974,
+            "min_signed_distance_m": -1.3448424547788257e-05
+          },
+          "hand_table": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "object_lift_first_last_m": [
+            0.09150776390318141,
+            0.09151748594076997
+          ]
+        }
+      ],
+      "lift_observed": true,
+      "port_stability_pass": false,
+      "validated_physical_grasp_success": false,
+      "final_object_lift_m": 0.09151748594076997,
+      "final_object_lowest_world_z_m": 0.08792658378969478,
+      "max_object_lift_m": 0.09152725760532418,
+      "independent_oriented_cube_AABB_max_error_m": 2.7755575615628914e-17,
+      "hand_object": {
+        "rows": 5128,
+        "positive_normal_rows": 3408,
+        "peak_normal_force_N": 8.724555405983457,
+        "min_signed_distance_m": -0.000331480257009282
+      },
+      "hand_table": {
+        "rows": 761,
+        "positive_normal_rows": 715,
+        "peak_normal_force_N": 14.772678373622389,
+        "min_signed_distance_m": -0.0004912652683843055
+      },
+      "final_half_second": {
+        "steps": 120,
+        "positive_normal_contact_covered_steps": 120,
+        "every_step_positive_normal_contact": true,
+        "min_contact_rows_per_step": 4,
+        "max_contact_rows_per_step": 4,
+        "min_total_normal_force_per_step_N": 11.498504586772665,
+        "contact_rows": 480
+      },
+      "perception_binding": {
+        "scene_manifest_sha256": "48dc4fa6f7cb9a5e525eb13cd3cd84cbc578bc3c1c045c9f50691ba80b9660f1",
+        "selection_sha256": "5895bcd1ac2e33580d4f853695ba3ce13ac9be086809d71e5b627ebcd0f2915c",
+        "candidate_sha256": "03fd45666d46847d0cfe54e87ac1d46f2d24a379a79cc6adc954fc8955a852cc",
+        "scene_signature_sha256": "4c8cb83692cf654ee4b1f4050ea1711adc3a7134eefa98aa25e41bfa1e17837e"
+      },
+      "media": {
+        "actual_saved_frames": 205,
+        "every_physics_steps": 12,
+        "fps": 20,
+        "implied_video_seconds": 10.25,
+        "first_last_physics_steps": [
+          1,
+          2449
+        ],
+        "frames_SHA_sequence": "b3e4dd54763037f04e792f0e29ed77281282762c5cbd61ceb2c568c04ffbed1f",
+        "all_frames_decode": true,
+        "zero_additional_physics_steps_source_and_receipt": true,
+        "encoded_MP4_independently_probed_by_this_audit": false
+      },
+      "boundary": "Actual cube lifting/contact observed but port stability is separate. Recorded finite ideal gears, scripted wrist and convex contacts are simulator assumptions; no hardware or paper success-rate claim."
+    },
+    {
+      "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_cube_physics_20261103_v2",
+      "mode": "cube",
+      "status": "saved_trace_independently_verified",
+      "source_snapshot_sha256": "54536fe4b955af99925e93ee22e60f0359822d61f15d15d4915d9a78b1329070",
+      "source_snapshot_acquisition": "copied byte-exact after completed run, before further edits",
+      "source_control_flow": {
+        "constraint_creation_calls_only_hand_initialization": [
+          125,
+          137
+        ],
+        "joint_reset_calls_only_hand_initialization": [
+          92
+        ],
+        "runtime_reset_guard_raises": true,
+        "mode_step_call_sites": 1,
+        "media_step_call_sites": 0,
+        "boundary": "Frozen source control-flow plus recorded initial constraint inventory; no per-step constraint inventory was recorded"
+      },
+      "physics_steps": 2460,
+      "physical_seconds": 10.25,
+      "finite": true,
+      "mechanism": {
+        "residuals_recomputed_from_all_q_bit_exact": true,
+        "max_residual_rad": 0.11425265671760604,
+        "per_gear_max_residual_rad": {
+          "finger1_outlet_joint": 0.008642962615181271,
+          "finger1_tip_joint": 0.021288604368777997,
+          "finger2_joint": 0.11425265671760604,
+          "finger2_outlet_joint": 0.011911157573985753,
+          "finger2_tip_joint": 0.09073382273768416,
+          "finger3_base_joint": 0.00996848994396654,
+          "finger3_joint": 0.01583537561380899,
+          "finger3_outlet_joint": 0.01668021890920901,
+          "finger3_tip_joint": 0.016713311863412295
+        },
+        "peak_joint_velocity_rad_s": 6.763259151393125,
+        "motor_torque_bounds_pass": true,
+        "gear_reaction_bounds_pass": true,
+        "wrist_reaction_per_row_bound_pass": true,
+        "wrist_position_tracking_pass": true,
+        "peak_wrist_reaction_per_row": [
+          8.108760363277389,
+          7.6593649430050865,
+          10.606375747258355,
+          0.7796552170277163,
+          1.771325189329833,
+          0.2774692045500908
+        ],
+        "correction_work_absolute_upper_proxy_J": 0.2243635965779967,
+        "peak_residual": {
+          "step": 1574,
+          "time_s": 6.558333333333334,
+          "phase": "lift",
+          "dependent": "finger2_joint",
+          "signed_residual_rad": -0.11425265671760604,
+          "gear_reaction_Nm": 0.8,
+          "simultaneous_positive_normal_contacts": [
+            {
+              "other_body": "object",
+              "hand_link": "finger2_Link",
+              "normal_force_N": 0.3540590737707037,
+              "signed_distance_m": 0.00022231589151486272
+            },
+            {
+              "other_body": "table",
+              "hand_link": "finger2_tip_Link",
+              "normal_force_N": 14.795921055080685,
+              "signed_distance_m": -8.129526308749854e-06
+            },
+            {
+              "other_body": "table",
+              "hand_link": "finger2_tip_Link",
+              "normal_force_N": 0.15267936523252676,
+              "signed_distance_m": -9.460261431743638e-06
+            }
+          ]
+        }
+      },
+      "constraints": {
+        "recorded_count": 10,
+        "hand_body_id": 2,
+        "only_hand_to_world_wrist_and_internal_gears": true
+      },
+      "declared_limits": {
+        "dt": 0.004166666666666667,
+        "solver_iterations": 100,
+        "non_contact_inner_iterations": 100,
+        "gravity_m_s2": [
+          0.0,
+          0.0,
+          -9.81
+        ],
+        "position_motor_max_torque_Nm": 0.6,
+        "rotation_motor_max_torque_Nm": 0.3,
+        "position_motor_max_velocity_rad_s": 1.0,
+        "rotation_motor_max_velocity_rad_s": 0.5,
+        "gear_max_torque_Nm": 0.8,
+        "gear_erp": 0.2,
+        "wrist_max_force_per_row_N_or_Nm": 30.0,
+        "wrist_erp": 0.2,
+        "position_gain": 0.15,
+        "velocity_gain": 1.0,
+        "contact_lateral_friction": 0.5,
+        "contact_restitution": 0.0,
+        "geometric_margin_m": 0.001
+      },
+      "checks": {
+        "trace_SHA": true,
+        "controller_SHA": true,
+        "frozen_source_SHA": true,
+        "adapter_and_URDF_SHA": true
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "dab44b517b427d51442c81bb81004e3d7debfa6feb59113e6f9012066bbb069f",
+        "CONTROLLER.json": "0a32385ddfb03d5f6a6be9c9571b40bdb67fd95e0be3a9bdc1cf47c899f76247",
+        "SOURCE_SNAPSHOT.json": "a28576142e5ad21ff36d51889d3250c443223bfaa8110c6a13310bbbbcea4b09",
+        "trace.npz": "2fcb72458c50ff00842b1f517b4ec563326ae82ad7bba75ccd693601ae984f75",
+        "contacts.npy": "842836e2ce60da290d4bee7fe080888d63b0cad8d78c27df3918792dc4ecb19a",
+        "frames.json": "d84fbeea9650a4a224967795f350ea8867f6a28960690acdff36d78daca4ff19"
+      },
+      "phases": [
+        {
+          "phase": "hold_open",
+          "steps": 120,
+          "first_last_steps": [
+            1,
+            120
+          ],
+          "max_gear_residual_rad": 2.203098814490545e-16,
+          "peak_joint_velocity_rad_s": 2.1982415887578104e-15,
+          "max_wrist_COM_error_m": 0.0,
+          "peak_gear_reaction_Nm": 0.005853444973154262,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "object_lift_first_last_m": [
+            -9.975073303327558e-06,
+            -1.1393415382119493e-05
+          ]
+        },
+        {
+          "phase": "approach",
+          "steps": 720,
+          "first_last_steps": [
+            121,
+            840
+          ],
+          "max_gear_residual_rad": 2.0816681711721685e-17,
+          "peak_joint_velocity_rad_s": 1.99864627684245e-16,
+          "max_wrist_COM_error_m": 0.00058324181241425,
+          "peak_gear_reaction_Nm": 0.005881006546548878,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "object_lift_first_last_m": [
+            -1.139342105999433e-05,
+            -1.1393545115090387e-05
+          ]
+        },
+        {
+          "phase": "close",
+          "steps": 480,
+          "first_last_steps": [
+            841,
+            1320
+          ],
+          "max_gear_residual_rad": 0.013618068213539558,
+          "peak_joint_velocity_rad_s": 1.2667270165202276,
+          "max_wrist_COM_error_m": 1.4401791838135514e-05,
+          "peak_gear_reaction_Nm": 0.8,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 355,
+            "positive_normal_rows": 346,
+            "peak_normal_force_N": 13.718039672040979,
+            "min_signed_distance_m": -0.0004877560186498444
+          },
+          "object_lift_first_last_m": [
+            -1.139354519793731e-05,
+            -1.000000000001694e-05
+          ]
+        },
+        {
+          "phase": "hold_closed",
+          "steps": 180,
+          "first_last_steps": [
+            1321,
+            1500
+          ],
+          "max_gear_residual_rad": 0.011004823342387976,
+          "peak_joint_velocity_rad_s": 3.908511355376904e-07,
+          "max_wrist_COM_error_m": 3.814282806352326e-06,
+          "peak_gear_reaction_Nm": 0.7881771023593885,
+          "hand_object": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "hand_table": {
+            "rows": 180,
+            "positive_normal_rows": 180,
+            "peak_normal_force_N": 13.206184456571677,
+            "min_signed_distance_m": -0.0002422864273735996
+          },
+          "object_lift_first_last_m": [
+            -1.000000000001694e-05,
+            -1.000000000001694e-05
+          ]
+        },
+        {
+          "phase": "lift",
+          "steps": 720,
+          "first_last_steps": [
+            1501,
+            2220
+          ],
+          "max_gear_residual_rad": 0.11425265671760604,
+          "peak_joint_velocity_rad_s": 6.763259151393125,
+          "max_wrist_COM_error_m": 0.0008331463243189632,
+          "peak_gear_reaction_Nm": 0.8,
+          "hand_object": {
+            "rows": 4259,
+            "positive_normal_rows": 2469,
+            "peak_normal_force_N": 8.995113332052684,
+            "min_signed_distance_m": -0.0004034097992725255
+          },
+          "hand_table": {
+            "rows": 228,
+            "positive_normal_rows": 185,
+            "peak_normal_force_N": 14.795921055080685,
+            "min_signed_distance_m": -0.0006788171945827543
+          },
+          "object_lift_first_last_m": [
+            -1.000000000001694e-05,
+            0.09170237895433114
+          ]
+        },
+        {
+          "phase": "hold_lift",
+          "steps": 240,
+          "first_last_steps": [
+            2221,
+            2460
+          ],
+          "max_gear_residual_rad": 0.013475764828365433,
+          "peak_joint_velocity_rad_s": 0.0036997484220798998,
+          "max_wrist_COM_error_m": 2.0516551680363096e-05,
+          "peak_gear_reaction_Nm": 0.2673980887125829,
+          "hand_object": {
+            "rows": 1680,
+            "positive_normal_rows": 960,
+            "peak_normal_force_N": 4.626086315454542,
+            "min_signed_distance_m": -9.93868157000908e-06
+          },
+          "hand_table": {
+            "rows": 0,
+            "positive_normal_rows": 0,
+            "peak_normal_force_N": null,
+            "min_signed_distance_m": null
+          },
+          "object_lift_first_last_m": [
+            0.09170755097319233,
+            0.091732941187007
+          ]
+        }
+      ],
+      "lift_observed": true,
+      "port_stability_pass": false,
+      "validated_physical_grasp_success": false,
+      "final_object_lift_m": 0.091732941187007,
+      "final_object_lowest_world_z_m": 0.08851725715490472,
+      "max_object_lift_m": 0.091732941187007,
+      "independent_oriented_cube_AABB_max_error_m": 2.7755575615628914e-17,
+      "hand_object": {
+        "rows": 5939,
+        "positive_normal_rows": 3429,
+        "peak_normal_force_N": 8.995113332052684,
+        "min_signed_distance_m": -0.0004034097992725255
+      },
+      "hand_table": {
+        "rows": 763,
+        "positive_normal_rows": 711,
+        "peak_normal_force_N": 14.795921055080685,
+        "min_signed_distance_m": -0.0006788171945827543
+      },
+      "final_half_second": {
+        "steps": 120,
+        "positive_normal_contact_covered_steps": 120,
+        "every_step_positive_normal_contact": true,
+        "min_contact_rows_per_step": 4,
+        "max_contact_rows_per_step": 4,
+        "min_total_normal_force_per_step_N": 11.477626495643445,
+        "contact_rows": 480
+      },
+      "perception_binding": {
+        "scene_manifest_sha256": "48dc4fa6f7cb9a5e525eb13cd3cd84cbc578bc3c1c045c9f50691ba80b9660f1",
+        "selection_sha256": "5895bcd1ac2e33580d4f853695ba3ce13ac9be086809d71e5b627ebcd0f2915c",
+        "candidate_sha256": "03fd45666d46847d0cfe54e87ac1d46f2d24a379a79cc6adc954fc8955a852cc",
+        "scene_signature_sha256": "4c8cb83692cf654ee4b1f4050ea1711adc3a7134eefa98aa25e41bfa1e17837e"
+      },
+      "media": {
+        "actual_saved_frames": 205,
+        "every_physics_steps": 12,
+        "fps": 20,
+        "implied_video_seconds": 10.25,
+        "first_last_physics_steps": [
+          1,
+          2449
+        ],
+        "frames_SHA_sequence": "d71a76e8c4cd78680d460f491e01fb9550842972aae7493a588e430fd0731eae",
+        "all_frames_decode": true,
+        "zero_additional_physics_steps_source_and_receipt": true,
+        "encoded_MP4_independently_probed_by_this_audit": false
+      },
+      "boundary": "Actual cube lifting/contact observed but port stability is separate. Recorded finite ideal gears, scripted wrist and convex contacts are simulator assumptions; no hardware or paper success-rate claim."
+    },
+    {
+      "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_empty_physics_20261103_v5",
+      "mode": "empty",
+      "status": "saved_trace_independently_verified",
+      "source_snapshot_sha256": "8d0a0f0180c223f626813fa84d3adae63509807c93136796258b2e5c23f8fb0e",
+      "source_snapshot_acquisition": "same recovered source; matches pre-existing empty v5 receipt SHA",
+      "source_control_flow": {
+        "constraint_creation_calls_only_hand_initialization": [
+          125,
+          137
+        ],
+        "joint_reset_calls_only_hand_initialization": [
+          92
+        ],
+        "runtime_reset_guard_raises": true,
+        "mode_step_call_sites": 1,
+        "media_step_call_sites": null,
+        "boundary": "Frozen source control-flow plus recorded initial constraint inventory; no per-step constraint inventory was recorded"
+      },
+      "physics_steps": 1980,
+      "physical_seconds": 8.25,
+      "finite": true,
+      "mechanism": {
+        "residuals_recomputed_from_all_q_bit_exact": true,
+        "max_residual_rad": 0.0015704112484140609,
+        "per_gear_max_residual_rad": {
+          "finger1_outlet_joint": 0.0015704112484140609,
+          "finger1_tip_joint": 0.0010102776601634833,
+          "finger2_joint": 0.0013660742707242157,
+          "finger2_outlet_joint": 0.0014692770981707959,
+          "finger2_tip_joint": 0.001306556342429488,
+          "finger3_base_joint": 1.0584649968725657e-06,
+          "finger3_joint": 4.362781962252704e-06,
+          "finger3_outlet_joint": 0.0009855460296923635,
+          "finger3_tip_joint": 0.0010226466643570298
+        },
+        "peak_joint_velocity_rad_s": 1.0740659306071116,
+        "motor_torque_bounds_pass": true,
+        "gear_reaction_bounds_pass": true,
+        "wrist_reaction_per_row_bound_pass": true,
+        "wrist_position_tracking_pass": true,
+        "peak_wrist_reaction_per_row": [
+          0.1357305962145741,
+          0.0004523855679130038,
+          4.513630345860901,
+          0.0004741124581474923,
+          0.02230641891575656,
+          0.0005384041789401136
+        ],
+        "correction_work_absolute_upper_proxy_J": 0.00037268302361486035,
+        "peak_residual": {
+          "step": 977,
+          "time_s": 4.070833333333333,
+          "phase": "close",
+          "dependent": "finger1_outlet_joint",
+          "signed_residual_rad": 0.0015704112484140609,
+          "gear_reaction_Nm": -0.00034594033193111544
+        }
+      },
+      "constraints": {
+        "recorded_count": 10,
+        "hand_body_id": 0,
+        "only_hand_to_world_wrist_and_internal_gears": true
+      },
+      "declared_limits": {
+        "dt": 0.004166666666666667,
+        "solver_iterations": 100,
+        "non_contact_inner_iterations": 20,
+        "gravity_m_s2": [
+          0.0,
+          0.0,
+          -9.81
+        ],
+        "position_motor_max_torque_Nm": 0.6,
+        "rotation_motor_max_torque_Nm": 0.3,
+        "position_motor_max_velocity_rad_s": 1.0,
+        "rotation_motor_max_velocity_rad_s": 0.5,
+        "gear_max_torque_Nm": 0.8,
+        "gear_erp": 0.2,
+        "wrist_max_force_per_row_N_or_Nm": 30.0,
+        "wrist_erp": 0.2,
+        "position_gain": 0.15,
+        "velocity_gain": 1.0,
+        "contact_lateral_friction": 0.5,
+        "contact_restitution": 0.0,
+        "geometric_margin_m": 0.001
+      },
+      "checks": {
+        "trace_SHA": true,
+        "controller_SHA": true,
+        "frozen_source_SHA": true,
+        "adapter_and_URDF_SHA": true
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "de285dbbc0c1adda9dd19dc6411947f4ce3653e679c6fa6d17d0db834f1c908c",
+        "CONTROLLER.json": "0f276d70d1486c8126148ef1a7dff7a5db62f9d215820a770929dd0dee66be72",
+        "SOURCE_SNAPSHOT.json": "a22ce3957324574598fd4fdbe829b769c4750d5b88747717201e609edf6e44d3",
+        "trace.npz": "0ff19c013b5aa619a37a8b3f77546f61e3f4b25b47dc9f9a554e1ad00ba5e8de",
+        "self_contacts.npy": "d390b319e9b6d11cfaeb846947d985f3cd19f5585d1c9094198743809792862a"
+      },
+      "phases": [
+        {
+          "phase": "hold_open",
+          "steps": 120,
+          "first_last_steps": [
+            1,
+            120
+          ],
+          "max_gear_residual_rad": 5.266385501908472e-07,
+          "peak_joint_velocity_rad_s": 5.5346998189418094e-05,
+          "max_wrist_COM_error_m": 2.4295126182052806e-10,
+          "peak_gear_reaction_Nm": 0.005898701920769642
+        },
+        {
+          "phase": "rotate_out",
+          "steps": 240,
+          "first_last_steps": [
+            121,
+            360
+          ],
+          "max_gear_residual_rad": 1.1005797733293797e-06,
+          "peak_joint_velocity_rad_s": 0.5000565493769622,
+          "max_wrist_COM_error_m": 2.4048534607363236e-10,
+          "peak_gear_reaction_Nm": 0.005898701900466306
+        },
+        {
+          "phase": "rotate_back",
+          "steps": 240,
+          "first_last_steps": [
+            361,
+            600
+          ],
+          "max_gear_residual_rad": 9.390472222957838e-07,
+          "peak_joint_velocity_rad_s": 0.5000047118699977,
+          "max_wrist_COM_error_m": 2.2157638412795404e-10,
+          "peak_gear_reaction_Nm": 0.005898701632969665
+        },
+        {
+          "phase": "close",
+          "steps": 480,
+          "first_last_steps": [
+            601,
+            1080
+          ],
+          "max_gear_residual_rad": 0.0015704112484140609,
+          "peak_joint_velocity_rad_s": 1.0740659306071116,
+          "max_wrist_COM_error_m": 1.1741408536220739e-06,
+          "peak_gear_reaction_Nm": 0.3535747801375108
+        },
+        {
+          "phase": "hold_closed",
+          "steps": 180,
+          "first_last_steps": [
+            1081,
+            1260
+          ],
+          "max_gear_residual_rad": 0.0001560738367896164,
+          "peak_joint_velocity_rad_s": 0.0015972926858571542,
+          "max_wrist_COM_error_m": 2.3507945309203114e-08,
+          "peak_gear_reaction_Nm": 0.3489453967783674
+        },
+        {
+          "phase": "wrist_lift",
+          "steps": 600,
+          "first_last_steps": [
+            1261,
+            1860
+          ],
+          "max_gear_residual_rad": 0.00014004161463176956,
+          "peak_joint_velocity_rad_s": 0.0014575735392603764,
+          "max_wrist_COM_error_m": 0.000999795267315477,
+          "peak_gear_reaction_Nm": 0.3489653975397624
+        },
+        {
+          "phase": "hold_lift",
+          "steps": 120,
+          "first_last_steps": [
+            1861,
+            1980
+          ],
+          "max_gear_residual_rad": 0.00013981081534475415,
+          "peak_joint_velocity_rad_s": 0.0014533822310605826,
+          "max_wrist_COM_error_m": 2.9571064703784538e-05,
+          "peak_gear_reaction_Nm": 0.34894631111200153
+        }
+      ],
+      "empty_mechanism_pass": true,
+      "port_stability_pass": true,
+      "grasp_result": false,
+      "closed_final_contact_stopped": true,
+      "closed_final_tracking_or_contact_stop": true,
+      "closed_final_max_target_error_rad": 0.192093258966618,
+      "boundary": "Empty mechanism check only. A contact stop is not exact endpoint tracking and establishes no loaded-grasp validity."
+    }
+  ],
+  "paired_comparison": {
+    "only_declared_assumption_changed": "non_contact_inner_iterations",
+    "iterations": [
+      20,
+      100
+    ],
+    "frozen_candidate_scene_and_script_identical": true,
+    "command_arrays_bit_identical": {
+      "step": true,
+      "time": true,
+      "phase": true,
+      "register_target": true,
+      "joint_target": true
+    },
+    "both_lift_observed": true,
+    "both_port_stability_failed": true,
+    "interpretation": "More inner iterations did not restore loaded mechanism stability. Concurrent table/object contacts and finite transmission saturation remain observed; these two trials do not isolate a single cause."
+  },
+  "audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_dh3_physics_trace.py",
+    "sha256": "adc82f555704fd5cdc430d35fb7cb07cd352762147405f202689ef7451a9ab18"
+  },
+  "audit_new_physics_steps": 0,
+  "audit_new_network_forwards": 0,
+  "audit_new_renders": 0
+}

@@ -93,6 +93,8 @@ def main():
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--seed', type=int, default=20261103)
     parser.add_argument('--prepare-only', action='store_true')
+    parser.add_argument('--scene-manifest', type=Path,
+                        help='Bind RGB-D file hashes to an explicitly declared rendered scene; not a network input')
     parser.add_argument('--asset-root', type=Path,
                         help='After hand scoring, incrementally prepare original assets and run original collision')
     args = parser.parse_args()
@@ -132,6 +134,18 @@ def main():
                            cx=intrinsic[0,2],cy=intrinsic[1,2],s=factor)
         report['input_files'] = {str(path):dict(bytes=path.stat().st_size,sha256=sha(path))
                                  for path in [depth_path,color_path,meta_path]}
+        if args.scene_manifest:
+            scene = json.loads(args.scene_manifest.read_text())
+            declared = {Path(item['path']).name:item for item in scene['files']}
+            for path in [depth_path,color_path,meta_path]:
+                if declared[path.name]['sha256'] != sha(path):
+                    raise ValueError('Rendered scene binding differs for '+path.name)
+            report['scene_binding'] = dict(manifest=str(args.scene_manifest.resolve()),
+                                           manifest_sha256=sha(args.scene_manifest),
+                                           scene_signature_sha256=scene['scene_signature_sha256'],
+                                           file_hashes_verified=True,T_WC=scene['camera']['T_WC'],
+                                           manifest_or_object_pose_fed_to_network=False,
+                                           boundary='Scene provenance and later control binding only; original network consumes rendered RGB-D/calibration')
         report['calibration'] = dict(intrinsic_matrix=intrinsic.tolist(),factor_depth=factor,
                                     depth_bounds_m=[.15,.72],voxel_size_m=.005,
                                     workspace_image_mask_used=False,
@@ -257,6 +271,8 @@ def main():
                                 timing_seconds=report['timing_seconds'],
                                 test_time_augmentation_branches=11,branches=branches,
                                 raw_candidate_boundary='Original per-branch recovery/gates already applied; then original merge')
+            if 'scene_binding' in report:
+                frame_report['scene_binding'] = report['scene_binding']
             if merged is None:
                 report['status'] = 'no_candidates_after_eleven_original_branches'
             else:

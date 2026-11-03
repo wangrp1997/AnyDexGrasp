@@ -1,0 +1,126 @@
+{
+  "status": "all_pairwise_common_physical_command_starts_bit_verified",
+  "source_series_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/dh3_time_resolution_independent_audit_20261103_v1.json",
+    "sha256": "cd5212c412f865d4d10e50a8d4ea8b79cbfda60a0e4cf23af4feb6d1b837eb59"
+  },
+  "audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_dh3_common_starts.py",
+    "sha256": "00dc6d7bd93baef0a387677c2d5c8c31adac3e492ea410830f6b0d6fbd7ddb8a"
+  },
+  "pairwise_checks": [
+    {
+      "coarse_Hz": 240,
+      "fine_Hz": 480,
+      "common_step_start_samples": 2460,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 240,
+      "fine_Hz": 960,
+      "common_step_start_samples": 2460,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 240,
+      "fine_Hz": 1920,
+      "common_step_start_samples": 2460,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 240,
+      "fine_Hz": 3840,
+      "common_step_start_samples": 2460,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 480,
+      "fine_Hz": 960,
+      "common_step_start_samples": 4920,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 480,
+      "fine_Hz": 1920,
+      "common_step_start_samples": 4920,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 480,
+      "fine_Hz": 3840,
+      "common_step_start_samples": 4920,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 960,
+      "fine_Hz": 1920,
+      "common_step_start_samples": 9840,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 960,
+      "fine_Hz": 3840,
+      "common_step_start_samples": 9840,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    },
+    {
+      "coarse_Hz": 1920,
+      "fine_Hz": 3840,
+      "common_step_start_samples": 19680,
+      "start_times_bit_identical": true,
+      "command_arrays_bit_identical": {
+        "phase": true,
+        "register_target": true,
+        "joint_target": true
+      }
+    }
+  ],
+  "audit_new_physics_steps": 0,
+  "audit_new_forward_passes": 0,
+  "boundary": "Compare commands at (step-1)*dt, not state observations at step*dt. Different dynamics are retained."
+}
