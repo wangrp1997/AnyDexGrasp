@@ -1,28 +1,38 @@
 # AnyDexGrasp 原方法复现
 
-此目录属于独立仓库 `/home/wangrenpeng/AnyDexGrasp`，与CanonDex的抓取改进分开。官方基线固定在 `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，来源与原论文散列见 [SOURCES.lock.json](SOURCES.lock.json)。作者算法/硬件入口未修改，仓库忽略规则仅补充本机大文件目录。
+本目录属于独立仓库 `/home/wangrenpeng/AnyDexGrasp`，与CanonDex的抓取改进分开。官方源码固定为 `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原算法/硬件入口没有修改。来源与原论文SHA见 [SOURCES.lock.json](SOURCES.lock.json)。
 
-## 已实际完成
+## 2026-11-03 已实际完成
 
-- 原始arXiv论文 `2502.16420v1` 的PDF与TeX源分别保存在 `papers/AnyDexGrasp_2502.16420v1.pdf`、`papers/AnyDexGrasp_2502.16420v1_source.tar`；本机副本已校验SHA256。
-- [论文—代码核对](PAPER_CODE_AUDIT.md)：CGR表示、手势/开度标定映射、监督损失、推理筛选与真实试验指标逐项对照。
-- [仿真/控制核对](SIMULATION_AND_CONTROL.md)：未发现官方桌面动态抓取仿真，论文实际为UR5+D415+三种真实手；现有PyBullet仅用于手资产准备。
-- [独立运行检查](runtime/README.md)：官方原决策类CPU前向与原MSE反传、24种角度/翻转规范化一致性已实跑。输入是确定性合成数据、网络随机初始化、零优化步；只证明这些软件接口可执行。
-- `/mnt/public/datasets/AnyDexGrasp/`已经建立。实际官方数据/权重状态以 `metadata/intake_20261103.json` 为准；源码附带三种手的标定表已单列 `source_tables/`，不计作试抓训练数据。
+| 阶段 | 实际结果 | 证据 |
+|---|---|---|
+| 原论文与代码 | PDF/TeX已下载，核对CGR、手映射、训练、筛选和指标 | [论文—代码核对](PAPER_CODE_AUDIT.md) |
+| 官方数据与权重 | 32模型635,102,941B，8份有效真实决策JSON 7,403,397,972B | public `CURRENT_STATUS.json`、[下载记录](data_intake/README.md) |
+| 发布决策组件 | 31/31严格加载，作者test阈值P/R/F1均匹配文件名至4位小数；三手22类、1440不重复手/记录ID | [运行与指标](runtime/README.md) |
+| CUDA依赖 | 现有Python3.12/Torch2.11/cu130/Blackwell上局部构建ME与原PointNet2，真实GPU算子通过 | [独立构建配方](native/README.md) |
+| RGB-D→CGR | 原表示202 tensors严格加载，2048候选及480维CGR全有限，完整首帧forward 1.364s | runtime `evidence/official_rgbd_frame_20261103.json` |
+| DH3完整离线推理 | 原identity+10增强，1544候选→原学习评分top400→碰撞后9个→原top10/top1选出最终手姿 | `outputs/official_dh3_eleven_branch_20261103_v1/RESULTS.json`及`selection/RESULTS.json` |
 
-## 当前未完成
+全部31决策文件都保留并评估，没有按test表现选最佳模型。1800条模型—记录计算含重复，不能当1800个独立例子。test可能参与过作者checkpoint选择；指标匹配证明组件与配置复现，不证明独立泛化或物理抓起率。根代理另按全部保存预测独立重算31份指标，见runtime `evidence/root_decision_predictions_verification_20261103.json`。
 
-官方Google Drive连接超时/DNS异常，尚未取得任何预训练checkpoint或作者真实试抓训练记录。仅用原GraspNet数据不能替代作者新CGR标注。数据获取脚本与失败凭据保留，不能把HTML页面或空目录当有效模型/数据。
+完整CGR使用原ME/PointNet2 CUDA计算，无替代网络；第一帧runner内部5.184s含输入/模型加载/保存，不含进程启动、下载、编译。DH3续段原学习评分0.417s、内部总2.849s。这是早期单identity组件验收。随后完整11分支已实跑：表示模型只加载一次，11分支15.988s，完整runner内部39.549s（含原评分、资产缓存核验、碰撞；不含进程启动/首次资产编译生成），最后选择另0.075s。DH3采用原深度域/宽度尺度，未混用Allegro默认。这些均非观察到抬升的耗时。
 
-完整点云→CGR入口同时缺MinkowskiEngine、仓库PointNet2与KNN编译扩展；本机Blackwell与作者旧Torch/CUDA组合需要单独验证。现有共享Isaac环境未安装/降级任何依赖。因此**尚无发布模型推理准确率、仿真抓取成功率或原论文指标复现结果**。
+**完整DH3离线检测、原碰撞筛选与最终手姿选择已完成；尚未机械臂执行或仿真抓起。** 按原URDF/13 STL/已发布12d表和原采样函数生成28个碰撞点云槽，4路CPU/13.206s/零物理步，首次缺libusb失败保留。单identity400→59准入，11分支重新评分得到的另一个top400→9准入，原最终top1一致（type2、90mm开口、score1.55894；不是概率）。两批候选池不同，准入数不能直接当质量比较。全部真实碰撞bits、分支合并和最终选姿已经根代理独立重算通过。没有空点云替代。原DH3 loader循环清空字典的问题仍由独立runner显式装载4发布head解决；原评分/门/标定/碰撞/选择表达式保持。
 
-公开训练默认输出240维、部署默认20维已实际验证不兼容；要先看发布checkpoint再选择对应配置，不能擅自截断输出头。Inspire脚本默认随机手势/深度，原论文学习版必须明示使用learned分支；不要直接启动真实机器人入口来测试网络。
+## 数据与训练边界
 
-## 接续顺序
+官方文件专用目录为 `/mnt/public/datasets/AnyDexGrasp/`；**当前以 `CURRENT_STATUS.json` 为准**，`metadata/intake_20261103.json`仅是早期网络阻塞快照。三手开度标定表另列 `source_tables/`，不当作训练数据。
 
-1. 恢复官方数据源正常访问，优先下载representation checkpoint、原手decision checkpoint与真实记录，核对来源/大小/文件格式/SHA；再按需要取完整表示训练数据。
-2. 检查checkpoint的真实网络尺寸和数据canonicalization，运行原手离线推理和作者固定划分的评分验证。
-3. 建立匹配的独立运行依赖或透明记录Blackwell移植；不改共享Isaac/Torch、不用其它模型冒充CGR。
-4. 原方法离线结果稳定后，再决定原手仿真执行或Boya显式适配。后者需要新手标定与该手成败数据，不是直接套用Inspire权重。
+网络已由现有nros代理解决：`source /opt/nros_tools/nros_rc`后运行`nros-proxy-sg`或`nros-proxy-sg2`，只影响该进程。旧localhost:7897未启动，不再重复排查。
 
-比较时至少分列首抓、有限重抓后的最终物体成功率、全部拒绝/试抓与耗时。原论文是逐次真实试抓成功率，不能与CanonDex最多8次后的物体成功率直接比较。当前CanonDex暂停交接已push `072adaa`，不因此恢复其剩余259件。
+三个CGR训练标签ZIP共55.8GB仍为Google Drive按文件下载配额耗尽，已设每6小时一次、最多4轮的后台重试。另一份DH3 obj40 JSON官方源含异常字节，已隔离，未修补当有效数据。GraspNet完整RGB-D尚未下载；单帧来自固定提交的官方GraspNet demo，不能当独立AnyDex测试集。
+
+**无需重训通用表示网络即可继续发布模型推理或新手适配。** 三个大标签包只在从头重训表示时需要。Boya需自己的手势/开口标定与该手成败数据训练决策器，不能把DH3/Inspire评分器当Boya已验证权重。
+
+## 接续
+
+1. 保留已完成原DH3完整离线结果；不要重复从下载、依赖编译或单帧前向开始。原手碰撞只检查可见点云，未证明臂可达或抬升。
+2. [官方没有桌面动态仿真](SIMULATION_AND_CONTROL.md)，只有真实UR5+D415/三手和资产准备工具，不直接运行硬件robot/collect脚本。
+3. 再做明确标注的原手仿真移植或Boya适配；不能冒充论文真实抓取成功率复现。
+
+复用已有解释器，依赖局部放`outputs/native_deps`，未新建环境、未改共享Isaac/Torch或系统头。模型/数据/PDF/二进制/大日志/视频不提交，只提交轻量工具、来源和凭据。仅有作者`upstream`，不向作者推送。CanonDex批次保持暂停，259件不恢复。

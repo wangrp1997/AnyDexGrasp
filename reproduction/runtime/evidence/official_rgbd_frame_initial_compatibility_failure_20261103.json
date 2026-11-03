@@ -1,0 +1,121 @@
+{
+  "scope": "original-method calibrated single RGB-D software inference",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "source_checkout": "/home/wangrenpeng/AnyDexGrasp",
+  "physical_grasps_executed": 0,
+  "no_robot_connection": true,
+  "simulation_run": false,
+  "grasp_success_claim": false,
+  "new_training_steps": 0,
+  "author_independent_test_generalization_claim": false,
+  "example_boundary": "Official GraspNet-team demo RGB-D input; not AnyDex physical test evidence",
+  "python": "3.12.14 (main, Sep 29 2026, 15:01:18) [Clang 22.1.3 ]",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "args": {
+    "image_dir": "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80",
+    "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "native_deps": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps",
+    "workspace_mask": null,
+    "voxel_size": 0.005,
+    "depth_min": 0.2,
+    "depth_max": 0.65,
+    "num_seed": 2048,
+    "device": "cuda:1",
+    "seed": 20261103,
+    "prepare_only": false,
+    "output_dir": "outputs/official_rgbd_frame_20261103_v1"
+  },
+  "timing_seconds": {
+    "input_preparation": 0.15353491599671543,
+    "total": 0.8397582299658097
+  },
+  "status": "blocked_or_failed",
+  "input_files": {
+    "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/depth.png": {
+      "bytes": 363942,
+      "sha256": "1364d7aad87fed2c8e21bf177b6074d7b72bb16b61dd332eb47f93dce5b823c7"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/color.png": {
+      "bytes": 1219571,
+      "sha256": "495278cd012e4d8cee94efcffc40eb902dc1f05f0fd9ef35d5820dd371b97254"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/meta.mat": {
+      "bytes": 881,
+      "sha256": "9ed5451d1f3b34c2f78f9912e16c004b416a20fce22f950fdfc0a1245d06c5d4"
+    }
+  },
+  "calibration": {
+    "intrinsic_matrix": [
+      [
+        631.54864502,
+        0.0,
+        638.43517329
+      ],
+      [
+        0.0,
+        631.20751953,
+        366.49904066
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "factor_depth": 1000.0,
+    "point_units": "metres",
+    "sensor_shape": [
+      720,
+      1280
+    ],
+    "retained_pixels": 822348,
+    "point_min_m": [
+      -0.546766459941864,
+      -0.24038149416446686,
+      0.2290000021457672
+    ],
+    "point_max_m": [
+      0.5106314420700073,
+      0.3400990664958954,
+      0.6100000143051147
+    ],
+    "voxel_size_m": 0.005,
+    "depth_bounds_m": [
+      0.2,
+      0.65
+    ],
+    "coordinate_quantization": "np.ascontiguousarray(points / voxel_size, dtype=int), author truncation retained",
+    "features": "camera XYZ metres, author 3-channel input",
+    "calibration_boundary": "Input meta.mat intrinsics/depth scale replace rig-specific constants only",
+    "workspace_image_mask_used": false,
+    "augmentation": "identity only, one author get_grasp branch"
+  },
+  "native_dependencies": {
+    "MinkowskiEngine_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngine/__init__.py",
+    "MinkowskiEngine_version": "0.5.4",
+    "pointnet2_utils_file": "/home/wangrenpeng/AnyDexGrasp/pointnet2/pointnet2_utils.py",
+    "pointnet2_extension": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+    "pointnet2_extension_sha256": "343c637093873fc622ee8bfe5f6b3f44df1437598f926b32ca41b47d12850c8c",
+    "cuda_device": "cuda:1",
+    "cuda_device_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "cuda_compute_capability": [
+      12,
+      0
+    ],
+    "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib"
+  },
+  "representation_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+    "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "only_ast_change": "Removed the two unused training-label imports; any call raises",
+    "removed_imports": [
+      "from loss import process_grasp_labels, match_grasp_view_and_label"
+    ],
+    "network_layers_and_forward_unchanged": true
+  },
+  "error_type": "AttributeError",
+  "error": "module 'collections' has no attribute 'Sequence'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_rgbd_frame.py\", line 183, in main\n    model=model_cls(in_channels=3,num_seed=args.num_seed,num_view=300,num_angle=48,\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py\", line 185, in __init__\n    self.heatmap_generator = ResUNet14(in_channels=in_channels, out_channels=3, conv1_kernel_size=3, bn_momentum=0.02, D=3)\n                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/models/resunet.py\", line 28, in __init__\n    super(MinkUNetBase, self).__init__(in_channels, out_channels, conv1_kernel_size, self.DILATIONS, bn_momentum, D)\n  File \"/home/wangrenpeng/AnyDexGrasp/models/resnet.py\", line 27, in __init__\n    self.network_initialization(in_channels, out_channels, conv1_kernel_size, dilations, bn_momentum, D)\n  File \"/home/wangrenpeng/AnyDexGrasp/models/resunet.py\", line 42, in network_initialization\n    self.conv1p1s1 = conv(\n                     ^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/models/common.py\", line 131, in conv\n    region_type, axis_types, kernel_size = convert_conv_type(conv_type, kernel_size, D)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/models/common.py\", line 82, in convert_conv_type\n    if isinstance(kernel_size, collections.Sequence):\n                               ^^^^^^^^^^^^^^^^^^^^\nAttributeError: module 'collections' has no attribute 'Sequence'\n",
+  "full_representation_forward": false
+}

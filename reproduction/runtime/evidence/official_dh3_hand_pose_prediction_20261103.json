@@ -1,0 +1,193 @@
+{
+  "scope": "original DH3 single-frame learned hand pose prediction only",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "physical_grasps_executed": 0,
+  "simulation_run": false,
+  "robot_connection": false,
+  "new_training_steps": 0,
+  "test_time_augmentation_branches": 1,
+  "not_author_eleven_branch_TTA": true,
+  "grasp_success_claim": false,
+  "collision_check_executed": false,
+  "status": "hand_pose_prediction_complete_collision_assets_missing",
+  "RANDOM": false,
+  "source_frame": "/home/wangrenpeng/AnyDexGrasp/outputs/official_rgbd_dh3_frame_20261103_v1",
+  "torch": "2.11.0+cu130",
+  "CUDA_VISIBLE_DEVICES": "1",
+  "stages": {
+    "raw_parser_candidates": 2048,
+    "after_original_camera_and_width_gates": 156,
+    "after_original_score_top1000": 156,
+    "all_original_type_depth_combinations": 2496,
+    "original_top3500_returned": 2496,
+    "after_original_learned_score_gate": 419,
+    "mapped_original_hand_poses_before_top400": 419,
+    "original_top400_before_collision": 400
+  },
+  "timing_seconds": {
+    "original_DH3_learned_scoring": 0.41660148598020896,
+    "total_continuation": 2.8487657369696535
+  },
+  "source_frame_RESULTS_sha256": "a7e0958036f28d427b022bb1f5b1f8648b0b16da14b651963848c73266749cc8",
+  "source_frame_checkpoint": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "sha256": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1",
+    "weights_only": true,
+    "strict_state_dict_load": true,
+    "tensor_count": 202,
+    "epoch": 19,
+    "num_view": 300,
+    "num_angle": 48,
+    "num_depth": 5,
+    "num_seed": 2048,
+    "half_views": false
+  },
+  "source_frame_calibration": {
+    "intrinsic_matrix": [
+      [
+        631.54864502,
+        0.0,
+        638.43517329
+      ],
+      [
+        0.0,
+        631.20751953,
+        366.49904066
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "factor_depth": 1000.0,
+    "point_units": "metres",
+    "sensor_shape": [
+      720,
+      1280
+    ],
+    "retained_pixels": 822348,
+    "point_min_m": [
+      -0.546766459941864,
+      -0.24038149416446686,
+      0.2290000021457672
+    ],
+    "point_max_m": [
+      0.5106314420700073,
+      0.3400990664958954,
+      0.6100000143051147
+    ],
+    "voxel_size_m": 0.005,
+    "depth_bounds_m": [
+      0.15,
+      0.72
+    ],
+    "coordinate_quantization": "np.ascontiguousarray(points / voxel_size, dtype=int), author truncation retained",
+    "features": "camera XYZ metres, author 3-channel input",
+    "calibration_boundary": "Input meta.mat intrinsics/depth scale replace rig-specific constants only",
+    "workspace_image_mask_used": false,
+    "augmentation": "identity only, one author get_grasp branch"
+  },
+  "source_frame_timing_seconds": {
+    "input_preparation": 0.11880092701176181,
+    "dependency_import_and_model_load": 2.009768032003194,
+    "sparse_quantization_and_input": 0.10592634696513414,
+    "first_full_representation_forward": 1.166318556992337,
+    "total": 4.783220284036361
+  },
+  "original_function_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+    "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "functions": [
+      "flip_ggarray",
+      "get_graspgroup_features",
+      "get_DH3_depth_type"
+    ],
+    "function_bodies_unchanged": true,
+    "hardware_module_imported": false
+  },
+  "camera_gates": {
+    "original_AST_assignments": [
+      "mask = (preds[:, 9] > 0.9) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)",
+      "workspace_mask = (preds[:, 12] > -0.25) & (preds[:, 12] < 0.25) & (preds[:, 13] > -0.205) & (preds[:, 13] < 0.03)"
+    ],
+    "orientation_only_pass": 483,
+    "width_only_pass": 1572,
+    "orientation_and_width_pass": 422,
+    "workspace_only_pass": 1005
+  },
+  "decision_checkpoints": [
+    {
+      "grasp_type": 1,
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth",
+      "sha256": "9886bcd6236a116c4d1f9d1402248b42df9851053f9e3b22b5a0ef95157d030e",
+      "strict_state_dict_load": true,
+      "output_channels": 20,
+      "weights_only": true
+    },
+    {
+      "grasp_type": 2,
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth",
+      "sha256": "21c507796fc4586d963b46c63b8109ce576aa2221a414f4e136b148c2677b2b8",
+      "strict_state_dict_load": true,
+      "output_channels": 20,
+      "weights_only": true
+    },
+    {
+      "grasp_type": 3,
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth",
+      "sha256": "df163f8a6f5816f60bfb4175196f6e4e55431a340f607fd05e47964f5c571bb5",
+      "strict_state_dict_load": true,
+      "output_channels": 20,
+      "weights_only": true
+    },
+    {
+      "grasp_type": 4,
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth",
+      "sha256": "746a817a715b46b9c4b4921ea6e2d09a826375be953f43862ce0216a2925bf26",
+      "strict_state_dict_load": true,
+      "output_channels": 20,
+      "weights_only": true
+    }
+  ],
+  "model_loader_boundary": "All four published single-file DH3 heads loaded deterministically. Released get_DH3_model resets its dict inside the class loop; that I/O loader is not invoked. Original scoring function and all heads are preserved.",
+  "decision_device": "cuda:0",
+  "learned_scores": {
+    "minimum": 0.0,
+    "maximum": 3.9089815616607666,
+    "threshold": 0.85,
+    "comparison": ">",
+    "sigmoid_probability": false
+  },
+  "hand_mapping": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py",
+    "source_sha256": "5d4332187242de6ce6d23fddc63136a7dbafbc61bbc921cc4dabd32c1067e69f",
+    "original_GraspGroup_source": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/graspnetAPI_source/graspnetAPI/grasp.py",
+    "original_GraspGroup_source_sha256": "344ad4b8b9216abdfee6ff810ae37fe21890cd185760ea10c0361a7a0a19d4d1",
+    "table": "/mnt/public/datasets/AnyDexGrasp/source_tables/generate_mesh_and_pointcloud/dh3_urdf/width_12D_angle_2D_angle.json",
+    "table_sha256": "097929420ba7bfcbf3614ab193a7d85dec4bd95c76aca6a96c9dca1ec7ed2a5a",
+    "API_functions_unchanged": true,
+    "type_counts": {
+      "1": 60,
+      "2": 103,
+      "3": 110,
+      "4": 127
+    },
+    "width_clamp_count_before_top400": 81,
+    "pose_frame": "input camera optical; original hand datum with depth separately stored",
+    "array_columns": "score, depth, type, rotation9, translation3, actuator2, object_id, width"
+  },
+  "collision_assets": {
+    "required_original_pcl_roots": [
+      "/mnt/public/datasets/AnyDexGrasp/source_tables/generate_mesh_and_pointcloud/dh3_urdf/meshes/source_pointclouds/voxel_size_3",
+      "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/meshes/source_pointclouds/voxel_size_3"
+    ],
+    "available_roots": [],
+    "original_collision_voxel_size_m": 0.001,
+    "original_hand_pointcloud_voxel_m": 0.003,
+    "original_approach_distance_m": 0.05,
+    "original_collision_threshold": 0,
+    "empty_cloud_or_all_true_mask_substituted": false
+  },
+  "stop_reason": "Original precomputed per-type/per-width DH3 collision pointclouds are absent; stopped before original collision admission, no empty check substituted"
+}

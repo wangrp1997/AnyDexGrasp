@@ -1,0 +1,62 @@
+{
+  "source": {
+    "package": "pybullet",
+    "version": "3.2.7",
+    "url": "https://files.pythonhosted.org/packages/de/95/b9a98cd4ed948d4f25a7d0b13cb0c1f87e58dc6d113be9e18940641eb25f/pybullet-3.2.7.tar.gz",
+    "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/archives/pybullet-3.2.7.tar.gz",
+    "bytes": 80508379,
+    "sha256": "042879db8d101ac7590dee475fc6aded508b85fe1273fdbbfde1d88bd200e14f",
+    "source": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/sources/pybullet-3.2.7",
+    "download_extract_seconds": 7.84258240100462,
+    "reason": "Official PyPI has no cp312 wheel; root explicitly authorized local wheel build",
+    "shared_install": false,
+    "new_environment": false
+  },
+  "build_patch": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/sources/pybullet-3.2.7",
+    "work": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/pybullet-3.2.7",
+    "changed_file": "setup.py",
+    "before_sha256": "830fd2f47f79897b4a5e3addad64ab80e7e743b4b56d751c56b0ebbdd487b372",
+    "after_sha256": "a6d96ea44b257f5aad24ec4dd31d0a28b3f6135f378abdbcd94a7486689ca5b6",
+    "reason": "Original custom compiler pool ignores MAX_JOBS and uses2*cpu_count; only cap packaging concurrency to4",
+    "workers": 4,
+    "shared_environment_changed": false
+  },
+  "wheel": {
+    "filename": "pybullet-3.2.7-cp312-cp312-linux_x86_64.whl",
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/wheels/pybullet-3.2.7-cp312-cp312-linux_x86_64.whl",
+    "bytes": 102050491,
+    "sha256": "3a2d8f53e3659a0957304427ac7f921017199189e0e821292bc971d88a048839",
+    "built_with": "3.12.14",
+    "packaging_workers": 4
+  },
+  "overlay": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay",
+  "unpacked_files": 4019,
+  "native_files": {
+    "eglRenderer.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "31649c479bc33eb2bd9cba6b25be3436ba553b00db8a442af1605fcf76eaf93d",
+      "bytes": 8743920
+    },
+    "pybullet.cpython-312-x86_64-linux-gnu.so": {
+      "sha256": "f2693c83eb33cc178fa3016ea30c589eba382cb078b0e1427cb40161e3f74d04",
+      "bytes": 107891696
+    }
+  },
+  "smoke": {
+    "pybullet_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet.cpython-312-x86_64-linux-gnu.so",
+    "pybullet_api_version": 202010061,
+    "pybullet_data_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet_data/__init__.py",
+    "pybullet_data_path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/pybullet_data",
+    "transforms3d_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/python_overlay/transforms3d/__init__.py",
+    "transforms3d_version": "0.4.2",
+    "DIRECT_client": 0,
+    "empty_world_bodies": 0,
+    "disconnected": true,
+    "physics_steps": 0,
+    "all_passed": true
+  },
+  "env_sh_modified": false,
+  "shared_install": false,
+  "new_environment": false,
+  "build_log": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pybullet_build_v1.log"
+}

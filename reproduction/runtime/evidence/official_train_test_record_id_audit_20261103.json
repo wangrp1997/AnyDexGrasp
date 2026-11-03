@@ -1,0 +1,81 @@
+{
+  "scope": "official raw train/test record-ID overlap only",
+  "read_only_originals": true,
+  "method": "mmap regex for exactly four-space top-level JSON object keys; full file SHA256 binding",
+  "does_not_establish_object_or_feature_disjointness": true,
+  "checkpoint_selection_may_use_released_test": true,
+  "independent_generalization_claim": false,
+  "hands": {
+    "Allegro": {
+      "train": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/allegro/Allegro_information_single_point_train.json",
+        "bytes": 1934825487,
+        "sha256": "bd72d6a7846227124e6ff46f438425d076e87dea3d8c312522e15ae2d685e98a",
+        "record_count": 3865,
+        "unique_record_ids": 3865,
+        "duplicate_top_level_ids": 0,
+        "sorted_record_ids_sha256": "f54a4f6f6701d4168d9a43b74d57c1ffc33da344c2fb678133c4f68799875875"
+      },
+      "test": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/allegro/Allegro_information_single_point_test.json",
+        "bytes": 258448054,
+        "sha256": "7374d25aea1660ccb12a085a2712819b92a81bda1699b9001ecae71a18819c4b",
+        "record_count": 520,
+        "unique_record_ids": 520,
+        "duplicate_top_level_ids": 0,
+        "sorted_record_ids_sha256": "d1c959914ebb649db96d5f21f3e478965c2edf3fb331ce655ec9a44d38fff7ba"
+      },
+      "overlap_count": 0,
+      "overlap_ids": [],
+      "train_test_record_id_disjoint": true
+    },
+    "DH3": {
+      "train": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/dh3/obj140/train_sr_single_point.json",
+        "bytes": 2050972578,
+        "sha256": "aedd20dd0ea112153b79c17b9fe0869cc865bab97fc7549424d4bd6e8528c6fc",
+        "record_count": 4262,
+        "unique_record_ids": 4262,
+        "duplicate_top_level_ids": 0,
+        "sorted_record_ids_sha256": "a731a8db60bdd6e9d5c3f6ac32da7a1a88844f69cc37aebe1fadb063bea65a11"
+      },
+      "test": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/dh3/obj140/test_sr_single_point.json",
+        "bytes": 116307802,
+        "sha256": "34739729b2181bc6479a3294ad86e00ab0d753b67515db64108a99b0044237eb",
+        "record_count": 240,
+        "unique_record_ids": 240,
+        "duplicate_top_level_ids": 0,
+        "sorted_record_ids_sha256": "fd5ac55f7e25da19667a04625de15dfda3e5e7b9dd84f4fb45bfd2047a50111d"
+      },
+      "overlap_count": 0,
+      "overlap_ids": [],
+      "train_test_record_id_disjoint": true
+    },
+    "Inspire": {
+      "train": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/inspire/obj140/train_sr_new_type10_single_point.json",
+        "bytes": 664301381,
+        "sha256": "046b51aee8e858d74af5441c589d0abea5251567f16f709464cdca6c67cf3541",
+        "record_count": 10449,
+        "unique_record_ids": 10449,
+        "duplicate_top_level_ids": 0,
+        "sorted_record_ids_sha256": "bb3fe3e10b3f46f913d3981e49680969da57cfb721efec5f7c7a1b3d454fdee3"
+      },
+      "test": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/inspire/obj140/test_sr_new_type10_single_point.json",
+        "bytes": 438181275,
+        "sha256": "a179271248ca322db2f6bffb6424148a089fe9095910e224e3e199be67c8e467",
+        "record_count": 1000,
+        "unique_record_ids": 1000,
+        "duplicate_top_level_ids": 0,
+        "sorted_record_ids_sha256": "2ad7ff0658a96e178fe409b11f6d23b0f45423ea375b4c4a461608af49196a18"
+      },
+      "overlap_count": 0,
+      "overlap_ids": [],
+      "train_test_record_id_disjoint": true
+    }
+  },
+  "all_raw_record_ids_disjoint": true,
+  "wall_seconds": 40.525667221983895
+}

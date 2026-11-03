@@ -1,0 +1,10 @@
+{
+  "scope": "Patch storage formatting only, no native source/binary changes",
+  "reason": "Zero-context unified diff removes blank context-line whitespace flagged by Git diff --check",
+  "previous_patch_sha256": "03393785f83df2f4b0edd493045b06c7f346bffb3f9f3956f3c9a8dc7b5a94ee",
+  "current_patch_sha256": "7886d76ffe0d2a7c96e2acda438acc4af1f774101f692c550f087aa093fa4cb0",
+  "applied_to_pristine_three_file_copy": true,
+  "all_three_results_exactly_equal_accepted_build_source": true,
+  "native_recompiled": false,
+  "stdout": "patching file setup.py\npatching file src/coordinate_map_gpu.cuh\npatching file src/3rdparty/cudf/detail/nvtx/ranges.hpp\n"
+}

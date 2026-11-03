@@ -1,0 +1,1650 @@
+{
+  "scope": "all published obj140/480 decision checkpoints on original released real test features",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "manifest_sha256": "876b573000cd372db7a720e52c4450af71c55fd4ab8b13d4a7ecff81a761e423",
+  "all_manifest_entries_retained": true,
+  "no_best_model_selection": true,
+  "new_training_steps": 0,
+  "physical_grasps_executed": 0,
+  "includes_pointcloud_CGR_generation": false,
+  "independent_heldout_generalization_claim": false,
+  "important_boundary": "Original supplied test records may also have selected these checkpoints. Balanced binary record metrics are not physical grasp success rate. Shared hand-type subsets evaluated by multiple checkpoints are not independent samples.",
+  "python": "3.12.14 (main, Sep 29 2026, 15:01:18) [Clang 22.1.3 ]",
+  "torch": "2.11.0+cu130",
+  "device": "cpu",
+  "source_sha256": {
+    "models/minkowski_graspnet.py": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d",
+    "models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "dataset/multifinger_hand.py": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e",
+    "update_data.py": "9a2a35c692782876e464a1992c5c2a43bfe6c64c5c5ab5f2100caec861761a38"
+  },
+  "checkpoint_count": 31,
+  "evaluated_count": 31,
+  "filename_metric_match_count": 31,
+  "unique_hand_type_groups": 22,
+  "unique_original_hand_record_ids": 1440,
+  "per_checkpoint_record_evaluations": 1800,
+  "wall_seconds": 6.9393908539786935,
+  "complete_local_results": "/home/wangrenpeng/AnyDexGrasp/outputs/official_decision_validation_all_obj140/RESULTS.json",
+  "complete_local_results_sha256": "8d609098e3595d5ae5a0e85559d2542de102b387b5288f5bfa56a7348fb84d13",
+  "record_provenance": {
+    "Allegro": {
+      "original_input": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/allegro/Allegro_information_single_point_test.json",
+      "original_input_sha256": "7374d25aea1660ccb12a085a2712819b92a81bda1699b9001ecae71a18819c4b",
+      "original_input_unchanged": true,
+      "derived_output_sha256": "b7c5f755e636e9d91600834247e9b23122803c6b05858a0186af9d1e05f58bfa",
+      "records_before": 520,
+      "records_after": 400,
+      "finger_types_before": {
+        "0": 40,
+        "1": 40,
+        "2": 40,
+        "3": 40,
+        "4": 40,
+        "5": 40,
+        "6": 40,
+        "7": 40,
+        "8": 40,
+        "9": 40,
+        "10": 40,
+        "11": 40,
+        "12": 40
+      },
+      "finger_types_after": {
+        "1": 40,
+        "2": 40,
+        "3": 40,
+        "4": 40,
+        "5": 40,
+        "6": 40,
+        "7": 40,
+        "8": 40,
+        "9": 40,
+        "10": 40
+      },
+      "all_retained_features_and_results_unchanged": true,
+      "function_source_sha256": "9a2a35c692782876e464a1992c5c2a43bfe6c64c5c5ab5f2100caec861761a38",
+      "only_ast_change": "Removed unused grasp_types imports; mapping and mutation logic unchanged",
+      "canonicalization_passes": 1
+    },
+    "DH3": {
+      "original_input": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/dh3/obj140/test_sr_single_point.json",
+      "original_input_sha256": "34739729b2181bc6479a3294ad86e00ab0d753b67515db64108a99b0044237eb",
+      "original_input_unchanged": true,
+      "derived_output_sha256": "bf76f2ad30993e619e170d6e50ddb1d17ab9fb24bc31e8fdb4bbe9219ec4f5c8",
+      "records_before": 240,
+      "records_after": 240,
+      "finger_types_before": {
+        "0": 60,
+        "1": 60,
+        "3": 60,
+        "2": 60
+      },
+      "finger_types_after": {
+        "1": 60,
+        "2": 60,
+        "4": 60,
+        "3": 60
+      },
+      "all_retained_features_and_results_unchanged": true,
+      "function_source_sha256": "9a2a35c692782876e464a1992c5c2a43bfe6c64c5c5ab5f2100caec861761a38",
+      "only_ast_change": "Removed unused grasp_types imports; mapping and mutation logic unchanged",
+      "canonicalization_passes": 1
+    },
+    "Inspire": {
+      "original_input": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/inspire/obj140/test_sr_new_type10_single_point.json",
+      "original_input_sha256": "a179271248ca322db2f6bffb6424148a089fe9095910e224e3e199be67c8e467",
+      "original_input_unchanged": true,
+      "derived_output_sha256": "c24850979dee1551730c2a4e5a7d65e44424c2185fd16b9ce53f70ae61649e60",
+      "records_before": 1000,
+      "records_after": 800,
+      "finger_types_before": {
+        "9": 100,
+        "8": 100,
+        "2": 100,
+        "5": 100,
+        "1": 100,
+        "6": 100,
+        "3": 100,
+        "0": 100,
+        "4": 100,
+        "7": 100
+      },
+      "finger_types_after": {
+        "8": 100,
+        "3": 100,
+        "2": 100,
+        "6": 100,
+        "4": 100,
+        "1": 100,
+        "5": 100,
+        "7": 100
+      },
+      "all_retained_features_and_results_unchanged": true,
+      "function_source_sha256": "9a2a35c692782876e464a1992c5c2a43bfe6c64c5c5ab5f2100caec861761a38",
+      "only_ast_change": "Removed unused grasp_types imports; mapping and mutation logic unchanged",
+      "canonicalization_passes": 1
+    }
+  },
+  "models": [
+    {
+      "hand": "Allegro",
+      "finger_type": 1,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/1/0.7_1.0_0.05_0.0952_33.pth",
+      "checkpoint_sha256": "fee18a2fe759e02f3d8c66fb0d0f737366a98652c975f7669d6bfd69145c4a9b",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.05_0.0952_33.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.0952
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.809523809522597e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 1,
+        "fp": 0,
+        "tn": 20,
+        "fn": 19,
+        "accuracy": 0.525,
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.09523809523809523,
+        "selected_predictions": 1
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 1,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/1/0.9_1.0_0.1_0.1818_69.pth",
+      "checkpoint_sha256": "031c57823ff0599c7f238786272cd432c5bd2c93661cc65397b40456eced4d1c",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_69.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 2,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/2/0.7_1.0_0.25_0.4_59.pth",
+      "checkpoint_sha256": "05c5fd5f01d05ae6e6d424187e2547ab827fd1d863232003420f810f569c569c",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.25_0.4_59.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 5,
+        "fp": 0,
+        "tn": 20,
+        "fn": 15,
+        "accuracy": 0.625,
+        "precision": 1.0,
+        "recall": 0.25,
+        "f1": 0.4,
+        "selected_predictions": 5
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 2,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/2/0.9_1.0_0.15_0.2609_44.pth",
+      "checkpoint_sha256": "16a4ddaa743cf6afde991f52ade1d4de546360e3372688261a26d732e46574fa",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.15_0.2609_44.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2609
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.0434782608723676e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 3,
+        "fp": 0,
+        "tn": 20,
+        "fn": 17,
+        "accuracy": 0.575,
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2608695652173913,
+        "selected_predictions": 3
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 3,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/3/0.7_1.0_0.1_0.1818_35.pth",
+      "checkpoint_sha256": "befffa933b6ad7dc8d3f049684ff6fbea73100c81ddb6e20a29f8e43dc4d3aa4",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.1_0.1818_35.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 3,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/3/0.9_1.0_0.15_0.2609_79.pth",
+      "checkpoint_sha256": "2a48a62ce30a2670efe18df9fa98196888aaa4763cbfe405ced534be15d8d3ba",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.15_0.2609_79.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2609
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.0434782608723676e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 3,
+        "fp": 0,
+        "tn": 20,
+        "fn": 17,
+        "accuracy": 0.575,
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2608695652173913,
+        "selected_predictions": 3
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 4,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/4/0.7_1.0_0.1_0.1818_33.pth",
+      "checkpoint_sha256": "75870641ed3881e7e7ba1874b6ab3d9817738459962b226e69d5d9035255ca26",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.1_0.1818_33.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 4,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/4/0.9_1.0_0.1_0.1818_37.pth",
+      "checkpoint_sha256": "9d4285673e1a387d6ba2588f4d256438bc1ff1e3d138691c8e656c8488aece3d",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_37.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 5,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/5/0.7_1.0_0.15_0.2609_34.pth",
+      "checkpoint_sha256": "67764cb9ba893d65985bfa2ba48f12d01788fae9104abd7efead8fce2041272d",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.15_0.2609_34.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2609
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.0434782608723676e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 3,
+        "fp": 0,
+        "tn": 20,
+        "fn": 17,
+        "accuracy": 0.575,
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2608695652173913,
+        "selected_predictions": 3
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 5,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/5/0.9_1.0_0.1_0.1818_55.pth",
+      "checkpoint_sha256": "a6861aad2bd5f8daf87f63d7c761c6f6f5417fea3e9bc0cc6b0e9f9ffc6743c7",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_55.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 6,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/6/0.7_1.0_0.1_0.1818_34.pth",
+      "checkpoint_sha256": "d6d06c79f0009504fa5bea81e4ac237b819a1a7f67396457bd7044bd956b06c8",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.1_0.1818_34.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 6,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/6/0.9_1.0_0.1_0.1818_43.pth",
+      "checkpoint_sha256": "91a3acd2daba1c1877b2f5fd9f307ae6255406d4fb6969bb1599d418937aefb4",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_43.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 7,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/7/0.7_1.0_0.05_0.0952_18.pth",
+      "checkpoint_sha256": "1690aa5b9e7bcade64bd9b53149402d367504fba4a55d1f0cc87946ba4794df9",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.05_0.0952_18.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.0952
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.809523809522597e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 1,
+        "fp": 0,
+        "tn": 20,
+        "fn": 19,
+        "accuracy": 0.525,
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.09523809523809523,
+        "selected_predictions": 1
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 7,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/7/0.9_1.0_0.1_0.1818_32.pth",
+      "checkpoint_sha256": "dd643ddcf3f5381605efc366c882fccb64a818046812c8e49444874d1df402ae",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_32.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 8,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/8/0.7_1.0_0.05_0.0952_27.pth",
+      "checkpoint_sha256": "e6877f09a1bbdb4525114b06a241f329286770bf8f6dba1afb7802bfda1fae40",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.05_0.0952_27.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.0952
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.809523809522597e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 1,
+        "fp": 0,
+        "tn": 20,
+        "fn": 19,
+        "accuracy": 0.525,
+        "precision": 1.0,
+        "recall": 0.05,
+        "f1": 0.09523809523809523,
+        "selected_predictions": 1
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 8,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/8/0.9_1.0_0.1_0.1818_34.pth",
+      "checkpoint_sha256": "84c5dcd33a35d6acabc3a6d438e8f60022953348612af193838fe57fb560f8cc",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_34.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 9,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/9/0.9_1.0_0.1_0.1818_33.pth",
+      "checkpoint_sha256": "5520147d003aa2141ecae78aadb3cbfc270ca2b9617442f13d4f9f7f9cfef6d2",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_33.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 10,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/10/0.7_1.0_0.15_0.2609_42.pth",
+      "checkpoint_sha256": "4ba53657343e6b39061b0e3ca06cb4979918a2cadbe7d12547aae434f532be7a",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.7_1.0_0.15_0.2609_42.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.7,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2609
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.0434782608723676e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.7,
+        "comparison": ">",
+        "tp": 3,
+        "fp": 0,
+        "tn": 20,
+        "fn": 17,
+        "accuracy": 0.575,
+        "precision": 1.0,
+        "recall": 0.15,
+        "f1": 0.2608695652173913,
+        "selected_predictions": 3
+      }
+    },
+    {
+      "hand": "Allegro",
+      "finger_type": 10,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/10/0.9_1.0_0.1_0.1818_34.pth",
+      "checkpoint_sha256": "06af2453bda261c0f10fca4c0a095aa0a3dee0f5abbfb2eabf06cae0a34cd611",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.1_0.1818_34.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 40,
+      "labels_positive": 20,
+      "labels_negative": 20,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.1818
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.8181818181833842e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 2,
+        "fp": 0,
+        "tn": 20,
+        "fn": 18,
+        "accuracy": 0.55,
+        "precision": 1.0,
+        "recall": 0.1,
+        "f1": 0.18181818181818182,
+        "selected_predictions": 2
+      }
+    },
+    {
+      "hand": "DH3",
+      "finger_type": 1,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth",
+      "checkpoint_sha256": "9886bcd6236a116c4d1f9d1402248b42df9851053f9e3b22b5a0ef95157d030e",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.2333_0.3784_5.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 60,
+      "labels_positive": 30,
+      "labels_negative": 30,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.2333,
+        "f1": 0.3784
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 3.333333333332966e-05,
+        "f1": 2.162162162161474e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 7,
+        "fp": 0,
+        "tn": 30,
+        "fn": 23,
+        "accuracy": 0.6166666666666667,
+        "precision": 1.0,
+        "recall": 0.23333333333333334,
+        "f1": 0.3783783783783784,
+        "selected_predictions": 7
+      }
+    },
+    {
+      "hand": "DH3",
+      "finger_type": 2,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth",
+      "checkpoint_sha256": "21c507796fc4586d963b46c63b8109ce576aa2221a414f4e136b148c2677b2b8",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.2333_0.3784_12.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 60,
+      "labels_positive": 30,
+      "labels_negative": 30,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.2333,
+        "f1": 0.3784
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 3.333333333332966e-05,
+        "f1": 2.162162162161474e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 7,
+        "fp": 0,
+        "tn": 30,
+        "fn": 23,
+        "accuracy": 0.6166666666666667,
+        "precision": 1.0,
+        "recall": 0.23333333333333334,
+        "f1": 0.3783783783783784,
+        "selected_predictions": 7
+      }
+    },
+    {
+      "hand": "DH3",
+      "finger_type": 3,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth",
+      "checkpoint_sha256": "df163f8a6f5816f60bfb4175196f6e4e55431a340f607fd05e47964f5c571bb5",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.3333_0.5_11.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 60,
+      "labels_positive": 30,
+      "labels_negative": 30,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 3.333333333332966e-05,
+        "f1": 0.0
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 10,
+        "fp": 0,
+        "tn": 30,
+        "fn": 20,
+        "accuracy": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "selected_predictions": 10
+      }
+    },
+    {
+      "hand": "DH3",
+      "finger_type": 4,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth",
+      "checkpoint_sha256": "746a817a715b46b9c4b4921ea6e2d09a826375be953f43862ce0216a2925bf26",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.5_0.6667_88.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 60,
+      "labels_positive": 30,
+      "labels_negative": 30,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6667
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 3.333333333332966e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 15,
+        "fp": 0,
+        "tn": 30,
+        "fn": 15,
+        "accuracy": 0.75,
+        "precision": 1.0,
+        "recall": 0.5,
+        "f1": 0.6666666666666666,
+        "selected_predictions": 15
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 1,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/1/0.9_1.0_0.08_0.1481_39.pth",
+      "checkpoint_sha256": "ed3e66e492da469f3fb380e607c503dcc0b2bf414255afc276c65329a7b29a22",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.08_0.1481_39.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.08,
+        "f1": 0.1481
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 4.814814814813051e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 4,
+        "fp": 0,
+        "tn": 50,
+        "fn": 46,
+        "accuracy": 0.54,
+        "precision": 1.0,
+        "recall": 0.08,
+        "f1": 0.14814814814814814,
+        "selected_predictions": 4
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 2,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/2/0.9_1.0_0.18_0.3051_38.pth",
+      "checkpoint_sha256": "89408d984609722c536cb81e3caf02594ea39d014bb680f80420a98f775307e6",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.18_0.3051_38.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.18,
+        "f1": 0.3051
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.525423728809816e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 9,
+        "fp": 0,
+        "tn": 50,
+        "fn": 41,
+        "accuracy": 0.59,
+        "precision": 1.0,
+        "recall": 0.18,
+        "f1": 0.3050847457627119,
+        "selected_predictions": 9
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 3,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/3/0.9_1.0_0.22_0.3607_62.pth",
+      "checkpoint_sha256": "1d1a03487a3be2c03693567afb286fa6981c80cdb27c76a677aa676518a5c395",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.22_0.3607_62.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.22,
+        "f1": 0.3607
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 4.426229508197599e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 11,
+        "fp": 0,
+        "tn": 50,
+        "fn": 39,
+        "accuracy": 0.61,
+        "precision": 1.0,
+        "recall": 0.22,
+        "f1": 0.36065573770491804,
+        "selected_predictions": 11
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 4,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/4/0.9_1.0_0.08_0.1481_17.pth",
+      "checkpoint_sha256": "3f27f10dc6436e583b37e0a1ff801265f968e774af07db352c3d896002f04c72",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.08_0.1481_17.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.08,
+        "f1": 0.1481
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 4.814814814813051e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 4,
+        "fp": 0,
+        "tn": 50,
+        "fn": 46,
+        "accuracy": 0.54,
+        "precision": 1.0,
+        "recall": 0.08,
+        "f1": 0.14814814814814814,
+        "selected_predictions": 4
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 5,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/5/0.9_1.0_0.08_0.1481_36.pth",
+      "checkpoint_sha256": "ae743ccf2f077b7cdafb816040a733079849b02dfc24e694aa88ab62fdf6180c",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.08_0.1481_36.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.08,
+        "f1": 0.1481
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 4.814814814813051e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 4,
+        "fp": 0,
+        "tn": 50,
+        "fn": 46,
+        "accuracy": 0.54,
+        "precision": 1.0,
+        "recall": 0.08,
+        "f1": 0.14814814814814814,
+        "selected_predictions": 4
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 6,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/6/0.9_1.0_0.18_0.3051_76.pth",
+      "checkpoint_sha256": "9a99f30953aeaf8a705ebe7749416a70cda84582842ce68a569af71a51c0bf58",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_1.0_0.18_0.3051_76.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 1.0,
+        "recall": 0.18,
+        "f1": 0.3051
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 1.525423728809816e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 9,
+        "fp": 0,
+        "tn": 50,
+        "fn": 41,
+        "accuracy": 0.59,
+        "precision": 1.0,
+        "recall": 0.18,
+        "f1": 0.3050847457627119,
+        "selected_predictions": 9
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 7,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/7/0.9_0.875_0.14_0.2414_34.pth",
+      "checkpoint_sha256": "5bff09ff09d1c76c1580bbc2b5d52412a6308e58e4fab7e933cf7a263ffad5d5",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_0.875_0.14_0.2414_34.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 0.875,
+        "recall": 0.14,
+        "f1": 0.2414
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 2.068965517240673e-05
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 7,
+        "fp": 1,
+        "tn": 49,
+        "fn": 43,
+        "accuracy": 0.56,
+        "precision": 0.875,
+        "recall": 0.14,
+        "f1": 0.2413793103448276,
+        "selected_predictions": 8
+      }
+    },
+    {
+      "hand": "Inspire",
+      "finger_type": 8,
+      "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/8/0.9_0.6_0.06_0.1091_40.pth",
+      "checkpoint_sha256": "40c5c1d35637abd5281ad29e22ec0b3698c944d6af44a01c748a637b44c3fb10",
+      "checkpoint_bytes": 10563432,
+      "published_filename": "0.9_0.6_0.06_0.1091_40.pth",
+      "network_shape": {
+        "input_width": 480,
+        "output_channels": 20
+      },
+      "strict_state_dict_load": true,
+      "status": "evaluated",
+      "records": 100,
+      "labels_positive": 50,
+      "labels_negative": 50,
+      "filename_declared_threshold": 0.9,
+      "filename_declared_metrics": {
+        "precision": 0.6,
+        "recall": 0.06,
+        "f1": 0.1091
+      },
+      "filename_metric_absolute_errors": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 9.090909090916921e-06
+      },
+      "matches_filename_to_four_decimals": true,
+      "saved_attributes": {
+        "num_multifinger_type": 1,
+        "num_multifinger_depth": 4,
+        "num_two_finger_angle": 1,
+        "num_two_finger_depth": 5
+      },
+      "safe_weights_only_load": true,
+      "recomputed_declared_threshold_metrics": {
+        "threshold": 0.9,
+        "comparison": ">",
+        "tp": 3,
+        "fp": 2,
+        "tn": 48,
+        "fn": 47,
+        "accuracy": 0.51,
+        "precision": 0.6,
+        "recall": 0.06,
+        "f1": 0.10909090909090909,
+        "selected_predictions": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+{
+  "scope": "read-only official representation-checkpoint metadata; no model inference",
+  "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+  "bytes": 307636549,
+  "sha256": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1",
+  "weights_only": true,
+  "unsafe_globals": [],
+  "loaded": true,
+  "top_level_type": "dict",
+  "top_level_keys": [
+    "epoch",
+    "optimizer_state_dict",
+    "loss",
+    "model_state_dict"
+  ],
+  "epoch": 19,
+  "model_tensor_count": 202,
+  "model_shapes": {
+    "heatmap_generator.conv1p1s1.kernel": [
+      27,
+      3,
+      64
+    ],
+    "heatmap_generator.bn1.bn.weight": [
+      64
+    ],
+    "heatmap_generator.bn1.bn.bias": [
+      64
+    ],
+    "heatmap_generator.bn1.bn.running_mean": [
+      64
+    ],
+    "heatmap_generator.bn1.bn.running_var": [
+      64
+    ],
+    "heatmap_generator.bn1.bn.num_batches_tracked": [],
+    "heatmap_generator.block1.0.conv1.kernel": [
+      27,
+      64,
+      64
+    ],
+    "heatmap_generator.block1.0.norm1.bn.weight": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm1.bn.bias": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm1.bn.running_mean": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm1.bn.running_var": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm1.bn.num_batches_tracked": [],
+    "heatmap_generator.block1.0.conv2.kernel": [
+      27,
+      64,
+      64
+    ],
+    "heatmap_generator.block1.0.norm2.bn.weight": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm2.bn.bias": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm2.bn.running_mean": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm2.bn.running_var": [
+      64
+    ],
+    "heatmap_generator.block1.0.norm2.bn.num_batches_tracked": [],
+    "heatmap_generator.conv2p1s2.kernel": [
+      8,
+      64,
+      64
+    ],
+    "heatmap_generator.bn2.bn.weight": [
+      64
+    ],
+    "heatmap_generator.bn2.bn.bias": [
+      64
+    ],
+    "heatmap_generator.bn2.bn.running_mean": [
+      64
+    ],
+    "heatmap_generator.bn2.bn.running_var": [
+      64
+    ],
+    "heatmap_generator.bn2.bn.num_batches_tracked": [],
+    "heatmap_generator.block2.0.conv1.kernel": [
+      27,
+      64,
+      128
+    ],
+    "heatmap_generator.block2.0.norm1.bn.weight": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm1.bn.bias": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm1.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm1.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm1.bn.num_batches_tracked": [],
+    "heatmap_generator.block2.0.conv2.kernel": [
+      27,
+      128,
+      128
+    ],
+    "heatmap_generator.block2.0.norm2.bn.weight": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm2.bn.bias": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm2.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm2.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.block2.0.norm2.bn.num_batches_tracked": [],
+    "heatmap_generator.block2.0.downsample.0.kernel": [
+      64,
+      128
+    ],
+    "heatmap_generator.block2.0.downsample.1.bn.weight": [
+      128
+    ],
+    "heatmap_generator.block2.0.downsample.1.bn.bias": [
+      128
+    ],
+    "heatmap_generator.block2.0.downsample.1.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.block2.0.downsample.1.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.block2.0.downsample.1.bn.num_batches_tracked": [],
+    "heatmap_generator.conv3p2s2.kernel": [
+      8,
+      128,
+      128
+    ],
+    "heatmap_generator.bn3.bn.weight": [
+      128
+    ],
+    "heatmap_generator.bn3.bn.bias": [
+      128
+    ],
+    "heatmap_generator.bn3.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.bn3.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.bn3.bn.num_batches_tracked": [],
+    "heatmap_generator.block3.0.conv1.kernel": [
+      27,
+      128,
+      256
+    ],
+    "heatmap_generator.block3.0.norm1.bn.weight": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm1.bn.bias": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm1.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm1.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm1.bn.num_batches_tracked": [],
+    "heatmap_generator.block3.0.conv2.kernel": [
+      27,
+      256,
+      256
+    ],
+    "heatmap_generator.block3.0.norm2.bn.weight": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm2.bn.bias": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm2.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm2.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.block3.0.norm2.bn.num_batches_tracked": [],
+    "heatmap_generator.block3.0.downsample.0.kernel": [
+      128,
+      256
+    ],
+    "heatmap_generator.block3.0.downsample.1.bn.weight": [
+      256
+    ],
+    "heatmap_generator.block3.0.downsample.1.bn.bias": [
+      256
+    ],
+    "heatmap_generator.block3.0.downsample.1.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.block3.0.downsample.1.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.block3.0.downsample.1.bn.num_batches_tracked": [],
+    "heatmap_generator.conv4p4s2.kernel": [
+      8,
+      256,
+      256
+    ],
+    "heatmap_generator.bn4.bn.weight": [
+      256
+    ],
+    "heatmap_generator.bn4.bn.bias": [
+      256
+    ],
+    "heatmap_generator.bn4.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.bn4.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.bn4.bn.num_batches_tracked": [],
+    "heatmap_generator.block4.0.conv1.kernel": [
+      27,
+      256,
+      512
+    ],
+    "heatmap_generator.block4.0.norm1.bn.weight": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm1.bn.bias": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm1.bn.running_mean": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm1.bn.running_var": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm1.bn.num_batches_tracked": [],
+    "heatmap_generator.block4.0.conv2.kernel": [
+      27,
+      512,
+      512
+    ],
+    "heatmap_generator.block4.0.norm2.bn.weight": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm2.bn.bias": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm2.bn.running_mean": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm2.bn.running_var": [
+      512
+    ],
+    "heatmap_generator.block4.0.norm2.bn.num_batches_tracked": [],
+    "heatmap_generator.block4.0.downsample.0.kernel": [
+      256,
+      512
+    ],
+    "heatmap_generator.block4.0.downsample.1.bn.weight": [
+      512
+    ],
+    "heatmap_generator.block4.0.downsample.1.bn.bias": [
+      512
+    ],
+    "heatmap_generator.block4.0.downsample.1.bn.running_mean": [
+      512
+    ],
+    "heatmap_generator.block4.0.downsample.1.bn.running_var": [
+      512
+    ],
+    "heatmap_generator.block4.0.downsample.1.bn.num_batches_tracked": [],
+    "heatmap_generator.convtr4p8s2.kernel": [
+      8,
+      512,
+      256
+    ],
+    "heatmap_generator.bntr4.bn.weight": [
+      256
+    ],
+    "heatmap_generator.bntr4.bn.bias": [
+      256
+    ],
+    "heatmap_generator.bntr4.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.bntr4.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.bntr4.bn.num_batches_tracked": [],
+    "heatmap_generator.block5.0.conv1.kernel": [
+      27,
+      512,
+      256
+    ],
+    "heatmap_generator.block5.0.norm1.bn.weight": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm1.bn.bias": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm1.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm1.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm1.bn.num_batches_tracked": [],
+    "heatmap_generator.block5.0.conv2.kernel": [
+      27,
+      256,
+      256
+    ],
+    "heatmap_generator.block5.0.norm2.bn.weight": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm2.bn.bias": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm2.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm2.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.block5.0.norm2.bn.num_batches_tracked": [],
+    "heatmap_generator.block5.0.downsample.0.kernel": [
+      512,
+      256
+    ],
+    "heatmap_generator.block5.0.downsample.1.bn.weight": [
+      256
+    ],
+    "heatmap_generator.block5.0.downsample.1.bn.bias": [
+      256
+    ],
+    "heatmap_generator.block5.0.downsample.1.bn.running_mean": [
+      256
+    ],
+    "heatmap_generator.block5.0.downsample.1.bn.running_var": [
+      256
+    ],
+    "heatmap_generator.block5.0.downsample.1.bn.num_batches_tracked": [],
+    "heatmap_generator.convtr5p4s2.kernel": [
+      8,
+      256,
+      128
+    ],
+    "heatmap_generator.bntr5.bn.weight": [
+      128
+    ],
+    "heatmap_generator.bntr5.bn.bias": [
+      128
+    ],
+    "heatmap_generator.bntr5.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.bntr5.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.bntr5.bn.num_batches_tracked": [],
+    "heatmap_generator.block6.0.conv1.kernel": [
+      27,
+      256,
+      128
+    ],
+    "heatmap_generator.block6.0.norm1.bn.weight": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm1.bn.bias": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm1.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm1.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm1.bn.num_batches_tracked": [],
+    "heatmap_generator.block6.0.conv2.kernel": [
+      27,
+      128,
+      128
+    ],
+    "heatmap_generator.block6.0.norm2.bn.weight": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm2.bn.bias": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm2.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm2.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.block6.0.norm2.bn.num_batches_tracked": [],
+    "heatmap_generator.block6.0.downsample.0.kernel": [
+      256,
+      128
+    ],
+    "heatmap_generator.block6.0.downsample.1.bn.weight": [
+      128
+    ],
+    "heatmap_generator.block6.0.downsample.1.bn.bias": [
+      128
+    ],
+    "heatmap_generator.block6.0.downsample.1.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.block6.0.downsample.1.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.block6.0.downsample.1.bn.num_batches_tracked": [],
+    "heatmap_generator.convtr6p2s2.kernel": [
+      8,
+      128,
+      128
+    ],
+    "heatmap_generator.bntr6.bn.weight": [
+      128
+    ],
+    "heatmap_generator.bntr6.bn.bias": [
+      128
+    ],
+    "heatmap_generator.bntr6.bn.running_mean": [
+      128
+    ],
+    "heatmap_generator.bntr6.bn.running_var": [
+      128
+    ],
+    "heatmap_generator.bntr6.bn.num_batches_tracked": [],
+    "heatmap_generator.feature_extraction.0.kernel": [
+      192,
+      512
+    ],
+    "heatmap_generator.feature_extraction.1.bn.weight": [
+      512
+    ],
+    "heatmap_generator.feature_extraction.1.bn.bias": [
+      512
+    ],
+    "heatmap_generator.feature_extraction.1.bn.running_mean": [
+      512
+    ],
+    "heatmap_generator.feature_extraction.1.bn.running_var": [
+      512
+    ],
+    "heatmap_generator.feature_extraction.1.bn.num_batches_tracked": [],
+    "heatmap_generator.final.kernel": [
+      512,
+      3
+    ],
+    "heatmap_generator.final.bias": [
+      1,
+      3
+    ],
+    "view_estimator.conv1.weight": [
+      512,
+      512,
+      1
+    ],
+    "view_estimator.conv1.bias": [
+      512
+    ],
+    "view_estimator.conv2.weight": [
+      512,
+      512,
+      1
+    ],
+    "view_estimator.conv2.bias": [
+      512
+    ],
+    "view_estimator.conv3.weight": [
+      300,
+      512,
+      1
+    ],
+    "view_estimator.conv3.bias": [
+      300
+    ],
+    "view_estimator.bn1.weight": [
+      512
+    ],
+    "view_estimator.bn1.bias": [
+      512
+    ],
+    "view_estimator.bn1.running_mean": [
+      512
+    ],
+    "view_estimator.bn1.running_var": [
+      512
+    ],
+    "view_estimator.bn1.num_batches_tracked": [],
+    "view_estimator.bn2.weight": [
+      512
+    ],
+    "view_estimator.bn2.bias": [
+      512
+    ],
+    "view_estimator.bn2.running_mean": [
+      512
+    ],
+    "view_estimator.bn2.running_var": [
+      512
+    ],
+    "view_estimator.bn2.num_batches_tracked": [],
+    "grasp_generator.pcg.mlps.layer0.conv.weight": [
+      512,
+      515,
+      1,
+      1
+    ],
+    "grasp_generator.pcg.mlps.layer0.bn.bn.weight": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer0.bn.bn.bias": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer0.bn.bn.running_mean": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer0.bn.bn.running_var": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer0.bn.bn.num_batches_tracked": [],
+    "grasp_generator.pcg.mlps.layer1.conv.weight": [
+      512,
+      512,
+      1,
+      1
+    ],
+    "grasp_generator.pcg.mlps.layer1.bn.bn.weight": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer1.bn.bn.bias": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer1.bn.bn.running_mean": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer1.bn.bn.running_var": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer1.bn.bn.num_batches_tracked": [],
+    "grasp_generator.pcg.mlps.layer2.conv.weight": [
+      512,
+      512,
+      1,
+      1
+    ],
+    "grasp_generator.pcg.mlps.layer2.bn.bn.weight": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer2.bn.bn.bias": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer2.bn.bn.running_mean": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer2.bn.bn.running_var": [
+      512
+    ],
+    "grasp_generator.pcg.mlps.layer2.bn.bn.num_batches_tracked": [],
+    "grasp_generator.conv1.weight": [
+      512,
+      512,
+      1
+    ],
+    "grasp_generator.conv1.bias": [
+      512
+    ],
+    "grasp_generator.conv2.weight": [
+      512,
+      512,
+      1
+    ],
+    "grasp_generator.conv2.bias": [
+      512
+    ],
+    "grasp_generator.conv3.weight": [
+      480,
+      512,
+      1
+    ],
+    "grasp_generator.conv3.bias": [
+      480
+    ],
+    "grasp_generator.bn1.weight": [
+      512
+    ],
+    "grasp_generator.bn1.bias": [
+      512
+    ],
+    "grasp_generator.bn1.running_mean": [
+      512
+    ],
+    "grasp_generator.bn1.running_var": [
+      512
+    ],
+    "grasp_generator.bn1.num_batches_tracked": [],
+    "grasp_generator.bn2.weight": [
+      512
+    ],
+    "grasp_generator.bn2.bias": [
+      512
+    ],
+    "grasp_generator.bn2.running_mean": [
+      512
+    ],
+    "grasp_generator.bn2.running_var": [
+      512
+    ],
+    "grasp_generator.bn2.num_batches_tracked": []
+  },
+  "model_elements": 25637231,
+  "important_shapes": {
+    "heatmap_generator.conv1p1s1.kernel": [
+      27,
+      3,
+      64
+    ],
+    "view_estimator.conv3.weight": [
+      300,
+      512,
+      1
+    ],
+    "grasp_generator.conv3.weight": [
+      480,
+      512,
+      1
+    ],
+    "grasp_generator.conv3.bias": [
+      480
+    ]
+  },
+  "full_inference_performed": false
+}

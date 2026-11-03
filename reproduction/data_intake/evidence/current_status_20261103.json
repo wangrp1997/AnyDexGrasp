@@ -1,0 +1,67 @@
+{
+  "updated_unix": 1793694638.215331,
+  "status": "official_models_and_eight_real_decision_JSONs_available",
+  "proxy": {
+    "available": true,
+    "supported_entry": "/opt/nros_tools/nros_rc shell functions nros-proxy-sg and nros-proxy-sg2",
+    "global_network_changed": false
+  },
+  "models": {
+    "complete_files": 32,
+    "complete_bytes": 635102941,
+    "hand_checkpoint_files": 31,
+    "hand_checkpoint_bytes": 327466392,
+    "representation_checkpoint": "logs/model/checkpoint.tar.18",
+    "representation_bytes": 307636549,
+    "state": "/mnt/public/datasets/AnyDexGrasp/metadata/model_download_campaign_nros_20261103.json"
+  },
+  "decision_data": {
+    "complete_files": 8,
+    "complete_bytes": 7403397972,
+    "campaign_finished": true,
+    "active_transfer": false,
+    "state": "/mnt/public/datasets/AnyDexGrasp/metadata/data_download_campaign_nros_20261103.json",
+    "source_issue": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/data/decision_model/dh3/obj40/DH3_obj40_single_point.json.partial",
+      "advertised_bytes": 1322043333,
+      "actual_bytes": 1322043333,
+      "sha256": "12d4a2ca37f6350c1791e354dd9d08eec056cda392f94fc4be1fbafe0e3700cf",
+      "utf8_failure_byte": 1308622852,
+      "invalid_byte_hex": "fd",
+      "separate_proxy_range_identical": true,
+      "range_diagnosis": "/home/wangrenpeng/AnyDexGrasp/outputs/data_intake/dh3_obj40_range_diagnosis.json",
+      "published_as_valid_json": false,
+      "source_bytes_modified": false
+    }
+  },
+  "CGR_labels": {
+    "downloaded_files": 0,
+    "expected_files": 3,
+    "expected_bytes": 55835206232,
+    "status": "official_Google_Drive_per_file_download_quota_exceeded",
+    "quota_receipt": "/mnt/public/datasets/AnyDexGrasp/metadata/official_label_zip_quota_20261103.json",
+    "retry_manifest": "/mnt/public/datasets/AnyDexGrasp/metadata/label_retry_manifest_20261103.json",
+    "background_retry": {
+      "pid": 2447202,
+      "started_unix": 1793694638.1667576,
+      "state": "/mnt/public/datasets/AnyDexGrasp/metadata/quota_retry_campaign_20261103_v1.json",
+      "log": "/home/wangrenpeng/AnyDexGrasp/outputs/data_intake/quota_retry_campaign_20261103_v1.log",
+      "interval_hours": 6,
+      "max_rounds": 4,
+      "first_retry_Beijing": "2026-11-03T22:30:38.166760+08:00",
+      "only_three_official_quota_archives": true,
+      "per_file_attempts_per_round": 1,
+      "proxy_function": "nros-proxy-sg2",
+      "global_network_or_cron_changed": false,
+      "transfer_active": false
+    }
+  },
+  "RGBD_smoke": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80",
+    "complete_files": 4,
+    "PNG_and_MAT_checked": true,
+    "official_demo_not_independent_evaluation": true
+  },
+  "raw_graspnet_RGBD_download_started": false,
+  "old_blocked_receipt_historical_only": "/mnt/public/datasets/AnyDexGrasp/metadata/intake_20261103.json"
+}

@@ -1,0 +1,8 @@
+{
+  "reason": "Existing cuBLAS headers require extra CUDA13 enum declarations absent in initial13.0.48 redist library_types.h; reuse the matching already-installed runtime header, no header source edits",
+  "old": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/redist/cuda_cudart-linux-x86_64-13.0.48-archive/include/library_types.h",
+  "old_sha256": "fec4c63000c552ef0c750a9d4ec474a318870fddf537f91350c571e375457701",
+  "new": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/nvidia/cu13/include/library_types.h",
+  "new_sha256": "7ccccd9cf42214386170704865517bbbf83702d6bbb5e0c0cba3fc3a48cbd29d",
+  "shared_source_changed": false
+}

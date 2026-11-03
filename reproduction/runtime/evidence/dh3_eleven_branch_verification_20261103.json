@@ -1,0 +1,117 @@
+{
+  "all_checks_passed": true,
+  "scope": "Saved eleven-branch software artifacts, no model/collision rerun",
+  "seeded_augmentation_matrices_exact": true,
+  "original_flip_mutation_matrices_exact": true,
+  "branches": 11,
+  "branch_candidate_counts": [
+    156,
+    116,
+    130,
+    93,
+    140,
+    156,
+    151,
+    186,
+    137,
+    169,
+    110
+  ],
+  "merged_candidates": 1544,
+  "branch_concatenation_and_parser_column_handoff_exact": true,
+  "all_recovered_outputs_pass_original_camera_width_workspace_gates": true,
+  "rotation_orthogonality_and_det_max_error": 3.5762786865234375e-07,
+  "independent_flip_canonicalization_and_top1000_exact": true,
+  "independent_inplace_CGR_half_swap_and_angle_roll_exact": true,
+  "identity_collision_scene_matches_prior_identity_frame": true,
+  "mapping": {
+    "scope": "independent predicted-hand lookup/score consistency only; no collision admission or grasp execution",
+    "all_checks_passed": true,
+    "predicted_hand_poses": 400,
+    "T_hand_times_T_calibration_equals_T_twofinger_max_error": 3.3306690738754696e-16,
+    "actuator_2d_angle_lookup_max_error": 0.0,
+    "hand_rotation_orthogonality_max_error": 3.3714831149112e-07,
+    "hand_width_equals_independent_original_clamp_exactly": true,
+    "source_float32_vs_hand_float64_width_max_difference_m": 3.5762786898541066e-09,
+    "additional_depth_on_original_0_1_2_3cm_grid": true,
+    "original_point85_score_mask_preserved": true,
+    "original_top400_score_and_type_order_exact": true,
+    "unique_calibration_slots": 57,
+    "collision_check_executed": false,
+    "physical_grasps_executed": 0,
+    "artifact_sha256": {
+      "RESULTS.json": "4b73620efa6c0bc6b6a5fa35e9ba809734e34b7a64e0ee47c924bd1af6eab5ef",
+      "predecision_inputs.npz": "f84ad43bdae7699b7d5fb2024ff83e13d827a787474578e4900db2c40118c005",
+      "learned_ranked_proposals.npz": "4e8db2bcf48d4b639138af0f5a2abb9d10fed2d71e58567d13763cd49bbc00b8",
+      "predicted_DH3_hand_poses_pre_collision.npz": "22756f7deab94b8ad02cec799c5b6ddb98f4ad9abfea0ce9f9346a36218ffbdd"
+    }
+  },
+  "collision": {
+    "all_passed": true,
+    "verification": "Saved real Open3D point-in-voxel output bits independently reduced and cross-checked with every candidate decision, admitted arrays, source PCL and all original generated asset bytes",
+    "source_RESULTS_sha256": "4de5404b0941061018cb87410b049a3b4a3c0c63b48d48aed1142e538b536560",
+    "summary": {
+      "candidates": 400,
+      "queried_scene_points_per_candidate": 43869,
+      "zero_overlap_admitted": 9,
+      "positive_overlap_rejected": 391,
+      "overlap_count_min": 0,
+      "overlap_count_max": 452
+    },
+    "asset_slots_verified": 6,
+    "minimum_3mm_PCL_points": 47471,
+    "maximum_3mm_PCL_points": 48025,
+    "all_five_scales_and_STL_SHA_verified": true,
+    "no_model_rerun": true,
+    "physical_grasps_executed": 0
+  },
+  "selected_hand": {
+    "score": 1.5589369535446167,
+    "type": 2,
+    "width_m": 0.09,
+    "depth_m": 0.029999999329447746,
+    "actuator2": [
+      94.0,
+      67.0
+    ],
+    "rotation_matrix": [
+      [
+        0.9961672547775299,
+        0.08601268587756304,
+        -0.015895035120481335
+      ],
+      [
+        -0.0874690468579971,
+        0.9795643761652358,
+        -0.18111571669178136
+      ],
+      [
+        -8.039590387166545e-06,
+        0.18181186896292717,
+        0.9833333492286005
+      ]
+    ],
+    "translation_m": [
+      0.08866434401982355,
+      0.032133167257142846,
+      0.12469298461178288
+    ]
+  },
+  "pre_recovery_boundary": "Each branch saved post-recovery/gated arrays only. Actual raw 2048 parser arrays were not persisted, so numerical pre/post recovery replay cannot be independently audited from artifacts. Original recovery function is bound by unchanged author source SHA, and saved recovered outputs, gates and merge are audited.",
+  "physical_grasps_executed": 0,
+  "grasp_success_claim": false,
+  "source_RESULTS_sha256": "9bec0dee2b8f02f9afee257c816b31e4bf8f004b925327b0027556e38999c65e",
+  "branch_artifact_sha256": {
+    "branch_00.npz": "5f86af7beb503e33738f9dd89d114f5ebb6a82ffdbd90425b4f55ea4f8598811",
+    "branch_01.npz": "4a1318f4256536a5b6d0433c7f8121c4e175e5e6501b51ff550aa60a0ca21992",
+    "branch_02.npz": "6db8454343d7e65f4ccf72cc9f8e9cc7871b2fdc3879045a0bb0db44cb5db678",
+    "branch_03.npz": "c1017fe51b9f53347c64e475b27a26db876a71563c7abfa2a4ed47ee46d0ad26",
+    "branch_04.npz": "3d7bf1a4d70feaccf6aa2b91d833de5cd8cabc336cff96a85634360c47e1f8b8",
+    "branch_05.npz": "006a472a9680e4198429e3b3666740e08c1b2b454c83ea73a9984c20c636d842",
+    "branch_06.npz": "ea75b574a961d2956e64343928506481ac6208c69ae530a958b18b09d2e3657e",
+    "branch_07.npz": "83497f6a94fd348096b4fb50f8e659a85f6ae5222d0150cc0fe5e9c0bcde7c52",
+    "branch_08.npz": "8633dd423e4889c68b9a7b9f9a3211cd2ff52ecd37864351ee9bc5657e28be25",
+    "branch_09.npz": "9c584a779b16b127a8bfce8c6111f98bf01be3fd357d3b0bc453d003e7bffeda",
+    "branch_10.npz": "c054aa065114a69f46a527f04aea1d81f1be8f3ce495e541aaca576265c68584"
+  }
+}

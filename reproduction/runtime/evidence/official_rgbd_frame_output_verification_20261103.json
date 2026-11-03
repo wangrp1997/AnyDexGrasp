@@ -1,0 +1,38 @@
+{
+  "scope": "saved single-frame software output consistency, not grasp feasibility or success",
+  "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/official_rgbd_frame_20261103_v2",
+  "all_checks_passed": true,
+  "checks": {
+    "raw_CGR_equals_original_parser_feature_slice": true,
+    "raw_candidates_equal_network_seed_positions": true,
+    "candidate_scores_equal_independent_bilateral_score_reduction": true,
+    "rotation_orthogonality_max_error": 3.5762786865234375e-07,
+    "rotation_determinant_max_error": 3.5762786865234375e-07,
+    "all_saved_arrays_finite": true,
+    "candidate_count": 2048,
+    "candidate_score_range": [
+      0.0006269323057495058,
+      0.8654834032058716
+    ],
+    "candidate_width_range_m": [
+      0.010019341483712196,
+      0.17105045914649963
+    ],
+    "candidate_depth_values_m": [
+      0.004999999888241291,
+      0.009999999776482582,
+      0.019999999552965164,
+      0.029999999329447746,
+      0.03999999910593033
+    ],
+    "raw_CGR_shape": [
+      2048,
+      480
+    ]
+  },
+  "artifact_sha256": {
+    "RESULTS.json": "c8b845a86eef764176ec48abcbfd3cd900937f0a0189dd960fda123d2936acc8",
+    "representation_outputs.npz": "2ae735633ff489e38cb105709e22fcddd401060c960e2b997552bd1ae48a4420",
+    "raw_camera_candidates.npz": "dce03239a68cccef0b95c99d063c3bae4758443f2cedf0fb7455eb6276d0abd1"
+  }
+}

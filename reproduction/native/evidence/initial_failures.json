@@ -1,0 +1,30 @@
+{
+  "me_first_build": {
+    "log_original": "outputs/native_deps/me_build_v1.log",
+    "outcome": "compiler rejection before linking",
+    "diagnostics": [
+      "cudaEmulationSpecialValuesSupport is undefined",
+      "cudaEmulationMantissaControl is undefined"
+    ],
+    "cause": "Initial CUDA13.0.48 redist library_types.h was older than the reused installed cuBLAS declarations",
+    "resolution": "Only local toolkit symlink switched to the installed matching official library_types.h; neither header source edited",
+    "all_rejection_costs_retained": true
+  },
+  "host_openblas": {
+    "path": "/opt/nros-host/usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.32.so",
+    "diagnostics": [
+      "GLIBC_2.43 not found",
+      "libgfortran.so.5 not found"
+    ],
+    "resolution": "Official Ubuntu OpenBLAS0.3.26 packages extracted locally; existing SciPy Fortran/Quadmath libraries reused through local links"
+  },
+  "automatic_review_transport": {
+    "outcome": "one command not executed because review stream disconnected; ordinary require_escalated retry succeeded",
+    "approval_bypassed": false
+  },
+  "accepted_build_logs": [
+    "outputs/native_deps/me_build_v2.log",
+    "outputs/native_deps/pointnet2_build_v1.log"
+  ],
+  "physics_steps": 0
+}

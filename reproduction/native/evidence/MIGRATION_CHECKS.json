@@ -1,0 +1,37 @@
+{
+  "python_syntax_checked": [
+    "validate_native_ops.py",
+    "acquire_cuda.py",
+    "write_env.py",
+    "prepare_sources.py"
+  ],
+  "shell_syntax_checked": "build_native.sh",
+  "patch_pristine_source_dry_run": {
+    "passed": true,
+    "stdout": "checking file setup.py\nchecking file src/coordinate_map_gpu.cuh\nchecking file src/3rdparty/cudf/detail/nvtx/ranges.hpp\n"
+  },
+  "new_scripts_executed": false,
+  "dependencies_downloaded": false,
+  "native_recompiled": false,
+  "physics_steps": 0,
+  "files": {
+    "validate_native_ops.py": "a293aac4c2cd7dff09747ad2123f1d28c443ac7969a37ec38b4896e4f340a0aa",
+    "acquire_cuda.py": "11375617f85e802009c5920a82027f0aab2bacf56a6249b65ab44900e39b51ca",
+    "write_env.py": "b2404be699b47976d88a8c30d4b8dd194b0ff29da19c2c01cd467eb3077e1b06",
+    "nvidia_components_13.0.0.json": "5035b17227e8f8dcbb5b7fe7d9efd2b43e9aa8f55cc603f1e41f1931ef14d1be",
+    "prepare_sources.py": "a13487f287fb01e717b71399d19a8adad0209d07ceadf13f0f1d94b313085f95",
+    "build_native.sh": "71a9e1c69f9f4c336406d96acee01847287f16c02b33abf7ff8c812dfa20c94b",
+    "components.json": "5277bdbcf63d2f1c1e4dbca6fb498f21d78e02d2b45dbb8bb18ad68816d4793c",
+    "me_local_compat.patch": "03393785f83df2f4b0edd493045b06c7f346bffb3f9f3956f3c9a8dc7b5a94ee",
+    "README.md": "51e53fedea6692c42c09b3600a7127d0825d7cc81ac957d4e1686c73bf78e9c8",
+    "evidence/initial_failures.json": "e4a436d19e992c0bc3ed583a513c036d01ebf1c606758bbce47cc3e6fc282ed8",
+    "evidence/native_validation.json": "4be9649c5edf8717be39af2266396b8c3dc69d00a65916ec042658cf5d29d728",
+    "evidence/me_local_patch_receipt.json": "eb0a503310edd5bafee8a5c1cfeb6db677d803e157ef63206364ed057bd4285b",
+    "evidence/openblas_acquisition_receipt.json": "7bf6e83fb29976ce5eb1c574df6b1253e3c1b5c0cc145ffa313e61d99256f2c3",
+    "evidence/me_source_receipt.json": "391d6e189277c239799d7c3b9c554870067facd79a90bd9f9dc6671f86b03cc4",
+    "evidence/BUILD_ACCEPTANCE.json": "c523a4978cde828db96d91bfde6d4cc1710dec0473505aad70163e714bbaef43",
+    "evidence/pointnet2_source_receipt.json": "0f53c1186291d88d9b587b3d683757d1ead75f0e56cb639d5c9936cfefea8421",
+    "evidence/cuda_library_types_resolution.json": "00140a2abb1264cc0be4056867dfbaf024028ac05a078d5f8640abb041e3419a",
+    "evidence/migration_provenance.json": "cba0b2e0e3f4079f0038d2b33f22816b973dd6a068c45ee35f8f91e61172a32a"
+  }
+}

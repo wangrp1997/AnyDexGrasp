@@ -1,0 +1,66 @@
+{
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "capability": [
+    12,
+    0
+  ],
+  "checks": {
+    "sparse_conv_3x3_cpu_gpu": {
+      "passed": true,
+      "rows": 8,
+      "max_abs_error": 0.0,
+      "cuda_seconds": 0.09607445105211809
+    },
+    "fps": {
+      "passed": true,
+      "indices": [
+        [
+          0,
+          3,
+          2
+        ]
+      ]
+    },
+    "cylinder_and_grouping": {
+      "passed": true,
+      "indices": [
+        [
+          [
+            0,
+            1,
+            2,
+            0
+          ]
+        ]
+      ],
+      "grouped": [
+        [
+          [
+            [
+              0.0,
+              1.0,
+              2.0,
+              0.0
+            ]
+          ],
+          [
+            [
+              5.0,
+              6.0,
+              7.0,
+              5.0
+            ]
+          ]
+        ]
+      ]
+    }
+  },
+  "physics_steps": 0,
+  "global_install": false,
+  "me_version": "0.5.4",
+  "me_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngine/__init__.py",
+  "pointnet_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+  "all_passed": true
+}

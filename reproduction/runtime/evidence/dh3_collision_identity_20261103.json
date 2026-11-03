@@ -1,0 +1,304 @@
+{
+  "scope": "original DH3 offline single-frame hand-voxel collision admission",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "collision_check_executed": true,
+  "physical_grasps_executed": 0,
+  "simulation_run": false,
+  "robot_connection": false,
+  "grasp_success_claim": false,
+  "empty_pointcloud_substituted": false,
+  "collision_gates_relaxed": false,
+  "status": "original_collision_admission_complete",
+  "input": {
+    "hand_prediction": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_hand_frame_20261103_v1/predicted_DH3_hand_poses_pre_collision.npz",
+    "hand_prediction_sha256": "4196fad8939f8be02e483808cc6b14cb4f5502fa481bfaa8158e774807366914",
+    "scene_points": "/home/wangrenpeng/AnyDexGrasp/outputs/official_rgbd_dh3_frame_20261103_v1/representation_outputs.npz",
+    "scene_file_sha256": "a23d789afe3819990b32f9b2ec57b3c369072202e44c1b264be2570358a2f184",
+    "npz_key": "sparse_input_XYZ_features",
+    "scene_count": 43869,
+    "candidates": 400,
+    "scene_selection": "identity quantized original points_down, no merged augmentation scene"
+  },
+  "assets": {
+    "root": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets",
+    "required_slots": 28,
+    "slots": [
+      {
+        "key": "pose1_7.7",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/7.7.ply",
+        "sha256": "207d7a8725156bc8fcd098a86c97191e86705f9eeae24b310f7931d17f06196e",
+        "point_count": 47783,
+        "slot_receipt_sha256": "455c7c55969f5977c2b3aee599a4bcb7c8cc6bb90ef483833843387fd92dba0c",
+        "sampling_seed": 20262180
+      },
+      {
+        "key": "pose1_7.8",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/7.8.ply",
+        "sha256": "a2dbc72ee05c67f612fa4023fd69f24931d08c8c0e0e44a8fdbee2d9c3513a6a",
+        "point_count": 47899,
+        "slot_receipt_sha256": "1d182cd787bf47915e9feefb0adbf0ad6f3fc244fb220658913420adea36c440",
+        "sampling_seed": 20262181
+      },
+      {
+        "key": "pose1_7.9",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/7.9.ply",
+        "sha256": "e83c54496e4e5929344d77378706bb3552670ac37129f77b2ce7f4c0c80b32b8",
+        "point_count": 47785,
+        "slot_receipt_sha256": "af01d712b21ef0f0dd2e4b1db4e947ad8817c8e451648b3532f5a5f51b5d1655",
+        "sampling_seed": 20262182
+      },
+      {
+        "key": "pose1_8.1",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.1.ply",
+        "sha256": "62742739bef6a138ac81a3c59a2a33b73875ea63a12a82396743d630d4248210",
+        "point_count": 48015,
+        "slot_receipt_sha256": "760c02cb24a27e5d2625880b56e4556fad266e6f1bedc5c05379337c75096046",
+        "sampling_seed": 20262184
+      },
+      {
+        "key": "pose1_8.5",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.5.ply",
+        "sha256": "a55bbf2e60cf06e4f6dae153f6064557bae187228e35c8ea2ecb9bd467dfbb7b",
+        "point_count": 47798,
+        "slot_receipt_sha256": "87301779b892e1f68b38fbddad29d607ddd485fc24c8d51c14265c5cb4617de6",
+        "sampling_seed": 20262188
+      },
+      {
+        "key": "pose1_8.7",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.7.ply",
+        "sha256": "ea5211a80c8cf3414997dc2d7fc2afa8e2c8285984a68bf94dfe7fc9b8341aa6",
+        "point_count": 47855,
+        "slot_receipt_sha256": "5fe579385a82a40858e65b057a919220af2208ed1aba0ca43aaf5f63147bd4d4",
+        "sampling_seed": 20262190
+      },
+      {
+        "key": "pose1_9.0",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.0.ply",
+        "sha256": "c24aae177f911e4f89363e59cc8a7d3b5476909f7f59236256a8713b4f8bc4e2",
+        "point_count": 47691,
+        "slot_receipt_sha256": "fdd795d3b4fa11b52a9d4101e8dabe7152ec3b41cfa56ca234f32eec247be361",
+        "sampling_seed": 20262193
+      },
+      {
+        "key": "pose1_9.2",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.2.ply",
+        "sha256": "b1a446107fd2bacd7cb6047c5c3debdd2a2a43616859768b7a3ecbb5f94b2369",
+        "point_count": 47826,
+        "slot_receipt_sha256": "3dd6eb4ce09e4174f7157f08e07067d12bc364b75b17e47d7fec47a5c9f208ab",
+        "sampling_seed": 20262195
+      },
+      {
+        "key": "pose1_9.5",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.5.ply",
+        "sha256": "511ddbe46314a453ba1ec1d6388a3550b295a7f7bf88eaebdc7c040fef902090",
+        "point_count": 47808,
+        "slot_receipt_sha256": "35e73c70e31f9796803036c823d2b28e8b1b9c930ae24e7df2e72f6bf11bd9f3",
+        "sampling_seed": 20262198
+      },
+      {
+        "key": "pose1_9.6",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.6.ply",
+        "sha256": "2c25af84943dc4ab0196e742d345846625ff7706a6152cd54f57988134d4f4b4",
+        "point_count": 47963,
+        "slot_receipt_sha256": "a3a8b2a794f7b0b916c950e15390de00014ac82151fc26e8d9b5461dcb1fca05",
+        "sampling_seed": 20262199
+      },
+      {
+        "key": "pose1_9.8",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.8.ply",
+        "sha256": "461881da50f07bc31e732d202144350f4b1567a8cbe4436d4b6b4c11ee1aa264",
+        "point_count": 47682,
+        "slot_receipt_sha256": "d328bbe434aa041627f55eace5cc516f489dc949696ab785901ec533e7e43fc8",
+        "sampling_seed": 20262201
+      },
+      {
+        "key": "pose1_9.9",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.9.ply",
+        "sha256": "d8ecdb0aac83699fbe9db1dd5b77d1e49f7705c424bd7dc1881f7b144d23b32c",
+        "point_count": 47580,
+        "slot_receipt_sha256": "6ec831b4f6750cf1fcbc68c1de37f45333f0572c3a3a227845317db5bae4edca",
+        "sampling_seed": 20262202
+      },
+      {
+        "key": "pose2_7.7",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose2/7.7.ply",
+        "sha256": "953bbab0bf65d1f2fc77000a1732df85ffc47c6f54271fae5d6b0227c3d21573",
+        "point_count": 47749,
+        "slot_receipt_sha256": "3611826c4d57d49bb8e80ebe94e94e794df1741f79aa08155e8bbe9e6e49a567",
+        "sampling_seed": 20263180
+      },
+      {
+        "key": "pose2_9.0",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose2/9.0.ply",
+        "sha256": "f2e433acb2dff8cb2728a6a8daa27f97c9ece9ec583a98c5502e153cb5ac776d",
+        "point_count": 48025,
+        "slot_receipt_sha256": "f4bea9f8fc04834eb22ec9cd0087e86d31612a6d9aacb3299feb85a27f62b889",
+        "sampling_seed": 20263193
+      },
+      {
+        "key": "pose3_7.7",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/7.7.ply",
+        "sha256": "156ef4d9f72437944e57d713f7da0ec8a1a05ee75c448a085aab453ba8f28270",
+        "point_count": 47500,
+        "slot_receipt_sha256": "577502d0bb2c1f18800f35de0234bbc3f03e158a8ca7fd13cc6b383972d8881a",
+        "sampling_seed": 20264180
+      },
+      {
+        "key": "pose3_7.8",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/7.8.ply",
+        "sha256": "e7aeaa28def0e82856c4e7e9412f87b661e15cc524e66ebb0b9b5b8ed3355352",
+        "point_count": 47546,
+        "slot_receipt_sha256": "e911cb5567bf7ec4ed3e4a585aeb763e98b9ed629983f794b9ae8d5fbc5841ac",
+        "sampling_seed": 20264181
+      },
+      {
+        "key": "pose3_8.1",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.1.ply",
+        "sha256": "6f708ab88385efd57af639de196ae41bf78114bd07a9d4a4455cfcd3dc58b397",
+        "point_count": 47320,
+        "slot_receipt_sha256": "1cdfe47633913290ced83c351dc7185592cb40b8ca44f171d4069f0bd69873f3",
+        "sampling_seed": 20264184
+      },
+      {
+        "key": "pose3_8.5",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.5.ply",
+        "sha256": "5ec0884433d9a478f327a3f8a89cc30d16bf0d51941f661019f13bb4f0057e12",
+        "point_count": 46880,
+        "slot_receipt_sha256": "a8475f4ec46bb2ea94c58c33dddb3f631dfff34acd855dd0eddef503851a54c0",
+        "sampling_seed": 20264188
+      },
+      {
+        "key": "pose3_8.7",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.7.ply",
+        "sha256": "209441f0d85742f46fe77f79c5c5f5929c5bc89c5de6d93abdd438794c6bcd13",
+        "point_count": 47490,
+        "slot_receipt_sha256": "c1cb1222dbfb21805662f25d763483d824397a4b8f5d00879c18b996d4f91efd",
+        "sampling_seed": 20264190
+      },
+      {
+        "key": "pose3_8.9",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.9.ply",
+        "sha256": "09f93c9505d956ccfd183f613a2f1f0337ee245295eed495fe1076775f005625",
+        "point_count": 47494,
+        "slot_receipt_sha256": "3bf5ac2283b74dff4418cdb353e09910159b7163a725dfde0d3fb51559e22e4f",
+        "sampling_seed": 20264192
+      },
+      {
+        "key": "pose3_9.0",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.0.ply",
+        "sha256": "79e5a8f8ce9d2fa2d65b61afe1d2203f5277e431f7e93a3dcb434c9e63482b58",
+        "point_count": 47357,
+        "slot_receipt_sha256": "5f2ef082fe41eb2619f99d325655326bd5a35c2d1f8a0e44db6153ffe1bbcdcf",
+        "sampling_seed": 20264193
+      },
+      {
+        "key": "pose3_9.2",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.2.ply",
+        "sha256": "6c563dc926c846c6d6f37d9fe33f57cdd8d52c42ad5a71a58fb8928f283b253f",
+        "point_count": 47443,
+        "slot_receipt_sha256": "4bb5196970db589f5a186c9cd04872d89e9a876c3347ff5c45bd6b8c71ff6559",
+        "sampling_seed": 20264195
+      },
+      {
+        "key": "pose3_9.3",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.3.ply",
+        "sha256": "9e35f151b86d2567cf18cb3c5de602391660de4179b2f04d31fd69026923acd6",
+        "point_count": 47639,
+        "slot_receipt_sha256": "36f68aa2195223e57d9ad9e499185de520dbac0ea8f760f972933091f604fa4b",
+        "sampling_seed": 20264196
+      },
+      {
+        "key": "pose3_9.5",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.5.ply",
+        "sha256": "eda911386de83d4806fd3d8ed75ffed5b3c0712bea7a7914efd1073622eb2035",
+        "point_count": 47492,
+        "slot_receipt_sha256": "0a7ed319355008f145d0f6865830e260c52a900999d476d1111c1f465d136dbe",
+        "sampling_seed": 20264198
+      },
+      {
+        "key": "pose3_9.7",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.7.ply",
+        "sha256": "e59e570e7389277ed34fb36f78e87aed6d70768c8dacb89d5b490523f2c01688",
+        "point_count": 47542,
+        "slot_receipt_sha256": "ad4219c98f91d2af959baf715a0d646f05ad4fa825202e12ebbfb36c59e626a2",
+        "sampling_seed": 20264200
+      },
+      {
+        "key": "pose3_9.8",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.8.ply",
+        "sha256": "fe766d3a07d112218312e20b304081f4593fbdfa2568f90d8bd0020deb903100",
+        "point_count": 47318,
+        "slot_receipt_sha256": "245a404997587545913408e8c3c124c9838b68a49e9c46d8cabfc224fad638e9",
+        "sampling_seed": 20264201
+      },
+      {
+        "key": "pose3_9.9",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.9.ply",
+        "sha256": "9af6839f8343791f2e485908c94b20a46312d75532900ba28bd1abb171ec0c8b",
+        "point_count": 47620,
+        "slot_receipt_sha256": "538a5088ee01944ebe2eb99adc410d8f30a5bbdd6e54738368e58d182a87f51f",
+        "sampling_seed": 20264202
+      },
+      {
+        "key": "pose4_6.3",
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose4/6.3.ply",
+        "sha256": "6e59cacbf0c13b1d3e8ef8bc0217bba6277ebc8f390e48aa379dd1e0496dca2a",
+        "point_count": 47471,
+        "slot_receipt_sha256": "d3f50d6df4b4a415b53c04623e5d4cc12a324eb0a2623850c57e110b2a7b475b",
+        "sampling_seed": 20265166
+      }
+    ],
+    "table_sha256": "097929420ba7bfcbf3614ab193a7d85dec4bd95c76aca6a96c9dca1ec7ed2a5a",
+    "source": "pinned original 13 STLs/URDF and original FK/surface/infill/voxel functions; published lookup joints; zero-step PyBullet DIRECT"
+  },
+  "original_detect_seconds": 15.338882160023786,
+  "stages": {
+    "pre_collision_candidates": 400,
+    "after_original_width_gate": 400,
+    "collision_rejected": 341,
+    "collision_admitted": 59
+  },
+  "original_parameters": {
+    "scene_voxel_argument_m": 0.001,
+    "hand_and_voxel_grid_m": 0.003,
+    "approach_distance_m": 0.05,
+    "min_grasp_width_m": 0.045,
+    "collision_threshold_points": 0,
+    "adjust_gripper_centers": false,
+    "DEBUG": false,
+    "width_multiplier": 1.7,
+    "original_accumulated_approach_offsets_m": [
+      0,
+      0.02,
+      0.05,
+      0.07
+    ]
+  },
+  "instrumentation": {
+    "original_source": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+    "source_sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+    "detect_and_load_function_bodies_unchanged": true,
+    "time_import_provided": "Original collision module omits time import; actual time module provided in AST scope",
+    "Open3D_query": "passthrough to real VoxelGrid/create_from_point_cloud/check_if_included; original output returned unchanged",
+    "Open3D_version": "0.20.0"
+  },
+  "validation": {
+    "original_width_prelude_and_hand_mapping_exact": true,
+    "all_masks_equal_actual_zero_overlap_test": true,
+    "all_required_original_pointclouds_nonempty_finite_SHA_verified": true
+  },
+  "boundary": "Visibility-only original hand/scene pointcloud gate. No arm, path, IK, physical lifting, independent-scene evaluation or closed-loop control was executed.",
+  "total_seconds": 16.15711558703333,
+  "output_files": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_frame_20261103_v1/candidate_collision_records.jsonl",
+      "bytes": 84750,
+      "sha256": "c0838f42140f9d2552cfb8e74da948b7b769ee9eb45271a2a535e01a29235594"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_frame_20261103_v1/collision_outputs.npz",
+      "bytes": 392549,
+      "sha256": "a5612603ee6bb8790f6741f057fa95ef6b12970a1ed4d4b0d1deb3dd8eef113b"
+    }
+  ]
+}

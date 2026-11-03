@@ -1,0 +1,65 @@
+{
+  "nvidia_manifest_url": "https://developer.download.nvidia.com/compute/cuda/redist/redistrib_13.0.0.json",
+  "nvidia_total_bytes": 73228488,
+  "nvidia": [
+    {
+      "name": "cuda_nvcc",
+      "version": "13.0.48",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_nvcc/linux-x86_64/cuda_nvcc-linux-x86_64-13.0.48-archive.tar.xz",
+      "bytes": 26732376,
+      "sha256": "cc5ff4a00d3be7c6c86ff740de7672e142ec87fea74e7e46b1b142b59fd2ac51"
+    },
+    {
+      "name": "cuda_cudart",
+      "version": "13.0.48",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_cudart/linux-x86_64/cuda_cudart-linux-x86_64-13.0.48-archive.tar.xz",
+      "bytes": 1487372,
+      "sha256": "30ffafae23833dafc965cf4e4d034f8553805586959328c64e2c47b3ef3bcd55"
+    },
+    {
+      "name": "cuda_cccl",
+      "version": "13.0.50",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_cccl/linux-x86_64/cuda_cccl-linux-x86_64-13.0.50-archive.tar.xz",
+      "bytes": 987548,
+      "sha256": "1aa6df471ee885f04aa3920d467395b5e5f665a53d206e74b10bb45abe92f3bc"
+    },
+    {
+      "name": "cuda_crt",
+      "version": "13.0.48",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/cuda_crt/linux-x86_64/cuda_crt-linux-x86_64-13.0.48-archive.tar.xz",
+      "bytes": 79960,
+      "sha256": "ac444278c0f9d72b4a1b26c3bd9c694f07e1dbdc1e309aac9fd668378692e3e4"
+    },
+    {
+      "name": "libnvvm",
+      "version": "13.0.48",
+      "url": "https://developer.download.nvidia.com/compute/cuda/redist/libnvvm/linux-x86_64/libnvvm-linux-x86_64-13.0.48-archive.tar.xz",
+      "bytes": 43941232,
+      "sha256": "8c5676a65a2e6d13e3c229f025af18677de46c220d77992fe932200fa798b19b"
+    }
+  ],
+  "openblas": [
+    {
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/o/openblas/libopenblas0-pthread_0.3.26+ds-1_amd64.deb",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/archives/libopenblas0-pthread_0.3.26+ds-1_amd64.deb",
+      "bytes": 7175336,
+      "sha256": "48a08fb3ee766109992a7d843a90646fdfb0127e2e9c8759bd91d45abd6873e6"
+    },
+    {
+      "url": "https://archive.ubuntu.com/ubuntu/pool/universe/o/openblas/libopenblas-pthread-dev_0.3.26+ds-1_amd64.deb",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/archives/libopenblas-pthread-dev_0.3.26+ds-1_amd64.deb",
+      "bytes": 4900168,
+      "sha256": "354fee05796c9c61539888a0c44b08efeeccce65a268a9684c903433f59bfbd7"
+    }
+  ],
+  "minkowski_source": {
+    "url": "https://api.github.com/repos/chenxi-wang/MinkowskiEngine/tarball/39edad65022ec3e56c994a743c0a87877c70933a",
+    "git_sha": "39edad65022ec3e56c994a743c0a87877c70933a",
+    "archive_sha256": "86a52a5c00cb7ec724d99c43c24e1e5f4e908e2f5135dd144b5d567df3f5c929",
+    "bytes": 5664881,
+    "source": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/sources/chenxi-wang-MinkowskiEngine-39edad6",
+    "eigen_candidates": [],
+    "modified_source": false
+  },
+  "public_api_compat_sha": "4f968c622b95cc1408c05b3a0cd2a26852d90577"
+}

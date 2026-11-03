@@ -1,0 +1,95 @@
+{
+  "scope": "Original post-collision DH3 top10 and final top1 prediction, no action",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "source": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+  "source_sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+  "collision_RESULTS_sha256": "4de5404b0941061018cb87410b049a3b4a3c0c63b48d48aed1142e538b536560",
+  "collision_outputs_sha256": "1c208d8eb99748a512976ddcb8cdd8908179b85069e5307b7177123ab98c0755",
+  "collision_admitted_candidates": 9,
+  "physical_grasps_executed": 0,
+  "simulation_run": false,
+  "robot_connection": false,
+  "network_rerun": false,
+  "collision_rerun": false,
+  "grasp_success_claim": false,
+  "numpy_version": "2.3.1",
+  "status": "original_final_hand_pose_selected",
+  "selected": true,
+  "top10_count": 9,
+  "original_selection_assignments": [
+    {
+      "line": 711,
+      "expression": "index_score = np.argsort(DH3_ggarray.scores)[::-1]"
+    },
+    {
+      "line": 712,
+      "expression": "two_fingers_ggarray_object_ids = two_fingers_ggarray_object_ids[index_score][0:10]"
+    },
+    {
+      "line": 713,
+      "expression": "DH3_ggarray = DH3_ggarray[index_score][0:10]"
+    },
+    {
+      "line": 714,
+      "expression": "two_fingers_ggarray = two_fingers_ggarray[index_score][0:10]"
+    },
+    {
+      "line": 715,
+      "expression": "grasp_features = grasp_features[index_score][0:10]"
+    },
+    {
+      "line": 717,
+      "expression": "DH3_grasp_used = DH3_ggarray[0]"
+    },
+    {
+      "line": 718,
+      "expression": "two_fingers_grasp_used = two_fingers_ggarray[0]"
+    },
+    {
+      "line": 719,
+      "expression": "grasp_features_used = grasp_features[0]"
+    }
+  ],
+  "original_assignments_unchanged": true,
+  "selected_pre_collision_index": 129,
+  "selected_admitted_array_index": 0,
+  "selected_hand": {
+    "score": 1.5589369535446167,
+    "type": 2,
+    "width_m": 0.09,
+    "depth_m": 0.029999999329447746,
+    "actuator2": [
+      94.0,
+      67.0
+    ],
+    "rotation_matrix": [
+      [
+        0.9961672547775299,
+        0.08601268587756304,
+        -0.015895035120481335
+      ],
+      [
+        -0.0874690468579971,
+        0.9795643761652358,
+        -0.18111571669178136
+      ],
+      [
+        -8.039590387166545e-06,
+        0.18181186896292717,
+        0.9833333492286005
+      ]
+    ],
+    "translation_m": [
+      0.08866434401982355,
+      0.032133167257142846,
+      0.12469298461178288
+    ]
+  },
+  "output": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_eleven_branch_20261103_v1/selection/selected_original_DH3_pose.npz",
+    "bytes": 60154,
+    "sha256": "65a52b4bd4e5e69c996f99a98b45cfbed554dbe723053f961c4c922cf94b8832"
+  },
+  "boundary": "Predicted hand datum is in the input camera optical frame; depth is separately stored as in the author API. Robot calibration, wrist approach, controller, physics and lifting are not executed.",
+  "total_seconds": 0.07542403897969052
+}

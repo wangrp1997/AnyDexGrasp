@@ -24,5 +24,12 @@
     }
   ],
   "public_dataset_root": "/mnt/public/datasets/AnyDexGrasp",
-  "scope": "Official source and original paper downloaded. Runtime interface checks are not pretrained inference or grasp success."
+  "scope": "Official source/paper frozen. All 31 released decision checkpoints validated; full DH3 eleven-branch RGB-D representation, learned scoring, calibrated poses, original collision and final selection executed. No physical grasp or new training.",
+  "current_reproduction_receipts": [
+    "runtime/evidence/official_decision_models_20261103.json",
+    "runtime/evidence/root_decision_predictions_verification_20261103.json",
+    "runtime/evidence/official_rgbd_frame_20261103.json",
+    "native/evidence/BUILD_ACCEPTANCE.json",
+    "runtime/evidence/root_eleven_branch_verification_20261103.json"
+  ]
 }

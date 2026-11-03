@@ -1,0 +1,22 @@
+{
+  "scope": "independent predicted-hand lookup/score consistency only; no collision admission or grasp execution",
+  "all_checks_passed": true,
+  "predicted_hand_poses": 400,
+  "T_hand_times_T_calibration_equals_T_twofinger_max_error": 3.3306690738754696e-16,
+  "actuator_2d_angle_lookup_max_error": 0.0,
+  "hand_rotation_orthogonality_max_error": 3.3714831149112e-07,
+  "hand_width_equals_independent_original_clamp_exactly": true,
+  "source_float32_vs_hand_float64_width_max_difference_m": 3.5762786898541066e-09,
+  "additional_depth_on_original_0_1_2_3cm_grid": true,
+  "original_point85_score_mask_preserved": true,
+  "original_top400_score_and_type_order_exact": true,
+  "unique_calibration_slots": 57,
+  "collision_check_executed": false,
+  "physical_grasps_executed": 0,
+  "artifact_sha256": {
+    "RESULTS.json": "4b73620efa6c0bc6b6a5fa35e9ba809734e34b7a64e0ee47c924bd1af6eab5ef",
+    "predecision_inputs.npz": "f84ad43bdae7699b7d5fb2024ff83e13d827a787474578e4900db2c40118c005",
+    "learned_ranked_proposals.npz": "4e8db2bcf48d4b639138af0f5a2abb9d10fed2d71e58567d13763cd49bbc00b8",
+    "predicted_DH3_hand_poses_pre_collision.npz": "22756f7deab94b8ad02cec799c5b6ddb98f4ad9abfea0ce9f9346a36218ffbdd"
+  }
+}

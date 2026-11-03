@@ -1,0 +1,973 @@
+{
+  "scope": "Original DH3 eleven-branch offline calibrated frame inference",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "args": {
+    "image_dir": "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80",
+    "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "manifest": "/mnt/public/datasets/AnyDexGrasp/metadata/model_obj140_manifest_20261103.json",
+    "table_dir": "/mnt/public/datasets/AnyDexGrasp/source_tables/generate_mesh_and_pointcloud/dh3_urdf",
+    "native_deps": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps",
+    "grasp_api_source": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/graspnetAPI_source/graspnetAPI/grasp.py",
+    "output_dir": "outputs/official_dh3_eleven_branch_20261103_v1",
+    "seed": 20261103,
+    "prepare_only": false,
+    "asset_root": "outputs/official_dh3_collision_assets_20261103_v2/assets"
+  },
+  "physical_grasps_executed": 0,
+  "robot_connection": false,
+  "simulation_run": false,
+  "grasp_success_claim": false,
+  "new_training_steps": 0,
+  "independent_test_generalization_claim": false,
+  "test_time_augmentation_branches": 11,
+  "original_random_augmentations": 10,
+  "seed": 20261103,
+  "collision_check_executed": true,
+  "CUDA_VISIBLE_DEVICES": "1",
+  "timing_seconds": {
+    "representation_model_load": 1.5795443630195223,
+    "eleven_original_get_grasp_branches": 15.987784073979128,
+    "original_hand_stage": 4.89497336599743,
+    "collision_asset_preparation": 1.0411654000054114,
+    "original_collision": 14.21535913302796,
+    "total": 39.54938125895569
+  },
+  "status": "eleven_branch_original_offline_pipeline_complete",
+  "input_files": {
+    "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/depth.png": {
+      "bytes": 363942,
+      "sha256": "1364d7aad87fed2c8e21bf177b6074d7b72bb16b61dd332eb47f93dce5b823c7"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/color.png": {
+      "bytes": 1219571,
+      "sha256": "495278cd012e4d8cee94efcffc40eb902dc1f05f0fd9ef35d5820dd371b97254"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/examples/graspnet_baseline/280c215129f759ed8649cb4e89fc5dfee55f4f80/meta.mat": {
+      "bytes": 881,
+      "sha256": "9ed5451d1f3b34c2f78f9912e16c004b416a20fce22f950fdfc0a1245d06c5d4"
+    }
+  },
+  "calibration": {
+    "intrinsic_matrix": [
+      [
+        631.54864502,
+        0.0,
+        638.43517329
+      ],
+      [
+        0.0,
+        631.20751953,
+        366.49904066
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "factor_depth": 1000.0,
+    "depth_bounds_m": [
+      0.15,
+      0.72
+    ],
+    "voxel_size_m": 0.005,
+    "workspace_image_mask_used": false,
+    "boundary": "Only rig-specific intrinsics/depth factor replaced by meta.mat"
+  },
+  "original_source_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+    "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "functions": [
+      "augment_data",
+      "get_depth",
+      "get_ggarray_features",
+      "get_grasp",
+      "parse_preds"
+    ],
+    "camera_constant_changes": [
+      {
+        "names": [
+          "fx",
+          "fy"
+        ],
+        "original": "fx, fy = (919.835, 919.61)",
+        "calibrated": "fx, fy = (631.54864502, 631.20751953)"
+      },
+      {
+        "names": [
+          "cx",
+          "cy"
+        ],
+        "original": "cx, cy = (631.119, 363.884)",
+        "calibrated": "cx, cy = (638.43517329, 366.49904066)"
+      },
+      {
+        "names": [
+          "s"
+        ],
+        "original": "s = 1000.0",
+        "calibrated": "s = 1000.0"
+      }
+    ],
+    "original_recovery_flip_filters_and_aggregation_unchanged": true,
+    "hardware_module_imported": false
+  },
+  "representation_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+    "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "only_ast_change": "Removed the two unused training-label imports; any call raises",
+    "removed_imports": [
+      "from loss import process_grasp_labels, match_grasp_view_and_label"
+    ],
+    "network_layers_and_forward_unchanged": true
+  },
+  "native_dependencies": {
+    "MinkowskiEngine_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngine/__init__.py",
+    "MinkowskiEngine_version": "0.5.4",
+    "pointnet2_extension": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+    "pointnet2_extension_sha256": "343c637093873fc622ee8bfe5f6b3f44df1437598f926b32ca41b47d12850c8c",
+    "cuda_device_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "cuda_compute_capability": [
+      12,
+      0
+    ]
+  },
+  "checkpoint": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "sha256": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1",
+    "weights_only": true,
+    "strict_state_dict_load": true,
+    "num_depth": 5,
+    "num_seed": 2048,
+    "model_load_count": 1
+  },
+  "branches": [
+    {
+      "branch": 0,
+      "flip": false,
+      "input_augmentation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.8461674959980883,
+      "candidates_after_original_recovery_and_gates": 156,
+      "unique_voxels": 43869,
+      "post_original_flip_mutation_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 1,
+      "flip": false,
+      "input_augmentation_matrix": [
+        [
+          0.9281473159790039,
+          0.37221309542655945,
+          0.0,
+          -0.04051680117845535
+        ],
+        [
+          -0.37221309542655945,
+          0.9281473159790039,
+          0.0,
+          -0.04662949591875076
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.3660492399940267,
+      "candidates_after_original_recovery_and_gates": 116,
+      "unique_voxels": 44398,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9281473159790039,
+          0.37221309542655945,
+          0.0,
+          -0.04051680117845535
+        ],
+        [
+          -0.37221309542655945,
+          0.9281473159790039,
+          0.0,
+          -0.04662949591875076
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 2,
+      "flip": true,
+      "input_augmentation_matrix": [
+        [
+          -0.9390981197357178,
+          -0.34364908933639526,
+          0.0,
+          -0.025190988555550575
+        ],
+        [
+          -0.34364908933639526,
+          0.9390981197357178,
+          0.0,
+          0.01950441673398018
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.178203079965897,
+      "candidates_after_original_recovery_and_gates": 130,
+      "unique_voxels": 44276,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9390981197357178,
+          -0.34364908933639526,
+          0.0,
+          -0.025190988555550575
+        ],
+        [
+          0.34364908933639526,
+          0.9390981197357178,
+          0.0,
+          0.01950441673398018
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 3,
+      "flip": false,
+      "input_augmentation_matrix": [
+        [
+          0.8939599394798279,
+          0.44814690947532654,
+          0.0,
+          0.04458135366439819
+        ],
+        [
+          -0.44814690947532654,
+          0.8939599394798279,
+          0.0,
+          0.036077335476875305
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.38038259500172,
+      "candidates_after_original_recovery_and_gates": 93,
+      "unique_voxels": 44278,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.8939599394798279,
+          0.44814690947532654,
+          0.0,
+          0.04458135366439819
+        ],
+        [
+          -0.44814690947532654,
+          0.8939599394798279,
+          0.0,
+          0.036077335476875305
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 4,
+      "flip": true,
+      "input_augmentation_matrix": [
+        [
+          -0.9640716314315796,
+          -0.2656424045562744,
+          0.0,
+          -0.003804108826443553
+        ],
+        [
+          -0.2656424045562744,
+          0.9640716314315796,
+          0.0,
+          0.01042919885367155
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.3700561940204352,
+      "candidates_after_original_recovery_and_gates": 140,
+      "unique_voxels": 44328,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9640716314315796,
+          -0.2656424045562744,
+          0.0,
+          -0.003804108826443553
+        ],
+        [
+          0.2656424045562744,
+          0.9640716314315796,
+          0.0,
+          0.01042919885367155
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 5,
+      "flip": false,
+      "input_augmentation_matrix": [
+        [
+          0.9943512082099915,
+          -0.10613968968391418,
+          0.0,
+          -0.040484726428985596
+        ],
+        [
+          0.10613968968391418,
+          0.9943512082099915,
+          0.0,
+          -0.03155679628252983
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.432752160995733,
+      "candidates_after_original_recovery_and_gates": 156,
+      "unique_voxels": 44094,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9943512082099915,
+          -0.10613968968391418,
+          0.0,
+          -0.040484726428985596
+        ],
+        [
+          0.10613968968391418,
+          0.9943512082099915,
+          0.0,
+          -0.03155679628252983
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 6,
+      "flip": true,
+      "input_augmentation_matrix": [
+        [
+          -0.9978821277618408,
+          0.06504788249731064,
+          0.0,
+          -0.010835534892976284
+        ],
+        [
+          0.06504788249731064,
+          0.9978821277618408,
+          0.0,
+          0.007083941716700792
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.3980881529860198,
+      "candidates_after_original_recovery_and_gates": 151,
+      "unique_voxels": 43873,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9978821277618408,
+          0.06504788249731064,
+          0.0,
+          -0.010835534892976284
+        ],
+        [
+          -0.06504788249731064,
+          0.9978821277618408,
+          0.0,
+          0.007083941716700792
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 7,
+      "flip": false,
+      "input_augmentation_matrix": [
+        [
+          0.9150831699371338,
+          -0.403265118598938,
+          0.0,
+          0.012559621594846249
+        ],
+        [
+          0.403265118598938,
+          0.9150831699371338,
+          0.0,
+          0.04349038749933243
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.3823831229819916,
+      "candidates_after_original_recovery_and_gates": 186,
+      "unique_voxels": 44234,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9150831699371338,
+          -0.403265118598938,
+          0.0,
+          0.012559621594846249
+        ],
+        [
+          0.403265118598938,
+          0.9150831699371338,
+          0.0,
+          0.04349038749933243
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 8,
+      "flip": true,
+      "input_augmentation_matrix": [
+        [
+          -0.9516231417655945,
+          -0.3072677254676819,
+          0.0,
+          -0.04831133410334587
+        ],
+        [
+          -0.3072677254676819,
+          0.9516231417655945,
+          0.0,
+          -0.04478931799530983
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.3714612189796753,
+      "candidates_after_original_recovery_and_gates": 137,
+      "unique_voxels": 44299,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9516231417655945,
+          -0.3072677254676819,
+          0.0,
+          -0.04831133410334587
+        ],
+        [
+          0.3072677254676819,
+          0.9516231417655945,
+          0.0,
+          -0.04478931799530983
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 9,
+      "flip": false,
+      "input_augmentation_matrix": [
+        [
+          0.9911068677902222,
+          -0.13306817412376404,
+          0.0,
+          0.02539191208779812
+        ],
+        [
+          0.13306817412376404,
+          0.9911068677902222,
+          0.0,
+          0.03071555681526661
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.3887256629532203,
+      "candidates_after_original_recovery_and_gates": 169,
+      "unique_voxels": 44112,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9911068677902222,
+          -0.13306817412376404,
+          0.0,
+          0.02539191208779812
+        ],
+        [
+          0.13306817412376404,
+          0.9911068677902222,
+          0.0,
+          0.03071555681526661
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "branch": 10,
+      "flip": true,
+      "input_augmentation_matrix": [
+        [
+          -0.9501394629478455,
+          -0.3118252158164978,
+          0.0,
+          0.02086416631937027
+        ],
+        [
+          -0.3118252158164978,
+          0.9501394629478455,
+          0.0,
+          0.031754106283187866
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "original_parser_candidates_before_recovery_and_gates": 2048,
+      "wall_seconds": 1.377506167977117,
+      "candidates_after_original_recovery_and_gates": 110,
+      "unique_voxels": 44254,
+      "post_original_flip_mutation_matrix": [
+        [
+          0.9501394629478455,
+          -0.3118252158164978,
+          0.0,
+          0.02086416631937027
+        ],
+        [
+          0.3118252158164978,
+          0.9501394629478455,
+          0.0,
+          0.031754106283187866
+        ],
+        [
+          -0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          -0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "native_operator_call_counts": {
+    "furthest_point_sample": 11,
+    "cylinder_query": 11,
+    "grouping_operation": 22
+  },
+  "full_representation_forward": true,
+  "identity_scene_points": "frame/scene_points_down.npy; original identity points_down only",
+  "merged_candidates_after_original_get_grasp_gates": 1544,
+  "frame_stage": {
+    "directory": "outputs/official_dh3_eleven_branch_20261103_v1/frame",
+    "RESULTS_sha256": "e3b676a7aa01f53ed5ec26e5678ae3004d06d8b3c842dda368e6ba99e20e771d"
+  },
+  "hand_stage": {
+    "directory": "outputs/official_dh3_eleven_branch_20261103_v1/hand",
+    "RESULTS_sha256": "4b73620efa6c0bc6b6a5fa35e9ba809734e34b7a64e0ee47c924bd1af6eab5ef",
+    "status": "hand_pose_prediction_complete_collision_assets_missing",
+    "stages": {
+      "raw_parser_candidates": 1544,
+      "after_original_camera_and_width_gates": 1544,
+      "after_original_score_top1000": 1000,
+      "all_original_type_depth_combinations": 16000,
+      "original_top3500_returned": 3500,
+      "after_original_learned_score_gate": 2952,
+      "mapped_original_hand_poses_before_top400": 2952,
+      "original_top400_before_collision": 400
+    },
+    "original_global_top1000_then_top3500_score_gate_and_top400_preserved": true
+  },
+  "collision_handoff": {
+    "hand_run_dir": "outputs/official_dh3_eleven_branch_20261103_v1/hand",
+    "scene_points": "outputs/official_dh3_eleven_branch_20261103_v1/frame/scene_points_down.npy",
+    "expected_hand_npz": "predicted_DH3_hand_poses_pre_collision.npz",
+    "original_identity_scene_only": true,
+    "collision_not_replaced": true
+  },
+  "collision_stage": {
+    "directory": "outputs/official_dh3_eleven_branch_20261103_v1/collision",
+    "RESULTS_sha256": "4de5404b0941061018cb87410b049a3b4a3c0c63b48d48aed1142e538b536560",
+    "result": {
+      "scope": "original DH3 offline single-frame hand-voxel collision admission",
+      "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+      "collision_check_executed": true,
+      "physical_grasps_executed": 0,
+      "simulation_run": false,
+      "robot_connection": false,
+      "grasp_success_claim": false,
+      "empty_pointcloud_substituted": false,
+      "collision_gates_relaxed": false,
+      "status": "original_collision_admission_complete",
+      "input": {
+        "hand_prediction": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_eleven_branch_20261103_v1/hand/predicted_DH3_hand_poses_pre_collision.npz",
+        "hand_prediction_sha256": "22756f7deab94b8ad02cec799c5b6ddb98f4ad9abfea0ce9f9346a36218ffbdd",
+        "scene_points": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_eleven_branch_20261103_v1/frame/scene_points_down.npy",
+        "scene_file_sha256": "06311f68c8888fd61e81e56ba11a182993c932f993745b6613e52451143185c0",
+        "npz_key": null,
+        "scene_count": 43869,
+        "candidates": 400,
+        "scene_selection": "identity quantized original points_down, no merged augmentation scene"
+      },
+      "assets": {
+        "root": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets",
+        "required_slots": 6,
+        "slots": [
+          {
+            "key": "pose1_8.7",
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.7.ply",
+            "sha256": "ea5211a80c8cf3414997dc2d7fc2afa8e2c8285984a68bf94dfe7fc9b8341aa6",
+            "point_count": 47855,
+            "slot_receipt_sha256": "5fe579385a82a40858e65b057a919220af2208ed1aba0ca43aaf5f63147bd4d4",
+            "sampling_seed": 20262190
+          },
+          {
+            "key": "pose1_9.6",
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.6.ply",
+            "sha256": "2c25af84943dc4ab0196e742d345846625ff7706a6152cd54f57988134d4f4b4",
+            "point_count": 47963,
+            "slot_receipt_sha256": "a3a8b2a794f7b0b916c950e15390de00014ac82151fc26e8d9b5461dcb1fca05",
+            "sampling_seed": 20262199
+          },
+          {
+            "key": "pose1_9.9",
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.9.ply",
+            "sha256": "d8ecdb0aac83699fbe9db1dd5b77d1e49f7705c424bd7dc1881f7b144d23b32c",
+            "point_count": 47580,
+            "slot_receipt_sha256": "6ec831b4f6750cf1fcbc68c1de37f45333f0572c3a3a227845317db5bae4edca",
+            "sampling_seed": 20262202
+          },
+          {
+            "key": "pose2_9.0",
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose2/9.0.ply",
+            "sha256": "f2e433acb2dff8cb2728a6a8daa27f97c9ece9ec583a98c5502e153cb5ac776d",
+            "point_count": 48025,
+            "slot_receipt_sha256": "f4bea9f8fc04834eb22ec9cd0087e86d31612a6d9aacb3299feb85a27f62b889",
+            "sampling_seed": 20263193
+          },
+          {
+            "key": "pose3_9.9",
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.9.ply",
+            "sha256": "9af6839f8343791f2e485908c94b20a46312d75532900ba28bd1abb171ec0c8b",
+            "point_count": 47620,
+            "slot_receipt_sha256": "538a5088ee01944ebe2eb99adc410d8f30a5bbdd6e54738368e58d182a87f51f",
+            "sampling_seed": 20264202
+          },
+          {
+            "key": "pose4_6.3",
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose4/6.3.ply",
+            "sha256": "6e59cacbf0c13b1d3e8ef8bc0217bba6277ebc8f390e48aa379dd1e0496dca2a",
+            "point_count": 47471,
+            "slot_receipt_sha256": "d3f50d6df4b4a415b53c04623e5d4cc12a324eb0a2623850c57e110b2a7b475b",
+            "sampling_seed": 20265166
+          }
+        ],
+        "table_sha256": "097929420ba7bfcbf3614ab193a7d85dec4bd95c76aca6a96c9dca1ec7ed2a5a",
+        "source": "pinned original 13 STLs/URDF and original FK/surface/infill/voxel functions; published lookup joints; zero-step PyBullet DIRECT"
+      },
+      "original_detect_seconds": 14.083012873015832,
+      "stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 391,
+        "collision_admitted": 9
+      },
+      "original_parameters": {
+        "scene_voxel_argument_m": 0.001,
+        "hand_and_voxel_grid_m": 0.003,
+        "approach_distance_m": 0.05,
+        "min_grasp_width_m": 0.045,
+        "collision_threshold_points": 0,
+        "adjust_gripper_centers": false,
+        "DEBUG": false,
+        "width_multiplier": 1.7,
+        "original_accumulated_approach_offsets_m": [
+          0,
+          0.02,
+          0.05,
+          0.07
+        ]
+      },
+      "instrumentation": {
+        "original_source": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+        "source_sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+        "detect_and_load_function_bodies_unchanged": true,
+        "time_import_provided": "Original collision module omits time import; actual time module provided in AST scope",
+        "Open3D_query": "passthrough to real VoxelGrid/create_from_point_cloud/check_if_included; original output returned unchanged",
+        "Open3D_version": "0.20.0"
+      },
+      "validation": {
+        "original_width_prelude_and_hand_mapping_exact": true,
+        "all_masks_equal_actual_zero_overlap_test": true,
+        "all_required_original_pointclouds_nonempty_finite_SHA_verified": true
+      },
+      "boundary": "Visibility-only original hand/scene pointcloud gate. No arm, path, IK, physical lifting, independent-scene evaluation or closed-loop control was executed.",
+      "total_seconds": 14.213346776959952,
+      "output_files": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_eleven_branch_20261103_v1/collision/candidate_collision_records.jsonl",
+          "bytes": 84793,
+          "sha256": "a3eb008b2fc3bd079a113ee3982da7e2672791670e7aa06ef41bec506105af42"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_eleven_branch_20261103_v1/collision/collision_outputs.npz",
+          "bytes": 149975,
+          "sha256": "1c208d8eb99748a512976ddcb8cdd8908179b85069e5307b7177123ab98c0755"
+        }
+      ]
+    }
+  }
+}

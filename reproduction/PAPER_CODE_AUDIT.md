@@ -3,7 +3,7 @@
 官方源码本地根目录：`/home/wangrenpeng/AnyDexGrasp/`。本报告所有官方相对源码路径均以此目录为基准。静态探针、论文源/源码SHA等原始证据在 `outputs/paper_code_audit/`；CanonDex原始工作目录保留。
 
 
-核对时间：2026-11-03。只读官方 commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，论文为 arXiv `2502.16420v1`，PDF 和原始 TeX 已下载。本报告未改官方源码、未安装依赖、未执行机器人/物理仿真、未训练或验证发布权重。静态类接口探针有实际 CPU 前向，详见独立仓库 `outputs/paper_code_audit/interface_probe.json`，不能当任务效果复现。
+核对时间：2026-11-03。只读官方 commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，论文为 arXiv `2502.16420v1`，PDF 和原始 TeX 已下载。初版静态核对未验证发布权重；后续31发布决策模型、表示GPU前向及DH3标定手姿链已实际完成，见runtime报告。原算法未改，无机器人/物理仿真或新训练。静态类接口探针有实际 CPU 前向，详见独立仓库 `outputs/paper_code_audit/interface_probe.json`，不能当任务效果复现。
 
 官方来源：[论文](https://arxiv.org/abs/2502.16420v1)、[仓库固定版本](https://github.com/graspnet/AnyDexGrasp/tree/c9c4a43df33e40860417c7e2dd02f5122d3b2da2)。下文源码行号均以该版本为准。原始论文 TeX 解包在独立仓库 `outputs/paper_code_audit/source/`，便于精确对照。
 
@@ -41,11 +41,11 @@
 
 表示标签 `fric_rep` 的 `data[...,0]` 是距离通道，`data[...,1]` 是摩擦/法向相容性标量（`graspnet.py:366–369`）。损失把有效 `mu` 转成 `log(1/mu)/log(10)`，距离按 `0.08 m` 归一化（`loss.py:15–18,289–318`）。应据发布标注数值核对确切物理含义，不能只凭变量名 `width` 判断。
 
-### B. 原样训练脚本与部署网络输出头不兼容：已实际验证
+### B. 训练默认240头；实际发布权重20头已全部验证
 
 `train_multifinger.py:52–55` 固定 `type=1, depth=4, two_finger_angle=12, two_finger_depth=5`，训练类 `minkowski_graspnet.py:21` 输出 **240**。部署类 `single_point.py:322–329` 默认 `angle=1`，输出 **20**；机器人 `robot_inspire.py:427–429` 直接严格加载。CPU 实际前向分别 `[4,1,240]` 和 `[4,1,20]`，直接加载报 `conv7/bn7` shape mismatch。见独立仓库 `outputs/paper_code_audit/interface_probe.json`。
 
-这只证明当前公开训练/部署接口有不一致，不证明发布权重错误。必须先查看实际 checkpoint 的头尺寸/来源，再决定忠实恢复哪个配置；不能静默切片权重或随意换头后称原样复现。训练 loss 本身还只选择 `depth2f*4+depth_hand` 那 20 个头中的目标（`loss.py:406–415`），其余角度块没有该样本的直接监督。
+初始探针只证明默认配置不同。后续31发布checkpoint均保存`num_two_finger_angle=1`、实际20头，原480→20部署类全部strict load成功；test指标匹配至4位小数。无需切片/修改权重，重训须明确该配置，不能继续写发布权重不可用。训练 loss 本身还只选择 `depth2f*4+depth_hand` 那 20 个头中的目标（`loss.py:406–415`），其余角度块没有该样本的直接监督。
 
 ### C. 决策损失/层宽/训练参数不同
 
@@ -70,7 +70,7 @@
 
 | 目标 | 需要 | 能否直接用于 Boya |
 |---|---|---|
-| 发布通用表示网络离线推理 | representation checkpoint、MinkowskiEngine/knn/pointnet2编译依赖、单视点云及正确单位/相机坐标 | 表示本来是 hand-agnostic，有复用依据；尚未在本机验证效果 |
+| 发布通用表示网络离线推理 | representation checkpoint、MinkowskiEngine/knn/pointnet2编译依赖、单视点云及正确单位/相机坐标 | 表示本来是 hand-agnostic；已用原权重完成真实RGB-D前向，尚未物理验证 |
 | 发布三只手的决策推理 | 对应手/手势20头checkpoint、匹配原表示输出与canonicalization、开口标定JSON/手网格点云 | 不能把Allegro/Inspire权重直接当Boya已验证模型 |
 | 从头重训表示模型 | GraspNet原RGB-D/scene/meta+作者新 `fric_rep`、`fric_collision_label`、`pre_generated_label_combinescore` | 通常先复用发布checkpoint；原始GraspNet标签不等于CGR重标注 |
 | 重训决策模型 | `obj140.json` / `test_single_point.json`等作者真实试抓条目，含480原始特征、二指角/深入、手势、附加深入、成败 | 新Boya需重新定义手势/宽度映射并采该手成败；可用我们仿真采集，但这叫仿真适配版，不是原真实试验复现 |
@@ -94,4 +94,10 @@
 3. 先复现发布决策模型在相同输入上的前向/排序，再在同一仿真手/场景或Boya显式适配版执行。Boya版本需要静态开口映射和该手训练数据，不能称跨手零样本抓取已验证。
 4. 比较我们与AnyDex时，至少同时报首个实际抓取、最终有限重抓、准入/失败/总耗时；相同partial point cloud或明确分列已知全网格oracle输入，不将作者真实成功率和我们的仿真最终物体成功率直接相减。
 
-当前结论：它是必须认真复现的强基线；结构上确与我们相近，成功评分学习和真实验证规模是已明确差距。公开代码具备主要网络、数据管线和机器人接口，但存在多个论文/脚本配置与训练/部署接口差异，不能在未拿到发布权重并完成前向验证前宣称一键完整复现。
+当前结论：它是必须认真复现的强基线；结构上确与我们相近，成功评分学习和真实验证规模是已明确差距。公开代码具备主要网络、数据管线和机器人接口，但存在多个论文/脚本配置与训练/部署接口差异，发布权重现已取得并完成31决策模型/完整表示前向/DH3手姿链；DH3原碰撞准入与最终选择后续已完成，物理抓取仍未完成，不能称论文真实成功率已复现。
+
+## 7. 后续运行更新
+
+详见[runtime报告](runtime/README.md)、[CUDA局部构建](native/README.md)与[总状态](README.md)。官方32模型和8份有效真实JSON已发布public；三个大CGR标签包仍为Drive配额，仅从头重训表示才需要，不阻塞当前推理。没有新训练。
+
+DH3原`get_DH3_model`在类型循环内重置字典；独立runner确定性加载全部4发布head，再执行未改原评分、>.85门和标定。此loader差异透明保留。预计算点云随后已按原生成函数/URDF/STL/12d表补齐，原碰撞实际执行，未做空替代。完整11分支得到9个准入并选出原top1；无物理执行，见runtime当前报告。

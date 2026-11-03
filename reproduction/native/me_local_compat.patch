@@ -1,0 +1,37 @@
+--- a/setup.py
++++ b/setup.py
+@@ -127,2 +127,2 @@
+-run_command("rm", "-rf", "build")
+-run_command("pip", "uninstall", "MinkowskiEngine", "-y")
++# Local build wrapper: retain build cache; no global state changes.
++# Local build wrapper: never uninstall a shared package.
+--- a/src/coordinate_map_gpu.cuh
++++ b/src/coordinate_map_gpu.cuh
+@@ -139 +139 @@
+-      m_map = map_type::create(
++      auto map_ptr = map_type::create(
+@@ -141,0 +142,2 @@
++      auto map_deleter = map_ptr.get_deleter();
++      m_map = std::shared_ptr<map_type>(map_ptr.release(), map_deleter);
+--- a/src/3rdparty/cudf/detail/nvtx/ranges.hpp
++++ b/src/3rdparty/cudf/detail/nvtx/ranges.hpp
+@@ -18,0 +19,7 @@
++// The vendored nvtx3.hpp predates the NVTX v3 headers that CUDA >= 12 ships and
++// that PyTorch pulls in; having both declares two different inline versioning
++// namespaces inside `nvtx3`, making every name in it ambiguous. These ranges are
++// profiling annotations only, so build without them.
++#define MINKOWSKI_DISABLE_NVTX 1
++
++#ifndef MINKOWSKI_DISABLE_NVTX
+@@ -19,0 +27 @@
++#endif
+@@ -33,0 +42 @@
++#ifndef MINKOWSKI_DISABLE_NVTX
+@@ -34,0 +44 @@
++#endif
+@@ -53,0 +64,3 @@
++#ifdef MINKOWSKI_DISABLE_NVTX
++#define CUDF_FUNC_RANGE() static_cast<void>(0)
++#else
+@@ -54,0 +68 @@
++#endif

@@ -1,0 +1,40 @@
+{
+  "scope": "Proxy endpoint extraction only; no raw messages, credentials or subscriptions copied",
+  "november_search": {
+    "directories": [
+      "/home/wangrenpeng/.codex/sessions/2026/11/01",
+      "/home/wangrenpeng/.codex/sessions/2026/11/02"
+    ],
+    "keyword_matching_jsonl_files": 36,
+    "method": "Recursive parsing of all JSON string values, including message payloads and embedded escaped text",
+    "distinct_real_proxy_endpoints_found": 0
+  },
+  "historical_endpoint_confirmed": {
+    "session": "/home/wangrenpeng/.codex/sessions/2026/10/21/rollout-2026-10-21T17-22-50-01a15dc5-3ff8-73e1-80ca-ac960e1b1537.jsonl",
+    "line": 131,
+    "cwd": "/home/wangrenpeng/CanonDex",
+    "scheme": "http",
+    "host": "127.0.0.1",
+    "port": 7897,
+    "clash_or_mihomo_startup_path_found_in_context": false
+  },
+  "current_tests": [
+    {
+      "scheme": "http",
+      "host": "127.0.0.1",
+      "port": 7897,
+      "request_target": "https://drive.google.com/drive/folders/1XfJmEkg29vq7swCndnS_B0Y4djwWhZRo",
+      "result": "ProxyError: connection refused"
+    },
+    {
+      "scheme": "http",
+      "host": "172.22.0.1",
+      "port": 7897,
+      "request_target": "https://drive.google.com/drive/folders/1XfJmEkg29vq7swCndnS_B0Y4djwWhZRo",
+      "result": "ProxyError: connection refused"
+    }
+  ],
+  "global_network_settings_changed": false,
+  "proxy_installed_or_started": false,
+  "official_weights_or_data_downloaded": false
+}

@@ -1,0 +1,30 @@
+{
+  "author_sha": "39edad65022ec3e56c994a743c0a87877c70933a",
+  "work_copy": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine",
+  "public_compat_sha": "4f968c622b95cc1408c05b3a0cd2a26852d90577",
+  "changes": [
+    {
+      "file": "setup.py",
+      "reason": "Remove packaging-time unconditional cache wipe/uninstall; extension algorithm unchanged",
+      "before_sha256": "3265a2a08b2e152c05afa7bd0ee3ea7f5be2ebeec95fb9c791f55461dfb546f4",
+      "after_sha256": "a1a560e12afa9a675b3c09ae12eaadce618bd44c208874985ddd2119fd9b66de",
+      "diff": "--- author/setup.py\n+++ local/setup.py\n@@ -124,8 +124,8 @@\n                 return arr[0].split(\"=\")[1], argv\n \n \n-run_command(\"rm\", \"-rf\", \"build\")\n-run_command(\"pip\", \"uninstall\", \"MinkowskiEngine\", \"-y\")\n+# Local build wrapper: retain build cache; no global state changes.\n+# Local build wrapper: never uninstall a shared package.\n \n # For cpu only build\n CPU_ONLY, argv = _argparse(\"--cpu_only\", argv)\n"
+    },
+    {
+      "file": "src/coordinate_map_gpu.cuh",
+      "reason": "Exact API-local shared_ptr construction preserving deleter from upstream PR637; avoids system header edits",
+      "before_sha256": "646ea5195afb7c19ae3729845fea4930f9386ed86b5c30b07f020f9543246021",
+      "after_sha256": "c41754dcf1720f43458ceafca2f51fadaf2026b238d1057a013293c6e4616edc",
+      "diff": "--- author/src/coordinate_map_gpu.cuh\n+++ local/src/coordinate_map_gpu.cuh\n@@ -136,9 +136,11 @@\n       LOG_DEBUG(\"Reserve map of\",\n                 compute_hash_table_size(size, m_hashtable_occupancy),\n                 \"for concurrent_unordered_map of size\", size);\n-      m_map = map_type::create(\n+      auto map_ptr = map_type::create(\n           compute_hash_table_size(size, m_hashtable_occupancy),\n           m_unused_element, m_unused_key, m_hasher, m_equal, m_map_allocator);\n+      auto map_deleter = map_ptr.get_deleter();\n+      m_map = std::shared_ptr<map_type>(map_ptr.release(), map_deleter);\n       LOG_DEBUG(\"Done concurrent_unordered_map creation\");\n       CUDA_TRY(cudaStreamSynchronize(0));\n       m_capacity = size;\n"
+    },
+    {
+      "file": "src/3rdparty/cudf/detail/nvtx/ranges.hpp",
+      "reason": "Exact PR637 profiling-only NVTX namespace compatibility; no system header edits",
+      "before_sha256": "7778dc2d4c6cf0379d527705dd68e642ee8ad7346fc3df366645c4770596a6a6",
+      "after_sha256": "02e5d02a9855297eea59c0266a28d68459e8bb071bd556eb0ce8a97ddb46be4e",
+      "diff": "--- author/src/3rdparty/cudf/detail/nvtx/ranges.hpp\n+++ local/src/3rdparty/cudf/detail/nvtx/ranges.hpp\n@@ -16,7 +16,15 @@\n \n #pragma once\n \n+// The vendored nvtx3.hpp predates the NVTX v3 headers that CUDA >= 12 ships and\n+// that PyTorch pulls in; having both declares two different inline versioning\n+// namespaces inside `nvtx3`, making every name in it ambiguous. These ranges are\n+// profiling annotations only, so build without them.\n+#define MINKOWSKI_DISABLE_NVTX 1\n+\n+#ifndef MINKOWSKI_DISABLE_NVTX\n #include \"nvtx3.hpp\"\n+#endif\n \n namespace cudf {\n /**\n@@ -31,7 +39,9 @@\n  * @brief Alias for an NVTX range in the libcudf domain.\n  *\n  */\n+#ifndef MINKOWSKI_DISABLE_NVTX\n using thread_range = ::nvtx3::domain_thread_range<libcudf_domain>;\n+#endif\n \n }  // namespace cudf\n \n@@ -51,4 +61,8 @@\n  * ```\n  *\n  */\n+#ifdef MINKOWSKI_DISABLE_NVTX\n+#define CUDF_FUNC_RANGE() static_cast<void>(0)\n+#else\n #define CUDF_FUNC_RANGE() NVTX3_FUNC_RANGE_IN(cudf::libcudf_domain)\n+#endif\n"
+    }
+  ],
+  "official_anydex_modified": false,
+  "shared_environment_modified": false
+}

@@ -1,0 +1,3648 @@
+{
+  "scope": "Original DH3 collision asset generation, identity frame only",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "differences_from_author_entry": "Use published 12d lookup rather than Excel/regenerating lookup; DIRECT rather than SHARED_MEMORY; per-slot seed; selected needed slots; output-only paths",
+  "full_original_sampling_retained": true,
+  "original_inputs": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/urdf/dh3_urdf.urdf",
+      "bytes": 18828,
+      "sha256": "37c638ad84d68a0ff4af4943a2c2d668912d0f1eda85786cbcf3e09069022cd2",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/base_Link.STL",
+      "bytes": 2140484,
+      "sha256": "afa731ade17aa5b910a41173d4f62c7bcfdbf7ce1a2f77f4a770c3c770b0a91a",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_Link.STL",
+      "bytes": 66284,
+      "sha256": "a3521cd83d2520474edf82a702a793b78211e8607aad1fcd6b69e8f2b4f6074c",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_base_Link.STL",
+      "bytes": 125784,
+      "sha256": "375fb35dfd9abbbe9f389d93c2654f44216744ff056127ea5593c264d21340a7",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_outlet_Link.STL",
+      "bytes": 126784,
+      "sha256": "5269b9b0e42f9dd48c0ed8e76b3f33b80e318d87b554a836cc75c1749fcffa47",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_tip_Link.STL",
+      "bytes": 143984,
+      "sha256": "470d3a1264e83ead3030441432b410f26574e56c09133eae090a6dbb405b8910",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_Link.STL",
+      "bytes": 66284,
+      "sha256": "e02334aa8b9b8dcf482e668f4552894a4109e2f77bb64d326656cc912e0336da",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_base_Link.STL",
+      "bytes": 125784,
+      "sha256": "73c06ea4438dd545631228c9d30fe3cd809d61a8f83cd6b0452bc9f08fd408d1",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_outlet_Link.STL",
+      "bytes": 126784,
+      "sha256": "d9d95241e943181687bc03159c615ade9f6f93f306aaa81928f9ec0597e280b6",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_tip_Link.STL",
+      "bytes": 143984,
+      "sha256": "b7ad921393bf0194c3430fa2129e7796586c482e93f9c59b97c7bce48ba0b00d",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_Link.STL",
+      "bytes": 66284,
+      "sha256": "90e1f9cbb54bf798f0a74395cdb587dda6ace80eb0590096c695a0ab0613e16a",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_base_Link.STL",
+      "bytes": 125784,
+      "sha256": "f0b842f71070e386389ced5ae8c19b1bc880a502f157bff9122ba6cbacb686b0",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_outlet_Link.STL",
+      "bytes": 126784,
+      "sha256": "a279206af38e2a5f5e251ebde5d34664e640310cd4d97c14d8587b484be1dd0a",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_tip_Link.STL",
+      "bytes": 143984,
+      "sha256": "35323709b8994f8e097e53abaacd20c8bb3e09485410b06f85bc2b8f9233e6a0",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+      "bytes": 13713,
+      "sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/angles2stl.py",
+      "bytes": 18433,
+      "sha256": "3d87bd6c818a30c1b21066c37bea23b3ee1885f1d801bf277e62cf9ba9b44fc2",
+      "matches_author_commit": true
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py",
+      "bytes": 31125,
+      "sha256": "5d4332187242de6ce6d23fddc63136a7dbafbc61bbc921cc4dabd32c1067e69f",
+      "matches_author_commit": true
+    }
+  ],
+  "lookup_sha256": "097929420ba7bfcbf3614ab193a7d85dec4bd95c76aca6a96c9dca1ec7ed2a5a",
+  "planned_slots": 28,
+  "completed_slots": 28,
+  "workers": 4,
+  "wall_seconds": 13.20584923698334,
+  "physics_steps": 0,
+  "worker_results": [
+    {
+      "worker_index": 0,
+      "slots": 7,
+      "completed_slots": 7,
+      "physics_steps": 0,
+      "pybullet_connection": "DIRECT process-private",
+      "open3d_version": "0.20.0",
+      "worker_wall_seconds": 12.314491442986764,
+      "per_slot_sampling_seed_recorded": true
+    },
+    {
+      "worker_index": 1,
+      "slots": 7,
+      "completed_slots": 7,
+      "physics_steps": 0,
+      "pybullet_connection": "DIRECT process-private",
+      "open3d_version": "0.20.0",
+      "worker_wall_seconds": 12.282178463006858,
+      "per_slot_sampling_seed_recorded": true
+    },
+    {
+      "worker_index": 2,
+      "slots": 7,
+      "completed_slots": 7,
+      "physics_steps": 0,
+      "pybullet_connection": "DIRECT process-private",
+      "open3d_version": "0.20.0",
+      "worker_wall_seconds": 12.217434909020085,
+      "per_slot_sampling_seed_recorded": true
+    },
+    {
+      "worker_index": 3,
+      "slots": 7,
+      "completed_slots": 7,
+      "physics_steps": 0,
+      "pybullet_connection": "DIRECT process-private",
+      "open3d_version": "0.20.0",
+      "worker_wall_seconds": 12.059252719045617,
+      "per_slot_sampling_seed_recorded": true
+    }
+  ],
+  "slots": [
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "7.7",
+      "joint12_rad": [
+        -1.08,
+        0.39288421052631584,
+        0.02473684210526316,
+        0.02947368421052632,
+        1.0,
+        0.39288421052631584,
+        0.02473684210526316,
+        0.02947368421052632,
+        1.08,
+        0.39288421052631584,
+        0.02473684210526316,
+        0.02947368421052632
+      ],
+      "actuator2": [
+        67.0,
+        0.0
+      ],
+      "sampling_seed": 20262180,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/7.7.STL",
+        "bytes": 3527984,
+        "sha256": "a96e31a7e15bbc5462e1339f6523e4592362455bf6e883409ef7bc0e1ad60fed"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/7.7.ply",
+          "bytes": 19604045,
+          "sha256": "330160d9879a4c1812560782cdfc793c8c7898b833b9fbf7133b44fcccf3709d",
+          "point_count": 816829,
+          "min_m": [
+            -0.06587969991285927,
+            -0.06953420439621286,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08203211484145481,
+            0.06947631671318252,
+            0.21175882667792775
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/7.7.ply",
+          "bytes": 3398933,
+          "sha256": "967d3b9e3687af0ce3517d9306440e9ca45a73bb0b675b50c00ffb03fb17627c",
+          "point_count": 141616,
+          "min_m": [
+            -0.06570445767995955,
+            -0.06927012149556659,
+            -0.021740848614602064
+          ],
+          "max_m": [
+            0.08165724342102812,
+            0.06947631671318252,
+            0.21175882667792775
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/7.7.ply",
+          "bytes": 1146940,
+          "sha256": "207d7a8725156bc8fcd098a86c97191e86705f9eeae24b310f7931d17f06196e",
+          "point_count": 47783,
+          "min_m": [
+            -0.06540084419817146,
+            -0.06880109658966903,
+            -0.02161480006959992
+          ],
+          "max_m": [
+            0.08089740012331283,
+            0.06836566531587349,
+            0.21148199402061055
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/7.7.ply",
+          "bytes": 526156,
+          "sha256": "786ea602f56840523ceb4c0af8550d55ac8d472449679c4ddbe8d6618f640d63",
+          "point_count": 21917,
+          "min_m": [
+            -0.06500352118167428,
+            -0.0685481729709589,
+            -0.02149876010927327
+          ],
+          "max_m": [
+            0.08126350553494484,
+            0.06910609958074618,
+            0.21012612623702495
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/7.7.ply",
+          "bytes": 291340,
+          "sha256": "e93ff053931e689445de78160f938a1e2ec9f03b843eb865c08367d601eaf039",
+          "point_count": 12133,
+          "min_m": [
+            -0.06472728706578951,
+            -0.06818841274300204,
+            -0.020633266924769016
+          ],
+          "max_m": [
+            0.08193115920518036,
+            0.06873588244830983,
+            0.21148199402061055
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.7897449880256318,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "7.8",
+      "joint12_rad": [
+        -1.08,
+        0.37885263157894733,
+        0.024210526315789474,
+        0.028421052631578944,
+        1.0,
+        0.37885263157894733,
+        0.024210526315789474,
+        0.028421052631578944,
+        1.08,
+        0.37885263157894733,
+        0.024210526315789474,
+        0.028421052631578944
+      ],
+      "actuator2": [
+        68.0,
+        0.0
+      ],
+      "sampling_seed": 20262181,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/7.8.STL",
+        "bytes": 3527984,
+        "sha256": "47f55c8e2fb6c16aafff42b37bec6ce363c7793bcd8353d1dbacdae77b826f30"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/7.8.ply",
+          "bytes": 19619453,
+          "sha256": "119484f317a3075652f09aac5b964bf114703ee87d89aff31194fd635ecd02cf",
+          "point_count": 817471,
+          "min_m": [
+            -0.0677392205776526,
+            -0.0672757487911713,
+            -0.025201823346191463
+          ],
+          "max_m": [
+            0.08238688497824861,
+            0.068535958779932,
+            0.21066027757334085
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/7.8.ply",
+          "bytes": 3387077,
+          "sha256": "5b94ce1414e8b191807fd7b7ac3d37b30614ed763687fc53932c50745eb50cc0",
+          "point_count": 141122,
+          "min_m": [
+            -0.06736664012988275,
+            -0.06713868483606189,
+            -0.024859320982681985
+          ],
+          "max_m": [
+            0.08231949288334664,
+            0.06847078777174173,
+            0.21066027757334085
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/7.8.ply",
+          "bytes": 1149724,
+          "sha256": "a2dbc72ee05c67f612fa4023fd69f24931d08c8c0e0e44a8fdbee2d9c3513a6a",
+          "point_count": 47899,
+          "min_m": [
+            -0.06699405968211287,
+            -0.06671358315793784,
+            -0.024516818619172504
+          ],
+          "max_m": [
+            0.08189780970086513,
+            0.06767951119116536,
+            0.21066027757334085
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/7.8.ply",
+          "bytes": 529084,
+          "sha256": "67dbab26811939fe9eef05d0267ca13488e68e702cb91db86b4529936d231480",
+          "point_count": 22039,
+          "min_m": [
+            -0.06699405968211287,
+            -0.06646517804348243,
+            -0.024516818619172504
+          ],
+          "max_m": [
+            0.08270263647237269,
+            0.0677061613015782,
+            0.21023863299981546
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/7.8.ply",
+          "bytes": 286900,
+          "sha256": "9ee8bff40213a5bb8384022e0c5ffbb35b7a6e2a757d696b04d067db32cb3ad9",
+          "point_count": 11948,
+          "min_m": [
+            -0.06662147923434304,
+            -0.06617829901952578,
+            -0.02417431625566303
+          ],
+          "max_m": [
+            0.08121794042461954,
+            0.06698951147993033,
+            0.20944999884453255
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.7091474229819141,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "7.9",
+      "joint12_rad": [
+        -1.08,
+        0.36482105263157893,
+        0.023684210526315787,
+        0.027368421052631584,
+        1.0,
+        0.36482105263157893,
+        0.023684210526315787,
+        0.027368421052631584,
+        1.08,
+        0.36482105263157893,
+        0.023684210526315787,
+        0.027368421052631584
+      ],
+      "actuator2": [
+        69.0,
+        0.0
+      ],
+      "sampling_seed": 20262182,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/7.9.STL",
+        "bytes": 3527984,
+        "sha256": "7bed75b79004e8295beac7bd0f9e3ca153f05b67fe3e1b9b1a6a1a7619b11e86"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/7.9.ply",
+          "bytes": 19562525,
+          "sha256": "5a7182e38bc1a95d2b8e0d5a58335b48c1322c4acff066bd4dadc6012cfe0297",
+          "point_count": 815099,
+          "min_m": [
+            -0.06771813633927615,
+            -0.06961588036011772,
+            -0.022033566540906303
+          ],
+          "max_m": [
+            0.0832986738242609,
+            0.06849257176632043,
+            0.21478095427661034
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/7.9.ply",
+          "bytes": 3387293,
+          "sha256": "2f348861e68821b5f89fdcf51dc504058355d9789c2a8f3c464516a9986ac8b1",
+          "point_count": 141131,
+          "min_m": [
+            -0.0673346508515803,
+            -0.06924445495337991,
+            -0.021749999858438975
+          ],
+          "max_m": [
+            0.0832986738242609,
+            0.06806571289416108,
+            0.21405748248052317
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/7.9.ply",
+          "bytes": 1146988,
+          "sha256": "e83c54496e4e5929344d77378706bb3552670ac37129f77b2ce7f4c0c80b32b8",
+          "point_count": 47785,
+          "min_m": [
+            -0.06748954999837732,
+            -0.06887302954664214,
+            -0.02148155160729501
+          ],
+          "max_m": [
+            0.0821817357545425,
+            0.0677111133333625,
+            0.21411729565155127
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/7.9.ply",
+          "bytes": 529060,
+          "sha256": "f61a2ca0654d6f9071979ed7b782eee98c588ea875dfaa3f39fe44a18d2c59fb",
+          "point_count": 22038,
+          "min_m": [
+            -0.06684539509335671,
+            -0.06887302954664214,
+            -0.021241934688803605
+          ],
+          "max_m": [
+            0.0828540812352286,
+            0.06849257176632043,
+            0.21341743870860327
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/7.9.ply",
+          "bytes": 291508,
+          "sha256": "8f44ee8e718457f5395eafdb3c46dd9f949be88d74cfe9239768f20ce65e1f8a",
+          "point_count": 12140,
+          "min_m": [
+            -0.06651912260100941,
+            -0.06826494006420482,
+            -0.020999999858438968
+          ],
+          "max_m": [
+            0.08178775640336569,
+            0.06827914233024075,
+            0.21405748248052317
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.9469199140439741,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "8.1",
+      "joint12_rad": [
+        -1.08,
+        0.35078947368421054,
+        0.023157894736842106,
+        0.026315789473684223,
+        1.0,
+        0.35078947368421054,
+        0.023157894736842106,
+        0.026315789473684223,
+        1.08,
+        0.35078947368421054,
+        0.023157894736842106,
+        0.026315789473684223
+      ],
+      "actuator2": [
+        70.0,
+        0.0
+      ],
+      "sampling_seed": 20262184,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/8.1.STL",
+        "bytes": 3527984,
+        "sha256": "38b6a62ec95e1337e7296dcb844bc15d16b35bbab5fef5aecda4a3cfb18c92af"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/8.1.ply",
+          "bytes": 19703381,
+          "sha256": "47b740ce16586e9825d0e9b84c27dd31a75589ee4993b7ef58c4ffc8abb853ae",
+          "point_count": 820968,
+          "min_m": [
+            -0.06810663165222587,
+            -0.06669446055806055,
+            -0.022309966310039515
+          ],
+          "max_m": [
+            0.08401657491005245,
+            0.06897337485672045,
+            0.20957257837694745
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/8.1.ply",
+          "bytes": 3383093,
+          "sha256": "cc7f8e893b5dc886ec4fa4a31f40154ce217ba185d0030306e9eef9b47d211e5",
+          "point_count": 140956,
+          "min_m": [
+            -0.06783187744736927,
+            -0.0663930093953092,
+            -0.021842204121309154
+          ],
+          "max_m": [
+            0.08364243082982682,
+            0.06897337485672045,
+            0.20934351569670556
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.1.ply",
+          "bytes": 1152508,
+          "sha256": "62742739bef6a138ac81a3c59a2a33b73875ea63a12a82396743d630d4248210",
+          "point_count": 48015,
+          "min_m": [
+            -0.0674574762459613,
+            -0.06617180791164151,
+            -0.02155266780554182
+          ],
+          "max_m": [
+            0.08398357882629699,
+            0.06823439416634135,
+            0.20861316163308583
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/8.1.ply",
+          "bytes": 529828,
+          "sha256": "212fa109471b1efc734168599977d05047758f9d523c6a1b37a5b5e569e510c7",
+          "point_count": 22070,
+          "min_m": [
+            -0.06711223993365471,
+            -0.06580081667762792,
+            -0.021664494357033597
+          ],
+          "max_m": [
+            0.08323774970315852,
+            0.06823439416634135,
+            0.20890681715049575
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/8.1.ply",
+          "bytes": 292348,
+          "sha256": "da9b0ffd5f3d97341d93ebce993fc3edeacb834fb13a30770ca673c2c758d9a0",
+          "point_count": 12175,
+          "min_m": [
+            -0.06691335058468836,
+            -0.06542982544361431,
+            -0.02103911564102765
+          ],
+          "max_m": [
+            0.08170188528202746,
+            0.06721014726498323,
+            0.20746420450789382
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.9816465339972638,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "8.5",
+      "joint12_rad": [
+        -1.08,
+        0.29466315789473696,
+        0.02105263157894737,
+        0.02210526315789474,
+        1.0,
+        0.29466315789473696,
+        0.02105263157894737,
+        0.02210526315789474,
+        1.08,
+        0.29466315789473696,
+        0.02105263157894737,
+        0.02210526315789474
+      ],
+      "actuator2": [
+        74.0,
+        0.0
+      ],
+      "sampling_seed": 20262188,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/8.5.STL",
+        "bytes": 3527984,
+        "sha256": "8e01ffcb26e7ef7eaa28d0b39ab7d5724d2dcad8e5d989bf90a703a20fb4b240"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/8.5.ply",
+          "bytes": 19659605,
+          "sha256": "e8b55aa662fc03671070fe14de01eee60d5eb36cc8561140b7e97e4ab901dbd6",
+          "point_count": 819144,
+          "min_m": [
+            -0.07038735520990527,
+            -0.06900880898759704,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08660099220027133,
+            0.06910779289562838,
+            0.20785177972052624
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/8.5.ply",
+          "bytes": 3388253,
+          "sha256": "0f4b2669e9c260987dd715ad9369a6d6a4996b6eaf74026d5a59ddae9630f318",
+          "point_count": 141171,
+          "min_m": [
+            -0.07014180559541014,
+            -0.06900880898759704,
+            -0.021553944345337285
+          ],
+          "max_m": [
+            0.08629525310130812,
+            0.06874981503161968,
+            0.20761468525300183
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.5.ply",
+          "bytes": 1147300,
+          "sha256": "a55bbf2e60cf06e4f6dae153f6064557bae187228e35c8ea2ecb9bd467dfbb7b",
+          "point_count": 47798,
+          "min_m": [
+            -0.06997893890471486,
+            -0.0682819283137691,
+            -0.021727108896158732
+          ],
+          "max_m": [
+            0.08548498626349499,
+            0.06839183716761099,
+            0.20785177972052624
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/8.5.ply",
+          "bytes": 528076,
+          "sha256": "74015ea40ebb95a80aa89d1af3af26ae6a6223ff2b620d20e6c302236c22af25",
+          "point_count": 21997,
+          "min_m": [
+            -0.06956420753332494,
+            -0.06792026647897301,
+            -0.021063213974862292
+          ],
+          "max_m": [
+            0.08621881837947562,
+            0.06910779289562838,
+            0.2058689374050299
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/8.5.ply",
+          "bytes": 292588,
+          "sha256": "5de4dfa8c81706f3c41483aef753e220e3d0cf6fd4fe78e74655bad19a59a547",
+          "point_count": 12185,
+          "min_m": [
+            -0.069161449188258,
+            -0.06783243107525173,
+            -0.020772787338902633
+          ],
+          "max_m": [
+            0.08463244431574865,
+            0.06910779289562838,
+            0.20701024858578834
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.6185451750061475,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "8.7",
+      "joint12_rad": [
+        -1.08,
+        0.26659999999999995,
+        0.019999999999999997,
+        0.01999999999999999,
+        1.0,
+        0.26659999999999995,
+        0.019999999999999997,
+        0.01999999999999999,
+        1.08,
+        0.26659999999999995,
+        0.019999999999999997,
+        0.01999999999999999
+      ],
+      "actuator2": [
+        76.0,
+        0.0
+      ],
+      "sampling_seed": 20262190,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/8.7.STL",
+        "bytes": 3527984,
+        "sha256": "7e31bd3cec3fde4d378c4f494b413eaf30a470a12a76f312d29eaa5cf3f3a9b3"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/8.7.ply",
+          "bytes": 19543925,
+          "sha256": "7c86830bd6536cd91fd761fd838e5a1dcaf94ffb708c51a31dde4fde12ffd851",
+          "point_count": 814324,
+          "min_m": [
+            -0.0717015014367661,
+            -0.06919471506105401,
+            -0.021749999858438975
+          ],
+          "max_m": [
+            0.08785005384119497,
+            0.06777676593319013,
+            0.2067564677106624
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/8.7.ply",
+          "bytes": 3388229,
+          "sha256": "fe111ec77d602085d2cef4c4627c31a6ac1e76bd026360794ecb339e4607ada7",
+          "point_count": 141170,
+          "min_m": [
+            -0.0714470019148522,
+            -0.06882385567199709,
+            -0.021714965043837645
+          ],
+          "max_m": [
+            0.08785005384119497,
+            0.0671646515719079,
+            0.2063565545885863
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/8.7.ply",
+          "bytes": 1148668,
+          "sha256": "ea5211a80c8cf3414997dc2d7fc2afa8e2c8285984a68bf94dfe7fc9b8341aa6",
+          "point_count": 47855,
+          "min_m": [
+            -0.07132885366633679,
+            -0.06845299628294016,
+            -0.021581420792686594
+          ],
+          "max_m": [
+            0.08704757621110154,
+            0.06777676593319013,
+            0.20604358947687607
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/8.7.ply",
+          "bytes": 528340,
+          "sha256": "04546101c0edea55b6137dce630d19af655da4dde54471708b0055c95d7d35dd",
+          "point_count": 22008,
+          "min_m": [
+            -0.0709562058959075,
+            -0.06802725966846412,
+            -0.021326862211334483
+          ],
+          "max_m": [
+            0.08720662144342865,
+            0.06637589122624271,
+            0.20571411324462638
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/8.7.ply",
+          "bytes": 292132,
+          "sha256": "532500018b11412edf07df614b036897fdacd67bf053097993e2418d3fc91d00",
+          "point_count": 12166,
+          "min_m": [
+            -0.07062658759829794,
+            -0.06785097617817216,
+            -0.020640727753923158
+          ],
+          "max_m": [
+            0.08691840372522217,
+            0.06536601192747961,
+            0.20655651114962437
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.7827710209530778,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "9.0",
+      "joint12_rad": [
+        -1.08,
+        0.22450526315789476,
+        0.01842105263157895,
+        0.016842105263157894,
+        1.0,
+        0.22450526315789476,
+        0.01842105263157895,
+        0.016842105263157894,
+        1.08,
+        0.22450526315789476,
+        0.01842105263157895,
+        0.016842105263157894
+      ],
+      "actuator2": [
+        79.0,
+        0.0
+      ],
+      "sampling_seed": 20262193,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/9.0.STL",
+        "bytes": 3527984,
+        "sha256": "6dfa2fe1292940a89d74ff9494995e7f056f5961ff0e9aef71b28116d30e540d"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/9.0.ply",
+          "bytes": 19565669,
+          "sha256": "7e75e02cc239758b119312e07c3f1d5c32bc75eb61c0cf367c8ca1a1f2f21dd4",
+          "point_count": 815230,
+          "min_m": [
+            -0.07361099933091306,
+            -0.06795939143694582,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08960300237641217,
+            0.06725723772307794,
+            0.20550066419348867
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/9.0.ply",
+          "bytes": 3384533,
+          "sha256": "8c11577db8501b280cdcf4b8eb698a183c3203f3b3ad4f2e0110a6f5b00a2d02",
+          "point_count": 141016,
+          "min_m": [
+            -0.07323622015914925,
+            -0.06786353244098087,
+            -0.021691825240558085
+          ],
+          "max_m": [
+            0.08960300237641217,
+            0.0674862095585868,
+            0.2055231669088416
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.0.ply",
+          "bytes": 1144732,
+          "sha256": "c24aae177f911e4f89363e59cc8a7d3b5476909f7f59236256a8713b4f8bc4e2",
+          "point_count": 47691,
+          "min_m": [
+            -0.07308224610271197,
+            -0.0673108859610221,
+            -0.021449890626263082
+          ],
+          "max_m": [
+            0.08864557249984537,
+            0.06664476750469263,
+            0.20536907727527526
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/9.0.ply",
+          "bytes": 524092,
+          "sha256": "10149f7a699bbe6ce6b02acb8df4a08357ac149eebb8fd5562090f955e34a9bc",
+          "point_count": 21831,
+          "min_m": [
+            -0.0727595915820326,
+            -0.06795939143694582,
+            -0.021189786392703622
+          ],
+          "max_m": [
+            0.0890732952807048,
+            0.06699865124874167,
+            0.20490660710095007
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/9.0.ply",
+          "bytes": 290836,
+          "sha256": "37cd1b3b2d097e6c4860e50dab7e69419594bc8baca9815b5fefbb4ffc291c9f",
+          "point_count": 12112,
+          "min_m": [
+            -0.07253450840240777,
+            -0.0667295968863744,
+            -0.021210937139483875
+          ],
+          "max_m": [
+            0.08960300237641217,
+            0.06586298425438182,
+            0.20278694254139035
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5348169350181706,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "9.2",
+      "joint12_rad": [
+        -1.08,
+        0.19644210526315797,
+        0.01736842105263158,
+        0.01473684210526316,
+        1.0,
+        0.19644210526315797,
+        0.01736842105263158,
+        0.01473684210526316,
+        1.08,
+        0.19644210526315797,
+        0.01736842105263158,
+        0.01473684210526316
+      ],
+      "actuator2": [
+        81.0,
+        0.0
+      ],
+      "sampling_seed": 20262195,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/9.2.STL",
+        "bytes": 3527984,
+        "sha256": "2984cf67773a6060cd5baaa118166dfc80125c9355ac52b2117da0f6f9e67a3a"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/9.2.ply",
+          "bytes": 19604957,
+          "sha256": "5d99ed553a2fb61f60a52d1d81b9c0615d13266b453865ccd695b9f1c7f46d76",
+          "point_count": 816867,
+          "min_m": [
+            -0.07494736596718793,
+            -0.06843313254501258,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.0907762312746049,
+            0.06951595442254216,
+            0.2083509002047423
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/9.2.ply",
+          "bytes": 3392693,
+          "sha256": "7269683c2969e661d93fcb0928a4d6c1998f591bd6850e8c4efa5c94b26e3593",
+          "point_count": 141356,
+          "min_m": [
+            -0.07494736596718793,
+            -0.06808402356357295,
+            -0.02171069961783583
+          ],
+          "max_m": [
+            0.09073203153899881,
+            0.06914568504742592,
+            0.20801299786707084
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.2.ply",
+          "bytes": 1147972,
+          "sha256": "b1a446107fd2bacd7cb6047c5c3debdd2a2a43616859768b7a3ecbb5f94b2369",
+          "point_count": 47826,
+          "min_m": [
+            -0.07435079653819315,
+            -0.06773491458213331,
+            -0.021677582755843246
+          ],
+          "max_m": [
+            0.08998232351448851,
+            0.06914568504742592,
+            0.2083509002047423
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/9.2.ply",
+          "bytes": 528028,
+          "sha256": "c03b783a98e1b108704746b7f73f1e5369fcb7e374ba838c7efb36b9fa258344",
+          "point_count": 21995,
+          "min_m": [
+            -0.07400125950734361,
+            -0.06808402356357295,
+            -0.021031472268924104
+          ],
+          "max_m": [
+            0.08909124119865947,
+            0.067664607546961,
+            0.2083509002047423
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/9.2.ply",
+          "bytes": 289348,
+          "sha256": "d9f4ae0c4d8459d1861175f6e0c93b5c67df28885df1fd97237797cc74a0b311",
+          "point_count": 12050,
+          "min_m": [
+            -0.0740373048670069,
+            -0.06714544261239118,
+            -0.020629333484840303
+          ],
+          "max_m": [
+            0.08907775429306428,
+            0.06951595442254216,
+            0.20733719319172783
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5464139700052328,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "9.5",
+      "joint12_rad": [
+        -1.08,
+        0.15434736842105257,
+        0.015789473684210527,
+        0.01157894736842105,
+        1.0,
+        0.15434736842105257,
+        0.015789473684210527,
+        0.01157894736842105,
+        1.08,
+        0.15434736842105257,
+        0.015789473684210527,
+        0.01157894736842105
+      ],
+      "actuator2": [
+        84.0,
+        0.0
+      ],
+      "sampling_seed": 20262198,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/9.5.STL",
+        "bytes": 3527984,
+        "sha256": "ff8fe3126128979cc7688f39626169ba888517270462ce785df634c5524dda2b"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/9.5.ply",
+          "bytes": 19577621,
+          "sha256": "062724d14a36e5d668b0e3dbd83500d06f0336e26a87fe19323f892866d5731c",
+          "point_count": 815728,
+          "min_m": [
+            -0.07686192809349443,
+            -0.06756218015398684,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.09335517606441793,
+            0.06896352080254724,
+            0.2060619415336743
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/9.5.ply",
+          "bytes": 3393845,
+          "sha256": "e8b28b343afaf63f3f9a0a942abeb8d39d207c00db92a6d4ca211cb46f547261",
+          "point_count": 141404,
+          "min_m": [
+            -0.0765313228148064,
+            -0.06723432898657888,
+            -0.021689211934321502
+          ],
+          "max_m": [
+            0.09301487460381111,
+            0.06826451078962281,
+            0.20574865441212797
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.5.ply",
+          "bytes": 1147540,
+          "sha256": "511ddbe46314a453ba1ec1d6388a3550b295a7f7bf88eaebdc7c040fef902090",
+          "point_count": 47808,
+          "min_m": [
+            -0.07620071753611836,
+            -0.06723432898657888,
+            -0.02170354287319561
+          ],
+          "max_m": [
+            0.09301487460381111,
+            0.06896352080254724,
+            0.20543536729058165
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/9.5.ply",
+          "bytes": 527260,
+          "sha256": "8fbf8fba144bf758d1a22970787bb1036c1d9b863cc8235b2e361d52acd9e685",
+          "point_count": 21963,
+          "min_m": [
+            -0.07587478964864071,
+            -0.06642931338931034,
+            -0.021015159351733
+          ],
+          "max_m": [
+            0.09335517606441793,
+            0.06896352080254724,
+            0.20543536729058165
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/9.5.ply",
+          "bytes": 291892,
+          "sha256": "aecad8969ce9aa2e1c020836ae0004e8678557b45bbb0a0feeff0dea999cc5dc",
+          "point_count": 12156,
+          "min_m": [
+            -0.0756083131111546,
+            -0.06602946624013858,
+            -0.02062499985843897
+          ],
+          "max_m": [
+            0.09335517606441793,
+            0.06629763564455585,
+            0.2060619415336743
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5217882150318474,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "9.6",
+      "joint12_rad": [
+        -1.08,
+        0.12628421052631578,
+        0.01473684210526316,
+        0.009473684210526315,
+        1.0,
+        0.12628421052631578,
+        0.01473684210526316,
+        0.009473684210526315,
+        1.08,
+        0.12628421052631578,
+        0.01473684210526316,
+        0.009473684210526315
+      ],
+      "actuator2": [
+        86.0,
+        0.0
+      ],
+      "sampling_seed": 20262199,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/9.6.STL",
+        "bytes": 3527984,
+        "sha256": "f8a7fb0548b27c9d2fb079a81094ab146f978a502076337caf2769bdf6c9304c"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/9.6.ply",
+          "bytes": 19524917,
+          "sha256": "db5eb3d7ad8fe3e9b2a42b550ebd8795c1dd2568eec37ce59caa011cc8226801",
+          "point_count": 813532,
+          "min_m": [
+            -0.07761880591496267,
+            -0.0674079269701809,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.09361719487309578,
+            0.06871474750241999,
+            0.2046772196925279
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/9.6.ply",
+          "bytes": 3391853,
+          "sha256": "d3f68e20fe2adc16e68fe393a4f77c416b8f7a2efdac0a5c05c8736e0aca6339",
+          "point_count": 141321,
+          "min_m": [
+            -0.07735008914042293,
+            -0.06713983487401014,
+            -0.021744902581308827
+          ],
+          "max_m": [
+            0.09361391963473913,
+            0.06835172534605946,
+            0.20406860996625453
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.6.ply",
+          "bytes": 1151260,
+          "sha256": "2c25af84943dc4ab0196e742d345846625ff7706a6152cd54f57988134d4f4b4",
+          "point_count": 47963,
+          "min_m": [
+            -0.07719185170269358,
+            -0.06674216048618624,
+            -0.02162090751359943
+          ],
+          "max_m": [
+            0.0932750172861389,
+            0.06783065290048201,
+            0.2046772196925279
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/9.6.ply",
+          "bytes": 524044,
+          "sha256": "9a8bff8e2a28b2de59ebf1157f4e5d1564a7c993f77e5659848a0d4f22f7c172",
+          "point_count": 21829,
+          "min_m": [
+            -0.07687017335725255,
+            -0.06668704656600503,
+            -0.021004631208001168
+          ],
+          "max_m": [
+            0.09318813444043464,
+            0.06762568103333838,
+            0.2046772196925279
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/9.6.ply",
+          "bytes": 291916,
+          "sha256": "6e59f6df5a36e06d3761a3031f85d54876e7b28014450ae7c9ad87e1d0219f2b",
+          "point_count": 12157,
+          "min_m": [
+            -0.07717456316130865,
+            -0.06628279441256507,
+            -0.02172953781258713
+          ],
+          "max_m": [
+            0.09175101335938823,
+            0.06783065290048201,
+            0.2016156910019801
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.6469578979886137,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "9.8",
+      "joint12_rad": [
+        -1.08,
+        0.09822105263157899,
+        0.013684210526315792,
+        0.00736842105263158,
+        1.0,
+        0.09822105263157899,
+        0.013684210526315792,
+        0.00736842105263158,
+        1.08,
+        0.09822105263157899,
+        0.013684210526315792,
+        0.00736842105263158
+      ],
+      "actuator2": [
+        88.0,
+        0.0
+      ],
+      "sampling_seed": 20262201,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/9.8.STL",
+        "bytes": 3527984,
+        "sha256": "fc5d675d395d0474651e49057c8a48c67ea7031cad38408bdc6ebca6ab979cb4"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/9.8.ply",
+          "bytes": 19564109,
+          "sha256": "15216e3c0a200f597ba625125dd9a8446ff0de53252f1e8bec418654c9cf8447",
+          "point_count": 815165,
+          "min_m": [
+            -0.07985646263805841,
+            -0.06877947172469545,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.09620279327806967,
+            0.06942893534848497,
+            0.20107803181013145
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/9.8.ply",
+          "bytes": 3402773,
+          "sha256": "2b9d71f3ca378f7d3657aa06ad3c1a33645803ebcf8f9603dbc3b9cdda3aff1c",
+          "point_count": 141776,
+          "min_m": [
+            -0.0795116534483081,
+            -0.06842618094223119,
+            -0.021710305321277164
+          ],
+          "max_m": [
+            0.0958898048702769,
+            0.06905666634872674,
+            0.20130174948125798
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.8.ply",
+          "bytes": 1144516,
+          "sha256": "461881da50f07bc31e732d202144350f4b1567a8cbe4436d4b6b4c11ee1aa264",
+          "point_count": 47682,
+          "min_m": [
+            -0.0791507234922941,
+            -0.06807289015976693,
+            -0.02143376045382897
+          ],
+          "max_m": [
+            0.09620279327806967,
+            0.06885407929290485,
+            0.20107803181013145
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/9.8.ply",
+          "bytes": 529924,
+          "sha256": "2ba17fa17d013d1adad15f10601cff721aeb5991632998f53a8aa979d11e64b5",
+          "point_count": 22074,
+          "min_m": [
+            -0.07895423571699627,
+            -0.06807289015976693,
+            -0.0216673430257874
+          ],
+          "max_m": [
+            0.09548035281037853,
+            0.06942893534848497,
+            0.20085431413900492
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/9.8.ply",
+          "bytes": 288628,
+          "sha256": "2d32f0aab914a1fd8b5e0953c9923f39c6b680a2323c3aa0fbbc41556fef6b08",
+          "point_count": 12020,
+          "min_m": [
+            -0.0791507234922941,
+            -0.06733062189734072,
+            -0.020668193722752495
+          ],
+          "max_m": [
+            0.0947579123426874,
+            0.06931815495645861,
+            0.20107803181013145
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.6911294310120866,
+      "physics_steps": 0
+    },
+    {
+      "type": 1,
+      "pose": "pose1",
+      "width_cm_key": "9.9",
+      "joint12_rad": [
+        -1.08,
+        0.08418947368421059,
+        0.013157894736842105,
+        0.006315789473684205,
+        1.0,
+        0.08418947368421059,
+        0.013157894736842105,
+        0.006315789473684205,
+        1.08,
+        0.08418947368421059,
+        0.013157894736842105,
+        0.006315789473684205
+      ],
+      "actuator2": [
+        89.0,
+        0.0
+      ],
+      "sampling_seed": 20262202,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose1/9.9.STL",
+        "bytes": 3527984,
+        "sha256": "f6714bbc8e7474b0f14254f33a9429f2b6bc6a029274f1d2d4656a44f90d13a5"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose1/9.9.ply",
+          "bytes": 19584845,
+          "sha256": "d3bfd4d63ea8f66f6df4c9234d2329253b7dc1039e5efd56dc57c72642f85ca2",
+          "point_count": 816029,
+          "min_m": [
+            -0.07907835499161651,
+            -0.06773373252777225,
+            -0.02263098508973807
+          ],
+          "max_m": [
+            0.09527311621942561,
+            0.06689277838318725,
+            0.2020504762878647
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose1/9.9.ply",
+          "bytes": 3386693,
+          "sha256": "f39d50fbb1cf48b65fe7e305a363e1036fcd1e0248ceb8ba5a4c04db81dd510c",
+          "point_count": 141106,
+          "min_m": [
+            -0.07883451868406213,
+            -0.06736152857789632,
+            -0.022002433258581634
+          ],
+          "max_m": [
+            0.09487783924026051,
+            0.06636306040405303,
+            0.2020504762878647
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose1/9.9.ply",
+          "bytes": 1142068,
+          "sha256": "d8ecdb0aac83699fbe9db1dd5b77d1e49f7705c424bd7dc1881f7b144d23b32c",
+          "point_count": 47580,
+          "min_m": [
+            -0.07881295784719132,
+            -0.06698932462802042,
+            -0.02178335656241316
+          ],
+          "max_m": [
+            0.09447765866481583,
+            0.06658288487337433,
+            0.2015096086098643
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose1/9.9.ply",
+          "bytes": 530044,
+          "sha256": "b7742d56161d322977e907c59ccbc8c9dbb854b788a1a47e68a9868995315b34",
+          "point_count": 22079,
+          "min_m": [
+            -0.07831486826151622,
+            -0.06698932462802042,
+            -0.02143745541924981
+          ],
+          "max_m": [
+            0.09527311621942561,
+            0.06681218314150311,
+            0.19995450347980387
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose1/9.9.ply",
+          "bytes": 291892,
+          "sha256": "350e5eb0c386973895c07f962dc76446b3b38c57bd4d4a38b39fa7d7d7f74a1e",
+          "point_count": 12156,
+          "min_m": [
+            -0.0780853148220148,
+            -0.06661712067814449,
+            -0.021223944418207626
+          ],
+          "max_m": [
+            0.09436789799098001,
+            0.0659934791595368,
+            0.20096874093186384
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.53579410497332,
+      "physics_steps": 0
+    },
+    {
+      "type": 2,
+      "pose": "pose2",
+      "width_cm_key": "7.7",
+      "joint12_rad": [
+        -0.015052631578947429,
+        0.28063157894736834,
+        0.020526315789473684,
+        0.021052631578947364,
+        1.0,
+        0.28063157894736834,
+        0.020526315789473684,
+        0.021052631578947364,
+        0.015052631578947429,
+        0.28063157894736834,
+        0.020526315789473684,
+        0.021052631578947364
+      ],
+      "actuator2": [
+        75.0,
+        67.0
+      ],
+      "sampling_seed": 20263180,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose2/7.7.STL",
+        "bytes": 3527984,
+        "sha256": "b2a2788f0e944982c25b8afcf6a5b395e1e387a696c566e7d14bc923f9049899"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose2/7.7.ply",
+          "bytes": 19664261,
+          "sha256": "8ef337e47cf436864aede41b778486600841dd7caf3fa94dc2145a3d5ca8cbca",
+          "point_count": 819338,
+          "min_m": [
+            -0.05643587443569995,
+            -0.0801863195901022,
+            -0.025838584039334513
+          ],
+          "max_m": [
+            0.08717942478694482,
+            0.07576952820332045,
+            0.20714748917417614
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose2/7.7.ply",
+          "bytes": 3397709,
+          "sha256": "5ace310bb3bd86cea9c63ce32d5f3622e1b47b79902b12e4f186d5a81ee239dc",
+          "point_count": 141565,
+          "min_m": [
+            -0.05643587443569995,
+            -0.07988373365731358,
+            -0.025466519720656333
+          ],
+          "max_m": [
+            0.0871519411826431,
+            0.07544623945295376,
+            0.20741968316368353
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose2/7.7.ply",
+          "bytes": 1146124,
+          "sha256": "953bbab0bf65d1f2fc77000a1732df85ffc47c6f54271fae5d6b0227c3d21573",
+          "point_count": 47749,
+          "min_m": [
+            -0.055704576905678566,
+            -0.07924354658634476,
+            -0.02509445540197815
+          ],
+          "max_m": [
+            0.08679726577126469,
+            0.07512295070258707,
+            0.20714748917417614
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose2/7.7.ply",
+          "bytes": 529324,
+          "sha256": "241ae13623866ee9a945d49bfc7669a74c7eadf72b1b3a66ba8ad0882de088cc",
+          "point_count": 22049,
+          "min_m": [
+            -0.055704576905678566,
+            -0.07908284485743858,
+            -0.02509445540197815
+          ],
+          "max_m": [
+            0.08643322342583042,
+            0.07489922670798015,
+            0.205928325479709
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose2/7.7.ply",
+          "bytes": 292108,
+          "sha256": "3487b1b0851565281198557d777eb1259f7efe4539cdfb43977b96ba971e37fe",
+          "point_count": 12165,
+          "min_m": [
+            -0.05507431873877948,
+            -0.07865135612740633,
+            -0.024722391083299974
+          ],
+          "max_m": [
+            0.08671618143524436,
+            0.07378321481199225,
+            0.2070468437426899
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.6445787379634567,
+      "physics_steps": 0
+    },
+    {
+      "type": 2,
+      "pose": "pose2",
+      "width_cm_key": "9.0",
+      "joint12_rad": [
+        -0.015052631578947429,
+        0.014031578947368395,
+        0.01052631578947369,
+        0.0010526315789473745,
+        1.0,
+        0.014031578947368395,
+        0.01052631578947369,
+        0.0010526315789473745,
+        0.015052631578947429,
+        0.014031578947368395,
+        0.01052631578947369,
+        0.0010526315789473745
+      ],
+      "actuator2": [
+        94.0,
+        67.0
+      ],
+      "sampling_seed": 20263193,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose2/9.0.STL",
+        "bytes": 3527984,
+        "sha256": "651e6a90f9f7fda34aa3f5a36d72537286c18570b9b30b44585568915e8375e1"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose2/9.0.ply",
+          "bytes": 19695677,
+          "sha256": "0d92ff645f0cd1e3659324d39d418ccdb3b888883fe5d69b995dc6e960be3ff7",
+          "point_count": 820647,
+          "min_m": [
+            -0.06018737027527704,
+            -0.08878168014556057,
+            -0.022455491846150276
+          ],
+          "max_m": [
+            0.09878794598942817,
+            0.08477590265083866,
+            0.19739734201323816
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose2/9.0.ply",
+          "bytes": 3387749,
+          "sha256": "2723bc07091ddfc0b12bc22e16105a723aa68f2e51b4d901dd87d2e73858bf69",
+          "point_count": 141150,
+          "min_m": [
+            -0.06018737027527704,
+            -0.08842965897715803,
+            -0.021851523739451845
+          ],
+          "max_m": [
+            0.09914827979920135,
+            0.08463523805940848,
+            0.1972727519267012
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose2/9.0.ply",
+          "bytes": 1152748,
+          "sha256": "f2e433acb2dff8cb2728a6a8daa27f97c9ece9ec583a98c5502e153cb5ac776d",
+          "point_count": 48025,
+          "min_m": [
+            -0.059665710634588115,
+            -0.08798835589113525,
+            -0.02171294438112608
+          ],
+          "max_m": [
+            0.09842761217965497,
+            0.08431784350715962,
+            0.19739734201323816
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose2/9.0.ply",
+          "bytes": 529468,
+          "sha256": "39bc135c937b142163cd3e9ca90a8de5db3c218a85dece2a900e7a39a70c689e",
+          "point_count": 22055,
+          "min_m": [
+            -0.059442509672525345,
+            -0.08767205863948167,
+            -0.02137499985843897
+          ],
+          "max_m": [
+            0.09878794598942817,
+            0.08289011584563286,
+            0.19739734201323816
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose2/9.0.ply",
+          "bytes": 291772,
+          "sha256": "4ca64a271b0131a4ac3b91287dc1d9e3caca7f5c0b9744c27b4531392a855bdf",
+          "point_count": 12151,
+          "min_m": [
+            -0.05897483249767466,
+            -0.08751279201386654,
+            -0.021043103456365442
+          ],
+          "max_m": [
+            0.09878794598942817,
+            0.08431784350715962,
+            0.19616786997411953
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.7652439679950476,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "7.7",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.4490105263157895,
+        0.026842105263157896,
+        0.0336842105263158,
+        1.0,
+        0.4490105263157895,
+        0.026842105263157896,
+        0.0336842105263158,
+        -0.5094736842105261,
+        0.4490105263157895,
+        0.026842105263157896,
+        0.0336842105263158
+      ],
+      "actuator2": [
+        63.0,
+        100.0
+      ],
+      "sampling_seed": 20264180,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/7.7.STL",
+        "bytes": 3527984,
+        "sha256": "3396ad600b5bd9fc8e6fded60727a678f7df5f79537ee153f39fc7ecd450ad5c"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/7.7.ply",
+          "bytes": 19573445,
+          "sha256": "6724195b11ef959524fa01a41cdba8a06f4dfa502dc7f421c5c46ebe2e2ffe5b",
+          "point_count": 815554,
+          "min_m": [
+            -0.05518329539302709,
+            -0.07500941717146357,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.07929348563224971,
+            0.07511753023488452,
+            0.21241519740839931
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/7.7.ply",
+          "bytes": 3392933,
+          "sha256": "244634a2ec19b38499dcd0011644f4e80c640aa0f0902fd4593b095c89c0711a",
+          "point_count": 141366,
+          "min_m": [
+            -0.05510827672870323,
+            -0.07460598490993745,
+            -0.021749885497195247
+          ],
+          "max_m": [
+            0.07892801120399773,
+            0.07477016473862606,
+            0.21204125521061704
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/7.7.ply",
+          "bytes": 1140148,
+          "sha256": "156ef4d9f72437944e57d713f7da0ec8a1a05ee75c448a085aab453ba8f28270",
+          "point_count": 47500,
+          "min_m": [
+            -0.05478744969011702,
+            -0.07459100763922101,
+            -0.021686413324224815
+          ],
+          "max_m": [
+            0.07890136893834176,
+            0.07444238859768124,
+            0.21184398889050476
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/7.7.ply",
+          "bytes": 527932,
+          "sha256": "631c9d3d7495dfcd3db8058a3595b4ecf1048b3fe55f49e375dcde49a535ed90",
+          "point_count": 21991,
+          "min_m": [
+            -0.05509731986590961,
+            -0.07419262920047706,
+            -0.021030583503573844
+          ],
+          "max_m": [
+            0.07919520009185069,
+            0.07511753023488452,
+            0.21237451619808076
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/7.7.ply",
+          "bytes": 291004,
+          "sha256": "88326472c4d4711d0e5eb149eb4589d0e8d5e169b69e88b15019470bae22a412",
+          "point_count": 12119,
+          "min_m": [
+            -0.054539253727733834,
+            -0.07371146494251017,
+            -0.020681021135338342
+          ],
+          "max_m": [
+            0.07832805982951185,
+            0.07384028823821799,
+            0.2117570434452354
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.552801425976213,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "7.8",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.434978947368421,
+        0.02631578947368421,
+        0.03263157894736843,
+        1.0,
+        0.434978947368421,
+        0.02631578947368421,
+        0.03263157894736843,
+        -0.5094736842105261,
+        0.434978947368421,
+        0.02631578947368421,
+        0.03263157894736843
+      ],
+      "actuator2": [
+        64.0,
+        100.0
+      ],
+      "sampling_seed": 20264181,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/7.8.STL",
+        "bytes": 3527984,
+        "sha256": "8b3c24a202db72c946331d645fae3c4177134c519f10daeb73eafccc547fb91d"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/7.8.ply",
+          "bytes": 19579229,
+          "sha256": "ce8231a651851de6b3ef6212a3330b0983ef0318a40a7b4914505ccf0fd3d1f9",
+          "point_count": 815795,
+          "min_m": [
+            -0.0551963848155846,
+            -0.0756554675991688,
+            -0.025204473559061625
+          ],
+          "max_m": [
+            0.08000505917687441,
+            0.07549400017873467,
+            0.21200353205016004
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/7.8.ply",
+          "bytes": 3376781,
+          "sha256": "6239c3784ba1ee1ae93d46263d14587e074181cab6982d677d23c56739780347",
+          "point_count": 140693,
+          "min_m": [
+            -0.05504294075277707,
+            -0.07528214642773653,
+            -0.025204473559061625
+          ],
+          "max_m": [
+            0.08004001848451649,
+            0.07560353003407494,
+            0.21200353205016004
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/7.8.ply",
+          "bytes": 1141252,
+          "sha256": "e7aeaa28def0e82856c4e7e9412f87b661e15cc524e66ebb0b9b5b8ed3355352",
+          "point_count": 47546,
+          "min_m": [
+            -0.0547944139123326,
+            -0.07517783331689905,
+            -0.02450387753058345
+          ],
+          "max_m": [
+            0.07935879775562438,
+            0.07448238925897538,
+            0.21136389367032266
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/7.8.ply",
+          "bytes": 525796,
+          "sha256": "af4b938ae764e2088eca43f9f8facac6c305f1ae862bac055ac9a122f9cbd1fb",
+          "point_count": 21902,
+          "min_m": [
+            -0.05468657411771467,
+            -0.07506221499660953,
+            -0.02450387753058345
+          ],
+          "max_m": [
+            0.07978589107819338,
+            0.07517086799297892,
+            0.21031118594221665
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/7.8.ply",
+          "bytes": 285388,
+          "sha256": "d0be68ebd49319ec3d39173f33daeb86e96b7c977a6a3cc3a326d03960b461b1",
+          "point_count": 11885,
+          "min_m": [
+            -0.05454290050062098,
+            -0.07446572334519606,
+            -0.024153579516344365
+          ],
+          "max_m": [
+            0.07874587238684026,
+            0.07359185632582724,
+            0.20927362963389579
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.522340735013131,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "8.1",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.39288421052631584,
+        0.02473684210526316,
+        0.02947368421052632,
+        1.0,
+        0.39288421052631584,
+        0.02473684210526316,
+        0.02947368421052632,
+        -0.5094736842105261,
+        0.39288421052631584,
+        0.02473684210526316,
+        0.02947368421052632
+      ],
+      "actuator2": [
+        67.0,
+        100.0
+      ],
+      "sampling_seed": 20264184,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/8.1.STL",
+        "bytes": 3527984,
+        "sha256": "e509e84002ea15c315b0d85bc3110b0672bbddda579297c9fc82b603780edab8"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/8.1.ply",
+          "bytes": 19555853,
+          "sha256": "e1ebf587c41a8f9316380fc90d73f313088fc550a3bc9b1531b87e8293bafe0e",
+          "point_count": 814821,
+          "min_m": [
+            -0.05513657033992743,
+            -0.07795315923635673,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08204847790873875,
+            0.07768306162129275,
+            0.2109435431154187
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/8.1.ply",
+          "bytes": 3385325,
+          "sha256": "ce6434b7f523770de684043b6272c8346a08deccf358d2f06c1f81c57ec97e7b",
+          "point_count": 141049,
+          "min_m": [
+            -0.054847589801291084,
+            -0.07758378197022316,
+            -0.021639326893509593
+          ],
+          "max_m": [
+            0.08204847790873875,
+            0.07767030898543255,
+            0.21017372952720587
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.1.ply",
+          "bytes": 1135828,
+          "sha256": "6f708ab88385efd57af639de196ae41bf78114bd07a9d4a4455cfcd3dc58b397",
+          "point_count": 47320,
+          "min_m": [
+            -0.054636841409086166,
+            -0.07734010271411318,
+            -0.0216535197746118
+          ],
+          "max_m": [
+            0.08201177268312532,
+            0.07726589140810185,
+            0.21090379327362738
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/8.1.ply",
+          "bytes": 527044,
+          "sha256": "4432188e97a32bbda420f840bed806f6bd1453c9df7812e65eff01d555939b9d",
+          "point_count": 21954,
+          "min_m": [
+            -0.054457048440200786,
+            -0.07708237188884544,
+            -0.021495262359107675
+          ],
+          "max_m": [
+            0.08046853294831059,
+            0.07703959161969878,
+            0.21012461781203137
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/8.1.ply",
+          "bytes": 289228,
+          "sha256": "25761a9f9e084062c56f05f81605814b6e16b0914e856dea4fb2b22da8337082",
+          "point_count": 12045,
+          "min_m": [
+            -0.05490895000279582,
+            -0.07685455225450293,
+            -0.020626234595598966
+          ],
+          "max_m": [
+            0.07968169146202793,
+            0.07602034015967134,
+            0.21090379327362738
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.8560787810129113,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "8.5",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.35078947368421054,
+        0.023157894736842106,
+        0.026315789473684223,
+        1.0,
+        0.35078947368421054,
+        0.023157894736842106,
+        0.026315789473684223,
+        -0.5094736842105261,
+        0.35078947368421054,
+        0.023157894736842106,
+        0.026315789473684223
+      ],
+      "actuator2": [
+        70.0,
+        100.0
+      ],
+      "sampling_seed": 20264188,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/8.5.STL",
+        "bytes": 3527984,
+        "sha256": "f64b2f5006aff6427792b03dd2b5ed0bc52fa99555da057b1dc49ccb7c10a7f6"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/8.5.ply",
+          "bytes": 19564421,
+          "sha256": "ce8b04041cb0bd64b68ebb1238abf5c4cd8a10343c62a4f0495add28313c43fa",
+          "point_count": 815178,
+          "min_m": [
+            -0.05513767362804134,
+            -0.07972927966888599,
+            -0.023943221413558403
+          ],
+          "max_m": [
+            0.08404343049439883,
+            0.07948575213466874,
+            0.21112601969622002
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/8.5.ply",
+          "bytes": 3393101,
+          "sha256": "1689c828761a0ed886e89f8b3218ed5eed44f1612f1ac524af0956fe5e9bd2d7",
+          "point_count": 141373,
+          "min_m": [
+            -0.05496880341249957,
+            -0.07944274643651686,
+            -0.023621106653549287
+          ],
+          "max_m": [
+            0.08404343049439883,
+            0.07961627654124717,
+            0.21112601969622002
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.5.ply",
+          "bytes": 1125268,
+          "sha256": "5ec0884433d9a478f327a3f8a89cc30d16bf0d51941f661019f13bb4f0057e12",
+          "point_count": 46880,
+          "min_m": [
+            -0.0547134226772578,
+            -0.07920454048055592,
+            -0.023298991893540177
+          ],
+          "max_m": [
+            0.08285218633015706,
+            0.07887281515637631,
+            0.2105014622369481
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/8.5.ply",
+          "bytes": 528388,
+          "sha256": "2ee8bb95ccc4c5356b294675bc377c43ca6f354880ebff073aaa64623b338804",
+          "point_count": 22010,
+          "min_m": [
+            -0.0543263938642635,
+            -0.07881686103206006,
+            -0.023943221413558403
+          ],
+          "max_m": [
+            0.08362615258868003,
+            0.07924454584881174,
+            0.21059901789757382
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/8.5.ply",
+          "bytes": 290548,
+          "sha256": "148e81cc8a89aaad10df7125d0038353cd3bd4d9e87a3dec5f11964f7a65187d",
+          "point_count": 12100,
+          "min_m": [
+            -0.05461775105253427,
+            -0.07843642058433467,
+            -0.021967868469372244
+          ],
+          "max_m": [
+            0.0832667527106885,
+            0.07878114565602602,
+            0.2105014622369481
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5388955459930003,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "8.7",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.32272631578947375,
+        0.02210526315789474,
+        0.024210526315789474,
+        1.0,
+        0.32272631578947375,
+        0.02210526315789474,
+        0.024210526315789474,
+        -0.5094736842105261,
+        0.32272631578947375,
+        0.02210526315789474,
+        0.024210526315789474
+      ],
+      "actuator2": [
+        72.0,
+        100.0
+      ],
+      "sampling_seed": 20264190,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/8.7.STL",
+        "bytes": 3527984,
+        "sha256": "44f37c424a4e2329b3fae4b423eb054e315e1c1914bf8735766ab046a7c82062"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/8.7.ply",
+          "bytes": 19570037,
+          "sha256": "1e3be6068d6eade1e70857902e59709432be19967101a30f3afec7afe6df9861",
+          "point_count": 815412,
+          "min_m": [
+            -0.05516129403934299,
+            -0.08096700590963772,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08503546890860464,
+            0.08205804768535947,
+            0.2087896452578186
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/8.7.ply",
+          "bytes": 3391613,
+          "sha256": "4cf5edc3c8d03b87c3b99dc9f138dfdef147fe620861ae033cb02f0a913dddc5",
+          "point_count": 141311,
+          "min_m": [
+            -0.0548562084624809,
+            -0.08065975870832157,
+            -0.021679467197776664
+          ],
+          "max_m": [
+            0.08495788997846127,
+            0.08242946594295153,
+            0.20833241996232923
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.7.ply",
+          "bytes": 1139908,
+          "sha256": "209441f0d85742f46fe77f79c5c5f5929c5bc89c5de6d93abdd438794c6bcd13",
+          "point_count": 47490,
+          "min_m": [
+            -0.05479957386499476,
+            -0.08039863775532337,
+            -0.02147603073812223
+          ],
+          "max_m": [
+            0.08495057714758543,
+            0.08205804768535947,
+            0.20833203604161707
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/8.7.ply",
+          "bytes": 529156,
+          "sha256": "973fbcbc9b131de7fce4f4c0c29cecb5d182bbd2bd03b90e380b06feddf41a13",
+          "point_count": 22042,
+          "min_m": [
+            -0.05451082862934045,
+            -0.08019546994183482,
+            -0.02102419704233295
+          ],
+          "max_m": [
+            0.08419483087991468,
+            0.08205804768535947,
+            0.20870337594745422
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/8.7.ply",
+          "bytes": 290788,
+          "sha256": "438b12df6bbd18c15afbf00901eecdbc50cea05a641dcdd1427b8cb02368ee14",
+          "point_count": 12110,
+          "min_m": [
+            -0.05463251525918114,
+            -0.07984513585700159,
+            -0.02062594994552542
+          ],
+          "max_m": [
+            0.08394814401705236,
+            0.08205804768535947,
+            0.20826416385737476
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.6346905080135912,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "8.9",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.29466315789473696,
+        0.02105263157894737,
+        0.02210526315789474,
+        1.0,
+        0.29466315789473696,
+        0.02105263157894737,
+        0.02210526315789474,
+        -0.5094736842105261,
+        0.29466315789473696,
+        0.02105263157894737,
+        0.02210526315789474
+      ],
+      "actuator2": [
+        74.0,
+        100.0
+      ],
+      "sampling_seed": 20264192,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/8.9.STL",
+        "bytes": 3527984,
+        "sha256": "dcc153c551de187e83d87cdb78599aa09c3df11653d1332035507402c642f682"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/8.9.ply",
+          "bytes": 19590677,
+          "sha256": "dd66bd9edfb3fb1d16e08f1e26fa9758b7f737a32421febb522562367fdc5f9d",
+          "point_count": 816272,
+          "min_m": [
+            -0.05518238460477565,
+            -0.08229627818581288,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08670340600511037,
+            0.08223971189328957,
+            0.20794823370025198
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/8.9.ply",
+          "bytes": 3387461,
+          "sha256": "67c9d4aec002f82dbc6fc6ada434d599a40efd9ddc97ae8d854a00856d735a60",
+          "point_count": 141138,
+          "min_m": [
+            -0.05487731000263334,
+            -0.08228825803727231,
+            -0.021705847982954607
+          ],
+          "max_m": [
+            0.08704127692836179,
+            0.08163550750885289,
+            0.20793812041299656
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/8.9.ply",
+          "bytes": 1140004,
+          "sha256": "09f93c9505d956ccfd183f613a2f1f0337ee245295eed495fe1076775f005625",
+          "point_count": 47494,
+          "min_m": [
+            -0.054752685771674595,
+            -0.0818753416403038,
+            -0.02140340721621493
+          ],
+          "max_m": [
+            0.08600067692948699,
+            0.08186573824195206,
+            0.20794823370025198
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/8.9.ply",
+          "bytes": 530164,
+          "sha256": "951676174346ce9c5c0cabee7d7ae38ea4f4af0c0bb7a34c8889d2ada1f0f1d9",
+          "point_count": 22084,
+          "min_m": [
+            -0.05443391618389994,
+            -0.08143743727512272,
+            -0.02102835824231007
+          ],
+          "max_m": [
+            0.08704127692836179,
+            0.08110586178311194,
+            0.2058180501983408
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/8.9.ply",
+          "bytes": 290956,
+          "sha256": "fca5d15cfc6b66ee7a817f1d833cf4cf8bf80ed71e7a7077d9a4ed3b33d8927f",
+          "point_count": 12117,
+          "min_m": [
+            -0.05413796597808992,
+            -0.08106801184527157,
+            -0.020754371947128068
+          ],
+          "max_m": [
+            0.08462779617688505,
+            0.08142744656619443,
+            0.20734000970535518
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.746886201959569,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.0",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.28063157894736834,
+        0.020526315789473684,
+        0.021052631578947364,
+        1.0,
+        0.28063157894736834,
+        0.020526315789473684,
+        0.021052631578947364,
+        -0.5094736842105261,
+        0.28063157894736834,
+        0.020526315789473684,
+        0.021052631578947364
+      ],
+      "actuator2": [
+        75.0,
+        100.0
+      ],
+      "sampling_seed": 20264193,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.0.STL",
+        "bytes": 3527984,
+        "sha256": "e4e427f776cc3cadad7cd4f83b899fd1a894aabf9711c28024194c94eae1a05e"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.0.ply",
+          "bytes": 19591037,
+          "sha256": "de5fb4bf393807d2965bd711448b46a194b237450cc7dbe43ea830c9195948bb",
+          "point_count": 816287,
+          "min_m": [
+            -0.055207614251433154,
+            -0.08288098936983315,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.08701147119255948,
+            0.08291464403984009,
+            0.20835817566199588
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.0.ply",
+          "bytes": 3386477,
+          "sha256": "bcb6e9aea438180a2d4ef1e7403f47cfe59d788f53453b2efa42c843766b1372",
+          "point_count": 141097,
+          "min_m": [
+            -0.054942192315221794,
+            -0.08250624592598182,
+            -0.02152388982019773
+          ],
+          "max_m": [
+            0.08687298447267557,
+            0.0828516651139885,
+            0.20861449735704835
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.0.ply",
+          "bytes": 1136716,
+          "sha256": "79e5a8f8ce9d2fa2d65b61afe1d2203f5277e431f7e93a3dcb434c9e63482b58",
+          "point_count": 47357,
+          "min_m": [
+            -0.054942192315221794,
+            -0.08237018703259318,
+            -0.02147490191421765
+          ],
+          "max_m": [
+            0.08623990338468722,
+            0.08200843114172607,
+            0.20835817566199588
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.0.ply",
+          "bytes": 529012,
+          "sha256": "80a7bf0f14b306d9e6000b62fb8bfbe20d0f000e005dcd042fe3e7080d9da6b0",
+          "point_count": 22036,
+          "min_m": [
+            -0.05461130247831249,
+            -0.08209437035552669,
+            -0.021011441082072244
+          ],
+          "max_m": [
+            0.0872270902231763,
+            0.08116332662103659,
+            0.20861449735704835
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.0.ply",
+          "bytes": 290308,
+          "sha256": "9d10ff1e78807c4e5d34081e7174e9bd2fd2a93d0471ca9a0b021ef61887abbf",
+          "point_count": 12090,
+          "min_m": [
+            -0.05464330636298816,
+            -0.08160851478716943,
+            -0.02080436201277186
+          ],
+          "max_m": [
+            0.08531074019797612,
+            0.08128583281751389,
+            0.20744834464947481
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.7175392319913954,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.2",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.25256842105263155,
+        0.019473684210526317,
+        0.01894736842105263,
+        1.0,
+        0.25256842105263155,
+        0.019473684210526317,
+        0.01894736842105263,
+        -0.5094736842105261,
+        0.25256842105263155,
+        0.019473684210526317,
+        0.01894736842105263
+      ],
+      "actuator2": [
+        77.0,
+        100.0
+      ],
+      "sampling_seed": 20264195,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.2.STL",
+        "bytes": 3527984,
+        "sha256": "13e6866a044e334d3d74ad9ea5e7854dac17e54b7e9535891d58f88c2d635256"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.2.ply",
+          "bytes": 19568285,
+          "sha256": "33998b7dee1a7927389499676f6fe2ad4867890462fafd0450b4d1a872c9dad9",
+          "point_count": 815339,
+          "min_m": [
+            -0.05522595006740698,
+            -0.08414337467383388,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.0897366882828959,
+            0.08401781339681218,
+            0.20704534303082991
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.2.ply",
+          "bytes": 3381965,
+          "sha256": "1265f2be220365eea25a9bab5e8015cf0fe1fc804701544aacf6ce7873ab04fe",
+          "point_count": 140909,
+          "min_m": [
+            -0.054898672251679256,
+            -0.08383602179709775,
+            -0.02165436574202126
+          ],
+          "max_m": [
+            0.08901598113073639,
+            0.08374357540425148,
+            0.20727095571991844
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.2.ply",
+          "bytes": 1138780,
+          "sha256": "6c563dc926c846c6d6f37d9fe33f57cdd8d52c42ad5a71a58fb8928f283b253f",
+          "point_count": 47443,
+          "min_m": [
+            -0.05481448129914894,
+            -0.08365272246294034,
+            -0.021548378248504328
+          ],
+          "max_m": [
+            0.08865562755465664,
+            0.08337102055375274,
+            0.20704534303082991
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.2.ply",
+          "bytes": 528652,
+          "sha256": "5591cd90b9fff3041316f3b62ddccba05af87db49fd538fed2ae8bdf173bedd0",
+          "point_count": 22021,
+          "min_m": [
+            -0.054898672251679256,
+            -0.08327904686245607,
+            -0.021190742382276705
+          ],
+          "max_m": [
+            0.08814255352735495,
+            0.0830062855883717,
+            0.20727095571991844
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.2.ply",
+          "bytes": 290068,
+          "sha256": "bc05b7d5c49ca177f96cc0b9ff986b3294b226d72f289227bb46c9ff4a334df5",
+          "point_count": 12080,
+          "min_m": [
+            -0.0546543999683816,
+            -0.0829014730247065,
+            -0.0211896965703203
+          ],
+          "max_m": [
+            0.08865562755465664,
+            0.08380479393908112,
+            0.2065941176526529
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5712410740088671,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.3",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.23853684210526316,
+        0.01894736842105263,
+        0.01789473684210527,
+        1.0,
+        0.23853684210526316,
+        0.01894736842105263,
+        0.01789473684210527,
+        -0.5094736842105261,
+        0.23853684210526316,
+        0.01894736842105263,
+        0.01789473684210527
+      ],
+      "actuator2": [
+        78.0,
+        100.0
+      ],
+      "sampling_seed": 20264196,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.3.STL",
+        "bytes": 3527984,
+        "sha256": "bf00318a622dc948685c169ab38fee1e0ffbd473ea0cfef7d61fa1c00072092e"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.3.ply",
+          "bytes": 19626293,
+          "sha256": "d509c0158abaa98407564394c625b34149153e7731fee58865b78b9c855dd4ed",
+          "point_count": 817756,
+          "min_m": [
+            -0.055240712227262276,
+            -0.08478111827091997,
+            -0.022599357566137193
+          ],
+          "max_m": [
+            0.08933151947089725,
+            0.08473097872203694,
+            0.2060926757054072
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.3.ply",
+          "bytes": 3394181,
+          "sha256": "c36fdcd07c2471067570e8d3cb18d5df89cd31104e63b30b2cf3fdf7f8f7063a",
+          "point_count": 141418,
+          "min_m": [
+            -0.05506540491244698,
+            -0.08440612013785423,
+            -0.02223102323271109
+          ],
+          "max_m": [
+            0.0887215269473713,
+            0.08472019855882207,
+            0.2055343540475574
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.3.ply",
+          "bytes": 1143484,
+          "sha256": "9e35f151b86d2567cf18cb3c5de602391660de4179b2f04d31fd69026923acd6",
+          "point_count": 47639,
+          "min_m": [
+            -0.054804381805026385,
+            -0.08435581610222556,
+            -0.021749999858438975
+          ],
+          "max_m": [
+            0.0884576651331464,
+            0.08473097872203694,
+            0.20534387274238208
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.3.ply",
+          "bytes": 530212,
+          "sha256": "7379098eccff8a5fa90d4d37218408b5b69395ba18a72b30f245273c45ad7811",
+          "point_count": 22086,
+          "min_m": [
+            -0.05473949375364073,
+            -0.08403112200478847,
+            -0.021376793142475477
+          ],
+          "max_m": [
+            0.08806380910385223,
+            0.08315323505761525,
+            0.20481640237255072
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.3.ply",
+          "bytes": 291604,
+          "sha256": "a61b925008e80ebbed0c72baa7a63b0f0aabfc6221cee7e46c87ae3ba9d8208b",
+          "point_count": 12144,
+          "min_m": [
+            -0.05477174622253938,
+            -0.08357763750100175,
+            -0.021452563989016356
+          ],
+          "max_m": [
+            0.08818737978665424,
+            0.08387168448267135,
+            0.20568122453487117
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.634910213004332,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.5",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.21047368421052637,
+        0.01789473684210527,
+        0.015789473684210534,
+        1.0,
+        0.21047368421052637,
+        0.01789473684210527,
+        0.015789473684210534,
+        -0.5094736842105261,
+        0.21047368421052637,
+        0.01789473684210527,
+        0.015789473684210534
+      ],
+      "actuator2": [
+        80.0,
+        100.0
+      ],
+      "sampling_seed": 20264198,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.5.STL",
+        "bytes": 3527984,
+        "sha256": "2d106696d13211fbd496102a3f5d010f58ba559b40a5ac7714b6a2ae9951834a"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.5.ply",
+          "bytes": 19604189,
+          "sha256": "79cdbeaf6e24f2531f7cdd77cefad0c1caf4e4c41db89fa0bd9051f174188b2a",
+          "point_count": 816835,
+          "min_m": [
+            -0.05522026943600408,
+            -0.0875719088744477,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.09016373484083977,
+            0.08636152567602462,
+            0.20768062641527543
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.5.ply",
+          "bytes": 3393965,
+          "sha256": "b3aeb46102f2177ad2283e672daa28d9d504676ea07ab596538dd7b5d5e2ca75",
+          "point_count": 141409,
+          "min_m": [
+            -0.05499621090176049,
+            -0.08719930406425577,
+            -0.021726859662814974
+          ],
+          "max_m": [
+            0.09026745193682892,
+            0.08602786522607106,
+            0.20768062641527543
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.5.ply",
+          "bytes": 1139956,
+          "sha256": "eda911386de83d4806fd3d8ed75ffed5b3c0712bea7a7914efd1073622eb2035",
+          "point_count": 47492,
+          "min_m": [
+            -0.05521050698832275,
+            -0.08682669925406387,
+            -0.021634250753594576
+          ],
+          "max_m": [
+            0.08929642608967991,
+            0.0856942047761175,
+            0.2064898259546169
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.5.ply",
+          "bytes": 531796,
+          "sha256": "90b53d199669bf7ca77ecc9707720791f18068e2fda353f9e9debf5e8a9175e0",
+          "point_count": 22152,
+          "min_m": [
+            -0.05447142905434751,
+            -0.08682669925406387,
+            -0.021360546300577852
+          ],
+          "max_m": [
+            0.08853867230707077,
+            0.08426502492102071,
+            0.20510246762228548
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.5.ply",
+          "bytes": 290116,
+          "sha256": "6070523dc842a1da77030671081dfe9c0fbfe5a98fc9fe1876f732c2166fe374",
+          "point_count": 12082,
+          "min_m": [
+            -0.0548458492451758,
+            -0.08595893054114799,
+            -0.02073601468908548
+          ],
+          "max_m": [
+            0.08880194013212594,
+            0.08602786522607106,
+            0.20768062641527543
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5035875120083801,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.7",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.16837894736842096,
+        0.016315789473684207,
+        0.01263157894736841,
+        1.0,
+        0.16837894736842096,
+        0.016315789473684207,
+        0.01263157894736841,
+        -0.5094736842105261,
+        0.16837894736842096,
+        0.016315789473684207,
+        0.01263157894736841
+      ],
+      "actuator2": [
+        83.0,
+        100.0
+      ],
+      "sampling_seed": 20264200,
+      "worker_index": 0,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.7.STL",
+        "bytes": 3527984,
+        "sha256": "4cee6a52edab709fff26c8de5e69e25ffb0978c73b5bdf3923cd004fd467db86"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.7.ply",
+          "bytes": 19616549,
+          "sha256": "6f3e20c1832edf8fdf1e49ab27b7a916ba73858df8efec7bc34c7610e06dcff7",
+          "point_count": 817350,
+          "min_m": [
+            -0.055138227810831816,
+            -0.08772016136511072,
+            -0.02174999985843897
+          ],
+          "max_m": [
+            0.09194889591700972,
+            0.08917553708832562,
+            0.20421504893398662
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.7.ply",
+          "bytes": 3391613,
+          "sha256": "f9398e199e952b232ef849116776c8f5cbc42afdacfd8a68befc7267462c8b95",
+          "point_count": 141311,
+          "min_m": [
+            -0.05480365114949898,
+            -0.08734380969323938,
+            -0.02173940231925907
+          ],
+          "max_m": [
+            0.09194889591700972,
+            0.08844862313791028,
+            0.20399024787300196
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.7.ply",
+          "bytes": 1141156,
+          "sha256": "e59e570e7389277ed34fb36f78e87aed6d70768c8dacb89d5b490523f2c01688",
+          "point_count": 47542,
+          "min_m": [
+            -0.054701803106409576,
+            -0.08720771864768653,
+            -0.021374999858438975
+          ],
+          "max_m": [
+            0.09150899483669986,
+            0.08881208011311796,
+            0.20292927182930942
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.7.ply",
+          "bytes": 528196,
+          "sha256": "733e56796387ade812995a785a5fb49be1254d3cde318d39914aa171a4c59ff2",
+          "point_count": 22002,
+          "min_m": [
+            -0.05446860159451698,
+            -0.08702962528603668,
+            -0.02105382125570077
+          ],
+          "max_m": [
+            0.09155511683464798,
+            0.08784578154981762,
+            0.20222328746289775
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.7.ply",
+          "bytes": 290092,
+          "sha256": "df22fd3b19966d32516acaf6e495232c6acde9719db862b6120d53fe50d41ccc",
+          "point_count": 12081,
+          "min_m": [
+            -0.05396572721296777,
+            -0.08680546156678268,
+            -0.02062499985843897
+          ],
+          "max_m": [
+            0.08974239040915902,
+            0.08648347787070819,
+            0.20399024787300196
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5785001430194825,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.8",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.15434736842105257,
+        0.015789473684210527,
+        0.01157894736842105,
+        1.0,
+        0.15434736842105257,
+        0.015789473684210527,
+        0.01157894736842105,
+        -0.5094736842105261,
+        0.15434736842105257,
+        0.015789473684210527,
+        0.01157894736842105
+      ],
+      "actuator2": [
+        84.0,
+        100.0
+      ],
+      "sampling_seed": 20264201,
+      "worker_index": 1,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.8.STL",
+        "bytes": 3527984,
+        "sha256": "7ff5945a7098a0720d364885419047d4d97be7582cbc43dfe40e29e7783684f4"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.8.ply",
+          "bytes": 19652117,
+          "sha256": "5e402d366a40c2cdb130d4e8143b11c4617569d0e20b99bccb3182dc26c95ec7",
+          "point_count": 818832,
+          "min_m": [
+            -0.05514492844274311,
+            -0.08819037021241768,
+            -0.024366464100834873
+          ],
+          "max_m": [
+            0.09256254271423883,
+            0.08799064017486899,
+            0.20287438234683874
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.8.ply",
+          "bytes": 3376589,
+          "sha256": "467347bc1ee309e1bb13b3b36ad389954c8a35793d1a84c180f04247707d0d91",
+          "point_count": 140685,
+          "min_m": [
+            -0.05488551318003718,
+            -0.08782397168825128,
+            -0.024052313612411145
+          ],
+          "max_m": [
+            0.09256254271423883,
+            0.08769653867811684,
+            0.20299346789600362
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.8.ply",
+          "bytes": 1135780,
+          "sha256": "fe766d3a07d112218312e20b304081f4593fbdfa2568f90d8bd0020deb903100",
+          "point_count": 47318,
+          "min_m": [
+            -0.055113719120574826,
+            -0.08765813041387287,
+            -0.024366464100834873
+          ],
+          "max_m": [
+            0.09179987930644283,
+            0.0879714158780038,
+            0.20273901374770237
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.8.ply",
+          "bytes": 525340,
+          "sha256": "dd525f66819d24874f2c7f29b0b3a25725f3017eff629be8992d9fa66204bdd4",
+          "point_count": 21883,
+          "min_m": [
+            -0.05470229089800869,
+            -0.08731613031809907,
+            -0.024052313612411145
+          ],
+          "max_m": [
+            0.09177934010351615,
+            0.08709108230587095,
+            0.20266804004417022
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.8.ply",
+          "bytes": 286516,
+          "sha256": "7ebd2080ce20422973c99a4a1469fe52f94380eddf96291f396c013735b1a461",
+          "point_count": 11932,
+          "min_m": [
+            -0.05478031610337007,
+            -0.08701533879416962,
+            -0.02373816312398742
+          ],
+          "max_m": [
+            0.09247040810305977,
+            0.08633567018593115,
+            0.2001015959564741
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5940225329832174,
+      "physics_steps": 0
+    },
+    {
+      "type": 3,
+      "pose": "pose3",
+      "width_cm_key": "9.9",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.12628421052631578,
+        0.01473684210526316,
+        0.009473684210526315,
+        1.0,
+        0.12628421052631578,
+        0.01473684210526316,
+        0.009473684210526315,
+        -0.5094736842105261,
+        0.12628421052631578,
+        0.01473684210526316,
+        0.009473684210526315
+      ],
+      "actuator2": [
+        86.0,
+        100.0
+      ],
+      "sampling_seed": 20264202,
+      "worker_index": 2,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose3/9.9.STL",
+        "bytes": 3527984,
+        "sha256": "b0bed445fb5c0a0ec3c62c4ef62499ae609874ad3c56b68090939197cc6d43b2"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose3/9.9.ply",
+          "bytes": 19603757,
+          "sha256": "2fd64a94fcd1381a251e4fc77792c3833bcbffc8c98b33f4235ee361893ec41e",
+          "point_count": 816817,
+          "min_m": [
+            -0.05519952092267558,
+            -0.08936201160623508,
+            -0.02221672818839302
+          ],
+          "max_m": [
+            0.09367103793922245,
+            0.08932625786187137,
+            0.20192743416480205
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose3/9.9.ply",
+          "bytes": 3391469,
+          "sha256": "826b115bf9172e3d4e01eebdfa2be7a28309ced5b191879ffb54c3ee57a6464c",
+          "point_count": 141305,
+          "min_m": [
+            -0.05519952092267558,
+            -0.08908181189411078,
+            -0.021749999858438975
+          ],
+          "max_m": [
+            0.0935688069284406,
+            0.08875607788013994,
+            0.20155326193113451
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose3/9.9.ply",
+          "bytes": 1143028,
+          "sha256": "9af6839f8343791f2e485908c94b20a46312d75532900ba28bd1abb171ec0c8b",
+          "point_count": 47620,
+          "min_m": [
+            -0.054797572333640035,
+            -0.08871518907896123,
+            -0.02172610392080493
+          ],
+          "max_m": [
+            0.09364837916301298,
+            0.08930432891346746,
+            0.20192743416480205
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose3/9.9.ply",
+          "bytes": 528820,
+          "sha256": "4033867f42dd2014479a5e9575a74f227bdb9610772453d3f37a35388c424fc6",
+          "point_count": 22028,
+          "min_m": [
+            -0.054311266595322226,
+            -0.08838251266065403,
+            -0.021285563271264237
+          ],
+          "max_m": [
+            0.09253673565551623,
+            0.08926047101665961,
+            0.201179089697467
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose3/9.9.ply",
+          "bytes": 290692,
+          "sha256": "938b7186665a65e2ffe8899fbfaf30b7445d72198bb02b4b25a7b267b5158ade",
+          "point_count": 12106,
+          "min_m": [
+            -0.054315986639794124,
+            -0.08808966964902179,
+            -0.020999999858438975
+          ],
+          "max_m": [
+            0.09322158060446079,
+            0.08885373539872855,
+            0.20089672431727867
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.5477580850129016,
+      "physics_steps": 0
+    },
+    {
+      "type": 4,
+      "pose": "pose4",
+      "width_cm_key": "6.3",
+      "joint12_rad": [
+        0.5094736842105261,
+        0.0,
+        0.010000000000000002,
+        0.0,
+        1.0,
+        0.0,
+        0.010000000000000002,
+        0.0,
+        -0.5094736842105261,
+        0.0,
+        0.010000000000000002,
+        0.0
+      ],
+      "actuator2": [
+        95.0,
+        100.0
+      ],
+      "sampling_seed": 20265166,
+      "worker_index": 3,
+      "mesh_triangles": 70558,
+      "mesh_vertices": 160225,
+      "output_mesh": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source/pose4/6.3.STL",
+        "bytes": 3527984,
+        "sha256": "bece4f6f192bc06131157944fc8ab302c853d657a49309b449a009612ccf7e9e"
+      },
+      "pointclouds": [
+        {
+          "voxel_mm": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_1/pose4/6.3.ply",
+          "bytes": 19660925,
+          "sha256": "3db99626310e674485b8eed5452331a1acab92b9bba4d92a04c7c47ab3539a70",
+          "point_count": 819199,
+          "min_m": [
+            -0.055224692120328656,
+            -0.09447374552024729,
+            -0.025545997919665085
+          ],
+          "max_m": [
+            0.09801926209661822,
+            0.09458268151128327,
+            0.19875665022628325
+          ]
+        },
+        {
+          "voxel_mm": 2,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_2/pose4/6.3.ply",
+          "bytes": 3379709,
+          "sha256": "be0881c1b6d679cc5bf8c980fd6f7977c7891e74b23739ba8d984811b2fb39a8",
+          "point_count": 140815,
+          "min_m": [
+            -0.055005891081110106,
+            -0.09414896926036528,
+            -0.025545997919665085
+          ],
+          "max_m": [
+            0.09825376167508686,
+            0.09458268151128327,
+            0.1981638362247343
+          ]
+        },
+        {
+          "voxel_mm": 3,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_3/pose4/6.3.ply",
+          "bytes": 1139452,
+          "sha256": "6e59cacbf0c13b1d3e8ef8bc0217bba6277ebc8f390e48aa379dd1e0496dca2a",
+          "point_count": 47471,
+          "min_m": [
+            -0.05477968813145,
+            -0.09447374552024729,
+            -0.02481241047125199
+          ],
+          "max_m": [
+            0.09748785911833845,
+            0.09391530671621633,
+            0.1984602432255088
+          ]
+        },
+        {
+          "voxel_mm": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_4/pose4/6.3.ply",
+          "bytes": 526996,
+          "sha256": "e682653087a830a3928a71506aaaf7897294bd6f12f3d04516464bd4fbf2f4f6",
+          "point_count": 21952,
+          "min_m": [
+            -0.05456521356209634,
+            -0.09414896926036528,
+            -0.02481241047125199
+          ],
+          "max_m": [
+            0.09658078870347177,
+            0.09280839879019101,
+            0.1981638362247343
+          ]
+        },
+        {
+          "voxel_mm": 5,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/official_dh3_collision_assets_20261103_v2/assets/meshes/source_pointclouds/voxel_size_5/pose4/6.3.ply",
+          "bytes": 288676,
+          "sha256": "3d0714ad72bf3870272a8f79b5a4bcee14d8701597e78464a8f0f45f77123a55",
+          "point_count": 12022,
+          "min_m": [
+            -0.054309631133753936,
+            -0.09302750166211757,
+            -0.024445616747045436
+          ],
+          "max_m": [
+            0.09781361260445699,
+            0.09458268151128327,
+            0.1984602432255088
+          ]
+        }
+      ],
+      "original_surface_samples": 300000,
+      "original_infill_layers": 15,
+      "all_five_original_voxel_scales_retained": true,
+      "generation_and_validation_seconds": 1.653295791009441,
+      "physics_steps": 0
+    }
+  ],
+  "earlier_failure": {
+    "run": "outputs/official_dh3_collision_assets_20261103_v1",
+    "completed_slots": 0,
+    "reason": "Open3D import missing libusb-1.0.so.0; preserved, fixed by isolated compatible existing library"
+  },
+  "library": {
+    "role": "Existing compatible host libusb reused only in isolated Open3D worker LD_LIBRARY_PATH",
+    "source": "/opt/nros-host/usr/lib/x86_64-linux-gnu/libusb-1.0.so.0.5.0",
+    "destination": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs/libusb-1.0.so.0",
+    "bytes": 129272,
+    "sha256": "e422dc361a501e8175a94e16228704de7ca6376037fc29a0e7272e8fe2c8edc1",
+    "system_packages_installed": false,
+    "shared_site_packages_modified": false,
+    "highest_required_glibc_version": "2.38",
+    "runtime_glibc": "2.39"
+  }
+}

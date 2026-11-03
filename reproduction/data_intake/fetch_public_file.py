@@ -7,14 +7,77 @@ deserialize PyTorch/pickle objects. A .partial file is retained on interruption.
 """
 import argparse
 import hashlib
+from html.parser import HTMLParser
 import json
 import os
 from pathlib import Path
 import tarfile
-from urllib.parse import urlencode, urlparse
+from urllib.parse import urlencode, urlparse, parse_qs, urljoin
 import zipfile
 
 import requests
+
+
+class _DriveConfirmationForm(HTMLParser):
+    """Parse Google's public large-file confirmation, never a login form."""
+    def __init__(self):
+        super().__init__()
+        self.forms = []
+        self.current = None
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == 'form':
+            self.current = dict(action=attributes.get('action', ''),
+                                method=attributes.get('method', 'get').lower(), fields={})
+            self.forms.append(self.current)
+        elif tag == 'input' and self.current is not None:
+            name = attributes.get('name')
+            if name in ['id', 'export', 'confirm', 'uuid', 'resourcekey']:
+                self.current['fields'][name] = attributes.get('value', '')
+
+    def handle_endtag(self, tag):
+        if tag == 'form':
+            self.current = None
+
+
+def _get_artifact_response(session, url, headers):
+    response = session.get(url, headers=headers, stream=True, timeout=(15, 60))
+    response.raise_for_status()
+    if 'text/html' not in response.headers.get('Content-Type', '').lower():
+        return response
+    original = urlparse(url)
+    if original.hostname not in ['drive.google.com', 'drive.usercontent.google.com']:
+        response.close()
+        raise ValueError('HTML response is not an artifact')
+    page = response.text
+    base_url = response.url
+    response.close()
+    if 'quota exceeded' in page.lower() or 'too many users have viewed or downloaded' in page.lower():
+        raise ValueError('Official Google Drive file download quota exceeded; no artifact published')
+    if len(page) > 2_000_000:
+        raise ValueError('Unexpected large HTML response; no artifact published')
+    parser = _DriveConfirmationForm()
+    parser.feed(page)
+    file_id = parse_qs(original.query).get('id', [None])[0]
+    for form in parser.forms:
+        action = urljoin(base_url, form['action'])
+        parsed = urlparse(action)
+        fields = form['fields']
+        if (form['method'] != 'get' or parsed.scheme != 'https' or
+                parsed.hostname != 'drive.usercontent.google.com' or
+                parsed.path != '/download' or not file_id or
+                fields.get('id') != file_id or not fields.get('confirm') or
+                fields.get('export') != 'download'):
+            continue
+        confirmed = action.split('?')[0] + '?' + urlencode(fields)
+        response = session.get(confirmed, headers=headers, stream=True, timeout=(15, 60))
+        response.raise_for_status()
+        if 'text/html' in response.headers.get('Content-Type', '').lower():
+            response.close()
+            raise ValueError('Drive returned HTML after public confirmation; no artifact published')
+        return response
+    raise ValueError('HTML is not the expected public Drive download confirmation; no artifact published')
 
 
 def sha256(path):
@@ -64,13 +127,23 @@ def fetch(url, destination, expected_size=None, expected_sha256=None):
                     sha256=digest, status="already_present", **inspect_file(destination))
     partial = destination.with_name(destination.name + ".partial")
     offset = partial.stat().st_size if partial.exists() else 0
+    if expected_size is not None and offset == expected_size:
+        # A prior connection may have completed before validation/receipt failed.
+        # Validate those exact bytes without issuing an unsatisfiable Range.
+        digest = sha256(partial)
+        if expected_sha256 and digest != expected_sha256:
+            raise ValueError('Complete partial SHA differs from expected SHA')
+        shape = inspect_file(partial)
+        partial.replace(destination)
+        result = dict(path=str(destination), bytes=offset, sha256=digest,
+                      source=url, expected_sha256_provided=bool(expected_sha256),
+                      status='completed_partial_content_checked', **shape)
+        destination.with_name(destination.name + '.receipt.json').write_text(
+            json.dumps(result, indent=2) + '\n')
+        return result
     headers = {"Range": "bytes=%d-" % offset} if offset else {}
     with requests.Session() as session:
-        response = session.get(url, headers=headers, stream=True, timeout=(15, 60))
-        response.raise_for_status()
-        if "text/html" in response.headers.get("Content-Type", "").lower():
-            response.close()
-            raise ValueError("HTML/Drive confirmation page received; no artifact published")
+        response = _get_artifact_response(session, url, headers)
         if offset and response.status_code == 206:
             content_range = response.headers.get("Content-Range", "")
             if not content_range.startswith("bytes %d-" % offset):
