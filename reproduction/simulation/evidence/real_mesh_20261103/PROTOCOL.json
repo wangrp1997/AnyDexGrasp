@@ -1,0 +1,75 @@
+{
+  "schema": "AnyDex-DH3-real-mesh-top1-cohort-v1",
+  "frozen_at": "2026-11-03T23:31:59.551118+08:00",
+  "scope": "Six real object meshes, two horizontal yaws per object. Hand-only independent simulation; no arm or paper success-rate reproduction.",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "object_categories": [
+    "apple",
+    "banana",
+    "foam_brick",
+    "bottle",
+    "mug",
+    "bowl"
+  ],
+  "scene_names": [
+    "apple_yaw000",
+    "apple_yaw090",
+    "banana_yaw000",
+    "banana_yaw090",
+    "foam_brick_yaw000",
+    "foam_brick_yaw090",
+    "bottle_yaw000",
+    "bottle_yaw090",
+    "mug_yaw000",
+    "mug_yaw090",
+    "bowl_yaw000",
+    "bowl_yaw090"
+  ],
+  "asset_selection": "Existing public meshes preferred, freeze IDs/SHA/units/collision parts before rendering. Retain original geometry in metres, no size tuning to force success.",
+  "poses": "Each object normal tabletop resting orientation, minimum surface at z0; fixed world XY [0,.08], yaws0/90; no placement search or inverted bowl unless explicitly declared.",
+  "object_mass_kg": 0.1,
+  "object_lateral_friction": 1.0,
+  "input": "Actual partial RGB-D/color/calibration only. No object class, geometry or true pose provided to network.",
+  "inference": {
+    "seed": 20261103,
+    "branches": 11,
+    "hand_heads": 4,
+    "candidate_selection": "Original argsort final top1 after original collision",
+    "shared_models_per_process": 5,
+    "physical_GPU": 0,
+    "max_physical_attempts_per_scene": 1,
+    "no_topK_execution_or_retries": true
+  },
+  "physics": {
+    "hz": 1920,
+    "numSubSteps": 1,
+    "inner_iterations": 20,
+    "duration_s": 10.25,
+    "steps_if_executed": 19680,
+    "position_motor_max_torque_Nm": 0.6,
+    "rotation_motor_max_torque_Nm": 0.3,
+    "gear_row_cap_Nm": 100.0,
+    "wrist_max_force_per_row_N_or_Nm": 30.0,
+    "gravity_m_s2": [
+      0,
+      0,
+      -9.81
+    ],
+    "lift_world_z_m": 0.1,
+    "max_simultaneous_CPU_workers": 3,
+    "scene_resets_after_integration": false
+  },
+  "original_gates": {
+    "finite_limits": true,
+    "max_gear_residual_rad_below": 0.01,
+    "peak_joint_velocity_rad_s_below": 1.5,
+    "wrist_COM_error_m_below": 0.002,
+    "final_lift_m_above": 0.05,
+    "final_lowest_world_z_m_above": 0.04,
+    "positive_hand_object_contact_last_half_second": true
+  },
+  "reporting": "All12 scenes remain in denominator; no-candidate, stage failure, observed lift and numerical validity separate. Save all attempted grasp videos including failures. No parameter/timestep/object/pose retuning based on outcomes.",
+  "geometry": "Visual original triangle surfaces; dynamic compound convex parts preserving object hollow regions when relevant. Record approximation and actual engine shape. Do not silently replace cup/bowl by one filled convex hull.",
+  "cost": "Network/model/asset/preprocess/render/physics/media times separately. Cohort driver measures pipeline-to-last-worker wall, all actual steps, no hidden substeps.",
+  "regression": "Reuse existing passed cube and primitive evidence; no need to re-execute unchanged controller. Minimal runner change only allows new mesh_scene module."
+}

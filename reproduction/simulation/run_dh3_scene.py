@@ -31,7 +31,7 @@ ACCEPTED_CONTROLLER_SHA256='8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7
 
 def load_scene_module(observation):
     name=observation.get('scene_module','synthetic_scene')
-    if name not in ('synthetic_scene','primitive_scene'):
+    if name not in ('synthetic_scene','primitive_scene','mesh_scene'):
         raise ValueError('Unsupported frozen scene module: '+str(name))
     return importlib.import_module(name)
 

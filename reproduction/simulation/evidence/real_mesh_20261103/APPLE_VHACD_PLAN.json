@@ -1,0 +1,446 @@
+{
+  "recipe": {
+    "method": "PyBullet offline V-HACD",
+    "parameters": {
+      "resolution": 100000,
+      "concavity": 0.0025,
+      "alpha": 0.05,
+      "beta": 0.05,
+      "gamma": 0.0005,
+      "minVolumePerCH": 0.0001,
+      "maxNumVerticesPerCH": 64,
+      "depth": 20,
+      "planeDownsampling": 4,
+      "convexhullDownsampling": 4,
+      "pca": 0,
+      "mode": 0,
+      "convexhullApproximation": 1
+    },
+    "seed": "API exposes no seed parameter",
+    "timeout_seconds": 120.0,
+    "threads": 1,
+    "source": {
+      "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/textured.obj",
+      "bytes": 1430494,
+      "sha256": "f32e694c0473b6858fcfb6f5b53a742e9cdedce2fb488bd5a5666d37354f87df"
+    },
+    "inventory": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/SOURCE_ASSETS.json",
+      "bytes": 80684,
+      "sha256": "bb38eed1dddbf78c30c4c06c92a18eeaabbe77b3d78af03483b2fc51974943ec"
+    },
+    "script": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/prepare_mesh_fallback.py",
+      "bytes": 14325,
+      "sha256": "7cdbee8cae7e782870ffc40c8750c0bb8b95bb9d0219ba90998c60f572863db6"
+    },
+    "geometry_helper": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/prepare_real_mesh_assets.py",
+      "bytes": 15572,
+      "sha256": "d14ca7720fd602527b995950cacd71e791c8cfdd9452741a5113dc3e4fcdde97"
+    },
+    "cavity_policy": {
+      "probe_fractions": [
+        -0.1,
+        0,
+        0.1
+      ],
+      "source_min_recess_height_fraction": 0.25,
+      "minimum_retained_recess_fraction": 0.75,
+      "minimum_qualifying_rays": 3,
+      "scope": "Nine predeclared central vertical rays; verifies a recessed open cavity, not whole-surface Hausdorff accuracy or the entire mug handle hole"
+    },
+    "AABB_policy": "All six bounds within max(1mm,2% longest source AABB dimension); approximation check only, not physical gate",
+    "relation_to_original": "Separate generic preparation fallback for any not-ready asset. Original CoACD source/recipe/process untouched, not reported completed"
+  },
+  "recipe_sha256": "04d44c66c9f4ccaab352347b6094b03e6244a6b80f1fd8197ba5e32a20f7453f",
+  "item": {
+    "category": "apple",
+    "ycb_id": "013_apple",
+    "preferred_source_mesh": {
+      "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/textured.obj",
+      "bytes": 1430494,
+      "sha256": "f32e694c0473b6858fcfb6f5b53a742e9cdedce2fb488bd5a5666d37354f87df"
+    },
+    "source_bundle_url": "https://ycb-benchmarks.s3.amazonaws.com/data/google/013_apple_google_16k.tgz",
+    "source_bundle_sha256": "46249b76379bae26a6f78861b5568ceed25cf1e397530a313430b1d94d57320c",
+    "original_mesh_units": "meters; scale=[1,1,1]; raw OBJ format contains no explicit unit declaration",
+    "units_evidence": "Original YCB Google16k coordinates are retained; measured physical dimensions below, no normalization/rescale. COLLADA sidecar has no unit element and declares Y_UP; importer must use raw OBJ coordinates with the explicitly frozen transform, not apply DAE metadata.",
+    "scale_to_meters": 1.0,
+    "original_AABB_m": [
+      [
+        -0.036865,
+        -0.04122,
+        -0.000393
+      ],
+      [
+        0.038583,
+        0.033651,
+        0.071496
+      ]
+    ],
+    "original_AABB_dimensions_m": [
+      0.075448,
+      0.074871,
+      0.07188900000000001
+    ],
+    "original_AABB_dimensions_mm": [
+      75.44800000000001,
+      74.871,
+      71.88900000000001
+    ],
+    "vertices": 8194,
+    "triangles": 16384,
+    "source_files": [
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/kinbody.xml",
+        "bytes": 186,
+        "sha256": "c2be742b7371d69644c3206e96d6f3e4f81f887f19620ae93c7fcb38f0016c63"
+      },
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/nontextured.ply",
+        "bytes": 986149,
+        "sha256": "77cedc89cd96af684d5afca912390f32a446e73e7706261ed529de908fa25d1f"
+      },
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/nontextured.stl",
+        "bytes": 819284,
+        "sha256": "1412ebe8c1e721db67145d5fc4789c5fa3c54c096be788ef6906dd365162296c"
+      },
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/texture_map.png",
+        "bytes": 4175099,
+        "sha256": "6fa13963ac7fec6d4819b6ebf0e4c5d54c6f339d5d7174ae5230f36abec30d56"
+      },
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/textured.dae",
+        "bytes": 2821491,
+        "sha256": "78e57195db47abbb8aa83f5dace9163e2dddcc35bb12c8f504af3a1238a3d44f"
+      },
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/textured.mtl",
+        "bytes": 66,
+        "sha256": "a779e1d8a29bdbc18ee724b7faa2e1e53591cbc2ee451ff38c64df7222c3f31e"
+      },
+      {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/textured.obj",
+        "bytes": 1430494,
+        "sha256": "f32e694c0473b6858fcfb6f5b53a742e9cdedce2fb488bd5a5666d37354f87df"
+      }
+    ],
+    "material_dependencies": {
+      "mtl": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/textured.mtl",
+      "texture": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/texture_map.png"
+    },
+    "selected_dynamic_collision_decomposition": null,
+    "exact_YCB_directory_collision_status": "No convex decomposition/URDF present in this original YCB object directory; do not let a dynamic GEOM_MESH silently become one convex hull",
+    "poses": [
+      {
+        "id": "apple_yaw000",
+        "yaw_degrees": 0,
+        "R_WM": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "orientation_world_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "source_mesh_origin_world_m": [
+          -0.0008589999999999987,
+          0.0837845,
+          0.000393
+        ],
+        "T_world_from_source_mesh": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.0008589999999999987
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0837845
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.000393
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_AABB_m": [
+          [
+            -0.037724,
+            0.0425645,
+            0.0
+          ],
+          [
+            0.037724,
+            0.1174355,
+            0.07188900000000001
+          ]
+        ],
+        "lowest_source_vertex_world_z_m": 0.0,
+        "placement_rule": "Keep original OBJ Z-up support orientation; yaw only; center mesh XY AABB at [0,0.08] and lowest vertex on table z0",
+        "orientation_intent": "Original YCB resting/support orientation, yaw 0 or 90; no success-driven placement search"
+      },
+      {
+        "id": "apple_yaw090",
+        "yaw_degrees": 90,
+        "R_WM": [
+          [
+            0.0,
+            -1.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "orientation_world_xyzw": [
+          0.0,
+          0.0,
+          0.7071067811865476,
+          0.7071067811865476
+        ],
+        "source_mesh_origin_world_m": [
+          -0.0037844999999999997,
+          0.079141,
+          0.000393
+        ],
+        "T_world_from_source_mesh": [
+          [
+            0.0,
+            -1.0,
+            0.0,
+            -0.0037844999999999997
+          ],
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.079141
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.000393
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "world_AABB_m": [
+          [
+            -0.0374355,
+            0.042276,
+            0.0
+          ],
+          [
+            0.0374355,
+            0.117724,
+            0.07188900000000001
+          ]
+        ],
+        "lowest_source_vertex_world_z_m": 0.0,
+        "placement_rule": "Keep original OBJ Z-up support orientation; yaw only; center mesh XY AABB at [0,0.08] and lowest vertex on table z0",
+        "orientation_intent": "Original YCB resting/support orientation, yaw 0 or 90; no success-driven placement search"
+      }
+    ],
+    "existing_related_convex_decomposition": {
+      "source_dataset": "Existing GraspNet-style meshdata archive in DexGraspNet2.0; candidate same YCB object inferred by dimensions, not selected as exact source",
+      "model_id": "012",
+      "source_mesh": {
+        "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/textured.obj",
+        "bytes": 60801162,
+        "sha256": "78edc97d56953e2fd7f1b173188c3c73b878f8dab2fdc3afa3a81d1e2648027c"
+      },
+      "source_AABB_dimensions_m": [
+        0.075442,
+        0.074896,
+        0.071886
+      ],
+      "simplified_mesh": {
+        "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/simplified.obj",
+        "bytes": 88176,
+        "sha256": "d421b1923bb9a21e27a319ab937b388d6bd2512293bc8c545ebc11b8d2712f69"
+      },
+      "simplified_AABB_dimensions_m": [
+        0.07789507781835911,
+        0.0775417497566544,
+        0.07462387845367499
+      ],
+      "URDF": {
+        "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd.urdf",
+        "bytes": 6318,
+        "sha256": "d670708ccb60e022032b618bc2c433da1016c844356afcfce8d46e449d1a4a45"
+      },
+      "parts": [
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_0.obj",
+          "bytes": 249998,
+          "sha256": "6b7c2ffbc82241609f1b8e505a864348020abf923efe7ff4d5620368d06cc9ef"
+        },
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_1.obj",
+          "bytes": 35097,
+          "sha256": "3a618ec0caf9ed5424037c1143eca2a5679eb781a3a47bf6651c38f1f513d3a5"
+        },
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_2.obj",
+          "bytes": 35843,
+          "sha256": "09a6631636a7f59a8ce042851556f93ebd0e8dd779da873b4de7d8586fa5921a"
+        },
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_3.obj",
+          "bytes": 249604,
+          "sha256": "71736cd3486d9c7a104a58e3334ba0985de57c6787ac700976e9cb971ef8c099"
+        },
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_4.obj",
+          "bytes": 220088,
+          "sha256": "563e919cd546c61964e4384c23a8e62de51d2e4bf39a45699f04e6c1be8a66b1"
+        },
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_5.obj",
+          "bytes": 39795,
+          "sha256": "862b0555ec6f539eae6deb24e74514b864f74df4cbf52eef8e33da1e90aeb947"
+        },
+        {
+          "path": "/mnt/public/datasets/DexGraspNet2.0/extracted/meshdata/012/coacd/coacd_convex_piece_6.obj",
+          "bytes": 255121,
+          "sha256": "dbb081d2e26b1b99e6d9683a415d81765a92249e7e5f48ba2e2ae6a0a1ac5d1d"
+        }
+      ],
+      "part_count": 7,
+      "selected_for_physics": false,
+      "qualification": "Existing CoACD compound only; original/source mesh variants and inflated simplified geometry differ. Not certified shape preserving for this exact YCB16k mesh; require independent alignment/surface/cavity validation before any reuse."
+    }
+  },
+  "original_cost_snapshot_before": {
+    "directory": "outputs/dh3_real_mesh_generalization_20261103_v1/decomposition",
+    "PLAN": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/PLAN.json",
+      "bytes": 4694,
+      "sha256": "559a3bcb070694a0da4378eefa77e2ce10fec99fbd0ac5e0180c4d375eab5662"
+    },
+    "observed_at_unix_s": 1793723121.868831,
+    "observed_elapsed_since_original_PLAN_publication_s": 2139.9841516017914,
+    "elapsed_boundary": "Observed original campaign wall since PLAN mtime, not a sum of parallel workers; original running job continues",
+    "objects": [
+      {
+        "id": "apple",
+        "status": "original_campaign_not_ready",
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/apple/coacd.log",
+        "log_bytes": 10342,
+        "latest_log_lines": [
+          "[2026-11-04 00:23:03.920] [CoACD] [info] iter 14 ---- waiting pool: 1124",
+          "[2026-11-04 00:23:03.920] [CoACD] [info] Processing [0.0%]",
+          "[2026-11-04 00:24:47.927] [CoACD] [info] Processing [10.1%]"
+        ]
+      },
+      {
+        "id": "banana",
+        "status": "convex_components_and_predeclared_cavity_checks_passed",
+        "cost_seconds": {
+          "coacd_decomposition": 75.27853259001859,
+          "worker_total": 76.23172966798302
+        },
+        "RESULTS": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/banana/RESULTS.json",
+          "bytes": 139076,
+          "sha256": "7b01dfd24e8a5f3ca79e004045856550bc3e2d170969bc1a8889ffe15a4463eb"
+        }
+      },
+      {
+        "id": "foam_brick",
+        "status": "convex_components_and_predeclared_cavity_checks_passed",
+        "cost_seconds": {
+          "coacd_decomposition": 205.9459929179866,
+          "worker_total": 206.68542172608431
+        },
+        "RESULTS": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/foam_brick/RESULTS.json",
+          "bytes": 139621,
+          "sha256": "9bbda9668fb35902116d7474d1e845ed62b08021a345d8fd0104eb1ba7cee0ba"
+        }
+      },
+      {
+        "id": "bottle",
+        "status": "convex_components_and_predeclared_cavity_checks_passed",
+        "cost_seconds": {
+          "coacd_decomposition": 244.81500016897917,
+          "worker_total": 245.70426425803453
+        },
+        "RESULTS": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/bottle/RESULTS.json",
+          "bytes": 138824,
+          "sha256": "920077b2b05c2acec958a53d349b68ffe8ce5c59a2d2f63b3b80bbdf84e9d22d"
+        }
+      },
+      {
+        "id": "mug",
+        "status": "convex_components_and_predeclared_cavity_checks_passed",
+        "cost_seconds": {
+          "coacd_decomposition": 637.1974867000245,
+          "worker_total": 638.1577967399498
+        },
+        "RESULTS": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/mug/RESULTS.json",
+          "bytes": 141664,
+          "sha256": "aa25feb05cc65783721e2bec08247842b9e77d51d0a1fdc1b53c6d93173cae4e"
+        }
+      },
+      {
+        "id": "bowl",
+        "status": "convex_components_and_predeclared_cavity_checks_passed",
+        "cost_seconds": {
+          "coacd_decomposition": 101.09745738294441,
+          "worker_total": 101.87114293291233
+        },
+        "RESULTS": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/decomposition/bowl/RESULTS.json",
+          "bytes": 141711,
+          "sha256": "dc3b810c57ad6f4ae570d2025ea353d7f42299fd8234c1297b7029003d934243"
+        }
+      }
+    ]
+  },
+  "frozen_before_execution": true,
+  "new_physics_steps": 0
+}

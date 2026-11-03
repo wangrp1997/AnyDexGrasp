@@ -1,5 +1,7 @@
 # AnyDexGrasp 原方法复现
 
+2026-11-04更新：原DH3公开模型已完成六件真实YCB网格×两方向独立仿真，8/12有效举升；1实际未抓起、3原碰撞后无候选全部保留。见[真实网格结果与视频](simulation/REAL_MESH_GENERALIZATION_RESULTS.md)。这不等于作者实机实验复现，尚未接机械臂/Boya。
+
 本目录属于独立仓库 `/home/wangrenpeng/AnyDexGrasp`，与CanonDex的抓取改进分开。官方源码固定为 `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原算法/硬件入口没有修改。来源与原论文SHA见 [SOURCES.lock.json](SOURCES.lock.json)。
 
 ## 2026-11-03 已实际完成

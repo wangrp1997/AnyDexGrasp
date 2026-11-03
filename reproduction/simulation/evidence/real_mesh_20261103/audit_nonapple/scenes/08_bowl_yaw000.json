@@ -1,0 +1,180 @@
+{
+  "scene_id": "bowl_yaw000",
+  "declared_index": 8,
+  "final_status": "no_original_candidate",
+  "final_top1_selected": false,
+  "physics_invocations": 0,
+  "actual_physical_attempts": 0,
+  "completed_physics_steps": 0,
+  "possible_in_flight_steps": 0,
+  "not_entered_physics_reason": "no_candidate_after_original_collision",
+  "retained_error_reason": null,
+  "input_scheduler_row": {
+    "scene_id": "bowl_yaw000",
+    "batch_frame_name": "bowl_yaw000",
+    "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/scene_manifest.json",
+    "scene_manifest_sha256": "fce616c882cb79cf62265a257b0957438407e5339a4676d91efca18718924566",
+    "scene_signature_sha256": "a014ce859a177e8c1ca3384258e6f35af411492f44ade89ca270ec032a25ad84",
+    "scene_module": "mesh_scene",
+    "input_files": {
+      "color.png": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/color.png",
+        "bytes": 63497,
+        "sha256": "b79700597a0853f6c840b30f28b5dca7f0c87912d1f1f6aaabbc4bfe56999e04"
+      },
+      "depth.png": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/depth.png",
+        "bytes": 13118,
+        "sha256": "4208d9b08752463e792732f3f9d0372e91e57052d43973d9ea2f69260b05db26"
+      },
+      "meta.mat": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/meta.mat",
+        "bytes": 352,
+        "sha256": "78c724d3ddb2b3805eca44fcceac9da465ab6ce0cafa11e3681eedadfffa24a9"
+      }
+    },
+    "status": "no_original_candidate",
+    "terminal": true,
+    "physics_invocations": 0,
+    "actual_physical_attempts": 0,
+    "completed_physics_steps": 0,
+    "possible_in_flight_steps": 0,
+    "final_top1_selected": false,
+    "not_entered_physics_reason": "no_candidate_after_original_collision",
+    "inference_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000",
+    "inference_RESULTS_sha256": "13f69b31d10a43c824ffa4f58aa4a3e0d3bd501e07ba4c26c52e4d133a67f897",
+    "inference_frame_status": "no_candidate_after_original_collision",
+    "inference_frame_wall_seconds": 17.2323385149939,
+    "inference_stage_timing_seconds": {
+      "representation_model_load": 0.24755475297570229,
+      "eleven_original_get_grasp_branches": 11.8267408820102,
+      "original_hand_stage": 0.3319744080072269,
+      "collision_asset_preparation": 1.2630086209392175,
+      "original_collision": 3.4608095129951835,
+      "total": 17.20977092301473,
+      "original_final_selection": 0.01729270606301725,
+      "batch_frame_with_selection_wall": 17.2323385149939
+    },
+    "hand_stages": {
+      "raw_parser_candidates": 50,
+      "after_original_camera_and_width_gates": 50,
+      "after_original_score_top1000": 50,
+      "all_original_type_depth_combinations": 800,
+      "original_top3500_returned": 800,
+      "after_original_learned_score_gate": 83,
+      "mapped_original_hand_poses_before_top400": 83,
+      "original_top400_before_collision": 83
+    },
+    "collision_stages": {
+      "pre_collision_candidates": 83,
+      "after_original_width_gate": 83,
+      "collision_rejected": 83,
+      "collision_admitted": 0
+    }
+  },
+  "additional_network_forwards": 0,
+  "additional_collision_queries": 0,
+  "additional_renders": 0,
+  "additional_physical_steps": 0,
+  "scene_binding": {
+    "scene_manifest": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/scene_manifest.json",
+      "bytes": 342585,
+      "sha256": "fce616c882cb79cf62265a257b0957438407e5339a4676d91efca18718924566"
+    },
+    "scene_signature_sha256": "a014ce859a177e8c1ca3384258e6f35af411492f44ade89ca270ec032a25ad84",
+    "bound_scene_files": 6,
+    "bound_source_assets": 263,
+    "observed_scene_module": "mesh_scene"
+  },
+  "partial_pipeline_binding": {
+    "frame_status": "no_candidate_after_original_collision",
+    "available_stage_receipts": {
+      "frame": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/frame/RESULTS.json",
+        "bytes": 14973,
+        "sha256": "c22fc063a689431fe76985a39bb2068bc2ee46dcf2ae0e7645fb926e919189d0"
+      },
+      "hand": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/hand/RESULTS.json",
+        "bytes": 7551,
+        "sha256": "abea87f08e5257bbef05f3636d64fe37fbae7227f6d90020dcac1755e266b1ad"
+      },
+      "collision": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/collision/RESULTS.json",
+        "bytes": 5981,
+        "sha256": "01e16b211f3c2ba22ffa959da649dabab0a53199c5c8c3bd1efd286d538d29c0"
+      },
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/selection/RESULTS.json",
+        "bytes": 870,
+        "sha256": "20aaec73b78d58584cb6df3efda243c1fe874d7e8a65e35274cd947eb48978ca"
+      }
+    },
+    "final_frame_receipt_present": true,
+    "final_frame_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/RESULTS.json",
+      "bytes": 28983,
+      "sha256": "13f69b31d10a43c824ffa4f58aa4a3e0d3bd501e07ba4c26c52e4d133a67f897"
+    },
+    "pipeline_status": "no_candidate_after_original_collision",
+    "original_stop_reason": null,
+    "timing_seconds": {
+      "representation_model_load": 0.24755475297570229,
+      "eleven_original_get_grasp_branches": 11.8267408820102,
+      "original_hand_stage": 0.3319744080072269,
+      "collision_asset_preparation": 1.2630086209392175,
+      "original_collision": 3.4608095129951835,
+      "total": 17.20977092301473,
+      "original_final_selection": 0.01729270606301725,
+      "batch_frame_with_selection_wall": 17.2323385149939
+    }
+  },
+  "dispatch_and_steps": {
+    "physics_invocations": 0,
+    "actual_physical_attempts": 0,
+    "completed_physics_steps": 0,
+    "possible_in_flight_steps": 0,
+    "pre_spawn_counter": null,
+    "not_entered_physics_reason": "no_candidate_after_original_collision"
+  },
+  "original_frame_auditor": {
+    "executed": true,
+    "passed": false,
+    "error_type": "KeyError",
+    "error": "'output'",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_real_dh3_cohort.py\", line 92, in audit_attempt\n    return dict(executed=True, passed=True, result=function(*args))\n                                                   ^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py\", line 81, in audit\n    verify_record(selected['output'])\n                  ~~~~~~~~^^^^^^^^^^\nKeyError: 'output'\n",
+    "coverage": "incomplete_or_invalid_saved_pipeline"
+  },
+  "unexecuted_frame_audit_boundary": "Full original auditor was attempted; absent later artifacts are retained. Available input/receipt hashes are checked separately. No selected top1 is invented.",
+  "original_physics_auditor": {
+    "executed": true,
+    "passed": false,
+    "error_type": "FileNotFoundError",
+    "error": "[Errno 2] No such file or directory: '/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bowl_yaw000/RESULTS.json'",
+    "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_real_dh3_cohort.py\", line 92, in audit_attempt\n    return dict(executed=True, passed=True, result=function(*args))\n                                                   ^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_dh3_scene_results.py\", line 48, in audit\n    result = read(run / 'RESULTS.json')\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_dh3_scene_results.py\", line 30, in read\n    return json.loads(Path(path).read_text())\n                      ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bowl_yaw000/RESULTS.json'\n",
+    "coverage": "unexecuted_or_incomplete_saved_physics"
+  },
+  "unexecuted_or_error_physics_audit_boundary": "Full original auditor was attempted; a missing/partial trace is not claimed as a completed grasp. Worker/counter evidence retains zero or partial steps.",
+  "checks": [
+    {
+      "check": "frozen_scene_RGBD_and_source_binding",
+      "passed": true
+    },
+    {
+      "check": "available_pipeline_stage_SHA_links",
+      "passed": true
+    },
+    {
+      "check": "single_dispatch_job_counter_worker_trace_binding",
+      "passed": true
+    },
+    {
+      "check": "unselected_row_not_physically_executed",
+      "passed": true
+    }
+  ],
+  "integrity_pass": true,
+  "full_pipeline_audit_pass": false,
+  "full_physics_audit_pass": false
+}

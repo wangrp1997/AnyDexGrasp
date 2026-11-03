@@ -1,0 +1,1129 @@
+{
+  "scope": "Read-only descriptive failure analysis of 6 real source objects x2 frozen yaw scenes; not original paper metrics, hardware identification, clean unseen benchmark, or claim that every failure is due to the original network.",
+  "status": "all_12_final",
+  "counts": {
+    "scenes": 12,
+    "valid_lifts": 8,
+    "not_lifted": 1,
+    "lift_observed_but_port_invalid": 0,
+    "no_candidate_after_original_collision": 3,
+    "actual_physical_trials": 9,
+    "physics_steps": 177120,
+    "physical_seconds": 92.25
+  },
+  "cases": [
+    {
+      "scene": "banana_yaw000",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 221,
+      "after_width_candidates": 221,
+      "collision_rejected": 210,
+      "collision_admitted": 11,
+      "selected": true,
+      "classification": "not_lifted",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 3,
+        "official_type_name": "pose3",
+        "width_mm": 82.6980322599411,
+        "depth_mm": 19.999999552965164,
+        "actuator2": [
+          68.0,
+          100.0
+        ],
+        "score": 1.0816184282302856
+      },
+      "world_approach_axis": [
+        0.07100789829551117,
+        -0.20268226690576308,
+        -0.9766666663000205
+      ],
+      "angle_from_vertical_down_degrees": 12.401497316566598,
+      "net_insertion_mm": 16.599999552965166,
+      "world_target_base_link_m": [
+        -0.041097260363426646,
+        0.09120231332916903,
+        0.22422646452371475
+      ],
+      "final_COM_lift_mm": -0.21021593542766212,
+      "max_COM_lift_mm": 5.143228173653692,
+      "lift_observed": false,
+      "port_stability_pass": false,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": false,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.006598708112531604,
+      "peak_joint_velocity_rad_s": 1.743813467292402,
+      "peak_gear_reaction_Nm": 1.3335348273043366,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.21739810090681186,
+      "final_half_second_positive_contact_rows": 0,
+      "wall_seconds": 47.45364884007722,
+      "banana_contact_diagnostics": {
+        "contact_columns": [
+          "step",
+          "bodyA",
+          "bodyB",
+          "linkA",
+          "linkB",
+          "signed_distance_m",
+          "normal_force_N",
+          "lateral_force1_N",
+          "lateral_force2_N"
+        ],
+        "phase_stats": [
+          {
+            "phase": "hold_open",
+            "start_time_s": 0.0005208333333333333,
+            "end_time_s": 0.5,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 960,
+            "max_object_COM_z_m": 0.018513358551012268,
+            "end_object_COM_z_m": 0.018308941885188397,
+            "end_position_master_q_rad": 0.37885263719788365,
+            "end_position_master_target_rad": 0.37885263157894733
+          },
+          {
+            "phase": "approach",
+            "start_time_s": 0.5005208333333333,
+            "end_time_s": 3.5,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 5760,
+            "max_object_COM_z_m": 0.018313602783907097,
+            "end_object_COM_z_m": 0.018305980822505126,
+            "end_position_master_q_rad": 0.3788526416592926,
+            "end_position_master_target_rad": 0.37885263157894733
+          },
+          {
+            "phase": "close",
+            "start_time_s": 3.5005208333333333,
+            "end_time_s": 5.5,
+            "positive_contact_rows": 3619,
+            "steps_with_positive_contact": 3619,
+            "phase_steps": 3840,
+            "max_object_COM_z_m": 0.019716476436807646,
+            "end_object_COM_z_m": 0.019716476436807646,
+            "end_position_master_q_rad": 0.39507169099552664,
+            "end_position_master_target_rad": 1.3329998059119226
+          },
+          {
+            "phase": "hold_closed",
+            "start_time_s": 5.500520833333333,
+            "end_time_s": 6.25,
+            "positive_contact_rows": 1437,
+            "steps_with_positive_contact": 1437,
+            "phase_steps": 1440,
+            "max_object_COM_z_m": 0.02021381866344088,
+            "end_object_COM_z_m": 0.020212155481748838,
+            "end_position_master_q_rad": 0.3940223205713744,
+            "end_position_master_target_rad": 1.333
+          },
+          {
+            "phase": "lift",
+            "start_time_s": 6.250520833333333,
+            "end_time_s": 9.25,
+            "positive_contact_rows": 2890,
+            "steps_with_positive_contact": 1834,
+            "phase_steps": 5760,
+            "max_object_COM_z_m": 0.02365924785747846,
+            "end_object_COM_z_m": 0.018306128272088627,
+            "end_position_master_q_rad": 1.154391385665873,
+            "end_position_master_target_rad": 1.333
+          },
+          {
+            "phase": "hold_lift",
+            "start_time_s": 9.250520833333333,
+            "end_time_s": 10.25,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 1920,
+            "max_object_COM_z_m": 0.01830655460104874,
+            "end_object_COM_z_m": 0.018305803748397107,
+            "end_position_master_q_rad": 1.1543913740928842,
+            "end_position_master_target_rad": 1.333
+          }
+        ],
+        "positive_contacts_by_hand_link": [
+          {
+            "link": "finger1_tip_Link",
+            "positive_rows": 413,
+            "first_time_s": 7.026041666666667,
+            "last_time_s": 7.304166666666666,
+            "peak_normal_force_N": 12.331658674428814
+          },
+          {
+            "link": "finger2_tip_Link",
+            "positive_rows": 6505,
+            "first_time_s": 3.58125,
+            "last_time_s": 7.177604166666667,
+            "peak_normal_force_N": 17.788491858556675
+          },
+          {
+            "link": "finger3_tip_Link",
+            "positive_rows": 1028,
+            "first_time_s": 6.595833333333333,
+            "last_time_s": 7.296875,
+            "peak_normal_force_N": 14.697579758968068
+          }
+        ],
+        "last_positive_contact_time_s": 7.304166666666666,
+        "peak_speed": {
+          "step": 13677,
+          "time_s": 7.1234375,
+          "phase": "lift",
+          "joint": "finger3_tip_joint",
+          "value_rad_s": 1.743813467292402,
+          "gear_residual_at_same_step_rad": 0.0008706488505897392,
+          "all_contact_rows_at_same_step": 26,
+          "positive_hand_contacts_at_same_step": [
+            [
+              13677.0,
+              1.0,
+              2.0,
+              -1.0,
+              10.0,
+              -2.9590865377878602e-05,
+              2.296405230378954,
+              0.004376339063519579,
+              1.1481942750181067
+            ],
+            [
+              13677.0,
+              1.0,
+              2.0,
+              -1.0,
+              10.0,
+              -4.634293572932662e-06,
+              4.675613084099061,
+              -0.18454227231459713,
+              2.3305114412460086
+            ],
+            [
+              13677.0,
+              1.0,
+              2.0,
+              -1.0,
+              6.0,
+              -1.1713146808195583e-05,
+              4.777670242426544,
+              0.22595180674370505,
+              2.378125105491989
+            ]
+          ]
+        },
+        "object_XY_displacement_mm": [
+          -12.172189948433905,
+          0.6895497701579489
+        ],
+        "frames_viewed_read_only": [
+          "frames/frame_00110.png"
+        ],
+        "positive_hand_table_contact_rows": 0,
+        "first_positive_table_contact_time_s": null,
+        "last_positive_table_contact_time_s": null
+      }
+    },
+    {
+      "scene": "banana_yaw090",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 400,
+      "after_width_candidates": 400,
+      "collision_rejected": 347,
+      "collision_admitted": 53,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 19.999999552965164,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.5162549018859863
+      },
+      "world_approach_axis": [
+        0.10401867976710356,
+        -0.09528963177640565,
+        -0.990000000169407
+      ],
+      "angle_from_vertical_down_degrees": 8.109614387187984,
+      "net_insertion_mm": 15.249999552965164,
+      "world_target_base_link_m": [
+        -0.06304524543826442,
+        0.09702566332447178,
+        0.2102249169373954
+      ],
+      "final_COM_lift_mm": 85.83153851530355,
+      "max_COM_lift_mm": 85.83153851530355,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.001708152767254334,
+      "peak_joint_velocity_rad_s": 1.1331955121930128,
+      "peak_gear_reaction_Nm": 1.0568641471771012,
+      "hand_table_contact_rows": 5519,
+      "minimum_hand_object_contact_distance_mm": -0.044808298849593683,
+      "final_half_second_positive_contact_rows": 2880,
+      "wall_seconds": 41.576090255053714,
+      "banana_contact_diagnostics": {
+        "contact_columns": [
+          "step",
+          "bodyA",
+          "bodyB",
+          "linkA",
+          "linkB",
+          "signed_distance_m",
+          "normal_force_N",
+          "lateral_force1_N",
+          "lateral_force2_N"
+        ],
+        "phase_stats": [
+          {
+            "phase": "hold_open",
+            "start_time_s": 0.0005208333333333333,
+            "end_time_s": 0.5,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 960,
+            "max_object_COM_z_m": 0.018513358551012268,
+            "end_object_COM_z_m": 0.018308755151011734,
+            "end_position_master_q_rad": 4.746415821088251e-10,
+            "end_position_master_target_rad": 0.0
+          },
+          {
+            "phase": "approach",
+            "start_time_s": 0.5005208333333333,
+            "end_time_s": 3.5,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 5760,
+            "max_object_COM_z_m": 0.018313844112392817,
+            "end_object_COM_z_m": 0.018306069838771942,
+            "end_position_master_q_rad": 1.25033572473607e-09,
+            "end_position_master_target_rad": 0.0
+          },
+          {
+            "phase": "close",
+            "start_time_s": 3.5005208333333333,
+            "end_time_s": 5.5,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 3840,
+            "max_object_COM_z_m": 0.018306360134678415,
+            "end_object_COM_z_m": 0.018305517494306076,
+            "end_position_master_q_rad": 0.1812419397474018,
+            "end_position_master_target_rad": 1.332999728847539
+          },
+          {
+            "phase": "hold_closed",
+            "start_time_s": 5.500520833333333,
+            "end_time_s": 6.25,
+            "positive_contact_rows": 0,
+            "steps_with_positive_contact": 0,
+            "phase_steps": 1440,
+            "max_object_COM_z_m": 0.018305517579717205,
+            "end_object_COM_z_m": 0.018305517494306076,
+            "end_position_master_q_rad": 0.1812419397474018,
+            "end_position_master_target_rad": 1.333
+          },
+          {
+            "phase": "lift",
+            "start_time_s": 6.250520833333333,
+            "end_time_s": 9.25,
+            "positive_contact_rows": 13292,
+            "steps_with_positive_contact": 4511,
+            "phase_steps": 5760,
+            "max_object_COM_z_m": 0.10432504803737092,
+            "end_object_COM_z_m": 0.10432504803737092,
+            "end_position_master_q_rad": 0.6691558854603726,
+            "end_position_master_target_rad": 1.333
+          },
+          {
+            "phase": "hold_lift",
+            "start_time_s": 9.250520833333333,
+            "end_time_s": 10.25,
+            "positive_contact_rows": 5760,
+            "steps_with_positive_contact": 1920,
+            "phase_steps": 1920,
+            "max_object_COM_z_m": 0.10434755819912832,
+            "end_object_COM_z_m": 0.10434755819912832,
+            "end_position_master_q_rad": 0.6691868773487668,
+            "end_position_master_target_rad": 1.333
+          }
+        ],
+        "positive_contacts_by_hand_link": [
+          {
+            "link": "finger1_tip_Link",
+            "positive_rows": 6313,
+            "first_time_s": 6.8875,
+            "last_time_s": 10.25,
+            "peak_normal_force_N": 18.449261508748528
+          },
+          {
+            "link": "finger2_tip_Link",
+            "positive_rows": 6317,
+            "first_time_s": 6.960416666666666,
+            "last_time_s": 10.25,
+            "peak_normal_force_N": 12.872174496383723
+          },
+          {
+            "link": "finger3_tip_Link",
+            "positive_rows": 6422,
+            "first_time_s": 6.893229166666667,
+            "last_time_s": 10.25,
+            "peak_normal_force_N": 8.009724197619203
+          }
+        ],
+        "last_positive_contact_time_s": 10.25,
+        "peak_speed": {
+          "step": 12768,
+          "time_s": 6.6499999999999995,
+          "phase": "lift",
+          "joint": "finger3_tip_joint",
+          "value_rad_s": 1.1331955121930128,
+          "gear_residual_at_same_step_rad": 0.0014344764009768252,
+          "all_contact_rows_at_same_step": 1,
+          "positive_hand_contacts_at_same_step": [
+            [
+              12768.0,
+              2.0,
+              0.0,
+              10.0,
+              -1.0,
+              -2.981015738879808e-05,
+              13.484476438981588,
+              -5.493116641070822,
+              -3.909404785380148
+            ]
+          ]
+        },
+        "object_XY_displacement_mm": [
+          0.22182386191848316,
+          0.32928060340857435
+        ],
+        "frames_viewed_read_only": [
+          "frames/frame_00110.png"
+        ],
+        "positive_hand_table_contact_rows": 5195,
+        "first_positive_table_contact_time_s": 3.966666666666667,
+        "last_positive_table_contact_time_s": 6.671875
+      }
+    },
+    {
+      "scene": "bottle_yaw000",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 346,
+      "after_width_candidates": 346,
+      "collision_rejected": 76,
+      "collision_admitted": 270,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 39.99999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.3440545797348022
+      },
+      "world_approach_axis": [
+        0.01995004537956889,
+        0.31161195206661796,
+        -0.9499999931676762
+      ],
+      "angle_from_vertical_down_degrees": 18.194873592452694,
+      "net_insertion_mm": 35.24999910593033,
+      "world_target_base_link_m": [
+        -0.012141491334894162,
+        -0.0008304478744064741,
+        0.33001224071573526
+      ],
+      "final_COM_lift_mm": 91.98683772220814,
+      "max_COM_lift_mm": 92.67794583567662,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.004864466921757349,
+      "peak_joint_velocity_rad_s": 1.3071266113906814,
+      "peak_gear_reaction_Nm": 0.8437443609006198,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.19881276005159973,
+      "final_half_second_positive_contact_rows": 3891,
+      "wall_seconds": 39.01807578001171
+    },
+    {
+      "scene": "bottle_yaw090",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 400,
+      "after_width_candidates": 400,
+      "collision_rejected": 178,
+      "collision_admitted": 222,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 39.99999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.687362790107727
+      },
+      "world_approach_axis": [
+        -0.06513640368966077,
+        0.30538049736072936,
+        -0.9500000003926795
+      ],
+      "angle_from_vertical_down_degrees": 18.1948722667127,
+      "net_insertion_mm": 35.24999910593033,
+      "world_target_base_link_m": [
+        0.0005251094295666624,
+        0.017318750689264903,
+        0.3235830785406312
+      ],
+      "final_COM_lift_mm": 98.91221829965818,
+      "max_COM_lift_mm": 99.28715484381529,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.0070485375322539845,
+      "peak_joint_velocity_rad_s": 1.3851227414536587,
+      "peak_gear_reaction_Nm": 1.201774172886919,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.12185188086943835,
+      "final_half_second_positive_contact_rows": 2019,
+      "wall_seconds": 38.44355988805182
+    },
+    {
+      "scene": "bowl_yaw000",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 83,
+      "after_width_candidates": 83,
+      "collision_rejected": 83,
+      "collision_admitted": 0,
+      "selected": false,
+      "classification": "no_candidate_after_original_collision",
+      "physical_trial_executed": false,
+      "physics_steps": 0,
+      "collision_rejection_reason_counts": {
+        "observed_scene_point_in_original_hand_approach_voxels": 83
+      },
+      "pre_collision_hand_type_counts": {
+        "4": 23,
+        "1": 12,
+        "3": 31,
+        "2": 17
+      },
+      "overlap_points_range": [
+        9,
+        252
+      ],
+      "interpretation": "Original network/hand mapping produced candidates; all failed the original visibility-point/hand-approach voxel zero-overlap gate. No selected grasp, no physical attempt; neither an asset error nor a physical lifting result."
+    },
+    {
+      "scene": "bowl_yaw090",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 88,
+      "after_width_candidates": 88,
+      "collision_rejected": 88,
+      "collision_admitted": 0,
+      "selected": false,
+      "classification": "no_candidate_after_original_collision",
+      "physical_trial_executed": false,
+      "physics_steps": 0,
+      "collision_rejection_reason_counts": {
+        "observed_scene_point_in_original_hand_approach_voxels": 88
+      },
+      "pre_collision_hand_type_counts": {
+        "1": 13,
+        "4": 19,
+        "2": 19,
+        "3": 37
+      },
+      "overlap_points_range": [
+        38,
+        260
+      ],
+      "interpretation": "Original network/hand mapping produced candidates; all failed the original visibility-point/hand-approach voxel zero-overlap gate. No selected grasp, no physical attempt; neither an asset error nor a physical lifting result."
+    },
+    {
+      "scene": "foam_brick_yaw000",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 400,
+      "after_width_candidates": 400,
+      "collision_rejected": 300,
+      "collision_admitted": 100,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 39.99999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.5765480995178223
+      },
+      "world_approach_axis": [
+        0.21653897151286933,
+        0.1584290795574595,
+        -0.9633333278604684
+      ],
+      "angle_from_vertical_down_degrees": 15.56357635580877,
+      "net_insertion_mm": 35.24999910593033,
+      "world_target_base_link_m": [
+        -0.034549109470531685,
+        0.04912542291701088,
+        0.21220601818740897
+      ],
+      "final_COM_lift_mm": 89.1153984599735,
+      "max_COM_lift_mm": 89.18043030938061,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.00459122743224083,
+      "peak_joint_velocity_rad_s": 1.2322346578823329,
+      "peak_gear_reaction_Nm": 0.9082583507604498,
+      "hand_table_contact_rows": 5092,
+      "minimum_hand_object_contact_distance_mm": -0.01935678041895418,
+      "final_half_second_positive_contact_rows": 2880,
+      "wall_seconds": 36.81531516101677
+    },
+    {
+      "scene": "foam_brick_yaw090",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 400,
+      "after_width_candidates": 400,
+      "collision_rejected": 308,
+      "collision_admitted": 92,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 19.999999552965164,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.745251178741455
+      },
+      "world_approach_axis": [
+        0.05028478012736886,
+        -0.1318007547194148,
+        -0.9900000009812803
+      ],
+      "angle_from_vertical_down_degrees": 8.109614057438343,
+      "net_insertion_mm": 15.249999552965164,
+      "world_target_base_link_m": [
+        -0.01960932347489474,
+        0.08056702809055116,
+        0.23192589762544202
+      ],
+      "final_COM_lift_mm": 77.29407139511427,
+      "max_COM_lift_mm": 77.39599215878451,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.009353579324666239,
+      "peak_joint_velocity_rad_s": 1.0916799877594798,
+      "peak_gear_reaction_Nm": 1.053695071746431,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.05992317008295103,
+      "final_half_second_positive_contact_rows": 2569,
+      "wall_seconds": 41.41241642693058
+    },
+    {
+      "scene": "mug_yaw000",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 29,
+      "after_width_candidates": 29,
+      "collision_rejected": 28,
+      "collision_admitted": 1,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 3,
+        "official_type_name": "pose3",
+        "width_mm": 99.0,
+        "depth_mm": 29.999999329447746,
+        "actuator2": [
+          86.0,
+          100.0
+        ],
+        "score": 0.8958008289337158
+      },
+      "world_approach_axis": [
+        -0.16762404458627833,
+        -0.23809886425876245,
+        -0.9566666663552279
+      ],
+      "angle_from_vertical_down_degrees": 16.92893261647245,
+      "net_insertion_mm": 25.69999932944775,
+      "world_target_base_link_m": [
+        0.031206227900422868,
+        0.16537083448869416,
+        0.232626528412876
+      ],
+      "final_COM_lift_mm": 100.2605061664109,
+      "max_COM_lift_mm": 100.26097898865657,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.0025912789922081236,
+      "peak_joint_velocity_rad_s": 1.031608168977157,
+      "peak_gear_reaction_Nm": 0.789257949926576,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.05164182081260239,
+      "final_half_second_positive_contact_rows": 3938,
+      "wall_seconds": 38.98147958598565
+    },
+    {
+      "scene": "mug_yaw090",
+      "run": "run_nonapple_v2",
+      "pre_collision_candidates": 48,
+      "after_width_candidates": 48,
+      "collision_rejected": 48,
+      "collision_admitted": 0,
+      "selected": false,
+      "classification": "no_candidate_after_original_collision",
+      "physical_trial_executed": false,
+      "physics_steps": 0,
+      "collision_rejection_reason_counts": {
+        "observed_scene_point_in_original_hand_approach_voxels": 48
+      },
+      "pre_collision_hand_type_counts": {
+        "4": 15,
+        "3": 7,
+        "1": 21,
+        "2": 5
+      },
+      "overlap_points_range": [
+        1,
+        292
+      ],
+      "interpretation": "Original network/hand mapping produced candidates; all failed the original visibility-point/hand-approach voxel zero-overlap gate. No selected grasp, no physical attempt; neither an asset error nor a physical lifting result."
+    },
+    {
+      "scene": "apple_yaw000",
+      "run": "run_apple_v2",
+      "pre_collision_candidates": 400,
+      "after_width_candidates": 400,
+      "collision_rejected": 231,
+      "collision_admitted": 169,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 29.999999329447746,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.7273074388504028
+      },
+      "world_approach_axis": [
+        0.06328163444596914,
+        -0.4242456058951284,
+        -0.9033333275267342
+      ],
+      "angle_from_vertical_down_degrees": 25.400262522089086,
+      "net_insertion_mm": 25.249999329447746,
+      "world_target_base_link_m": [
+        -0.01738631643462067,
+        0.16301729523048394,
+        0.2218503028081695
+      ],
+      "final_COM_lift_mm": 96.08945710615174,
+      "max_COM_lift_mm": 96.43472707995662,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.0019086939238414091,
+      "peak_joint_velocity_rad_s": 1.0790056928919864,
+      "peak_gear_reaction_Nm": 0.823892126484866,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.025026846269020433,
+      "final_half_second_positive_contact_rows": 1959,
+      "wall_seconds": 32.3662058749469
+    },
+    {
+      "scene": "apple_yaw090",
+      "run": "run_apple_v2",
+      "pre_collision_candidates": 400,
+      "after_width_candidates": 400,
+      "collision_rejected": 246,
+      "collision_admitted": 154,
+      "selected": true,
+      "classification": "valid_lift",
+      "physical_trial_executed": true,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "selected_hand": {
+        "type": 4,
+        "official_type_name": "pose4",
+        "width_mm": 63.0,
+        "depth_mm": 39.99999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "score": 1.3565887212753296
+      },
+      "world_approach_axis": [
+        -0.25586157769027795,
+        0.307013121009847,
+        -0.9166666769276796
+      ],
+      "angle_from_vertical_down_degrees": 23.55646283804184,
+      "net_insertion_mm": 35.24999910593033,
+      "world_target_base_link_m": [
+        0.0372061289951657,
+        0.007273417621152196,
+        0.2171700242834959
+      ],
+      "final_COM_lift_mm": 93.12618084840874,
+      "max_COM_lift_mm": 93.12618084840874,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "numerical_gates": {
+        "gear_residual": true,
+        "joint_velocity": true,
+        "finite": true,
+        "motor_torque": true,
+        "gear_reaction": true,
+        "wrist_tracking": true
+      },
+      "max_gear_residual_rad": 0.003767838161776893,
+      "peak_joint_velocity_rad_s": 0.9524135607020647,
+      "peak_gear_reaction_Nm": 0.674485909125932,
+      "hand_table_contact_rows": 0,
+      "minimum_hand_object_contact_distance_mm": -0.024411720029024784,
+      "final_half_second_positive_contact_rows": 3840,
+      "wall_seconds": 31.804741836036555
+    }
+  ],
+  "interpretation": [
+    "banana_yaw000 is a physical non-lift AND a separate velocity-gate violation: maximum COM rise is only5.143mm, final-0.210mm, not a lifted trial rejected only by a numerical label. No hand-table contacts; the recorded dominant positive contact links/timing describe acquisition and release, but do not prove force closure or isolate controller versus grasp geometry causality.",
+    "banana_yaw000 close/hold has positive object contact only on finger2_tip; common flexion master stops near0.394rad versus1.333rad command. Finger3_tip joins only6.596s and finger1_tip7.026s during lift, all positive object contacts end7.304s. This is consistent with unilateral first contact blocking this declared rigid shared-actuator model before multi-finger acquisition; it does not isolate original-network, collision geometry, firmware or compliance causality.",
+    "banana_yaw090 uses a different original selected top1 (pose4,width63mm) than yaw000(pose3,width82.698mm); it is not an equivariant rotation-only replay. Both approaches are mainly downward; successful yaw090 does not by itself prove a pose-mode intervention would fix yaw000.",
+    "banana_yaw090 has no positive hand-object contact before lift; its finger-table contact precedes three fingertip object contacts at6.888/6.893/6.960s, which persist to10.25s. Its accepted lift is dynamic acquisition during scripted lift, not evidence that it had a stable prelift enclosure.",
+    "mug_yaw090,bowl_yaw000,bowl_yaw090 fail admission after48/83/88 hand candidates and the original zero-overlap hand-approach voxel gate. No physical action occurred, so hand contact/torque/lift diagnostics are not available for them. Final collision receipts override the earlier hand-stage informational collision_assets_missing status.",
+    "Negative native world AABB minimumZ for banana is not a mesh penetration measurement: compound broadphase boxes are conservative after principal-frame rotation; the earlier zero-step diagnosis established this. COM lift and actual hand contacts are reported separately.",
+    "Source triangle visuals are retained; five objects use128-part CoACD compounds, cup/bowl sparse probes preserve cavities. Apple uses one convex VHACD component; sampled source/compound disagreement reaches about9.25mm, so its two valid simulation lifts have a coarse collision-model limitation.",
+    "No repeated physical attempts, candidate reselection, force changes, timestep refinement, learning or new network inference were performed for this analysis."
+  ],
+  "apple_collision_model_limit": {
+    "method": "PyBullet offline V-HACD",
+    "compound_geometry": {
+      "part_count": 1,
+      "all_components_convex_watertight_positive_volume": true,
+      "AABB_m": [
+        [
+          -0.037464,
+          -0.041819,
+          -0.000992
+        ],
+        [
+          0.039182,
+          0.034827,
+          0.072061
+        ]
+      ],
+      "lower_bound_delta_from_source_m": [
+        -0.0005989999999999954,
+        -0.0005990000000000023,
+        -0.000599
+      ],
+      "upper_bound_delta_from_source_m": [
+        0.0005990000000000023,
+        0.0011759999999999965,
+        0.0005649999999999961
+      ],
+      "max_absolute_AABB_bound_error_m": 0.0011759999999999965,
+      "predeclared_AABB_bound_limit_m": 0.0015089600000000002,
+      "AABB_check_passed": true,
+      "full_Hausdorff_or_volume_union_accuracy_certified": false
+    },
+    "sampled_surface_disagreement": {
+      "source_vertex_samples": 512,
+      "compound_vertex_samples": 64,
+      "source_to_component_triangles_max_m": 0.009247820672303014,
+      "source_to_component_triangles_p95_m": 0.005455491728545051,
+      "component_to_source_triangles_max_m": 0.0020243169781339783,
+      "component_to_source_triangles_p95_m": 0.0019789637068455927,
+      "boundary": "Unsigned distances of deterministic sampled vertices, including internal component surfaces; not signed union error or certified Hausdorff distance"
+    }
+  },
+  "evidence": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw000/selection/RESULTS.json",
+      "sha256": "43e23083a5b0b37ac9d4c77214de21c79c7e8eb69bfacd90130636e688e94416"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw000/collision/RESULTS.json",
+      "sha256": "b9218252d67eb5feae82bbcfb2fd899bda208614d1f84eec2cf18dafa56ff165"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/RESULTS.json",
+      "sha256": "c211d4902a58591766db08f42ae32165f1cb96c463b664dbfdf54134f3299eaa"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/CONTROLLER.json",
+      "sha256": "5e3cfb3c2c18c0b9e3b4efe7a57c222aa966eeb707ca75345f08ee0e2608f4f1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw090/selection/RESULTS.json",
+      "sha256": "9dd463c13423455aec3465c1470159bf1c9e38a1d95265bf55fa6ea5a310526f"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw090/collision/RESULTS.json",
+      "sha256": "d0902ac98541018c2d3e74284069b9c13d753d654cbe73bcecaac22e365f1cdb"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/RESULTS.json",
+      "sha256": "04ee27589683a7bfafb98d594fa89335480f63cffaf0e35f903358a1514f382f"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/CONTROLLER.json",
+      "sha256": "3aa2a1d426e3ec0e45365c0772576f0c3e405cba5a5d0fb22a24a1ce5978644c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw000/selection/RESULTS.json",
+      "sha256": "1e539369d39d6a13737d5bec5fba31aad963e8a386f0d1c9a3ce67f5d276f365"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw000/collision/RESULTS.json",
+      "sha256": "cef7b57c72f9294f2cc638600a354f39190b8b8ae6d3e5770a54d23b32ad35bd"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw000/RESULTS.json",
+      "sha256": "e43d4b8e18d69ac0d1bf8a9fab78a799c2c938e3d173def2f989d6481f206c76"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw000/CONTROLLER.json",
+      "sha256": "c63dcec37f04ae847f13f70325e8b640440170897b1425a966ee328bd4184d54"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw090/selection/RESULTS.json",
+      "sha256": "610f5b1fe7c0db1ea58089fe43e6c04e3a62175a40afe8ce7ded9256aa027ed9"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw090/collision/RESULTS.json",
+      "sha256": "5fee978f02fd1533fd61244adc6ecb0b32126e7a20a150ebe67c40367aad4e4b"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw090/RESULTS.json",
+      "sha256": "5ada6f20cb60386d8909700fb66a4927125863b0d5b1073566d298bd6b807195"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw090/CONTROLLER.json",
+      "sha256": "e9f84572ce61fb78a1e94f2494df8e9093f4aada6b886fe876915d501b2dadac"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/selection/RESULTS.json",
+      "sha256": "20aaec73b78d58584cb6df3efda243c1fe874d7e8a65e35274cd947eb48978ca"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/collision/RESULTS.json",
+      "sha256": "01e16b211f3c2ba22ffa959da649dabab0a53199c5c8c3bd1efd286d538d29c0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw090/selection/RESULTS.json",
+      "sha256": "b005edac127901fe843f13c1e99af0ada2360c832657f4e09b0e7c9a4c73b68b"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw090/collision/RESULTS.json",
+      "sha256": "8dc469a5ba9a31c1fff181096b35ba0bd8b24148c4b2eff5fd715da00281b349"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw000/selection/RESULTS.json",
+      "sha256": "e73ec5f8dc90774b22e8c8ebaf7cc5a6e655d540e43a5fa06cbdf26186d5380c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw000/collision/RESULTS.json",
+      "sha256": "cd5a1c049d2a17433a6b88cbfe7525bce0967d04d0dbbfa3abacceff4de18602"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw000/RESULTS.json",
+      "sha256": "3e02743a0b2e4b73090c0b34a2d18afbfb5a231a260e781e72bc400b1dc0981f"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw000/CONTROLLER.json",
+      "sha256": "0a1047c353c5d8ac0619cd825933557cd78016b16c6b2a19b7f75cf9f23f5649"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw090/selection/RESULTS.json",
+      "sha256": "35f1f5ad5b1dc80ee975c82881e054d60e4b95bbd518ff6e905095e4715f96a7"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw090/collision/RESULTS.json",
+      "sha256": "b6fa3f1e2079f907418e91486d6811c6842e4fe0db28d9210a1076d8459d36d2"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw090/RESULTS.json",
+      "sha256": "eb1ec01413d78c834a8b279ee6b947ec9cefeffb068a22035fab1eb1e73e3a78"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw090/CONTROLLER.json",
+      "sha256": "6ae8ae432a1262692faddb7e65d1a26316fc43643e1b7b814b1621303882eac3"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw000/selection/RESULTS.json",
+      "sha256": "7f79f53146d37e9f5444a9e6ab2bcf228eba17bfa30377892b650cde0e364e2a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw000/collision/RESULTS.json",
+      "sha256": "3ba0e965fb1c382f32335913dac976addfe197c30393c3ba12db18f5c0125ca8"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/mug_yaw000/RESULTS.json",
+      "sha256": "aa9e8dec82aa56c7972d4aa6dea0963b15ad9bbeb5a10b57017174d87a96bed1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/mug_yaw000/CONTROLLER.json",
+      "sha256": "5da831a3553e0be55b905b4865171edeb8f4e7a16d6a135e253619531c342c12"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw090/selection/RESULTS.json",
+      "sha256": "db99185af56672c09e3bfd8202745a98c40132d0b2f80b1ef9b7e3749538f531"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw090/collision/RESULTS.json",
+      "sha256": "3825ae2d6de5ad0549d31c967cfe47aa3188476251cd866f44f62bc2ef05ee39"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/RESULTS.json",
+      "sha256": "50bb33113a317707c46e21bf99d4978a4831c2221e333b59050cf846442079bb"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/collision/RESULTS.json",
+      "sha256": "e6e1eb57babf9a5f852351f10337f7cb746707cc6d7a78a7c8b2f99f034ae7de"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000/RESULTS.json",
+      "sha256": "ecfe9e521f464f6fad3f205e0fa7466a0c1a7a491c95c790a1c22c565d9ee7c1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000/CONTROLLER.json",
+      "sha256": "f693c761dfe86b6eda0d1080054c008d727bfc6cd9bff7de31ebbdcb314d98d0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw090/selection/RESULTS.json",
+      "sha256": "d4f2e9ec8cb3d747bb6a6c60501e86b9932a8f498641f2efcfebdf560e133a59"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw090/collision/RESULTS.json",
+      "sha256": "c4e1418ce470befe6c7e4ef7cf91c31781291584e9e6a678e3c6425a588d009e"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw090/RESULTS.json",
+      "sha256": "e2b6001daa34bfd2bf2e117584508ac61f09867e19dce13bfa6e60b910ca280b"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw090/CONTROLLER.json",
+      "sha256": "303f6a94d131cd43679602f45db4e7ad1582de20fe072baac948adb070c45681"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/apple_vhacd/RESULTS.json",
+      "sha256": "0aef86d40ffead4a893fbaec1caad7a8a587e6c4453201c35a63325e986c49ab"
+    }
+  ],
+  "analysis_cost": {
+    "wall_seconds": 0.3081857491051778,
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "new_renders": 0
+  }
+}

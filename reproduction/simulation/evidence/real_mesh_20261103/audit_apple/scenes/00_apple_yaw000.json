@@ -1,0 +1,402 @@
+{
+  "scene_id": "apple_yaw000",
+  "declared_index": 0,
+  "final_status": "object_lifted",
+  "final_top1_selected": true,
+  "physics_invocations": 1,
+  "actual_physical_attempts": 1,
+  "completed_physics_steps": 19680,
+  "possible_in_flight_steps": 0,
+  "not_entered_physics_reason": null,
+  "retained_error_reason": null,
+  "input_scheduler_row": {
+    "scene_id": "apple_yaw000",
+    "batch_frame_name": "apple_yaw000",
+    "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/scene_manifest.json",
+    "scene_manifest_sha256": "57839a544ab24ee04243bf89e7a22081085c28463e3cddc2b846de6f7f7aecc7",
+    "scene_signature_sha256": "6f8fac00154c2e96e6cf0dbf7aaf6251273931fcafd50cbd1693887b3d412480",
+    "scene_module": "mesh_scene",
+    "input_files": {
+      "color.png": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/color.png",
+        "bytes": 19322,
+        "sha256": "1d4f7566c32390a0f1174142d5efa46a727bc00a28c54ddb24e105e24a5462b5"
+      },
+      "depth.png": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/depth.png",
+        "bytes": 6255,
+        "sha256": "748e2b346b48c826f7a89b77835ccd2f6bf14c714bbfe438d702986a332d4ed0"
+      },
+      "meta.mat": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/meta.mat",
+        "bytes": 352,
+        "sha256": "2b232e94a5b14ab66d7f1681de7b01eabe2f7302712ee4d4c487bbcd834457aa"
+      }
+    },
+    "status": "object_lifted",
+    "terminal": true,
+    "physics_invocations": 1,
+    "actual_physical_attempts": 1,
+    "completed_physics_steps": 19680,
+    "possible_in_flight_steps": 0,
+    "final_top1_selected": true,
+    "not_entered_physics_reason": null,
+    "inference_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000",
+    "inference_RESULTS_sha256": "63ad98cfe106c6ca83942f3e43ef8cb6b1cad15917753b910bd9aeaa54414784",
+    "inference_frame_status": "eleven_branch_original_offline_pipeline_and_top1_complete",
+    "inference_frame_wall_seconds": 34.05033519200515,
+    "inference_stage_timing_seconds": {
+      "representation_model_load": 0.9498611149610952,
+      "eleven_original_get_grasp_branches": 12.622221058001742,
+      "original_hand_stage": 2.279057733947411,
+      "collision_asset_preparation": 1.1972028310410678,
+      "original_collision": 15.520944927935489,
+      "total": 33.94825594697613,
+      "original_final_selection": 0.09742813499178737,
+      "batch_frame_with_selection_wall": 34.05033519200515
+    },
+    "hand_stages": {
+      "raw_parser_candidates": 271,
+      "after_original_camera_and_width_gates": 271,
+      "after_original_score_top1000": 271,
+      "all_original_type_depth_combinations": 4336,
+      "original_top3500_returned": 3500,
+      "after_original_learned_score_gate": 1412,
+      "mapped_original_hand_poses_before_top400": 1412,
+      "original_top400_before_collision": 400
+    },
+    "collision_stages": {
+      "pre_collision_candidates": 400,
+      "after_original_width_gate": 400,
+      "collision_rejected": 231,
+      "collision_admitted": 169
+    },
+    "selection_results": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/RESULTS.json",
+    "selection_sha256": "50bb33113a317707c46e21bf99d4978a4831c2221e333b59050cf846442079bb",
+    "selected_candidate_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/selected_original_DH3_pose.npz",
+    "selected_candidate_sha256": "f59d5b0bf94185df6e598d3c712cc51f0d555c1c3c31996ee01ac828d5f7ac49",
+    "selected_hand": {
+      "score": 1.7273074388504028,
+      "type": 4,
+      "width_m": 0.063,
+      "depth_m": 0.029999999329447746,
+      "actuator2": [
+        95.0,
+        100.0
+      ],
+      "rotation_matrix": [
+        [
+          -0.38493064525902504,
+          0.9208423999845575,
+          0.062270869154950136
+        ],
+        [
+          -0.8259121992373399,
+          -0.37379044971928466,
+          0.4220778404831083
+        ],
+        [
+          0.41194340795419543,
+          0.11104045011769215,
+          0.904418370206163
+        ]
+      ],
+      "translation_m": [
+        -0.018984177661947748,
+        -0.17372949649485708,
+        0.25534053127751266
+      ]
+    },
+    "selection_ready_unix": 1793723589.1041043,
+    "selection_ready_after_pipeline_start_s": 36.072916256962344,
+    "physics_pid": 3479569,
+    "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000",
+    "physics_log": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/logs/physics_apple_yaw000.log",
+    "step_counter": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/progress/apple_yaw000.steps.bin",
+    "worker_receipt": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/progress/apple_yaw000.worker.json",
+    "job_path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/jobs/apple_yaw000.json",
+    "physics_started_unix": 1793723589.117986,
+    "physics_dispatch_after_pipeline_start_s": 36.086173284915276,
+    "physics_command": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_dh3_scene_cohort.py",
+      "--internal-physics-worker",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/jobs/apple_yaw000.json"
+    ],
+    "physics_returncode": 0,
+    "physics_process_wall_seconds": 33.10145130602177,
+    "physics_finished_unix": 1793723622.219198,
+    "worker_result": {
+      "status": "completed",
+      "job_path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/jobs/apple_yaw000.json",
+      "job_sha256": "54227b40dcfeda4fe2ad00a7a9e2a0d7e6b8af78c67c18c8f9d0c2faacc89da8",
+      "scene_manifest_sha256": "57839a544ab24ee04243bf89e7a22081085c28463e3cddc2b846de6f7f7aecc7",
+      "selection_sha256": "50bb33113a317707c46e21bf99d4978a4831c2221e333b59050cf846442079bb",
+      "initial_scene_frozen_per_client": true,
+      "dispatch_attempt_number": 1,
+      "physics_invocations": 1,
+      "control_source_modified": false,
+      "counting_wrapper_only": true,
+      "worker_start_unix": 1793723589.1637228,
+      "completed_physics_steps": 19680,
+      "possible_in_flight_steps": 0,
+      "result_status": "object_lifted",
+      "actual_step_count_exact": true,
+      "physics_RESULT_sha256": "ecfe9e521f464f6fad3f205e0fa7466a0c1a7a491c95c790a1c22c565d9ee7c1",
+      "attempted_python_step_calls": 19680,
+      "completed_python_step_calls": 19680,
+      "possible_in_flight_step_calls": 0,
+      "actual_physical_attempts": 1,
+      "worker_wall_seconds": 32.86198562500067,
+      "worker_end_unix": 1793723622.0257096,
+      "video_encoding_executed": false,
+      "accounting_boundary": "Completed calls are exact for normal completion. On abrupt process interruption the mmap counter is a completed-step lower bound plus at most one in-flight call; no unknown step is silently treated as zero."
+    },
+    "raw_physics_result_status": "object_lifted",
+    "physics_RESULTS_sha256": "ecfe9e521f464f6fad3f205e0fa7466a0c1a7a491c95c790a1c22c565d9ee7c1",
+    "lift_observed": true,
+    "port_stability_pass": true,
+    "object_final_lift_m": 0.09608945710615174,
+    "object_final_lowest_world_z_m": 0.06675430706831961
+  },
+  "additional_network_forwards": 0,
+  "additional_collision_queries": 0,
+  "additional_renders": 0,
+  "additional_physical_steps": 0,
+  "scene_binding": {
+    "scene_manifest": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/scene_manifest.json",
+      "bytes": 19524,
+      "sha256": "57839a544ab24ee04243bf89e7a22081085c28463e3cddc2b846de6f7f7aecc7"
+    },
+    "scene_signature_sha256": "6f8fac00154c2e96e6cf0dbf7aaf6251273931fcafd50cbd1693887b3d412480",
+    "bound_scene_files": 6,
+    "bound_source_assets": 9,
+    "observed_scene_module": "mesh_scene"
+  },
+  "partial_pipeline_binding": {
+    "frame_status": "eleven_branch_original_offline_pipeline_and_top1_complete",
+    "available_stage_receipts": {
+      "frame": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/frame/RESULTS.json",
+        "bytes": 14986,
+        "sha256": "bb3e9b60cf4cc7319e062da2f870e5648d31836dfb4593e1ce3377ca63deeb1f"
+      },
+      "hand": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/hand/RESULTS.json",
+        "bytes": 7564,
+        "sha256": "ae5a81977a0395e3c63279e7ec42725dffb148af5a2e47acaeca64fb9cf36b6a"
+      },
+      "collision": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/collision/RESULTS.json",
+        "bytes": 5528,
+        "sha256": "e6e1eb57babf9a5f852351f10337f7cb746707cc6d7a78a7c8b2f99f034ae7de"
+      },
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/RESULTS.json",
+        "bytes": 3004,
+        "sha256": "50bb33113a317707c46e21bf99d4978a4831c2221e333b59050cf846442079bb"
+      }
+    },
+    "final_frame_receipt_present": true,
+    "final_frame_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/RESULTS.json",
+      "bytes": 28516,
+      "sha256": "63ad98cfe106c6ca83942f3e43ef8cb6b1cad15917753b910bd9aeaa54414784"
+    },
+    "pipeline_status": "eleven_branch_original_offline_pipeline_and_top1_complete",
+    "original_stop_reason": null,
+    "timing_seconds": {
+      "representation_model_load": 0.9498611149610952,
+      "eleven_original_get_grasp_branches": 12.622221058001742,
+      "original_hand_stage": 2.279057733947411,
+      "collision_asset_preparation": 1.1972028310410678,
+      "original_collision": 15.520944927935489,
+      "total": 33.94825594697613,
+      "original_final_selection": 0.09742813499178737,
+      "batch_frame_with_selection_wall": 34.05033519200515
+    }
+  },
+  "dispatch_and_steps": {
+    "attempted_python_step_calls": 19680,
+    "completed_physics_steps": 19680,
+    "possible_in_flight_steps": 0,
+    "actual_physical_attempts": 1,
+    "physics_invocations": 1,
+    "job": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/jobs/apple_yaw000.json",
+      "bytes": 2328,
+      "sha256": "54227b40dcfeda4fe2ad00a7a9e2a0d7e6b8af78c67c18c8f9d0c2faacc89da8"
+    },
+    "worker_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/progress/apple_yaw000.worker.json",
+      "bytes": 1386,
+      "sha256": "1db3c9b7ed245ce726f63fadbe95947b16311a74728ec7a87b4266c13864403c"
+    },
+    "worker_status": "completed",
+    "worker_wall_seconds": 32.86198562500067,
+    "physics_RESULTS": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000/RESULTS.json",
+      "bytes": 3538,
+      "sha256": "ecfe9e521f464f6fad3f205e0fa7466a0c1a7a491c95c790a1c22c565d9ee7c1"
+    }
+  },
+  "original_frame_auditor": {
+    "executed": true,
+    "passed": true,
+    "result": {
+      "status": "saved_synthetic_frame_and_original_selection_binding_verified",
+      "scene_manifest": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/scene_manifest.json",
+        "sha256": "57839a544ab24ee04243bf89e7a22081085c28463e3cddc2b846de6f7f7aecc7"
+      },
+      "pipeline_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/RESULTS.json",
+        "sha256": "63ad98cfe106c6ca83942f3e43ef8cb6b1cad15917753b910bd9aeaa54414784"
+      },
+      "selection_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/RESULTS.json",
+        "sha256": "50bb33113a317707c46e21bf99d4978a4831c2221e333b59050cf846442079bb"
+      },
+      "scene_signature_sha256": "6f8fac00154c2e96e6cf0dbf7aaf6251273931fcafd50cbd1693887b3d412480",
+      "checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22810,
+        "branch_candidates": [
+          25,
+          23,
+          25,
+          29,
+          29,
+          21,
+          25,
+          24,
+          15,
+          30,
+          25
+        ],
+        "merged_candidates": 271,
+        "collision_input": 400,
+        "collision_admitted": 169,
+        "top1_pre_collision_index": 0,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.7273074388504028
+      },
+      "timing_seconds": {
+        "representation_model_load": 0.9498611149610952,
+        "eleven_original_get_grasp_branches": 12.622221058001742,
+        "original_hand_stage": 2.279057733947411,
+        "collision_asset_preparation": 1.1972028310410678,
+        "original_collision": 15.520944927935489,
+        "total": 33.94825594697613,
+        "original_final_selection": 0.09742813499178737,
+        "batch_frame_with_selection_wall": 34.05033519200515
+      },
+      "timing_boundary": "This row uses its saved timing_seconds, not the old cube literals. eleven_original_get_grasp_branches measures this frame's original eleven branches; pipeline internal time includes this row's load/reuse, learned scoring, asset preparation and collision as itemized. Shared-process/cohort wall and overlapped CPU physics are reported separately at cohort level; these costs must not be added as a serial total.",
+      "audit_new_network_forwards": 0,
+      "audit_new_collision_queries": 0,
+      "audit_new_renders": 0,
+      "audit_physical_steps": 0,
+      "boundary": "Saved-artifact integrity, not an independent grasp-success or force-closure proof",
+      "timing_boundary_receipt_override": true
+    },
+    "coverage": "complete_saved_original_pipeline"
+  },
+  "original_physics_auditor": {
+    "executed": true,
+    "passed": true,
+    "result": {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000",
+      "status": "saved_scene_execution_verified",
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "validated_grasp": true,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "final_lift_m": 0.09608945710615174,
+      "final_lowest_world_z_m": 0.06675430706831961,
+      "max_gear_residual_rad": 0.0019086939238414091,
+      "peak_joint_velocity_rad_s": 1.0790056928919864,
+      "wrist_reaction_bounds_pass": true,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "final_every_step_contact": true,
+      "hand_object": {
+        "rows": 32479,
+        "positive_normal_rows": 23510,
+        "min_signed_distance_m": -2.5026846269020434e-05,
+        "peak_normal_force_N": 11.5064221549695
+      },
+      "hand_table": {
+        "rows": 0,
+        "positive_normal_rows": 0,
+        "min_signed_distance_m": null,
+        "peak_normal_force_N": null
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "ecfe9e521f464f6fad3f205e0fa7466a0c1a7a491c95c790a1c22c565d9ee7c1",
+        "CONTROLLER.json": "f693c761dfe86b6eda0d1080054c008d727bfc6cd9bff7de31ebbdcb314d98d0",
+        "SOURCE_SNAPSHOT.json": "9d17021fb3930efbd7bfb21b80514a019a65fe4f8a7fdd032530fccfae31529f",
+        "trace.npz": "d94369985dd370da4e3e38c9ea6347a5c3da5c9b109f7da30fcbe55b943c425b",
+        "contacts.npy": "4bcbe75d40e3232f691ebddd140352999ef742a4e79ec6cfaf7b494020b0b912",
+        "frames.json": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+      },
+      "checks": {
+        "per_step_residual_bits": true,
+        "finite_limits_and_original_gates": true,
+        "original_top1_world_pose_and_depth": true,
+        "no_object_constraint_in_inventory": true,
+        "same_register_and_joint_target_script": true,
+        "actual_dt_no_hidden_substeps": true,
+        "all_205_frames_decode": true
+      },
+      "additional_physics_steps": 0,
+      "additional_network_forwards": 0,
+      "boundary": "Checks saved states, contact outcomes, source hashes and initial constraint inventory; does not identify hardware dynamics or establish force closure/general success."
+    },
+    "coverage": "complete_saved_physics"
+  },
+  "checks": [
+    {
+      "check": "frozen_scene_RGBD_and_source_binding",
+      "passed": true
+    },
+    {
+      "check": "available_pipeline_stage_SHA_links",
+      "passed": true
+    },
+    {
+      "check": "single_dispatch_job_counter_worker_trace_binding",
+      "passed": true
+    },
+    {
+      "check": "selected_row_full_saved_frame_audit",
+      "passed": true
+    },
+    {
+      "check": "normal_worker_full_independent_physics_audit",
+      "passed": true
+    },
+    {
+      "check": "independently_recomputed_final_outcome",
+      "passed": true
+    }
+  ],
+  "integrity_pass": true,
+  "full_pipeline_audit_pass": true,
+  "full_physics_audit_pass": true
+}

@@ -1,0 +1,35 @@
+{
+  "frozen_at": "2026-11-04T00:21:05.662531+08:00",
+  "protocol_sha256": "f43a7533478446a47e6d4f99f72b73fa1456a6ce706940ef9577d1af70fc8380",
+  "reason": "Apple geometric preprocessing still running; execute five ready objects while its same frozen CoACD continues. No physical or network output from this cohort has yet existed.",
+  "groups": [
+    {
+      "id": "nonapple",
+      "objects": [
+        "banana",
+        "foam_brick",
+        "bottle",
+        "mug",
+        "bowl"
+      ]
+    },
+    {
+      "id": "apple",
+      "objects": [
+        "apple"
+      ]
+    }
+  ],
+  "seed_each_frame": 20261103,
+  "each_original_top1_executed_at_most_once": true,
+  "all12_fixed_denominator": true,
+  "physical_groups_strictly_sequential_global_max3": true,
+  "models": "Five models reused inside each group; two processes in total, no claim of one set for all12",
+  "placement": "Actual COM XY[0,.08] and source OBJ upright, native support initialization once before physics. Inventory AABB-centred poses are not used.",
+  "inertia": "All0.1kg/friction1, volume mixture of convex parts incl overlap, geometric approximation not identified mass distribution.",
+  "source_sha256": {
+    "mesh_scene.py": "4faf3442c84613696580b6bad9789a264b179e4e2eb0b53448e50bcbeb39ad87",
+    "run_dh3_scene_cohort.py": "05d7a8759eada6cec72998f47212e69468756f2e0a36cb4b0126fd26de085948",
+    "run_dh3_scene.py": "a4a3f6393fa2a2c482f78c1b9cf35efb949ae5c9825d1575b69def5dfffa5193"
+  }
+}

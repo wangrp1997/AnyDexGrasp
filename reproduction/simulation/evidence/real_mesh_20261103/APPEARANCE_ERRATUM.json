@@ -1,0 +1,128 @@
+{
+  "status": "post_run_appearance_metadata_correction",
+  "at_unix": 1793724497.0981233,
+  "error": "Prepared visual_boundary says constant RGBA/original textures not used. This wording is incorrect: trimesh OBJ export retains material and original texture; Bullet uses that appearance.",
+  "actual": "Original triangle topology and UV/texture appearance were retained. Actual saved RGB-D/color PNG and candidate provenance were already frozen and independently audited; this addendum changes no input or result.",
+  "timing_boundary": "This inventory and generated-MTL/texture SHA collection were added after execution, not falsely labelled pre-execution metadata. Original source inventory already recorded the source assets. Generated texture dependencies were not individually included by the initial scene module source_assets.",
+  "objects": [
+    {
+      "id": "bowl",
+      "original_texture": {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/024_bowl/google_16k/texture_map.png",
+        "bytes": 5477845,
+        "sha256": "5f54ed5a1569e3d2d3e475feacba51340f65b40cdb77420bcd1cb943d451ed9b"
+      },
+      "exported_texture": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/bowl/material_0.png",
+        "bytes": 5469376,
+        "sha256": "6797ac4fd7836904597a0dcbc5b514077ebac943f3fbd4d1fa508b78ec091c9d"
+      },
+      "exported_material": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/bowl/material.mtl",
+        "bytes": 198,
+        "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+      },
+      "decoded_RGBA_pixels_equal": true
+    },
+    {
+      "id": "mug",
+      "original_texture": {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/025_mug/google_16k/texture_map.png",
+        "bytes": 5777448,
+        "sha256": "1131a0ee591d59e0a77e55ff9d72aeac07af76a0f9ed09cbd01489498649ef1f"
+      },
+      "exported_texture": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/mug/material_0.png",
+        "bytes": 5731933,
+        "sha256": "97b68db845fc94fdb98c76a1d69659161223e7b439f58c88e1d3e4503e757daf"
+      },
+      "exported_material": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/mug/material.mtl",
+        "bytes": 198,
+        "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+      },
+      "decoded_RGBA_pixels_equal": true
+    },
+    {
+      "id": "banana",
+      "original_texture": {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/011_banana/google_16k/texture_map.png",
+        "bytes": 3979031,
+        "sha256": "a5d70629ee8cff461e25f5c0aa87651746e3c9e405674dc6a20446f824d9d97a"
+      },
+      "exported_texture": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/banana/material_0.png",
+        "bytes": 3980735,
+        "sha256": "c4afcf46fef1c38045a76d00da42db5385f8094e9a0b34475fb889442c330e28"
+      },
+      "exported_material": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/banana/material.mtl",
+        "bytes": 198,
+        "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+      },
+      "decoded_RGBA_pixels_equal": true
+    },
+    {
+      "id": "foam_brick",
+      "original_texture": {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/061_foam_brick/google_16k/texture_map.png",
+        "bytes": 4192866,
+        "sha256": "bfb6f0049911bc138e4a9e8fa44ce5cd05ada34e42bc8a8d24ddc0b5aebd2712"
+      },
+      "exported_texture": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/foam_brick/material_0.png",
+        "bytes": 4189098,
+        "sha256": "166777a6b1e9bbe673b922c261cc5383baeea9c4c4f87a9bf8c48b1a779633dd"
+      },
+      "exported_material": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/foam_brick/material.mtl",
+        "bytes": 198,
+        "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+      },
+      "decoded_RGBA_pixels_equal": true
+    },
+    {
+      "id": "bottle",
+      "original_texture": {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/006_mustard_bottle/google_16k/texture_map.png",
+        "bytes": 8912487,
+        "sha256": "1e0114f5ce3c98fbf7e14f7bd8c46a995b992d0a92b7370cb5fbd046e0e2c63d"
+      },
+      "exported_texture": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/bottle/material_0.png",
+        "bytes": 8895085,
+        "sha256": "315d75632fcf8238ae623b31caf9dd2c852fa0c228a18c6b520d1adfdd99edb6"
+      },
+      "exported_material": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/prepared/bottle/material.mtl",
+        "bytes": 198,
+        "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+      },
+      "decoded_RGBA_pixels_equal": true
+    },
+    {
+      "id": "apple",
+      "original_texture": {
+        "path": "/mnt/public/datasets/BoyaBlindGrasp/ycb/models/013_apple/google_16k/texture_map.png",
+        "bytes": 4175099,
+        "sha256": "6fa13963ac7fec6d4819b6ebf0e4c5d54c6f339d5d7174ae5230f36abec30d56"
+      },
+      "exported_texture": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/prepared/apple/material_0.png",
+        "bytes": 4170476,
+        "sha256": "d00fbcfd835c4cca791e751ba58a9cfa2455f22097b4d31a570aa2d58b7b8ab6"
+      },
+      "exported_material": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/prepared/apple/material.mtl",
+        "bytes": 198,
+        "sha256": "0d90fe7d688a6da0b82b0f8053231a1c8986de34aa839f8113ed53a610c09227"
+      },
+      "decoded_RGBA_pixels_equal": true
+    }
+  ],
+  "all_exported_textures_pixel_equal_to_original": true,
+  "additional_physics_steps": 0,
+  "additional_network_forwards": 0,
+  "additional_renders": 0,
+  "future_code_boundary": "Before generating future scenes, correct the descriptive metadata and include exported MTL/texture dependencies. Preserve this run module/source signatures and its actual input images."
+}

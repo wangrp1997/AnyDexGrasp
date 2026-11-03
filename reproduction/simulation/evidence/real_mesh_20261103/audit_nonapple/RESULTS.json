@@ -1,0 +1,451 @@
+{
+  "scope": "Read-only audit of one frozen original-DH3 real-mesh scene cohort.\n\nNo model, collision engine, renderer, physics client or hardware is imported.\nAll declared rows, including no-candidate/stage-error/zero-step outcomes, receive\nan independent receipt. Saved outcomes are never replaced by a new attempt.\n",
+  "audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_real_dh3_cohort.py",
+    "bytes": 33972,
+    "sha256": "695d00fcb233f33494770683e8f888946c5afcb8053f0eb7cd46f6e295306b04"
+  },
+  "input_run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2",
+  "expected_scenes": 10,
+  "additional_network_forwards": 0,
+  "additional_collision_queries": 0,
+  "additional_renders": 0,
+  "additional_physical_steps": 0,
+  "hardware_connections": 0,
+  "all_declared_outcomes_retained": true,
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/PROTOCOL.json",
+    "bytes": 3157,
+    "sha256": "f43a7533478446a47e6d4f99f72b73fa1456a6ce706940ef9577d1af70fc8380"
+  },
+  "protocol_subset_scope": {
+    "explicitly_enabled": true,
+    "full_protocol_scene_count": 12,
+    "audited_group_scene_count": 10,
+    "audited_group_scene_ids": [
+      "banana_yaw000",
+      "banana_yaw090",
+      "foam_brick_yaw000",
+      "foam_brick_yaw090",
+      "bottle_yaw000",
+      "bottle_yaw090",
+      "mug_yaw000",
+      "mug_yaw090",
+      "bowl_yaw000",
+      "bowl_yaw090"
+    ],
+    "boundary": "This receipt audits this group only. It is not the full protocol denominator or one combined scheduler/model process."
+  },
+  "reused_auditors": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_dh3_scene_results.py",
+      "bytes": 13903,
+      "sha256": "b7109679c522547607c0aefaaef69b2d63acd7e9d411fe777eab648af4b65c89"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py",
+      "bytes": 12443,
+      "sha256": "da39899407085cb197e98f08d4e8f4b89cd4f51f1fc9e0777f8f30722c026ed3"
+    }
+  ],
+  "batch_final_receipt": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/RESULTS.json",
+    "bytes": 72952,
+    "sha256": "9551816bd47fcf8cd229b766fb8ca9a9d2e09a93225a13c4e73c89a4488bf37e"
+  },
+  "dispatch_events": {
+    "event_count": 26,
+    "reconstructed_peak_CPU_physics_workers": 2,
+    "physics_dispatches": {
+      "banana_yaw000": 1,
+      "banana_yaw090": 1,
+      "foam_brick_yaw000": 1,
+      "foam_brick_yaw090": 1,
+      "bottle_yaw000": 1,
+      "bottle_yaw090": 1,
+      "mug_yaw000": 1
+    },
+    "physics_finishes": {
+      "banana_yaw000": 1,
+      "banana_yaw090": 1,
+      "foam_brick_yaw000": 1,
+      "foam_brick_yaw090": 1,
+      "bottle_yaw000": 1,
+      "bottle_yaw090": 1,
+      "mug_yaw000": 1
+    },
+    "explicit_unexecuted_rows": {
+      "mug_yaw090": 1,
+      "bowl_yaw000": 1,
+      "bowl_yaw090": 1
+    },
+    "active_at_end": 0,
+    "gpu_physics_batching": false,
+    "once_dispatched_per_scene": true
+  },
+  "model_cache_audit": {
+    "model_cache": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/MODEL_CACHE.json",
+      "bytes": 28348,
+      "sha256": "bfbae758f2656ff7176f2b0540cdc5051491324816b4ebee09ce5e864dd11cbb"
+    },
+    "constructor_RNG_states": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/CONSTRUCTOR_RNG_STATES.npz",
+      "bytes": 34466,
+      "sha256": "ae6576a60ac7a803cb8a84edc3c1f56b4802c9006d223511b7920ce20fff1526"
+    },
+    "actual_checkpoint_loads": 5,
+    "actual_constructions": 5,
+    "counts": {
+      "representation_checkpoint_file_loads": 1,
+      "decision_checkpoint_file_loads": 4,
+      "representation_model_constructions": 1,
+      "decision_model_constructions": 4,
+      "representation_constructor_requests": 10,
+      "decision_constructor_requests": 40,
+      "strict_state_dict_assignments": 5,
+      "identical_cached_strict_load_skips": 45,
+      "representation_checkpoint_cache_hits": 9,
+      "decision_state_cache_hits": 36,
+      "constructor_CPU_RNG_replays": 45,
+      "constructor_CPU_RNG_pre_mismatches": 0,
+      "torch_multinomial_calls": 0,
+      "torch_randperm_calls": 0
+    },
+    "live_model_object_ids": {
+      "representation": 137772908396224,
+      "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth": 137772911792192,
+      "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth": 137772908464656,
+      "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth": 137772908573712,
+      "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth": 137772908468016
+    },
+    "constructor_RNG_state_hashes_verified": true,
+    "forward_random_API_calls_observed": {
+      "torch_multinomial_calls": 0,
+      "torch_randperm_calls": 0
+    },
+    "boundary": "Saved cache/RNG bookkeeping verified; model predictions are not recomputed by this audit"
+  },
+  "recomputed_aggregate": {
+    "final_status_counts": {
+      "physics_port_invalid": 1,
+      "object_lifted": 6,
+      "no_original_candidate": 3
+    },
+    "finalized_scenes": 10,
+    "original_top1_selected": 7,
+    "physics_invocations": 7,
+    "actual_physical_attempts": 7,
+    "completed_physics_steps": 137760,
+    "possible_in_flight_steps": 0,
+    "valid_object_lifted": 6,
+    "observed_lifted": 6,
+    "not_entered_physics": 3,
+    "active_physics_workers": 0,
+    "queued_physics_workers": 0
+  },
+  "timing_seconds": {
+    "scheduler_wall_so_far": 280.64281383901834,
+    "pipeline_and_physics_wall_so_far": 280.5730283249868,
+    "inference_subprocess_wall": 280.57260030007455,
+    "pipeline_and_last_physics_wall": 280.57260030007455,
+    "pipeline_start_to_last_physics_wall": 271.7686495950911,
+    "scheduler_total_wall": 280.642643064959
+  },
+  "batch_timing_seconds": {
+    "runtime_module_imports": 1.8810676560970023,
+    "cache_preparation_and_checkpoint_hashes": 0.23783076601102948,
+    "process_wall_so_far": 279.62457210291177,
+    "total_process_internal_wall": 279.6252785109682,
+    "cold_first_frame": 46.874110865057446,
+    "warm_subsequent_frames": [
+      36.446043719071895,
+      33.41330894897692,
+      34.35700481792446,
+      32.63093106111046,
+      32.18865323695354,
+      13.81140566302929,
+      15.368237202055752,
+      17.2323385149939,
+      15.12029640597757
+    ]
+  },
+  "input_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/RESULTS.json",
+    "bytes": 100043,
+    "sha256": "8166b52a6e20ff132b1bfce3bb1269a9f8ec5021304f82679194c940ff031cce"
+  },
+  "frozen_inputs": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/FROZEN_INPUTS.json",
+    "bytes": 18216,
+    "sha256": "ac221f4eaa5312618daf98fbc817b7850b3758f2a6d113bd1b8517253925f706"
+  },
+  "events": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/EVENTS.jsonl",
+    "bytes": 6517,
+    "sha256": "8be7bda75338e0860c2c2e0987e0cf797b665ce3194a67f61c73081c51d01a5d"
+  },
+  "checks": [
+    {
+      "check": "all_expected_rows_retained_in_frozen_order",
+      "passed": true,
+      "observed_order": [
+        "banana_yaw000",
+        "banana_yaw090",
+        "foam_brick_yaw000",
+        "foam_brick_yaw090",
+        "bottle_yaw000",
+        "bottle_yaw090",
+        "mug_yaw000",
+        "mug_yaw090",
+        "bowl_yaw000",
+        "bowl_yaw090"
+      ]
+    },
+    {
+      "check": "cohort_accounting_terminal",
+      "passed": true,
+      "status": "cohort_finished"
+    },
+    {
+      "check": "frozen_inputs_SHA",
+      "passed": true
+    },
+    {
+      "check": "frozen_sources_consistent",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_dh3_scene_cohort.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_batch.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_dh3_scene.py",
+      "passed": true
+    },
+    {
+      "check": "frozen_source_SHA:/home/wangrenpeng/AnyDexGrasp/outputs/dh3_geometry_adapter_20261103_v2/ADAPTER.json",
+      "passed": true
+    },
+    {
+      "check": "declared_scene_list_SHA",
+      "passed": true
+    },
+    {
+      "check": "predeclared_protocol_ordered_subsequence",
+      "passed": true
+    },
+    {
+      "check": "predeclared_CPU_worker_limit",
+      "passed": true
+    },
+    {
+      "check": "one_top1_only_no_arm_no_training_no_pipeline_encoding",
+      "passed": true
+    },
+    {
+      "check": "batch_final_receipt_read",
+      "passed": true
+    },
+    {
+      "check": "all_batch_rows_retained",
+      "passed": true
+    },
+    {
+      "check": "batch_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_batch.py",
+      "passed": true
+    },
+    {
+      "check": "batch_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_augmented_frame.py",
+      "passed": true
+    },
+    {
+      "check": "batch_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/select_original_dh3_pose.py",
+      "passed": true
+    },
+    {
+      "check": "batch_source_SHA:/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+      "passed": true
+    },
+    {
+      "check": "batch_source_SHA:/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_frame.py",
+      "passed": true
+    },
+    {
+      "check": "event_once_dispatch_and_CPU_concurrency",
+      "passed": true
+    },
+    {
+      "check": "cohort_aggregate_recomputed_exactly",
+      "passed": true,
+      "recomputed": {
+        "final_status_counts": {
+          "physics_port_invalid": 1,
+          "object_lifted": 6,
+          "no_original_candidate": 3
+        },
+        "finalized_scenes": 10,
+        "original_top1_selected": 7,
+        "physics_invocations": 7,
+        "actual_physical_attempts": 7,
+        "completed_physics_steps": 137760,
+        "possible_in_flight_steps": 0,
+        "valid_object_lifted": 6,
+        "observed_lifted": 6,
+        "not_entered_physics": 3,
+        "active_physics_workers": 0,
+        "queued_physics_workers": 0
+      }
+    },
+    {
+      "check": "all_row_integrity_receipts_pass",
+      "passed": true
+    },
+    {
+      "check": "shared_models_and_constructor_RNG_evidence",
+      "passed": true
+    },
+    {
+      "check": "pipeline_to_last_completion_wall_crosscheck",
+      "passed": true,
+      "saved_monotonic_wall_seconds": 280.57260030007455,
+      "event_unix_reconstruction_seconds": 280.57260632514954,
+      "difference_seconds": 6.025074981153011e-06,
+      "tolerance_seconds": 1.0
+    }
+  ],
+  "scene_receipts": [
+    {
+      "scene_id": "banana_yaw000",
+      "final_status": "physics_port_invalid",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/00_banana_yaw000.json",
+        "bytes": 18649,
+        "sha256": "1ec045d6ef2f508c48f7203c19cb82c51a6ffb1b899cc4ea6eaa7afff0bd3209"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "banana_yaw090",
+      "final_status": "object_lifted",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/01_banana_yaw090.json",
+        "bytes": 18626,
+        "sha256": "84ee61764226b097cda93e738bcb52676e06b545eb153fcbcf8e249e7dd32b5d"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "foam_brick_yaw000",
+      "final_status": "object_lifted",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/02_foam_brick_yaw000.json",
+        "bytes": 18745,
+        "sha256": "9e64f98cb69378165421ac85362b262bd437a03fe0c464abb41d808916477e7d"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "foam_brick_yaw090",
+      "final_status": "object_lifted",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/03_foam_brick_yaw090.json",
+        "bytes": 18719,
+        "sha256": "0283448b64564d04d6e4a86046c038b831e24804b4ad6ca47cc9486a0e6cc1df"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "bottle_yaw000",
+      "final_status": "object_lifted",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/04_bottle_yaw000.json",
+        "bytes": 18578,
+        "sha256": "95029f0980906f0cf39c1c6ce59c2f59e97dfee86c288689a1b89e6803dd399a"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "bottle_yaw090",
+      "final_status": "object_lifted",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/05_bottle_yaw090.json",
+        "bytes": 18596,
+        "sha256": "8b638077f0fec8fcf009ccadc6b7d6af4f2ccc917eaa131e77496ae6eadf4b24"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "mug_yaw000",
+      "final_status": "object_lifted",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/06_mug_yaw000.json",
+        "bytes": 18483,
+        "sha256": "d50f5c10248cb49b9bc2a69691fa448afd97b2651432528eeff595d678781d52"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": true,
+      "full_physics_audit_pass": true
+    },
+    {
+      "scene_id": "mug_yaw090",
+      "final_status": "no_original_candidate",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/07_mug_yaw090.json",
+        "bytes": 9945,
+        "sha256": "2df6013e7610094912afb0a79867b66b21416a350c2906787003e47634f64b2d"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": false,
+      "full_physics_audit_pass": false
+    },
+    {
+      "scene_id": "bowl_yaw000",
+      "final_status": "no_original_candidate",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/08_bowl_yaw000.json",
+        "bytes": 9950,
+        "sha256": "5570dd385effdce3e7855898bd114e5ba6111435d7f985f25a147604c5e7ad20"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": false,
+      "full_physics_audit_pass": false
+    },
+    {
+      "scene_id": "bowl_yaw090",
+      "final_status": "no_original_candidate",
+      "receipt": {
+        "path": "/tmp/anydex_audit_nonapple_production_v2/scenes/09_bowl_yaw090.json",
+        "bytes": 9959,
+        "sha256": "92048eb57c8db352a0b1f3f92385c888630c3258e08b11acd028f1c794b7fb01"
+      },
+      "integrity_pass": true,
+      "full_pipeline_audit_pass": false,
+      "full_physics_audit_pass": false
+    }
+  ],
+  "integrity_pass": true,
+  "full_pipeline_rows": 7,
+  "full_physics_rows": 7,
+  "all_requested_rows_have_receipts": true,
+  "audit_wall_seconds": 13.07888610707596,
+  "timing_boundary": "Cohort saved monotonic wall covers the original shared-model batch start through the last inference/physics completion. CPU physics clients overlap with inference and each other; summed per-scene CPU wall is not total elapsed wall. Pre-render/decomposition and later video encoding are separate.",
+  "physical_scope": "This hand-only predeclared simulation cohort; no arm, no real hardware, no original-paper benchmark reproduction.",
+  "status": "cohort_saved_evidence_verified"
+}
