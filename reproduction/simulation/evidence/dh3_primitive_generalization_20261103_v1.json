@@ -1,0 +1,257 @@
+{
+  "scope": "Three predeclared synthetic geometries; original pretrained DH3 top1; independent simulation backend",
+  "new_objects": 3,
+  "top1_successes": 3,
+  "top1_success_fraction": 1.0,
+  "records": [
+    {
+      "id": "cylinder",
+      "success": true,
+      "original_top1_only": true,
+      "actual_physical_attempts": 1,
+      "merged_candidates": 251,
+      "original_collision_admitted": 251,
+      "selected_pre_collision_index": 0,
+      "selected_hand": {
+        "score": 1.9138884544372559,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.03999999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            0.959394720059607,
+            -0.049946712382089684,
+            -0.27760985841393854
+          ],
+          [
+            -0.032634695368487565,
+            0.957933021157055,
+            -0.28513078289736377
+          ],
+          [
+            0.28017296275074643,
+            0.2826126695029786,
+            0.9174057118485782
+          ]
+        ],
+        "translation_m": [
+          0.04610206862801898,
+          -0.004918789850890455,
+          0.22815983857179453
+        ]
+      },
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "final_lift_mm": 100.32927322131373,
+      "final_lowest_world_z_mm": 93.05222319010191,
+      "max_gear_residual_rad": 0.0060333186423067175,
+      "peak_joint_velocity_rad_s": 1.2904122821136328,
+      "port_stability_pass": true,
+      "every_final_half_second_step_contact": true,
+      "inference_wall_seconds": 41.625235604005866,
+      "execution_internal_wall_seconds": 31.01783070503734,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/videos/cylinder.mp4",
+        "sha256": "0a70681eeb684c017627757fcb6a7dae26e3c6f90016f2aacc3a3e9b8e592731",
+        "bytes": 113172,
+        "frames": 205,
+        "fps": 20.0,
+        "seconds": 10.25
+      },
+      "evidence": {
+        "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/cylinder/scene_manifest.json",
+        "pipeline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/cylinder/RESULTS.json",
+        "physics": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/RESULTS.json"
+      }
+    },
+    {
+      "id": "sphere",
+      "success": true,
+      "original_top1_only": true,
+      "actual_physical_attempts": 1,
+      "merged_candidates": 169,
+      "original_collision_admitted": 103,
+      "selected_pre_collision_index": 93,
+      "selected_hand": {
+        "score": 1.5087647438049316,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.03999999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            -0.5885051155105893,
+            0.8000601545047781,
+            -0.11647089071843648
+          ],
+          [
+            -0.7746948568156878,
+            -0.5168036419760752,
+            0.3643650454332618
+          ],
+          [
+            0.23132137765599708,
+            0.3046601173751529,
+            0.9239440896075367
+          ]
+        ],
+        "translation_m": [
+          0.033642524230110105,
+          -0.15147491874181399,
+          0.2601259175334946
+        ]
+      },
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "final_lift_mm": 92.46561339773956,
+      "final_lowest_world_z_mm": 92.46561339773956,
+      "max_gear_residual_rad": 0.0013934144449996855,
+      "peak_joint_velocity_rad_s": 1.1246809020579618,
+      "port_stability_pass": true,
+      "every_final_half_second_step_contact": true,
+      "inference_wall_seconds": 36.83752605202608,
+      "execution_internal_wall_seconds": 27.08127417601645,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/videos/sphere.mp4",
+        "sha256": "460afc18eb5f7983c72d89a130f2ba5c262e61504a1cdddd3344ca97a938d14e",
+        "bytes": 113410,
+        "frames": 205,
+        "fps": 20.0,
+        "seconds": 10.25
+      },
+      "evidence": {
+        "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/sphere/scene_manifest.json",
+        "pipeline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/sphere/RESULTS.json",
+        "physics": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/RESULTS.json"
+      }
+    },
+    {
+      "id": "long_box",
+      "success": true,
+      "original_top1_only": true,
+      "actual_physical_attempts": 1,
+      "merged_candidates": 640,
+      "original_collision_admitted": 50,
+      "selected_pre_collision_index": 21,
+      "selected_hand": {
+        "score": 1.4775521755218506,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.019999999552965164,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            0.07320685422737587,
+            0.9946607133291426,
+            -0.07273863116782786
+          ],
+          [
+            -0.9967425216868004,
+            0.070494974412439,
+            -0.039178548459479406
+          ],
+          [
+            -0.03384165269026732,
+            0.07536981537345727,
+            0.9965812256090139
+          ]
+        ],
+        "translation_m": [
+          0.010927756606204434,
+          -0.040998546505376765,
+          0.2706651249815494
+        ]
+      },
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "final_lift_mm": 99.45523962575568,
+      "final_lowest_world_z_mm": 97.75544550466128,
+      "max_gear_residual_rad": 0.0014044267407362088,
+      "peak_joint_velocity_rad_s": 0.9669192196586516,
+      "port_stability_pass": true,
+      "every_final_half_second_step_contact": true,
+      "inference_wall_seconds": 42.54147790709976,
+      "execution_internal_wall_seconds": 28.389403381035663,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/videos/long_box.mp4",
+        "sha256": "12feeaaf09ed207ae4607f9f8cc0143ae341a7482b96383c551f7056a7f74ba5",
+        "bytes": 123420,
+        "frames": 205,
+        "fps": 20.0,
+        "seconds": 10.25
+      },
+      "evidence": {
+        "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/long_box/scene_manifest.json",
+        "pipeline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/long_box/RESULTS.json",
+        "physics": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/RESULTS.json"
+      }
+    }
+  ],
+  "controls_unchanged_from_accepted_cube": true,
+  "default_integration_hz": 1920,
+  "regression": {
+    "objects": 1,
+    "new_network_forwards": 0,
+    "physics_steps": 19680,
+    "full_trace_bytes_match_original": true,
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_generic_cube_regression_20261103_v1"
+  },
+  "cost": {
+    "new_object_physics_steps": 59040,
+    "new_object_physical_seconds": 30.75,
+    "all_new_physics_including_regression_steps": 78720,
+    "all_new_physical_seconds": 41.0,
+    "historical_plus_this_turn_physics_steps": 177180,
+    "historical_plus_this_turn_mixed_dt_physical_seconds": 160.0,
+    "new_network_branches": 33,
+    "batch_inference_internal_wall_seconds": 123.05071682797279,
+    "physical_execution_internal_wall_seconds": [
+      31.01783070503734,
+      27.08127417601645,
+      28.389403381035663
+    ],
+    "pipeline_execution_overlap": true,
+    "combined_end_to_end_wall_instrumented": false,
+    "render_validation_failures_physics_steps": 0,
+    "media_and_audit_physics_steps": 0
+  },
+  "model_cache": {
+    "representation_checkpoint_file_loads": 1,
+    "decision_checkpoint_file_loads": 4,
+    "representation_model_constructions": 1,
+    "decision_model_constructions": 4,
+    "representation_constructor_requests": 3,
+    "decision_constructor_requests": 12,
+    "strict_state_dict_assignments": 5,
+    "identical_cached_strict_load_skips": 10,
+    "representation_checkpoint_cache_hits": 2,
+    "decision_state_cache_hits": 8,
+    "constructor_CPU_RNG_replays": 10,
+    "constructor_CPU_RNG_pre_mismatches": 0,
+    "torch_multinomial_calls": 0,
+    "torch_randperm_calls": 0
+  },
+  "protocol_sha256": "c2110f57014b5d8aec92171ecefa8384515d113dac14423540cca792c4341704",
+  "validation_evidence": {
+    "dh3_primitive_execution_audit_20261103_v1.json": "b26a2b001b5cdd489c700cc822ba4e5bcfd46fb535da76d501b55387d86cd1e0",
+    "dh3_primitive_inference_audit_20261103_v1.json": "761b52a12188d98ea0c9e97776ebc23e4553b1dd2cb0fc8a272c335e7dcbe587"
+  },
+  "limitations": [
+    "Only one pose and one mass per primitive, not an independent general-object success rate or paper physical reproduction.",
+    "DH3 native original models; no Boya, UR arm, path planning or hardware identification.",
+    "Two finite active motors and ideal structural gears; finite world-wrist script; primitive collisions and convex hand STLs.",
+    "All three independently selected type4. This cohort does not dynamically validate the other three hand types.",
+    "The zero-step native visual-render failure and ray diagnostics are retained; no grasp gate was relaxed.",
+    "Model caching measured by actual load counts; no same-frame cold/warm timing comparison or speedup factor claimed."
+  ]
+}

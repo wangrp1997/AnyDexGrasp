@@ -1,0 +1,40 @@
+{
+  "status": "v1_zero_step_render_rejected",
+  "physics_steps": 0,
+  "geometry_unchanged": true,
+  "native_collision_AABB_m": [
+    [
+      -0.025,
+      0.055,
+      0
+    ],
+    [
+      0.025,
+      0.105,
+      0.09
+    ]
+  ],
+  "native_visual_observed_top_m": 0.0909993317653347,
+  "raw_depth_max_analytic_surface_error_m": 0.00179194,
+  "PNG_depth_max_analytic_surface_error_m": 0.001803125,
+  "raw_depth_min_max_m": [
+    0.4090006682346653,
+    0.4999679645561042
+  ],
+  "native_object_visible_pixels": 5896,
+  "cause": "TinyRenderer native cylinder constructs 32-point convex hull and sets 1mm visual margin independently of physical native cylinder",
+  "source": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/sources/pybullet-3.2.7/examples/SharedMemory/plugins/tinyRendererPlugin/TinyRendererVisualShapeConverter.cpp",
+  "source_lines": [
+    211,
+    288,
+    663,
+    664
+  ],
+  "remedy": "Only visual mesh becomes analytic 128-segment cylinder with exact declared cap planes; physical native cylinder/size/mass/inertia/pose/camera/gates stay fixed",
+  "verification_tolerance_m": 0.0015,
+  "sphere_native_visual_surface_error_m": 0.0027613823765033456,
+  "sphere_analytic_visual_surface_error_m": 0.0009585365113515751,
+  "sphere_native_ray_point_distance_max_m": 0.0016901423363387827,
+  "ray_distance_policy": "Parent explicitly keeps full analytic per-pixel 1.5mm input validation and native shape checks; approximate native ray point distance diagnostic, not physical gate",
+  "raw_depth_error_value_precision": "rounded to printed diagnostic precision"
+}

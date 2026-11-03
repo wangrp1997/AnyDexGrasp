@@ -1,0 +1,410 @@
+{
+  "status": "three_frame_shared_model_inference_and_saved_artifacts_verified",
+  "scope": "Original author neural inference and original gates/selection on three new frozen rendered primitive scenes; independent simulation observations, no author physical benchmark claim",
+  "batch_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/RESULTS.json",
+    "sha256": "5fba4cc53fa25e9b05fec5ead56f2a01912cdfd20087ab3efb43aeb8e3b66339"
+  },
+  "cache_receipt": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/MODEL_CACHE.json",
+    "sha256": "eeb908cd6935845c7c73aa04a13c25f3ecc12168c4d6b29ee94141dc81a935e2"
+  },
+  "constructor_rng_states": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/CONSTRUCTOR_RNG_STATES.npz",
+    "sha256": "ae6576a60ac7a803cb8a84edc3c1f56b4802c9006d223511b7920ce20fff1526"
+  },
+  "source_files": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_batch.py": "75d191fe0ff34994eff582194b8fe4f5d6540db332ca18b1f45446113c940dc5",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_augmented_frame.py": "94a484ebf9e19ec3445f9ec205f909157e121ee5001a357c9a762de75297538c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/select_original_dh3_pose.py": "6bd8922ce1138fb0b83133337831ad68aa0de6c42e46af4c1e9ace05f7c672fc",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_dh3_frame.py": "1540fb4e586adb64564cf831e99b705c856440de993e43fd373ecd0308267e80"
+  },
+  "seed_per_frame": 20261103,
+  "actual_model_load_count": 5,
+  "cache_counts": {
+    "representation_checkpoint_file_loads": 1,
+    "decision_checkpoint_file_loads": 4,
+    "representation_model_constructions": 1,
+    "decision_model_constructions": 4,
+    "representation_constructor_requests": 3,
+    "decision_constructor_requests": 12,
+    "strict_state_dict_assignments": 5,
+    "identical_cached_strict_load_skips": 10,
+    "representation_checkpoint_cache_hits": 2,
+    "decision_state_cache_hits": 8,
+    "constructor_CPU_RNG_replays": 10,
+    "constructor_CPU_RNG_pre_mismatches": 0,
+    "torch_multinomial_calls": 0,
+    "torch_randperm_calls": 0
+  },
+  "cache_validation": {
+    "five_persistent_module_objects": true,
+    "five_initial_strict_loads_no_missing_or_unexpected_keys": true,
+    "ten_exact_state_object_reload_guards": true,
+    "ten_constructor_rng_post_state_replays": true,
+    "saved_five_constructor_rng_state_pairs_SHA_verified": true,
+    "all_constructor_CUDA_rng_unchanged": true,
+    "observed_torch_multinomial_or_randperm_calls": 0,
+    "per_frame_native_calls_repeated_not_cached": true,
+    "actual_per_frame_load_counters": [
+      5,
+      0,
+      0
+    ],
+    "all_old_single_frame_source_files_unchanged": true
+  },
+  "total_process_internal_wall_seconds": 123.05071682797279,
+  "timing_seconds": {
+    "runtime_module_imports": 1.601669176016003,
+    "cache_preparation_and_checkpoint_hashes": 0.4249861310236156,
+    "process_wall_so_far": 123.05031987896655,
+    "total_process_internal_wall": 123.05071682797279,
+    "cold_first_frame": 41.625235604005866,
+    "warm_subsequent_frames": [
+      36.83752605202608,
+      42.54147790709976
+    ]
+  },
+  "frames": [
+    {
+      "name": "cylinder",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/cylinder/scene_manifest.json",
+      "scene_manifest_sha256": "f98a116d4d6036412892a954d94898108f8fe31fde60513a0525037461061db1",
+      "pipeline_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/cylinder/RESULTS.json",
+      "pipeline_RESULTS_sha256": "2aec0f9b88aae8b663862deb26ba140a51986871b3eabc9aa8857ae92673375f",
+      "selection_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/cylinder/selection/RESULTS.json",
+      "selection_RESULTS_sha256": "3c80c94f1efc22ed02f050dd64e537fbc0e6aa2e58db78a1929b43c3285b0ec6",
+      "audit_checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22785,
+        "branch_candidates": [
+          28,
+          20,
+          26,
+          30,
+          22,
+          17,
+          25,
+          23,
+          14,
+          24,
+          22
+        ],
+        "merged_candidates": 251,
+        "collision_input": 400,
+        "collision_admitted": 251,
+        "top1_pre_collision_index": 0,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.9138884544372559
+      },
+      "hand_stages": {
+        "raw_parser_candidates": 251,
+        "after_original_camera_and_width_gates": 251,
+        "after_original_score_top1000": 251,
+        "all_original_type_depth_combinations": 4016,
+        "original_top3500_returned": 3500,
+        "after_original_learned_score_gate": 825,
+        "mapped_original_hand_poses_before_top400": 825,
+        "original_top400_before_collision": 400
+      },
+      "collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 149,
+        "collision_admitted": 251
+      },
+      "actual_model_loads_this_frame": 5,
+      "actual_representation_loads_this_frame": 1,
+      "native_operator_call_counts": {
+        "furthest_point_sample": 11,
+        "cylinder_query": 11,
+        "grouping_operation": 22
+      },
+      "timing_seconds": {
+        "representation_model_load": 1.379309811978601,
+        "eleven_original_get_grasp_branches": 17.966651521041058,
+        "original_hand_stage": 2.5305808649864048,
+        "collision_asset_preparation": 1.2593034550081939,
+        "original_collision": 16.491960966959596,
+        "total": 41.539764814893715,
+        "original_final_selection": 0.0819603210547939,
+        "batch_frame_with_selection_wall": 41.625235604005866
+      },
+      "selected_hand": {
+        "score": 1.9138884544372559,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.03999999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            0.959394720059607,
+            -0.049946712382089684,
+            -0.27760985841393854
+          ],
+          [
+            -0.032634695368487565,
+            0.957933021157055,
+            -0.28513078289736377
+          ],
+          [
+            0.28017296275074643,
+            0.2826126695029786,
+            0.9174057118485782
+          ]
+        ],
+        "translation_m": [
+          0.04610206862801898,
+          -0.004918789850890455,
+          0.22815983857179453
+        ]
+      }
+    },
+    {
+      "name": "sphere",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/sphere/scene_manifest.json",
+      "scene_manifest_sha256": "b12c13d24b841bb3dd2afcda055f690cbdc11bdc0b282545e91a153791b78ee1",
+      "pipeline_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/sphere/RESULTS.json",
+      "pipeline_RESULTS_sha256": "9e2762a38385fae559361ca4c95fd90428b3a5bf902f7b4661caa35b6867dfca",
+      "selection_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/sphere/selection/RESULTS.json",
+      "selection_RESULTS_sha256": "ee911cb499c097af68c583bcc34bd0add493fa97ddd05dd875b6fb2b8cc8502d",
+      "audit_checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22761,
+        "branch_candidates": [
+          14,
+          15,
+          29,
+          18,
+          18,
+          7,
+          23,
+          11,
+          6,
+          15,
+          13
+        ],
+        "merged_candidates": 169,
+        "collision_input": 400,
+        "collision_admitted": 103,
+        "top1_pre_collision_index": 93,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.5087647438049316
+      },
+      "hand_stages": {
+        "raw_parser_candidates": 169,
+        "after_original_camera_and_width_gates": 169,
+        "after_original_score_top1000": 169,
+        "all_original_type_depth_combinations": 2704,
+        "original_top3500_returned": 2704,
+        "after_original_learned_score_gate": 1070,
+        "mapped_original_hand_poses_before_top400": 1070,
+        "original_top400_before_collision": 400
+      },
+      "collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 297,
+        "collision_admitted": 103
+      },
+      "actual_model_loads_this_frame": 0,
+      "actual_representation_loads_this_frame": 0,
+      "native_operator_call_counts": {
+        "furthest_point_sample": 11,
+        "cylinder_query": 11,
+        "grouping_operation": 22
+      },
+      "timing_seconds": {
+        "representation_model_load": 0.23205062199849635,
+        "eleven_original_get_grasp_branches": 16.58262567303609,
+        "original_hand_stage": 1.5197674919618294,
+        "collision_asset_preparation": 1.31526473199483,
+        "original_collision": 16.967358331079595,
+        "total": 36.75272919295821,
+        "original_final_selection": 0.08125525491777807,
+        "batch_frame_with_selection_wall": 36.83752605202608
+      },
+      "selected_hand": {
+        "score": 1.5087647438049316,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.03999999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            -0.5885051155105893,
+            0.8000601545047781,
+            -0.11647089071843648
+          ],
+          [
+            -0.7746948568156878,
+            -0.5168036419760752,
+            0.3643650454332618
+          ],
+          [
+            0.23132137765599708,
+            0.3046601173751529,
+            0.9239440896075367
+          ]
+        ],
+        "translation_m": [
+          0.033642524230110105,
+          -0.15147491874181399,
+          0.2601259175334946
+        ]
+      }
+    },
+    {
+      "name": "long_box",
+      "scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/long_box/scene_manifest.json",
+      "scene_manifest_sha256": "3ff6a76ea172e9c49a79cb6e6d8061f4f4ebabd5a8d6f3ef5eba3c8bc486d0fe",
+      "pipeline_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/long_box/RESULTS.json",
+      "pipeline_RESULTS_sha256": "d318988fbc2ecf3ed6c49e6126b135bff9ba0124b7132ecf5bc63f7a21ae038e",
+      "selection_RESULTS": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/long_box/selection/RESULTS.json",
+      "selection_RESULTS_sha256": "e4b19b14e8a8566b09e11a8f4e08420587cd4aaab7940769df9ece5c7255508d",
+      "audit_checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22695,
+        "branch_candidates": [
+          80,
+          49,
+          63,
+          64,
+          55,
+          45,
+          54,
+          56,
+          36,
+          72,
+          66
+        ],
+        "merged_candidates": 640,
+        "collision_input": 400,
+        "collision_admitted": 50,
+        "top1_pre_collision_index": 21,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.4775521755218506
+      },
+      "hand_stages": {
+        "raw_parser_candidates": 640,
+        "after_original_camera_and_width_gates": 640,
+        "after_original_score_top1000": 640,
+        "all_original_type_depth_combinations": 10240,
+        "original_top3500_returned": 3500,
+        "after_original_learned_score_gate": 2961,
+        "mapped_original_hand_poses_before_top400": 2961,
+        "original_top400_before_collision": 400
+      },
+      "collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 350,
+        "collision_admitted": 50
+      },
+      "actual_model_loads_this_frame": 0,
+      "actual_representation_loads_this_frame": 0,
+      "native_operator_call_counts": {
+        "furthest_point_sample": 11,
+        "cylinder_query": 11,
+        "grouping_operation": 22
+      },
+      "timing_seconds": {
+        "representation_model_load": 0.245752691058442,
+        "eleven_original_get_grasp_branches": 18.41089516307693,
+        "original_hand_stage": 4.593624809058383,
+        "collision_asset_preparation": 1.515726657002233,
+        "original_collision": 17.317443635081872,
+        "total": 42.45888387702871,
+        "original_final_selection": 0.0789597979746759,
+        "batch_frame_with_selection_wall": 42.54147790709976
+      },
+      "selected_hand": {
+        "score": 1.4775521755218506,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.019999999552965164,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            0.07320685422737587,
+            0.9946607133291426,
+            -0.07273863116782786
+          ],
+          [
+            -0.9967425216868004,
+            0.070494974412439,
+            -0.039178548459479406
+          ],
+          [
+            -0.03384165269026732,
+            0.07536981537345727,
+            0.9965812256090139
+          ]
+        ],
+        "translation_m": [
+          0.010927756606204434,
+          -0.040998546505376765,
+          0.2706651249815494
+        ]
+      }
+    }
+  ],
+  "timing_boundary": "Process monotonic wall starts immediately after Python standard-library imports; includes dependency imports, checkpoint loads, new collision assets and every per-frame stage. External interpreter startup is excluded.",
+  "warm_timing_is_not_a_paired_speedup_measurement": true,
+  "physical_grasps_executed_by_this_inference_runner": 0,
+  "hardware_connection": false,
+  "verification_new_forward_calls": 0,
+  "verification_new_collision_queries": 0,
+  "verification_new_render_calls": 0,
+  "verification_physics_steps": 0,
+  "boundary": "All selected outputs are original first ranked top1, not chosen using later physical success. Parent owns separate dynamic execution/trace audit. This receipt validates inference/cache/artifact binding only."
+}

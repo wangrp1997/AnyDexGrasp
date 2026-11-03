@@ -1,0 +1,56 @@
+{
+  "scope": "One additional physical cube interface regression, not new object generalization",
+  "baseline_run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt1920_cube_physics_20261103_v1",
+  "generic_run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_generic_cube_regression_20261103_v1",
+  "status": "bit_identical_physical_trajectory_and_controls",
+  "all_trace_arrays_bit_identical": {
+    "q": true,
+    "v": true,
+    "motor_torque": true,
+    "gear_residual": true,
+    "gear_reaction": true,
+    "com": true,
+    "base_velocity": true,
+    "wrist_reaction": true,
+    "wrist_position_error": true,
+    "wrist_rotation_error": true,
+    "step": true,
+    "time": true,
+    "phase": true,
+    "register_target": true,
+    "joint_target": true,
+    "object_pose": true,
+    "object_velocity": true,
+    "object_aabb": true
+  },
+  "artifacts": {
+    "trace.npz": {
+      "baseline_sha256": "0b358cfb636e12d7b62443153c432089223d9dc9859eb733ee8ea5970eda5517",
+      "generic_sha256": "0b358cfb636e12d7b62443153c432089223d9dc9859eb733ee8ea5970eda5517",
+      "byte_identical": true
+    },
+    "contacts.npy": {
+      "baseline_sha256": "55ba7e5c6845f7ba2557ffcbc011a342fa1f8cc06165ec17bbb1db92dee65011",
+      "generic_sha256": "55ba7e5c6845f7ba2557ffcbc011a342fa1f8cc06165ec17bbb1db92dee65011",
+      "byte_identical": true
+    },
+    "frames.json": {
+      "baseline_sha256": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd",
+      "generic_sha256": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd",
+      "byte_identical": true
+    }
+  },
+  "same_label": true,
+  "label": "object_lifted",
+  "original_controller_unchanged": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239",
+  "executed_runner_sha256": "1aee42a6aa26d44ffb3ccb1495ad81caade447a7ee4b2cb365d588f5f50f2940",
+  "final_runner_after_metadata_only_addition_sha256": "9f880e1636a54382e033b1b669c3537199148979e3519088f5d68ff8f28a9451",
+  "metadata_change": "Only receipt snapshot dependency records were added after this physical run; its actual frozen runner, controller, RESULTS, trace and contacts remain unchanged",
+  "physics_steps": 19680,
+  "physical_seconds": 10.25,
+  "wall_seconds_including_actual_render": 24.867974565015174,
+  "new_network_forwards": 0,
+  "new_candidate_selections": 0,
+  "source_snapshot_postexecution_addition_explicit": true,
+  "scope_boundary": "The 19680 steps are additional real physical cost; not included in earlier 98460-step study and not a new-shape success."
+}

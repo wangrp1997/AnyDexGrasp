@@ -1,0 +1,77 @@
+{
+  "schema": "AnyDex-DH3-primitive-generalization-v1",
+  "frozen_at": "2026-11-03T22:15:48.387112+08:00",
+  "scope": "Three new synthetic geometries using original pretrained inference and first selected grasp; independent simulation backend, not author physical benchmark",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "geometries": [
+    {
+      "id": "cylinder",
+      "radius_m": 0.025,
+      "height_m": 0.09
+    },
+    {
+      "id": "sphere",
+      "radius_m": 0.03
+    },
+    {
+      "id": "long_box",
+      "size_m": [
+        0.1,
+        0.045,
+        0.035
+      ]
+    }
+  ],
+  "object_common": {
+    "mass_kg": 0.1,
+    "xy_m": [
+      0,
+      0.08
+    ],
+    "pose": "upright/resting at table z0; no placement search",
+    "lateral_friction": 1.0
+  },
+  "inference": {
+    "seed": 20261103,
+    "branches": 11,
+    "source": "Original identity + ten augmentations, four published heads, original gates/collision/argsort",
+    "network_input": "rendered color/depth/calibration only; no category, object pose or segmentation",
+    "selection": "original final top1 only",
+    "max_physical_attempts_per_new_object": 1
+  },
+  "physics": {
+    "hz": 1920,
+    "numSubSteps": 1,
+    "non_contact_inner_iterations": 20,
+    "full_script_seconds": 10.25,
+    "expected_steps_per_attempt": 19680,
+    "position_motor_max_torque_Nm": 0.6,
+    "rotation_motor_max_torque_Nm": 0.3,
+    "gear_row_cap_Nm": 100.0,
+    "wrist_max_force_per_row_N_or_Nm": 30.0,
+    "world_z_lift_m": 0.1,
+    "gravity": [
+      0,
+      0,
+      -9.81
+    ]
+  },
+  "gates": {
+    "max_gear_residual_rad_below": 0.01,
+    "peak_joint_velocity_rad_s_below": 1.5,
+    "wrist_COM_error_m_below": 0.002,
+    "finite_declared_force_limits": true,
+    "final_lift_m_above": 0.05,
+    "final_lowest_point_world_z_m_above": 0.04,
+    "positive_hand_object_contacts_last_half_second": true
+  },
+  "regression": {
+    "same_existing_cube_scene": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_scene_20261103_v2/scene_manifest.json",
+    "same_existing_cube_selection": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_dh3_eleven_branch_20261103_v2/selection/RESULTS.json",
+    "one_new_physical_execution": true,
+    "new_network_forward": false,
+    "compare_to": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt1920_cube_physics_20261103_v1"
+  },
+  "retention": "All top1 outcomes, stages, failures, costs, traces and simultaneous frames retained. No relabel after retry or parameter search. No original evidence overwritten.",
+  "numerical_refinement": "No new timestep/model search within this cohort. If numerical validity fails report separately from observed lifting."
+}

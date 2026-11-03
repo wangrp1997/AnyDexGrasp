@@ -1,0 +1,205 @@
+{
+  "scope": "Read-only checks of reusable DH3 scene executions; no simulator or inference.\n\nGrasp outcome and numerical validity are recomputed independently from saved\nper-step states and contacts. This is not a hardware or force-closure proof.\n",
+  "runs": [
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_generic_cube_regression_20261103_v1",
+      "status": "saved_scene_execution_verified",
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "validated_grasp": true,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "final_lift_m": 0.08851801828587202,
+      "final_lowest_world_z_m": 0.08384741556200842,
+      "max_gear_residual_rad": 0.0017117758238462955,
+      "peak_joint_velocity_rad_s": 1.3770692472556456,
+      "wrist_reaction_bounds_pass": true,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "final_every_step_contact": true,
+      "hand_object": {
+        "rows": 34091,
+        "positive_normal_rows": 32601,
+        "min_signed_distance_m": -2.7373157184256835e-05,
+        "peak_normal_force_N": 9.161774990482108
+      },
+      "hand_table": {
+        "rows": 5304,
+        "positive_normal_rows": 4979,
+        "min_signed_distance_m": -2.601218850182413e-05,
+        "peak_normal_force_N": 17.057203246310653
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "be515c9a68223e90c6b7b1f2f0cb50706923a87c43f8d14f2aa313a77e691286",
+        "CONTROLLER.json": "02c83136c6e419f0f9bb2498d926173c7620ad73c1f4a6ac9d302d2ee1422c17",
+        "SOURCE_SNAPSHOT.json": "e83dad52d60c59bf8893e67bc1e0019ecbb5eae883ce6eadfea69dbd6d80cd92",
+        "trace.npz": "0b358cfb636e12d7b62443153c432089223d9dc9859eb733ee8ea5970eda5517",
+        "contacts.npy": "55ba7e5c6845f7ba2557ffcbc011a342fa1f8cc06165ec17bbb1db92dee65011",
+        "frames.json": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+      },
+      "checks": {
+        "per_step_residual_bits": true,
+        "finite_limits_and_original_gates": true,
+        "original_top1_world_pose_and_depth": true,
+        "no_object_constraint_in_inventory": true,
+        "same_register_and_joint_target_script": true,
+        "actual_dt_no_hidden_substeps": true,
+        "all_205_frames_decode": true
+      },
+      "additional_physics_steps": 0,
+      "additional_network_forwards": 0,
+      "boundary": "Checks saved states, contact outcomes, source hashes and initial constraint inventory; does not identify hardware dynamics or establish force closure/general success."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder",
+      "status": "saved_scene_execution_verified",
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "validated_grasp": true,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "final_lift_m": 0.10032927322131373,
+      "final_lowest_world_z_m": 0.09305222319010191,
+      "max_gear_residual_rad": 0.0060333186423067175,
+      "peak_joint_velocity_rad_s": 1.2904122821136328,
+      "wrist_reaction_bounds_pass": true,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "final_every_step_contact": true,
+      "hand_object": {
+        "rows": 57162,
+        "positive_normal_rows": 23184,
+        "min_signed_distance_m": -5.964245383933922e-05,
+        "peak_normal_force_N": 13.718467749429655
+      },
+      "hand_table": {
+        "rows": 0,
+        "positive_normal_rows": 0,
+        "min_signed_distance_m": null,
+        "peak_normal_force_N": null
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "2843f6ce188e34febc5bc61553bf7f168aab81b38e3e14782362b167587ae8e4",
+        "CONTROLLER.json": "6b252e06365748eb87971fab4110c0d035b44b6eeb150dedc2bda52488e5718c",
+        "SOURCE_SNAPSHOT.json": "3322b820735bce37776e51255b4f107c611f8c39acdcf5ec74291b59be728dfe",
+        "trace.npz": "42f333d271e15748bd8c40d535feebcff1ba584407493b252199ed5bcaacde03",
+        "contacts.npy": "9dae2390334fe8c51b9569b6a81951cd8d4fa1645332002ed6fe8edcf0732a3f",
+        "frames.json": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+      },
+      "checks": {
+        "per_step_residual_bits": true,
+        "finite_limits_and_original_gates": true,
+        "original_top1_world_pose_and_depth": true,
+        "no_object_constraint_in_inventory": true,
+        "same_register_and_joint_target_script": true,
+        "actual_dt_no_hidden_substeps": true,
+        "all_205_frames_decode": true
+      },
+      "additional_physics_steps": 0,
+      "additional_network_forwards": 0,
+      "boundary": "Checks saved states, contact outcomes, source hashes and initial constraint inventory; does not identify hardware dynamics or establish force closure/general success."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere",
+      "status": "saved_scene_execution_verified",
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "validated_grasp": true,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "final_lift_m": 0.09246561339773957,
+      "final_lowest_world_z_m": 0.09246561339773957,
+      "max_gear_residual_rad": 0.0013934144449996855,
+      "peak_joint_velocity_rad_s": 1.1246809020579618,
+      "wrist_reaction_bounds_pass": true,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "final_every_step_contact": true,
+      "hand_object": {
+        "rows": 20698,
+        "positive_normal_rows": 20508,
+        "min_signed_distance_m": -1.0387269087980396e-05,
+        "peak_normal_force_N": 16.91015650926486
+      },
+      "hand_table": {
+        "rows": 5008,
+        "positive_normal_rows": 4675,
+        "min_signed_distance_m": -4.641304063488297e-05,
+        "peak_normal_force_N": 18.41045208221965
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "3ea40343fdfdaedafaad38336a0e4eaea65eed1d2ff30345b854887d9afdaac9",
+        "CONTROLLER.json": "2a9c382a245afe071b83526563002587aacdcc2c4dbd4355feac6718ca9d21d7",
+        "SOURCE_SNAPSHOT.json": "545c8aac74426c87f33ef4e76798b6c8008816749d816cf834ec44321659cccd",
+        "trace.npz": "50caed6aaa0030b1db7b3fba75d95bd28a846b1b86d9c77ed2ca84c05bac6e09",
+        "contacts.npy": "00398ff56f3f14484cf8cb5260ab4dc9485ac7c0b8a30859f2ed585924688890",
+        "frames.json": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+      },
+      "checks": {
+        "per_step_residual_bits": true,
+        "finite_limits_and_original_gates": true,
+        "original_top1_world_pose_and_depth": true,
+        "no_object_constraint_in_inventory": true,
+        "same_register_and_joint_target_script": true,
+        "actual_dt_no_hidden_substeps": true,
+        "all_205_frames_decode": true
+      },
+      "additional_physics_steps": 0,
+      "additional_network_forwards": 0,
+      "boundary": "Checks saved states, contact outcomes, source hashes and initial constraint inventory; does not identify hardware dynamics or establish force closure/general success."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box",
+      "status": "saved_scene_execution_verified",
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "validated_grasp": true,
+      "lift_observed": true,
+      "port_stability_pass": true,
+      "final_lift_m": 0.09945523962575568,
+      "final_lowest_world_z_m": 0.09775544550466128,
+      "max_gear_residual_rad": 0.0014044267407362088,
+      "peak_joint_velocity_rad_s": 0.9669192196586516,
+      "wrist_reaction_bounds_pass": true,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "final_every_step_contact": true,
+      "hand_object": {
+        "rows": 49058,
+        "positive_normal_rows": 29513,
+        "min_signed_distance_m": -3.42575959887936e-05,
+        "peak_normal_force_N": 10.772198285349559
+      },
+      "hand_table": {
+        "rows": 4629,
+        "positive_normal_rows": 4438,
+        "min_signed_distance_m": -1.237634107736918e-05,
+        "peak_normal_force_N": 18.615571063232093
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "e33bb9ce24d5417f7bc60624e699de3601fd5d2f51230986f6734b5d45744948",
+        "CONTROLLER.json": "0243c883d3ab4b84f8d510bb6711537c80c6bfebfe45e683f12d4ed6e8151f3b",
+        "SOURCE_SNAPSHOT.json": "d0cd33499450d426ce9172e1381edf12c1c9980d9879051d7c069a8f018e2976",
+        "trace.npz": "6e3d7d1da4a7fbd40168fe3beffbd123f85f4ac9446074f7ae8deac4dd846a82",
+        "contacts.npy": "8624634be321dfb9facc1fc7eac626c39c59b17a155452862ab98ac2de1f1d30",
+        "frames.json": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+      },
+      "checks": {
+        "per_step_residual_bits": true,
+        "finite_limits_and_original_gates": true,
+        "original_top1_world_pose_and_depth": true,
+        "no_object_constraint_in_inventory": true,
+        "same_register_and_joint_target_script": true,
+        "actual_dt_no_hidden_substeps": true,
+        "all_205_frames_decode": true
+      },
+      "additional_physics_steps": 0,
+      "additional_network_forwards": 0,
+      "boundary": "Checks saved states, contact outcomes, source hashes and initial constraint inventory; does not identify hardware dynamics or establish force closure/general success."
+    }
+  ],
+  "total_physics_steps_verified": 78720,
+  "additional_physics_steps": 0,
+  "additional_network_forwards": 0,
+  "audit_wall_seconds": 0.6432765671052039
+}

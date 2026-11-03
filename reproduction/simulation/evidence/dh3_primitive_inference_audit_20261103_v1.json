@@ -1,0 +1,303 @@
+{
+  "status": "three_primitive_saved_RGBD_to_original_top1_bindings_verified",
+  "cohort": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/PROTOCOL.json",
+    "sha256": "c2110f57014b5d8aec92171ecefa8384515d113dac14423540cca792c4341704"
+  },
+  "scene_index": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/SCENES.json",
+    "sha256": "caddecee2ff24b5ebe0a8207259bb091ab61e31ab6cfbfa178ac97ac8475cf2f"
+  },
+  "original_audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py",
+    "sha256": "da39899407085cb197e98f08d4e8f4b89cd4f51f1fc9e0777f8f30722c026ed3"
+  },
+  "audit_driver_source": {
+    "path": "/tmp/audit_primitive_inference.py",
+    "sha256": "6fd902111482691f121d6f891496288bccedff5a7b4110db9910f2bf9b459b24"
+  },
+  "scenes": [
+    {
+      "status": "saved_synthetic_frame_and_original_selection_binding_verified",
+      "scene_manifest": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/cylinder/scene_manifest.json",
+        "sha256": "f98a116d4d6036412892a954d94898108f8fe31fde60513a0525037461061db1"
+      },
+      "pipeline_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/cylinder/RESULTS.json",
+        "sha256": "2aec0f9b88aae8b663862deb26ba140a51986871b3eabc9aa8857ae92673375f"
+      },
+      "selection_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/cylinder/selection/RESULTS.json",
+        "sha256": "3c80c94f1efc22ed02f050dd64e537fbc0e6aa2e58db78a1929b43c3285b0ec6"
+      },
+      "scene_signature_sha256": "e694476095cfb23a61baa9215ba3b3845ff51311ebc4723f263afced7b80318a",
+      "checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22785,
+        "branch_candidates": [
+          28,
+          20,
+          26,
+          30,
+          22,
+          17,
+          25,
+          23,
+          14,
+          24,
+          22
+        ],
+        "merged_candidates": 251,
+        "collision_input": 400,
+        "collision_admitted": 251,
+        "top1_pre_collision_index": 0,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.9138884544372559
+      },
+      "timing_seconds": {
+        "representation_model_load": 1.379309811978601,
+        "eleven_original_get_grasp_branches": 17.966651521041058,
+        "original_hand_stage": 2.5305808649864048,
+        "collision_asset_preparation": 1.2593034550081939,
+        "original_collision": 16.491960966959596,
+        "total": 41.539764814893715,
+        "original_final_selection": 0.0819603210547939,
+        "batch_frame_with_selection_wall": 41.625235604005866
+      },
+      "timing_boundary": "This frame: 17.966651521s for eleven original get_grasp branches; 41.539764815s original runner internal total including stage load/scoring/assets/collision; 41.625235604s batch frame wall including original final selection. Shared model preparation across frames is accounted for by the batch receipt, not counted as a separate cold load per frame.",
+      "audit_new_network_forwards": 0,
+      "audit_new_collision_queries": 0,
+      "audit_new_renders": 0,
+      "audit_physical_steps": 0,
+      "boundary": "Saved-artifact integrity, not an independent grasp-success or force-closure proof",
+      "scene_id": "cylinder",
+      "timing_source": "Actual immutable per-frame RESULTS.json; old cube-specific timing_boundary text replaced only in this new derived audit",
+      "batch_cache": {
+        "shared_models": true,
+        "cache_receipt": "../MODEL_CACHE.json",
+        "first_frame": true,
+        "per_frame_seed": 20261103,
+        "model_load_count_this_frame": 5,
+        "global_model_objects": {
+          "representation": 136921679331152,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth": 136921679527808,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth": 136921679524496,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth": 136921679520560,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth": 136921679514608
+        }
+      },
+      "original_audit_source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py",
+        "sha256": "da39899407085cb197e98f08d4e8f4b89cd4f51f1fc9e0777f8f30722c026ed3"
+      },
+      "audit_driver_source": {
+        "path": "/tmp/audit_primitive_inference.py",
+        "sha256": "6fd902111482691f121d6f891496288bccedff5a7b4110db9910f2bf9b459b24"
+      }
+    },
+    {
+      "status": "saved_synthetic_frame_and_original_selection_binding_verified",
+      "scene_manifest": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/sphere/scene_manifest.json",
+        "sha256": "b12c13d24b841bb3dd2afcda055f690cbdc11bdc0b282545e91a153791b78ee1"
+      },
+      "pipeline_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/sphere/RESULTS.json",
+        "sha256": "9e2762a38385fae559361ca4c95fd90428b3a5bf902f7b4661caa35b6867dfca"
+      },
+      "selection_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/sphere/selection/RESULTS.json",
+        "sha256": "ee911cb499c097af68c583bcc34bd0add493fa97ddd05dd875b6fb2b8cc8502d"
+      },
+      "scene_signature_sha256": "24dd586f42eb6c0cba1424cbc52a33692145fb38f2f2a94dcf77483859ed6c68",
+      "checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22761,
+        "branch_candidates": [
+          14,
+          15,
+          29,
+          18,
+          18,
+          7,
+          23,
+          11,
+          6,
+          15,
+          13
+        ],
+        "merged_candidates": 169,
+        "collision_input": 400,
+        "collision_admitted": 103,
+        "top1_pre_collision_index": 93,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.5087647438049316
+      },
+      "timing_seconds": {
+        "representation_model_load": 0.23205062199849635,
+        "eleven_original_get_grasp_branches": 16.58262567303609,
+        "original_hand_stage": 1.5197674919618294,
+        "collision_asset_preparation": 1.31526473199483,
+        "original_collision": 16.967358331079595,
+        "total": 36.75272919295821,
+        "original_final_selection": 0.08125525491777807,
+        "batch_frame_with_selection_wall": 36.83752605202608
+      },
+      "timing_boundary": "This frame: 16.582625673s for eleven original get_grasp branches; 36.752729193s original runner internal total including stage load/scoring/assets/collision; 36.837526052s batch frame wall including original final selection. Shared model preparation across frames is accounted for by the batch receipt, not counted as a separate cold load per frame.",
+      "audit_new_network_forwards": 0,
+      "audit_new_collision_queries": 0,
+      "audit_new_renders": 0,
+      "audit_physical_steps": 0,
+      "boundary": "Saved-artifact integrity, not an independent grasp-success or force-closure proof",
+      "scene_id": "sphere",
+      "timing_source": "Actual immutable per-frame RESULTS.json; old cube-specific timing_boundary text replaced only in this new derived audit",
+      "batch_cache": {
+        "shared_models": true,
+        "cache_receipt": "../MODEL_CACHE.json",
+        "first_frame": false,
+        "per_frame_seed": 20261103,
+        "model_load_count_this_frame": 0,
+        "global_model_objects": {
+          "representation": 136921679331152,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth": 136921679527808,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth": 136921679524496,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth": 136921679520560,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth": 136921679514608
+        }
+      },
+      "original_audit_source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py",
+        "sha256": "da39899407085cb197e98f08d4e8f4b89cd4f51f1fc9e0777f8f30722c026ed3"
+      },
+      "audit_driver_source": {
+        "path": "/tmp/audit_primitive_inference.py",
+        "sha256": "6fd902111482691f121d6f891496288bccedff5a7b4110db9910f2bf9b459b24"
+      }
+    },
+    {
+      "status": "saved_synthetic_frame_and_original_selection_binding_verified",
+      "scene_manifest": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/scenes_v2/long_box/scene_manifest.json",
+        "sha256": "3ff6a76ea172e9c49a79cb6e6d8061f4f4ebabd5a8d6f3ef5eba3c8bc486d0fe"
+      },
+      "pipeline_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/long_box/RESULTS.json",
+        "sha256": "d318988fbc2ecf3ed6c49e6126b135bff9ba0124b7132ecf5bc63f7a21ae038e"
+      },
+      "selection_RESULTS": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/inference/long_box/selection/RESULTS.json",
+        "sha256": "e4b19b14e8a8566b09e11a8f4e08420587cd4aaab7940769df9ece5c7255508d"
+      },
+      "scene_signature_sha256": "f8c23ba2e354938071588a24ae5a00e74c572129968d0c239def43b1cc777615",
+      "checks": {
+        "all_scene_render_files_and_assets_SHA": true,
+        "all_stage_receipt_SHA_links": true,
+        "camera_depth_calibration_and_transforms": true,
+        "identity_points_exact_original_depth_pixel_bits": true,
+        "original_truncation_voxel_keys_complete_unique": true,
+        "original_seeded_11_transform_recipe_bits": true,
+        "original_branch_concatenation_bits": true,
+        "parser_column_bridge_bits": true,
+        "actual_collision_mask_equals_recorded_zero_overlap_bits": true,
+        "nonempty_original_PCL_SHA": true,
+        "original_argsort_top10_and_top1_array_bits": true
+      },
+      "observed": {
+        "valid_depth_pixels": 921600,
+        "identity_scene_voxels": 22695,
+        "branch_candidates": [
+          80,
+          49,
+          63,
+          64,
+          55,
+          45,
+          54,
+          56,
+          36,
+          72,
+          66
+        ],
+        "merged_candidates": 640,
+        "collision_input": 400,
+        "collision_admitted": 50,
+        "top1_pre_collision_index": 21,
+        "top1_type": 4,
+        "top1_raw_learned_score": 1.4775521755218506
+      },
+      "timing_seconds": {
+        "representation_model_load": 0.245752691058442,
+        "eleven_original_get_grasp_branches": 18.41089516307693,
+        "original_hand_stage": 4.593624809058383,
+        "collision_asset_preparation": 1.515726657002233,
+        "original_collision": 17.317443635081872,
+        "total": 42.45888387702871,
+        "original_final_selection": 0.0789597979746759,
+        "batch_frame_with_selection_wall": 42.54147790709976
+      },
+      "timing_boundary": "This frame: 18.410895163s for eleven original get_grasp branches; 42.458883877s original runner internal total including stage load/scoring/assets/collision; 42.541477907s batch frame wall including original final selection. Shared model preparation across frames is accounted for by the batch receipt, not counted as a separate cold load per frame.",
+      "audit_new_network_forwards": 0,
+      "audit_new_collision_queries": 0,
+      "audit_new_renders": 0,
+      "audit_physical_steps": 0,
+      "boundary": "Saved-artifact integrity, not an independent grasp-success or force-closure proof",
+      "scene_id": "long_box",
+      "timing_source": "Actual immutable per-frame RESULTS.json; old cube-specific timing_boundary text replaced only in this new derived audit",
+      "batch_cache": {
+        "shared_models": true,
+        "cache_receipt": "../MODEL_CACHE.json",
+        "first_frame": false,
+        "per_frame_seed": 20261103,
+        "model_load_count_this_frame": 0,
+        "global_model_objects": {
+          "representation": 136921679331152,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth": 136921679527808,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth": 136921679524496,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth": 136921679520560,
+          "decision:/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth": 136921679514608
+        }
+      },
+      "original_audit_source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/audit_synthetic_frame_binding.py",
+        "sha256": "da39899407085cb197e98f08d4e8f4b89cd4f51f1fc9e0777f8f30722c026ed3"
+      },
+      "audit_driver_source": {
+        "path": "/tmp/audit_primitive_inference.py",
+        "sha256": "6fd902111482691f121d6f891496288bccedff5a7b4110db9910f2bf9b459b24"
+      }
+    }
+  ],
+  "audit_new_network_forwards": 0,
+  "audit_new_collision_queries": 0,
+  "audit_new_renders": 0,
+  "audit_physical_steps": 0,
+  "boundary": "Read-only saved artifact integrity. No new grasp experiment, success-rate or force-closure claim."
+}

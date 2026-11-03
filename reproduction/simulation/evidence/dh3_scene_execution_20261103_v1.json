@@ -1,0 +1,347 @@
+{
+  "scope": "Three predeclared native primitive geometries, one unchanged original-top1 physical execution each. Independent DH3 simulation port, not author hardware benchmark or general success estimate.",
+  "status": "three_of_three_lifted_with_original_port_gates",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/PROTOCOL.json",
+    "sha256": "c2110f57014b5d8aec92171ecefa8384515d113dac14423540cca792c4341704"
+  },
+  "runner": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_dh3_scene.py",
+    "sha256": "9f880e1636a54382e033b1b669c3537199148979e3519088f5d68ff8f28a9451"
+  },
+  "unchanged_imported_controller": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_time_refinement_smoke.py",
+    "sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239"
+  },
+  "cases": [
+    {
+      "scene": "cylinder",
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder",
+      "status": "object_lifted",
+      "observed_lift": true,
+      "port_stability_pass": true,
+      "original_top1": {
+        "score": 1.9138884544372559,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.03999999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            0.959394720059607,
+            -0.049946712382089684,
+            -0.27760985841393854
+          ],
+          [
+            -0.032634695368487565,
+            0.957933021157055,
+            -0.28513078289736377
+          ],
+          [
+            0.28017296275074643,
+            0.2826126695029786,
+            0.9174057118485782
+          ]
+        ],
+        "translation_m": [
+          0.04610206862801898,
+          -0.004918789850890455,
+          0.22815983857179453
+        ]
+      },
+      "selected_pre_collision_index": 0,
+      "final_lift_m": 0.10032927322131373,
+      "final_lowest_world_z_m": 0.09305222319010191,
+      "max_gear_residual_rad": 0.0060333186423067175,
+      "peak_joint_velocity_rad_s": 1.2904122821136328,
+      "max_wrist_COM_error_m": 0.00010417136158466991,
+      "peak_gear_reaction_Nm": 1.0012286600091833,
+      "constraint_correction_work_proxy_J": 0.0065823921948288235,
+      "hand_object_min_distance_m": -5.964245383933922e-05,
+      "hand_table_min_distance_m": null,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "wall_seconds_including_actual_render": 31.01783070503734,
+      "physical_attempts": 1,
+      "network_reruns_by_executor": 0,
+      "candidate_reselections": 0,
+      "artifacts": {
+        "RESULTS.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/RESULTS.json",
+          "sha256": "2843f6ce188e34febc5bc61553bf7f168aab81b38e3e14782362b167587ae8e4"
+        },
+        "CONTROLLER.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/CONTROLLER.json",
+          "sha256": "6b252e06365748eb87971fab4110c0d035b44b6eeb150dedc2bda52488e5718c"
+        },
+        "RUN_SOURCES.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/RUN_SOURCES.json",
+          "sha256": "a58da599da7fba09314416822418c5def92482f60d1b48a948218b92c89316e1"
+        },
+        "SOURCE_SNAPSHOT.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/SOURCE_SNAPSHOT.json",
+          "sha256": "3322b820735bce37776e51255b4f107c611f8c39acdcf5ec74291b59be728dfe"
+        },
+        "trace.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/trace.npz",
+          "sha256": "42f333d271e15748bd8c40d535feebcff1ba584407493b252199ed5bcaacde03"
+        },
+        "contacts.npy": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/contacts.npy",
+          "sha256": "9dae2390334fe8c51b9569b6a81951cd8d4fa1645332002ed6fe8edcf0732a3f"
+        },
+        "frames.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/frames.json",
+          "sha256": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+        },
+        "VIDEO.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/VIDEO.json",
+          "sha256": "03aababd3f01c48b8ec6da65f7c993848807e11e649ae0164b1db205d48c44ad"
+        }
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/cylinder/grasp_normal_speed.mp4",
+        "bytes": 113172,
+        "sha256": "0a70681eeb684c017627757fcb6a7dae26e3c6f90016f2aacc3a3e9b8e592731",
+        "fps": 20.0,
+        "frames": 205,
+        "duration_s": 10.25,
+        "new_physics_steps": 0
+      }
+    },
+    {
+      "scene": "sphere",
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere",
+      "status": "object_lifted",
+      "observed_lift": true,
+      "port_stability_pass": true,
+      "original_top1": {
+        "score": 1.5087647438049316,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.03999999910593033,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            -0.5885051155105893,
+            0.8000601545047781,
+            -0.11647089071843648
+          ],
+          [
+            -0.7746948568156878,
+            -0.5168036419760752,
+            0.3643650454332618
+          ],
+          [
+            0.23132137765599708,
+            0.3046601173751529,
+            0.9239440896075367
+          ]
+        ],
+        "translation_m": [
+          0.033642524230110105,
+          -0.15147491874181399,
+          0.2601259175334946
+        ]
+      },
+      "selected_pre_collision_index": 93,
+      "final_lift_m": 0.09246561339773957,
+      "final_lowest_world_z_m": 0.09246561339773957,
+      "max_gear_residual_rad": 0.0013934144449996855,
+      "peak_joint_velocity_rad_s": 1.1246809020579618,
+      "max_wrist_COM_error_m": 0.00010418887267640262,
+      "peak_gear_reaction_Nm": 1.0487412022850624,
+      "constraint_correction_work_proxy_J": 0.003150045435401911,
+      "hand_object_min_distance_m": -1.0387269087980396e-05,
+      "hand_table_min_distance_m": -4.641304063488297e-05,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "wall_seconds_including_actual_render": 27.08127417601645,
+      "physical_attempts": 1,
+      "network_reruns_by_executor": 0,
+      "candidate_reselections": 0,
+      "artifacts": {
+        "RESULTS.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/RESULTS.json",
+          "sha256": "3ea40343fdfdaedafaad38336a0e4eaea65eed1d2ff30345b854887d9afdaac9"
+        },
+        "CONTROLLER.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/CONTROLLER.json",
+          "sha256": "2a9c382a245afe071b83526563002587aacdcc2c4dbd4355feac6718ca9d21d7"
+        },
+        "RUN_SOURCES.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/RUN_SOURCES.json",
+          "sha256": "c681e7c2b2ffc745126b161386b6d0b398526acdfdf00cd40727c4eaae03acfa"
+        },
+        "SOURCE_SNAPSHOT.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/SOURCE_SNAPSHOT.json",
+          "sha256": "545c8aac74426c87f33ef4e76798b6c8008816749d816cf834ec44321659cccd"
+        },
+        "trace.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/trace.npz",
+          "sha256": "50caed6aaa0030b1db7b3fba75d95bd28a846b1b86d9c77ed2ca84c05bac6e09"
+        },
+        "contacts.npy": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/contacts.npy",
+          "sha256": "00398ff56f3f14484cf8cb5260ab4dc9485ac7c0b8a30859f2ed585924688890"
+        },
+        "frames.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/frames.json",
+          "sha256": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+        },
+        "VIDEO.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/VIDEO.json",
+          "sha256": "041142bbe7ac097e7d70ab228f9d919822823b245c4f4e8bfdcb045daad38f75"
+        }
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/sphere/grasp_normal_speed.mp4",
+        "bytes": 113410,
+        "sha256": "460afc18eb5f7983c72d89a130f2ba5c262e61504a1cdddd3344ca97a938d14e",
+        "fps": 20.0,
+        "frames": 205,
+        "duration_s": 10.25,
+        "new_physics_steps": 0
+      }
+    },
+    {
+      "scene": "long_box",
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box",
+      "status": "object_lifted",
+      "observed_lift": true,
+      "port_stability_pass": true,
+      "original_top1": {
+        "score": 1.4775521755218506,
+        "type": 4,
+        "width_m": 0.063,
+        "depth_m": 0.019999999552965164,
+        "actuator2": [
+          95.0,
+          100.0
+        ],
+        "rotation_matrix": [
+          [
+            0.07320685422737587,
+            0.9946607133291426,
+            -0.07273863116782786
+          ],
+          [
+            -0.9967425216868004,
+            0.070494974412439,
+            -0.039178548459479406
+          ],
+          [
+            -0.03384165269026732,
+            0.07536981537345727,
+            0.9965812256090139
+          ]
+        ],
+        "translation_m": [
+          0.010927756606204434,
+          -0.040998546505376765,
+          0.2706651249815494
+        ]
+      },
+      "selected_pre_collision_index": 21,
+      "final_lift_m": 0.09945523962575568,
+      "final_lowest_world_z_m": 0.09775544550466128,
+      "max_gear_residual_rad": 0.0014044267407362088,
+      "peak_joint_velocity_rad_s": 0.9669192196586516,
+      "max_wrist_COM_error_m": 0.00010418451569079525,
+      "peak_gear_reaction_Nm": 0.5496740517034628,
+      "constraint_correction_work_proxy_J": 0.006297222814225077,
+      "hand_object_min_distance_m": -3.42575959887936e-05,
+      "hand_table_min_distance_m": -1.237634107736918e-05,
+      "final_positive_contact_steps": 960,
+      "final_contact_window_steps": 960,
+      "physics_steps": 19680,
+      "physical_seconds": 10.25,
+      "wall_seconds_including_actual_render": 28.389403381035663,
+      "physical_attempts": 1,
+      "network_reruns_by_executor": 0,
+      "candidate_reselections": 0,
+      "artifacts": {
+        "RESULTS.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/RESULTS.json",
+          "sha256": "e33bb9ce24d5417f7bc60624e699de3601fd5d2f51230986f6734b5d45744948"
+        },
+        "CONTROLLER.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/CONTROLLER.json",
+          "sha256": "0243c883d3ab4b84f8d510bb6711537c80c6bfebfe45e683f12d4ed6e8151f3b"
+        },
+        "RUN_SOURCES.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/RUN_SOURCES.json",
+          "sha256": "7810da602024ccb8edc4eb53525b81c88efd03c56e56dabdb4331fe6d1e2ce52"
+        },
+        "SOURCE_SNAPSHOT.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/SOURCE_SNAPSHOT.json",
+          "sha256": "d0cd33499450d426ce9172e1381edf12c1c9980d9879051d7c069a8f018e2976"
+        },
+        "trace.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/trace.npz",
+          "sha256": "6e3d7d1da4a7fbd40168fe3beffbd123f85f4ac9446074f7ae8deac4dd846a82"
+        },
+        "contacts.npy": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/contacts.npy",
+          "sha256": "8624634be321dfb9facc1fc7eac626c39c59b17a155452862ab98ac2de1f1d30"
+        },
+        "frames.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/frames.json",
+          "sha256": "9deba00ee3d657b0b6708ae18bbd1d1671b5f361b9b1de285a8892d61c0566dd"
+        },
+        "VIDEO.json": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/VIDEO.json",
+          "sha256": "7fda973be0092d8bbf54b0ca8f6033bc30a43dfcc77a451221d3ee2cb8a5f3cc"
+        }
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_primitive_generalization_20261103_v1/physics/long_box/grasp_normal_speed.mp4",
+        "bytes": 123420,
+        "sha256": "12feeaaf09ed207ae4607f9f8cc0143ae341a7482b96383c551f7056a7f74ba5",
+        "fps": 20.0,
+        "frames": 205,
+        "duration_s": 10.25,
+        "new_physics_steps": 0
+      }
+    }
+  ],
+  "new_shape_successes": 3,
+  "new_shape_attempted_objects": 3,
+  "cube_interface_regression": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/evidence/dh3_generic_scene_regression_20261103_v1.json",
+    "sha256": "2d05904c3eef00e29a5729294047a6c0c14f4e086259baae77b65a749964f5ef",
+    "all_18_trace_arrays_bit_identical": true,
+    "physics_steps": 19680,
+    "physical_seconds": 10.25,
+    "wall_seconds_including_actual_render": 24.867974565015174
+  },
+  "costs": {
+    "primitive_physical_trials": 3,
+    "primitive_physics_steps": 59040,
+    "primitive_physical_seconds": 30.75,
+    "cube_interface_regression_trials": 1,
+    "cube_interface_regression_physics_steps": 19680,
+    "cube_interface_regression_physical_seconds": 10.25,
+    "this_work_all_physics_steps": 78720,
+    "this_work_all_physical_seconds": 41.0,
+    "previous_time_study_all_steps": 98460,
+    "previous_time_study_all_physical_seconds": 119.0,
+    "total_all_history_real_integration_steps": 177180,
+    "total_all_history_physical_seconds_mixed_dt": 160.0,
+    "video_encoding_extra_physics_steps": 0,
+    "new_network_forwards_by_physics_executor": 0,
+    "wall_boundary": "Per-case internal elapsed clocks include actual simultaneous rendering and exclude process startup, readiness waiting and network inference. Workers overlap the original inference pipeline; do not sum per-case clocks as campaign elapsed wall time."
+  },
+  "retention": "Every previous low-cap/coarse-grid failure and zero-step render failure remains retained. No new timestep refinement, grasp reselection, force change, input pose search, dynamic reset, gravity removal, or object attachment in this cohort.",
+  "boundary": "Two declared SI motors .6/.3Nm, ideal gear-row cap100Nm, wrist30N/Nm per row, dt1/1920/inner20 and prior gates retained. These are simulation assumptions, not identified original DH3 dynamics. The sampled correction-work proxy is not exact energy or an energy bound."
+}
