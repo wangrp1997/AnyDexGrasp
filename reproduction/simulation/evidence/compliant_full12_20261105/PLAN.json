@@ -1,0 +1,531 @@
+{
+  "schema": "DH3-fixed-compliant-full12-v1",
+  "source_cohort": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run/RESULTS.json",
+    "sha256": "11b0e41dc816dfaaa992a7a46ce6bfc3bc128219f293c3a69a2627a15c26a11a",
+    "bytes": 104874
+  },
+  "reuse_source_cohort": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/RESULTS.json",
+    "sha256": "a74cd3d8414f03d4a4f73785f7b7618616a067dce42c22c4e68fe9796793ec76",
+    "bytes": 13923
+  },
+  "source_bindings": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_dh3_compliant_full12.py",
+      "sha256": "79fe0709ae86d89b0689d384a37f2031989b200313890971b29af41d9905ca3b",
+      "bytes": 9346
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_compliant_dh3_refined_scene.py",
+      "sha256": "cdc86125eb944446442d396a369aef44333ca2b87d902a72bd150ccc44f96349",
+      "bytes": 17768
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_compliant_proxy.py",
+      "sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+      "bytes": 10294
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_time_refinement_smoke.py",
+      "sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239",
+      "bytes": 48017
+    }
+  ],
+  "cases": [
+    {
+      "scene_id": "apple_yaw000",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw000/scene_manifest.json",
+        "sha256": "57839a544ab24ee04243bf89e7a22081085c28463e3cddc2b846de6f7f7aecc7",
+        "bytes": 19524
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/RESULTS.json",
+        "sha256": "63ad98cfe106c6ca83942f3e43ef8cb6b1cad15917753b910bd9aeaa54414784",
+        "bytes": 28516
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 231,
+        "collision_admitted": 169
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/RESULTS.json",
+        "sha256": "50bb33113a317707c46e21bf99d4978a4831c2221e333b59050cf846442079bb",
+        "bytes": 3004
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw000/selection/selected_original_DH3_pose.npz",
+        "sha256": "f59d5b0bf94185df6e598d3c712cc51f0d555c1c3c31996ee01ac828d5f7ac49",
+        "bytes": 66055
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000/RESULTS.json",
+        "sha256": "ecfe9e521f464f6fad3f205e0fa7466a0c1a7a491c95c790a1c22c565d9ee7c1",
+        "bytes": 3538
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw000/trace.npz",
+        "sha256": "d94369985dd370da4e3e38c9ea6347a5c3da5c9b109f7da30fcbe55b943c425b",
+        "bytes": 9673580
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/apple_yaw000"
+    },
+    {
+      "scene_id": "apple_yaw090",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_apple_v2/scenes/apple_yaw090/scene_manifest.json",
+        "sha256": "eb0edbd51d45ca12e45c0ff9171b8c9e7cf5899f76d3e4d7c29f76005bdcfea2",
+        "bytes": 19533
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw090/RESULTS.json",
+        "sha256": "dfd70d1c14ae5a547e11d22661c8bf3567ef6f32b23e124dba05729de2c988ab",
+        "bytes": 28517
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 246,
+        "collision_admitted": 154
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw090/selection/RESULTS.json",
+        "sha256": "d4f2e9ec8cb3d747bb6a6c60501e86b9932a8f498641f2efcfebdf560e133a59",
+        "bytes": 3002
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/inference/apple_yaw090/selection/selected_original_DH3_pose.npz",
+        "sha256": "38418b23ac733465e19fbc4f57a437b9b55f8083f7d9104e2eb135466540f0ec",
+        "bytes": 64448
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw090/RESULTS.json",
+        "sha256": "e2b6001daa34bfd2bf2e117584508ac61f09867e19dce13bfa6e60b910ca280b",
+        "bytes": 3535
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_apple_v2/physics/apple_yaw090/trace.npz",
+        "sha256": "e3178f71de20b2754b60ec2eb2a5aa0236b001c9f142d8a83884994cf3c60fb5",
+        "bytes": 10067352
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/apple_yaw090"
+    },
+    {
+      "scene_id": "banana_yaw000",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/banana_yaw000/scene_manifest.json",
+        "sha256": "5423e5d2c2e48e48532902b8e10e088afdf63c9024d19a17af513592b1a4b48e",
+        "bytes": 344706
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw000/RESULTS.json",
+        "sha256": "c14f405d151dfecfddcdb583ac1381a70996f57d1c06b5adfaab98c0748becef",
+        "bytes": 48453
+      },
+      "original_status": "physics_port_invalid",
+      "original_collision_stages": {
+        "pre_collision_candidates": 221,
+        "after_original_width_gate": 221,
+        "collision_rejected": 210,
+        "collision_admitted": 11
+      },
+      "mode": "reuse",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw000/selection/RESULTS.json",
+        "sha256": "43e23083a5b0b37ac9d4c77214de21c79c7e8eb69bfacd90130636e688e94416",
+        "bytes": 3021
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw000/selection/selected_original_DH3_pose.npz",
+        "sha256": "4eef958040a6515d8d8c1c745f7bd7f28baa0c9b37160b0ba4a529cc1aa7491f",
+        "bytes": 64373
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/RESULTS.json",
+        "sha256": "c211d4902a58591766db08f42ae32165f1cb96c463b664dbfdf54134f3299eaa",
+        "bytes": 3535
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/trace.npz",
+        "sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae",
+        "bytes": 10539644
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000",
+      "reused_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000/RESULTS.json",
+        "sha256": "cea20f67ec771d28431228e0c26ac36b59a6a1a5e8eab478edee187cb2f9942f",
+        "bytes": 3816
+      },
+      "reused_controller": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000/CONTROLLER.json",
+        "sha256": "9752442a83befdc760128960710be7b8f755ff154a70e4ce8349f9fb38652f7c",
+        "bytes": 21825
+      },
+      "reused_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000/trace.npz",
+        "sha256": "d557174bc5cb671a2b01ab4a810e75b3f054ba2343b1ae933c8990f1fbff765d",
+        "bytes": 23456964
+      }
+    },
+    {
+      "scene_id": "banana_yaw090",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/banana_yaw090/scene_manifest.json",
+        "sha256": "66158588ce73ae4180a770956e9d4796df46bae03f6ffb7e8b015ffe3a0f2eb8",
+        "bytes": 344689
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw090/RESULTS.json",
+        "sha256": "c11b88e3087e6cf1a38737e5315809a898bbd21d97a1fbc05f817b004048b6e6",
+        "bytes": 54286
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 347,
+        "collision_admitted": 53
+      },
+      "mode": "reuse",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw090/selection/RESULTS.json",
+        "sha256": "9dd463c13423455aec3465c1470159bf1c9e38a1d95265bf55fa6ea5a310526f",
+        "bytes": 3005
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw090/selection/selected_original_DH3_pose.npz",
+        "sha256": "50b338c4ed1513bb8c1e8a033366cf7af89a2173ac23b49f92e61c8bb7b6bc28",
+        "bytes": 69852
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/RESULTS.json",
+        "sha256": "04ee27589683a7bfafb98d594fa89335480f63cffaf0e35f903358a1514f382f",
+        "bytes": 3557
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/trace.npz",
+        "sha256": "20529bfac7c39a8be7c1c1c9c0effa30983ca1de575654556da3cfa4a05e5b63",
+        "bytes": 9242255
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090",
+      "reused_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090/RESULTS.json",
+        "sha256": "987703acb04d753c55b5c82f25191d2094b70d4431cb58476f242174acb3bc9b",
+        "bytes": 3833
+      },
+      "reused_controller": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090/CONTROLLER.json",
+        "sha256": "38b9cdb807e4fb0d80f97e5992655b5f018fcf1ff0fed56313ac2d98773795f5",
+        "bytes": 21801
+      },
+      "reused_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090/trace.npz",
+        "sha256": "fe1332d20a23e9664b5d4361f68d4116e89e608d5e5d318714896635ed025d87",
+        "bytes": 22102061
+      }
+    },
+    {
+      "scene_id": "foam_brick_yaw000",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/foam_brick_yaw000/scene_manifest.json",
+        "sha256": "356fa0b1aa1c8fa496f2ff1ad123598eb5ecff3d1846d2cbbdb2e2a609947812",
+        "bytes": 347973
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw000/RESULTS.json",
+        "sha256": "73284b6b88524f2b68521b1aa140bc110adcf8d863d8d04670536ca88bfe5317",
+        "bytes": 30587
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 300,
+        "collision_admitted": 100
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw000/selection/RESULTS.json",
+        "sha256": "e73ec5f8dc90774b22e8c8ebaf7cc5a6e655d540e43a5fa06cbdf26186d5380c",
+        "bytes": 3012
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw000/selection/selected_original_DH3_pose.npz",
+        "sha256": "8a6428708588e1ac01d2b5869a325b09b6ec0900df1ca691a3955a1b4818902f",
+        "bytes": 66929
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw000/RESULTS.json",
+        "sha256": "3e02743a0b2e4b73090c0b34a2d18afbfb5a231a260e781e72bc400b1dc0981f",
+        "bytes": 3556
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw000/trace.npz",
+        "sha256": "b7e2b18a48bdd5875a5b84099c3328c961c9d4d18b35e5b75e7bd90e0dd3a221",
+        "bytes": 8214952
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/foam_brick_yaw000"
+    },
+    {
+      "scene_id": "foam_brick_yaw090",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/foam_brick_yaw090/scene_manifest.json",
+        "sha256": "a6a3cf40a91dc5f5d5eff1dfb0db8170a6a0940bacc10b2b658c257e87301275",
+        "bytes": 347977
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw090/RESULTS.json",
+        "sha256": "5398ee76ab5cb26b359bc75acde445890390811df0bcabd1bae81619ab29a666",
+        "bytes": 28650
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 308,
+        "collision_admitted": 92
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw090/selection/RESULTS.json",
+        "sha256": "35f1f5ad5b1dc80ee975c82881e054d60e4b95bbd518ff6e905095e4715f96a7",
+        "bytes": 3008
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/foam_brick_yaw090/selection/selected_original_DH3_pose.npz",
+        "sha256": "f3e0cd29f6fb21d71dced453a94dec00744defc1c59036f1205d44e532c6b415",
+        "bytes": 66668
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw090/RESULTS.json",
+        "sha256": "eb1ec01413d78c834a8b279ee6b947ec9cefeffb068a22035fab1eb1e73e3a78",
+        "bytes": 3518
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/foam_brick_yaw090/trace.npz",
+        "sha256": "aadc0993cc07822aa5f4dd7e8187041a5eb355bda9a97c3af696f6f626f838df",
+        "bytes": 9865273
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/foam_brick_yaw090"
+    },
+    {
+      "scene_id": "bottle_yaw000",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bottle_yaw000/scene_manifest.json",
+        "sha256": "6eb05e48484bb1456e7918fc8ec5daeb99ad1881b5fbd871b16fa812c7692598",
+        "bytes": 344623
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw000/RESULTS.json",
+        "sha256": "7d4e5d92d6c79999b328dfb721f52d83145d7e5859ab5f8c5066aca1aac6a0be",
+        "bytes": 49911
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 346,
+        "after_original_width_gate": 346,
+        "collision_rejected": 76,
+        "collision_admitted": 270
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw000/selection/RESULTS.json",
+        "sha256": "1e539369d39d6a13737d5bec5fba31aad963e8a386f0d1c9a3ce67f5d276f365",
+        "bytes": 3006
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw000/selection/selected_original_DH3_pose.npz",
+        "sha256": "60635a1d4fca207a6a6649b15c9d0fe5100b739cdbba8d7adb17a2decedd3dd4",
+        "bytes": 66615
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw000/RESULTS.json",
+        "sha256": "e43d4b8e18d69ac0d1bf8a9fab78a799c2c938e3d173def2f989d6481f206c76",
+        "bytes": 3514
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw000/trace.npz",
+        "sha256": "f701c9202bfca516a985cb60ef71d642bfc17d56c3ae9dae1b72fe69d3736402",
+        "bytes": 9773676
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/bottle_yaw000"
+    },
+    {
+      "scene_id": "bottle_yaw090",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bottle_yaw090/scene_manifest.json",
+        "sha256": "a8aa18cb0aa0e481af7df7afbb71edb47223688268f665a8aeaf5596816347a0",
+        "bytes": 344624
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw090/RESULTS.json",
+        "sha256": "0e3921975c9db4e97eda0bbf7a895c13f866338a48eca8ab406c8a196e7a9aa6",
+        "bytes": 39740
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 400,
+        "after_original_width_gate": 400,
+        "collision_rejected": 178,
+        "collision_admitted": 222
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw090/selection/RESULTS.json",
+        "sha256": "610f5b1fe7c0db1ea58089fe43e6c04e3a62175a40afe8ce7ded9256aa027ed9",
+        "bytes": 3008
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bottle_yaw090/selection/selected_original_DH3_pose.npz",
+        "sha256": "83f2a198812ed826ad57d6350c8c4439c30c5b1eaf0a6c62d0a5fd9032f9d782",
+        "bytes": 67112
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw090/RESULTS.json",
+        "sha256": "5ada6f20cb60386d8909700fb66a4927125863b0d5b1073566d298bd6b807195",
+        "bytes": 3521
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/bottle_yaw090/trace.npz",
+        "sha256": "e0bbfb97015a0bd73f99b8f2c91b79045a1b32795acd244c8760b74abc0748de",
+        "bytes": 10095897
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/bottle_yaw090"
+    },
+    {
+      "scene_id": "mug_yaw000",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/mug_yaw000/scene_manifest.json",
+        "sha256": "b8d653d3a6b5e9de2b960730562b0c862f610f70ec6ace4a6c39854033e71cc5",
+        "bytes": 341812
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw000/RESULTS.json",
+        "sha256": "d46a9ef26cc10c6efc8b5e80dfb7003d1fa3b08db68f2ce925856562f4034822",
+        "bytes": 28506
+      },
+      "original_status": "object_lifted",
+      "original_collision_stages": {
+        "pre_collision_candidates": 29,
+        "after_original_width_gate": 29,
+        "collision_rejected": 28,
+        "collision_admitted": 1
+      },
+      "mode": "execute",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw000/selection/RESULTS.json",
+        "sha256": "7f79f53146d37e9f5444a9e6ab2bcf228eba17bfa30377892b650cde0e364e2a",
+        "bytes": 3002
+      },
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw000/selection/selected_original_DH3_pose.npz",
+        "sha256": "c92ff6af974379542e94e6fc7b1f44c3e06050349488bf34d1d464c76f9ee5e1",
+        "bytes": 14141
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/mug_yaw000/RESULTS.json",
+        "sha256": "aa9e8dec82aa56c7972d4aa6dea0963b15ad9bbeb5a10b57017174d87a96bed1",
+        "bytes": 3534
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/mug_yaw000/trace.npz",
+        "sha256": "8dbd9bf0fe98abc967390d4f605369df72aea0d87d0f758aa3a5000b351fc96e",
+        "bytes": 9230725
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/mug_yaw000"
+    },
+    {
+      "scene_id": "mug_yaw090",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/mug_yaw090/scene_manifest.json",
+        "sha256": "8696e6665d4b6dfa9f0a3c4e87ecda9367097434493340a06eee40b587764536",
+        "bytes": 341823
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/mug_yaw090/RESULTS.json",
+        "sha256": "fd2a723212af7b4357dd3d0d9b76c3d244d029f991ba3ede62c7ead4bde39ab5",
+        "bytes": 28486
+      },
+      "original_status": "no_original_candidate",
+      "original_collision_stages": {
+        "pre_collision_candidates": 48,
+        "after_original_width_gate": 48,
+        "collision_rejected": 48,
+        "collision_admitted": 0
+      },
+      "mode": "no_original_candidate",
+      "physics_output_dir": null,
+      "reason": "no_candidate_after_original_collision"
+    },
+    {
+      "scene_id": "bowl_yaw000",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw000/scene_manifest.json",
+        "sha256": "fce616c882cb79cf62265a257b0957438407e5339a4676d91efca18718924566",
+        "bytes": 342585
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw000/RESULTS.json",
+        "sha256": "13f69b31d10a43c824ffa4f58aa4a3e0d3bd501e07ba4c26c52e4d133a67f897",
+        "bytes": 28983
+      },
+      "original_status": "no_original_candidate",
+      "original_collision_stages": {
+        "pre_collision_candidates": 83,
+        "after_original_width_gate": 83,
+        "collision_rejected": 83,
+        "collision_admitted": 0
+      },
+      "mode": "no_original_candidate",
+      "physics_output_dir": null,
+      "reason": "no_candidate_after_original_collision"
+    },
+    {
+      "scene_id": "bowl_yaw090",
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/bowl_yaw090/scene_manifest.json",
+        "sha256": "711ed627a389146199a3e66d6a7c82364ddf1af4bea5d2383797a7af1e3afaca",
+        "bytes": 342582
+      },
+      "inference": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/bowl_yaw090/RESULTS.json",
+        "sha256": "70244ba3ab5b194fd6a9908bd4b0c15972eb2a22cb6f4c817afd8d1ada8ded02",
+        "bytes": 28499
+      },
+      "original_status": "no_original_candidate",
+      "original_collision_stages": {
+        "pre_collision_candidates": 88,
+        "after_original_width_gate": 88,
+        "collision_rejected": 88,
+        "collision_admitted": 0
+      },
+      "mode": "no_original_candidate",
+      "physics_output_dir": null,
+      "reason": "no_candidate_after_original_collision"
+    }
+  ],
+  "workers": 4,
+  "model_parameters": {
+    "k_Nm_rad": 0.8,
+    "d_Nm_s_rad": 0.02,
+    "J_kg_m2": 0.001,
+    "actual_hz": 3840,
+    "common_shaft_motor_cap_Nm": 0.6,
+    "spread_motor_cap_Nm": 0.3
+  },
+  "functional_outcome": "Original lift_observed: final COM lift >50mm, final lowest native AABB >40mm, hand-object contact in final half-second; report separately from old numeric gates",
+  "numeric_diagnostics": "Retain original velocity<1.5rad/s, gear residual<.01rad, wrist error<2mm and finite force budgets without rewriting any old results",
+  "attempts_per_selected_scene": 1,
+  "network_forwards": 0,
+  "candidate_reselection": false,
+  "parameter_search": false,
+  "all_twelve_in_denominator": true,
+  "scope": "Known twelve-scene diagnostic set with original algorithm candidates and declared approximate execution, not an unseen test or paper hardware benchmark"
+}

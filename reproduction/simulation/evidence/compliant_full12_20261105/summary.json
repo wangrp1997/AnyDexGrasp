@@ -1,0 +1,144 @@
+{
+  "scope": "Known twelve-scene diagnostic set with original algorithm candidates and declared approximate execution, not an unseen test or paper hardware benchmark",
+  "result_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/RESULTS.json",
+    "sha256": "3e36b233e6980c3a4d0d6085b9c0692f1afdaacaeddfe83c7240ac31b9dfc2b1"
+  },
+  "functional_success_numerator": 9,
+  "functional_success_denominator": 12,
+  "original_top1_coverage": 9,
+  "conditional_execution_success_numerator": 9,
+  "conditional_execution_denominator": 9,
+  "new_grasp_attempts": 7,
+  "reused_grasp_attempts": 2,
+  "no_original_candidate_scenes": 3,
+  "new_physics_steps": 275520,
+  "reused_physics_steps": 78720,
+  "new_physical_seconds": 71.75,
+  "wall_seconds": 102.55858418706339,
+  "numeric_gate_passes": 1,
+  "network_forwards": 0,
+  "original_8_of_12_unchanged": true,
+  "scenes": [
+    {
+      "scene_id": "apple_yaw000",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.10015099380772044,
+      "port_stability_pass": true,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/apple_yaw000"
+    },
+    {
+      "scene_id": "apple_yaw090",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.09852370063629831,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/apple_yaw090"
+    },
+    {
+      "scene_id": "banana_yaw000",
+      "mode": "reuse",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.09506466110025528,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 0,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000"
+    },
+    {
+      "scene_id": "banana_yaw090",
+      "mode": "reuse",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.09286829383365618,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 0,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090"
+    },
+    {
+      "scene_id": "foam_brick_yaw000",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.0963595578277664,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/foam_brick_yaw000"
+    },
+    {
+      "scene_id": "foam_brick_yaw090",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.0985585097610063,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/foam_brick_yaw090"
+    },
+    {
+      "scene_id": "bottle_yaw000",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.09821114894054195,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/bottle_yaw000"
+    },
+    {
+      "scene_id": "bottle_yaw090",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.10094301226223135,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/bottle_yaw090"
+    },
+    {
+      "scene_id": "mug_yaw000",
+      "mode": "execute",
+      "functional_status": "lifted_and_held",
+      "object_final_lift_m": 0.1002053505496629,
+      "port_stability_pass": false,
+      "physics_steps": 39360,
+      "new_physics_steps": 39360,
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_full12_20261104_v1/physics/mug_yaw000"
+    },
+    {
+      "scene_id": "mug_yaw090",
+      "mode": "no_original_candidate",
+      "functional_status": "no_original_candidate",
+      "object_final_lift_m": null,
+      "port_stability_pass": null,
+      "physics_steps": 0,
+      "new_physics_steps": 0,
+      "physics_output_dir": null
+    },
+    {
+      "scene_id": "bowl_yaw000",
+      "mode": "no_original_candidate",
+      "functional_status": "no_original_candidate",
+      "object_final_lift_m": null,
+      "port_stability_pass": null,
+      "physics_steps": 0,
+      "new_physics_steps": 0,
+      "physics_output_dir": null
+    },
+    {
+      "scene_id": "bowl_yaw090",
+      "mode": "no_original_candidate",
+      "functional_status": "no_original_candidate",
+      "object_final_lift_m": null,
+      "port_stability_pass": null,
+      "physics_steps": 0,
+      "new_physics_steps": 0,
+      "physics_output_dir": null
+    }
+  ]
+}
