@@ -1,0 +1,124 @@
+{
+  "schema": "DH3-fixed-force-fixture-v1",
+  "accepted_controller_sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239",
+  "initial_position_register": 95.0,
+  "initial_rotation_register": 100.0,
+  "baseLink_position_world_m": [
+    0.0,
+    0.0,
+    0.45
+  ],
+  "baseLink_orientation_xyzw": [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "integration_hz": 1920,
+  "numSubSteps": 1,
+  "solver_iterations": 100,
+  "non_contact_inner_iterations": 20,
+  "gravity_m_s2": [
+    0.0,
+    0.0,
+    -9.81
+  ],
+  "position_motor_max_torque_Nm": 0.6,
+  "rotation_motor_max_torque_Nm": 0.3,
+  "position_motor_max_velocity_rad_s": 1.0,
+  "rotation_motor_max_velocity_rad_s": 0.5,
+  "gear_max_torque_Nm": 100.0,
+  "gear_erp": 0.2,
+  "wrist_max_force_per_row_N_or_Nm": 30.0,
+  "wrist_erp": 0.2,
+  "position_gain": 0.15,
+  "velocity_gain": 1.0,
+  "hand_lateral_friction": 0.5,
+  "contact_restitution": 0.0,
+  "sphere_radius_m": 0.006,
+  "pad_mass_kg": 0.0,
+  "pad_lateral_friction": 0.5,
+  "pad_restitution": 0.0,
+  "master_theta_central_difference_rad": 0.0001,
+  "initial_hold_s": 0.5,
+  "smooth_close_s": 2.0,
+  "final_hold_s": 0.75,
+  "total_s": 3.25,
+  "steps_per_complete_case": 6240,
+  "final_force_window_s": 0.25,
+  "initial_penetration_tolerance_m": 1e-09,
+  "wrong_link_contact_force_threshold_N": 1e-08,
+  "cases": [
+    {
+      "case_id": "finger1_theta045",
+      "stops": [
+        {
+          "finger": 1,
+          "theta_rad": 0.45
+        }
+      ]
+    },
+    {
+      "case_id": "finger2_theta045",
+      "stops": [
+        {
+          "finger": 2,
+          "theta_rad": 0.45
+        }
+      ]
+    },
+    {
+      "case_id": "finger3_theta045",
+      "stops": [
+        {
+          "finger": 3,
+          "theta_rad": 0.45
+        }
+      ]
+    },
+    {
+      "case_id": "all3_theta045",
+      "stops": [
+        {
+          "finger": 1,
+          "theta_rad": 0.45
+        },
+        {
+          "finger": 2,
+          "theta_rad": 0.45
+        },
+        {
+          "finger": 3,
+          "theta_rad": 0.45
+        }
+      ]
+    },
+    {
+      "case_id": "asymmetric_finger2_045_other_080",
+      "stops": [
+        {
+          "finger": 1,
+          "theta_rad": 0.8
+        },
+        {
+          "finger": 2,
+          "theta_rad": 0.45
+        },
+        {
+          "finger": 3,
+          "theta_rad": 0.8
+        }
+      ]
+    }
+  ],
+  "case_fresh_client": true,
+  "no_table": true,
+  "no_grasped_object": true,
+  "no_scene_reset_after_integration": true,
+  "keep_original_two_motors_nine_gears": false,
+  "compliant_common_shaft_proxy": true,
+  "on_initial_penetration": "zero_step_fixture_failure_keep_evidence_continue_next_declared_case",
+  "on_wrong_link_first_positive_contact": "stop_case_keep_partial_trace_continue_next_declared_case",
+  "no_pad_reposition_or_case_replacement": true,
+  "purpose": "Measure this declared rigid two-drive simulation port under fixed unilateral load; not hardware identification, grasp scoring, success-driven calibration or mechanism-topology validation"
+}

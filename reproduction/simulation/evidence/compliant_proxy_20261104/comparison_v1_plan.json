@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "scene_id": "banana_yaw000",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw000/selection/RESULTS.json",
+        "sha256": "43e23083a5b0b37ac9d4c77214de21c79c7e8eb69bfacd90130636e688e94416"
+      },
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/banana_yaw000/scene_manifest.json",
+        "sha256": "5423e5d2c2e48e48532902b8e10e088afdf63c9024d19a17af513592b1a4b48e"
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/RESULTS.json",
+        "sha256": "c211d4902a58591766db08f42ae32165f1cb96c463b664dbfdf54134f3299eaa"
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/trace.npz",
+        "sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae"
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v1/physics/banana_yaw000"
+    },
+    {
+      "scene_id": "banana_yaw090",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/inference/banana_yaw090/selection/RESULTS.json",
+        "sha256": "9dd463c13423455aec3465c1470159bf1c9e38a1d95265bf55fa6ea5a310526f"
+      },
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/input_nonapple_v2/scenes/banana_yaw090/scene_manifest.json",
+        "sha256": "66158588ce73ae4180a770956e9d4796df46bae03f6ffb7e8b015ffe3a0f2eb8"
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/RESULTS.json",
+        "sha256": "04ee27589683a7bfafb98d594fa89335480f63cffaf0e35f903358a1514f382f"
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090/trace.npz",
+        "sha256": "20529bfac7c39a8be7c1c1c9c0effa30983ca1de575654556da3cfa4a05e5b63"
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v1/physics/banana_yaw090"
+    },
+    {
+      "scene_id": "cube",
+      "selection": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_dh3_eleven_branch_20261103_v2/selection/RESULTS.json",
+        "sha256": "5895bcd1ac2e33580d4f853695ba3ce13ac9be086809d71e5b627ebcd0f2915c"
+      },
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/synthetic_cube_scene_20261103_v2/scene_manifest.json",
+        "sha256": "48dc4fa6f7cb9a5e525eb13cd3cd84cbc578bc3c1c045c9f50691ba80b9660f1"
+      },
+      "baseline_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt1920_cube_physics_20261103_v1/RESULTS.json",
+        "sha256": "3a0b374d6d26111049b9605b6d1fa339fff8f120342107fd2f9f13ca534c7924"
+      },
+      "baseline_trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt1920_cube_physics_20261103_v1/trace.npz",
+        "sha256": "0b358cfb636e12d7b62443153c432089223d9dc9859eb733ee8ea5970eda5517"
+      },
+      "physics_output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v1/physics/cube"
+    }
+  ],
+  "source_bindings": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_compliant_proxy.py",
+      "sha256": "febb60b795b8370f3e68dc393f8730913fe4a13027a556ec9daee48fb11f410c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/run_compliant_dh3_scene.py",
+      "sha256": "68b7f43de80ae329fbd1d0cada03126171a744ea1d435c1e15e6f7f4c388e874"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_time_refinement_smoke.py",
+      "sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239"
+    }
+  ],
+  "scope": "Three fixed saved original top1 comparisons; controller change only; no new candidate inference, pose selection, tuning, object modification or paper success-rate claim",
+  "physics_steps_each": 19680,
+  "configuration_count": 1,
+  "network_forwards": 0,
+  "parallel_workers": 3
+}

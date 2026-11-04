@@ -1,0 +1,823 @@
+{
+  "audit_source": "/tmp/dh3_compliant_proxy_audit_v3.py",
+  "audit_source_sha256": "9ba7c1a145024ab7d194491579f3d362cc2239bb4a7728de6f54e83a2fabf403",
+  "source_review": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger1_theta045/controller_source_frozen.py",
+    "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+    "constants": {
+      "branch_stiffness_Nm_rad": 0.8,
+      "branch_damping_Nm_s_rad": 0.02,
+      "shaft_inertia_kg_m2": 0.001,
+      "shaft_viscous_Nm_s_rad": 0.005,
+      "shaft_position_to_velocity_gain_s_inv": 6.0,
+      "shaft_velocity_feedback_Nm_s_rad": 2.0,
+      "shaft_lower_rad": 0.0,
+      "shaft_upper_rad": 1.333
+    },
+    "isolated_method_cases": 200,
+    "fake_API_only": true,
+    "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+    "findings": [
+      "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+      "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+      "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+      "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+      "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+      "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+    ],
+    "physical_steps": 0,
+    "simulator_imported": false
+  },
+  "runs": [
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger1_theta045",
+      "status": "saved_compliant_proxy_execution_verified",
+      "physics_steps_verified": 6240,
+      "source_guards": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/fixture_source_frozen.py",
+        "sha256": "167aa53de7126b138f0756a74912e8dc1cb9f6b43909f715c1c22cdd254fe3a1",
+        "API_guards_verified": true,
+        "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+      },
+      "mechanics": {
+        "equations_verified": true,
+        "actuator_caps_Nm": [
+          0.6,
+          0.3
+        ],
+        "spring_stored_energy_J": {
+          "min": 2.3662427726246455e-19,
+          "max": 0.23301491280736417,
+          "mean": 0.08752248364514792
+        },
+        "shaft_kinetic_energy_J": {
+          "min": 0.0,
+          "max": 0.000428180120290156,
+          "mean": 0.00013887283707905777
+        },
+        "shaft_motor_torque_Nm": {
+          "min": -0.00032698282958565415,
+          "max": 0.6,
+          "mean": 0.269630679782902
+        },
+        "sum_branch_torque_Nm": {
+          "min": -0.0003129256238277662,
+          "max": 0.6068755188820049,
+          "mean": 0.26780591392381586
+        },
+        "branch_torque_peak_abs_Nm": [
+          0.6124354380290881,
+          0.007008221477141278,
+          0.0070083998017417375
+        ],
+        "nonnegative_relative_damping_power_W": {
+          "min": 0.0,
+          "max": 0.01712931155199962,
+          "mean": 0.003781425098807582
+        },
+        "shaft_stop_steps": 19,
+        "shaft_stop_loss_total_J": 7.433105242645141e-09,
+        "endpoint_sample_motor_work_J": 0.25509506773114404,
+        "finite_increment_motor_work_J": 0.2548465432029307,
+        "branch_work_to_native_hand_J": 0.009526282816102523,
+        "split_integration_energy_defect_total_J": 0.0001265721227596747,
+        "split_integration_energy_defect_max_abs_per_step_J": 9.29322075289872e-08,
+        "energy_accounting_identity_max_abs_residual_J": 1.467945592109633e-16,
+        "continuous_power_identity_max_abs_residual_W": 1.6653345369377348e-16,
+        "gear_rank": 7,
+        "joint_coordinates_without_gears": 4,
+        "additional_virtual_shaft_coordinate": 1,
+        "shaft_max_speed_rad_s": 0.9253973419998093,
+        "branch_max_speed_rad_s": 0.9349357063461479,
+        "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+      },
+      "contacts": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger1_theta045/contacts_full.npy",
+        "sha256": "b72c6e524519b66a1c406a3dc4d2b183935f073f735088675d377c08cb47eea2",
+        "columns": 25,
+        "last_window_steps": 480,
+        "last_window_s": 0.25,
+        "body_pairs": {
+          "pad_finger1": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              2
+            ],
+            "per_link": {
+              "2": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 11.405125332224559,
+                  "max": 11.454192769250811,
+                  "mean": 11.4352456715495
+                }
+              }
+            }
+          }
+        }
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "20936de70bea9fc0cb59b5cb165012684d4e633a62b8b1f5a24305c7854fbf45",
+        "CONTROLLER.json": "b1b1bcd9a5f09f773ce973bdc2a4a0cf5f51f97b3a976518f0ec930796fa09ab",
+        "SOURCE_SNAPSHOT.json": "e323e66d57c41b32f38f34b0c1fdbea515d162696fd73c5cfb9842d9bb234fff",
+        "trace.npz": "a6b827f66028022bfcd1c4c07778735b32ceb2a41b6d4941c2e88ae9c4721470"
+      },
+      "physical_steps_added_by_audit": 0,
+      "working_source_changes_after_saved_execution": [],
+      "fixture_protocol_declared_differences": {
+        "keep_original_two_motors_nine_gears": {
+          "new": false,
+          "old": true
+        },
+        "compliant_common_shaft_proxy": {
+          "new": true,
+          "old": null
+        }
+      },
+      "original_fixture_commands_and_pad_geometry_unchanged": true,
+      "proximal_joint_final_rad": {
+        "finger1": 0.43313499791033755,
+        "finger2": 1.192201966811872,
+        "finger3": 1.1922022977056619
+      },
+      "first_positive_pad_contacts_independently_recomputed": {
+        "pad_finger1": {
+          "step": 2734,
+          "hand_link_indices": [
+            2
+          ]
+        }
+      },
+      "baseline_contact_comparison": {
+        "pad_finger1": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        }
+      },
+      "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger2_theta045",
+      "status": "saved_compliant_proxy_execution_verified",
+      "physics_steps_verified": 6240,
+      "source_guards": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/fixture_source_frozen.py",
+        "sha256": "167aa53de7126b138f0756a74912e8dc1cb9f6b43909f715c1c22cdd254fe3a1",
+        "API_guards_verified": true,
+        "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+      },
+      "mechanics": {
+        "equations_verified": true,
+        "actuator_caps_Nm": [
+          0.6,
+          0.3
+        ],
+        "spring_stored_energy_J": {
+          "min": 2.3662427726246455e-19,
+          "max": 0.21539952752985184,
+          "mean": 0.0834945747405487
+        },
+        "shaft_kinetic_energy_J": {
+          "min": 0.0,
+          "max": 0.0004281824564819364,
+          "mean": 0.00013650816964071538
+        },
+        "shaft_motor_torque_Nm": {
+          "min": -0.00032698282958565415,
+          "max": 0.6,
+          "mean": 0.2697247605583919
+        },
+        "sum_branch_torque_Nm": {
+          "min": -0.0003129256238277662,
+          "max": 0.6121895987440881,
+          "mean": 0.2679400316509237
+        },
+        "branch_torque_peak_abs_Nm": [
+          0.011233257587203033,
+          0.5897715769917897,
+          0.011185079750024429
+        ],
+        "nonnegative_relative_damping_power_W": {
+          "min": 0.0,
+          "max": 0.018577096461483648,
+          "mean": 0.0037473629368290377
+        },
+        "shaft_stop_steps": 19,
+        "shaft_stop_loss_total_J": 7.433105242645141e-09,
+        "endpoint_sample_motor_work_J": 0.23976119801912846,
+        "finite_increment_motor_work_J": 0.23951222127845195,
+        "branch_work_to_native_hand_J": 0.008557091592097952,
+        "split_integration_energy_defect_total_J": 0.0001247929602747996,
+        "split_integration_energy_defect_max_abs_per_step_J": 9.292383244651105e-08,
+        "energy_accounting_identity_max_abs_residual_J": 1.4611743891636363e-16,
+        "continuous_power_identity_max_abs_residual_W": 2.220446049250313e-16,
+        "gear_rank": 7,
+        "joint_coordinates_without_gears": 4,
+        "additional_virtual_shaft_coordinate": 1,
+        "shaft_max_speed_rad_s": 0.9253998665246677,
+        "branch_max_speed_rad_s": 0.9349393810258517,
+        "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+      },
+      "contacts": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger2_theta045/contacts_full.npy",
+        "sha256": "10e4952a234e188b0b32c77d8f01fdc8711eb00daec498a676144c6b23e910e0",
+        "columns": 25,
+        "last_window_steps": 480,
+        "last_window_s": 0.25,
+        "body_pairs": {
+          "pad_finger2": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              6
+            ],
+            "per_link": {
+              "6": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 10.93766556628429,
+                  "max": 10.93776589176758,
+                  "mean": 10.937713983349903
+                }
+              }
+            }
+          }
+        }
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "6b9272c0fb5e1809a01681fefc2f7e9aa483604b46695dd085ec73e066c29942",
+        "CONTROLLER.json": "99b0d78497cc13e474401aad292bddd4f070d520d657b691e84e6a8301a0ed38",
+        "SOURCE_SNAPSHOT.json": "a343ad238b8676508e462af7f763026972cc82fb7265bb96cd2e29f83d881d19",
+        "trace.npz": "c2c05f96f30eb7d2b89a1d0715ea31951b22b4abc6d83992a28c1ec07489186c"
+      },
+      "physical_steps_added_by_audit": 0,
+      "working_source_changes_after_saved_execution": [],
+      "fixture_protocol_declared_differences": {
+        "keep_original_two_motors_nine_gears": {
+          "new": false,
+          "old": true
+        },
+        "compliant_common_shaft_proxy": {
+          "new": true,
+          "old": null
+        }
+      },
+      "original_fixture_commands_and_pad_geometry_unchanged": true,
+      "proximal_joint_final_rad": {
+        "finger1": 1.154645364793833,
+        "finger2": 0.43120834256743507,
+        "finger3": 1.1541654335796998
+      },
+      "first_positive_pad_contacts_independently_recomputed": {
+        "pad_finger2": {
+          "step": 2734,
+          "hand_link_indices": [
+            6
+          ]
+        }
+      },
+      "baseline_contact_comparison": {
+        "pad_finger2": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        }
+      },
+      "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger3_theta045",
+      "status": "saved_compliant_proxy_execution_verified",
+      "physics_steps_verified": 6240,
+      "source_guards": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/fixture_source_frozen.py",
+        "sha256": "167aa53de7126b138f0756a74912e8dc1cb9f6b43909f715c1c22cdd254fe3a1",
+        "API_guards_verified": true,
+        "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+      },
+      "mechanics": {
+        "equations_verified": true,
+        "actuator_caps_Nm": [
+          0.6,
+          0.3
+        ],
+        "spring_stored_energy_J": {
+          "min": 2.3662427726246455e-19,
+          "max": 0.2330394587307334,
+          "mean": 0.08752588838671793
+        },
+        "shaft_kinetic_energy_J": {
+          "min": 0.0,
+          "max": 0.000428183358241655,
+          "mean": 0.00013885861226054985
+        },
+        "shaft_motor_torque_Nm": {
+          "min": -0.00032698282958565415,
+          "max": 0.6,
+          "mean": 0.2696368347104096
+        },
+        "sum_branch_torque_Nm": {
+          "min": -0.0003129256238277662,
+          "max": 0.6068923172448428,
+          "mean": 0.267815365140492
+        },
+        "branch_torque_peak_abs_Nm": [
+          0.0070083300372647,
+          0.007008221477141278,
+          0.612452946407122
+        ],
+        "nonnegative_relative_damping_power_W": {
+          "min": 0.0,
+          "max": 0.017126247942752824,
+          "mean": 0.0037825309009096313
+        },
+        "shaft_stop_steps": 19,
+        "shaft_stop_loss_total_J": 7.433105242645141e-09,
+        "endpoint_sample_motor_work_J": 0.25393474487028506,
+        "finite_increment_motor_work_J": 0.25368591295369713,
+        "branch_work_to_native_hand_J": 0.00838495796233113,
+        "split_integration_energy_defect_total_J": 0.00012660189483791286,
+        "split_integration_energy_defect_max_abs_per_step_J": 9.291558594340945e-08,
+        "energy_accounting_identity_max_abs_residual_J": 1.2480085753547623e-16,
+        "continuous_power_identity_max_abs_residual_W": 1.6653345369377348e-16,
+        "gear_rank": 7,
+        "joint_coordinates_without_gears": 4,
+        "additional_virtual_shaft_coordinate": 1,
+        "shaft_max_speed_rad_s": 0.9254008409782811,
+        "branch_max_speed_rad_s": 0.9349403660075938,
+        "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+      },
+      "contacts": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/finger3_theta045/contacts_full.npy",
+        "sha256": "108fa3d4750d8383bc131b546801259eeacc72e102c227bc91b52502772b98ca",
+        "columns": 25,
+        "last_window_steps": 480,
+        "last_window_s": 0.25,
+        "body_pairs": {
+          "pad_finger3": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              10
+            ],
+            "per_link": {
+              "10": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 11.298258643142718,
+                  "max": 11.298357886591214,
+                  "mean": 11.298321291154666
+                }
+              }
+            }
+          }
+        }
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "311777b4e1393341152197c80b3d70e140bd4bd07a73a6cb11e947bc304cdaf2",
+        "CONTROLLER.json": "9b89ab51745abc9c2b6f630802304e46d96507527a359d3f863a15bc4313510d",
+        "SOURCE_SNAPSHOT.json": "d0b33881e05ae498d48025bd3c8663110bff0810b648532fdfbcb0c96f30907e",
+        "trace.npz": "198a37d5d9e6b5a84ab1a30bff8db54c7bcee3283fd87ff0cd581185f32a3af7"
+      },
+      "physical_steps_added_by_audit": 0,
+      "working_source_changes_after_saved_execution": [],
+      "fixture_protocol_declared_differences": {
+        "keep_original_two_motors_nine_gears": {
+          "new": false,
+          "old": true
+        },
+        "compliant_common_shaft_proxy": {
+          "new": true,
+          "old": null
+        }
+      },
+      "original_fixture_commands_and_pad_geometry_unchanged": true,
+      "proximal_joint_final_rad": {
+        "finger1": 1.190227625253122,
+        "finger2": 1.190227617607916,
+        "finger3": 0.43121791566797724
+      },
+      "first_positive_pad_contacts_independently_recomputed": {
+        "pad_finger3": {
+          "step": 2734,
+          "hand_link_indices": [
+            10
+          ]
+        }
+      },
+      "baseline_contact_comparison": {
+        "pad_finger3": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        }
+      },
+      "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/all3_theta045",
+      "status": "saved_compliant_proxy_execution_verified",
+      "physics_steps_verified": 6240,
+      "source_guards": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/fixture_source_frozen.py",
+        "sha256": "167aa53de7126b138f0756a74912e8dc1cb9f6b43909f715c1c22cdd254fe3a1",
+        "API_guards_verified": true,
+        "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+      },
+      "mechanics": {
+        "equations_verified": true,
+        "actuator_caps_Nm": [
+          0.6,
+          0.3
+        ],
+        "spring_stored_energy_J": {
+          "min": 2.3662427726246455e-19,
+          "max": 0.07606866902016272,
+          "mean": 0.03769703278835395
+        },
+        "shaft_kinetic_energy_J": {
+          "min": 0.0,
+          "max": 0.00041915221559516927,
+          "mean": 7.451127790212723e-05
+        },
+        "shaft_motor_torque_Nm": {
+          "min": -0.00032698282958565415,
+          "max": 0.6,
+          "mean": 0.32081818807161877
+        },
+        "sum_branch_torque_Nm": {
+          "min": -0.0003129256238277662,
+          "max": 0.6141376057962664,
+          "mean": 0.31977426361797423
+        },
+        "branch_torque_peak_abs_Nm": [
+          0.20462279778994308,
+          0.20475387731858952,
+          0.20477421042400493
+        ],
+        "nonnegative_relative_damping_power_W": {
+          "min": 0.0,
+          "max": 0.04808389975681054,
+          "mean": 0.0036010080745925758
+        },
+        "shaft_stop_steps": 19,
+        "shaft_stop_loss_total_J": 7.433105242645141e-09,
+        "endpoint_sample_motor_work_J": 0.09676131913797939,
+        "finite_increment_motor_work_J": 0.09651295583045646,
+        "branch_work_to_native_hand_J": 0.007515836945824058,
+        "split_integration_energy_defect_total_J": 0.00011905445283285626,
+        "split_integration_energy_defect_max_abs_per_step_J": 2.5440285284438133e-07,
+        "energy_accounting_identity_max_abs_residual_J": 3.378331525523015e-17,
+        "continuous_power_identity_max_abs_residual_W": 1.1102230246251565e-16,
+        "gear_rank": 7,
+        "joint_coordinates_without_gears": 4,
+        "additional_virtual_shaft_coordinate": 1,
+        "shaft_max_speed_rad_s": 0.9155896631080642,
+        "branch_max_speed_rad_s": 0.9240617651104803,
+        "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+      },
+      "contacts": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/all3_theta045/contacts_full.npy",
+        "sha256": "86f71fd8a7d180b5f380fe60fc67c40d0f49518aaf951f5f1c7ed7ea0f0cad23",
+        "columns": 25,
+        "last_window_steps": 480,
+        "last_window_s": 0.25,
+        "body_pairs": {
+          "pad_finger1": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              2
+            ],
+            "per_link": {
+              "2": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 3.734151915348245,
+                  "max": 3.735477952042908,
+                  "mean": 3.7349936621931117
+                }
+              }
+            }
+          },
+          "pad_finger2": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              6
+            ],
+            "per_link": {
+              "6": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 3.7232028104644272,
+                  "max": 3.7346822985547217,
+                  "mean": 3.7299829410102068
+                }
+              }
+            }
+          },
+          "pad_finger3": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              10
+            ],
+            "per_link": {
+              "10": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 3.734296297987631,
+                  "max": 3.740820478662225,
+                  "mean": 3.73666987979901
+                }
+              }
+            }
+          }
+        }
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "619daf72e609e66f3120774cfbb10b2037d59d10b54054e0b968d991c09abd1c",
+        "CONTROLLER.json": "7c769197ceed1db8b01060544df856d45df919578db08efcb7e11bb73adc2f44",
+        "SOURCE_SNAPSHOT.json": "9a2ce9a4f38cf2b40fffaf83c593e05fc0bfece0ead5de612dd1ca4981bc4540",
+        "trace.npz": "cf00f02cb1ddaab6c5a09716defde072e730d2c46f82d773e4a1c4a3a6e27ee1"
+      },
+      "physical_steps_added_by_audit": 0,
+      "working_source_changes_after_saved_execution": [],
+      "fixture_protocol_declared_differences": {
+        "keep_original_two_motors_nine_gears": {
+          "new": false,
+          "old": true
+        },
+        "compliant_common_shaft_proxy": {
+          "new": true,
+          "old": null
+        }
+      },
+      "original_fixture_commands_and_pad_geometry_unchanged": true,
+      "proximal_joint_final_rad": {
+        "finger1": 0.4318160694385475,
+        "finger2": 0.4317411878901389,
+        "finger3": 0.43185311356258627
+      },
+      "first_positive_pad_contacts_independently_recomputed": {
+        "pad_finger1": {
+          "step": 2734,
+          "hand_link_indices": [
+            2
+          ]
+        },
+        "pad_finger2": {
+          "step": 2734,
+          "hand_link_indices": [
+            6
+          ]
+        },
+        "pad_finger3": {
+          "step": 2734,
+          "hand_link_indices": [
+            10
+          ]
+        }
+      },
+      "baseline_contact_comparison": {
+        "pad_finger1": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        },
+        "pad_finger2": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        },
+        "pad_finger3": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        }
+      },
+      "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim."
+    },
+    {
+      "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/asymmetric_finger2_045_other_080",
+      "status": "saved_compliant_proxy_execution_verified",
+      "physics_steps_verified": 6240,
+      "source_guards": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/fixture_source_frozen.py",
+        "sha256": "167aa53de7126b138f0756a74912e8dc1cb9f6b43909f715c1c22cdd254fe3a1",
+        "API_guards_verified": true,
+        "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+      },
+      "mechanics": {
+        "equations_verified": true,
+        "actuator_caps_Nm": [
+          0.6,
+          0.3
+        ],
+        "spring_stored_energy_J": {
+          "min": 2.3662427726246455e-19,
+          "max": 0.10870912943809051,
+          "mean": 0.0480725665907964
+        },
+        "shaft_kinetic_energy_J": {
+          "min": 0.0,
+          "max": 0.0004281824564819364,
+          "mean": 0.00010735640771943073
+        },
+        "shaft_motor_torque_Nm": {
+          "min": -0.00032698282958565415,
+          "max": 0.6,
+          "mean": 0.28593004036473774
+        },
+        "sum_branch_torque_Nm": {
+          "min": -0.0003129256238277662,
+          "max": 0.6142916482316874,
+          "mean": 0.28452741291641365
+        },
+        "branch_torque_peak_abs_Nm": [
+          0.11149713622223789,
+          0.3912958273556294,
+          0.1114986846538201
+        ],
+        "nonnegative_relative_damping_power_W": {
+          "min": 0.0,
+          "max": 0.042392128821678574,
+          "mean": 0.0037114129895730805
+        },
+        "shaft_stop_steps": 19,
+        "shaft_stop_loss_total_J": 7.433105242645141e-09,
+        "endpoint_sample_motor_work_J": 0.1325195908241495,
+        "finite_increment_motor_work_J": 0.13226773460440724,
+        "branch_work_to_native_hand_J": 0.00933387816889651,
+        "split_integration_energy_defect_total_J": 0.00012285259595898318,
+        "split_integration_energy_defect_max_abs_per_step_J": 2.2282884308916266e-07,
+        "energy_accounting_identity_max_abs_residual_J": 5.602975888883921e-17,
+        "continuous_power_identity_max_abs_residual_W": 1.1102230246251565e-16,
+        "gear_rank": 7,
+        "joint_coordinates_without_gears": 4,
+        "additional_virtual_shaft_coordinate": 1,
+        "shaft_max_speed_rad_s": 0.9253998665246677,
+        "branch_max_speed_rad_s": 0.9349393810258517,
+        "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+      },
+      "contacts": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v2/asymmetric_finger2_045_other_080/contacts_full.npy",
+        "sha256": "b5be4f852006a66d1d90d3e0a9ce3de0df582ec42883fab32878850cae0aa64f",
+        "columns": 25,
+        "last_window_steps": 480,
+        "last_window_s": 0.25,
+        "body_pairs": {
+          "pad_finger1": {
+            "total_positive_rows": 2768,
+            "hand_link_indices": [
+              2
+            ],
+            "per_link": {
+              "2": {
+                "positive_contact_rows": 2768,
+                "positive_contact_steps": 2768,
+                "first_step": 3473,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 2.0335974041637717,
+                  "max": 2.0376970869121993,
+                  "mean": 2.035294051668617
+                }
+              }
+            }
+          },
+          "pad_finger2": {
+            "total_positive_rows": 3507,
+            "hand_link_indices": [
+              6
+            ],
+            "per_link": {
+              "6": {
+                "positive_contact_rows": 3507,
+                "positive_contact_steps": 3507,
+                "first_step": 2734,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 7.2173953676231495,
+                  "max": 7.2650536514119155,
+                  "mean": 7.24235950680672
+                }
+              }
+            }
+          },
+          "pad_finger3": {
+            "total_positive_rows": 2768,
+            "hand_link_indices": [
+              10
+            ],
+            "per_link": {
+              "10": {
+                "positive_contact_rows": 2768,
+                "positive_contact_steps": 2768,
+                "first_step": 3473,
+                "last_step": 6240,
+                "last_window_normal_force_N": {
+                  "min": 2.0232689587157076,
+                  "max": 2.0359649244523474,
+                  "mean": 2.030927467365714
+                }
+              }
+            }
+          }
+        }
+      },
+      "artifact_SHA": {
+        "RESULTS.json": "727283db3a5884e212b29fe01bfeaebc0f8f4cac7b7ec38b866b501c254d4bdf",
+        "CONTROLLER.json": "ca3d8923b53222057c427be7c114cb0edde4d501e08147a99a516bcb507faf9a",
+        "SOURCE_SNAPSHOT.json": "15729839ef784a5036e270d3d166790c7a734c08a84294379bbb399d7f01b023",
+        "trace.npz": "012a50d0587d4836219ec8c69e9d5696984b593a6742157fde08696caca6e006"
+      },
+      "physical_steps_added_by_audit": 0,
+      "working_source_changes_after_saved_execution": [],
+      "fixture_protocol_declared_differences": {
+        "keep_original_two_motors_nine_gears": {
+          "new": false,
+          "old": true
+        },
+        "compliant_common_shaft_proxy": {
+          "new": true,
+          "old": null
+        }
+      },
+      "original_fixture_commands_and_pad_geometry_unchanged": true,
+      "proximal_joint_final_rad": {
+        "finger1": 0.7812556364333502,
+        "finger2": 0.43206753973346634,
+        "finger3": 0.7812568906941948
+      },
+      "first_positive_pad_contacts_independently_recomputed": {
+        "pad_finger1": {
+          "step": 3473,
+          "hand_link_indices": [
+            2
+          ]
+        },
+        "pad_finger2": {
+          "step": 2734,
+          "hand_link_indices": [
+            6
+          ]
+        },
+        "pad_finger3": {
+          "step": 3473,
+          "hand_link_indices": [
+            10
+          ]
+        }
+      },
+      "baseline_contact_comparison": {
+        "pad_finger1": {
+          "new_hand_link_indices": [
+            2
+          ],
+          "old_positive_rows": 0,
+          "new_positive_rows": 2768
+        },
+        "pad_finger2": {
+          "new_hand_link_indices": [],
+          "old_positive_rows": 3815,
+          "new_positive_rows": 3507
+        },
+        "pad_finger3": {
+          "new_hand_link_indices": [
+            10
+          ],
+          "old_positive_rows": 0,
+          "new_positive_rows": 2768
+        }
+      },
+      "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim."
+    }
+  ],
+  "errors": [],
+  "additional_physics_steps": 0,
+  "additional_network_forwards": 0,
+  "simulator_imported": false,
+  "total_saved_physics_steps_verified": 31200,
+  "status": "all_saved_runs_verified",
+  "wall_seconds": 0.7478392909979448,
+  "prior_five_fixture_audit_preserved": {
+    "path": "/tmp/dh3_force_fixture_audit.json",
+    "sha256": "bed1bd0f5a7e8b7e7cb4bdbf9a78f0a87c3a55e4431abebb5abddfa8bd9e73b4"
+  }
+}

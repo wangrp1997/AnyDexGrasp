@@ -1,0 +1,1425 @@
+{
+  "audit_source": "/tmp/dh3_compliant_scene_audit_final.py",
+  "audit_source_sha256": "906a81c63ffb948b7398b7a4a2fd288f2baab5124a857ca0426b81e2fc714b05",
+  "campaigns": [
+    {
+      "root": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2",
+      "RESULTS_sha256": "3587052418176c8e87aa7340086526550c0828190c8f1e43569434dfdc3d87a7",
+      "PLAN_sha256": "7581aef2edb3e17071004e755ab9d295226d7942e14796693eeb8ffcb792bd4f",
+      "declared_cases": 3,
+      "runs": [
+        {
+          "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw000",
+          "status": "saved_compliant_proxy_execution_verified",
+          "physics_steps_verified": 19680,
+          "source_guards": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw000/runner_source_frozen.py",
+            "sha256": "548aefe3c3cf6947ae4c58d444e31ded9fb4d975c953d6768de622d6f73422ec",
+            "API_guards_verified": true,
+            "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+          },
+          "mechanics": {
+            "equations_verified": true,
+            "actuator_caps_Nm": [
+              0.6,
+              0.3
+            ],
+            "spring_stored_energy_J": {
+              "min": 1.199268029857349e-09,
+              "max": 0.09336457092584058,
+              "mean": 0.047975656830600746
+            },
+            "shaft_kinetic_energy_J": {
+              "min": 0.0,
+              "max": 0.00023462317612259502,
+              "mean": 1.443215519149206e-05
+            },
+            "shaft_motor_torque_Nm": {
+              "min": -0.015067547525067133,
+              "max": 0.6,
+              "mean": 0.33410675043146243
+            },
+            "sum_branch_torque_Nm": {
+              "min": -0.015060403244409359,
+              "max": 0.6147642295536258,
+              "mean": 0.3338149255757089
+            },
+            "branch_torque_peak_abs_Nm": [
+              0.12114274124715729,
+              0.3382996813549762,
+              0.258755171534737
+            ],
+            "nonnegative_relative_damping_power_W": {
+              "min": 0.0,
+              "max": 0.35751112313950173,
+              "mean": 0.0011359096109900646
+            },
+            "shaft_stop_steps": 0,
+            "shaft_stop_loss_total_J": 0.0,
+            "endpoint_sample_motor_work_J": 0.15822997679410888,
+            "finite_increment_motor_work_J": 0.15806884605672403,
+            "branch_work_to_native_hand_J": 0.06378272044631808,
+            "split_integration_energy_defect_total_J": 9.922305760521874e-05,
+            "split_integration_energy_defect_max_abs_per_step_J": 1.9394881347019923e-06,
+            "energy_accounting_identity_max_abs_residual_J": 4.0723813680509147e-17,
+            "continuous_power_identity_max_abs_residual_W": 1.6653345369377348e-16,
+            "gear_rank": 7,
+            "joint_coordinates_without_gears": 4,
+            "additional_virtual_shaft_coordinate": 1,
+            "shaft_max_speed_rad_s": 0.6850155854031279,
+            "branch_max_speed_rad_s": 4.236832385992685,
+            "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+          },
+          "contacts": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw000/contacts.npy",
+            "sha256": "8e7c1e862256f2c494eb8cdf61a749f7b157bff96c2af1a6243ebdccc4153a6e",
+            "columns": 9,
+            "last_window_steps": 480,
+            "last_window_s": 0.25,
+            "body_pairs": {
+              "object": {
+                "total_positive_rows": 39195,
+                "hand_link_indices": [
+                  2,
+                  6,
+                  10
+                ],
+                "per_link": {
+                  "2": {
+                    "positive_contact_rows": 10875,
+                    "positive_contact_steps": 10821,
+                    "first_step": 8859,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 1.934557776423966,
+                      "max": 1.9438450207691118,
+                      "mean": 1.9392136207439112
+                    }
+                  },
+                  "6": {
+                    "positive_contact_rows": 16219,
+                    "positive_contact_steps": 13059,
+                    "first_step": 6543,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 5.453864193603958,
+                      "max": 5.470593886681177,
+                      "mean": 5.462291592617469
+                    }
+                  },
+                  "10": {
+                    "positive_contact_rows": 12101,
+                    "positive_contact_steps": 11764,
+                    "first_step": 7893,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 6.566146799474011,
+                      "max": 6.610628610819198,
+                      "mean": 6.588511870897455
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "artifact_SHA": {
+            "RESULTS.json": "0dc0fe36ffa1e80687a51dfb7fdc3233d9b341fbdb4090008d56ac26f2b1e417",
+            "CONTROLLER.json": "14e430aec829f1caa54282f3fdc8fc0c6a39a4f1e8834dff01993744466440af",
+            "SOURCE_SNAPSHOT.json": "799a42e0c0a9ebbaf7ebd114186bf18902818587988b3fba2d8973b69d250ad5",
+            "trace.npz": "29e8c35e540a46273e10552e64d75fb5391261815b7a4c6b6fd7c72d90b8d468"
+          },
+          "physical_steps_added_by_audit": 0,
+          "working_source_changes_after_saved_execution": [],
+          "original_pose_and_wrist": {
+            "original_top1_scene_depth_unchanged": true,
+            "original_commands_equal_at_all_shared_command_times": true,
+            "command_alignment_fine_row_stride": 1,
+            "command_alignment_fine_row_offset": 0,
+            "saved_state_time_alignment_fine_row_offset": 0,
+            "all_original_wrist_targets_reconstructed": true,
+            "baseline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000",
+            "baseline_trace_sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae",
+            "actual_wrist_trajectory_allowed_to_change_under_different_load": true
+          },
+          "baseline_contact_comparison": {
+            "object": {
+              "new_hand_link_indices": [],
+              "old_positive_rows": 7946,
+              "new_positive_rows": 39195
+            }
+          },
+          "outcome_and_media": {
+            "lift_observed": true,
+            "port_stability_pass": false,
+            "status": "not_lifted_or_port_invalid",
+            "physics_steps": 19680,
+            "physical_seconds": 10.25,
+            "object_final_lift_m": 0.09623219248999498,
+            "object_final_lowest_world_z_m": 0.08373769578832284,
+            "object_max_lift_m": 0.09623219248999498,
+            "finite": true,
+            "motor_torque_bounds_pass": true,
+            "gear_reaction_bounds_pass": true,
+            "wrist_tracking_pass": true,
+            "max_gear_residual_rad": 0.003800510807247748,
+            "peak_joint_velocity_rad_s": 4.444091774986126,
+            "max_wrist_COM_error_m": 0.00010417155110484912,
+            "hand_object_contact_rows": 224847,
+            "hand_table_contact_rows": 0,
+            "final_half_second_hand_object_contact_rows": 3840,
+            "state_resets_after_first_step": 0,
+            "object_attachment_constraints": 0,
+            "object_gravity_retained": true,
+            "continuous_same_scene": true,
+            "network_rerun": false,
+            "candidate_reselection": false,
+            "failed_original_gates": {
+              "peak_joint_velocity": {
+                "value_rad_s": 4.444091774986126,
+                "strict_upper_rad_s": 1.5,
+                "joint": "finger2_outlet_joint",
+                "step": 11508,
+                "time_s": 5.99375,
+                "phase": "hold_closed"
+              }
+            },
+            "frames_verified": 205,
+            "frame_physics_stride": 96,
+            "frame_files_total_bytes": 2910570,
+            "ordered_frame_name_SHA_digest": "e4d934bc9df1ee9287e63db3833efc107ba7c80401f647b0b7433c1d574ebd3f",
+            "actual_time_step_s": 0.0005208333333333333,
+            "shaft_speed_is_separately_reported_not_a_replacement_for_original_joint_speed_gate": 0.6850155854031279,
+            "approximation_scope": "Common-shaft branch-elastic proxy has four hand generalized coordinates plus one virtual-shaft coordinate. No commercial DH3 hardware accuracy claim."
+          },
+          "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim.",
+          "source_equation_smoke": {
+            "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw000/controller_source_frozen.py",
+            "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+            "constants": {
+              "branch_stiffness_Nm_rad": 0.8,
+              "branch_damping_Nm_s_rad": 0.02,
+              "shaft_inertia_kg_m2": 0.001,
+              "shaft_viscous_Nm_s_rad": 0.005,
+              "shaft_position_to_velocity_gain_s_inv": 6.0,
+              "shaft_velocity_feedback_Nm_s_rad": 2.0,
+              "shaft_lower_rad": 0.0,
+              "shaft_upper_rad": 1.333
+            },
+            "isolated_method_cases": 200,
+            "fake_API_only": true,
+            "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+            "findings": [
+              "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+              "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+              "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+              "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+              "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+              "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+            ],
+            "physical_steps": 0,
+            "simulator_imported": false
+          }
+        },
+        {
+          "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw090",
+          "status": "saved_compliant_proxy_execution_verified",
+          "physics_steps_verified": 19680,
+          "source_guards": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw090/runner_source_frozen.py",
+            "sha256": "548aefe3c3cf6947ae4c58d444e31ded9fb4d975c953d6768de622d6f73422ec",
+            "API_guards_verified": true,
+            "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+          },
+          "mechanics": {
+            "equations_verified": true,
+            "actuator_caps_Nm": [
+              0.6,
+              0.3
+            ],
+            "spring_stored_energy_J": {
+              "min": 2.3194520098993862e-09,
+              "max": 0.11540386179385376,
+              "mean": 0.05632793743341535
+            },
+            "shaft_kinetic_energy_J": {
+              "min": 0.0,
+              "max": 0.0003583047355237533,
+              "mean": 2.8933115499371056e-05
+            },
+            "shaft_motor_torque_Nm": {
+              "min": -0.021377109886691947,
+              "max": 0.6,
+              "mean": 0.3321236977724012
+            },
+            "sum_branch_torque_Nm": {
+              "min": -0.021366892907018036,
+              "max": 0.6140959662548928,
+              "mean": 0.3316103948199851
+            },
+            "branch_torque_peak_abs_Nm": [
+              0.14257033197297542,
+              0.36458455772904086,
+              0.38647688547257025
+            ],
+            "nonnegative_relative_damping_power_W": {
+              "min": 0.0,
+              "max": 1.2857072226804471,
+              "mean": 0.0043725819116220725
+            },
+            "shaft_stop_steps": 0,
+            "shaft_stop_loss_total_J": 0.0,
+            "endpoint_sample_motor_work_J": 0.3612860031313958,
+            "finite_increment_motor_work_J": 0.36104317493540644,
+            "branch_work_to_native_hand_J": 0.2147137981360748,
+            "split_integration_energy_defect_total_J": 0.00045192715805638224,
+            "split_integration_energy_defect_max_abs_per_step_J": 6.973124018729389e-06,
+            "energy_accounting_identity_max_abs_residual_J": 4.825089600501252e-17,
+            "continuous_power_identity_max_abs_residual_W": 3.3306690738754696e-16,
+            "gear_rank": 7,
+            "joint_coordinates_without_gears": 4,
+            "additional_virtual_shaft_coordinate": 1,
+            "shaft_max_speed_rad_s": 0.8465278914764158,
+            "branch_max_speed_rad_s": 8.759331117967783,
+            "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+          },
+          "contacts": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw090/contacts.npy",
+            "sha256": "136b5d258ef4bb83e365ff2098b1b434613637541da714d86130659b105d89ad",
+            "columns": 9,
+            "last_window_steps": 480,
+            "last_window_s": 0.25,
+            "body_pairs": {
+              "object": {
+                "total_positive_rows": 32510,
+                "hand_link_indices": [
+                  2,
+                  6,
+                  10
+                ],
+                "per_link": {
+                  "2": {
+                    "positive_contact_rows": 11690,
+                    "positive_contact_steps": 10986,
+                    "first_step": 8662,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 1.2643036340035612,
+                      "max": 5.499599367703106,
+                      "mean": 4.049965549834006
+                    }
+                  },
+                  "6": {
+                    "positive_contact_rows": 14291,
+                    "positive_contact_steps": 7837,
+                    "first_step": 11843,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 7.0877617815942875,
+                      "max": 7.644394851916099,
+                      "mean": 7.407317098942826
+                    }
+                  },
+                  "10": {
+                    "positive_contact_rows": 6529,
+                    "positive_contact_steps": 6529,
+                    "first_step": 13149,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 3.023647179331716,
+                      "max": 6.0764482327680325,
+                      "mean": 3.900870137549098
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "artifact_SHA": {
+            "RESULTS.json": "94b57034cd3746effafb196f3728c02308327ec145b2e0ece6e25186c4c48b0a",
+            "CONTROLLER.json": "65d3b10d1b12fa979539cd0c59ab6832841706db2c97d1592fad8f4946866085",
+            "SOURCE_SNAPSHOT.json": "cf9b3402acbd02dd2a2db32672afdbec52bc3296f04c4bf684fea3d38d66f7f0",
+            "trace.npz": "ed91cb6cc410356a4556d595895589ea5ce36ec4ce96debde84b7c7a2fd4545d"
+          },
+          "physical_steps_added_by_audit": 0,
+          "working_source_changes_after_saved_execution": [],
+          "original_pose_and_wrist": {
+            "original_top1_scene_depth_unchanged": true,
+            "original_commands_equal_at_all_shared_command_times": true,
+            "command_alignment_fine_row_stride": 1,
+            "command_alignment_fine_row_offset": 0,
+            "saved_state_time_alignment_fine_row_offset": 0,
+            "all_original_wrist_targets_reconstructed": true,
+            "baseline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090",
+            "baseline_trace_sha256": "20529bfac7c39a8be7c1c1c9c0effa30983ca1de575654556da3cfa4a05e5b63",
+            "actual_wrist_trajectory_allowed_to_change_under_different_load": true
+          },
+          "baseline_contact_comparison": {
+            "object": {
+              "new_hand_link_indices": [],
+              "old_positive_rows": 19052,
+              "new_positive_rows": 32510
+            }
+          },
+          "outcome_and_media": {
+            "lift_observed": true,
+            "port_stability_pass": false,
+            "status": "not_lifted_or_port_invalid",
+            "physics_steps": 19680,
+            "physical_seconds": 10.25,
+            "object_final_lift_m": 0.0918978856109097,
+            "object_final_lowest_world_z_m": 0.06743035344382386,
+            "object_max_lift_m": 0.09230628166101103,
+            "finite": true,
+            "motor_torque_bounds_pass": true,
+            "gear_reaction_bounds_pass": true,
+            "wrist_tracking_pass": false,
+            "max_gear_residual_rad": 0.018586631446689372,
+            "peak_joint_velocity_rad_s": 9.416332883371188,
+            "max_wrist_COM_error_m": 0.005297753847435808,
+            "hand_object_contact_rows": 196369,
+            "hand_table_contact_rows": 11216,
+            "final_half_second_hand_object_contact_rows": 3839,
+            "state_resets_after_first_step": 0,
+            "object_attachment_constraints": 0,
+            "object_gravity_retained": true,
+            "continuous_same_scene": true,
+            "network_rerun": false,
+            "candidate_reselection": false,
+            "failed_original_gates": {
+              "peak_joint_velocity": {
+                "value_rad_s": 9.416332883371188,
+                "strict_upper_rad_s": 1.5,
+                "joint": "finger3_tip_joint",
+                "step": 13130,
+                "time_s": 6.838541666666667,
+                "phase": "lift"
+              },
+              "gear_position_residual": {
+                "value_rad": 0.018586631446689372,
+                "strict_upper_rad": 0.01,
+                "dependent": "finger2_tip_joint",
+                "master": "finger2_joint",
+                "step": 10633,
+                "time_s": 5.538020833333333,
+                "phase": "hold_closed"
+              },
+              "wrist_position_error": {
+                "value_m": 0.005297753847435808,
+                "strict_upper_m": 0.002,
+                "step": 11964,
+                "time_s": 6.23125,
+                "phase": "hold_closed"
+              }
+            },
+            "frames_verified": 205,
+            "frame_physics_stride": 96,
+            "frame_files_total_bytes": 2718006,
+            "ordered_frame_name_SHA_digest": "64ca213276d677f089f81cad6ac81b1be7f86eea11f4860e002996921e32f1a7",
+            "actual_time_step_s": 0.0005208333333333333,
+            "shaft_speed_is_separately_reported_not_a_replacement_for_original_joint_speed_gate": 0.8465278914764158,
+            "approximation_scope": "Common-shaft branch-elastic proxy has four hand generalized coordinates plus one virtual-shaft coordinate. No commercial DH3 hardware accuracy claim."
+          },
+          "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim.",
+          "source_equation_smoke": {
+            "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/banana_yaw090/controller_source_frozen.py",
+            "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+            "constants": {
+              "branch_stiffness_Nm_rad": 0.8,
+              "branch_damping_Nm_s_rad": 0.02,
+              "shaft_inertia_kg_m2": 0.001,
+              "shaft_viscous_Nm_s_rad": 0.005,
+              "shaft_position_to_velocity_gain_s_inv": 6.0,
+              "shaft_velocity_feedback_Nm_s_rad": 2.0,
+              "shaft_lower_rad": 0.0,
+              "shaft_upper_rad": 1.333
+            },
+            "isolated_method_cases": 200,
+            "fake_API_only": true,
+            "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+            "findings": [
+              "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+              "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+              "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+              "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+              "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+              "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+            ],
+            "physical_steps": 0,
+            "simulator_imported": false
+          }
+        },
+        {
+          "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/cube",
+          "status": "saved_compliant_proxy_execution_verified",
+          "physics_steps_verified": 19680,
+          "source_guards": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/cube/runner_source_frozen.py",
+            "sha256": "548aefe3c3cf6947ae4c58d444e31ded9fb4d975c953d6768de622d6f73422ec",
+            "API_guards_verified": true,
+            "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+          },
+          "mechanics": {
+            "equations_verified": true,
+            "actuator_caps_Nm": [
+              0.6,
+              0.3
+            ],
+            "spring_stored_energy_J": {
+              "min": 2.1717091584559244e-09,
+              "max": 0.1150382685130421,
+              "mean": 0.053143915622761925
+            },
+            "shaft_kinetic_energy_J": {
+              "min": 0.0,
+              "max": 0.00039665151340424737,
+              "mean": 2.770707191624509e-05
+            },
+            "shaft_motor_torque_Nm": {
+              "min": -0.020733667493880465,
+              "max": 0.6,
+              "mean": 0.3270525481297748
+            },
+            "sum_branch_torque_Nm": {
+              "min": -0.020723764045028025,
+              "max": 0.6162252002035657,
+              "mean": 0.32663751785032147
+            },
+            "branch_torque_peak_abs_Nm": [
+              0.13455555159988333,
+              0.4095210843673115,
+              0.15987750426503541
+            ],
+            "nonnegative_relative_damping_power_W": {
+              "min": 0.0,
+              "max": 0.0701621917962288,
+              "mean": 0.0016103419245767693
+            },
+            "shaft_stop_steps": 0,
+            "shaft_stop_loss_total_J": 0.0,
+            "endpoint_sample_motor_work_J": 0.19248493078836001,
+            "finite_increment_motor_work_J": 0.19222813389992988,
+            "branch_work_to_native_hand_J": 0.08510591700545062,
+            "split_integration_energy_defect_total_J": 0.00016540156048116725,
+            "split_integration_energy_defect_max_abs_per_step_J": 3.802321108088437e-07,
+            "energy_accounting_identity_max_abs_residual_J": 6.363121272777648e-17,
+            "continuous_power_identity_max_abs_residual_W": 1.6653345369377348e-16,
+            "gear_rank": 7,
+            "joint_coordinates_without_gears": 4,
+            "additional_virtual_shaft_coordinate": 1,
+            "shaft_max_speed_rad_s": 0.8906756013322105,
+            "branch_max_speed_rad_s": 1.4902430969732872,
+            "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+          },
+          "contacts": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/cube/contacts.npy",
+            "sha256": "8460be3d7951bd5b4951fef3f9cdff786e729a207d197d4c220f5e509047c741",
+            "columns": 9,
+            "last_window_steps": 480,
+            "last_window_s": 0.25,
+            "body_pairs": {
+              "object": {
+                "total_positive_rows": 28566,
+                "hand_link_indices": [
+                  1,
+                  5,
+                  6,
+                  9,
+                  10
+                ],
+                "per_link": {
+                  "1": {
+                    "positive_contact_rows": 7472,
+                    "positive_contact_steps": 7472,
+                    "first_step": 12209,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 3.4294724837291306,
+                      "max": 3.466415180334059,
+                      "mean": 3.447252246199564
+                    }
+                  },
+                  "5": {
+                    "positive_contact_rows": 7126,
+                    "positive_contact_steps": 7126,
+                    "first_step": 12555,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 6.102746273650616,
+                      "max": 6.130559757784233,
+                      "mean": 6.1193739707302255
+                    }
+                  },
+                  "6": {
+                    "positive_contact_rows": 188,
+                    "positive_contact_steps": 188,
+                    "first_step": 12400,
+                    "last_step": 12591,
+                    "last_window_normal_force_N": {
+                      "min": 0.0,
+                      "max": 0.0,
+                      "mean": 0.0
+                    }
+                  },
+                  "9": {
+                    "positive_contact_rows": 7194,
+                    "positive_contact_steps": 7194,
+                    "first_step": 12487,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 4.512857415575433,
+                      "max": 4.801681600351259,
+                      "mean": 4.608302224191453
+                    }
+                  },
+                  "10": {
+                    "positive_contact_rows": 6586,
+                    "positive_contact_steps": 6586,
+                    "first_step": 13095,
+                    "last_step": 19680,
+                    "last_window_normal_force_N": {
+                      "min": 0.6170411597918735,
+                      "max": 0.7618859242344788,
+                      "mean": 0.7118713088920543
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "artifact_SHA": {
+            "RESULTS.json": "d270b2da46312fd0e283ac785c6bc0c05a28465cbca219827b071389ab831b7c",
+            "CONTROLLER.json": "dfe78283b0453fb491487b46a740a6b5350502bc3da6b4aaa867b108b6bc194f",
+            "SOURCE_SNAPSHOT.json": "2c835a6095ca32b2bc7d5ca2a4afe1032001b799387c58f0a370cb3555039f6a",
+            "trace.npz": "992c3d44d17a353dd71cf22320937f9a6a4c662e18ae2e6a6171466d3831eb41"
+          },
+          "physical_steps_added_by_audit": 0,
+          "working_source_changes_after_saved_execution": [],
+          "original_pose_and_wrist": {
+            "original_top1_scene_depth_unchanged": true,
+            "original_commands_equal_at_all_shared_command_times": true,
+            "command_alignment_fine_row_stride": 1,
+            "command_alignment_fine_row_offset": 0,
+            "saved_state_time_alignment_fine_row_offset": 0,
+            "all_original_wrist_targets_reconstructed": true,
+            "baseline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt1920_cube_physics_20261103_v1",
+            "baseline_trace_sha256": "0b358cfb636e12d7b62443153c432089223d9dc9859eb733ee8ea5970eda5517",
+            "actual_wrist_trajectory_allowed_to_change_under_different_load": true
+          },
+          "baseline_contact_comparison": {
+            "object": {
+              "new_hand_link_indices": [
+                1,
+                5,
+                9
+              ],
+              "old_positive_rows": 32601,
+              "new_positive_rows": 28566
+            }
+          },
+          "outcome_and_media": {
+            "lift_observed": true,
+            "port_stability_pass": false,
+            "status": "not_lifted_or_port_invalid",
+            "physics_steps": 19680,
+            "physical_seconds": 10.25,
+            "object_final_lift_m": 0.09616878758221381,
+            "object_final_lowest_world_z_m": 0.09060374461583312,
+            "object_max_lift_m": 0.09620600585466185,
+            "finite": true,
+            "motor_torque_bounds_pass": true,
+            "gear_reaction_bounds_pass": true,
+            "wrist_tracking_pass": true,
+            "max_gear_residual_rad": 0.005666675086490713,
+            "peak_joint_velocity_rad_s": 1.6047709637877414,
+            "max_wrist_COM_error_m": 0.00010418214727662748,
+            "hand_object_contact_rows": 39198,
+            "hand_table_contact_rows": 12517,
+            "final_half_second_hand_object_contact_rows": 3840,
+            "state_resets_after_first_step": 0,
+            "object_attachment_constraints": 0,
+            "object_gravity_retained": true,
+            "continuous_same_scene": true,
+            "network_rerun": false,
+            "candidate_reselection": false,
+            "failed_original_gates": {
+              "peak_joint_velocity": {
+                "value_rad_s": 1.6047709637877414,
+                "strict_upper_rad_s": 1.5,
+                "joint": "finger3_tip_joint",
+                "step": 12620,
+                "time_s": 6.572916666666667,
+                "phase": "lift"
+              }
+            },
+            "frames_verified": 205,
+            "frame_physics_stride": 96,
+            "frame_files_total_bytes": 1694471,
+            "ordered_frame_name_SHA_digest": "61a6c4c5bac6614895f137c26a0d56c4035d487ae4c4442a30be3a2ed07c6383",
+            "actual_time_step_s": 0.0005208333333333333,
+            "shaft_speed_is_separately_reported_not_a_replacement_for_original_joint_speed_gate": 0.8906756013322105,
+            "approximation_scope": "Common-shaft branch-elastic proxy has four hand generalized coordinates plus one virtual-shaft coordinate. No commercial DH3 hardware accuracy claim."
+          },
+          "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim.",
+          "source_equation_smoke": {
+            "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v2/physics/cube/controller_source_frozen.py",
+            "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+            "constants": {
+              "branch_stiffness_Nm_rad": 0.8,
+              "branch_damping_Nm_s_rad": 0.02,
+              "shaft_inertia_kg_m2": 0.001,
+              "shaft_viscous_Nm_s_rad": 0.005,
+              "shaft_position_to_velocity_gain_s_inv": 6.0,
+              "shaft_velocity_feedback_Nm_s_rad": 2.0,
+              "shaft_lower_rad": 0.0,
+              "shaft_upper_rad": 1.333
+            },
+            "isolated_method_cases": 200,
+            "fake_API_only": true,
+            "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+            "findings": [
+              "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+              "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+              "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+              "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+              "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+              "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+            ],
+            "physical_steps": 0,
+            "simulator_imported": false
+          }
+        }
+      ],
+      "errors": [],
+      "physics_steps_verified": 59040,
+      "validated_stable_lifts": 0,
+      "held_lifts": 3
+    },
+    {
+      "root": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3",
+      "RESULTS_sha256": "a74cd3d8414f03d4a4f73785f7b7618616a067dce42c22c4e68fe9796793ec76",
+      "PLAN_sha256": "f97a6fcb23f34f73f73d91766ec6b0e806e7bc2f430b60f845300fca91b1c382",
+      "declared_cases": 3,
+      "runs": [
+        {
+          "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000",
+          "status": "saved_compliant_proxy_execution_verified",
+          "physics_steps_verified": 39360,
+          "source_guards": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000/runner_source_frozen.py",
+            "sha256": "cdc86125eb944446442d396a369aef44333ca2b87d902a72bd150ccc44f96349",
+            "API_guards_verified": true,
+            "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+          },
+          "mechanics": {
+            "equations_verified": true,
+            "actuator_caps_Nm": [
+              0.6,
+              0.3
+            ],
+            "spring_stored_energy_J": {
+              "min": 7.495425186620432e-11,
+              "max": 0.09578475898817174,
+              "mean": 0.04784990854609281
+            },
+            "shaft_kinetic_energy_J": {
+              "min": 0.0,
+              "max": 0.00023094042135548168,
+              "mean": 1.4506180129553237e-05
+            },
+            "shaft_motor_torque_Nm": {
+              "min": -0.015051455371332435,
+              "max": 0.6,
+              "mean": 0.3341912129552842
+            },
+            "sum_branch_torque_Nm": {
+              "min": -0.015045650402821149,
+              "max": 0.615101307621047,
+              "mean": 0.33389632257252844
+            },
+            "branch_torque_peak_abs_Nm": [
+              0.12400822652445406,
+              0.34703040204685837,
+              0.24839026588155616
+            ],
+            "nonnegative_relative_damping_power_W": {
+              "min": 0.0,
+              "max": 0.29983564092419673,
+              "mean": 0.001115920505633699
+            },
+            "shaft_stop_steps": 0,
+            "shaft_stop_loss_total_J": 0.0,
+            "endpoint_sample_motor_work_J": 0.16224046093500502,
+            "finite_increment_motor_work_J": 0.16215529586037108,
+            "branch_work_to_native_hand_J": 0.06636529519535853,
+            "split_integration_energy_defect_total_J": 5.2461672044036534e-05,
+            "split_integration_energy_defect_max_abs_per_step_J": 3.7915060341029706e-07,
+            "energy_accounting_identity_max_abs_residual_J": 5.2367845448656056e-17,
+            "continuous_power_identity_max_abs_residual_W": 1.6653345369377348e-16,
+            "gear_rank": 7,
+            "joint_coordinates_without_gears": 4,
+            "additional_virtual_shaft_coordinate": 1,
+            "shaft_max_speed_rad_s": 0.6796181594917571,
+            "branch_max_speed_rad_s": 4.48600252818862,
+            "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+          },
+          "contacts": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000/contacts.npy",
+            "sha256": "b17e4288114a3e646a587c4e53ff32ca4f00b6a7213c3fc3e513d0c3c4bfa25d",
+            "columns": 9,
+            "last_window_steps": 960,
+            "last_window_s": 0.25,
+            "body_pairs": {
+              "object": {
+                "total_positive_rows": 72835,
+                "hand_link_indices": [
+                  2,
+                  6,
+                  10
+                ],
+                "per_link": {
+                  "2": {
+                    "positive_contact_rows": 21713,
+                    "positive_contact_steps": 21635,
+                    "first_step": 17721,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 1.8209713449349756,
+                      "max": 1.9758762906853258,
+                      "mean": 1.882203351315944
+                    }
+                  },
+                  "6": {
+                    "positive_contact_rows": 27108,
+                    "positive_contact_steps": 25909,
+                    "first_step": 12986,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 4.958465188475409,
+                      "max": 5.886757535012499,
+                      "mean": 5.5013884880986925
+                    }
+                  },
+                  "10": {
+                    "positive_contact_rows": 24014,
+                    "positive_contact_steps": 23459,
+                    "first_step": 15792,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 5.214879666174947,
+                      "max": 7.169960070095825,
+                      "mean": 6.55577460535036
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "artifact_SHA": {
+            "RESULTS.json": "cea20f67ec771d28431228e0c26ac36b59a6a1a5e8eab478edee187cb2f9942f",
+            "CONTROLLER.json": "9752442a83befdc760128960710be7b8f755ff154a70e4ce8349f9fb38652f7c",
+            "SOURCE_SNAPSHOT.json": "6aea56d3d4055a4be0eac9fb7e67f29d72035287468b1593feefcd4ac74e4a69",
+            "trace.npz": "d557174bc5cb671a2b01ab4a810e75b3f054ba2343b1ae933c8990f1fbff765d"
+          },
+          "physical_steps_added_by_audit": 0,
+          "working_source_changes_after_saved_execution": [],
+          "original_pose_and_wrist": {
+            "original_top1_scene_depth_unchanged": true,
+            "original_commands_equal_at_all_shared_command_times": true,
+            "command_alignment_fine_row_stride": 2,
+            "command_alignment_fine_row_offset": 0,
+            "saved_state_time_alignment_fine_row_offset": 1,
+            "all_original_wrist_targets_reconstructed": true,
+            "baseline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000",
+            "baseline_trace_sha256": "fd593d948fa244021bf3ffd5c29ac0f4d1bdca12898e3cd3638d4b9093c0dbae",
+            "actual_wrist_trajectory_allowed_to_change_under_different_load": true
+          },
+          "baseline_contact_comparison": {
+            "object": {
+              "new_hand_link_indices": [],
+              "old_positive_rows": 7946,
+              "new_positive_rows": 72835
+            }
+          },
+          "outcome_and_media": {
+            "lift_observed": true,
+            "port_stability_pass": false,
+            "status": "not_lifted_or_port_invalid",
+            "physics_steps": 39360,
+            "physical_seconds": 10.25,
+            "object_final_lift_m": 0.09506466110025528,
+            "object_final_lowest_world_z_m": 0.08180665967982174,
+            "object_max_lift_m": 0.09512288824186822,
+            "finite": true,
+            "motor_torque_bounds_pass": true,
+            "gear_reaction_bounds_pass": true,
+            "wrist_tracking_pass": true,
+            "max_gear_residual_rad": 0.0007502844635520756,
+            "peak_joint_velocity_rad_s": 4.817387956218434,
+            "max_wrist_COM_error_m": 5.208204623760836e-05,
+            "hand_object_contact_rows": 413337,
+            "hand_table_contact_rows": 0,
+            "final_half_second_hand_object_contact_rows": 5803,
+            "state_resets_after_first_step": 0,
+            "object_attachment_constraints": 0,
+            "object_gravity_retained": true,
+            "continuous_same_scene": true,
+            "network_rerun": false,
+            "candidate_reselection": false,
+            "failed_original_gates": {
+              "peak_joint_velocity": {
+                "value_rad_s": 4.817387956218434,
+                "strict_upper_rad_s": 1.5,
+                "joint": "finger2_tip_joint",
+                "step": 16573,
+                "time_s": 4.315885416666666,
+                "phase": "close"
+              }
+            },
+            "frames_verified": 205,
+            "frame_physics_stride": 192,
+            "frame_files_total_bytes": 2916409,
+            "ordered_frame_name_SHA_digest": "79242676d3954a86113068a78a7882b73097869dd95c65a0900fb71c5ee0445f",
+            "actual_time_step_s": 0.00026041666666666666,
+            "shaft_speed_is_separately_reported_not_a_replacement_for_original_joint_speed_gate": 0.6796181594917571,
+            "approximation_scope": "Common-shaft branch-elastic proxy has four hand generalized coordinates plus one virtual-shaft coordinate. No commercial DH3 hardware accuracy claim."
+          },
+          "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim.",
+          "source_equation_smoke": {
+            "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw000/controller_source_frozen.py",
+            "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+            "constants": {
+              "branch_stiffness_Nm_rad": 0.8,
+              "branch_damping_Nm_s_rad": 0.02,
+              "shaft_inertia_kg_m2": 0.001,
+              "shaft_viscous_Nm_s_rad": 0.005,
+              "shaft_position_to_velocity_gain_s_inv": 6.0,
+              "shaft_velocity_feedback_Nm_s_rad": 2.0,
+              "shaft_lower_rad": 0.0,
+              "shaft_upper_rad": 1.333
+            },
+            "isolated_method_cases": 200,
+            "fake_API_only": true,
+            "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+            "findings": [
+              "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+              "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+              "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+              "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+              "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+              "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+            ],
+            "physical_steps": 0,
+            "simulator_imported": false
+          }
+        },
+        {
+          "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090",
+          "status": "saved_compliant_proxy_execution_verified",
+          "physics_steps_verified": 39360,
+          "source_guards": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090/runner_source_frozen.py",
+            "sha256": "cdc86125eb944446442d396a369aef44333ca2b87d902a72bd150ccc44f96349",
+            "API_guards_verified": true,
+            "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+          },
+          "mechanics": {
+            "equations_verified": true,
+            "actuator_caps_Nm": [
+              0.6,
+              0.3
+            ],
+            "spring_stored_energy_J": {
+              "min": 1.4496575061695344e-10,
+              "max": 0.1074296129014633,
+              "mean": 0.05325369937080308
+            },
+            "shaft_kinetic_energy_J": {
+              "min": 0.0,
+              "max": 0.0003583082032414917,
+              "mean": 3.3002656839394846e-05
+            },
+            "shaft_motor_torque_Nm": {
+              "min": -0.021355167296737837,
+              "max": 0.6,
+              "mean": 0.33161532920114745
+            },
+            "sum_branch_torque_Nm": {
+              "min": -0.021346912813021937,
+              "max": 0.6163112937683559,
+              "mean": 0.3311170355189192
+            },
+            "branch_torque_peak_abs_Nm": [
+              0.14941121454409143,
+              0.3400767904618966,
+              0.36311816602648334
+            ],
+            "nonnegative_relative_damping_power_W": {
+              "min": 0.0,
+              "max": 1.2183753148639067,
+              "mean": 0.004341134839515801
+            },
+            "shaft_stop_steps": 0,
+            "shaft_stop_loss_total_J": 0.0,
+            "endpoint_sample_motor_work_J": 0.34113946545458174,
+            "finite_increment_motor_work_J": 0.34101486272816894,
+            "branch_work_to_native_hand_J": 0.2010722320538482,
+            "split_integration_energy_defect_total_J": 0.0002274920580621458,
+            "split_integration_energy_defect_max_abs_per_step_J": 1.6520860784160631e-06,
+            "energy_accounting_identity_max_abs_residual_J": 5.14235166258523e-17,
+            "continuous_power_identity_max_abs_residual_W": 2.7755575615628914e-16,
+            "gear_rank": 7,
+            "joint_coordinates_without_gears": 4,
+            "additional_virtual_shaft_coordinate": 1,
+            "shaft_max_speed_rad_s": 0.8465319878675486,
+            "branch_max_speed_rad_s": 8.54458751998813,
+            "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+          },
+          "contacts": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090/contacts.npy",
+            "sha256": "0978a56db8d42ac38978b4d809cd840901d7ec8f60cdd806954b0a659f045e65",
+            "columns": 9,
+            "last_window_steps": 960,
+            "last_window_s": 0.25,
+            "body_pairs": {
+              "object": {
+                "total_positive_rows": 62042,
+                "hand_link_indices": [
+                  2,
+                  6,
+                  10
+                ],
+                "per_link": {
+                  "2": {
+                    "positive_contact_rows": 22300,
+                    "positive_contact_steps": 21967,
+                    "first_step": 17307,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 3.6704214692104817,
+                      "max": 3.6706521935713146,
+                      "mean": 3.670536829659546
+                    }
+                  },
+                  "6": {
+                    "positive_contact_rows": 26701,
+                    "positive_contact_steps": 13716,
+                    "first_step": 25645,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 6.737648579628766,
+                      "max": 6.738256175613433,
+                      "mean": 6.737952333673379
+                    }
+                  },
+                  "10": {
+                    "positive_contact_rows": 13041,
+                    "positive_contact_steps": 13041,
+                    "first_step": 26320,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 4.578454166815796,
+                      "max": 4.578659264937006,
+                      "mean": 4.57855671504981
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "artifact_SHA": {
+            "RESULTS.json": "987703acb04d753c55b5c82f25191d2094b70d4431cb58476f242174acb3bc9b",
+            "CONTROLLER.json": "38b9cdb807e4fb0d80f97e5992655b5f018fcf1ff0fed56313ac2d98773795f5",
+            "SOURCE_SNAPSHOT.json": "692550a809e51ccf5d1bbf6946484ca224f5ef5bd2cacdf72ed00a976f0b5757",
+            "trace.npz": "fe1332d20a23e9664b5d4361f68d4116e89e608d5e5d318714896635ed025d87"
+          },
+          "physical_steps_added_by_audit": 0,
+          "working_source_changes_after_saved_execution": [],
+          "original_pose_and_wrist": {
+            "original_top1_scene_depth_unchanged": true,
+            "original_commands_equal_at_all_shared_command_times": true,
+            "command_alignment_fine_row_stride": 2,
+            "command_alignment_fine_row_offset": 0,
+            "saved_state_time_alignment_fine_row_offset": 1,
+            "all_original_wrist_targets_reconstructed": true,
+            "baseline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw090",
+            "baseline_trace_sha256": "20529bfac7c39a8be7c1c1c9c0effa30983ca1de575654556da3cfa4a05e5b63",
+            "actual_wrist_trajectory_allowed_to_change_under_different_load": true
+          },
+          "baseline_contact_comparison": {
+            "object": {
+              "new_hand_link_indices": [],
+              "old_positive_rows": 19052,
+              "new_positive_rows": 62042
+            }
+          },
+          "outcome_and_media": {
+            "lift_observed": true,
+            "port_stability_pass": false,
+            "status": "not_lifted_or_port_invalid",
+            "physics_steps": 39360,
+            "physical_seconds": 10.25,
+            "object_final_lift_m": 0.09286829383365618,
+            "object_final_lowest_world_z_m": 0.07001064294742156,
+            "object_max_lift_m": 0.09290711845335456,
+            "finite": true,
+            "motor_torque_bounds_pass": true,
+            "gear_reaction_bounds_pass": true,
+            "wrist_tracking_pass": true,
+            "max_gear_residual_rad": 0.0049596497490817515,
+            "peak_joint_velocity_rad_s": 9.18549256896291,
+            "max_wrist_COM_error_m": 5.2083584184482685e-05,
+            "hand_object_contact_rows": 366292,
+            "hand_table_contact_rows": 20079,
+            "final_half_second_hand_object_contact_rows": 7680,
+            "state_resets_after_first_step": 0,
+            "object_attachment_constraints": 0,
+            "object_gravity_retained": true,
+            "continuous_same_scene": true,
+            "network_rerun": false,
+            "candidate_reselection": false,
+            "failed_original_gates": {
+              "peak_joint_velocity": {
+                "value_rad_s": 9.18549256896291,
+                "strict_upper_rad_s": 1.5,
+                "joint": "finger3_tip_joint",
+                "step": 26254,
+                "time_s": 6.836979166666667,
+                "phase": "lift"
+              }
+            },
+            "frames_verified": 205,
+            "frame_physics_stride": 192,
+            "frame_files_total_bytes": 2715679,
+            "ordered_frame_name_SHA_digest": "fbf86112b59963a83c1506ca6ec26215fb7338474e6c5ac05e94a947d679912e",
+            "actual_time_step_s": 0.00026041666666666666,
+            "shaft_speed_is_separately_reported_not_a_replacement_for_original_joint_speed_gate": 0.8465319878675486,
+            "approximation_scope": "Common-shaft branch-elastic proxy has four hand generalized coordinates plus one virtual-shaft coordinate. No commercial DH3 hardware accuracy claim."
+          },
+          "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim.",
+          "source_equation_smoke": {
+            "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/banana_yaw090/controller_source_frozen.py",
+            "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+            "constants": {
+              "branch_stiffness_Nm_rad": 0.8,
+              "branch_damping_Nm_s_rad": 0.02,
+              "shaft_inertia_kg_m2": 0.001,
+              "shaft_viscous_Nm_s_rad": 0.005,
+              "shaft_position_to_velocity_gain_s_inv": 6.0,
+              "shaft_velocity_feedback_Nm_s_rad": 2.0,
+              "shaft_lower_rad": 0.0,
+              "shaft_upper_rad": 1.333
+            },
+            "isolated_method_cases": 200,
+            "fake_API_only": true,
+            "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+            "findings": [
+              "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+              "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+              "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+              "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+              "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+              "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+            ],
+            "physical_steps": 0,
+            "simulator_imported": false
+          }
+        },
+        {
+          "run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/cube",
+          "status": "saved_compliant_proxy_execution_verified",
+          "physics_steps_verified": 39360,
+          "source_guards": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/cube/runner_source_frozen.py",
+            "sha256": "cdc86125eb944446442d396a369aef44333ca2b87d902a72bd150ccc44f96349",
+            "API_guards_verified": true,
+            "source_inventory_boundary": "Checks frozen code and saved initial constraints; not an external syscall monitor."
+          },
+          "mechanics": {
+            "equations_verified": true,
+            "actuator_caps_Nm": [
+              0.6,
+              0.3
+            ],
+            "spring_stored_energy_J": {
+              "min": 1.3573182240334757e-10,
+              "max": 0.11405944981183141,
+              "mean": 0.053098127151891675
+            },
+            "shaft_kinetic_energy_J": {
+              "min": 0.0,
+              "max": 0.00039668780561828324,
+              "mean": 2.7639043971154687e-05
+            },
+            "shaft_motor_torque_Nm": {
+              "min": -0.020712243382616135,
+              "max": 0.6,
+              "mean": 0.32706172659428473
+            },
+            "sum_branch_torque_Nm": {
+              "min": -0.02070424288307656,
+              "max": 0.6175509383257132,
+              "mean": 0.32664699582462836
+            },
+            "branch_torque_peak_abs_Nm": [
+              0.13499748838924672,
+              0.4085882526052208,
+              0.15996393956347027
+            ],
+            "nonnegative_relative_damping_power_W": {
+              "min": 0.0,
+              "max": 0.06288405495332584,
+              "mean": 0.0015880416118626642
+            },
+            "shaft_stop_steps": 0,
+            "shaft_stop_loss_total_J": 0.0,
+            "endpoint_sample_motor_work_J": 0.19205978021371195,
+            "finite_increment_motor_work_J": 0.19193131221837917,
+            "branch_work_to_native_hand_J": 0.08482118130136221,
+            "split_integration_energy_defect_total_J": 8.155736418045191e-05,
+            "split_integration_energy_defect_max_abs_per_step_J": 8.477982522728357e-08,
+            "energy_accounting_identity_max_abs_residual_J": 6.090155971974334e-17,
+            "continuous_power_identity_max_abs_residual_W": 1.3357370765021415e-16,
+            "gear_rank": 7,
+            "joint_coordinates_without_gears": 4,
+            "additional_virtual_shaft_coordinate": 1,
+            "shaft_max_speed_rad_s": 0.8907163472377536,
+            "branch_max_speed_rad_s": 1.4089113250374208,
+            "boundary": "Two bounded actuator channels; branch torques are passive transmission. Numerical split defects are reported, not assumed zero; no hardware parameter identification."
+          },
+          "contacts": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/cube/contacts.npy",
+            "sha256": "6a34350a02645fb1c9cfeccd70c625d121b08ba5c5be0289e9a15377e6ad90bd",
+            "columns": 9,
+            "last_window_steps": 960,
+            "last_window_s": 0.25,
+            "body_pairs": {
+              "object": {
+                "total_positive_rows": 57081,
+                "hand_link_indices": [
+                  1,
+                  5,
+                  6,
+                  9,
+                  10
+                ],
+                "per_link": {
+                  "1": {
+                    "positive_contact_rows": 14945,
+                    "positive_contact_steps": 14945,
+                    "first_step": 24416,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 3.5390527647929084,
+                      "max": 3.579489358550238,
+                      "mean": 3.556864194163391
+                    }
+                  },
+                  "5": {
+                    "positive_contact_rows": 14247,
+                    "positive_contact_steps": 14247,
+                    "first_step": 25114,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 6.110897425484506,
+                      "max": 6.138307567398434,
+                      "mean": 6.127163712282476
+                    }
+                  },
+                  "6": {
+                    "positive_contact_rows": 317,
+                    "positive_contact_steps": 317,
+                    "first_step": 24793,
+                    "last_step": 25123,
+                    "last_window_normal_force_N": {
+                      "min": 0.0,
+                      "max": 0.0,
+                      "mean": 0.0
+                    }
+                  },
+                  "9": {
+                    "positive_contact_rows": 14397,
+                    "positive_contact_steps": 14397,
+                    "first_step": 24964,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 4.327453289194663,
+                      "max": 4.7079958695672,
+                      "mean": 4.501683918551857
+                    }
+                  },
+                  "10": {
+                    "positive_contact_rows": 13175,
+                    "positive_contact_steps": 13175,
+                    "first_step": 26186,
+                    "last_step": 39360,
+                    "last_window_normal_force_N": {
+                      "min": 0.6021887808387243,
+                      "max": 0.8121074534922019,
+                      "mean": 0.7190581529128318
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "artifact_SHA": {
+            "RESULTS.json": "4183d2acbb5470da8fa40b03b54c508f7e5d4cdc72aa4337c1b0f29cc1d36651",
+            "CONTROLLER.json": "1177ee61d3a31e994190f614a6af9f8118340229da771ba7703346cb6e03a39c",
+            "SOURCE_SNAPSHOT.json": "6df01c30878e3b86ef7dc36f14f38afc5cecc8009ae5adb18044779ea0e11abb",
+            "trace.npz": "f3fa3a3c6c9c243f2f77edb55a42b5df4e9baf448e19976a4987f0f2c0e32f27"
+          },
+          "physical_steps_added_by_audit": 0,
+          "working_source_changes_after_saved_execution": [],
+          "original_pose_and_wrist": {
+            "original_top1_scene_depth_unchanged": true,
+            "original_commands_equal_at_all_shared_command_times": true,
+            "command_alignment_fine_row_stride": 2,
+            "command_alignment_fine_row_offset": 0,
+            "saved_state_time_alignment_fine_row_offset": 1,
+            "all_original_wrist_targets_reconstructed": true,
+            "baseline": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_dt1920_cube_physics_20261103_v1",
+            "baseline_trace_sha256": "0b358cfb636e12d7b62443153c432089223d9dc9859eb733ee8ea5970eda5517",
+            "actual_wrist_trajectory_allowed_to_change_under_different_load": true
+          },
+          "baseline_contact_comparison": {
+            "object": {
+              "new_hand_link_indices": [
+                1,
+                5,
+                9
+              ],
+              "old_positive_rows": 32601,
+              "new_positive_rows": 57081
+            }
+          },
+          "outcome_and_media": {
+            "lift_observed": true,
+            "port_stability_pass": false,
+            "status": "not_lifted_or_port_invalid",
+            "physics_steps": 39360,
+            "physical_seconds": 10.25,
+            "object_final_lift_m": 0.09638354896550705,
+            "object_final_lowest_world_z_m": 0.09059352760888698,
+            "object_max_lift_m": 0.09640448724291567,
+            "finite": true,
+            "motor_torque_bounds_pass": true,
+            "gear_reaction_bounds_pass": true,
+            "wrist_tracking_pass": true,
+            "max_gear_residual_rad": 0.0015313607663791085,
+            "peak_joint_velocity_rad_s": 1.5157848394852502,
+            "max_wrist_COM_error_m": 5.208782754723714e-05,
+            "hand_object_contact_rows": 78409,
+            "hand_table_contact_rows": 25011,
+            "final_half_second_hand_object_contact_rows": 7680,
+            "state_resets_after_first_step": 0,
+            "object_attachment_constraints": 0,
+            "object_gravity_retained": true,
+            "continuous_same_scene": true,
+            "network_rerun": false,
+            "candidate_reselection": false,
+            "failed_original_gates": {
+              "peak_joint_velocity": {
+                "value_rad_s": 1.5157848394852502,
+                "strict_upper_rad_s": 1.5,
+                "joint": "finger3_tip_joint",
+                "step": 25200,
+                "time_s": 6.5625,
+                "phase": "lift"
+              }
+            },
+            "frames_verified": 205,
+            "frame_physics_stride": 192,
+            "frame_files_total_bytes": 1693118,
+            "ordered_frame_name_SHA_digest": "c71d7960cb2beec282b9eb8222d959679d3cc45c6a27c03906e8f8968cbb11d4",
+            "actual_time_step_s": 0.00026041666666666666,
+            "shaft_speed_is_separately_reported_not_a_replacement_for_original_joint_speed_gate": 0.8907163472377536,
+            "approximation_scope": "Common-shaft branch-elastic proxy has four hand generalized coordinates plus one virtual-shaft coordinate. No commercial DH3 hardware accuracy claim."
+          },
+          "statistics_boundary": "Each condition is one deterministic trial; time-window frames are correlated. No confidence interval or hardware-calibration claim.",
+          "source_equation_smoke": {
+            "source": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_comparison_20261104_v3/physics/cube/controller_source_frozen.py",
+            "source_sha256": "50e02b4d8a7696c5507a27acb92a20b06c81195f75fde8322380ec7999580aec",
+            "constants": {
+              "branch_stiffness_Nm_rad": 0.8,
+              "branch_damping_Nm_s_rad": 0.02,
+              "shaft_inertia_kg_m2": 0.001,
+              "shaft_viscous_Nm_s_rad": 0.005,
+              "shaft_position_to_velocity_gain_s_inv": 6.0,
+              "shaft_velocity_feedback_Nm_s_rad": 2.0,
+              "shaft_lower_rad": 0.0,
+              "shaft_upper_rad": 1.333
+            },
+            "isolated_method_cases": 200,
+            "fake_API_only": true,
+            "maximum_continuous_power_identity_residual_W": 2.7755575615628914e-16,
+            "findings": [
+              "Equation returns all three branch reactions to the same finite-inertia shaft; not three independently powered servos.",
+              "Branch torque sum may transiently exceed .6Nm by releasing stored shaft/spring energy; do not misclassify as extra motor power.",
+              "Shaft position clipping is an internal inelastic stop, not a hand/object reset; its numerical energy residual must be reported.",
+              "This permits cross-finger elastic deflection and is explicitly an engineering proxy, not identified commercial DH3 linkage.",
+              "Inherited fixture summary must map virtual shaft to finger1_joint when identifying active torque slots.",
+              "Actuator power is shaft_motor_torque_Nm*shaft_v_before_step_rad plus spread motor power; physical finger1 velocity is not shaft velocity."
+            ],
+            "physical_steps": 0,
+            "simulator_imported": false
+          }
+        }
+      ],
+      "errors": [],
+      "physics_steps_verified": 118080,
+      "validated_stable_lifts": 0,
+      "held_lifts": 3
+    }
+  ],
+  "errors": [],
+  "additional_physics_steps": 0,
+  "additional_network_forwards": 0,
+  "simulator_imported": false,
+  "cross_campaign_comparison": [
+    {
+      "scene": "banana_yaw000",
+      "identical_model_source_and_parameters": true,
+      "assumption_changes": {
+        "dt": {
+          "coarse": 0.0005208333333333333,
+          "fine": 0.00026041666666666666
+        }
+      },
+      "final_lift_difference_fine_minus_coarse_m": -0.0011675313897396983,
+      "coarse_stable": false,
+      "fine_stable": false,
+      "claim": "Two resolutions with contact events; no assertion of monotonic convergence or paper gate."
+    },
+    {
+      "scene": "banana_yaw090",
+      "identical_model_source_and_parameters": true,
+      "assumption_changes": {
+        "dt": {
+          "coarse": 0.0005208333333333333,
+          "fine": 0.00026041666666666666
+        }
+      },
+      "final_lift_difference_fine_minus_coarse_m": 0.00097040822274648,
+      "coarse_stable": false,
+      "fine_stable": false,
+      "claim": "Two resolutions with contact events; no assertion of monotonic convergence or paper gate."
+    },
+    {
+      "scene": "cube",
+      "identical_model_source_and_parameters": true,
+      "assumption_changes": {
+        "dt": {
+          "coarse": 0.0005208333333333333,
+          "fine": 0.00026041666666666666
+        }
+      },
+      "final_lift_difference_fine_minus_coarse_m": 0.00021476138329323824,
+      "coarse_stable": false,
+      "fine_stable": false,
+      "claim": "Two resolutions with contact events; no assertion of monotonic convergence or paper gate."
+    }
+  ],
+  "status": "all_saved_scene_executions_verified",
+  "total_saved_physics_steps_verified": 177120,
+  "wall_seconds": 2.055188621976413
+}

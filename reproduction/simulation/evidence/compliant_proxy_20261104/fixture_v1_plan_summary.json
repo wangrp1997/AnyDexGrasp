@@ -1,0 +1,585 @@
+{
+  "plan_path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_compliant_fixture_20261104_v1/PLAN.json",
+  "plan_sha256": "f1e0d5b72dfe73bed8b483cf0a6fd071d0e6a77939cb526be3de8c32240d21bd",
+  "protocol": {
+    "schema": "DH3-fixed-force-fixture-v1",
+    "accepted_controller_sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239",
+    "initial_position_register": 95.0,
+    "initial_rotation_register": 100.0,
+    "baseLink_position_world_m": [
+      0.0,
+      0.0,
+      0.45
+    ],
+    "baseLink_orientation_xyzw": [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "integration_hz": 1920,
+    "numSubSteps": 1,
+    "solver_iterations": 100,
+    "non_contact_inner_iterations": 20,
+    "gravity_m_s2": [
+      0.0,
+      0.0,
+      -9.81
+    ],
+    "position_motor_max_torque_Nm": 0.6,
+    "rotation_motor_max_torque_Nm": 0.3,
+    "position_motor_max_velocity_rad_s": 1.0,
+    "rotation_motor_max_velocity_rad_s": 0.5,
+    "gear_max_torque_Nm": 100.0,
+    "gear_erp": 0.2,
+    "wrist_max_force_per_row_N_or_Nm": 30.0,
+    "wrist_erp": 0.2,
+    "position_gain": 0.15,
+    "velocity_gain": 1.0,
+    "hand_lateral_friction": 0.5,
+    "contact_restitution": 0.0,
+    "sphere_radius_m": 0.006,
+    "pad_mass_kg": 0.0,
+    "pad_lateral_friction": 0.5,
+    "pad_restitution": 0.0,
+    "master_theta_central_difference_rad": 0.0001,
+    "initial_hold_s": 0.5,
+    "smooth_close_s": 2.0,
+    "final_hold_s": 0.75,
+    "total_s": 3.25,
+    "steps_per_complete_case": 6240,
+    "final_force_window_s": 0.25,
+    "initial_penetration_tolerance_m": 1e-09,
+    "wrong_link_contact_force_threshold_N": 1e-08,
+    "cases": [
+      {
+        "case_id": "finger1_theta045",
+        "stops": [
+          {
+            "finger": 1,
+            "theta_rad": 0.45
+          }
+        ]
+      },
+      {
+        "case_id": "finger2_theta045",
+        "stops": [
+          {
+            "finger": 2,
+            "theta_rad": 0.45
+          }
+        ]
+      },
+      {
+        "case_id": "finger3_theta045",
+        "stops": [
+          {
+            "finger": 3,
+            "theta_rad": 0.45
+          }
+        ]
+      },
+      {
+        "case_id": "all3_theta045",
+        "stops": [
+          {
+            "finger": 1,
+            "theta_rad": 0.45
+          },
+          {
+            "finger": 2,
+            "theta_rad": 0.45
+          },
+          {
+            "finger": 3,
+            "theta_rad": 0.45
+          }
+        ]
+      },
+      {
+        "case_id": "asymmetric_finger2_045_other_080",
+        "stops": [
+          {
+            "finger": 1,
+            "theta_rad": 0.8
+          },
+          {
+            "finger": 2,
+            "theta_rad": 0.45
+          },
+          {
+            "finger": 3,
+            "theta_rad": 0.8
+          }
+        ]
+      }
+    ],
+    "case_fresh_client": true,
+    "no_table": true,
+    "no_grasped_object": true,
+    "no_scene_reset_after_integration": true,
+    "keep_original_two_motors_nine_gears": false,
+    "compliant_common_shaft_proxy": true,
+    "on_initial_penetration": "zero_step_fixture_failure_keep_evidence_continue_next_declared_case",
+    "on_wrong_link_first_positive_contact": "stop_case_keep_partial_trace_continue_next_declared_case",
+    "no_pad_reposition_or_case_replacement": true,
+    "purpose": "Measure this declared rigid two-drive simulation port under fixed unilateral load; not hardware identification, grasp scoring, success-driven calibration or mechanism-topology validation"
+  },
+  "source_bindings": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_time_refinement_smoke.py",
+      "bytes": 48017,
+      "sha256": "8d33ba1a4ca4d33df31da9717b818505bed73554df3c171696a7a5f0140df239"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_geometry_adapter_20261103_v2/ADAPTER.json",
+      "bytes": 9666,
+      "sha256": "63a1e50b61d450dbdd2017b24ddd58c0440a5ae548dedb5d5ea83e34bd5904c7"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_geometry_adapter_20261103_v2/dh3_author_geometry.urdf",
+      "bytes": 16059,
+      "sha256": "9252f472a4c341419dba438261eda50652209d0e6def4f270cb947c84816de8a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_geometry_adapter.py",
+      "bytes": 18055,
+      "sha256": "99d0b687483685e20f2e2e2b3777d09b03ae5b6658efea2f6b0b126b5a4ace83"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/dh3_author_kinematics.py",
+      "bytes": 8188,
+      "sha256": "7dcefdee59b73dbafd3e8dc3e52095c55d4426526b7fdb3f7efd01cddddc9398"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/base_Link.STL",
+      "bytes": 2140484,
+      "sha256": "afa731ade17aa5b910a41173d4f62c7bcfdbf7ce1a2f77f4a770c3c770b0a91a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_base_Link.STL",
+      "bytes": 125784,
+      "sha256": "375fb35dfd9abbbe9f389d93c2654f44216744ff056127ea5593c264d21340a7"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_Link.STL",
+      "bytes": 66284,
+      "sha256": "a3521cd83d2520474edf82a702a793b78211e8607aad1fcd6b69e8f2b4f6074c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_tip_Link.STL",
+      "bytes": 143984,
+      "sha256": "470d3a1264e83ead3030441432b410f26574e56c09133eae090a6dbb405b8910"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger1_outlet_Link.STL",
+      "bytes": 126784,
+      "sha256": "5269b9b0e42f9dd48c0ed8e76b3f33b80e318d87b554a836cc75c1749fcffa47"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_base_Link.STL",
+      "bytes": 125784,
+      "sha256": "73c06ea4438dd545631228c9d30fe3cd809d61a8f83cd6b0452bc9f08fd408d1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_Link.STL",
+      "bytes": 66284,
+      "sha256": "e02334aa8b9b8dcf482e668f4552894a4109e2f77bb64d326656cc912e0336da"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_tip_Link.STL",
+      "bytes": 143984,
+      "sha256": "b7ad921393bf0194c3430fa2129e7796586c482e93f9c59b97c7bce48ba0b00d"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger2_outlet_Link.STL",
+      "bytes": 126784,
+      "sha256": "d9d95241e943181687bc03159c615ade9f6f93f306aaa81928f9ec0597e280b6"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_base_Link.STL",
+      "bytes": 125784,
+      "sha256": "f0b842f71070e386389ced5ae8c19b1bc880a502f157bff9122ba6cbacb686b0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_Link.STL",
+      "bytes": 66284,
+      "sha256": "90e1f9cbb54bf798f0a74395cdb587dda6ace80eb0590096c695a0ab0613e16a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_tip_Link.STL",
+      "bytes": 143984,
+      "sha256": "35323709b8994f8e097e53abaacd20c8bb3e09485410b06f85bc2b8f9233e6a0"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/dh3_urdf/dh3_urdf/meshes/finger3_outlet_Link.STL",
+      "bytes": 126784,
+      "sha256": "a279206af38e2a5f5e251ebde5d34664e640310cd4d97c14d8587b484be1dd0a"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/simulation/dh3_compliant_proxy.py",
+      "bytes": 10241,
+      "sha256": "febb60b795b8370f3e68dc393f8730913fe4a13027a556ec9daee48fb11f410c"
+    }
+  ],
+  "prepared_conditions": [
+    {
+      "case_id": "finger1_theta045",
+      "pads": [
+        {
+          "pad_name": "pad_finger1",
+          "finger": 1,
+          "intended_link": "finger1_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            -0.016846181024358965,
+            0.05217753205094098,
+            0.6265192612327881
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            0.0006844097940987559,
+            -0.04843763052084227,
+            0.02478055247168154
+          ],
+          "closing_direction_world": [
+            0.012578112515073861,
+            -0.8901888487101608,
+            0.4554180548876348
+          ],
+          "support_vertex_index": 5874,
+          "support_vertex_world_m": [
+            -0.011335820359915167,
+            0.03958817960179939,
+            0.6620448238497704
+          ],
+          "sphere_center_world_m": [
+            -0.011260351684824723,
+            0.03424704650953842,
+            0.6647773321790962
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        }
+      ]
+    },
+    {
+      "case_id": "finger2_theta045",
+      "pads": [
+        {
+          "pad_name": "pad_finger2",
+          "finger": 2,
+          "intended_link": "finger2_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            0.05651349974477314,
+            0.00033197285850341423,
+            0.6265192612327914
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            -0.04844246553437764,
+            0.0,
+            0.024780552469461092
+          ],
+          "closing_direction_world": [
+            -0.8902777068412286,
+            0.0,
+            0.45541805486994397
+          ],
+          "support_vertex_index": 5874,
+          "support_vertex_world_m": [
+            0.04384755179115544,
+            -0.0049999716439180905,
+            0.6620448238497704
+          ],
+          "sphere_center_world_m": [
+            0.03850588555010807,
+            -0.0049999716439180905,
+            0.66477733217899
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        }
+      ]
+    },
+    {
+      "case_id": "finger3_theta045",
+      "pads": [
+        {
+          "pad_name": "pad_finger3",
+          "finger": 3,
+          "intended_link": "finger3_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            -0.016181596586637592,
+            -0.052194850294807166,
+            0.6265192612327872
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            0.0006839349646695081,
+            0.04843763722513217,
+            0.024780552469461092
+          ],
+          "closing_direction_world": [
+            0.012569386080247422,
+            0.8901889719760867,
+            0.45541805487455533
+          ],
+          "support_vertex_index": 5876,
+          "support_vertex_world_m": [
+            -0.011335180995548727,
+            -0.03959607072825396,
+            0.6620448238497698
+          ],
+          "sphere_center_world_m": [
+            -0.011259764679067242,
+            -0.03425493689639744,
+            0.6647773321790171
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        }
+      ]
+    },
+    {
+      "case_id": "all3_theta045",
+      "pads": [
+        {
+          "pad_name": "pad_finger1",
+          "finger": 1,
+          "intended_link": "finger1_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            -0.016846181024358965,
+            0.05217753205094098,
+            0.6265192612327881
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            0.0006844097940987559,
+            -0.04843763052084227,
+            0.02478055247168154
+          ],
+          "closing_direction_world": [
+            0.012578112515073861,
+            -0.8901888487101608,
+            0.4554180548876348
+          ],
+          "support_vertex_index": 5874,
+          "support_vertex_world_m": [
+            -0.011335820359915167,
+            0.03958817960179939,
+            0.6620448238497704
+          ],
+          "sphere_center_world_m": [
+            -0.011260351684824723,
+            0.03424704650953842,
+            0.6647773321790962
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        },
+        {
+          "pad_name": "pad_finger2",
+          "finger": 2,
+          "intended_link": "finger2_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            0.05651349974477314,
+            0.00033197285850341423,
+            0.6265192612327914
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            -0.04844246553437764,
+            0.0,
+            0.024780552469461092
+          ],
+          "closing_direction_world": [
+            -0.8902777068412286,
+            0.0,
+            0.45541805486994397
+          ],
+          "support_vertex_index": 5874,
+          "support_vertex_world_m": [
+            0.04384755179115544,
+            -0.0049999716439180905,
+            0.6620448238497704
+          ],
+          "sphere_center_world_m": [
+            0.03850588555010807,
+            -0.0049999716439180905,
+            0.66477733217899
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        },
+        {
+          "pad_name": "pad_finger3",
+          "finger": 3,
+          "intended_link": "finger3_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            -0.016181596586637592,
+            -0.052194850294807166,
+            0.6265192612327872
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            0.0006839349646695081,
+            0.04843763722513217,
+            0.024780552469461092
+          ],
+          "closing_direction_world": [
+            0.012569386080247422,
+            0.8901889719760867,
+            0.45541805487455533
+          ],
+          "support_vertex_index": 5876,
+          "support_vertex_world_m": [
+            -0.011335180995548727,
+            -0.03959607072825396,
+            0.6620448238497698
+          ],
+          "sphere_center_world_m": [
+            -0.011259764679067242,
+            -0.03425493689639744,
+            0.6647773321790171
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        }
+      ]
+    },
+    {
+      "case_id": "asymmetric_finger2_045_other_080",
+      "pads": [
+        {
+          "pad_name": "pad_finger1",
+          "finger": 1,
+          "intended_link": "finger1_tip_Link",
+          "master_reference_theta_rad": 0.8,
+          "position_register_at_reference": 37.98574643660915,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            -0.016589824743939538,
+            0.034034467875161276,
+            0.6320504127238228
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            0.0007653886482245076,
+            -0.05416873479074935,
+            0.006491874146585808
+          ],
+          "closing_direction_world": [
+            0.014027940225734219,
+            -0.9927972873794059,
+            0.1189821964207949
+          ],
+          "support_vertex_index": 5876,
+          "support_vertex_world_m": [
+            -0.02109170591144676,
+            0.022240776648680682,
+            0.6678962563198276
+          ],
+          "sphere_center_world_m": [
+            -0.021007538270092354,
+            0.016283992924404248,
+            0.6686101494983524
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        },
+        {
+          "pad_name": "pad_finger2",
+          "finger": 2,
+          "intended_link": "finger2_tip_Link",
+          "master_reference_theta_rad": 0.45,
+          "position_register_at_reference": 62.92948237059265,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            0.05651349974477314,
+            0.00033197285850341423,
+            0.6265192612327914
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            -0.04844246553437764,
+            0.0,
+            0.024780552469461092
+          ],
+          "closing_direction_world": [
+            -0.8902777068412286,
+            0.0,
+            0.45541805486994397
+          ],
+          "support_vertex_index": 5874,
+          "support_vertex_world_m": [
+            0.04384755179115544,
+            -0.0049999716439180905,
+            0.6620448238497704
+          ],
+          "sphere_center_world_m": [
+            0.03850588555010807,
+            -0.0049999716439180905,
+            0.66477733217899
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        },
+        {
+          "pad_name": "pad_finger3",
+          "finger": 3,
+          "intended_link": "finger3_tip_Link",
+          "master_reference_theta_rad": 0.8,
+          "position_register_at_reference": 37.98574643660915,
+          "tip_vertex_count": 8634,
+          "center_definition": "Arithmetic mean of all original STL triangle vertices, including repeated corners",
+          "tip_center_world_m": [
+            -0.015925418160743512,
+            -0.03405178360686653,
+            0.632050412723822
+          ],
+          "d_tip_center_d_master_theta_m_per_rad": [
+            0.0007648576379540306,
+            0.05416874228912627,
+            0.006491874147140919
+          ],
+          "closing_direction_world": [
+            0.01401820794140383,
+            0.9927974248443415,
+            0.1189821964352464
+          ],
+          "support_vertex_index": 5874,
+          "support_vertex_world_m": [
+            -0.02109123660134322,
+            -0.02224876341186906,
+            0.6678962563198271
+          ],
+          "sphere_center_world_m": [
+            -0.0210071273536948,
+            -0.01629197886280301,
+            0.6686101494984386
+          ],
+          "sphere_radius_m": 0.006,
+          "geometry_boundary": "Exact support of original source tip vertices; native convex margin may make first contact occur before reference theta. No outcome-based position adjustment."
+        }
+      ]
+    }
+  ]
+}

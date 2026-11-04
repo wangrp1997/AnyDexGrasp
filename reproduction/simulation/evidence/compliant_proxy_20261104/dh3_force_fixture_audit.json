@@ -1,0 +1,1463 @@
+{
+  "scope": "Independently audit saved five-condition DH3 fixed-force measurements.\nNo simulator/controller module is imported. No integration, contact query,\nrender, network forward, model fit or confidence interval is performed.\n",
+  "audit_script": {
+    "path": "/tmp/dh3_force_fixture_audit.py",
+    "bytes": 22584,
+    "sha256": "bc7d7fa47bfe443dce9b3200e962d3ccea509d604cfe330e28e85ab303072a1f"
+  },
+  "input_run": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1",
+  "additional_physical_steps": 0,
+  "additional_network_forwards": 0,
+  "additional_collision_queries": 0,
+  "additional_renders": 0,
+  "hardware_connections": 0,
+  "cases": [
+    {
+      "case_id": "finger1_theta045",
+      "status": "saved_fixture_case_verified",
+      "inputs": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger1_theta045/RESULTS.json",
+          "bytes": 11864,
+          "sha256": "3fedc4d905d50c514a02ed21af994aba302cf513748e8de403bd22879924dff5"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger1_theta045/CONTROLLER.json",
+          "bytes": 32509,
+          "sha256": "0d08b723f7123e96bda9a2152f10eb8b9040fae1db737547edc2daca17f1f6d0"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger1_theta045/trace.npz",
+          "bytes": 8311675,
+          "sha256": "e4404edeaf0121d315fa426ac76d0213a396ca98b46aca46d613969028cb9d55"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger1_theta045/contacts_full.npy",
+          "bytes": 764528,
+          "sha256": "4733d7b1b855e44e9f43ed5b332bf136e9abe14aad89ce4c41edd4c861bfcfd5"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger1_theta045/INITIAL_GEOMETRY.json",
+          "bytes": 155,
+          "sha256": "b3302dffbcf96811d72597ab0cb33cb5f1d03a121ab15a6f8cb28d274edc7731"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger1_theta045/SOURCE_SNAPSHOT.json",
+          "bytes": 362,
+          "sha256": "5bb3a45ab7e1082c4a2757c83e2e0573394f38d223ffe1e3faa47cc60e1b5c7c"
+        }
+      ],
+      "physics_steps": 6240,
+      "physical_seconds": 3.25,
+      "full_contact_rows": 3822,
+      "first_positive_pad_contacts": {
+        "pad_finger1": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            2
+          ]
+        }
+      },
+      "final_window": {
+        "start_step": 5761,
+        "end_step": 6240,
+        "steps": 480,
+        "physical_seconds": 0.25,
+        "interpretation": "One temporally correlated deterministic trajectory window, not480 independent trials; no inferential CI",
+        "confidence_interval": null
+      },
+      "per_pad_forces": {
+        "pad_finger1": {
+          "normal_force_N": {
+            "min": 11.058873117616875,
+            "time_mean": 11.058876505066142,
+            "max": 11.058879044830944
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 11.058873117616875,
+              "time_mean": 11.058876505066142,
+              "max": 11.058879044830944
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        }
+      },
+      "sum_pad_normal_force_N": {
+        "min": 11.058873117616875,
+        "time_mean": 11.058876505066142,
+        "max": 11.058879044830944
+      },
+      "common_finger_angles_rad": {
+        "finger1": {
+          "min": 0.43123406588489865,
+          "time_mean": 0.4312341299756136,
+          "max": 0.43123417804679287
+        },
+        "finger2": {
+          "min": 0.43123018181388395,
+          "time_mean": 0.4312302334077106,
+          "max": 0.4312302720951148
+        },
+        "finger3": {
+          "min": 0.4312229292546353,
+          "time_mean": 0.4312229611151611,
+          "max": 0.43122298501357736
+        }
+      },
+      "position_master_final_target_error_rad": {
+        "min": 0.9017658219532071,
+        "time_mean": 0.9017658700243864,
+        "max": 0.9017659341151013
+      },
+      "position_motor_final_torque_Nm": {
+        "min": 0.6,
+        "time_mean": 0.5999999999999999,
+        "max": 0.6
+      },
+      "position_motor_final_saturation_fraction": 1.0,
+      "passive_motor_readback_exact_zero": true,
+      "gear_J_rank": 9,
+      "ideal_motion_subspace_dimension": 2,
+      "maximum_gear_position_residual_rad": 0.0001539538692143516,
+      "maximum_gear_velocity_residual_rad_s": 0.24470606915143356,
+      "peak_gear_reaction_Nm": 0.40329928788828917,
+      "gear_cap_utilization": 0.004032992878882892,
+      "peak_joint_speed_rad_s": 1.2642775080612272,
+      "maximum_wrist_COM_error_m": 2.3920707592119327e-08,
+      "native_hand_masses_kg": 0.44848354243529254,
+      "native_hand_collision_margins_m": {
+        "-1": 0.001,
+        "0": 0.001,
+        "1": 0.001,
+        "2": 0.001,
+        "3": 0.001,
+        "4": 0.001,
+        "5": 0.001,
+        "6": 0.001,
+        "7": 0.001,
+        "8": 0.001,
+        "9": 0.001,
+        "10": 0.001,
+        "11": 0.001
+      },
+      "quasistatic_virtual_work": {
+        "common_flex_virtual_contact_torque_Nm": {
+          "min": -0.5880646422116507,
+          "time_mean": -0.5880646413988931,
+          "max": -0.5880646403150552
+        },
+        "common_flex_gravity_torque_Nm": {
+          "min": -0.011935359803385339,
+          "time_mean": -0.011935358680414919,
+          "max": -0.011935357838207844
+        },
+        "active_motor_projected_torque_Nm": {
+          "min": 0.6,
+          "time_mean": 0.5999999999999999,
+          "max": 0.6
+        },
+        "sum_virtual_torque_Nm": {
+          "min": -1.1844059066845603e-10,
+          "time_mean": -7.930806567024718e-11,
+          "max": -4.9858561723681305e-11
+        },
+        "max_native_vs_independent_URDF_COM_error_m": 4.440892098500626e-16,
+        "final_window_max_joint_speed_rad_s": 2.2589656929480174e-06,
+        "final_window_max_finite_difference_joint_acceleration_rad_s2": 7.864611976052683e-06,
+        "interpretation": "Normal-force sums depend on geometry. The proper drive comparison uses contact force dot contact-point virtual displacement per common-flex radian (Nm), plus gravity and active motor torques. Small balance residual supports this recorded quasistatic load path only; omitted inertial/solver terms and finite sampling are not a hardware model fit."
+      },
+      "all_declared_integrity_checks_passed": true
+    },
+    {
+      "case_id": "finger2_theta045",
+      "status": "saved_fixture_case_verified",
+      "inputs": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger2_theta045/RESULTS.json",
+          "bytes": 11859,
+          "sha256": "665d806a0424d60451a6a1d5ea4e66358c95431aa7a38dc71e5736451bd75fa4"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger2_theta045/CONTROLLER.json",
+          "bytes": 32477,
+          "sha256": "54731bf94a2b25e5866b847675fe68f2971f922057a2e56116f076097c33f06d"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger2_theta045/trace.npz",
+          "bytes": 8386962,
+          "sha256": "9f909605ee9fa0bf900ed3042798d466a26475e9cae115c704737604df120ec5"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger2_theta045/contacts_full.npy",
+          "bytes": 764528,
+          "sha256": "473d27a834890c4bfd58e5ce1d0071326cda95e700718eb67b6700d26c37f3da"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger2_theta045/INITIAL_GEOMETRY.json",
+          "bytes": 155,
+          "sha256": "14f524bca2f0ebd6dd9e2ecd245a11862531e77b0c0d253678025a0bb1feba86"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger2_theta045/SOURCE_SNAPSHOT.json",
+          "bytes": 362,
+          "sha256": "909bdd8a07af914b3f4bf4ab89d1172fabd04042c1e02b7957a42b71e441bdfc"
+        }
+      ],
+      "physics_steps": 6240,
+      "physical_seconds": 3.25,
+      "full_contact_rows": 3822,
+      "first_positive_pad_contacts": {
+        "pad_finger2": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            6
+          ]
+        }
+      },
+      "final_window": {
+        "start_step": 5761,
+        "end_step": 6240,
+        "steps": 480,
+        "physical_seconds": 0.25,
+        "interpretation": "One temporally correlated deterministic trajectory window, not480 independent trials; no inferential CI",
+        "confidence_interval": null
+      },
+      "per_pad_forces": {
+        "pad_finger2": {
+          "normal_force_N": {
+            "min": 11.057174135936709,
+            "time_mean": 11.057191126526366,
+            "max": 11.057205685878044
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 11.057174135936709,
+              "time_mean": 11.057191126526366,
+              "max": 11.057205685878044
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        }
+      },
+      "sum_pad_normal_force_N": {
+        "min": 11.057174135936709,
+        "time_mean": 11.057191126526366,
+        "max": 11.057205685878044
+      },
+      "common_finger_angles_rad": {
+        "finger1": {
+          "min": 0.43120800209719534,
+          "time_mean": 0.4312080832831264,
+          "max": 0.43120815545354757
+        },
+        "finger2": {
+          "min": 0.4312299065037302,
+          "time_mean": 0.43123050235934435,
+          "max": 0.43123101301960726
+        },
+        "finger3": {
+          "min": 0.4312333000014509,
+          "time_mean": 0.43123386360448723,
+          "max": 0.4312343440397956
+        }
+      },
+      "position_master_final_target_error_rad": {
+        "min": 0.9017918445464523,
+        "time_mean": 0.9017919167168735,
+        "max": 0.9017919979028046
+      },
+      "position_motor_final_torque_Nm": {
+        "min": 0.6,
+        "time_mean": 0.5999999999999999,
+        "max": 0.6
+      },
+      "position_motor_final_saturation_fraction": 1.0,
+      "passive_motor_readback_exact_zero": true,
+      "gear_J_rank": 9,
+      "ideal_motion_subspace_dimension": 2,
+      "maximum_gear_position_residual_rad": 0.0001732471285347259,
+      "maximum_gear_velocity_residual_rad_s": 0.2503108125361244,
+      "peak_gear_reaction_Nm": 1.1796083786395195,
+      "gear_cap_utilization": 0.011796083786395194,
+      "peak_joint_speed_rad_s": 1.2633683724396594,
+      "maximum_wrist_COM_error_m": 2.3410188882597028e-08,
+      "native_hand_masses_kg": 0.44848354243529254,
+      "native_hand_collision_margins_m": {
+        "-1": 0.001,
+        "0": 0.001,
+        "1": 0.001,
+        "2": 0.001,
+        "3": 0.001,
+        "4": 0.001,
+        "5": 0.001,
+        "6": 0.001,
+        "7": 0.001,
+        "8": 0.001,
+        "9": 0.001,
+        "10": 0.001,
+        "11": 0.001
+      },
+      "quasistatic_virtual_work": {
+        "common_flex_virtual_contact_torque_Nm": {
+          "min": -0.588064533346043,
+          "time_mean": -0.5880645253619883,
+          "max": -0.5880645160380136
+        },
+        "common_flex_gravity_torque_Nm": {
+          "min": -0.011935484132315516,
+          "time_mean": -0.011935474794577417,
+          "max": -0.011935466791808371
+        },
+        "active_motor_projected_torque_Nm": {
+          "min": 0.6,
+          "time_mean": 0.5999999999999999,
+          "max": 0.6
+        },
+        "sum_virtual_torque_Nm": {
+          "min": -1.703559515675579e-10,
+          "time_mean": -1.565657150222795e-10,
+          "max": -1.3785139696409487e-10
+        },
+        "max_native_vs_independent_URDF_COM_error_m": 4.440892098500626e-16,
+        "final_window_max_joint_speed_rad_s": 1.8755890164074606e-05,
+        "final_window_max_finite_difference_joint_acceleration_rad_s2": 3.364828375125063e-05,
+        "interpretation": "Normal-force sums depend on geometry. The proper drive comparison uses contact force dot contact-point virtual displacement per common-flex radian (Nm), plus gravity and active motor torques. Small balance residual supports this recorded quasistatic load path only; omitted inertial/solver terms and finite sampling are not a hardware model fit."
+      },
+      "all_declared_integrity_checks_passed": true
+    },
+    {
+      "case_id": "finger3_theta045",
+      "status": "saved_fixture_case_verified",
+      "inputs": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger3_theta045/RESULTS.json",
+          "bytes": 11853,
+          "sha256": "d6f5b49d0bb9de03b29a2bf830c911b076b5a4fb87a6e015db38c03c5da28f1a"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger3_theta045/CONTROLLER.json",
+          "bytes": 32514,
+          "sha256": "545abe471ae44b973b067d44103e639581d58b1622cfb60040190efb3f4e1d5c"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger3_theta045/trace.npz",
+          "bytes": 8246840,
+          "sha256": "21240393658ca6e84fa057a5aadc8608fd130fb9ecb4dee796e04248ab310925"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger3_theta045/contacts_full.npy",
+          "bytes": 764528,
+          "sha256": "02f4b667e704dffbdfd4fb9a764532e4f0c172eb6de9731a314241bbe4f1c1d8"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger3_theta045/INITIAL_GEOMETRY.json",
+          "bytes": 155,
+          "sha256": "11143d70ae7c067641c6779263b15daa7836e0281f6e5715414c84d381da023a"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/finger3_theta045/SOURCE_SNAPSHOT.json",
+          "bytes": 362,
+          "sha256": "4edd7f2d2c1c3055da2b11de86a934c3e5138cf855b23fe9f29cc4f2ed5ac1ea"
+        }
+      ],
+      "physics_steps": 6240,
+      "physical_seconds": 3.25,
+      "full_contact_rows": 3822,
+      "first_positive_pad_contacts": {
+        "pad_finger3": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            10
+          ]
+        }
+      },
+      "final_window": {
+        "start_step": 5761,
+        "end_step": 6240,
+        "steps": 480,
+        "physical_seconds": 0.25,
+        "interpretation": "One temporally correlated deterministic trajectory window, not480 independent trials; no inferential CI",
+        "confidence_interval": null
+      },
+      "per_pad_forces": {
+        "pad_finger3": {
+          "normal_force_N": {
+            "min": 11.058838666857415,
+            "time_mean": 11.058839855761695,
+            "max": 11.058840721930176
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 11.058838666857415,
+              "time_mean": 11.058839855761695,
+              "max": 11.058840721930176
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        }
+      },
+      "sum_pad_normal_force_N": {
+        "min": 11.058838666857415,
+        "time_mean": 11.058839855761695,
+        "max": 11.058840721930176
+      },
+      "common_finger_angles_rad": {
+        "finger1": {
+          "min": 0.43122486868307675,
+          "time_mean": 0.43122488068034176,
+          "max": 0.43122488942245185
+        },
+        "finger2": {
+          "min": 0.43123234550184697,
+          "time_mean": 0.43123236546728794,
+          "max": 0.4312323800136901
+        },
+        "finger3": {
+          "min": 0.43123609238449123,
+          "time_mean": 0.4312361168024308,
+          "max": 0.4312361345946588
+        }
+      },
+      "position_master_final_target_error_rad": {
+        "min": 0.9017751105775481,
+        "time_mean": 0.9017751193196583,
+        "max": 0.9017751313169232
+      },
+      "position_motor_final_torque_Nm": {
+        "min": 0.6,
+        "time_mean": 0.5999999999999999,
+        "max": 0.6
+      },
+      "position_motor_final_saturation_fraction": 1.0,
+      "passive_motor_readback_exact_zero": true,
+      "gear_J_rank": 9,
+      "ideal_motion_subspace_dimension": 2,
+      "maximum_gear_position_residual_rad": 0.00016908817990268776,
+      "maximum_gear_velocity_residual_rad_s": 0.2501782871558835,
+      "peak_gear_reaction_Nm": 1.1800285381727593,
+      "gear_cap_utilization": 0.011800285381727593,
+      "peak_joint_speed_rad_s": 1.2648596610429084,
+      "maximum_wrist_COM_error_m": 2.4651396901163892e-08,
+      "native_hand_masses_kg": 0.44848354243529254,
+      "native_hand_collision_margins_m": {
+        "-1": 0.001,
+        "0": 0.001,
+        "1": 0.001,
+        "2": 0.001,
+        "3": 0.001,
+        "4": 0.001,
+        "5": 0.001,
+        "6": 0.001,
+        "7": 0.001,
+        "8": 0.001,
+        "9": 0.001,
+        "10": 0.001,
+        "11": 0.001
+      },
+      "quasistatic_virtual_work": {
+        "common_flex_virtual_contact_torque_Nm": {
+          "min": -0.588064682369423,
+          "time_mean": -0.5880646820764406,
+          "max": -0.5880646816743127
+        },
+        "common_flex_gravity_torque_Nm": {
+          "min": -0.011935318379039285,
+          "time_mean": -0.011935317957955034,
+          "max": -0.011935317651138783
+        },
+        "active_motor_projected_torque_Nm": {
+          "min": 0.6,
+          "time_mean": 0.5999999999999999,
+          "max": 0.6
+        },
+        "sum_virtual_torque_Nm": {
+          "min": -5.335198949296682e-11,
+          "time_mean": -3.4395609971316075e-11,
+          "max": -2.0552226587255973e-11
+        },
+        "max_native_vs_independent_URDF_COM_error_m": 4.440892098500626e-16,
+        "final_window_max_joint_speed_rad_s": 8.851535538976589e-07,
+        "final_window_max_finite_difference_joint_acceleration_rad_s2": 3.3999421012756664e-06,
+        "interpretation": "Normal-force sums depend on geometry. The proper drive comparison uses contact force dot contact-point virtual displacement per common-flex radian (Nm), plus gravity and active motor torques. Small balance residual supports this recorded quasistatic load path only; omitted inertial/solver terms and finite sampling are not a hardware model fit."
+      },
+      "all_declared_integrity_checks_passed": true
+    },
+    {
+      "case_id": "all3_theta045",
+      "status": "saved_fixture_case_verified",
+      "inputs": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/all3_theta045/RESULTS.json",
+          "bytes": 16326,
+          "sha256": "c45f1d74fd43a0aab276663efe352d28f9de0a69bd94f2ff0fe19a350fd504a4"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/all3_theta045/CONTROLLER.json",
+          "bytes": 36436,
+          "sha256": "bcd18c2e2d5811531dd0d1e8ef4e44790a4a216751b76a9702dea50c613f23a3"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/all3_theta045/trace.npz",
+          "bytes": 8720472,
+          "sha256": "4f8a74e23d84e67639e5a2c3a737872e64c1a31dc66bef41ca29143e70af1120"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/all3_theta045/contacts_full.npy",
+          "bytes": 2293328,
+          "sha256": "2acb74d474484d755d02f689dc360f71dbdada640b2aa3e7b9fc6ff059e536fa"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/all3_theta045/INITIAL_GEOMETRY.json",
+          "bytes": 383,
+          "sha256": "f7cb286dbb61b3cc0952ab461bccaa848ebbae226963b5275ba420f3e5fd0c2d"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/all3_theta045/SOURCE_SNAPSHOT.json",
+          "bytes": 359,
+          "sha256": "a653d2f97a9cf8bb55b1c0705facef373739562e191a16d0f359858450ad3f3e"
+        }
+      ],
+      "physics_steps": 6240,
+      "physical_seconds": 3.25,
+      "full_contact_rows": 11466,
+      "first_positive_pad_contacts": {
+        "pad_finger1": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            2
+          ]
+        },
+        "pad_finger2": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            6
+          ]
+        },
+        "pad_finger3": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            10
+          ]
+        }
+      },
+      "final_window": {
+        "start_step": 5761,
+        "end_step": 6240,
+        "steps": 480,
+        "physical_seconds": 0.25,
+        "interpretation": "One temporally correlated deterministic trajectory window, not480 independent trials; no inferential CI",
+        "confidence_interval": null
+      },
+      "per_pad_forces": {
+        "pad_finger1": {
+          "normal_force_N": {
+            "min": 3.256332646049983,
+            "time_mean": 3.3418182949520836,
+            "max": 3.4169736643873145
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 3.256332646049983,
+              "time_mean": 3.3418182949520836,
+              "max": 3.4169736643873145
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        },
+        "pad_finger2": {
+          "normal_force_N": {
+            "min": 3.496553122748116,
+            "time_mean": 3.670491415831487,
+            "max": 3.823871821530476
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 3.496553122748116,
+              "time_mean": 3.670491415831487,
+              "max": 3.823871821530476
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        },
+        "pad_finger3": {
+          "normal_force_N": {
+            "min": 4.022391185048476,
+            "time_mean": 4.118714588383761,
+            "max": 4.22391927241624
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 4.022391185048476,
+              "time_mean": 4.118714588383761,
+              "max": 4.22391927241624
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        }
+      },
+      "sum_pad_normal_force_N": {
+        "min": 11.113518000883237,
+        "time_mean": 11.131024299167331,
+        "max": 11.145215113660935
+      },
+      "common_finger_angles_rad": {
+        "finger1": {
+          "min": 0.4315306282700983,
+          "time_mean": 0.4315841904380779,
+          "max": 0.431628414156673
+        },
+        "finger2": {
+          "min": 0.4314420206218917,
+          "time_mean": 0.43152316063074775,
+          "max": 0.43159577870685983
+        },
+        "finger3": {
+          "min": 0.431315176690465,
+          "time_mean": 0.4313526317634823,
+          "max": 0.4313867409383374
+        }
+      },
+      "position_master_final_target_error_rad": {
+        "min": 0.9013715858433269,
+        "time_mean": 0.901415809561922,
+        "max": 0.9014693717299016
+      },
+      "position_motor_final_torque_Nm": {
+        "min": 0.6,
+        "time_mean": 0.5999999999999999,
+        "max": 0.6
+      },
+      "position_motor_final_saturation_fraction": 1.0,
+      "passive_motor_readback_exact_zero": true,
+      "gear_J_rank": 9,
+      "ideal_motion_subspace_dimension": 2,
+      "maximum_gear_position_residual_rad": 0.0007882923390203911,
+      "maximum_gear_velocity_residual_rad_s": 0.01691224113304649,
+      "peak_gear_reaction_Nm": 0.35340682436151644,
+      "gear_cap_utilization": 0.0035340682436151645,
+      "peak_joint_speed_rad_s": 1.0124753891678526,
+      "maximum_wrist_COM_error_m": 1.788431626194846e-08,
+      "native_hand_masses_kg": 0.44848354243529254,
+      "native_hand_collision_margins_m": {
+        "-1": 0.001,
+        "0": 0.001,
+        "1": 0.001,
+        "2": 0.001,
+        "3": 0.001,
+        "4": 0.001,
+        "5": 0.001,
+        "6": 0.001,
+        "7": 0.001,
+        "8": 0.001,
+        "9": 0.001,
+        "10": 0.001,
+        "11": 0.001
+      },
+      "quasistatic_virtual_work": {
+        "common_flex_virtual_contact_torque_Nm": {
+          "min": -0.5884466510731047,
+          "time_mean": -0.5880704403805095,
+          "max": -0.5875932276244737
+        },
+        "common_flex_gravity_torque_Nm": {
+          "min": -0.011930930675049302,
+          "time_mean": -0.011929644267718005,
+          "max": -0.01192851645272324
+        },
+        "active_motor_projected_torque_Nm": {
+          "min": 0.6,
+          "time_mean": 0.5999999999999999,
+          "max": 0.6
+        },
+        "sum_virtual_torque_Nm": {
+          "min": -0.0003766663344376697,
+          "time_mean": -8.464822746935089e-08,
+          "max": 0.0004767499189395341
+        },
+        "max_native_vs_independent_URDF_COM_error_m": 4.440892098500626e-16,
+        "final_window_max_joint_speed_rad_s": 0.016325090393701044,
+        "final_window_max_finite_difference_joint_acceleration_rad_s2": 29.99280860427047,
+        "interpretation": "Normal-force sums depend on geometry. The proper drive comparison uses contact force dot contact-point virtual displacement per common-flex radian (Nm), plus gravity and active motor torques. Small balance residual supports this recorded quasistatic load path only; omitted inertial/solver terms and finite sampling are not a hardware model fit."
+      },
+      "all_declared_integrity_checks_passed": true
+    },
+    {
+      "case_id": "asymmetric_finger2_045_other_080",
+      "status": "saved_fixture_case_verified",
+      "inputs": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/asymmetric_finger2_045_other_080/RESULTS.json",
+          "bytes": 15746,
+          "sha256": "c6618aa005be65c85a15d96f1f310816b45198b69e881afebd7100994ed8dd8e"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/asymmetric_finger2_045_other_080/CONTROLLER.json",
+          "bytes": 36468,
+          "sha256": "f14017905379a686a970b65f29c50e3193995afe78de71753a941e80522e9cca"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/asymmetric_finger2_045_other_080/trace.npz",
+          "bytes": 8386962,
+          "sha256": "9f909605ee9fa0bf900ed3042798d466a26475e9cae115c704737604df120ec5"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/asymmetric_finger2_045_other_080/contacts_full.npy",
+          "bytes": 764528,
+          "sha256": "14502a58188368ae574d2f6b2ea7a867f5396d5af519c6c6daf00a5180261032"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/asymmetric_finger2_045_other_080/INITIAL_GEOMETRY.json",
+          "bytes": 383,
+          "sha256": "f7cb286dbb61b3cc0952ab461bccaa848ebbae226963b5275ba420f3e5fd0c2d"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/asymmetric_finger2_045_other_080/SOURCE_SNAPSHOT.json",
+          "bytes": 378,
+          "sha256": "043ea1575919c5dab2face93ce2cb014c28c5efc43ba7e6d1ac0e299d0a9a0a4"
+        }
+      ],
+      "physics_steps": 6240,
+      "physical_seconds": 3.25,
+      "full_contact_rows": 3822,
+      "first_positive_pad_contacts": {
+        "pad_finger2": {
+          "step": 2426,
+          "time_s": 1.2635416666666666,
+          "hand_links": [
+            6
+          ]
+        }
+      },
+      "final_window": {
+        "start_step": 5761,
+        "end_step": 6240,
+        "steps": 480,
+        "physical_seconds": 0.25,
+        "interpretation": "One temporally correlated deterministic trajectory window, not480 independent trials; no inferential CI",
+        "confidence_interval": null
+      },
+      "per_pad_forces": {
+        "pad_finger1": {
+          "normal_force_N": {
+            "min": 0.0,
+            "time_mean": 0.0,
+            "max": 0.0
+          },
+          "positive_contact_steps": 0,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        },
+        "pad_finger2": {
+          "normal_force_N": {
+            "min": 11.057174135936709,
+            "time_mean": 11.057191126526366,
+            "max": 11.057205685878044
+          },
+          "positive_contact_steps": 480,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 11.057174135936709,
+              "time_mean": 11.057191126526366,
+              "max": 11.057205685878044
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        },
+        "pad_finger3": {
+          "normal_force_N": {
+            "min": 0.0,
+            "time_mean": 0.0,
+            "max": 0.0
+          },
+          "positive_contact_steps": 0,
+          "per_link_normal_force_N": {
+            "-1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "0": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "1": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "2": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "3": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "4": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "5": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "6": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "7": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "8": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "9": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "10": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            },
+            "11": {
+              "min": 0.0,
+              "time_mean": 0.0,
+              "max": 0.0
+            }
+          }
+        }
+      },
+      "sum_pad_normal_force_N": {
+        "min": 11.057174135936709,
+        "time_mean": 11.057191126526366,
+        "max": 11.057205685878044
+      },
+      "common_finger_angles_rad": {
+        "finger1": {
+          "min": 0.43120800209719534,
+          "time_mean": 0.4312080832831264,
+          "max": 0.43120815545354757
+        },
+        "finger2": {
+          "min": 0.4312299065037302,
+          "time_mean": 0.43123050235934435,
+          "max": 0.43123101301960726
+        },
+        "finger3": {
+          "min": 0.4312333000014509,
+          "time_mean": 0.43123386360448723,
+          "max": 0.4312343440397956
+        }
+      },
+      "position_master_final_target_error_rad": {
+        "min": 0.9017918445464523,
+        "time_mean": 0.9017919167168735,
+        "max": 0.9017919979028046
+      },
+      "position_motor_final_torque_Nm": {
+        "min": 0.6,
+        "time_mean": 0.5999999999999999,
+        "max": 0.6
+      },
+      "position_motor_final_saturation_fraction": 1.0,
+      "passive_motor_readback_exact_zero": true,
+      "gear_J_rank": 9,
+      "ideal_motion_subspace_dimension": 2,
+      "maximum_gear_position_residual_rad": 0.0001732471285347259,
+      "maximum_gear_velocity_residual_rad_s": 0.2503108125361244,
+      "peak_gear_reaction_Nm": 1.1796083786395195,
+      "gear_cap_utilization": 0.011796083786395194,
+      "peak_joint_speed_rad_s": 1.2633683724396594,
+      "maximum_wrist_COM_error_m": 2.3410188882597028e-08,
+      "native_hand_masses_kg": 0.44848354243529254,
+      "native_hand_collision_margins_m": {
+        "-1": 0.001,
+        "0": 0.001,
+        "1": 0.001,
+        "2": 0.001,
+        "3": 0.001,
+        "4": 0.001,
+        "5": 0.001,
+        "6": 0.001,
+        "7": 0.001,
+        "8": 0.001,
+        "9": 0.001,
+        "10": 0.001,
+        "11": 0.001
+      },
+      "quasistatic_virtual_work": {
+        "common_flex_virtual_contact_torque_Nm": {
+          "min": -0.588064533346043,
+          "time_mean": -0.5880645253619883,
+          "max": -0.5880645160380136
+        },
+        "common_flex_gravity_torque_Nm": {
+          "min": -0.011935484132315516,
+          "time_mean": -0.011935474794577417,
+          "max": -0.011935466791808371
+        },
+        "active_motor_projected_torque_Nm": {
+          "min": 0.6,
+          "time_mean": 0.5999999999999999,
+          "max": 0.6
+        },
+        "sum_virtual_torque_Nm": {
+          "min": -1.703559515675579e-10,
+          "time_mean": -1.565657150222795e-10,
+          "max": -1.3785139696409487e-10
+        },
+        "max_native_vs_independent_URDF_COM_error_m": 4.440892098500626e-16,
+        "final_window_max_joint_speed_rad_s": 1.8755890164074606e-05,
+        "final_window_max_finite_difference_joint_acceleration_rad_s2": 3.364828375125063e-05,
+        "interpretation": "Normal-force sums depend on geometry. The proper drive comparison uses contact force dot contact-point virtual displacement per common-flex radian (Nm), plus gravity and active motor torques. Small balance residual supports this recorded quasistatic load path only; omitted inertial/solver terms and finite sampling are not a hardware model fit."
+      },
+      "all_declared_integrity_checks_passed": true
+    }
+  ],
+  "status": "five_saved_force_fixtures_independently_verified",
+  "all_checks_passed": true,
+  "completed_physics_steps": 31200,
+  "physical_seconds_total": 16.25,
+  "complete_case_count": 5,
+  "control_arrays_all_five_bit_identical": true,
+  "original_two_motors_nine_gears_preserved": true,
+  "asymmetric_vs_single_finger2_response_bit_identity": {
+    "q": true,
+    "v": true,
+    "motor_torque": true,
+    "gear_residual": true,
+    "gear_reaction": true,
+    "com": true,
+    "base_velocity": true,
+    "wrist_reaction": true,
+    "wrist_position_error": true,
+    "all_link_COM_pose": true,
+    "all_link_COM_velocity": true
+  },
+  "source_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/RESULTS.json",
+    "bytes": 78078,
+    "sha256": "2b4d602f9647ca79ac4c792a1c99e5d4417f459fd822beae3cf2fbfaf200644c"
+  },
+  "source_plan": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/PLAN.json",
+    "bytes": 23986,
+    "sha256": "88a4fffef27ea3b08b5b6395f3c72273352561cb414035e67f7d8d070efa471c"
+  },
+  "original_reference_controller": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_real_mesh_generalization_20261103_v1/run_nonapple_v2/physics/banana_yaw000/CONTROLLER.json",
+    "bytes": 21129,
+    "sha256": "5e3cfb3c2c18c0b9e3b4efe7a57c222aa966eeb707ca75345f08ee0e2608f4f1"
+  },
+  "source_wrapper": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/dh3_force_fixture_20261104_v1/fixture_source_frozen.py",
+    "bytes": 25275,
+    "sha256": "286b7896291e5f137c1252a08a9c5fe36246d9a927c761e92307ec3d44532ac8"
+  },
+  "statistical_boundary": "Five distinct deterministic conditions, one execution per condition. Final480 time samples are correlated; force means/min/max describe trajectories, not independent sample estimates. No hardware parameter fit, no success-conditioned tuning, and no confidence interval.",
+  "unit_boundary": "Angles rad; rates rad/s; per-pad scalar normal sums N; torques and force-dot-virtual-lever-arm Nm. Force sums are not equated to motor torque. In this fixed geometry multiple pads share one common-flex drive; total force need not be invariant for other contact geometry.",
+  "audit_wall_seconds": 1.2064743399387226
+}

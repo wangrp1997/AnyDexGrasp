@@ -1,0 +1,37 @@
+{
+  "profiles": {
+    "v1": {
+      "branch_stiffness_Nm_rad": 0.3,
+      "branch_damping_Nm_s_rad": 0.004,
+      "shaft_inertia_kg_m2": 0.002,
+      "shaft_viscous_Nm_s_rad": 0.005,
+      "shaft_position_to_velocity_gain_s_inv": 6.0,
+      "shaft_velocity_feedback_Nm_s_rad": 2.0,
+      "shaft_lower_rad": 0.0,
+      "shaft_upper_rad": 1.333
+    },
+    "v2": {
+      "branch_stiffness_Nm_rad": 0.8,
+      "branch_damping_Nm_s_rad": 0.02,
+      "shaft_inertia_kg_m2": 0.001,
+      "shaft_viscous_Nm_s_rad": 0.005,
+      "shaft_position_to_velocity_gain_s_inv": 6.0,
+      "shaft_velocity_feedback_Nm_s_rad": 2.0,
+      "shaft_lower_rad": 0.0,
+      "shaft_upper_rad": 1.333
+    },
+    "v3": {
+      "branch_stiffness_Nm_rad": 0.8,
+      "branch_damping_Nm_s_rad": 0.02,
+      "shaft_inertia_kg_m2": 0.001,
+      "shaft_viscous_Nm_s_rad": 0.005,
+      "shaft_position_to_velocity_gain_s_inv": 6.0,
+      "shaft_velocity_feedback_Nm_s_rad": 2.0,
+      "shaft_lower_rad": 0.0,
+      "shaft_upper_rad": 1.333
+    }
+  },
+  "v3_change_from_v2": "integration 1920 -> 3840 Hz only; same compliance parameters",
+  "hardware_identified": false,
+  "object_specific_parameters": false
+}

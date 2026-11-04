@@ -1,0 +1,239 @@
+{
+  "schema": "AnyDex-DH3-source-calibration-constraints-v1",
+  "status": "primary_sources_reviewed_parameters_not_identified",
+  "date": "2026-11-04",
+  "scope": "Manufacturer documentation/CAD/published ROS plus original AnyDex paper. No controller/source edits, hardware connection, network training or physical execution.",
+  "ros_source_version": {
+    "repository": "https://github.com/DH-Robotics/dh_gripper_ros",
+    "commit": "f59f9c2f4bc8eb116448b1d798791424bf64e337",
+    "commit_date": "2021-12-10T08:38:44Z"
+  },
+  "known": [
+    {
+      "id": "force70_is_percent_command",
+      "finding": "Force70 encodes70% requested closing grip setting, not70N or a joint torque.",
+      "evidence": [
+        {
+          "source": {
+            "path": "/tmp/anydex_dh3_calibration_sources/official_DH3_short_manual_v2.pdf",
+            "url": "https://en.dh-robotics.com/wp-content/uploads/2022/12/DH-3-Short-Manualv2_DH-Robotics.pdf",
+            "bytes": 1421908,
+            "sha256": "44e754fc102b1a6db92abf7eca5ecca243a2f904a055716f9f1467029bb86402",
+            "product_page_listing_date": "2022-12-03"
+          },
+          "location": "printedpage10,section3.5.2:range20–100; example30%"
+        },
+        {
+          "url": "https://github.com/DH-Robotics/dh_gripper_ros/blob/f59f9c2f4bc8eb116448b1d798791424bf64e337/dh_gripper_driver/include/dh_gripper_driver/include/dh_dh3_can.h#L29",
+          "local_path": "/tmp/anydex_dh3_calibration_sources/official_ros/dh_gripper_driver/include/dh_gripper_driver/include/dh_dh3_can.h",
+          "line": 29,
+          "meaning": "Header explicitly labels target force20–100%"
+        }
+      ],
+      "boundary": "The percent-to-newton curve is not specified. Do not assume70%=0.7*65N; gap, finger configuration, contact location, firmware and control mode are not calibrated."
+    },
+    {
+      "id": "speed_not_defined_by_AnyDex100",
+      "finding": "The manufacturer legacy driver used forDH3 has SetTargetSpeed(int) as a no-op returningtrue.",
+      "evidence": [
+        {
+          "url": "https://github.com/DH-Robotics/dh_gripper_ros/blob/f59f9c2f4bc8eb116448b1d798791424bf64e337/dh_gripper_driver/include/dh_gripper_driver/include/dh_lagacy_gripper.h#L42",
+          "local_path": "/tmp/anydex_dh3_calibration_sources/official_ros/dh_gripper_driver/include/dh_gripper_driver/include/dh_lagacy_gripper.h",
+          "lines": [
+            42,
+            43,
+            52,
+            53
+          ]
+        }
+      ],
+      "boundary": "This is proven for the pinned2021ROS implementation, not all firmware. AnyDex independently writes0x0104; no recovered primary mapping proves this controlsDH3 speed or converts100 to rad/s. Manufacturer0.7s is a nominal minimum/full-stroke time, not a joint velocity parameter."
+    },
+    {
+      "id": "version_disagreement",
+      "finding": "ManufacturerDH3 driver clamps position0–95 and force15–90, while its header/manual describe0–100 and20–100%; AnyDex sends70/100 without this driver.",
+      "evidence": [
+        {
+          "url": "https://github.com/DH-Robotics/dh_gripper_ros/blob/f59f9c2f4bc8eb116448b1d798791424bf64e337/dh_gripper_driver/include/dh_gripper_driver/src/dh_dh3_can.cpp#L14",
+          "lines": [
+            14,
+            30
+          ]
+        }
+      ],
+      "boundary": "Force70 is within both reported ranges; the differing limits prevent assuming a universal firmware scale."
+    },
+    {
+      "id": "manufacturer_ROS_is_geometry_interface",
+      "movable_joint_count": 11,
+      "mimic_count": 9,
+      "transmission_elements": 0,
+      "joint_dynamics_elements": 0,
+      "entity_count": 13,
+      "sum_inertial_mass_kg": 0.44848354243529254,
+      "finding": "OfficialDH3 URDF has the same simplified cross-finger mimics asAnyDex, but no calibrated transmission/differential/spring/damping control. ItsGazebo launch only spawns thisURDF and publishes a calibrated flag.",
+      "evidence": [
+        {
+          "url": "https://github.com/DH-Robotics/dh_gripper_ros/blob/f59f9c2f4bc8eb116448b1d798791424bf64e337/dh3_urdf/urdf/dh3_urdf.urdf",
+          "local_path": "/tmp/anydex_dh3_calibration_sources/official_ros/dh3_urdf/urdf/dh3_urdf.urdf"
+        },
+        {
+          "url": "https://github.com/DH-Robotics/dh_gripper_ros/blob/f59f9c2f4bc8eb116448b1d798791424bf64e337/dh3_urdf/launch/gazebo.launch",
+          "local_path": "/tmp/anydex_dh3_calibration_sources/official_ros/dh3_urdf/launch/gazebo.launch"
+        }
+      ],
+      "boundary": "Official provenance does not make these mimic relations a validated loaded physical model. No releasedDH3 simulator fixture/force calibration was found in the pinned257-entry tree."
+    },
+    {
+      "id": "official_CAD_more_detailed_than_URDF",
+      "source": {
+        "path": "/tmp/anydex_dh3_calibration_sources/official_DH3_CAD.step",
+        "url": "https://en.dh-robotics.com/wp-content/uploads/2022/01/DH-3_DH-Robotics.step",
+        "bytes": 4074613,
+        "sha256": "d6efdc181e06c523e602d59eee1ad42275a753244a19a222473888913d7c4d71",
+        "header_date": "2020-08-07T04:58:49",
+        "format": "STEPAP214,SolidWorks2016"
+      },
+      "assembly_instances": 23,
+      "inventory": {
+        "BODYs": 1,
+        "FINGER_CRANK_NR": 3,
+        "FINGER_DRIVE": 3,
+        "FINGER_PARALLEL_ROB": 3,
+        "FINGER_ADAPTIVE_LINK": 3,
+        "FINGER_DISTAL_PHALANX_": 3,
+        "FINGER_PROXIMAL_PHALANX": 3,
+        "FINGER BASE": 3,
+        "flange": 1
+      },
+      "finding": "CAD contains three eachCRANK/DRIVE/ADAPTIVE_LINK as separate mechanism components, in addition to the named proximal/distal/parallel/base parts. Nine mechanism components are not separate links in the13-entityURDF.",
+      "boundary": "STEP contains noREVOLUTE_PAIR/KINEMATIC/GEAR_PAIR/SCREW_PAIR entities. Part names/placements are not mating constraints, spring laws or motor force maps. STEP and URDF have different dates, and no revision-matched assembly registration has been completed. The product tree alone does not establish entity correspondence or the mechanism under load."
+    },
+    {
+      "id": "common_input_and_internal_adaptation_evidence",
+      "evidence": [
+        {
+          "source": {
+            "path": "/tmp/anydex_dh3_calibration_sources/patent_CN107932549B.html",
+            "url": "https://patents.google.com/patent/CN107932549B/zh",
+            "bytes": 126436,
+            "sha256": "ff63724d187586f82ffa318c02ffce98d956646012baf7c67b1b80d896f382fb",
+            "publication": "CN107932549B",
+            "publication_date": "2020-01-14"
+          },
+          "locations": [
+            "claim1",
+            "description[0009]",
+            "description[0050]",
+            "description[0055]"
+          ],
+          "finding": "Same-assignee3-finger patent: one screw/nut slider synchronously translates3drive rods; another motor rotates2rods oppositely."
+        },
+        {
+          "source": {
+            "path": "/tmp/anydex_dh3_calibration_sources/patent_CN108214534B.html",
+            "url": "https://patents.google.com/patent/CN108214534B/zh",
+            "bytes": 148003,
+            "sha256": "881785e8ce8b9139fd75d556c22908b5a340682c35fa1272cda66d1841ed6522",
+            "publication": "CN108214534B",
+            "publication_date": "2020-03-31"
+          },
+          "locations": [
+            "description[0014]",
+            "description[0061]",
+            "description[0066]",
+            "description[0067]"
+          ],
+          "finding": "Related same-assignee patent: a passive sliding member with elastic element in the finger parallel linkage; proximal blocking can lead to continued distal closure; paragraph0067 includes a3-finger embodiment."
+        }
+      ],
+      "boundary": "These are original patent disclosures by the vendor, not certification that the commercialDH3 unit inAnyDex uses that exact embodiment. They support a common linear input plus internal passive adaptation candidate, not an arbitrary free cross-finger differential."
+    },
+    {
+      "id": "paper_DoF_unresolved",
+      "paper_url": "https://arxiv.org/abs/2502.16420",
+      "paper_source_tar": "/home/wangrenpeng/AnyDexGrasp/papers/AnyDexGrasp_2502.16420v1_source.tar",
+      "location": "sections/results.tex:90,100",
+      "finding": "Paper reports4DoF/2motors/underactuation and preshapes before force-limited closure.",
+      "boundary": "Neither the paper paragraph, simplifiedURDF, norCAD explicitly identifies four independent physical coordinates. Do not pick which twogear rows to remove from the4DoF label alone."
+    },
+    {
+      "id": "catalog_specs_are_constraints_not_unit_calibration",
+      "source": {
+        "path": "/tmp/anydex_dh3_calibration_sources/official_product_ag.html",
+        "url": "https://en.dh-robotics.com/product/ag",
+        "bytes": 156873,
+        "sha256": "d2cfa07a1a8ccd7a7fda44df75ee703bb24eb6cee175e88763429e66bbf0d12d"
+      },
+      "published_values": {
+        "gripping_force_per_jaw_N": [
+          10,
+          65
+        ],
+        "nominal_open_close_time_s": [
+          0.7,
+          0.7
+        ],
+        "stroke_parallel_centric_mm": [
+          106,
+          122
+        ],
+        "assembly_mass_kg": 1.68
+      },
+      "older_manual": {
+        "grip_force_N": [
+          10,
+          65
+        ],
+        "minimum_closing_time_s": 0.7
+      },
+      "boundary": "Product page current specification and2020/2021documents may refer to different revisions. Neither proves the paper device force70 curve or true moving inertia; do not rescale the.448kgCAD model to1.68kg without component mass evidence."
+    }
+  ],
+  "unknown_parameters": [
+    "commercial-device revision/firmware and patent-embodiment correspondence",
+    "the paper4DoF coordinate definitions and loaded passive-motion topology",
+    "spring stiffness/preload/stops/hysteresis and passive-joint friction/damping",
+    "screw lead, gear ratio, efficiency and actuator current/torque relationship",
+    "force-percent versus fingertip force versus gape/configuration/contact location",
+    "speed100 command semantics in the actualAnyDex firmware and load-dependent timing",
+    "moving component inertia and how omitted mechanism parts contribute"
+  ],
+  "not_identifiable_from_open_hand_table": [
+    "spring/friction parameters",
+    "lead/gear efficiency",
+    "joint motor torque corresponding toforce70",
+    "load-dependent passive freedoms",
+    "0x0104 speed response"
+  ],
+  "minimum_credible_next_step": {
+    "status": "proposal_not_executed_here",
+    "current_action": "Measure the unchanged simulation-port response in the parent five frozen force fixtures. Record per-contact force, finger pose, target/measured closure, torque saturation, gear reaction and force-versus-gap; retain all outcomes.",
+    "claim_allowed": "Measured response of the declared simulator, possibly compared to manufacturer nominal bounds.",
+    "claim_not_allowed": "Hardware calibration, recovered firmware, validated passive mechanism or reproduced paper physical success.",
+    "model_direction": "Preserve verified preshape geometry and common drive input. If a new passive model is later built, derive each finger closed-chain geometry from sourceCAD/patent and identify passive elastic/sliding behavior; do not merely remove cross-finger gears or apply.6Nm independently to3fingers.",
+    "identification_requirement": "True calibration needs measured force/time/deformation curves or revision-matched vendor curves. Without them, all chosen compliant parameters remain explicit simulation assumptions; fitting grasp success is not identification."
+  },
+  "download_receipts": [
+    {
+      "path": "/tmp/anydex_dh3_calibration_sources/DOWNLOADS.json",
+      "sha256": "609451017f2e040ff85aaabab3b59673f956117dbece5e34adfe4a3e80242c27"
+    },
+    {
+      "path": "/tmp/anydex_dh3_calibration_sources/DOWNLOADS_PHASE2.json",
+      "sha256": "108acd236039e90932b10743a6d722ccaf4b3434b226f4777ad7a4862a0aca66"
+    },
+    {
+      "path": "/tmp/anydex_dh3_calibration_sources/DOWNLOADS_PHASE3.json",
+      "sha256": "9a825573e457d173f1d504f983adc6e698b90c5eb604e234b935da9ec39de2ef"
+    }
+  ],
+  "download_summary": {
+    "successful_files": 43,
+    "total_downloaded_bytes": 18188904,
+    "official_plugin_archive": "Downloaded and listed only; containedRAR/native binaries, none executed or extracted into sharedenvironment. No further download planned."
+  },
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "shared_environment_changed": false
+}
