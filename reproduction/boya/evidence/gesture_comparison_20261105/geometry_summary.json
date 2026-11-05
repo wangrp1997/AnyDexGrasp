@@ -1,0 +1,362 @@
+{
+  "schema": "anydex_boya_six_additional_gestures_geometry_audit_v1",
+  "status": "passed",
+  "protocol": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_gesture_comparison_20261105_v1/GEOMETRY_PROTOCOL.json",
+  "protocol_sha256": "61c34cf686438721fd251ad0fdfe079cbeeb4562cac0d7fa1cd9457244e766e3",
+  "progress": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_gesture_comparison_20261105_v1/POOL_PREPARATION.json",
+  "progress_sha256": "81db11010a794e8a4a465ed077b8597b711a12aeddc73f0df3bb5321f3116da9",
+  "source": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_gesture_comparison_pools.py",
+  "source_sha256": "3fb7be9d8ccab11a5ac4ed78497a8630c313cc568b046f20520907a4988fbf9b",
+  "geometry": {
+    "candidate_limit": 500,
+    "keep": 8,
+    "width_expansion": 1.7,
+    "opposing_group": "ff",
+    "additional_depth_index": 0,
+    "additional_depth_m": 0.0,
+    "flips": [
+      false,
+      true
+    ]
+  },
+  "gesture_ids": [
+    2,
+    3,
+    5,
+    7,
+    9,
+    10
+  ],
+  "geometry_workers": 2,
+  "elapsed_generation_wall_s": 111.72558508906513,
+  "totals": {
+    "jobs": 48,
+    "ready": 47,
+    "no_candidate": 1,
+    "candidates": 284,
+    "infrastructure_errors": 0
+  },
+  "per_gesture": [
+    {
+      "gesture_id": 2,
+      "objects": 8,
+      "ready": 8,
+      "no_candidate": 0,
+      "candidates": 47
+    },
+    {
+      "gesture_id": 3,
+      "objects": 8,
+      "ready": 8,
+      "no_candidate": 0,
+      "candidates": 37
+    },
+    {
+      "gesture_id": 5,
+      "objects": 8,
+      "ready": 8,
+      "no_candidate": 0,
+      "candidates": 48
+    },
+    {
+      "gesture_id": 7,
+      "objects": 8,
+      "ready": 8,
+      "no_candidate": 0,
+      "candidates": 54
+    },
+    {
+      "gesture_id": 9,
+      "objects": 8,
+      "ready": 8,
+      "no_candidate": 0,
+      "candidates": 50
+    },
+    {
+      "gesture_id": 10,
+      "objects": 8,
+      "ready": 7,
+      "no_candidate": 1,
+      "candidates": 48
+    }
+  ],
+  "matrix": [
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "pilot_id": "sphere",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 2
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 8
+        }
+      }
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "pilot_id": "box",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 6
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 5
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 7
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 8
+        }
+      }
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pilot_id": "cylinder",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 5
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 8
+        }
+      }
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pilot_id": "bottle",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 8
+        }
+      }
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pilot_id": "mug",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 3
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 4
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 4
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 6
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 5
+        }
+      }
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pilot_id": "bowl",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 1
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 1
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 1
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 1
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 1
+        },
+        "10": {
+          "status": "no_candidate",
+          "candidates": 0
+        }
+      }
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "pilot_id": "banana",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 5
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 4
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 3
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 5
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 4
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 3
+        }
+      }
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "pilot_id": "irregular",
+      "cells": {
+        "2": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "3": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "5": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "7": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "9": {
+          "status": "ready",
+          "candidates": 8
+        },
+        "10": {
+          "status": "ready",
+          "candidates": 8
+        }
+      }
+    }
+  ],
+  "checks": {
+    "all48_result_receipts_and_ready_npz_SHA": true,
+    "all_frozen_inputs_rehashed": true,
+    "all_generated_pool_input_SHA": true,
+    "declared_depth0_ff_500_keep8_1_7_twoflip_preserved": true,
+    "legacy24_pools_SHA_unchanged": true,
+    "original36_records_and_evaluation_commands_traces_unchanged": true,
+    "old29_positive7_negative75600steps_unchanged": true,
+    "archived_final_summary_audit_and_progress_SHA_unchanged": true
+  },
+  "frozen_input_files_checked": 290,
+  "geometry_artifact_files_checked": 95,
+  "old_actual_records": {
+    "count": 36,
+    "positive": 29,
+    "negative": 7,
+    "physics_steps": 75600,
+    "record_sha_verified": 36,
+    "evaluation_sha_verified": 36,
+    "commands_sha_verified": 36,
+    "trace_sha_verified": 36,
+    "export_sha256": "2325c3e4a481e24145e3070cb16db9dec26f4acd942493e7abacaca86732021a",
+    "archive_audit_sha256": "15e976fdad9dee8cff6f920291e3ed0f8cba2c174dcf3bfb16aebbfa841f2245",
+    "archive_summary_sha256": "1806032a99851ff30b8444340f6cc8a9fdd10e6df119db29b2e2d797e4509798"
+  },
+  "excluded_gesture_4": [
+    {
+      "gesture_id": 4,
+      "reason": "No annotated thumb-versus-opponent reference; not inferred or fabricated"
+    }
+  ],
+  "new_network_forwards": 0,
+  "new_physics_steps": 0,
+  "new_training_steps": 0,
+  "audit_elapsed_wall_s": 1.6476142760366201,
+  "audit_script_sha256": "7b56f01af122ff1191fb7b0fcfcdb3a593c4c75c7fdf899445556767a30bfc85",
+  "boundary": "Geometry candidate coverage only, not arm reachability or new physical success. Old [1,6,8] pools and all 36 actual trials were read-only. Full path/SHA/rejection lists stay in local protocol/result artifacts; this evidence retains only compact summaries."
+}
