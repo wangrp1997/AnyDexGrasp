@@ -1,0 +1,619 @@
+{
+  "schema": "anydex_boya_pilot8_final_summary_v1",
+  "status": "complete_with_historical_infrastructure_null",
+  "protocol": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/protocol_v3.json",
+  "protocol_sha256": "4c3cf085d98904f38f73aceac6d3c31b896a181b434c24b96e5cad54a077dcb3",
+  "PREPARED_sha256": "707b238913e8980f5acd80a4123fa8ff349d52426ab2a1454184db3e1a1aa881",
+  "final_progress_sha256": "773ba0af1a5a127d502f492d0ae99a9e3b02e401cd56254ebf43260ba14aaade",
+  "audit_path": "/tmp/anydex_boya_pilot8_final_audit.json",
+  "audit_sha256": "15e976fdad9dee8cff6f920291e3ed0f8cba2c174dcf3bfb16aebbfa841f2245",
+  "all_independent_checks_passed": true,
+  "aggregate": {
+    "planned_slots": 48,
+    "actual_attempts": 36,
+    "positive_labels": 29,
+    "negative_labels": 7,
+    "null_labels": 12,
+    "actual_physics_steps": 75600,
+    "null_breakdown": {
+      "unconfirmed_or_ineligible_execution": 1,
+      "verified_zero_step_exhausted_pool": 1,
+      "verified_zero_step_no_candidate": 4,
+      "verified_zero_step_null": 6
+    }
+  },
+  "per_object": [
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "pilot_id": "sphere",
+      "planned_slots": 6,
+      "actual_attempts": 5,
+      "positive_labels": 4,
+      "negative_labels": 1,
+      "null_labels": 1,
+      "actual_physics_steps": 10500,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      },
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "pilot_id": "box",
+      "planned_slots": 6,
+      "actual_attempts": 5,
+      "positive_labels": 4,
+      "negative_labels": 1,
+      "null_labels": 1,
+      "actual_physics_steps": 10500,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      },
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pilot_id": "cylinder",
+      "planned_slots": 6,
+      "actual_attempts": 6,
+      "positive_labels": 6,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 12600,
+      "null_breakdown": {},
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pilot_id": "bottle",
+      "planned_slots": 6,
+      "actual_attempts": 3,
+      "positive_labels": 2,
+      "negative_labels": 1,
+      "null_labels": 3,
+      "actual_physics_steps": 6300,
+      "null_breakdown": {
+        "verified_zero_step_null": 3
+      },
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        6,
+        8
+      ]
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pilot_id": "mug",
+      "planned_slots": 6,
+      "actual_attempts": 5,
+      "positive_labels": 5,
+      "negative_labels": 0,
+      "null_labels": 1,
+      "actual_physics_steps": 10500,
+      "null_breakdown": {
+        "unconfirmed_or_ineligible_execution": 1
+      },
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        1,
+        6,
+        8
+      ]
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pilot_id": "bowl",
+      "planned_slots": 6,
+      "actual_attempts": 0,
+      "positive_labels": 0,
+      "negative_labels": 0,
+      "null_labels": 6,
+      "actual_physics_steps": 0,
+      "null_breakdown": {
+        "verified_zero_step_exhausted_pool": 1,
+        "verified_zero_step_no_candidate": 4,
+        "verified_zero_step_null": 1
+      },
+      "gestures_with_actual_labels": [],
+      "gestures_with_positive_labels": []
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "pilot_id": "banana",
+      "planned_slots": 6,
+      "actual_attempts": 6,
+      "positive_labels": 2,
+      "negative_labels": 4,
+      "null_labels": 0,
+      "actual_physics_steps": 12600,
+      "null_breakdown": {},
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        1,
+        6
+      ]
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "pilot_id": "irregular",
+      "planned_slots": 6,
+      "actual_attempts": 6,
+      "positive_labels": 6,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 12600,
+      "null_breakdown": {},
+      "gestures_with_actual_labels": [
+        1,
+        6,
+        8
+      ],
+      "gestures_with_positive_labels": [
+        1,
+        6,
+        8
+      ]
+    }
+  ],
+  "per_gesture": [
+    {
+      "gesture_id": 1,
+      "planned_slots": 16,
+      "actual_attempts": 10,
+      "positive_labels": 8,
+      "negative_labels": 2,
+      "null_labels": 6,
+      "actual_physics_steps": 21000,
+      "null_breakdown": {
+        "unconfirmed_or_ineligible_execution": 1,
+        "verified_zero_step_no_candidate": 2,
+        "verified_zero_step_null": 3
+      },
+      "objects_with_actual_labels": 7
+    },
+    {
+      "gesture_id": 6,
+      "planned_slots": 16,
+      "actual_attempts": 13,
+      "positive_labels": 11,
+      "negative_labels": 2,
+      "null_labels": 3,
+      "actual_physics_steps": 27300,
+      "null_breakdown": {
+        "verified_zero_step_exhausted_pool": 1,
+        "verified_zero_step_null": 2
+      },
+      "objects_with_actual_labels": 7
+    },
+    {
+      "gesture_id": 8,
+      "planned_slots": 16,
+      "actual_attempts": 13,
+      "positive_labels": 10,
+      "negative_labels": 3,
+      "null_labels": 3,
+      "actual_physics_steps": 27300,
+      "null_breakdown": {
+        "verified_zero_step_no_candidate": 2,
+        "verified_zero_step_null": 1
+      },
+      "objects_with_actual_labels": 7
+    }
+  ],
+  "per_object_gesture": [
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 1,
+      "positive_labels": 1,
+      "negative_labels": 0,
+      "null_labels": 1,
+      "actual_physics_steps": 2100,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      }
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 1,
+      "negative_labels": 1,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 1,
+      "positive_labels": 1,
+      "negative_labels": 0,
+      "null_labels": 1,
+      "actual_physics_steps": 2100,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      }
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 1,
+      "negative_labels": 1,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 1,
+      "positive_labels": 0,
+      "negative_labels": 1,
+      "null_labels": 1,
+      "actual_physics_steps": 2100,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      }
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 1,
+      "positive_labels": 1,
+      "negative_labels": 0,
+      "null_labels": 1,
+      "actual_physics_steps": 2100,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      }
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 1,
+      "positive_labels": 1,
+      "negative_labels": 0,
+      "null_labels": 1,
+      "actual_physics_steps": 2100,
+      "null_breakdown": {
+        "verified_zero_step_null": 1
+      }
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 1,
+      "positive_labels": 1,
+      "negative_labels": 0,
+      "null_labels": 1,
+      "actual_physics_steps": 2100,
+      "null_breakdown": {
+        "unconfirmed_or_ineligible_execution": 1
+      }
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 0,
+      "positive_labels": 0,
+      "negative_labels": 0,
+      "null_labels": 2,
+      "actual_physics_steps": 0,
+      "null_breakdown": {
+        "verified_zero_step_no_candidate": 2
+      }
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 0,
+      "positive_labels": 0,
+      "negative_labels": 0,
+      "null_labels": 2,
+      "actual_physics_steps": 0,
+      "null_breakdown": {
+        "verified_zero_step_exhausted_pool": 1,
+        "verified_zero_step_null": 1
+      }
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 0,
+      "positive_labels": 0,
+      "negative_labels": 0,
+      "null_labels": 2,
+      "actual_physics_steps": 0,
+      "null_breakdown": {
+        "verified_zero_step_no_candidate": 2
+      }
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 1,
+      "negative_labels": 1,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 1,
+      "negative_labels": 1,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 0,
+      "negative_labels": 2,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 1,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 6,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 8,
+      "planned_slots": 2,
+      "actual_attempts": 2,
+      "positive_labels": 2,
+      "negative_labels": 0,
+      "null_labels": 0,
+      "actual_physics_steps": 4200,
+      "null_breakdown": {}
+    }
+  ],
+  "cost": {
+    "inherited": {
+      "arm_prepare_calls": 59,
+      "actual_grasp_attempts": 19,
+      "unconfirmed_execution_attempts": 1,
+      "physics_steps": 39900,
+      "training_labels": 19,
+      "positive_labels": 16,
+      "negative_labels": 3,
+      "null_trials": 6,
+      "infrastructure_failure_trials": 1,
+      "zero_step_trials": 5,
+      "no_arm_admission_trials": 5,
+      "reported_trial_wall_s_sum": 1578.3039876138791,
+      "wall_sum_is_not_parallel_end_to_end": true
+    },
+    "new_segment": {
+      "arm_prepare_calls": 25,
+      "actual_grasp_attempts": 17,
+      "unconfirmed_execution_attempts": 0,
+      "physics_steps": 35700,
+      "training_labels": 17,
+      "positive_labels": 13,
+      "negative_labels": 4,
+      "null_trials": 1,
+      "infrastructure_failure_trials": 0,
+      "zero_step_trials": 1,
+      "no_arm_admission_trials": 1,
+      "reported_trial_wall_s_sum": 1412.9522758499952,
+      "wall_sum_is_not_parallel_end_to_end": true
+    },
+    "combined": {
+      "arm_prepare_calls": 84,
+      "actual_grasp_attempts": 36,
+      "unconfirmed_execution_attempts": 1,
+      "physics_steps": 75600,
+      "training_labels": 36,
+      "positive_labels": 29,
+      "negative_labels": 7,
+      "null_trials": 7,
+      "infrastructure_failure_trials": 1,
+      "zero_step_trials": 6,
+      "no_arm_admission_trials": 6,
+      "reported_trial_wall_s_sum": 2991.2562634638743,
+      "wall_sum_is_not_parallel_end_to_end": true,
+      "no_candidate_jobs": 2,
+      "jobs_complete": 24,
+      "total_jobs": 24,
+      "network_forward_dispatches": 0,
+      "geometry_dispatches": 0
+    }
+  },
+  "timing_seconds": {
+    "continuation_execute_session_wall_s": 753.3029516480165,
+    "continuation_detached_launch_to_final_wall_s": 755.1436004638672,
+    "parent_execute_session_wall_s": 803.1163904389832,
+    "sum_two_sequential_execute_session_wall_s": 1556.4193420869997,
+    "pause_inclusive_first_execution_launch_to_final_wall_s": 5679.972081422806,
+    "summed_trial_wall_s_is_not_parallel_wall": 2991.2562634638743,
+    "known_integrated_physical_seconds": 302.40000000000003,
+    "original_representation_only_wall_s": 19.081897371914238,
+    "boundary": "Execute-session timers include their CPU queue, per-trial planning/import/execution; exclude prior observation rendering, CGR/pool construction, repair preprocessing, and the between-segment repair pause. Trial wall times overlap across workers and are not end-to-end latency. The pause-inclusive timestamp interval is reported separately."
+  },
+  "actual_attempt_positive_fraction": 0.8055555555555556,
+  "objects_with_any_positive_label": 7,
+  "objects_with_actual_labels": 7,
+  "training_records": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/training_records.jsonl",
+    "count": 36,
+    "sha256": "2325c3e4a481e24145e3070cb16db9dec26f4acd942493e7abacaca86732021a",
+    "positive": 29,
+    "negative": 7,
+    "null_exported": 0,
+    "source_index_in_audit": true
+  },
+  "historical_unknown": {
+    "original_ledger_preserved": true,
+    "recorded_unknown_attempts": 1,
+    "label": null,
+    "diagnosis_path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/pilot8_20261105/paused_import_diagnosis.json",
+    "diagnosis_sha256": "9d04646a416dde0cc4a0a409e6b985a935987bbf428b4b7f2342f984a1d53060",
+    "derived_control_steps": 0,
+    "grasp_started": false,
+    "note": "Original parent unknown counter is retained verbatim; its separately frozen native audit shows rejection before control integration. No extra training record or negative label is created."
+  },
+  "boundaries": [
+    "Eight fixed development objects, one Isaac observation each, source gestures1/6/8, at most two independent rounds per pair. Labels are native simulated tabletop-lift outcomes, not original paper transport-to-bin or post-training/generalization results.",
+    "Fixed48 slots:36 actual 0/1 labels plus12 null slots. Nulls remain in coverage and are never converted to negative examples.",
+    "One original CGR forward per object was shared by all three gestures. No learned Boya scoring head and no training updates were used.",
+    "Frozen original source mesh, scale0.1, mass0.1kg, observation, candidates, controls, physical gates and retained parent failures are preserved; continuation only adds source-preserving native collision partitions.",
+    "Timing is split by measured segments. Parallel per-trial wall sums are not total wall time."
+  ]
+}
