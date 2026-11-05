@@ -30,10 +30,18 @@ def main():
     p.add_argument('--backend-config',type=Path,required=True)
     p.add_argument('--calibration',type=Path,required=True)
     p.add_argument('--candidate-dir',type=Path)
+    p.add_argument('--observation',type=Path,help='Frozen shared observation JSON; default is run/observation/observation.json')
+    p.add_argument('--source-npz',type=Path,help='Frozen paired raw CGR candidates/features; default is run/representation/raw_camera_candidates.npz')
+    p.add_argument('--candidate-indices',type=int,nargs='+',help='Explicit ordered subset of this frozen pool; no pool mutation')
     p.add_argument('--max-arm-plans',type=int,default=4)
     a=p.parse_args();run=a.run_dir.resolve();config=json.loads(a.backend_config.read_text())
     pool=a.candidate_dir.resolve() if a.candidate_dir else run/'candidates';gen=json.loads((pool/'generation.json').read_text())
-    obs=json.loads((run/'observation/observation.json').read_text())
+    observation=a.observation.resolve() if a.observation else run/'observation/observation.json'
+    source_npz=a.source_npz.resolve() if a.source_npz else run/'representation/raw_camera_candidates.npz'
+    obs=json.loads(observation.read_text())
+    indices=gen['selected_indices'] if a.candidate_indices is None else a.candidate_indices
+    if a.max_arm_plans < 1 or len(set(indices))!=len(indices) or any(i not in gen['selected_indices'] for i in indices):
+        raise ValueError('Positive plan budget and unique frozen pool indices required')
     if (run/'trial_summary.json').exists():raise ValueError('Retain previous attempts; use a new run directory')
     shutil.copyfile(config['arm_collision_refinement'],run/'arm_collision_refinements.json')
     env=os.environ.copy();env.update(CANONDEX_COLLISION_PARTITION_CACHE=str(ROOT/'outputs/boya_collision_partition_cache'),
@@ -42,13 +50,16 @@ def main():
         simulator='Isaac Sim / PhysX',grasp_frontend='AnyDex published CGR + new Boya geometry table',
         backend='Existing complete UR16e+Boya native joint-drive executor',
         legacy_experience_or_grasp_sampler_used=False,learned_Boya_head_loaded=False,
-        source_observation_sha256=sha(run/'observation/observation.json'))
+        source_observation_sha256=sha(observation),source_npz_sha256=sha(source_npz),
+        declared_candidate_indices=indices[:a.max_arm_plans])
     save(run/'trial_summary.json',summary);start=time.monotonic()
-    for index in gen['selected_indices'][:a.max_arm_plans]:
+    for index in indices[:a.max_arm_plans]:
         plan_dir=run/f'plan_{index:03d}'
         common=['--robot-urdf',config['robot_urdf'],'--reference-root',config['reference_root'],
             '--candidates',str(pool),'--index',str(index),'--object-root',obs['object_root'],
             '--world-object-pose',str(pool/'world_object_pose.json'),'--pregrasp-distance-m','.1','--device','cpu']
+        if config.get('restore_object_initial_state',False):
+            common.append('--restore-object-initial-state')
         for key in ['hand_urdf','hand_scene','package','physics_config','diagnostic_config']:
             common.extend(['--'+key.replace('_','-'),config[key]])
         cmd=[sys.executable,'-B',str(Path(__file__).with_name('native_arm.py')),
@@ -68,7 +79,7 @@ def main():
                 motor_names=z['independent_motor_names'].tolist(),world_T_object=z['world_T_object'].tolist(),
                 backend_config_sha256=sha(a.backend_config),candidate_pool_sha256=sha(pool/'candidates.npz'),
                 source_observation_sha256=summary['source_observation_sha256'])
-        binding=prepare_binding(run/'representation/raw_camera_candidates.npz',meta['source_candidate_index'],
+        binding=prepare_binding(source_npz,meta['source_candidate_index'],
             ROOT/'robot_dh3.py',gesture_id=gen['gesture_id'],aperture_id=meta['source_slot'],
             aperture_sha256=sha(a.calibration),calibrated_width_m=meta['actual_reference_width_m'],
             extra_depth_index=meta['additional_depth_index'],execution_spec=spec,if_flip=meta['if_flip'])

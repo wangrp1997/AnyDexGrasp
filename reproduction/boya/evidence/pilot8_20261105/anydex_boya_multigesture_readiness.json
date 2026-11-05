@@ -1,0 +1,154 @@
+{
+  "schema": "anydex_boya_multigesture_backend_readiness_v1",
+  "recommended_gesture_ids": [
+    1,
+    6,
+    8
+  ],
+  "selection_uses_grasp_outcomes": false,
+  "selection_reason": "wrap / two-finger pinch / claw with nonzero finger spread; all have 33 source-limit/selfclear calibrated ff-datum states",
+  "gestures": [
+    {
+      "gesture_id": 1,
+      "name": "\u4e94\u6307\u63e1",
+      "active_groups": [
+        "ff",
+        "lf",
+        "mf",
+        "rf",
+        "th"
+      ],
+      "states": 33,
+      "states_selfclear": 33,
+      "ff_datum_slots": 33,
+      "ff_width_range_m": [
+        0.029214303107444498,
+        0.13583993319676196
+      ],
+      "ff_width_monotone_decreasing": true,
+      "family_wrist": {
+        "FAJ1": 0.0,
+        "FAJ3": 0.0
+      },
+      "closed_q": [
+        0.12509698546362286,
+        -0.2501939709272457,
+        0.12509698546362286,
+        0.8756788982453599,
+        0.0,
+        0.8756788982453599,
+        0.8756788982453599,
+        0.0,
+        0.8256401040599108,
+        0.8756788982453599,
+        0.0,
+        0.7756013098744616,
+        0.8756788982453599,
+        0.0,
+        0.8756788982453599,
+        0.8756788982453599
+      ]
+    },
+    {
+      "gesture_id": 6,
+      "name": "\u4e8c\u6307\u634f\u5408",
+      "active_groups": [
+        "ff",
+        "th"
+      ],
+      "states": 33,
+      "states_selfclear": 33,
+      "ff_datum_slots": 33,
+      "ff_width_range_m": [
+        0.010023579234290097,
+        0.13051790938638097
+      ],
+      "ff_width_monotone_decreasing": true,
+      "family_wrist": {
+        "FAJ1": 0.0,
+        "FAJ3": 0.0
+      },
+      "closed_q": [
+        0.1272769426055181,
+        0.05091077704220724,
+        0.2545538852110362,
+        0.1272769426055181,
+        0.0,
+        1.145492483449663,
+        0.3181923565137953,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "gesture_id": 8,
+      "name": "\u722a\u5f0f",
+      "active_groups": [
+        "ff",
+        "lf",
+        "mf",
+        "rf",
+        "th"
+      ],
+      "states": 33,
+      "states_selfclear": 33,
+      "ff_datum_slots": 33,
+      "ff_width_range_m": [
+        0.03743074378352235,
+        0.14085802174547776
+      ],
+      "ff_width_monotone_decreasing": true,
+      "family_wrist": {
+        "FAJ1": 0.0,
+        "FAJ3": 0.0
+      },
+      "closed_q": [
+        0.10471975511965978,
+        -0.2792526803190927,
+        0.3490658503988659,
+        0.8726646259971648,
+        0.17453292519943295,
+        0.6981317007977318,
+        0.9075712110370514,
+        0.08726646259971647,
+        0.6108652381980153,
+        0.9075712110370514,
+        -0.08726646259971647,
+        0.6108652381980153,
+        0.9773843811168246,
+        -0.17453292519943295,
+        0.6981317007977318,
+        1.0471975511965976
+      ]
+    }
+  ],
+  "backend_facts": [
+    "generation.gesture_id selects TemplateFamily in stock native prepare; it is not hardcoded to gesture1.",
+    "candidate NPZ has 16 q/qclose, palm and approach but no per-slot wrist; stock prepare uses family.wrist then preserves its two coordinates through every hand command and six-arm IK.",
+    "assets.hand.frames(q) is palm-relative by construction; adding wrist there would double-transform the palm request. All 21 palm-descendant collision links remain; three wrist bodies require the complete-arm geometry gate.",
+    "All source templates currently have zero wrist coordinates; stock support for different family wrists follows code, while per-slot wrist changes within one gesture are not represented in the NPZ."
+  ],
+  "independent_FK_nonzero_wrist_diagnostic": {
+    "scope": "Read-only XML/SciPy FK, 99 states at wrist[.1,-.1] vs source wrist; no IK or simulation",
+    "worst_palm_relative_link_entry_difference": 5.551115123125783e-16
+  },
+  "possible_bugs_or_required_guards": [
+    "Reject a calibration slot if its wrist differs from its selected family.wrist; current backend cannot execute arbitrary slot-specific wrist targets. Current v2 satisfies equality.",
+    "Verify calibration.source_lock source files and independent motor names/nominal close q against the live BoyaAssets before pooling; current pool code does not make these checks explicitly. Current v2 matches.",
+    "Generation file list hardcodes urdf/cube.obj; new object exporters must either retain that explicit common contract or bind all mesh filenames referenced by coacd.urdf (including every collision part).",
+    "Validate width_expansion finite positive and candidate_limit/keep positive integers before dispatch. Current configured 1.7/500/4 values are valid.",
+    "Clamp expanded width only to this selected gesture AND opponent datum slots that are selfclear; current code does this correctly. Datum width is not a maximum-hand-opening certificate."
+  ],
+  "audit_script": "/tmp/anydex_boya_batch_audit.py",
+  "audit_script_sha256": "fd2c7682188d1c11f1a92cb77b09ae7c9e03c3691bce023cf30e26094ba8698d",
+  "physics_steps": 0,
+  "network_forwards": 0,
+  "source_files_modified": false
+}

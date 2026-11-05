@@ -1,0 +1,51 @@
+{
+  "scope": "Append-only diagnosis; original round and batch counters retained",
+  "native_audit_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_01/execution/native_audit.json",
+  "native_audit_sha256": "71a3ea3cfd79839170bebee6eeb45799945fb60c444de8b919c3b449b52d29aa",
+  "complete": true,
+  "native_audit_physics_steps": 0,
+  "maximum_import_error_m": 3.6039851800866826e-05,
+  "tolerance_m": 2e-05,
+  "failing_hulls": [
+    {
+      "path": "/World/Object/collision_043",
+      "owner": "/World/Object",
+      "source_vertices": 49,
+      "cooked_vertices": 34,
+      "source_outside_cooked_bound_m": 3.6039851800866826e-05,
+      "cooked_outside_source_bound_m": 0.0,
+      "cooked_polygons": 30,
+      "max_vertices_per_polygon": 10,
+      "max_cooked_vertex_outside_native_plane_m": 7.4949115634534436e-06,
+      "max_face_vertex_off_native_plane_m": 9.547334277715258e-06,
+      "shape_to_body_matrix_row_vector": [
+        [
+          0.0078125,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0078125,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0078125,
+          0.0
+        ],
+        [
+          -0.0320233844356765,
+          0.03363987313343324,
+          -0.020470037647393267,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "training_label": null,
+  "grasp_started": false
+}

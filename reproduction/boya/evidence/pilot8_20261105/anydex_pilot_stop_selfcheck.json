@@ -1,0 +1,15 @@
+{
+  "synthetic_scheduler_fixture_not_training_data": true,
+  "checks": [
+    "native diagnostic null continues all jobs and both rounds",
+    "explicit infra stops new dispatch; in-flight current round finishes",
+    "resume retains dead round and does not execute it again",
+    "dead stops new dispatch",
+    "exception stops new dispatch"
+  ],
+  "fixture_root": "/tmp/anydex_pilot_stop_fixture_e9yl84cc",
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "real_training_records_written": 0,
+  "source_sha256": "08618fdfd005ba76005f62c9407f9b3e6e756e7f2fb3bb931c5cfc18136db062"
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "Only syntax/help, original-source hashes and saved RGB-D prepare-only/preprocessing checks; not persistent GPU validation",
+  "all_checks_passed": true,
+  "checks": {
+    "python_syntax": true,
+    "prepare_only_full_forward_false": true,
+    "prepare_only_zero_models_and_forwards": true,
+    "original_source_hashes": true,
+    "point_shape": true,
+    "coordinate_shape": true,
+    "saved_single_runner_input_points_m.npy_exact": true,
+    "saved_single_runner_input_coords_before_quantization.npy_exact": true
+  },
+  "installed_source": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py",
+  "installed_source_sha256": "6d88cd174be92fb3db2af603b69056952c81b897e8d49b5cefa1da93b216f266",
+  "contract_run": "/tmp/anydex_boya_persistent_cgr_contract_7oo22494",
+  "input_source_sha256": "b064a77285c66f3ce0a0445c7a44f1fc0a9a85c2d71a3664f8b50cf286540769",
+  "new_GPU_forwards": 0,
+  "new_physics_steps": 0,
+  "new_training_steps": 0,
+  "manifest_contract": {
+    "objects": [
+      {
+        "object_id": "unique asset identity",
+        "observation_json": "absolute/path/observation.json",
+        "representation_dir": "absolute/run/representations/id"
+      }
+    ]
+  },
+  "default_seed": 20261105,
+  "per_frame_rng": "original post-initialization CPU/CUDA/NumPy state restored every frame",
+  "GPU_execution_pending_frozen_pilot_manifest": true
+}

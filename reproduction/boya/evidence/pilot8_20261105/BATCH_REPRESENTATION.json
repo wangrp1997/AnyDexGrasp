@@ -1,0 +1,275 @@
+{
+  "schema": "anydex_boya_pilot_shared_representation_v1",
+  "status": "all_representation_forwards_complete",
+  "manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/protocol.json",
+  "manifest_sha256": "13fb064fd0530b1b4889d46234f8b5a34b81c8dbb94b66b272cacc287f81d0d6",
+  "argv": [
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py",
+    "--manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/protocol.json",
+    "--run-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1",
+    "--device",
+    "cuda:1"
+  ],
+  "args": {
+    "manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/protocol.json",
+    "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1",
+    "device": "cuda:1",
+    "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "native_deps": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps",
+    "seed": 20261105,
+    "num_seed": 2048,
+    "voxel_size": 0.005,
+    "depth_min": 0.2,
+    "depth_max": 0.65,
+    "prepare_only": false
+  },
+  "python": "3.12.14 (main, Sep 29 2026, 15:01:18) [Clang 22.1.3 ]",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "source_checkout": "/home/wangrenpeng/AnyDexGrasp",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py": "6d88cd174be92fb3db2af603b69056952c81b897e8d49b5cefa1da93b216f266",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_rgbd_frame.py": "39d569525b2e257c5075c36fb5e18727dde6774431aa3a9e88990e8abd30cf4e",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/utils/pt_utils.py": "0ed31e3a708c9e94d7d1a67ac212191b1325948728c62ba90f897c698436a468"
+  },
+  "model_load_count": 1,
+  "checkpoint_file_load_count": 1,
+  "strict_state_dict_assignments": 1,
+  "network_forward_count": 8,
+  "hand_head_load_count": 0,
+  "new_training_steps": 0,
+  "new_physics_steps": 0,
+  "protocol": "One identity official representation forward per object; paired predictions/features shared across all three fixed Boya collection gestures",
+  "objects": [
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/sphere/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_ycb_055_baseball",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_ycb_055_baseball/RESULTS.json",
+      "result_sha256": "3d0396adc5e0271351463c32ad804156293feb1f05c1e7717dbbdabc4ba6dea4",
+      "timing_seconds": {
+        "input_preparation": 0.08679841202683747,
+        "sparse_quantization_and_input": 0.1442959769628942,
+        "full_representation_forward": 2.051649786066264,
+        "original_parse_preds": 0.10874676995445043,
+        "output_serialization": 1.1354213680606335,
+        "total_frame_wall": 3.5676938759861514
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/box/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_box_poisson_000",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_box_poisson_000/RESULTS.json",
+      "result_sha256": "1496197fbc43a1f66030130fc4c604d01ae09a471b0b6ae04e8c33723832e13b",
+      "timing_seconds": {
+        "input_preparation": 0.05126831296365708,
+        "sparse_quantization_and_input": 0.04396901198197156,
+        "full_representation_forward": 0.5396143749821931,
+        "original_parse_preds": 0.020669499062933028,
+        "output_serialization": 1.1143799769924954,
+        "total_frame_wall": 1.8051859909901395
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/cylinder/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_can_baaa4b9538caa7f06e20028ed3cb196e/RESULTS.json",
+      "result_sha256": "7e10f9c02cf76edca887820e06e17599f80073766914addabe8cd472ecc3e6f1",
+      "timing_seconds": {
+        "input_preparation": 0.050081912078894675,
+        "sparse_quantization_and_input": 0.04338962200563401,
+        "full_representation_forward": 0.7511495829094201,
+        "original_parse_preds": 0.01956759497988969,
+        "output_serialization": 1.1056903630960733,
+        "total_frame_wall": 2.006431902060285
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bottle/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bottle_e8b48d395d3d8744e53e6e0633163da8/RESULTS.json",
+      "result_sha256": "47f4ff3afbf40e604cbbf15eb33f0841098a3d433463d7a9340ae952613ebd99",
+      "timing_seconds": {
+        "input_preparation": 0.04754997603595257,
+        "sparse_quantization_and_input": 0.030592362978495657,
+        "full_representation_forward": 0.592494698939845,
+        "original_parse_preds": 0.021992902969941497,
+        "output_serialization": 1.1096373499603942,
+        "total_frame_wall": 1.8382770019816235
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/mug/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_mug_5c7c4cb503a757147dbda56eabff0c47/RESULTS.json",
+      "result_sha256": "a68d21994bdad0d255a94c477c854491cd2c62d48e201bfee9e5b7933ac62b68",
+      "timing_seconds": {
+        "input_preparation": 0.049239372019656,
+        "sparse_quantization_and_input": 0.050490308087319136,
+        "full_representation_forward": 0.6856848750030622,
+        "original_parse_preds": 0.020870056934654713,
+        "output_serialization": 1.1113801860483363,
+        "total_frame_wall": 1.953037934959866
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bowl/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/RESULTS.json",
+      "result_sha256": "2bf9e9765c02ec0bcb408a306b76fc78f009336b148ea6e16b97d34055907115",
+      "timing_seconds": {
+        "input_preparation": 0.07111357897520065,
+        "sparse_quantization_and_input": 0.04073290899395943,
+        "full_representation_forward": 0.6845666459994391,
+        "original_parse_preds": 0.026432521059177816,
+        "output_serialization": 1.1172947220038623,
+        "total_frame_wall": 1.9778771720593795
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/banana/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_banana_poisson_005",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_banana_poisson_005/RESULTS.json",
+      "result_sha256": "560ec2cf541488c0bd5c4563b2e449282d7f9c37c131e9885f3535d30c635f1b",
+      "timing_seconds": {
+        "input_preparation": 0.0489710730034858,
+        "sparse_quantization_and_input": 0.045864523970521986,
+        "full_representation_forward": 0.6972998399287462,
+        "original_parse_preds": 0.02181934507098049,
+        "output_serialization": 1.1101657139370218,
+        "total_frame_wall": 1.9595073140226305
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/irregular/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_rubber_duck_poisson_000",
+      "status": "representation_forward_complete",
+      "full_representation_forward": true,
+      "result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_rubber_duck_poisson_000/RESULTS.json",
+      "result_sha256": "5c58ac7c35bd6a9877455761bf29b904caf2c3615ee8fdf499cfd3d0d034e580",
+      "timing_seconds": {
+        "input_preparation": 0.05356394895352423,
+        "sparse_quantization_and_input": 0.036722018965519965,
+        "full_representation_forward": 0.6957545169861987,
+        "original_parse_preds": 0.014350363053381443,
+        "output_serialization": 1.1052621779963374,
+        "total_frame_wall": 1.9394703739089891
+      },
+      "raw_candidate_count": 2048,
+      "error": null
+    }
+  ],
+  "timing_seconds": {
+    "dependency_import_and_one_model_load": 2.0276105069788173,
+    "elapsed_wall": 19.08167289895937,
+    "total_wall": 19.081897371914238
+  },
+  "checkpoint": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "sha256": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1",
+    "weights_only": true,
+    "strict_state_dict_load": true,
+    "tensor_count": 202,
+    "epoch": 19,
+    "num_view": 300,
+    "num_angle": 48,
+    "num_depth": 5,
+    "num_seed": 2048,
+    "half_views": false
+  },
+  "native_dependencies": {
+    "MinkowskiEngine_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngine/__init__.py",
+    "MinkowskiEngine_version": "0.5.4",
+    "MinkowskiEngine_extension": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngineBackend/_C.cpython-312-x86_64-linux-gnu.so",
+    "MinkowskiEngine_extension_sha256": "bbe7f3f5885b5962d8e61e11d43eaf7a64cde6cc7c208078929368449e6ed65e",
+    "pointnet2_utils_file": "/home/wangrenpeng/AnyDexGrasp/pointnet2/pointnet2_utils.py",
+    "pointnet2_utils_sha256": "017b2c62d3538379324c5ae26f292e5849fc53f6edce80afa00de4e286f976a3",
+    "pointnet2_extension": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+    "pointnet2_extension_sha256": "343c637093873fc622ee8bfe5f6b3f44df1437598f926b32ca41b47d12850c8c",
+    "cuda_device": "cuda:1",
+    "cuda_device_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "cuda_compute_capability": [
+      12,
+      0
+    ],
+    "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib",
+    "CUDA_VISIBLE_DEVICES": null
+  },
+  "representation_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+    "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "only_ast_change": "Removed the two unused training-label imports; any call raises",
+    "removed_imports": [
+      "from loss import process_grasp_labels, match_grasp_view_and_label"
+    ],
+    "network_layers_and_forward_unchanged": true
+  },
+  "candidate_parser_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+    "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "function": "parse_preds",
+    "hardware_module_imported": false,
+    "function_body_unchanged": true
+  },
+  "rng_policy": {
+    "seed": 20261105,
+    "policy": "same post-original-initialization RNG state restored for every frame",
+    "constructor_CPU_before_sha256": "d5981c55215ad1651610768da088e11cc543743d48a9e8506c203fd6d85071f7",
+    "post_initialization_CPU_sha256": "5b29bcf84c9374afdf46f7817bab676dcc8da5841037d7f6591ffa75745f5504",
+    "post_initialization_CUDA_sha256": "7c1de2a35dfd84fc6a1a7b9e4da8084a0bd936ade84fa00adaff4f53cf426369",
+    "post_initialization_NumPy_sha256": "c5f6609fcce3ae73eacab11965668009a45a989797432c17a47de27ee1c9c413",
+    "constructor_CUDA_rng_unchanged": true,
+    "constructor_skipped_random_draws_replayed": true
+  },
+  "completed_forward_objects": 8,
+  "warm_frame_wall_seconds": [
+    1.8051859909901395,
+    2.006431902060285,
+    1.8382770019816235,
+    1.953037934959866,
+    1.9778771720593795,
+    1.9595073140226305,
+    1.9394703739089891
+  ],
+  "manifest_unchanged_at_end": true
+}
