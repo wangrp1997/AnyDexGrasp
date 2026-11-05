@@ -34,11 +34,14 @@ def main():
     p.add_argument('--source-npz',type=Path,help='Frozen paired raw CGR candidates/features; default is run/representation/raw_camera_candidates.npz')
     p.add_argument('--candidate-indices',type=int,nargs='+',help='Explicit ordered subset of this frozen pool; no pool mutation')
     p.add_argument('--max-arm-plans',type=int,default=4)
+    p.add_argument('--collision-refinement',type=Path,help='Source-bound generic object cooking repair; native geometry audit retained')
     a=p.parse_args();run=a.run_dir.resolve();config=json.loads(a.backend_config.read_text())
     pool=a.candidate_dir.resolve() if a.candidate_dir else run/'candidates';gen=json.loads((pool/'generation.json').read_text())
     observation=a.observation.resolve() if a.observation else run/'observation/observation.json'
     source_npz=a.source_npz.resolve() if a.source_npz else run/'representation/raw_camera_candidates.npz'
     obs=json.loads(observation.read_text())
+    repair=a.collision_refinement.resolve() if a.collision_refinement else None
+    if repair is not None and not repair.is_file():raise ValueError('Collision refinement does not exist')
     indices=gen['selected_indices'] if a.candidate_indices is None else a.candidate_indices
     if a.max_arm_plans < 1 or len(set(indices))!=len(indices) or any(i not in gen['selected_indices'] for i in indices):
         raise ValueError('Positive plan budget and unique frozen pool indices required')
@@ -51,13 +54,18 @@ def main():
         backend='Existing complete UR16e+Boya native joint-drive executor',
         legacy_experience_or_grasp_sampler_used=False,learned_Boya_head_loaded=False,
         source_observation_sha256=sha(observation),source_npz_sha256=sha(source_npz),
-        declared_candidate_indices=indices[:a.max_arm_plans])
+        declared_candidate_indices=indices[:a.max_arm_plans],
+        object_collision_refinement=str(repair) if repair else None,
+        object_collision_refinement_sha256=sha(repair) if repair else None)
     save(run/'trial_summary.json',summary);start=time.monotonic()
     for index in indices[:a.max_arm_plans]:
         plan_dir=run/f'plan_{index:03d}'
         common=['--robot-urdf',config['robot_urdf'],'--reference-root',config['reference_root'],
             '--candidates',str(pool),'--index',str(index),'--object-root',obs['object_root'],
             '--world-object-pose',str(pool/'world_object_pose.json'),'--pregrasp-distance-m','.1','--device','cpu']
+        if repair is not None:
+            if sha(repair)!=summary['object_collision_refinement_sha256']:raise ValueError('Object collision repair changed')
+            common.extend(['--collision-refinement',str(repair)])
         if config.get('restore_object_initial_state',False):
             common.append('--restore-object-initial-state')
         for key in ['hand_urdf','hand_scene','package','physics_config','diagnostic_config']:

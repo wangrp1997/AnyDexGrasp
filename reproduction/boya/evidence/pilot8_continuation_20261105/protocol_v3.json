@@ -1,0 +1,1144 @@
+{
+  "schema": "anydex_boya_pilot_protocol_v3",
+  "date": "2026-11-05",
+  "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2",
+  "original_method_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "adapter_start_revision": "a85e6c9f73e68c286348945f0156c7c778689ff3",
+  "object_selection": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json",
+  "object_selection_sha256": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7",
+  "object_ids": [
+    "ddg_ycb_055_baseball",
+    "ddg_gd_box_poisson_000",
+    "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+    "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+    "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+    "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+    "ddg_gd_banana_poisson_005",
+    "ddg_gd_rubber_duck_poisson_000"
+  ],
+  "objects": [
+    {
+      "id": "ddg_ycb_055_baseball",
+      "object_id": "ddg_ycb_055_baseball",
+      "pilot_id": "sphere",
+      "shape_selection_label": "sphere",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          0.9999968946761993,
+          -0.0024174262599791023,
+          -0.0006055478809155609,
+          -0.7499848244123638
+        ],
+        [
+          0.00241579699842622,
+          0.9999934987965696,
+          -0.0026769926144468987,
+          0.10000072933728772
+        ],
+        [
+          0.0006120153763695341,
+          0.002675521420764899,
+          0.99999623350406,
+          0.05703787022562565
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.11660002088728649,
+        0.11657916621245695,
+        0.11409451778399096
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/sphere/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/sphere/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_ycb_055_baseball",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_ycb_055_baseball/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_ycb_055_baseball/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_ycb_055_baseball/g8"
+      }
+    },
+    {
+      "id": "ddg_gd_box_poisson_000",
+      "object_id": "ddg_gd_box_poisson_000",
+      "pilot_id": "box",
+      "shape_selection_label": "box",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          -0.9999991262747413,
+          -0.0011897364890404941,
+          -0.0005761743146114748,
+          -0.7500001800670905
+        ],
+        [
+          0.0011898925297608273,
+          -0.999999255477591,
+          -0.0002705550433235238,
+          0.09999925516918955
+        ],
+        [
+          -0.0005758519964294502,
+          -0.0002712403924455449,
+          0.9999997974115434,
+          0.02605246526653518
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.09283697841039718,
+        0.17024779813771224,
+        0.05210867693841453
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/box/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/box/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_box_poisson_000",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_box_poisson_000/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_box_poisson_000/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_box_poisson_000/g8"
+      }
+    },
+    {
+      "id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pilot_id": "cylinder",
+      "shape_selection_label": "cylinder",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          0.9999999999310751,
+          1.174094015648697e-05,
+          -2.8946392440015397e-09,
+          -0.7500002453144003
+        ],
+        [
+          -2.8651454734987127e-09,
+          -2.512045057578849e-06,
+          -0.9999999999968447,
+          0.10000669640478058
+        ],
+        [
+          -1.1740940163721388e-05,
+          0.9999999999279199,
+          -2.512045023828069e-06,
+          0.08959444861926834
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.0674160820101476,
+        0.06740024205846498,
+        0.17899897856125957
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/cylinder/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/cylinder/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_can_baaa4b9538caa7f06e20028ed3cb196e/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_can_baaa4b9538caa7f06e20028ed3cb196e/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_can_baaa4b9538caa7f06e20028ed3cb196e/g8"
+      }
+    },
+    {
+      "id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pilot_id": "bottle",
+      "shape_selection_label": "bottle",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          1.321595171910328e-07,
+          0.0007620460196005041,
+          0.9999997096428812,
+          -0.7499508934976494
+        ],
+        [
+          0.999999986030716,
+          -0.00016714834108336185,
+          -4.7847887318930304e-09,
+          0.1000363312843161
+        ],
+        [
+          0.00016714828890435074,
+          0.9999996956736017,
+          -0.000762046031045488,
+          0.09373265039559554
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.050300132078813786,
+        0.05025211300060349,
+        0.18743937687328008
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bottle/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bottle/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bottle_e8b48d395d3d8744e53e6e0633163da8/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bottle_e8b48d395d3d8744e53e6e0633163da8/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bottle_e8b48d395d3d8744e53e6e0633163da8/g8"
+      }
+    },
+    {
+      "id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pilot_id": "mug",
+      "shape_selection_label": "mug",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          -0.00408451947127661,
+          -0.020411740445105853,
+          -0.9997833153002158,
+          -0.7503806374410501
+        ],
+        [
+          -0.9999916506135773,
+          0.00020746015859521294,
+          0.004081135064661512,
+          0.10003524744689517
+        ],
+        [
+          0.0001241121354917385,
+          0.9997916371986137,
+          -0.020412417394654603,
+          0.03757556597246102
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.14262866942668095,
+        0.11995327005812145,
+        0.07678432780417523
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/mug/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/mug/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_mug_5c7c4cb503a757147dbda56eabff0c47/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_mug_5c7c4cb503a757147dbda56eabff0c47/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_mug_5c7c4cb503a757147dbda56eabff0c47/g8"
+      },
+      "collision_refinement": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+        "sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+      }
+    },
+    {
+      "id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pilot_id": "bowl",
+      "shape_selection_label": "bowl",
+      "source_split": "test",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          0.46247980660057963,
+          -0.0001903840909590615,
+          -0.8866297943564656,
+          -0.7501518220371115
+        ],
+        [
+          -0.8866297664880217,
+          0.00023080148598819683,
+          -0.46247984162347056,
+          0.09995679646478997
+        ],
+        [
+          0.0002926842782932648,
+          0.9999999552422851,
+          -6.205917550722306e-05,
+          0.02162370271733657
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.1305396260794751,
+        0.13060504818465168,
+        0.043175885425154215
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bowl/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bowl/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/g8"
+      },
+      "collision_refinement": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/207ac42ce5452a410ff059248136297e6638b1f33a4151719c963d25e4258f54/repair.json",
+        "sha256": "870990f2bdec3f4cd4787f287fe5cc54be62166ffb56248a38a3b6b4b35442c0"
+      }
+    },
+    {
+      "id": "ddg_gd_banana_poisson_005",
+      "object_id": "ddg_gd_banana_poisson_005",
+      "pilot_id": "banana",
+      "shape_selection_label": "banana",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          0.17076204615862112,
+          0.8451638305724298,
+          -0.5064962221812301,
+          -0.7528079897638619
+        ],
+        [
+          0.3248629167255328,
+          0.4370098284348817,
+          0.8387410179476708,
+          0.10225932927355193
+        ],
+        [
+          0.9302173987452076,
+          -0.30776697247016693,
+          -0.1999376946157152,
+          0.009626327716951823
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.16607445863681036,
+        0.10911207064735118,
+        0.038197868955440584
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/banana/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/banana/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_banana_poisson_005",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_banana_poisson_005/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_banana_poisson_005/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_banana_poisson_005/g8"
+      },
+      "collision_refinement": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+        "sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+      }
+    },
+    {
+      "id": "ddg_gd_rubber_duck_poisson_000",
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "pilot_id": "irregular",
+      "shape_selection_label": "irregular",
+      "source_split": "train",
+      "object_root": "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000",
+      "scale": 0.1,
+      "world_T_object": [
+        [
+          0.00046300568968971056,
+          -0.9999986989424988,
+          0.001545231063950016,
+          -0.7500362027497782
+        ],
+        [
+          0.9999965467474049,
+          0.00045900620845296114,
+          -0.0025876256618666566,
+          0.09994579524183175
+        ],
+        [
+          0.0025869130245650316,
+          0.0015464238132810657,
+          0.9999954582168826,
+          0.05246244673264638
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "world_extents_m": [
+        0.1453843405453763,
+        0.09554653932459989,
+        0.10486735548168319
+      ],
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/irregular/observation.json",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/irregular/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_rubber_duck_poisson_000",
+      "pools": {
+        "1": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_rubber_duck_poisson_000/g1",
+        "6": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_rubber_duck_poisson_000/g6",
+        "8": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_rubber_duck_poisson_000/g8"
+      },
+      "collision_refinement": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/acf764a7791106809d202104a38c64eeb894f09effa0410fd30af7b6458f4f1c/repair.json",
+        "sha256": "6fe7a156f6886b2e79b9a856f3e065a523a6b2e6a0c75fa5f58926906baceff1"
+      }
+    }
+  ],
+  "gesture_ids": [
+    1,
+    6,
+    8
+  ],
+  "candidates_per_pair": 2,
+  "slots": [
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g08/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g08/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g01/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g01/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g06/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g06/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_02",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_01",
+      "inherited_from_parent": true
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g01/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g01/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g08/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g08/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g06/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g06/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g08/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g08/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 1,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_rubber_duck_poisson_000__g01/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 1,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_rubber_duck_poisson_000__g01/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 6,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_rubber_duck_poisson_000__g06/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 6,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_rubber_duck_poisson_000__g06/round_02",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 8,
+      "candidate_slot": 1,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_rubber_duck_poisson_000__g08/round_01",
+      "inherited_from_parent": false
+    },
+    {
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 8,
+      "candidate_slot": 2,
+      "trial_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_rubber_duck_poisson_000__g08/round_02",
+      "inherited_from_parent": false
+    }
+  ],
+  "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+  "backend_config": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json",
+  "limits": {
+    "max_rounds": 2,
+    "max_arm_per_trial": 4,
+    "max_arm_per_object_gesture": 8,
+    "max_actual_per_object_gesture": 2
+  },
+  "geometry": {
+    "candidate_limit": 500,
+    "keep": 8,
+    "width_expansion": 1.7,
+    "opposing_group": "ff",
+    "additional_depth_index": 0
+  },
+  "concurrency": {
+    "native_cpu_workers": 2,
+    "geometry_cpu_workers": 2,
+    "representation_models": 1,
+    "network_device": "cuda:1"
+  },
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.example.json": "8205e74447f1019bcc6ef54ee21137847d79959c15115b708e8d1e1bdf79a3e2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/mesh/simplified.obj": "fe9f78c5d36aeccdfc76acb444322d6eb05ad68b4519a540d7d5096ab28882f8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/urdf/coacd.urdf": "8420ddc0d627e44dd8b6363ccc48c211284c19c387962b02746eb8444eb92e80",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/info/tabletop_pose.json": "89238dfda0857d45225b51954773d89409810870b5d890980dd9bca61dfdda9b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/info/simplified.json": "6edd88d8a4e1741dcb8737f5f56d73dfd7c471bb13ead64ed24c64a58cd17f88",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/urdf/meshes/convex_piece_000.obj": "fba1b2339d8cd2be101bb2b5fc04f2395a7528dbba4e313f29acbd3d3734bc04",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/mesh/simplified.obj": "332737332be480533fc1c486dae8e9caf75574c4808202bbc0a284c3afe70774",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/urdf/coacd.urdf": "8420ddc0d627e44dd8b6363ccc48c211284c19c387962b02746eb8444eb92e80",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/info/tabletop_pose.json": "55b91b9fae3c97ee55be2d94876a1855315a2669610756457b195e5661405ef0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/info/simplified.json": "1c8135449e44be0ad1da4d9897a4a6e5efb3c9fd2859a18354fda06686505899",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/urdf/meshes/convex_piece_000.obj": "0524446a415d06447b85da67cc1d075d8b358db8818d39ce9036f41a707ea9ac",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/mesh/simplified.obj": "69b64adb6430cb4b4f005fa6fd921c0c4436ba29c88c895fd065494ac19f5a7d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/coacd.urdf": "98da39c47cc3d3566f46344c086125757be1b2511afb3a7f56aeecfce38ba580",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/info/tabletop_pose.json": "6c44b91d791e6fab8b874e04e601d784b9777f4c6b00f9e017a9d63148ea48ce",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/info/simplified.json": "6d0af52e710b4610fd3df6017174b738a12027971a5b93e8ab6f2deadb0d872d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_001.obj": "dbf0c99b59b4d7fe44f224fb9886819c2636c0c6cda16c6484bd9cd32ca510fd",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_002.obj": "2b9c69b0f6586002deaa80cfe0f5ebb7bc9c4c194853f9fde627d9733dccd505",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_003.obj": "35bb0b35b2a3906f15153f4acce4b93e72a3c6e3f12f80c6d9cc83fd23f29ccd",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_000.obj": "9aba566a235bd714eaf584f7ddf59f39664db31a622f1b9fb2c5fc0bc02a4965",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/mesh/simplified.obj": "0bfffbe489d08e1b9372fc7efb3a6395bb89e6897712f68e53b1b567a1ccb922",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/coacd.urdf": "7b96b61808c46034463c30388a120798a2613440ba59701db76a5c2d1c88a55f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/info/tabletop_pose.json": "a520cfa46784a12b0cab989f50e8c7c3435b6498e26fd49baf1b69736ced0cef",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/info/simplified.json": "705766fb27ee3f18a25c63c7c8c2980adb6651c72d080d9eb828cff2bfd7ea2d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_028.obj": "df609971f56dde753df330ca3f2791bb221c0cda6c046bb4f11bf9f44d5bf87a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_018.obj": "47cb9d5b005b23ec2ab519d7835f95ed6946dc4e2ccc21e145a0b38a004e01c6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_026.obj": "c4d3ed3309b3628d8790aa3d47fb21654e43eb55dd85fa0a52a7da29caa4e98f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_021.obj": "b16ed6c38f7e85e07d8ad876e0bee4a979bfd64ac9ba59eb3d5190851b4fb7de",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_030.obj": "756667dd5999f989dd93e946e106a341ae72853f098b43d69a42be661262a2e8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_012.obj": "7073904aa66dfa6b826dc940bcf9b6295176c5acdf85df6af8b0cdbfa0c941f4",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_042.obj": "315b35eaf35ae36e38ef7e6c72270ac68add3a073c10ff6da0c9a1e6bb247898",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_019.obj": "112617f568be8d7c7e02c0adf15a96e4bdffb8448b0fc1e3d41c028f181d0974",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_040.obj": "aa7cc86d9af4b05183a99a6adec87580bfb4b7511d1939a6e6e23c863b19560b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_014.obj": "2d85132527dc6b85596cf04befd5c522147a10c9efa9dfda8302c3e7d0a2ce97",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_020.obj": "5fe922a3bec3c0f9615d6fa18e0ecde33eac7be3685f6920306f88db5688d0ce",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_004.obj": "29bd573925bda882841c98f4fff409f32b8843557728844111f9c15abc3dd1eb",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_039.obj": "197d34edcaa766c356756dbc2cc710d42fd293bf79c306c0c31542d6db30c716",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_027.obj": "bc355a497abbb4ee429a4029fa1599cd4f8a83cb090bdedc67e026cb4651527f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_001.obj": "443b833e229135a7dd6c20c1a7a38e939fcd0f659f8af27ec55e84b28ae9bae6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_015.obj": "abe38c47e42968aa883b92cb82b9c64bab810b99e7f9d9f8463e7ae9445d6551",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_005.obj": "f3005e4cc44af5d7e65a7e58ef548d00dbd368d58dae76ea10bb37c73264d273",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_037.obj": "e0f0d6fd270bdae4a45dfc5926c84e3da125a68e1d09a22b2c060d1ba8ea581c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_036.obj": "90b02894148ac8ccf4d7557598d9a7ea5ff8b4d15db01e966969c1d053d23c2d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_024.obj": "d9be02631073a906d5e1fe6b78d76f6970c8b4dc519fb9444d69c63d6e73f2e2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_013.obj": "a163b9128e2420c7500f3c28564447f3b0b40cabbf7bc6475829143ba3115b32",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_029.obj": "215f2fbe7a2d1ce71dddf1813db3ded9a900b6236097cec426b84c9a469fa6ca",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_032.obj": "d8d420681a50754bb5be6f135081af3ef01e95143ab5b09844a99e26f431f5cb",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_034.obj": "a9ff5f86991716603b33a5c79ad0454fa5b5189e0bfc9244cad644482a219cb4",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_002.obj": "b872ba98394ef177dcff02ceebb7e145dcc8e6a7758dba62d0d304657108d700",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_035.obj": "2151be531f565fc0f4a6f808a8dac83309b643060bc58e462b5de8fa7882aaab",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_025.obj": "d3a106bcd4beae9ddcb793da2f5c26906201dc9bbede5ad5f9b1e623c727a59f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_033.obj": "ea5192cf62e4db230d8f56162f16c4194a3cc6fdc941c51a900becc39e8c972d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_010.obj": "3a3f43ea4f30d778a09a81a39bac820f48f064ad159097a8752d54dd25e7e254",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_006.obj": "1e70dbe817d3bfffe4de26ba37aef1a832bf19914b52061bb54f907c19a33565",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_003.obj": "26c48c264a8f9b44558863bf1a27e7961a962a418e2680f9c642918a0196d019",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_038.obj": "e87487963afaeb1c9f4ba98aadc2435822e335a98c3a8581ec5f57b7d15a32dc",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_008.obj": "29d45fec2e2b3adac438f4b5aed799745b5936cba0a47eb6bd814d077715cb49",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_023.obj": "e095d6c6c15229e65d7c96dc0af073b07b4d8082898f6ab70b415a9a30279d5e",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_022.obj": "adf1b6e20cd9cbb85a7cd8244848238bafac632412ba37c9ef8781385dea0034",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_011.obj": "cf1797194d02b73d7b54889e0991b8dbeac3669e98cad42531f4b52e34f73458",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_000.obj": "837893ba944c12cdd443d6d6a94b027153b18685e1873e4500d6f380d8d91612",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_016.obj": "86ca66292d3860c7e0ec56d43ad405aa8933cd1c589368bbecf8720c4072254d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_009.obj": "c49f494f7cc2c94e6dec0dde63601007ff84748dca75ffc775f7dadf67225849",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_007.obj": "dcdf084cfea75a331a31bc6303491329ab10848ae400b3d05845c97f8a275573",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_041.obj": "13c4d994230fcd2b1200d290cf94ee8caf285ecbb6acd4b098be9a84502c1754",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_017.obj": "e5e90ee55d679d6c9d62bd7d2ed8f87b57c3dd1c47e2314d57eebd5dd2dffe4b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_031.obj": "671456ad9d6e18fa8942a8036f32be67facd70a6900b74eb043e68288b888e00",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/mesh/simplified.obj": "4856b37f37af2e5987536d29afdacd3ffab671a401f6bf46b479ca812d89523a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/coacd.urdf": "244decb4c04364895b02e59924ba186595b4ea44c090765a95e41970d3cb0771",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/info/tabletop_pose.json": "3776a3ab0d50dd1a15b067d9e41319cb701000679c5cd30fce24c4588365b53b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/info/simplified.json": "de7279b7a8328ce8a7d548bf4ab804fae0c44f2d03387908f22dd9931c71201d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_028.obj": "ca93564de2d73206e40b91e7490a8c4d72be1da9db0f3a1a964eb8219b56b8e6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_018.obj": "90ebc095f68ee601cb11dae005852b8d1d2ea4adb1fa78a0ead2edd07dba5f7f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_026.obj": "94d7f9cd8fa8831b614f34572615736bc54081f5ed86e2e28a71be12c4ea591c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_021.obj": "dc51c157509aa00ccdaed5e5e4930047865f70cf03867c8cb6fd673afc6d1fd2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_030.obj": "a3f17c0bb91bf4eaa32a36113cf850c2a815a66cce00047945e0f8e19a9ee28c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_012.obj": "85d12981725fd6eb7740bac7642444107928c1d92e316ae31aa62b6515b00c47",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_019.obj": "f1fd22ea4ad2b25b7e355323dbef321b9f2a9b2e3be279eb3a1f52628eff2666",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_014.obj": "420992682897d22eb360cdcf2515464d8cc56c6d7459195cb24defc9489ea020",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_020.obj": "ac456f864499c94430ca9dc163dc87bce7c69d4adc3653f85df69ca91a507d10",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_004.obj": "6c439d5013cd8a7a01e2d8c6c9e7896854dfec9caa4d43af58a457dfe16341ac",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_027.obj": "f49fb38f5144ce2f8d3e6c50370d4f670ff27f4133ae2cdf9ed67de4d75a0851",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_001.obj": "8216f861705ebc97b5e69592f7d93465bbb0f96b2c8d52c097adf2b5dc322a81",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_015.obj": "ca64054ae310b537a9850c8ca24cefc4c5300db7f7109f062d18def75d63cd11",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_005.obj": "030017c2ee3d9bc40f7a6426a3b5e235aac922be4db2a8274f9f0d88aabde2d0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_037.obj": "3c700c8eb1334e50da758d85ebfe7aa0b9dd69bad9f9fa82e69cbcd6ad5a2d0a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_036.obj": "90631ded7a3f3fecddafb581e6ee5f18feb131523a2bf521ff28f16f57a73bf3",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_024.obj": "2b565370d45ebc0a2b508d3b0af6a74381c58fdd8938181de52fe2e8b85b552a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_013.obj": "53d4edbe8113d8941d172a8d4786835a7682731fb8a1a9958d4da87da13cd655",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_029.obj": "fa2efdf521d3476b36553e95e53b9e0e3b98190ca51bb4a9806e166f8bfff05b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_032.obj": "7a3c32c56db152b0d727ac451acc2b4ed89591d67b2c58ff8f7ccf1473468bbc",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_034.obj": "6ed13901aea4bc8807fec69c8ca4e572ea5648078f506fd3764b7ee226d146b1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_002.obj": "e3e2b9d7fcceee3df3afd2f3b956a607968915f0b6428d0699a80c0b9346ca79",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_035.obj": "e2c1d08ebb6c6e73fd72798fdc6378e26211ef2f9441f9a4cac7bb82beaddf41",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_025.obj": "b14b5a2d9990aa3772609988486754d9943a784361ccab204dbfd6ddcb4e9f23",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_033.obj": "9add94b607bf5a18a266a638e4a7f4dd13feb1d50089522ca7b1748ab5f69600",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_010.obj": "b9f1d1aad478d7036790dac38271ccd6255b636a15270ffa60f514ebff343b55",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_006.obj": "ef766d594dd07b7cb76def2a1a30f3d8ee25e35ca15d7bc4b588c7f50237ea8c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_003.obj": "1af34947881c8803e919582b3747f580655f43b306b5d10c71211f004e1ca5f8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_008.obj": "ace9639f72cf1f0c7fd59304f723c48e45f4c46a98f001dcdfdc4e058507e620",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_023.obj": "b311e63aef590dd56e59c81328d468459de53d55bd8143cb64333f9249c4aeb2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_022.obj": "8a6e3954b8761665886a6d4659e6e2f2f11e676a1a89dbe69e6a262c97e999a2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_011.obj": "d690defde846498f20f40d72eebd372c536dba2e66316dc93ca9c73354a1d843",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_000.obj": "b7eae2cd4cf3574b46d1f650de8b3f3ac34c174c3adb2868ea10f844e44050e8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_016.obj": "0fc1f322b476e97bc9cbde48bebffb07d7f16a4112d1738920dd8f4fc08df45c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_009.obj": "7f0d59c974e397b9c5f56633eb377b62055e20415cf0cf94e8f39f3c52e42f6a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_007.obj": "69b59c0f08d32127f85c1ea2108c5b266f080f80c66cc652ba926a23cbf9d161",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_017.obj": "555c52e0266d61fcebba08b5575db85d30f588b4031b87c519d9b1bbb6e9cd38",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_031.obj": "f61a33b02c8a5850b23ddf3b6a627a8bf86bf666b754babd536976e40ef94f66",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/mesh/simplified.obj": "1c1aebd433149628cd161307dd95c50c4b8dafff8fe57601ba82088883c84cba",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/coacd.urdf": "73ba8c499232227be5de961eab2e8b827549fd39051179555a34027b16ceadbd",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/info/tabletop_pose.json": "0b27d4c9a73d2c53c8a604351f6e606104400dd5f9548a0546804b573b250212",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/info/simplified.json": "1acfc1a71d9e852d328af8a5752f2ef2eb5459c0150b3d539b9608f54c123c77",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_028.obj": "d44abf0f8feac4b370898ddc0b0c2b99ba8a1884fe126248222d6e6e9a3e8586",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_018.obj": "322949198ebf68532479c048c1ad8bc035e0c5c092ad7c7c10c40d480c605b8a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_026.obj": "a799d1e8c3ad873136dab86198e9fc7b8e52bc3ec7d8eaca854cf849d515a8d1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_021.obj": "549defa23358e3be7438656c1db67c3498e8c5084478712558dadc83b7b75f8a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_030.obj": "9bf89532ce9747969ec2a78e90350b2630829d70590896999af17203825acc8c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_012.obj": "627675d165f60dd220479f01bf6cb0615362519a3fd8c0fbded26bfb4f1ad6b6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_019.obj": "97bf4525893fd8feff90f673a069c4f90fa914012de6c7277d72d5430646ebd1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_014.obj": "48f0197414e9a0e450699adb59f4fb9cd404354b30033e1e9fdb5578e297631a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_020.obj": "813c09555008f42a2e70a061727896a1e70d82d68c820a3c9078417e9816520c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_004.obj": "dd22ac871b0332cb9fc0b1675b74918c629f67b826752bfd96e357269d771c9e",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_027.obj": "2b91a4d2b59bdb24ea29a2313c295d0d9f709d4f27d4b76ff56a6d373951a345",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_001.obj": "7fe15d46b36096e4e60796d737a3a85ce29c8de7c1f8335b22b06159b2af34e0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_015.obj": "ce4f11050bebcbed1fb3abf186e7a72851ed5fb8f00c13fc26472f2cefd5f404",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_005.obj": "76fcb9c897647419646bfe45cc9c1f720ba02a8d0b5503bf52e02af0078f2198",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_024.obj": "7b54769083616c2781ccd4d3ca462f38ba265c5741a115acaa79abdab360b5a9",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_013.obj": "2097f7323dae58a11f204c26db75cc2d3b4fecb54e086a5fa41c5fa2c993c46a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_029.obj": "813e46c529f3a6f36ccf7cfe60e47e41568dfbfa4e7270ad3784f47e31086cee",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_032.obj": "3acd0afd0149d2fe5cdb3e7e03474e31a2fa16e705707c6048130044adbe8c1a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_002.obj": "edc5ad3c77fd564a9a94f22dba3b6edf0aa4321b79e522f77159d3835a1a56d0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_025.obj": "881f589459549654a61a778ab15a50f17d0363a746a3da7cf471b744ed280cf1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_010.obj": "c88419b9f4075f1161e92549c7463361a5ef7254b95b1ac75fe4c4e5c75a68f0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_006.obj": "8b725e1147497cfc9ad64e1f28cb02ee18867f79408987eb179d0e7bea8a1de0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_003.obj": "bb829dfba45ec4751823c0803216665c679acafcf3aa2fde62332d472ffe0f98",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_008.obj": "28bad83621480e00b54bb3deafd42990258f5f515054a51ac58571b6b1c04288",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_023.obj": "b36fb93bbb1b3bf936f9f783d5d8717fac8fd4017e145ffdc63db7030a108ab2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_022.obj": "b3869b32d6f1197cfbdf0f58f922d4871c917f01317897df64e89a53c137d24a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_011.obj": "015ac50814d288d71161776e40f70348d12c65c6f617f79999408d349f0f9c08",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_000.obj": "a7cab455b5829c3e2fd04e7e05876d214beed25258d5e97963309606eb59a8ed",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_016.obj": "a61a369452053062b1476620f4e4a3d5cac73055563d29f96bc7ab80c2de9159",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_009.obj": "a22104544234295d4688ee37000d83331ff0ab42d676c6c25b3b604e4731e130",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_007.obj": "e9eeef0b9cc9ec67806c286c0c3bb41df47d337b3dc141e4d162ab4368724017",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_017.obj": "6928b285f5c3b9bdaf1c99330154f77c53b08fd42fd76f58117a715720a929e2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_031.obj": "6f43f3d397bd6513c2e22e3a0ae2b4bf6859c2f8f7b5f56e1e9f65e5f5a35e7a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/mesh/simplified.obj": "6540d3cea65819f316608d8ac3c69c52e76921b2d19ce54c742544ef881a1e5c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/coacd.urdf": "a12ecd375242738363d12c2c056adc614ef854f04af7bb3d15a8e11daafdb615",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/info/tabletop_pose.json": "773c0d2f2c5bca7ff0c9877d37515c88a7856b4f9b0b6ef529c0d6823c62a1d5",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/info/simplified.json": "baffb7bf005a3b53cfe529143700df86b52ba0aec29fa848742b6dadd35667cc",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/meshes/convex_piece_001.obj": "c26358721d75dadf0f25e6e3ee0849ffb39158de5398ae1a93d44adf7c46e07f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/meshes/convex_piece_002.obj": "86f41a97289d661a12688e93b63d36278ca1cd44ca796815f6f4dc064d212ae7",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/meshes/convex_piece_000.obj": "895f96e5212af060a10b1aef29a376cdd1a89b3b2106b1065c40dc018ee53a4d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/mesh/simplified.obj": "53774496978c5e2d18ad74c1c55d047b1bc3bee3fad1e5fc6bd239d87bccd4a9",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/coacd.urdf": "a12ecd375242738363d12c2c056adc614ef854f04af7bb3d15a8e11daafdb615",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/info/tabletop_pose.json": "6643d83806a10b2e0abcb68ac800b7008a035a76de04a2f6cc3a1bc39b0e7535",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/info/simplified.json": "9b4b122507f84c19ec775bdaeae5244e4300d9c5e65194a0b3f1bf9acb82e907",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/meshes/convex_piece_001.obj": "9a88519d13199a03f7d94469dab9881f860fb88bacadfab2d0e9f1d6970f9669",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/meshes/convex_piece_002.obj": "fdd4deedb50e887bfdc66e8fb75dda3e799289dcc801982166ee8c33e9401058",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/meshes/convex_piece_000.obj": "1650651bdc31716f7fdef3cbe30584bd6274b345867e30362929bc3461f6996b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json": "62a2f01339726b8af882748b07ddaa1c8d9f097bd82056cd05ea1b6b574cc11d"
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.example.json": "8205e74447f1019bcc6ef54ee21137847d79959c15115b708e8d1e1bdf79a3e2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/mesh/simplified.obj": "fe9f78c5d36aeccdfc76acb444322d6eb05ad68b4519a540d7d5096ab28882f8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/urdf/coacd.urdf": "8420ddc0d627e44dd8b6363ccc48c211284c19c387962b02746eb8444eb92e80",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/info/tabletop_pose.json": "89238dfda0857d45225b51954773d89409810870b5d890980dd9bca61dfdda9b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/info/simplified.json": "6edd88d8a4e1741dcb8737f5f56d73dfd7c471bb13ead64ed24c64a58cd17f88",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_ycb_055_baseball/urdf/meshes/convex_piece_000.obj": "fba1b2339d8cd2be101bb2b5fc04f2395a7528dbba4e313f29acbd3d3734bc04",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/mesh/simplified.obj": "332737332be480533fc1c486dae8e9caf75574c4808202bbc0a284c3afe70774",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/urdf/coacd.urdf": "8420ddc0d627e44dd8b6363ccc48c211284c19c387962b02746eb8444eb92e80",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/info/tabletop_pose.json": "55b91b9fae3c97ee55be2d94876a1855315a2669610756457b195e5661405ef0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/info/simplified.json": "1c8135449e44be0ad1da4d9897a4a6e5efb3c9fd2859a18354fda06686505899",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_box_poisson_000/urdf/meshes/convex_piece_000.obj": "0524446a415d06447b85da67cc1d075d8b358db8818d39ce9036f41a707ea9ac",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/mesh/simplified.obj": "69b64adb6430cb4b4f005fa6fd921c0c4436ba29c88c895fd065494ac19f5a7d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/coacd.urdf": "98da39c47cc3d3566f46344c086125757be1b2511afb3a7f56aeecfce38ba580",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/info/tabletop_pose.json": "6c44b91d791e6fab8b874e04e601d784b9777f4c6b00f9e017a9d63148ea48ce",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/info/simplified.json": "6d0af52e710b4610fd3df6017174b738a12027971a5b93e8ab6f2deadb0d872d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_001.obj": "dbf0c99b59b4d7fe44f224fb9886819c2636c0c6cda16c6484bd9cd32ca510fd",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_002.obj": "2b9c69b0f6586002deaa80cfe0f5ebb7bc9c4c194853f9fde627d9733dccd505",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_003.obj": "35bb0b35b2a3906f15153f4acce4b93e72a3c6e3f12f80c6d9cc83fd23f29ccd",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_can_baaa4b9538caa7f06e20028ed3cb196e/urdf/meshes/convex_piece_000.obj": "9aba566a235bd714eaf584f7ddf59f39664db31a622f1b9fb2c5fc0bc02a4965",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/mesh/simplified.obj": "0bfffbe489d08e1b9372fc7efb3a6395bb89e6897712f68e53b1b567a1ccb922",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/coacd.urdf": "7b96b61808c46034463c30388a120798a2613440ba59701db76a5c2d1c88a55f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/info/tabletop_pose.json": "a520cfa46784a12b0cab989f50e8c7c3435b6498e26fd49baf1b69736ced0cef",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/info/simplified.json": "705766fb27ee3f18a25c63c7c8c2980adb6651c72d080d9eb828cff2bfd7ea2d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_028.obj": "df609971f56dde753df330ca3f2791bb221c0cda6c046bb4f11bf9f44d5bf87a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_018.obj": "47cb9d5b005b23ec2ab519d7835f95ed6946dc4e2ccc21e145a0b38a004e01c6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_026.obj": "c4d3ed3309b3628d8790aa3d47fb21654e43eb55dd85fa0a52a7da29caa4e98f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_021.obj": "b16ed6c38f7e85e07d8ad876e0bee4a979bfd64ac9ba59eb3d5190851b4fb7de",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_030.obj": "756667dd5999f989dd93e946e106a341ae72853f098b43d69a42be661262a2e8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_012.obj": "7073904aa66dfa6b826dc940bcf9b6295176c5acdf85df6af8b0cdbfa0c941f4",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_042.obj": "315b35eaf35ae36e38ef7e6c72270ac68add3a073c10ff6da0c9a1e6bb247898",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_019.obj": "112617f568be8d7c7e02c0adf15a96e4bdffb8448b0fc1e3d41c028f181d0974",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_040.obj": "aa7cc86d9af4b05183a99a6adec87580bfb4b7511d1939a6e6e23c863b19560b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_014.obj": "2d85132527dc6b85596cf04befd5c522147a10c9efa9dfda8302c3e7d0a2ce97",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_020.obj": "5fe922a3bec3c0f9615d6fa18e0ecde33eac7be3685f6920306f88db5688d0ce",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_004.obj": "29bd573925bda882841c98f4fff409f32b8843557728844111f9c15abc3dd1eb",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_039.obj": "197d34edcaa766c356756dbc2cc710d42fd293bf79c306c0c31542d6db30c716",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_027.obj": "bc355a497abbb4ee429a4029fa1599cd4f8a83cb090bdedc67e026cb4651527f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_001.obj": "443b833e229135a7dd6c20c1a7a38e939fcd0f659f8af27ec55e84b28ae9bae6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_015.obj": "abe38c47e42968aa883b92cb82b9c64bab810b99e7f9d9f8463e7ae9445d6551",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_005.obj": "f3005e4cc44af5d7e65a7e58ef548d00dbd368d58dae76ea10bb37c73264d273",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_037.obj": "e0f0d6fd270bdae4a45dfc5926c84e3da125a68e1d09a22b2c060d1ba8ea581c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_036.obj": "90b02894148ac8ccf4d7557598d9a7ea5ff8b4d15db01e966969c1d053d23c2d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_024.obj": "d9be02631073a906d5e1fe6b78d76f6970c8b4dc519fb9444d69c63d6e73f2e2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_013.obj": "a163b9128e2420c7500f3c28564447f3b0b40cabbf7bc6475829143ba3115b32",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_029.obj": "215f2fbe7a2d1ce71dddf1813db3ded9a900b6236097cec426b84c9a469fa6ca",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_032.obj": "d8d420681a50754bb5be6f135081af3ef01e95143ab5b09844a99e26f431f5cb",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_034.obj": "a9ff5f86991716603b33a5c79ad0454fa5b5189e0bfc9244cad644482a219cb4",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_002.obj": "b872ba98394ef177dcff02ceebb7e145dcc8e6a7758dba62d0d304657108d700",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_035.obj": "2151be531f565fc0f4a6f808a8dac83309b643060bc58e462b5de8fa7882aaab",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_025.obj": "d3a106bcd4beae9ddcb793da2f5c26906201dc9bbede5ad5f9b1e623c727a59f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_033.obj": "ea5192cf62e4db230d8f56162f16c4194a3cc6fdc941c51a900becc39e8c972d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_010.obj": "3a3f43ea4f30d778a09a81a39bac820f48f064ad159097a8752d54dd25e7e254",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_006.obj": "1e70dbe817d3bfffe4de26ba37aef1a832bf19914b52061bb54f907c19a33565",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_003.obj": "26c48c264a8f9b44558863bf1a27e7961a962a418e2680f9c642918a0196d019",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_038.obj": "e87487963afaeb1c9f4ba98aadc2435822e335a98c3a8581ec5f57b7d15a32dc",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_008.obj": "29d45fec2e2b3adac438f4b5aed799745b5936cba0a47eb6bd814d077715cb49",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_023.obj": "e095d6c6c15229e65d7c96dc0af073b07b4d8082898f6ab70b415a9a30279d5e",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_022.obj": "adf1b6e20cd9cbb85a7cd8244848238bafac632412ba37c9ef8781385dea0034",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_011.obj": "cf1797194d02b73d7b54889e0991b8dbeac3669e98cad42531f4b52e34f73458",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_000.obj": "837893ba944c12cdd443d6d6a94b027153b18685e1873e4500d6f380d8d91612",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_016.obj": "86ca66292d3860c7e0ec56d43ad405aa8933cd1c589368bbecf8720c4072254d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_009.obj": "c49f494f7cc2c94e6dec0dde63601007ff84748dca75ffc775f7dadf67225849",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_007.obj": "dcdf084cfea75a331a31bc6303491329ab10848ae400b3d05845c97f8a275573",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_041.obj": "13c4d994230fcd2b1200d290cf94ee8caf285ecbb6acd4b098be9a84502c1754",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_017.obj": "e5e90ee55d679d6c9d62bd7d2ed8f87b57c3dd1c47e2314d57eebd5dd2dffe4b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bottle_e8b48d395d3d8744e53e6e0633163da8/urdf/meshes/convex_piece_031.obj": "671456ad9d6e18fa8942a8036f32be67facd70a6900b74eb043e68288b888e00",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/mesh/simplified.obj": "4856b37f37af2e5987536d29afdacd3ffab671a401f6bf46b479ca812d89523a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/coacd.urdf": "244decb4c04364895b02e59924ba186595b4ea44c090765a95e41970d3cb0771",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/info/tabletop_pose.json": "3776a3ab0d50dd1a15b067d9e41319cb701000679c5cd30fce24c4588365b53b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/info/simplified.json": "de7279b7a8328ce8a7d548bf4ab804fae0c44f2d03387908f22dd9931c71201d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_028.obj": "ca93564de2d73206e40b91e7490a8c4d72be1da9db0f3a1a964eb8219b56b8e6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_018.obj": "90ebc095f68ee601cb11dae005852b8d1d2ea4adb1fa78a0ead2edd07dba5f7f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_026.obj": "94d7f9cd8fa8831b614f34572615736bc54081f5ed86e2e28a71be12c4ea591c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_021.obj": "dc51c157509aa00ccdaed5e5e4930047865f70cf03867c8cb6fd673afc6d1fd2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_030.obj": "a3f17c0bb91bf4eaa32a36113cf850c2a815a66cce00047945e0f8e19a9ee28c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_012.obj": "85d12981725fd6eb7740bac7642444107928c1d92e316ae31aa62b6515b00c47",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_019.obj": "f1fd22ea4ad2b25b7e355323dbef321b9f2a9b2e3be279eb3a1f52628eff2666",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_014.obj": "420992682897d22eb360cdcf2515464d8cc56c6d7459195cb24defc9489ea020",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_020.obj": "ac456f864499c94430ca9dc163dc87bce7c69d4adc3653f85df69ca91a507d10",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_004.obj": "6c439d5013cd8a7a01e2d8c6c9e7896854dfec9caa4d43af58a457dfe16341ac",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_027.obj": "f49fb38f5144ce2f8d3e6c50370d4f670ff27f4133ae2cdf9ed67de4d75a0851",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_001.obj": "8216f861705ebc97b5e69592f7d93465bbb0f96b2c8d52c097adf2b5dc322a81",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_015.obj": "ca64054ae310b537a9850c8ca24cefc4c5300db7f7109f062d18def75d63cd11",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_005.obj": "030017c2ee3d9bc40f7a6426a3b5e235aac922be4db2a8274f9f0d88aabde2d0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_037.obj": "3c700c8eb1334e50da758d85ebfe7aa0b9dd69bad9f9fa82e69cbcd6ad5a2d0a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_036.obj": "90631ded7a3f3fecddafb581e6ee5f18feb131523a2bf521ff28f16f57a73bf3",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_024.obj": "2b565370d45ebc0a2b508d3b0af6a74381c58fdd8938181de52fe2e8b85b552a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_013.obj": "53d4edbe8113d8941d172a8d4786835a7682731fb8a1a9958d4da87da13cd655",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_029.obj": "fa2efdf521d3476b36553e95e53b9e0e3b98190ca51bb4a9806e166f8bfff05b",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_032.obj": "7a3c32c56db152b0d727ac451acc2b4ed89591d67b2c58ff8f7ccf1473468bbc",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_034.obj": "6ed13901aea4bc8807fec69c8ca4e572ea5648078f506fd3764b7ee226d146b1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_002.obj": "e3e2b9d7fcceee3df3afd2f3b956a607968915f0b6428d0699a80c0b9346ca79",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_035.obj": "e2c1d08ebb6c6e73fd72798fdc6378e26211ef2f9441f9a4cac7bb82beaddf41",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_025.obj": "b14b5a2d9990aa3772609988486754d9943a784361ccab204dbfd6ddcb4e9f23",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_033.obj": "9add94b607bf5a18a266a638e4a7f4dd13feb1d50089522ca7b1748ab5f69600",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_010.obj": "b9f1d1aad478d7036790dac38271ccd6255b636a15270ffa60f514ebff343b55",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_006.obj": "ef766d594dd07b7cb76def2a1a30f3d8ee25e35ca15d7bc4b588c7f50237ea8c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_003.obj": "1af34947881c8803e919582b3747f580655f43b306b5d10c71211f004e1ca5f8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_008.obj": "ace9639f72cf1f0c7fd59304f723c48e45f4c46a98f001dcdfdc4e058507e620",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_023.obj": "b311e63aef590dd56e59c81328d468459de53d55bd8143cb64333f9249c4aeb2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_022.obj": "8a6e3954b8761665886a6d4659e6e2f2f11e676a1a89dbe69e6a262c97e999a2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_011.obj": "d690defde846498f20f40d72eebd372c536dba2e66316dc93ca9c73354a1d843",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_000.obj": "b7eae2cd4cf3574b46d1f650de8b3f3ac34c174c3adb2868ea10f844e44050e8",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_016.obj": "0fc1f322b476e97bc9cbde48bebffb07d7f16a4112d1738920dd8f4fc08df45c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_009.obj": "7f0d59c974e397b9c5f56633eb377b62055e20415cf0cf94e8f39f3c52e42f6a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_007.obj": "69b59c0f08d32127f85c1ea2108c5b266f080f80c66cc652ba926a23cbf9d161",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_017.obj": "555c52e0266d61fcebba08b5575db85d30f588b4031b87c519d9b1bbb6e9cd38",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_mug_5c7c4cb503a757147dbda56eabff0c47/urdf/meshes/convex_piece_031.obj": "f61a33b02c8a5850b23ddf3b6a627a8bf86bf666b754babd536976e40ef94f66",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/mesh/simplified.obj": "1c1aebd433149628cd161307dd95c50c4b8dafff8fe57601ba82088883c84cba",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/coacd.urdf": "73ba8c499232227be5de961eab2e8b827549fd39051179555a34027b16ceadbd",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/info/tabletop_pose.json": "0b27d4c9a73d2c53c8a604351f6e606104400dd5f9548a0546804b573b250212",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/info/simplified.json": "1acfc1a71d9e852d328af8a5752f2ef2eb5459c0150b3d539b9608f54c123c77",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_028.obj": "d44abf0f8feac4b370898ddc0b0c2b99ba8a1884fe126248222d6e6e9a3e8586",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_018.obj": "322949198ebf68532479c048c1ad8bc035e0c5c092ad7c7c10c40d480c605b8a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_026.obj": "a799d1e8c3ad873136dab86198e9fc7b8e52bc3ec7d8eaca854cf849d515a8d1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_021.obj": "549defa23358e3be7438656c1db67c3498e8c5084478712558dadc83b7b75f8a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_030.obj": "9bf89532ce9747969ec2a78e90350b2630829d70590896999af17203825acc8c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_012.obj": "627675d165f60dd220479f01bf6cb0615362519a3fd8c0fbded26bfb4f1ad6b6",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_019.obj": "97bf4525893fd8feff90f673a069c4f90fa914012de6c7277d72d5430646ebd1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_014.obj": "48f0197414e9a0e450699adb59f4fb9cd404354b30033e1e9fdb5578e297631a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_020.obj": "813c09555008f42a2e70a061727896a1e70d82d68c820a3c9078417e9816520c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_004.obj": "dd22ac871b0332cb9fc0b1675b74918c629f67b826752bfd96e357269d771c9e",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_027.obj": "2b91a4d2b59bdb24ea29a2313c295d0d9f709d4f27d4b76ff56a6d373951a345",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_001.obj": "7fe15d46b36096e4e60796d737a3a85ce29c8de7c1f8335b22b06159b2af34e0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_015.obj": "ce4f11050bebcbed1fb3abf186e7a72851ed5fb8f00c13fc26472f2cefd5f404",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_005.obj": "76fcb9c897647419646bfe45cc9c1f720ba02a8d0b5503bf52e02af0078f2198",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_024.obj": "7b54769083616c2781ccd4d3ca462f38ba265c5741a115acaa79abdab360b5a9",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_013.obj": "2097f7323dae58a11f204c26db75cc2d3b4fecb54e086a5fa41c5fa2c993c46a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_029.obj": "813e46c529f3a6f36ccf7cfe60e47e41568dfbfa4e7270ad3784f47e31086cee",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_032.obj": "3acd0afd0149d2fe5cdb3e7e03474e31a2fa16e705707c6048130044adbe8c1a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_002.obj": "edc5ad3c77fd564a9a94f22dba3b6edf0aa4321b79e522f77159d3835a1a56d0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_025.obj": "881f589459549654a61a778ab15a50f17d0363a746a3da7cf471b744ed280cf1",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_010.obj": "c88419b9f4075f1161e92549c7463361a5ef7254b95b1ac75fe4c4e5c75a68f0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_006.obj": "8b725e1147497cfc9ad64e1f28cb02ee18867f79408987eb179d0e7bea8a1de0",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_003.obj": "bb829dfba45ec4751823c0803216665c679acafcf3aa2fde62332d472ffe0f98",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_008.obj": "28bad83621480e00b54bb3deafd42990258f5f515054a51ac58571b6b1c04288",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_023.obj": "b36fb93bbb1b3bf936f9f783d5d8717fac8fd4017e145ffdc63db7030a108ab2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_022.obj": "b3869b32d6f1197cfbdf0f58f922d4871c917f01317897df64e89a53c137d24a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_011.obj": "015ac50814d288d71161776e40f70348d12c65c6f617f79999408d349f0f9c08",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_000.obj": "a7cab455b5829c3e2fd04e7e05876d214beed25258d5e97963309606eb59a8ed",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_016.obj": "a61a369452053062b1476620f4e4a3d5cac73055563d29f96bc7ab80c2de9159",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_009.obj": "a22104544234295d4688ee37000d83331ff0ab42d676c6c25b3b604e4731e130",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_007.obj": "e9eeef0b9cc9ec67806c286c0c3bb41df47d337b3dc141e4d162ab4368724017",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_017.obj": "6928b285f5c3b9bdaf1c99330154f77c53b08fd42fd76f58117a715720a929e2",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/urdf/meshes/convex_piece_031.obj": "6f43f3d397bd6513c2e22e3a0ae2b4bf6859c2f8f7b5f56e1e9f65e5f5a35e7a",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/mesh/simplified.obj": "6540d3cea65819f316608d8ac3c69c52e76921b2d19ce54c742544ef881a1e5c",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/coacd.urdf": "a12ecd375242738363d12c2c056adc614ef854f04af7bb3d15a8e11daafdb615",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/info/tabletop_pose.json": "773c0d2f2c5bca7ff0c9877d37515c88a7856b4f9b0b6ef529c0d6823c62a1d5",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/info/simplified.json": "baffb7bf005a3b53cfe529143700df86b52ba0aec29fa848742b6dadd35667cc",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/meshes/convex_piece_001.obj": "c26358721d75dadf0f25e6e3ee0849ffb39158de5398ae1a93d44adf7c46e07f",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/meshes/convex_piece_002.obj": "86f41a97289d661a12688e93b63d36278ca1cd44ca796815f6f4dc064d212ae7",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_banana_poisson_005/urdf/meshes/convex_piece_000.obj": "895f96e5212af060a10b1aef29a376cdd1a89b3b2106b1065c40dc018ee53a4d",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/mesh/simplified.obj": "53774496978c5e2d18ad74c1c55d047b1bc3bee3fad1e5fc6bd239d87bccd4a9",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/coacd.urdf": "a12ecd375242738363d12c2c056adc614ef854f04af7bb3d15a8e11daafdb615",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/info/tabletop_pose.json": "6643d83806a10b2e0abcb68ac800b7008a035a76de04a2f6cc3a1bc39b0e7535",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/info/simplified.json": "9b4b122507f84c19ec775bdaeae5244e4300d9c5e65194a0b3f1bf9acb82e907",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/meshes/convex_piece_001.obj": "9a88519d13199a03f7d94469dab9881f860fb88bacadfab2d0e9f1d6970f9669",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/meshes/convex_piece_002.obj": "fdd4deedb50e887bfdc66e8fb75dda3e799289dcc801982166ee8c33e9401058",
+    "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/ddg_gd_rubber_duck_poisson_000/urdf/meshes/convex_piece_000.obj": "1650651bdc31716f7fdef3cbe30584bd6274b345867e30362929bc3461f6996b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json": "62a2f01339726b8af882748b07ddaa1c8d9f097bd82056cd05ea1b6b574cc11d",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/native_preprocessing/core_mug_5c7c4cb503a757147dbda56eabff0c47/result.json": "d25811d5cd57898005d3e78b8f61994f09af724e1783d865b76509aa7064982b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/207ac42ce5452a410ff059248136297e6638b1f33a4151719c963d25e4258f54/repair.json": "870990f2bdec3f4cd4787f287fe5cc54be62166ffb56248a38a3b6b4b35442c0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/native_preprocessing/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/result.json": "4489a2c052e26a9ffbb4ed18dc677eab21acdc2562afea9c1a877fcb3bc0c14a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/native_preprocessing/ddg_gd_banana_poisson_005/result.json": "1d7b35159d0b349e8c2b0e66f56ba6447cd2668722a01806b18bc989128be005",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/acf764a7791106809d202104a38c64eeb894f09effa0410fd30af7b6458f4f1c/repair.json": "6fe7a156f6886b2e79b9a856f3e065a523a6b2e6a0c75fa5f58926906baceff1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/native_preprocessing/ddg_gd_rubber_duck_poisson_000/result.json": "ea53286d4a8c5f8e2baef49e95f5c9ea4442b305565cac3ec81ec380f8068eaf"
+  },
+  "protocol_boundary": "Fixed eight development objects; one pose/observation/forward per object; 3 hands; two independent trial slots each. Success does not cancel the second trial. No learned Boya head, no experience/grasp optimization. No object replacement after outcomes.",
+  "labels": {
+    "actual_completed_lift_success": 1,
+    "actual_completed_lift_failure": 0,
+    "zero_step_or_infrastructure_or_incomplete": null
+  },
+  "grouping": "Pilot development collection, not independent generalization evaluation. Future train/validation split must group source object/mesh.",
+  "scope": "At most 48 actual grasps. Empty or rejected pools do not create failure labels. No legacy CanonDex batch resumed.",
+  "previous_protocol": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/protocol_v2.json",
+  "previous_protocol_sha256": "72da233f9e3657043819f9baa75c0fd3b852624745b92510a97f5f4b8e377677",
+  "prephysical_amendment": "Enable existing explicit cold-reset restoration to declared object pose/zero velocity, before original 20um initial-state audit. Same eight objects/poses, RGB-D, CGR, geometry, commands, actual-trial budgets. No actual trial has started at amendment.",
+  "continuation": {
+    "parent_run": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1",
+    "prepared_sha256": "cd8a59dd839a12f213caff627d709c276e528fb7e8415e8fed69b63d2dbaa8ee",
+    "progress_sha256": "91f037e3c89b95497e285a55a0dd492ba244d130307b6b6180f918088adbc138",
+    "source_revision": "9886d7a",
+    "audit_paths": [
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/pilot8_20261105/anydex_boya_live_batch_snapshot_audit_20261105_v1.json",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/pilot8_20261105/paused_import_diagnosis.json"
+    ]
+  },
+  "continuation_amendment": "Independent remaining-budget segment after zero-step import error; generic source-preserving collision partitions only. All parent rounds, indices, and costs are inherited. No prior attempt is rerun; observations/CGR/pools/controls unchanged."
+}

@@ -1,0 +1,322 @@
+{
+  "schema": "anydex_boya_continuation_launch_independent_audit_v1",
+  "all_checks_passed": true,
+  "checks": {
+    "new_protocol_PREPARED_launch_sha": true,
+    "parent_original_hashes_preserved": true,
+    "all751_frozen_files_current": true,
+    "protocol_sources_and_inputs_current": true,
+    "parent25_snapshot_records_exact": true,
+    "parent19labels16positive3negative39900steps": true,
+    "new_progress_preserves_all25_inherited_records": true,
+    "historical_and_local_costs_separate": true,
+    "no_new_forward_or_poolbuild_dispatch": true,
+    "fixed8objects3gestures48unique_slots": true,
+    "historical_source_only_exact_two_wrappers": true,
+    "all_current_requests_valid": true,
+    "detached_driver_PID_identity_live": true,
+    "parent_and_new_frozen_inputs_still_unchanged": true
+  },
+  "protocol_sha256": "4c3cf085d98904f38f73aceac6d3c31b896a181b434c24b96e5cad54a077dcb3",
+  "PREPARED_sha256": "707b238913e8980f5acd80a4123fa8ff349d52426ab2a1454184db3e1a1aa881",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_batch.py": "261094403e3bc1619378e3db1beae2ec5fdc818a3cf9a12eccfb38343c9c5a00",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_first_trial.py": "a5482bf9df49538aaf078fb71631b7912c9213ddffe4ce74cd48d79d5c13d749"
+  },
+  "parent_PREPARED_sha256": "cd8a59dd839a12f213caff627d709c276e528fb7e8415e8fed69b63d2dbaa8ee",
+  "parent_progress_sha256": "91f037e3c89b95497e285a55a0dd492ba244d130307b6b6180f918088adbc138",
+  "snapshot_progress_sha256": "e2a5609b3b835fb55cea67d652c69fd39575f41e7c7adaec888ab712cce61274",
+  "snapshot_updated_at": "2026-11-05T07:51:20.850072+00:00",
+  "snapshot_phase": "running",
+  "frozen_files": 751,
+  "inherited": {
+    "terminal_rounds": 25,
+    "labels": 19,
+    "positive": 16,
+    "negative": 3,
+    "physics_steps": 39900
+  },
+  "current_segment_cost": {
+    "arm_prepare_calls": 10,
+    "actual_grasp_attempts": 6,
+    "unconfirmed_execution_attempts": 0,
+    "physics_steps": 12600,
+    "training_labels": 6,
+    "positive_labels": 6,
+    "negative_labels": 0,
+    "null_trials": 1,
+    "infrastructure_failure_trials": 0,
+    "zero_step_trials": 1,
+    "no_arm_admission_trials": 1,
+    "reported_trial_wall_s_sum": 444.35532345215324,
+    "wall_sum_is_not_parallel_end_to_end": true
+  },
+  "new_requests": [
+    {
+      "job_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06",
+      "round_index": 1,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06/round_01",
+      "candidate_indices": [
+        0
+      ],
+      "prior_consumed": [],
+      "request_sha256": "4b89314c02ff44e3a0677b63c8a461e605e978ce4166b8a24fc3699038948da3",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/207ac42ce5452a410ff059248136297e6638b1f33a4151719c963d25e4258f54/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": []
+    },
+    {
+      "job_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g01",
+      "round_index": 2,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_02",
+      "candidate_indices": [
+        1,
+        2,
+        3
+      ],
+      "prior_consumed": [
+        0
+      ],
+      "request_sha256": "f266febbfdd4f7b254f10fb54e96d7260b509d7a118321f5841f24c32c261661",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_02/plan_001/plan.json",
+          "repair_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+        }
+      ]
+    },
+    {
+      "job_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g06",
+      "round_index": 1,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_01",
+      "candidate_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "prior_consumed": [],
+      "request_sha256": "b96b14ca27c3143dd59dc18e7c179d0ac5aec9a90cd2e59d65050adb0e541ab4",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_01/plan_000/plan.json",
+          "repair_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+        }
+      ]
+    },
+    {
+      "job_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g06",
+      "round_index": 2,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_02",
+      "candidate_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "prior_consumed": [
+        0
+      ],
+      "request_sha256": "0a428233c971bb9e5da0e3a8ff63eab39078873ff900a5e4d4fa8cba043f20ce",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_02/plan_002/plan.json",
+          "repair_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+        }
+      ]
+    },
+    {
+      "job_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g08",
+      "round_index": 1,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_01",
+      "candidate_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "prior_consumed": [],
+      "request_sha256": "ba3d34851cef15bffd94d4bcbc3dee90e59aa8c75a4acba01ace508c0dc3bd90",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_01/plan_000/plan.json",
+          "repair_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+        }
+      ]
+    },
+    {
+      "job_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g08",
+      "round_index": 2,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_02",
+      "candidate_indices": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "prior_consumed": [
+        0
+      ],
+      "request_sha256": "bf58b76018445a11997ee53250cebf0ea23f664883ff43f3f378e5c1966b8be6",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_02/plan_001/plan.json",
+          "repair_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+        }
+      ]
+    },
+    {
+      "job_id": "ddg_gd_banana_poisson_005__g01",
+      "round_index": 1,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_01",
+      "candidate_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "prior_consumed": [],
+      "request_sha256": "f22f8411559d3a4ec4d4065c099dca84c5f7297e431017b210a308bd61d9431c",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_01/plan_000/plan.json",
+          "repair_sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+        }
+      ]
+    },
+    {
+      "job_id": "ddg_gd_banana_poisson_005__g01",
+      "round_index": 2,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_02",
+      "candidate_indices": [
+        1,
+        2,
+        3
+      ],
+      "prior_consumed": [
+        0
+      ],
+      "request_sha256": "851bfe0b23b3b1599a99b1a1a220cb44fc7fe3d45ef127521c2b5f1d6280961e",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_02/plan_001/plan.json",
+          "repair_sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+        }
+      ]
+    },
+    {
+      "job_id": "ddg_gd_banana_poisson_005__g06",
+      "round_index": 1,
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g06/round_01",
+      "candidate_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "prior_consumed": [],
+      "request_sha256": "e6eb9b150be7a21579fc314ae6aa1d0feddf9704938c1f1e9d5b95ab6b6a372f",
+      "repair": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+      "checks": {
+        "not_an_inherited_round": true,
+        "original_order_remaining_indices": true,
+        "original_pool_and_new_protocol": true,
+        "repair_flag_and_SHA": true,
+        "wrapper_summary_repair_SHA": true,
+        "prepared_native_repair_SHA": true
+      },
+      "all_checks_passed": true,
+      "admitted_plans": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g06/round_01/plan_000/plan.json",
+          "repair_sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+        }
+      ]
+    }
+  ],
+  "driver_PID": 2671029,
+  "audit_cost": {
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "elapsed_wall_seconds": 0.7278111160267144
+  },
+  "boundary": "Launch snapshot, not final cohort score; inherited unknown/null remains retained, and new running requests are not negative labels.",
+  "audit_script_sha256": "88bb2514cbcdcf42c4c94e2940a8c62554ebdde2ff6cbbf93fa10aab8e01f3b7"
+}

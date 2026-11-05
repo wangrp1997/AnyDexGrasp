@@ -1,0 +1,2412 @@
+{
+  "schema": "anydex_boya_pilot_progress_v1",
+  "protocol_sha256": "4c3cf085d98904f38f73aceac6d3c31b896a181b434c24b96e5cad54a077dcb3",
+  "created_at": "2026-11-05T07:42:19.761232+00:00",
+  "updated_at": "2026-11-05T07:49:34.692293+00:00",
+  "phase": "running",
+  "limits": {
+    "max_rounds": 2,
+    "max_arm_per_trial": 4,
+    "max_arm_per_object_gesture": 8,
+    "max_actual_per_object_gesture": 2
+  },
+  "max_cpu_workers": 2,
+  "network_forward_dispatches": 0,
+  "geometry_dispatches": 0,
+  "scope": "Frozen-pool Isaac training collection; independent scenes, not same-scene regrasp",
+  "jobs": {
+    "ddg_ycb_055_baseball__g01": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_01/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1854,
+            "if_flip": true,
+            "source_slot": "g1:distal_000:ff",
+            "actual_reference_width_m": 0.13583993319676196,
+            "raw_width_m": 0.09167347848415375,
+            "requested_opening_m": 0.13583993319676196,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5080508589744568,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.027934521024294168,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 72.92218168603722,
+          "training_record_sha256": "3b8208d1ff333c5162beff56016002492666a6ca45bbbfa198f1a7e09c05d538",
+          "evaluation_sha256": "3635e0a0531ea0408f093e9c8c40a5467f1bf85eeaceb05728d1a82393cabfa2",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_02",
+          "status": "no_full_arm_plan_in_declared_budget",
+          "terminal": true,
+          "consumed_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_02/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_02/plan_003",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 4,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_02/plan_004",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 5,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g01/round_02/plan_005",
+              "admitted": false,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": null,
+          "reported_trial_wall_s": 31.602776731946506,
+          "offered_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "id": "ddg_ycb_055_baseball__g01",
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/sphere/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_ycb_055_baseball",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_ycb_055_baseball/g1"
+    },
+    "ddg_ycb_055_baseball__g06": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_01/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_01/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_01/plan_003",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 327,
+            "if_flip": true,
+            "source_slot": "g6:distal_000:ff",
+            "actual_reference_width_m": 0.13051790938638097,
+            "raw_width_m": 0.09361915290355682,
+            "requested_opening_m": 0.13051790938638097,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.4548577070236206,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.009477381703921164,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 91.11972468101885,
+          "training_record_sha256": "13585a76e523ddc2e901965042148c7184168b3b98f96b26aa9ec5b19fc6b1b1",
+          "evaluation_sha256": "499358101182085ffdb1b4a0fe4733eabaf9de37cd628d9ecb505189913c4425",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            4,
+            5,
+            6,
+            7
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 4,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_02/plan_004",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 5,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_02/plan_005",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 6,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_02/plan_006",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 7,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g06/round_02/plan_007",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1908,
+            "if_flip": true,
+            "source_slot": "g6:distal_000:ff",
+            "actual_reference_width_m": 0.13051790938638097,
+            "raw_width_m": 0.09652405977249146,
+            "requested_opening_m": 0.13051790938638097,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.4481079578399658,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.06431424113396311,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 85.15727504703682,
+          "training_record_sha256": "59011973563cbc4b4cf8c8bd468797226f46fd7f5b8a5121cf849b9bb83acefc",
+          "evaluation_sha256": "ba6c583fbd8d63a8bf012a8dfaf87b678cdede1217b3231203746c0784d14b5f",
+          "offered_indices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "id": "ddg_ycb_055_baseball__g06",
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/sphere/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_ycb_055_baseball",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_ycb_055_baseball/g6"
+    },
+    "ddg_ycb_055_baseball__g08": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 0,
+          "failure_reason": "executed_lift_failure",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1854,
+            "if_flip": true,
+            "source_slot": "g8:distal_000:ff",
+            "actual_reference_width_m": 0.14085802174547776,
+            "raw_width_m": 0.09167347848415375,
+            "requested_opening_m": 0.14085802174547776,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5080508589744568,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.02622332414369745,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 63.08745498606004,
+          "training_record_sha256": "abaed08c7184c82a72cd5d6ed37468b271bed2dcc350cb81846aa52810c101f0",
+          "evaluation_sha256": "1205e52155f402dfb528b215ac6ab818934ec0dadfec4fa8b75087dd7a6a39ef",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_02/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_02/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_02/plan_003",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 4,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_ycb_055_baseball__g08/round_02/plan_004",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 223,
+            "if_flip": true,
+            "source_slot": "g8:distal_000:ff",
+            "actual_reference_width_m": 0.14085802174547776,
+            "raw_width_m": 0.09545207023620605,
+            "requested_opening_m": 0.14085802174547776,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.45335930585861206,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.005903116206287362,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 109.2869711809326,
+          "training_record_sha256": "2e80efaab88d9588a664776e85071a48313f3bb8e462e3d3957b145ea3fa0432",
+          "evaluation_sha256": "d4497f7d3ab0fe28493bd7f8dd8b0bfd96ba185fa6d96dca452b3016c766fbc3",
+          "offered_indices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "id": "ddg_ycb_055_baseball__g08",
+      "object_id": "ddg_ycb_055_baseball",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/sphere/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_ycb_055_baseball",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_ycb_055_baseball/g8"
+    },
+    "ddg_gd_box_poisson_000__g01": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_01/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 151,
+            "if_flip": false,
+            "source_slot": "g1:distal_000:ff",
+            "actual_reference_width_m": 0.13583993319676196,
+            "raw_width_m": 0.10098721086978912,
+            "requested_opening_m": 0.13583993319676196,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5194327235221863,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.01992410434242481,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 84.07716449000873,
+          "training_record_sha256": "30f555bbff0025df1e1925324ede8ef1df1d77cd2bb8b78d809c552c9514ecc2",
+          "evaluation_sha256": "25ee7a1c9f9197bdbecec7a0187def080c85752c7363b76dc9f52bcaabd031ca",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_02",
+          "status": "no_full_arm_plan_in_declared_budget",
+          "terminal": true,
+          "consumed_indices": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_02/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_02/plan_003",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 4,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_02/plan_004",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 5,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g01/round_02/plan_005",
+              "admitted": false,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": null,
+          "reported_trial_wall_s": 40.01599845697638,
+          "offered_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "id": "ddg_gd_box_poisson_000__g01",
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/box/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_box_poisson_000",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_box_poisson_000/g1"
+    },
+    "ddg_gd_box_poisson_000__g06": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 0,
+          "failure_reason": "executed_lift_failure",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_01/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 943,
+            "if_flip": false,
+            "source_slot": "g6:distal_000:ff",
+            "actual_reference_width_m": 0.13051790938638097,
+            "raw_width_m": 0.10298948734998703,
+            "requested_opening_m": 0.13051790938638097,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5640242695808411,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.018964879965589904,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 76.14951159898192,
+          "training_record_sha256": "8a326d913a8f1dc956c95f93787ff9e65acbcdf2926e6ff71e2993b3aa611821",
+          "evaluation_sha256": "8b77d5e75b188eb6b5d9597ffd241d8386452303203edebfa091c1a297c1ddc5",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            2
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 2,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g06/round_02/plan_002",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 151,
+            "if_flip": false,
+            "source_slot": "g6:distal_000:ff",
+            "actual_reference_width_m": 0.13051790938638097,
+            "raw_width_m": 0.10098721086978912,
+            "requested_opening_m": 0.13051790938638097,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5194327235221863,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.01926296804626218,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 63.609632592997514,
+          "training_record_sha256": "674a1453319704ce8674859464472d096a1f4844e0adf0af91d37d4bc257888a",
+          "evaluation_sha256": "b4d8a47294889877ac1443d0eec696a800bc3d7970bb565372934a8631d4e338",
+          "offered_indices": [
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "id": "ddg_gd_box_poisson_000__g06",
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/box/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_box_poisson_000",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_box_poisson_000/g6"
+    },
+    "ddg_gd_box_poisson_000__g08": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g08/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g08/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1012,
+            "if_flip": true,
+            "source_slot": "g8:distal_000:ff",
+            "actual_reference_width_m": 0.14085802174547776,
+            "raw_width_m": 0.10542334616184235,
+            "requested_opening_m": 0.14085802174547776,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.6473028063774109,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.03135432236242476,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 66.14241480198689,
+          "training_record_sha256": "73cd7363a778888c49d2cb36d6d6df78235dde26f900ce6d55c230e28834c9b0",
+          "evaluation_sha256": "ff08af11db08eee6eaa7421bb2ec027693454114e9e08dad498dca17d9c4684c",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g08/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/ddg_gd_box_poisson_000__g08/round_02/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1876,
+            "if_flip": true,
+            "source_slot": "g8:distal_000:ff",
+            "actual_reference_width_m": 0.14085802174547776,
+            "raw_width_m": 0.10282865166664124,
+            "requested_opening_m": 0.14085802174547776,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.4812013506889343,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.0168413628100227,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 71.51857952598948,
+          "training_record_sha256": "ec4d38133cec81c1750baeeb2d03f11aa4461a0b2b265aa1c2ee9f59a5698441",
+          "evaluation_sha256": "e4e2cb44bd58acdc08dc579f2dff69f8dae4f034725c0141ba08fe90211e9014",
+          "offered_indices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "id": "ddg_gd_box_poisson_000__g08",
+      "object_id": "ddg_gd_box_poisson_000",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/box/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_box_poisson_000",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_box_poisson_000/g8"
+    },
+    "core_can_baaa4b9538caa7f06e20028ed3cb196e__g01": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g01/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g01/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1801,
+            "if_flip": false,
+            "source_slot": "g1:distal_000:ff",
+            "actual_reference_width_m": 0.13583993319676196,
+            "raw_width_m": 0.08117829263210297,
+            "requested_opening_m": 0.13583993319676196,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.7215464115142822,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.13633569483724692,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 65.34971789305564,
+          "training_record_sha256": "7523d138ddd84a68d81fd9e909a035555804bdaf1df1f66db0e32193b79d9c74",
+          "evaluation_sha256": "6ab23c6788981ae3857738942f79356880a8333e8a912eca4a71a6ffade8134e",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g01/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g01/round_02/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1926,
+            "if_flip": true,
+            "source_slot": "g1:distal_000:ff",
+            "actual_reference_width_m": 0.13583993319676196,
+            "raw_width_m": 0.07911981642246246,
+            "requested_opening_m": 0.13450368791818618,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.03999999910593033,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.6949928402900696,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.13572565806855214,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 62.539522683946416,
+          "training_record_sha256": "22a74a3259c4739550fed6cea06e412c7cefe2be723524ee146551d312968b50",
+          "evaluation_sha256": "63ad334ebfcceedc06a7378b6586c39f3bc34fe55a55c6fcf560e4193a71d76f",
+          "offered_indices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "id": "core_can_baaa4b9538caa7f06e20028ed3cb196e__g01",
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/cylinder/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_can_baaa4b9538caa7f06e20028ed3cb196e/g1"
+    },
+    "core_can_baaa4b9538caa7f06e20028ed3cb196e__g06": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g06/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g06/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1801,
+            "if_flip": false,
+            "source_slot": "g6:distal_000:ff",
+            "actual_reference_width_m": 0.13051790938638097,
+            "raw_width_m": 0.08117829263210297,
+            "requested_opening_m": 0.13051790938638097,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.7215464115142822,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.13567455854108426,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 60.34344707604032,
+          "training_record_sha256": "2d4ffcf21e88e089ae12b79871f30f181a5210799062c39fe83d1398d66c1900",
+          "evaluation_sha256": "dc9c9f3fe25737432b7b6eb2d2048c35ea6bbb694e00773ea08bb5b74e0c9f2a",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g06/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g06/round_02/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1926,
+            "if_flip": true,
+            "source_slot": "g6:distal_000:ff",
+            "actual_reference_width_m": 0.13051790938638097,
+            "raw_width_m": 0.07911981642246246,
+            "requested_opening_m": 0.13051790938638097,
+            "width_expansion": 1.7,
+            "width_clamped": true,
+            "raw_depth_m": 0.03999999910593033,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.6949928402900696,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.13546714920377328,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 61.830554282991216,
+          "training_record_sha256": "daa83758349e31d1db5695515936f79d590685ffe6db151dddda09acefceacf9",
+          "evaluation_sha256": "738a8002fc869bfe10923ddc65d5de6da8b2d6cfbfb7ac3af051e0d8ae009777",
+          "offered_indices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "id": "core_can_baaa4b9538caa7f06e20028ed3cb196e__g06",
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/cylinder/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_can_baaa4b9538caa7f06e20028ed3cb196e/g6"
+    },
+    "core_can_baaa4b9538caa7f06e20028ed3cb196e__g08": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1801,
+            "if_flip": false,
+            "source_slot": "g8:distal_001:ff",
+            "actual_reference_width_m": 0.13715079911067782,
+            "raw_width_m": 0.08117829263210297,
+            "requested_opening_m": 0.13800309747457504,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.7215464115142822,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.13564910040615452,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 61.49899135401938,
+          "training_record_sha256": "e42070edd43412f3f4f4c3c07b82ed04a162381fe9d68a6a7bbbb806e7e1dc29",
+          "evaluation_sha256": "47546932bca35d6584cfa3c79b6172d0a32a3ba54984487ab6108402edd42887",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_02/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_02/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_02/plan_003",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 4,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_can_baaa4b9538caa7f06e20028ed3cb196e__g08/round_02/plan_004",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1932,
+            "if_flip": false,
+            "source_slot": "g8:distal_004:ff",
+            "actual_reference_width_m": 0.1257434194351459,
+            "raw_width_m": 0.07457301765680313,
+            "requested_opening_m": 0.12677413001656532,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.03999999910593033,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.6835399270057678,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.12075024385010247,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 92.1324328170158,
+          "training_record_sha256": "40cd0fa5b6ea9a47e414b1fab217c187ab7f862b8c5bd106a5d02261f6dac2c5",
+          "evaluation_sha256": "13c22cefacf54963c2af9979bfefaaa033e0ca87745f0fd2f28fb71ce345cd79",
+          "offered_indices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "id": "core_can_baaa4b9538caa7f06e20028ed3cb196e__g08",
+      "object_id": "core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/cylinder/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_can_baaa4b9538caa7f06e20028ed3cb196e",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_can_baaa4b9538caa7f06e20028ed3cb196e/g8"
+    },
+    "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1,
+            2
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 0,
+          "failure_reason": "executed_lift_failure",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_01/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_01/plan_002",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 520,
+            "if_flip": true,
+            "source_slot": "g1:distal_006:ff",
+            "actual_reference_width_m": 0.11231663962665078,
+            "raw_width_m": 0.06536463648080826,
+            "requested_opening_m": 0.11111988201737404,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.608156144618988,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.02727365495894587,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 71.4450390759157,
+          "training_record_sha256": "c521358e7d0ee8fd230a5ae3f99284b3fc968cab71bd496787bbd7f0ceb925ff",
+          "evaluation_sha256": "52b4fca1fa5bf85df9a855fa00c6b8718a9b866979218b84b70ae9ae7c918323",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_02",
+          "status": "no_full_arm_plan_in_declared_budget",
+          "terminal": true,
+          "consumed_indices": [
+            3,
+            4,
+            5,
+            6
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_02/plan_003",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 4,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_02/plan_004",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 5,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_02/plan_005",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 6,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01/round_02/plan_006",
+              "admitted": false,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": null,
+          "reported_trial_wall_s": 33.85693376197014,
+          "offered_indices": [
+            3,
+            4,
+            5,
+            6
+          ]
+        }
+      ],
+      "id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01",
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bottle/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bottle_e8b48d395d3d8744e53e6e0633163da8/g1"
+    },
+    "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_01",
+          "status": "no_full_arm_plan_in_declared_budget",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_01/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_01/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_01/plan_003",
+              "admitted": false,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": null,
+          "reported_trial_wall_s": 14.927373395999894,
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            4
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 4,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06/round_02/plan_004",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 520,
+            "if_flip": true,
+            "source_slot": "g6:distal_006:ff",
+            "actual_reference_width_m": 0.10969657667380836,
+            "raw_width_m": 0.06536463648080826,
+            "requested_opening_m": 0.11111988201737404,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.608156144618988,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.043893740263450526,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 59.88509953999892,
+          "training_record_sha256": "342941bafb1ca29d31ec9d4f345c478bd468b67448fba0b9e2ac121877e7fe10",
+          "evaluation_sha256": "c1244a99f779cb63274b6366e22aea95397add0b1676356d24d7b77efc902d6e",
+          "offered_indices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06",
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bottle/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bottle_e8b48d395d3d8744e53e6e0633163da8/g6"
+    },
+    "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_01",
+          "status": "no_full_arm_plan_in_declared_budget",
+          "terminal": true,
+          "consumed_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_01/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_01/plan_002",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 3,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_01/plan_003",
+              "admitted": false,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": null,
+          "reported_trial_wall_s": 28.150080826017074,
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            4,
+            5,
+            6
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 4,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_02/plan_004",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 5,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_02/plan_005",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 6,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08/round_02/plan_006",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 584,
+            "if_flip": false,
+            "source_slot": "g8:distal_017:ff",
+            "actual_reference_width_m": 0.07656587075962758,
+            "raw_width_m": 0.045493558049201965,
+            "requested_opening_m": 0.07733904868364334,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5259724855422974,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.1427458850591148,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 68.67034288402647,
+          "training_record_sha256": "df006511c2cfeae20279d44fc9044c6435673ef0d6845f99a4aa7e2818d73c61",
+          "evaluation_sha256": "e8efa0c1d8fdbc15d845c9274ad34f11bd937ce2535a8c0e5ef9e69771b7d044",
+          "offered_indices": [
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08",
+      "object_id": "core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bottle/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bottle_e8b48d395d3d8744e53e6e0633163da8",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bottle_e8b48d395d3d8744e53e6e0633163da8/g8"
+    },
+    "core_mug_5c7c4cb503a757147dbda56eabff0c47__g01": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_01",
+          "status": "execution_infrastructure_error",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": false,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 1,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 649,
+            "if_flip": false,
+            "source_slot": "g1:distal_012:ff",
+            "actual_reference_width_m": 0.08798960200325608,
+            "raw_width_m": 0.05183127522468567,
+            "requested_opening_m": 0.08811316788196563,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5147262811660767,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.03350611613840149,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 42.984766242909245,
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "historical_infrastructure_failure_acknowledged_on_resume": true
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g01/round_02/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1890,
+            "if_flip": false,
+            "source_slot": "g1:distal_017:ff",
+            "actual_reference_width_m": 0.06852496357199743,
+            "raw_width_m": 0.041353240609169006,
+            "requested_opening_m": 0.07030050903558731,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.004999999888241291,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.20054568350315094,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.02721814768443792,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 71.90907107491512,
+          "training_record_sha256": "83547422d7eef223a07f33e3f07c16129d57cf9d3659ad9b5fe010870e00973e",
+          "evaluation_sha256": "7d10a3b3d3bf8d163ec172e1d4dd4bc24c8ee88128aaa0fd81f6985cd4b6003e",
+          "offered_indices": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g01",
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/mug/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_mug_5c7c4cb503a757147dbda56eabff0c47/g1",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "collision_refinement_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+    },
+    "core_mug_5c7c4cb503a757147dbda56eabff0c47__g06": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 649,
+            "if_flip": false,
+            "source_slot": "g6:distal_012:ff",
+            "actual_reference_width_m": 0.08736326237660276,
+            "raw_width_m": 0.05183127522468567,
+            "requested_opening_m": 0.08811316788196563,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5147262811660767,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.03829328942866292,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 66.70907156704925,
+          "training_record_sha256": "1607ebfbe66885107c288dc76eb45310b675d900c6510867eaaf2eaa229afb78",
+          "evaluation_sha256": "75b26cc04fc5e1c6c6a35c3f6b97a2b3945ce1ef5c3828dbb7828c31a06ddddd",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_02",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            1,
+            2
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_02/plan_001",
+              "admitted": false,
+              "training_label": null
+            },
+            {
+              "index": 2,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g06/round_02/plan_002",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 113,
+            "if_flip": false,
+            "source_slot": "g6:distal_026:ff",
+            "actual_reference_width_m": 0.032829025092264486,
+            "raw_width_m": 0.019049521535634995,
+            "requested_opening_m": 0.03238418661057949,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.004999999888241291,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.3564896285533905,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.0497210916746684,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 72.71730283799116,
+          "training_record_sha256": "491e39b35058151c0deefb0ed7471bfe17cadca409cbabac2b78dbd7da3e6026",
+          "evaluation_sha256": "002d0364bf06ff4b9d0f317502f2c5499bcd388ad401c0219f57927c64188a4c",
+          "offered_indices": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g06",
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/mug/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_mug_5c7c4cb503a757147dbda56eabff0c47/g6",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "collision_refinement_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+    },
+    "core_mug_5c7c4cb503a757147dbda56eabff0c47__g08": {
+      "status": "running",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_01",
+          "status": "complete",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 2100,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 1,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": 1,
+          "failure_reason": "executed_lift_success",
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 649,
+            "if_flip": false,
+            "source_slot": "g8:distal_014:ff",
+            "actual_reference_width_m": 0.08731349784487562,
+            "raw_width_m": 0.05183127522468567,
+            "requested_opening_m": 0.08811316788196563,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5147262811660767,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.01836127878825239,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": 70.01648230198771,
+          "training_record_sha256": "f0207a37fb89d7a360626bed597615c075ed10689da3a5fb3708600f249eabe9",
+          "evaluation_sha256": "351bc766b06032d01b49ea09c1986502051f4fdc2dc721b8e97ed31a889fe400",
+          "offered_indices": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_02",
+          "status": "executing",
+          "terminal": false,
+          "consumed_indices": [
+            1
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 1,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_mug_5c7c4cb503a757147dbda56eabff0c47__g08/round_02/plan_001",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1890,
+            "if_flip": false,
+            "source_slot": "g8:distal_019:ff",
+            "actual_reference_width_m": 0.06980427396873937,
+            "raw_width_m": 0.041353240609169006,
+            "requested_opening_m": 0.07030050903558731,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.004999999888241291,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.20054568350315094,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.012825279865587597,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": null,
+          "evaluation_sha256": "90afbc7794f50c9d3ea18e020b254af157007e8da4b87228f7d6efef23c53a02"
+        }
+      ],
+      "id": "core_mug_5c7c4cb503a757147dbda56eabff0c47__g08",
+      "object_id": "core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/mug/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_mug_5c7c4cb503a757147dbda56eabff0c47",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_mug_5c7c4cb503a757147dbda56eabff0c47/g8",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/3e019daee5c55a2675b533a4830b459ef379559230a999351cf481140f84ac6e/repair.json",
+      "collision_refinement_sha256": "a9e093078c1171cdd6b41dec657534ca2e63d150dcb71cddc9d68d47052e4b15"
+    },
+    "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g01": {
+      "status": "no_candidate",
+      "rounds": [],
+      "id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g01",
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bowl/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/g1",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/207ac42ce5452a410ff059248136297e6638b1f33a4151719c963d25e4258f54/repair.json",
+      "collision_refinement_sha256": "870990f2bdec3f4cd4787f287fe5cc54be62166ffb56248a38a3b6b4b35442c0",
+      "failure_reason": "Frozen geometry pool has no candidate",
+      "training_label": null
+    },
+    "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06": {
+      "status": "complete",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06/round_01",
+          "status": "no_full_arm_plan_in_declared_budget",
+          "terminal": true,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": true,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 0,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 1,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06/round_01/plan_000",
+              "admitted": false,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": null,
+          "reported_trial_wall_s": 2.718043484026566,
+          "offered_indices": [
+            0
+          ]
+        }
+      ],
+      "id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g06",
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bowl/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/g6",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/207ac42ce5452a410ff059248136297e6638b1f33a4151719c963d25e4258f54/repair.json",
+      "collision_refinement_sha256": "870990f2bdec3f4cd4787f287fe5cc54be62166ffb56248a38a3b6b4b35442c0"
+    },
+    "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g08": {
+      "status": "no_candidate",
+      "rounds": [],
+      "id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc__g08",
+      "object_id": "core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/bowl/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/core_bowl_c8a4719150446e84664b3b9b23ddfcbc",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/core_bowl_c8a4719150446e84664b3b9b23ddfcbc/g8",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/207ac42ce5452a410ff059248136297e6638b1f33a4151719c963d25e4258f54/repair.json",
+      "collision_refinement_sha256": "870990f2bdec3f4cd4787f287fe5cc54be62166ffb56248a38a3b6b4b35442c0",
+      "failure_reason": "Frozen geometry pool has no candidate",
+      "training_label": null
+    },
+    "ddg_gd_banana_poisson_005__g01": {
+      "status": "running",
+      "rounds": [
+        {
+          "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_01",
+          "status": "executing",
+          "terminal": false,
+          "consumed_indices": [
+            0
+          ],
+          "physics_steps": 0,
+          "physics_steps_confirmed": false,
+          "actual_grasp_attempts": 0,
+          "unconfirmed_execution_attempts": 1,
+          "training_label": null,
+          "failure_reason": null,
+          "plans": [
+            {
+              "index": 0,
+              "returncode": 0,
+              "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v2/trials/ddg_gd_banana_poisson_005__g01/round_01/plan_000",
+              "admitted": true,
+              "training_label": null
+            }
+          ],
+          "selected_candidate": {
+            "source_candidate_index": 1698,
+            "if_flip": true,
+            "source_slot": "g1:distal_009:ff",
+            "actual_reference_width_m": 0.10013324904843725,
+            "raw_width_m": 0.05968175083398819,
+            "requested_opening_m": 0.10145897641777991,
+            "width_expansion": 1.7,
+            "width_clamped": false,
+            "raw_depth_m": 0.029999999329447746,
+            "additional_depth_index": 0,
+            "additional_depth_m": 0.0,
+            "cgr_score": 0.5289036631584167,
+            "score_source": "CGR antipodal score; no Boya learned head",
+            "jaw_assignment": {
+              "thumb": "th",
+              "opponent": "ff"
+            },
+            "geometry": {
+              "ok": true,
+              "minimum_height_m": 0.0037750341300234885,
+              "approach_samples": 21,
+              "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+            }
+          },
+          "reported_trial_wall_s": null
+        }
+      ],
+      "id": "ddg_gd_banana_poisson_005__g01",
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/banana/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_banana_poisson_005",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_banana_poisson_005/g1",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+      "collision_refinement_sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+    },
+    "ddg_gd_banana_poisson_005__g06": {
+      "status": "pending",
+      "rounds": [],
+      "id": "ddg_gd_banana_poisson_005__g06",
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/banana/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_banana_poisson_005",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_banana_poisson_005/g6",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+      "collision_refinement_sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+    },
+    "ddg_gd_banana_poisson_005__g08": {
+      "status": "pending",
+      "rounds": [],
+      "id": "ddg_gd_banana_poisson_005__g08",
+      "object_id": "ddg_gd_banana_poisson_005",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/banana/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_banana_poisson_005",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_banana_poisson_005/g8",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/a8ba8ad8f80d8fdc07c8f11e2ebf393dfa22c17c5ffd01f81e0a4c77a2b5b129/repair.json",
+      "collision_refinement_sha256": "a26af449847fb0519dafd7c3b68feccfa02bd29d0cf9abc2a72e160c88e55d93"
+    },
+    "ddg_gd_rubber_duck_poisson_000__g01": {
+      "status": "pending",
+      "rounds": [],
+      "id": "ddg_gd_rubber_duck_poisson_000__g01",
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 1,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/irregular/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_rubber_duck_poisson_000",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_rubber_duck_poisson_000/g1",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/acf764a7791106809d202104a38c64eeb894f09effa0410fd30af7b6458f4f1c/repair.json",
+      "collision_refinement_sha256": "6fe7a156f6886b2e79b9a856f3e065a523a6b2e6a0c75fa5f58926906baceff1"
+    },
+    "ddg_gd_rubber_duck_poisson_000__g06": {
+      "status": "pending",
+      "rounds": [],
+      "id": "ddg_gd_rubber_duck_poisson_000__g06",
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 6,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/irregular/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_rubber_duck_poisson_000",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_rubber_duck_poisson_000/g6",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/acf764a7791106809d202104a38c64eeb894f09effa0410fd30af7b6458f4f1c/repair.json",
+      "collision_refinement_sha256": "6fe7a156f6886b2e79b9a856f3e065a523a6b2e6a0c75fa5f58926906baceff1"
+    },
+    "ddg_gd_rubber_duck_poisson_000__g08": {
+      "status": "pending",
+      "rounds": [],
+      "id": "ddg_gd_rubber_duck_poisson_000__g08",
+      "object_id": "ddg_gd_rubber_duck_poisson_000",
+      "gesture_id": 8,
+      "observation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/observations/irregular/observation.json",
+      "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/representations/ddg_gd_rubber_duck_poisson_000",
+      "pool": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/pools/ddg_gd_rubber_duck_poisson_000/g8",
+      "collision_refinement": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_native_object_cooking_v1/acf764a7791106809d202104a38c64eeb894f09effa0410fd30af7b6458f4f1c/repair.json",
+      "collision_refinement_sha256": "6fe7a156f6886b2e79b9a856f3e065a523a6b2e6a0c75fa5f58926906baceff1"
+    }
+  },
+  "continuation": {
+    "parent_run": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1",
+    "prepared_sha256": "cd8a59dd839a12f213caff627d709c276e528fb7e8415e8fed69b63d2dbaa8ee",
+    "progress_sha256": "91f037e3c89b95497e285a55a0dd492ba244d130307b6b6180f918088adbc138",
+    "source_revision": "9886d7a9d8610c745d149d4c59c43953b25c9b81",
+    "parent_final_cost": {
+      "arm_prepare_calls": 59,
+      "actual_grasp_attempts": 19,
+      "unconfirmed_execution_attempts": 1,
+      "physics_steps": 39900,
+      "training_labels": 19,
+      "positive_labels": 16,
+      "negative_labels": 3,
+      "null_trials": 6,
+      "infrastructure_failure_trials": 1,
+      "no_candidate_jobs": 0,
+      "zero_step_trials": 5,
+      "no_arm_admission_trials": 5,
+      "jobs_complete": 12,
+      "total_jobs": 24,
+      "network_forward_dispatches": 0,
+      "geometry_dispatches": 0,
+      "reported_trial_wall_s_sum": 1578.3039876138791,
+      "wall_sum_is_not_parallel_end_to_end": true
+    }
+  },
+  "inherited_round_keys": [
+    [
+      "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01",
+      0
+    ],
+    [
+      "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g01",
+      1
+    ],
+    [
+      "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06",
+      0
+    ],
+    [
+      "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g06",
+      1
+    ],
+    [
+      "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08",
+      0
+    ],
+    [
+      "core_bottle_e8b48d395d3d8744e53e6e0633163da8__g08",
+      1
+    ],
+    [
+      "core_can_baaa4b9538caa7f06e20028ed3cb196e__g01",
+      0
+    ],
+    [
+      "core_can_baaa4b9538caa7f06e20028ed3cb196e__g01",
+      1
+    ],
+    [
+      "core_can_baaa4b9538caa7f06e20028ed3cb196e__g06",
+      0
+    ],
+    [
+      "core_can_baaa4b9538caa7f06e20028ed3cb196e__g06",
+      1
+    ],
+    [
+      "core_can_baaa4b9538caa7f06e20028ed3cb196e__g08",
+      0
+    ],
+    [
+      "core_can_baaa4b9538caa7f06e20028ed3cb196e__g08",
+      1
+    ],
+    [
+      "core_mug_5c7c4cb503a757147dbda56eabff0c47__g01",
+      0
+    ],
+    [
+      "ddg_gd_box_poisson_000__g01",
+      0
+    ],
+    [
+      "ddg_gd_box_poisson_000__g01",
+      1
+    ],
+    [
+      "ddg_gd_box_poisson_000__g06",
+      0
+    ],
+    [
+      "ddg_gd_box_poisson_000__g06",
+      1
+    ],
+    [
+      "ddg_gd_box_poisson_000__g08",
+      0
+    ],
+    [
+      "ddg_gd_box_poisson_000__g08",
+      1
+    ],
+    [
+      "ddg_ycb_055_baseball__g01",
+      0
+    ],
+    [
+      "ddg_ycb_055_baseball__g01",
+      1
+    ],
+    [
+      "ddg_ycb_055_baseball__g06",
+      0
+    ],
+    [
+      "ddg_ycb_055_baseball__g06",
+      1
+    ],
+    [
+      "ddg_ycb_055_baseball__g08",
+      0
+    ],
+    [
+      "ddg_ycb_055_baseball__g08",
+      1
+    ]
+  ],
+  "cost": {
+    "arm_prepare_calls": 67,
+    "actual_grasp_attempts": 23,
+    "unconfirmed_execution_attempts": 2,
+    "physics_steps": 48300,
+    "training_labels": 23,
+    "positive_labels": 20,
+    "negative_labels": 3,
+    "null_trials": 7,
+    "infrastructure_failure_trials": 2,
+    "zero_step_trials": 6,
+    "no_arm_admission_trials": 6,
+    "reported_trial_wall_s_sum": 1862.373958879849,
+    "wall_sum_is_not_parallel_end_to_end": true,
+    "no_candidate_jobs": 2,
+    "jobs_complete": 17,
+    "total_jobs": 24,
+    "network_forward_dispatches": 0,
+    "geometry_dispatches": 0
+  },
+  "inherited_cost": {
+    "arm_prepare_calls": 59,
+    "actual_grasp_attempts": 19,
+    "unconfirmed_execution_attempts": 1,
+    "physics_steps": 39900,
+    "training_labels": 19,
+    "positive_labels": 16,
+    "negative_labels": 3,
+    "null_trials": 6,
+    "infrastructure_failure_trials": 1,
+    "zero_step_trials": 5,
+    "no_arm_admission_trials": 5,
+    "reported_trial_wall_s_sum": 1578.3039876138791,
+    "wall_sum_is_not_parallel_end_to_end": true
+  },
+  "segment_cost": {
+    "arm_prepare_calls": 8,
+    "actual_grasp_attempts": 4,
+    "unconfirmed_execution_attempts": 1,
+    "physics_steps": 8400,
+    "training_labels": 4,
+    "positive_labels": 4,
+    "negative_labels": 0,
+    "null_trials": 1,
+    "infrastructure_failure_trials": 1,
+    "zero_step_trials": 1,
+    "no_arm_admission_trials": 1,
+    "reported_trial_wall_s_sum": 284.0699712659698,
+    "wall_sum_is_not_parallel_end_to_end": true
+  },
+  "resumed_at": "2026-11-05T07:46:21.330893+00:00",
+  "pause_reasons": []
+}

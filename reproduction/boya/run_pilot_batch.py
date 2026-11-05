@@ -12,11 +12,14 @@ it never renders, runs a network or builds geometry. Those stages run once per
 object outside this CPU dispatcher (geometry preparation must be serialized).
 --stage execute uses only those pools and run_first_trial.py. Success does not
 stop round two. Explicit infrastructure failures stop new dispatch; live trials
-finish safely. Resume acknowledges retained dead rounds without rerunning them.
+finish safely. Resume acknowledges retained dead rounds without rerunning them. A versioned
+continuation may inherit a stopped parent ledger into a separate output run;
+parent results stay read-only and historical/local costs are reported separately.
 Progress/cost are atomic JSON.
 """
 from __future__ import annotations
 import argparse
+import copy
 from concurrent.futures import ThreadPoolExecutor, wait, FIRST_COMPLETED
 from datetime import datetime, timezone
 import fcntl
@@ -124,6 +127,23 @@ def pending_indices(selected, consumed, rounds_done, limits):
     return [int(i) for i in selected if int(i) not in set(consumed)][:max(0, min(left, limits['max_arm_per_trial']))]
 
 
+def round_cost(rounds):
+    """Counts only the supplied records; inherited and local ledgers stay separate."""
+    return dict(arm_prepare_calls=sum(len(r.get('consumed_indices',[])) for r in rounds),
+        actual_grasp_attempts=sum(r.get('actual_grasp_attempts',0) for r in rounds),
+        unconfirmed_execution_attempts=sum(r.get('unconfirmed_execution_attempts',0) for r in rounds),
+        physics_steps=sum(r.get('physics_steps',0) for r in rounds),
+        training_labels=sum(r.get('training_label') is not None for r in rounds),
+        positive_labels=sum(r.get('training_label')==1 for r in rounds),
+        negative_labels=sum(r.get('training_label')==0 for r in rounds),
+        null_trials=sum(r.get('terminal',False) and r.get('training_label') is None for r in rounds),
+        infrastructure_failure_trials=sum(infrastructure_failure(r) for r in rounds),
+        zero_step_trials=sum(r.get('terminal',False) and r.get('physics_steps_confirmed') is True and r.get('physics_steps')==0 for r in rounds),
+        no_arm_admission_trials=sum(r.get('status')=='no_full_arm_plan_in_declared_budget' for r in rounds),
+        reported_trial_wall_s_sum=sum(r.get('reported_trial_wall_s') or 0 for r in rounds),
+        wall_sum_is_not_parallel_end_to_end=True)
+
+
 class Pilot:
     def __init__(self, protocol_path, run_dir, backend_config, calibration, workers=2, root=None):
         self.root = Path(root or Path(__file__).resolve().parent.parent.parent).resolve()
@@ -132,6 +152,8 @@ class Pilot:
         self.backend = resolve(backend_config or self.protocol['backend_config'], self.protocol_path.parent)
         self.calibration = resolve(calibration or self.protocol['calibration'], self.protocol_path.parent)
         if not 1 <= workers <= 2: raise ValueError('CPU worker concurrency is limited to 1..2')
+        self.continuation = self.protocol.get('continuation')
+        self.inherited_rounds = set()
         self.workers = workers; self.lock = threading.RLock(); self.stop = threading.Event()
         self.limits = {k: self.protocol.get('limits', {}).get(k, v) for k,v in CAPS.items()}
         for k,v in self.limits.items():
@@ -156,6 +178,12 @@ class Pilot:
                     observation=str(resolve(obj.get('observation', str(self.run/'observations'/oid/'observation.json')), self.protocol_path.parent)),
                     representation_dir=str(resolve(obj.get('representation_dir',str(self.run/'representations'/oid)), self.protocol_path.parent)),
                     pool=str(resolve(directory, self.protocol_path.parent))))
+                repair = obj.get('collision_refinement')
+                if repair:
+                    value = repair.get('path') if isinstance(repair,dict) else repair
+                    self.jobs[-1]['collision_refinement'] = str(resolve(value,self.protocol_path.parent))
+                    if isinstance(repair,dict) and repair.get('sha256'):
+                        self.jobs[-1]['collision_refinement_sha256'] = repair['sha256']
         if len({j['id'] for j in self.jobs}) != len(self.jobs): raise ValueError('Duplicate object/gesture jobs')
         self.first = self.root / 'reproduction/boya/run_first_trial.py'
         self.progress = {'schema':'anydex_boya_pilot_progress_v1','protocol_sha256':sha(self.protocol_path),
@@ -163,6 +191,101 @@ class Pilot:
             'max_cpu_workers':workers,'network_forward_dispatches':0,'geometry_dispatches':0,
             'scope':'Frozen-pool Isaac training collection; independent scenes, not same-scene regrasp',
             'jobs':{j['id']:dict(status='pending', rounds=[], **j) for j in self.jobs}}
+
+
+    def continuation_inputs(self, jobs, bind):
+        """Validate a stopped parent, preserving original source via its Git commit.
+
+        Updated source is a new protocol segment. Historical Python inputs may
+        be verified against their declared commit; assets/results must retain
+        their original bytes. Nothing is written under the parent run.
+        """
+        spec=self.continuation
+        if not spec:return None
+        parent=resolve(spec['parent_run'],self.protocol_path.parent)
+        if parent==self.run or parent in self.run.parents or self.run in parent.parents:
+            raise ValueError('Continuation needs a separate sibling output run')
+        parent.relative_to(self.root/'outputs')
+        pp=parent/'PREPARED.json';pr=parent/'progress.json'
+        bind(pp,spec['prepared_sha256']);bind(pr,spec['progress_sha256'])
+        old=read(pp);progress=read(pr)
+        if old['protocol_sha256']!=progress['protocol_sha256']:
+            raise ValueError('Parent protocol/PREPARED/progress disagree')
+        if progress['phase'] not in ('paused_infrastructure','blocked_frozen_input','complete_with_infrastructure_errors','complete'):
+            raise ValueError('Parent is not safely stopped')
+        revision=spec['source_revision']
+        if not isinstance(revision,str) or not 7<=len(revision)<=40 or any(c not in '0123456789abcdefABCDEF' for c in revision):
+            raise ValueError('Explicit parent source commit required')
+        commit=subprocess.check_output(['git','rev-parse','--verify',revision+'^{commit}'],cwd=self.root,text=True).strip()
+        archived={}
+        for path,expected in old['frozen_inputs'].items():
+            path=Path(path)
+            if sha(path)==expected:continue
+            if not path.is_relative_to(self.root) or path.suffix!='.py':
+                raise ValueError('Parent non-source frozen input changed: '+str(path))
+            relative=path.relative_to(self.root).as_posix()
+            raw=subprocess.check_output(['git','show',commit+':'+relative],cwd=self.root)
+            if hashlib.sha256(raw).hexdigest()!=expected:
+                raise ValueError('Parent source differs from declared historical commit: '+relative)
+            archived[str(path)]=dict(revision=commit,git_path=relative,sha256=expected,
+                                     current_segment_sha256=sha(path))
+        oldjobs={j['id']:j for j in old['jobs']}
+        if set(oldjobs)!={j['id'] for j in jobs} or self.limits!=old['limits']:
+            raise ValueError('Continuation changed fixed jobs or budgets')
+        inherited={};completed=[]
+        for job in jobs:
+            previous=oldjobs[job['id']]
+            for key in ['object_id','gesture_id','observation','representation_dir','pool','selected_indices','pool_status']:
+                if job[key]!=previous[key]:raise ValueError('Continuation changed source pool/observation: '+key)
+            pj=progress['jobs'][job['id']];rows=pj.get('rounds',[])
+            if len(rows)>self.limits['max_rounds'] or any(not r.get('terminal') for r in rows):
+                raise ValueError('Parent contains nonterminal rounds; reconcile before continuation')
+            consumed=[]
+            for i,row in enumerate(rows):
+                directory=Path(row['directory']).resolve();directory.relative_to(parent/'trials')
+                receipt=read(directory/'process.json')
+                if (receipt and group_live(receipt)) or (not receipt and find_trial_process(directory,self.first)):
+                    raise ValueError('Parent trial process remains alive; no new dispatch')
+                used=row.get('consumed_indices',[])
+                if len(used)>self.limits['max_arm_per_trial'] or len(set(used))!=len(used) or set(used)&set(consumed) or not set(used)<=set(job['selected_indices']):
+                    raise ValueError('Parent consumed indices violate frozen budget')
+                consumed+=used
+                required=['REQUEST.json','BATCH_RESULT.json','trial_summary.json']
+                for name in required:bind(directory/name)
+                optional=['process.json','trial_binding.json','training_record.json','bound_evaluation.json',
+                    'execution/evaluation.json','execution/trace.npz','execution/native_audit.json',
+                    'execution/initial_state_audit.json','execution/initial_object_restore.json']
+                for name in optional:
+                    if (directory/name).exists():bind(directory/name)
+                for pattern in ['plan_*/plan.json','plan_*/commands.npz','plan_*/admission_failure.json','prepare_*.log']:
+                    for path in sorted(directory.glob(pattern)):bind(path)
+            if len(consumed)>self.limits['max_arm_per_object_gesture'] or sum(r.get('actual_grasp_attempts',0)+r.get('unconfirmed_execution_attempts',0) for r in rows)>self.limits['max_actual_per_object_gesture']:
+                raise ValueError('Parent cumulative budget exceeded')
+            inherited[job['id']]=copy.deepcopy(rows)
+            if pj['status'] in ('complete','no_candidate'):completed.append(job['id'])
+        audits=list((parent/'audits').glob('*.json')) if (parent/'audits').exists() else []
+        audits += [resolve(p,self.protocol_path.parent) for p in spec.get('audit_paths',[])]
+        for path in audits:bind(path)
+        return dict(parent_run=str(parent),prepared_sha256=spec['prepared_sha256'],
+            progress_sha256=spec['progress_sha256'],parent_protocol_sha256=old['protocol_sha256'],
+            source_revision=commit,historical_source_verification=archived,
+            inherited_rounds=inherited,inherited_complete_jobs=completed,
+            parent_final_cost=copy.deepcopy(progress['cost']),audit_paths=[str(p) for p in audits],
+            boundary='Read-only parent results; current source is an explicitly different protocol segment')
+
+    def seed_continuation(self, prepared):
+        lineage=prepared.get('continuation')
+        if not lineage:return
+        self.inherited_rounds={(jid,i) for jid,rows in lineage['inherited_rounds'].items() for i in range(len(rows))}
+        self.progress['continuation']=dict(parent_run=lineage['parent_run'],
+            prepared_sha256=lineage['prepared_sha256'],progress_sha256=lineage['progress_sha256'],
+            source_revision=lineage['source_revision'],parent_final_cost=lineage['parent_final_cost'])
+        self.progress['inherited_round_keys']=[[j,i] for j,i in sorted(self.inherited_rounds)]
+        for jid,rows in lineage['inherited_rounds'].items():
+            self.progress['jobs'][jid]['rounds']=copy.deepcopy(rows)
+            if jid in lineage['inherited_complete_jobs']:
+                self.progress['jobs'][jid]['status']='complete'
+            elif rows:self.progress['jobs'][jid]['status']='continuation_pending'
 
     def freeze_inputs(self):
         inputs = {}; jobs = []; shared = [self.protocol_path, self.backend, self.calibration, self.root/'robot_dh3.py']
@@ -199,6 +322,9 @@ class Pilot:
             paths,n = object_cache[key]; job_paths = shared_paths + paths
             gen = read(pool/'generation.json'); empty = read(pool/'no_candidate.json')
             item = dict(job, input_paths=list(job_paths))
+            if job.get('collision_refinement'):
+                if '--collision-refinement' not in self.first.read_text():raise ValueError('Trial wrapper lacks object refinement API')
+                item['input_paths'].append(bind(job['collision_refinement'],job.get('collision_refinement_sha256')))
             if gen is None and empty is not None:
                 item.update(pool_status='no_candidate', selected_indices=[])
                 item['input_paths'].append(bind(pool/'no_candidate.json'))
@@ -222,19 +348,23 @@ class Pilot:
                     if len(z['proposal_q']) != len(records): raise ValueError('Pool records/commands differ')
                 item.update(pool_status='ready', selected_indices=selected)
             jobs.append(item)
-        return dict(schema='anydex_boya_pilot_prepared_v1',protocol_sha256=sha(self.protocol_path),
+        lineage=self.continuation_inputs(jobs,bind)
+        result=dict(schema='anydex_boya_pilot_prepared_v1',protocol_sha256=sha(self.protocol_path),
             backend_config=str(self.backend),calibration=str(self.calibration),limits=self.limits,
             frozen_inputs=inputs,jobs=jobs,shared_input_objects=len(object_cache),network_forward_dispatches=0,
             geometry_dispatches=0,prepared_at=now())
+        if lineage:result['continuation']=lineage
+        return result
 
     def prepare(self):
         prepared = self.freeze_inputs(); path = self.run/'PREPARED.json'
         existing = read(path)
         if existing:
-            for key in ['protocol_sha256','backend_config','calibration','limits','frozen_inputs','jobs']:
-                if existing[key] != prepared[key]: raise ValueError('Prepared batch inputs changed: '+key)
+            for key in ['protocol_sha256','backend_config','calibration','limits','frozen_inputs','jobs','continuation']:
+                if existing.get(key) != prepared.get(key): raise ValueError('Prepared batch inputs changed: '+key)
             return existing
         self.run.mkdir(parents=True,exist_ok=True); atomic(path,prepared)
+        self.seed_continuation(prepared)
         self.progress['phase']='prepared'; self.publish(); return prepared
 
     def request_stop(self, kind, reason, job_id=None):
@@ -255,22 +385,17 @@ class Pilot:
         with self.lock:
             rounds=[r for j in self.progress['jobs'].values() for r in j.get('rounds',[])]
             self.progress['updated_at']=now()
-            self.progress['cost']=dict(arm_prepare_calls=sum(len(r.get('consumed_indices',[])) for r in rounds),
-                actual_grasp_attempts=sum(r.get('actual_grasp_attempts',0) for r in rounds),
-                unconfirmed_execution_attempts=sum(r.get('unconfirmed_execution_attempts',0) for r in rounds),
-                physics_steps=sum(r.get('physics_steps',0) for r in rounds),
-                training_labels=sum(r.get('training_label') is not None for r in rounds),
-                positive_labels=sum(r.get('training_label')==1 for r in rounds),
-                negative_labels=sum(r.get('training_label')==0 for r in rounds),
-                null_trials=sum(r.get('terminal',False) and r.get('training_label') is None for r in rounds),
-                infrastructure_failure_trials=sum(infrastructure_failure(r) for r in rounds),
+            self.progress['cost']=dict(round_cost(rounds),
                 no_candidate_jobs=sum(j['status']=='no_candidate' for j in self.progress['jobs'].values()),
-                zero_step_trials=sum(r.get('terminal',False) and r.get('physics_steps_confirmed') is True and r.get('physics_steps')==0 for r in rounds),
-                no_arm_admission_trials=sum(r.get('status')=='no_full_arm_plan_in_declared_budget' for r in rounds),
                 jobs_complete=sum(j['status'] in ['complete','no_candidate'] for j in self.progress['jobs'].values()),
-                total_jobs=len(self.jobs),network_forward_dispatches=0,geometry_dispatches=0,
-                reported_trial_wall_s_sum=sum(r.get('reported_trial_wall_s') or 0 for r in rounds),
-                wall_sum_is_not_parallel_end_to_end=True)
+                total_jobs=len(self.jobs),network_forward_dispatches=0,geometry_dispatches=0)
+            if self.continuation:
+                old=[];local=[]
+                for jid,job in self.progress['jobs'].items():
+                    for i,row in enumerate(job.get('rounds',[])):
+                        (old if (jid,i) in self.inherited_rounds else local).append(row)
+                self.progress['inherited_cost']=round_cost(old)
+                self.progress['segment_cost']=round_cost(local)
             atomic(self.run/'progress.json',self.progress)
 
     def trial_snapshot(self, directory, terminal=False):
@@ -349,6 +474,8 @@ class Pilot:
                 '--source-npz',str(Path(job['representation_dir'])/'raw_camera_candidates.npz'),
                 '--max-arm-plans',str(self.limits['max_arm_per_trial']),
                 '--candidate-indices',*[str(i) for i in indices]]
+            if job.get('collision_refinement'):
+                argv += ['--collision-refinement',job['collision_refinement']]
             env=os.environ.copy();env.update(PYTHONDONTWRITEBYTECODE='1',OPENBLAS_NUM_THREADS='1',
                 MKL_NUM_THREADS='1',OMP_NUM_THREADS='4',CANONDEX_COLLISION_PARTITION_CACHE=str(self.root/'outputs/boya_collision_partition_cache'))
             with (directory/'runner.log').open('xb') as log:
@@ -384,6 +511,14 @@ class Pilot:
         for round_index in range(self.limits['max_rounds']):
             if self.stop.is_set():
                 self.progress['jobs'][jid]['status']='paused_after_current_trial';self.publish();return
+            if (jid,round_index) in self.inherited_rounds:
+                result=copy.deepcopy(self.progress['jobs'][jid]['rounds'][round_index])
+                if set(result['consumed_indices'])&set(consumed):raise ValueError('Inherited round overlaps prior consumed indices')
+                consumed+=result['consumed_indices']
+                if infrastructure_failure(result):
+                    result['historical_infrastructure_failure_acknowledged_on_resume']=True
+                    self.update_round(jid,round_index,result)
+                continue
             existing=self.run/'trials'/jid/f'round_{round_index+1:02d}'
             request=read(existing/'REQUEST.json')
             indices=request['candidate_indices'] if request else pending_indices(job['selected_indices'],consumed,round_index,self.limits)
@@ -409,10 +544,24 @@ class Pilot:
         self.progress['jobs'][jid]['status']='complete';self.publish()
 
     def execute(self, prepared):
+        lineage=prepared.get('continuation')
+        if not lineage:return self.execute_segment(prepared)
+        # Lock an existing parent file read-only; never create/rewrite parent artifacts.
+        parent=Path(lineage['parent_run'])
+        with (parent/'.batch.lock').open('r') as lock:
+            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+            if sha(parent/'PREPARED.json')!=lineage['prepared_sha256'] or sha(parent/'progress.json')!=lineage['progress_sha256']:
+                raise ValueError('Parent ledger changed after continuation freeze')
+            self.verify(prepared)
+            return self.execute_segment(prepared)
+
+    def execute_segment(self, prepared):
         previous=read(self.run/'progress.json')
         if previous:
             if previous['protocol_sha256']!=prepared['protocol_sha256']:raise ValueError('Resume protocol changed')
             self.progress=previous
+        lineage=prepared.get('continuation')
+        self.inherited_rounds={(jid,i) for jid,rows in (lineage['inherited_rounds'].items() if lineage else []) for i in range(len(rows))}
         self.stop.clear()
         if previous and previous.get('pause_reasons'):
             self.progress.setdefault('pause_history',[]).append(dict(
