@@ -1,0 +1,269 @@
+{
+  "schema": "anydex_boya_two_trials_independent_audit_v1",
+  "all_checks_passed": true,
+  "checks": {
+    "first_binding_digest_and_source_SHA": {
+      "passed": true
+    },
+    "first_raw_row_and_2261_feature_identity": {
+      "passed": true
+    },
+    "first_original_canonical480_and_executed_flip": {
+      "passed": true
+    },
+    "first_palm_aperture_pose_depth_binding": {
+      "passed": true
+    },
+    "first_actual_trace_targets_equal_commands_and_mimics": {
+      "passed": true,
+      "detail": {
+        "steps": 2100,
+        "joint_targets": [
+          2100,
+          28
+        ],
+        "max_error_rad": 0.0
+      }
+    },
+    "first_all_command_plan_evaluation_trace_SHA_bound": {
+      "passed": true
+    },
+    "first_saved_outcome_independently_recomputed": {
+      "passed": true,
+      "detail": {
+        "recomputed_final_rise_m": -0.0019313916563987732,
+        "recomputed_bottom_clearance_m": 7.35905204100884e-08,
+        "last_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "last_bilateral": false,
+        "saved_seven_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true,
+          "palm_tracking": true,
+          "no_arm_object_support": true,
+          "fixed_base": true,
+          "complete_execution": true
+        },
+        "label": 0
+      }
+    },
+    "first_unchanged_sources_no_runtime_pose_writes": {
+      "passed": true
+    },
+    "second_binding_digest_and_source_SHA": {
+      "passed": true
+    },
+    "second_raw_row_and_2261_feature_identity": {
+      "passed": true
+    },
+    "second_original_canonical480_and_executed_flip": {
+      "passed": true
+    },
+    "second_palm_aperture_pose_depth_binding": {
+      "passed": true
+    },
+    "second_actual_trace_targets_equal_commands_and_mimics": {
+      "passed": true,
+      "detail": {
+        "steps": 2100,
+        "joint_targets": [
+          2100,
+          28
+        ],
+        "max_error_rad": 0.0
+      }
+    },
+    "second_all_command_plan_evaluation_trace_SHA_bound": {
+      "passed": true
+    },
+    "second_saved_outcome_independently_recomputed": {
+      "passed": true,
+      "detail": {
+        "recomputed_final_rise_m": 0.10320108570158482,
+        "recomputed_bottom_clearance_m": 0.10259367336256804,
+        "last_finger_loads_n": [
+          12.09718312532641,
+          4.1135382652282715,
+          4.018856525421143,
+          3.8491690158843994,
+          0.0
+        ],
+        "last_bilateral": true,
+        "saved_seven_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true,
+          "palm_tracking": true,
+          "no_arm_object_support": true,
+          "fixed_base": true,
+          "complete_execution": true
+        },
+        "label": 1
+      }
+    },
+    "second_unchanged_sources_no_runtime_pose_writes": {
+      "passed": true
+    },
+    "same_frozen_50mm_cube_same_observation_and_CGR_predictions": {
+      "passed": true
+    },
+    "plan_001_preexecution_rejection_zero_steps_no_label": {
+      "passed": true
+    },
+    "plan_002_preexecution_rejection_zero_steps_no_label": {
+      "passed": true
+    },
+    "two_real_attempts_4200steps_two_labels_zero_and_one": {
+      "passed": true
+    },
+    "previous_first_trial_negative_artifacts_unchanged": {
+      "passed": true
+    }
+  },
+  "actual_trials": [
+    {
+      "name": "first",
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1",
+      "pool_index": 0,
+      "source_CGR_row": 561,
+      "if_flip": false,
+      "aperture": "g1:distal_007:ff",
+      "label": 0,
+      "actual_steps": 2100,
+      "recomputed_reference_rise_m": -0.0019313916563987732,
+      "all_original_gates": true,
+      "observation_sha": "b064a77285c66f3ce0a0445c7a44f1fc0a9a85c2d71a3664f8b50cf286540769",
+      "raw_candidates_sha": "03753b7b52fb1b04007322f61b3210293dd8a64cb993cdf478a75b99dafa36c1",
+      "object_mesh_sha": "8f281ccbdfeee01a963fd93f901b5258f52cdf54f6ccc980e4dba4c77ad4a9eb",
+      "world_T_object": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.75
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.1
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.025
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "name": "second",
+      "directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1",
+      "pool_index": 3,
+      "source_CGR_row": 1346,
+      "if_flip": true,
+      "aperture": "g1:distal_009:ff",
+      "label": 1,
+      "actual_steps": 2100,
+      "recomputed_reference_rise_m": 0.10320108570158482,
+      "all_original_gates": true,
+      "observation_sha": "b064a77285c66f3ce0a0445c7a44f1fc0a9a85c2d71a3664f8b50cf286540769",
+      "raw_candidates_sha": "03753b7b52fb1b04007322f61b3210293dd8a64cb993cdf478a75b99dafa36c1",
+      "object_mesh_sha": "8f281ccbdfeee01a963fd93f901b5258f52cdf54f6ccc980e4dba4c77ad4a9eb",
+      "world_T_object": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.75
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.1
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.025
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "preexecution_rejections": [
+    {
+      "pool_index": 1,
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "physics_steps": 0,
+      "training_label": null
+    },
+    {
+      "pool_index": 2,
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "physics_steps": 0,
+      "training_label": null
+    }
+  ],
+  "totals": {
+    "actual_grasp_attempts": 2,
+    "physics_steps": 4200,
+    "labels": [
+      0,
+      1
+    ],
+    "positive_labels": 1,
+    "negative_labels": 1,
+    "zero_step_arm_rejections": 2
+  },
+  "boundaries": [
+    "Only one 50mm synthetic cube and one frozen Isaac RTX observation; not object generalization, a representative success-rate evaluation, or success after training. No Boya learned head or training update was used.",
+    "The two actual attempts are separate executions initialized from the declared scene, not same-scene continuous feedback regrasp. The second reuses saved RGB-D/CGR and advances the declared four-candidate geometry pool; candidates1/2 were rejected before execution and candidate3 executed once.",
+    "The labels use the unchanged native Isaac tabletop-lift evaluator, not the original paper real-world transport-to-bin definition.",
+    "No physics, networks, geometry admission, planning or training was run by this independent audit."
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/trial_summary.json": "38fe3ecc242e146424e4e03f65821f87f1fac560bae73677fc0557e6e6cdb27e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/trial_binding.json": "a794b67692b0d9c1cb9bbf0626da1cc8274b32fc18f011d301d0442c686b31a0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/training_record.json": "3054c9fff29e788da22dfebb516215d8c70779fda39ad5c421f6e4e7b7d74ca0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/plan_000/plan.json": "fff1bc9b6611e2fa0afdb5dab298b78336b0ed69a902dc6bf224ed797cbc0db2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/plan_000/commands.npz": "fd5c815e106c6c2ae4bd97221d55171f4ccdbc81e09c9f8b9b8c4de48e2a9f2e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/execution/evaluation.json": "4b307b0ba470e51726ec2bb41311ffa75a3270ea18f977f0b339cce2cee0c0be",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/execution/trace.npz": "e50121da233b2e8d6d6b8746c7f80f52f8b142a9270b69b2372119841909aae9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/trial_summary.json": "cce7106cf5beeb3c8b1543f4e696e000944298cceb4b6f1fd96895d0aa75063a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/trial_binding.json": "ac81bbfea6d5cda4c6f311c2b96ed101055043931fe4e2af280090147a192b55",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/training_record.json": "e47265fb81ffaa402f0134edd10b346d062f49bf1ea1f3e983e88fd1e2f3cb08",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/plan_003/plan.json": "9b10b747b7895fc77962d1ae98c70939156a981881f5e0887f78c9e7903a40bd",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/plan_003/commands.npz": "fe07219c4c35b0b0df99e0ec70e1dc3d639d9c15b36b4b66c685f15615d67bf3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/execution/evaluation.json": "9d5b8c9af9d48f2449e94c704d2285090a6c3ea183f6216196d5045001bcd52f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_second_trial_20261105_v1/execution/trace.npz": "d28d65d0185dbf743f9a9c9e8f81925736e924a3ad843c8d62375bb584f331e7",
+    "/tmp/anydex_boya_two_trials_audit.py": "56bfc6a2d8b67a302205396160aca15e5383330ed7181768d7b7fca544110b25",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797"
+  },
+  "audit_cost": {
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "new_training_steps": 0,
+    "elapsed_wall_s": 0.23580631706863642
+  }
+}

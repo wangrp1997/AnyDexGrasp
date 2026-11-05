@@ -1,0 +1,41 @@
+{
+  "schema": "anydex_boya_initial_media_verification_v1",
+  "videos": {
+    "failed": {
+      "video": "outputs/boya_isaac_delivery_20261105_v1/failed/isaac_full_arm_pickup.mp4",
+      "bytes": 1547705,
+      "sha256": "93c4fea626a49ea079c3d518bcd9853aa87105ebbec401da9e01a57f40ae86cb",
+      "source_render_receipt_sha256": "68fc58940c49c4b3f40c199f967d0bb54ba0a1e40ea67230464ab6e64be67a4e",
+      "encoded_frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "physical_time_s": 8.4,
+      "final_pause_s": 1.0,
+      "saved_render_frames": 210,
+      "saved_gif_total_duration_ms": 9400,
+      "codec": "H.264 avc1",
+      "container_sample_table_and_payload_sizes_consistent": true,
+      "replay_physics_steps": 0,
+      "source_task_success": false,
+      "verification_scope": "MP4 container/sample table + GIF frame/timing + native render sync receipt; saved final images visually inspected"
+    },
+    "success": {
+      "video": "outputs/boya_isaac_delivery_20261105_v1/success/isaac_full_arm_pickup.mp4",
+      "bytes": 1546684,
+      "sha256": "13b46e4f9af40d09f032a0ae51ec4fd4314c4d41a18c6cf1df73cab0de2805fe",
+      "source_render_receipt_sha256": "bbdfa8859cb8339c0fe6eb46d1b41b300439b9d1da0477c32825a8771503cbba",
+      "encoded_frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "physical_time_s": 8.4,
+      "final_pause_s": 1.0,
+      "saved_render_frames": 210,
+      "saved_gif_total_duration_ms": 9400,
+      "codec": "H.264 avc1",
+      "container_sample_table_and_payload_sizes_consistent": true,
+      "replay_physics_steps": 0,
+      "source_task_success": true,
+      "verification_scope": "MP4 container/sample table + GIF frame/timing + native render sync receipt; saved final images visually inspected"
+    }
+  }
+}

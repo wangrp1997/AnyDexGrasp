@@ -1,3 +1,5 @@
+2026-11-05 Boya适配更新：已在Isaac Sim接通新RGB-D→官方CGR→Boya映射→完整UR16e+Boya执行→绑定标签。同一50mm立方体两次实际执行得到一负一正，成功者最终+103.201mm；未训练Boya评分器，不是泛化成绩。见[接口与原理](boya/README.md)、[首次真实执行结果](boya/INITIAL_ISAAC_RESULTS_20261105.md)。原DH3结果如下保留。
+
 # AnyDexGrasp 原方法复现
 
 2026-11-04更新：原DH3公开模型已完成六件真实YCB网格×两方向独立仿真，8/12有效举升；1实际未抓起、3原碰撞后无候选全部保留。见[真实网格结果与视频](simulation/REAL_MESH_GENERALIZATION_RESULTS.md)。这不等于作者实机实验复现，尚未接机械臂/Boya。

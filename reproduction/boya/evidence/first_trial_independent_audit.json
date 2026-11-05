@@ -1,0 +1,318 @@
+{
+  "schema": "anydex_boya_v2_integration_independent_audit_v1",
+  "all_checks_passed": true,
+  "checks": {
+    "all_source_asset_dependency_generation_and_plan_SHA_match": {
+      "passed": true,
+      "detail": {
+        "unique_source_files": 65
+      }
+    },
+    "distal_pad_source_pinned": {
+      "passed": true
+    },
+    "five_pad_points_mesh_triangles_and_MJCF_sites": {
+      "passed": true,
+      "detail": [
+        {
+          "group": "th",
+          "mesh_sha_matches": true,
+          "triangle_barycentric": [
+            0.15033046160692642,
+            0.352642975395635
+          ],
+          "distance_to_declared_triangle_m": 9.257492749149896e-19,
+          "normal_dot": 1.0000000000000002,
+          "mjcf_site_seed_error_m": 0.0,
+          "site_to_projected_pad_distance_m": 2.1596560067267907e-09
+        },
+        {
+          "group": "ff",
+          "mesh_sha_matches": true,
+          "triangle_barycentric": [
+            0.49402882760252387,
+            0.4049759728120658
+          ],
+          "distance_to_declared_triangle_m": 8.940560153363745e-19,
+          "normal_dot": 0.9999999999999998,
+          "mjcf_site_seed_error_m": 0.0,
+          "site_to_projected_pad_distance_m": 1.9829396156418453e-10
+        },
+        {
+          "group": "mf",
+          "mesh_sha_matches": true,
+          "triangle_barycentric": [
+            0.4940283339335956,
+            0.4049760365636354
+          ],
+          "distance_to_declared_triangle_m": 1.6263032587282567e-19,
+          "normal_dot": 1.0,
+          "mjcf_site_seed_error_m": 0.0,
+          "site_to_projected_pad_distance_m": 3.8750367934639286e-10
+        },
+        {
+          "group": "rf",
+          "mesh_sha_matches": true,
+          "triangle_barycentric": [
+            0.49402882769695244,
+            0.4049755930314659
+          ],
+          "distance_to_declared_triangle_m": 1.305552300251628e-18,
+          "normal_dot": 0.9999999999999999,
+          "mjcf_site_seed_error_m": 0.0,
+          "site_to_projected_pad_distance_m": 1.925320787987311e-10
+        },
+        {
+          "group": "lf",
+          "mesh_sha_matches": true,
+          "triangle_barycentric": [
+            0.4940292356016549,
+            0.404974178639052
+          ],
+          "distance_to_declared_triangle_m": 1.1175700191704682e-18,
+          "normal_dot": 0.9999999999999998,
+          "mjcf_site_seed_error_m": 0.0,
+          "site_to_projected_pad_distance_m": 1.5663133288835104e-11
+        }
+      ]
+    },
+    "all_297_q_commands_unchanged_v3_joint_templates": {
+      "passed": true,
+      "detail": {
+        "max_joint_error_rad": 0.0
+      }
+    },
+    "all_924_slots_recomputed_from_distal_pads": {
+      "passed": true,
+      "detail": {
+        "max_reference_entry_error": 1.1146639167236572e-13,
+        "max_width_error_m": 2.636779683484747e-16
+      }
+    },
+    "complete_24_joint_FK_and_4_mimics": {
+      "passed": true,
+      "detail": {
+        "independent_full_robot_FK_max_entry_error": 4.440892098500626e-16,
+        "joint_counts": {
+          "arm": 6,
+          "wrist": 2,
+          "finger": 16,
+          "mimics": 4
+        }
+      }
+    },
+    "new_observation_Isaac_not_old_PyBullet": {
+      "passed": true,
+      "detail": {
+        "renderer": "Isaac native RTX camera",
+        "camera_transform": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -0.75
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            0.1
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            0.5
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "isolated_robot_excluded": true
+      }
+    },
+    "forward_RGBD_hashes_match_new_observation": {
+      "passed": true
+    },
+    "2048_original_parse_rows_before_DH3_rig_gates": {
+      "passed": true
+    },
+    "no_DH3_head_or_Boya_head_used": {
+      "passed": true
+    },
+    "opening_factor_1p7_present_in_official_source": {
+      "passed": true
+    },
+    "all_four_palms_depths_widths_two_faces_exact": {
+      "passed": true,
+      "detail": {
+        "max_palm_entry_error": 2.7755575615628914e-17,
+        "max_direction_error": 0.0,
+        "max_minimum_height_error_m": 4.163336342344337e-17,
+        "ff_distal_table_range_m": [
+          0.029214303107444498,
+          0.13583993319676196
+        ],
+        "records": [
+          {
+            "pool_index": 0,
+            "source_index": 561,
+            "CGR_rank_1based": 6,
+            "flipped": false,
+            "slot": "g1:distal_007:ff",
+            "raw_width_m": 0.06326732039451599,
+            "expanded_requested_m": 0.10755444467067718,
+            "actual_reference_width_m": 0.10826622094346017,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "extra_depth_m": 0.0,
+            "recomputed_min_height_m": 0.00655897550512928
+          },
+          {
+            "pool_index": 1,
+            "source_index": 561,
+            "CGR_rank_1based": 6,
+            "flipped": true,
+            "slot": "g1:distal_007:ff",
+            "raw_width_m": 0.06326732039451599,
+            "expanded_requested_m": 0.10755444467067718,
+            "actual_reference_width_m": 0.10826622094346017,
+            "width_clamped": false,
+            "raw_depth_m": 0.019999999552965164,
+            "extra_depth_m": 0.0,
+            "recomputed_min_height_m": 0.006563521293057855
+          },
+          {
+            "pool_index": 2,
+            "source_index": 1346,
+            "CGR_rank_1based": 30,
+            "flipped": false,
+            "slot": "g1:distal_009:ff",
+            "raw_width_m": 0.05948281288146973,
+            "expanded_requested_m": 0.10112078189849853,
+            "actual_reference_width_m": 0.10013324904843725,
+            "width_clamped": false,
+            "raw_depth_m": 0.009999999776482582,
+            "extra_depth_m": 0.0,
+            "recomputed_min_height_m": 0.008107339431833963
+          },
+          {
+            "pool_index": 3,
+            "source_index": 1346,
+            "CGR_rank_1based": 30,
+            "flipped": true,
+            "slot": "g1:distal_009:ff",
+            "raw_width_m": 0.05948281288146973,
+            "expanded_requested_m": 0.10112078189849853,
+            "actual_reference_width_m": 0.10013324904843725,
+            "width_clamped": false,
+            "raw_depth_m": 0.009999999776482582,
+            "extra_depth_m": 0.0,
+            "recomputed_min_height_m": 0.019369190465342564
+          }
+        ]
+      }
+    },
+    "500_raw_rows_1000_faces_accounted_no_result_based_ranking": {
+      "passed": true,
+      "detail": {
+        "rejected": 996,
+        "geometry_admitted": 4,
+        "selected": 0
+      }
+    },
+    "selected_raw_feature_and_canonical480_binding": {
+      "passed": true
+    },
+    "explicit_face_overrides_DH3_flip_policy_honestly": {
+      "passed": true,
+      "detail": {
+        "executed_flip": false,
+        "original_DH3_preferred_flip": true,
+        "boundary": "Fixed Boya collection two-face enumeration; not claimed identical DH3 policy"
+      }
+    },
+    "all_2100_hand_control_commands_match_unchanged_nominal_policy": {
+      "passed": true,
+      "detail": {
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 750,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "dt_s": 0.004
+      }
+    },
+    "plan_candidate_and_command_hash_binding": {
+      "passed": true
+    },
+    "actual_executor_target_arrays_match_bound_commands_and_four_mimics": {
+      "passed": true,
+      "detail": {
+        "trace_steps": 2100,
+        "trace_joint_count": 28,
+        "target_dtype": "float32",
+        "max_target_error_rad": 0.0
+      }
+    },
+    "complete_once_executed_negative_preserved": {
+      "passed": true,
+      "detail": {
+        "actual_task_success": false,
+        "outcome": "executed_lift_failure",
+        "all_original_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true,
+          "palm_tracking": true,
+          "no_arm_object_support": true,
+          "fixed_base": true,
+          "complete_execution": true
+        },
+        "object_final_reference_rise_m": -0.0019313916563987732
+      }
+    },
+    "all_readonly_sources_unchanged": {
+      "passed": true
+    },
+    "previous_v1_preparation_evidence_preserved": {
+      "passed": true
+    }
+  },
+  "notes_and_boundaries": [
+    "representation/RESULTS.json example_boundary retains the generic old text Official GraspNet-team demo RGB-D input. Actual bound input SHA and observation metadata identify this new Isaac RTX cube frame; preserve the frozen receipt and issue an external metadata erratum.",
+    "This integration is a declared Boya collection policy: fixed gesture1/ff datum, original CGR score, original-source 1.7 opening factor, explicit Boya LUT clamp, two faces, partial-point-cloud/table admission, then unchanged complete-arm backend. It is not the published DH3 learned decision policy, the original DH3 collision detector, or a trained Boya scorer. All four retained candidates happen not to require clamping.",
+    "The new forward uses identity augmentation only (one branch). It must not be described as the original eleven-branch production TTA path.",
+    "The v2 distal reference geometry is independently recomputed. Source pad annotations are coordinate datums, not guaranteed contacts or hardware calibration. Original v1 middle-flexor evidence remains unchanged and is not promoted to production calibration.",
+    "This audit does not rerun the 77s hull/partial-scene admission search or any physics/network. It independently checks the four mapped palms and full source-vertex height; original saved point-cloud admission and complete-arm gates retain their original boundary.",
+    "No separate pre-binding command NPZ was retained. The wrapper source checks equality before adding binding metadata; this audit independently verifies every actual trace target against the final bound command arrays (including four mimics) and reconstructs every hand closure target from the original nominal control equation.",
+    "Source object pose is used for world/planning provenance after inference; original network consumes rendered RGB-D camera points only. A completed negative label describes this Isaac tabletop-lift trial, not the paper hardware transport-to-bin task."
+  ],
+  "source_sha256": {
+    "/tmp/anydex_boya_v2_integration_audit.py": "eb4a1976caee10b04a0ae518690137a5ca7d84409773ee6f312504a235ce27d4",
+    "/tmp/anydex_boya_initial_audit.py": "02ad92d556c2ba1b32f8c7b18f1803ed93fea479751ed103609717f561189aef",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py": "3ce2a0545524196b916cdd72922d3146e4277728cba33287442804f375a13375",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_first_trial.py": "139b4ea79e1aee70d07fc8bbfd87957f23fa0a184538767e4c7cda5ec670aa82",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/trial_record.py": "2437f19d28f7f2601fd7f637eb9205c39b929cdb4b9fff2ba2bc5fac22f25841",
+    "/home/wangrenpeng/CanonDex/assets/gestures/boya/templates/five_finger_wrap.json": "467df0ce03e68b4f96be8b9a947101d7e6ed3913f5983dc8724fbc0c29cf1076",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/candidates_opening_v3/generation.json": "88895c0bc7847b6bb2a3366fd42975a013a37fdb94b5551ccbf14f4d94c9381d",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/trial_binding.json": "a794b67692b0d9c1cb9bbf0626da1cc8274b32fc18f011d301d0442c686b31a0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/plan_000/commands.npz": "fd5c815e106c6c2ae4bd97221d55171f4ccdbc81e09c9f8b9b8c4de48e2a9f2e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/execution/evaluation.json": "4b307b0ba470e51726ec2bb41311ffa75a3270ea18f977f0b339cce2cee0c0be",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_isaac_first_trial_20261105_v1/execution/trace.npz": "e50121da233b2e8d6d6b8746c7f80f52f8b142a9270b69b2372119841909aae9"
+  },
+  "audit_cost": {
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "repo_files_modified": false,
+    "elapsed_wall_s": 0.43904810899402946
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "schema": "anydex_boya_initial_isaac_milestone_v1",
+  "date": "2026-11-05",
+  "scene": "One 50mm / 100g synthetic cube, one frozen RTX RGB-D observation",
+  "protocol": "Two independent trials from distinct frozen CGR candidates; not same-scene regrasp",
+  "actual_network_forwards": 1,
+  "raw_cgr_candidates": 2048,
+  "hand_geometry_candidates": 4,
+  "full_arm_plans_prepared": 4,
+  "zero_step_arm_rejections": 2,
+  "actual_grasp_attempts": 2,
+  "physics_steps": 4200,
+  "physical_time_s": 16.8,
+  "training_labels": [
+    0,
+    1
+  ],
+  "learned_boya_head_loaded": false,
+  "training_steps": 0,
+  "legacy_experience_or_grasp_sampler_used": false,
+  "generalization_success_rate_claim": false,
+  "trials": [
+    {
+      "run_dir": "outputs/boya_isaac_first_trial_20261105_v1",
+      "summary_sha256": "38fe3ecc242e146424e4e03f65821f87f1fac560bae73677fc0557e6e6cdb27e",
+      "training_record_sha256": "3054c9fff29e788da22dfebb516215d8c70779fda39ad5c421f6e4e7b7d74ca0",
+      "physics_steps": 2100,
+      "result": 0,
+      "label_eligible": true,
+      "commands_sha256": "fd5c815e106c6c2ae4bd97221d55171f4ccdbc81e09c9f8b9b8c4de48e2a9f2e",
+      "elapsed_wall_s": 114.71856920898426
+    },
+    {
+      "run_dir": "outputs/boya_isaac_second_trial_20261105_v1",
+      "summary_sha256": "cce7106cf5beeb3c8b1543f4e696e000944298cceb4b6f1fd96895d0aa75063a",
+      "training_record_sha256": "e47265fb81ffaa402f0134edd10b346d062f49bf1ea1f3e983e88fd1e2f3cb08",
+      "physics_steps": 2100,
+      "result": 1,
+      "label_eligible": true,
+      "commands_sha256": "fe07219c4c35b0b0df99e0ec70e1dc3d639d9c15b36b4b66c685f15615d67bf3",
+      "elapsed_wall_s": 71.40535359899513
+    }
+  ],
+  "independent_audit_sha256": "71a8875f45c7078af367dd8c06c0adc43f266f121fad80e13b531c72b38de71a",
+  "media_verification_sha256": "4c115f503bfbb1a11732864cda639e827a5774d106038a3427144e5879c2288b"
+}

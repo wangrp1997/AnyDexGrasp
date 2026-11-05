@@ -1,6 +1,6 @@
 # AnyDexGrasp 独立复现工作区
 
-更新：2026-11-04。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，本地分支 `research/native-baseline-reproduction`。上游remote为 `upstream`，没有用户自己的发布remote，不向作者仓库推送。
+更新：2026-11-05。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
 
 原算法源码保持不变。复现说明与独立工具在 `reproduction/`，大文件/原始输出放忽略目录 `outputs/`、`papers/`；官方数据/权重专用根目录 `/mnt/public/datasets/AnyDexGrasp/`。不要把源码附带手开度表当作训练数据已下载。先读 `reproduction/README.md`、`SOURCES.lock.json`、`PAPER_CODE_AUDIT.md` 和数据状态。
 
@@ -84,3 +84,14 @@
 outputs/dh3_compliant_full12_20261104_v1/（目录沿用启动标识）已完成：固定model50e02b/runnercdc861、k=.8/d=.02/J=.001、3840Hz；7新执行全部held+2同参既有香蕉held+3原collision无候选零步=12。准入9/12，条件执行9/9，含无候选的场景完成9/12；原数值门1/9过，其余诊断保留，不将本地1.5rad/s当官方成功判据。原8/12不改，不宣称论文物理成功率。
 
 四路补测102.559s，新275520步/71.75物理秒，复用78720步/20.5秒；独立核验全部354240步/92.25秒通过。9段同目录视频/总览index.html，三无候选只有输入图。报告reproduction/simulation/DH3_COMPLIANT_FULL12_RESULTS_20261105.md和PAPER_EVALUATION_ALIGNMENT_20261105.md；轻量evidence/compliant_full12_20261105。不要重复跑已完成7或把复用算新增；别再为精确硬件/速度门过度校准。后续原官方数据/推理协议为主线，仿真功能验证单列，杯碗原候选覆盖问题尚在。仅本地轻量提交，CanonDex继续不动，不push作者upstream。
+
+
+## 2026-11-05 最新：用户Fork已接通，Boya完整Isaac采数链路取得一正一负
+
+用户明确按论文Algorithm1适配Boya，复用CanonDex已能抓取的完整UR16e+Boya Isaac Sim后端；不是另造PyBullet手，不调用CanonDex旧经验检索/抓姿采样/优化。原作者硬件采数在这里替换为声明的Isaac仿真采数，通用CGR权重冻结，Boya评分头尚未训练。已找到完整后端资产并只读复用；所有新代码在reproduction/boya，所有新产物在AnyDex outputs，分块缓存也重定到AnyDex，Python -B，不改/执行旧CanonDex实验批次。
+
+新50mm/100g立方体RTX RGB-D -> 官方原表示一次真实GPU前向2048候选 -> 源distal pad新标定 -> 四个几何候选 -> 四次新臂准备（两零步拒绝） -> 两次实际2100步执行。首条原行561/未翻面未抓起label0保留；第二条1346/翻面末态+103.201mm、底面离桌102.594mm、持续承载1.636s，label1。两条原七门全过；总4200物理步/16.8s，一物一观测两次独立试验，不是泛化成功率，不是重抓协议或学习后性能。
+
+接口已验证原16手指+2腕+6臂、4mimic及21个手link；9模板297状态/924参考槽，模板4缺拇指对侧标注明确不构造。正式标定用原five_finger_wrap.json的distal pads，旧中节v1诊断和两轮几何零步拒绝保留。1.7开口扩展遵循原碰撞代码，限幅显式记录；本轮四准入均未clamp。固定手型1/附加深入0，两侧翻转，未用DH3评分头、方向/45–99mm rig门或旧经验。新标签绑定原行/2261/官方CGR480/开度/深入/翻面/commands SHA/真实回执，零步和中止不记失败训练标签。
+
+首轮新输入来自Isaac，旧通用forward回执example_boundary仍有官方demo固定文案；冻结原文件保留，另存input_scope_erratum.json。原DH3所有结果不改。报告reproduction/boya/INITIAL_ISAAC_RESULTS_20261105.md和README.md。下一步先冻结多物体/手型/深入采集协议再采更多标签/训练小head，不重跑这两次，不把两条样本充作有效Boya训练集或已复现原论文成功率。仅轻量阶段代码/证据推到用户origin，资产/模型/观测/视频/轨迹不进Git。
