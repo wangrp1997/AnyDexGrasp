@@ -1,6 +1,6 @@
 # AnyDexGrasp 独立复现工作区
 
-更新：2026-11-05。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
+更新：2026-11-06。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
 
 原算法源码保持不变。复现说明与独立工具在 `reproduction/`，大文件/原始输出放忽略目录 `outputs/`、`papers/`；官方数据/权重专用根目录 `/mnt/public/datasets/AnyDexGrasp/`。不要把源码附带手开度表当作训练数据已下载。先读 `reproduction/README.md`、`SOURCES.lock.json`、`PAPER_CODE_AUDIT.md` 和数据状态。
 
@@ -140,3 +140,18 @@ outputs/dh3_compliant_full12_20261104_v1/（目录沿用启动标识）已完成
 新执行两对象CPU并行、同对象常驻serial，共7次建场/62次独立试前恢复/69次原生审计，恢复积分0；物理执行墙钟1671.011s，准备453.926s（与几何有重叠，不直接相加宣称端到端）。所有新轨迹2100步、命令/绑定及516源码754输入保持；独立从trace/源网格复算末态离桌、承载、抬升及限位/mimic/穿透三门，69/69标签一致。其余四门绑定原native保存证据，不宣称重新采集缺失的测量。轻量证据在 `reproduction/boya/evidence/gesture_comparison_20261105/`，大轨迹/JSONL/源资产不提交。
 
 **下一步先按新版本把#7纳入候选采集型集（建议1/6/7/8）并在独立40train+10validation上验证；尚未启动正式50物体采数或训练。** 当前 `run_collection_pipeline.py` 的既有三型600槽协议和dry-run仍是历史冻结配置，不能直接称已改四型或把本轮开发105标签计入300正式配额。后续修改须生成新协议/目录，不改旧dry-run/本轮结果；八件单姿态对照不证明泛化、三指通用最优或13/13的总体成功概率。CanonDex不修改/不恢复原批次。
+
+
+## 2026-11-06 最新：四型正式50物体采集已后台启动，勿重复派发
+
+用户同意继续。旧九型开发105实际/86正19负及原三型600槽dry协议完整保留。新入口 `reproduction/boya/run_collection_pipeline_v2.py` 已冻结，源码SHA `82cb5deadbe82d6cbcded446a241d3244f1b3114ed11694a830d163ad3aab6d9`，协议文档 `COLLECTION_PROTOCOL_20261106.md`、选择静态凭据及所有输入/源码SHA绑定。四型固定 `[1,6,7,8]`×四额外深入0/10/20/30mm×原50件=800槽，640train/160validation；目标每型100/20合格正负标签，合计400/80，不保证有限槽全部达标，不把开发105抵扣配额。旧50名单SHA `487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d`、40/10分组与源几何保持。
+
+**正式目录 `outputs/collection40_20261106_v2/run_v2/`，后台all PID3322110，2026-11-06 01:02:53北京时间启动，协议SHA `20414374d11c0ed4df68b339e51a38318901bb3b34119cb7b127adcb3e820703`。** 已完成50原生资产准入与50真实RTX观测，单CGR共享模型/50前向正在运行；启动时尚无正式物理标签或训练结论。后续当前状态以 `pipeline_progress.json`、`representation_stage/BATCH_REPRESENTATION.json`、`POOL_PREPARATION.json`、`planning/queue_manifest.json`、`execution/PROGRESS.json` 为准；不要因本段启动快照重新建批次。源码运行中保持不变，禁止自动重放状态不明的执行。
+
+原生资产外置预处理50件24原生ready/26精确细分后准入、0物理；source union/scale0.1/max_failed32/原20µm门保持，初轮/接续成本均保留。发现单件杯子cache/source_audit从1MiB起末151061字节全零，但原probe完整且SHA精确等于旧声明；保留坏cache/旧result/旧SUMMARY，在独立缓存恢复原字节，不修改声明SHA/几何，50件128artifact复核通过。外置 `assets_preflight_v2/SUMMARY.json` 当前SHA `6fc3a3e5648d018c99ea6cb5a0fdcf917a35207a76e525d83921829388d7d86c`，正式native阶段已采用冻结。勿再次改该发布记录。
+
+RTX观测先与独立资产发布修正并行，50帧78.560s（stage80.460s），零显式物理，不再渲染。首次representation因启动器漏继承现有LD_LIBRARY_PATH而在0模型/0forward/0物理时退出，完整attempt移存 `run_v2/attempts/representation_missing_runtime_libs_v1/`，明确零执行后同协议/manifest继续。正式LAUNCH已继承pilot的os_libs/OpenBLAS/CUDA13/torch库路径，不安装依赖或更改共享环境。native profile语义SHA和config文件SHA分别绑定，train/validation分文件导出，actual只计steps>0；独立29项合同及runtime14项通过。
+
+本轮物理固定CPU两个对象worker并发，每对象serial resident batch16；每槽最多4臂候选，只执行首个准入候选一次，普通有效负例继续，infra停止新派发并收尾。最终 `execution/train_records.jsonl` 与 `validation_records.jsonl` 分开，混合审计流为 `all_records.jsonl`；无候选/未执行/资格不明为null，不能伪作负例。所有额外记录保留，400/80欠额显式报告；validation不能调参或选手型。目前尚无Boya学习评分头。CanonDex保持只读，不恢复其批次。运行与恢复说明见 `reproduction/boya/COLLECTION_PIPELINE_V2.md`，大输出/图像/轨迹/数据不提交Git。
+
+补充同轮启动快照：50/50 CGR前向已完整完成、单模型加载，当前 geometry_running；轻量 `evidence/collection_20261106/launch_snapshot.json` 记录45 ready/16 no_candidate（800槽中间状态）、正式物理标签仍0。无候选是准入null，非抓取失败；后续仍以活动进度为准。

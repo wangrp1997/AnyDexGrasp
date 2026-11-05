@@ -1,0 +1,44 @@
+{
+  "all_passed": true,
+  "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib",
+  "CUDA_HOME": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0",
+  "native_extensions_imported": true,
+  "MinkowskiEngine_version": "0.5.4",
+  "libraries": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib/libgfortran.so.5",
+      "realpath": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/scipy.libs/libgfortran-040039e1-0352e75f.so.5.0.0",
+      "sha256": "c6090048eccc763522c12ef016f81da6b627cb3a044f55cf0479a839c41c0980"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib/libquadmath-96973f99-934c22de.so.0.0.0",
+      "realpath": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/scipy.libs/libquadmath-828275a7.so.0.0.0",
+      "sha256": "71bdc2ec57ab2fc939360597968f73230426b1c6764048e62a2cb6c8d8c3a1fd"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib/libopenblas.so.0",
+      "realpath": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/ubuntu_openblas/usr/lib/x86_64-linux-gnu/openblas-pthread/libopenblasp-r0.3.26.so",
+      "sha256": "6b4db9f8e58ca5f3e45a45d0ca5723e03a62d37653538387a621b2fce1e9ae0e"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs/libusb-1.0.so.0",
+      "realpath": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs/libusb-1.0.so.0",
+      "sha256": "e422dc361a501e8175a94e16228704de7ca6376037fc29a0e7272e8fe2c8edc1"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+      "realpath": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "343c637093873fc622ee8bfe5f6b3f44df1437598f926b32ca41b47d12850c8c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngineBackend/_C.cpython-312-x86_64-linux-gnu.so",
+      "realpath": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngineBackend/_C.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "bbe7f3f5885b5962d8e61e11d43eaf7a64cde6cc7c208078929368449e6ed65e"
+    }
+  ],
+  "new_model_loads": 0,
+  "new_network_forwards": 0,
+  "new_physics_steps": 0,
+  "source_changes": 0,
+  "boundary": "CDLL and original native extension import only; no model constructor/CUDA operation/forward/physics"
+}

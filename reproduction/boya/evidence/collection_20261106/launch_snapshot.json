@@ -1,0 +1,94 @@
+{
+  "schema": "anydex_boya_collection_launch_snapshot_v2",
+  "observed_at": "2026-11-05T17:06:31.358378+00:00",
+  "launch": {
+    "schema": "anydex_boya_collection_launch_v2",
+    "pid": 3322110,
+    "started_at": "2026-11-05T17:02:53.581055+00:00",
+    "argv": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_pipeline_v2.py",
+      "--run-dir",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2",
+      "--phase",
+      "all"
+    ],
+    "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2",
+    "protocol_sha256": "20414374d11c0ed4df68b339e51a38318901bb3b34119cb7b127adcb3e820703",
+    "pipeline_source_sha256": "82cb5deadbe82d6cbcded446a241d3244f1b3114ed11694a830d163ad3aab6d9",
+    "runtime_environment": {
+      "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib"
+    },
+    "phase": "all",
+    "gesture_ids": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "slot_count": 800,
+    "targets": {
+      "train": 400,
+      "validation": 80
+    },
+    "execution_workers": 2,
+    "representation_device": "cuda:0",
+    "physics_device": "cpu",
+    "head_trained": false
+  },
+  "pipeline_status": "geometry_running",
+  "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2",
+  "stage_receipts": {
+    "representation.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/stages/representation.json",
+      "sha256": "ccac7b00b92ce23fafe03714831c4dbe0fa2537df1edd6b876520957740bce71",
+      "wall_s": 68.22416396799963
+    },
+    "native_assets.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/stages/native_assets.json",
+      "sha256": "c8ace456d40a0b948706f97f7d13329015bb806869821ae2c478dbaa0f055866",
+      "wall_s": 0.6847131280228496
+    },
+    "observations.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/stages/observations.json",
+      "sha256": "9fd7f4b7b2dec4395765d36065ea4cbe502690f9e546e97d8a8e863d72cec37d",
+      "wall_s": 80.45985518302768
+    }
+  },
+  "observations": {
+    "count": 50,
+    "status": "complete",
+    "wall_s": 78.55955243005883,
+    "explicit_physics_steps": 0,
+    "receipt_sha256": "ffa910da75f78c3a1c0197969e524fa08226195e9e9d5c1ec1527e2f5dd4f74f"
+  },
+  "representation": {
+    "status": "all_representation_forwards_complete",
+    "model_load_count": 1,
+    "checkpoint_file_load_count": 1,
+    "network_forward_count": 50,
+    "timing_seconds": {
+      "dependency_import_and_one_model_load": 0.809512413921766,
+      "elapsed_wall": 64.78514123300556,
+      "total_wall": 64.78584411600605
+    },
+    "batch_sha256": "c4d7ade2e0201912bb9c454e02041c82edfab07419d0ae9fcb122aab139dedad"
+  },
+  "geometry_snapshot": {
+    "ready": 45,
+    "no_candidate": 16,
+    "total_declared": 800
+  },
+  "zero_forward_environment_attempt": {
+    "recovery_path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/attempts/representation_missing_runtime_libs_v1/RECOVERY.json",
+    "recovery_sha256": "df20f28b5311b318c102c8c92c8aa55c15e6b3ebfefe8ef61e7cc4a4adf8771e",
+    "failed_batch_sha256": "55a9c7ea421c51d9a0374263c278444a7bc974f2c45f72e99cbe12f630c110f0",
+    "model_load_count": 0,
+    "network_forward_count": 0,
+    "physical_steps": 0
+  },
+  "formal_grasp_labels_at_snapshot": 0,
+  "head_trained": false,
+  "scope": "Launch/preparation snapshot only, not completion of 800 slots, physical success rate, target attainment, or a trained Boya scorer. Future state lives in the run progress and final execution receipts."
+}

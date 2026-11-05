@@ -1,0 +1,1189 @@
+{
+  "schema": "anydex_boya_collection_four_gesture_static_audit_20261106_v1",
+  "status": "passed",
+  "selection": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+  "selection_sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+  "selector": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/select_collection_objects.py",
+  "selector_sha256": "0d5df8dc639d637729f6be4441af479611d3d454fdff272587e1e02451097915",
+  "seed": 202611054010,
+  "eligible_mesh_groups": 4318,
+  "checks": [
+    {
+      "name": "original_50_selection_sha",
+      "passed": true
+    },
+    {
+      "name": "selector_original_sha",
+      "passed": true
+    },
+    {
+      "name": "plan_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "active_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "old_pilot_exclusion_hash_binding",
+      "passed": true
+    },
+    {
+      "name": "50_unique_ids",
+      "passed": true
+    },
+    {
+      "name": "50_unique_mesh_groups",
+      "passed": true
+    },
+    {
+      "name": "40_train_10_validation",
+      "passed": true
+    },
+    {
+      "name": "source_mesh_groups_disjoint",
+      "passed": true
+    },
+    {
+      "name": "pilot_ids_and_exact_mesh_aliases_excluded",
+      "passed": true
+    },
+    {
+      "name": "no_outcome_or_grasp_pose_consulted",
+      "passed": true
+    },
+    {
+      "name": "all_preflight_ready_no_replacements",
+      "passed": true
+    },
+    {
+      "name": "selection_before_asset_preflight_matches_actual",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_011_banana_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_011_banana_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_011_banana_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_011_banana_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_ycb_011_banana",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_624ed7cb7a0744f8d75375a7df333495_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_624ed7cb7a0744f8d75375a7df333495_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_624ed7cb7a0744f8d75375a7df333495_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_624ed7cb7a0744f8d75375a7df333495_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Room_Essentials_Mug_White_Yellow_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Room_Essentials_Mug_White_Yellow_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Room_Essentials_Mug_White_Yellow_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Room_Essentials_Mug_White_Yellow_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Room_Essentials_Mug_White_Yellow",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Snowman_def36b8e4538fb74d449cd634c927922_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Snowman_def36b8e4538fb74d449cd634c927922_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Snowman_def36b8e4538fb74d449cd634c927922_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Snowman_def36b8e4538fb74d449cd634c927922_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Snowman_def36b8e4538fb74d449cd634c927922",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_ACE_Coffee_Mug_Kristen_16_oz_cup_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_ACE_Coffee_Mug_Kristen_16_oz_cup_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_ACE_Coffee_Mug_Kristen_16_oz_cup_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_ACE_Coffee_Mug_Kristen_16_oz_cup_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_ACE_Coffee_Mug_Kristen_16_oz_cup",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_c444d4f782c68dc9140cbb818dee6c_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_c444d4f782c68dc9140cbb818dee6c_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_c444d4f782c68dc9140cbb818dee6c_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_c444d4f782c68dc9140cbb818dee6c_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_jar_c444d4f782c68dc9140cbb818dee6c",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_bigbird_v8_fusion_strawberry_banana_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_bigbird_v8_fusion_strawberry_banana_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_bigbird_v8_fusion_strawberry_banana_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_bigbird_v8_fusion_strawberry_banana_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_bigbird_v8_fusion_strawberry_banana",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_33dcf806c673d958f4bdca145ed48dc6_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_33dcf806c673d958f4bdca145ed48dc6_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_33dcf806c673d958f4bdca145ed48dc6_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_33dcf806c673d958f4bdca145ed48dc6_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_bottle_33dcf806c673d958f4bdca145ed48dc6",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_008_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_008_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_008_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_008_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_box_poisson_008",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_BIA_Porcelain_Ramekin_With_Glazed_Rim_35_45_oz_cup_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_BIA_Porcelain_Ramekin_With_Glazed_Rim_35_45_oz_cup_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_BIA_Porcelain_Ramekin_With_Glazed_Rim_35_45_oz_cup_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_BIA_Porcelain_Ramekin_With_Glazed_Rim_35_45_oz_cup_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_BIA_Porcelain_Ramekin_With_Glazed_Rim_35_45_oz_cup",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_061_foam_brick_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_061_foam_brick_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_061_foam_brick_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_ycb_061_foam_brick_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_ycb_061_foam_brick",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Bowl_Scirocco_YellowBlue_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Bowl_Scirocco_YellowBlue_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Bowl_Scirocco_YellowBlue_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Bowl_Scirocco_YellowBlue_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Cole_Hardware_Bowl_Scirocco_YellowBlue",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_40aee078f0390b7134076b5960251711_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_40aee078f0390b7134076b5960251711_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_40aee078f0390b7134076b5960251711_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_40aee078f0390b7134076b5960251711_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_bottle_40aee078f0390b7134076b5960251711",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_002_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_002_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_002_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_002_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_banana_poisson_002",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Grreatv_Choice_Dog_Bowl_Gray_Bones_Plastic_20_fl_oz_total_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Grreatv_Choice_Dog_Bowl_Gray_Bones_Plastic_20_fl_oz_total_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Grreatv_Choice_Dog_Bowl_Gray_Bones_Plastic_20_fl_oz_total_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Grreatv_Choice_Dog_Bowl_Gray_Bones_Plastic_20_fl_oz_total_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Grreatv_Choice_Dog_Bowl_Gray_Bones_Plastic_20_fl_oz_total",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_629e40743d6958111f6a5b0146bf3030_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_629e40743d6958111f6a5b0146bf3030_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_629e40743d6958111f6a5b0146bf3030_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_629e40743d6958111f6a5b0146bf3030_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Ball_629e40743d6958111f6a5b0146bf3030",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Thumbtack_7796072d01d00f173d1894dacd1107d7_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Thumbtack_7796072d01d00f173d1894dacd1107d7_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Thumbtack_7796072d01d00f173d1894dacd1107d7_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Thumbtack_7796072d01d00f173d1894dacd1107d7_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Thumbtack_7796072d01d00f173d1894dacd1107d7",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_mug_new_poisson_001_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_mug_new_poisson_001_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_mug_new_poisson_001_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_mug_new_poisson_001_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_mug_new_poisson_001",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Now_Designs_Bowl_Akita_Black_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Now_Designs_Bowl_Akita_Black_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Now_Designs_Bowl_Akita_Black_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Now_Designs_Bowl_Akita_Black_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Now_Designs_Bowl_Akita_Black",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_SCHOOL_BUS_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_SCHOOL_BUS_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_SCHOOL_BUS_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_SCHOOL_BUS_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_SCHOOL_BUS",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_85741071e4ebdfa8e7e1af2463f76a8d_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_85741071e4ebdfa8e7e1af2463f76a8d_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_85741071e4ebdfa8e7e1af2463f76a8d_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_85741071e4ebdfa8e7e1af2463f76a8d_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Ball_85741071e4ebdfa8e7e1af2463f76a8d",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_edb8e199485be4e968747a7f12307bdb_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_edb8e199485be4e968747a7f12307bdb_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_edb8e199485be4e968747a7f12307bdb_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_edb8e199485be4e968747a7f12307bdb_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_jar_edb8e199485be4e968747a7f12307bdb",
+      "passed": true
+    },
+    {
+      "name": "source_core_can_3a9041d7aa0b4b9ad9802f6365035049_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_can_3a9041d7aa0b4b9ad9802f6365035049_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_can_3a9041d7aa0b4b9ad9802f6365035049_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_can_3a9041d7aa0b4b9ad9802f6365035049_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_can_3a9041d7aa0b4b9ad9802f6365035049",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_95e6a3a1232f97e3d333084c1357713e_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_95e6a3a1232f97e3d333084c1357713e_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_95e6a3a1232f97e3d333084c1357713e_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_95e6a3a1232f97e3d333084c1357713e_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_bottle_95e6a3a1232f97e3d333084c1357713e",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Radio_52fbb082b3d28d369715146e52a0621c_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Radio_52fbb082b3d28d369715146e52a0621c_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Radio_52fbb082b3d28d369715146e52a0621c_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Radio_52fbb082b3d28d369715146e52a0621c_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Radio_52fbb082b3d28d369715146e52a0621c",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_8309e710832c07f91082f2ea630bf69e_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_8309e710832c07f91082f2ea630bf69e_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_8309e710832c07f91082f2ea630bf69e_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_8309e710832c07f91082f2ea630bf69e_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_bottle_8309e710832c07f91082f2ea630bf69e",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_000_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_000_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_000_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_000_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_banana_poisson_000",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Tank_d37c053308410f08f7a0a2f21341b9c5_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Tank_d37c053308410f08f7a0a2f21341b9c5_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Tank_d37c053308410f08f7a0a2f21341b9c5_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Tank_d37c053308410f08f7a0a2f21341b9c5_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Tank_d37c053308410f08f7a0a2f21341b9c5",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_001_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_001_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_001_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_001_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_banana_poisson_001",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_1ae823260851f7d9ea600d1a6d9f6e07_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_1ae823260851f7d9ea600d1a6d9f6e07_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_1ae823260851f7d9ea600d1a6d9f6e07_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_bottle_1ae823260851f7d9ea600d1a6d9f6e07_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_bottle_1ae823260851f7d9ea600d1a6d9f6e07",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Mug_Classic_Blue_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Mug_Classic_Blue_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Mug_Classic_Blue_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Cole_Hardware_Mug_Classic_Blue_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Cole_Hardware_Mug_Classic_Blue",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_3c426552b9df786b3f7f3ed2c3c690fe_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_3c426552b9df786b3f7f3ed2c3c690fe_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_3c426552b9df786b3f7f3ed2c3c690fe_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_3c426552b9df786b3f7f3ed2c3c690fe_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_MilkCarton_3c426552b9df786b3f7f3ed2c3c690fe",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_010_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_010_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_010_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_010_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_box_poisson_010",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_396534e7ea5b33c482db9fca4b68095_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_396534e7ea5b33c482db9fca4b68095_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_396534e7ea5b33c482db9fca4b68095_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_396534e7ea5b33c482db9fca4b68095_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_jar_396534e7ea5b33c482db9fca4b68095",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_45oz_RAMEKIN_ASST_DEEP_COLORS_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_45oz_RAMEKIN_ASST_DEEP_COLORS_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_45oz_RAMEKIN_ASST_DEEP_COLORS_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_45oz_RAMEKIN_ASST_DEEP_COLORS_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_45oz_RAMEKIN_ASST_DEEP_COLORS",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_9b77a0f168b2b8ea620c0ff8940a6989_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_9b77a0f168b2b8ea620c0ff8940a6989_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_9b77a0f168b2b8ea620c0ff8940a6989_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_jar_9b77a0f168b2b8ea620c0ff8940a6989_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_jar_9b77a0f168b2b8ea620c0ff8940a6989",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_021_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_021_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_021_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_box_poisson_021_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_box_poisson_021",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_9a975fe35c960649897b5ee2a396680b_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_9a975fe35c960649897b5ee2a396680b_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_9a975fe35c960649897b5ee2a396680b_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Ball_9a975fe35c960649897b5ee2a396680b_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Ball_9a975fe35c960649897b5ee2a396680b",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Bottle_e593aa021f3fa324530647fc03dd20dc_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Bottle_e593aa021f3fa324530647fc03dd20dc_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Bottle_e593aa021f3fa324530647fc03dd20dc_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Bottle_e593aa021f3fa324530647fc03dd20dc_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Bottle_e593aa021f3fa324530647fc03dd20dc",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_1c30b1102303f27ef690049a092c5efc_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_1c30b1102303f27ef690049a092c5efc_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_1c30b1102303f27ef690049a092c5efc_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_MilkCarton_1c30b1102303f27ef690049a092c5efc_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_MilkCarton_1c30b1102303f27ef690049a092c5efc",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Utana_5_Porcelain_Ramekin_Large_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Utana_5_Porcelain_Ramekin_Large_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Utana_5_Porcelain_Ramekin_Large_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_Utana_5_Porcelain_Ramekin_Large_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "passed": true
+    },
+    {
+      "name": "source_core_cellphone_77817771db0788d3241d076ab53023c1_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_cellphone_77817771db0788d3241d076ab53023c1_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_cellphone_77817771db0788d3241d076ab53023c1_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_cellphone_77817771db0788d3241d076ab53023c1_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_cellphone_77817771db0788d3241d076ab53023c1",
+      "passed": true
+    },
+    {
+      "name": "source_core_camera_ec28a64bdf9501161bfbba8a5defb02_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_camera_ec28a64bdf9501161bfbba8a5defb02_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_camera_ec28a64bdf9501161bfbba8a5defb02_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_core_camera_ec28a64bdf9501161bfbba8a5defb02_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_soccer_ball_poisson_000_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_soccer_ball_poisson_000_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_soccer_ball_poisson_000_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_soccer_ball_poisson_000_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_soccer_ball_poisson_000",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Mug_10f6e09036350e92b3f21f1137c3c347_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Mug_10f6e09036350e92b3f21f1137c3c347_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Mug_10f6e09036350e92b3f21f1137c3c347_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_sem_Mug_10f6e09036350e92b3f21f1137c3c347_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_sem_Mug_10f6e09036350e92b3f21f1137c3c347",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_OXO_Soft_Works_Can_Opener_SnapLock_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_OXO_Soft_Works_Can_Opener_SnapLock_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_OXO_Soft_Works_Can_Opener_SnapLock_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_mujoco_OXO_Soft_Works_Can_Opener_SnapLock_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_mujoco_OXO_Soft_Works_Can_Opener_SnapLock",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_003_mesh_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_003_urdf_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_003_pose_path",
+      "passed": true
+    },
+    {
+      "name": "source_ddg_gd_banana_poisson_003_metadata_path",
+      "passed": true
+    },
+    {
+      "name": "mesh_group_ddg_gd_banana_poisson_003",
+      "passed": true
+    },
+    {
+      "name": "deterministic_train_selection_reproduced",
+      "passed": true
+    },
+    {
+      "name": "deterministic_validation_selection_reproduced",
+      "passed": true
+    },
+    {
+      "name": "declared_source_shape_allocations_reproduced",
+      "passed": true
+    },
+    {
+      "name": "train_each_source10",
+      "passed": true
+    },
+    {
+      "name": "train_each_shape5",
+      "passed": true
+    },
+    {
+      "name": "four_gestures_four_depths_800_unique_slots",
+      "passed": true
+    },
+    {
+      "name": "requested_targets_not_exceed_finite_label_capacity",
+      "passed": true
+    }
+  ],
+  "check_count": 270,
+  "source_files_rehashed": 200,
+  "counts": {
+    "train": {
+      "objects": 40,
+      "source": {
+        "ddg": 10,
+        "sem": 10,
+        "mujoco": 10,
+        "core": 10
+      },
+      "shape": {
+        "banana": 5,
+        "sphere": 5,
+        "mug": 5,
+        "irregular": 5,
+        "cylinder": 5,
+        "bottle": 5,
+        "box": 5,
+        "bowl": 5
+      },
+      "inherited_source_split": {
+        "train": 34,
+        "test": 6
+      }
+    },
+    "validation": {
+      "objects": 10,
+      "source": {
+        "sem": 3,
+        "mujoco": 3,
+        "core": 2,
+        "ddg": 2
+      },
+      "shape": {
+        "bottle": 2,
+        "box": 1,
+        "bowl": 1,
+        "irregular": 2,
+        "sphere": 1,
+        "mug": 1,
+        "cylinder": 1,
+        "banana": 1
+      },
+      "inherited_source_split": {
+        "train": 7,
+        "test": 3
+      }
+    }
+  },
+  "slot_counts": {
+    "train": 640,
+    "validation": 160
+  },
+  "gesture_ids": [
+    1,
+    6,
+    7,
+    8
+  ],
+  "extra_depth_mm": [
+    0,
+    10,
+    20,
+    30
+  ],
+  "targets": {
+    "train_total": 400,
+    "validation_total": 80,
+    "train_per_gesture": 100,
+    "validation_per_gesture": 20,
+    "train_per_gesture_per_depth": 25,
+    "validation_per_gesture_per_depth": 5
+  },
+  "capacity": {
+    "train_per_gesture": 160,
+    "validation_per_gesture": 40,
+    "train_per_gesture_per_depth": 40,
+    "validation_per_gesture_per_depth": 10,
+    "target_valid_label_fraction_of_slots": {
+      "train": 0.625,
+      "validation": 0.5
+    }
+  },
+  "fairness_boundary": [
+    "Exact source-mesh byte hashes separate train/validation and exclude old pilot aliases; they do not exclude near-identical geometry, semantic instances, or CGR pretraining overlap.",
+    "Fixed source/shape balanced development sample, not a prevalence estimate for4330; name-derived shape strata and source-geometry confounding remain.",
+    "Selection precedes asset preflight and uses no grasp outcomes; no object replacement based on missing labels or failed grasps.",
+    "Targets count all valid binary outcomes, not only positives; attainable upper bounds do not guarantee arm admission or target completion."
+  ],
+  "cost": {
+    "physics_steps": 0,
+    "network_forwards": 0,
+    "training_steps": 0,
+    "source_modified": false,
+    "elapsed_wall_s": 0.08504568901844323
+  }
+}

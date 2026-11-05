@@ -1,0 +1,136 @@
+{
+  "schema": "anydex_boya_collection_v2_readonly_contract_v1",
+  "status": "passed",
+  "source": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_pipeline_v2.py",
+  "source_sha256": "82cb5deadbe82d6cbcded446a241d3244f1b3114ed11694a830d163ad3aab6d9",
+  "checks": [
+    {
+      "name": "800_slots_640_train_160_validation",
+      "passed": true
+    },
+    {
+      "name": "targets_400_train_80_validation",
+      "passed": true
+    },
+    {
+      "name": "16_slots_per_object",
+      "passed": true
+    },
+    {
+      "name": "dynamic_two_gestures_400_slots",
+      "passed": true
+    },
+    {
+      "name": "valid_negative_counts_in_train",
+      "passed": true
+    },
+    {
+      "name": "validation_record_never_counts_as_train",
+      "passed": true
+    },
+    {
+      "name": "null_and_ineligible_zero_never_negative",
+      "passed": true
+    },
+    {
+      "name": "duplicate_trial_rejected",
+      "passed": true
+    },
+    {
+      "name": "all800_retained_extras_and_no_target_early_cut",
+      "passed": true
+    },
+    {
+      "name": "ordinary_negative_is_usable",
+      "passed": true
+    },
+    {
+      "name": "nonzero_process_error_not_usable",
+      "passed": true
+    },
+    {
+      "name": "zero_step_never_usable_as_actual_label",
+      "passed": true
+    },
+    {
+      "name": "duplicate_actual_id_not_usable",
+      "passed": true
+    },
+    {
+      "name": "ordinary_failures_continue",
+      "passed": true
+    },
+    {
+      "name": "infra_stops_dispatch_and_drains_inflight",
+      "passed": true
+    },
+    {
+      "name": "old_v1_source_historical_sha_unchanged",
+      "passed": true
+    },
+    {
+      "name": "old600_slot_protocol_historical_sha_unchanged",
+      "passed": true
+    },
+    {
+      "name": "old_manifest_still_three_gestures600slots",
+      "passed": true
+    },
+    {
+      "name": "no_model_sim_modules_imported",
+      "passed": true
+    },
+    {
+      "name": "normalized_profile_matches_real_asset_protocol",
+      "passed": true
+    },
+    {
+      "name": "semantic_profile_not_confused_with_file_bytes",
+      "passed": true
+    },
+    {
+      "name": "train_validation_exports_separated",
+      "passed": true
+    },
+    {
+      "name": "duplicate_export_record_rejected",
+      "passed": true
+    },
+    {
+      "name": "same_object_cross_split_rejected",
+      "passed": true
+    },
+    {
+      "name": "invalid_export_split_rejected",
+      "passed": true
+    },
+    {
+      "name": "actual_excludes_zero_step_and_keeps_partial_cost",
+      "passed": true
+    },
+    {
+      "name": "not_dispatched_and_unknown_separated",
+      "passed": true
+    },
+    {
+      "name": "profile_check_imported_no_model_or_sim",
+      "passed": true
+    },
+    {
+      "name": "source_unchanged_during_contract",
+      "passed": true
+    }
+  ],
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "new_training_steps": 0,
+  "asset_files_rehashed": 0,
+  "scope": "Pure metadata/counting/dispatch contracts; synthetic outcomes are tests only and never collection labels. No physical stage executed.",
+  "check_count": 29,
+  "audit_implementation": {
+    "path": "/tmp/anydex_collection_v2_contract.py",
+    "sha256": "4110c145278262d165dec1602107caaeebb7f56121a1a9d401800dd76243e77f"
+  },
+  "earlier_revision_checked": "97e5368f453e44a4a7196d1880b0a24da713b1b8bde8b51a3e04bfaa86c99799",
+  "final_revision_rechecked_after_policy_refs": true
+}

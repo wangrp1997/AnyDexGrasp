@@ -1,0 +1,127 @@
+{
+  "schema": "anydex_boya_collection_20261106_native_asset_summary_v1",
+  "status": "complete",
+  "selection": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+    "sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+    "objects": 50,
+    "train": 40,
+    "development_validation": 10,
+    "identity_checks": {
+      "fixed50mesh_groups": true,
+      "train40_validation10": true,
+      "train_validation_mesh_disjoint": true,
+      "pilot8_id_and_mesh_disjoint": true
+    },
+    "source_scale": 0.1,
+    "new_selection_performed": false
+  },
+  "policy": {
+    "max_concurrent_CPU_workers": 2,
+    "max_failed_partitions": 32,
+    "unchanged_native_tolerance_m": 2e-05,
+    "source_union_preserved": true,
+    "full_dynamic_execution_scene_audit_still_required": true
+  },
+  "final": {
+    "complete": 50,
+    "ready": 24,
+    "repaired": 26,
+    "errors": 0,
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "new_training_steps": 0,
+    "split_status": {
+      "train": {
+        "ready": 22,
+        "repaired": 18
+      },
+      "validation": {
+        "ready": 2,
+        "repaired": 8
+      }
+    },
+    "source_partitions": 39952,
+    "refined_partitions": 40334,
+    "frozen_sources_unchanged": true
+  },
+  "profile_identity": {
+    "file": "/home/wangrenpeng/CanonDex/assets/benchmarks/template_tabletop_resident_physics.json",
+    "file_bytes_sha256": "d5a7ce2f7c46032ef6f2b438e329cd6edb35f9d6ba88be2bc6d2971ac78f1bb8",
+    "native_normalized_profile_sha256": "313c8cf410446696aae09af01391457de93e34866c55d26732fa8cfaab2cc2a5",
+    "native_semantics": "SHA256 of canonical JSON(profile.to_dict()), matching original profile_identity; independent file bytes also remain frozen."
+  },
+  "receipts": {
+    "summary": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v2/SUMMARY.json",
+    "summary_sha256": "fbebac35a931d64dd6d914dbbd8147f83ebba7e70d095b3afd7f7c20dfaf2f71",
+    "protocol": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v2/PROTOCOL.json",
+    "protocol_sha256": "a846117b537681f19e44d424ab5f6a46b3ac861ac6ce0b30b45807171ce19133",
+    "launch": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v2/LAUNCH.json",
+    "launch_sha256": "c3dbe3a0d69f4751263eea368a36d5036e72f44346f840126aa637a4aa48a6ef",
+    "amendment": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v2/AMENDMENT.json",
+    "amendment_sha256": "10e2938d63cc1679646e4296a3e5fb19aed4842a14d65f399f0f5f04b0cf4393"
+  },
+  "source": {
+    "wrapper": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_assets_v2.py",
+    "wrapper_sha256": "f02abd1f9b52de85b2ffdeef70cbbda18638f765f7a3d8d9b4772a03043778a8",
+    "native_implementation_sha256": {
+      "/home/wangrenpeng/CanonDex/canondex/grasp/native_object_preprocess.py": "8429f33fc5d0b0e3462a7e6e2088078b6ab6a8c15e94c03fdcb1b72493d347cd",
+      "/home/wangrenpeng/CanonDex/canondex/grasp/collision_refinement.py": "4d68f22cf028237c98e1a37c3851f8920ea413c96f3a4ffc56dd1e62828b9610",
+      "/home/wangrenpeng/CanonDex/canondex/grasp/convex_partition.py": "ac38d94ebeb8ac344db41640cebe531e8ca7cf9dec545b4714913a99017d510b",
+      "/home/wangrenpeng/CanonDex/canondex/grasp/physics.py": "d980fbcf47a6edace8a72c7d2d5d19f91bec7543ef58d266ffe7a8a050911b5b",
+      "/home/wangrenpeng/CanonDex/canondex/scene/convex_cooking.py": "99d3b63ec972402cf44c4d6f0652f89821cdaa20aeef0a4a872760b3277de5a8",
+      "/home/wangrenpeng/CanonDex/scripts/research/preprocess_native_object.py": "af40ffb83886fc07c115c8565fdb1d63a372f01600259fda50d849ed2de8224c",
+      "/home/wangrenpeng/CanonDex/scripts/research/template_gripper_native_audit.py": "6afb707878810da195de9f55bd6fc761c4edf4f2237372eee0545c8909bae574",
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3"
+    },
+    "frozen_input_file_count": 1096,
+    "full_manifest_retained_in_local_protocol": true
+  },
+  "initial_segment": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v1",
+    "status": "infrastructure_stopped",
+    "summary_sha256": "398744b5478132de3ba965552b2e340b4989527e1b00946a8e8531338f301349",
+    "protocol_sha256": "8c5e9a5e6283fc66e4c74c6dc5b5d93d5ba6b84480427100f84c0fe67cd0a19e",
+    "wrapper_source_sha256": "0fe4ee5d619f92b3b461e655788e9dab19d4d8148850ca5035cb13dd671dc3a6",
+    "wrapper_source_snapshot": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v2/source_snapshot/prepare_collection_assets_wrapper_failed_v1.py",
+    "native_objects_completed": 2,
+    "wrapper_accepted_objects": 0,
+    "wrapper_identity_errors": 2,
+    "reason": "New wrapper compared the native normalized profile SHA with raw file-byte SHA. Both native receipts had already passed complete/within20um/zero-step checks. This was an identity-check program error, not geometry failure.",
+    "elapsed_wall_s": 12.26392328797374,
+    "new_physics_steps": 0
+  },
+  "continuation": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v2",
+    "inherited_completed_native_results": 2,
+    "new_native_objects_preprocessed": 48,
+    "inherited_results": [
+      {
+        "object_id": "ddg_ycb_011_banana",
+        "status": "repaired",
+        "original_result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v1/ddg_ycb_011_banana/result.json",
+        "result_sha256": "de9bdf541c3915b94a956a0cf695eccba3421d8f81ce60ec51b8ea821b9159cb"
+      },
+      {
+        "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+        "status": "ready",
+        "original_result_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/assets_preflight_v1/sem_Ball_624ed7cb7a0744f8d75375a7df333495/result.json",
+        "result_sha256": "42ab5ac60e921efd497c3d3bf0c3f1888628797a67c3dd05ce3179f2b7d901d6"
+      }
+    ],
+    "inherited_results_byte_identical": true,
+    "repeated_native_scenes_for_inherited_objects": 0,
+    "elapsed_wall_s": 235.05415743996855,
+    "sum_of_segment_wall_s": 247.3180807279423,
+    "first_segment_start_to_final_finish_s": 553.0543253421783,
+    "timing_boundary": "The sum of the two segment execution walls retains initial-error cost and excludes the intervening wrapper diagnosis gap. Start-to-finish separately includes that gap; inherited first-two native work is not counted as new continuation work."
+  },
+  "verification": {
+    "all50_receipt_SHA_and_native_gates_checked": true,
+    "all26_repair_recipe_SHA_checked": true,
+    "source_implementation_SHA_checked": true,
+    "original_failed_segment_and_source_snapshot_preserved": true,
+    "new_physics_or_model_execution": false
+  },
+  "scope": "Asset preparation only for the existing heldout-mesh 40train+10development-validation list. No RGBD, hand geometry pool, arm plan, actual grasp or learned head; not a grasp success rate. Full large artifacts and source-asset SHA lists stay in local outputs."
+}
