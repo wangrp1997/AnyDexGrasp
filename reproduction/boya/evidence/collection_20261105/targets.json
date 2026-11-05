@@ -1,0 +1,36 @@
+{
+  "schema": "anydex_boya_collection_targets_v1",
+  "gesture_ids": [
+    1,
+    6,
+    8
+  ],
+  "gesture_names": {
+    "1": "五指握",
+    "6": "二指捏合",
+    "8": "爪式"
+  },
+  "train_objects": 40,
+  "validation_objects": 10,
+  "train_labels_per_gesture": 100,
+  "validation_labels_per_gesture": 20,
+  "train_target": 300,
+  "validation_target": 60,
+  "additional_depths_m": [
+    0,
+    0.01,
+    0.02,
+    0.03
+  ],
+  "train_labels_per_gesture_per_extra_depth": 25,
+  "validation_labels_per_gesture_per_extra_depth": 5,
+  "finite_first_pass_slots": {
+    "train": 480,
+    "validation": 120
+  },
+  "target_counts_are_actual_labels_not_candidates": true,
+  "null_is_not_failure_label": true,
+  "pretrained_CGR_frozen": true,
+  "Boya_heads_trained": false,
+  "full_collection_launched": false
+}

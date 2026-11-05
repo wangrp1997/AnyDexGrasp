@@ -1,0 +1,65 @@
+{
+  "schema": "anydex_boya_collection40_selection_summary_v1",
+  "status": "ready",
+  "seed": 202611054010,
+  "train_objects": 40,
+  "validation_objects": 10,
+  "unique_selected_mesh_groups": 50,
+  "mesh_group_overlap": 0,
+  "pilot_mesh_overlap": 0,
+  "source_counts": {
+    "train": {
+      "ddg": 10,
+      "sem": 10,
+      "mujoco": 10,
+      "core": 10
+    },
+    "validation": {
+      "sem": 3,
+      "mujoco": 3,
+      "core": 2,
+      "ddg": 2
+    }
+  },
+  "shape_counts": {
+    "train": {
+      "banana": 5,
+      "sphere": 5,
+      "mug": 5,
+      "irregular": 5,
+      "cylinder": 5,
+      "bottle": 5,
+      "box": 5,
+      "bowl": 5
+    },
+    "validation": {
+      "bottle": 2,
+      "box": 1,
+      "bowl": 1,
+      "irregular": 2,
+      "sphere": 1,
+      "mug": 1,
+      "cylinder": 1,
+      "banana": 1
+    }
+  },
+  "inherited_source_split_counts": {
+    "train": {
+      "train": 34,
+      "test": 6
+    },
+    "validation": {
+      "train": 7,
+      "test": 3
+    }
+  },
+  "asset_review_required": 0,
+  "object_selection": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+  "object_selection_sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+  "selection_plan_sha256": "4c50ace6d7ae3cbd9bd2a9912213ac7978eb45f4b15206ab25bf9aa225b1d569",
+  "source_script_sha256": "0d5df8dc639d637729f6be4441af479611d3d454fdff272587e1e02451097915",
+  "elapsed_wall_s": 0.6740060989977792,
+  "physics_steps": 0,
+  "training_labels": 0,
+  "public_mutated": false
+}

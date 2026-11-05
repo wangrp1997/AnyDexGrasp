@@ -112,3 +112,20 @@ outputs/dh3_compliant_full12_20261104_v1/（目录沿用启动标识）已完成
 2026-11-05 已修资产并实际接续：`outputs/boya_pilot8_20261105_v2`，PID2671029，两路CPU，协议v3 SHA4c3cf085d98904f38f73aceac6d3c31b896a181b434c24b96e5cad54a077dcb3。继承25终态/19旧抓取，父目录只读，源9886d7a及旧SHA全保留；仅剩余轮/索引可派发。四资产通用保形细分通过/零物理，原20µm门不放宽。新source已冻，不再热改/重复启动。杯子接续已实际产生两条成功，旧导入null不改。旧成本/new segment_cost分列，最终以v2/progress为准；CGR/观测/池全复用，未训练Boya head。页面在v2/index.html，原五视频引用旧文件，追加新物体录像。
 
 **八物体小批最终已收尾，勿重复恢复：** v2/progress=complete_with_infrastructure_errors（仅保留历史资产null），24/24组合、36实际29正7负、75600步、12槽null；7对象有正例，碗无实际执行，香蕉2正4负。旧19条无重复、751冻结项及36×19实际检查全过。最终摘要/36行原训练JSONL/审计在v2目录，已有8段代表/成败视频（另补香蕉失败片）。本轮不自动扩批或训练，Boya head仍未训练。后续应优先诊断碗候选覆盖和香蕉稳定性，保留当前固定名单/失败/成本。
+
+
+## 2026-11-05 最新：规模采集接口已接通，先三手型300训练标签
+
+用户授权先接通常驻/并行采集并询问手型选择，尚未启动完整50物体采数或训练。作者先人工预定义手型（DH3关节分箱、Allegro/Inspire人类抓取分类），采数可按手型固定，部署论文方法再由各型评分头竞争；公开Inspire默认另有随机旁路，详见 `reproduction/boya/COLLECTION_PROTOCOL_20261105.md`。本阶段先用1五指握/6二指捏合/8爪式；三型在试抓前按形态及标定可执行性选择，未证明三型充分或最优。
+
+正式50名单为 `outputs/collection40_20261105_v1/selection_v2/object_selection.json`，SHA487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d：40train+10development-validation、50唯一mesh、两组及旧8开发物体零重合。源名称形状层仅选材/报告，不参与抓姿/手型决策。旧v1球头锤分类错误和修正差异原位保留；50静态资产预检通过不等于原生动态验收通过。
+
+目标每型100实际成败训练标签，共300；验证每型20、共60。额外深入0/10/20/30mm在新 `build_collection_pool.py` 真实移动后重做完整几何；旧depth0 pilot不改。40×3×4=480训练槽及10×3×4=120验证槽为有限首轮上限，目标不足报告欠额、不造标签/按结果换物体。每手型独立480输入/20输出(5raw深入×4额外深入)评分头，尚未训练。
+
+新 `prepare_collection_queue.py` 解耦有限CPU规划及原指令绑定，`execute_collection_queue.py` 支持同资产波次内CPU常驻serial或GPU隔离parallel，批大小1..16、总队列不受128限制；**跨波次仍新进程**。只读复用现有臂/资产物理后端，不改CanonDex，不使用其旧经验/采样器。`run_collection_pipeline.py` 串联零步原生资产预处理、单RTX进程观测、单CGR常驻模型、多CPU几何/规划及显式执行。默认prepare停在计划，dry-run零Kit/模型/物理；详见 `COLLECTION_PIPELINE.md`，不能把dry-plan说成50件完成。
+
+实际新后端验收在 `outputs/boya_collection_backend_20261105_v1`：CPU常驻两个新候选完整4200步，两正，提起86.104/99.070mm；一次建场、第二抓前一次独立重置、两次原生审计，端到端101.403s/循环57.922s，指令/绑定全部通过。GPU0真实GPUDynamics+broadphase双环境在每路431记录步后因明显慢安全中断，862环境记录步+至多2在途未确认步，全部null；sim.step351.461s/隔离guard0.719s，无完整GPU抓取或提速结论。共享GPU有其它负载，不外推独占硬件本征倍率。两后端配对记录全benchmark_only，不计300训练配额、不重跑旧36。默认物理先CPU resident，CGR仍GPU。
+
+准备22tests与执行12tests通过，后端18项独立审计通过；轻量证据在 `reproduction/boya/evidence/collection_20261105/`。完整300+60目标采集未启动，旧pilot36/29正7负及碗无实际记录保持。下一步按新版本运行准备、审查候选覆盖和真实吞吐后采数，不恢复旧pilot、不宣称Boya评分器已学会自动选型或达到论文成功率。
+
+补充最终只读核验：CPU常驻两抓43项独立复算通过，旧pilot751冻结项、36记录和29/7标签保持。主入口600槽dry两次/复用通过（零子进程/Torch/Isaac导入/前向/物理），凭据 `evidence/collection_20261105/pipeline_dry_audit.json`。阶段源码/轻量证据可push用户origin，完整50采集仍未启动。

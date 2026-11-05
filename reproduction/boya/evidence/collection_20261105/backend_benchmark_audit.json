@@ -1,0 +1,175 @@
+{
+  "all_passed": true,
+  "checks": {
+    "two_new_ready_one_geometry_null": true,
+    "cpu_serial_v1_all_input_and_source_sha": true,
+    "cpu_serial_v1_same_original_bindings_and_commands": true,
+    "cpu_serial_v1_benchmark_only": true,
+    "cpu_serial_v1_lane0_recorded_prefix_exact": true,
+    "cpu_serial_v1_lane1_recorded_prefix_exact": true,
+    "cpu_serial_v1_actual_backend": true,
+    "CPU_two_complete_labels": true,
+    "CPU_real_residency": true,
+    "gpu_parallel_v1_all_input_and_source_sha": true,
+    "gpu_parallel_v1_same_original_bindings_and_commands": true,
+    "gpu_parallel_v1_benchmark_only": true,
+    "gpu_parallel_v1_lane0_recorded_prefix_exact": true,
+    "gpu_parallel_v1_lane1_recorded_prefix_exact": true,
+    "gpu_parallel_v1_actual_backend": true,
+    "GPU_interrupted_not_failure_labels": true,
+    "GPU_completed_step_prefix_matches_traces": true,
+    "old_pilot36_jsonl_unchanged": true
+  },
+  "runs": {
+    "cpu_serial_v1": {
+      "status": "complete_with_null",
+      "wall_s": 101.40302196796983,
+      "native_setup_s": 41.776667145080864,
+      "native_loop_s": 57.92189683089964,
+      "native_completed_step_calls": 4200,
+      "sim_step_wall_sum_s": 44.42699641326908,
+      "sim_step_wall_mean_s": 0.01057785628887359,
+      "cross_guard_s": 0.0,
+      "native_scene": {
+        "physxScene:enableGPUDynamics": false,
+        "physxScene:broadphaseType": "MBP",
+        "physxScene:timeStepsPerSecond": 250
+      },
+      "lanes": [
+        {
+          "trial_id": "box_g6_d1_c0",
+          "steps": 2100,
+          "label": 1,
+          "device": "cpu",
+          "native_evaluation_sha256": "77e0307b6e88db030075a70c8b8bad72109898549793371f5512fb10468f2427",
+          "trace_sha256": "c892a7c5899597ddb73fff897ae4fc95a2952181d1dca22a44a09ca3a7e57d43",
+          "final_rise_m": 0.08610363490879536,
+          "gates": {
+            "joint_limits": true,
+            "mimics": true,
+            "penetration": true,
+            "palm_tracking": true,
+            "no_arm_object_support": true,
+            "fixed_base": true,
+            "complete_execution": true
+          }
+        },
+        {
+          "trial_id": "box_g8_d0_next",
+          "steps": 2100,
+          "label": 1,
+          "device": "cpu",
+          "native_evaluation_sha256": "e5c177e840d5a2d6548edf061bb60bec2a8cc8fab75713cfd426a1f16323aab5",
+          "trace_sha256": "d71f4132ad163a709c8f770a0e39adaac8df99c13375098759c1826e2fbef52c",
+          "final_rise_m": 0.09906990639865398,
+          "gates": {
+            "joint_limits": true,
+            "mimics": true,
+            "penetration": true,
+            "palm_tracking": true,
+            "no_arm_object_support": true,
+            "fixed_base": true,
+            "complete_execution": true
+          }
+        }
+      ],
+      "known_recorded_environment_steps": 4200,
+      "preparation_nulls": [
+        {
+          "trial_id": "box_g1_d1_null",
+          "object_id": "ddg_gd_box_poisson_000",
+          "status": "no_hand_geometry_in_declared_budget",
+          "training_label": null,
+          "actual_physics_steps": 0,
+          "no_candidate_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_collection_backend_20261105_v1/pools/box_g1_d1/no_candidate.json",
+          "no_candidate_sha256": "1973288c5715a66b9fc13a949bec088af54bc2ea591168a07c1b52e5790f6f8d"
+        }
+      ],
+      "result_sha256": "c3e9ff737cd080500730c13d88350ffe7a76ac537aedbc10fd533ce9d32c2031",
+      "prepared_sha256": "bc09878031d9ad7dced1c1005f0827005284d304fbf16139398612dfc7aae24c",
+      "resident_scene_counts": {
+        "asset_setup_count": 1,
+        "state_reset_count": 1,
+        "native_audit_count": 2,
+        "physics_steps_added_for_reset": 0
+      }
+    },
+    "gpu_parallel_v1": {
+      "status": "complete_with_null",
+      "wall_s": 412.8842944849748,
+      "native_setup_s": 49.9300489409361,
+      "native_loop_s": null,
+      "native_completed_step_calls": 431,
+      "sim_step_wall_sum_s": 351.46059363521636,
+      "sim_step_wall_mean_s": 0.8154538135387851,
+      "cross_guard_s": 0.7189223675522953,
+      "native_scene": {
+        "physxScene:enableGPUDynamics": true,
+        "physxScene:broadphaseType": "GPU",
+        "physxScene:timeStepsPerSecond": 250
+      },
+      "lanes": [
+        {
+          "trial_id": "box_g6_d1_c0",
+          "steps": 431,
+          "label": null,
+          "device": "cuda:0",
+          "native_evaluation_sha256": "17c399626d95d6f2ceff4a10be71d78e5d9e24f4602c1eb19f4239a0cca35296",
+          "trace_sha256": "c88e88a7a1e11a01964f9c45d26dc445bbf49b11e98070bee40adafd90854f2e",
+          "final_rise_m": null,
+          "gates": null
+        },
+        {
+          "trial_id": "box_g8_d0_next",
+          "steps": 431,
+          "label": null,
+          "device": "cuda:0",
+          "native_evaluation_sha256": "8daa681c0d4cace42577216406a16529e3f954d75843c45382a7aae024fdc5dd",
+          "trace_sha256": "7c6f797a1ffbde65d8aa479a379c851add14924be25dac8b21e652019739007c",
+          "final_rise_m": null,
+          "gates": null
+        }
+      ],
+      "known_recorded_environment_steps": 862,
+      "preparation_nulls": [
+        {
+          "trial_id": "box_g1_d1_null",
+          "object_id": "ddg_gd_box_poisson_000",
+          "status": "no_hand_geometry_in_declared_budget",
+          "training_label": null,
+          "actual_physics_steps": 0,
+          "no_candidate_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_collection_backend_20261105_v1/pools/box_g1_d1/no_candidate.json",
+          "no_candidate_sha256": "1973288c5715a66b9fc13a949bec088af54bc2ea591168a07c1b52e5790f6f8d"
+        }
+      ],
+      "result_sha256": "63f79e2530b83a967a900187338429f911515fc4da8da2072ccf9f12997c3e2d",
+      "prepared_sha256": "7bed57eca6022614b996ee27793f312b12935001a25d473738c03d0c7fd8495c",
+      "interruption_accounting": {
+        "recorded_shared_ticks": 431,
+        "known_recorded_environment_steps": 862,
+        "interrupted_shared_step_ordinal": 432,
+        "potential_additional_unconfirmed_environment_steps_upper_bound": 2,
+        "original_normal_completion_clock_fields_are_zero": true,
+        "scope": "SIGINT occurred inside PhysX fetch_results for next step; source normal-return clock assignment did not run. Do not interpret original zero clock counters as zero executed steps. Finalized traces and completed sim.step timings prove 431 shared steps; in-flight next step remains explicitly unconfirmed."
+      }
+    }
+  },
+  "conclusion": "CPU serial resident: two complete new plans with original gates, both positive. GPU true dynamics/shared-clock route reached 431 saved steps per lane, interrupted as prohibitively slow; no complete GPU grasp validation or speedup claim.",
+  "bottleneck_evidence": "Saved original worker profile: GPU sim.step 351.46s vs cross-environment guard 0.719s; interruption stack at PhysX fetch_results. Not evidence of source/file reread bottleneck. Shared GPU0 workload existed; not an isolated intrinsic CPU-vs-GPU benchmark.",
+  "source_sha256": "9d33a76dfc3c9c43db354fe8858038ab62e1775c62afc11b2ae3a3f0390d28da",
+  "tests": {
+    "all_passed": true,
+    "tests": 12,
+    "errors": 0,
+    "failures": 0,
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "new_training_steps": 0,
+    "source_sha256": "9d33a76dfc3c9c43db354fe8858038ab62e1775c62afc11b2ae3a3f0390d28da",
+    "saved_trace_scope": "Contract-only read of already-completed pilot trace; not another trial or new performance result"
+  },
+  "new_simulations_for_this_audit": 0,
+  "new_network_forwards": 0,
+  "training_scope": "Two new candidate bindings measured on CPU, paired GPU partial repetitions; benchmark_only records excluded from independent training quotas. Old pilot36 unchanged.",
+  "cross_wave_residency": false
+}
