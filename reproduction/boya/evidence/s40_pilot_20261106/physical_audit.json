@@ -1,0 +1,248 @@
+{
+  "schema": "independent_s40_pilot_physical_audit_20261106_v1",
+  "status": "passed",
+  "protocol_json": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/PILOT_PROTOCOL.json",
+  "protocol_sha256": "9b6034b818d05a64f1fc5aa77013218cf73bd9a9bc05c2258956f2ff1e886188",
+  "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1",
+  "slots": 8,
+  "actual_trials": 5,
+  "positive_labels": 5,
+  "negative_labels": 0,
+  "preparation_nulls": 3,
+  "total_actual_physics_steps": 10500,
+  "additional_physics_steps_for_reset": 0,
+  "all7_native_validity_gates_pass": true,
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "new_training_updates": 0,
+  "unique_file_sha_checks": 756,
+  "check_count": 2444,
+  "all_passed": true,
+  "scope": "Original S40-derived mesh training pilot; finite Boya adaptation engineering verification, no new performance/generalization or faithful hardware reproduction claim.",
+  "no_arm_support_limit": "No full per-step illegal-body contact stream in trace; support gate re-thresholds raw evaluator maximum and retains checkpoint evidence. Other6 gates are re-derived from raw arrays.",
+  "trials": [
+    {
+      "trial_id": "graspnet_000_g6_d0",
+      "label": 1,
+      "gesture_id": 6,
+      "physics_steps": 2100,
+      "source_CGR_row": 1335,
+      "source_raw_depth_index": 2,
+      "target_output_index": 8,
+      "if_flip": false,
+      "commands_sha256": "ee7321aaa8740a57b63dccced1ed8ff6175ed8529e4cb43b7612fb037803382a",
+      "trace_sha256": "ca9f911f4cba3149caa52b29a6802f0f960e848e01ce137e79e3d5bebc992327",
+      "native_evaluation_sha256": "a338cf2f018443c3f954c697be8af7c872f7183f565572ae182f203464600272",
+      "canonical480_bytes_sha256": "f8d2f34c28fd2ead4d127ab752efcad2a2b734980e84ec4547b6fef873394525",
+      "all7_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "raw_final_reference_rise_mm": 95.97113728523254,
+      "raw_final_source_bottom_clearance_mm": 89.52976103412317,
+      "qualifying_pickup_steps": 352,
+      "original_source_vertices": 262146,
+      "hull_extreme_vertices": 1658,
+      "rederived_numerical_maxima": {
+        "joint_limit_violation_rad": 2.5544917292563696e-08,
+        "mimic_error_rad": 2.244114875793457e-05,
+        "penetration_m": 4.68594953417778e-05,
+        "palm_position_error_m": 0.0017480118544316466,
+        "palm_orientation_error_rad": 0.006246846263802129
+      },
+      "no_arm_support_evidence_boundary": "Original per-step evaluator maximum thresholded and checkpoint contacts retained; per-step illegal-body contact stream is not present in trace, so this one raw maximum is not independently regenerated."
+    },
+    {
+      "trial_id": "graspnet_000_g7_d0",
+      "label": 1,
+      "gesture_id": 7,
+      "physics_steps": 2100,
+      "source_CGR_row": 1335,
+      "source_raw_depth_index": 2,
+      "target_output_index": 8,
+      "if_flip": false,
+      "commands_sha256": "d25539fb343b9de4969d2934ff36c279c228a42c009a6498511decc1353d7dce",
+      "trace_sha256": "ada556a82f3e85a598e29e156dc0ddfc2fdc3e17611e9c2dfe7a070c7b558e6e",
+      "native_evaluation_sha256": "7b7cba938222fbee115215c9d73f6e2ddf7b8652997956d0a7d1dba71b22701d",
+      "canonical480_bytes_sha256": "f8d2f34c28fd2ead4d127ab752efcad2a2b734980e84ec4547b6fef873394525",
+      "all7_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "raw_final_reference_rise_mm": 93.62215548753738,
+      "raw_final_source_bottom_clearance_mm": 86.7699117170507,
+      "qualifying_pickup_steps": 376,
+      "original_source_vertices": 262146,
+      "hull_extreme_vertices": 1658,
+      "rederived_numerical_maxima": {
+        "joint_limit_violation_rad": 4.994454911866342e-07,
+        "mimic_error_rad": 2.251565456390381e-05,
+        "penetration_m": 3.909505903720856e-05,
+        "palm_position_error_m": 0.001976433694238793,
+        "palm_orientation_error_rad": 0.012167681848677177
+      },
+      "no_arm_support_evidence_boundary": "Original per-step evaluator maximum thresholded and checkpoint contacts retained; per-step illegal-body contact stream is not present in trace, so this one raw maximum is not independently regenerated."
+    },
+    {
+      "trial_id": "graspnet_002_g1_d0",
+      "label": 1,
+      "gesture_id": 1,
+      "physics_steps": 2100,
+      "source_CGR_row": 1922,
+      "source_raw_depth_index": 3,
+      "target_output_index": 12,
+      "if_flip": true,
+      "commands_sha256": "c4d9d4af72d27e77e14f556e31d0147d5c99cd66b00be045861dc9f8faf5aef4",
+      "trace_sha256": "346d69342d31717389881fb356c021d407110e1b0b88ffced0c0303469522177",
+      "native_evaluation_sha256": "59806076960c42ad458dc7d74a0fd3a14692aeb48e33dcc83b26cef5ea98c11f",
+      "canonical480_bytes_sha256": "10dd85f47fd46dc9f5d27bea2794fe4dd741886911e99453440a501776ae79aa",
+      "all7_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "raw_final_reference_rise_mm": 99.5447039604187,
+      "raw_final_source_bottom_clearance_mm": 100.26769339284938,
+      "qualifying_pickup_steps": 401,
+      "original_source_vertices": 262130,
+      "hull_extreme_vertices": 3821,
+      "rederived_numerical_maxima": {
+        "joint_limit_violation_rad": 7.760999096717569e-07,
+        "mimic_error_rad": 2.2113323211669922e-05,
+        "penetration_m": 6.485066842287779e-05,
+        "palm_position_error_m": 0.001520092883633085,
+        "palm_orientation_error_rad": 0.006589423558700268
+      },
+      "no_arm_support_evidence_boundary": "Original per-step evaluator maximum thresholded and checkpoint contacts retained; per-step illegal-body contact stream is not present in trace, so this one raw maximum is not independently regenerated."
+    },
+    {
+      "trial_id": "graspnet_002_g6_d0",
+      "label": 1,
+      "gesture_id": 6,
+      "physics_steps": 2100,
+      "source_CGR_row": 264,
+      "source_raw_depth_index": 3,
+      "target_output_index": 12,
+      "if_flip": true,
+      "commands_sha256": "f38cd633bf4331880d3f99ce2fc15447c7b909605b375abb24c25cc4c6828a42",
+      "trace_sha256": "e90681753d62012fe3280de0e69a09f47812cbaffdf9521ff8f4b76ccc2b5e87",
+      "native_evaluation_sha256": "3fbb15b093bda458fb41a2bb0ae11cfab1b1acaf5d294d17948402001d34e5d4",
+      "canonical480_bytes_sha256": "4842cea4054f59541e79140bfcf17e9440d8172a0fb9529c915797346ac18733",
+      "all7_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "raw_final_reference_rise_mm": 96.6733992099762,
+      "raw_final_source_bottom_clearance_mm": 91.82160150057553,
+      "qualifying_pickup_steps": 395,
+      "original_source_vertices": 262130,
+      "hull_extreme_vertices": 3821,
+      "rederived_numerical_maxima": {
+        "joint_limit_violation_rad": 4.691449362326239e-08,
+        "mimic_error_rad": 1.665949821472168e-05,
+        "penetration_m": 3.2067298889160156e-05,
+        "palm_position_error_m": 0.0020053840485167443,
+        "palm_orientation_error_rad": 0.006652217139238337
+      },
+      "no_arm_support_evidence_boundary": "Original per-step evaluator maximum thresholded and checkpoint contacts retained; per-step illegal-body contact stream is not present in trace, so this one raw maximum is not independently regenerated."
+    },
+    {
+      "trial_id": "graspnet_002_g8_d0",
+      "label": 1,
+      "gesture_id": 8,
+      "physics_steps": 2100,
+      "source_CGR_row": 1922,
+      "source_raw_depth_index": 3,
+      "target_output_index": 12,
+      "if_flip": true,
+      "commands_sha256": "f3ab40f0bab4f4edbd013bf678d8a847dceb7578a58a93f9f196343a909b2743",
+      "trace_sha256": "b09c9fe496aaa6d0d3527035e2334b403dc95b2ef2755de7f1edda80c52e5eff",
+      "native_evaluation_sha256": "fc99b7180ed75408c1756cd54d2b575405d39520a289667466d462e873cad589",
+      "canonical480_bytes_sha256": "10dd85f47fd46dc9f5d27bea2794fe4dd741886911e99453440a501776ae79aa",
+      "all7_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "raw_final_reference_rise_mm": 97.32864052057266,
+      "raw_final_source_bottom_clearance_mm": 96.66343002114952,
+      "qualifying_pickup_steps": 391,
+      "original_source_vertices": 262130,
+      "hull_extreme_vertices": 3821,
+      "rederived_numerical_maxima": {
+        "joint_limit_violation_rad": 5.674540375366632e-07,
+        "mimic_error_rad": 2.1636486053466797e-05,
+        "penetration_m": 5.551850699703209e-05,
+        "palm_position_error_m": 0.0018701043547616606,
+        "palm_orientation_error_rad": 0.009171561936456662
+      },
+      "no_arm_support_evidence_boundary": "Original per-step evaluator maximum thresholded and checkpoint contacts retained; per-step illegal-body contact stream is not present in trace, so this one raw maximum is not independently regenerated."
+    }
+  ],
+  "nulls": [
+    {
+      "trial_id": "graspnet_000_g1_d0",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "physics_steps": 0,
+      "label": null,
+      "arm_plans_checked": 4
+    },
+    {
+      "trial_id": "graspnet_000_g8_d0",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "physics_steps": 0,
+      "label": null,
+      "arm_plans_checked": 4
+    },
+    {
+      "trial_id": "graspnet_002_g7_d0",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "physics_steps": 0,
+      "label": null,
+      "arm_plans_checked": 4
+    }
+  ],
+  "cohorts": [
+    {
+      "object_id": "graspnet_000",
+      "physics_ticks": 4200,
+      "environment_steps": 4200,
+      "state_reset_count": 1,
+      "physics_steps_added_for_reset": 0,
+      "asset_setup_count": 1
+    },
+    {
+      "object_id": "graspnet_002",
+      "physics_ticks": 6300,
+      "environment_steps": 6300,
+      "state_reset_count": 2,
+      "physics_steps_added_for_reset": 0,
+      "asset_setup_count": 1
+    }
+  ],
+  "full_audit_path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/audit/s40_pilot_physical_audit_20261106.json",
+  "full_audit_sha256": "a308a8f62a15ec7d33222cbef8ed0fd040daa1148ae45d97aab56e8633e9546a"
+}

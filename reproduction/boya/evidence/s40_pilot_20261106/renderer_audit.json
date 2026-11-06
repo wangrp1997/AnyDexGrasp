@@ -1,0 +1,87 @@
+{
+  "schema": "anydex_s40_readonly_rtx_observation_independent_audit_v1",
+  "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1",
+  "observation_index_sha256": "f2d3032b278f769ef10a370946da2eea89e18ef1bd67546b83a02235f881d2da",
+  "manifest_sha256": "f788f6c2d64242171acd355e3d97879a11ffe2eb13617a1ffcf9d384fffb97d3",
+  "full_manifest_objects": 40,
+  "verified_frozen_renderer_files": 120,
+  "objects": [
+    {
+      "object_id": "graspnet_000",
+      "observation_sha256": "49745d8dabff1868be87b5d77671c2278d7dcd2ed7527800b8d24eaf5ea061c1",
+      "native_camera_max_error": 1.096557493696082e-07,
+      "source_vertices": 262146,
+      "source_triangles": 524288,
+      "source_float32_world_error_m": 2.9802322387695312e-08,
+      "ray_count": 96,
+      "object_first_hits": 83,
+      "valid_rays": 96,
+      "source_ray_depth_reconstruction_max_error_m": 0.0,
+      "median_rtx_source_depth_error_m": 2.48318093865052e-08,
+      "p90_rtx_source_depth_error_m": 6.300020488625435e-08,
+      "max_rtx_source_depth_error_m": 9.832799857667496e-08,
+      "max_png_depth_rounding_error_m": 0.0004904823303222283,
+      "retained_cgr_pixels": 557818,
+      "cgr_input_points_sha256": "c14860102e7054d4e36e6b89e75a426a1f2b64f089189ccecb859aefb6ed2a62",
+      "cgr_input_coords_sha256": "68e7dfce92d162a01984b9886982b60ec9ed28fccc41cf6a473464d915a16a5a",
+      "raw_candidate_shapes": {
+        "candidates": [
+          2048,
+          15
+        ],
+        "candidate_features": [
+          2048,
+          2261
+        ]
+      },
+      "raw_candidates": 2048,
+      "head_loaded": false,
+      "all_checks_pass": true
+    },
+    {
+      "object_id": "graspnet_002",
+      "observation_sha256": "7ce40c26716badf8de7db02315d586076a9260404f39ee54e944ddb715f33d10",
+      "native_camera_max_error": 1.096557493696082e-07,
+      "source_vertices": 262130,
+      "source_triangles": 524288,
+      "source_float32_world_error_m": 2.9802322387695312e-08,
+      "ray_count": 96,
+      "object_first_hits": 76,
+      "valid_rays": 96,
+      "source_ray_depth_reconstruction_max_error_m": 0.0,
+      "median_rtx_source_depth_error_m": 3.265966708188017e-08,
+      "p90_rtx_source_depth_error_m": 9.152920077415416e-08,
+      "max_rtx_source_depth_error_m": 2.6075717618478933e-07,
+      "max_png_depth_rounding_error_m": 0.0004987106323242063,
+      "retained_cgr_pixels": 542720,
+      "cgr_input_points_sha256": "ced0438e3e0bbec06a619aa55881f8a36bd96dc88f285261f025ab6fb50d2eb0",
+      "cgr_input_coords_sha256": "ab79f82f3a93119e6d100e30286516e909762bf98492c3a5b67eab4f86f53d95",
+      "raw_candidate_shapes": {
+        "candidates": [
+          2048,
+          15
+        ],
+        "candidate_features": [
+          2048,
+          2261
+        ]
+      },
+      "raw_candidates": 2048,
+      "head_loaded": false,
+      "all_checks_pass": true
+    }
+  ],
+  "new_isaac_processes": 0,
+  "new_model_forwards": 0,
+  "new_physics_steps": 0,
+  "new_training_updates": 0,
+  "status": "passed",
+  "elapsed_wall_s": 7.941773511003703,
+  "integration_review": "/tmp/s40_renderer_integration_review_20261106.md",
+  "source_inventory_independently_verified_now": true,
+  "driver_frozen_implementation_files_verified": 563,
+  "driver_frozen_input_files_verified": 62,
+  "driver_no_candidate_nonzero_future_fix_required": true,
+  "full_audit_path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/audit/s40_actual_renderer_audit_20261106.json",
+  "full_audit_sha256": "cf3100668a97b379a97b075b3b6240646547c42a4e4cfeb5aa96f8a8331c0a0e"
+}

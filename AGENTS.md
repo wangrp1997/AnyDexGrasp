@@ -221,3 +221,16 @@ GPU0已用116真实记录跑通双阶段各2epoch工程smoke，16optimizer steps
 S40从本机DexGraspNet2.0中GraspNet scene0000–0099身份表重建40ID，40原/简化模型和URDF均有SHA，属于派生来源，尚未与官方模型归档/AnyDex CAD逐字节核验。官方GraspNet API已核对train0–99和getObjIds语义。不要套DGN_5k scale.1或25/106/130mm过滤。EGAD官方49个A0–G6已下载ZIP/校验/解压到public/AnyDexGrasp/object_alignment_20261106_v1；原打印尺度/质量仍未知。L144/T30精确身份及约150全测试/选13DexNet表尚未取得，论文CAD说明upon request。四个Boya head仍来自旧DGN，未开始原S40新采集/训练/评测。
 
 报告reproduction/OBJECT_SET_ALIGNMENT_20261106.md和reproduction/boya/SCORE_FIRST_ALIGNMENT_20261106.md；轻量凭据分别在reproduction/evidence/object_alignment_20261106和boya/evidence/score_first_alignment_20261106。并行代理两项中途服务429限流，已由主代理接回完成，不当成文件权限或资产失败。整体论文复现仍未通过。CanonDex只读、大资产不提交。
+
+
+## 2026-11-06 最新：S40原尺度派生场景与两件真实采集链已通过
+
+S40全部40件按官方尺度依据scale1，原nontextured.ply不减面转换OBJ，逐顶点/拓扑保形；现成CoACD是显式碰撞近似（最大AABB边界差2.13347mm），不等同作者CAD或20µm的CAD近似证书。独立资产3195项通过。资产public/AnyDexGrasp/boya_s40_assets_20261106_v1，原40全train，无旧DGN尺寸筛选/伪10测试。
+
+新prepare_s40_scenes.py/render_s40_observations.py/run_s40_pilot.py独立入口；原DGN源/四头/6对4结果不改。固定000/002、四型1/6/7/8、extra0，8槽均有几何、22次臂准备后5准入3零步null，5条实际全2100步/10500步正例。原始末态升高95.971/93.622/99.545/96.673/97.329mm；不能写8/8、泛化率或完成原实机复现。采集不加载旧DGN head、不用部署.85门；几何优先采数本身符合论文结构，score-first修的是部署。仍为双flip/固定深入/Boya位置闭合/孤立场景移植。
+
+outputs/s40_alignment_pilot_20261106_v1/PROGRESS=complete，338.802s；场景首备70.963s另计。GPU0单模型两次CGR，CPU几何/臂双worker及两对象常驻独立执行，非GPU物理。14项源/renderer测试过；实际两帧RGBD输入字节核验、563源码/62输入freeze过；物理2444项/756文件SHA与5条数组/提起/索引通过。七门中六门trace重算，臂支撑仅原evaluator最大值和checkpoint重判，完整接触流未保存的边界保留。
+
+两段原模型RTX视频在本轮videos/index.html，235帧25fps9.4s、回放零物理，媒体核验通过。完整审计在本轮audit，轻量evidence/s40_pilot_20261106；报告S40_COLLECTION_PILOT_20261106.md。原评分头仍只用旧DGN训练，本轮5正0负不训练新评分器。
+
+扩大前修下一版本通用无候选null分类（当前geometry非零会暂停，本轮8槽非空未触发）及renderer source_inventory路径freeze（当前40mesh/urdf/pose冻结、inventory已独立读回）。保留本轮冻结源码/输出，不热改重跑。后续按S40每型100次论文预算明确多姿态/深入与null成本，EGAD留到模型/尺度协议冻结再测试。整体复现仍未通过；L144/T30/完整实物测试身份等缺口不变。CanonDex只读，大资产不提交。

@@ -1,0 +1,48 @@
+{
+  "schema": "s40_pilot_video_audit_v1",
+  "status": "passed",
+  "rows": [
+    {
+      "trial_id": "graspnet_000_g6_d0",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/videos/graspnet_000_g6_d0/isaac_full_arm_pickup.mp4",
+      "sha256": "e12b18d4c0e050bd343e05b08445ffbc2e88228dff8b58a5672c814090ff2ecf",
+      "container": {
+        "codec": "avc1",
+        "width": 1280,
+        "height": 552,
+        "frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "all_H264_sample_lengths_valid": true
+      },
+      "decoded_source_gif_frames": 210,
+      "gif_duration_ms": 9400,
+      "physics_steps_during_replay": 0,
+      "render_check_sha256": "83d3ab607d318a58361d91053573d3d682ea22efba72bd222696fd70d36969ea",
+      "process_wall_s": 38.57173637999222
+    },
+    {
+      "trial_id": "graspnet_002_g1_d0",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/videos/graspnet_002_g1_d0/isaac_full_arm_pickup.mp4",
+      "sha256": "58ed88c791ad1ffc8818171548fc5c55f4a217c13ebc579d701747d36564dc21",
+      "container": {
+        "codec": "avc1",
+        "width": 1280,
+        "height": 552,
+        "frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "all_H264_sample_lengths_valid": true
+      },
+      "decoded_source_gif_frames": 210,
+      "gif_duration_ms": 9400,
+      "physics_steps_during_replay": 0,
+      "render_check_sha256": "683c4ec4950f02ed3178e2d893e165c9ba855ebe654d15a75d339dc0bdfee6c0",
+      "process_wall_s": 36.31546249508392
+    }
+  ],
+  "physics_steps": 0,
+  "verification": "Independent MP4 sample tables/H264 NAL lengths and complete source GIF decode, SHA and native transform receipts; MP4 pixel decode unavailable in installed OpenCV build and not claimed",
+  "full_audit_path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/audit/s40_pilot_media_audit_20261106.json",
+  "full_audit_sha256": "c84956efbd09dd9c4dee92d4ea78dd1bc1c978bf2f0c9c584a479951d485e544"
+}
