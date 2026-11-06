@@ -1,0 +1,1488 @@
+{
+  "schema": "anydex_boya_adaptation_failure_mechanisms_v1",
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "new_training_steps": 0,
+  "boundary": "First contacts are per-finger summed object normal loads >1mN, not raw individual contact points. Distal-pad surface distances are exact nearest triangles at saved actual poses, not contact-force or enclosure certificates. Object/palm coordinates use original saved pmbase-to-palm transform; preshape reference axes X=thumb-to-index, Z=approach; mesh vertices retain source scale.",
+  "checks": {
+    "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1_native_pickup_reproduced": true,
+    "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1_mapping_once": true,
+    "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1_complete_original_execution": true,
+    "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1_native_pickup_reproduced": true,
+    "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1_mapping_once": true,
+    "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1_complete_original_execution": true,
+    "mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0_native_pickup_reproduced": true,
+    "mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0_mapping_once": true,
+    "mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0_complete_original_execution": true,
+    "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2_native_pickup_reproduced": true,
+    "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2_mapping_once": true,
+    "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2_complete_original_execution": true,
+    "mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0_native_pickup_reproduced": true,
+    "mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0_mapping_once": true,
+    "mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0_complete_original_execution": true
+  },
+  "all_checks_passed": true,
+  "summary": {
+    "actual_failures_analyzed": 4,
+    "same_object_successes_analyzed": 1,
+    "original_physics_gates_all_pass": true,
+    "failures_with_observed_pickup": 0,
+    "coordinate_or_double_depth_mismatch_found": false,
+    "table_blocking_directly_observed": [
+      "Orbit:ffdistal",
+      "Utana:mfdistal"
+    ],
+    "source_palm_mapping_max_abs_error": 0.0,
+    "recommendation": "The missing test is full closing-path/table/contact retention, rather than another forward, arbitrary force increase or treating objects as ungraspable. Existing static open-hand calibration is internally consistent but does not certify closing feasibility."
+  },
+  "failed_trials": [
+    {
+      "tag": "learned_failure",
+      "trial_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1",
+      "object_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc",
+      "gesture_id": 8,
+      "label": 0,
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0000/execution_000",
+      "physics_steps": 2100,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "pickup": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": 8.531659841537476e-05,
+        "final_bottom_clearance_m": -0.0002161553655542353,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "native_max_palm_error_m": 0.004110674166552299,
+      "native_max_palm_error_rad": 0.045215686962997145,
+      "dual_contact_close_hold_steps": 179,
+      "dual_contact_lift_steps": 166,
+      "closure": {
+        "TH": {
+          "participating": true,
+          "command_change_max_rad": 0.8726646259971648,
+          "end_close_tracking_error_max_rad": 0.05621364712715149,
+          "end_hold_tracking_error_max_rad": 0.05312967300415039,
+          "final_tracking_error_max_rad": 2.3245811462402344e-06,
+          "projected_progress_end_approach": 7.449646788675285e-09,
+          "projected_progress_end_close": 0.9781196188816972,
+          "projected_progress_end_hold": 0.9887142550365743,
+          "projected_progress_final": 0.9999980219501409
+        },
+        "FF": {
+          "participating": true,
+          "command_change_max_rad": 0.9075712110370514,
+          "end_close_tracking_error_max_rad": 0.4317123591899872,
+          "end_hold_tracking_error_max_rad": 0.4385775029659271,
+          "final_tracking_error_max_rad": 1.1324882507324219e-06,
+          "projected_progress_end_approach": 8.703256595465732e-07,
+          "projected_progress_end_close": 0.5302566088112428,
+          "projected_progress_end_hold": 0.5459139795792495,
+          "projected_progress_final": 0.9999994999055408
+        },
+        "MF": {
+          "participating": true,
+          "command_change_max_rad": 0.9075712110370514,
+          "end_close_tracking_error_max_rad": 0.25750893354415894,
+          "end_hold_tracking_error_max_rad": 0.24264246225357056,
+          "final_tracking_error_max_rad": 2.562999725341797e-06,
+          "projected_progress_end_approach": 8.642037790722583e-07,
+          "projected_progress_end_close": 0.711038618551632,
+          "projected_progress_end_hold": 0.7467456823672026,
+          "projected_progress_final": 0.9999973747333538
+        },
+        "RF": {
+          "participating": true,
+          "command_change_max_rad": 0.9773843811168246,
+          "end_close_tracking_error_max_rad": 0.007988274097442627,
+          "end_hold_tracking_error_max_rad": 0.00016598403453826904,
+          "final_tracking_error_max_rad": 1.3709068298339844e-06,
+          "projected_progress_end_approach": 7.45209143056846e-07,
+          "projected_progress_end_close": 0.9932876548526278,
+          "projected_progress_end_hold": 1.0000436164210746,
+          "projected_progress_final": 0.9999990502589942
+        },
+        "LF": {
+          "participating": true,
+          "command_change_max_rad": 1.0471975511965976,
+          "end_close_tracking_error_max_rad": 0.0085829496383667,
+          "end_hold_tracking_error_max_rad": 0.00013405084609985352,
+          "final_tracking_error_max_rad": 2.384185791015625e-06,
+          "projected_progress_end_approach": 6.298667178925237e-07,
+          "projected_progress_end_close": 0.9934032822640396,
+          "projected_progress_end_hold": 1.0000052380359405,
+          "projected_progress_final": 0.9999982764969789
+        }
+      },
+      "aperture_and_depth": {
+        "source_candidate_index": 1109,
+        "if_flip": true,
+        "source_slot": "g8:distal_000:ff",
+        "actual_reference_width_m": 0.14085802174547776,
+        "raw_width_m": 0.0897822380065918,
+        "requested_opening_m": 0.14085802174547776,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "raw_depth_m": 0.009999999776482582,
+        "additional_depth_index": 1,
+        "additional_depth_m": 0.01,
+        "cgr_score": 0.7502235174179077,
+        "score_source": "CGR antipodal score; no Boya learned head",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        },
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.0380156317632651,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "extra_depth_m": 0.01,
+        "total_depth_m": 0.019999999776482584
+      },
+      "mapping_check": {
+        "recomputed_source_palm_max_abs_error": 0.0,
+        "source_palm_plan_palm_max_abs_error": 1.3877787807814457e-17,
+        "total_depth_once": true,
+        "slot_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "plan_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "source_distal_pads": true
+      },
+      "evidence_sha256": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1/plan_000/plan.json": "1c876727a4cbe73391fc0f87e8c22c1679eae687c60f94e71b909bd3cee9c2ac",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1/plan_000/commands.npz": "20bdade22a556a21701d9315533229c7fb1c8afa5ec51a700aae8fd55e6945df",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1/trial_binding.json": "b1e77adf7cc0f7c218ba8a33cb525f654bbf1dc44401afcebc62674c7a84204a",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0000/execution_000/evaluation.json": "70c76e5326b494e9d01d9e58dd0f71c8ecd5d1e63f3c50c6e1fd69514da52bb2",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0000/execution_000/trace.npz": "d6372e6b90f8abdd57c78b449d1dfeddd7326ceeda5acb957da7a729c274ee0a",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/pools/sem_Bottle_e593aa021f3fa324530647fc03dd20dc/g8/d1/generation.json": "a3e0de73a6c2813edd78327b0e8df1a86f5e08bb371c5e65300dba7bd367c76e",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/observations/sem_Bottle_e593aa021f3fa324530647fc03dd20dc/observation.json": "fa6621a704f6e0dcf52fcb01dfabaa1d0306975348cbab403dae2c08a380ac3a",
+        "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/sem_Bottle_e593aa021f3fa324530647fc03dd20dc/mesh/simplified.obj": "eb4b145eb7cccbfbc43d4838d36333a1411b72af667a35ad8b7dc906e81fd6ed",
+        "/home/wangrenpeng/CanonDex/assets/gestures/boya/templates/five_finger_wrap.json": "467df0ce03e68b4f96be8b9a947101d7e6ed3913f5983dc8724fbc0c29cf1076"
+      },
+      "native_phase_boundary_contact_evidence": [
+        {
+          "phase": "approach",
+          "step": 1300,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        },
+        {
+          "phase": "close",
+          "step": 1550,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 8.246737480163574,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.6969658136367798,
+                0.04054770991206169,
+                0.08039959520101547
+              ],
+              "weighted_raw_normal": [
+                0.4886775612831116,
+                -0.05649230256676674,
+                0.8706336617469788
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 5.13342809677124,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7539592981338501,
+                0.055459536612033844,
+                0.04363350197672844
+              ],
+              "weighted_raw_normal": [
+                -0.9623587131500244,
+                0.27078551054000854,
+                -0.023259414359927177
+              ]
+            },
+            "mf": {
+              "sum_normal_load_n": 3.795764923095703,
+              "contact_link_names": [
+                "mfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7414788603782654,
+                0.06894326210021973,
+                0.06990393996238708
+              ],
+              "weighted_raw_normal": [
+                -0.7140566110610962,
+                0.027031494304537773,
+                0.6995658874511719
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": -0.5058307850388462,
+          "thumb_index_weighted_contact_separation_m": 0.069443253535709
+        },
+        {
+          "phase": "hold",
+          "step": 1600,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 7.601329883560538,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.6955377107390844,
+                0.03864315252582333,
+                0.08051433802495378
+              ],
+              "weighted_raw_normal": [
+                0.42137843445057777,
+                -0.06232979042815213,
+                0.9036329081122686
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 4.295773088932037,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7516467198675078,
+                0.05679731723645748,
+                0.04503122992401746
+              ],
+              "weighted_raw_normal": [
+                -0.9616674184799194,
+                0.26916494965553284,
+                0.05240295082330704
+              ]
+            },
+            "mf": {
+              "sum_normal_load_n": 4.163248062133789,
+              "contact_link_names": [
+                "mfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7369230389595032,
+                0.06879716366529465,
+                0.07199770957231522
+              ],
+              "weighted_raw_normal": [
+                -0.6839362382888794,
+                -0.027165502309799194,
+                0.7290359735488892
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": -0.37502559851784567,
+          "thumb_index_weighted_contact_separation_m": 0.06882474527535179
+        },
+        {
+          "phase": "lift",
+          "step": 2100,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        }
+      ],
+      "object_displacement_during_close_m": 0.04576093330979347,
+      "object_displacement_during_close_xy_m": 0.04576091095805168,
+      "first_dual_contact_time_s": 5.688,
+      "last_dual_contact_time_s": 7.072,
+      "maximum_lift_reference_rise_m": 0.002413976937532425,
+      "pickup_independently_recomputed": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": 8.531659841537476e-05,
+        "final_bottom_clearance_m": -0.0002161553655542353,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "mechanism_assessment": {
+        "primary": "closure pushes object sideways, then contact slips away before qualifying pickup",
+        "evidence": "45.761mm horizontal object motion during close, actual thumb/FF/MF contact by 5.816s; dual contact ends7.072s; no observed pickup. Positive loads and FF/MF target shortfall are genuine object obstruction, not failure to send closure commands.",
+        "fix_needed": "Test contact-centering/enclosure through the full closure sweep and retain opposed contact while lifting; static open pad alignment and collision clearance are insufficient."
+      }
+    },
+    {
+      "tag": "learned_failure",
+      "trial_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1",
+      "object_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct",
+      "gesture_id": 6,
+      "label": 0,
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0002/execution_000",
+      "physics_steps": 2100,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "pickup": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": -1.1175870895385742e-08,
+        "final_bottom_clearance_m": -0.00017825638290945925,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "native_max_palm_error_m": 0.006426951415724651,
+      "native_max_palm_error_rad": 0.036544762358648376,
+      "dual_contact_close_hold_steps": 0,
+      "dual_contact_lift_steps": 41,
+      "closure": {
+        "TH": {
+          "participating": true,
+          "command_change_max_rad": 0.2545538852110362,
+          "end_close_tracking_error_max_rad": 0.0011344552040100098,
+          "end_hold_tracking_error_max_rad": 0.0002040266990661621,
+          "final_tracking_error_max_rad": 5.364418029785156e-07,
+          "projected_progress_end_approach": 3.502770590023579e-11,
+          "projected_progress_end_close": 0.9956386091816114,
+          "projected_progress_end_hold": 0.9992742379887174,
+          "projected_progress_final": 1.0000015182913493
+        },
+        "FF": {
+          "participating": true,
+          "command_change_max_rad": 1.145492483449663,
+          "end_close_tracking_error_max_rad": 0.9494910836219788,
+          "end_hold_tracking_error_max_rad": 0.9937047362327576,
+          "final_tracking_error_max_rad": 1.3709068298339844e-06,
+          "projected_progress_end_approach": 9.98103253810088e-07,
+          "projected_progress_end_close": 0.2112530536977701,
+          "projected_progress_end_hold": 0.188802731151037,
+          "projected_progress_final": 0.9999998839143903
+        },
+        "MF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 0.0006537281442433596,
+          "end_hold_tracking_error_max_rad": 0.0003570514090824872,
+          "final_tracking_error_max_rad": 6.457791528191592e-07
+        },
+        "RF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 0.0005876742652617395,
+          "end_hold_tracking_error_max_rad": 0.00033585139317438006,
+          "final_tracking_error_max_rad": 6.061439421500836e-07
+        },
+        "LF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 0.0005223297048360109,
+          "end_hold_tracking_error_max_rad": 0.0003138971806038171,
+          "final_tracking_error_max_rad": 5.852717777088401e-07
+        }
+      },
+      "aperture_and_depth": {
+        "source_candidate_index": 1234,
+        "if_flip": false,
+        "source_slot": "g6:distal_000:ff",
+        "actual_reference_width_m": 0.13051790938638097,
+        "raw_width_m": 0.09387953579425812,
+        "requested_opening_m": 0.13051790938638097,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "raw_depth_m": 0.029999999329447746,
+        "additional_depth_index": 1,
+        "additional_depth_m": 0.01,
+        "cgr_score": 0.2374790608882904,
+        "score_source": "CGR antipodal score; no Boya learned head",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        },
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.0010265427512941572,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "extra_depth_m": 0.01,
+        "total_depth_m": 0.03999999932944775
+      },
+      "mapping_check": {
+        "recomputed_source_palm_max_abs_error": 0.0,
+        "source_palm_plan_palm_max_abs_error": 1.6653345369377348e-16,
+        "total_depth_once": true,
+        "slot_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "plan_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "source_distal_pads": true
+      },
+      "evidence_sha256": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1/plan_000/plan.json": "aca51928277604adacb8a6b766de8c4ca7036b8b5af2e5e9c2017a1b10fea2e3",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1/plan_000/commands.npz": "d9c37657afe3193481b4901ccded167e3184cb2fbd7b95401cbcea7fc176f4bd",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1/trial_binding.json": "42e1accaa438cb47d1542d3afb333cf470729d7a7d94b7632ce7bbba6edb0438",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0002/execution_000/evaluation.json": "f3719220ead71c83de76e7b0998e78c87a2ccac608a9839716d707015c8211af",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0002/execution_000/trace.npz": "07e3bf3cfc15eaa0214098020b26ec4b74e1c7619e8cfd7be20672a5283538cf",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/pools/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct/g6/d1/generation.json": "806d24aee421918e101ce6dc8f0fe82a3d1a9152a2418d83d1a818ca1eca540d",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/observations/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct/observation.json": "c842e71f234349ebac141ba4e9d74abb981cb8ac886c69bcbad4c012f47e6d3a",
+        "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct/mesh/simplified.obj": "fd0646e45f2072b2fc4fb2b6cacc588216a3fad2e58f9f22f67a0fdbe6b8ece7",
+        "/home/wangrenpeng/CanonDex/assets/gestures/boya/templates/five_finger_wrap.json": "467df0ce03e68b4f96be8b9a947101d7e6ed3913f5983dc8724fbc0c29cf1076"
+      },
+      "native_phase_boundary_contact_evidence": [
+        {
+          "phase": "approach",
+          "step": 1300,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        },
+        {
+          "phase": "close",
+          "step": 1550,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": [
+            {
+              "bodies": [
+                "ffdistal",
+                "collisionPlane"
+              ],
+              "normal_load_n": 3.498295783996582
+            }
+          ]
+        },
+        {
+          "phase": "hold",
+          "step": 1600,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": [
+            {
+              "bodies": [
+                "ffdistal",
+                "collisionPlane"
+              ],
+              "normal_load_n": 4.397221997380257
+            }
+          ]
+        },
+        {
+          "phase": "lift",
+          "step": 2100,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        }
+      ],
+      "object_displacement_during_close_m": 2.7105807021143846e-07,
+      "object_displacement_during_close_xy_m": 2.682209014892578e-07,
+      "first_dual_contact_time_s": 7.1240000000000006,
+      "last_dual_contact_time_s": 7.292,
+      "maximum_lift_reference_rise_m": 0.005448760464787483,
+      "pickup_independently_recomputed": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": -1.1175870895385742e-08,
+        "final_bottom_clearance_m": -0.00017825638290945925,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "mechanism_assessment": {
+        "primary": "index closing path blocked by table before contacting object",
+        "evidence": "No loaded object contact in close/hold; FF end-hold progress0.1888 with0.9937rad target error. Original checkpoint directly records ffdistal/table3.498N close and4.397N hold. Weak object contact occurs only during lift7.0/7.124s; never qualifies pickup.",
+        "fix_needed": "Check table clearance along actual finger closure, not only open-hand approach; choose/reposition a table-compatible orientation or closure before lifting. Do not increase drive torque to force the finger into the table."
+      }
+    },
+    {
+      "tag": "learned_failure",
+      "trial_id": "mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0",
+      "object_id": "mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "gesture_id": 7,
+      "label": 0,
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0003/execution_000",
+      "physics_steps": 2100,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "pickup": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": 1.862645149230957e-08,
+        "final_bottom_clearance_m": -0.0002709473491009501,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "native_max_palm_error_m": 0.009917034926753159,
+      "native_max_palm_error_rad": 0.06259986171713963,
+      "dual_contact_close_hold_steps": 113,
+      "dual_contact_lift_steps": 0,
+      "closure": {
+        "TH": {
+          "participating": true,
+          "command_change_max_rad": 0.2766900801917749,
+          "end_close_tracking_error_max_rad": 0.0008760690689086914,
+          "end_hold_tracking_error_max_rad": 5.608797073364258e-05,
+          "final_tracking_error_max_rad": 8.940696716308594e-07,
+          "projected_progress_end_approach": 3.978556023259532e-08,
+          "projected_progress_end_close": 0.9967803203125563,
+          "projected_progress_end_hold": 1.0001150687842488,
+          "projected_progress_final": 1.0000021454919878
+        },
+        "FF": {
+          "participating": true,
+          "command_change_max_rad": 1.245105360862987,
+          "end_close_tracking_error_max_rad": 0.005488395690917969,
+          "end_hold_tracking_error_max_rad": 0.0010534498142078519,
+          "final_tracking_error_max_rad": 2.9802322387695312e-06,
+          "projected_progress_end_approach": 2.3469674004795706e-06,
+          "projected_progress_end_close": 0.9951690883940072,
+          "projected_progress_end_hold": 0.9994829674961744,
+          "projected_progress_final": 1.00000261688217
+        },
+        "MF": {
+          "participating": true,
+          "command_change_max_rad": 1.245105360862987,
+          "end_close_tracking_error_max_rad": 0.9626657962799072,
+          "end_hold_tracking_error_max_rad": 1.0008554458618164,
+          "final_tracking_error_max_rad": 6.4373016357421875e-06,
+          "projected_progress_end_approach": 2.3969995814170046e-06,
+          "projected_progress_end_close": 0.24442823556030585,
+          "projected_progress_end_hold": 0.22498330056354596,
+          "projected_progress_final": 1.0000052374060877
+        },
+        "RF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 0.00032896045013330877,
+          "end_hold_tracking_error_max_rad": 4.612128759617917e-05,
+          "final_tracking_error_max_rad": 2.547035649058671e-07
+        },
+        "LF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 0.00031519020558334887,
+          "end_hold_tracking_error_max_rad": 3.6713085137307644e-05,
+          "final_tracking_error_max_rad": 2.3601953103025153e-07
+        }
+      },
+      "aperture_and_depth": {
+        "source_candidate_index": 1406,
+        "if_flip": false,
+        "source_slot": "g7:distal_000:ff",
+        "actual_reference_width_m": 0.13206316808570315,
+        "raw_width_m": 0.09749201685190201,
+        "requested_opening_m": 0.13206316808570315,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "raw_depth_m": 0.03999999910593033,
+        "additional_depth_index": 0,
+        "additional_depth_m": 0.0,
+        "cgr_score": 0.515350341796875,
+        "score_source": "CGR antipodal score; no Boya learned head",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        },
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.005364919953359748,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "extra_depth_m": 0.0,
+        "total_depth_m": 0.03999999910593033
+      },
+      "mapping_check": {
+        "recomputed_source_palm_max_abs_error": 0.0,
+        "source_palm_plan_palm_max_abs_error": 0.0,
+        "total_depth_once": true,
+        "slot_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "plan_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "source_distal_pads": true
+      },
+      "evidence_sha256": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0/plan_000/plan.json": "eba3d6a033001fcb2a5c49d60d537924bf965e9b0c30ba155989a16aa9595598",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0/plan_000/commands.npz": "7ad3156111d02d027ea816d8858d3b566899b15004100e868847a53f0f0e5cf4",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0/trial_binding.json": "4299ed598584bee5e0d12740d19326d9ede6e4c96d2449a2ddaff7ce7990adb1",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0003/execution_000/evaluation.json": "01342ea3c3a1363f8b636f1e2cee2ba56c04f55b1e10991c4c639850ae618adf",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0003/execution_000/trace.npz": "00e9349f68ade7703b96df63fac8520b57d24ec87dfcd86c78a0ab371da19d91",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/pools/mujoco_Utana_5_Porcelain_Ramekin_Large/g7/d0/generation.json": "a2d7211d0b99d4b1c9034794645dc85c0e245d471146bb9b9f3a783d63c747c3",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/observations/mujoco_Utana_5_Porcelain_Ramekin_Large/observation.json": "3c5c983c3a6bc079e32a02095e43ab708911f9786ab3e65caf2d7278bcb7215b",
+        "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/mujoco_Utana_5_Porcelain_Ramekin_Large/mesh/simplified.obj": "5d698c3dac47cdbcc42148167071a3e1aaedbf4a85451cf522941753186d695c",
+        "/home/wangrenpeng/CanonDex/assets/gestures/boya/templates/five_finger_wrap.json": "467df0ce03e68b4f96be8b9a947101d7e6ed3913f5983dc8724fbc0c29cf1076"
+      },
+      "native_phase_boundary_contact_evidence": [
+        {
+          "phase": "approach",
+          "step": 1300,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        },
+        {
+          "phase": "close",
+          "step": 1550,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": [
+            {
+              "bodies": [
+                "mfdistal",
+                "collisionPlane"
+              ],
+              "normal_load_n": 4.3260094821453094
+            }
+          ]
+        },
+        {
+          "phase": "hold",
+          "step": 1600,
+          "object_contact_by_finger": {
+            "ff": {
+              "sum_normal_load_n": 0.7435115575790405,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7288318872451782,
+                0.1251978725194931,
+                0.030653703957796097
+              ],
+              "weighted_raw_normal": [
+                -0.20482754707336426,
+                0.9642884731292725,
+                0.1679089218378067
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [
+            {
+              "bodies": [
+                "mfdistal",
+                "collisionPlane"
+              ],
+              "normal_load_n": 4.836544036865234
+            }
+          ]
+        },
+        {
+          "phase": "lift",
+          "step": 2100,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        }
+      ],
+      "object_displacement_during_close_m": 0.0502406470477581,
+      "object_displacement_during_close_xy_m": 0.0502406470477581,
+      "first_dual_contact_time_s": 5.264,
+      "last_dual_contact_time_s": 5.756,
+      "maximum_lift_reference_rise_m": 1.7091631889343262e-05,
+      "pickup_independently_recomputed": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": 1.862645149230957e-08,
+        "final_bottom_clearance_m": -0.0002709473491009501,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "mechanism_assessment": {
+        "primary": "closure pushes bowl out while middle finger is blocked by table",
+        "evidence": "50.241mm horizontal bowl motion during close; thumb/index contact initially5.248/5.264s but dual contact ends5.756s. Middle end-hold progress0.2250 and1.0009rad error; mfdistal/table4.326N close4.837N hold. Thumb/index close almost fully after losing bowl.",
+        "fix_needed": "Score grasp and closure together, including table-clear sweep and simultaneous enclosure; the same-object g8 record already demonstrates an alternative multi-finger geometry that holds the bowl."
+      }
+    },
+    {
+      "tag": "learned_failure",
+      "trial_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2",
+      "object_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock",
+      "gesture_id": 6,
+      "label": 0,
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0008/execution_000",
+      "physics_steps": 2100,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "pickup": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": 5.971081554889679e-05,
+        "final_bottom_clearance_m": -0.000195670833985008,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "native_max_palm_error_m": 0.0011260053189841278,
+      "native_max_palm_error_rad": 0.00510056405432546,
+      "dual_contact_close_hold_steps": 181,
+      "dual_contact_lift_steps": 81,
+      "closure": {
+        "TH": {
+          "participating": true,
+          "command_change_max_rad": 0.11932213369267322,
+          "end_close_tracking_error_max_rad": 0.001774609088897705,
+          "end_hold_tracking_error_max_rad": 0.0006285235285758972,
+          "final_tracking_error_max_rad": 7.450580596923828e-07,
+          "projected_progress_end_approach": -6.796207626065642e-06,
+          "projected_progress_end_close": 0.9853978645460147,
+          "projected_progress_end_hold": 0.9963736248334688,
+          "projected_progress_final": 1.0000059864208424
+        },
+        "FF": {
+          "participating": true,
+          "command_change_max_rad": 0.5369496016170295,
+          "end_close_tracking_error_max_rad": 0.0038737058639526367,
+          "end_hold_tracking_error_max_rad": 0.0016786555061116815,
+          "final_tracking_error_max_rad": 3.2186508178710938e-06,
+          "projected_progress_end_approach": 6.888116657613732e-06,
+          "projected_progress_end_close": 0.992044655180452,
+          "projected_progress_end_hold": 0.9967716962977247,
+          "projected_progress_final": 0.9999942103188789
+        },
+        "MF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 1.8821996491169557e-05,
+          "end_hold_tracking_error_max_rad": 1.265006289941084e-06,
+          "final_tracking_error_max_rad": 2.9975635129630973e-07
+        },
+        "RF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 1.7943775674211793e-05,
+          "end_hold_tracking_error_max_rad": 1.5012183212093078e-06,
+          "final_tracking_error_max_rad": 3.1615670081919234e-07
+        },
+        "LF": {
+          "participating": false,
+          "command_change_max_rad": 0.0,
+          "end_close_tracking_error_max_rad": 1.701171822787728e-05,
+          "end_hold_tracking_error_max_rad": 1.6459132439194946e-06,
+          "final_tracking_error_max_rad": 3.2510928349438473e-07
+        }
+      },
+      "aperture_and_depth": {
+        "source_candidate_index": 1963,
+        "if_flip": false,
+        "source_slot": "g6:distal_017:ff",
+        "actual_reference_width_m": 0.06803827426346004,
+        "raw_width_m": 0.0408279150724411,
+        "requested_opening_m": 0.06940745562314987,
+        "width_expansion": 1.7,
+        "width_clamped": false,
+        "raw_depth_m": 0.009999999776482582,
+        "additional_depth_index": 2,
+        "additional_depth_m": 0.02,
+        "cgr_score": 0.32401522994041443,
+        "score_source": "CGR antipodal score; no Boya learned head",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        },
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.014185984186171036,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "extra_depth_m": 0.02,
+        "total_depth_m": 0.029999999776482583
+      },
+      "mapping_check": {
+        "recomputed_source_palm_max_abs_error": 0.0,
+        "source_palm_plan_palm_max_abs_error": 8.326672684688674e-17,
+        "total_depth_once": true,
+        "slot_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "plan_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "source_distal_pads": true
+      },
+      "evidence_sha256": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2/plan_001/plan.json": "069da7aebc4955fbd84624c1c6bc66d33464dac3aaf907a274a14c46cacba5e9",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2/plan_001/commands.npz": "f6a7217d1d8bf76b637223374df1235e6066622b996017fc9766e079fb237b7a",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2/trial_binding.json": "80cbb2aa76ca2e7f41409320733ce75ca9701d9772d024620210fc8bac343f15",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0008/execution_000/evaluation.json": "b1c0e70f04c11d52fe50a192e532b50685e78a012804a5430cca0e9b6005d373",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0008/execution_000/trace.npz": "6fb7f65c5d363b3bf0a29fd0c9dabe9862fb7e2215a8e4f3320a46f5510fa67c",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/pools/mujoco_OXO_Soft_Works_Can_Opener_SnapLock/g6/d2/generation.json": "5c8b49d370cb5def0df071b04a4bf43a032e14a4f09fc33902693075874b80a5",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/observations/mujoco_OXO_Soft_Works_Can_Opener_SnapLock/observation.json": "5e9c7ec5bbb955661b21e765b5751cfc0559eb5b55dab01da8e6b3960ee1a2e4",
+        "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/mujoco_OXO_Soft_Works_Can_Opener_SnapLock/mesh/simplified.obj": "00079f0e78c38dd0fb70946f0e7acb0a753a27283c8e92c49e61308187b4a28f",
+        "/home/wangrenpeng/CanonDex/assets/gestures/boya/templates/five_finger_wrap.json": "467df0ce03e68b4f96be8b9a947101d7e6ed3913f5983dc8724fbc0c29cf1076"
+      },
+      "native_phase_boundary_contact_evidence": [
+        {
+          "phase": "approach",
+          "step": 1300,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        },
+        {
+          "phase": "close",
+          "step": 1550,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 0.2128988802433014,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7494102120399475,
+                0.1740654855966568,
+                0.046226706355810165
+              ],
+              "weighted_raw_normal": [
+                0.4033232033252716,
+                0.903777539730072,
+                -0.1432361751794815
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 0.46580350399017334,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7717859148979187,
+                0.16831515729427338,
+                0.033850714564323425
+              ],
+              "weighted_raw_normal": [
+                -0.2535064220428467,
+                0.9622672200202942,
+                0.0988754853606224
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": 0.7532678869746522,
+          "thumb_index_weighted_contact_separation_m": 0.02620884443840207
+        },
+        {
+          "phase": "hold",
+          "step": 1600,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 0.13044153153896332,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.749452531337738,
+                0.17402783036231995,
+                0.046271830797195435
+              ],
+              "weighted_raw_normal": [
+                0.40346455574035645,
+                0.9038882851600647,
+                -0.14213460683822632
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 0.4075508713722229,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7718146443367004,
+                0.16828618943691254,
+                0.033867187798023224
+              ],
+              "weighted_raw_normal": [
+                -0.25363028049468994,
+                0.9621907472610474,
+                0.09930156916379929
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": 0.7532678960275111,
+          "thumb_index_weighted_contact_separation_m": 0.02620888601660873
+        },
+        {
+          "phase": "lift",
+          "step": 2100,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        }
+      ],
+      "object_displacement_during_close_m": 0.01803324744105339,
+      "object_displacement_during_close_xy_m": 0.01803315430879593,
+      "first_dual_contact_time_s": 5.68,
+      "last_dual_contact_time_s": 6.732,
+      "maximum_lift_reference_rise_m": 0.00026233866810798645,
+      "pickup_independently_recomputed": {
+        "success": false,
+        "observed_pickup": false,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": null,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": null,
+        "peak_held_reference_rise_m": null,
+        "final_reference_rise_m": 5.971081554889679e-05,
+        "final_bottom_clearance_m": -0.000195670833985008,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "mechanism_assessment": {
+        "primary": "thumb/index close to near each other after pushing object aside; weak same-side contact is lost during lift",
+        "evidence": "18.033mm horizontal motion during close. Both actuated fingers reach>99.6% command progress with<0.0017rad hold error; pad separation shrinks68.04→10.24mm. At hold thumb/index loads0.130/0.408N, raw weighted normal cosine+0.753 rather than opposing; dual contact ends6.732s with no qualifying pickup.",
+        "fix_needed": "Require geometry-aware opposed contact/enclosure along closure and adapt target placement or template; this trace does not support a larger force or a wrist/command-frame fix."
+      }
+    }
+  ],
+  "successful_same_bowl_comparisons": [
+    {
+      "tag": "collection_same_bowl_success",
+      "trial_id": "mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0",
+      "object_id": "mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "gesture_id": 8,
+      "label": 1,
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4/execution/mujoco_Utana_5_Porcelain_Ramekin_Large/cohorts/cohort_0000/execution_002",
+      "physics_steps": 2100,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "pickup": {
+        "success": true,
+        "observed_pickup": true,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": 7.196,
+        "qualifying_steps": 302,
+        "longest_observed_pickup_run_s": 1.208000000000001,
+        "final_state_still_lifted_and_bearing": true,
+        "peak_held_bottom_clearance_m": 0.0728463407356392,
+        "peak_held_reference_rise_m": 0.08207149058580399,
+        "final_reference_rise_m": 0.08202453702688217,
+        "final_bottom_clearance_m": 0.07280674720249966,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "native_max_palm_error_m": 0.002598642875853293,
+      "native_max_palm_error_rad": 0.01752608915072457,
+      "dual_contact_close_hold_steps": 293,
+      "dual_contact_lift_steps": 500,
+      "closure": {
+        "TH": {
+          "participating": true,
+          "command_change_max_rad": 0.8726646259971648,
+          "end_close_tracking_error_max_rad": 0.7597870230674744,
+          "end_hold_tracking_error_max_rad": 0.7396988868713379,
+          "final_tracking_error_max_rad": 0.8671312928199768,
+          "projected_progress_end_approach": 3.001074993719836e-09,
+          "projected_progress_end_close": 0.11150709010308114,
+          "projected_progress_end_hold": 0.13135130178770685,
+          "projected_progress_final": 0.005466094128760493
+        },
+        "FF": {
+          "participating": true,
+          "command_change_max_rad": 0.9075712110370514,
+          "end_close_tracking_error_max_rad": 0.6146851778030396,
+          "end_hold_tracking_error_max_rad": 0.6237412095069885,
+          "final_tracking_error_max_rad": 0.5792142152786255,
+          "projected_progress_end_approach": 1.222113869873832e-06,
+          "projected_progress_end_close": 0.2783014279366657,
+          "projected_progress_end_hold": 0.2812818192262514,
+          "projected_progress_final": 0.32268012661708284
+        },
+        "MF": {
+          "participating": true,
+          "command_change_max_rad": 0.9075712110370514,
+          "end_close_tracking_error_max_rad": 0.6108556389808655,
+          "end_hold_tracking_error_max_rad": 0.6108546257019043,
+          "final_tracking_error_max_rad": 0.5224121809005737,
+          "projected_progress_end_approach": 1.1786269962520191e-06,
+          "projected_progress_end_close": 0.2633465785452287,
+          "projected_progress_end_hold": 0.2599908190523161,
+          "projected_progress_final": 0.3402909533611487
+        },
+        "RF": {
+          "participating": true,
+          "command_change_max_rad": 0.9773843811168246,
+          "end_close_tracking_error_max_rad": 0.375852108001709,
+          "end_hold_tracking_error_max_rad": 0.39180421829223633,
+          "final_tracking_error_max_rad": 0.018929481506347656,
+          "projected_progress_end_approach": 1.0156074592140168e-06,
+          "projected_progress_end_close": 0.5546339561425625,
+          "projected_progress_end_hold": 0.5860657124138597,
+          "projected_progress_final": 0.9863435286987478
+        },
+        "LF": {
+          "participating": true,
+          "command_change_max_rad": 1.0471975511965976,
+          "end_close_tracking_error_max_rad": 0.06383746862411499,
+          "end_hold_tracking_error_max_rad": 0.00018863379955291748,
+          "final_tracking_error_max_rad": 7.551908493041992e-05,
+          "projected_progress_end_approach": 8.791754560500599e-07,
+          "projected_progress_end_close": 0.9422121571779821,
+          "projected_progress_end_hold": 1.0000362365867892,
+          "projected_progress_final": 1.0000240735960748
+        }
+      },
+      "aperture_and_depth": {
+        "source_candidate_index": 1667,
+        "if_flip": true,
+        "source_slot": "g8:distal_000:ff",
+        "actual_reference_width_m": 0.14085802174547776,
+        "raw_width_m": 0.10811683535575867,
+        "requested_opening_m": 0.14085802174547776,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "raw_depth_m": 0.029999999329447746,
+        "additional_depth_index": 0,
+        "additional_depth_m": 0.0,
+        "cgr_score": 0.20901703834533691,
+        "score_source": "CGR antipodal score; no Boya learned head",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        },
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.006330429539022464,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "extra_depth_m": 0.0,
+        "total_depth_m": 0.029999999329447746
+      },
+      "mapping_check": {
+        "recomputed_source_palm_max_abs_error": 0.0,
+        "source_palm_plan_palm_max_abs_error": 0.0,
+        "total_depth_once": true,
+        "slot_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "plan_wrist": {
+          "FAJ1": 0.0,
+          "FAJ3": 0.0
+        },
+        "source_distal_pads": true
+      },
+      "evidence_sha256": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0/plan_003/plan.json": "9c764f419a240d327342051582a6624b8b398ac8024908639031b2271a1e6ef2",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0/plan_003/commands.npz": "6123378c0a6646681b5f97bbc9be7b0b5853a7baaa23c5e9cdbb7a01cfb7c0aa",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g08__d0/trial_binding.json": "10e8d9d05c21c3235c9e3693beed62f99ff9b6cb89b178ba9c66b5b5072dd0ee",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4/execution/mujoco_Utana_5_Porcelain_Ramekin_Large/cohorts/cohort_0000/execution_002/evaluation.json": "7f4c559adf3c1a8ed415551b2c6ffa7c12d81ce32cda185bf6af9ace39629f00",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4/execution/mujoco_Utana_5_Porcelain_Ramekin_Large/cohorts/cohort_0000/execution_002/trace.npz": "3b980b6fca9da1e6e714cb25bbe81bc2210e30edf068c0cc2f9aa9ffc0fd9357",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/pools/mujoco_Utana_5_Porcelain_Ramekin_Large/g8/d0/generation.json": "3b568f3ef7921e8d9631b319391d074ab3bdabb807fb992140fa59d2ca39b723",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/observations/mujoco_Utana_5_Porcelain_Ramekin_Large/observation.json": "3c5c983c3a6bc079e32a02095e43ab708911f9786ab3e65caf2d7278bcb7215b",
+        "/mnt/public/datasets/CanonDex_DGN_tabletop_25mm_v1/processed_data/mujoco_Utana_5_Porcelain_Ramekin_Large/mesh/simplified.obj": "5d698c3dac47cdbcc42148167071a3e1aaedbf4a85451cf522941753186d695c",
+        "/home/wangrenpeng/CanonDex/assets/gestures/boya/templates/five_finger_wrap.json": "467df0ce03e68b4f96be8b9a947101d7e6ed3913f5983dc8724fbc0c29cf1076"
+      },
+      "native_phase_boundary_contact_evidence": [
+        {
+          "phase": "approach",
+          "step": 1300,
+          "object_contact_by_finger": {},
+          "other_robot_contact_pairs": []
+        },
+        {
+          "phase": "close",
+          "step": 1550,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 8.973832130432129,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.6991140246391296,
+                0.06003119423985481,
+                0.021041933447122574
+              ],
+              "weighted_raw_normal": [
+                0.7773225903511047,
+                -0.6135371327400208,
+                0.13907480239868164
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 4.31382479518652,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.8138559381051205,
+                0.0939095656774301,
+                0.02242336194920013
+              ],
+              "weighted_raw_normal": [
+                -0.9806683659553529,
+                -0.09227017313241959,
+                0.17255662381649017
+              ]
+            },
+            "mf": {
+              "sum_normal_load_n": 5.106196403503418,
+              "contact_link_names": [
+                "mfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.8087533116340637,
+                0.10056613385677338,
+                0.05534457787871361
+              ],
+              "weighted_raw_normal": [
+                -0.9853411912918091,
+                -0.032065603882074356,
+                0.1675548255443573
+              ]
+            },
+            "rf": {
+              "sum_normal_load_n": 4.464710584376007,
+              "contact_link_names": [
+                "rfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7579143442123549,
+                0.10855724745508218,
+                0.06591941603177504
+              ],
+              "weighted_raw_normal": [
+                0.0412062332034111,
+                -0.04785213991999626,
+                0.9980041384696962
+              ]
+            },
+            "lf": {
+              "sum_normal_load_n": 2.3934368789196014,
+              "contact_link_names": [
+                "lfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7087445490526181,
+                0.06981214153027646,
+                0.06989824772478084
+              ],
+              "weighted_raw_normal": [
+                0.12284653633832932,
+                -0.10372398793697357,
+                0.9869903922080994
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": -0.6816862048264377,
+          "thumb_index_weighted_contact_separation_m": 0.11964680982711405
+        },
+        {
+          "phase": "hold",
+          "step": 1600,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 10.990233063697815,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.6984152578642476,
+                0.06015982511891542,
+                0.020677337316031996
+              ],
+              "weighted_raw_normal": [
+                0.7762366316395012,
+                -0.6114225505768078,
+                0.15368178912241018
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 4.146417617797852,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.8133856654167175,
+                0.09400271624326706,
+                0.020953962579369545
+              ],
+              "weighted_raw_normal": [
+                -0.9824005961418152,
+                -0.091119185090065,
+                0.16305384039878845
+              ]
+            },
+            "mf": {
+              "sum_normal_load_n": 4.923496603965759,
+              "contact_link_names": [
+                "mfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.8085485379842526,
+                0.10072191245135569,
+                0.054312140232193065
+              ],
+              "weighted_raw_normal": [
+                -0.9874585270881653,
+                -0.007602093741297722,
+                0.15769560635089874
+              ]
+            },
+            "rf": {
+              "sum_normal_load_n": 4.458983898162842,
+              "contact_link_names": [
+                "rfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7550932765007019,
+                0.10710451006889343,
+                0.06471452862024307
+              ],
+              "weighted_raw_normal": [
+                0.030631838366389275,
+                -0.03786589205265045,
+                0.998813271522522
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": -0.6818048964597195,
+          "thumb_index_weighted_contact_separation_m": 0.11984828915746801
+        },
+        {
+          "phase": "lift",
+          "step": 2100,
+          "object_contact_by_finger": {
+            "th": {
+              "sum_normal_load_n": 9.345430374145508,
+              "contact_link_names": [
+                "thdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.6964530944824219,
+                0.05911451205611229,
+                0.11433567851781845
+              ],
+              "weighted_raw_normal": [
+                0.71319180727005,
+                -0.7005907297134399,
+                0.023025114089250565
+              ]
+            },
+            "ff": {
+              "sum_normal_load_n": 3.491471767425537,
+              "contact_link_names": [
+                "ffdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.8071674704551697,
+                0.09635438770055771,
+                0.11260304600000381
+              ],
+              "weighted_raw_normal": [
+                -0.9492121934890747,
+                -0.09445849806070328,
+                0.30012303590774536
+              ]
+            },
+            "mf": {
+              "sum_normal_load_n": 3.960318088531494,
+              "contact_link_names": [
+                "mfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7988057136535645,
+                0.10958515107631683,
+                0.13961261510849
+              ],
+              "weighted_raw_normal": [
+                -0.9500329494476318,
+                0.07944422960281372,
+                0.3018706142902374
+              ]
+            },
+            "rf": {
+              "sum_normal_load_n": 3.3942959308624268,
+              "contact_link_names": [
+                "rfdistal"
+              ],
+              "weighted_contact_position_world_m": [
+                -0.7255846858024597,
+                0.073702372610569,
+                0.1444334089756012
+              ],
+              "weighted_raw_normal": [
+                0.11602100729942322,
+                -0.030469445511698723,
+                0.9927792549133301
+              ]
+            }
+          },
+          "other_robot_contact_pairs": [],
+          "thumb_index_raw_normal_cosine": -0.6038832103499565,
+          "thumb_index_weighted_contact_separation_m": 0.11682244390736954
+        }
+      ],
+      "object_displacement_during_close_m": 0.001992825185880065,
+      "object_displacement_during_close_xy_m": 0.0018206435488536954,
+      "first_dual_contact_time_s": 5.232,
+      "last_dual_contact_time_s": 8.4,
+      "maximum_lift_reference_rise_m": 0.08207149058580399,
+      "pickup_independently_recomputed": {
+        "success": true,
+        "observed_pickup": true,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": 7.196,
+        "qualifying_steps": 302,
+        "longest_observed_pickup_run_s": 1.208000000000001,
+        "final_state_still_lifted_and_bearing": true,
+        "peak_held_bottom_clearance_m": 0.0728463407356392,
+        "peak_held_reference_rise_m": 0.08207149058580399,
+        "final_reference_rise_m": 0.08202453702688217,
+        "final_bottom_clearance_m": 0.07280674720249966,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      }
+    }
+  ],
+  "full_artifact": {
+    "path": "outputs/boya_adaptation_acceptance_20261106_v1/boya_adaptation_failure_mechanisms_20261106.json",
+    "sha256": "3cae900103eb76e9e23f0e9b13f83bb0e0ea93118decfba1dc99d1c311e74b5b",
+    "bytes": 163106
+  }
+}

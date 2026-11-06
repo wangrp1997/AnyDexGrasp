@@ -1,0 +1,55 @@
+{
+  "schema": "boya-adaptation-acceptance-publication-v1",
+  "date": "2026-11-06",
+  "timezone": "Asia/Shanghai",
+  "source_commit": "54058d29995c292addbb616638751d9a3777a9b1",
+  "upstream_commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "full_artifacts": {
+    "mapping": {
+      "path": "outputs/boya_adaptation_acceptance_20261106_v1/boya_mapping_acceptance_20261106.json",
+      "sha256": "f115fe4931c2e5de559878e8eb58b5a01a9cb217861df84a015a1c27f625e2aa",
+      "bytes": 60151
+    },
+    "official": {
+      "path": "outputs/boya_adaptation_acceptance_20261106_v1/boya_adaptation_official_fidelity_20261106.json",
+      "sha256": "40564cb817ed7844dc8955ce9c8c633b95a1ee8098f49dd5d5e741953aeb96eb",
+      "bytes": 19789
+    },
+    "mechanisms": {
+      "path": "outputs/boya_adaptation_acceptance_20261106_v1/boya_adaptation_failure_mechanisms_20261106.json",
+      "sha256": "3cae900103eb76e9e23f0e9b13f83bb0e0ea93118decfba1dc99d1c311e74b5b",
+      "bytes": 163106
+    },
+    "candidate": {
+      "path": "outputs/boya_adaptation_acceptance_20261106_v1/boya_adaptation_candidate_score_20261106.json",
+      "sha256": "2ff8d180c778e54731a2231a3ed47272bf7c79959e6c0e1c2ebabbf6c64b4e01",
+      "bytes": 234940
+    }
+  },
+  "object_selection": {
+    "path": "outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+    "sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+    "assigned_train": 40,
+    "assigned_external": 10,
+    "source": "CanonDex filtered DGN",
+    "original_paper_object_set": false,
+    "disjoint_from_CGR_pretraining_verified": false
+  },
+  "checks": {
+    "mapping_431_passed": true,
+    "four_failure_bindings_28_passed": true,
+    "failure_mechanism_checks_passed": true,
+    "official_source_identity_passed": true,
+    "complete_original_deployment_fidelity": false
+  },
+  "cost": {
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_steps": 0
+  },
+  "existing_10_object_result_preserved": {
+    "CGR_score": "4/10",
+    "learned_score": "6/10"
+  },
+  "next_stage_implemented": false
+}

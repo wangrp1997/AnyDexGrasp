@@ -1,0 +1,404 @@
+{
+  "schema": "anydex_boya_official_fidelity_review_20261106_v1",
+  "scope": "Read-only five adaptation modules + primary original source. Reuses root431endpoint audit; does not repeat core/data consistency audits.",
+  "upstream_commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "reviewed_source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py": "3ce2a0545524196b916cdd72922d3146e4277728cba33287442804f375a13375",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py": "58d1cce26b6e7422f11e08e34750e7a6c690abde48b11eda51b625a6807d6b49",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/native_arm.py": "453ea58557c182c566ec306e6c0de036ccf16f5bed09cf97ff6a5ccf92921781"
+  },
+  "official_source_identity": {
+    "robot_dh3.py": {
+      "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+      "matches_fixed_upstream_commit": true
+    },
+    "collect_dh3_grasp_data.py": {
+      "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb",
+      "matches_fixed_upstream_commit": true
+    },
+    "utils/collision_detector.py": {
+      "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+      "matches_fixed_upstream_commit": true
+    },
+    "ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py": {
+      "sha256": "5d4332187242de6ce6d23fddc63136a7dbafbc61bbc921cc4dabd32c1067e69f",
+      "matches_fixed_upstream_commit": true
+    },
+    "ur_toolbox/ur_toolbox/robot/ur.py": {
+      "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+      "matches_fixed_upstream_commit": true
+    },
+    "generate_mesh_and_pointcloud/angles2stl.py": {
+      "sha256": "3d87bd6c818a30c1b21066c37bea23b3ee1885f1d801bf277e62cf9ba9b44fc2",
+      "matches_fixed_upstream_commit": true
+    },
+    "generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py": {
+      "sha256": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+      "matches_fixed_upstream_commit": true
+    }
+  },
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_training_steps": 0,
+  "repo_writes": 0,
+  "confirmed_sign_rotation_depth_bugs": [],
+  "headline": "CGR-to-palm algebra is consistent with the declared Boya convention. Main fidelity gap is learned ranking AFTER CGR/geometry/arm first-admitted compression, rather than BEFORE post-processing. Hand reference and closure are Boya approximations, not original-hand hardware reproduction.",
+  "findings": [
+    {
+      "id": "ranking_order",
+      "status": "confirmed_deployment_fidelity_gap",
+      "conclusion": "Paper: top100CGR x types -> learned scores -> top200 collision -> highest remaining. Official DH3 code: CGRtop1000 -> all4type x4extra scoring/gather -> top3500/score>.85 -> mapped poses -> scoretop400 -> collision -> final highest. Boya: each fixed gesture/extra cell CGRtop500 -> first8geometry-admitted across2flips -> at most4arm plans -> first admitted only -> learned rerank78 external plans. This irreversibly removes alternative seed/flip/aperture placements before the learned head sees them. Current6/10 is a same-admitted-pool comparison, not full-deployment success.",
+      "official_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/methods.tex",
+          "line": 30,
+          "end_line": 30
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/methods.tex",
+          "line": 111,
+          "end_line": 111
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "line": 604,
+          "end_line": 622
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "line": 435,
+          "end_line": 474
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "line": 662,
+          "end_line": 675
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "line": 710,
+          "end_line": 719
+        }
+      ],
+      "boya_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "line": 70,
+          "end_line": 76
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "line": 111,
+          "end_line": 138
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py",
+          "line": 119,
+          "end_line": 182
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_decision.py",
+          "line": 123,
+          "end_line": 148
+        }
+      ],
+      "limits": "Paper/code topK differ; both put learned ranking ahead of hand collision. Full-deployment connection is necessary before claiming faithful deployment, but does not invalidate the narrower paired experiment."
+    },
+    {
+      "id": "pose_and_depth",
+      "status": "consistent_declared_geometry",
+      "conclusion": "T_Wpalm=T_Wcamera*T_cameraCGR*[R_cgr_ref, (raw_depth+extra)*e_x]*inverse(T_palm_ref). R_cgr_ref=[e_y,e_z,e_x] is proper; rawdepth and extra are added once along CGR+X. Additional0/10/20/30mm matches original extra-depth choice. No source DH35mm-backoff or Inspire/Allegro14mm offset is blindly transferred. These offsets are hand-specific, so omission is intentional Boya datum choice, not proven depth bug.",
+      "official_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py",
+          "line": 588,
+          "end_line": 603
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py",
+          "line": 614,
+          "end_line": 625
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+          "line": 368,
+          "end_line": 380
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+          "line": 440,
+          "end_line": 452
+        }
+      ],
+      "boya_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py",
+          "line": 22,
+          "end_line": 24
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py",
+          "line": 41,
+          "end_line": 70
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "line": 121,
+          "end_line": 130
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py",
+          "line": 121,
+          "end_line": 124
+        }
+      ],
+      "limits": "Root zero-physics audit431 mappings max endpoint error2.30555e-16m is reused, not rerun. Exact intended contact plane for Boya still requires calibration; algebraic correctness is not grasp-quality proof."
+    },
+    {
+      "id": "datum_and_closure_center",
+      "status": "Boya_calibration_approximation_not_proven_bug",
+      "conclusion": "Original mapping tables are per-opening, per-type selected contact-mesh landmarks: DH3 common/pose3 use thumb-vs-average-two-opponent midpoint; pose2 uses opponent-pair midpoint. Thus preshape contact midpoint itself has original precedent; original source does NOT establish universal closure-invariant capture center. Boya uniformly uses generic source five_finger_wrap distal th-versus-single-ff pads, a thumb-tangent approach, and both closures move toward fixed template nominal at fixed palm. Asymmetric closure can shift the free-space pad midpoint substantially; it is a plausible limitation, not proof of mis-signed pose or cause of four failures.",
+      "official_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py",
+          "line": 196,
+          "end_line": 232
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/angles2stl.py",
+          "line": 182,
+          "end_line": 245
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py",
+          "line": 588,
+          "end_line": 603
+        }
+      ],
+      "boya_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py",
+          "line": 87,
+          "end_line": 91
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py",
+          "line": 141,
+          "end_line": 164
+        },
+        {
+          "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_adapter.py",
+          "line": 135,
+          "end_line": 151
+        },
+        {
+          "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py",
+          "line": 89,
+          "end_line": 110
+        }
+      ],
+      "limits": "Some source family contact annotations differ: packageg1 ff contact is ffmiddle whereas adapter chooses generic ffdistal. This is declared geometric-reference replacement, not an accidental FK mismatch. Do not claim replacing open midpoint by closed midpoint is author-required or guaranteed correct."
+    },
+    {
+      "id": "width",
+      "status": "original_factor_but_Boya_semantics",
+      "conclusion": "Official collision detector expands two-finger width by1.7, then hand mapper clamps per-type width domain. Boya likewise expands once then clips to33sample self-collision-clear th/ff reference distances and accepts nearest slot within2mm. Factor/clamp logic has source precedent. Boya reference_width is a pad distance, not maximum mechanical aperture or physical free gap; finite slot spacing and clamping are new calibration assumptions.",
+      "official_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+          "line": 130,
+          "end_line": 142
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/DH3/DH3_grasp.py",
+          "line": 582,
+          "end_line": 590
+        }
+      ],
+      "boya_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py",
+          "line": 72,
+          "end_line": 92
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "line": 100,
+          "end_line": 118
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py",
+          "line": 165,
+          "end_line": 172
+        }
+      ],
+      "limits": "Root431audit reports226clamped. Of4learned failures3are clamped, but no controlled comparison establishes causality; many successful candidates are clamped too."
+    },
+    {
+      "id": "flip_and_canonical",
+      "status": "consistent_actual_flip_binding_with_policy_difference",
+      "conclusion": "Both original and Boya flip R[:,1:3] by -1 (180deg about approach). Original chooses one camera-frame sign to avoid arm boundary; Boya enumerates both orientations and binds actual bool. prepare_binding reuses original get_graspgroup_features once on original raw2261 + actualflip, including opposite half-swap and angle rotation. No double canonicalization found. Boya base jaw reference puts thumb on CGR-Y, whereas DH3 common frame tool_y points toward selected thumb landmark; this fixed handedness is a hand-table convention that freshly trained Boya heads can learn, not use of DH3 pretrained scoring weights.",
+      "official_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "line": 157,
+          "end_line": 166
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "line": 198,
+          "end_line": 214
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/angles2stl.py",
+          "line": 194,
+          "end_line": 199
+        }
+      ],
+      "boya_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "line": 121,
+          "end_line": 124
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py",
+          "line": 160,
+          "end_line": 164
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/trial_record.py",
+          "line": 61,
+          "end_line": 92
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/trial_record.py",
+          "line": 116,
+          "end_line": 133
+        }
+      ],
+      "limits": "Enumerating both and deterministic tie-breaking are deployment adaptations, not literal original sign policy. Source if_flip differs from official_policy_if_flip by design and is correctly recorded."
+    },
+    {
+      "id": "collision_arm_control",
+      "status": "Boya_backend_port_not_author_hardware",
+      "conclusion": "Official uses pre-shaped hand voxel versus partial scene with5cm collision approach checks; paper describes10cm pregrasp and UR planner, then hardware force-limited closure. Boya uses full source-link hulls, analytic table0.5mm,21samples over10cm, full-arm IK/path gates, and fixed open-to-company-nominal position commands through existing Isaac backend. No original hardware feedback/force70 or learned closure policy is recreated. Wrist values remain source template and arm targets palm; supplied world_object_pose preserves hand/object relation, not a second candidate rotation.",
+      "official_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+          "line": 144,
+          "end_line": 166
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/methods.tex",
+          "line": 111,
+          "end_line": 111
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+          "line": 379,
+          "end_line": 405
+        }
+      ],
+      "boya_evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "line": 45,
+          "end_line": 62
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py",
+          "line": 119,
+          "end_line": 136
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/native_arm.py",
+          "line": 1,
+          "end_line": 10
+        },
+        {
+          "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+          "line": 95,
+          "end_line": 153
+        },
+        {
+          "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+          "line": 217,
+          "end_line": 253
+        }
+      ],
+      "limits": "Contact can stop actual fingers under finite drives while targets continue. Nominal no-contact pad endpoints alone do not establish actual object retention or hardware equivalence."
+    }
+  ],
+  "four_learned_failures": [
+    {
+      "trial_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1",
+      "binding_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1/trial_binding.json",
+      "gesture_id": 8,
+      "raw_width_m": 0.0897822380065918,
+      "raw_depth_m": 0.009999999776482582,
+      "extra_depth_m": 0.01,
+      "actual_reference_width_m": 0.14085802174547776,
+      "width_clamped": true,
+      "actual_flip": true,
+      "original_camera_sign_flip": false,
+      "label": 0,
+      "conclusion": "Known eligible executed failure; metadata does not establish axis/depth bug or failure cause."
+    },
+    {
+      "trial_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1",
+      "binding_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1/trial_binding.json",
+      "gesture_id": 6,
+      "raw_width_m": 0.09387953579425812,
+      "raw_depth_m": 0.029999999329447746,
+      "extra_depth_m": 0.01,
+      "actual_reference_width_m": 0.13051790938638097,
+      "width_clamped": true,
+      "actual_flip": false,
+      "original_camera_sign_flip": false,
+      "label": 0,
+      "conclusion": "Known eligible executed failure; metadata does not establish axis/depth bug or failure cause."
+    },
+    {
+      "trial_id": "mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0",
+      "binding_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0/trial_binding.json",
+      "gesture_id": 7,
+      "raw_width_m": 0.09749201685190201,
+      "raw_depth_m": 0.03999999910593033,
+      "extra_depth_m": 0.0,
+      "actual_reference_width_m": 0.13206316808570315,
+      "width_clamped": true,
+      "actual_flip": false,
+      "original_camera_sign_flip": true,
+      "label": 0,
+      "conclusion": "Known eligible executed failure; metadata does not establish axis/depth bug or failure cause."
+    },
+    {
+      "trial_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2",
+      "binding_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2/trial_binding.json",
+      "gesture_id": 6,
+      "raw_width_m": 0.0408279150724411,
+      "raw_depth_m": 0.009999999776482582,
+      "extra_depth_m": 0.02,
+      "actual_reference_width_m": 0.06803827426346004,
+      "width_clamped": false,
+      "actual_flip": false,
+      "original_camera_sign_flip": true,
+      "label": 0,
+      "conclusion": "Known eligible executed failure; metadata does not establish axis/depth bug or failure cause."
+    }
+  ],
+  "reused_independent_mapping_evidence": {
+    "path": "/tmp/boya_mapping_acceptance_20261106.json",
+    "sha256": "f115fe4931c2e5de559878e8eb58b5a01a9cb217861df84a015a1c27f625e2aa",
+    "passed": true,
+    "actual_mappings": 431,
+    "worst_endpoint_error_m": 2.3055512673781017e-16,
+    "width_clamped": 226,
+    "scope": "431 saved mappings including known terminal stops; finite reference/table semantics only, no physical grasp certificate."
+  },
+  "minimum_next_deployment_change_without_new_training": "Use cached rawCGR+same frozen heads, enumerate declared4gestures x4extra xactual flip, compute learned scores BEFORE keep8/per-cell first-arm compression; process ranked candidates through unchanged geometry and arm admission under a newly frozen finite budget. Compare baseline and learned under explicitly equal candidate/filter/budget conditions. Do not retune on four held-out failures or silently replace the previous limited-pool result. This review performs no change.",
+  "bottom_line_zh": "没有证据支持当前4失败源于坐标轴/重复旋转/深入正负错误。明确缺口是部署排序顺序：目前只是已压缩准入池的后排序；Boya开口/参考点/固定模板闭合也是移植假设。须先接完整学习排序前置的部署，再评价Boya版端到端AnyDex能力。"
+}
