@@ -1,0 +1,199 @@
+{
+  "schema": "anydex_boya_final_delivery_data_audit_v1",
+  "all_checks_passed": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4/RESULTS.json": "d2a89c3658c37df381fe0fae00a8498f75f8d76f256ead4826d7c57648c0d9b5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/dataset/manifest.json": "a3cc1425809fb815f04f9fcdb442bcceadfcf02c2a3651919cd4e8cfea3b20ad",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training/TRAINING_RESULTS.json": "e65e391d5b6c296de1085a9e57aa059e4bb449b6e0e8f8e79b79c3ec949eb767",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/ranking/selection.json": "a95af981562e97a42b731effb20e766fac7158ec8c4b61bf428129073648117b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/ranking/RANKING_FREEZE.json": "9cce63007dd8076dedce5a1cf5822965c420821d59ba0677221ae7db78d597ae"
+  },
+  "ledger": {
+    "ready": 431,
+    "eligible": 413,
+    "certified_terminal_null": 18,
+    "planning_null": 369,
+    "positive": 295,
+    "negative": 118,
+    "physical_steps": 876649,
+    "unknown": 0,
+    "unexecuted_ready": 0,
+    "terminal_nulls_not_imputed": true
+  },
+  "collection_label_counts": {
+    "train": 336,
+    "validation": 77
+  },
+  "dataset_split_counts": {
+    "train": 270,
+    "internal_check": 66,
+    "external_validation": 77
+  },
+  "dataset_split_positive_counts": {
+    "train": 211,
+    "internal_check": 41,
+    "external_validation": 43
+  },
+  "mesh_group_counts": {
+    "train": 32,
+    "internal_check": 8,
+    "external_validation": 10
+  },
+  "observed_labelled_mesh_groups": {
+    "train": 30,
+    "internal_check": 8,
+    "external_validation": 10
+  },
+  "mesh_groups_disjoint": true,
+  "canonical480_rows_verified": 413,
+  "training": {
+    "heads": {
+      "internal_heads_1": {
+        "epochs": 20,
+        "records": 63,
+        "mesh_groups": 29,
+        "positive": 54,
+        "negative": 9,
+        "sha256": "8c657953c64583ece80eed5efb5ed40fc7472c5677b2a5c214c868be0d73097f",
+        "external_validation_fit_records": 0
+      },
+      "internal_heads_6": {
+        "epochs": 20,
+        "records": 70,
+        "mesh_groups": 29,
+        "positive": 52,
+        "negative": 18,
+        "sha256": "9cb85f5c6ad0bf6a97f309c7188e599f65bcc68d1b5ef0e19acf72f98e24de8c",
+        "external_validation_fit_records": 0
+      },
+      "internal_heads_7": {
+        "epochs": 20,
+        "records": 69,
+        "mesh_groups": 29,
+        "positive": 60,
+        "negative": 9,
+        "sha256": "a3d17019ac6237486e19a663572a39a10d715942f1057669329ba5d8230c20b9",
+        "external_validation_fit_records": 0
+      },
+      "internal_heads_8": {
+        "epochs": 20,
+        "records": 68,
+        "mesh_groups": 29,
+        "positive": 45,
+        "negative": 23,
+        "sha256": "7eef8ce2821c44667eac7c0de58e396a48ac2257f76b4ffe6a926aafb91a8490",
+        "external_validation_fit_records": 0
+      },
+      "heads_1": {
+        "epochs": 20,
+        "records": 80,
+        "mesh_groups": 37,
+        "positive": 63,
+        "negative": 17,
+        "sha256": "cc6226836d2ee1a2284d9c3415fd4edd7ee669c535697a6b36f86174db1fa720",
+        "external_validation_fit_records": 0
+      },
+      "heads_6": {
+        "epochs": 20,
+        "records": 86,
+        "mesh_groups": 37,
+        "positive": 64,
+        "negative": 22,
+        "sha256": "3bf0712e3d798b3b8113412ea89e69d6b4dfa2f066fb4c3ba302cdc34a7c4f38",
+        "external_validation_fit_records": 0
+      },
+      "heads_7": {
+        "epochs": 20,
+        "records": 86,
+        "mesh_groups": 36,
+        "positive": 72,
+        "negative": 14,
+        "sha256": "037cd4d2a12f8abab75bb3fcdfebf3d254d1c35047fcb2b5c3d0d64e8885e083",
+        "external_validation_fit_records": 0
+      },
+      "heads_8": {
+        "epochs": 20,
+        "records": 84,
+        "mesh_groups": 37,
+        "positive": 53,
+        "negative": 31,
+        "sha256": "30a875562e2fd8f182b074c801a1a20e834819ee0d8f89eac7e7b64c441ff8df",
+        "external_validation_fit_records": 0
+      }
+    },
+    "official_core_ast_reuse_confirmed": true,
+    "configuration": {
+      "epochs": 20,
+      "batch_size": 128,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0005,
+      "optimizer": "Adam",
+      "scheduler": "original PolyLR",
+      "poly_power": 0.99,
+      "seed": 20261106,
+      "input_dim": 480,
+      "output_dim": 20
+    },
+    "optimizer_steps": 160,
+    "external_validation_fit_records": 0,
+    "external_validation_evaluated_by_trainer": false,
+    "cgr_trained": false,
+    "official_core_upstream_commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+    "official_core_definition_checks": [
+      {
+        "path": "models/minkowski_graspnet_single_point.py",
+        "definitions": [
+          "MinkowskiGraspNetMultifingerType1Inference"
+        ],
+        "definition_ast_sha256": {
+          "MinkowskiGraspNetMultifingerType1Inference": "7cd4151141af31334e95fd60e1799eea6cc6b114f5609a49229c8df2099a0246"
+        },
+        "matches_locked_upstream": true
+      },
+      {
+        "path": "models/loss.py",
+        "definitions": [
+          "MultifingerType1Loss"
+        ],
+        "definition_ast_sha256": {
+          "MultifingerType1Loss": "601c8492a665e40908430aa8f90c0766fc52e3e63149b1e2805cd37aef5df3c4"
+        },
+        "matches_locked_upstream": true
+      },
+      {
+        "path": "utils/solvers.py",
+        "definitions": [
+          "LambdaStepLR",
+          "PolyLR"
+        ],
+        "definition_ast_sha256": {
+          "LambdaStepLR": "1ad161112cd48f153b286d68020c90583207f727f636c5c4575f53f9684f0916",
+          "PolyLR": "07dadf8eecb8f953aafb8f2ab937054979300a31486dd9a334c8060e79f15b72"
+        },
+        "matches_locked_upstream": true
+      }
+    ]
+  },
+  "ranking": {
+    "external_objects": 10,
+    "admitted_candidates": 78,
+    "recommendations_per_policy": 10,
+    "top1_recomputed_from_saved_scores": true,
+    "selection_and_input_freeze_sha_verified": true,
+    "labels_accessed_before_freeze": false
+  },
+  "limitations": [
+    "A small fixed50-object split and already admitted candidate pool, not broad unseen-object or full unfiltered pipeline performance. External10 mesh-held-out within this experiment does not establish unseen to original CGR pretraining.",
+    "Original40 train objects contain38 distinct meshes with any eligible labels; per-head actual fit groups36 or37. Fixed50 split authority remains intact.",
+    "413 observed trials supervise only one of20 outputs each; unobserved outputs are unlabelled and learned ReLU/MSE scores are not calibrated probabilities.",
+    "18 certified early terminations remain terminal nulls and are excluded from binary training labels;369 preparation nulls also are not failed-grasp labels.",
+    "Original target400 train/80validation labels was not met:336/77 actual eligible records. Internal32/8 evaluation and final40 refit each use fixed20epochs, not external10-selected epochs.",
+    "This audit checks saved data/checkpoint metadata and frozen ranking arithmetic; it does not independently replay optimizer updates or validate physical outcome dynamics."
+  ],
+  "cost": {
+    "new_training_steps": 0,
+    "new_forward_passes": 0,
+    "new_physics_steps": 0,
+    "audit_wall_s": 1.2562862309860066
+  }
+}

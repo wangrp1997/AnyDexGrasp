@@ -1,6 +1,6 @@
 # AnyDexGrasp 的 Boya 仿真适配
 
-用户授权在 Isaac Sim 中复用现有完整 UR16e＋Boya 后端。AnyDex 的通用表示权重保持冻结，候选来自新的 Isaac RGB-D；不加载 DH3/Inspire/Allegro 手评分器，不调用 CanonDex 的经验检索、抓姿采样或抓姿优化。CanonDex 只读复用资产、FK、完整臂规划/关节驱动及其原生物理审计。当前是采数链路烟测，尚未训练 Boya 决策模型。
+用户授权在 Isaac Sim 中复用现有完整 UR16e＋Boya 后端。AnyDex 的通用表示权重保持冻结，候选来自新的 Isaac RGB-D；不加载 DH3/Inspire/Allegro 手评分器，不调用 CanonDex 的经验检索、抓姿采样或抓姿优化。CanonDex 只读复用资产、FK、完整臂规划/关节驱动及其原生物理审计。首轮四型Boya决策模型、留出物体实际top1对照与视频已完成：原CGR排序4/10，学习排序6/10。见[完整结果与边界](FIRST_LEARNED_RESULTS_20261106.md)。
 
 ## 与作者流程的对应
 

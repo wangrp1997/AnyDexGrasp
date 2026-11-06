@@ -186,3 +186,16 @@ GPU0已用116真实记录跑通双阶段各2epoch工程smoke，16optimizer steps
 **当前活动采集outputs/collection40_20261106_v2/execution_resume_v4，PID103505，14:34:14启动，protocol4b3c93e6f82d88226e1a1b5d43e6a504014e5d3587a774dc99e2b4d4f3fc502e；活动交付outputs/boya_decision_delivery_20261106_v2，PID108089，14:37:18就绪屏障后恢复，plane17332fb2b2b811334a8e87d4359776c1a0e2719f15da1788b9eb8319c130fbc。** 新watch v2等final再自动四头训练/10物体真实top1对照/视频；其已认证tasknull在实际任务指标中未成功但不作训练负例。旧watch启动竞态的零阶段日志保留attempts，未重启采集。
 
 当前训练/对照尚未完成。后续只看上述新PROGRESS/DELIVERY_STATUS，旧v3/v1是历史blocked，不要覆盖、重播或热改冻结source。14采集/9数据/11watch合同及真实prefix/ledger验证通过，详见reproduction/boya/KNOWN_TASK_STOP_CONTINUATION_20261106.md、evidence/known_task_stop_20261106。官方学习核心、物理门、旧320/14记录全部保持，CanonDex只读，大文件不提交。
+
+
+## 2026-11-06 最新：首轮Boya学习评分器、实际对照和视频已完成
+
+活动v4采集已完整收尾：800槽=369准备null+431实际，431=413合格（295正118负）+18认证task null；876649物理步，unknown/unexecuted均0。合格记录336train/77external，原400/80目标欠64/3，null未补0。原40/10分配不换物体，内部32/8/10 mesh分组不泄漏；40训练对象中实际38个有标签，各head实际36或37组。旧v3/v1阻塞、全部早停及成本保持。
+
+`outputs/boya_decision_delivery_20261106_v2/`已于北京时间15:22:18 complete，正式四个1/6/7/8评分头及内部四头均20epoch，官方Inference/MSE/PolyLR核心复用，CGR冻结。配置明确为论文20epoch/lr1e-4/batch128+公开code WD5e-4/Poly.99，非逐行原脚本默认。外部10不参与训练/epoch选择；336条拟合，160optimizer更新，trainer内部3.031s。
+
+10留出物体从同一原78个已准入候选中无标签top1排序冻结后，各策略新实际执行一次：原CGR分数4/10、Boya学习分数6/10；20条完整2100步/共42000步，无null或进程错误。相机和球本轮0→1，原本轮4个成功保持；相机同原计划原采集成功、本次baseline提起后滑落，离线旧配对5/10对6/10不可混作新实测4/10对6/10。样本少且已有重复差异，不宣称稳定20个百分点提升或达到论文实机成功率。
+
+四段原模型RTX视频已完成：`outputs/boya_decision_delivery_20261106_v2/videos/index.html`，相机/球各一组原排序失败与学习排序成功；均235帧/25fps/9.4s、回放零物理。413数据/18证书/分组及四头、无标签排名冻结通过；20次实际152项核验和媒体SHA/结构通过。轻量结果见`reproduction/boya/FIRST_LEARNED_RESULTS_20261106.md`和`evidence/boya_first_learned_20261106/`，大文件不提交。
+
+下一步先分诊剩4例：3例在原有限实际池里无成功记录，浅碗有1/3成功候选却未选中；前者检查候选映射/落位，后者研究排序。已有10件结果保留，不能调参后继续当独立验证，不自动追加大批/重播旧成功。当前采集和交付均已结束，不要再启动watcher或把旧启动段落当当前进度。CanonDex保持只读。

@@ -1,0 +1,406 @@
+{
+  "schema": "anydex_boya_delivery_final_physical_audit_v1",
+  "all_passed": true,
+  "metrics": {
+    "baseline": {
+      "actual": 10,
+      "positive": 4,
+      "negative": 6
+    },
+    "learned": {
+      "actual": 10,
+      "positive": 6,
+      "negative": 4
+    }
+  },
+  "actual_attempts": 20,
+  "physics_steps": 42000,
+  "source_results": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/RESULTS.json",
+  "source_results_sha256": "3370723f5977510462c49e943513608f79a0e9bc137145fd134ab35e58b4c7c7",
+  "source_executor_sha256": "e83c87b593e77a0b797dc4e1a8257d018deebfce99aec67d270bfb54f7d6210f",
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "audit_wall_s": 2.144379804027267,
+  "check_count": 152,
+  "full_local_audit": {
+    "path": "/tmp/boya_delivery_final_physical_audit.json",
+    "sha256": "47b2fce462b5235fea56c94e0c5f9c05330b136dcf4ec0f35394cd3fc519cace"
+  },
+  "trials": [
+    {
+      "policy": "baseline",
+      "trial_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d0",
+      "object_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0000/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "9a940a5adcdbb18884df9786a836dddb300c03e9304052c7d36dbd04fab551a0",
+      "trace_sha256": "add359dabc1153808207d2027e0f367209db12be00396d54b9a14b03745418a8"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "sem_MilkCarton_1c30b1102303f27ef690049a092c5efc__g01__d0",
+      "object_id": "sem_MilkCarton_1c30b1102303f27ef690049a092c5efc",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0001/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "5ea393d8742a10ca24df6ba411755aecdcc3f2cc133e336835dbdfffa83e8384",
+      "trace_sha256": "5443567ab4bea345aefc4b8fac9248e5e6fe9f1126c20cdbb63c865eb7b5fb61"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d0",
+      "object_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0002/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "0b667b5807f88ecddfc49d40672d9586d0da3d1dccaf74ec00ec54ff230f6da2",
+      "trace_sha256": "f0fb8c6c1a1a374e6c078358df5d6d3b0f896fc17c56ea5c5cf8257edf0af362"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "mujoco_Utana_5_Porcelain_Ramekin_Large__g06__d0",
+      "object_id": "mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0003/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "75da6d7a83bae8846484881e6c34c1cd6f40931c898c3e2fdb2af133ef2e710d",
+      "trace_sha256": "7a99ac2735318cc57d32649cf26573d5dfa37b3b514ff6b7d6310974eb6efe69"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "core_cellphone_77817771db0788d3241d076ab53023c1__g01__d0",
+      "object_id": "core_cellphone_77817771db0788d3241d076ab53023c1",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0004/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "f7cb9f117c79dea217fe95fbaef1afe0f3a1632de35447ac472d15a0895bc8a5",
+      "trace_sha256": "18a6bfaddaa7ae2cf526016815da5b91a320143a3c548522331080e86b389540"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02__g06__d0",
+      "object_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0005/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "8efde12bbac2e1d5d336214502a5304410a48f2607c91f23785186e93dabb108",
+      "trace_sha256": "f8767087952042f539e0e6cc5e997459473e48bd84f1d0a6c85abbbb8606c425"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "ddg_gd_soccer_ball_poisson_000__g06__d0",
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0006/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "f5c417c2822b23377a36c9ea81c2ac693e782bdd97b5ba55c1d601724c746061",
+      "trace_sha256": "5713c361a0be52c9931ba9992671784b36d037663e16b882d6688787255aa390"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "sem_Mug_10f6e09036350e92b3f21f1137c3c347__g01__d0",
+      "object_id": "sem_Mug_10f6e09036350e92b3f21f1137c3c347",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0007/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "6678fe85a29a58cb2d2e60a1cb6f47b1dd7f3df8194162e0b173c66d48367dd3",
+      "trace_sha256": "0c697a19303635843124ca846c0b1c8fa82c04978e9aee3376367d8f237349c0"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g01__d0",
+      "object_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0008/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "fc5d2b1f9c43fdb28685bf83d809f0ea7b24feb092ea883add5db9adf702d407",
+      "trace_sha256": "d7a7503eeed07281565bd413c4ac6fd70c545fc4c050280e839e11dc2bebf1e6"
+    },
+    {
+      "policy": "baseline",
+      "trial_id": "ddg_gd_banana_poisson_003__g01__d0",
+      "object_id": "ddg_gd_banana_poisson_003",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0009/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "6de9dbfbdde6507de6d8d32c0b9c672c96bc69d83646f3cbe907bc0dc3057763",
+      "trace_sha256": "106c31a612814d1c13ff5bb46244d260811b11ff9ed2a63b7afed4b28c2f9bf5"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc__g08__d1",
+      "object_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0000/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "70c76e5326b494e9d01d9e58dd0f71c8ecd5d1e63f3c50c6e1fd69514da52bb2",
+      "trace_sha256": "d6372e6b90f8abdd57c78b449d1dfeddd7326ceeda5acb957da7a729c274ee0a"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "sem_MilkCarton_1c30b1102303f27ef690049a092c5efc__g06__d2",
+      "object_id": "sem_MilkCarton_1c30b1102303f27ef690049a092c5efc",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0001/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "709da07cf7601ff8e3e16a55b9c520247e49738aed6da7e9da3731966106f4c2",
+      "trace_sha256": "c5abbb66fabf2d5d75910c19e1fbb0062cce8b99f15ffa0b6e236f831785a0c4"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct__g06__d1",
+      "object_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0002/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "f3719220ead71c83de76e7b0998e78c87a2ccac608a9839716d707015c8211af",
+      "trace_sha256": "07e3bf3cfc15eaa0214098020b26ec4b74e1c7619e8cfd7be20672a5283538cf"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "mujoco_Utana_5_Porcelain_Ramekin_Large__g07__d0",
+      "object_id": "mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0003/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "01342ea3c3a1363f8b636f1e2cee2ba56c04f55b1e10991c4c639850ae618adf",
+      "trace_sha256": "00e9349f68ade7703b96df63fac8520b57d24ec87dfcd86c78a0ab371da19d91"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "core_cellphone_77817771db0788d3241d076ab53023c1__g07__d0",
+      "object_id": "core_cellphone_77817771db0788d3241d076ab53023c1",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0004/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "93846e846dcad027298a088918d7fd7c95c40698013a1c735dd3d68911fb6f30",
+      "trace_sha256": "6f13bf46fd69defc92df3a71c2cf0c2745c8a57bba297e8d1117527fe2457916"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02__g07__d0",
+      "object_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0005/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "949aee4270ba62e0844cc8b94998b8f8424c8b6bea2551b51cbb05e2cd047270",
+      "trace_sha256": "1bfa6dbd5de2f1e3b3aa10c331a8bf933c61c2166412223dccba16b4c1f7d853"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "ddg_gd_soccer_ball_poisson_000__g01__d1",
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0006/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "0e247f032af861f4ac849f381e7c04c354206d254fe84c28df8fc767985af386",
+      "trace_sha256": "99d0838442cd052f88a467721a233e58f254d82bf506e1412b143ae8692a2872"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "sem_Mug_10f6e09036350e92b3f21f1137c3c347__g01__d1",
+      "object_id": "sem_Mug_10f6e09036350e92b3f21f1137c3c347",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0007/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "dfdcbc69a959f857935163eba521dfe84c0843407112a9fdba2e0fec52922c7a",
+      "trace_sha256": "b41adc5d30b9558ef1b4469fcd2990fc87eb4aec5aeebeda0d2f9317798c6861"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock__g06__d2",
+      "object_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0008/execution_000",
+      "steps": 2100,
+      "label": 0,
+      "evaluation_sha256": "b1c0e70f04c11d52fe50a192e532b50685e78a012804a5430cca0e9b6005d373",
+      "trace_sha256": "6fb7f65c5d363b3bf0a29fd0c9dabe9862fb7e2215a8e4f3320a46f5510fa67c"
+    },
+    {
+      "policy": "learned",
+      "trial_id": "ddg_gd_banana_poisson_003__g01__d0",
+      "object_id": "ddg_gd_banana_poisson_003",
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0009/execution_000",
+      "steps": 2100,
+      "label": 1,
+      "evaluation_sha256": "f58a22682288d8dc541ca96c969323da34975e00e8bf7deff7dfa538d7fd15ab",
+      "trace_sha256": "106c31a612814d1c13ff5bb46244d260811b11ff9ed2a63b7afed4b28c2f9bf5"
+    }
+  ],
+  "camera_comparison": {
+    "collection": {
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4/execution/core_camera_ec28a64bdf9501161bfbba8a5defb02/cohorts/cohort_0000/execution_001",
+      "label": 1,
+      "steps": 2100,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "failure_reason": null,
+      "pickup": {
+        "success": true,
+        "observed_pickup": true,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": 7.0360000000000005,
+        "qualifying_steps": 235,
+        "longest_observed_pickup_run_s": 0.5080000000000005,
+        "final_state_still_lifted_and_bearing": true,
+        "peak_held_bottom_clearance_m": 0.03517564356510891,
+        "peak_held_reference_rise_m": 0.06301307491958141,
+        "final_reference_rise_m": 0.062938978895545,
+        "final_bottom_clearance_m": 0.011897867303504853,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "penetration_m": 0.00010349974036216736,
+      "palm_position_error_m": 0.0033075940965396323,
+      "palm_orientation_error_rad": 0.01577386872881278,
+      "settled_object_pose_xyzw": [
+        -0.7525778412818909,
+        0.09966129064559937,
+        0.02826673351228237,
+        0.8386109471321106,
+        -0.544696569442749,
+        -0.00082750478759408,
+        -0.0060460674576461315
+      ],
+      "final_finger_loads_n": {
+        "thumb": 4.615710496902466,
+        "index": 4.658978739957092,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "trace_sha256": "d0fc3aff37ee853087bc560c3bc2663ded11d04b6a19a3143b2a5cfc91b41679"
+    },
+    "new_baseline": {
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/baseline/cohorts/cohort_0005/execution_000",
+      "label": 0,
+      "steps": 2100,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "failure_reason": null,
+      "pickup": {
+        "success": true,
+        "observed_pickup": true,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": 7.0680000000000005,
+        "qualifying_steps": 278,
+        "longest_observed_pickup_run_s": 1.112000000000001,
+        "final_state_still_lifted_and_bearing": false,
+        "peak_held_bottom_clearance_m": 0.07045570089401304,
+        "peak_held_reference_rise_m": 0.08230923488736153,
+        "final_reference_rise_m": 0.05750732496380806,
+        "final_bottom_clearance_m": -5.476342457948202e-05,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "penetration_m": 0.00010349974036216736,
+      "palm_position_error_m": 0.0033075940965396323,
+      "palm_orientation_error_rad": 0.01577386872881278,
+      "settled_object_pose_xyzw": [
+        -0.7525778412818909,
+        0.09966129064559937,
+        0.02826673351228237,
+        0.8386109471321106,
+        -0.544696569442749,
+        -0.00082750478759408,
+        -0.0060460674576461315
+      ],
+      "final_finger_loads_n": {
+        "thumb": 0.18238160014152527,
+        "index": 0.0,
+        "middle": 0.0,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "trace_sha256": "f8767087952042f539e0e6cc5e997459473e48bd84f1d0a6c85abbbb8606c425"
+    },
+    "new_learned": {
+      "execution_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/physical_comparison/learned/cohorts/cohort_0005/execution_000",
+      "label": 1,
+      "steps": 2100,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "failure_reason": null,
+      "pickup": {
+        "success": true,
+        "observed_pickup": true,
+        "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+        "measurement_clearance_m": 0.005,
+        "first_pickup_time_s": 7.164000000000001,
+        "qualifying_steps": 310,
+        "longest_observed_pickup_run_s": 1.240000000000001,
+        "final_state_still_lifted_and_bearing": true,
+        "peak_held_bottom_clearance_m": 0.06165255712718876,
+        "peak_held_reference_rise_m": 0.07451749965548515,
+        "final_reference_rise_m": 0.07064447924494743,
+        "final_bottom_clearance_m": 0.03980746818193384,
+        "physical_validity_gates": {
+          "joint_limits": true,
+          "mimics": true,
+          "penetration": true
+        },
+        "full_hold_and_pose_orientation_are_not_task_gates": true
+      },
+      "penetration_m": 0.00014427769929170609,
+      "palm_position_error_m": 0.004890412725409818,
+      "palm_orientation_error_rad": 0.024257056253748556,
+      "settled_object_pose_xyzw": [
+        -0.7525778412818909,
+        0.09966129064559937,
+        0.02826673351228237,
+        0.8386109471321106,
+        -0.544696569442749,
+        -0.00082750478759408,
+        -0.0060460674576461315
+      ],
+      "final_finger_loads_n": {
+        "thumb": 8.595564842224121,
+        "index": 4.751243591308594,
+        "middle": 3.8201448582694866,
+        "ring": 0.0,
+        "little": 0.0
+      },
+      "trace_sha256": "1bfa6dbd5de2f1e3b3aa10c331a8bf933c61c2166412223dccba16b4c1f7d853"
+    },
+    "command_targets_exact": true,
+    "desired_palm_exact": true,
+    "phase_exact": true,
+    "time_exact": true,
+    "first_object_pose_difference_step": 1373,
+    "first_object_pose_difference_time_s": 5.492,
+    "initial_object_pose_maxabs_difference": 0.0,
+    "final_object_pose_maxabs_difference": 0.122100830078125
+  }
+}

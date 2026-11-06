@@ -1,0 +1,152 @@
+{
+  "schema": "anydex_boya_first_learned_result_receipt_v1",
+  "delivery_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/DELIVERY_RESULTS.json",
+    "sha256": "0c634133ba335e1a498099d14fc3354d67c4c19862efd3c88829a4c6a619bd79"
+  },
+  "completed_at": "2026-11-06T07:22:18.779248+00:00",
+  "metrics": {
+    "baseline": {
+      "objects": 10,
+      "actual_attempts": 10,
+      "successes": 4,
+      "failures": 6,
+      "known_task_terminated_nulls": 0,
+      "no_proposal": 0,
+      "success_fraction_over_objects": 0.4,
+      "success_fraction_over_executed": 0.4
+    },
+    "learned": {
+      "objects": 10,
+      "actual_attempts": 10,
+      "successes": 6,
+      "failures": 4,
+      "known_task_terminated_nulls": 0,
+      "no_proposal": 0,
+      "success_fraction_over_objects": 0.6,
+      "success_fraction_over_executed": 0.6
+    }
+  },
+  "collection": {
+    "actual_grasps": 431,
+    "physical_steps": 876649,
+    "eligible_labels": 413,
+    "positives": 295,
+    "negatives": 118,
+    "preparation_nulls": 369,
+    "terminal_null_count": 18
+  },
+  "collection_result": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4/RESULTS.json",
+    "sha256": "d2a89c3658c37df381fe0fae00a8498f75f8d76f256ead4826d7c57648c0d9b5"
+  },
+  "training": {
+    "argv": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py",
+      "--dataset-manifest",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/dataset/manifest.json",
+      "--output-dir",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training",
+      "--device",
+      "cuda:0"
+    ],
+    "returncode": 0,
+    "wall_s": 4.365876505966298,
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/logs/training.log",
+    "outputs_sha256": {
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training/TRAINING_RESULTS.json": "e65e391d5b6c296de1085a9e57aa059e4bb449b6e0e8f8e79b79c3ec949eb767",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training/heads/g01.pt": "cc6226836d2ee1a2284d9c3415fd4edd7ee669c535697a6b36f86174db1fa720",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training/heads/g06.pt": "3bf0712e3d798b3b8113412ea89e69d6b4dfa2f066fb4c3ba302cdc34a7c4f38",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training/heads/g07.pt": "037cd4d2a12f8abab75bb3fcdfebf3d254d1c35047fcb2b5c3d0d64e8885e083",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/training/heads/g08.pt": "30a875562e2fd8f182b074c801a1a20e834819ee0d8f89eac7e7b64c441ff8df"
+    }
+  },
+  "paired_objects": [
+    {
+      "object_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc",
+      "baseline_label": 0,
+      "learned_label": 0
+    },
+    {
+      "object_id": "sem_MilkCarton_1c30b1102303f27ef690049a092c5efc",
+      "baseline_label": 1,
+      "learned_label": 1
+    },
+    {
+      "object_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct",
+      "baseline_label": 0,
+      "learned_label": 0
+    },
+    {
+      "object_id": "mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "baseline_label": 0,
+      "learned_label": 0
+    },
+    {
+      "object_id": "core_cellphone_77817771db0788d3241d076ab53023c1",
+      "baseline_label": 1,
+      "learned_label": 1
+    },
+    {
+      "object_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "baseline_label": 0,
+      "learned_label": 1
+    },
+    {
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "baseline_label": 0,
+      "learned_label": 1
+    },
+    {
+      "object_id": "sem_Mug_10f6e09036350e92b3f21f1137c3c347",
+      "baseline_label": 1,
+      "learned_label": 1
+    },
+    {
+      "object_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock",
+      "baseline_label": 0,
+      "learned_label": 0
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_003",
+      "baseline_label": 1,
+      "learned_label": 1
+    }
+  ],
+  "comparison_physics_steps": 42000,
+  "video_index": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/videos/index.html",
+  "videos": [
+    {
+      "policy": "baseline",
+      "object_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "label": 0,
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/videos/00_baseline/isaac_full_arm_pickup.mp4",
+      "sha256": "4e550e67193a7e2bfe89e4723e7011c1c3a55d2d61421926a4e77de8d0ee8d3a"
+    },
+    {
+      "policy": "learned",
+      "object_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "label": 1,
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/videos/01_learned/isaac_full_arm_pickup.mp4",
+      "sha256": "2d7f64e7c44d93f9b2925cf9a63233b928f4837b7e67ea45596abae012f0fc85"
+    },
+    {
+      "policy": "baseline",
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "label": 0,
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/videos/02_baseline/isaac_full_arm_pickup.mp4",
+      "sha256": "edef7dc41ff434b3d0d6b528e960b3f38e976101121b5c8a31a729ed59140837"
+    },
+    {
+      "policy": "learned",
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "label": 1,
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/videos/03_learned/isaac_full_arm_pickup.mp4",
+      "sha256": "2502e4535a9782785bc7c55bd51c46a565635968ed43678952c020581e89b28d"
+    }
+  ],
+  "new_physics_steps_for_publication": 0,
+  "large_artifacts_in_git": false
+}
