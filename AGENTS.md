@@ -1,6 +1,6 @@
 # AnyDexGrasp 独立复现工作区
 
-**2026-11-06用户纠正后的最高优先级状态：整体复现未通过验收。此前“忠实复现”判断撤回；官方离线输出核验与自建DGN上的Boya适配不能合并称论文复现完成。Boya物体身份/划分、评分筛选顺序、执行协议尚未完整对齐；4/10与6/10仅为有限池适配记录。先做论文物体和划分的身份对照及部署顺序对齐，明确未对齐项，再谈新的训练/评测；不以扩大自建集代替对齐。本次更正不新增采集、训练或物理试验。以下按日期保留的阶段通过只对其局部范围成立。**
+**2026-11-06用户纠正后的最高优先级状态：整体复现未通过验收。此前“忠实复现”判断撤回；官方离线输出核验与自建DGN上的Boya适配不能合并称论文复现完成。新独立score-first入口已修正post-CGR顺序；Boya训练物体身份/划分、单帧输入和执行协议仍未完整对齐；4/10与6/10仅为有限池适配记录。先做论文物体和划分的身份对照及部署顺序对齐，明确未对齐项，再谈新的训练/评测；不以扩大自建集代替对齐。本次更正不新增采集、训练或物理试验。以下按日期保留的阶段通过只对其局部范围成立。**
 
 更新：2026-11-06。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
 
@@ -210,3 +210,14 @@ GPU0已用116真实记录跑通双阶段各2epoch工程smoke，16optimizer steps
 只读端点FK重算431条映射最大误差2.306e-16m；四失败对象28条原canonical480及raw_depth*4+extra索引精确一致，开/闭命令绑定通过。四例实际均完整2100步但未提起：Bottle闭合推移45.761mm；Orbit食指被桌面阻挡；Utana推移50.241mm且中指被桌面阻挡；OXO两指99.6%以上闭合但推开18.033mm后失去接触。Utana池内#8原成功82.025mm却分数0，#7失败0.05348，是小数据排序缺口；另三件池内无成功，不证明物体不可抓。原6/10和所有失败/成本保持。
 
 确认当前Boya先每槽CGR前500→几何keep8→最多4臂/首个准入，再学习重排，与原部署先多型多深入评分再最终碰撞不同。整体复现未通过验收；局部接线检查通过不能称完整官方部署已复现。下一实施应复用缓存和现有head，将评分移到候选压缩之前并冻结新的共同有限预算；接线不需先重训。真实Boya标定/限力控制仍为公开声明近似，闭合扫掠或新控制是另立改进。本轮没有新物理/前向/训练，未实施下一阶段，勿自动重播10件或启动大批。报告reproduction/boya/ADAPTATION_ACCEPTANCE_20261106.md，完整只读产物outputs/boya_adaptation_acceptance_20261106_v1，轻量凭据evidence/adaptation_acceptance_20261106。CanonDex保持只读。
+
+
+## 2026-11-06 最新：原物体资产对照与score-first独立入口已交付
+
+用户授权继续对齐。独立deploy_score_first.py默认锁定发布DH3的1000→全型/四额外深入评分→top3500→严格float32 score>.85→top400碰撞，原单flip；排名freeze先于标定/几何/臂，不读旧431/78队列或试抓标签。相同CGR/type一次head20输出再gather，原Inference与安全权重检查复用。8功能检查与独立16000索引/排序/1000canonical/SHA复算通过。可选paper-testing-budget-boya-port-v1不是完整原论文参数，不能静默回退/降低阈值。旧代码和6/10保持，尚未将此入口静默接成旧批次默认。
+
+原DGN训练香蕉缓存仅作工程检查：4000headquery/16000组合→400几何检查全部table拒绝、零臂/零抓取，最终null如实保留；不是新成功率。rank/geometry_v1/geometry_v2三个产物outputs/score_first_alignment_20261106_v1全保留，共12000headquery、零新CGR/训练/物理，v2内部5.205s不含启动。v2加入原RGBD/T_WC/缓存输出交叉绑定且数值选择不变。新arm stage只接通prepare_one单行兼容/共享预算/绑定核对，因无几何准入尚无实际新臂验收。不要把接口通过称抓起成功。
+
+S40从本机DexGraspNet2.0中GraspNet scene0000–0099身份表重建40ID，40原/简化模型和URDF均有SHA，属于派生来源，尚未与官方模型归档/AnyDex CAD逐字节核验。官方GraspNet API已核对train0–99和getObjIds语义。不要套DGN_5k scale.1或25/106/130mm过滤。EGAD官方49个A0–G6已下载ZIP/校验/解压到public/AnyDexGrasp/object_alignment_20261106_v1；原打印尺度/质量仍未知。L144/T30精确身份及约150全测试/选13DexNet表尚未取得，论文CAD说明upon request。四个Boya head仍来自旧DGN，未开始原S40新采集/训练/评测。
+
+报告reproduction/OBJECT_SET_ALIGNMENT_20261106.md和reproduction/boya/SCORE_FIRST_ALIGNMENT_20261106.md；轻量凭据分别在reproduction/evidence/object_alignment_20261106和boya/evidence/score_first_alignment_20261106。并行代理两项中途服务429限流，已由主代理接回完成，不当成文件权限或资产失败。整体论文复现仍未通过。CanonDex只读、大资产不提交。

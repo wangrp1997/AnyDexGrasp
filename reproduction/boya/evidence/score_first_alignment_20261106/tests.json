@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "tests": 8,
+  "command": "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python -B reproduction/boya/test_deploy_score_first.py",
+  "source_sha256": {
+    "reproduction/boya/deploy_score_first.py": "8b8649ccab0e41ff6570e2cae8dc129d74f2f4d316dd7bc66afc99f37d3d6702",
+    "reproduction/boya/test_deploy_score_first.py": "fe540b043a34a6f247c0f95bca6509945aad187fd6db07ef8b224f767bdb384b"
+  },
+  "coverage": [
+    "Candidate beyond old top500/keep8 is selected when learned score is highest",
+    "All5rawdepth x4extra outputs",
+    "Original float32 strict.85 boundary and null without fallback",
+    "Global type/flip score order independent of labels",
+    "Empty/nonfinite input handling",
+    "Actual original single-flip canonical feature binding",
+    "Foreign observation/camera/CGR mismatch rejected",
+    "Geometry cannot start before ranking freeze"
+  ],
+  "new_physics_steps": 0
+}

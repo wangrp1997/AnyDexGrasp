@@ -1,0 +1,33 @@
+{
+  "schema": "anydex_score_first_independent_audit_v1",
+  "passed": true,
+  "checks": [
+    "All frozen input/output SHA verified",
+    "Original CGR top1000 and four-head identity",
+    "All16000 rawdepth/extra output gathers and global order independently reconstructed with NumPy",
+    "Torch-compatible float32 strict.85, top3500 and top400 independently reconstructed",
+    "All1000 original canonical features and actual flips independently recomputed",
+    "All400 geometry-null receipts retained without arm or physical execution"
+  ],
+  "original_raw_candidates": 2048,
+  "canonical_CGR_rows_recomputed": 1000,
+  "head_queries": 4000,
+  "scored_combinations": 16000,
+  "shortlist": 400,
+  "geometry_checked": 400,
+  "geometry_admitted": 0,
+  "table_rejections": 400,
+  "actual_arm_preparations": 0,
+  "actual_grasps": 0,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_head_forwards": 0,
+  "source_result": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/score_first_alignment_20261106_v1/released_geometry_v2/RESULTS.json",
+    "sha256": "caa99e745fdd2aa0cc89411523e448a3dbb0379ff69bce297376e02aac72c206"
+  },
+  "source_freeze": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/score_first_alignment_20261106_v1/released_geometry_v2/RANKING_FREEZE.json",
+    "sha256": "f4d5a9a934c11b8c329ef1144ddf996d2f68f8c0203c847c3796cd11ee5caba7"
+  }
+}

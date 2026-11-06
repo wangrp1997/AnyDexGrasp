@@ -1,0 +1,117 @@
+{
+  "schema": "anydex_boya_score_first_independent_review_v1",
+  "upstream_commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "local_commit": "074fe3379068ccc8642e48be9be0a1d1402a6788",
+  "source_sha256": {
+    "AGENTS.md": "df972186e2b0d0ee4c65c4de4434921c82d6297b67d790a8264604a1d8cd00b0",
+    "robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "reproduction/boya/prepare_collection_queue.py": "58d1cce26b6e7422f11e08e34750e7a6c690abde48b11eda51b625a6807d6b49",
+    "reproduction/boya/evaluate_boya_decision.py": "620a751c35e281c471f1115fca2c6c91622f95b291bdcf75123e778445adfced",
+    "reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "reproduction/boya/trial_record.py": "2437f19d28f7f2601fd7f637eb9205c39b929cdb4b9fff2ba2bc5fac22f25841",
+    "reproduction/boya/train_boya_decision.py": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+    "outputs/paper_code_audit/source/sections/methods.tex": "0d771ba5c0b20a4afdd732ec6432f00a645f30eaedbf00f1b0b34697482f24f1"
+  },
+  "cost": {
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_head_forwards": 0,
+    "new_training_steps": 0,
+    "repo_writes": 0
+  },
+  "canonical_features": {
+    "can_score_before_mapping": true,
+    "why": "The only learned input is canonical_CGR480 reconstructed directly from the paired unappended raw2261 and raw15 CGR row. Calibrated aperture, Boya FK, palm mapping and geometry are not score inputs. The 480 representation itself contains predicted antipodal scores and widths, but no chosen Boya aperture.",
+    "call": "canonical_candidate(row15, raw_features2261, official_functions(robot_dh3.py), if_flip=None)",
+    "flip_policy": "None selects the single original DH3 flip: R[1,1] > 0 negates columns 1,2. Both explicit False/True are supported mathematically but are an additional Boya search policy, not the original deployment. If both are used, include flip in identity and independently canonicalize each.",
+    "canonicalization": "The function swaps first/last 120-score and 120-width halves if flipped, then rotates each 240 block by angle_type*5. It mutates its own feature copy. Do not pass already-canonicalized features or run legacy dataset angle canonicalization again.",
+    "output_index": "For each head, take predictions20[raw_depth_type*4 + extra_depth_index], with raw_depth_type computed by the original function from the raw depth. Five raw depths are .005/.01/.02/.03/.04m and map to indices 0..4; extra is 0..3 (0/10/20/30mm). Do not infer raw depth by dividing .005 by .01 and rounding with another convention.",
+    "identity_fields": [
+      "source_npz_sha256",
+      "source_row_index",
+      "source_row15_identity",
+      "candidate_features_raw2261_identity",
+      "if_flip",
+      "official_policy_if_flip",
+      "canonical_CGR480_identity",
+      "gesture_id",
+      "raw_depth_type",
+      "extra_depth_index",
+      "target_index"
+    ]
+  },
+  "profiles": {
+    "published_dh3_code_v1": {
+      "source": "robot_dh3.py at locked upstream",
+      "cgr_top_k": 1000,
+      "flip": "single official policy",
+      "types": "four heads, explicit ordered map to Boya 1/6/7/8",
+      "extra_depth_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "global_scored_top_k": 3500,
+      "score_threshold": {
+        "op": ">",
+        "value": 0.85
+      },
+      "precollision_top_k": 400,
+      "collision_approach_distance_m": 0.05,
+      "postcollision_saved_top_k": 10,
+      "selected_rank": 0,
+      "qualification": "Exact published DH3 scoring-order and numeric selection profile, while hand, calibration, source observations and arm admission remain declared adaptations. A score-null is a valid result and must not trigger threshold relaxation."
+    },
+    "paper_experiment_text_v1": {
+      "source": "methods.tex:111",
+      "cgr_top_k": 100,
+      "precollision_top_k": 200,
+      "score_threshold": null,
+      "selected_rank": 0,
+      "waypoint_distance_m": 0.1,
+      "ambiguities": [
+        "The text counts 100 CGRs x four types =400 candidates; it does not specify the four extra-depth enumeration that published 480->20 heads perform.",
+        "The same paper methods:30 separately says top500, so profile must cite testing paragraph explicitly.",
+        "Paper does not state the DH3 orientation flip policy or tie ordering."
+      ],
+      "qualification": "A useful separately declared paper-testing-budget port; paper top-K plus code depth/flip expansion must be documented as implementation disambiguation, not silently called an exact paper profile."
+    }
+  },
+  "profile_recommendation": {
+    "primary": "published_dh3_code_v1",
+    "reason": "The user just objected to incomplete alignment. This is the only fully specified deployable public source for CGR/type/depth ordering. Choosing no threshold because the current head scores are known to be below .85 would be a post-hoc change, even if paper prose has no stated threshold.",
+    "paper_default_condition": "If choosing paper-testing-budget as the engineering default, name it paper_testing_budget_boya_port_v1 and explicitly list single-code flip, four code depth outputs and Boya arm checks as declared added details. Freeze it before any head-forward outcomes; do not claim it resolves all official fidelity gaps.",
+    "do_not_do": [
+      "Do not silently combine top1000, no threshold and top200.",
+      "Do not lower .85 or widen source K after seeing nulls.",
+      "Do not tune either profile on the ten already-used heldout outcomes."
+    ]
+  },
+  "minimum_pipeline": [
+    "Freeze source raw15/raw2261 NPZ, observation, calibration, four final20epoch head files, training dataset hash, source code hashes and one complete profile. Read only the existing unlabelled object/mesh group declaration, never outcome records.",
+    "Select CGR rows by original antipodal score to the profile K. Stable deterministic ties may be used, recorded as an implementation tie policy.",
+    "For each row apply exactly the declared flip policy, obtain canonical480 and raw depth. Run each head once per canonical480 (batched), gather four outputs for that raw depth. Materialize every row x flip x gesture x extra candidate and identity. No slot/width/table/hand or arm rejection has happened yet.",
+    "Globally rank all type/depth combinations by learned score. In release profile take top3500, strict score>.85 then top400. Freeze/hash scored-candidate table before reading scene geometry/admission receipts or outcomes.",
+    "Only now choose 1.7-expanded/type-clamped calibrated aperture and map rawdepth+extra once. Apply unchanged hand/cloud/table/approach checks in global score order to the pre-collision shortlist. Mapping/aperture nulls retain source identity and count as rejected; never backfill below the frozen shortlist.",
+    "Apply a single finite per-object arm-check budget to the globally ranked geometry-admitted sequence, not four checks per slot. Sequentially accept the first arm-admitted plan, or prepare in parallel and select smallest global rank after all higher ranks are resolved. A faster lower-ranked plan must not win the race.",
+    "Write one bound top1 candidate/commands or an explicit score/geometry/arm null. Do not call the old ready78 source or rerank only per-slot first admissions. Preserve original trials and6/10 untouched. Actual physics is a later independently authorized/frozen stage."
+  ],
+  "arm_budget": {
+    "recommended_initial": 16,
+    "meaning": "Maximum actual calls to existing full-arm prepare across all types/depths/flip states per object. This is a declared Boya simulation resource constraint, absent from official DH3 selection; it must be fixed identically for baseline and learned policies if comparing them.",
+    "geometry_budget": "The profile pre-collision shortlist length (200 paper text or400 code) is a total joint candidate budget, never keep8 x16 pools. Source scoring expansion is cheap and not itself an arm budget."
+  },
+  "important_tests": [
+    "Ensure rank inputs contain no trial labels or existing outcome records; the dataset manifest hash may be verified without deserializing labels.",
+    "Synthetic winner that old per-slot keep8 would remove survives score-first ranking and can become final selection.",
+    "Synthetic top candidate that fails geometry is followed by the next globally scored candidate across different type/depth, not by a slot-local reset.",
+    "Raw depth0..4 and extra0..3 gather all20 unique indices correctly for each head.",
+    "Explicit flip and single official flip reconstruct the exact rotation and canonical features later written to prepare_binding; feature/plan identities match.",
+    "Score threshold strict>.85, topK order and no automatic null relaxation; ties deterministic and outcome invariant.",
+    "No race-dependent selection when parallel arm preparation returns out of order.",
+    "Finite common arm budget counts true admission calls; no extra hidden budget per gesture/depth and no reusing old first-arm ready pool."
+  ],
+  "old_path_assessment": "Existing train loss/output indexing and evaluate strict checkpoint loading are reusable. Existing build_collection_pool geometry and prepare_one command binding are reusable as helper logic only: their current outer loops enforce per-slot keep8 and per-slot first arm admission, so invoking them unchanged does not deliver a global score-first deployment."
+}

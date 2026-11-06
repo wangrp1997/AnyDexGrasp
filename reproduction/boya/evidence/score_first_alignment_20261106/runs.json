@@ -1,0 +1,79 @@
+{
+  "runs": [
+    {
+      "run": "released_rank",
+      "result_path": "/home/wangrenpeng/AnyDexGrasp/outputs/score_first_alignment_20261106_v1/released_rank/RESULTS.json",
+      "result_sha256": "fc3470f443b2ea6dfa28f72707e6995bf4db0423d34fe3b7f3dd6b56b3a16a44",
+      "stage": "rank",
+      "profile": "released-dh3-v1",
+      "head_queries": 4000,
+      "combinations": 16000,
+      "shortlist": 400,
+      "geometry_checked": 0,
+      "geometry_admitted": 0,
+      "arm_checked": 0,
+      "null_reason": null,
+      "cost": {
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "new_training_steps": 0,
+        "head_inference_queries": 4000,
+        "elapsed_wall_s": 1.4503163699992
+      }
+    },
+    {
+      "run": "released_geometry",
+      "result_path": "/home/wangrenpeng/AnyDexGrasp/outputs/score_first_alignment_20261106_v1/released_geometry/RESULTS.json",
+      "result_sha256": "14204ee87d446669ba99cb73d23fc3b30414c5b934207c51c84b6576bcf3064a",
+      "stage": "geometry",
+      "profile": "released-dh3-v1",
+      "head_queries": 4000,
+      "combinations": 16000,
+      "shortlist": 400,
+      "geometry_checked": 400,
+      "geometry_admitted": 0,
+      "arm_checked": 0,
+      "null_reason": "no_admitted_hand_geometry",
+      "cost": {
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "new_training_steps": 0,
+        "head_inference_queries": 4000,
+        "elapsed_wall_s": 5.362755764042959
+      }
+    },
+    {
+      "run": "released_geometry_v2",
+      "result_path": "/home/wangrenpeng/AnyDexGrasp/outputs/score_first_alignment_20261106_v1/released_geometry_v2/RESULTS.json",
+      "result_sha256": "caa99e745fdd2aa0cc89411523e448a3dbb0379ff69bce297376e02aac72c206",
+      "stage": "geometry",
+      "profile": "released-dh3-v1",
+      "head_queries": 4000,
+      "combinations": 16000,
+      "shortlist": 400,
+      "geometry_checked": 400,
+      "geometry_admitted": 0,
+      "arm_checked": 0,
+      "null_reason": "no_admitted_hand_geometry",
+      "cost": {
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "new_training_steps": 0,
+        "head_inference_queries": 4000,
+        "elapsed_wall_s": 5.205068216077052
+      }
+    }
+  ],
+  "total_head_inference_queries": 12000,
+  "total_new_physics_steps": 0,
+  "total_new_CGR_forwards": 0,
+  "total_new_training_steps": 0,
+  "original_DGN_top1_comparison_preserved": {
+    "baseline": "4/10",
+    "learned": "6/10"
+  },
+  "current_model_training_set": "Old self-built DGN40, not original S40",
+  "geometry_v1_history_preserved": true,
+  "source_scene": "Existing training mesh ddg_ycb_011_banana; engineering check, not new heldout benchmark",
+  "threshold_float32_boundary_fixed": true
+}

@@ -1,0 +1,36 @@
+{
+  "receipts": {
+    "source_receipt.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/source_receipt.json",
+      "sha256": "34fc43de9114a4e9c2dfa1b4eb9485fbc1bed4564ea8d0c0ec578d333b3e8c7b"
+    },
+    "egad_resume_receipt.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_resume_receipt.json",
+      "sha256": "c8a45434e0a8ff6d8d8830345e6d7d709ea6d2f7961c55814cd7a5b3df701b36"
+    },
+    "graspnet_api.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/graspnet_api.py",
+      "sha256": "5ee0a157fa2c12e112345c488d01264012866472cab93b82013e6a71531539e0"
+    },
+    "dgn2_README.md": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/dgn2_README.md",
+      "sha256": "4919074edb0af357cb180cf4c4c7806273accc5bffd6919fbfe8cfb3afd1ef7f"
+    },
+    "egad_README.md": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_README.md",
+      "sha256": "2bf52d573907ff84690b9d75255a3e08d69cedcd60715426f3c0506f966a3b3f"
+    }
+  },
+  "official_graspnet_api_commit": "eb57dd2092d8dbe05312a29c3d0c22f3226efbfc",
+  "official_graspnet_api_train_scenes": "graspnet_api.py:90-101: train range(100)",
+  "official_graspnet_api_object_identity": "graspnet_api.py:223-243: union of scene object_id_list.txt",
+  "official_egad_commit": "264ac921eebad30ed2e14cab98525811f8380704",
+  "known_missing": [
+    "Exact L144 and T30 machine-readable identities/CAD correspondence",
+    "Complete AnyDex approximately150 real-test object identities",
+    "Chosen13 Dex-Net identities",
+    "AnyDex EGAD printing scale and physical properties"
+  ],
+  "new_physics_steps": 0,
+  "new_training_steps": 0
+}
