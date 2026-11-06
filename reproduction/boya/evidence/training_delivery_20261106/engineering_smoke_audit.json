@@ -1,0 +1,147 @@
+{
+  "all_passed": true,
+  "checks": {
+    "internal_heads_g1_fit_meshes": true,
+    "internal_heads_g1_unique_records": true,
+    "internal_heads_g1_benchmark": true,
+    "internal_heads_g1_epochs_full": true,
+    "internal_heads_g1_state_shape": true,
+    "internal_heads_g6_fit_meshes": true,
+    "internal_heads_g6_unique_records": true,
+    "internal_heads_g6_benchmark": true,
+    "internal_heads_g6_epochs_full": true,
+    "internal_heads_g6_state_shape": true,
+    "internal_heads_g7_fit_meshes": true,
+    "internal_heads_g7_unique_records": true,
+    "internal_heads_g7_benchmark": true,
+    "internal_heads_g7_epochs_full": true,
+    "internal_heads_g7_state_shape": true,
+    "internal_heads_g8_fit_meshes": true,
+    "internal_heads_g8_unique_records": true,
+    "internal_heads_g8_benchmark": true,
+    "internal_heads_g8_epochs_full": true,
+    "internal_heads_g8_state_shape": true,
+    "heads_g1_fit_meshes": true,
+    "heads_g1_unique_records": true,
+    "heads_g1_benchmark": true,
+    "heads_g1_epochs_full": true,
+    "heads_g1_state_shape": true,
+    "heads_g6_fit_meshes": true,
+    "heads_g6_unique_records": true,
+    "heads_g6_benchmark": true,
+    "heads_g6_epochs_full": true,
+    "heads_g6_state_shape": true,
+    "heads_g7_fit_meshes": true,
+    "heads_g7_unique_records": true,
+    "heads_g7_benchmark": true,
+    "heads_g7_epochs_full": true,
+    "heads_g7_state_shape": true,
+    "heads_g8_fit_meshes": true,
+    "heads_g8_unique_records": true,
+    "heads_g8_benchmark": true,
+    "heads_g8_epochs_full": true,
+    "heads_g8_state_shape": true,
+    "status": true,
+    "source_inputs_unchanged": true,
+    "CGR_not_loaded": true,
+    "CGR_not_trained": true,
+    "external_not_evaluated": true,
+    "zero_physics": true
+  },
+  "training_results_sha256": "b900eba5c0bf0c20255663688bf2abaa42815899c5e52d475646193d2d3c48a5",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/models/loss.py": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8",
+    "/home/wangrenpeng/AnyDexGrasp/utils/solvers.py": "a9f2b274f438a1a29c1ae17c22a1f553dbe978354ba7143222a653e17a38f713",
+    "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf"
+  },
+  "dataset_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_snapshot_v1/manifest.json",
+    "sha256": "872edb039c3cc433547b538e717b6079b6b230e503a0871986a9e82d650c0ba0"
+  },
+  "benchmark_only": true,
+  "official_architecture_and_loss_contract": {
+    "all_passed": true,
+    "tests": 7,
+    "errors": 0,
+    "failures": 0,
+    "source_sha256": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_actual_labels": 0,
+    "scope": "CPU interface/gradient/architecture/batching contracts only, not predictive performance"
+  },
+  "trained_head_files": [
+    {
+      "stage": "internal_heads",
+      "gesture_id": 1,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/internal_check/g01.pt",
+      "sha256": "b20735bae763742779d73b5dc984406303556290874c134c1e0fb540a32919f9",
+      "fit_records": 23,
+      "fit_groups": 10
+    },
+    {
+      "stage": "internal_heads",
+      "gesture_id": 6,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/internal_check/g06.pt",
+      "sha256": "417522d46c9c118077bc59de529aacbff844cad73608406e68f685edce697255",
+      "fit_records": 25,
+      "fit_groups": 11
+    },
+    {
+      "stage": "internal_heads",
+      "gesture_id": 7,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/internal_check/g07.pt",
+      "sha256": "5bf96f5b2813dfc4a8dc667af58abb2c4c17c33724344010476414b0486b221e",
+      "fit_records": 25,
+      "fit_groups": 11
+    },
+    {
+      "stage": "internal_heads",
+      "gesture_id": 8,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/internal_check/g08.pt",
+      "sha256": "0f2b40a62d5d95ba24f7ce5e55b1611c1c8f22f9dfdd9d8f97e9eb8650828a84",
+      "fit_records": 25,
+      "fit_groups": 10
+    },
+    {
+      "stage": "heads",
+      "gesture_id": 1,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/heads/g01.pt",
+      "sha256": "351372559d2b1e0bfc89ff051ee97a5701e62b9dad5c50c13023f5168e32751b",
+      "fit_records": 27,
+      "fit_groups": 12
+    },
+    {
+      "stage": "heads",
+      "gesture_id": 6,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/heads/g06.pt",
+      "sha256": "12ef293a83dde99f2ad30860f5183279382a220c09a583defd088117f1676a92",
+      "fit_records": 30,
+      "fit_groups": 13
+    },
+    {
+      "stage": "heads",
+      "gesture_id": 7,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/heads/g07.pt",
+      "sha256": "9c5544a2047fe0e54336276f176f824a434291dfdcf3bf1635e3fad9b631ce08",
+      "fit_records": 30,
+      "fit_groups": 13
+    },
+    {
+      "stage": "heads",
+      "gesture_id": 8,
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/heads/g08.pt",
+      "sha256": "2238bdc7ce1751f5f0f184e6ef815a3dd1357c53e92a43fef4dfa740adb3675c",
+      "fit_records": 29,
+      "fit_groups": 12
+    }
+  ],
+  "optimizer_steps": 16,
+  "trainer_internal_wall_s": 3.393169575952925,
+  "cost_boundary": "Trainer internal work only; excludes interpreter/approval startup. Two2epoch stages are engineering only. Unique116 source actual labels were reused, no new physical labels.",
+  "new_actual_labels": 0,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0
+}

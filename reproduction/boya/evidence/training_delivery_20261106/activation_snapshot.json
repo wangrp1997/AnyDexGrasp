@@ -1,0 +1,54 @@
+{
+  "observed_at": "2026-11-06T03:40:14.500452+00:00",
+  "launch": {
+    "pid": 4050257,
+    "started_at": "2026-11-06T03:35:53.663831+00:00",
+    "argv": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_training_delivery.py",
+      "--plan",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v1/DELIVERY_PLAN.json"
+    ],
+    "plan_sha256": "48fcfa71b97edbe02c25e5251c7433d6cde258dc7a4ae36b24109cc2881ec8d0",
+    "collection_pid": 3977466,
+    "engineering_smoke": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/TRAINING_RESULTS.json",
+    "formal_training_started": false
+  },
+  "status": {
+    "schema": "anydex_boya_training_delivery_v1",
+    "status": "waiting_for_collection",
+    "stages": {},
+    "started_at": "2026-11-06T03:35:53.688658+00:00",
+    "updated_at": "2026-11-06T03:40:08.730255+00:00",
+    "wall_s": 255.0416305019753,
+    "collection": {
+      "pid": 3977466,
+      "object_states": {
+        "no_ready_plans": 1,
+        "inherited_complete": 3,
+        "complete": 15
+      },
+      "known_actual_labels": 161
+    }
+  },
+  "engineering_training": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/training_engineering_smoke_v1/TRAINING_RESULTS.json",
+    "status": "benchmark_smoke_complete",
+    "benchmark_only": true,
+    "wall_s": 3.393169575952925,
+    "new_optimizer_steps": 16,
+    "head_ids": [
+      "1",
+      "6",
+      "7",
+      "8"
+    ],
+    "inputs_and_sources_unchanged": true
+  },
+  "delivery_contract_tests": {
+    "passed": 9,
+    "new_physics_steps": 0
+  },
+  "scope": "Prepared automatic chain and engineering training proof, not final learned grasp performance. Final fitting and held-out physical top1 evaluation wait for the immutable collection result."
+}

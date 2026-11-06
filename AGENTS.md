@@ -164,3 +164,14 @@ RTX观测先与独立资产发布修正并行，50帧78.560s（stage80.460s）�
 新独立execute_collection_queue_v2.py绑定各原plan完整长度/phase/原数组，新resume_collection_execution_v3.py核验431=27继承+404明确未执行、无unknown后，**新活动 outputs/collection40_20261106_v2/execution_resume_v3 已于北京时间10:44:39启动，PID3977466，协议ed51a65b24860b25c7b2116de209761522e62e04089039aec42605bef5a9a773**。两个对象CPU并发，对象内常驻；旧run_v2进度仍是历史停止，后续看新PROGRESS.json/RESULTS.json，勿重复启动或修改新冻结源码。原27条只读继承不重抓，观测/CGR/几何/规划不重做。当前运行启动快照非新完整抓取结论，尚未训练。
 
 原准入上限train各型85/89/89/90=353，validation17/21/21/19=78，总431，原400/80目标必欠额，不能补null为0或按验证结果换对象。最终新活动目录train_records.jsonl/validation_records.jsonl分别合并旧27和新增；旧开发105不抵配额。10执行合同、Snowman16原计划prepare-only、5账本负例及27轨迹独立核验通过，详见reproduction/boya/COLLECTION_RESUME_20261106.md和evidence/collection_resume_20261106。所有轻量修改仅AnyDex，CanonDex仍只读。
+
+
+## 2026-11-06 最新：官方四头训练工程验证通过，正式训练与实际对照已自动接续
+
+原resume_v3采集仍运行，未改采集源码。新prepare_boya_training_data.py保留32/8/10 mesh分组，默认只接受final complete；原canonical480复用一次，单raw_depth*4+extra标签。新train_boya_decision.py AST复用原Inference/MSE/PolyLR，四独立480→20，正式双阶段各20epoch（内部32/8只报告末轮→全部40重训），不按external10调参。固定论文20epoch/lr1e-4+公开code WD5e-4/Poly.99组合，明确配置差异。旧文档“20=5角度×4深入”为口误，正确5 raw depth×4额外深入；实现一直正确，冻结旧文档不热改。
+
+GPU0已用116真实记录跑通双阶段各2epoch工程smoke，16optimizer steps、trainer内部3.393s，8state_dict严格重载过，benchmark_only=true；不冒称正式模型/抓取提升，零新CGR/物理。
+
+**自动交付PID4050257已于北京时间11:35:53实际启动，活动outputs/boya_decision_delivery_20261106_v1，plan SHA48fcfa71b97edbe02c25e5251c7433d6cde258dc7a4ae36b24109cc2881ec8d0**。当前waiting_for_collection，final complete后自动dataset→正式四头训练→外部10对象baseline/learned无标签top1推荐冻结→两策略各一次实际试抓（benchmark_only不入训练）→最多4个RTX视频。此处是同一431已准入池的对照，不能声称完整未过滤算法或广泛泛化结果。既有标签只有排名冻结后才能读作离线配对，不代替实际对照。
+
+后续看DELIVERY_STATUS.json/DELIVERY_RESULTS.json和reproduction/boya/TRAINING_DELIVERY_20261106.md。watcher每15秒核producer/PID/源SHA，12小时有限等待；infra/dead/unknown明确blocked、不重放，媒体失败单列。正式训练和实际对照尚未开始，勿把工程smoke当最终模型。不要启动重复watcher或热改冻结prepare/train/eval/run/executor源码。轻量证据evidence/training_delivery_20261106，大文件不提交，CanonDex仍只读。
