@@ -175,3 +175,14 @@ GPU0已用116真实记录跑通双阶段各2epoch工程smoke，16optimizer steps
 **自动交付PID4050257已于北京时间11:35:53实际启动，活动outputs/boya_decision_delivery_20261106_v1，plan SHA48fcfa71b97edbe02c25e5251c7433d6cde258dc7a4ae36b24109cc2881ec8d0**。当前waiting_for_collection，final complete后自动dataset→正式四头训练→外部10对象baseline/learned无标签top1推荐冻结→两策略各一次实际试抓（benchmark_only不入训练）→最多4个RTX视频。此处是同一431已准入池的对照，不能声称完整未过滤算法或广泛泛化结果。既有标签只有排名冻结后才能读作离线配对，不代替实际对照。
 
 后续看DELIVERY_STATUS.json/DELIVERY_RESULTS.json和reproduction/boya/TRAINING_DELIVERY_20261106.md。watcher每15秒核producer/PID/源SHA，12小时有限等待；infra/dead/unknown明确blocked、不重放，媒体失败单列。正式训练和实际对照尚未开始，勿把工程smoke当最终模型。不要启动重复watcher或热改冻结prepare/train/eval/run/executor源码。轻量证据evidence/training_delivery_20261106，大文件不提交，CanonDex仍只读。
+
+
+## 2026-11-06 最新：已知任务早停分类已修，97未执行计划已实际接续
+
+原resume_v3在12:44左右停止，320合格241正79负/672068步；sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc的14实际均187步，原生object_pushed_before_closure(闭合前XY>30mm)主动终止，共2618步，完整执行不成立而worker正常收尾。原队列把未成标签统一当infra，自动交付v1于12:44 blocked。旧431分区320eligible+14已知tasknull+97未执行，全部成本674686步保留。
+
+新helper按明确原生reason、原source/input/commands/binding SHA和完整trace prefix认证known task stop（非对象特设），null不补0、不重播，未知/infra仍stop。新resume_v4只派12对象97原未执行（19train/78validation），新prepare_data_v2保留32/8/10和原480/20，正式ledger允许431=eligible+certifiednull。最多417有效(339train/78val)，不凑原400/80配额。
+
+**当前活动采集outputs/collection40_20261106_v2/execution_resume_v4，PID103505，14:34:14启动，protocol4b3c93e6f82d88226e1a1b5d43e6a504014e5d3587a774dc99e2b4d4f3fc502e；活动交付outputs/boya_decision_delivery_20261106_v2，PID108089，14:37:18就绪屏障后恢复，plane17332fb2b2b811334a8e87d4359776c1a0e2719f15da1788b9eb8319c130fbc。** 新watch v2等final再自动四头训练/10物体真实top1对照/视频；其已认证tasknull在实际任务指标中未成功但不作训练负例。旧watch启动竞态的零阶段日志保留attempts，未重启采集。
+
+当前训练/对照尚未完成。后续只看上述新PROGRESS/DELIVERY_STATUS，旧v3/v1是历史blocked，不要覆盖、重播或热改冻结source。14采集/9数据/11watch合同及真实prefix/ledger验证通过，详见reproduction/boya/KNOWN_TASK_STOP_CONTINUATION_20261106.md、evidence/known_task_stop_20261106。官方学习核心、物理门、旧320/14记录全部保持，CanonDex只读，大文件不提交。

@@ -1,0 +1,15 @@
+# 已知任务提前终止与采集续跑：2026-11-06
+
+此前execution_resume_v3于北京时间12:44左右结束新派发，自动交付v1于12:44报告blocked。账本为431准入=320合格标签(241正/79负)+14实际提前终止/null+97未执行；原合格控制672068步+提前终止2618步=674686步。旧结果、未完成和成本不覆盖。
+
+14条均由原生execute_template_arm_positive.py的闭合前水平位移>30mm条件终止：settle50+home_to_pregrasp137，第186步29.051mm、第187步30.092mm；尚未approach/close，指载荷/物体穿透均0，物体轨迹逐值相同。原worker/进程正常收尾、原六门true，但完整执行门false。它们是明确的任务早停，不是进程崩溃，不能补成二元负标签。原流程把所有不合格标签都作为全局infra，导致队列停止；本次修正该调度分类，不修改官方学习算法或原生物理门。
+
+新terminal_collection_outcome.py按原生明确reason、worker正常收尾、source/input/commands/binding/trace SHA、完整命令前缀与实际触发阈值认证已知早停，支持原有object_pushed_before_closure/deep_collision_stop，不按对象名/类别判断。证据不足、未知reason、进程失败或源码变化仍拒绝。旧14条保留null并消耗原次数与物理成本；不重播、不把null改0。
+
+新resume_collection_execution_v4.py只处理12对象97条确证从未执行计划（2train19条+10validation78条），继承320合格+14已消费null。完整账本需431=eligible⊔certified terminal null，unknown/未执行/未认证列表全空才complete_with_null，未来同类有证据的任务早停消费后继续。新prepare_boya_training_data_v2.py逐条复算证书并对齐最终集合，仅eligible进入原schema/480输入/20索引数据，32/8/10分组不改。最终最多417标签：339train+78validation；原400/80目标缺额如实保留。
+
+**活动采集** outputs/collection40_20261106_v2/execution_resume_v4，PID103505，2026-11-06 14:34:14北京时间启动，protocol SHA4b3c93e6f82d88226e1a1b5d43e6a504014e5d3587a774dc99e2b4d4f3fc502e。**活动交付** outputs/boya_decision_delivery_20261106_v2，PID108089，14:37:18启动，plan SHAe17332fb2b2b811334a8e87d4359776c1a0e2719f15da1788b9eb8319c130fbc。前一次watcher在producer写PROGRESS前启动的零阶段竞态已存attempts/producer_startup_race_v1，无数据/训练/对照/视频执行，确认producer就绪后按同plan恢复；采集未重启。
+
+交付仍为final数据→原官方四头训练→10保留物体的原CGR/learned两策略top1实际对照→视频。新run_boya_training_delivery_v2.py也将认证的物理任务早停保留None，在物体top1指标中视为未成功，不能冒充有效训练0；未认证异常仍block。官方模型/损失/训练配置、评分/eval原源码均保持。
+
+14collector合同、9data负例/320特征核验、11交付控制流合同已通过，14实际前缀和账本已独立复核。修复验证阶段没有新增物理或模型试验，97条授权续跑的实际成本单独累计。活动进度见新PROGRESS.json和DELIVERY_STATUS.json；旧v3和旧交付v1保留历史停止状态。当前是启动快照，正式训练/实际对照尚未完成；不再用旧时间估算作为完成承诺。

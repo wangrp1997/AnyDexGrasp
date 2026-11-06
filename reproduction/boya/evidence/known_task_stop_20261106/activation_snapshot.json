@@ -1,0 +1,57 @@
+{
+  "observed_at": "2026-11-06T06:40:12.136767+00:00",
+  "collection_launch": {
+    "pid": 103505,
+    "started_at": "2026-11-06T06:34:14.725276+00:00",
+    "argv": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/resume_collection_execution_v4.py",
+      "--original-run",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2",
+      "--previous-run",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v3",
+      "--output-dir",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v4"
+    ],
+    "protocol_sha256": "4b3c93e6f82d88226e1a1b5d43e6a504014e5d3587a774dc99e2b4d4f3fc502e",
+    "inherited_eligible_labels": 320,
+    "inherited_known_task_nulls": 14,
+    "remaining_ready_trials": 97,
+    "old_evidence_preserved": true,
+    "runtime_environment": {
+      "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib"
+    }
+  },
+  "delivery_launch": {
+    "pid": 108089,
+    "started_at": "2026-11-06T06:37:18.444552+00:00",
+    "argv": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_training_delivery_v2.py",
+      "--plan",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/DELIVERY_PLAN.json"
+    ],
+    "plan_sha256": "e17332fb2b2b811334a8e87d4359776c1a0e2719f15da1788b9eb8319c130fbc",
+    "collection_pid": 103505,
+    "formal_training_started": false,
+    "startup_barrier_confirmed": true,
+    "recovery_receipt": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_decision_delivery_20261106_v2/attempts/producer_startup_race_v1/RECOVERY.json"
+  },
+  "delivery_status": "waiting_for_collection",
+  "inherited_eligible": 320,
+  "inherited_positive": 241,
+  "inherited_negative": 79,
+  "inherited_terminal_null": 14,
+  "inherited_steps": 674686,
+  "terminal_null_steps": 2618,
+  "remaining_ready": 97,
+  "remaining_train": 19,
+  "remaining_validation": 78,
+  "expected_max_labels": 417,
+  "collector_contract_tests": 14,
+  "data_negative_contracts": 9,
+  "delivery_contract_tests": 11,
+  "scope": "Continuation activation; not completion of the remaining97, final training or learned-policy success. Original native physical gates and all existing data are preserved."
+}
