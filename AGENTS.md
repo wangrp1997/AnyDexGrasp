@@ -155,3 +155,12 @@ RTX观测先与独立资产发布修正并行，50帧78.560s（stage80.460s）�
 本轮物理固定CPU两个对象worker并发，每对象serial resident batch16；每槽最多4臂候选，只执行首个准入候选一次，普通有效负例继续，infra停止新派发并收尾。最终 `execution/train_records.jsonl` 与 `validation_records.jsonl` 分开，混合审计流为 `all_records.jsonl`；无候选/未执行/资格不明为null，不能伪作负例。所有额外记录保留，400/80欠额显式报告；validation不能调参或选手型。目前尚无Boya学习评分头。CanonDex保持只读，不恢复其批次。运行与恢复说明见 `reproduction/boya/COLLECTION_PIPELINE_V2.md`，大输出/图像/轨迹/数据不提交Git。
 
 补充同轮启动快照：50/50 CGR前向已完整完成、单模型加载，当前 geometry_running；轻量 `evidence/collection_20261106/launch_snapshot.json` 记录45 ready/16 no_candidate（800槽中间状态）、正式物理标签仍0。无候选是准入null，非抓取失败；后续仍以活动进度为准。
+
+
+## 2026-11-06 最新：原800槽准备完成，执行步数适配修复后已续跑
+
+原run_v2于02:49停止：800槽610手几何/190无候选、431臂准入/369null；3对象27实际22正5负/56700步。Snowman原native g7d0为2126步（仅approach延长），旧采集入口固定2100导致纯prepare拒绝，0Kit/0物理；其他两个尚未执行计划亦有2124/2142步。原记录不覆盖，所有旧源码保持。
+
+新独立execute_collection_queue_v2.py绑定各原plan完整长度/phase/原数组，新resume_collection_execution_v3.py核验431=27继承+404明确未执行、无unknown后，**新活动 outputs/collection40_20261106_v2/execution_resume_v3 已于北京时间10:44:39启动，PID3977466，协议ed51a65b24860b25c7b2116de209761522e62e04089039aec42605bef5a9a773**。两个对象CPU并发，对象内常驻；旧run_v2进度仍是历史停止，后续看新PROGRESS.json/RESULTS.json，勿重复启动或修改新冻结源码。原27条只读继承不重抓，观测/CGR/几何/规划不重做。当前运行启动快照非新完整抓取结论，尚未训练。
+
+原准入上限train各型85/89/89/90=353，validation17/21/21/19=78，总431，原400/80目标必欠额，不能补null为0或按验证结果换对象。最终新活动目录train_records.jsonl/validation_records.jsonl分别合并旧27和新增；旧开发105不抵配额。10执行合同、Snowman16原计划prepare-only、5账本负例及27轨迹独立核验通过，详见reproduction/boya/COLLECTION_RESUME_20261106.md和evidence/collection_resume_20261106。所有轻量修改仅AnyDex，CanonDex仍只读。

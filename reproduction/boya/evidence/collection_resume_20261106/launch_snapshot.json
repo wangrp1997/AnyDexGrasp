@@ -1,0 +1,58 @@
+{
+  "observed_at": "2026-11-06T02:50:18.992342+00:00",
+  "launch": {
+    "schema": "anydex_boya_collection_resume_launch_v3",
+    "pid": 3977466,
+    "started_at": "2026-11-06T02:44:39.198309+00:00",
+    "argv": [
+      "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+      "-B",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/resume_collection_execution_v3.py",
+      "--original-run",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2",
+      "--output-dir",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/execution_resume_v3"
+    ],
+    "protocol_sha256": "ed51a65b24860b25c7b2116de209761522e62e04089039aec42605bef5a9a773",
+    "inherited_actual_grasps": 27,
+    "remaining_ready_trials": 404,
+    "old_evidence_preserved": true,
+    "old_observations_and_plans_reused": true,
+    "runtime_environment": {
+      "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib"
+    },
+    "execution_workers": 2,
+    "device": "cpu",
+    "new_training_steps": 0
+  },
+  "status_at_snapshot": "running",
+  "inherited_actual_grasps": 27,
+  "inherited_positive": 22,
+  "inherited_negative": 5,
+  "inherited_physics_steps": 56700,
+  "remaining_ready_trials": 404,
+  "completed_original_preparation": {
+    "slot_count": 800,
+    "geometry_ready": 610,
+    "geometry_null": 190,
+    "arm_admitted": 431,
+    "planning_null": 369
+  },
+  "label_capacity": {
+    "train": {
+      "1": 85,
+      "6": 89,
+      "7": 89,
+      "8": 90
+    },
+    "validation": {
+      "1": 17,
+      "6": 21,
+      "7": 21,
+      "8": 19
+    },
+    "total": 431
+  },
+  "new_training_steps": 0,
+  "scope": "Continuation launch only; no claim of 404 completed trials or final success rate. Prior 27 labels inherited read-only and not repeated."
+}

@@ -1,0 +1,1243 @@
+{
+  "schema": "anydex_boya_collection_resume_independent_audit_20261106_v1",
+  "status": "passed",
+  "old_run": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2",
+  "old_protocol_sha256": "20414374d11c0ed4df68b339e51a38318901bb3b34119cb7b127adcb3e820703",
+  "summary": {
+    "original_slots": 800,
+    "geometry_ready": 610,
+    "geometry_null": 190,
+    "arm_ready": 431,
+    "terminal_preparation_null": 369,
+    "executed_objects": 3,
+    "actual_grasps": 27,
+    "positive_labels": 22,
+    "negative_labels": 5,
+    "physics_steps": 56700,
+    "remaining_objects": 47,
+    "unexecuted_ready_slots": 404,
+    "unknown_execution_objects": 0
+  },
+  "capacity_by_split_gesture": [
+    {
+      "split": "train",
+      "gesture_id": 1,
+      "admitted_slots": 85,
+      "target": 100,
+      "unavoidable_per_gesture_shortfall": 15,
+      "potential_extra_valid": 0,
+      "declared_steps_distribution": {
+        "2100": 85
+      }
+    },
+    {
+      "split": "train",
+      "gesture_id": 6,
+      "admitted_slots": 89,
+      "target": 100,
+      "unavoidable_per_gesture_shortfall": 11,
+      "potential_extra_valid": 0,
+      "declared_steps_distribution": {
+        "2100": 89
+      }
+    },
+    {
+      "split": "train",
+      "gesture_id": 7,
+      "admitted_slots": 89,
+      "target": 100,
+      "unavoidable_per_gesture_shortfall": 11,
+      "potential_extra_valid": 0,
+      "declared_steps_distribution": {
+        "2100": 88,
+        "2126": 1
+      }
+    },
+    {
+      "split": "train",
+      "gesture_id": 8,
+      "admitted_slots": 90,
+      "target": 100,
+      "unavoidable_per_gesture_shortfall": 10,
+      "potential_extra_valid": 0,
+      "declared_steps_distribution": {
+        "2100": 89,
+        "2142": 1
+      }
+    },
+    {
+      "split": "validation",
+      "gesture_id": 1,
+      "admitted_slots": 17,
+      "target": 20,
+      "unavoidable_per_gesture_shortfall": 3,
+      "potential_extra_valid": 0,
+      "declared_steps_distribution": {
+        "2100": 17
+      }
+    },
+    {
+      "split": "validation",
+      "gesture_id": 6,
+      "admitted_slots": 21,
+      "target": 20,
+      "unavoidable_per_gesture_shortfall": 0,
+      "potential_extra_valid": 1,
+      "declared_steps_distribution": {
+        "2100": 20,
+        "2124": 1
+      }
+    },
+    {
+      "split": "validation",
+      "gesture_id": 7,
+      "admitted_slots": 21,
+      "target": 20,
+      "unavoidable_per_gesture_shortfall": 0,
+      "potential_extra_valid": 1,
+      "declared_steps_distribution": {
+        "2100": 21
+      }
+    },
+    {
+      "split": "validation",
+      "gesture_id": 8,
+      "admitted_slots": 19,
+      "target": 20,
+      "unavoidable_per_gesture_shortfall": 1,
+      "potential_extra_valid": 0,
+      "declared_steps_distribution": {
+        "2100": 19
+      }
+    }
+  ],
+  "split_admitted_upper_bounds": {
+    "train": 353,
+    "validation": 78
+  },
+  "all_declared_step_distribution": {
+    "2100": 428,
+    "2124": 1,
+    "2126": 1,
+    "2142": 1
+  },
+  "non2100_plans": [
+    {
+      "trial_id": "sem_Snowman_def36b8e4538fb74d449cd634c927922__g07__d0",
+      "object_id": "sem_Snowman_def36b8e4538fb74d449cd634c927922",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 0,
+      "declared_command_steps": 2126,
+      "plan_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/sem_Snowman_def36b8e4538fb74d449cd634c927922__g07__d0/plan_000/plan.json",
+      "plan_sha256": "3256396237cdd4be9e920fe1af6edb346518083026b00ba6e0d7c1b2f80a49b2",
+      "commands_sha256": "ab4091b9f66c3623ce9a53cff71be0797f2e400a1bbacd923206b8ee1db8c0e9",
+      "phase_steps": {
+        "home_to_pregrasp": 750,
+        "approach": 526,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "actual_phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 526,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      }
+    },
+    {
+      "trial_id": "ddg_gd_box_poisson_010__g08__d2",
+      "object_id": "ddg_gd_box_poisson_010",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 2,
+      "declared_command_steps": 2142,
+      "plan_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/ddg_gd_box_poisson_010__g08__d2/plan_000/plan.json",
+      "plan_sha256": "a0d9bdea407b696ebe969b6bf9caedd9c09a58b9f3fcd7abed185f2f7114bd26",
+      "commands_sha256": "8346c362deb0c9b171448a28683bb3bb3a1926c3c310823044a6e70bacc6c380",
+      "phase_steps": {
+        "home_to_pregrasp": 750,
+        "approach": 542,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "actual_phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 542,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      }
+    },
+    {
+      "trial_id": "ddg_gd_soccer_ball_poisson_000__g06__d1",
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "split": "validation",
+      "gesture_id": 6,
+      "extra_depth_index": 1,
+      "declared_command_steps": 2124,
+      "plan_json": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261106_v2/run_v2/planning/ddg_gd_soccer_ball_poisson_000__g06__d1/plan_001/plan.json",
+      "plan_sha256": "e5556e757fc9366c169b7e62ccbfcf0b4b280843a44896dc9acd800f4a4bebd8",
+      "commands_sha256": "6f116d527926b1d73ea61a59f988f18ef67a8b116f7d941dbf1623c22d8db111",
+      "phase_steps": {
+        "home_to_pregrasp": 750,
+        "approach": 524,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "actual_phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 524,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      }
+    }
+  ],
+  "verified_actual_records": [
+    {
+      "trial_id": "ddg_ycb_011_banana__g01__d0",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 1,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "bda1cb1aeaf302849cf6304ed44c8cb984a285e63d5f2b6e6cab567496025b62",
+      "commands_sha256": "748b42e71ece1bc6aeeda1ba26d93e68fe20d3a4cbd7dcf2ce44e4d38dbefd1d",
+      "trace_sha256": "05db5c47f7d25e107bf48339ef620fd6160616886b8f8717ea3e7ea29cba6fc4",
+      "final_reference_rise_m": 0.07521548122167587,
+      "final_bottom_clearance_m": 0.04927373897641109,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "ddg_ycb_011_banana__g01__d1",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 1,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "b8e9e6a9d13b1f64fa495413d267e75b5f526964f5da6b0f69c75e169c29afb7",
+      "commands_sha256": "064dadd41032ad36c05bc1f22c8b2499e9bcbc29cf5e08a79737620ebdaffa7d",
+      "trace_sha256": "704a5a8a0f62617cf7db179450d81c27b962fa6aebc19f405a9710139d79db4c",
+      "final_reference_rise_m": 0.08113040030002594,
+      "final_bottom_clearance_m": 0.047959119374850756,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "ddg_ycb_011_banana__g06__d0",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "label": 0,
+      "steps": 2100,
+      "record_sha256": "faa679fa56cbb64969ea3dfa08cf432df4c8f38a88ff4090d64b71c38812adba",
+      "commands_sha256": "e40d33affb7b6739cd90bc7d3c9ae1f5fe67cb2fd22d176368906230f747eb80",
+      "trace_sha256": "db34b3635e073e0bf034df64f2f1538d9e851ead2fa8283ec073d4dc98cbc9e0",
+      "final_reference_rise_m": 0.06015570089221001,
+      "final_bottom_clearance_m": 9.144836891153418e-05,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "ddg_ycb_011_banana__g07__d0",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "d91092f827d16691c227e3d3a083abeb51cc6e0a98f4b35d218880e47b5b73e2",
+      "commands_sha256": "6aa44047242bff9cd079f7a9ce337c91fd5b23e1c61e493d244bc3f2a86e6de0",
+      "trace_sha256": "e229c400d04f4b8c2b0d3294f991943a2205e3418705304e41722907fd468916",
+      "final_reference_rise_m": 0.08932510763406754,
+      "final_bottom_clearance_m": 0.08743554942469997,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "ddg_ycb_011_banana__g07__d1",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "1407e382078a5d575dec1ae3db844820febebc30b3c64aa4622ccc002b5f2b6e",
+      "commands_sha256": "c1a204a9bb670c4439d7a5947c5c19315036b89b5e6d4da4b7d28c2d30cd4562",
+      "trace_sha256": "8cea5928eed714d7f0811b7882e3f1ca0b975d0cb947de180ac688d4828a7392",
+      "final_reference_rise_m": 0.08917681872844696,
+      "final_bottom_clearance_m": 0.07971468072321372,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "ddg_ycb_011_banana__g08__d0",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "label": 0,
+      "steps": 2100,
+      "record_sha256": "bc2178d6523f5bbbee2bba8952ab9469f27be265e4a4c62f7424fab88aeed956",
+      "commands_sha256": "c55ec93afd6bb14ef1fe9694fce418be07d3c165731ac0b6a9cb17ea1191e21b",
+      "trace_sha256": "a2fddb6309609fde28074d8890457710037dfe496a8c80a785efe2fde5f6d84b",
+      "final_reference_rise_m": 4.9615278840065e-05,
+      "final_bottom_clearance_m": -0.00019254049803722403,
+      "final_two_sides_bearing": false,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "ddg_ycb_011_banana__g08__d1",
+      "object_id": "ddg_ycb_011_banana",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 1,
+      "label": 0,
+      "steps": 2100,
+      "record_sha256": "362f8c6e1f82104edcd449884b1ccce4f4a2a235c0a9997d94d2d0abc23cdc97",
+      "commands_sha256": "8b790c0f253fb87a102aa246060576c4c8e39c5132dff8d3889ae85b76b69302",
+      "trace_sha256": "c9e7bed896eb9503dbefccfeed27a926553b587fbe39c59049e35fd7c3f0fda7",
+      "final_reference_rise_m": 8.549913763999939e-05,
+      "final_bottom_clearance_m": -0.0001924495516196778,
+      "final_two_sides_bearing": false,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g01__d1",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 1,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "a74a38d14d8f863b78a7000ad54cbcba047e97714996c694ad9763e2cb18167c",
+      "commands_sha256": "53f9426e024b708ce3043c780af778fe5b7702bb3fc7d5766265a848c02fc8a1",
+      "trace_sha256": "583ec9e1ec9a40f4477afad3edfeb5934590fe9be15a0cdd693affe1696086eb",
+      "final_reference_rise_m": 0.0984380766749382,
+      "final_bottom_clearance_m": 0.09859974320878442,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g06__d0",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "6a1073f1938940c385eec334efd13e7b3b1e5f1d5f4b98d934fccdb34274db5e",
+      "commands_sha256": "85625de38ff14cecd3eef2306852354f52485b326177a2c5dabc891b3f6a07d3",
+      "trace_sha256": "a703c77a603a986e46caf86d319d850017cb5245c2a82208e76758314e0fb64e",
+      "final_reference_rise_m": 0.08876295387744904,
+      "final_bottom_clearance_m": 0.08899233990125616,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g06__d1",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "28226e930969f24912856e60766ed5f17926a448f76d5ccec5fb7bddcdc018d8",
+      "commands_sha256": "d955be71fa4ca62fea29b7e5f6155d6ed2d751cf3397186e756d60e60fb33aa2",
+      "trace_sha256": "4f417cd4e18ee71d092e4366fb597ff260a921e42f8a63abc6ebbb91b5bd2958",
+      "final_reference_rise_m": 0.10001465678215027,
+      "final_bottom_clearance_m": 0.10017906037582923,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g07__d0",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "7215b620d89f3c4db2edd3db69143732b6f847982bc9d3741e515d4530aea2f7",
+      "commands_sha256": "9326906a990e319325f07526e7db04f345d39b327aeb957a26046924ad9f86ae",
+      "trace_sha256": "8cc100647107a6ff75c481030c33cbc27928732c4a2afad335606e07528c1819",
+      "final_reference_rise_m": 0.09378336369991302,
+      "final_bottom_clearance_m": 0.09373692089659277,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g07__d1",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "5c037005d2ae39c268345fa0417044e3dda61a0a57f98142a1366846159641a9",
+      "commands_sha256": "890616f9c6ddabe98c63815e4f5f89eb7f8b66fca5a6d4cf3efed4748e848af1",
+      "trace_sha256": "3d45d77f3515663c3b7e710e1115e4d2aea9031f0d5eb6d2561e7b30cd50d9db",
+      "final_reference_rise_m": 0.09912033379077911,
+      "final_bottom_clearance_m": 0.1001369206815109,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g08__d0",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "d56b2ebda8ce8501aa61023657847ba09ff71aff1b3ed684b4b28dbe8e4f1e39",
+      "commands_sha256": "9343e137a1ed5fba9437661abc2e8383be6fadca1d7edc359b9c637a18e8f6b8",
+      "trace_sha256": "581704e46b098e2f886e8a329e211d3b7ab048c62619bee03515d283e5bc6092",
+      "final_reference_rise_m": 0.09288087487220764,
+      "final_bottom_clearance_m": 0.09279709690255124,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495__g08__d1",
+      "object_id": "sem_Ball_624ed7cb7a0744f8d75375a7df333495",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "0f1fb3ab957529d6297da0aa045cf18b7451bc616335006e0e610209d7d1ba3b",
+      "commands_sha256": "17265717f145fe28c2c76a2f9f8bb04e84755810bec89944a5f93dc2c5a0fff7",
+      "trace_sha256": "b998a5a4deafbd2d5a3bea4bdca6c14b8fe3d0332cc92de56cfaa1365a2f2850",
+      "final_reference_rise_m": 0.09963047504425049,
+      "final_bottom_clearance_m": 0.09959835553795078,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g01__d0",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 1,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "ec4907db847698aa1089d1971e73838c36aa32bd7694f58accdbb97b763d7a79",
+      "commands_sha256": "074d0753c06676fd170214f7f6c71cc3290efcedee600700d01caf2fe880a67e",
+      "trace_sha256": "62db2e85858c1403705e842269ed9aa04eb4490b121675155a54f02f2d2efb89",
+      "final_reference_rise_m": 0.09570266306400299,
+      "final_bottom_clearance_m": 0.0854141621644238,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g01__d2",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 1,
+      "extra_depth_index": 2,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "fec2e29a6fbcb30ad461c274dde118d4dd61f8177f94a713e6dfad630769bfc1",
+      "commands_sha256": "12ae523592991ffe1c4d22c6295c718d6a9e797685c29f5dfa2070a7ca3cd329",
+      "trace_sha256": "9ab29632a6e2f70f1086a1db9cb644aaf07e2ca86ea1315d568b43b549c39bf8",
+      "final_reference_rise_m": 0.09820720553398132,
+      "final_bottom_clearance_m": 0.09426414454559542,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g01__d3",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 1,
+      "extra_depth_index": 3,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "f8135863ef2826f18295a89ab9f3c3de723fc6a14a8bf564d05274996204d76c",
+      "commands_sha256": "ca684fa5eaa553fadc61dbf143a0c938eca1b1f24223397b110f5c93dac2c201",
+      "trace_sha256": "93f32364a7c335708d5197531f7dece27ad3b4f3d84fd8e7dcf289693250d703",
+      "final_reference_rise_m": 0.09771682322025299,
+      "final_bottom_clearance_m": 0.09741826357794986,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g06__d0",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "fc8da2697f58c856a6a74e135f55b2ea25ef765d046b7dc53259aedf886b41c2",
+      "commands_sha256": "1e2f94889b10cfc579e909c5d95796357e8bf62b5e2d645e97e770aca84ca6be",
+      "trace_sha256": "e86b97d2b3aa5a1bf4135e011bd6f4bef99b9631ada574240e812ef85e3820d1",
+      "final_reference_rise_m": 0.07370547950267792,
+      "final_bottom_clearance_m": 0.04608666951378263,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g06__d1",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "f4dac06482893018de22f879053b02cbb37061b14ecaa22137a04fcacc49bcb9",
+      "commands_sha256": "63b89668f7e03a362c39a3d9e485badb5a946e2ae4aae57b31a7635c229a20c5",
+      "trace_sha256": "b36e56c6b82a115f3b7d2c94f08f06615e3d9bc68f2b39f6ad9f9d0c9ec4c65f",
+      "final_reference_rise_m": 0.05945371463894844,
+      "final_bottom_clearance_m": 0.0251016295585913,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g06__d2",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 2,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "d9443f8d1aa64728f19c638da8bcb813e4789e172d40b038fd2288faabee7a24",
+      "commands_sha256": "e5d23039fa1dc59adf8af9c5b2aae684280dfd69a96db680bba2c51fcafae772",
+      "trace_sha256": "e95d8d2c473c16f60cf519759870d386fdb98412fa786c26a87367ad1988e3b3",
+      "final_reference_rise_m": 0.09959091246128082,
+      "final_bottom_clearance_m": 0.09710028639672076,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g06__d3",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 6,
+      "extra_depth_index": 3,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "1c075be64e19ac467d96c45d3ff8b94730e70ec5df1d380f90a25c03654c140a",
+      "commands_sha256": "a8aec3aa43cd6d23a06a67d100b3371e72d4a828a57581368f183cdd552f8800",
+      "trace_sha256": "1195a40ba81985e9ac95ac0674fe6cf56086985cae6da7f294a57bca7b17c459",
+      "final_reference_rise_m": 0.088665671646595,
+      "final_bottom_clearance_m": 0.06863563231685751,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g07__d0",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "bc65948cce751b293b8171f4801170a8441bc11a8d517b409eac49e294bd4ccb",
+      "commands_sha256": "6713c229f4666fe161db6d4f289fcf68c841609ff7388cfc6fcc666e5f04ff39",
+      "trace_sha256": "b15be7d1a7d43b1d2f63960138162e27f9097b5a89005f3ef63af5337e144c88",
+      "final_reference_rise_m": 0.08009189367294312,
+      "final_bottom_clearance_m": 0.0626901002452636,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g07__d1",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "17e4df4f96925bc51619ac9322dd7a11ed8c39712c2cb5657592690ff5db36dc",
+      "commands_sha256": "e4c4e16ca31fa415b55da91d0b2cc8574dea2ada780480adcbdbd9b4a736bd7c",
+      "trace_sha256": "4fafd7cac80253dfdec15da223109ec88c0d3aee2f0f00811550fc4ac474fe9f",
+      "final_reference_rise_m": 0.08624275773763657,
+      "final_bottom_clearance_m": 0.07583235427242957,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g08__d0",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "9e8931e3a4399c75e7b38a439473d8edd022e3e0af09404684e1743c9301a73b",
+      "commands_sha256": "1fc47363997c87cecb7dda74f7610de64d9ae71fefa6ed00fce793e01f5f0eb0",
+      "trace_sha256": "c880023f088091cae62753c15c7d47848d3631b8d62d9249fbd3b635584b0111",
+      "final_reference_rise_m": 0.08500006794929504,
+      "final_bottom_clearance_m": 0.06648674879108209,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g08__d1",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 1,
+      "label": 0,
+      "steps": 2100,
+      "record_sha256": "b66ff73e3b5a5a040fba54eeb7b88bcd145a8185c0f71fb34f4d60e866cf9c11",
+      "commands_sha256": "8e3401286e506710ef1a1b175e439a646cf87c81f00546172a08a777c57e0df6",
+      "trace_sha256": "13493d02e0ac45466e833d4f7345b1ee1d8458d6d6ac009df38f173fe612b0c6",
+      "final_reference_rise_m": 0.02424437180161476,
+      "final_bottom_clearance_m": -7.019681603925854e-05,
+      "final_two_sides_bearing": false,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g08__d2",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 2,
+      "label": 0,
+      "steps": 2100,
+      "record_sha256": "77e12b034f516353fe46e73f5e0869c91808aa6180bb0c0e45c0d66c9fdde4be",
+      "commands_sha256": "3c92e8789f9a56b5b3f9f961b4fe017edc8eddaeb3f996f3e3c511b786cb9a01",
+      "trace_sha256": "8edb888a83dfced48a75ce4b5d45930c41b6e46464c3d9f997704fd71964bd6d",
+      "final_reference_rise_m": -0.004413489252328873,
+      "final_bottom_clearance_m": -0.00020513795125807338,
+      "final_two_sides_bearing": false,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    },
+    {
+      "trial_id": "mujoco_Room_Essentials_Mug_White_Yellow__g08__d3",
+      "object_id": "mujoco_Room_Essentials_Mug_White_Yellow",
+      "split": "train",
+      "gesture_id": 8,
+      "extra_depth_index": 3,
+      "label": 1,
+      "steps": 2100,
+      "record_sha256": "d26a8e3855397b0b7979569b4059313f7c077cdfa46d2402c573d7b74b5e7321",
+      "commands_sha256": "d86e8a7cbeddda9babe29f18fe1fea315dbc8237a234942b3553cfb931698c38",
+      "trace_sha256": "5f2ce493e7bfc9fa416ad57ed8572baf35f9afa16054074e1d32281d24a8815b",
+      "final_reference_rise_m": 0.09475187212228775,
+      "final_bottom_clearance_m": 0.08559151831551778,
+      "final_two_sides_bearing": true,
+      "native_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      }
+    }
+  ],
+  "remaining_object_evidence": [
+    {
+      "object_id": "sem_Snowman_def36b8e4538fb74d449cd634c927922",
+      "status": "infrastructure_error",
+      "ready_slots": 16,
+      "physical_evidence_files": [],
+      "output_directory_exists": true
+    },
+    {
+      "object_id": "mujoco_ACE_Coffee_Mug_Kristen_16_oz_cup",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 10,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_jar_c444d4f782c68dc9140cbb818dee6c",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 3,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_bigbird_v8_fusion_strawberry_banana",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_bottle_33dcf806c673d958f4bdca145ed48dc6",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 10,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_008",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_BIA_Porcelain_Ramekin_With_Glazed_Rim_35_45_oz_cup",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 15,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Threshold_Porcelain_Coffee_Mug_All_Over_Bead_White",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 7,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_ycb_061_foam_brick",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 0,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Cole_Hardware_Bowl_Scirocco_YellowBlue",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 4,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_bottle_40aee078f0390b7134076b5960251711",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_002",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 13,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Grreatv_Choice_Dog_Bowl_Gray_Bones_Plastic_20_fl_oz_total",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Ball_629e40743d6958111f6a5b0146bf3030",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Thumbtack_7796072d01d00f173d1894dacd1107d7",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_mug_new_poisson_001",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Now_Designs_Bowl_Akita_Black",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 7,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_SCHOOL_BUS",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 12,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Ball_85741071e4ebdfa8e7e1af2463f76a8d",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_jar_edb8e199485be4e968747a7f12307bdb",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_can_3a9041d7aa0b4b9ad9802f6365035049",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 4,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_bottle_95e6a3a1232f97e3d333084c1357713e",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 6,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Radio_52fbb082b3d28d369715146e52a0621c",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 4,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_bottle_8309e710832c07f91082f2ea630bf69e",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_000",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 4,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Tank_d37c053308410f08f7a0a2f21341b9c5",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 14,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_001",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 12,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_bottle_1ae823260851f7d9ea600d1a6d9f6e07",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 13,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Cole_Hardware_Mug_Classic_Blue",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_MilkCarton_3c426552b9df786b3f7f3ed2c3c690fe",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 12,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_010",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 5,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_jar_396534e7ea5b33c482db9fca4b68095",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 11,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_45oz_RAMEKIN_ASST_DEEP_COLORS",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 14,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Ball_730cf06c9c029ae45e1b0bd500a24ffc",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 14,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_jar_9b77a0f168b2b8ea620c0ff8940a6989",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 9,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_box_poisson_021",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 11,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Ball_9a975fe35c960649897b5ee2a396680b",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Bottle_e593aa021f3fa324530647fc03dd20dc",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 2,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_MilkCarton_1c30b1102303f27ef690049a092c5efc",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 14,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Orbit_Bubblemint_Mini_Bottle_6_ct",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_Utana_5_Porcelain_Ramekin_Large",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 3,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_cellphone_77817771db0788d3241d076ab53023c1",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 4,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "core_camera_ec28a64bdf9501161bfbba8a5defb02",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 7,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_soccer_ball_poisson_000",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 8,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "sem_Mug_10f6e09036350e92b3f21f1137c3c347",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 14,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "mujoco_OXO_Soft_Works_Can_Opener_SnapLock",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 15,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    },
+    {
+      "object_id": "ddg_gd_banana_poisson_003",
+      "status": "not_dispatched_after_infrastructure_error",
+      "ready_slots": 3,
+      "physical_evidence_files": [],
+      "output_directory_exists": false
+    }
+  ],
+  "source_files_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_pipeline_v2.py": "82cb5deadbe82d6cbcded446a241d3244f1b3114ed11694a830d163ad3aab6d9",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_pipeline.py": "6ef46f2a7097758e6e58ed60a12fa69dffb87fa84a7aeec8d86adfa4764245e2",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_collection_observations.py": "bae8e74438a65489f3456bf2189325e55a9ee7634f1ac4f21111da7b3c106883",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_pilot_observations.py": "e541b3fa753954f19abf74c631cc6f3532b604f7e786f06e2d9d9b8e3dbd7307",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py": "ee8b43bc334ba11e394d4030d377c0bb5ced211c9bff85ca92ac1bbc33f97093",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py": "6d88cd174be92fb3db2af603b69056952c81b897e8d49b5cefa1da93b216f266",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py": "58d1cce26b6e7422f11e08e34750e7a6c690abde48b11eda51b625a6807d6b49",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue.py": "9d33a76dfc3c9c43db354fe8858038ab62e1775c62afc11b2ae3a3f0390d28da",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/trial_record.py": "2437f19d28f7f2601fd7f637eb9205c39b929cdb4b9fff2ba2bc5fac22f25841",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/native_arm.py": "453ea58557c182c566ec306e6c0de036ccf16f5bed09cf97ff6a5ccf92921781",
+    "/home/wangrenpeng/CanonDex/scripts/research/preprocess_native_object.py": "af40ffb83886fc07c115c8565fdb1d63a372f01600259fda50d849ed2de8224c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_rgbd_frame.py": "39d569525b2e257c5075c36fb5e18727dde6774431aa3a9e88990e8abd30cf4e",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/utils/pt_utils.py": "0ed31e3a708c9e94d7d1a67ac212191b1325948728c62ba90f897c698436a468",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/native_object_preprocess.py": "8429f33fc5d0b0e3462a7e6e2088078b6ab6a8c15e94c03fdcb1b72493d347cd",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/collision_refinement.py": "4d68f22cf028237c98e1a37c3851f8920ea413c96f3a4ffc56dd1e62828b9610",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/convex_partition.py": "ac38d94ebeb8ac344db41640cebe531e8ca7cf9dec545b4714913a99017d510b",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/physics.py": "d980fbcf47a6edace8a72c7d2d5d19f91bec7543ef58d266ffe7a8a050911b5b",
+    "/home/wangrenpeng/CanonDex/canondex/scene/convex_cooking.py": "99d3b63ec972402cf44c4d6f0652f89821cdaa20aeef0a4a872760b3277de5a8"
+  },
+  "scope": {
+    "full_original_trace_arrays_and_label_eligibility_recomputed": true,
+    "final_pickup_from_trace_and_three_source_meshes_recomputed": true,
+    "native_seven_gate_thresholds_bound_to_saved_source_hashed_reports": true,
+    "native_all_contact_or_full_seven_gate_measurements_recomputed": false,
+    "all_source_assets_rescanned": false,
+    "zero_physics_or_network_or_training": true
+  },
+  "check_count": 1768,
+  "all_checks_passed": true,
+  "input_files_checked": 660,
+  "cost": {
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "new_training_steps": 0,
+    "source_mesh_files_rehashed": 3,
+    "elapsed_wall_s": 1.1828212960390374
+  },
+  "verified_input_hash_map": {
+    "local_full_audit": "/tmp/anydex_collection_resume_independent_audit_20261106.json",
+    "local_full_audit_sha256": "bda7018ee5d98deb73feca69c34c0de9f549b8036dfc14868935892ad6ea5735",
+    "entry_count": 660,
+    "canonical_map_sha256": "c296c9f7277ad4f27fffb04068eb1b81d04c1ec98e5d0c7fca235ceef2e6cfaa",
+    "full_map_omitted_from_lightweight_copy": true
+  },
+  "audit_script": {
+    "path": "/tmp/anydex_collection_resume_audit_20261106.py",
+    "sha256": "dbd149936f7ecae9dcd29e77006cd9e1fcc1eae120616330fd263e264989ea2b"
+  },
+  "declared_plan_step_upper_bounds": {
+    "all431": 905192,
+    "already_executed27": 56700,
+    "remaining404": 848492
+  }
+}

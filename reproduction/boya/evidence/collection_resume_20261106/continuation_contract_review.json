@@ -1,0 +1,41 @@
+{
+  "schema": "anydex_collection_resume_v3_readonly_review",
+  "source": "/tmp/resume_collection_execution_v3.py",
+  "source_sha256": "ad6384f0bd5f63b3d3838561feba297bac59afee8a3285b9f8a8ac134875e77e",
+  "checks": {
+    "actual_431_equal27plus404_and_disjoint": true,
+    "explicit_unknown_blocked": true,
+    "duplicate_inherited_trial_blocked": true,
+    "completed_ID_in_remaining_ledger_blocked": true,
+    "unknown_object_state_blocked": true,
+    "inherited_null_label_blocked": true,
+    "old_export_exactly_completed27_IDs_and_frozen_split_context": true
+  },
+  "negative_case_rejections": {
+    "explicit_unknown": "Resume requires known stopped execution with no unknown trials",
+    "duplicate_completed": "Inherited object has missing/duplicate trials",
+    "replay_ledger": "Original unexecuted ledger does not reconcile",
+    "unknown_object_state": "Unsupported original object state: running",
+    "null_inherited": "Inherited label not eligible"
+  },
+  "actual_ledger": {
+    "ready": 431,
+    "inherited_objects": 3,
+    "inherited_actual": 27,
+    "remaining_objects": 47,
+    "remaining_plans": 404,
+    "preparation_nulls": 369,
+    "slots": 800
+  },
+  "inherited_export": {
+    "train": 27,
+    "validation": 0,
+    "positive": 22,
+    "negative": 5
+  },
+  "source_edits": 0,
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "asset_rescan_performed": false,
+  "test_boundary": "AST-extracted ledger function with source/asset verify calls mocked to avoid repeating 1096 input/weight/asset hashes; actual immutable metadata and trial IDs read from disk. No freeze/execute/main invoked."
+}

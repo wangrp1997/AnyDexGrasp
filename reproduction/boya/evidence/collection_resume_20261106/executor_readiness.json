@@ -1,0 +1,45 @@
+{
+  "status": "v2_executor_ready_zero_physics",
+  "original_executor_sha256": "9d33a76dfc3c9c43db354fe8858038ab62e1775c62afc11b2ae3a3f0390d28da",
+  "new_executor_sha256": "e83c87b593e77a0b797dc4e1a8257d018deebfce99aec67d270bfb54f7d6210f",
+  "contract": {
+    "all_passed": true,
+    "tests": 10,
+    "errors": 0,
+    "failures": 0,
+    "source_sha256": "e83c87b593e77a0b797dc4e1a8257d018deebfce99aec67d270bfb54f7d6210f",
+    "original_executor_sha256": "9d33a76dfc3c9c43db354fe8858038ab62e1775c62afc11b2ae3a3f0390d28da",
+    "real_plans_checked": 431,
+    "new_physics_steps": 0,
+    "new_network_forwards": 0,
+    "scope": "Read-only command validation and saved-trace label replay only; no new physical trials"
+  },
+  "original_parent_result_sha256": "15b42fec6bcf3d1f91a7db0567ccaca59f7654596b20839ec978d0e92d1e1955",
+  "original_actual_grasps": 27,
+  "original_positives": 22,
+  "original_negatives": 5,
+  "original_steps": 56700,
+  "unknown_execution_trial_ids": [],
+  "unexecuted_ready_count": 404,
+  "original_plan_step_distribution": {
+    "2100": 428,
+    "2126": 1,
+    "2142": 1,
+    "2124": 1
+  },
+  "snowman_prepare_only": {
+    "path": "/tmp/anydex_snowman_v2_prepare_only/PREPARED.json",
+    "sha256": "06d2df3f85cf6d9cba8539b52188d845fb61ad8e7bce1e7a7a58b9395e7d828b",
+    "trials": 16,
+    "cohorts": 2,
+    "expected_step_distribution": {
+      "2100": 15,
+      "2126": 1
+    }
+  },
+  "cause": "Original native timed_segment extends approach to satisfy original velocity/acceleration/jerk constraints; old queue hardcoded 2100 before Kit startup.",
+  "change_boundary": "Only adapt full-original-command validation to per-plan original N with fixed other phases; no commands/control/native/physics gates changed.",
+  "continuation": "New explicitly versioned segment with parent source/result/plan/binding SHA and precisely 404 never-executed identities; inherit27 labels and369 nulls read-only; no geometry/RGBD/CGR/planning rerun.",
+  "new_network_forwards": 0,
+  "new_physics_steps": 0
+}
