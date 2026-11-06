@@ -1,5 +1,7 @@
 # AnyDexGrasp 独立复现工作区
 
+**2026-11-06用户纠正后的最高优先级状态：整体复现未通过验收。此前“忠实复现”判断撤回；官方离线输出核验与自建DGN上的Boya适配不能合并称论文复现完成。Boya物体身份/划分、评分筛选顺序、执行协议尚未完整对齐；4/10与6/10仅为有限池适配记录。先做论文物体和划分的身份对照及部署顺序对齐，明确未对齐项，再谈新的训练/评测；不以扩大自建集代替对齐。本次更正不新增采集、训练或物理试验。以下按日期保留的阶段通过只对其局部范围成立。**
+
 更新：2026-11-06。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
 
 原算法源码保持不变。复现说明与独立工具在 `reproduction/`，大文件/原始输出放忽略目录 `outputs/`、`papers/`；官方数据/权重专用根目录 `/mnt/public/datasets/AnyDexGrasp/`。不要把源码附带手开度表当作训练数据已下载。先读 `reproduction/README.md`、`SOURCES.lock.json`、`PAPER_CODE_AUDIT.md` 和数据状态。
@@ -207,4 +209,4 @@ GPU0已用116真实记录跑通双阶段各2epoch工程smoke，16optimizer steps
 
 只读端点FK重算431条映射最大误差2.306e-16m；四失败对象28条原canonical480及raw_depth*4+extra索引精确一致，开/闭命令绑定通过。四例实际均完整2100步但未提起：Bottle闭合推移45.761mm；Orbit食指被桌面阻挡；Utana推移50.241mm且中指被桌面阻挡；OXO两指99.6%以上闭合但推开18.033mm后失去接触。Utana池内#8原成功82.025mm却分数0，#7失败0.05348，是小数据排序缺口；另三件池内无成功，不证明物体不可抓。原6/10和所有失败/成本保持。
 
-确认当前Boya先每槽CGR前500→几何keep8→最多4臂/首个准入，再学习重排，与原部署先多型多深入评分再最终碰撞不同。验收为部分通过，不能称完整官方部署已复现。下一实施应复用缓存和现有head，将评分移到候选压缩之前并冻结新的共同有限预算；接线不需先重训。真实Boya标定/限力控制仍为公开声明近似，闭合扫掠或新控制是另立改进。本轮没有新物理/前向/训练，未实施下一阶段，勿自动重播10件或启动大批。报告reproduction/boya/ADAPTATION_ACCEPTANCE_20261106.md，完整只读产物outputs/boya_adaptation_acceptance_20261106_v1，轻量凭据evidence/adaptation_acceptance_20261106。CanonDex保持只读。
+确认当前Boya先每槽CGR前500→几何keep8→最多4臂/首个准入，再学习重排，与原部署先多型多深入评分再最终碰撞不同。整体复现未通过验收；局部接线检查通过不能称完整官方部署已复现。下一实施应复用缓存和现有head，将评分移到候选压缩之前并冻结新的共同有限预算；接线不需先重训。真实Boya标定/限力控制仍为公开声明近似，闭合扫掠或新控制是另立改进。本轮没有新物理/前向/训练，未实施下一阶段，勿自动重播10件或启动大批。报告reproduction/boya/ADAPTATION_ACCEPTANCE_20261106.md，完整只读产物outputs/boya_adaptation_acceptance_20261106_v1，轻量凭据evidence/adaptation_acceptance_20261106。CanonDex保持只读。
