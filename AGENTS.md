@@ -295,3 +295,14 @@ outputs/s40_collection_20261107_v1已于北京时间12:43:25 complete，97.971mi
 新增独立score_s40_domain_candidates.py接已有prehead helper，源推导单一policy在evidence/s40_domain_diagnostic_20261107/DOMAIN_POLICY.json先冻结；共同标定宽度交集为保守Boya端口域，不是最大开口，workspace为camera frustum world AABB/table裁剪，approach保留相机Z>.9语义。25tests通过。原8帧16384raw→89域内→356queries/1424组合；原float32>.85有38组合，但38全table拒绝、0几何/0臂/0物理。旧raw3200全拒记录仍留，不称完整官方部署失败。
 
 独立diagnose_s40_domain_feasibility.py只读同一冻结输出，对全部1424组合做几何对照，17准入来自3件，最高score .494948，全部被原.85门挡；另5件该域内无准入。对照不是降低部署阈值，不覆盖0准入结果，17不是抓取成功。新诊断9.010s+对照29.380s额外成本；零新CGR/物理/训练。完整outputs/s40_domain_diagnostic_20261107_v1及s40_domain_feasibility_20261107_v1；报告S40_SUPPLEMENT_AND_DOMAIN_RESULTS_20261107.md。只读原内部27 ready进一步发现12条source row域内，但全部flip=True而official=False，完整query重叠0/27；双flip采集和单flip部署存在覆盖差异，不读标签。整体复现/新部署仍未通过，不自动用EGAD调参或追加大采集；下一阶段候选覆盖和训练协议需先对齐。CanonDex只读，只push轻量相关文件。
+
+
+## 2026-11-07 最新：双翻面/公开代码配方已接通，内部8件中2件实际top1成功
+
+用户问下一步后已实际推进：新增evaluate_s40_boya_port_v2.py显式双方翻面，与采集27 ready的canonical480/flip/depth逐字节一致，旧DH3单flip不改。新增train_s40_code_recipe.py，AST绑定公开默认100epoch/lr5e-4/batch128/WD5e-4/Poly.99，原435/364fit71internal/32+8，四内部头400更新、固定final100，未all40；outputs/s40_code_recipe_20261107_v1已complete。fit MSE .310881、内部.531875仍差于常数.208669，不把增轮数当评分已解决。
+
+同一冻结prehead域/原float32>.85：旧20轮双flip712query/2848组合→81过门→0几何；code100双flip→396过门→9几何（0081、0215、0443）。新部署检查outputs/s40_dual_flip_{paper20,code100}_20261107_v1已完成，零新CGR。共同宽度/相机cone仍为保守Boya域，非完整硬件能力范围。
+
+prepare_s40_port_top1_v2.py从新冻结排名按每对象最多4个几何候选找首个arm-ready，显式绑定原native-preflight/044保形repair。v1/v2各3次纯准备共6次（相同3候选重复），成本全保留；最终2ready/6null。run_s40_port_trials.py已实际各执行一次、两个CPU独立进程并行：021 rank33/型6/flipFalse成功+90.343mm，044 rank11/型8/flipTrue成功+102.281mm；完整2×2100=4200步，原七门/控制绑定全过，末态仍承载，无实际重试、null或unknown。两条benchmark-only不入435；两者翻面均与各自DH3 official相反，但不宣称已隔离翻面必要性。
+
+**内部8件仍是2成功/6无最终计划（5几何null、008路径拒绝），不是新2/2或外部100%成功率。** 完整outputs/s40_port_top1_20261107_{v1,v2}及s40_port_execution_20261107_v1。两段原模型RTX录像已完成，videos/index.html，235帧25fps9.4s，回放零物理、trace/eval/MP4结构SHA绑定；执行加录像165.203s，准备/训练/推理另记。21项必要tests通过。全部阶段已收尾，不再当后台running或重复派发；EGAD未用。报告S40_BOYA_PORT_V2_RESULTS_20261107.md。下一步Boya各手型开口/接近方向候选覆盖及008路径问题需通用适配，评分误差仍高；不自动扩大采数或外部测试。CanonDex只读，只push轻量相关源码/证据。

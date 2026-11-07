@@ -1,0 +1,343 @@
+{
+  "schema": "anydex_s40_dual_flip_code_recipe_delivery_v1",
+  "status": "complete_internal_stage",
+  "training": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/TRAINING_RESULTS.json",
+      "sha256": "447302d26c1e5cccc10f23ae897105a5d845abe661640cfc4ea5fa6d912ccac0"
+    },
+    "plan": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/PLAN.json",
+      "sha256": "fa437b66f4cd61174fb762d56376a38919646e8adab70cbc1c14f30656c6e593"
+    },
+    "config": {
+      "epochs": 100,
+      "batch_size": 128,
+      "learning_rate": 0.0005,
+      "weight_decay": 0.0005,
+      "optimizer": "Adam",
+      "scheduler": "original PolyLR",
+      "poly_power": 0.99,
+      "seed": 20261106,
+      "input_dim": 480,
+      "output_dim": 20
+    },
+    "fit_metric": {
+      "count": 364,
+      "mse": 0.31088139597301895
+    },
+    "internal_metric": {
+      "count": 71,
+      "mse": 0.5318753334419417
+    },
+    "fit_prior_constant_internal_mse": 0.20866929771515805,
+    "optimizer_updates": 400,
+    "all40_refit": false,
+    "published_recipe": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py",
+      "sha256": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf",
+      "defaults": {
+        "--max_epoch": 100,
+        "--batch_size": 128,
+        "--learning_rate": 0.0005,
+        "--weight_decay": 0.0005
+      },
+      "optimizer": "Adam",
+      "scheduler": "PolyLR",
+      "poly_power": 0.99,
+      "scheduler_step_unit": "epoch",
+      "original_two_finger_angle_count": 12,
+      "original_output_count": 240,
+      "boya_two_finger_angle_count": 1,
+      "boya_output_count": 20,
+      "ast_evidence": [
+        {
+          "kind": "argparse_default",
+          "flag": "--max_epoch",
+          "line": 37,
+          "source": "parser.add_argument('--max_epoch', type=int, default=100, help='Epoch to run [default: 18]')"
+        },
+        {
+          "kind": "argparse_default",
+          "flag": "--batch_size",
+          "line": 38,
+          "source": "parser.add_argument('--batch_size', type=int, default=128, help='Batch Size during training [default: 2]')"
+        },
+        {
+          "kind": "argparse_default",
+          "flag": "--learning_rate",
+          "line": 39,
+          "source": "parser.add_argument('--learning_rate', type=float, default=0.0005, help='Initial learning rate [default: 0.001]')"
+        },
+        {
+          "kind": "argparse_default",
+          "flag": "--weight_decay",
+          "line": 40,
+          "source": "parser.add_argument('--weight_decay', type=float, default=0.0005, help='Optimization L2 weight decay [default: 0]')"
+        },
+        {
+          "kind": "optimizer",
+          "line": 120,
+          "source": "optim.Adam(multifinger_net.parameters(), lr=BASE_LEARNING_RATE, weight_decay=WEIGHT_DECAY)"
+        },
+        {
+          "kind": "scheduler",
+          "line": 126,
+          "source": "PolyLR(optimizer, max_iter=MAX_EPOCH, power=0.99, last_step=start_epoch-1)"
+        },
+        {
+          "kind": "scheduler_epoch_step",
+          "line": 349,
+          "source": "lr_scheduler.step() once directly in for epoch in range(start_epoch, MAX_EPOCH)"
+        }
+      ]
+    },
+    "heads": {
+      "1": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g01.pt",
+        "sha256": "72b40881fd5f13cabda542d079305ce632bda295c2258ee9360b5b12f339d6c3",
+        "epoch": 100,
+        "stage": "internal_check",
+        "fit_records": 83,
+        "optimizer_steps": 100,
+        "fit_metric": {
+          "count": 83,
+          "mse": 0.49443652826486545,
+          "score_min": 0.0,
+          "score_max": 0.9851856827735901,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        },
+        "internal_check_metric": {
+          "count": 15,
+          "mse": 0.5794214365527152,
+          "score_min": 0.0,
+          "score_max": 0.6632015109062195,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        }
+      },
+      "6": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g06.pt",
+        "sha256": "1fddda3c8822d393224125cf755c2963457f147f943c2d7218ea86372def5433",
+        "epoch": 100,
+        "stage": "internal_check",
+        "fit_records": 98,
+        "optimizer_steps": 100,
+        "fit_metric": {
+          "count": 98,
+          "mse": 0.17401549246897205,
+          "score_min": 0.0,
+          "score_max": 1.0015534162521362,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        },
+        "internal_check_metric": {
+          "count": 22,
+          "mse": 0.6801274787879842,
+          "score_min": 0.0,
+          "score_max": 2.9593591690063477,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        }
+      },
+      "7": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g07.pt",
+        "sha256": "9ce49ebd7110cecc9eb5cca75b5a016e5ae445250827f82cfe05ca316d178fc6",
+        "epoch": 100,
+        "stage": "internal_check",
+        "fit_records": 98,
+        "optimizer_steps": 100,
+        "fit_metric": {
+          "count": 98,
+          "mse": 0.2759666657519613,
+          "score_min": 0.0,
+          "score_max": 1.0132595300674438,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        },
+        "internal_check_metric": {
+          "count": 19,
+          "mse": 0.4581725464396606,
+          "score_min": 0.0,
+          "score_max": 2.088409423828125,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        }
+      },
+      "8": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g08.pt",
+        "sha256": "010a3ff995945e076d03c96b5665017a6d6275ac1cd876b8b1739428fbe1df66",
+        "epoch": 100,
+        "stage": "internal_check",
+        "fit_records": 85,
+        "optimizer_steps": 100,
+        "fit_metric": {
+          "count": 85,
+          "mse": 0.3296981739122777,
+          "score_min": 0.0,
+          "score_max": 1.0097295045852661,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        },
+        "internal_check_metric": {
+          "count": 15,
+          "mse": 0.36024961402652844,
+          "score_min": 0.0,
+          "score_max": 1.2141127586364746,
+          "scores_are_uncalibrated_ReLU_MSE": true
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "paper20_official_single": {
+      "source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/RESULTS.json",
+        "sha256": "95c2ee6d747e57a85970ccbb095a0ac21e343125911d464d8cf23e97453df153"
+      },
+      "objects": 8,
+      "head_queries": 356,
+      "combinations": 1424,
+      "threshold_pass": 38,
+      "geometry_admitted": 0,
+      "objects_with_geometry": 0,
+      "wall_s": 9.01027486496605
+    },
+    "paper20_dual": {
+      "source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_dual_flip_paper20_20261107_v1/RESULTS.json",
+        "sha256": "d33fe0e335047d258ca8b387b21ee9bd70985221b536e1cbe8e533c51f61c726"
+      },
+      "objects": 8,
+      "head_queries": 712,
+      "combinations": 2848,
+      "threshold_pass": 81,
+      "geometry_admitted": 0,
+      "objects_with_geometry": 0,
+      "wall_s": 9.582784567959607
+    },
+    "code100_dual": {
+      "source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_dual_flip_code100_20261107_v1/RESULTS.json",
+        "sha256": "791e227bd040b401df3da91a4f5c910e4f87f1d289e1476dfcab6f553daf46be"
+      },
+      "objects": 8,
+      "head_queries": 712,
+      "combinations": 2848,
+      "threshold_pass": 396,
+      "geometry_admitted": 9,
+      "objects_with_geometry": 3,
+      "wall_s": 23.832325655035675
+    }
+  },
+  "preparation": {
+    "v1": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_top1_20261107_v1/queue_manifest.json",
+      "sha256": "de698cc614fad958b7556abeab245b107b8d73b1b73de2c6c4866c310301f8b9"
+    },
+    "v2": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_top1_20261107_v2/queue_manifest.json",
+      "sha256": "583044c6990784f24083d4efe9f829de65e7360cb0b8975f1bc5db1b49e64200"
+    },
+    "v1_wall_s": 14.253624372999184,
+    "v2_wall_s": 14.767172259977087,
+    "total_arm_preparations": 6,
+    "unique_candidates_prepared": 3,
+    "repeated_static_preparations": 3,
+    "final_ready": 2,
+    "final_nulls": 6,
+    "native_preflight_bound": true
+  },
+  "physical": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_execution_20261107_v1/RESULTS.json",
+      "sha256": "ab37973989f206c1949c4c2ec2e7a3f884aac8f47b9976b8981f459e4e77b7a5"
+    },
+    "objects": 8,
+    "actual_attempts": 2,
+    "successes": 2,
+    "eligible_failures": 0,
+    "terminal_nulls": 0,
+    "no_plan_objects": [
+      "graspnet_007",
+      "graspnet_008",
+      "graspnet_009",
+      "graspnet_048",
+      "graspnet_066",
+      "graspnet_069"
+    ],
+    "geometry_nulls": 5,
+    "arm_nulls": 1,
+    "total_steps": 4200,
+    "rows": [
+      {
+        "object_id": "graspnet_044",
+        "label": 1,
+        "physics_steps": 2100,
+        "trial_id": "graspnet_044_port_rank_00011",
+        "trial_binding_sha256": "43b502c3d535d665d1873fd984f69d6cc093752b1cf8ed57b66cbdb0c76f7f07",
+        "source_commands_sha256": "3734d1081bfd9454283c3a05622d7f047c5322b59668c4af60e346d46df433ad",
+        "final_reference_rise_m": 0.10228137671947479,
+        "final_bottom_clearance_m": 0.10514728972623558,
+        "longest_observed_pickup_run_s": 1.6640000000000015,
+        "all_runtime_gates": true,
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_execution_20261107_v1/execution/graspnet_044/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "23bd2e5ec04650eded62bf618db79deb5b8d6278eb9fee302251f9f7c6b27319"
+        }
+      },
+      {
+        "object_id": "graspnet_021",
+        "label": 1,
+        "physics_steps": 2100,
+        "trial_id": "graspnet_021_port_rank_00033",
+        "trial_binding_sha256": "d6227f7e4a18a2da980fed21a73e66a409e4fba66e9236e77993c745a43bda9d",
+        "source_commands_sha256": "db46b5625d81a9ec8f98abd79ae368ac704cf7d6e3a87c9823a25d2ced72cff3",
+        "final_reference_rise_m": 0.09034349024295807,
+        "final_bottom_clearance_m": 0.09071780827171362,
+        "longest_observed_pickup_run_s": 1.4200000000000013,
+        "all_runtime_gates": true,
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_execution_20261107_v1/execution/graspnet_021/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "5664e7d6c405eca91a58731e548ccae096584f0d88cf553dd5454630a6ce90e8"
+        }
+      }
+    ],
+    "outcome_dependent_retry": false,
+    "benchmark_only": true,
+    "training_writeback": false
+  },
+  "videos": [
+    {
+      "object_id": "graspnet_044",
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_execution_20261107_v1/videos/graspnet_044/isaac_full_arm_pickup.mp4",
+        "sha256": "3268de745c2783a803ffa14cc1d95a90c28e248c3ee04b4c9f99c2098d539632"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "original_visual": true,
+      "source_trace_sha256": "2d4542a775203af5a039012765e3a1fc4c343cf207b6b60e60520f727a425506",
+      "replay_physics_steps": 0,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "graspnet_021",
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_execution_20261107_v1/videos/graspnet_021/isaac_full_arm_pickup.mp4",
+        "sha256": "876704e25bb2d83c9844a440c26002908503a0e058dd434102be80448ad70fb7"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "original_visual": true,
+      "source_trace_sha256": "5487b905c3f6abe18e1d9c64ac08798be9c1ab9977c53b82185b0a6f330b3b42",
+      "replay_physics_steps": 0,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    }
+  ],
+  "video_index": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_execution_20261107_v1/videos/index.html",
+  "execution_and_media_wall_s": 165.20277865696698,
+  "contract_tests": 21,
+  "new_CGR_forwards": 0,
+  "EGAD_objects_accessed": 0,
+  "boundary": "Fixed eight internal diagnostic objects after earlier inspection; not independent external generalization or completed original real-paper reproduction. Two executed successes do not replace2/8 including nulls.",
+  "pending": "Boya candidate coverage remains insufficient on five domain/geometry-null objects; one finite arm candidate failed. Score MSE still above fit-prior constant. Domain/threshold unchanged in this stage."
+}
