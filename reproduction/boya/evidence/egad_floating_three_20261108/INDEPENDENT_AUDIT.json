@@ -1,0 +1,1033 @@
+{
+  "schema": "anydex_floating_three_readonly_independent_audit_v1",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/protocol.json",
+    "sha256": "832865f29b7ceb1500c73d5da819e33f08210b8408c62a95252c86ce425e776c"
+  },
+  "results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/RESULTS.json",
+    "sha256": "95092b9e332353abe729c6d73ff2dc1c848b61f37427698be05c7d4c8c805b7b"
+  },
+  "scope": "Saved trace/input/source read-only recomputation; no physical execution or model update",
+  "objects": [
+    {
+      "object_id": "egad_A6",
+      "candidate_rank": 17,
+      "gesture_id": 6,
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00017/candidates.npz",
+        "sha256": "1f414b01b0835b9a42391d5418f0d5b9396a0efd6eea26bfe93213d06c767884"
+      },
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/evaluation.json",
+        "sha256": "1dca35c39c91115e229200a7b02cbde749970f66db78debc383daa7189920f3d"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/trace.npz",
+        "sha256": "b43ec19aaccfcf413a91f39fb7d5d27cb6feee7d363a1e2fddd95a7523182c1f"
+      },
+      "all_2100_motor_targets_reconstructed_exact_float32": true,
+      "gantry_targets_reconstructed_exact_float32": true,
+      "desired_palm_reconstructed": true,
+      "trace_commands_and_time_arrays_exact": true,
+      "reported_state_writes": 0,
+      "source_loop_state_setters_absent": true,
+      "gate_values": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "native_hulls": 3962,
+      "native_20um_pass": true,
+      "recomputed_maximum_joint_limit_violation_rad": 3.552088179148427e-09,
+      "recomputed_maximum_mimic_error_rad": 4.410743713378906e-06,
+      "recomputed_maximum_penetration_m": 9.644223609939218e-05,
+      "recomputed_palm_position_error_m": 0.00014779789572206357,
+      "recomputed_palm_angle_rad": 1.9177652503022434e-07,
+      "recomputed_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.000662350528791331,
+        "final_reference_rise_m": 0.00927678495645523,
+        "lift_peak_bottom_clearance_m": 0.0013355492180092644,
+        "lift_peak_reference_rise_m": 0.014933820813894272,
+        "two_sides_loaded_lift_steps": 0,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "task_success": false
+      },
+      "phases": {
+        "prehold": {
+          "steps": 800,
+          "start_step": 1,
+          "end_step": 800,
+          "max_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            3.4570693969726562e-06,
+            1.8738210201263428e-06,
+            1.9371509552001953e-07
+          ],
+          "object_rotation_rad": 3.1606211256112215e-05
+        },
+        "approach": {
+          "steps": 500,
+          "start_step": 801,
+          "end_step": 1300,
+          "max_finger_loads_n": [
+            11.244503498077393,
+            3.2560982704162598,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.22732961177825928,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 72,
+          "last_both_loaded_local_step": 469,
+          "object_displacement_m": [
+            0.0027851462364196777,
+            -0.004424832761287689,
+            -0.0036586709320545197
+          ],
+          "object_rotation_rad": 0.10226679541279665
+        },
+        "close": {
+          "steps": 250,
+          "start_step": 1301,
+          "end_step": 1550,
+          "max_finger_loads_n": [
+            0.6635788083076477,
+            0.7252830862998962,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.1574525088071823,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 147,
+          "last_both_loaded_local_step": 214,
+          "object_displacement_m": [
+            0.007455110549926758,
+            -0.010352950543165207,
+            -0.007357228547334671
+          ],
+          "object_rotation_rad": 0.3601726534269527
+        },
+        "hold": {
+          "steps": 50,
+          "start_step": 1551,
+          "end_step": 1600,
+          "max_finger_loads_n": [
+            0.0,
+            0.3064746856689453,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.28128719329833984,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            2.771615982055664e-05,
+            -1.8328428268432617e-05,
+            8.542090654373169e-06
+          ],
+          "object_rotation_rad": 0.001110864230613172
+        },
+        "lift": {
+          "steps": 500,
+          "start_step": 1601,
+          "end_step": 2100,
+          "max_finger_loads_n": [
+            0.0,
+            0.5724781155586243,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            -0.00022333860397338867,
+            -0.0007362924516201019,
+            0.009276613593101501
+          ],
+          "object_rotation_rad": 0.24614914035881733
+        }
+      }
+    },
+    {
+      "object_id": "egad_A3",
+      "candidate_rank": 58,
+      "gesture_id": 8,
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A3/pool_00058/candidates.npz",
+        "sha256": "217f925895a611812c79686ee364564e31fadc09a00dfd6513057107a72e6796"
+      },
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A3/evaluation.json",
+        "sha256": "2ea7c7aff5aa24d0691244a503f3ff91f16f24ba081478d282caabaf56b5466d"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A3/trace.npz",
+        "sha256": "e38ee32eac67c03629ccb4ddb75655ffff9b00bd4c78e4cea4f05562629dd81c"
+      },
+      "all_2100_motor_targets_reconstructed_exact_float32": true,
+      "gantry_targets_reconstructed_exact_float32": true,
+      "desired_palm_reconstructed": true,
+      "trace_commands_and_time_arrays_exact": true,
+      "reported_state_writes": 0,
+      "source_loop_state_setters_absent": true,
+      "gate_values": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "native_hulls": 4045,
+      "native_20um_pass": true,
+      "recomputed_maximum_joint_limit_violation_rad": 5.039042321186571e-07,
+      "recomputed_maximum_mimic_error_rad": 2.104043960571289e-05,
+      "recomputed_maximum_penetration_m": 4.808511584997177e-05,
+      "recomputed_palm_position_error_m": 0.00015495455155868832,
+      "recomputed_palm_angle_rad": 3.689266654043459e-08,
+      "recomputed_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.0007938836915647551,
+        "final_reference_rise_m": 0.002067137509584427,
+        "lift_peak_bottom_clearance_m": 0.0009593874360233636,
+        "lift_peak_reference_rise_m": 0.007975280284881592,
+        "two_sides_loaded_lift_steps": 67,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "task_success": false
+      },
+      "phases": {
+        "prehold": {
+          "steps": 800,
+          "start_step": 1,
+          "end_step": 800,
+          "max_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            4.172325134277344e-06,
+            1.4677643775939941e-06,
+            3.725290298461914e-08
+          ],
+          "object_rotation_rad": 4.648441375493784e-05
+        },
+        "approach": {
+          "steps": 500,
+          "start_step": 801,
+          "end_step": 1300,
+          "max_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            6.4373016357421875e-06,
+            -1.0244548320770264e-06,
+            -1.30385160446167e-07
+          ],
+          "object_rotation_rad": 1.5311515936084718e-05
+        },
+        "close": {
+          "steps": 250,
+          "start_step": 1301,
+          "end_step": 1550,
+          "max_finger_loads_n": [
+            5.387700080871582,
+            3.7184746265411377,
+            6.073549270629883,
+            5.2881837445820565,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            4.340146780014038,
+            3.117959164083004,
+            3.7004733085632324,
+            4.812991172075272,
+            0.0
+          ],
+          "both_loaded_steps": 54,
+          "last_both_loaded_local_step": 250,
+          "object_displacement_m": [
+            -0.004082322120666504,
+            0.005883429199457169,
+            -0.0018933415412902832
+          ],
+          "object_rotation_rad": 0.1369510177465442
+        },
+        "hold": {
+          "steps": 50,
+          "start_step": 1551,
+          "end_step": 1600,
+          "max_finger_loads_n": [
+            7.123449981212616,
+            4.312567383050919,
+            4.96139669418335,
+            5.741257190704346,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            6.980570673942566,
+            4.260158032178879,
+            3.812847137451172,
+            4.642867565155029,
+            0.0
+          ],
+          "both_loaded_steps": 50,
+          "last_both_loaded_local_step": 50,
+          "object_displacement_m": [
+            -0.0003737211227416992,
+            0.0004936344921588898,
+            -0.00013805925846099854
+          ],
+          "object_rotation_rad": 0.015621548874387776
+        },
+        "lift": {
+          "steps": 500,
+          "start_step": 1601,
+          "end_step": 2100,
+          "max_finger_loads_n": [
+            7.227760314941406,
+            5.438952445983887,
+            5.584050834178925,
+            5.553842544555664,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 67,
+          "last_both_loaded_local_step": 68,
+          "object_displacement_m": [
+            0.061819612979888916,
+            0.047980714589357376,
+            0.0020664744079113007
+          ],
+          "object_rotation_rad": 1.006863663202827
+        }
+      },
+      "old_full_arm_comparison": {
+        "old_evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A3/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "ab449f7dfe8269eb83496911c113edf73da63902c347237a006f782465fdf33f"
+        },
+        "old_trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A3/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "1b900fe22ec934ce5fd12a879b896752da732c7461e993ecc9c2cfe79b5e8fe6"
+        },
+        "same_candidate_identity": true,
+        "all20_hand_dof_targets_bitwise_identical_all2100_steps": true,
+        "same_approach_close_hold_lift_palm_desired": true,
+        "all20_hand_actuation_audit_records_identical": true,
+        "actual_object_trajectory_identical": false,
+        "old_pickup": {
+          "success": false,
+          "observed_pickup": false,
+          "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+          "measurement_clearance_m": 0.005,
+          "first_pickup_time_s": null,
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "final_state_still_lifted_and_bearing": false,
+          "peak_held_bottom_clearance_m": null,
+          "peak_held_reference_rise_m": null,
+          "final_reference_rise_m": 0.00012577325105667114,
+          "final_bottom_clearance_m": 0.0007938794492557666,
+          "physical_validity_gates": {
+            "joint_limits": true,
+            "mimics": true,
+            "penetration": true
+          },
+          "full_hold_and_pose_orientation_are_not_task_gates": true
+        },
+        "old_phases": {
+          "settle": {
+            "steps": 50,
+            "start_step": 1,
+            "end_step": 50,
+            "max_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 0,
+            "last_both_loaded_local_step": null,
+            "object_displacement_m": [
+              4.76837158203125e-07,
+              -2.8312206268310547e-07,
+              2.3469328880310059e-07
+            ],
+            "object_rotation_rad": 4.317463083219921e-06
+          },
+          "home_to_pregrasp": {
+            "steps": 750,
+            "start_step": 51,
+            "end_step": 800,
+            "max_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 0,
+            "last_both_loaded_local_step": null,
+            "object_displacement_m": [
+              -1.0132789611816406e-06,
+              -3.0100345611572266e-06,
+              -1.862645149230957e-08
+            ],
+            "object_rotation_rad": 5.499491276219176e-05
+          },
+          "approach": {
+            "steps": 500,
+            "start_step": 801,
+            "end_step": 1300,
+            "max_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 0,
+            "last_both_loaded_local_step": null,
+            "object_displacement_m": [
+              -1.9073486328125e-06,
+              -4.0605664253234863e-07,
+              3.0919909477233887e-07
+            ],
+            "object_rotation_rad": 5.941645704654287e-06
+          },
+          "close": {
+            "steps": 250,
+            "start_step": 1301,
+            "end_step": 1550,
+            "max_finger_loads_n": [
+              7.413447141647339,
+              3.818793296813965,
+              4.376799989491701,
+              3.677798330783844,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              3.1851408444344997,
+              3.1253888607025146,
+              4.342035293579102,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 179,
+            "last_both_loaded_local_step": 250,
+            "object_displacement_m": [
+              -0.00041961669921875,
+              0.026027925312519073,
+              -0.001044929027557373
+            ],
+            "object_rotation_rad": 0.4655662936969539
+          },
+          "hold": {
+            "steps": 50,
+            "start_step": 1551,
+            "end_step": 1600,
+            "max_finger_loads_n": [
+              4.2986979484558105,
+              3.342801570892334,
+              4.229269981384277,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              3.985642194747925,
+              2.9311509132385254,
+              3.70148172439076,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 50,
+            "last_both_loaded_local_step": 50,
+            "object_displacement_m": [
+              7.581710815429688e-05,
+              -0.0005724504590034485,
+              0.0008981376886367798
+            ],
+            "object_rotation_rad": 0.018109419170542842
+          },
+          "lift": {
+            "steps": 500,
+            "start_step": 1601,
+            "end_step": 2100,
+            "max_finger_loads_n": [
+              5.324035406112671,
+              5.40792179107666,
+              4.302507400512695,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 174,
+            "last_both_loaded_local_step": 174,
+            "object_displacement_m": [
+              0.037593722343444824,
+              0.034760162234306335,
+              0.00012074783444404602
+            ],
+            "object_rotation_rad": 0.5786210646452199
+          }
+        },
+        "old_max_palm_position_error_m": 0.015265714062483476,
+        "object_final_position_difference_m": [
+          0.020054519176483154,
+          -0.005771242082118988,
+          -9.685754776000977e-08
+        ]
+      }
+    },
+    {
+      "object_id": "egad_E0",
+      "candidate_rank": 4,
+      "gesture_id": 7,
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E0/pool_00004/candidates.npz",
+        "sha256": "3c8f4ed8a0b5991c10078fe9079318eaf5624cf90d3100814280223c70c5c8cd"
+      },
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_E0/evaluation.json",
+        "sha256": "2c7277c2dabc0e50c0995774b945835c7046dd0bad2c28fca82d4e08b01a0212"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_E0/trace.npz",
+        "sha256": "0edb9858bd98303c29889c140daa8c9602b7fdbd60c35bc619d69788cd036cf3"
+      },
+      "all_2100_motor_targets_reconstructed_exact_float32": true,
+      "gantry_targets_reconstructed_exact_float32": true,
+      "desired_palm_reconstructed": true,
+      "trace_commands_and_time_arrays_exact": true,
+      "reported_state_writes": 0,
+      "source_loop_state_setters_absent": true,
+      "gate_values": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "native_hulls": 3662,
+      "native_20um_pass": true,
+      "recomputed_maximum_joint_limit_violation_rad": 1.2847745090027729e-08,
+      "recomputed_maximum_mimic_error_rad": 2.2292137145996094e-05,
+      "recomputed_maximum_penetration_m": 7.579568773508072e-05,
+      "recomputed_palm_position_error_m": 8.014883881622887e-05,
+      "recomputed_palm_angle_rad": 1.5833777260879804e-07,
+      "recomputed_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.0006988899988985072,
+        "final_reference_rise_m": 3.03611159324646e-07,
+        "lift_peak_bottom_clearance_m": 0.0007319049054026429,
+        "lift_peak_reference_rise_m": 0.0005043726414442062,
+        "two_sides_loaded_lift_steps": 214,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "task_success": false
+      },
+      "phases": {
+        "prehold": {
+          "steps": 800,
+          "start_step": 1,
+          "end_step": 800,
+          "max_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            -8.940696716308594e-07,
+            2.0489096641540527e-07,
+            5.029141902923584e-08
+          ],
+          "object_rotation_rad": 4.5154380119916705e-06
+        },
+        "approach": {
+          "steps": 500,
+          "start_step": 801,
+          "end_step": 1300,
+          "max_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 0,
+          "last_both_loaded_local_step": null,
+          "object_displacement_m": [
+            -7.748603820800781e-07,
+            -1.601874828338623e-07,
+            3.5390257835388184e-08
+          ],
+          "object_rotation_rad": 1.5653631042041757e-06
+        },
+        "close": {
+          "steps": 250,
+          "start_step": 1301,
+          "end_step": 1550,
+          "max_finger_loads_n": [
+            5.893927097320557,
+            4.24604606628418,
+            3.8252646923065186,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            5.3005218505859375,
+            3.4247584342956543,
+            3.066122055053711,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 89,
+          "last_both_loaded_local_step": 250,
+          "object_displacement_m": [
+            0.0056078433990478516,
+            0.0011127032339572906,
+            -1.2293457984924316e-07
+          ],
+          "object_rotation_rad": 0.16383689350747832
+        },
+        "hold": {
+          "steps": 50,
+          "start_step": 1551,
+          "end_step": 1600,
+          "max_finger_loads_n": [
+            6.5660719871521,
+            4.07968407869339,
+            3.9292986392974854,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            5.748605728149414,
+            3.2523717880249023,
+            2.890911817550659,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 50,
+          "last_both_loaded_local_step": 50,
+          "object_displacement_m": [
+            -5.346536636352539e-05,
+            -3.9346516132354736e-05,
+            4.284083843231201e-08
+          ],
+          "object_rotation_rad": 0.0010258402828074832
+        },
+        "lift": {
+          "steps": 500,
+          "start_step": 1601,
+          "end_step": 2100,
+          "max_finger_loads_n": [
+            6.368630409240723,
+            3.7991578578948975,
+            3.7433857917785645,
+            0.0,
+            0.0
+          ],
+          "final_finger_loads_n": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "both_loaded_steps": 214,
+          "last_both_loaded_local_step": 214,
+          "object_displacement_m": [
+            0.012641847133636475,
+            0.022463954985141754,
+            8.381903171539307e-08
+          ],
+          "object_rotation_rad": 0.61646992896541
+        }
+      },
+      "old_full_arm_comparison": {
+        "old_evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_E0/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "035a8f8abe320e59f22d66e13af63613dc1b9c319a7e9d3c6b9c231dafef0f81"
+        },
+        "old_trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_E0/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "b478948e010b9d75acbebf77b97a9faa1abdbdb78f83c274764dc4c8eb7d11f1"
+        },
+        "same_candidate_identity": true,
+        "all20_hand_dof_targets_bitwise_identical_all2100_steps": true,
+        "same_approach_close_hold_lift_palm_desired": true,
+        "all20_hand_actuation_audit_records_identical": true,
+        "actual_object_trajectory_identical": false,
+        "old_pickup": {
+          "success": false,
+          "observed_pickup": false,
+          "definition": "During lift: source-mesh bottom and object-reference rise >=5mm with concurrent thumb/opposing load >1mN; original limit/mimic/penetration validity retained.",
+          "measurement_clearance_m": 0.005,
+          "first_pickup_time_s": null,
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "final_state_still_lifted_and_bearing": false,
+          "peak_held_bottom_clearance_m": null,
+          "peak_held_reference_rise_m": null,
+          "final_reference_rise_m": 1.9185245037078857e-07,
+          "final_bottom_clearance_m": 0.0006989183712725628,
+          "physical_validity_gates": {
+            "joint_limits": true,
+            "mimics": true,
+            "penetration": true
+          },
+          "full_hold_and_pose_orientation_are_not_task_gates": true
+        },
+        "old_phases": {
+          "settle": {
+            "steps": 50,
+            "start_step": 1,
+            "end_step": 50,
+            "max_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 0,
+            "last_both_loaded_local_step": null,
+            "object_displacement_m": [
+              5.960464477539063e-08,
+              3.725290298461914e-09,
+              -6.705522537231445e-08
+            ],
+            "object_rotation_rad": 1.5663140468466891e-06
+          },
+          "home_to_pregrasp": {
+            "steps": 750,
+            "start_step": 51,
+            "end_step": 800,
+            "max_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 0,
+            "last_both_loaded_local_step": null,
+            "object_displacement_m": [
+              7.152557373046875e-07,
+              1.6763806343078613e-07,
+              -1.5087425708770752e-07
+            ],
+            "object_rotation_rad": 3.2270127991582026e-06
+          },
+          "approach": {
+            "steps": 500,
+            "start_step": 801,
+            "end_step": 1300,
+            "max_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 0,
+            "last_both_loaded_local_step": null,
+            "object_displacement_m": [
+              1.1920928955078125e-07,
+              3.0919909477233887e-07,
+              -6.332993507385254e-08
+            ],
+            "object_rotation_rad": 1.6309272197198798e-06
+          },
+          "close": {
+            "steps": 250,
+            "start_step": 1301,
+            "end_step": 1550,
+            "max_finger_loads_n": [
+              6.335829257965088,
+              3.8168420791625977,
+              3.8275463621830568,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              5.867564678192139,
+              3.6125085055828094,
+              3.40688419342041,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 106,
+            "last_both_loaded_local_step": 250,
+            "object_displacement_m": [
+              0.005385696887969971,
+              0.001931220293045044,
+              2.644956111907959e-07
+            ],
+            "object_rotation_rad": 0.18878270081780119
+          },
+          "hold": {
+            "steps": 50,
+            "start_step": 1551,
+            "end_step": 1600,
+            "max_finger_loads_n": [
+              6.7776994705200195,
+              3.766653537750244,
+              3.698591470718384,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              6.7776994705200195,
+              3.059152126312256,
+              3.3011438846588135,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 50,
+            "last_both_loaded_local_step": 50,
+            "object_displacement_m": [
+              -0.00014442205429077148,
+              0.00016961246728897095,
+              -1.8812716007232666e-07
+            ],
+            "object_rotation_rad": 0.005021271434671405
+          },
+          "lift": {
+            "steps": 500,
+            "start_step": 1601,
+            "end_step": 2100,
+            "max_finger_loads_n": [
+              6.718704700469971,
+              3.6706080436706543,
+              3.873992681503296,
+              0.0,
+              0.0
+            ],
+            "final_finger_loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "both_loaded_steps": 203,
+            "last_both_loaded_local_step": 212,
+            "object_displacement_m": [
+              0.013343870639801025,
+              0.01817275583744049,
+              9.462237358093262e-07
+            ],
+            "object_rotation_rad": 0.565419958143418
+          }
+        },
+        "old_max_palm_position_error_m": 0.002214198190552366,
+        "object_final_position_difference_m": [
+          -0.0003955364227294922,
+          0.0032519325613975525,
+          -1.1920928955078125e-07
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "No new physics or counterfactual proxy replacement performed by this audit. Original coarse convex collision model remains.",
+    "Zero runtime pose/state writes are reported counters plus direct source-loop inspection, not an independently instrumented API interception.",
+    "Joint/mimic/penetration/palm tracking and pickup are rederived from saved full-step arrays. Non-hand load and fixed-root gate reports are bound to original native output; raw every-step contacts are not retained.",
+    "Three hand-only selected failed cases are diagnostic, not independent benchmark. Original external full-arm 1/12 retained.",
+    "Three gantry joints remove the arm and constrain orientation; inertia/constraint topology differs, even though original 20 finger drive settings and target arrays match A3/E0 exactly."
+  ],
+  "freeze_hashes_match": true,
+  "source_count": 17,
+  "input_count": 205,
+  "physical_loop_no_pose_or_state_setter_calls": true,
+  "physical_loop_calls": [
+    "append",
+    "array",
+    "copy",
+    "cpu",
+    "dumps",
+    "index",
+    "items",
+    "monotonic",
+    "norm",
+    "numpy",
+    "read",
+    "set_position_index",
+    "set_velocity_index",
+    "startswith",
+    "step",
+    "tolist",
+    "update",
+    "write_data_to_sim"
+  ],
+  "success": 0,
+  "physical_steps": 6300
+}

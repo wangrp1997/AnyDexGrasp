@@ -1,0 +1,225 @@
+{
+  "schema": "anydex_boya_floating_three_delivery_v1",
+  "complete": true,
+  "date": "2026-11-08",
+  "original_external_result_retained": "1/12; untouched",
+  "experiment_type": "Failure-targeted matched-candidate diagnostic; not independent external success rate",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/protocol.json",
+    "sha256": "832865f29b7ceb1500c73d5da819e33f08210b8408c62a95252c86ce425e776c"
+  },
+  "results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/RESULTS.json",
+    "sha256": "95092b9e332353abe729c6d73ff2dc1c848b61f37427698be05c7d4c8c805b7b"
+  },
+  "success": 0,
+  "objects": 3,
+  "actual_attempts": 3,
+  "physical_steps": 6300,
+  "additional_training_updates": 0,
+  "new_CGR_forwards": 0,
+  "training_writeback": false,
+  "unchanged_source_count": 17,
+  "unchanged_input_count": 205,
+  "physical_pipeline_wall_s": 28.609747723909095,
+  "media_wall_s": 65.84197640803177,
+  "rows": [
+    {
+      "object_id": "egad_A6",
+      "candidate_rank": 17,
+      "gesture_id": 6,
+      "task_success": false,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "source_mesh_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.000662350528791331,
+        "final_reference_rise_m": 0.00927678495645523,
+        "lift_peak_bottom_clearance_m": 0.0013355492180092644,
+        "lift_peak_reference_rise_m": 0.014933820813894272,
+        "two_sides_loaded_lift_steps": 0,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "task_success": false
+      },
+      "physical_steps": 2100,
+      "palm_position_error_m": 0.00014779789572206355,
+      "native_20um_pass": true,
+      "source_candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00017/candidates.npz",
+        "sha256": "1f414b01b0835b9a42391d5418f0d5b9396a0efd6eea26bfe93213d06c767884"
+      },
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/evaluation.json",
+        "sha256": "1dca35c39c91115e229200a7b02cbde749970f66db78debc383daa7189920f3d"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/trace.npz",
+        "sha256": "b43ec19aaccfcf413a91f39fb7d5d27cb6feee7d363a1e2fddd95a7523182c1f"
+      },
+      "state_writes_during_execution": 0,
+      "numeric_trace_finite": true
+    },
+    {
+      "object_id": "egad_A3",
+      "candidate_rank": 58,
+      "gesture_id": 8,
+      "task_success": false,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "source_mesh_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.0007938836915647551,
+        "final_reference_rise_m": 0.002067137509584427,
+        "lift_peak_bottom_clearance_m": 0.0009593874360233636,
+        "lift_peak_reference_rise_m": 0.007975280284881592,
+        "two_sides_loaded_lift_steps": 67,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "task_success": false
+      },
+      "physical_steps": 2100,
+      "palm_position_error_m": 0.00015495455155868835,
+      "native_20um_pass": true,
+      "source_candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A3/pool_00058/candidates.npz",
+        "sha256": "217f925895a611812c79686ee364564e31fadc09a00dfd6513057107a72e6796"
+      },
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A3/evaluation.json",
+        "sha256": "2ea7c7aff5aa24d0691244a503f3ff91f16f24ba081478d282caabaf56b5466d"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A3/trace.npz",
+        "sha256": "e38ee32eac67c03629ccb4ddb75655ffff9b00bd4c78e4cea4f05562629dd81c"
+      },
+      "state_writes_during_execution": 0,
+      "numeric_trace_finite": true
+    },
+    {
+      "object_id": "egad_E0",
+      "candidate_rank": 4,
+      "gesture_id": 7,
+      "task_success": false,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "source_mesh_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.0006988899988985072,
+        "final_reference_rise_m": 3.03611159324646e-07,
+        "lift_peak_bottom_clearance_m": 0.0007319049054026429,
+        "lift_peak_reference_rise_m": 0.0005043726414442062,
+        "two_sides_loaded_lift_steps": 214,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "task_success": false
+      },
+      "physical_steps": 2100,
+      "palm_position_error_m": 8.014883881622887e-05,
+      "native_20um_pass": true,
+      "source_candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E0/pool_00004/candidates.npz",
+        "sha256": "3c8f4ed8a0b5991c10078fe9079318eaf5624cf90d3100814280223c70c5c8cd"
+      },
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_E0/evaluation.json",
+        "sha256": "2c7277c2dabc0e50c0995774b945835c7046dd0bad2c28fca82d4e08b01a0212"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_E0/trace.npz",
+        "sha256": "0edb9858bd98303c29889c140daa8c9602b7fdbd60c35bc619d69788cd036cf3"
+      },
+      "state_writes_during_execution": 0,
+      "numeric_trace_finite": true
+    }
+  ],
+  "controlled_wrist_tracking_all_below_016mm": true,
+  "geometry_audit": {
+    "path": "/tmp/EGAD_PROXY_CONTACT_AUDIT_20261108.json",
+    "sha256": "7d42395d934c0773b9b5fe837f32e98cb2483f27faa5a5e6d7a7ad5603b9dbb6"
+  },
+  "geometry_limit": "All15 positive-load proxy-projected checkpoints lie outside the original source mesh; local source clearance A3 1.48-4.18mm / E0 2.12-2.54mm. Proxy not changed; causal contribution not isolated.",
+  "videos": [
+    {
+      "object_id": "egad_A6",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/egad_A6/hand_only.mp4",
+      "sha256": "47c4fa5cd68abd24014bc6b0d0fc5e3db9fb3a46f1a1b0664138f5f0acaf0574",
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "physical_state_frames": 210,
+      "final_pause_s": 1.0,
+      "zero_replay_steps": true
+    },
+    {
+      "object_id": "egad_A3",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/egad_A3/hand_only.mp4",
+      "sha256": "ef1ee2f6340d02c9fbc2b6ad673b1e38cdbd32f6238cbea6b020c7dd76c1f1de",
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "physical_state_frames": 210,
+      "final_pause_s": 1.0,
+      "zero_replay_steps": true
+    },
+    {
+      "object_id": "egad_E0",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/egad_E0/hand_only.mp4",
+      "sha256": "55ece63540c3b70f9f83fe66a07a8d777421798e2ff0eecd00272347cffe41a8",
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "physical_state_frames": 210,
+      "final_pause_s": 1.0,
+      "zero_replay_steps": true
+    }
+  ],
+  "video_index": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/index.html",
+  "renderer_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_egad_floating_three.py",
+    "sha256": "37ada4cf0a60b3ee5c1f75bba113949dd51105b90cbfeca6fe45a5b46fdd360a"
+  },
+  "tests_passed": 6,
+  "conclusions": [
+    "These frozen A3/E0 candidates also fail with sub-.16mm controlled-wrist tracking and identical finger command arrays.",
+    "A6 original first geometry-valid candidate did not establish sustained two-sided bearing; finite arm null was not evidence that this candidate would succeed.",
+    "Hand/object mapping, closure and learned selection must be distinguished; coarse collision proxy remains a causal confound.",
+    "No new positive control was added; only three authorized targeted cases were executed. This is no AnyDex/Boya hardware or method capability upper bound."
+  ]
+}

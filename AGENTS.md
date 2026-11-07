@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-08 最新：三件受控腕部诊断完成，0/3，勿继续归因机械臂
+
+用户授权按计划隔离臂限制，独立outputs/egad_floating_three_20261108_v1已complete，protocol SHA832865f29b7ceb1500c73d5da819e33f08210b8408c62a95252c86ce425e776c。A6原firstgeo rank17、A3/E0原实际rank58/4，各一次2100步，共6300步，CPU三路28.610s；全部七门/native20µm门通过，实际0/3，零有效提起步。A6参考点升9.28mm仅转动，源最低点仍贴桌、lift无双侧承载；A3/E0闭合有载荷抬升仍滑脱。最大掌误差.148/.155/.080mm，A3原15.27mm与E0原2.214mm大幅降低仍失败，不能仅归因臂跟踪。
+
+新增手掌子树前3无碰撞平移驱动，原手惯性/20DOF驱动/mimic/原闭合保留。Kp1e5/Kd1000/1000N、虚拟link1g为明确诊断，非真实机械臂。A3/E0全2100步20手DOF指令与旧执行逐float32相同，approach/close/hold/lift目标掌姿同；前800步在pregrasp开手保持替代旧settle+home。执行中零状态重置，.1kg/.6摩擦/桌/原凸体/物体向下.98N保持。原模型/训练435/排序不改，零新CGR/训练、失败目标单列，不改外部1/12。
+
+只读真实承载处核对：15个正载荷接触的凸体投影都在源物体外，A3离源面1.48–4.18mm，E0 2.12–2.54mm，非别处全局误差；未换代理，未证明因果。后续须隔离接触几何/闭合承载/映射与排序，不能再单靠移动物体或臂规划解释已实际失败。未加额外成功正对照，不能称完整新执行器验收/算法上限。
+
+三段235帧25fps9.4s RTX视频完成，videos/index.html含A3/E0旧完整臂对照，回放零积分。6tests、独立指令/全源网格承载/有限数值/17源205输入SHA通过。报告reproduction/boya/EGAD_FLOATING_THREE_RESULTS_20261108.md与evidence/egad_floating_three_20261108。**本轮已结束，无后台任务；不自行重抓/调参/扩样，若继续需新协议。** CanonDex只读，仅轻量阶段push用户origin。
+
 ## 2026-11-08 最新：冻结版本EGAD12外部测试已完成，1/12
 
 用户要求停止围绕内部8件追满分并测试未用外部物体。outputs/egad_external12_20261107_v1全阶段complete，最终protocol SHA49e3f6b417be62976187db7f813a434fab24d1f2c67edd9cb1bb07c650bf4e91。官方EGAD49编号A/C/E/G×0/3/6固定12，source/米制mesh/digest与训练S40/旧DGN均不重叠，不能声称未见于上游CGR预训练。统一1源单位1mm/.1kg/.6摩擦/同XY，非验证的AnyDex打印尺度。
