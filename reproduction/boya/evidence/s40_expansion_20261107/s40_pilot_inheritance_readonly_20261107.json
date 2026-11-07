@@ -1,0 +1,136 @@
+{
+  "schema": "anydex_s40_pilot_reuse_readonly_review_v1",
+  "checked_unix": 1794019863.8070803,
+  "pilot_complete": true,
+  "original_protocol_sha256": "9b6034b818d05a64f1fc5aa77013218cf73bd9a9bc05c2258956f2ff1e886188",
+  "original_queue_sha256": "2ff3c1ea4bea1cbc10f2b5fba060072346d201dc37fbd5de8861f85aa8a63a0b",
+  "slot_count": 8,
+  "ready_slot_ids": [
+    "graspnet_000_g6_d0",
+    "graspnet_000_g7_d0",
+    "graspnet_002_g1_d0",
+    "graspnet_002_g6_d0",
+    "graspnet_002_g8_d0"
+  ],
+  "preparation_nulls": [
+    {
+      "trial_id": "graspnet_000_g1_d0",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "actual_physics_steps": 0
+    },
+    {
+      "trial_id": "graspnet_000_g8_d0",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "actual_physics_steps": 0
+    },
+    {
+      "trial_id": "graspnet_002_g7_d0",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "actual_physics_steps": 0
+    }
+  ],
+  "changed_original_inputs": [],
+  "changed_original_sources": [],
+  "frames": [
+    {
+      "object_id": "graspnet_000",
+      "forward_complete": true,
+      "hand_head_loaded": false,
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/observations/graspnet_000/observation.json",
+      "observation_sha256": "49745d8dabff1868be87b5d77671c2278d7dcd2ed7527800b8d24eaf5ea061c1",
+      "T_WC_same": true,
+      "changed": [],
+      "candidate_sha256": "7fac1854dd28389fc59cf3fbb2c5edac45bc0fd06866fafb546a9519871ce2e0",
+      "representation_sha256": "3bbea38daad656a520620ee73806260aecc6f8622a34129646da9899e81d5f23"
+    },
+    {
+      "object_id": "graspnet_002",
+      "forward_complete": true,
+      "hand_head_loaded": false,
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_alignment_pilot_20261106_v1/observations/graspnet_002/observation.json",
+      "observation_sha256": "7ce40c26716badf8de7db02315d586076a9260404f39ee54e944ddb715f33d10",
+      "T_WC_same": true,
+      "changed": [],
+      "candidate_sha256": "734c92f3255eb037f46893d0818f373c07cc857d75e19aefa5cc0d8adaa6349a",
+      "representation_sha256": "6b0924c3984c414fb7cd29c3323cbc11f3cc46cd730edc5711f27d6f82ce1678"
+    }
+  ],
+  "objects": [
+    {
+      "object_id": "graspnet_000",
+      "status": "complete_with_null",
+      "actual_grasps": 2,
+      "physical_steps": 4200,
+      "positives": 2,
+      "negatives": 0,
+      "nulls": 2,
+      "input_sha256_unchanged": true,
+      "source_sha256_unchanged": true,
+      "changed_prepared_inputs": [],
+      "cohort_count": 1
+    },
+    {
+      "object_id": "graspnet_002",
+      "status": "complete_with_null",
+      "actual_grasps": 3,
+      "physical_steps": 6300,
+      "positives": 3,
+      "negatives": 0,
+      "nulls": 1,
+      "input_sha256_unchanged": true,
+      "source_sha256_unchanged": true,
+      "changed_prepared_inputs": [],
+      "cohort_count": 1
+    }
+  ],
+  "trials": [
+    {
+      "trial_id": "graspnet_000_g6_d0",
+      "label": 1,
+      "eligible": true,
+      "physics_steps": 2100,
+      "changed_commands": false,
+      "changed_binding": false,
+      "changed_trace": false
+    },
+    {
+      "trial_id": "graspnet_000_g7_d0",
+      "label": 1,
+      "eligible": true,
+      "physics_steps": 2100,
+      "changed_commands": false,
+      "changed_binding": false,
+      "changed_trace": false
+    },
+    {
+      "trial_id": "graspnet_002_g1_d0",
+      "label": 1,
+      "eligible": true,
+      "physics_steps": 2100,
+      "changed_commands": false,
+      "changed_binding": false,
+      "changed_trace": false
+    },
+    {
+      "trial_id": "graspnet_002_g6_d0",
+      "label": 1,
+      "eligible": true,
+      "physics_steps": 2100,
+      "changed_commands": false,
+      "changed_binding": false,
+      "changed_trace": false
+    },
+    {
+      "trial_id": "graspnet_002_g8_d0",
+      "label": 1,
+      "eligible": true,
+      "physics_steps": 2100,
+      "changed_commands": false,
+      "changed_binding": false,
+      "changed_trace": false
+    }
+  ],
+  "files_hashed": 734,
+  "new_physics_steps": 0,
+  "new_forward_count": 0
+}

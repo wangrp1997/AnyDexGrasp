@@ -234,3 +234,14 @@ outputs/s40_alignment_pilot_20261106_v1/PROGRESS=complete，338.802s；场景首
 两段原模型RTX视频在本轮videos/index.html，235帧25fps9.4s、回放零物理，媒体核验通过。完整审计在本轮audit，轻量evidence/s40_pilot_20261106；报告S40_COLLECTION_PILOT_20261106.md。原评分头仍只用旧DGN训练，本轮5正0负不训练新评分器。
 
 扩大前修下一版本通用无候选null分类（当前geometry非零会暂停，本轮8槽非空未触发）及renderer source_inventory路径freeze（当前40mesh/urdf/pose冻结、inventory已独立读回）。保留本轮冻结源码/输出，不热改重跑。后续按S40每型100次论文预算明确多姿态/深入与null成本，EGAD留到模型/尺度协议冻结再测试。整体复现仍未通过；L144/T30/完整实物测试身份等缺口不变。CanonDex只读，大资产不提交。
+
+
+## 2026-11-07 最新：用户授权扩全40，S40共640槽已实际后台启动
+
+新运行outputs/s40_collection_20261107_v1，PID1658959、启动2026-11-07T11:05:27.373395+08:00，入口run_s40_collection.py --phase all。40全train/四型1,6,7,8/四extra，共640槽；继承pilot的8个d0槽（5实际正例10500步+3零步prepare null）、仅新增632槽。两件原观测/CGR不改，其余38件新渲染/共享单CGR。每型100有效标签/合400是目标不保证，全部欠额、实际负例、null与额外有效记录保留，不结果替换。预冻32/8仅S40内部诊断分组，不是外部测试。
+
+source_inventory路径/hash已补冻结；合法无几何非零经证据接成null，非正常异常停派发；v2 executor支持原完整变长approach，已知task早停经证书认证为已消费terminal null，unknown不重放。记录导出binding/精确label/steps/eval/command重新比对，并核row/serial cohort积分账。41测试通过，源码/输入/manifest 573/1162/3读回通过。不要修改任何运行冻结py/源资产，勿恢复旧DGN或重复派发。
+
+CPU32–95，native4/geometry4/arm8/execution4；CGR GPU0、物理CPU对象内wave常驻，命令长度可拆多cohort，不保证每物体一次Kit。启动核验时40件原生资产全部完成，已进入观测阶段；没有新抓取率或新训练结论。后续看pipeline_progress、stages、planning/queue_manifest与execution/PROGRESS/RESULTS，最后collection_counts与train_records；文件未产生不补结果。协议S40_COLLECTION_PROTOCOL_20261107.md、启动S40_EXPANSION_LAUNCH_20261107.md及evidence/s40_expansion_20261107。
+
+本轮只启动采集，无自动S40 head训练或EGAD评测；整体论文复现仍未完成。旧pilot5次/3null和DGN6/10全部保持，各段成本分列；CanonDex只读，大文件不提交。
