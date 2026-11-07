@@ -1,0 +1,27 @@
+{
+  "schema": "anydex_s40_fit_bn_reestimation_v1",
+  "status": "complete",
+  "base_training_report_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/TRAINING_RESULTS.json",
+    "sha256": "447302d26c1e5cccc10f23ae897105a5d845abe661640cfc4ea5fa6d912ccac0"
+  },
+  "dataset_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json",
+    "sha256": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb"
+  },
+  "fit_metric_weighted": {
+    "count": 364,
+    "mse": 0.3108351113386951
+  },
+  "internal_check_metric_weighted": {
+    "count": 71,
+    "mse": 0.5327697324179542
+  },
+  "new_optimizer_steps": 0,
+  "BN_calibration_forward_batches": 4,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "wall_s": 0.6234303149394691,
+  "inputs_and_sources_unchanged": true,
+  "deployment_default_changed": false
+}

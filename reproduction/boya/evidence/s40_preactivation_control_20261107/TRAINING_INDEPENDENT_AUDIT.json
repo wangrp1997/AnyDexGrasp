@@ -1,0 +1,372 @@
+{
+  "schema": "independent_s40_preactivation_single_difference_audit_v1",
+  "old_report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/TRAINING_RESULTS.json",
+    "sha256": "447302d26c1e5cccc10f23ae897105a5d845abe661640cfc4ea5fa6d912ccac0"
+  },
+  "new_report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json",
+    "sha256": "68dbd71088928431f46d612d1458d4174a43dc54326fc9781c996667cbaf77ce"
+  },
+  "same_config": true,
+  "same_dataset_manifest": true,
+  "same_stage_record_counts": true,
+  "same_mesh_groups": true,
+  "new_training_variant": "preactivation_selected_mse",
+  "per_head": {
+    "1": {
+      "seed_old": 20261107,
+      "seed_new": 20261107,
+      "seeded_initial_state_sha256_old_recipe": "c500135eb9bc6e50b772901553a895f465c879efabb93627167918451bd3a8bf",
+      "seeded_initial_state_sha256_new_recipe": "c500135eb9bc6e50b772901553a895f465c879efabb93627167918451bd3a8bf",
+      "seeded_initial_state_equal": true,
+      "initial_snapshots_saved_by_training": false,
+      "epoch_count_old": 100,
+      "epoch_count_new": 100,
+      "history_exact_match_excluding_MSE": {
+        "epoch": true,
+        "learning_rate": true,
+        "samples": true,
+        "distinct_samples": true,
+        "batch_sizes": true,
+        "ordered_trial_ids_sha256": true
+      },
+      "independent_epoch_shuffle_replay_matches": true,
+      "optimizer_updates_old": 100,
+      "optimizer_updates_new": 100,
+      "same_fit_trial_ids": true,
+      "same_fit_mesh_groups": true,
+      "same_architecture_kwargs": true,
+      "same_state_dict_shapes": true,
+      "BN_batches_old": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "BN_batches_new": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "fit_positive_prior": 0.7469879518072289,
+      "fit": {
+        "count": 83,
+        "positive": 62,
+        "negative": 21,
+        "independent_original_forward_MSE": 0.0007757942140456801,
+        "reported_original_forward_MSE": 0.0007790346800688529,
+        "positive_selected_exact_zero": 0,
+        "positive_selected_exact_zero_fraction": 0.0,
+        "negative_selected_exact_zero": 3,
+        "selected_score_max": 1.0383464097976685,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.18899695166206998,
+        "old_positive_selected_exact_zero": 41
+      },
+      "internal": {
+        "count": 15,
+        "positive": 11,
+        "negative": 4,
+        "independent_original_forward_MSE": 0.35394473483846717,
+        "reported_original_forward_MSE": 0.3539944368537429,
+        "positive_selected_exact_zero": 2,
+        "positive_selected_exact_zero_fraction": 0.18181818181818182,
+        "negative_selected_exact_zero": 0,
+        "selected_score_max": 0.9198941588401794,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.1957420041612232
+      },
+      "old_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g01.pt",
+        "expected_sha256": "72b40881fd5f13cabda542d079305ce632bda295c2258ee9360b5b12f339d6c3",
+        "actual_sha256": "72b40881fd5f13cabda542d079305ce632bda295c2258ee9360b5b12f339d6c3",
+        "unchanged": true
+      },
+      "new_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g01.pt",
+        "expected_sha256": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+        "actual_sha256": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+        "unchanged": true
+      }
+    },
+    "6": {
+      "seed_old": 20261112,
+      "seed_new": 20261112,
+      "seeded_initial_state_sha256_old_recipe": "be7906734b4fedb7654dcf14f3eb3c72d01a4178ed2788b7177462a93a311a8b",
+      "seeded_initial_state_sha256_new_recipe": "be7906734b4fedb7654dcf14f3eb3c72d01a4178ed2788b7177462a93a311a8b",
+      "seeded_initial_state_equal": true,
+      "initial_snapshots_saved_by_training": false,
+      "epoch_count_old": 100,
+      "epoch_count_new": 100,
+      "history_exact_match_excluding_MSE": {
+        "epoch": true,
+        "learning_rate": true,
+        "samples": true,
+        "distinct_samples": true,
+        "batch_sizes": true,
+        "ordered_trial_ids_sha256": true
+      },
+      "independent_epoch_shuffle_replay_matches": true,
+      "optimizer_updates_old": 100,
+      "optimizer_updates_new": 100,
+      "same_fit_trial_ids": true,
+      "same_fit_mesh_groups": true,
+      "same_architecture_kwargs": true,
+      "same_state_dict_shapes": true,
+      "BN_batches_old": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "BN_batches_new": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "fit_positive_prior": 0.6632653061224489,
+      "fit": {
+        "count": 98,
+        "positive": 65,
+        "negative": 33,
+        "independent_original_forward_MSE": 0.0006764554533785308,
+        "reported_original_forward_MSE": 0.000681430373762667,
+        "positive_selected_exact_zero": 0,
+        "positive_selected_exact_zero_fraction": 0.0,
+        "negative_selected_exact_zero": 17,
+        "selected_score_max": 1.021992802619934,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.22334443981674298,
+        "old_positive_selected_exact_zero": 17
+      },
+      "internal": {
+        "count": 22,
+        "positive": 14,
+        "negative": 8,
+        "independent_original_forward_MSE": 0.43433687689611394,
+        "reported_original_forward_MSE": 0.4343073484357912,
+        "positive_selected_exact_zero": 3,
+        "positive_selected_exact_zero_fraction": 0.21428571428571427,
+        "negative_selected_exact_zero": 1,
+        "selected_score_max": 1.5679515600204468,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.23212865851349818
+      },
+      "old_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g06.pt",
+        "expected_sha256": "1fddda3c8822d393224125cf755c2963457f147f943c2d7218ea86372def5433",
+        "actual_sha256": "1fddda3c8822d393224125cf755c2963457f147f943c2d7218ea86372def5433",
+        "unchanged": true
+      },
+      "new_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g06.pt",
+        "expected_sha256": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+        "actual_sha256": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+        "unchanged": true
+      }
+    },
+    "7": {
+      "seed_old": 20261113,
+      "seed_new": 20261113,
+      "seeded_initial_state_sha256_old_recipe": "dd3227999423a6b0a8f0b008adb8650940f808de273a5de9fb721c5545ff7d93",
+      "seeded_initial_state_sha256_new_recipe": "dd3227999423a6b0a8f0b008adb8650940f808de273a5de9fb721c5545ff7d93",
+      "seeded_initial_state_equal": true,
+      "initial_snapshots_saved_by_training": false,
+      "epoch_count_old": 100,
+      "epoch_count_new": 100,
+      "history_exact_match_excluding_MSE": {
+        "epoch": true,
+        "learning_rate": true,
+        "samples": true,
+        "distinct_samples": true,
+        "batch_sizes": true,
+        "ordered_trial_ids_sha256": true
+      },
+      "independent_epoch_shuffle_replay_matches": true,
+      "optimizer_updates_old": 100,
+      "optimizer_updates_new": 100,
+      "same_fit_trial_ids": true,
+      "same_fit_mesh_groups": true,
+      "same_architecture_kwargs": true,
+      "same_state_dict_shapes": true,
+      "BN_batches_old": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "BN_batches_new": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "fit_positive_prior": 0.7551020408163265,
+      "fit": {
+        "count": 98,
+        "positive": 74,
+        "negative": 24,
+        "independent_original_forward_MSE": 0.0004694396403670986,
+        "reported_original_forward_MSE": 0.00046806073686252495,
+        "positive_selected_exact_zero": 0,
+        "positive_selected_exact_zero_fraction": 0.0,
+        "negative_selected_exact_zero": 2,
+        "selected_score_max": 1.0187207460403442,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.18492294877134524,
+        "old_positive_selected_exact_zero": 27
+      },
+      "internal": {
+        "count": 19,
+        "positive": 16,
+        "negative": 3,
+        "independent_original_forward_MSE": 0.4506236600670535,
+        "reported_original_forward_MSE": 0.45067859782142383,
+        "positive_selected_exact_zero": 2,
+        "positive_selected_exact_zero_fraction": 0.125,
+        "negative_selected_exact_zero": 0,
+        "selected_score_max": 1.206189513206482,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.14053354961748396
+      },
+      "old_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g07.pt",
+        "expected_sha256": "9ce49ebd7110cecc9eb5cca75b5a016e5ae445250827f82cfe05ca316d178fc6",
+        "actual_sha256": "9ce49ebd7110cecc9eb5cca75b5a016e5ae445250827f82cfe05ca316d178fc6",
+        "unchanged": true
+      },
+      "new_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g07.pt",
+        "expected_sha256": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+        "actual_sha256": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+        "unchanged": true
+      }
+    },
+    "8": {
+      "seed_old": 20261114,
+      "seed_new": 20261114,
+      "seeded_initial_state_sha256_old_recipe": "215081889771765108dd24248cc6b6924227e195eafc37bb8ea9196b7b1b6c5f",
+      "seeded_initial_state_sha256_new_recipe": "215081889771765108dd24248cc6b6924227e195eafc37bb8ea9196b7b1b6c5f",
+      "seeded_initial_state_equal": true,
+      "initial_snapshots_saved_by_training": false,
+      "epoch_count_old": 100,
+      "epoch_count_new": 100,
+      "history_exact_match_excluding_MSE": {
+        "epoch": true,
+        "learning_rate": true,
+        "samples": true,
+        "distinct_samples": true,
+        "batch_sizes": true,
+        "ordered_trial_ids_sha256": true
+      },
+      "independent_epoch_shuffle_replay_matches": true,
+      "optimizer_updates_old": 100,
+      "optimizer_updates_new": 100,
+      "same_fit_trial_ids": true,
+      "same_fit_mesh_groups": true,
+      "same_architecture_kwargs": true,
+      "same_state_dict_shapes": true,
+      "BN_batches_old": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "BN_batches_new": {
+        "1": 100,
+        "2": 100,
+        "3": 100,
+        "4": 100,
+        "5": 100,
+        "6": 100,
+        "7": 100
+      },
+      "fit_positive_prior": 0.6235294117647059,
+      "fit": {
+        "count": 85,
+        "positive": 53,
+        "negative": 32,
+        "independent_original_forward_MSE": 0.0006704194647614228,
+        "reported_original_forward_MSE": 0.0006730316391895783,
+        "positive_selected_exact_zero": 0,
+        "positive_selected_exact_zero_fraction": 0.0,
+        "negative_selected_exact_zero": 4,
+        "selected_score_max": 0.9943264722824097,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.2347404844290657,
+        "old_positive_selected_exact_zero": 28
+      },
+      "internal": {
+        "count": 15,
+        "positive": 7,
+        "negative": 8,
+        "independent_original_forward_MSE": 0.348330878637274,
+        "reported_original_forward_MSE": 0.34830227895689114,
+        "positive_selected_exact_zero": 0,
+        "positive_selected_exact_zero_fraction": 0.0,
+        "negative_selected_exact_zero": 2,
+        "selected_score_max": 1.4805389642715454,
+        "selected_score_min": 0.0,
+        "fit_prior_constant_MSE": 0.2734948096885813
+      },
+      "old_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g08.pt",
+        "expected_sha256": "010a3ff995945e076d03c96b5665017a6d6275ac1cd876b8b1739428fbe1df66",
+        "actual_sha256": "010a3ff995945e076d03c96b5665017a6d6275ac1cd876b8b1739428fbe1df66",
+        "unchanged": true
+      },
+      "new_checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g08.pt",
+        "expected_sha256": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+        "actual_sha256": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+        "unchanged": true
+      }
+    }
+  },
+  "scope": "Read-only independent original Inference forward; no new training/physics/EGAD; seeded construction is independently repeated, initial snapshots were not saved during original training.",
+  "fit_weighted": {
+    "count": 364,
+    "new_original_forward_MSE": 0.0006419623446636925,
+    "fit_prior_constant_MSE": 0.20782937430234902,
+    "positive_count": 254,
+    "positive_selected_exact_zero": 0
+  },
+  "internal_weighted": {
+    "count": 71,
+    "new_original_forward_MSE": 0.40354077514260056,
+    "fit_prior_constant_MSE": 0.20866929771515805,
+    "positive_count": 48,
+    "positive_selected_exact_zero": 7
+  },
+  "single_difference_runtime_records_pass": true,
+  "source_integrity": {
+    "old": true,
+    "new": true
+  },
+  "independent_forward_device": "CPU; training report metrics were CUDA0. Small floating arithmetic differences are reported, not exact-equality claims.",
+  "max_absolute_CPU_vs_report_MSE_difference": 5.493775437032111e-05
+}

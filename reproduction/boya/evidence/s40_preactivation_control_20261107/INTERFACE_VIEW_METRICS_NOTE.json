@@ -1,0 +1,25 @@
+{
+  "schema": "anydex_s40_interface_view_metrics_note_v1",
+  "interface_view": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_domain_20261107_v1_binding/TRAINING_INTERFACE_VIEW.json",
+  "compatibility_format": "code100 schema retained by frozen evaluator; explicitly declared preactivation control in head_control",
+  "issue": "Top-level aggregate metric fields were copied from the old base report. They are not read by scoring/geometry/arm/execution. Read control report for actual training metrics.",
+  "authoritative_training_report": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json",
+  "actual_fit_metric": {
+    "count": 364,
+    "mse": 0.0006442793863134553
+  },
+  "actual_internal_metric": {
+    "count": 71,
+    "mse": 0.40355078537118266
+  },
+  "base_fit_metric": {
+    "count": 364,
+    "mse": 0.310881395973
+  },
+  "base_internal_metric": {
+    "count": 71,
+    "mse": 0.531875333442
+  },
+  "frozen_view_and_completed_sources_preserved": true,
+  "ranking_and_execution_affected": false
+}

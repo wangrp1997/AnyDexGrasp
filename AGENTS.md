@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-07 最新：训练死区对照已完成，内部8件5成功/3无计划
+
+原code100评分的254个fit正例中113个预测严格0，最终ReLU直接梯度死区解释主要训练误差；fit-only BN重估无收益（fit .310835/internal .532770，0优化/物理）。新增明确的Boya训练适配train_s40_preactivation_control.py，用可微BN7 clone将原选中输出MSE作用在ReLU前，部署仍原Inference/ReLU。不是作者原训练，不改官方源码、435记录、32-fit/8-internal、seed/每epoch shuffle/优化配方/固定100轮。400更新、6.586s，fit .000644279/internal .403550785，fit正例零预测0/254；内部仍差于常数 .208669，不称可靠评分。
+
+outputs/s40_preactivation_{control,domain,top1,execution}_20261107_v1全部complete。同8缓存910query/2379组合，362过门→114几何/6物体；11次臂准备、5ready/3null。每ready仅一次2100步，实际5/5全成功，统一分母5/8：007、021、044、066、069成功；008两IK/两直接路径拒绝共4预算耗尽、009/048无完整手几何。10500步、7门/11守卫全通过，原3/8与全部失败保留，不回填历史/不写回435。五个正常速度235帧/25fps/9.4s RTX视频全部完成，videos/index.html；无三件no-plan动作视频。零新CGR/EGAD；8件已多轮调试，非独立外部泛化。
+
+薄入口evaluate_s40_head_control.py/run_s40_head_control.py绑定冻结旧helper与明确训练控制。旧code100 schema/string只是兼容格式，权威控制训练看TRAINING_RESULTS.json、实抓看HEAD_CONTROL_EXECUTION_RESULTS.json。兼容view顶层聚合metric复制旧值的报告残留不参与排名，正确指标/说明在evidence/s40_preactivation_control_20261107/INTERFACE_VIEW_METRICS_NOTE.json，勿改冻结源码或据旧view报指标。13tests及独立训练/桥接/完整控制轨迹、源网格末态/视频SHA核验通过。
+
+并行映射只读探针未发现flip/depth/pad/close_q接线错误，但开手参考与非对称闭合有中点漂移。改用raw宽度最接近的闭合参考65点静态探针6/6→4/6（044旧成功也触桌），未晋级、无新增物理；更改映射会改变旧标签语义，不直接部署或给对象补丁。报告reproduction/boya/S40_PREACTIVATION_CONTROL_RESULTS_20261107.md。本轮已收尾，无后台训练/试抓；后续处理009/048通用映射及008臂接近，再固定协议做外部验证。整体论文复现仍未验收；CanonDex只读，只push轻量相关文件。
+
 **2026-11-06用户纠正后的最高优先级状态：整体复现未通过验收。此前“忠实复现”判断撤回；官方离线输出核验与自建DGN上的Boya适配不能合并称论文复现完成。新独立score-first入口已修正post-CGR顺序；Boya训练物体身份/划分、单帧输入和执行协议仍未完整对齐；4/10与6/10仅为有限池适配记录。先做论文物体和划分的身份对照及部署顺序对齐，明确未对齐项，再谈新的训练/评测；不以扩大自建集代替对齐。本次更正不新增采集、训练或物理试验。以下按日期保留的阶段通过只对其局部范围成立。**
 
 更新：2026-11-07。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。

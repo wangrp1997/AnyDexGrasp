@@ -1,0 +1,114 @@
+{
+  "schema": "s40_preactivation_readonly_audit_v1",
+  "issues": [],
+  "heads": {
+    "1": {
+      "fit_records": 83,
+      "fit_internal_overlap": 0,
+      "base_fit_ids_equal": true,
+      "same_epoch_batch_order": true,
+      "checkpoint_schema": "anydex_boya_decision_state_dict_v1",
+      "training_variant": "preactivation_selected_mse"
+    },
+    "6": {
+      "fit_records": 98,
+      "fit_internal_overlap": 0,
+      "base_fit_ids_equal": true,
+      "same_epoch_batch_order": true,
+      "checkpoint_schema": "anydex_boya_decision_state_dict_v1",
+      "training_variant": "preactivation_selected_mse"
+    },
+    "7": {
+      "fit_records": 98,
+      "fit_internal_overlap": 0,
+      "base_fit_ids_equal": true,
+      "same_epoch_batch_order": true,
+      "checkpoint_schema": "anydex_boya_decision_state_dict_v1",
+      "training_variant": "preactivation_selected_mse"
+    },
+    "8": {
+      "fit_records": 85,
+      "fit_internal_overlap": 0,
+      "base_fit_ids_equal": true,
+      "same_epoch_batch_order": true,
+      "checkpoint_schema": "anydex_boya_decision_state_dict_v1",
+      "training_variant": "preactivation_selected_mse"
+    }
+  },
+  "source_and_input_files_checked": 6644,
+  "shortlist_rows_checked": 362,
+  "arm_preparations": 11,
+  "arm_objects": [
+    {
+      "object_id": "graspnet_007",
+      "attempts": 3,
+      "status": "ready"
+    },
+    {
+      "object_id": "graspnet_008",
+      "attempts": 4,
+      "status": "no_full_arm_plan_in_declared_budget"
+    },
+    {
+      "object_id": "graspnet_009",
+      "attempts": 0,
+      "status": "no_geometry_admitted_candidate"
+    },
+    {
+      "object_id": "graspnet_021",
+      "attempts": 1,
+      "status": "ready"
+    },
+    {
+      "object_id": "graspnet_044",
+      "attempts": 1,
+      "status": "ready"
+    },
+    {
+      "object_id": "graspnet_048",
+      "attempts": 0,
+      "status": "no_geometry_admitted_candidate"
+    },
+    {
+      "object_id": "graspnet_066",
+      "attempts": 1,
+      "status": "ready"
+    },
+    {
+      "object_id": "graspnet_069",
+      "attempts": 1,
+      "status": "ready"
+    }
+  ],
+  "boundaries": [
+    "Primary view is explicitly a preactivation-loss control, not original recipe.",
+    "Original-code100 schema/head_recipe remains only in frozen compatibility outputs; use HEAD_CONTROL receipts for reporting.",
+    "No external test or full paper reproduction claim; internal8 have already informed debugging.",
+    "No training/physics rerun or source mutation performed."
+  ],
+  "base_metrics_retained_in_compatibility_view": {
+    "fit_weighted_metric": {
+      "interface_view": {
+        "count": 364,
+        "mse": 0.31088139597301895
+      },
+      "actual_control": {
+        "count": 364,
+        "mse": 0.0006442793863134553
+      }
+    },
+    "internal_weighted_metric": {
+      "interface_view": {
+        "count": 71,
+        "mse": 0.5318753334419417
+      },
+      "actual_control": {
+        "count": 71,
+        "mse": 0.40355078537118266
+      }
+    }
+  },
+  "reporting_caveats": [
+    "Compatibility interface view inherits base aggregate fit/internal metrics although per-head entries are control heads. These fields are not consumed by ranking. Use actual control TRAINING_RESULTS.json for aggregate metrics; do not quote interface-view aggregate metrics as new control results. Frozen artifacts were not modified."
+  ]
+}
