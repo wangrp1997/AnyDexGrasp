@@ -2,7 +2,7 @@
 
 **2026-11-06用户纠正后的最高优先级状态：整体复现未通过验收。此前“忠实复现”判断撤回；官方离线输出核验与自建DGN上的Boya适配不能合并称论文复现完成。新独立score-first入口已修正post-CGR顺序；Boya训练物体身份/划分、单帧输入和执行协议仍未完整对齐；4/10与6/10仅为有限池适配记录。先做论文物体和划分的身份对照及部署顺序对齐，明确未对齐项，再谈新的训练/评测；不以扩大自建集代替对齐。本次更正不新增采集、训练或物理试验。以下按日期保留的阶段通过只对其局部范围成立。**
 
-更新：2026-11-06。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
+更新：2026-11-07。用户要求作为强基线仔细复现，先按照作者原方法/原手/原数据验证，再谈Boya适配；不能把CanonDex修复继续混入此仓库。官方上游https://github.com/graspnet/AnyDexGrasp.git，基线commit `c9c4a43df33e40860417c7e2dd02f5122d3b2da2`，原手复现分支 `research/native-baseline-reproduction` 已推送至用户Fork；当前Boya适配分支 `research/boya-simulation-adaptation`。用户已授权 `origin=git@github.com:wangrp1997/AnyDexGrasp.git` 推送轻量阶段成果；作者remote仍为 `upstream`，不向作者推送。
 
 原算法源码保持不变。复现说明与独立工具在 `reproduction/`，大文件/原始输出放忽略目录 `outputs/`、`papers/`；官方数据/权重专用根目录 `/mnt/public/datasets/AnyDexGrasp/`。不要把源码附带手开度表当作训练数据已下载。先读 `reproduction/README.md`、`SOURCES.lock.json`、`PAPER_CODE_AUDIT.md` 和数据状态。
 
@@ -245,3 +245,16 @@ source_inventory路径/hash已补冻结；合法无几何非零经证据接成nu
 CPU32–95，native4/geometry4/arm8/execution4；CGR GPU0、物理CPU对象内wave常驻，命令长度可拆多cohort，不保证每物体一次Kit。启动核验时40件原生资产全部完成，已进入观测阶段；没有新抓取率或新训练结论。后续看pipeline_progress、stages、planning/queue_manifest与execution/PROGRESS/RESULTS，最后collection_counts与train_records；文件未产生不补结果。协议S40_COLLECTION_PROTOCOL_20261107.md、启动S40_EXPANSION_LAUNCH_20261107.md及evidence/s40_expansion_20261107。
 
 本轮只启动采集，无自动S40 head训练或EGAD评测；整体论文复现仍未完成。旧pilot5次/3null和DGN6/10全部保持，各段成本分列；CanonDex只读，大文件不提交。
+
+
+## 2026-11-07 最新：S40采集收尾、四评分头训练完成，原始部署内部检查未通过
+
+outputs/s40_collection_20261107_v1已于北京时间12:43:25 complete，97.971min；不再是后台运行状态，不恢复collector。640槽=240有效（165正/75负）+50认证早停null+350准备null；290实际、509766物理步（含旧pilot5次10500步，新285次499266步）。unknown/unexecuted为0，原400目标欠160。实际31件有标签/77种canonical480；28/40至少一次成功只属采集覆盖。pipeline_progress旧physics_steps=0是历史空字段，以physical_steps/execution最终账为准。
+
+用户问后续，已实际完成outputs/s40_decision_20261107_v1/dataset、training与raw_internal_diagnostic。专用S40 loader保留原40全train、预冻32/8原source visual mesh SHA；196fit/44internal，EGAD未使用。复用原Inference/选中输出MSE/PolyLR和既有train_head，固定混合配方20epoch/lr1e-4/batch128+WD5e-4/Poly.99；四内部头再四all40头共160optimizer更新，trainer内部8.529s，8state_dict strict reload。内部加权MSE0.445549高于fit正例比例常数0.253756；all40包含内部44条，不作heldout。
+
+仅用32-fit头，从8帧缓存原始CGR按发布DH3先评分→全局top3500→严格float32>.85→top400几何，32000query/128000组合/3200检查，几何准入0：3199table、1visible_scene_point_in_hand_hull。1423个入选候选的手型×目标输出在fit无直接监督；不是概率，也未隔离单一因果。不降阈值、不mask、不切回filter-first，不用旧ready池或标签排序。零新臂/物理/CGR，尚不能部署，不报新成功率。
+
+50次早停均在接近前，完整手体保守距物体至少177.762mm；静置50步时物体已滚动/倾倒，旧观测失效，不是手推物体。5件初始化早停、4件纯准备null、3件完整执行全负分开。先统一稳定落位后再观测/CGR，并按新摆放/抓姿/raw-depth×extra覆盖补采、与旧640另记；不能改50null成负例或重复成功凑100。当前未启动补采、新物理或EGAD；不要误把“下一步”当已启动。原DGN4/10对6/10与所有旧失败保持。
+
+14合同测试、真实8帧排序/几何集成通过，结果为0准入。详S40_COLLECTION_COMPLETION_20261107.md、S40_DECISION_RESULTS_20261107.md与evidence/s40_decision_20261107；大输出/模型/数据不提交。整体论文复现仍未通过，CanonDex只读。

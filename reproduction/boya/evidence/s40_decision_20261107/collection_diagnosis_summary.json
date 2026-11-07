@@ -1,0 +1,468 @@
+{
+  "schema": "s40_completion_diagnosis_20261107_v1",
+  "status": "passed",
+  "run": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1",
+  "results_sha256": "338f1c0639033afdeaae7dc91239f92ffe45b8b89a87efda088eb3753736e36b",
+  "records_sha256": "393b45c1723aef2a44e8fe96d9fcd5b4e1f6955344b8573fc59cfa6ad9ea26f0",
+  "ledger": {
+    "slots": 640,
+    "eligible_labels": 240,
+    "positive": 165,
+    "negative": 75,
+    "certified_terminal_nulls": 50,
+    "preparation_nulls": 350,
+    "actual_attempts": 290,
+    "physical_steps": 509766,
+    "new_actual_attempts": 285,
+    "new_physics_steps": 499266,
+    "terminal_physical_steps": 5752,
+    "eligible_physical_steps": 504014,
+    "no_unknown": true,
+    "goal_labels": 400,
+    "shortfall": 160
+  },
+  "preparation_reasons": {
+    "no_full_arm_plan_in_declared_budget": 124,
+    "no_hand_geometry_in_declared_budget": 226
+  },
+  "per_gesture_counts": {
+    "1": {
+      "target": 100,
+      "labels": 58,
+      "positive": 44,
+      "negative": 14,
+      "shortfall": 42,
+      "extra": 0,
+      "depths": {
+        "0": {
+          "target": 25,
+          "labels": 25,
+          "shortfall": 0
+        },
+        "1": {
+          "target": 25,
+          "labels": 18,
+          "shortfall": 7
+        },
+        "2": {
+          "target": 25,
+          "labels": 10,
+          "shortfall": 15
+        },
+        "3": {
+          "target": 25,
+          "labels": 5,
+          "shortfall": 20
+        }
+      }
+    },
+    "6": {
+      "target": 100,
+      "labels": 61,
+      "positive": 42,
+      "negative": 19,
+      "shortfall": 39,
+      "extra": 0,
+      "depths": {
+        "0": {
+          "target": 25,
+          "labels": 27,
+          "shortfall": 0
+        },
+        "1": {
+          "target": 25,
+          "labels": 18,
+          "shortfall": 7
+        },
+        "2": {
+          "target": 25,
+          "labels": 11,
+          "shortfall": 14
+        },
+        "3": {
+          "target": 25,
+          "labels": 5,
+          "shortfall": 20
+        }
+      }
+    },
+    "7": {
+      "target": 100,
+      "labels": 63,
+      "positive": 47,
+      "negative": 16,
+      "shortfall": 37,
+      "extra": 0,
+      "depths": {
+        "0": {
+          "target": 25,
+          "labels": 28,
+          "shortfall": 0
+        },
+        "1": {
+          "target": 25,
+          "labels": 17,
+          "shortfall": 8
+        },
+        "2": {
+          "target": 25,
+          "labels": 12,
+          "shortfall": 13
+        },
+        "3": {
+          "target": 25,
+          "labels": 6,
+          "shortfall": 19
+        }
+      }
+    },
+    "8": {
+      "target": 100,
+      "labels": 58,
+      "positive": 32,
+      "negative": 26,
+      "shortfall": 42,
+      "extra": 0,
+      "depths": {
+        "0": {
+          "target": 25,
+          "labels": 22,
+          "shortfall": 3
+        },
+        "1": {
+          "target": 25,
+          "labels": 18,
+          "shortfall": 7
+        },
+        "2": {
+          "target": 25,
+          "labels": 13,
+          "shortfall": 12
+        },
+        "3": {
+          "target": 25,
+          "labels": 5,
+          "shortfall": 20
+        }
+      }
+    }
+  },
+  "assigned_mesh_groups": {
+    "fit": 32,
+    "internal_check": 8
+  },
+  "labelled_mesh_groups": {
+    "fit": 25,
+    "internal_check": 6
+  },
+  "record_counts_by_group": {
+    "fit": 196,
+    "internal_check": 44
+  },
+  "successful_object_count": 28,
+  "zero_success_objects": [
+    {
+      "object_id": "graspnet_008",
+      "group": "internal_check",
+      "slots": 16,
+      "actual": 10,
+      "eligible": 10,
+      "positive": 0,
+      "negative": 10,
+      "terminal_null": 0,
+      "preparation_null": 6,
+      "prepare_reasons": {
+        "no_full_arm_plan_in_declared_budget": 6
+      },
+      "no_success_category": "completed_grasp_negatives",
+      "physical_steps": 21000
+    },
+    {
+      "object_id": "graspnet_009",
+      "group": "internal_check",
+      "slots": 16,
+      "actual": 0,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 0,
+      "preparation_null": 16,
+      "prepare_reasons": {
+        "no_hand_geometry_in_declared_budget": 16
+      },
+      "no_success_category": "preparation_only",
+      "physical_steps": 0
+    },
+    {
+      "object_id": "graspnet_011",
+      "group": "fit",
+      "slots": 16,
+      "actual": 4,
+      "eligible": 4,
+      "positive": 0,
+      "negative": 4,
+      "terminal_null": 0,
+      "preparation_null": 12,
+      "prepare_reasons": {
+        "no_hand_geometry_in_declared_budget": 12
+      },
+      "no_success_category": "completed_grasp_negatives",
+      "physical_steps": 8400
+    },
+    {
+      "object_id": "graspnet_018",
+      "group": "fit",
+      "slots": 16,
+      "actual": 6,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 6,
+      "preparation_null": 10,
+      "prepare_reasons": {
+        "no_hand_geometry_in_declared_budget": 8,
+        "no_full_arm_plan_in_declared_budget": 2
+      },
+      "no_success_category": "early_stop_only",
+      "physical_steps": 534
+    },
+    {
+      "object_id": "graspnet_020",
+      "group": "fit",
+      "slots": 16,
+      "actual": 6,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 6,
+      "preparation_null": 10,
+      "prepare_reasons": {
+        "no_full_arm_plan_in_declared_budget": 10
+      },
+      "no_success_category": "early_stop_only",
+      "physical_steps": 480
+    },
+    {
+      "object_id": "graspnet_027",
+      "group": "fit",
+      "slots": 16,
+      "actual": 0,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 0,
+      "preparation_null": 16,
+      "prepare_reasons": {
+        "no_hand_geometry_in_declared_budget": 16
+      },
+      "no_success_category": "preparation_only",
+      "physical_steps": 0
+    },
+    {
+      "object_id": "graspnet_043",
+      "group": "fit",
+      "slots": 16,
+      "actual": 0,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 0,
+      "preparation_null": 16,
+      "prepare_reasons": {
+        "no_full_arm_plan_in_declared_budget": 5,
+        "no_hand_geometry_in_declared_budget": 11
+      },
+      "no_success_category": "preparation_only",
+      "physical_steps": 0
+    },
+    {
+      "object_id": "graspnet_048",
+      "group": "internal_check",
+      "slots": 16,
+      "actual": 0,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 0,
+      "preparation_null": 16,
+      "prepare_reasons": {
+        "no_hand_geometry_in_declared_budget": 16
+      },
+      "no_success_category": "preparation_only",
+      "physical_steps": 0
+    },
+    {
+      "object_id": "graspnet_052",
+      "group": "fit",
+      "slots": 16,
+      "actual": 12,
+      "eligible": 12,
+      "positive": 0,
+      "negative": 12,
+      "terminal_null": 0,
+      "preparation_null": 4,
+      "prepare_reasons": {
+        "no_full_arm_plan_in_declared_budget": 4
+      },
+      "no_success_category": "completed_grasp_negatives",
+      "physical_steps": 25200
+    },
+    {
+      "object_id": "graspnet_056",
+      "group": "fit",
+      "slots": 16,
+      "actual": 14,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 14,
+      "preparation_null": 2,
+      "prepare_reasons": {
+        "no_full_arm_plan_in_declared_budget": 2
+      },
+      "no_success_category": "early_stop_only",
+      "physical_steps": 1078
+    },
+    {
+      "object_id": "graspnet_060",
+      "group": "fit",
+      "slots": 16,
+      "actual": 12,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 12,
+      "preparation_null": 4,
+      "prepare_reasons": {
+        "no_hand_geometry_in_declared_budget": 3,
+        "no_full_arm_plan_in_declared_budget": 1
+      },
+      "no_success_category": "early_stop_only",
+      "physical_steps": 852
+    },
+    {
+      "object_id": "graspnet_070",
+      "group": "fit",
+      "slots": 16,
+      "actual": 12,
+      "eligible": 0,
+      "positive": 0,
+      "negative": 0,
+      "terminal_null": 12,
+      "preparation_null": 4,
+      "prepare_reasons": {
+        "no_full_arm_plan_in_declared_budget": 4
+      },
+      "no_success_category": "early_stop_only",
+      "physical_steps": 2808
+    }
+  ],
+  "terminal_object_paths": {
+    "graspnet_018": {
+      "trials": 6,
+      "same_length": true,
+      "max_object_pose_difference_vs_first": 0.0
+    },
+    "graspnet_020": {
+      "trials": 6,
+      "same_length": true,
+      "max_object_pose_difference_vs_first": 0.0
+    },
+    "graspnet_056": {
+      "trials": 14,
+      "same_length": true,
+      "max_object_pose_difference_vs_first": 0.0
+    },
+    "graspnet_060": {
+      "trials": 12,
+      "same_length": true,
+      "max_object_pose_difference_vs_first": 3.039836883544922e-06
+    },
+    "graspnet_070": {
+      "trials": 12,
+      "same_length": true,
+      "max_object_pose_difference_vs_first": 0.0
+    }
+  },
+  "unobserved_target_output_indices": {
+    "1": [
+      2,
+      3,
+      5,
+      15,
+      18,
+      19
+    ],
+    "6": [
+      3,
+      5,
+      6,
+      15,
+      18,
+      19
+    ],
+    "7": [
+      0,
+      2,
+      15,
+      16,
+      18,
+      19
+    ],
+    "8": [
+      3,
+      4,
+      5,
+      18,
+      19
+    ]
+  },
+  "source_sha_files_checked": 1309,
+  "checks_passed": 2346,
+  "all_checks_passed": true,
+  "new_physics_steps": 0,
+  "new_network_forwards": 0,
+  "new_training_updates": 0,
+  "boundary": "Read-only diagnosis of existing fixed collection. Task stops remain null. Source COM/support geometry is a modelling proxy; exact causal separation of original pose vs collision approximation requires a separately frozen controlled experiment, not asserted here.",
+  "early_stop_hand_separation": {
+    "all50_verified": true,
+    "minimum_conservative_gap_m": 0.1777618980850432
+  },
+  "terminal_object_summary": [
+    {
+      "object_id": "graspnet_018",
+      "steps": 89,
+      "settle_xy_drift_from_declared_mm": 8.648508769146531,
+      "settle_rotation_deg": 4.591428996011224,
+      "postsettle_xy_drift_mm": 31.16553387693204
+    },
+    {
+      "object_id": "graspnet_020",
+      "steps": 80,
+      "settle_xy_drift_from_declared_mm": 14.370970713769486,
+      "settle_rotation_deg": 7.547959149204115,
+      "postsettle_xy_drift_mm": 30.896262784165042
+    },
+    {
+      "object_id": "graspnet_056",
+      "steps": 77,
+      "settle_xy_drift_from_declared_mm": 14.951839308977506,
+      "settle_rotation_deg": 23.26101208462732,
+      "postsettle_xy_drift_mm": 30.903080421074627
+    },
+    {
+      "object_id": "graspnet_060",
+      "steps": 71,
+      "settle_xy_drift_from_declared_mm": 27.90186898565322,
+      "settle_rotation_deg": 34.99510520585149,
+      "postsettle_xy_drift_mm": 30.341723617763122
+    },
+    {
+      "object_id": "graspnet_070",
+      "steps": 234,
+      "settle_xy_drift_from_declared_mm": 1.7505835500277493,
+      "settle_rotation_deg": 1.7188323271423478,
+      "postsettle_xy_drift_mm": 30.168788706081052
+    }
+  ]
+}

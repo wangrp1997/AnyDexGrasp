@@ -1,0 +1,559 @@
+{
+  "schema": "anydex_s40_decision_summary_v1",
+  "status": "complete",
+  "collection": {
+    "slots": 640,
+    "actual": 290,
+    "eligible": 240,
+    "positive": 165,
+    "negative": 75,
+    "terminal_null": 50,
+    "preparation_null": 350,
+    "physical_steps": 509766,
+    "labelled_objects": 31,
+    "target_labels": 400,
+    "shortfall": 160
+  },
+  "training": {
+    "config": {
+      "epochs": 20,
+      "batch_size": 128,
+      "learning_rate": 0.0001,
+      "weight_decay": 0.0005,
+      "optimizer": "Adam",
+      "scheduler": "original PolyLR",
+      "poly_power": 0.99,
+      "seed": 20261106,
+      "input_dim": 480,
+      "output_dim": 20
+    },
+    "optimizer_updates": 160,
+    "training_wall_s": 8.528531888965517,
+    "heads": {
+      "1": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/training/heads/g01.pt",
+        "sha256": "6a7aaf2ba377db91a3bdded94a64ac5b9082ccbd0d80f239a73c3aeb09784792",
+        "fit_records": 58,
+        "fit_positive": 44,
+        "fit_negative": 14,
+        "fit_mesh_groups": 28,
+        "strict_state_dict_reload": true
+      },
+      "6": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/training/heads/g06.pt",
+        "sha256": "07372e161c51f066add1d40810a6e64107b229e0d5e9af5d4256e4694c74a752",
+        "fit_records": 61,
+        "fit_positive": 42,
+        "fit_negative": 19,
+        "fit_mesh_groups": 29,
+        "strict_state_dict_reload": true
+      },
+      "7": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/training/heads/g07.pt",
+        "sha256": "894cee9710835548c251eb6c40cec7fd0d6fb4978eded5902c265fe0b96c5666",
+        "fit_records": 63,
+        "fit_positive": 47,
+        "fit_negative": 16,
+        "fit_mesh_groups": 29,
+        "strict_state_dict_reload": true
+      },
+      "8": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/training/heads/g08.pt",
+        "sha256": "a9ed204e4bf1f48c54722d32b30559d93fc67c6de41f1c12894be85184b9c240",
+        "fit_records": 58,
+        "fit_positive": 32,
+        "fit_negative": 26,
+        "fit_mesh_groups": 24,
+        "strict_state_dict_reload": true
+      }
+    },
+    "internal_metrics": {
+      "1": {
+        "count": 10,
+        "network_MSE": 0.5293820689025268,
+        "fit_prior_constant": 0.7916666666666666,
+        "constant_MSE": 0.27673611111111107,
+        "network_better_than_constant": false,
+        "fit_observed_targets": [
+          0,
+          1,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16,
+          17
+        ],
+        "fit_unobserved_targets": [
+          2,
+          3,
+          5,
+          15,
+          18,
+          19
+        ]
+      },
+      "6": {
+        "count": 12,
+        "network_MSE": 0.43898132633068593,
+        "fit_prior_constant": 0.7142857142857143,
+        "constant_MSE": 0.2602040816326531,
+        "network_better_than_constant": false,
+        "fit_observed_targets": [
+          0,
+          1,
+          4,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          16
+        ],
+        "fit_unobserved_targets": [
+          2,
+          3,
+          5,
+          6,
+          15,
+          17,
+          18,
+          19
+        ]
+      },
+      "7": {
+        "count": 12,
+        "network_MSE": 0.5712053834891598,
+        "fit_prior_constant": 0.7450980392156863,
+        "constant_MSE": 0.18752402921953096,
+        "network_better_than_constant": false,
+        "fit_observed_targets": [
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "fit_unobserved_targets": [
+          0,
+          2,
+          15,
+          16,
+          17,
+          18,
+          19
+        ]
+      },
+      "8": {
+        "count": 10,
+        "network_MSE": 0.21880821303962222,
+        "fit_prior_constant": 0.6041666666666666,
+        "constant_MSE": 0.30251736111111105,
+        "network_better_than_constant": true,
+        "fit_observed_targets": [
+          0,
+          1,
+          2,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "fit_unobserved_targets": [
+          3,
+          4,
+          5,
+          18,
+          19
+        ]
+      }
+    },
+    "internal_record_count": 44,
+    "weighted_internal_MSE": 0.44554871221044634,
+    "weighted_constant_MSE": 0.2537561830101916
+  },
+  "raw_internal": {
+    "object_count": 8,
+    "head_queries": 32000,
+    "expanded_combinations": 128000,
+    "geometry_checked": 3200,
+    "geometry_admitted": 0,
+    "rejection_reasons": {
+      "table": 3199,
+      "visible_scene_point_in_hand_hull": 1
+    },
+    "shortlist_gesture_counts": {
+      "1": 59,
+      "8": 2256,
+      "6": 421,
+      "7": 464
+    },
+    "shortlist_without_direct_fit_target_supervision": 1423,
+    "shortlist_target_counts": [
+      {
+        "gesture_id": 1,
+        "target_index": 0,
+        "count": 4,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 1,
+        "target_index": 1,
+        "count": 34,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 1,
+        "target_index": 2,
+        "count": 4,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 1,
+        "target_index": 5,
+        "count": 10,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 1,
+        "target_index": 7,
+        "count": 5,
+        "fit_supervision": 2
+      },
+      {
+        "gesture_id": 1,
+        "target_index": 15,
+        "count": 2,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 6,
+        "target_index": 0,
+        "count": 13,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 6,
+        "target_index": 2,
+        "count": 1,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 6,
+        "target_index": 5,
+        "count": 53,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 6,
+        "target_index": 10,
+        "count": 2,
+        "fit_supervision": 5
+      },
+      {
+        "gesture_id": 6,
+        "target_index": 11,
+        "count": 2,
+        "fit_supervision": 2
+      },
+      {
+        "gesture_id": 6,
+        "target_index": 17,
+        "count": 350,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 7,
+        "target_index": 0,
+        "count": 19,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 7,
+        "target_index": 2,
+        "count": 17,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 7,
+        "target_index": 3,
+        "count": 3,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 7,
+        "target_index": 11,
+        "count": 295,
+        "fit_supervision": 2
+      },
+      {
+        "gesture_id": 7,
+        "target_index": 14,
+        "count": 130,
+        "fit_supervision": 3
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 0,
+        "count": 28,
+        "fit_supervision": 2
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 1,
+        "count": 2,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 2,
+        "count": 1,
+        "fit_supervision": 2
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 3,
+        "count": 30,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 7,
+        "count": 170,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 14,
+        "count": 126,
+        "fit_supervision": 2
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 15,
+        "count": 1,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 17,
+        "count": 961,
+        "fit_supervision": 1
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 18,
+        "count": 926,
+        "fit_supervision": 0
+      },
+      {
+        "gesture_id": 8,
+        "target_index": 19,
+        "count": 11,
+        "fit_supervision": 0
+      }
+    ],
+    "objects": [
+      {
+        "object_id": "graspnet_007",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.1843209266662598,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 180
+      },
+      {
+        "object_id": "graspnet_008",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.213909864425659,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 184
+      },
+      {
+        "object_id": "graspnet_009",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.3746700286865234,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 163
+      },
+      {
+        "object_id": "graspnet_021",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.17972469329834,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 172
+      },
+      {
+        "object_id": "graspnet_044",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.1885712146759033,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 187
+      },
+      {
+        "object_id": "graspnet_048",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.1784660816192627,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 181
+      },
+      {
+        "object_id": "graspnet_066",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.246742010116577,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 176
+      },
+      {
+        "object_id": "graspnet_069",
+        "raw_CGR_topk": 1000,
+        "head_queries": 4000,
+        "expanded_combinations": 16000,
+        "shortlist": 400,
+        "maximum_score": 2.1784558296203613,
+        "score_is_calibrated_probability": false,
+        "geometry_checked": 400,
+        "geometry_admitted": 0,
+        "arm_checked": 0,
+        "selected": null,
+        "new_physics_steps": 0,
+        "new_CGR_forwards": 0,
+        "threshold_changed": false,
+        "old_limited_queue_used": false,
+        "shortlist_without_direct_fit_target_supervision": 180
+      }
+    ],
+    "profile": "released-dh3-v1",
+    "no_threshold_tuning": true,
+    "labels_used_for_ranking": false
+  },
+  "conclusion": "Training completes, but internal raw score-first deployment has no geometry-admitted candidates. Not accepted for deployment; no physical success or external-generalization claim.",
+  "boundaries": [
+    "Internal44 records are conditioned on original preparation and full execution; not full8-object success rate.",
+    "Final all40 heads include internal records; metrics above use only32-fit heads.",
+    "Sparse per-target supervision and preparation-conditioned training distribution are observed; individual causal contribution is not isolated.",
+    "EGAD remains unused; no extra training or physical attempts are performed."
+  ],
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "EGAD_objects_accessed": 0,
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/summarize_s40_decision.py": "6b3b05803e8c96b335b2e6e8dad2f6792fec8ced6f4a1a6fc1f81d51009c0b31",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/manifest.json": "0e34165951ef7b2d56a92145b16b953069d42dd01efeb565e1ead55f270625d6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/training/TRAINING_RESULTS.json": "b893d33b3b87170a539ca23c05d64145dd2be99cca78701c142a7b3557e5dd3c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/RESULTS.json": "2eb8ce68708070de5819c09fbfc5dc2cdee5765b7552b0123f5cdefb24f5e72a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/gesture_1.npz": "604e12a14111e0c55c4bf96745fe1beb55d54f215e7b387c3442e2c507b16be9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/gesture_6.npz": "36eb4f4709f6276f09931f99976e6cc82eab08db6a3f797b38a9e7633c0ef266",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/gesture_7.npz": "c4c44f17f5df03c16d33de9d819992368412d96684f047a86f30816a5f36af12",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/gesture_8.npz": "8d0f7cdda2ac1dc93249f05809adc2ce982f5c4b122e26a0b107c8a8f4f1844e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_007/geometry.json": "bb35d86637800e12abae58dc87a1206f379554a0b71c71d2e4895be504e745b6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_008/geometry.json": "a6eb68455f57d43ddc55b4cde286cadfb98eac3402410e14773e6926243986d0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_009/geometry.json": "b4c3f2a3cca3805a63cad11bb6d18ecf850f93900871aba430906a3cd1f3d43c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_021/geometry.json": "d43398513f8110f2d4ab12964be79c84a23aa2ba6470fc592387f97d66c5ec66",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_044/geometry.json": "6fc1c58b68ff79920382222eaa54b99d9747077a5c053b04cf9e3bd238c760f9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_048/geometry.json": "e643dd018a58ffdebd0e3b8671778817ddb45311bc372fd50e68b7dc3bfa7338",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_066/geometry.json": "37168c6979b7352fdf6cba7a1f1267fdd452f2322305da4f80af01d644d9b2da",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/raw_internal_diagnostic/graspnet_069/geometry.json": "65bed6053fa1aa12095e6ef9b8c36d63eff534dd0b8ab4a5a4e5a2e107d19d5f"
+  }
+}

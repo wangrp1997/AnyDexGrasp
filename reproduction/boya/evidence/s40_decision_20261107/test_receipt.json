@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "test_command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/wangrenpeng/boya-inhand-wm/.venv/bin/python -B -m unittest reproduction.boya.test_prepare_s40_training_data reproduction.boya.test_train_s40_decision -q",
+  "tests": 14,
+  "new_physics_steps": 0,
+  "actual_integration": {
+    "objects": 8,
+    "geometry_checked": 3200,
+    "geometry_admitted": 0,
+    "optimizer_steps": 160
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_s40_training_data.py": "fba3030388d96a663b21077ccbd6abf500fa5ff53e69fff4e852fefb762bb89a",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_prepare_s40_training_data.py": "8c7636b47185f4ce13e21843f7d58b5d89c74ee87d109f7072bdc30da89014c6",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_s40_decision.py": "a4f3ee4f385c361de19ccf702ded226212deb219feca60240aa6c34f1abf9eae",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_train_s40_decision.py": "f4882ba496871666a5b4fd78a9a5f21dcbd9491be869fd360a8bfc4313206ce1",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/score_s40_raw_candidates.py": "7f88631e854deeb0a9c76782aeda265b9b2bb0d2c4563552cb034d88bff9ebec",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/summarize_s40_decision.py": "6b3b05803e8c96b335b2e6e8dad2f6792fec8ced6f4a1a6fc1f81d51009c0b31"
+  }
+}
