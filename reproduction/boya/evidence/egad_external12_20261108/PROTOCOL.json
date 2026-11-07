@@ -1,0 +1,222 @@
+{
+  "schema": "anydex_boya_external_protocol_v1",
+  "object_count": 12,
+  "objects": [
+    {
+      "object_id": "egad_A0",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A0.obj",
+      "source_mesh_sha256": "3fd9f097a27f713f8b58a5039e8032bcd8eff40f22f1c3c0fe7706219a98799a"
+    },
+    {
+      "object_id": "egad_A3",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A3.obj",
+      "source_mesh_sha256": "a69d40893ca5e2a9d0bafe96a7b06b89828c326a9764ac2bd5457b765621f2b4"
+    },
+    {
+      "object_id": "egad_A6",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A6.obj",
+      "source_mesh_sha256": "42a3ad7d9c896dad41772b61e7048d9686efe1c18c38001134dca196c2620cfe"
+    },
+    {
+      "object_id": "egad_C0",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C0.obj",
+      "source_mesh_sha256": "2d04d5922581c9ad4259a61c035d417fb9810638e8adf08308cc88e33acbfa1b"
+    },
+    {
+      "object_id": "egad_C3",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C3.obj",
+      "source_mesh_sha256": "172a490323810d3d63725317b4b9c884d7864f3449c478271b2eace5f4992cf5"
+    },
+    {
+      "object_id": "egad_C6",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C6.obj",
+      "source_mesh_sha256": "98987f457d7fd87ff0dfb82d3dfc1e3748da186d279b6e9cd70bfda4ab5defd4"
+    },
+    {
+      "object_id": "egad_E0",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E0.obj",
+      "source_mesh_sha256": "5d55aa79aa22443ef52b637b8c54ae48376ce46b5791819fa7c1038519851cbb"
+    },
+    {
+      "object_id": "egad_E3",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E3.obj",
+      "source_mesh_sha256": "d9275de5b4c2d84a16a724babf6916f31a45f921d0461ac947a40297ec9e3efd"
+    },
+    {
+      "object_id": "egad_E6",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E6.obj",
+      "source_mesh_sha256": "ce7e31ef30804e0982ff42e3c773e65242f004f01ca16a7e9d310f8faaa7ecce"
+    },
+    {
+      "object_id": "egad_G0",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/G0.obj",
+      "source_mesh_sha256": "c54da0b70ed0e336bd34a906cc489670fb9bdfe474ab93430b8a06639701b996"
+    },
+    {
+      "object_id": "egad_G3",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/G3.obj",
+      "source_mesh_sha256": "6d6f6ee2ff1103588028fad19c4d322ab3dfe1ad4dea1ebf9e9b420a295ee4e2"
+    },
+    {
+      "object_id": "egad_G6",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/G6.obj",
+      "source_mesh_sha256": "bb0221bd227ee5c9383c11359c7eadcc793232265322927b7926ca2afa18dbf1"
+    }
+  ],
+  "selection_rule": "Official49 EGAD grid rows A,C,E,G x cols0,3,6, fixed before any RGBD/CGR/score/grasp; no replacement",
+  "head_recipe": "preactivation_selected_mse",
+  "original_training_recipe": false,
+  "training_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json",
+    "sha256": "68dbd71088928431f46d612d1458d4174a43dc54326fc9781c996667cbaf77ce"
+  },
+  "arm_budget_per_object": 4,
+  "physical_attempts_per_object": 1,
+  "outcome_dependent_retry": false,
+  "benchmark_only": true,
+  "training_writeback": false,
+  "source_unit_to_m": 0.001,
+  "scale_boundary": "Uniform simulation assumption: one source unit=1mm; not verified AnyDex printed-object size; no per-object normalization",
+  "object_mass_kg": 0.1,
+  "object_friction": 0.6,
+  "initial_pose_rule": "Native axes, AABB XY(-.75,.1), visual/collision minimum-Z at0, original per-object settling plus cold recreation. No outcome-guided relocation.",
+  "settling_policy": {
+    "stability_basis": "Continuous measured pose stationarity, native twist sanity, then explicit cold-recreation hold; instantaneous solver twist is retained",
+    "dt_s": 0.004,
+    "min_steps": 500,
+    "max_steps": 5000,
+    "window_steps": 250,
+    "max_linear_speed_m_s": 0.02,
+    "max_angular_speed_rad_s": 0.5,
+    "max_window_translation_m": 0.0002,
+    "max_window_rotation_rad": 0.005,
+    "cold_recreation_steps": 750,
+    "max_recreation_translation_m": 0.001,
+    "max_recreation_rotation_rad": 0.005,
+    "lane_spacing_m": 2.0
+  },
+  "native_asset_policy": {
+    "max_failed_partitions": 32,
+    "tolerance_m": 2e-05
+  },
+  "coacd_policy": {
+    "threshold": 0.01,
+    "resolution": 2000,
+    "mcts_nodes": 75,
+    "mcts_iterations": 20,
+    "mcts_max_depth": 3,
+    "max_convex_hull": 128,
+    "preprocess_mode": "auto",
+    "preprocess_resolution": 50,
+    "pca": false,
+    "merge": true,
+    "decimate": false,
+    "max_ch_vertex": 256,
+    "extrude": false,
+    "seed": 20261107,
+    "timeout_s": 300
+  },
+  "representation": {
+    "branches": 1,
+    "seed": 20261108,
+    "num_seed": 2048,
+    "voxel_size": 0.005,
+    "depth_min": 0.2,
+    "depth_max": 0.65,
+    "checkpoint": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+      "sha256": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1"
+    }
+  },
+  "geometry_workers": 4,
+  "plan_workers": 4,
+  "execution_workers": 4,
+  "physics_device": "cpu",
+  "gpu": "cuda:0",
+  "include_no_plan_in_denominator": true,
+  "failure_policy": "Complete all declared objects, keep asset/infrastructure errors separately; no model/gate/pose/object changes after outcome; incomplete batch never certified as12 outcomes",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_hand_domain.py": "5b8197c3a281eeac3bbc7546b8f795bb8608f84a51ac26cfeae3aa37d2d09ea0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_prehead_domain.py": "8abf5a688410b9df4744c20358b0f3be83ee12b886911184cfa90211c699c9ec",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/deploy_score_first.py": "8b8649ccab0e41ff6570e2cae8dc129d74f2f4d316dd7bc66afc99f37d3d6702",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py": "58d1cce26b6e7422f11e08e34750e7a6c690abde48b11eda51b625a6807d6b49",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/native_arm.py": "453ea58557c182c566ec306e6c0de036ccf16f5bed09cf97ff6a5ccf92921781",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue_v3.py": "0e76ef60f7122ecb292a55c02e18bfacaece90e054b2816428817d85fac01ead",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_native.py": "ca8164a3b5b4c0f3cd1e76e8d82e6f282ef6b7967d3c96f4d096489519676528",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/settle_s40_scenes.py": "742b9bd7a02c9aeca7c13af024b048e6ca7fc4af9de8e59813b8d14b4bcfda46",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py": "ee8b43bc334ba11e394d4030d377c0bb5ced211c9bff85ca92ac1bbc33f97093",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py": "6d88cd174be92fb3db2af603b69056952c81b897e8d49b5cefa1da93b216f266",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/utils/pt_utils.py": "0ed31e3a708c9e94d7d1a67ac212191b1325948728c62ba90f897c698436a468",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_rgbd_frame.py": "39d569525b2e257c5075c36fb5e18727dde6774431aa3a9e88990e8abd30cf4e"
+  },
+  "input_sha256": {
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_inventory.json": "e6835c6ebd0d550b9ec8576ea8038db74f85976fcbf5db1f0a1a6de7f8ca3251",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json": "68dbd71088928431f46d612d1458d4174a43dc54326fc9781c996667cbaf77ce",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json": "62a2f01339726b8af882748b07ddaa1c8d9f097bd82056cd05ea1b6b574cc11d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/s40_hand_domain_20261107/POLICY.json": "3d8aae4c2ab0e111ebf8a67d529f4d163c92be37293e206941013fd0d5ffaef2",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A0.obj": "3fd9f097a27f713f8b58a5039e8032bcd8eff40f22f1c3c0fe7706219a98799a",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A3.obj": "a69d40893ca5e2a9d0bafe96a7b06b89828c326a9764ac2bd5457b765621f2b4",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A6.obj": "42a3ad7d9c896dad41772b61e7048d9686efe1c18c38001134dca196c2620cfe",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C0.obj": "2d04d5922581c9ad4259a61c035d417fb9810638e8adf08308cc88e33acbfa1b",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C3.obj": "172a490323810d3d63725317b4b9c884d7864f3449c478271b2eace5f4992cf5",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C6.obj": "98987f457d7fd87ff0dfb82d3dfc1e3748da186d279b6e9cd70bfda4ab5defd4",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E0.obj": "5d55aa79aa22443ef52b637b8c54ae48376ce46b5791819fa7c1038519851cbb",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E3.obj": "d9275de5b4c2d84a16a724babf6916f31a45f921d0461ac947a40297ec9e3efd",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E6.obj": "ce7e31ef30804e0982ff42e3c773e65242f004f01ca16a7e9d310f8faaa7ecce",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/G0.obj": "c54da0b70ed0e336bd34a906cc489670fb9bdfe474ab93430b8a06639701b996",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/G3.obj": "6d6f6ee2ff1103588028fad19c4d322ab3dfe1ad4dea1ebf9e9b420a295ee4e2",
+    "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/G6.obj": "bb0221bd227ee5c9383c11359c7eadcc793232265322927b7926ca2afa18dbf1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g01.pt": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g06.pt": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g07.pt": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g08.pt": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/SELECTION.json": "7494b8007e29c052803078400f8e39891eb2bca8558f77e054838ed20dbc5259",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/objects.json": "698d4d1478063b396229e6784c3879b6f60266dc7dcc72c7ae0049562dc6886f"
+  },
+  "created_unix_s": 1794065160.0922632,
+  "external_claim_boundary": "Independent Boya external geometry simulation control, no claim of EGAD absence from upstream CGR pretraining or reproduction of original real hardware/printing scale",
+  "asset_preparation_amendment_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/ASSET_PREPARATION_AMENDMENT.json",
+    "sha256": "989087f0f7feb23aae1b82baf05cecd3138b1f7f3e3fa5127eb950e57e6d01ba"
+  },
+  "active_asset_policy": {
+    "method": "Uniform standalone V-HACD all12",
+    "parameters": {
+      "resolution": 100000,
+      "concavity": 0.0025,
+      "alpha": 0.05,
+      "beta": 0.05,
+      "gamma": 0.0005,
+      "minVolumePerCH": 0.0001,
+      "maxNumVerticesPerCH": 64,
+      "depth": 20,
+      "planeDownsampling": 4,
+      "convexhullDownsampling": 4,
+      "pca": 0,
+      "mode": 0,
+      "convexhullApproximation": 1
+    },
+    "worker_timeout_s": 120,
+    "approximation_acceptance": "Convex/watertight/positive-volume components and AABB bound max(1mm,2% longest source dimension)",
+    "selection_ref": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v2/SELECTION.json",
+      "sha256": "2bd005352dee03159299b7a6ea4bf9770ce03d5dd3c5772b35d7c3c5f113b5ec"
+    },
+    "source_scene_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/objects.json",
+    "normalized_selection_ref": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/SELECTION.json",
+      "sha256": "7494b8007e29c052803078400f8e39891eb2bca8558f77e054838ed20dbc5259"
+    },
+    "geometry_approximation_limit": "V-HACD keeps fixed AABB bound; sampled source/component surface gaps up to16.62mm and some cavity filling are retained limitations. Native20um import is not20um source-mesh fidelity. Results describe this explicit proxy environment."
+  },
+  "coacd_policy_note": "Historical attempted recipe only; actual original parameters in scenes/SELECTION.json; active assets uniformly V-HACD per amendment before any frame/score/grasp.",
+  "convex_face_normalization_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/CONVEX_FACE_NORMALIZATION.json",
+    "sha256": "f4d59d703e658a57472e42aa1badd36bdfaeec2ceeb8d33144a53e2fd85d4c8e"
+  }
+}

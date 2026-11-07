@@ -1,0 +1,29 @@
+{
+  "schema": "anydex_boya_external_preoutcome_asset_amendment_v1",
+  "reason": "Generic CoACD over-decomposition hit300s per-object limits; use one bounded standalone V-HACD recipe for every fixed external object",
+  "prior_protocol_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol_before_asset_amendment.json",
+    "sha256": "dbcdebc3baf3450694704f22dc55b411d3ace5b113b381b9c13faef3d79eb5df"
+  },
+  "prior_asset_selection_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes/SELECTION.json",
+    "sha256": "25d78e5935455325c55e86c02ac68399d6792fc114dd501554f4b75b04505d4f"
+  },
+  "stop_receipt_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes/STOP_RECEIPT.json",
+    "sha256": "d706042ad453efd2385f8465ba059d851297197809dfa8adecafcb01677a6268"
+  },
+  "new_asset_selection_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v2/SELECTION.json",
+    "sha256": "2bd005352dee03159299b7a6ea4bf9770ce03d5dd3c5772b35d7c3c5f113b5ec"
+  },
+  "old_source_kept": true,
+  "all12_ids_models_scoring_mapping_control_budget_unchanged": true,
+  "external_RGBD_frames": 0,
+  "external_CGR_forwards": 0,
+  "external_head_queries": 0,
+  "external_grasp_attempts": 0,
+  "no_object_or_outcome_conditioned_collision_choice": true,
+  "original_coacd_metadata_note": "Actual v1 selection had mcts_iterations75/mcts_nodes20; initial protocol labels were reversed. Preserve original and use actual selection receipt for old cost/parameters.",
+  "created_unix_s": 1794066156.6442764
+}

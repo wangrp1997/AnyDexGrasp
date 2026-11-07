@@ -1,0 +1,791 @@
+{
+  "schema": "anydex_egad_external12_independent_frozen_audit_v1",
+  "created_unix_s": 1794067636.8863556,
+  "run": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1",
+  "issues": [],
+  "checks": {
+    "source_input_freeze": {
+      "evaluation_source_count": 122,
+      "evaluation_input_count": 40,
+      "union_sources_checked": 126,
+      "union_inputs_checked": 1126,
+      "changed": [],
+      "conflicting_bindings": []
+    },
+    "protocol_and_denominator": {
+      "protocol_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol.json",
+        "sha256": "49e3f6b417be62976187db7f813a434fab24d1f2c67edd9cb1bb07c650bf4e91"
+      },
+      "identities": [
+        "egad_A0",
+        "egad_A3",
+        "egad_A6",
+        "egad_C0",
+        "egad_C3",
+        "egad_C6",
+        "egad_E0",
+        "egad_E3",
+        "egad_E6",
+        "egad_G0",
+        "egad_G3",
+        "egad_G6"
+      ],
+      "count": 12,
+      "preoutcome_freeze": true
+    },
+    "models": {
+      "training_report_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json",
+        "sha256": "68dbd71088928431f46d612d1458d4174a43dc54326fc9781c996667cbaf77ce"
+      },
+      "heads": {
+        "1": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g01.pt",
+          "sha256": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+          "training_variant": "preactivation_selected_mse",
+          "author_original_training": false,
+          "external_mesh_overlap": 0
+        },
+        "6": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g06.pt",
+          "sha256": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+          "training_variant": "preactivation_selected_mse",
+          "author_original_training": false,
+          "external_mesh_overlap": 0
+        },
+        "7": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g07.pt",
+          "sha256": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+          "training_variant": "preactivation_selected_mse",
+          "author_original_training": false,
+          "external_mesh_overlap": 0
+        },
+        "8": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g08.pt",
+          "sha256": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+          "training_variant": "preactivation_selected_mse",
+          "author_original_training": false,
+          "external_mesh_overlap": 0
+        }
+      },
+      "variant": "preactivation_selected_mse",
+      "independent_fit_mesh_metadata_intersection": 0
+    },
+    "novelty": {
+      "external_mesh_identities": 24,
+      "excluded_mesh_identities": 138,
+      "excluded_object_ids": 98,
+      "mesh_intersection": [],
+      "object_id_intersection": [],
+      "exclusion_manifest_refs": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/objects.json",
+          "sha256": "ea9cb780508291f571d8e46704231a9e7f7e8a411cb82ca4a9a62dfb03a370b2",
+          "mesh_identities": 80
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json",
+          "sha256": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7",
+          "mesh_identities": 8
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+          "sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+          "mesh_identities": 50
+        }
+      ],
+      "boundary": "Byte-SHA identity of source/prepared geometry only; not geometric or semantic novelty proof"
+    },
+    "arm_budget_and_first_ready": {
+      "objects": [
+        {
+          "object_id": "egad_A0",
+          "arm_preparations": 2,
+          "status": "ready",
+          "ranks": [
+            10,
+            17
+          ]
+        },
+        {
+          "object_id": "egad_A3",
+          "arm_preparations": 2,
+          "status": "ready",
+          "ranks": [
+            36,
+            58
+          ]
+        },
+        {
+          "object_id": "egad_A6",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            17,
+            22,
+            26,
+            33
+          ]
+        },
+        {
+          "object_id": "egad_C0",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            1,
+            6,
+            11,
+            16
+          ]
+        },
+        {
+          "object_id": "egad_C3",
+          "arm_preparations": 1,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            16
+          ]
+        },
+        {
+          "object_id": "egad_C6",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            47,
+            51,
+            56,
+            65
+          ]
+        },
+        {
+          "object_id": "egad_E0",
+          "arm_preparations": 4,
+          "status": "ready",
+          "ranks": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "object_id": "egad_E3",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            46,
+            59,
+            69,
+            75
+          ]
+        },
+        {
+          "object_id": "egad_E6",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            33,
+            35,
+            45,
+            48
+          ]
+        },
+        {
+          "object_id": "egad_G0",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            0,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "object_id": "egad_G3",
+          "arm_preparations": 4,
+          "status": "no_full_arm_plan_in_declared_budget",
+          "ranks": [
+            0,
+            6,
+            8,
+            9
+          ]
+        },
+        {
+          "object_id": "egad_G6",
+          "arm_preparations": 0,
+          "status": "no_geometry_admitted_candidate",
+          "ranks": []
+        }
+      ],
+      "total_arm_preparations": 37,
+      "ready_count": 3,
+      "null_count": 9,
+      "per_object_maximum": 4
+    },
+    "arm_null_rejections": {
+      "object_count": 8,
+      "attempts": 29,
+      "counts": {
+        "IK_local_nonconvergence": 19,
+        "direct_path_rejected": 10,
+        "lift_rejected": 0
+      },
+      "objects": [
+        {
+          "object_id": "egad_A6",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 2,
+            "direct_path_rejected": 2
+          },
+          "admissions": [
+            {
+              "object_id": "egad_A6",
+              "global_score_rank": 17,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00017/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_A6",
+              "global_score_rank": 22,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00022/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_A6",
+              "global_score_rank": 26,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00026/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_A6",
+              "global_score_rank": 33,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00033/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            }
+          ]
+        },
+        {
+          "object_id": "egad_C0",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 3,
+            "direct_path_rejected": 1
+          },
+          "admissions": [
+            {
+              "object_id": "egad_C0",
+              "global_score_rank": 1,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00001/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_C0",
+              "global_score_rank": 6,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00006/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_C0",
+              "global_score_rank": 11,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00011/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_C0",
+              "global_score_rank": 16,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00016/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            }
+          ]
+        },
+        {
+          "object_id": "egad_C3",
+          "arm_preparations": 1,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 1
+          },
+          "admissions": [
+            {
+              "object_id": "egad_C3",
+              "global_score_rank": 16,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C3_port_rank_00016/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            }
+          ]
+        },
+        {
+          "object_id": "egad_C6",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 2,
+            "direct_path_rejected": 2
+          },
+          "admissions": [
+            {
+              "object_id": "egad_C6",
+              "global_score_rank": 47,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00047/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_C6",
+              "global_score_rank": 51,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00051/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_C6",
+              "global_score_rank": 56,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00056/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_C6",
+              "global_score_rank": 65,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00065/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            }
+          ]
+        },
+        {
+          "object_id": "egad_E3",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 2,
+            "direct_path_rejected": 2
+          },
+          "admissions": [
+            {
+              "object_id": "egad_E3",
+              "global_score_rank": 46,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00046/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_E3",
+              "global_score_rank": 59,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00059/plan_000/admission_failure.json",
+                "sha256": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_E3",
+              "global_score_rank": 69,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00069/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_E3",
+              "global_score_rank": 75,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00075/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            }
+          ]
+        },
+        {
+          "object_id": "egad_E6",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "direct_path_rejected": 2,
+            "IK_local_nonconvergence": 2
+          },
+          "admissions": [
+            {
+              "object_id": "egad_E6",
+              "global_score_rank": 33,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00033/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_E6",
+              "global_score_rank": 35,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00035/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_E6",
+              "global_score_rank": 45,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00045/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            },
+            {
+              "object_id": "egad_E6",
+              "global_score_rank": 48,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00048/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            }
+          ]
+        },
+        {
+          "object_id": "egad_G0",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 3,
+            "direct_path_rejected": 1
+          },
+          "admissions": [
+            {
+              "object_id": "egad_G0",
+              "global_score_rank": 0,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00000/plan_000/admission_failure.json",
+                "sha256": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_G0",
+              "global_score_rank": 2,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00002/plan_000/admission_failure.json",
+                "sha256": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_G0",
+              "global_score_rank": 3,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00003/plan_000/admission_failure.json",
+                "sha256": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_G0",
+              "global_score_rank": 4,
+              "category": "direct_path_rejected",
+              "reason": "Direct path rejected; no obstacle-replanning claim",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00004/plan_000/admission_failure.json",
+                "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+              },
+              "path_explicit_in_plan_row": false
+            }
+          ]
+        },
+        {
+          "object_id": "egad_G3",
+          "arm_preparations": 4,
+          "rejection_counts": {
+            "IK_local_nonconvergence": 4
+          },
+          "admissions": [
+            {
+              "object_id": "egad_G3",
+              "global_score_rank": 0,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00000/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_G3",
+              "global_score_rank": 6,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00006/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_G3",
+              "global_score_rank": 8,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00008/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            },
+            {
+              "object_id": "egad_G3",
+              "global_score_rank": 9,
+              "category": "IK_local_nonconvergence",
+              "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+              "admission_failure_ref": {
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00009/plan_000/admission_failure.json",
+                "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+              },
+              "path_explicit_in_plan_row": true
+            }
+          ]
+        }
+      ],
+      "all_rejected_arm_plan_counts": {
+        "direct_path_rejected": 13,
+        "IK_local_nonconvergence": 21,
+        "lift_rejected": 0
+      },
+      "null_objects_with_only_IK_rejections": [
+        "egad_C3",
+        "egad_G3"
+      ],
+      "null_objects_with_mixed_IK_and_direct_path_rejections": [
+        "egad_A6",
+        "egad_C0",
+        "egad_C6",
+        "egad_E3",
+        "egad_E6",
+        "egad_G0"
+      ]
+    },
+    "physical_execution": {
+      "actual": [
+        {
+          "object_id": "egad_A3",
+          "trial_id": "egad_A3_port_rank_00058",
+          "label": 0,
+          "label_eligible": true,
+          "actual_grasps": 1,
+          "physical_steps": 2100,
+          "benchmark_only": true
+        },
+        {
+          "object_id": "egad_E0",
+          "trial_id": "egad_E0_port_rank_00004",
+          "label": 0,
+          "label_eligible": true,
+          "actual_grasps": 1,
+          "physical_steps": 2100,
+          "benchmark_only": true
+        },
+        {
+          "object_id": "egad_A0",
+          "trial_id": "egad_A0_port_rank_00017",
+          "label": 1,
+          "label_eligible": true,
+          "actual_grasps": 1,
+          "physical_steps": 2100,
+          "benchmark_only": true
+        }
+      ],
+      "attempts": 3,
+      "successes": 1,
+      "failures": 2,
+      "no_plan": 9,
+      "hand_geometry_null": [
+        "egad_G6"
+      ],
+      "arm_null": [
+        "egad_A6",
+        "egad_C0",
+        "egad_C3",
+        "egad_C6",
+        "egad_E3",
+        "egad_E6",
+        "egad_G0",
+        "egad_G3"
+      ],
+      "steps": 6300,
+      "success_fraction_over_fixed_external_objects": 0.08333333333333333,
+      "errors": []
+    },
+    "training_not_written_back": {
+      "sample_count": 435,
+      "positive": 302,
+      "negative": 133,
+      "dataset_manifest_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json",
+        "sha256": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb"
+      },
+      "gesture_npz_unchanged": [
+        {
+          "gesture_id": 1,
+          "count": 98,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_1.npz",
+          "sha256": "3ed91e3b22f442b2997d6bf1638e683f5df75bee0e1c50759749ba09293f9259"
+        },
+        {
+          "gesture_id": 6,
+          "count": 120,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_6.npz",
+          "sha256": "c1dfdb84ea60c33b090081de0fc4ad51a0c34748dfb5e5ec9dff0a4873ddbc39"
+        },
+        {
+          "gesture_id": 7,
+          "count": 117,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_7.npz",
+          "sha256": "0cf4a7b126801be0085708fb0d550bfe7f7ffdccd452719817ae3db8ca172f0b"
+        },
+        {
+          "gesture_id": 8,
+          "count": 100,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_8.npz",
+          "sha256": "2f68bc7d68b9e46d2089c0820eb8411aeaed604941cd01e69ea7690989b06196"
+        }
+      ],
+      "execution_benchmark_only": true,
+      "training_writeback": false,
+      "new_training_updates": 0
+    },
+    "media": {
+      "status": "complete",
+      "video_count": 3,
+      "videos": [
+        {
+          "object_id": "egad_A3",
+          "label": 0,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/egad_A3/isaac_full_arm_pickup.mp4",
+          "sha256": "1bd1c39362fb8686b2a7df44d296503aafa315f9a0912ba225b40e3b2795e0ce"
+        },
+        {
+          "object_id": "egad_E0",
+          "label": 0,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/egad_E0/isaac_full_arm_pickup.mp4",
+          "sha256": "4a96c464aa2851e8b02228755be91542f5610ef687fdbd921e46c2ba48e361e2"
+        },
+        {
+          "object_id": "egad_A0",
+          "label": 1,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/egad_A0/isaac_full_arm_pickup.mp4",
+          "sha256": "90ed26ac6cee2a0735f98c176ffc2433cc254f387484a6dabfdac8017757ded3"
+        }
+      ],
+      "video_index": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/index.html",
+      "render_replay_physics": "No physical re-execution requested by audit; media exporter replays stored trajectories"
+    }
+  },
+  "claim": {
+    "whole_pipeline_successes_over_fixed_external12": "1/12",
+    "may_claim_AnyDex_score_upper_bound": false,
+    "reason": "Eight no-plan objects exhausted a finite full-arm/straight-path preparation budget without a physical grasp; one has no hand-geometry admission. Three actual top1 executions yielded one success and two failures. Static visible-cloud/source-table admission is a geometric proxy, not a load-bearing certificate. This distinguishes integrated pipeline performance from scorer-only quality or a method/hardware upper bound.",
+    "not_claimed": [
+      "Eight arm-null objects physically ungraspable",
+      "AnyDex published algorithm upper bound",
+      "Original paper real-robot success rate reproduced",
+      "Independent proof that only scoring caused two physical failures"
+    ]
+  },
+  "audit_performed_new_training": false,
+  "audit_performed_new_physics": false,
+  "audit_modified_sources": false,
+  "execution_results_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/RESULTS.json",
+    "sha256": "3826cfe110bd0e0f186645b16f9b2792422e4ae7e7d09850a268b55e3488b8bb"
+  },
+  "evaluation_freeze_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/EVALUATION_FREEZE.json",
+    "sha256": "fa2983aaf5e21aa35bd4226cbc7a5a0e9958052aafa639e6eb4c67b57554f1fe"
+  }
+}

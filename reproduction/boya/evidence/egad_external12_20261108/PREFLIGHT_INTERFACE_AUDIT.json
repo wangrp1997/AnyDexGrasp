@@ -1,0 +1,46 @@
+{
+  "schema": "boya_external_interface_readonly_audit_v1",
+  "scope": "Static/read-only interface inspection; no RGBD/CGR/physics/model fitting or source modifications",
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_external_runtime.py": "8739597e364c547b15d6659aec63f4e177e7a6e4f9c8770fa85452145e54470e",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_boya_external_observations.py": "b3adeb0189f3b301e0d681b1b523000cd520861689aaca100c3753dd9e7c878d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_egad_external12.py": "f11cf21bbe61f1cf119e57c2b7888eb611ef80d37b38b8c21c33a20f4c34f002",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_external.py": "4100bae60ea803cf9f4cd8a8c94669f947254be0e47e0b4979af05c5becbe7b6",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_external_top1.py": "8881df9795e57bff7b1321499a722728d168af2b4b28c228f8da3e9c51a5101c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py": "ee8b43bc334ba11e394d4030d377c0bb5ced211c9bff85ca92ac1bbc33f97093",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py": "6d88cd174be92fb3db2af603b69056952c81b897e8d49b5cefa1da93b216f266",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/settle_s40_scenes.py": "742b9bd7a02c9aeca7c13af024b048e6ca7fc4af9de8e59813b8d14b4bcfda46"
+  },
+  "protocol_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol.json",
+    "sha256": "dbcdebc3baf3450694704f22dc55b411d3ace5b113b381b9c13faef3d79eb5df"
+  },
+  "blockers": [
+    {
+      "severity": "certain_prepare_failure",
+      "source": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_external.py",
+      "problem": "RANKING_FREEZE omits query_count_definitions, required by prepare_boya_external_top1.validate_ranking_freeze before planning.",
+      "required": {
+        "geometry_calls_before_freeze": "full_cloud_collision_calls",
+        "support_plane_queries_before_freeze": "open_hand_table_support_function_queries_not_full_collision_admission"
+      }
+    }
+  ],
+  "freeze_gap": [
+    {
+      "problem": "CGR checkpoint is not in protocol input_sha256/EVALUATION_FREEZE. Driver relies on run_collection_representation default path; engine records actual SHA after load, but no predeclared expected SHA is checked. Replacement between freeze and model construction would be accepted.",
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+      "currently_protocol_frozen": false,
+      "minimal_fix": "Bind CGR path+SHA in protocol input_sha256 before freeze and pass explicit --checkpoint in driver; preserve original released checkpoint."
+    }
+  ],
+  "confirmed_ok": [
+    "External scene and observation roles are explicit; original geometry/camera helpers do not run S40 object-ID loader.",
+    "Source geometry is converted by uniform .001 on disk; runtime row.scale=1 is correct and avoids double scaling.",
+    "Renderer output files/T_WC/intrinsic/depth_factor/object_geometry fields satisfy original read_frame and external evaluator.",
+    "Settling wrapper uses one object per original settle.worker process; worker has no S40 identity gate and reports generic object IDs.",
+    "Initial scene manifest and emitted root objects.json paths are distinct; child stages write outputs, not frozen Python sources.",
+    "Training report and all four head checkpoint SHAs are already protocol inputs and driver verifies before/after each stage.",
+    "Pinned prior arm helper and read-only rendering helper current SHAs match."
+  ]
+}

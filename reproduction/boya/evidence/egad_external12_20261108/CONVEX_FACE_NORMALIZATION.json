@@ -1,0 +1,23 @@
+{
+  "schema": "anydex_boya_external_preoutcome_convex_normalization_v1",
+  "prior_protocol_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol_before_convex_face_normalization.json",
+    "sha256": "13c462d3b51d202da2a504eaf0d5a394dad3b321b98ba992d5cc58eeff74479e"
+  },
+  "selection_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/SELECTION.json",
+    "sha256": "7494b8007e29c052803078400f8e39891eb2bca8558f77e054838ed20dbc5259"
+  },
+  "scene_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/objects.json",
+    "sha256": "698d4d1478063b396229e6784c3879b6f60266dc7dcc72c7ae0049562dc6886f"
+  },
+  "reason": "Three V-HACD triangle components numerically nonconvex despite closed positive-volume point clouds. Normalize all81 components for all12 using original vertex convex envelopes; no points added/no dilation/no component removal/no V-HACD rerun.",
+  "all12_identity_models_mapping_policy_arm_control_unchanged": true,
+  "external_rgbd": 0,
+  "external_cgr_forwards": 0,
+  "external_head_queries": 0,
+  "external_grasps": 0,
+  "approximation_limit": "V-HACD keeps fixed AABB bound; sampled source/component surface gaps up to16.62mm and some cavity filling are retained limitations. Native20um import is not20um source-mesh fidelity. Results describe this explicit proxy environment.",
+  "created_unix_s": 1794066877.1227696
+}

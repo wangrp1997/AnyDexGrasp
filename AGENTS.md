@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-08 最新：冻结版本EGAD12外部测试已完成，1/12
+
+用户要求停止围绕内部8件追满分并测试未用外部物体。outputs/egad_external12_20261107_v1全阶段complete，最终protocol SHA49e3f6b417be62976187db7f813a434fab24d1f2c67edd9cb1bb07c650bf4e91。官方EGAD49编号A/C/E/G×0/3/6固定12，source/米制mesh/digest与训练S40/旧DGN均不重叠，不能声称未见于上游CGR预训练。统一1源单位1mm/.1kg/.6摩擦/同XY，非验证的AnyDex打印尺度。
+
+原CoACD403.93s后4超时/4停止/1完成/3未派发保留；首次新RGBD/评分/抓取前统一全12 V-HACD4.556s。3个数值非凸三角面部件使G3/G6原v2失败，全12/81组件统一原顶点凸包规范面1.811s后v3全ready，不加点/膨胀/缩放/删部件/不重跑V-HACD。AABB虽约2mm内，采样表面差最高16.62mm并有凹部填补，是重要近似限制；native20µm仅证明导入凸体保留，不能冒称源形状精确。旧失败/成本及preoutcome修订均保留。
+
+12稳定落位+原cold750检查通过，15400初始化对象步；新12RGBD+原CGR共享1次载入/12前向，四32-fit preactivation头未变，0训练。2530query/8618允许组合，11/12有手几何；37完整臂准备，3ready/9null。A0各一次2100步成功+101.249mm；A3/E0各一次实际失败，末态都失去载荷未离桌；总6300抓取步。**完整结果1成功/2实际失败/8臂无计划/1手几何无候选=1/12**。8臂null29拒绝=19IK局部不收敛+10直接路径拒绝，非全局不可达证明，没做cuRobo障碍重规划。G6手几何全拒。没有根据结果移物/加预算/重抓/换对象，benchmark-only不入435。
+
+三段235帧/25fps/9.4s正常速度RTX（含2失败）全部完成，在execution/videos/index.html；9无计划没有动作录像，observation_contact_sheet.jpg为12件新输入总览。33tests、1857唯一输入/源码SHA、原控制/时钟/源网格末态承载与媒体绑定独立复核通过，parallel独立审计确认四模型和435/302+/133-不变。冻结流水线437.859s不含资产准备/实现/检查；CPU4物理，GPU0表示/RTX，未用GPU1。
+
+新外围external schema独立，复用原手域/排序/几何、prepare_object/verify_selected、native-v3 executor和原renderer，不伪装S40，也不使用旧兼容view。全输入/源码EVALUATION_FREEZE不再修改。报告reproduction/boya/EGAD_EXTERNAL12_RESULTS_20261108.md；轻量证据evidence/egad_external12_20261108。内部5/8不代表外部成绩，当前完整适配不足，8件被臂限制且代理粗，不能把1/12当AnyDex评分器/算法上限或论文复现。**本轮已收尾，停止对内部8/外部12继续逐件调参或重抓；若后续研究须独立协议隔离规划和代理限制。** CanonDex只读，旧批次不恢复，只push相关轻量文件。
+
 ## 2026-11-07 最新：训练死区对照已完成，内部8件5成功/3无计划
 
 原code100评分的254个fit正例中113个预测严格0，最终ReLU直接梯度死区解释主要训练误差；fit-only BN重估无收益（fit .310835/internal .532770，0优化/物理）。新增明确的Boya训练适配train_s40_preactivation_control.py，用可微BN7 clone将原选中输出MSE作用在ReLU前，部署仍原Inference/ReLU。不是作者原训练，不改官方源码、435记录、32-fit/8-internal、seed/每epoch shuffle/优化配方/固定100轮。400更新、6.586s，fit .000644279/internal .403550785，fit正例零预测0/254；内部仍差于常数 .208669，不称可靠评分。

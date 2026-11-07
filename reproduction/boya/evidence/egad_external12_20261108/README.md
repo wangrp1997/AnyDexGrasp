@@ -1,0 +1,7 @@
+# 冻结外部12件：轻量证据
+
+SUMMARY.json保留所有12身份/分母、来源、准备、实际执行和媒体核验，物理数据/网格/模型/视频留outputs。完整逐射线和采样几何近似在SUMMARY所引用各资产metadata及DELIVERY_SUMMARY_FULL.json，不将粗代理说成源网格精确。
+
+PROTOCOL为任何新评分/结果之前固定的最终协议。两个资产修订同样发生在外部forward/抓取之前，保留旧CoACD超时和V-HACD面数值失败，不改算法/模型或按抓取结果换资产。
+
+PREFLIGHT_INTERFACE_AUDIT记录最终冻结前找到的元数据缺项/CGR权重冻结缺口；PREFLIGHT_RESOLUTIONS说明两项已在首次新前向前修正。INDEPENDENT_FROZEN_AUDIT为真实完成后的只读审计。verify_delivery.py需要未提交的原服务器文件，不重新训练/试抓。

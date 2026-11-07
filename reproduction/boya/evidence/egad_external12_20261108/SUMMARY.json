@@ -1,0 +1,1160 @@
+{
+  "schema": "anydex_boya_egad_external12_delivery_v1",
+  "status": "complete",
+  "date_completed": "2026-11-08",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol.json",
+    "sha256": "49e3f6b417be62976187db7f813a434fab24d1f2c67edd9cb1bb07c650bf4e91"
+  },
+  "evaluation_freeze": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/EVALUATION_FREEZE.json",
+    "sha256": "fa2983aaf5e21aa35bd4226cbc7a5a0e9958052aafa639e6eb4c67b57554f1fe"
+  },
+  "training_variant": "preactivation_selected_mse",
+  "original_training_recipe": false,
+  "object_count": 12,
+  "physical": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/RESULTS.json",
+      "sha256": "3826cfe110bd0e0f186645b16f9b2792422e4ae7e7d09850a268b55e3488b8bb"
+    },
+    "actual_attempts": 3,
+    "successes": 1,
+    "eligible_failures": 2,
+    "terminal_nulls": 0,
+    "no_plan_objects": [
+      "egad_A6",
+      "egad_C0",
+      "egad_C3",
+      "egad_C6",
+      "egad_E3",
+      "egad_E6",
+      "egad_G0",
+      "egad_G3",
+      "egad_G6"
+    ],
+    "no_plan_arm": 8,
+    "no_plan_hand": 1,
+    "success_fraction_over_all_external_objects": 0.08333333333333333,
+    "physical_steps": 6300,
+    "rows": [
+      {
+        "object_id": "egad_A0",
+        "label": 1,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 0.10124924406409264,
+        "final_bottom_clearance_m": 0.10359663865240731,
+        "final_finger_loads_n": [
+          14.577156782150269,
+          3.6200475692749023,
+          4.021306991577148,
+          4.451722145080566,
+          3.9336142539978027
+        ],
+        "final_bilateral_load": true,
+        "final_lifted_and_bearing": true,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 1.5920000000000014,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              13.405302047729492,
+              3.6895408630371094,
+              3.936022523790598,
+              3.9370665550231934,
+              4.4551239013671875
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              13.590559959411621,
+              3.6928939819335938,
+              3.920480251312256,
+              3.9479002952575684,
+              4.490058935247362
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              14.577156782150269,
+              3.6200475692749023,
+              4.021306991577148,
+              4.451722145080566,
+              3.9336142539978027
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A0/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "7eb1794e8c10e3b9cdfa38eb5b0365f0181007c6902b3d5466dc2c55f3dd9f6f"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A0/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "8a5cc62c0625e10d5e47a6d7e6a090aca5798ba55f7314bc166bf56cdd841502"
+        }
+      },
+      {
+        "object_id": "egad_A3",
+        "label": 0,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 0.00012577325105667114,
+        "final_bottom_clearance_m": 0.0007938794492557666,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": false,
+        "final_lifted_and_bearing": false,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 0.0,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              3.1851408444344997,
+              3.1253888607025146,
+              4.342035293579102,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              3.985642194747925,
+              2.9311509132385254,
+              3.70148172439076,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A3/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "ab449f7dfe8269eb83496911c113edf73da63902c347237a006f782465fdf33f"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A3/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "1b900fe22ec934ce5fd12a879b896752da732c7461e993ecc9c2cfe79b5e8fe6"
+        }
+      },
+      {
+        "object_id": "egad_E0",
+        "label": 0,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 1.9185245037078857e-07,
+        "final_bottom_clearance_m": 0.0006989183712725628,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": false,
+        "final_lifted_and_bearing": false,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 0.0,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              5.867564678192139,
+              3.6125085055828094,
+              3.40688419342041,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              6.7776994705200195,
+              3.059152126312256,
+              3.3011438846588135,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_E0/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "035a8f8abe320e59f22d66e13af63613dc1b9c319a7e9d3c6b9c231dafef0f81"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_E0/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "b478948e010b9d75acbebf77b97a9faa1abdbdb78f83c274764dc4c8eb7d11f1"
+        }
+      }
+    ],
+    "benchmark_only": true,
+    "training_writeback": false,
+    "outcome_dependent_retry": false
+  },
+  "domain": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/RESULTS.json",
+      "sha256": "1bb3094f6d8836166ff62453d440b43f3d0ff3e66b9249d5e3dcfa874e2d725d"
+    },
+    "head_queries": 2530,
+    "allowed_combinations": 8618,
+    "score_pass_full_geometry_checks": 1169,
+    "full_geometry_admitted": 275,
+    "objects_with_geometry": 11,
+    "wall_s": 46.510482124984264,
+    "per_object": [
+      {
+        "object_id": "egad_A0",
+        "head_queries": 226,
+        "expanded_combinations": 600,
+        "shortlist": 185,
+        "geometry_checked": 185,
+        "geometry_admitted": 103
+      },
+      {
+        "object_id": "egad_A3",
+        "head_queries": 341,
+        "expanded_combinations": 1243,
+        "shortlist": 203,
+        "geometry_checked": 203,
+        "geometry_admitted": 20
+      },
+      {
+        "object_id": "egad_A6",
+        "head_queries": 148,
+        "expanded_combinations": 503,
+        "shortlist": 62,
+        "geometry_checked": 62,
+        "geometry_admitted": 7
+      },
+      {
+        "object_id": "egad_C0",
+        "head_queries": 234,
+        "expanded_combinations": 890,
+        "shortlist": 49,
+        "geometry_checked": 49,
+        "geometry_admitted": 7
+      },
+      {
+        "object_id": "egad_C3",
+        "head_queries": 93,
+        "expanded_combinations": 273,
+        "shortlist": 31,
+        "geometry_checked": 31,
+        "geometry_admitted": 1
+      },
+      {
+        "object_id": "egad_C6",
+        "head_queries": 433,
+        "expanded_combinations": 1506,
+        "shortlist": 155,
+        "geometry_checked": 155,
+        "geometry_admitted": 10
+      },
+      {
+        "object_id": "egad_E0",
+        "head_queries": 82,
+        "expanded_combinations": 217,
+        "shortlist": 12,
+        "geometry_checked": 12,
+        "geometry_admitted": 8
+      },
+      {
+        "object_id": "egad_E3",
+        "head_queries": 406,
+        "expanded_combinations": 1428,
+        "shortlist": 183,
+        "geometry_checked": 183,
+        "geometry_admitted": 24
+      },
+      {
+        "object_id": "egad_E6",
+        "head_queries": 327,
+        "expanded_combinations": 1174,
+        "shortlist": 158,
+        "geometry_checked": 158,
+        "geometry_admitted": 23
+      },
+      {
+        "object_id": "egad_G0",
+        "head_queries": 47,
+        "expanded_combinations": 98,
+        "shortlist": 8,
+        "geometry_checked": 8,
+        "geometry_admitted": 7
+      },
+      {
+        "object_id": "egad_G3",
+        "head_queries": 177,
+        "expanded_combinations": 664,
+        "shortlist": 121,
+        "geometry_checked": 121,
+        "geometry_admitted": 65
+      },
+      {
+        "object_id": "egad_G6",
+        "head_queries": 16,
+        "expanded_combinations": 22,
+        "shortlist": 2,
+        "geometry_checked": 2,
+        "geometry_admitted": 0
+      }
+    ]
+  },
+  "preparation": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/queue_manifest.json",
+      "sha256": "0651d1fb063d4ad010957450598437b9e166292ff37567ac7877ae390098429d"
+    },
+    "ready": 3,
+    "no_plan": 9,
+    "arm_preparations": 37,
+    "wall_s": 89.3010095260106,
+    "per_object": [
+      {
+        "object_id": "egad_A0",
+        "status": "ready",
+        "arm_preparations": 2,
+        "geometry_admitted_total": 103,
+        "candidate": {
+          "source_candidate_index": 247,
+          "gesture_id": 1,
+          "if_flip": false,
+          "extra_depth_index": 0,
+          "learned_score": 1.361892819404602,
+          "global_score_rank": 17
+        },
+        "reasons": [
+          "Direct path rejected; no obstacle-replanning claim"
+        ]
+      },
+      {
+        "object_id": "egad_A3",
+        "status": "ready",
+        "arm_preparations": 2,
+        "geometry_admitted_total": 20,
+        "candidate": {
+          "source_candidate_index": 665,
+          "gesture_id": 8,
+          "if_flip": false,
+          "extra_depth_index": 0,
+          "learned_score": 1.74370539188385,
+          "global_score_rank": 58
+        },
+        "reasons": [
+          "Direct path rejected; no obstacle-replanning claim"
+        ]
+      },
+      {
+        "object_id": "egad_A6",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 7,
+        "candidate": null,
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+        ]
+      },
+      {
+        "object_id": "egad_C0",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 7,
+        "candidate": null,
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+        ]
+      },
+      {
+        "object_id": "egad_C3",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 1,
+        "geometry_admitted_total": 1,
+        "candidate": null,
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+        ]
+      },
+      {
+        "object_id": "egad_C6",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 10,
+        "candidate": null,
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Direct path rejected; no obstacle-replanning claim"
+        ]
+      },
+      {
+        "object_id": "egad_E0",
+        "status": "ready",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 8,
+        "candidate": {
+          "source_candidate_index": 1336,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 1,
+          "learned_score": 0.9992921352386475,
+          "global_score_rank": 4
+        },
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+        ]
+      },
+      {
+        "object_id": "egad_E3",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 24,
+        "candidate": null,
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Direct path rejected; no obstacle-replanning claim"
+        ]
+      },
+      {
+        "object_id": "egad_E6",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 23,
+        "candidate": null,
+        "reasons": [
+          "Direct path rejected; no obstacle-replanning claim",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Direct path rejected; no obstacle-replanning claim",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+        ]
+      },
+      {
+        "object_id": "egad_G0",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 7,
+        "candidate": null,
+        "reasons": [
+          "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+          "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+          "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+          "Direct path rejected; no obstacle-replanning claim"
+        ]
+      },
+      {
+        "object_id": "egad_G3",
+        "status": "no_full_arm_plan_in_declared_budget",
+        "arm_preparations": 4,
+        "geometry_admitted_total": 65,
+        "candidate": null,
+        "reasons": [
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+        ]
+      },
+      {
+        "object_id": "egad_G6",
+        "status": "no_geometry_admitted_candidate",
+        "arm_preparations": 0,
+        "geometry_admitted_total": 0,
+        "candidate": null,
+        "reasons": []
+      }
+    ],
+    "arm_rejection_reasons": {
+      "Direct path rejected; no obstacle-replanning claim": 13,
+      "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry": 17,
+      "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved": 4
+    }
+  },
+  "representation": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representation_stage/BATCH_REPRESENTATION.json",
+      "sha256": "12e654b404fb5aa2d2b4b0489b4efe6d37a73152d9a89811aa9e93da10a0ce85"
+    },
+    "model_load_count": 1,
+    "network_forward_count": 12,
+    "total_wall_s": 19.111089761951007
+  },
+  "initialization": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/settling/RESULTS.json",
+      "sha256": "961d09eb6c37e46909c0b96e3203cc4eed9ee363fdf9beda95cc0771f32ce634"
+    },
+    "object_steps": 15400,
+    "physics_ticks": 15400,
+    "ready_objects": 12
+  },
+  "novelty_audit": {
+    "external_mesh_identities": 24,
+    "excluded_mesh_identities": 138,
+    "excluded_object_ids": 98,
+    "object_id_intersection": 0,
+    "intersection": 0,
+    "exclusion_manifest_refs": [
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/objects.json",
+        "sha256": "ea9cb780508291f571d8e46704231a9e7f7e8a411cb82ca4a9a62dfb03a370b2",
+        "mesh_identities": 80
+      },
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json",
+        "sha256": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7",
+        "mesh_identities": 8
+      },
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+        "sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+        "mesh_identities": 50
+      }
+    ],
+    "comparison": "Byte-SHA identity for source/prepared geometry; not semantic or geometric equivalence proof",
+    "training_manifest_metadata_read": true,
+    "training_label_arrays_read": false
+  },
+  "geometry_proxy": [
+    {
+      "object_id": "egad_A0",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 1,
+      "collision_AABB_error_m": 0.0007947208399999997,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 64,
+        "source_to_component_triangles_max_m": 0.0054455747499999995,
+        "source_to_component_triangles_p95_m": 0.0018873725778603275,
+        "component_to_source_triangles_max_m": 0.0027007795861165493,
+        "component_to_source_triangles_p95_m": 0.0026474980082074042,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 0,
+        "minimum_retained_recess_fraction": null,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A0/info/source_geometry.json",
+        "sha256": "d9618a4038a1adf51a26dcc43d7f0636feda0291db44e885c9453ee7134ae44f"
+      }
+    },
+    {
+      "object_id": "egad_A3",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 4,
+      "collision_AABB_error_m": 0.0008061854299999949,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.016624085053291073,
+        "source_to_component_triangles_p95_m": 0.013744260861304768,
+        "component_to_source_triangles_max_m": 0.0026891282478622475,
+        "component_to_source_triangles_p95_m": 0.002650047277889327,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 0,
+        "minimum_retained_recess_fraction": null,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A3/info/source_geometry.json",
+        "sha256": "17af2768cdb2ddda444b8072611cad149db5c65e4254abf74c4a0c5e2803d746"
+      }
+    },
+    {
+      "object_id": "egad_A6",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 3,
+      "collision_AABB_error_m": 0.0014883139899999898,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 192,
+        "source_to_component_triangles_max_m": 0.013230644396819244,
+        "source_to_component_triangles_p95_m": 0.01106771003,
+        "component_to_source_triangles_max_m": 0.002739787408965471,
+        "component_to_source_triangles_p95_m": 0.002593227423026306,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 0,
+        "minimum_retained_recess_fraction": null,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A6/info/source_geometry.json",
+        "sha256": "94bddf321a3c29a6202c42001b7dbc6be81a8f24f379dd38f59ec1fc774c9131"
+      }
+    },
+    {
+      "object_id": "egad_C0",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 1,
+      "collision_AABB_error_m": 0.0014624731300000027,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 64,
+        "source_to_component_triangles_max_m": 0.0018805652012004036,
+        "source_to_component_triangles_p95_m": 0.001704317054999998,
+        "component_to_source_triangles_max_m": 0.002676648885142237,
+        "component_to_source_triangles_p95_m": 0.002397730204138513,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 0,
+        "minimum_retained_recess_fraction": null,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_C0/info/source_geometry.json",
+        "sha256": "e9c20cd0ff1f012b5714af7337bf68d2abe99ae72fffa64e68afa83996998dd9"
+      }
+    },
+    {
+      "object_id": "egad_C3",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 6,
+      "collision_AABB_error_m": 0.0010466499900000092,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.00753431890999999,
+        "source_to_component_triangles_p95_m": 0.004868648140823617,
+        "component_to_source_triangles_max_m": 0.0027198881840767163,
+        "component_to_source_triangles_p95_m": 0.0026254224452071256,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 12,
+        "minimum_retained_recess_fraction": 0.27767684218919086,
+        "filled_source_empty_rays": 6,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_C3/info/source_geometry.json",
+        "sha256": "8647187ff46bfba277f03bc3eade5e3e83b208348cb5247d526d52dc77aa62cb"
+      }
+    },
+    {
+      "object_id": "egad_C6",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 11,
+      "collision_AABB_error_m": 0.0014843847500000118,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.014418536399999998,
+        "source_to_component_triangles_p95_m": 0.011988702660000003,
+        "component_to_source_triangles_max_m": 0.0027112792082014574,
+        "component_to_source_triangles_p95_m": 0.0025825180631086613,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 8,
+        "minimum_retained_recess_fraction": 0.1142803142924199,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_C6/info/source_geometry.json",
+        "sha256": "d180f313dd83818c4afe23b3dc3099122e368419a993e174873c931d6f1df8a9"
+      }
+    },
+    {
+      "object_id": "egad_E0",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 1,
+      "collision_AABB_error_m": 0.0010746736899999998,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 64,
+        "source_to_component_triangles_max_m": 0.0030541824440135095,
+        "source_to_component_triangles_p95_m": 0.0024460976018461623,
+        "component_to_source_triangles_max_m": 0.002387178787995182,
+        "component_to_source_triangles_p95_m": 0.0023006541267804144,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 12,
+        "minimum_retained_recess_fraction": 0.7208773501346512,
+        "filled_source_empty_rays": 4,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E0/info/source_geometry.json",
+        "sha256": "594579104f52b9e03a006ed3879f1e0a2d95778daf91062aa36260a49ff92ba3"
+      }
+    },
+    {
+      "object_id": "egad_E3",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 6,
+      "collision_AABB_error_m": 0.0013446138300000077,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.008338775729999998,
+        "source_to_component_triangles_p95_m": 0.005075925840953439,
+        "component_to_source_triangles_max_m": 0.0027139355411684245,
+        "component_to_source_triangles_p95_m": 0.002587644028248521,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 14,
+        "minimum_retained_recess_fraction": 0.46187814706422375,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E3/info/source_geometry.json",
+        "sha256": "7292dd32d4a0bc35758eb97ac755ebbd79e16cd9cc87ffcec3a0d56a2c54c7c5"
+      }
+    },
+    {
+      "object_id": "egad_E6",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 9,
+      "collision_AABB_error_m": 0.0012206662199999996,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.011393609441481932,
+        "source_to_component_triangles_p95_m": 0.008886450544999997,
+        "component_to_source_triangles_max_m": 0.0026697629404268297,
+        "component_to_source_triangles_p95_m": 0.0025796774213443056,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 22,
+        "minimum_retained_recess_fraction": -0.018025476114082256,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E6/info/source_geometry.json",
+        "sha256": "d46e44701eee6b28ef89649632b6769e58cdfa706928072f972ad8c85dcbd3ae"
+      }
+    },
+    {
+      "object_id": "egad_G0",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 1,
+      "collision_AABB_error_m": 0.001189990599999996,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 64,
+        "source_to_component_triangles_max_m": 0.0021542589466190536,
+        "source_to_component_triangles_p95_m": 0.001970656124038089,
+        "component_to_source_triangles_max_m": 0.0022552092991402484,
+        "component_to_source_triangles_p95_m": 0.0022044558104021405,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 12,
+        "minimum_retained_recess_fraction": 0.8613034361892055,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_G0/info/source_geometry.json",
+        "sha256": "641e34ba0378e26314c91a9634585f60e8a7fc185ce0eb36f999884961e52317"
+      }
+    },
+    {
+      "object_id": "egad_G3",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 11,
+      "collision_AABB_error_m": 0.0005243206700000086,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.0054766361741590075,
+        "source_to_component_triangles_p95_m": 0.00399410517858436,
+        "component_to_source_triangles_max_m": 0.001740148662892017,
+        "component_to_source_triangles_p95_m": 0.0016614164738866996,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 0,
+        "minimum_retained_recess_fraction": null,
+        "filled_source_empty_rays": 4,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_G3/info/source_geometry.json",
+        "sha256": "d3602b4580c228b3d9b0c73e1afc8c60dc1861b8a90d8166ab7a2ca975de6fb9"
+      }
+    },
+    {
+      "object_id": "egad_G6",
+      "source_to_meter_OBJ_vertex_error_m": 1.3877787807814457e-17,
+      "convex_parts": 27,
+      "collision_AABB_error_m": 0.000556372809999997,
+      "sampled_surface_disagreement": {
+        "source_samples": 256,
+        "compound_samples": 256,
+        "source_to_component_triangles_max_m": 0.004819957827967169,
+        "source_to_component_triangles_p95_m": 0.003256468312726002,
+        "component_to_source_triangles_max_m": 0.001491104472675955,
+        "component_to_source_triangles_p95_m": 0.001416195668487644,
+        "boundary": "Deterministic sampled unsigned vertex distances; includes internal component surfaces. Not signed union error or Hausdorff certificate."
+      },
+      "concavity_observation": {
+        "ray_count": 54,
+        "qualifying_recess_rays": 21,
+        "minimum_retained_recess_fraction": 0.8627539487944365,
+        "filled_source_empty_rays": 0,
+        "boundary": "Sparse first-hit rays cannot certify all cavities or through-holes; not an asset acceptance or grasp-success gate"
+      },
+      "full_geometry_metadata_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_G6/info/source_geometry.json",
+        "sha256": "e950b24e298c47b6fd3a25bab5d090903bd18236316df4ca738477bd8ade5881"
+      }
+    }
+  ],
+  "videos": [
+    {
+      "object_id": "egad_A3",
+      "label": 0,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/egad_A3/isaac_full_arm_pickup.mp4",
+        "sha256": "1bd1c39362fb8686b2a7df44d296503aafa315f9a0912ba225b40e3b2795e0ce"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "egad_E0",
+      "label": 0,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/egad_E0/isaac_full_arm_pickup.mp4",
+        "sha256": "4a96c464aa2851e8b02228755be91542f5610ef687fdbd921e46c2ba48e361e2"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "egad_A0",
+      "label": 1,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/egad_A0/isaac_full_arm_pickup.mp4",
+        "sha256": "90ed26ac6cee2a0735f98c176ffc2433cc254f387484a6dabfdac8017757ded3"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    }
+  ],
+  "video_index": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/videos/index.html",
+  "source_and_input_files_rehashed": 1857,
+  "all_frozen_hashes_match": true,
+  "execution_and_media_wall_s": 174.428754898021,
+  "new_training_updates": 0,
+  "tests_passed": 33,
+  "boundary": "Unseen to this Boya training/development by pinned ID/source and metre-mesh digests; no claim of absence from upstream CGR pretraining. Uniform.001 unit/.1kg/.6friction and coarse V-HACD proxy. One isolated pose/object, arm4/one physical top1. Not paper hardware reproduction or a grasp/score upper bound. No changes after external scores/outcomes.",
+  "full_summary_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/DELIVERY_SUMMARY_FULL.json",
+    "sha256": "9fdd894afb6ba7f1036e92e88d4ef75492f083d825cbb2d2583dc36e4c2b354d"
+  },
+  "pipeline": {
+    "status": "complete",
+    "stages": [
+      {
+        "stage": "initialize",
+        "argv": [
+          "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_external_runtime.py",
+          "--scene-manifest",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/scenes_v3/objects.json",
+          "--run-dir",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1",
+          "--workers",
+          "4"
+        ],
+        "returncode": 0,
+        "wall_s": 35.39073414099403,
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/initialize.log"
+      },
+      {
+        "stage": "observe",
+        "argv": [
+          "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_boya_external_observations.py",
+          "--objects-json",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/objects.json",
+          "--output-dir",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations"
+        ],
+        "returncode": 0,
+        "wall_s": 23.49355536897201,
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observe.log"
+      },
+      {
+        "stage": "represent",
+        "argv": [
+          "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py",
+          "--manifest",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/objects.json",
+          "--run-dir",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representation_stage",
+          "--device",
+          "cuda:0",
+          "--checkpoint",
+          "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+          "--seed",
+          "20261108"
+        ],
+        "returncode": 0,
+        "wall_s": 20.408860591007397,
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/represent.log"
+      },
+      {
+        "stage": "diagnostic",
+        "argv": [
+          "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_external.py",
+          "--objects-manifest",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/objects.json",
+          "--protocol",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol.json",
+          "--training-results",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json",
+          "--calibration",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+          "--domain-policy",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/s40_hand_domain_20261107/POLICY.json",
+          "--output-dir",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic",
+          "--geometry-workers",
+          "4"
+        ],
+        "returncode": 0,
+        "wall_s": 47.75151317205746,
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic.log"
+      },
+      {
+        "stage": "plan",
+        "argv": [
+          "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_external_top1.py",
+          "--protocol",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol.json",
+          "--diagnostic",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic",
+          "--backend-config",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json",
+          "--calibration",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+          "--native-preflight",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/native_preprocessing/SUMMARY.json",
+          "--output-dir",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning",
+          "--workers",
+          "4"
+        ],
+        "returncode": 0,
+        "wall_s": 132.33274760493077,
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/plan.log"
+      },
+      {
+        "stage": "execute",
+        "argv": [
+          "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_external_trials.py",
+          "--queue",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/queue_manifest.json",
+          "--diagnostic",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic",
+          "--output",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution",
+          "--workers",
+          "4",
+          "--render"
+        ],
+        "returncode": 0,
+        "wall_s": 175.02000627305824,
+        "log": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execute.log"
+      }
+    ],
+    "object_count": 12,
+    "successes": 1,
+    "physics_steps": 6300,
+    "external_protocol_ref": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/protocol.json",
+      "sha256": "49e3f6b417be62976187db7f813a434fab24d1f2c67edd9cb1bb07c650bf4e91"
+    },
+    "stage": "complete",
+    "elapsed_s": 437.85920483397786,
+    "results_ref": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/RESULTS.json",
+      "sha256": "3826cfe110bd0e0f186645b16f9b2792422e4ae7e7d09850a268b55e3488b8bb"
+    }
+  }
+}
