@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "tests": {
+    "stability_window": 6,
+    "coverage_pool": 9,
+    "settled_runner": 6,
+    "merge": 5,
+    "prehead_domain": 14,
+    "total": 40
+  },
+  "watcher_validation": "AST parse and actual finite-wait STATUS; collection-to-training stages have not run yet",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/settle_s40_scenes.py": "742b9bd7a02c9aeca7c13af024b048e6ca7fc4af9de8e59813b8d14b4bcfda46",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_settle_s40_scenes.py": "42fd13a7814d9511c274edb386a2d2b5ca757d2ce2b044a2ecf98874aaf50f08",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_s40_coverage_pool.py": "59eb76623acd3fec87a90511c0d09882ca28ae1024a5e3bf4aaf618658c89be5",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_build_s40_coverage_pool.py": "f5456cd0ec711c0d0bee8ce70a7ff81bcfe2c780caa75ed784a4bbd47b4d4659",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_s40_settled_collection.py": "6b2615eeebbd7a046f851e426e72e2e757b752d384ee9b8e220439382f98b580",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_run_s40_settled_collection.py": "131a97738692c55086392cac316e8ad22b696300fea9ae04b327e6734ad22a8b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/merge_s40_training_datasets.py": "d7434b2e525ba1b6cfbaa3190a271d5a5678653b7be00f18fa514333f640d2e3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_merge_s40_training_datasets.py": "50611fe89f1bf9e66dd7f4518ab812866af07ae9a5397052e6a658a919d222d9",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/watch_s40_supplement_training.py": "6cd0a39be1f6a0c4c4585f4ab7dc68631b6c8f0a8d4b8e851494695b314c5b0c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_prehead_domain.py": "8abf5a688410b9df4744c20358b0f3be83ee12b886911184cfa90211c699c9ec",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_boya_prehead_domain.py": "3c6242cac465e67723d6cc0a076bc5da44b9af4e729924a4ae7edbc1971f1991"
+  },
+  "actual_zero_physics_checks": [
+    "Old002 g6 extra0 coverage builder:8 admitted over4 raw depths,169geometry checks; no IK/physics",
+    "Previous240 source merger readback:all records bind source evaluations/commands/traces",
+    "Stable manifest original40 renderer input validation passed before fresh render"
+  ],
+  "new_physical_scope": "Only explicit initialization v1/v2 completed so far; new collection stages run independently and may now accrue trial physics. No external tests."
+}

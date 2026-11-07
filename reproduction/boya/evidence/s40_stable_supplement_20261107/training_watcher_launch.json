@@ -1,0 +1,19 @@
+{
+  "pid": 2120549,
+  "collector_pid": 2110437,
+  "started": "2026-11-07T16:07:27.088280+08:00",
+  "argv": [
+    "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/watch_s40_supplement_training.py",
+    "--collection-run",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection",
+    "--previous-dataset-manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/manifest.json",
+    "--output-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery",
+    "--collector-pid",
+    "2110437"
+  ],
+  "scope": "Finite8h waiting -> export supplement -> merge old240 source-bound actual labels -> fixed20epoch S40 heads. No physics/external evaluation. Masked deployment diagnostic remains separate pending explicit domain config."
+}

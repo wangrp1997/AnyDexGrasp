@@ -1,0 +1,179 @@
+[
+  {
+    "file": "collect_allegro_grasp_data.py",
+    "constants": {
+      "MAX_GRASP_WIDTH": 0.119,
+      "MIN_GRASP_WIDTH": 0.05
+    },
+    "functions": [
+      {
+        "name": "get_grasp",
+        "line": 304,
+        "gates": [
+          {
+            "line": 317,
+            "expression": "mask = (points_z > 0.35) & (points_z < 0.6)"
+          },
+          {
+            "line": 352,
+            "expression": "mask = (preds[:, 9] > 0.9) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)"
+          },
+          {
+            "line": 353,
+            "expression": "workspace_mask = (preds[:, 12] > -0.25) & (preds[:, 12] < 0.25) & (preds[:, 13] > -0.205) & (preds[:, 13] < 0.03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "collect_dh3_grasp_data.py",
+    "constants": {
+      "MAX_GRASP_WIDTH": 0.099,
+      "MIN_GRASP_WIDTH": 0.01
+    },
+    "functions": [
+      {
+        "name": "get_grasp",
+        "line": 293,
+        "gates": [
+          {
+            "line": 305,
+            "expression": "mask = (points_z > 0.15) & (points_z < 0.72)"
+          },
+          {
+            "line": 340,
+            "expression": "mask = (preds[:, 9] > 0.9) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)"
+          },
+          {
+            "line": 341,
+            "expression": "workspace_mask = (preds[:, 12] > -0.25) & (preds[:, 12] < 0.25) & (preds[:, 13] > -0.205) & (preds[:, 13] < 0.03)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "collect_inspire_grasp_data.py",
+    "constants": {
+      "MAX_GRASP_WIDTH": 0.1,
+      "MIN_GRASP_WIDTH": 0.02
+    },
+    "functions": [
+      {
+        "name": "get_grasp",
+        "line": 293,
+        "gates": [
+          {
+            "line": 305,
+            "expression": "mask = (points_z > 0.35) & (points_z < 0.68)"
+          },
+          {
+            "line": 339,
+            "expression": "mask = (preds[:, 9] > 0.85) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)"
+          },
+          {
+            "line": 340,
+            "expression": "workspace_mask = (preds[:, 12] > -0.25) & (preds[:, 12] < 0.25) & (preds[:, 13] > -0.2) & (preds[:, 13] < 0.05)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "file": "robot_allegro.py",
+    "constants": {
+      "MAX_GRASP_WIDTH": 0.11,
+      "MIN_GRASP_WIDTH": 0.04
+    },
+    "functions": [
+      {
+        "name": "get_grasp",
+        "line": 337,
+        "gates": [
+          {
+            "line": 349,
+            "expression": "mask = (points_z > 0.2) & (points_z < 0.65)"
+          },
+          {
+            "line": 399,
+            "expression": "mask = (preds[:, 9] > 0.93) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)"
+          },
+          {
+            "line": 400,
+            "expression": "workspace_mask = (preds[:, 12] > -0.2) & (preds[:, 12] < 0.2) & (preds[:, 13] > -0.2) & (preds[:, 13] < 0.07)"
+          }
+        ]
+      },
+      {
+        "name": "get_ggarray_features",
+        "line": 540,
+        "gates": []
+      }
+    ]
+  },
+  {
+    "file": "robot_dh3.py",
+    "constants": {
+      "MAX_GRASP_WIDTH": 0.099,
+      "MIN_GRASP_WIDTH": 0.045
+    },
+    "functions": [
+      {
+        "name": "get_grasp",
+        "line": 327,
+        "gates": [
+          {
+            "line": 339,
+            "expression": "mask = (points_z > 0.15) & (points_z < 0.72)"
+          },
+          {
+            "line": 389,
+            "expression": "mask = (preds[:, 9] > 0.9) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)"
+          },
+          {
+            "line": 390,
+            "expression": "workspace_mask = (preds[:, 12] > -0.25) & (preds[:, 12] < 0.25) & (preds[:, 13] > -0.205) & (preds[:, 13] < 0.03)"
+          }
+        ]
+      },
+      {
+        "name": "get_ggarray_features",
+        "line": 504,
+        "gates": []
+      }
+    ]
+  },
+  {
+    "file": "robot_inspire.py",
+    "constants": {
+      "MAX_GRASP_WIDTH": 0.1,
+      "MIN_GRASP_WIDTH": 0.01
+    },
+    "functions": [
+      {
+        "name": "get_grasp",
+        "line": 328,
+        "gates": [
+          {
+            "line": 340,
+            "expression": "mask = (points_z > 0.35) & (points_z < 0.68)"
+          },
+          {
+            "line": 390,
+            "expression": "mask = (preds[:, 9] > 0.92) & (preds[:, 1] < MAX_GRASP_WIDTH) & (preds[:, 1] > MIN_GRASP_WIDTH)"
+          },
+          {
+            "line": 391,
+            "expression": "workspace_mask = (preds[:, 12] > -0.25) & (preds[:, 12] < 0.25) & (preds[:, 13] > -0.205) & (preds[:, 13] < 0.03)"
+          }
+        ]
+      },
+      {
+        "name": "get_ggarray_features",
+        "line": 511,
+        "gates": []
+      }
+    ]
+  }
+]

@@ -1,0 +1,1044 @@
+{
+  "schema": "anydex_s40_settling_summary_v2",
+  "ready_objects": 40,
+  "object_count": 40,
+  "object_steps": 113250,
+  "physics_ticks": 11325,
+  "grasp_attempts": 0,
+  "policy": {
+    "stability_basis": "Continuous measured pose stationarity, native twist sanity, then explicit cold-recreation hold; instantaneous solver twist is retained",
+    "dt_s": 0.004,
+    "min_steps": 500,
+    "max_steps": 5000,
+    "window_steps": 250,
+    "max_linear_speed_m_s": 0.02,
+    "max_angular_speed_rad_s": 0.5,
+    "max_window_translation_m": 0.0002,
+    "max_window_rotation_rad": 0.005,
+    "cold_recreation_steps": 750,
+    "max_recreation_translation_m": 0.001,
+    "max_recreation_rotation_rad": 0.005,
+    "lane_spacing_m": 2.0
+  },
+  "results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/RESULTS.json",
+    "sha256": "3767aaa19c9754ba972007ade4b718a1e3df1c5e6b185afc79c4a768b17318fb"
+  },
+  "manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/objects.json",
+    "sha256": "15dabf4054df2ffebdab3796c5dd68ba04c560cd308276a83ee098ded58db253"
+  },
+  "previous_strict_probe": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v1/settling",
+    "ready_objects": 0,
+    "object_steps": 200000,
+    "physics_ticks": 20000,
+    "no_manifest_published": true,
+    "source_snapshot": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v1/settling/source/settle_s40_scenes.py",
+    "source_snapshot_sha256": "af95b7d8116344d1a53d0c826d52928e2f980ac54a9b10086fea63ca49636ced",
+    "boundary": "Initial very low instantaneous twist cutoffs rejected solver contact jitter despite stationary poses. Previous costs/results retained; uniform v2 pose-window stationarity plus twist sanity and independent3s cold-recreation verification is a new version, not changed grasp physics."
+  },
+  "cumulative_initialization_object_steps": 313250,
+  "objects": [
+    {
+      "object_id": "graspnet_000",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0018312317020331,
+        "max_angular_speed_rad_s": 0.017046694596632737,
+        "max_window_translation_m": 4.531992875337703e-06,
+        "max_window_rotation_rad": 4.0527476817395565e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0019167929592450652,
+        "max_angular_speed_rad_s": 0.016392218020571094,
+        "max_window_translation_m": 5.118006586586461e-06,
+        "max_window_rotation_rad": 4.622507369111691e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 8.784942268821387e-06,
+      "cold_recreation_max_rotation_rad": 0.0004540260350085158,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_000/settling_trace.npz",
+      "trace_sha256": "71cbc35078858c4c844cd80291f8d7e7f45ac393768b6240305c009246fc1e6d"
+    },
+    {
+      "object_id": "graspnet_002",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0029350971692640713,
+        "max_angular_speed_rad_s": 0.04970034990944542,
+        "max_window_translation_m": 5.0553603128814e-06,
+        "max_window_rotation_rad": 7.652420495956061e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0027825595014753374,
+        "max_angular_speed_rad_s": 0.04716490076016578,
+        "max_window_translation_m": 6.005432561829114e-06,
+        "max_window_rotation_rad": 0.00010088410119807461,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.838839517449841e-05,
+      "cold_recreation_max_rotation_rad": 0.0004930506730442737,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_002/settling_trace.npz",
+      "trace_sha256": "04caa4d23f5a94b2ff7b5b46f8f436da0254e791dbaee7ab328615ee31c8b8b6"
+    },
+    {
+      "object_id": "graspnet_005",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.002133419078891803,
+        "max_angular_speed_rad_s": 0.10586217728582402,
+        "max_window_translation_m": 1.5675325835081225e-05,
+        "max_window_rotation_rad": 0.0007757938575366001,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0018432137672036225,
+        "max_angular_speed_rad_s": 0.09623134637291735,
+        "max_window_translation_m": 1.2054775921541237e-05,
+        "max_window_rotation_rad": 0.0005737093093341186,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.3708760553513194e-05,
+      "cold_recreation_max_rotation_rad": 0.0007246805749353484,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_005/settling_trace.npz",
+      "trace_sha256": "4510d52fd30de07726271d385c1882cfd30db01e07f6c0df89ecbdbd01ca2e03"
+    },
+    {
+      "object_id": "graspnet_007",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0019262372168538336,
+        "max_angular_speed_rad_s": 0.04812921189050386,
+        "max_window_translation_m": 1.0174353658675608e-05,
+        "max_window_rotation_rad": 0.00014393021649676717,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.002309183352370442,
+        "max_angular_speed_rad_s": 0.05815705315172043,
+        "max_window_translation_m": 1.3967881462964526e-05,
+        "max_window_rotation_rad": 0.00020070126145607225,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 2.9764538194825764e-05,
+      "cold_recreation_max_rotation_rad": 0.0005153718847473294,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_007/settling_trace.npz",
+      "trace_sha256": "2ab3b75269ddcefec19aa81275db2287fbd53d5f928d1246c4a13e826dbc6d9b"
+    },
+    {
+      "object_id": "graspnet_008",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0019258458383162194,
+        "max_angular_speed_rad_s": 0.06978298098666126,
+        "max_window_translation_m": 1.1399200982001045e-05,
+        "max_window_rotation_rad": 7.337956359746198e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0016186570592759083,
+        "max_angular_speed_rad_s": 0.05797805870183113,
+        "max_window_translation_m": 1.9669845419088052e-05,
+        "max_window_rotation_rad": 0.00012848841607482608,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.6697621207126066e-05,
+      "cold_recreation_max_rotation_rad": 0.000543716915163655,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_008/settling_trace.npz",
+      "trace_sha256": "04fb567b8c4a5a1b4f3aee83ac6c86d5acc23cb6e31ce63ce36342dcfbbca040"
+    },
+    {
+      "object_id": "graspnet_009",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0003437429214289476,
+        "max_angular_speed_rad_s": 0.011833675397866172,
+        "max_window_translation_m": 5.21540641784668e-08,
+        "max_window_rotation_rad": 2.3327814251453743e-06,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0003455245767577839,
+        "max_angular_speed_rad_s": 0.011406159548983249,
+        "max_window_translation_m": 4.7497451305389404e-08,
+        "max_window_rotation_rad": 3.550606214328321e-06,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.494803190231323e-08,
+      "cold_recreation_max_rotation_rad": 0.00038102488463795164,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_009/settling_trace.npz",
+      "trace_sha256": "45eb7fc3e0e333d062d5b8b8f37d0b0ff8bf4d1850a2af115a6877742169035c"
+    },
+    {
+      "object_id": "graspnet_011",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.001145971583719592,
+        "max_angular_speed_rad_s": 0.04886867961926035,
+        "max_window_translation_m": 5.257146577101862e-06,
+        "max_window_rotation_rad": 0.0002214045179874431,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.001245639787728532,
+        "max_angular_speed_rad_s": 0.05406035619274133,
+        "max_window_translation_m": 3.4267816389299207e-06,
+        "max_window_rotation_rad": 0.00014183510114756402,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 6.349787911521539e-06,
+      "cold_recreation_max_rotation_rad": 0.0005335597619378212,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_011/settling_trace.npz",
+      "trace_sha256": "d88a6642c7f9222011760090322b6fb2cbb3e6b3f98e1167a6f2d6f91c4f628e"
+    },
+    {
+      "object_id": "graspnet_014",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.004660075131568411,
+        "max_angular_speed_rad_s": 0.21025033552797062,
+        "max_window_translation_m": 0.0001336141039374236,
+        "max_window_rotation_rad": 0.004389561570895456,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.002490320162457504,
+        "max_angular_speed_rad_s": 0.10363101328576772,
+        "max_window_translation_m": 4.447651721138615e-05,
+        "max_window_rotation_rad": 0.0018762397457781014,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 9.537011846840418e-05,
+      "cold_recreation_max_rotation_rad": 0.004004710447457638,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_014/settling_trace.npz",
+      "trace_sha256": "4187f7feaa253385d55cf7e8796eeb106869f14217cea34559a7677c577317d2"
+    },
+    {
+      "object_id": "graspnet_015",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.002273660413243974,
+        "max_angular_speed_rad_s": 0.0832013968194155,
+        "max_window_translation_m": 2.197506561644733e-05,
+        "max_window_rotation_rad": 0.000672833733643799,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.002153327927880615,
+        "max_angular_speed_rad_s": 0.08766998983479442,
+        "max_window_translation_m": 1.5688828227093993e-05,
+        "max_window_rotation_rad": 0.0006944568544902973,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.178770013707001e-05,
+      "cold_recreation_max_rotation_rad": 0.0014410364902613822,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_015/settling_trace.npz",
+      "trace_sha256": "4c8008362e779976027b88387aed0933a4294d391661191f06f58298a29ab0b9"
+    },
+    {
+      "object_id": "graspnet_017",
+      "ready": true,
+      "settle_steps": 1725,
+      "recreation_steps": 750,
+      "physics_steps": 2475,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0011486889358247264,
+        "max_angular_speed_rad_s": 0.035047519644282946,
+        "max_window_translation_m": 3.7404289208219554e-06,
+        "max_window_rotation_rad": 9.989167652815595e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0018500152348174806,
+        "max_angular_speed_rad_s": 0.05203112707657604,
+        "max_window_translation_m": 5.38476538055115e-06,
+        "max_window_rotation_rad": 0.00019504708616406637,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.0362556563107731e-05,
+      "cold_recreation_max_rotation_rad": 0.0006036132595445357,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_00/graspnet_017/settling_trace.npz",
+      "trace_sha256": "4481881b6ba4701f5472f808c81db7340eb0fd528a1f29a04e15ada8cd85c81e"
+    },
+    {
+      "object_id": "graspnet_018",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0013523579253284185,
+        "max_angular_speed_rad_s": 0.15974737168377073,
+        "max_window_translation_m": 8.932402740197911e-06,
+        "max_window_rotation_rad": 0.0007020390224678225,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0010184394601972522,
+        "max_angular_speed_rad_s": 0.11957238563470703,
+        "max_window_translation_m": 4.167266316326171e-06,
+        "max_window_rotation_rad": 0.0002721204022158897,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 8.26084635638022e-06,
+      "cold_recreation_max_rotation_rad": 0.0009217015586798357,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_018/settling_trace.npz",
+      "trace_sha256": "924acebda50c16b56da66e6645aeabb2a0152142fc83da773ad60bc0dca2eb9b"
+    },
+    {
+      "object_id": "graspnet_020",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0010863254859648562,
+        "max_angular_speed_rad_s": 0.04200467646602459,
+        "max_window_translation_m": 7.874606363004245e-07,
+        "max_window_rotation_rad": 5.3182718181439855e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0010569476584175001,
+        "max_angular_speed_rad_s": 0.04064953589182715,
+        "max_window_translation_m": 3.881861531072448e-07,
+        "max_window_rotation_rad": 8.29399221028649e-06,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.0536794445465454e-06,
+      "cold_recreation_max_rotation_rad": 0.0006384640076599255,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_020/settling_trace.npz",
+      "trace_sha256": "e94fb6fbf7fb2a943febf275024367c818d9d5fa96cebb49ad4493c16d3076d1"
+    },
+    {
+      "object_id": "graspnet_021",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.00495947079079764,
+        "max_angular_speed_rad_s": 0.17625145317425636,
+        "max_window_translation_m": 9.558439088536933e-05,
+        "max_window_rotation_rad": 0.0037184989897062768,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.004142389458875104,
+        "max_angular_speed_rad_s": 0.15176635662034954,
+        "max_window_translation_m": 0.0001176937750574434,
+        "max_window_rotation_rad": 0.00416257912409316,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 9.255633740914598e-05,
+      "cold_recreation_max_rotation_rad": 0.0032056998462274633,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_021/settling_trace.npz",
+      "trace_sha256": "58134c2d231854a7ee391f2fefe0ce5b6b4e8ff1e161fe8288d9373a4a66602c"
+    },
+    {
+      "object_id": "graspnet_022",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0007809892370708597,
+        "max_angular_speed_rad_s": 0.014495376238752827,
+        "max_window_translation_m": 6.41020607470289e-07,
+        "max_window_rotation_rad": 1.8684297384642854e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0008457974050103549,
+        "max_angular_speed_rad_s": 0.016217977766117407,
+        "max_window_translation_m": 5.142115236965123e-07,
+        "max_window_rotation_rad": 1.3096620315922055e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.998064447217802e-07,
+      "cold_recreation_max_rotation_rad": 0.00038993339540559853,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_022/settling_trace.npz",
+      "trace_sha256": "9076e227fc23aaeda7d85330178143967f8614fa92563dbece71e3e64135bf43"
+    },
+    {
+      "object_id": "graspnet_026",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.005578461321518784,
+        "max_angular_speed_rad_s": 0.18296742751109557,
+        "max_window_translation_m": 3.5617301634902e-06,
+        "max_window_rotation_rad": 0.0001626451990371311,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0030440305491535435,
+        "max_angular_speed_rad_s": 0.15900031798999326,
+        "max_window_translation_m": 3.6715055855504073e-06,
+        "max_window_rotation_rad": 0.00015476358645457293,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.5839343062085598e-05,
+      "cold_recreation_max_rotation_rad": 0.0005421554087733528,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_026/settling_trace.npz",
+      "trace_sha256": "374ea6dd40e546ec6fb46981aa1de2d707369ef4cf9dc53828bd1664c4be204b"
+    },
+    {
+      "object_id": "graspnet_027",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0009302562737793153,
+        "max_angular_speed_rad_s": 0.06670516586611404,
+        "max_window_translation_m": 3.342547210655334e-06,
+        "max_window_rotation_rad": 0.0003564520724437373,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.000915479193827837,
+        "max_angular_speed_rad_s": 0.06546485550351647,
+        "max_window_translation_m": 5.126450286417517e-06,
+        "max_window_rotation_rad": 0.0004628642115106235,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 4.529980670631385e-06,
+      "cold_recreation_max_rotation_rad": 0.0006014391958341105,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_027/settling_trace.npz",
+      "trace_sha256": "047bd2cefd4a665a6edbadfb00e71fe2d019561defe9ba6efc4a423f708508e0"
+    },
+    {
+      "object_id": "graspnet_029",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0009555214488401975,
+        "max_angular_speed_rad_s": 0.0583061172410694,
+        "max_window_translation_m": 8.347399088364555e-07,
+        "max_window_rotation_rad": 3.993076373805549e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0008531871759390125,
+        "max_angular_speed_rad_s": 0.05968128281899181,
+        "max_window_translation_m": 5.964653956778477e-07,
+        "max_window_rotation_rad": 2.3784493936086796e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.311318390500417e-06,
+      "cold_recreation_max_rotation_rad": 0.0005612388847648837,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_029/settling_trace.npz",
+      "trace_sha256": "4a2d278fb357bc488aa76d379a3f8144b9688fb73a3cd341d558e5a05650ee24"
+    },
+    {
+      "object_id": "graspnet_030",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0011958065162356961,
+        "max_angular_speed_rad_s": 0.0696184395031989,
+        "max_window_translation_m": 4.561412230623641e-06,
+        "max_window_rotation_rad": 0.0003613546931833193,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0016435791435478624,
+        "max_angular_speed_rad_s": 0.07160069709833435,
+        "max_window_translation_m": 8.588126775330895e-06,
+        "max_window_rotation_rad": 0.0004544646109843181,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.3838518375570567e-05,
+      "cold_recreation_max_rotation_rad": 0.0007796537404281795,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_030/settling_trace.npz",
+      "trace_sha256": "f3ad66a53101077f6c3f0ec32e6fda9fe322d06c06031f87518f418c12c7d75d"
+    },
+    {
+      "object_id": "graspnet_034",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.000826445347500082,
+        "max_angular_speed_rad_s": 0.1338083113487051,
+        "max_window_translation_m": 3.881647134818534e-06,
+        "max_window_rotation_rad": 0.0001565338181256193,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0018816068485886035,
+        "max_angular_speed_rad_s": 0.16449517115610646,
+        "max_window_translation_m": 1.9559894373924445e-05,
+        "max_window_rotation_rad": 0.0005011960770655156,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 4.5795582634420125e-05,
+      "cold_recreation_max_rotation_rad": 0.0009155461463198293,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_034/settling_trace.npz",
+      "trace_sha256": "ac2b64d23a005db2009e0c6d8f5b0f8e0589286a68780c2a61d9c207de2bf433"
+    },
+    {
+      "object_id": "graspnet_036",
+      "ready": true,
+      "settle_steps": 1250,
+      "recreation_steps": 750,
+      "physics_steps": 2000,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0019988970121613777,
+        "max_angular_speed_rad_s": 0.12736458448845148,
+        "max_window_translation_m": 7.775400361113448e-05,
+        "max_window_rotation_rad": 0.0028350838038948803,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0022817355538058085,
+        "max_angular_speed_rad_s": 0.12010700204221762,
+        "max_window_translation_m": 3.959980783658906e-05,
+        "max_window_rotation_rad": 0.0018043127599783884,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 7.875238846095391e-05,
+      "cold_recreation_max_rotation_rad": 0.0029424660442308867,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_01/graspnet_036/settling_trace.npz",
+      "trace_sha256": "f1ad80d2520911c10e52b7dc1e3d0e08e5757d1d5d9336dcf1c4524061c95be1"
+    },
+    {
+      "object_id": "graspnet_037",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0007229024814466258,
+        "max_angular_speed_rad_s": 0.027025070436342738,
+        "max_window_translation_m": 4.4734516895646085e-06,
+        "max_window_rotation_rad": 0.0002003735980770031,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0007588282267275784,
+        "max_angular_speed_rad_s": 0.029050037313200053,
+        "max_window_translation_m": 7.455861187260916e-06,
+        "max_window_rotation_rad": 0.00031679133196895924,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.606798283054798e-06,
+      "cold_recreation_max_rotation_rad": 0.0004855410106947159,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_037/settling_trace.npz",
+      "trace_sha256": "0d7c0beb81b4f02d9e5f19646ed753bf650cc44815e14df251bb1fe4991eea7c"
+    },
+    {
+      "object_id": "graspnet_038",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0005712863616778458,
+        "max_angular_speed_rad_s": 0.02558828685711713,
+        "max_window_translation_m": 3.4578847098742044e-06,
+        "max_window_rotation_rad": 0.00016223196062684146,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0006787790860181678,
+        "max_angular_speed_rad_s": 0.029004124038139026,
+        "max_window_translation_m": 4.533194622508594e-06,
+        "max_window_rotation_rad": 0.00016952860589376258,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 7.037281426900287e-06,
+      "cold_recreation_max_rotation_rad": 0.0005028604880552255,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_038/settling_trace.npz",
+      "trace_sha256": "0d2c6db51533e4cc8ac8193e5d02eb2c9bce28071387b554c101e73c84859f88"
+    },
+    {
+      "object_id": "graspnet_040",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0058068713373426875,
+        "max_angular_speed_rad_s": 0.1893295043335699,
+        "max_window_translation_m": 0.00011316204163613247,
+        "max_window_rotation_rad": 0.0036927717081494636,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.00020085798240009728,
+        "max_angular_speed_rad_s": 0.006705478210007085,
+        "max_window_translation_m": 5.146836054077906e-07,
+        "max_window_rotation_rad": 2.2869394209655744e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.06231862989731e-07,
+      "cold_recreation_max_rotation_rad": 0.00037824443459630693,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_040/settling_trace.npz",
+      "trace_sha256": "82ff8501e0d43cc757c421ddef1208d172c48c2e7cff4ba72796687d0680cf86"
+    },
+    {
+      "object_id": "graspnet_041",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.002750655681244246,
+        "max_angular_speed_rad_s": 0.1282299735766987,
+        "max_window_translation_m": 1.2621578345768557e-05,
+        "max_window_rotation_rad": 0.0006080152033227659,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.002540279057570663,
+        "max_angular_speed_rad_s": 0.11475179519346919,
+        "max_window_translation_m": 1.1053310470480734e-05,
+        "max_window_rotation_rad": 0.0005203277659793846,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.5222291159398145e-05,
+      "cold_recreation_max_rotation_rad": 0.0006084582377119885,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_041/settling_trace.npz",
+      "trace_sha256": "266c67fc81d1186c0b5779980a61c1d0fda85e26e117507d71e327aa294bf93d"
+    },
+    {
+      "object_id": "graspnet_043",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0020030529196861198,
+        "max_angular_speed_rad_s": 0.22672014483488392,
+        "max_window_translation_m": 1.099470919863784e-05,
+        "max_window_rotation_rad": 0.001009763018689696,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0022769474775507356,
+        "max_angular_speed_rad_s": 0.21766154244459507,
+        "max_window_translation_m": 9.05390939814592e-06,
+        "max_window_rotation_rad": 0.0011347900364879822,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.1950122512888522e-05,
+      "cold_recreation_max_rotation_rad": 0.0012914149832082722,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_043/settling_trace.npz",
+      "trace_sha256": "a84d18bc05aa2eb5c55ec5a637d8dcec84768f320aa864d0dd9a3246f3d92622"
+    },
+    {
+      "object_id": "graspnet_044",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.00039984587345925405,
+        "max_angular_speed_rad_s": 0.0021767783670700175,
+        "max_window_translation_m": 1.0058283805847168e-07,
+        "max_window_rotation_rad": 4.02849799364058e-06,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0004015594919519998,
+        "max_angular_speed_rad_s": 0.0012669308732890256,
+        "max_window_translation_m": 7.450580596923828e-08,
+        "max_window_rotation_rad": 3.0160774815263625e-06,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.1920928955078125e-07,
+      "cold_recreation_max_rotation_rad": 0.00043159061132422034,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_044/settling_trace.npz",
+      "trace_sha256": "c5846b0e975362c32d39679a7a0c8f9f21d1864c82400fdec17f7aef2e84fa13"
+    },
+    {
+      "object_id": "graspnet_046",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0009916050233536441,
+        "max_angular_speed_rad_s": 0.013322000021855133,
+        "max_window_translation_m": 8.356615837103101e-07,
+        "max_window_rotation_rad": 1.2059707778013408e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0009614143277146653,
+        "max_angular_speed_rad_s": 0.013072930421994478,
+        "max_window_translation_m": 4.777675730550706e-07,
+        "max_window_rotation_rad": 3.6702863773274666e-06,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 4.4142725177487943e-07,
+      "cold_recreation_max_rotation_rad": 0.0,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_046/settling_trace.npz",
+      "trace_sha256": "962569fbf03bc9975576ab9b548ce9299269a345502c9870fffec46ffb9fbd02"
+    },
+    {
+      "object_id": "graspnet_048",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0006153955439206333,
+        "max_angular_speed_rad_s": 0.021499595074829868,
+        "max_window_translation_m": 1.0174766259400236e-06,
+        "max_window_rotation_rad": 2.386401309365799e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0006029189199553626,
+        "max_angular_speed_rad_s": 0.018165523191664677,
+        "max_window_translation_m": 7.822754829172306e-07,
+        "max_window_rotation_rad": 4.239110873222278e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.927959202484592e-06,
+      "cold_recreation_max_rotation_rad": 0.00044862385993749913,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_048/settling_trace.npz",
+      "trace_sha256": "20ce7049848349a82c01ac5c0f6c2f859eff0c9690b04a5dd0662c3b4bdf4518"
+    },
+    {
+      "object_id": "graspnet_051",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0021288604748858258,
+        "max_angular_speed_rad_s": 0.0894419679754519,
+        "max_window_translation_m": 1.458860257899214e-06,
+        "max_window_rotation_rad": 1.811133008945098e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0020778018768695225,
+        "max_angular_speed_rad_s": 0.0897072160562838,
+        "max_window_translation_m": 1.6046663637033505e-06,
+        "max_window_rotation_rad": 2.304818050628084e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.5364203265970467e-06,
+      "cold_recreation_max_rotation_rad": 0.0005990790363975716,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_051/settling_trace.npz",
+      "trace_sha256": "eb14fd3128a178bbd98ace461e69b26edc47551764edfd1c16e15cc6649652e0"
+    },
+    {
+      "object_id": "graspnet_052",
+      "ready": true,
+      "settle_steps": 800,
+      "recreation_steps": 750,
+      "physics_steps": 1550,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.002281599849629314,
+        "max_angular_speed_rad_s": 0.08974351744376015,
+        "max_window_translation_m": 5.0095888902172525e-06,
+        "max_window_rotation_rad": 6.623475469490008e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.002452104575716762,
+        "max_angular_speed_rad_s": 0.1058263275103356,
+        "max_window_translation_m": 7.0874575573299214e-06,
+        "max_window_rotation_rad": 7.821232707297632e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 2.1760175755244e-05,
+      "cold_recreation_max_rotation_rad": 0.0005116099171602794,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_02/graspnet_052/settling_trace.npz",
+      "trace_sha256": "621676979f7c2202aaaf8f82b39f52ed9180a2c6df48e91c180ee1995676daae"
+    },
+    {
+      "object_id": "graspnet_056",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.00035305410880802856,
+        "max_angular_speed_rad_s": 0.011118678865826228,
+        "max_window_translation_m": 2.672100639407232e-07,
+        "max_window_rotation_rad": 1.3840219052480746e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.00031967087168005635,
+        "max_angular_speed_rad_s": 0.011368436905411516,
+        "max_window_translation_m": 3.4966666989262404e-07,
+        "max_window_rotation_rad": 1.6436325289723644e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 3.18049045480661e-07,
+      "cold_recreation_max_rotation_rad": 0.0005639122309106527,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_056/settling_trace.npz",
+      "trace_sha256": "27d91ed7baeb587fe5d001ff67dde7aae705629c21d261c82d424826f5442bee"
+    },
+    {
+      "object_id": "graspnet_057",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0011537243404977136,
+        "max_angular_speed_rad_s": 0.04926413533980591,
+        "max_window_translation_m": 3.811957338346697e-06,
+        "max_window_rotation_rad": 0.0001287993726737927,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.001159898355590103,
+        "max_angular_speed_rad_s": 0.04763407218056782,
+        "max_window_translation_m": 5.032183303682217e-06,
+        "max_window_rotation_rad": 0.00016938102937771006,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.43987421206172e-06,
+      "cold_recreation_max_rotation_rad": 0.0005894618181880673,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_057/settling_trace.npz",
+      "trace_sha256": "0106548bf602a2ae4901cfe955a699087da347ce9e46e5008fc59859df88e384"
+    },
+    {
+      "object_id": "graspnet_058",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.002060243479978939,
+        "max_angular_speed_rad_s": 0.07476134581051543,
+        "max_window_translation_m": 5.532992980835966e-06,
+        "max_window_rotation_rad": 9.104968476755111e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.00255828214716162,
+        "max_angular_speed_rad_s": 0.0915881587042433,
+        "max_window_translation_m": 8.374548705531976e-06,
+        "max_window_rotation_rad": 7.382611547947807e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.621202381950809e-05,
+      "cold_recreation_max_rotation_rad": 0.0004931245615824465,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_058/settling_trace.npz",
+      "trace_sha256": "112b5f5239ba75fb845a28ae2b9010a07f07accd295e562d881576123d9061b9"
+    },
+    {
+      "object_id": "graspnet_060",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0020114649003766176,
+        "max_angular_speed_rad_s": 0.1311720496412733,
+        "max_window_translation_m": 1.4419030737282755e-05,
+        "max_window_rotation_rad": 0.0008528841650754204,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0028238492794503446,
+        "max_angular_speed_rad_s": 0.15733208099860024,
+        "max_window_translation_m": 2.384729192191982e-05,
+        "max_window_rotation_rad": 0.0012533083131012824,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 5.247492080349972e-05,
+      "cold_recreation_max_rotation_rad": 0.0013630378568343178,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_060/settling_trace.npz",
+      "trace_sha256": "d6f1bce85ebb5d7588aee509c47cacbf77bb002bee66608a4afc01b5f1a174f6"
+    },
+    {
+      "object_id": "graspnet_061",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0028039492590089163,
+        "max_angular_speed_rad_s": 0.13112593150290974,
+        "max_window_translation_m": 8.918678750548023e-05,
+        "max_window_rotation_rad": 0.0022625070311480867,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0023798928456862873,
+        "max_angular_speed_rad_s": 0.1283586935528857,
+        "max_window_translation_m": 6.056664462123475e-05,
+        "max_window_rotation_rad": 0.001828179283897052,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 7.343849574791953e-05,
+      "cold_recreation_max_rotation_rad": 0.0019960915239124917,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_061/settling_trace.npz",
+      "trace_sha256": "a52f44e506adf98a036ad3772eb5ff7cd14969ac7e8d383ceb64d0093eeaa010"
+    },
+    {
+      "object_id": "graspnet_062",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0015621004595598436,
+        "max_angular_speed_rad_s": 0.054337300697429515,
+        "max_window_translation_m": 2.5217168047122335e-06,
+        "max_window_rotation_rad": 8.025665819631792e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0009883571444946999,
+        "max_angular_speed_rad_s": 0.03828021320307391,
+        "max_window_translation_m": 1.9078296948441955e-06,
+        "max_window_rotation_rad": 6.515848256107504e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 4.6876620986443985e-06,
+      "cold_recreation_max_rotation_rad": 0.0005100633334794227,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_062/settling_trace.npz",
+      "trace_sha256": "2a12c46818f8944a71fe573e808689563c9c04c242bcbe6d09e202e550e4576a"
+    },
+    {
+      "object_id": "graspnet_063",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0012619684866625118,
+        "max_angular_speed_rad_s": 0.046748464624882885,
+        "max_window_translation_m": 8.668197596643299e-06,
+        "max_window_rotation_rad": 0.0003003151209245403,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0009640316887537358,
+        "max_angular_speed_rad_s": 0.035782063247041,
+        "max_window_translation_m": 6.557311231786678e-06,
+        "max_window_rotation_rad": 0.00025363665646726494,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 6.207545468112975e-06,
+      "cold_recreation_max_rotation_rad": 0.000577528184791594,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_063/settling_trace.npz",
+      "trace_sha256": "c70fcd4003e0ef0cadc2c7d85b332fc458b24e078c369ac7901db26a56850560"
+    },
+    {
+      "object_id": "graspnet_066",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.0012364264563970945,
+        "max_angular_speed_rad_s": 0.09025776792286141,
+        "max_window_translation_m": 7.875929994546753e-06,
+        "max_window_rotation_rad": 0.00047075702422424076,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0016807621599161384,
+        "max_angular_speed_rad_s": 0.07408806240441664,
+        "max_window_translation_m": 9.782330192081014e-06,
+        "max_window_rotation_rad": 0.00043076716039296923,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 2.7424154102328405e-05,
+      "cold_recreation_max_rotation_rad": 0.0005293246899193879,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_066/settling_trace.npz",
+      "trace_sha256": "e7a3d6a4fd708d9df115b51f51eab1d7b9c3b9f51d84f643c729be3a48621947"
+    },
+    {
+      "object_id": "graspnet_069",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.001737684835491618,
+        "max_angular_speed_rad_s": 0.07086268131864043,
+        "max_window_translation_m": 9.591609764802715e-07,
+        "max_window_rotation_rad": 1.8265736172826802e-05,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.0016433683084359266,
+        "max_angular_speed_rad_s": 0.0775867963929113,
+        "max_window_translation_m": 9.555351461101412e-07,
+        "max_window_rotation_rad": 2.4994698047037546e-05,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 1.4321706434172964e-06,
+      "cold_recreation_max_rotation_rad": 0.0005427772762182434,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_069/settling_trace.npz",
+      "trace_sha256": "2d46395b9cc733752cf7fa2b7ca2cada22af0716c003fc7602f232ead59ba176"
+    },
+    {
+      "object_id": "graspnet_070",
+      "ready": true,
+      "settle_steps": 4550,
+      "recreation_steps": 750,
+      "physics_steps": 5300,
+      "settle_window": {
+        "max_linear_speed_m_s": 0.004938089014542194,
+        "max_angular_speed_rad_s": 0.09799540316038989,
+        "max_window_translation_m": 0.00012913711356139616,
+        "max_window_rotation_rad": 0.0022611161416574064,
+        "stable": true
+      },
+      "final_window": {
+        "max_linear_speed_m_s": 0.003969548534285518,
+        "max_angular_speed_rad_s": 0.09522572850375105,
+        "max_window_translation_m": 0.00017823038308725602,
+        "max_window_rotation_rad": 0.00310706707321884,
+        "stable": true
+      },
+      "cold_recreation_max_translation_m": 0.00013427921796572452,
+      "cold_recreation_max_rotation_rad": 0.0024376515061098436,
+      "trace": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/group_03/graspnet_070/settling_trace.npz",
+      "trace_sha256": "a1e7ee97f59e225e007346b9f39370bc2855193efb44f7600c6f27140319bbf2"
+    }
+  ]
+}

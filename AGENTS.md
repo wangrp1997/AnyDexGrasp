@@ -258,3 +258,16 @@ outputs/s40_collection_20261107_v1已于北京时间12:43:25 complete，97.971mi
 50次早停均在接近前，完整手体保守距物体至少177.762mm；静置50步时物体已滚动/倾倒，旧观测失效，不是手推物体。5件初始化早停、4件纯准备null、3件完整执行全负分开。先统一稳定落位后再观测/CGR，并按新摆放/抓姿/raw-depth×extra覆盖补采、与旧640另记；不能改50null成负例或重复成功凑100。当前未启动补采、新物理或EGAD；不要误把“下一步”当已启动。原DGN4/10对6/10与所有旧失败保持。
 
 14合同测试、真实8帧排序/几何集成通过，结果为0准入。详S40_COLLECTION_COMPLETION_20261107.md、S40_DECISION_RESULTS_20261107.md与evidence/s40_decision_20261107；大输出/模型/数据不提交。整体论文复现仍未通过，CanonDex只读。
+
+
+## 2026-11-07 最新：稳定40件通过，覆盖补采与自动训练已在后台
+
+用户明确“好的开始”。实际稳定v2 outputs/s40_stable_supplement_20261107_v2/settling 已40/40 ready；同source mesh/COM/惯量/.1kg/.6friction/.004dt/.98N与原Native20µm。统一连续窗口stationarity+native twist sanity、再750步3s cold-recreation，最大位移0.134280mm/转角0.004005rad。v2 113250 object steps，原过严瞬时速度v1探针200000保留并已归档源快照，初始化累计313250；零抓取。后续trial独立从实测稳定pose与明确声明zero velocity重置，不称连续live。新pose WXYZ/T/trace/native初始化链绑定，旧50null不改0。
+
+新采集 outputs/s40_stable_supplement_20261107_v2/collection，PID2110437，北京时间16:01:16启动，协议c0ae291aec2132d93bf0c7721fd0e15ba01c2e798d8d4f9e60f68a5a9d513037。40全train/原32+8/640全新槽，排除旧290实际canonical480×g×extra含terminal null，不按0/1值选样；raw1000按5深度各200、每档≤64原geometry，总≤320、每档最多2/keep8、arm4。40新RGBD已完成、共享单CGR运行；几何4/臂8/执行4对象CPU并发，CPU32–95/GPU0。未有本段新最终试抓结果，不提前报成功率；不重复collector、不热改冻结py/资产。原640/240/50/350账和旧DGN成绩保持。
+
+自动训练等待PID2120549，北京时间16:07:27，活动同父training_delivery。8h有限等待，final complete后export补采→严格两源merge旧240与新有效→固定20epoch四内部及四all40模型。source trace/path重复直接reject，protocol命名空间trial ID保留local/source。异常/unknown不重播，不把null补0。当前waiting，无新训练结论。EGAD未使用。
+
+同时确认旧make_queries/raw_s40诊断遗漏作者pre-head approach/width/workspace联合mask；3200全拒不能归因训练不足，也不是完整AnyDex部署失败。原DH3离线链保留mask，其9准入不受影响。已新增boya_prehead_domain纯函数和14tests，与官方真实AST数值比对；Boya workspace/cone/raw-width必须显式，尚未冻结具体参数/接部署。自动交付本轮只到训练，部署评测仍pending，不重跑已知缺mask的旧诊断冒充完整验证。
+
+新40合同测试（6+9+6+5+14）和真实旧帧coverage/原240源merger/稳定manifest串联通过。详S40_STABLE_SUPPLEMENT_20261107.md、S40_PREHEAD_MASK_REVIEW_20261107.md及evidence/s40_stable_supplement_20261107。仅轻量相关代码/证据push用户origin，CanonDex只读、大数据不提交。
