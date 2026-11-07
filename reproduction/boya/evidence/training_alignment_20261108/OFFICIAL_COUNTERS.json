@@ -1,0 +1,1263 @@
+{
+  "schema": "anydex_official_training_counter_audit_v1",
+  "status": "complete",
+  "file_count": 31,
+  "by_hand": {
+    "allegro_model": {
+      "files": 19,
+      "BN_counts": [
+        34,
+        70,
+        43,
+        35,
+        120,
+        90,
+        36,
+        80,
+        34,
+        38,
+        35,
+        56,
+        35,
+        44,
+        19,
+        33,
+        28,
+        35,
+        34
+      ],
+      "min": 19,
+      "max": 120,
+      "greater_than_boya100": 1
+    },
+    "dh3_model": {
+      "files": 4,
+      "BN_counts": [
+        54,
+        130,
+        96,
+        801
+      ],
+      "min": 54,
+      "max": 801,
+      "greater_than_boya100": 2
+    },
+    "inspire_model": {
+      "files": 8,
+      "BN_counts": [
+        560,
+        390,
+        126,
+        36,
+        37,
+        77,
+        35,
+        41
+      ],
+      "min": 35,
+      "max": 560,
+      "greater_than_boya100": 3
+    }
+  },
+  "records": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/1/0.7_1.0_0.05_0.0952_33.pth",
+      "sha256": "fee18a2fe759e02f3d8c66fb0d0f737366a98652c975f7669d6bfd69145c4a9b",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "filename_epoch_zero_based": 33,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/1/0.9_1.0_0.1_0.1818_69.pth",
+      "sha256": "031c57823ff0599c7f238786272cd432c5bd2c93661cc65397b40456eced4d1c",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        70,
+        70,
+        70,
+        70,
+        70,
+        70,
+        70
+      ],
+      "filename_epoch_zero_based": 69,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/10/0.7_1.0_0.15_0.2609_42.pth",
+      "sha256": "4ba53657343e6b39061b0e3ca06cb4979918a2cadbe7d12547aae434f532be7a",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43
+      ],
+      "filename_epoch_zero_based": 42,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/10/0.9_1.0_0.1_0.1818_34.pth",
+      "sha256": "06af2453bda261c0f10fca4c0a095aa0a3dee0f5abbfb2eabf06cae0a34cd611",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35
+      ],
+      "filename_epoch_zero_based": 34,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/2/0.7_1.0_0.25_0.4_59.pth",
+      "sha256": "05c5fd5f01d05ae6e6d424187e2547ab827fd1d863232003420f810f569c569c",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "filename_epoch_zero_based": 59,
+      "BN_count_divided_by_filename_epoch_plus_one": 2.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/2/0.9_1.0_0.15_0.2609_44.pth",
+      "sha256": "16a4ddaa743cf6afde991f52ade1d4de546360e3372688261a26d732e46574fa",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        90,
+        90,
+        90,
+        90,
+        90,
+        90,
+        90
+      ],
+      "filename_epoch_zero_based": 44,
+      "BN_count_divided_by_filename_epoch_plus_one": 2.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/3/0.7_1.0_0.1_0.1818_35.pth",
+      "sha256": "befffa933b6ad7dc8d3f049684ff6fbea73100c81ddb6e20a29f8e43dc4d3aa4",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "filename_epoch_zero_based": 35,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/3/0.9_1.0_0.15_0.2609_79.pth",
+      "sha256": "2a48a62ce30a2670efe18df9fa98196888aaa4763cbfe405ced534be15d8d3ba",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        80,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "filename_epoch_zero_based": 79,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/4/0.7_1.0_0.1_0.1818_33.pth",
+      "sha256": "75870641ed3881e7e7ba1874b6ab3d9817738459962b226e69d5d9035255ca26",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "filename_epoch_zero_based": 33,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/4/0.9_1.0_0.1_0.1818_37.pth",
+      "sha256": "9d4285673e1a387d6ba2588f4d256438bc1ff1e3d138691c8e656c8488aece3d",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        38,
+        38,
+        38,
+        38,
+        38,
+        38,
+        38
+      ],
+      "filename_epoch_zero_based": 37,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/5/0.7_1.0_0.15_0.2609_34.pth",
+      "sha256": "67764cb9ba893d65985bfa2ba48f12d01788fae9104abd7efead8fce2041272d",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35
+      ],
+      "filename_epoch_zero_based": 34,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/5/0.9_1.0_0.1_0.1818_55.pth",
+      "sha256": "a6861aad2bd5f8daf87f63d7c761c6f6f5417fea3e9bc0cc6b0e9f9ffc6743c7",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        56,
+        56,
+        56,
+        56,
+        56,
+        56,
+        56
+      ],
+      "filename_epoch_zero_based": 55,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/6/0.7_1.0_0.1_0.1818_34.pth",
+      "sha256": "d6d06c79f0009504fa5bea81e4ac237b819a1a7f67396457bd7044bd956b06c8",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35
+      ],
+      "filename_epoch_zero_based": 34,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/6/0.9_1.0_0.1_0.1818_43.pth",
+      "sha256": "91a3acd2daba1c1877b2f5fd9f307ae6255406d4fb6969bb1599d418937aefb4",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        44,
+        44,
+        44,
+        44,
+        44,
+        44,
+        44
+      ],
+      "filename_epoch_zero_based": 43,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/7/0.7_1.0_0.05_0.0952_18.pth",
+      "sha256": "1690aa5b9e7bcade64bd9b53149402d367504fba4a55d1f0cc87946ba4794df9",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        19,
+        19,
+        19,
+        19,
+        19,
+        19,
+        19
+      ],
+      "filename_epoch_zero_based": 18,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/7/0.9_1.0_0.1_0.1818_32.pth",
+      "sha256": "dd643ddcf3f5381605efc366c882fccb64a818046812c8e49444874d1df402ae",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        33,
+        33,
+        33,
+        33,
+        33,
+        33,
+        33
+      ],
+      "filename_epoch_zero_based": 32,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/8/0.7_1.0_0.05_0.0952_27.pth",
+      "sha256": "e6877f09a1bbdb4525114b06a241f329286770bf8f6dba1afb7802bfda1fae40",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        28,
+        28,
+        28,
+        28,
+        28,
+        28,
+        28
+      ],
+      "filename_epoch_zero_based": 27,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/8/0.9_1.0_0.1_0.1818_34.pth",
+      "sha256": "84c5dcd33a35d6acabc3a6d438e8f60022953348612af193838fe57fb560f8cc",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35
+      ],
+      "filename_epoch_zero_based": 34,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/9/0.9_1.0_0.1_0.1818_33.pth",
+      "sha256": "5520147d003aa2141ecae78aadb3cbfc270ca2b9617442f13d4f9f7f9cfef6d2",
+      "hand": "allegro_model",
+      "BN_train_forward_count_per_layer": [
+        34,
+        34,
+        34,
+        34,
+        34,
+        34,
+        34
+      ],
+      "filename_epoch_zero_based": 33,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth",
+      "sha256": "9886bcd6236a116c4d1f9d1402248b42df9851053f9e3b22b5a0ef95157d030e",
+      "hand": "dh3_model",
+      "BN_train_forward_count_per_layer": [
+        54,
+        54,
+        54,
+        54,
+        54,
+        54,
+        54
+      ],
+      "filename_epoch_zero_based": 5,
+      "BN_count_divided_by_filename_epoch_plus_one": 9.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth",
+      "sha256": "21c507796fc4586d963b46c63b8109ce576aa2221a414f4e136b148c2677b2b8",
+      "hand": "dh3_model",
+      "BN_train_forward_count_per_layer": [
+        130,
+        130,
+        130,
+        130,
+        130,
+        130,
+        130
+      ],
+      "filename_epoch_zero_based": 12,
+      "BN_count_divided_by_filename_epoch_plus_one": 10.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth",
+      "sha256": "df163f8a6f5816f60bfb4175196f6e4e55431a340f607fd05e47964f5c571bb5",
+      "hand": "dh3_model",
+      "BN_train_forward_count_per_layer": [
+        96,
+        96,
+        96,
+        96,
+        96,
+        96,
+        96
+      ],
+      "filename_epoch_zero_based": 11,
+      "BN_count_divided_by_filename_epoch_plus_one": 8.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth",
+      "sha256": "746a817a715b46b9c4b4921ea6e2d09a826375be953f43862ce0216a2925bf26",
+      "hand": "dh3_model",
+      "BN_train_forward_count_per_layer": [
+        801,
+        801,
+        801,
+        801,
+        801,
+        801,
+        801
+      ],
+      "filename_epoch_zero_based": 88,
+      "BN_count_divided_by_filename_epoch_plus_one": 9.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/1/0.9_1.0_0.08_0.1481_39.pth",
+      "sha256": "ed3e66e492da469f3fb380e607c503dcc0b2bf414255afc276c65329a7b29a22",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        560,
+        560,
+        560,
+        560,
+        560,
+        560,
+        560
+      ],
+      "filename_epoch_zero_based": 39,
+      "BN_count_divided_by_filename_epoch_plus_one": 14.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/2/0.9_1.0_0.18_0.3051_38.pth",
+      "sha256": "89408d984609722c536cb81e3caf02594ea39d014bb680f80420a98f775307e6",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        390,
+        390,
+        390,
+        390,
+        390,
+        390,
+        390
+      ],
+      "filename_epoch_zero_based": 38,
+      "BN_count_divided_by_filename_epoch_plus_one": 10.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/3/0.9_1.0_0.22_0.3607_62.pth",
+      "sha256": "1d1a03487a3be2c03693567afb286fa6981c80cdb27c76a677aa676518a5c395",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        126,
+        126,
+        126,
+        126,
+        126,
+        126,
+        126
+      ],
+      "filename_epoch_zero_based": 62,
+      "BN_count_divided_by_filename_epoch_plus_one": 2.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/4/0.9_1.0_0.08_0.1481_17.pth",
+      "sha256": "3f27f10dc6436e583b37e0a1ff801265f968e774af07db352c3d896002f04c72",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        36,
+        36,
+        36,
+        36,
+        36,
+        36,
+        36
+      ],
+      "filename_epoch_zero_based": 17,
+      "BN_count_divided_by_filename_epoch_plus_one": 2.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/5/0.9_1.0_0.08_0.1481_36.pth",
+      "sha256": "ae743ccf2f077b7cdafb816040a733079849b02dfc24e694aa88ab62fdf6180c",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        37,
+        37,
+        37,
+        37,
+        37,
+        37,
+        37
+      ],
+      "filename_epoch_zero_based": 36,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/6/0.9_1.0_0.18_0.3051_76.pth",
+      "sha256": "9a99f30953aeaf8a705ebe7749416a70cda84582842ce68a569af71a51c0bf58",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        77,
+        77,
+        77,
+        77,
+        77,
+        77,
+        77
+      ],
+      "filename_epoch_zero_based": 76,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/7/0.9_0.875_0.14_0.2414_34.pth",
+      "sha256": "5bff09ff09d1c76c1580bbc2b5d52412a6308e58e4fab7e933cf7a263ffad5d5",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        35,
+        35,
+        35,
+        35,
+        35,
+        35,
+        35
+      ],
+      "filename_epoch_zero_based": 34,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/8/0.9_0.6_0.06_0.1091_40.pth",
+      "sha256": "40c5c1d35637abd5281ad29e22ec0b3698c944d6af44a01c748a637b44c3fb10",
+      "hand": "inspire_model",
+      "BN_train_forward_count_per_layer": [
+        41,
+        41,
+        41,
+        41,
+        41,
+        41,
+        41
+      ],
+      "filename_epoch_zero_based": 40,
+      "BN_count_divided_by_filename_epoch_plus_one": 1.0,
+      "conv7_output_count": 20,
+      "metadata": {
+        "unsafe_globals_inspected": [
+          "torch.nn.modules.batchnorm.BatchNorm1d",
+          "torch.nn.modules.dropout.Dropout",
+          "torch.nn.modules.conv.Conv1d",
+          "minkowski_graspnet.MinkowskiGraspNetMultifingerType1"
+        ],
+        "weights_only": true,
+        "allowlist_scope": "original decision class + Conv1d/BatchNorm1d/Dropout/set only",
+        "container_type": "MinkowskiGraspNetMultifingerType1",
+        "saved_attributes": {
+          "num_multifinger_type": 1,
+          "num_multifinger_depth": 4,
+          "num_two_finger_angle": 1,
+          "num_two_finger_depth": 5
+        },
+        "tensor_count": 49
+      },
+      "optimizer_state_observed": false,
+      "optimizer_steps_inferred": false
+    }
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_official_training_counters.py": "3ffb09bada6b15d10d6f34f118102e2365c9d1774b342d86d5e6294841b3aca2",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/validate_official_decision.py": "daf3ac5b09bcbf17656490909d10af4f359c711056d42edb8467ec1318ee4f78",
+    "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet.py": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d"
+  },
+  "input_sha256": {
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/1/0.7_1.0_0.05_0.0952_33.pth": "fee18a2fe759e02f3d8c66fb0d0f737366a98652c975f7669d6bfd69145c4a9b",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/1/0.9_1.0_0.1_0.1818_69.pth": "031c57823ff0599c7f238786272cd432c5bd2c93661cc65397b40456eced4d1c",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/10/0.7_1.0_0.15_0.2609_42.pth": "4ba53657343e6b39061b0e3ca06cb4979918a2cadbe7d12547aae434f532be7a",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/10/0.9_1.0_0.1_0.1818_34.pth": "06af2453bda261c0f10fca4c0a095aa0a3dee0f5abbfb2eabf06cae0a34cd611",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/2/0.7_1.0_0.25_0.4_59.pth": "05c5fd5f01d05ae6e6d424187e2547ab827fd1d863232003420f810f569c569c",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/2/0.9_1.0_0.15_0.2609_44.pth": "16a4ddaa743cf6afde991f52ade1d4de546360e3372688261a26d732e46574fa",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/3/0.7_1.0_0.1_0.1818_35.pth": "befffa933b6ad7dc8d3f049684ff6fbea73100c81ddb6e20a29f8e43dc4d3aa4",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/3/0.9_1.0_0.15_0.2609_79.pth": "2a48a62ce30a2670efe18df9fa98196888aaa4763cbfe405ced534be15d8d3ba",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/4/0.7_1.0_0.1_0.1818_33.pth": "75870641ed3881e7e7ba1874b6ab3d9817738459962b226e69d5d9035255ca26",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/4/0.9_1.0_0.1_0.1818_37.pth": "9d4285673e1a387d6ba2588f4d256438bc1ff1e3d138691c8e656c8488aece3d",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/5/0.7_1.0_0.15_0.2609_34.pth": "67764cb9ba893d65985bfa2ba48f12d01788fae9104abd7efead8fce2041272d",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/5/0.9_1.0_0.1_0.1818_55.pth": "a6861aad2bd5f8daf87f63d7c761c6f6f5417fea3e9bc0cc6b0e9f9ffc6743c7",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/6/0.7_1.0_0.1_0.1818_34.pth": "d6d06c79f0009504fa5bea81e4ac237b819a1a7f67396457bd7044bd956b06c8",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/6/0.9_1.0_0.1_0.1818_43.pth": "91a3acd2daba1c1877b2f5fd9f307ae6255406d4fb6969bb1599d418937aefb4",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/7/0.7_1.0_0.05_0.0952_18.pth": "1690aa5b9e7bcade64bd9b53149402d367504fba4a55d1f0cc87946ba4794df9",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/7/0.9_1.0_0.1_0.1818_32.pth": "dd643ddcf3f5381605efc366c882fccb64a818046812c8e49444874d1df402ae",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/8/0.7_1.0_0.05_0.0952_27.pth": "e6877f09a1bbdb4525114b06a241f329286770bf8f6dba1afb7802bfda1fae40",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/8/0.9_1.0_0.1_0.1818_34.pth": "84c5dcd33a35d6acabc3a6d438e8f60022953348612af193838fe57fb560f8cc",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/allegro_model/allegro_obj140/480/9/0.9_1.0_0.1_0.1818_33.pth": "5520147d003aa2141ecae78aadb3cbfc270ca2b9617442f13d4f9f7f9cfef6d2",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/1/0.9_1.0_0.2333_0.3784_5.pth": "9886bcd6236a116c4d1f9d1402248b42df9851053f9e3b22b5a0ef95157d030e",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/2/0.9_1.0_0.2333_0.3784_12.pth": "21c507796fc4586d963b46c63b8109ce576aa2221a414f4e136b148c2677b2b8",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/3/0.9_1.0_0.3333_0.5_11.pth": "df163f8a6f5816f60bfb4175196f6e4e55431a340f607fd05e47964f5c571bb5",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/dh3_model/obj140/480/4/0.9_1.0_0.5_0.6667_88.pth": "746a817a715b46b9c4b4921ea6e2d09a826375be953f43862ce0216a2925bf26",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/1/0.9_1.0_0.08_0.1481_39.pth": "ed3e66e492da469f3fb380e607c503dcc0b2bf414255afc276c65329a7b29a22",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/2/0.9_1.0_0.18_0.3051_38.pth": "89408d984609722c536cb81e3caf02594ea39d014bb680f80420a98f775307e6",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/3/0.9_1.0_0.22_0.3607_62.pth": "1d1a03487a3be2c03693567afb286fa6981c80cdb27c76a677aa676518a5c395",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/4/0.9_1.0_0.08_0.1481_17.pth": "3f27f10dc6436e583b37e0a1ff801265f968e774af07db352c3d896002f04c72",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/5/0.9_1.0_0.08_0.1481_36.pth": "ae743ccf2f077b7cdafb816040a733079849b02dfc24e694aa88ab62fdf6180c",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/6/0.9_1.0_0.18_0.3051_76.pth": "9a99f30953aeaf8a705ebe7749416a70cda84582842ce68a569af71a51c0bf58",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/7/0.9_0.875_0.14_0.2414_34.pth": "5bff09ff09d1c76c1580bbc2b5d52412a6308e58e4fab7e933cf7a263ffad5d5",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/inspire_model/obj140/480/8/0.9_0.6_0.06_0.1091_40.pth": "40c5c1d35637abd5281ad29e22ec0b3698c944d6af44a01c748a637b44c3fb10"
+  },
+  "all_layers_equal": true,
+  "all_outputs20": true,
+  "all_BN_counts_integer_multiple_of_filename_epoch_plus_one": true,
+  "greater_than_boya100_total": 6,
+  "train_forward_counter_scope": "PyTorch BN increments in training forward, not eval(); author released train loop has one training forward per optimizer batch, but BN resets/extra training forwards/resume history are not known.",
+  "optimizer_metadata_scope": "Author save_model torch.save(multifinger_net) writes the model, not optimizer.state_dict. This weights-only audit sees no optimizer state; BN counts are not asserted as exact optimizer-step counts.",
+  "released_training_history_boundary": "Ratios8/9/10/14 in some DH3/Inspire checkpoints cannot arise from the checked-in first100+batch128 recipe with one batch/epoch and no extra forwards. Published files and current script do not encode one fully recoverable training history.",
+  "conclusion": "Published heads are not uniformly trained for more updates than Boya100. Need not increase epochs or change loss based solely on low Boya success.",
+  "new_training_steps": 0,
+  "new_simulation_steps": 0,
+  "no_unsafe_pickle_fallback": true,
+  "all_inputs_unchanged": true,
+  "all_sources_unchanged": true
+}

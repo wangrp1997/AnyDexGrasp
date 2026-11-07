@@ -1,5 +1,16 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-08 最新：公开训练/映射/闭合对齐诊断完成，原MSE换姿E0成功但整体仍未验收
+
+用户授权对齐。原训练train_one_epoch与code100四头各2真实batch，初始化/前向/全梯度/Adam/BN/LR严格相同；435条canonical480/标签索引通过。8+8临时CPU更新无保存checkpoint，旧模型不改。公开训练默认240 vs 发布20、best保存vs固定100及真实手采样差异明确保留，不能称作者完整训练史已复原。Allegro公开闭合实际是10位置增量/1s+.2s保持，未使用tactile/torque反馈；此前笼统归因缺少作者触觉不准确。三件映射/flip/深入/闭合端点未发现接线错。
+
+新独立proxy控制v2：A0粗/细正对照均成功+102.543/+104.478mm，三旧失败A3/A6/E0细代理仍0/3；5实际10500步/55.285s，视觉字节/初态/所有指令不变，代理仍非精确CAD。初v1漏已有EULA环境五路零Kit/零步退出，原日志保留、v2只修启动环境。十级闭合时间控制A0成功+105.768mm、三旧失败仍0/3，4实际8400步/35.073s，仅240close行变化；仍以冻结开手起点，非完整Allegro硬件等价。
+
+新增严格原MSE评分入口evaluate_boya_original_recipe.py，只接受旧code100原final-ReLU MSE四头，拒绝preactivation。四已知场景复用缓存CGR，先冻结排名后几何，firstgeometry各一次受控腕物理：A0rank1/g6短暂离桌后失载，A3rank42/g1接近1175步推物早停，A6rank19/g7完整失败，E0rank0/g6成功+110.990mm/底74.094mm/持续双侧1.216s。1/4、7475步/38.956s，E0该输出fit17条=13正4负，不是无监督输出。评分/选姿会改变成败，但未证明稳定改善或唯一根因。
+
+共13实际/26375步，原外部1/12和旧三件0/3不改，435和全部权重不变。13段正常速度RTX完成、零回放积分，统一outputs/boya_alignment_20261108_v1/index.html；7合同tests、训练数值及独立评分/实际指令/源承载/SHA/媒体核验通过。报告reproduction/boya/BOYA_PROTOCOL_ALIGNMENT_RESULTS_20261108.md，证据evidence/boya_protocol_alignment_20261108。新入口均opt-in、未晋级默认，CanonDex只读；整体论文复现未验收。本轮已收尾，无后台物理/训练，不自行重抓或扩样。只push相关轻量源码/证据，所有大输出不提交。
+
+
 ## 2026-11-08 最新：三件受控腕部诊断完成，0/3，勿继续归因机械臂
 
 用户授权按计划隔离臂限制，独立outputs/egad_floating_three_20261108_v1已complete，protocol SHA832865f29b7ceb1500c73d5da819e33f08210b8408c62a95252c86ce425e776c。A6原firstgeo rank17、A3/E0原实际rank58/4，各一次2100步，共6300步，CPU三路28.610s；全部七门/native20µm门通过，实际0/3，零有效提起步。A6参考点升9.28mm仅转动，源最低点仍贴桌、lift无双侧承载；A3/E0闭合有载荷抬升仍滑脱。最大掌误差.148/.155/.080mm，A3原15.27mm与E0原2.214mm大幅降低仍失败，不能仅归因臂跟踪。

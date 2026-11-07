@@ -1,0 +1,7 @@
+# Boya公开流程对齐证据，2026-11-08
+
+SUMMARY逐组保留原RESULTS和协议SHA。13次实际/26375步，其中A3原MSE对照1175步任务早停；三组均是已知场景诊断，不汇总成泛化成功率。原外部1/12不改。
+
+CONTROL_TRACE_AUDIT及两路独立PROXY/TIMING审计复算实际指令/源网格承载。ORIGINAL_MSE审计独立复算缓存特征、全部评分及首个几何准入选择，173个唯一冻结输入SHA保持。相关独立审计脚本一并保存。MEDIA_VERIFICATION为13个MP4时间/样本数/哈希核验；未声称独立解码所有像素。训练/映射证据在同级training_alignment_20261108与mapping_closure_alignment_20261108。
+
+大资产、模型、轨迹、MP4、完整物理目录均留outputs，不提交。首次零物理EULA环境启动错误及修正另目录保留。所有新控制显式opt-in，冻结源文件不改，无模型部署或训练数据回写。

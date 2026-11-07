@@ -1,0 +1,153 @@
+{
+  "complete": true,
+  "proxy": [
+    {
+      "object_id": "egad_A0_coarse",
+      "task_success": true,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 0.00020788944481803226,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.10857742782374903,
+        "lift_max_bottom_m": 0.10857742782374903,
+        "final_reference_rise_m": 0.102543406188488,
+        "bottom_above50mm_lift_steps": 273,
+        "qualifying_lift_steps": 412
+      }
+    },
+    {
+      "object_id": "egad_A0_fine",
+      "task_success": true,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 0.00020656543462172733,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.10838297898572179,
+        "lift_max_bottom_m": 0.10840151398228472,
+        "final_reference_rise_m": 0.10447804629802704,
+        "bottom_above50mm_lift_steps": 271,
+        "qualifying_lift_steps": 406
+      },
+      "all2100_command_targets_bitwise_identical_to_coarse": true
+    },
+    {
+      "object_id": "egad_A3_fine",
+      "task_success": false,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 0.0001812265190162746,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.0003568963020611532,
+        "lift_max_bottom_m": 0.0007436330214325535,
+        "final_reference_rise_m": 0.0010845698416233063,
+        "bottom_above50mm_lift_steps": 0,
+        "qualifying_lift_steps": 0
+      },
+      "all2100_command_targets_bitwise_identical_to_coarse": true
+    },
+    {
+      "object_id": "egad_A6_fine",
+      "task_success": false,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 1.5799580335487933e-05,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.00034719264462723274,
+        "lift_max_bottom_m": 0.0006585354260156229,
+        "final_reference_rise_m": 0.009265072643756866,
+        "bottom_above50mm_lift_steps": 0,
+        "qualifying_lift_steps": 0
+      },
+      "all2100_command_targets_bitwise_identical_to_coarse": true
+    },
+    {
+      "object_id": "egad_E0_fine",
+      "task_success": false,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 8.593549771527669e-05,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.0002549348090879139,
+        "lift_max_bottom_m": 0.0003161566646420503,
+        "final_reference_rise_m": 2.3096799850463867e-07,
+        "bottom_above50mm_lift_steps": 0,
+        "qualifying_lift_steps": 0
+      },
+      "all2100_command_targets_bitwise_identical_to_coarse": true
+    }
+  ],
+  "timing": [
+    {
+      "object_id": "egad_A0",
+      "task_success": true,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 0.0002100678418225447,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.10850752451515533,
+        "lift_max_bottom_m": 0.10850900832497079,
+        "final_reference_rise_m": 0.10576801747083664,
+        "bottom_above50mm_lift_steps": 272,
+        "qualifying_lift_steps": 415
+      },
+      "only_close_phase_targets_changed": true,
+      "changed_rows": 240
+    },
+    {
+      "object_id": "egad_A3",
+      "task_success": false,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 0.0001689810562197023,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.0007938554107128817,
+        "lift_max_bottom_m": 0.0009621348312120592,
+        "final_reference_rise_m": 0.0022154487669467926,
+        "bottom_above50mm_lift_steps": 0,
+        "qualifying_lift_steps": 0
+      },
+      "only_close_phase_targets_changed": true,
+      "changed_rows": 240
+    },
+    {
+      "object_id": "egad_A6",
+      "task_success": false,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 0.00014779789572206355,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.0006622773064357331,
+        "lift_max_bottom_m": 0.0012288910890431177,
+        "final_reference_rise_m": 0.007113780826330185,
+        "bottom_above50mm_lift_steps": 0,
+        "qualifying_lift_steps": 0
+      },
+      "only_close_phase_targets_changed": true,
+      "changed_rows": 240
+    },
+    {
+      "object_id": "egad_E0",
+      "task_success": false,
+      "all7_gates": true,
+      "palm_tracking_max_error_m": 5.664257865638558e-05,
+      "physical_steps": 2100,
+      "independent_source_vertices": {
+        "final_bottom_m": 0.0006989318441295409,
+        "lift_max_bottom_m": 0.0007656799931354047,
+        "final_reference_rise_m": 5.066394805908203e-07,
+        "bottom_above50mm_lift_steps": 0,
+        "qualifying_lift_steps": 0
+      },
+      "only_close_phase_targets_changed": true,
+      "changed_rows": 240
+    }
+  ],
+  "input_hash_count": 729,
+  "physics_steps": 18900,
+  "new_training_updates": 0,
+  "original_external_result_unchanged": "1/12",
+  "retained_zero_step_launch_error_count": 5,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_boya_alignment_results.py": "92d09b9e125de2f23ee57ed79aa36df9a249589cac8b79bfb52a5ff0f6aefe42"
+  }
+}

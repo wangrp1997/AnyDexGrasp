@@ -1,0 +1,281 @@
+{
+  "schema": "anydex_boya_original_recipe_physical_independent_audit_v1",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/protocol.json",
+    "sha256": "39362f935dcec9cc3b01b804710e8e61abb415733e4cc09318ce3e39b51069b8"
+  },
+  "summary": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/RESULTS.json",
+    "sha256": "2c66a76e93bb3360dfc616549cbaab6872f8af357cca1590d344ef9bc7baf178"
+  },
+  "scope": "Read-only known-object cached-score/control audit; no inference training or physical execution. Head forward recomputation only.",
+  "all_frozen_unique_files": 173,
+  "all_frozen_hashes_match": true,
+  "physical_loop_state_setters_absent": true,
+  "physical_loop_calls": [
+    "append",
+    "array",
+    "copy",
+    "cpu",
+    "dumps",
+    "index",
+    "items",
+    "monotonic",
+    "norm",
+    "numpy",
+    "read",
+    "set_position_index",
+    "set_velocity_index",
+    "startswith",
+    "step",
+    "tolist",
+    "update",
+    "write_data_to_sim"
+  ],
+  "objects": [
+    {
+      "object_id": "egad_A0",
+      "rank": 1,
+      "gesture_id": 6,
+      "target_index": 12,
+      "learned_score": 1.799927830696106,
+      "selected_before_physics_as_first_geometry_admitted": true,
+      "independent_original_head_full_output_max_abs_error": 0.0,
+      "all_shortlist_scores_recomputed": true,
+      "source_pose_mass_friction_collision_assets_unchanged": true,
+      "original_nominal_finger_command_path_exact_float32": true,
+      "source_desired_palm_path_reconstructed": true,
+      "steps": 2100,
+      "phases": {
+        "prehold": 800,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "failure_reason": null,
+      "palm_error_m": 1.0825224121547547e-05,
+      "max_penetration_m": 1.9144965335726738e-05,
+      "task_success": false,
+      "recomputed_pickup": {
+        "qualifying_steps": 15,
+        "final_bottom_clearance_m": 0.00039713937060560645,
+        "peak_lift_bottom_clearance_m": 0.01208569216317007,
+        "final_reference_rise_m": 0.09154298156499863,
+        "two_sides_loaded_lift_steps": 251,
+        "final_still_bearing": false
+      },
+      "final_finger_loads_n": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A0/evaluation.json",
+        "sha256": "fc812252041cf4669411fa0e18e74a5b91b18c42d566e7f18c56554a1d160de9"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A0/trace.npz",
+        "sha256": "f527356521b8fe02f18b50835d75f95e8eae36e74d09797ad14e05c720f33c2d"
+      }
+    },
+    {
+      "object_id": "egad_A3",
+      "rank": 42,
+      "gesture_id": 1,
+      "target_index": 11,
+      "learned_score": 1.6089030504226685,
+      "selected_before_physics_as_first_geometry_admitted": true,
+      "independent_original_head_full_output_max_abs_error": 0.0,
+      "all_shortlist_scores_recomputed": true,
+      "source_pose_mass_friction_collision_assets_unchanged": true,
+      "original_nominal_finger_command_path_exact_float32": true,
+      "source_desired_palm_path_reconstructed": true,
+      "steps": 1175,
+      "phases": {
+        "prehold": 800,
+        "approach": 375
+      },
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": false
+      },
+      "failure_reason": "object_pushed_before_closure",
+      "palm_error_m": 9.418399135809014e-06,
+      "max_penetration_m": 7.575657218694687e-05,
+      "task_success": false,
+      "recomputed_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.0007938576673314026,
+        "final_reference_rise_m": null,
+        "hold_or_lift_executed": false,
+        "reason": "Normal declared approach task-stop; not infrastructure failure"
+      },
+      "final_finger_loads_n": [
+        0.40980765223503113,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A3/evaluation.json",
+        "sha256": "f4a040a5289d5c93b3228ec266f09e1ee92b231236322f35267e3f438fac4cd6"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A3/trace.npz",
+        "sha256": "07b0743d2615f07bd6d82b4074cf9bcaabca4c1c7b51925428b2385246893a93"
+      }
+    },
+    {
+      "object_id": "egad_A6",
+      "rank": 19,
+      "gesture_id": 7,
+      "target_index": 4,
+      "learned_score": 1.0921164751052856,
+      "selected_before_physics_as_first_geometry_admitted": true,
+      "independent_original_head_full_output_max_abs_error": 0.0,
+      "all_shortlist_scores_recomputed": true,
+      "source_pose_mass_friction_collision_assets_unchanged": true,
+      "original_nominal_finger_command_path_exact_float32": true,
+      "source_desired_palm_path_reconstructed": true,
+      "steps": 2100,
+      "phases": {
+        "prehold": 800,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "failure_reason": null,
+      "palm_error_m": 4.734980324999294e-05,
+      "max_penetration_m": 7.821433246135712e-05,
+      "task_success": false,
+      "recomputed_pickup": {
+        "qualifying_steps": 0,
+        "final_bottom_clearance_m": 0.0006623703655745769,
+        "peak_lift_bottom_clearance_m": 0.0011783224159535042,
+        "final_reference_rise_m": 0.0014722496271133423,
+        "two_sides_loaded_lift_steps": 80,
+        "final_still_bearing": false
+      },
+      "final_finger_loads_n": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A6/evaluation.json",
+        "sha256": "5dabc8d689867aa5c2193ca25fce3c03dbf2809a2375ef478a37778f331d0cb7"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A6/trace.npz",
+        "sha256": "7f8d02bb28fd3f449fd22482358cb1312ef60f3e02af0f14eca7c4d393704b43"
+      }
+    },
+    {
+      "object_id": "egad_E0",
+      "rank": 0,
+      "gesture_id": 6,
+      "target_index": 12,
+      "learned_score": 1.8907835483551025,
+      "selected_before_physics_as_first_geometry_admitted": true,
+      "independent_original_head_full_output_max_abs_error": 0.0,
+      "all_shortlist_scores_recomputed": true,
+      "source_pose_mass_friction_collision_assets_unchanged": true,
+      "original_nominal_finger_command_path_exact_float32": true,
+      "source_desired_palm_path_reconstructed": true,
+      "steps": 2100,
+      "phases": {
+        "prehold": 800,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "failure_reason": null,
+      "palm_error_m": 5.610185702376897e-05,
+      "max_penetration_m": 6.362795829772949e-05,
+      "task_success": true,
+      "recomputed_pickup": {
+        "qualifying_steps": 304,
+        "final_bottom_clearance_m": 0.07409396140700802,
+        "peak_lift_bottom_clearance_m": 0.07410649326034535,
+        "final_reference_rise_m": 0.11098976992070675,
+        "two_sides_loaded_lift_steps": 500,
+        "final_still_bearing": true
+      },
+      "final_finger_loads_n": [
+        3.497011661529541,
+        3.6408143043518066,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_E0/evaluation.json",
+        "sha256": "91aa8e7e497a15f959695acd9390d9c31191962b33b111e751692da53bdfcfc7"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_E0/trace.npz",
+        "sha256": "2e3c7ae0632f801e05cf7968535b3ce3c8400f4e57e32d6328cd32bcf11a2658"
+      }
+    }
+  ],
+  "E0_selected_g6_target12_training_support": {
+    "fit_count": 17,
+    "fit_positive": 13,
+    "fit_negative": 4,
+    "all_records_count": 22,
+    "diagnostic_only_after_fixed_execution": true
+  },
+  "success": 1,
+  "physical_steps": 7475,
+  "physics_trials": 4,
+  "independent_unseen_validation": false,
+  "new_physics_steps_by_audit": 0,
+  "new_training_updates_by_audit": 0,
+  "new_CGR_forwards_by_audit": 0,
+  "limitations": [
+    "Known four scenes with existing coarse collision assets; not independent external benchmark or full original hardware reproduction.",
+    "E0 changes head/selected pose and becomes successful under same controlled-wrist environment; this does not isolate score calibration from pose/control interaction.",
+    "Full-trajectory low-level contacts are not retained; bearing recomputation uses saved per-finger normal loads and complete source vertices.",
+    "Zero state writes: bound reported counters plus direct runner loop inspection; not independent runtime API instrumentation."
+  ]
+}
