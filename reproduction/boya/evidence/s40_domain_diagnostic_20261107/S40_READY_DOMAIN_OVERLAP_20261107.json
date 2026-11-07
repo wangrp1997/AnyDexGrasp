@@ -1,0 +1,849 @@
+{
+  "schema": "anydex_s40_ready_domain_overlap_v1",
+  "scope": "Planning-ready bindings only; no execution labels, evaluation files or training records read; no policy optimization",
+  "source_queue": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/planning/queue_manifest.json",
+  "domain_counts_totals": {
+    "input": 16384,
+    "raw_width_pass": 3507,
+    "world_workspace_pass": 4276,
+    "world_approach_pass": 276,
+    "after_width": 3507,
+    "after_width_workspace": 1236,
+    "joint_pass": 89
+  },
+  "domain_joint_candidates": 89,
+  "ready_total": 27,
+  "ready_in_domain": 12,
+  "ready_gate_failures": {
+    "raw_width": 5,
+    "world_workspace": 0,
+    "world_approach": 15
+  },
+  "objects": [
+    {
+      "object_id": "graspnet_007",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 429,
+        "world_workspace_pass": 530,
+        "world_approach_pass": 25,
+        "after_width": 429,
+        "after_width_workspace": 132,
+        "joint_pass": 1
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1619,
+        "world_workspace": 1518,
+        "world_approach": 2023
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1619,
+        "world_workspace_after_width": 297,
+        "world_approach_after_width_workspace": 131
+      },
+      "ready_count": 6,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 4,
+        "world_workspace": 0,
+        "world_approach": 6
+      },
+      "ready_unique_raw_indices": 2,
+      "ready_in_domain_unique_raw_indices": 0
+    },
+    {
+      "object_id": "graspnet_008",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 434,
+        "world_workspace_pass": 593,
+        "world_approach_pass": 52,
+        "after_width": 434,
+        "after_width_workspace": 170,
+        "joint_pass": 18
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1614,
+        "world_workspace": 1455,
+        "world_approach": 1996
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1614,
+        "world_workspace_after_width": 264,
+        "world_approach_after_width_workspace": 152
+      },
+      "ready_count": 4,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 0,
+        "world_workspace": 0,
+        "world_approach": 4
+      },
+      "ready_unique_raw_indices": 2,
+      "ready_in_domain_unique_raw_indices": 0
+    },
+    {
+      "object_id": "graspnet_009",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 449,
+        "world_workspace_pass": 508,
+        "world_approach_pass": 29,
+        "after_width": 449,
+        "after_width_workspace": 158,
+        "joint_pass": 13
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1599,
+        "world_workspace": 1540,
+        "world_approach": 2019
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1599,
+        "world_workspace_after_width": 291,
+        "world_approach_after_width_workspace": 145
+      },
+      "ready_count": 0,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 0,
+        "world_workspace": 0,
+        "world_approach": 0
+      },
+      "ready_unique_raw_indices": 0,
+      "ready_in_domain_unique_raw_indices": 0
+    },
+    {
+      "object_id": "graspnet_021",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 435,
+        "world_workspace_pass": 496,
+        "world_approach_pass": 33,
+        "after_width": 435,
+        "after_width_workspace": 146,
+        "joint_pass": 18
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1613,
+        "world_workspace": 1552,
+        "world_approach": 2015
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1613,
+        "world_workspace_after_width": 289,
+        "world_approach_after_width_workspace": 128
+      },
+      "ready_count": 0,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 0,
+        "world_workspace": 0,
+        "world_approach": 0
+      },
+      "ready_unique_raw_indices": 0,
+      "ready_in_domain_unique_raw_indices": 0
+    },
+    {
+      "object_id": "graspnet_044",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 426,
+        "world_workspace_pass": 541,
+        "world_approach_pass": 52,
+        "after_width": 426,
+        "after_width_workspace": 146,
+        "joint_pass": 15
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1622,
+        "world_workspace": 1507,
+        "world_approach": 1996
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1622,
+        "world_workspace_after_width": 280,
+        "world_approach_after_width_workspace": 131
+      },
+      "ready_count": 12,
+      "ready_in_domain": 12,
+      "ready_gate_failures": {
+        "raw_width": 0,
+        "world_workspace": 0,
+        "world_approach": 0
+      },
+      "ready_unique_raw_indices": 2,
+      "ready_in_domain_unique_raw_indices": 2
+    },
+    {
+      "object_id": "graspnet_048",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 435,
+        "world_workspace_pass": 528,
+        "world_approach_pass": 34,
+        "after_width": 435,
+        "after_width_workspace": 172,
+        "joint_pass": 15
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1613,
+        "world_workspace": 1520,
+        "world_approach": 2014
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1613,
+        "world_workspace_after_width": 263,
+        "world_approach_after_width_workspace": 157
+      },
+      "ready_count": 0,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 0,
+        "world_workspace": 0,
+        "world_approach": 0
+      },
+      "ready_unique_raw_indices": 0,
+      "ready_in_domain_unique_raw_indices": 0
+    },
+    {
+      "object_id": "graspnet_066",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 449,
+        "world_workspace_pass": 563,
+        "world_approach_pass": 28,
+        "after_width": 449,
+        "after_width_workspace": 149,
+        "joint_pass": 2
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1599,
+        "world_workspace": 1485,
+        "world_approach": 2020
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1599,
+        "world_workspace_after_width": 300,
+        "world_approach_after_width_workspace": 147
+      },
+      "ready_count": 1,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 1,
+        "world_workspace": 0,
+        "world_approach": 1
+      },
+      "ready_unique_raw_indices": 1,
+      "ready_in_domain_unique_raw_indices": 0
+    },
+    {
+      "object_id": "graspnet_069",
+      "raw_domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 450,
+        "world_workspace_pass": 517,
+        "world_approach_pass": 23,
+        "after_width": 450,
+        "after_width_workspace": 163,
+        "joint_pass": 7
+      },
+      "raw_individual_rejections": {
+        "raw_width": 1598,
+        "world_workspace": 1531,
+        "world_approach": 2025
+      },
+      "raw_sequential_rejections": {
+        "raw_width": 1598,
+        "world_workspace_after_width": 287,
+        "world_approach_after_width_workspace": 156
+      },
+      "ready_count": 4,
+      "ready_in_domain": 0,
+      "ready_gate_failures": {
+        "raw_width": 0,
+        "world_workspace": 0,
+        "world_approach": 4
+      },
+      "ready_unique_raw_indices": 2,
+      "ready_in_domain_unique_raw_indices": 0
+    }
+  ],
+  "ready_bindings": [
+    {
+      "trial_id": "graspnet_007_g1_d0",
+      "object_id": "graspnet_007",
+      "source_row_index": 2029,
+      "gesture_id": 1,
+      "if_flip": false,
+      "official_policy_if_flip": true,
+      "extra_depth_index": 0,
+      "raw_depth_index": 0,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+      "binding_sha256": "e18c7f89591df1dd8a5ba191c8813cfa4ed97bbafe96e23121a3b5a9d0cdab02",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_007_g6_d0",
+      "object_id": "graspnet_007",
+      "source_row_index": 1354,
+      "gesture_id": 6,
+      "if_flip": false,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 0,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": false,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+      "binding_sha256": "3c3a976d394f443d624f57c545892a09719e1683861b27d55d0f9eed2cca02c3",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_007_g6_d1",
+      "object_id": "graspnet_007",
+      "source_row_index": 1354,
+      "gesture_id": 6,
+      "if_flip": false,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 1,
+      "raw_depth_index": 0,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": false,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+      "binding_sha256": "764d047280975bc8498a71b9594b8c83fd9875271387b08cc96e10c681d0d60c",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_007_g6_d2",
+      "object_id": "graspnet_007",
+      "source_row_index": 2029,
+      "gesture_id": 6,
+      "if_flip": false,
+      "official_policy_if_flip": true,
+      "extra_depth_index": 2,
+      "raw_depth_index": 0,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+      "binding_sha256": "213fab9d958b758ed52f9c6333885ae75396a6fa9c667fc7a689a30304810e17",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_007_g7_d0",
+      "object_id": "graspnet_007",
+      "source_row_index": 1354,
+      "gesture_id": 7,
+      "if_flip": false,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 0,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": false,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+      "binding_sha256": "6ee786a6045b419cf588fa5f1d39afe4c0db738b82cfab957e0bd280e56a5c4e",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_007_g7_d1",
+      "object_id": "graspnet_007",
+      "source_row_index": 1354,
+      "gesture_id": 7,
+      "if_flip": false,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 1,
+      "raw_depth_index": 0,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": false,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+      "binding_sha256": "4e7db3ce19b769691ceb5e1d19a713c12837e3a8f772911e65664d476bcf391f",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_008_g6_d0",
+      "object_id": "graspnet_008",
+      "source_row_index": 1413,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": true,
+      "extra_depth_index": 0,
+      "raw_depth_index": 2,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8c7213c78a1e0332865c3011d5561456582e27028fe43e72823ef938d17b28e7",
+      "binding_sha256": "cbabee0ca8ff1243dff14d7c13f5ee966ee67106504e619876411df84c09a5c0",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_008_g6_d1",
+      "object_id": "graspnet_008",
+      "source_row_index": 1413,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": true,
+      "extra_depth_index": 1,
+      "raw_depth_index": 2,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8c7213c78a1e0332865c3011d5561456582e27028fe43e72823ef938d17b28e7",
+      "binding_sha256": "b08eba87edae0db194e6eeca4ae8f24892774a1a02aa52e66bb7c9375b3943d0",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_008_g7_d0",
+      "object_id": "graspnet_008",
+      "source_row_index": 1413,
+      "gesture_id": 7,
+      "if_flip": true,
+      "official_policy_if_flip": true,
+      "extra_depth_index": 0,
+      "raw_depth_index": 2,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8c7213c78a1e0332865c3011d5561456582e27028fe43e72823ef938d17b28e7",
+      "binding_sha256": "1f4c31ef1410f2050a825abd4f79260f0a3707e0822f8ca11b114a506f959e93",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_008_g8_d0",
+      "object_id": "graspnet_008",
+      "source_row_index": 262,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 4,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "8c7213c78a1e0332865c3011d5561456582e27028fe43e72823ef938d17b28e7",
+      "binding_sha256": "15a4066ba658ac7b9b0fbea71b184291a64e5402760c48027c8ddc0ec43b9206",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g1_d0",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 1,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "700ea80ccff1c533777ca3fe413f7b18657781eae6c3c921981d05f8804e59d8",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g1_d1",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 1,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 1,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "9d3ddb9f5848f30f8372b2a305889183287c014ecd8d4855ef58798a341ae3b7",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g1_d2",
+      "object_id": "graspnet_044",
+      "source_row_index": 1459,
+      "gesture_id": 1,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 2,
+      "raw_depth_index": 3,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "3f0f2689796df8a3ed5d849f7d5dfe1f37fc2c52203673915a4a2893b9bca4d8",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g6_d0",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "4c9ce45c1902cf233c78e065d1f393e81ceee71a4fb80fcdf4b4314ce0ebb535",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g6_d1",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 1,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "4c8717f144f087e59d7216d3d3aa4787231ff6ecfae6e7dca07ab3abdbbb7ad0",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g6_d2",
+      "object_id": "graspnet_044",
+      "source_row_index": 1459,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 2,
+      "raw_depth_index": 3,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "4652d62f46aad1f003fa4f20f4fee0d13bd5bbafbd6da6eeab459e5d291c8240",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g7_d0",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 7,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "934740fe830435a74f868fc7f2b52b061b360040a32080cf14cd86e46e6b8434",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g7_d1",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 7,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 1,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "bb0188016a2949c5d46689d0520b9bb4d4f4c88d74fb89f006eca6fbe9135597",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g7_d2",
+      "object_id": "graspnet_044",
+      "source_row_index": 1459,
+      "gesture_id": 7,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 2,
+      "raw_depth_index": 3,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "3c58ca25fcb8a3ede770e743cfd172b81ceaf120a9064fd17888101b521338d1",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g8_d0",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "59b413712e1bed59f7b8710470003fcca44d5aa089b8f0859af81652f8898cae",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g8_d1",
+      "object_id": "graspnet_044",
+      "source_row_index": 1401,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 1,
+      "raw_depth_index": 2,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "2ac9370865f472a34f904233703b137a703a78ed523ad65b59ad5cd588a2d25e",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_044_g8_d2",
+      "object_id": "graspnet_044",
+      "source_row_index": 1459,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 2,
+      "raw_depth_index": 3,
+      "in_frozen_domain": true,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": true
+      },
+      "source_npz_sha256": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+      "binding_sha256": "6aa7a8e84a46e2c85aced94d7b7dd0901f2b70d2262f93ae187b8a8c88de3bd7",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_066_g6_d0",
+      "object_id": "graspnet_066",
+      "source_row_index": 1980,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": true,
+      "extra_depth_index": 0,
+      "raw_depth_index": 3,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": false,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "6ae7320599c31adf52a97a78d305b5eab04c1da709d370d266fc3bfb8791f7b7",
+      "binding_sha256": "09796b3eb7758e9029f2cbe3f491bae913d66dec0d2e749615f9c6823ff4645c",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_069_g1_d0",
+      "object_id": "graspnet_069",
+      "source_row_index": 776,
+      "gesture_id": 1,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 3,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "a3623914383ea76dfe83b659c3a8688e3cb8f3aa8cff83b127e67edd2cc88441",
+      "binding_sha256": "06a3cbc0819d4ac9ded78294a30dec2f86411736f28b97aa3bcc09799ebf941a",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_069_g6_d0",
+      "object_id": "graspnet_069",
+      "source_row_index": 776,
+      "gesture_id": 6,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 3,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "a3623914383ea76dfe83b659c3a8688e3cb8f3aa8cff83b127e67edd2cc88441",
+      "binding_sha256": "d638bc4f7e9e8981f19010f80f39ea29f92006b18f56c9e21c55df3e173b3e7b",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_069_g7_d0",
+      "object_id": "graspnet_069",
+      "source_row_index": 776,
+      "gesture_id": 7,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 3,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "a3623914383ea76dfe83b659c3a8688e3cb8f3aa8cff83b127e67edd2cc88441",
+      "binding_sha256": "cc82941ad3ad37f66dd9d298ec781419e66b4bc89bb14dfbdb673398ec033704",
+      "flip_preserves_domain": true
+    },
+    {
+      "trial_id": "graspnet_069_g8_d0",
+      "object_id": "graspnet_069",
+      "source_row_index": 1936,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "extra_depth_index": 0,
+      "raw_depth_index": 3,
+      "in_frozen_domain": false,
+      "gates": {
+        "raw_width": true,
+        "world_workspace": true,
+        "world_approach": false
+      },
+      "source_npz_sha256": "a3623914383ea76dfe83b659c3a8688e3cb8f3aa8cff83b127e67edd2cc88441",
+      "binding_sha256": "ac9f04286e965e1f2f820eb9388fdbb959cf8bf5d54672c2fda89624ca87d3a2",
+      "flip_preserves_domain": true
+    }
+  ],
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/planning/queue_manifest.json": "017a366aa0e03813dee7778b76db75bf84e42f9e265bb62e3c821a51ff435bc6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_007/DOMAIN.json": "9eb826d8ab232dbba46fcd2963af6f6f4e51547da5b4b6ae45a8b74c597cf18b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_007/raw_camera_candidates.npz": "8ad193cd664432043aa1f071c8fde07ca3569020c0e64ba9bdd8012e38739ea5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_007/observation.json": "920279b76bc5d9519d98243cb20e48260781bdf6c99165707443b8db611a7d38",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_007_g1_d0/trial_binding.json": "e18c7f89591df1dd8a5ba191c8813cfa4ed97bbafe96e23121a3b5a9d0cdab02",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_007_g6_d0/trial_binding.json": "3c3a976d394f443d624f57c545892a09719e1683861b27d55d0f9eed2cca02c3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_007_g6_d1/trial_binding.json": "764d047280975bc8498a71b9594b8c83fd9875271387b08cc96e10c681d0d60c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_007_g6_d2/trial_binding.json": "213fab9d958b758ed52f9c6333885ae75396a6fa9c667fc7a689a30304810e17",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_007_g7_d0/trial_binding.json": "6ee786a6045b419cf588fa5f1d39afe4c0db738b82cfab957e0bd280e56a5c4e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_007_g7_d1/trial_binding.json": "4e7db3ce19b769691ceb5e1d19a713c12837e3a8f772911e65664d476bcf391f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_008/DOMAIN.json": "664e1c1d99fc21fc113b6b0537e91c73f0f2c849885852403cf58b4d812fc24a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_008/raw_camera_candidates.npz": "8c7213c78a1e0332865c3011d5561456582e27028fe43e72823ef938d17b28e7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_008/observation.json": "750fe6c6e9d4a76dbb04c9e1d56ebdb73767cb469072773577109d92cfd3116c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_008_g6_d0/trial_binding.json": "cbabee0ca8ff1243dff14d7c13f5ee966ee67106504e619876411df84c09a5c0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_008_g6_d1/trial_binding.json": "b08eba87edae0db194e6eeca4ae8f24892774a1a02aa52e66bb7c9375b3943d0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_008_g7_d0/trial_binding.json": "1f4c31ef1410f2050a825abd4f79260f0a3707e0822f8ca11b114a506f959e93",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_008_g8_d0/trial_binding.json": "15a4066ba658ac7b9b0fbea71b184291a64e5402760c48027c8ddc0ec43b9206",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_009/DOMAIN.json": "c2cd1cfd46c0efcf4f241f116ac6d30b3e33f14e522c86c839465a59677b9d0c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_009/raw_camera_candidates.npz": "c6ff9ff2cb14c14c865ddd69812f961155df6849ae31e241aba09d88b821faa5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_009/observation.json": "360c9c13be50fee2cb611c6b31b6fa1b6771910171891bfe6d522e634e5d38f6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_021/DOMAIN.json": "9fbac842cf2d4c6e4175fd7d36dd91b1a50c9a1c86adcecea178d62f464fa7c2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_021/raw_camera_candidates.npz": "e1fd8fa26161ad176ae71b0bef3780236531b0f43459c4f7deb5096a6db83cec",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_021/observation.json": "a8689dcd766e4d6fd4cb8dd46d34370b097e364d7ea9fd49b5c3b81d90e180cb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_044/DOMAIN.json": "2a30aa0a0a4eb969fd8c16d1bace4292a2aace1c56ebc6dc9263adf20d756091",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_044/raw_camera_candidates.npz": "12fee5356fa667941f93c26b89d25288984b5b8be2e3ddb9f0be500da6c050f3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_044/observation.json": "7ad053db5dba0a411bf6c49a2d6f46b0e9112ada3c42814cf3117fc2c47940a1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g1_d0/trial_binding.json": "700ea80ccff1c533777ca3fe413f7b18657781eae6c3c921981d05f8804e59d8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g1_d1/trial_binding.json": "9d3ddb9f5848f30f8372b2a305889183287c014ecd8d4855ef58798a341ae3b7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g1_d2/trial_binding.json": "3f0f2689796df8a3ed5d849f7d5dfe1f37fc2c52203673915a4a2893b9bca4d8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g6_d0/trial_binding.json": "4c9ce45c1902cf233c78e065d1f393e81ceee71a4fb80fcdf4b4314ce0ebb535",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g6_d1/trial_binding.json": "4c8717f144f087e59d7216d3d3aa4787231ff6ecfae6e7dca07ab3abdbbb7ad0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g6_d2/trial_binding.json": "4652d62f46aad1f003fa4f20f4fee0d13bd5bbafbd6da6eeab459e5d291c8240",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g7_d0/trial_binding.json": "934740fe830435a74f868fc7f2b52b061b360040a32080cf14cd86e46e6b8434",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g7_d1/trial_binding.json": "bb0188016a2949c5d46689d0520b9bb4d4f4c88d74fb89f006eca6fbe9135597",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g7_d2/trial_binding.json": "3c58ca25fcb8a3ede770e743cfd172b81ceaf120a9064fd17888101b521338d1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g8_d0/trial_binding.json": "59b413712e1bed59f7b8710470003fcca44d5aa089b8f0859af81652f8898cae",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g8_d1/trial_binding.json": "2ac9370865f472a34f904233703b137a703a78ed523ad65b59ad5cd588a2d25e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_044_g8_d2/trial_binding.json": "6aa7a8e84a46e2c85aced94d7b7dd0901f2b70d2262f93ae187b8a8c88de3bd7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_048/DOMAIN.json": "e32ffea3b4b2e2a8f0742608d53a6015b433f2b7cdad5a410163197498d2aa26",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_048/raw_camera_candidates.npz": "b991d1b59c277e3d24425d4249feb4c0d7dbae067d45bc94cce8f500af4eb86e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_048/observation.json": "85b81fb55d9239473bb05c44691b96fb77e82716e92735f236560d8ca073da46",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_066/DOMAIN.json": "e46d795ceefcd0db754ef8bf7daea24489410dc314304f3f7c8079b078da5cb9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_066/raw_camera_candidates.npz": "6ae7320599c31adf52a97a78d305b5eab04c1da709d370d266fc3bfb8791f7b7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_066/observation.json": "259575119f01a4874bfe17352a20cd5e2354f74e5f8cfe6b37b25fa272066fba",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_066_g6_d0/trial_binding.json": "09796b3eb7758e9029f2cbe3f491bae913d66dec0d2e749615f9c6823ff4645c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/graspnet_069/DOMAIN.json": "471acd44719373768dee7d3dd0d302b2d23065edf63fdc0eaa80aefb584095c9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_069/raw_camera_candidates.npz": "a3623914383ea76dfe83b659c3a8688e3cb8f3aa8cff83b127e67edd2cc88441",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_069/observation.json": "b5b055fb9c2b664b5a083a4743df54281c6cc5e71c524de506c75e2adbfcf983",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_069_g1_d0/trial_binding.json": "06a3cbc0819d4ac9ded78294a30dec2f86411736f28b97aa3bcc09799ebf941a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_069_g6_d0/trial_binding.json": "d638bc4f7e9e8981f19010f80f39ea29f92006b18f56c9e21c55df3e173b3e7b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_069_g7_d0/trial_binding.json": "cc82941ad3ad37f66dd9d298ec781419e66b4bc89bb14dfbdb673398ec033704",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_069_g8_d0/trial_binding.json": "ac9f04286e965e1f2f820eb9388fdbb959cf8bf5d54672c2fda89624ca87d3a2"
+  },
+  "physics_steps": 0,
+  "model_forwards": 0,
+  "labels_read": false,
+  "policy_changed": false,
+  "ready_in_domain_and_official_flip": 0,
+  "ready_in_domain_opposite_official_flip": 12,
+  "ready_rows_matching_deployment_full_query_identity": 0,
+  "interpretation": "12 ready bindings have source rows inside the frozen domain, all on object044 and all execute if_flip=True versus official_policy_if_flip=False; no ready full query tuple(source index,gesture,actual flip,extra) appears in this official-flip deployment search domain. Do not call this proof of learned-score misranking."
+}

@@ -1,0 +1,277 @@
+{
+  "schema": "anydex_boya_prehead_domain_policy_v1",
+  "policy_id": "s40_sensor_frustum_camera_z_common_ff_support_20261107_v1",
+  "config": {
+    "world_workspace_aabb_m": [
+      [
+        -1.4,
+        -0.18028318377553387,
+        0.0005
+      ],
+      [
+        -0.10000000000000009,
+        0.4682583491909351,
+        0.398129951499991
+      ]
+    ],
+    "approach_world_cone": {
+      "axis_world": [
+        0.0,
+        0.5633369342972592,
+        -0.8262272680422532
+      ],
+      "cos_threshold": 0.9
+    },
+    "raw_width_bounds_m": [
+      0.022018084578542558,
+      0.07677524081551822
+    ]
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/objects.json": "15dabf4054df2ffebdab3796c5dd68ba04c560cd308276a83ee098ded58db253",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_000/observation.json": "ac0be31dde5000916b76afc6655d4875fd1aa93bf7ca2f4f3f02993fcc167190",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_prehead_domain.py": "8abf5a688410b9df4744c20358b0f3be83ee12b886911184cfa90211c699c9ec"
+  },
+  "construction": {
+    "camera_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/settling/objects.json",
+    "native_camera_observation": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_000/observation.json",
+    "camera": {
+      "width": 1280,
+      "height": 720,
+      "fx": 640.0,
+      "fy": 640.0,
+      "eye_world_m": [
+        -0.75,
+        -0.2,
+        0.5
+      ],
+      "target_world_m": [
+        -0.75,
+        0.1,
+        0.06
+      ],
+      "up_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "depth_range_m": [
+        0.2,
+        0.65
+      ],
+      "focal_length": 24.0,
+      "horizontal_aperture": 48.0,
+      "clipping_range_m": [
+        0.1,
+        1.0
+      ]
+    },
+    "intrinsic_matrix": [
+      [
+        640.0,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        640.0,
+        360.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "T_WC": [
+      [
+        0.9999999999999999,
+        -0.0,
+        0.0,
+        -0.75
+      ],
+      [
+        0.0,
+        -0.8262272680422532,
+        0.5633369342972592,
+        -0.20000000298023224
+      ],
+      [
+        -0.0,
+        -0.5633369342972592,
+        -0.8262272680422532,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "viewport_edge_u": [
+      0,
+      1280
+    ],
+    "viewport_edge_v": [
+      0,
+      720
+    ],
+    "pixel_boundary": "Conservative full viewport edge envelope [0,W]x[0,H]; includes sampled pixels0..W-1/0..H-1",
+    "depth_range_m": [
+      0.2,
+      0.65
+    ],
+    "camera_frustum_corners_m": [
+      [
+        -0.2,
+        -0.1125,
+        0.2
+      ],
+      [
+        -0.65,
+        -0.36562500000000003,
+        0.65
+      ],
+      [
+        -0.2,
+        0.1125,
+        0.2
+      ],
+      [
+        -0.65,
+        0.36562500000000003,
+        0.65
+      ],
+      [
+        0.2,
+        -0.1125,
+        0.2
+      ],
+      [
+        0.65,
+        -0.36562500000000003,
+        0.65
+      ],
+      [
+        0.2,
+        0.1125,
+        0.2
+      ],
+      [
+        0.65,
+        0.36562500000000003,
+        0.65
+      ]
+    ],
+    "world_frustum_corners_m": [
+      [
+        -0.95,
+        0.005617951533973098,
+        0.398129951499991
+      ],
+      [
+        -1.4,
+        0.4682583491909351,
+        0.16892234237497078
+      ],
+      [
+        -0.95,
+        -0.18028318377553387,
+        0.2713791412831077
+      ],
+      [
+        -1.4,
+        -0.1359203405649626,
+        -0.24301779082990005
+      ],
+      [
+        -0.55,
+        0.005617951533973098,
+        0.398129951499991
+      ],
+      [
+        -0.10000000000000009,
+        0.4682583491909351,
+        0.16892234237497078
+      ],
+      [
+        -0.55,
+        -0.18028318377553387,
+        0.2713791412831077
+      ],
+      [
+        -0.10000000000000009,
+        -0.1359203405649626,
+        -0.24301779082990005
+      ]
+    ],
+    "world_frustum_AABB_before_table_clip_m": [
+      [
+        -1.4,
+        -0.18028318377553387,
+        -0.24301779082990005
+      ],
+      [
+        -0.10000000000000009,
+        0.4682583491909351,
+        0.398129951499991
+      ]
+    ],
+    "table_clip_min_z_m": 0.0005,
+    "operation": "Transform the8 near/far viewport corners to world, take coordinatewise min/max, then intersect resulting AABB with existing table clearance half-space z>.0005. This is the AABB envelope, not exact frustum/polytope intersection.",
+    "approach_axis_rule": "Native T_WC[:3,2], so (R_WC@R_CG[:,0]) dot axis_world equals original camera R_CG[2,0] up to floating-point error",
+    "opening_expansion": 1.7,
+    "opponent": "ff",
+    "self_collision_clear_required": true,
+    "participating_gestures": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "per_gesture_calibration_support": {
+      "1": {
+        "opening_width_min_m": 0.029214303107444498,
+        "opening_width_max_m": 0.13583993319676196,
+        "raw_width_min_m": 0.017184884180849704,
+        "raw_width_max_m": 0.07990584305691881,
+        "calibrated_slots": 33
+      },
+      "6": {
+        "opening_width_min_m": 0.010023579234290097,
+        "opening_width_max_m": 0.13051790938638097,
+        "raw_width_min_m": 0.005896223078994175,
+        "raw_width_max_m": 0.07677524081551822,
+        "calibrated_slots": 33
+      },
+      "7": {
+        "opening_width_min_m": 0.013336950087848335,
+        "opening_width_max_m": 0.13206316808570315,
+        "raw_width_min_m": 0.007845264757557844,
+        "raw_width_max_m": 0.07768421652100185,
+        "calibrated_slots": 33
+      },
+      "8": {
+        "opening_width_min_m": 0.03743074378352235,
+        "opening_width_max_m": 0.14085802174547776,
+        "raw_width_min_m": 0.022018084578542558,
+        "raw_width_max_m": 0.08285765985028104,
+        "calibrated_slots": 33
+      }
+    },
+    "raw_width_rule": "Intersection of all four ff/self-collision-clear reference-width min/max intervals, divided by original1.7 expansion; no added tolerance/padding",
+    "width_boundary": "Conservative common calibrated reference support; not maximum hardware opening. Existing per-type nearest-slot tolerance and clamp remain a separate unchanged mapping stage.",
+    "source_margin": "build_collection_pool.geometry: if low < .0005 reject"
+  },
+  "scope": "A single predeclared Boya sensor-domain port policy, applied before CGR top-K/head scoring. No grasp labels, internal diagnostic results, EGAD, mesh bounding boxes, object semantics, train curves or policy-search trials used.",
+  "workspace_boundary": "World AABB envelope of frozen RGBD sensor near/far volume above existing table margin; contains the unified[-.75,.10] placement zone. Not a robot-reachability certificate, finite physical table edge, object bbox or foreground/segmentation mask.",
+  "comparisons": "Strict open inequalities as specified by boya_prehead_domain.py",
+  "new_physics_steps": 0,
+  "new_model_forwards": 0,
+  "new_training_updates": 0,
+  "policy_candidates_evaluated": 1
+}

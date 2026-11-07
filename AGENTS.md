@@ -284,3 +284,14 @@ outputs/s40_collection_20261107_v1已于北京时间12:43:25 complete，97.971mi
 新活动outputs/s40_stable_supplement_20261107_v2/collection_resume_v3，PID2371155，2026-11-07T19:04:09.621434+08:00启动，protocol ba712cc75c3467457436b78b47eb438658958b9b8abae31981faa70a6a4ea076；四对象并行只派38首次执行，原157/329700步继承不重抓，不重render/CGR/几何/IK。原640、源40/alltrain/32+8保持，旧文件不改，新派生JSONL只改context追溯新旧protocol。
 
 自动等待PID2371156，同父training_delivery_v3；新final完成后exporter_v2→两源merge旧240与本轮有效→固定20epoch训练。此刻新训练/部署成绩未产生，EGAD未用，Boyaprehead具体域配置待冻结。后续看新目录，不重复旧watcher或新恢复，不热改任何已冻结py；所有未完成/失败与成本保留。报告S40_TEMPORAL_RESUME_20261107.md及evidence/s40_temporal_resume_20261107；只轻量push用户origin，CanonDex只读。
+
+
+## 2026-11-07 最新：补采与重训已完成，评分门诊断未通过
+
+`outputs/s40_stable_supplement_20261107_v2/collection_resume_v3`已complete：640槽=195有效（137正58负）+445准备null，无terminal/unknown/unexecuted；409604物理步，继承157/329700，新38/79904。collector和training_delivery_v3均已收尾，不恢复watcher/重派。旧阻断及输入不覆盖。严格合并旧240后435=302正133负、35有标签网格，原40全train/32+8保持，364fit/71internal；四内部+四all40头固定20epoch已完成160更新、strict reload通过。
+
+内部加权MSE .554678仍差于fit-prior常数.208669。独立原代码/数据检查未见480/标签/输出索引、Inference/Loss或漏权重接线错误。论文100次为每型在40物体上总计，约100/型已同数量级，不能只怪量少。每头仅20batch更新、7BN计数20，train/eval差异真实但不是已隔离唯一原因；未调参/重训。EGAD未用。
+
+新增独立score_s40_domain_candidates.py接已有prehead helper，源推导单一policy在evidence/s40_domain_diagnostic_20261107/DOMAIN_POLICY.json先冻结；共同标定宽度交集为保守Boya端口域，不是最大开口，workspace为camera frustum world AABB/table裁剪，approach保留相机Z>.9语义。25tests通过。原8帧16384raw→89域内→356queries/1424组合；原float32>.85有38组合，但38全table拒绝、0几何/0臂/0物理。旧raw3200全拒记录仍留，不称完整官方部署失败。
+
+独立diagnose_s40_domain_feasibility.py只读同一冻结输出，对全部1424组合做几何对照，17准入来自3件，最高score .494948，全部被原.85门挡；另5件该域内无准入。对照不是降低部署阈值，不覆盖0准入结果，17不是抓取成功。新诊断9.010s+对照29.380s额外成本；零新CGR/物理/训练。完整outputs/s40_domain_diagnostic_20261107_v1及s40_domain_feasibility_20261107_v1；报告S40_SUPPLEMENT_AND_DOMAIN_RESULTS_20261107.md。只读原内部27 ready进一步发现12条source row域内，但全部flip=True而official=False，完整query重叠0/27；双flip采集和单flip部署存在覆盖差异，不读标签。整体复现/新部署仍未通过，不自动用EGAD调参或追加大采集；下一阶段候选覆盖和训练协议需先对齐。CanonDex只读，只push轻量相关文件。

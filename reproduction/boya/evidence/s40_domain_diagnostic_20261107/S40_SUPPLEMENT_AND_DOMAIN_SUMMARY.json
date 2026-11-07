@@ -1,0 +1,160 @@
+{
+  "schema": "anydex_s40_supplement_and_domain_delivery_v1",
+  "status": "stage_complete_deployment_not_accepted",
+  "collection": {
+    "slots": 640,
+    "eligible": 195,
+    "positive": 137,
+    "negative": 58,
+    "preparation_null": 445,
+    "terminal_null": 0,
+    "physical_steps": 409604,
+    "inherited_actual": 157,
+    "new_actual": 38,
+    "unknown": 0,
+    "unexecuted": 0,
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/execution/RESULTS.json",
+      "sha256": "def341ce0b31c00e46134c3f9dc38442b936e85dde968f2cc1ac46c5366aa884"
+    }
+  },
+  "merged_data": {
+    "valid": 435,
+    "positive": 302,
+    "negative": 133,
+    "fit": 364,
+    "internal": 71,
+    "labelled_mesh_groups": 35,
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json",
+      "sha256": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb"
+    }
+  },
+  "training": {
+    "status": "complete",
+    "official_component_reuse": {
+      "module": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py",
+      "module_sha256": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+      "architecture": "original MinkowskiGraspNetMultifingerType1Inference480to20",
+      "loss": "original MultfingerType1Loss selected executed output MSE",
+      "optimizer": "Adam",
+      "scheduler": "original PolyLR",
+      "train_loop_function": "train_boya_decision.train_head",
+      "checkpoint": "fixed epoch20; no metric selection",
+      "configuration_boundary": "Paper epochs20/lr1e-4/batch128 with released code WD5e-4/Poly.99; explicit prior adapter config reused"
+    },
+    "internal_and_refit_heads": 8,
+    "optimizer_updates": 160,
+    "weighted_internal_mse": 0.5546777622434892,
+    "fit_prior_constant_mse": 0.20866929771515805,
+    "per_type": {
+      "1": {
+        "fit_records": 83,
+        "internal_records": 15,
+        "internal_mse": 0.6680849179190397,
+        "fit_prior_constant_mse": 0.1957420041612232,
+        "final_epoch": 20,
+        "optimizer_updates": 20,
+        "fit_unsupervised_outputs": [
+          2,
+          3,
+          15,
+          18,
+          19
+        ]
+      },
+      "6": {
+        "fit_records": 98,
+        "internal_records": 22,
+        "internal_mse": 0.47189689512382704,
+        "fit_prior_constant_mse": 0.23212865851349818,
+        "final_epoch": 20,
+        "optimizer_updates": 20,
+        "fit_unsupervised_outputs": [
+          2,
+          15,
+          18,
+          19
+        ]
+      },
+      "7": {
+        "fit_records": 98,
+        "internal_records": 19,
+        "internal_mse": 0.6685498270725144,
+        "fit_prior_constant_mse": 0.14053354961748396,
+        "final_epoch": 20,
+        "optimizer_updates": 20,
+        "fit_unsupervised_outputs": [
+          0,
+          2,
+          15,
+          18,
+          19
+        ]
+      },
+      "8": {
+        "fit_records": 85,
+        "internal_records": 15,
+        "internal_mse": 0.41844459622667773,
+        "fit_prior_constant_mse": 0.2734948096885813,
+        "final_epoch": 20,
+        "optimizer_updates": 20,
+        "fit_unsupervised_outputs": [
+          3,
+          18,
+          19
+        ]
+      }
+    },
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/training/TRAINING_RESULTS.json",
+      "sha256": "b469964b777f07360bb0304a5a9af7e5fb8f680fa5483aba63e5b89a09b558cf"
+    }
+  },
+  "domain_diagnostic": {
+    "objects": 8,
+    "raw_candidates": 16384,
+    "domain_candidates": 89,
+    "head_queries": 356,
+    "expanded_combinations": 1424,
+    "threshold_pass": 38,
+    "threshold_pass_without_direct_fit_supervision": 5,
+    "geometry_checked": 38,
+    "geometry_admitted": 0,
+    "all_rejected_reason": "table",
+    "threshold": 0.85,
+    "new_physics_steps": 0,
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_diagnostic_20261107_v1/RESULTS.json",
+      "sha256": "95c2ee6d747e57a85970ccbb095a0ac21e343125911d464d8cf23e97453df153"
+    }
+  },
+  "feasibility_control": {
+    "checked": 1424,
+    "admitted": 17,
+    "objects_with_any_geometry": 3,
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_domain_feasibility_20261107_v1/RESULTS.json",
+      "sha256": "57cc7e7873b83f8421c324a95019e69e20d186b9fbf138dbf99ee2d8c1b23fae"
+    },
+    "new_physics_steps": 0,
+    "original_deployment_results_replaced": false,
+    "note": "All domain combinations checked solely to separate coverage from score rejection; not threshold tuning, arm feasibility or grasp success"
+  },
+  "EGAD_accessed": 0,
+  "external_validation_performed": false,
+  "boundary": "Synthetic Boya adaptation; no new deployment success rate, no claim of original real-paper reproduction completion",
+  "checks": {
+    "source_and_inputs_unchanged": true,
+    "contract_tests": 25,
+    "new_trial_physics_steps_this_status_turn": 0
+  },
+  "ready_domain_overlap": {
+    "ready_bindings": 27,
+    "source_rows_in_domain": 12,
+    "full_query_overlap": 0,
+    "reason": "All12 retained source rows require flip=True while official flip=False",
+    "outcomes_read": false,
+    "evidence_file": "S40_READY_DOMAIN_OVERLAP_20261107.json"
+  }
+}
