@@ -1,0 +1,821 @@
+{
+  "schema": "anydex_s40_hand_domain_delivery_v1",
+  "status": "complete_internal_stage",
+  "domain": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/RESULTS.json",
+      "sha256": "469bf283cf012e6e9643c01b3e69935704c0e1adc25ad8b621f7cb416a22513f"
+    },
+    "objects": 8,
+    "head_queries": 910,
+    "eligible_combinations": 2379,
+    "score_pass_and_full_geometry_calls": 240,
+    "full_geometry_admitted": 93,
+    "objects_with_geometry": 6,
+    "support_plane_recheck_rejections": 0,
+    "wall_s": 22.39274924399797,
+    "per_object": [
+      {
+        "object_id": "graspnet_007",
+        "head_queries": 338,
+        "expanded_combinations": 1207,
+        "shortlist": 107,
+        "geometry_checked": 107,
+        "geometry_admitted": 11,
+        "geometry_rejection_counts": {
+          "visible_scene_point_in_hand_hull": 96
+        }
+      },
+      {
+        "object_id": "graspnet_008",
+        "head_queries": 174,
+        "expanded_combinations": 376,
+        "shortlist": 41,
+        "geometry_checked": 41,
+        "geometry_admitted": 15,
+        "geometry_rejection_counts": {
+          "visible_scene_point_in_hand_hull": 26
+        }
+      },
+      {
+        "object_id": "graspnet_009",
+        "head_queries": 1,
+        "expanded_combinations": 1,
+        "shortlist": 0,
+        "geometry_checked": 0,
+        "geometry_admitted": 0,
+        "geometry_rejection_counts": {}
+      },
+      {
+        "object_id": "graspnet_021",
+        "head_queries": 30,
+        "expanded_combinations": 34,
+        "shortlist": 9,
+        "geometry_checked": 9,
+        "geometry_admitted": 9,
+        "geometry_rejection_counts": {}
+      },
+      {
+        "object_id": "graspnet_044",
+        "head_queries": 176,
+        "expanded_combinations": 378,
+        "shortlist": 40,
+        "geometry_checked": 40,
+        "geometry_admitted": 27,
+        "geometry_rejection_counts": {
+          "visible_scene_point_in_hand_hull": 13
+        }
+      },
+      {
+        "object_id": "graspnet_048",
+        "head_queries": 10,
+        "expanded_combinations": 10,
+        "shortlist": 3,
+        "geometry_checked": 3,
+        "geometry_admitted": 0,
+        "geometry_rejection_counts": {
+          "visible_scene_point_in_hand_hull": 3
+        }
+      },
+      {
+        "object_id": "graspnet_066",
+        "head_queries": 138,
+        "expanded_combinations": 275,
+        "shortlist": 20,
+        "geometry_checked": 20,
+        "geometry_admitted": 14,
+        "geometry_rejection_counts": {
+          "visible_scene_point_in_hand_hull": 6
+        }
+      },
+      {
+        "object_id": "graspnet_069",
+        "head_queries": 43,
+        "expanded_combinations": 98,
+        "shortlist": 20,
+        "geometry_checked": 20,
+        "geometry_admitted": 17,
+        "geometry_rejection_counts": {
+          "visible_scene_point_in_hand_hull": 3
+        }
+      }
+    ]
+  },
+  "source_and_input_files_rehashed": 557,
+  "all_frozen_hashes_match": true,
+  "preparation": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_top1_20261107_v1/queue_manifest.json",
+      "sha256": "28796f0d0d32801a0af75e056fe9314fd688e37b6686994f7ae85ef5a80e9d4d"
+    },
+    "ready": 5,
+    "nulls": 3,
+    "arm_preparations": 9,
+    "wall_s": 28.706184734008275,
+    "trailing_cli_error": "NameError in final print only; complete queue saved first; no repeated preparation",
+    "future_cli": "reproduction/boya/prepare_s40_hand_top1.py"
+  },
+  "physical": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/RESULTS.json",
+      "sha256": "9de2849e790395cab2f5475cbf9ed9455f4c88001ab9fd6d2281bf94b94a0bc8"
+    },
+    "objects": 8,
+    "actual_attempts": 5,
+    "successes": 3,
+    "eligible_failures": 2,
+    "no_plan_objects": [
+      "graspnet_007",
+      "graspnet_009",
+      "graspnet_048"
+    ],
+    "terminal_nulls": 0,
+    "total_steps": 10500,
+    "rows": [
+      {
+        "object_id": "graspnet_008",
+        "label": 0,
+        "physics_steps": 2100,
+        "final_reference_rise_m": -2.8330832719802856e-05,
+        "final_bottom_clearance_m": 0.001385152864868823,
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": false,
+        "final_lifted_and_bearing": false,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 0.0,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              0.0,
+              4.1966612339019775,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              0.0,
+              4.310968596146267,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_008/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "0e344aa33c4c75e1d85cbb0e20ec540755c2324410ee57cb4631c2a80b2d15d6"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_008/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "43ed9730ddbea4019d1d2ae6211125b31f2a2a01cf3e30f4e935d2bbd3acea62"
+        }
+      },
+      {
+        "object_id": "graspnet_021",
+        "label": 1,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 0.09069572202861309,
+        "final_bottom_clearance_m": 0.09223356609749339,
+        "final_finger_loads_n": [
+          7.2218337059021,
+          3.881896734237671,
+          3.526440382003784,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": true,
+        "final_lifted_and_bearing": true,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 1.5360000000000014,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              4.491420745849609,
+              4.361085414886475,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              3.987386465072632,
+              4.250094350427389,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              7.2218337059021,
+              3.881896734237671,
+              3.526440382003784,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_021/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "39916cf2a90b0962d9d725390cbf2626f6e06863840be306102d7bb492b1abd7"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_021/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "ffce65517e4cd75c9c9fc3c80db3604b95e2458a5b37d66d0968a2327c1e0b84"
+        }
+      },
+      {
+        "object_id": "graspnet_044",
+        "label": 0,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 0.04500466585159302,
+        "final_bottom_clearance_m": 0.0013604082953293517,
+        "final_finger_loads_n": [
+          5.370694160461426,
+          5.282925605773926,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": true,
+        "final_lifted_and_bearing": false,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 0.0,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              5.370694160461426,
+              5.282925605773926,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_044/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "2869d77fef3a7bb765eb79124f58321c9c285f4cc07482e489d1b63a924859db"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_044/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "ac9421765afc4f20e5338554be5f4e1d3c2398b9e96667dae107999cfd1300ab"
+        }
+      },
+      {
+        "object_id": "graspnet_066",
+        "label": 1,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 0.07942396402359009,
+        "final_bottom_clearance_m": 0.06235169583452022,
+        "final_finger_loads_n": [
+          5.460400313138962,
+          5.205078125,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": true,
+        "final_lifted_and_bearing": true,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 1.3800000000000012,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              4.454775810241699,
+              3.8859435468912125,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              4.444573692977428,
+              4.023034393787384,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              5.460400313138962,
+              5.205078125,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_066/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "186aca6e415c3d1c63f27c7ab8dd12e184b1508c91934065249b35760c4e04a5"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_066/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "52c00837569bc1c189a7ac9ed2aa8e30ec67959c9a52d370590735ea365c1ce2"
+        }
+      },
+      {
+        "object_id": "graspnet_069",
+        "label": 1,
+        "physics_steps": 2100,
+        "final_reference_rise_m": 0.09777930751442909,
+        "final_bottom_clearance_m": 0.08681303427988524,
+        "final_finger_loads_n": [
+          4.392460227012634,
+          4.136198269203305,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "final_bilateral_load": true,
+        "final_lifted_and_bearing": true,
+        "all_original_seven_gates": true,
+        "longest_observed_pickup_run_s": 1.3760000000000012,
+        "independent_original_command_arrays_and_final_source_mesh_measurement": true,
+        "checkpoints": [
+          {
+            "phase": "settle",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "home_to_pregrasp",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "approach",
+            "loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "phase": "close",
+            "loads_n": [
+              4.28711462020874,
+              3.578493118286133,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "hold",
+            "loads_n": [
+              4.019581317901611,
+              3.495529890060425,
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "phase": "lift",
+            "loads_n": [
+              4.392460227012634,
+              4.136198269203305,
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "evaluation": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_069/cohorts/cohort_0000/execution_000/evaluation.json",
+          "sha256": "67d87bd2d740821035c89efbb34ae123dae1a9730e0d6d1d82f188737bf8fd18"
+        },
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/execution/graspnet_069/cohorts/cohort_0000/execution_000/trace.npz",
+          "sha256": "8700ff1122178a40dafc84f3dda94b0ecee1404b6fe1a05ab9f22de2fb89cb26"
+        }
+      }
+    ],
+    "benchmark_only": true,
+    "outcome_dependent_retry": false,
+    "training_writeback": false
+  },
+  "regression_044": {
+    "object_id": "graspnet_044",
+    "old_successful_candidate": {
+      "query_index": 23,
+      "source_candidate_index": 1401,
+      "source_cgr_rank": 2,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "raw_depth_index": 2,
+      "cgr_score": 0.48981529474258423,
+      "canonical_CGR480_identity": {
+        "shape": [
+          480
+        ],
+        "dtype": "<f4",
+        "c_order_bytes_sha256": "30b313d0087bf5bec1ac80c636e8c3775be0543486e072d5b4ae93d9ae7e633f"
+      },
+      "extra_depth_index": 0,
+      "target_index": 8,
+      "learned_score": 1.214249849319458,
+      "global_score_rank": 11,
+      "source_slot": "g8:distal_006:ff",
+      "actual_reference_width_m": 0.11798896646859097,
+      "raw_width_m": 0.06928148120641708,
+      "requested_opening_m": 0.11777851805090904,
+      "width_expansion": 1.7,
+      "width_clamped": false,
+      "raw_depth_m": 0.019999999552965164,
+      "additional_depth_index": 0,
+      "additional_depth_m": 0.0,
+      "geometry": {
+        "ok": true,
+        "minimum_height_m": 0.011924707273473667,
+        "approach_samples": 21,
+        "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+      },
+      "score_source": "Frozen Boya head, globally ranked before geometry",
+      "jaw_assignment": {
+        "thumb": "th",
+        "opponent": "ff"
+      }
+    },
+    "old_candidate_in_new_geometry": {
+      "query_index": 141,
+      "source_candidate_index": 1401,
+      "source_cgr_rank": 24,
+      "gesture_id": 8,
+      "if_flip": true,
+      "official_policy_if_flip": false,
+      "raw_depth_index": 2,
+      "cgr_score": 0.48981529474258423,
+      "canonical_CGR480_identity": {
+        "shape": [
+          480
+        ],
+        "dtype": "<f4",
+        "c_order_bytes_sha256": "30b313d0087bf5bec1ac80c636e8c3775be0543486e072d5b4ae93d9ae7e633f"
+      },
+      "domain_source_slot": "g8:distal_006:ff",
+      "allowed_extra_depth_indices": [
+        0,
+        1
+      ],
+      "table_minimum_heights_m": [
+        0.011924707273473667,
+        0.004820430824977795,
+        -0.002283845623518105,
+        -0.009388122072013977
+      ],
+      "requested_opening_m": 0.11777851805090904,
+      "width_expansion": 1.7,
+      "width_clamped": false,
+      "extra_depth_index": 0,
+      "target_index": 8,
+      "learned_score": 1.214249849319458,
+      "global_score_rank": 10,
+      "source_slot": "g8:distal_006:ff",
+      "actual_reference_width_m": 0.11798896646859097,
+      "raw_width_m": 0.06928148120641708,
+      "raw_depth_m": 0.019999999552965164,
+      "additional_depth_index": 0,
+      "additional_depth_m": 0.0,
+      "geometry": {
+        "ok": true,
+        "minimum_height_m": 0.011924707273473667,
+        "approach_samples": 21,
+        "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+      },
+      "score_source": "Frozen Boya head, globally ranked before geometry",
+      "jaw_assignment": {
+        "thumb": "th",
+        "opponent": "ff"
+      }
+    },
+    "newly_selected_candidate": {
+      "query_index": 75,
+      "source_candidate_index": 1875,
+      "source_cgr_rank": 11,
+      "gesture_id": 6,
+      "if_flip": false,
+      "official_policy_if_flip": false,
+      "raw_depth_index": 3,
+      "cgr_score": 0.5921432375907898,
+      "canonical_CGR480_identity": {
+        "shape": [
+          480
+        ],
+        "dtype": "<f4",
+        "c_order_bytes_sha256": "76aab873f3585ec49e50363e0a76a1cec5c9db1cd250ed6ee6979a0542ffedda"
+      },
+      "domain_source_slot": "g6:distal_000:ff",
+      "allowed_extra_depth_indices": [
+        0,
+        1,
+        2
+      ],
+      "table_minimum_heights_m": [
+        0.021437210831930176,
+        0.012720759166781698,
+        0.0040043075016332474,
+        -0.004712144163515231
+      ],
+      "requested_opening_m": 0.13051790938638097,
+      "width_expansion": 1.7,
+      "width_clamped": true,
+      "extra_depth_index": 2,
+      "target_index": 14,
+      "learned_score": 1.3258295059204102,
+      "global_score_rank": 7,
+      "source_slot": "g6:distal_000:ff",
+      "actual_reference_width_m": 0.13051790938638097,
+      "raw_width_m": 0.0816153734922409,
+      "raw_depth_m": 0.029999999329447746,
+      "additional_depth_index": 2,
+      "additional_depth_m": 0.02,
+      "geometry": {
+        "ok": true,
+        "minimum_height_m": 0.004004307501633275,
+        "approach_samples": 21,
+        "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+      },
+      "score_source": "Frozen Boya head, globally ranked before geometry",
+      "jaw_assignment": {
+        "thumb": "th",
+        "opponent": "ff"
+      }
+    },
+    "old_success_was_not_removed_by_candidate_domain": true,
+    "note": "New top1 failed despite higher learned score. Old success is historical and was not replayed or substituted into this protocol; single trials do not isolate one physical cause."
+  },
+  "videos": [
+    {
+      "object_id": "graspnet_044",
+      "label": 0,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/videos/graspnet_044/isaac_full_arm_pickup.mp4",
+        "sha256": "67958644e5d9438bfdc253d585fb2922a13fee248cecc7410544345298122fb7"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "graspnet_066",
+      "label": 1,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/videos/graspnet_066/isaac_full_arm_pickup.mp4",
+        "sha256": "75e5e4c0c1e77f399476b70bf0df46fb134aa30d3ce75f0e7bae443cfa2eab43"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "graspnet_008",
+      "label": 0,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/videos/graspnet_008/isaac_full_arm_pickup.mp4",
+        "sha256": "ece3ff912d219afbb8315dc71d949fc72e1a608ccc472b13bb600ecdb3e46653"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "graspnet_021",
+      "label": 1,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/videos/graspnet_021/isaac_full_arm_pickup.mp4",
+        "sha256": "018e4af6605114195cdf436da440304fa54632b0cbca72a85720def76d5781b2"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    },
+    {
+      "object_id": "graspnet_069",
+      "label": 1,
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_execution_20261107_v1/videos/graspnet_069/isaac_full_arm_pickup.mp4",
+        "sha256": "208b5038d597055362a47a61eb2f5c97380101b18646204c08a45b8a9a7babe6"
+      },
+      "frames": 235,
+      "fps": 25,
+      "duration_s": 9.4,
+      "replay_physics_steps": 0,
+      "source_trace_and_evaluation_bound": true,
+      "mp4_box_structure_checked": true,
+      "independent_pixel_decode_performed": false
+    }
+  ],
+  "video_index": "outputs/s40_hand_execution_20261107_v1/videos/index.html",
+  "execution_and_media_wall_s": 329.93768836709205,
+  "contract_tests": 16,
+  "new_CGR_forwards": 0,
+  "new_training_updates": 0,
+  "EGAD_objects_accessed": 0,
+  "boundary": "Fixed internal eight after earlier debugging, not independent external generalization or completed original real-paper reproduction. Current protocol is 3/8 including no-plans; historical 044 success must not be combined into this score.",
+  "next": "Audit ranking and training/deployment candidate coverage before new data or external validation. 009/048 have no full geometry pass in frozen domain; 007 exhausted four arm candidates."
+}

@@ -1,0 +1,641 @@
+{
+  "schema": "s40_hand_domain_remaining_diagnosis_v1",
+  "scope": "009/048 only; original geometry without score, source-mesh diagnostics only; no policy changes",
+  "objects": [
+    {
+      "object_id": "graspnet_009",
+      "domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 1113,
+        "world_workspace_pass": 508,
+        "common_pass": 293,
+        "mapped_pose_queries": 2344,
+        "support_plane_tests": 9376,
+        "hand_domain_raw": 1,
+        "hand_domain_pose_queries": 1,
+        "raw_topk": 1,
+        "head_queries": 1,
+        "allowed_extra_combinations": 1
+      },
+      "all_domain_admitted_combinations_original_geometry": [
+        {
+          "source_candidate_index": 1499,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g7:distal_024:ff",
+          "raw_width_m": 0.02314004674553871,
+          "learned_score": 0.0,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.02
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 1,
+            "points_in_object_aabb": 1,
+            "point_world_z_range_m": [
+              0.014632829576163575,
+              0.014632829576163575
+            ],
+            "approach_distance_m": 0.02
+          }
+        }
+      ],
+      "geometry_pass_count": 0,
+      "geometry_pass_below_threshold_count": 0,
+      "closest_plane_rejected_combinations": [
+        {
+          "source_candidate_index": 1499,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g6:distal_024:ff",
+          "minimum_height_m": 0.00028330091052163053,
+          "shortfall_to_original_margin_m": 0.00021669908947836948,
+          "raw_width_m": 0.02314004674553871
+        },
+        {
+          "source_candidate_index": 1499,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 1,
+          "slot": "g7:distal_024:ff",
+          "minimum_height_m": -0.0008476680582474305,
+          "shortfall_to_original_margin_m": 0.0013476680582474305,
+          "raw_width_m": 0.02314004674553871
+        },
+        {
+          "source_candidate_index": 652,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g6:distal_024:ff",
+          "minimum_height_m": -0.0009462452982993003,
+          "shortfall_to_original_margin_m": 0.0014462452982993003,
+          "raw_width_m": 0.02310957759618759
+        },
+        {
+          "source_candidate_index": 652,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g7:distal_024:ff",
+          "minimum_height_m": -0.0013493456220038669,
+          "shortfall_to_original_margin_m": 0.0018493456220038669,
+          "raw_width_m": 0.02310957759618759
+        },
+        {
+          "source_candidate_index": 1499,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 1,
+          "slot": "g6:distal_024:ff",
+          "minimum_height_m": -0.002132397341773354,
+          "shortfall_to_original_margin_m": 0.002632397341773354,
+          "raw_width_m": 0.02314004674553871
+        }
+      ],
+      "raw_width_diagnosis": {
+        "all_raw_count": 2048,
+        "raw_dtype": "float32",
+        "original_width_pass_count": 1113,
+        "raw_width_range_m": [
+          0.007109061349183321,
+          0.17536014318466187
+        ],
+        "total_width_greater_equal_strict_max_count": 935,
+        "object_aabb_total_width_greater_equal_strict_max_count": 0,
+        "exact_parser_float32_saturated_099_count": 0,
+        "saturated_and_strict_max_excluded_count": 0,
+        "object_aabb_raw_count": 39,
+        "object_aabb_saturated_count": 0,
+        "object_aabb_width_pass_count": 39,
+        "raw_center_in_aabb_is_diagnostic_proxy_not_contact_or_foreground_label": true,
+        "total_width_parser_definition": "Sum of two selected side widths, each individually clipped to MAX_GRASP_WIDTH; total raw width is not clipped at .099"
+      },
+      "source_geometry": {
+        "mesh": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_009/mesh/simplified.obj",
+        "vertices": 262140,
+        "scale": 1.0,
+        "local_aabb_extent_m": [
+          0.0960469990968704,
+          0.2014990001916886,
+          0.0156629998236894
+        ],
+        "world_aabb_m": [
+          [
+            -0.7980039782900916,
+            -0.0007001636903277847,
+            0.0013379815557690604
+          ],
+          [
+            -0.701956243446337,
+            0.20079627153621402,
+            0.016723979406014854
+          ]
+        ],
+        "world_aabb_extent_m": [
+          0.09604773484375462,
+          0.20149643522654181,
+          0.015385997850245792
+        ],
+        "minimum_world_axis_extent_m": 0.015385997850245792,
+        "world_pose": [
+          [
+            0.9999982748063786,
+            -8.600971744472574e-06,
+            0.0018575010875204023,
+            -0.7428964972496033
+          ],
+          [
+            -2.386253839228407e-07,
+            0.9999886767878332,
+            0.004758812463411507,
+            0.0718529224395752
+          ],
+          [
+            -0.001857520985053023,
+            -0.004758804696785509,
+            0.9999869516116939,
+            0.008994088508188725
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "visibility": {
+        "camera_vertex_depth_range_m": [
+          0.513068575890178,
+          0.632174983893479
+        ],
+        "projected_vertex_uv_min": [
+          583.1652084571755,
+          304.0150545343626
+        ],
+        "projected_vertex_uv_max": [
+          688.769540756357,
+          499.6791837435827
+        ],
+        "mesh_vertices_in_frame": 262140,
+        "mesh_vertices_in_network_depth_range": 262140,
+        "mesh_vertex_total": 262140,
+        "visible_sparse_cloud_points_in_world_aabb": 427,
+        "visible_sparse_cloud_total": 21863,
+        "projected_vertices_with_observed_depth_within_3mm": 117905,
+        "projected_vertex_depth_comparison_is_coarse_self_occlusion_affected_proxy": true
+      }
+    },
+    {
+      "object_id": "graspnet_048",
+      "domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 1104,
+        "world_workspace_pass": 528,
+        "common_pass": 309,
+        "mapped_pose_queries": 2472,
+        "support_plane_tests": 9888,
+        "hand_domain_raw": 3,
+        "hand_domain_pose_queries": 10,
+        "raw_topk": 3,
+        "head_queries": 10,
+        "allowed_extra_combinations": 10
+      },
+      "all_domain_admitted_combinations_original_geometry": [
+        {
+          "source_candidate_index": 85,
+          "gesture_id": 1,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g1:distal_011:ff",
+          "raw_width_m": 0.05401560291647911,
+          "learned_score": 0.07522393763065338,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 4,
+            "points_in_object_aabb": 4,
+            "point_world_z_range_m": [
+              0.015266903120357334,
+              0.02009194829215022
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 85,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g6:distal_011:ff",
+          "raw_width_m": 0.05401560291647911,
+          "learned_score": 0.0,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 4,
+            "points_in_object_aabb": 4,
+            "point_world_z_range_m": [
+              0.015266903120357334,
+              0.02009194829215022
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 85,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g7:distal_011:ff",
+          "raw_width_m": 0.05401560291647911,
+          "learned_score": 1.4039534330368042,
+          "threshold_pass": true,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 4,
+            "points_in_object_aabb": 4,
+            "point_world_z_range_m": [
+              0.015266903120357334,
+              0.02009194829215022
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 85,
+          "gesture_id": 8,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g8:distal_013:ff",
+          "raw_width_m": 0.05401560291647911,
+          "learned_score": 0.0,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 7,
+            "points_in_object_aabb": 7,
+            "point_world_z_range_m": [
+              0.012290003103313851,
+              0.02009194829215022
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 1,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g1:distal_013:ff",
+          "raw_width_m": 0.049578409641981125,
+          "learned_score": 0.0,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "ffproximal",
+            "points_inside_hull": 17,
+            "points_in_object_aabb": 17,
+            "point_world_z_range_m": [
+              0.029768717130500777,
+              0.039180829003161166
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g6:distal_013:ff",
+          "raw_width_m": 0.049578409641981125,
+          "learned_score": 0.0,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "ffproximal",
+            "points_inside_hull": 13,
+            "points_in_object_aabb": 13,
+            "point_world_z_range_m": [
+              0.029768717130500777,
+              0.039180829003161166
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g7:distal_013:ff",
+          "raw_width_m": 0.049578409641981125,
+          "learned_score": 0.23218297958374023,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "ffproximal",
+            "points_inside_hull": 14,
+            "points_in_object_aabb": 14,
+            "point_world_z_range_m": [
+              0.029768717130500777,
+              0.039180829003161166
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 8,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g8:distal_015:ff",
+          "raw_width_m": 0.049578409641981125,
+          "learned_score": 3.453298807144165,
+          "threshold_pass": true,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "ffproximal",
+            "points_inside_hull": 4,
+            "points_in_object_aabb": 4,
+            "point_world_z_range_m": [
+              0.03766774090735736,
+              0.039180829003161166
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 1993,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g6:distal_026:ff",
+          "raw_width_m": 0.019606880843639374,
+          "learned_score": 11.245963096618652,
+          "threshold_pass": true,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 4,
+            "points_in_object_aabb": 4,
+            "point_world_z_range_m": [
+              0.009585698512932839,
+              0.012856877840108472
+            ],
+            "approach_distance_m": 0.0
+          }
+        },
+        {
+          "source_candidate_index": 1993,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g7:distal_026:ff",
+          "raw_width_m": 0.019606880843639374,
+          "learned_score": 0.0,
+          "threshold_pass": false,
+          "original_geometry": {
+            "ok": false,
+            "reason": "visible_scene_point_in_hand_hull",
+            "approach_distance_m": 0.0
+          },
+          "first_collision": {
+            "first_source_link": "thdistal",
+            "points_inside_hull": 4,
+            "points_in_object_aabb": 4,
+            "point_world_z_range_m": [
+              0.009585698512932839,
+              0.012856877840108472
+            ],
+            "approach_distance_m": 0.0
+          }
+        }
+      ],
+      "geometry_pass_count": 0,
+      "geometry_pass_below_threshold_count": 0,
+      "closest_plane_rejected_combinations": [
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 1,
+          "slot": "g7:distal_013:ff",
+          "minimum_height_m": 0.0001864521539891445,
+          "shortfall_to_original_margin_m": 0.0003135478460108555,
+          "raw_width_m": 0.049578409641981125
+        },
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 1,
+          "if_flip": true,
+          "extra_depth_index": 1,
+          "slot": "g1:distal_013:ff",
+          "minimum_height_m": -0.0004549069266082534,
+          "shortfall_to_original_margin_m": 0.0009549069266082534,
+          "raw_width_m": 0.049578409641981125
+        },
+        {
+          "source_candidate_index": 569,
+          "gesture_id": 1,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g1:distal_000:ff",
+          "minimum_height_m": -0.0007692634450693486,
+          "shortfall_to_original_margin_m": 0.0012692634450693486,
+          "raw_width_m": 0.09307220578193665
+        },
+        {
+          "source_candidate_index": 569,
+          "gesture_id": 7,
+          "if_flip": true,
+          "extra_depth_index": 0,
+          "slot": "g7:distal_000:ff",
+          "minimum_height_m": -0.0008632977620327276,
+          "shortfall_to_original_margin_m": 0.0013632977620327276,
+          "raw_width_m": 0.09307220578193665
+        },
+        {
+          "source_candidate_index": 239,
+          "gesture_id": 6,
+          "if_flip": true,
+          "extra_depth_index": 1,
+          "slot": "g6:distal_013:ff",
+          "minimum_height_m": -0.0008970185283463938,
+          "shortfall_to_original_margin_m": 0.0013970185283463939,
+          "raw_width_m": 0.049578409641981125
+        }
+      ],
+      "raw_width_diagnosis": {
+        "all_raw_count": 2048,
+        "raw_dtype": "float32",
+        "original_width_pass_count": 1104,
+        "raw_width_range_m": [
+          0.007517154794186354,
+          0.17525121569633484
+        ],
+        "total_width_greater_equal_strict_max_count": 944,
+        "object_aabb_total_width_greater_equal_strict_max_count": 0,
+        "exact_parser_float32_saturated_099_count": 0,
+        "saturated_and_strict_max_excluded_count": 0,
+        "object_aabb_raw_count": 49,
+        "object_aabb_saturated_count": 0,
+        "object_aabb_width_pass_count": 49,
+        "raw_center_in_aabb_is_diagnostic_proxy_not_contact_or_foreground_label": true,
+        "total_width_parser_definition": "Sum of two selected side widths, each individually clipped to MAX_GRASP_WIDTH; total raw width is not clipped at .099"
+      },
+      "source_geometry": {
+        "mesh": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_048/mesh/simplified.obj",
+        "vertices": 213402,
+        "scale": 1.0,
+        "local_aabb_extent_m": [
+          0.1374939978122712,
+          0.0986500009894372,
+          0.0537089984863997
+        ],
+        "world_aabb_m": [
+          [
+            -0.8188065453074471,
+            0.050429395743051934,
+            0.0006301613095086867
+          ],
+          [
+            -0.678996246850873,
+            0.14915968028964285,
+            0.05108817857497266
+          ]
+        ],
+        "world_aabb_extent_m": [
+          0.1398102984565741,
+          0.09873028454659091,
+          0.05045801726546397
+        ],
+        "minimum_world_axis_extent_m": 0.05045801726546397,
+        "world_pose": [
+          [
+            0.9990571736714287,
+            0.007507962856012935,
+            0.04275972672281438,
+            -0.748889684677124
+          ],
+          [
+            -0.006872134588941921,
+            0.9998639162488241,
+            -0.014997424770810371,
+            0.09964680671691895
+          ],
+          [
+            -0.04286650792691777,
+            0.014689434206850123,
+            0.9989728139548315,
+            0.026216836646199226
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "visibility": {
+        "camera_vertex_depth_range_m": [
+          0.5395560104400988,
+          0.6083647269083866
+        ],
+        "projected_vertex_uv_min": [
+          561.3953471107476,
+          325.8205745262553
+        ],
+        "projected_vertex_uv_max": [
+          720.3236943348898,
+          439.2514671709356
+        ],
+        "mesh_vertices_in_frame": 213402,
+        "mesh_vertices_in_network_depth_range": 213402,
+        "mesh_vertex_total": 213402,
+        "visible_sparse_cloud_points_in_world_aabb": 453,
+        "visible_sparse_cloud_total": 21822,
+        "projected_vertices_with_observed_depth_within_3mm": 97021,
+        "projected_vertex_depth_comparison_is_coarse_self_occlusion_affected_proxy": true
+      }
+    }
+  ],
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "labels_read": false,
+  "old_outcome_labels_read": false,
+  "EGAD_read": false,
+  "source_sha256": {
+    "/tmp/diagnose_s40_hand_domain_remaining_20261107.py": "04bafa1404add44f784d589bb4da15247454b02fbb818b6ba0df105f37417a79",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_hand_domain.py": "5b8197c3a281eeac3bbc7546b8f795bb8608f84a51ac26cfeae3aa37d2d09ea0",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/graspnet_009/DOMAIN.json": "e9d5d60f843c87164c44b4714312520a6c90df4e490e11ef6b3a380f7ab66cde",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/graspnet_009/GEOMETRY_JOB.json": "1be961f504648fb76a9bb48d3aaeaa679a745dadaf954b7461c4d4eefafa70c7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_009/observation.json": "360c9c13be50fee2cb611c6b31b6fa1b6771910171891bfe6d522e634e5d38f6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_009/raw_camera_candidates.npz": "c6ff9ff2cb14c14c865ddd69812f961155df6849ae31e241aba09d88b821faa5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_009/representation_outputs.npz": "125685729a0c8a813f64967656691cff7d5f8600ded2f18bc95d7ad0d0041835",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/graspnet_009/head_outputs.npz": "3dd788493bcc71fbb8beb2b87e48617a34205611f5c4722230451f1f892a75e0",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_009/mesh/simplified.obj": "6f16608573f8ff93606df6f5d277d29dd3ecf199784797eb69b82ffd3b8457ec",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_009/depth.png": "a236bdce61e85aa50a94c71f35d076522e57255191ad2b09f7f20b5a9392bebf",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/graspnet_048/DOMAIN.json": "60e2ab8bf72fd93583fb3a36d12a3db91678ffd26538a6deee5af0baed136813",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/graspnet_048/GEOMETRY_JOB.json": "7be5b6add2e071568a227127399ce6652b6d105c05a3c1d5851d2e68708e31e2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_048/observation.json": "85b81fb55d9239473bb05c44691b96fb77e82716e92735f236560d8ca073da46",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_048/raw_camera_candidates.npz": "b991d1b59c277e3d24425d4249feb4c0d7dbae067d45bc94cce8f500af4eb86e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/representations/graspnet_048/representation_outputs.npz": "eb0bb184a0bcb5799d983dc7ae42796b4ada1279a70045045dab6bc1177042e1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_hand_domain_20261107_v1/graspnet_048/head_outputs.npz": "94c35243fe5c60217db897072f26ef294bd8d525d26ffd2d80c870ad3e6fd78b",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_048/mesh/simplified.obj": "f4d880bc4d08fd9c85ad579d454bdbb378d837324b2e863ecdc321bb64b6af57",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/observations/graspnet_048/depth.png": "f40ef3c606a3436c6a4a584c39f01e7e7a6127441f30b3305b42f92bfb583323"
+  },
+  "wall_s": 3.316974472021684
+}

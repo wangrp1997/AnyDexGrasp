@@ -1,0 +1,57 @@
+{
+  "schema": "anydex_boya_hand_domain_policy_v1",
+  "world_workspace_aabb_m": [
+    [
+      -1.4,
+      -0.18028318377553387,
+      0.0005
+    ],
+    [
+      -0.10000000000000009,
+      0.4682583491909351,
+      0.398129951499991
+    ]
+  ],
+  "table_height_world_m": 0.0,
+  "table_clearance_m": 0.0005,
+  "pregrasp_distance_m": 0.1,
+  "raw_width_bounds_m": [
+    0.0,
+    0.099
+  ],
+  "width_expansion": 1.7,
+  "nearest_slot_tolerance_m": 0.002,
+  "width_clamp": true,
+  "extra_depth_m": [
+    0.0,
+    0.01,
+    0.02,
+    0.03
+  ],
+  "flip_policy": "both",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/s40_domain_diagnostic_20261107/DOMAIN_POLICY.json": "c679780aee4c6b4294fb993ad70d4d70682dbdbc4e04f92f8d799b500ef1b67a",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/deploy_score_first.py": "8b8649ccab0e41ff6570e2cae8dc129d74f2f4d316dd7bc66afc99f37d3d6702",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832",
+    "/home/wangrenpeng/CanonDex/canondex/scene/floor.py": "5ff134e8e6fc1a018613ec1cec8a0b5967809fc237db98b5453522c19c77bdc6",
+    "/home/wangrenpeng/CanonDex/assets/benchmarks/template_tabletop_resident_physics.json": "d5a7ce2f7c46032ef6f2b438e329cd6edb35f9d6ba88be2bc6d2971ac78f1bb8",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_hand_domain.py": "5b8197c3a281eeac3bbc7546b8f795bb8608f84a51ac26cfeae3aa37d2d09ea0"
+  },
+  "source_basis": {
+    "table": "Native floor.FLOOR_POS z0, source geometry low<.0005 rejects; same inclusive gate",
+    "approach": "Per opened source hand support at actual calibrated palm; same cgr_reference_pose world approach",
+    "width": "Unchanged per-type original raw*1.7/clip/nearest slot<=.002; no common intersection or hardware-max inference",
+    "workspace": "Exactly the previously frozen sensor-frustum AABB, without class/object crop",
+    "extra_depth": "Each0/10/20/30mm source shift checked independently before global score budgets",
+    "filter_order": "Opening + exact source table prefix; head score; frozen global shortlist; original full cloud geometry; arm"
+  },
+  "scope": "Explicit Boya port from original table subpredicate, not a literal author camera domain. Internal8 diagnostic, no labels or external assets used to choose constants.",
+  "candidate_budget": "Raw top1000 after any valid hand/flip/extra, global learned top3500, strict float32>.85, full cloud top400",
+  "physics_gates_changed": false,
+  "controller_changed": false,
+  "new_training_updates": 0,
+  "new_CGR_forwards": 0
+}

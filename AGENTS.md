@@ -306,3 +306,18 @@ outputs/s40_collection_20261107_v1已于北京时间12:43:25 complete，97.971mi
 prepare_s40_port_top1_v2.py从新冻结排名按每对象最多4个几何候选找首个arm-ready，显式绑定原native-preflight/044保形repair。v1/v2各3次纯准备共6次（相同3候选重复），成本全保留；最终2ready/6null。run_s40_port_trials.py已实际各执行一次、两个CPU独立进程并行：021 rank33/型6/flipFalse成功+90.343mm，044 rank11/型8/flipTrue成功+102.281mm；完整2×2100=4200步，原七门/控制绑定全过，末态仍承载，无实际重试、null或unknown。两条benchmark-only不入435；两者翻面均与各自DH3 official相反，但不宣称已隔离翻面必要性。
 
 **内部8件仍是2成功/6无最终计划（5几何null、008路径拒绝），不是新2/2或外部100%成功率。** 完整outputs/s40_port_top1_20261107_{v1,v2}及s40_port_execution_20261107_v1。两段原模型RTX录像已完成，videos/index.html，235帧25fps9.4s，回放零物理、trace/eval/MP4结构SHA绑定；执行加录像165.203s，准备/训练/推理另记。21项必要tests通过。全部阶段已收尾，不再当后台running或重复派发；EGAD未用。报告S40_BOYA_PORT_V2_RESULTS_20261107.md。下一步Boya各手型开口/接近方向候选覆盖及008路径问题需通用适配，评分误差仍高；不自动扩大采数或外部测试。CanonDex只读，只push轻量相关源码/证据。
+
+
+## 2026-11-07 最新：Boya每型候选域完成，内部8件3成功/2实际失败/3无计划
+
+用户问下一步后已完成通用手型候选域适配与真实单top1检查。boya_hand_domain.py以四型各自原×1.7/clip/nearest-slot和真实21link开手桌面支撑替代旧DH3相机方向锥/四型共同宽度交集，保留raw严格(0,.099)、.5mm桌面余量、双flip、四extra、原top1000/3500/严格>.85/400及完整可见点碰撞。评分前有明确支撑查询成本，不称零几何；全点云仍冻结评分后。源顶点凸包索引仅加速线性最低点，32真实姿态与原桌面谓词全一致、最大差1.39e-17m，无容差放宽/ID规则。
+
+outputs/s40_hand_domain_20261107_v1已complete：同8缓存/同code100四32-fit头，910query/2379组合→240过门→93完整几何准入，6/8有候选（旧3/8/9准入），0桌面复核冲突；22.393s。prepare_s40_port_top1_v3.py共9次原完整臂准备、28.706s，5ready/3null。其queue完整落盘后的末尾print缺json导入保留，未来用绑定SHA的prepare_s40_hand_top1.py薄CLI，不改冻结源码/不重复准备。
+
+outputs/s40_hand_execution_20261107_v1已收尾：run_s40_port_trials_v2.py四CPU进程，5件各一次2100步，总10500步。021/066/069成功+90.696/79.424/97.779mm；008和044实际失败，007前4臂计划拒绝、009/048几何null，故本轮统一协议**3/8，不是3/5，也不能补旧044作4/8**。全部7原门/11守卫通过，无terminal null/unknown/infra。5段正常速度RTX视频在videos/index.html，235帧25fps9.4s，执行+媒体329.938s，回放零物理。
+
+044有明确回归：旧成功raw1401/g8/flipTrue/extra0在新池仍几何通过、rank10/score1.2142498493未变，却被新raw1875/g6/flipFalse/extra20mm rank7/score1.3258295059排前并执行失败。旧候选未丢，不用旧标签强选；单例未隔离唯一物理因果。044末态有双侧力但最低点仅1.36mm，是翘起；008闭合仅食指受力、无拇指承载。旧2/8保留，不回填本轮。
+
+009/048本域全1/10组合绕过分门仍完整几何全拒；.099门外仍在workspace组合支撑6880/7008次也全拒。源网格都在相机/深度范围。证据限于冻结映射覆盖不足，非硬件不可抓证明；不降碰撞门或加对象规则。根代理16tests过、5条实际控制/末态全源顶点测量/视频绑定复核、557源输入SHA全匹配。原435/302+/133-、32+8、code100头不变；零新CGR/训练/EGAD、benchmark-only不回写。
+
+报告reproduction/boya/S40_HAND_DOMAIN_RESULTS_20261107.md，轻量evidence/s40_hand_domain_20261107。下一步重点评分排序/训练部署候选域，而非再盲目扩采；009/048另需通用几何适配，007仅有限臂预算耗尽。此轮全部完成，无后台任务，不重跑成功/自动外部评测。8件已用于多轮开发，不称独立泛化；整体论文复现仍未通过，CanonDex只读，只push轻量相关文件。
