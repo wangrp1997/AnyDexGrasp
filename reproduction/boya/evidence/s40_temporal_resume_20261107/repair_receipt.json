@@ -1,0 +1,49 @@
+{
+  "schema": "anydex_s40_temporal_resume_repair_v1",
+  "tests": 9,
+  "status": "passed",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue_v3.py": "0e76ef60f7122ecb292a55c02e18bfacaece90e054b2816428817d85fac01ead",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_execute_collection_queue_v3.py": "82a31049fcd76d613fd7227abf9901d9a774411b5d2fbee01ff0aa040aee04c0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/resume_s40_settled_execution_v3.py": "c644394555c812673199153257dd13944c360e4c312b11d09e7b99d512b68f79",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_resume_s40_settled_execution_v3.py": "9145e599836bae3a838b577dd36561c799fe42b6691a32ccb476469c851f00a6",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_s40_training_data_v2.py": "7e284ded1b6aac6c90add8ff81a74fbd61fa7c2f3ea81a44273d69543c080a76",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/watch_s40_supplement_training_v2.py": "106f9d3f0916c4540c9ffa140bc981dd8b6946b2eccb5fe08915a28fad830143"
+  },
+  "original_stop": {
+    "actual": 157,
+    "positive": 116,
+    "negative": 41,
+    "physics_steps": 329700,
+    "ready": 195,
+    "preparation_null": 445,
+    "unknown": 3,
+    "unexecuted": 35,
+    "result_path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/execution/RESULTS.json",
+    "result_sha256": "82f44eada9d5f3bb6ea78e68992fa77260fd5e54c801d82bd74f165089649c3a"
+  },
+  "preflight": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/repair_060_prepare_v3/PREPARED.json",
+    "sha256": "0c2e99c58be4400a9f87193202f87666d68e7381502a849970b4783996819165",
+    "trials": 3,
+    "cohorts": 2,
+    "physics_steps": 0
+  },
+  "native_command_checks": {
+    "original_plans": 195,
+    "changed_arrays": 0,
+    "real_extended_home_steps": 816,
+    "original_minimum_home_steps": 750,
+    "extended_plan_total_steps": 2166
+  },
+  "resume": {
+    "protocol": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/protocol.json",
+    "protocol_sha256": "ba712cc75c3467457436b78b47eb438658958b9b8abae31981faa70a6a4ea076",
+    "inherited_actual": 157,
+    "remaining": 38,
+    "proof_reclassified_preparation_zero": 3,
+    "proven_not_dispatched": 35
+  },
+  "new_grasp_execution_results": "Background in progress; do not treat launcher/proofs as physical success",
+  "EGAD_objects": 0
+}

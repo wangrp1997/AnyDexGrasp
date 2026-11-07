@@ -1,0 +1,398 @@
+{
+  "schema": "anydex_s40_060_command_contract_diagnosis_v1",
+  "scope": "Read-only source and saved-array inspection; zero simulator/model/physical execution",
+  "run": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection",
+  "queue_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/execution/object_queues/graspnet_060.json",
+    "sha256": "1c6259667287c1580d304f742244e53035e43fa6033ac9ce0dfd141fd036a947",
+    "bytes": 83156
+  },
+  "submission_intent": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/execution/object_queues/graspnet_060.SUBMITTING.json",
+    "sha256": "b2c0058f11ffb85b3ea3159ae04fc5c443ee1d1e170f14eeb7274b1e89ef50e1",
+    "bytes": 455
+  },
+  "executor_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue_v2.py",
+    "sha256": "e83c87b593e77a0b797dc4e1a8257d018deebfce99aec67d270bfb54f7d6210f",
+    "bytes": 27522
+  },
+  "native_bridge_source": {
+    "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+    "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+    "bytes": 17199
+  },
+  "execution_log": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/logs/execution_graspnet_060.log",
+    "sha256": "a0ca775a13236ac18e1eb7a33d5d90be8f65557573d79c8f6de88adaa4634ee7",
+    "bytes": 1114
+  },
+  "execution_directory_files": [
+    ".queue.lock"
+  ],
+  "pre_kit_failure_evidence": {
+    "traceback_stage": "main -> prepare -> check_trial -> command_contract; before PREPARED write/execute/worker subprocess",
+    "prepared_json_exists": false,
+    "result_json_exists": false,
+    "cohorts_directory_exists": false,
+    "worker_spec_exists": false,
+    "new_grasp_physics_steps": 0,
+    "grasp_Kit_worker_started": false,
+    "boundary": "060 settling/render steps exist elsewhere and are not called zero-cost; this statement is only this collection execution submission"
+  },
+  "trials": [
+    {
+      "trial_id": "graspnet_060_g1_d0",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_060_g1_d0/plan_000/plan.json",
+        "sha256": "c3201e5552b4bcad41bf26fbb0f497e36ee643b16fd8c85231921feef2750cf3",
+        "bytes": 142798
+      },
+      "commands": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_060_g1_d0/plan_000/commands.npz",
+        "sha256": "cd638fa2e6c56e1c30f6d6c03bd86388ac8a2ab47c047afc544b3eb458c9d047",
+        "bytes": 175988
+      },
+      "complete": true,
+      "admitted": true,
+      "total_command_steps": 2100,
+      "actual_phase_runs": [
+        {
+          "name": "settle",
+          "start_step": 1,
+          "end_step": 50,
+          "steps": 50
+        },
+        {
+          "name": "home_to_pregrasp",
+          "start_step": 51,
+          "end_step": 800,
+          "steps": 750
+        },
+        {
+          "name": "approach",
+          "start_step": 801,
+          "end_step": 1300,
+          "steps": 500
+        },
+        {
+          "name": "close",
+          "start_step": 1301,
+          "end_step": 1550,
+          "steps": 250
+        },
+        {
+          "name": "hold",
+          "start_step": 1551,
+          "end_step": 1600,
+          "steps": 50
+        },
+        {
+          "name": "lift",
+          "start_step": 1601,
+          "end_step": 2100,
+          "steps": 500
+        }
+      ],
+      "segment_timing": {
+        "home_to_pregrasp": {
+          "steps": 750,
+          "duration_s": 3.0,
+          "max_velocity_rad_s": 1.1726057009150275,
+          "max_acceleration_rad_s2": 1.2035336311028155,
+          "max_jerk_rad_s3": 4.069666387739034,
+          "velocity_ratio": 0.3999090436468751,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        },
+        "approach": {
+          "steps": 500,
+          "duration_s": 2.0,
+          "max_velocity_rad_s": 0.28294895348765503,
+          "max_acceleration_rad_s2": 0.45648274995049865,
+          "max_jerk_rad_s3": 2.3647839077559074,
+          "velocity_ratio": 0.09006544918047815,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        },
+        "lift": {
+          "steps": 500,
+          "duration_s": 2.0,
+          "max_velocity_rad_s": 0.20016671199279967,
+          "max_acceleration_rad_s2": 0.320088359376941,
+          "max_jerk_rad_s3": 1.6336201506123027,
+          "velocity_ratio": 0.07458653047416922,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        }
+      },
+      "old_v2_contract_accepts": true,
+      "old_v2_error": null,
+      "source_planner_home_reconstruction": {
+        "pure_kinematics_only": true,
+        "source_function": "template_arm_bridge.timed_segment",
+        "minimum_s": 3.0,
+        "exact_command_arrays_equal": true,
+        "exact_segment_timing_equal": true,
+        "computed": {
+          "steps": 750,
+          "duration_s": 3.0,
+          "max_velocity_rad_s": 1.1726057009150275,
+          "max_acceleration_rad_s2": 1.2035336311028155,
+          "max_jerk_rad_s3": 4.069666387739034,
+          "velocity_ratio": 0.3999090436468751,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        }
+      },
+      "source_shas_verified": {
+        "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd"
+      }
+    },
+    {
+      "trial_id": "graspnet_060_g6_d1",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_060_g6_d1/plan_000/plan.json",
+        "sha256": "730050039a00243bf2b038fe8f850c5801a792ded43413e60db9d512a6c578be",
+        "bytes": 144614
+      },
+      "commands": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_060_g6_d1/plan_000/commands.npz",
+        "sha256": "2d5ccea02355e2da67e8b0bd0ee3802f0df559e263c1f4b01e212c0d972bc370",
+        "bytes": 181243
+      },
+      "complete": true,
+      "admitted": true,
+      "total_command_steps": 2166,
+      "actual_phase_runs": [
+        {
+          "name": "settle",
+          "start_step": 1,
+          "end_step": 50,
+          "steps": 50
+        },
+        {
+          "name": "home_to_pregrasp",
+          "start_step": 51,
+          "end_step": 866,
+          "steps": 816
+        },
+        {
+          "name": "approach",
+          "start_step": 867,
+          "end_step": 1366,
+          "steps": 500
+        },
+        {
+          "name": "close",
+          "start_step": 1367,
+          "end_step": 1616,
+          "steps": 250
+        },
+        {
+          "name": "hold",
+          "start_step": 1617,
+          "end_step": 1666,
+          "steps": 50
+        },
+        {
+          "name": "lift",
+          "start_step": 1667,
+          "end_step": 2166,
+          "steps": 500
+        }
+      ],
+      "segment_timing": {
+        "home_to_pregrasp": {
+          "steps": 816,
+          "duration_s": 3.2640000000000002,
+          "max_velocity_rad_s": 2.4279762964859453,
+          "max_acceleration_rad_s2": 2.290466821208703,
+          "max_jerk_rad_s3": 7.132612136334648,
+          "velocity_ratio": 0.988912181030483,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        },
+        "approach": {
+          "steps": 500,
+          "duration_s": 2.0,
+          "max_velocity_rad_s": 0.8196053873866099,
+          "max_acceleration_rad_s2": 2.782579958425249,
+          "max_jerk_rad_s3": 24.667573140428694,
+          "velocity_ratio": 0.2608884975746535,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        },
+        "lift": {
+          "steps": 500,
+          "duration_s": 2.0,
+          "max_velocity_rad_s": 0.15135791501519336,
+          "max_acceleration_rad_s2": 0.24887534410752976,
+          "max_jerk_rad_s3": 1.2913582581736138,
+          "velocity_ratio": 0.05525833509813115,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        }
+      },
+      "old_v2_contract_accepts": false,
+      "old_v2_error": "Only original contiguous approach may extend; all other phases fixed/full",
+      "source_planner_home_reconstruction": {
+        "pure_kinematics_only": true,
+        "source_function": "template_arm_bridge.timed_segment",
+        "minimum_s": 3.0,
+        "exact_command_arrays_equal": true,
+        "exact_segment_timing_equal": true,
+        "computed": {
+          "steps": 816,
+          "duration_s": 3.2640000000000002,
+          "max_velocity_rad_s": 2.4279762964859453,
+          "max_acceleration_rad_s2": 2.290466821208703,
+          "max_jerk_rad_s3": 7.132612136334648,
+          "velocity_ratio": 0.988912181030483,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        }
+      },
+      "source_shas_verified": {
+        "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd"
+      }
+    },
+    {
+      "trial_id": "graspnet_060_g8_d0",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_060_g8_d0/plan_000/plan.json",
+        "sha256": "f6b5e1d31b75be88f0715e3b72a7bca04871744bca02344196e5def3fd3cf4d6",
+        "bytes": 143146
+      },
+      "commands": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection/planning/graspnet_060_g8_d0/plan_000/commands.npz",
+        "sha256": "d7c1605c1b6f4bd364ded69fb4c9f265006703df3492b6685cdff2968fc80eee",
+        "bytes": 180236
+      },
+      "complete": true,
+      "admitted": true,
+      "total_command_steps": 2100,
+      "actual_phase_runs": [
+        {
+          "name": "settle",
+          "start_step": 1,
+          "end_step": 50,
+          "steps": 50
+        },
+        {
+          "name": "home_to_pregrasp",
+          "start_step": 51,
+          "end_step": 800,
+          "steps": 750
+        },
+        {
+          "name": "approach",
+          "start_step": 801,
+          "end_step": 1300,
+          "steps": 500
+        },
+        {
+          "name": "close",
+          "start_step": 1301,
+          "end_step": 1550,
+          "steps": 250
+        },
+        {
+          "name": "hold",
+          "start_step": 1551,
+          "end_step": 1600,
+          "steps": 50
+        },
+        {
+          "name": "lift",
+          "start_step": 1601,
+          "end_step": 2100,
+          "steps": 500
+        }
+      ],
+      "segment_timing": {
+        "home_to_pregrasp": {
+          "steps": 750,
+          "duration_s": 3.0,
+          "max_velocity_rad_s": 1.181438733459425,
+          "max_acceleration_rad_s2": 1.2125996383047233,
+          "max_jerk_rad_s3": 4.100322469145073,
+          "velocity_ratio": 0.44094551650982733,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        },
+        "approach": {
+          "steps": 500,
+          "duration_s": 2.0,
+          "max_velocity_rad_s": 0.2738708010432689,
+          "max_acceleration_rad_s2": 0.4572889015126702,
+          "max_jerk_rad_s3": 2.405301938526727,
+          "velocity_ratio": 0.0871757835091465,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        },
+        "lift": {
+          "steps": 500,
+          "duration_s": 2.0,
+          "max_velocity_rad_s": 0.17084402269512688,
+          "max_acceleration_rad_s2": 0.2768890879495389,
+          "max_jerk_rad_s3": 1.4238574659597436,
+          "velocity_ratio": 0.07014180071365768,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        }
+      },
+      "old_v2_contract_accepts": true,
+      "old_v2_error": null,
+      "source_planner_home_reconstruction": {
+        "pure_kinematics_only": true,
+        "source_function": "template_arm_bridge.timed_segment",
+        "minimum_s": 3.0,
+        "exact_command_arrays_equal": true,
+        "exact_segment_timing_equal": true,
+        "computed": {
+          "steps": 750,
+          "duration_s": 3.0,
+          "max_velocity_rad_s": 1.181438733459425,
+          "max_acceleration_rad_s2": 1.2125996383047233,
+          "max_jerk_rad_s3": 4.100322469145073,
+          "velocity_ratio": 0.44094551650982733,
+          "acceleration_limit_rad_s2": 3.0,
+          "jerk_limit_rad_s3": 30.0
+        }
+      },
+      "source_shas_verified": {
+        "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+        "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd"
+      }
+    }
+  ],
+  "recommendation": {
+    "fixed": {
+      "settle": 50,
+      "close": 250,
+      "hold": 50
+    },
+    "source_time_scaled_minimum": {
+      "home_to_pregrasp": 750,
+      "approach": 500,
+      "lift": 500
+    },
+    "contract": "Validate per-phase run counts against source segment_timing and plan.phases, preserve original full commands; never allocate all n-2100 to approach",
+    "source_timing_limits": {
+      "velocity_ratio": 1.0,
+      "acceleration_rad_s2": 3.0,
+      "jerk_rad_s3": 30.0
+    },
+    "resume": "Retain original infrastructure stop/unknown snapshot; certify this submission pre-worker aborted using source/log/directory evidence before classifying as safe-unexecuted. New version executes same SHA-bound 3 plans once, not 157 completed records."
+  },
+  "new_physics_steps": 0
+}

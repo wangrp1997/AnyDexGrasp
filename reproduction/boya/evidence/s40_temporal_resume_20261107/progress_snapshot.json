@@ -1,0 +1,52 @@
+{
+  "captured_unix": 1794049580.5719151,
+  "progress": {
+    "schema": "anydex_boya_pipeline_progress_v2",
+    "stages": {},
+    "slot_count": 640,
+    "physics_steps": 0,
+    "status": "execution_running",
+    "updated_unix_s": 1794049459.6395085,
+    "detail": {
+      "objects_finished": 33,
+      "objects": 40,
+      "inherited_actual": 157,
+      "new_actual": 0,
+      "new_physics_steps": 0,
+      "eligible": 157,
+      "terminal_nulls": 0,
+      "last": "graspnet_058",
+      "error": false
+    }
+  },
+  "watcher": {
+    "schema": "anydex_s40_supplement_training_delivery_v1",
+    "status": "waiting_for_collection",
+    "collection_run": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3",
+    "collector_pid": 2371155,
+    "previous_dataset_manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/manifest.json",
+    "source_sha256": {
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/watch_s40_supplement_training_v2.py": "106f9d3f0916c4540c9ffa140bc981dd8b6946b2eccb5fe08915a28fad830143",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_s40_training_data_v2.py": "7e284ded1b6aac6c90add8ff81a74fbd61fa7c2f3ea81a44273d69543c080a76",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/merge_s40_training_datasets.py": "d7434b2e525ba1b6cfbaa3190a271d5a5678653b7be00f18fa514333f640d2e3",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_s40_decision.py": "a4f3ee4f385c361de19ccf702ded226212deb219feca60240aa6c34f1abf9eae",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue_v3.py": "0e76ef60f7122ecb292a55c02e18bfacaece90e054b2816428817d85fac01ead",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue_v2.py": "e83c87b593e77a0b797dc4e1a8257d018deebfce99aec67d270bfb54f7d6210f",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/terminal_collection_outcome.py": "eb51f22f471269cb721851688ea2805fd4310fcf769d437a51ff360c5f92fc52",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_s40_training_data.py": "fba3030388d96a663b21077ccbd6abf500fa5ff53e69fff4e852fefb762bb89a",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/score_s40_raw_candidates.py": "7f88631e854deeb0a9c76782aeda265b9b2bb0d2c4563552cb034d88bff9ebec",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/deploy_score_first.py": "8b8649ccab0e41ff6570e2cae8dc129d74f2f4d316dd7bc66afc99f37d3d6702",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_decision.py": "620a751c35e281c471f1115fca2c6c91622f95b291bdcf75123e778445adfced",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/trial_record.py": "2437f19d28f7f2601fd7f637eb9205c39b929cdb4b9fff2ba2bc5fac22f25841"
+    },
+    "input_sha256": {
+      "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/protocol.json": "ba712cc75c3467457436b78b47eb438658958b9b8abae31981faa70a6a4ea076",
+      "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/manifest.json": "0e34165951ef7b2d56a92145b16b953069d42dd01efeb565e1ead55f270625d6"
+    },
+    "stages": [],
+    "EGAD_objects_accessed": 0,
+    "new_physics_steps": 0,
+    "started_unix": 1794049449.6474843
+  }
+}

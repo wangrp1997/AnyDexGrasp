@@ -271,3 +271,16 @@ outputs/s40_collection_20261107_v1已于北京时间12:43:25 complete，97.971mi
 同时确认旧make_queries/raw_s40诊断遗漏作者pre-head approach/width/workspace联合mask；3200全拒不能归因训练不足，也不是完整AnyDex部署失败。原DH3离线链保留mask，其9准入不受影响。已新增boya_prehead_domain纯函数和14tests，与官方真实AST数值比对；Boya workspace/cone/raw-width必须显式，尚未冻结具体参数/接部署。自动交付本轮只到训练，部署评测仍pending，不重跑已知缺mask的旧诊断冒充完整验证。
 
 新40合同测试（6+9+6+5+14）和真实旧帧coverage/原240源merger/稳定manifest串联通过。详S40_STABLE_SUPPLEMENT_20261107.md、S40_PREHEAD_MASK_REVIEW_20261107.md及evidence/s40_stable_supplement_20261107。仅轻量相关代码/证据push用户origin，CanonDex只读、大数据不提交。
+
+
+## 2026-11-07 最新：S40补采157有效后被时长合同阻断，38条未执行已安全恢复
+
+原outputs/s40_stable_supplement_20261107_v2/collection已640候选完成/195ready/445准备null；157实际=116正41负/329700步后停止，非批次完成。原0603unknown和35未派、旧训练watcher blocked保持，旧240+本轮157共397有效源记录，未重训。
+
+060_g6_d1原计划2166步，home原生750→816，approach仍500；v2误假设仅approach可延长。原源码AST+原URDF+保存端点重建三home数组/timing精确相同，060在prepare遍历前未保存PREPARED/无worker/仅.queue.lock，证明3零抓取物理；35有原not_dispatched及无提交/输出证据。不能泛化“无文件=未执行”。
+
+新v3薄executor复用固定SHA v2所有控制/worker/记录函数，只显式适配home/approach/lift原生时间缩放完整合同及原终止证书的同一依赖。原数组、速度/加速度/jerk、物理门不改；新exporter_v2先安装合同再原导出。195原计划全部过、9测试过、060实际prepare-only3trial/2cohort零物理过。
+
+新活动outputs/s40_stable_supplement_20261107_v2/collection_resume_v3，PID2371155，2026-11-07T19:04:09.621434+08:00启动，protocol ba712cc75c3467457436b78b47eb438658958b9b8abae31981faa70a6a4ea076；四对象并行只派38首次执行，原157/329700步继承不重抓，不重render/CGR/几何/IK。原640、源40/alltrain/32+8保持，旧文件不改，新派生JSONL只改context追溯新旧protocol。
+
+自动等待PID2371156，同父training_delivery_v3；新final完成后exporter_v2→两源merge旧240与本轮有效→固定20epoch训练。此刻新训练/部署成绩未产生，EGAD未用，Boyaprehead具体域配置待冻结。后续看新目录，不重复旧watcher或新恢复，不热改任何已冻结py；所有未完成/失败与成本保留。报告S40_TEMPORAL_RESUME_20261107.md及evidence/s40_temporal_resume_20261107；只轻量push用户origin，CanonDex只读。

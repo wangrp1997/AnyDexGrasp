@@ -1,0 +1,42 @@
+{
+  "resume_pid": 2371155,
+  "watcher_pid": 2371156,
+  "started": "2026-11-07T19:04:09.621434+08:00",
+  "protocol_sha256": "ba712cc75c3467457436b78b47eb438658958b9b8abae31981faa70a6a4ea076",
+  "argv": [
+    "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/resume_s40_settled_execution_v3.py",
+    "--original-run",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection",
+    "--output-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3",
+    "--executor",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/execute_collection_queue_v3.py",
+    "--workers",
+    "4"
+  ],
+  "watcher_argv": [
+    "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/watch_s40_supplement_training_v2.py",
+    "--collection-run",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3",
+    "--previous-dataset-manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_decision_20261107_v1/dataset/manifest.json",
+    "--output-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3",
+    "--collector-pid",
+    "2371155"
+  ],
+  "inherited_actual": 157,
+  "inherited_positive": 116,
+  "inherited_negative": 41,
+  "inherited_physics_steps": 329700,
+  "remaining_first_executions": 38,
+  "workers": 4,
+  "new_CGR_forwards": 0,
+  "new_observations": 0,
+  "proof_reclassified_zero_prepare": 3,
+  "proven_never_dispatched": 35
+}
