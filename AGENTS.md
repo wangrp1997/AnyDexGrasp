@@ -1,5 +1,19 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-11 最新：有限诊断与新六件验收完成，3/6，未晋级默认
+
+用户授权尽快产出小闭环：纯规划、多候选诊断、单一统一修改、新6一试。新outputs/boya_fast6_20261111_v1已complete，协议SHA74632d0f8ff8981417c05fe22e5fc1cfc7db33ff02e6dd6301923d42f81ca52c。EGAD A/C/E×1/4固定6，与训练/旧DGN/旧EGAD12源和米制digest无重叠，不证明未见于CGR预训练。原scale.001/.1kg/.6摩擦/同XY；统一原V-HACD+规范凸面，源表面采样差最大33.479mm，非精确CAD；native20µm仅导入门。
+
+新6原初始化7500对象步，6RGBD/1CGR载入6前向，1789query/6003组合→1095shortlist/197手几何，6/6有几何；15候选/360预抓IK/47路径→5ready/1null。五个ready全部baseline直接通过，额外分支本轮恢复0。A1/C1/E4各一次成功+99.587/+83.416/+89.669mm；A4/E1实际失败，C4四候选无完整计划，统一3/6。五条10500步/七门/native20µm过，无早停/重抓。E1参考点虽升88.061mm但源底.633mm、末态失载，失败；原视频字幕“物体升高”为参考点位移，勿误报离桌。原1/12不改，不能把不同对象的3/6当策略提升。
+
+旧29候选纯规划单列outputs/boya_fast_planning_20261111_v1：15预抓IK+4连续IK+10碰撞；十碰撞均approach违规、五条仅手指-物体，不能全叫臂可达性问题。新planning_recovery原8seed+固定16Halton、最多4新IK分支，恢复E3rank59/G0rank4，零物理；928预抓IK/83路径/490.242s。0中转触发，未验证cuRobo绕障。20手DOF指令/四动作目标不变，home原限速延长88/16步；legacy seeds仍8，实际预算看EXPANDED_IK_SEARCH/PLAN_METADATA_NOTE。新入口opt-in、未晋级默认。
+
+9新候选诊断outputs/boya_candidate_diagnostic_20261111_v2：按原preactivation几何排名、排除14历史实际物理数组相同姿态，A3rank36/80/95、A6rank22/26/33、E0rank1/2/3，每条2100步共18900；仅A6rank33/g1成功+66.037mm/源底59.809mm/连续1.22s。其它8失败，所有七门过。它是已知物体多候选受控腕诊断，非外部top1分母；成功后仍完成冻结队列，不回写435。
+
+两次基础设施失败均保留：9候选v1因sandbox设备/缓存受限，Kit/USD已启动但0试抓步；v2仅外层设备权限/输出定位变化。新6首次表征漏LD_LIBRARY_PATH，0模型/0前向；resume_boya_fast6.py独立恢复原external12库环境和新batch回执，复用6RGBD，无重编译/下载/重新初始化。原协议/source不改，progress追加恢复且保留旧失败。
+
+本轮14实际29400步，另7500初始化对象步；全部14段正常速度视频，回放0积分，统一outputs/boya_fast_delivery_20261111_v1/index.html。27tests及独立选择/排名/规划/全指令/源网格底面/末态承载/全帧媒体核验通过。报告reproduction/boya/FAST_BOYA_RESULTS_20261111.md，轻量证据evidence/fast_boya_20261111。原8权重/435=302正133负/364fit71internal/CGR与CanonDex源码不变，0训练；整体论文复现仍未验收。本轮已收尾，无后台物理/训练，不自动重抓、加预算或扩样。仅轻量源码/证据推用户origin，大输出不提交。
+
 ## 2026-11-08 最新：公开训练/映射/闭合对齐诊断完成，原MSE换姿E0成功但整体仍未验收
 
 用户授权对齐。原训练train_one_epoch与code100四头各2真实batch，初始化/前向/全梯度/Adam/BN/LR严格相同；435条canonical480/标签索引通过。8+8临时CPU更新无保存checkpoint，旧模型不改。公开训练默认240 vs 发布20、best保存vs固定100及真实手采样差异明确保留，不能称作者完整训练史已复原。Allegro公开闭合实际是10位置增量/1s+.2s保持，未使用tactile/torque反馈；此前笼统归因缺少作者触觉不准确。三件映射/flip/深入/闭合端点未发现接线错。

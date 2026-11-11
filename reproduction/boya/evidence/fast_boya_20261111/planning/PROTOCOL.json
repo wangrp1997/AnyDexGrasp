@@ -1,0 +1,500 @@
+{
+  "schema": "anydex_boya_arm_recovery_comparison_v1",
+  "policy": {
+    "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+    "baseline_first": true,
+    "extra_halton_seeds": 16,
+    "halton_scramble": false,
+    "halton_skip": 1,
+    "seed_range_fraction": [
+      0.05,
+      0.95
+    ],
+    "per_seed_max_nfev": 300,
+    "max_new_ik_branches": 4,
+    "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+    "alternate_home_routes": [
+      "cable_home",
+      "qsfp_home",
+      "xr_test_home"
+    ],
+    "alternate_routes_only_for_home_collisions": true,
+    "grasp_pose_change": false,
+    "object_pose_change": false,
+    "hand_command_change": false,
+    "collision_tolerance_change": false,
+    "approach_steps": 500,
+    "close_steps": 250,
+    "hold_steps": 50,
+    "lift_steps": 500,
+    "dt_s": 0.004,
+    "curobo_used": false,
+    "physics_steps": 0,
+    "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+  },
+  "original_planning": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning",
+  "object_ids": [
+    "egad_A6",
+    "egad_C0",
+    "egad_C3",
+    "egad_C6",
+    "egad_E3",
+    "egad_E6",
+    "egad_G0",
+    "egad_G3"
+  ],
+  "candidate_count": 29,
+  "jobs": [
+    {
+      "trial_id": "egad_A6_port_rank_00017",
+      "object_id": "egad_A6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00017",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_A6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_A6_port_rank_00022",
+      "object_id": "egad_A6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00022",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_A6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_A6_port_rank_00026",
+      "object_id": "egad_A6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00026",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_A6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_A6_port_rank_00033",
+      "object_id": "egad_A6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00033",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_A6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C0_port_rank_00001",
+      "object_id": "egad_C0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 2,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C0/pool_00001",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C0_port_rank_00006",
+      "object_id": "egad_C0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 2,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C0/pool_00006",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C0_port_rank_00011",
+      "object_id": "egad_C0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 2,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C0/pool_00011",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C0_port_rank_00016",
+      "object_id": "egad_C0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C0/pool_00016",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C3_port_rank_00016",
+      "object_id": "egad_C3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C3/pool_00016",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C6_port_rank_00047",
+      "object_id": "egad_C6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C6/pool_00047",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C6_port_rank_00051",
+      "object_id": "egad_C6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C6/pool_00051",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C6_port_rank_00056",
+      "object_id": "egad_C6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C6/pool_00056",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_C6_port_rank_00065",
+      "object_id": "egad_C6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_C6/pool_00065",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_C6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_C6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E3_port_rank_00046",
+      "object_id": "egad_E3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E3/pool_00046",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E3_port_rank_00059",
+      "object_id": "egad_E3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E3/pool_00059",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E3_port_rank_00069",
+      "object_id": "egad_E3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E3/pool_00069",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E3_port_rank_00075",
+      "object_id": "egad_E3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 2,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E3/pool_00075",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E6_port_rank_00033",
+      "object_id": "egad_E6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E6/pool_00033",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E6_port_rank_00035",
+      "object_id": "egad_E6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 7,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E6/pool_00035",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E6_port_rank_00045",
+      "object_id": "egad_E6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 1,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E6/pool_00045",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_E6_port_rank_00048",
+      "object_id": "egad_E6",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E6/pool_00048",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_E6/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_E6/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G0_port_rank_00000",
+      "object_id": "egad_G0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 7,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G0/pool_00000",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G0_port_rank_00002",
+      "object_id": "egad_G0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G0/pool_00002",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G0_port_rank_00003",
+      "object_id": "egad_G0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 8,
+      "extra_depth_index": 2,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G0/pool_00003",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G0_port_rank_00004",
+      "object_id": "egad_G0",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G0/pool_00004",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G0/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G0/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G3_port_rank_00000",
+      "object_id": "egad_G3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 0,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G3/pool_00000",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G3_port_rank_00006",
+      "object_id": "egad_G3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 7,
+      "extra_depth_index": 1,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G3/pool_00006",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G3_port_rank_00008",
+      "object_id": "egad_G3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 2,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G3/pool_00008",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    },
+    {
+      "trial_id": "egad_G3_port_rank_00009",
+      "object_id": "egad_G3",
+      "split": "external_deployment_benchmark",
+      "gesture_id": 6,
+      "extra_depth_index": 3,
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_G3/pool_00009",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_G3/observation.json",
+      "source_npz": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/representations/egad_G3/raw_camera_candidates.npz",
+      "calibration": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "candidate_indices": [
+        0
+      ],
+      "max_arm_plans": 1
+    }
+  ],
+  "workers": 2,
+  "physics_steps": 0,
+  "training_writeback": false,
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/queue_manifest.json": "0651d1fb063d4ad010957450598437b9e166292ff37567ac7877ae390098429d",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/jobs.json": "a327f72534680bef99e378150576f612b82d37f4c9743429b8636f3e010fec2f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json": "62a2f01339726b8af882748b07ddaa1c8d9f097bd82056cd05ea1b6b574cc11d"
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/planning_recovery.py": "3bdd7f990527c270df57f467440cc69c858388f6816632749e20dc968a6c3b3f",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_collection_queue.py": "58d1cce26b6e7422f11e08e34750e7a6c690abde48b11eda51b625a6807d6b49",
+    "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_admission.py": "6a399855cd15fa14755ea48b473754fa1ce986cf631999372d333c17013309ea",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a"
+  }
+}

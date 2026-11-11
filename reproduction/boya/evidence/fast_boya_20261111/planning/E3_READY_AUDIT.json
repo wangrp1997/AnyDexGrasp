@@ -1,0 +1,88 @@
+{
+  "complete": true,
+  "original_verify_selected_passed": true,
+  "unchanged_plan_fields": [
+    "initial",
+    "source_palm",
+    "source_object",
+    "world_T_object",
+    "palm",
+    "hand_motor_names",
+    "open_motors",
+    "closed_motors",
+    "dt_s"
+  ],
+  "initial_position_exact": true,
+  "original20_hand_dof_max_error_rad": 0.0,
+  "action_palm_target_max_error": 0.0,
+  "temporal_contract": {
+    "expected_command_steps": 2188,
+    "expected_phase_counts": {
+      "settle": 50,
+      "close": 250,
+      "hold": 50,
+      "home_to_pregrasp": 838,
+      "approach": 500,
+      "lift": 500
+    },
+    "expected_phase_boundaries": [
+      {
+        "name": "home_to_pregrasp",
+        "start_step": 51,
+        "end_step": 888
+      },
+      {
+        "name": "approach",
+        "start_step": 889,
+        "end_step": 1388
+      },
+      {
+        "name": "close",
+        "start_step": 1389,
+        "end_step": 1638
+      },
+      {
+        "name": "hold",
+        "start_step": 1639,
+        "end_step": 1688
+      },
+      {
+        "name": "lift",
+        "start_step": 1689,
+        "end_step": 2188
+      }
+    ],
+    "original_dt_s": 0.004,
+    "approach_extension_steps": 0,
+    "segment_extension_steps": {
+      "home_to_pregrasp": 88,
+      "approach": 0,
+      "lift": 0
+    },
+    "command_policy": "All source planner home/approach/lift timing retained; fixed settle/close/hold; immutable complete commands, no resampling"
+  },
+  "independent_derivatives": {
+    "home_to_pregrasp": {
+      "velocity_ratio": 0.9890256315329357,
+      "max_acceleration": 2.438979874608976,
+      "max_jerk": 7.399993786141867
+    },
+    "approach": {
+      "velocity_ratio": 0.2129058562169086,
+      "max_acceleration": 0.7738632737883111,
+      "max_jerk": 4.02934498917526
+    },
+    "lift": {
+      "velocity_ratio": 0.17191373844127264,
+      "max_acceleration": 0.8252608068720635,
+      "max_jerk": 4.2079066776140595
+    }
+  },
+  "full_source_collision_audits_identical": true,
+  "original_v3_prepare_passed": true,
+  "native_execute_args_constructed": true,
+  "native_plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000",
+  "kit_started": false,
+  "physics_steps": 0,
+  "source_sha256": "4664ea2fd9082f0bc95bf053b18839b8748bd6152efb6fd9e29871aaa94fe2b8"
+}

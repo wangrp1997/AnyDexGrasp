@@ -1,0 +1,100 @@
+{
+  "schema": "anydex_boya_pilot_shared_representation_v1",
+  "status": "blocked_or_failed",
+  "manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+  "manifest_sha256": "49e2c3fa7f74afa1ec7c9915b810057e555e3ffbbf622a76f28f070f9b4d7157",
+  "argv": [
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py",
+    "--manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+    "--run-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representation_stage",
+    "--device",
+    "cuda:0",
+    "--checkpoint",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "--seed",
+    "20261108"
+  ],
+  "args": {
+    "manifest": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+    "run_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representation_stage",
+    "device": "cuda:0",
+    "checkpoint": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "native_deps": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps",
+    "seed": 20261108,
+    "num_seed": 2048,
+    "voxel_size": 0.005,
+    "depth_min": 0.2,
+    "depth_max": 0.65,
+    "prepare_only": false
+  },
+  "python": "3.12.14 (main, Sep 29 2026, 15:01:18) [Clang 22.1.3 ]",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "source_revision": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "source_checkout": "/home/wangrenpeng/AnyDexGrasp",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py": "ee8b43bc334ba11e394d4030d377c0bb5ced211c9bff85ca92ac1bbc33f97093",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py": "6d88cd174be92fb3db2af603b69056952c81b897e8d49b5cefa1da93b216f266",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/runtime/run_official_rgbd_frame.py": "39d569525b2e257c5075c36fb5e18727dde6774431aa3a9e88990e8abd30cf4e",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/utils/pt_utils.py": "0ed31e3a708c9e94d7d1a67ac212191b1325948728c62ba90f897c698436a468"
+  },
+  "model_load_count": 0,
+  "checkpoint_file_load_count": 0,
+  "strict_state_dict_assignments": 0,
+  "network_forward_count": 0,
+  "hand_head_load_count": 0,
+  "new_training_steps": 0,
+  "new_physics_steps": 0,
+  "protocol": "One identity official representation forward per object; paired predictions/features shared across all three fixed Boya collection gestures",
+  "objects": [
+    {
+      "object_id": "egad_A1",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A1/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representations/egad_A1",
+      "status": "not_started"
+    },
+    {
+      "object_id": "egad_A4",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A4/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representations/egad_A4",
+      "status": "not_started"
+    },
+    {
+      "object_id": "egad_C1",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C1/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representations/egad_C1",
+      "status": "not_started"
+    },
+    {
+      "object_id": "egad_C4",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C4/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representations/egad_C4",
+      "status": "not_started"
+    },
+    {
+      "object_id": "egad_E1",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E1/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representations/egad_E1",
+      "status": "not_started"
+    },
+    {
+      "object_id": "egad_E4",
+      "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E4/observation.json",
+      "output_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representations/egad_E4",
+      "status": "not_started"
+    }
+  ],
+  "timing_seconds": {
+    "total_wall": 0.09387306799180806
+  },
+  "error_type": "ImportError",
+  "error": "libgfortran.so.5: cannot open shared object file: No such file or directory",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py\", line 55, in main\n    begin=time.monotonic();engine=PersistentOfficialCGR(a);batch.update(model_load_count=1,checkpoint_file_load_count=1,strict_state_dict_assignments=1,checkpoint=engine.checkpoint,native_dependencies=engine.native,representation_overlay=engine.overlay,candidate_parser_overlay=engine.parser_receipt,rng_policy=engine.rng)\n                                  ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_pilot_representation.py\", line 110, in __init__\n    self.ME=importlib.import_module('MinkowskiEngine');pointnet=importlib.import_module('pointnet2_utils')\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/importlib/__init__.py\", line 90, in import_module\n    return _bootstrap._gcd_import(name[level:], package, level)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<frozen importlib._bootstrap>\", line 1387, in _gcd_import\n  File \"<frozen importlib._bootstrap>\", line 1360, in _find_and_load\n  File \"<frozen importlib._bootstrap>\", line 1331, in _find_and_load_unlocked\n  File \"<frozen importlib._bootstrap>\", line 935, in _load_unlocked\n  File \"<frozen importlib._bootstrap_external>\", line 999, in exec_module\n  File \"<frozen importlib._bootstrap>\", line 488, in _call_with_frames_removed\n  File \"/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngine/__init__.py\", line 53, in <module>\n    from MinkowskiEngineBackend._C import (\nImportError: libgfortran.so.5: cannot open shared object file: No such file or directory\n",
+  "completed_forward_objects": 0,
+  "warm_frame_wall_seconds": [],
+  "manifest_unchanged_at_end": true
+}

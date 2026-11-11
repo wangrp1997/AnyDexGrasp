@@ -1,0 +1,70 @@
+test_low_discrepancy_seeds_deterministic_and_bounded (test_planning_recovery.RecoveryContract.test_low_discrepancy_seeds_deterministic_and_bounded) ... ok
+test_no_baseline_or_duplicate_branch_retry_and_cap (test_planning_recovery.RecoveryContract.test_no_baseline_or_duplicate_branch_retry_and_cap) ... ok
+test_no_relaxed_grasp_or_physics_gate (test_planning_recovery.RecoveryContract.test_no_relaxed_grasp_or_physics_gate) ... ok
+test_transit_allowed_only_if_all_violations_are_in_home (test_planning_recovery.RecoveryContract.test_transit_allowed_only_if_all_violations_are_in_home) ... ok
+test_budget_above_three_rejected (test_boya_candidate_diagnostic.SelectionTests.test_budget_above_three_rejected) ... ok
+test_old_pose_excluded_even_with_new_rank_and_different_file (test_boya_candidate_diagnostic.SelectionTests.test_old_pose_excluded_even_with_new_rank_and_different_file) ... ok
+test_rank_order_fixed_budget_and_selected_pose_deduplication (test_boya_candidate_diagnostic.SelectionTests.test_rank_order_fixed_budget_and_selected_pose_deduplication) ... ok
+test_same_physical_pose_tolerates_reconstructed_roundoff (test_boya_candidate_diagnostic.SelectionTests.test_same_physical_pose_tolerates_reconstructed_roundoff) ... ok
+test_short_pool_does_not_invent_replacement_candidates (test_boya_candidate_diagnostic.SelectionTests.test_short_pool_does_not_invent_replacement_candidates) ... ok
+test_exact_six_and_no_outcome_selection (test_boya_fast6_inputs.Fast6Inputs.test_exact_six_and_no_outcome_selection) ... ok
+test_physics_and_scale_cannot_change (test_boya_fast6_inputs.Fast6Inputs.test_physics_and_scale_cannot_change) ... ok
+test_renderer_refuses_subset_or_unsettled_input (test_boya_fast6_inputs.Fast6Inputs.test_renderer_refuses_subset_or_unsettled_input) ... ok
+test_renderer_verifies_sources_without_isaac_start (test_boya_fast6_inputs.Fast6Inputs.test_renderer_verifies_sources_without_isaac_start) ... ok
+test_replacement_reordering_missing_and_label_rejected (test_boya_fast6_inputs.Fast6Inputs.test_replacement_reordering_missing_and_label_rejected) ... ok
+test_actual_external_evaluator_emits_matching_freeze_contract (test_boya_fast6_entries.HandPortContract.test_actual_external_evaluator_emits_matching_freeze_contract) ... ok
+test_all_no_plan_objects_remain_in_fixed_external_denominator (test_boya_fast6_entries.HandPortContract.test_all_no_plan_objects_remain_in_fixed_external_denominator) ... {
+  "schema": "anydex_boya_fast6_execution_results_v1",
+  "diagnostic_schema": "anydex_boya_external_hand_domain_diagnostic_v1",
+  "head_recipe": "preactivation_selected_mse",
+  "status": "complete",
+  "objects": 6,
+  "external_protocol_ref": {
+    "path": "/tmp/tmpdmvxcam0/protocol.json",
+    "sha256": "acd92fddfb2234c537e9093939e4e1703a95381939cda1310f1db15d164ec1c4"
+  },
+  "selected_top1": 0,
+  "no_plan_objects": [
+    "egad_A1",
+    "egad_A4",
+    "egad_C1",
+    "egad_C4",
+    "egad_E1",
+    "egad_E4"
+  ],
+  "actual_attempts": 0,
+  "successes": 0,
+  "eligible_failures": 0,
+  "terminal_nulls": 0,
+  "physical_steps": 0,
+  "success_fraction_over_external_objects": 0.0,
+  "final_success_rate_available": true,
+  "errors": [],
+  "benchmark_only": true,
+  "training_writeback": false,
+  "external_validation": true,
+  "outcome_dependent_retry": false,
+  "inputs_and_sources_unchanged": true,
+  "new_training_updates": 0,
+  "new_CGR_forwards": 0,
+  "wall_s": 0.00022030691616237164,
+  "plan_sha256": "c46a5866b1deea15ed94890d41018282bd8f393440bb245b1d0573839e9a2c6f"
+}
+ok
+test_catalog_accepts_support_domain_and_no_cloud_admission (test_boya_fast6_entries.HandPortContract.test_catalog_accepts_support_domain_and_no_cloud_admission) ... ok
+test_freeze_contract_rejects_collision_conflation_and_bad_counts (test_boya_fast6_entries.HandPortContract.test_freeze_contract_rejects_collision_conflation_and_bad_counts) ... ok
+test_original_native_process_function_reused (test_boya_fast6_entries.HandPortContract.test_original_native_process_function_reused) ... ok
+test_output_exists_rejected_before_input_reads (test_boya_fast6_entries.HandPortContract.test_output_exists_rejected_before_input_reads) ... ok
+test_preserved_global_rank_and_shared_arm4_first_ready (test_boya_fast6_entries.HandPortContract.test_preserved_global_rank_and_shared_arm4_first_ready) ... ok
+test_protocol_cannot_change_ids_or_attempt_policy (test_boya_fast6_entries.HandPortContract.test_protocol_cannot_change_ids_or_attempt_policy) ... ok
+test_runner_accepts_exactly_one_first_ready_and_rejects_retry_or_foreign_source (test_boya_fast6_entries.HandPortContract.test_runner_accepts_exactly_one_first_ready_and_rejects_retry_or_foreign_source) ... ok
+test_v2_paper20_and_oneflip_are_rejected (test_boya_fast6_entries.HandPortContract.test_v2_paper20_and_oneflip_are_rejected) ... ok
+test_zero_support_queries_are_valid_nulls_not_geometry_admission (test_boya_fast6_entries.HandPortContract.test_zero_support_queries_are_valid_nulls_not_geometry_admission) ... ok
+test_completed_stage_skips_and_failure_log_blocks_replay (test_boya_fast6_entries.StageRecoveryContract.test_completed_stage_skips_and_failure_log_blocks_replay) ... FAST6_ALREADY_COMPLETE initialize
+ok
+test_incomplete_development_cannot_freeze_validation (test_boya_fast6_entries.StageRecoveryContract.test_incomplete_development_cannot_freeze_validation) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.206s
+
+OK

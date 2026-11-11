@@ -1,0 +1,34 @@
+{
+  "schema": "anydex_candidate_startup_recovery_v1",
+  "source_run": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1",
+  "source_protocol_sha256": "1e039db0e53ca8646373248a45dcf10af1e69788a5bce88cdb52a69426786f9e",
+  "source_results_sha256": "1f12e5c00cec7d19402007c04440fe4ac24d39271123895cfbbedb4b27e2ccea",
+  "source_failure_audit_sha256": "5dc6971cde6123c42ea77a96b3f1c25b11414cf926a989c307d589061271a18e",
+  "source_log_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/egad_A3_rank00036.physics.log": "bb9ff1251309dfc30471cc75e4ae979d05b2a2dc0d7e17259c937d2347e4622f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/egad_E0_rank00001.physics.log": "8f7729ab3d69b8443379f1d9998095a65e409a1ff6b8c3e0d72a798f8795afdb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/egad_A6_rank00022.physics.log": "9a610fccc95648ca0982dd154e16bbc7763ed9037a3554c00728b157477b7b86"
+  },
+  "zero_commanded_grasp_steps": true,
+  "kit_started": true,
+  "usd_asset_construction_started": true,
+  "trial_loop_not_entered": true,
+  "recovery_run": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2",
+  "recovery_protocol_sha256": "639d6e09e09064a8648d2e3b526869654b68afa55d8c679108ea448758a0f023",
+  "only_protocol_field_difference": [
+    "created_at"
+  ],
+  "candidate_arrays_and_controls_unchanged": true,
+  "recovery_execution_policy": "Root launches original frozen runner with require_escalated to access GPU driver and installed Kit cache; no scoring/physics-source change",
+  "recovery_jobs_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A3_rank00036.json": "770a6acf52da8cad9268faa494efe6d3178f586b6b9d5f215307fb242583cc79",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A3_rank00080.json": "3c1cd64affe4cd824faf0fe38014c0277b5ab9f2e60956a64bbdbf95d992e061",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A3_rank00095.json": "3847fdc310a697d74e294f1ac363d0cbf334636db1067588fe53d0c6ae415a03",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A6_rank00022.json": "178005b40eff64a706a5e1ac9788031eb37aa5138a03414f4a63c07a9349c968",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A6_rank00026.json": "9f1087c40453d639e897ae1959b8a275364575c4143c65ecb1a9f3f41297e779",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A6_rank00033.json": "68ae157f1028ccacf0eaace3330e91248fa06a03b69157b4457a27e5f39693e6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_E0_rank00001.json": "f2f478186cea79d55c304f50b0319815eac5104bbf760723fb2c1253f25cbaa8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_E0_rank00002.json": "a18bef895cb29c6c8c75ce4a34854ffecc0698532101785336cfde8b9df69c1f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_E0_rank00003.json": "16138eee19d3b51c474989eb9a607461de50ca050cbab3dc793372a67a23a997"
+  }
+}

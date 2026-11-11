@@ -1,0 +1,36 @@
+{
+  "schema": "anydex_boya_fast6_code_review_v1",
+  "passed": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_fast6_assets.py": "a76b145d86392b4de7136450675531ebdf82fcf485b390379630932ab1c64cdc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_fast6.py": "642be23109092dfd32a148c8be28a557584bde987c70c09f1bf7720cf8bbac0c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_fast6_top1.py": "5c549f258d7b15f378fe3e082d6118cf98a123ac080e86c619efe8362e49efeb",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_fast6_trials.py": "21887c05a8e538738f264b7894bc7dcd0b842dbd0c7d00ef44a0086d6e2e3ed0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_fast6.py": "f065766df771a2396ebe3687e8720f375bd33fabc59eb4c8ac944045f3806efc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_fast6_runtime.py": "745d4635583bd400975fb74b10f2815b20e54db8897632bb47b5d1acaee54e55",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_boya_fast6_observations.py": "2de5a1711f5d21787c4bae01d24b16a4306a6e52cb7cc0b5a36d93f45bbea675"
+  },
+  "checks": [
+    "Exact six new identities, fixed ordering and no label-bearing scene inputs",
+    "Actual denominator6 and at most one first-ready actual grasp per object",
+    "Original representation, scoring, mapping, closure, native gates and executor retained",
+    "Only opt-in planning prepare_one changes six-arm branch/transit search",
+    "Full development status/policy/source guard before protocol freeze",
+    "Baseline26 model/data/helper hashes checked before freeze and included in input freeze",
+    "No AnyDex directory glob races; explicit old closure plus new dependent sources",
+    "Exclusive stage log creation and fresh-output guards prevent automatic replay",
+    "No hidden test labels used for policy selection; six identity selection precedes scores"
+  ],
+  "resolved_findings": [
+    "freeze now validates complete development reports and exact policy binding",
+    "freeze now verifies original immutable baseline entries",
+    "standalone top1 protocol validates physics/identity/shared policy and all source/input hashes"
+  ],
+  "remaining_boundaries": [
+    "Small six-object simulation evaluation only",
+    "Physical media failure status must be read from execution results, not outer stage returncode alone",
+    "Neither static sampled hull gates nor limited branch search proves global reachability"
+  ],
+  "tests_reported_by_parent": 18,
+  "physics_started_by_this_auditor": false
+}

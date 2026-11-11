@@ -1,0 +1,98 @@
+{
+  "schema": "anydex_boya_fast_delivery_v1",
+  "complete": true,
+  "planning": {
+    "old_null_objects": 8,
+    "original_candidates": 29,
+    "ready_objects": [
+      "egad_E3",
+      "egad_G0"
+    ],
+    "ready_candidates": 2,
+    "physics_steps": 0
+  },
+  "known_candidate_diagnostic": {
+    "objects": 3,
+    "attempts": 9,
+    "successes": 1,
+    "physical_steps": 18900,
+    "not_top1_or_external_success_rate": true
+  },
+  "new_external6": {
+    "objects": 6,
+    "successes": 3,
+    "actual_attempts": 5,
+    "physical_steps": 10500,
+    "no_plan_objects": [
+      "egad_C4"
+    ],
+    "rows": [
+      {
+        "object_id": "egad_A1",
+        "geometry_admitted": 38,
+        "arm_candidates": 2,
+        "outcome": "\u6210\u529f",
+        "trial_id": "egad_A1_port_rank_00004"
+      },
+      {
+        "object_id": "egad_A4",
+        "geometry_admitted": 27,
+        "arm_candidates": 3,
+        "outcome": "\u5b9e\u9645\u5931\u8d25",
+        "trial_id": "egad_A4_port_rank_00007"
+      },
+      {
+        "object_id": "egad_C1",
+        "geometry_admitted": 29,
+        "arm_candidates": 1,
+        "outcome": "\u6210\u529f",
+        "trial_id": "egad_C1_port_rank_00002"
+      },
+      {
+        "object_id": "egad_C4",
+        "geometry_admitted": 81,
+        "arm_candidates": 4,
+        "outcome": "\u65e0\u5b8c\u6574\u81c2\u8ba1\u5212",
+        "trial_id": null
+      },
+      {
+        "object_id": "egad_E1",
+        "geometry_admitted": 17,
+        "arm_candidates": 4,
+        "outcome": "\u5b9e\u9645\u5931\u8d25",
+        "trial_id": "egad_E1_port_rank_00094"
+      },
+      {
+        "object_id": "egad_E4",
+        "geometry_admitted": 5,
+        "arm_candidates": 1,
+        "outcome": "\u6210\u529f",
+        "trial_id": "egad_E4_port_rank_00006"
+      }
+    ]
+  },
+  "initialization_object_steps": 7500,
+  "unchanged_training_records": 435,
+  "new_training_updates": 0,
+  "new_CGR_forwards": 6,
+  "old_external12_result": "1/12 unchanged",
+  "limitations": [
+    "Six fixed single-object scenes are small-scale validation",
+    "Original convex proxies remain approximate; not source CAD dynamics",
+    "Known-object multi-candidate diagnosis is not top1 evaluation",
+    "Paper reproduction and reliable Boya adaptation remain unaccepted"
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/publish_boya_fast_delivery.py": "c789dbb4cb92594c0f022a48917f50ebc719fd8217ca33d4028b9c190f0702c7"
+  },
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/RESULTS.json": "ce933d7eaac0af711a5122b2308c83b78d252e6311c72b6ab5ad25dce20d0ab8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/RESULTS.json": "9033e65996986a71782351b67a2f5af8d2a824258d87c3a4da31db7d41187bc9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/INDEPENDENT_AUDIT.json": "747b136be941002b8120e4a0caaee801abbe7bc1b63e313c7312de919977a4af",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/MEDIA_VERIFICATION.json": "1d96bc2104b0bd7520d0f14c6df0aa4d3de55127bde4fbf1e004a31180dbc1b1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution/RESULTS.json": "559489784b15c788c3a304af21952650366cb8b051a57100b45bd054343ecb0f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/planning/queue_manifest.json": "979684a6dcdd713a6853a687f4307f26617bd71cd056bbed513bd8c02ae89bf8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/protocol.json": "74632d0f8ff8981417c05fe22e5fc1cfc7db33ff02e6dd6301923d42f81ca52c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/diagnostic/RESULTS.json": "b67759e5774458204b541754b70b17b218ed891ee6ee3a2a4d67cedc265f2284"
+  }
+}

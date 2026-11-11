@@ -1,0 +1,185 @@
+{
+  "schema": "anydex_boya_fast6_preforward_protocol_audit_v1",
+  "complete": true,
+  "created_utc": "2026-11-11T08:58:03.464840+00:00",
+  "protocol_sha256": "74632d0f8ff8981417c05fe22e5fc1cfc7db33ff02e6dd6301923d42f81ca52c",
+  "freeze_sha256": "169da036cb1a4727cb2c7cda955c3138e46c55654e6cf8790444ad10c22a1ac8",
+  "source_count": 644,
+  "input_count": 39,
+  "verified_unique_files": 713,
+  "baseline26_unchanged": true,
+  "unchanged_original_fields": [
+    "head_recipe",
+    "original_training_recipe",
+    "training_results",
+    "arm_budget_per_object",
+    "physical_attempts_per_object",
+    "outcome_dependent_retry",
+    "benchmark_only",
+    "training_writeback",
+    "source_unit_to_m",
+    "object_mass_kg",
+    "object_friction",
+    "initial_pose_rule",
+    "settling_policy",
+    "native_asset_policy",
+    "representation",
+    "include_no_plan_in_denominator"
+  ],
+  "planning_policy_matches_old29_diagnosis": true,
+  "development_is_only_known_objects": true,
+  "six_heldout_rankings_and_outcomes_absent": true,
+  "no_new_head_or_training": true,
+  "denominator": 6,
+  "one_physical_attempt_per_object": true,
+  "selection_audit_sha256": "7cda7093af54f5b988ec87ba3b23bdc9c6d0b5b8f63390927767010bd15a7561",
+  "settling_results_sha256": "9f482a52913c744e6324d0ee400c429040ee7c5bfb414ebf1f824f78979cc1a6",
+  "initialization_object_steps": 7500,
+  "initialization_grasp_attempts": 0,
+  "all_six_native20um_and_settle_ready": true,
+  "observations": [
+    {
+      "object_id": "egad_A1",
+      "observation_json_sha256": "e53b07f90508eca20397a7a1eb910ebd7f84f03710fec32e0ab3722d0d9bf162",
+      "network_files": {
+        "color.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A1/color.png",
+          "sha256": "97cd0662e494900fc686cb326d6b28cd104952626425f1354e26b1d75e3bddec"
+        },
+        "depth.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A1/depth.png",
+          "sha256": "81bc4519d7826d0108dd465c8ea4fc2c318614002dc5d4e3fd64881807ed26f0"
+        },
+        "meta.mat": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A1/meta.mat",
+          "sha256": "0e635c19ec4229d6ff487e0a67a3e70c4a7a709a90e581a84812f0870103857f"
+        }
+      },
+      "world_transform_matches_settled": true,
+      "source_renderer_match": true,
+      "explicit_physics_steps": 0
+    },
+    {
+      "object_id": "egad_A4",
+      "observation_json_sha256": "fd6b92f15f810fa160f43599302b4ad95168f5a9fee56d29778d8c0527b0f9e5",
+      "network_files": {
+        "color.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A4/color.png",
+          "sha256": "a9801fd0ec4a2d9922b0f38f725196b970490a4e5a5cd188a712f983a57f417c"
+        },
+        "depth.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A4/depth.png",
+          "sha256": "bf9547bef41a827393ad8090d03f06f43fa37fda55bb720d3a7a7326ee01fa6e"
+        },
+        "meta.mat": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_A4/meta.mat",
+          "sha256": "1d29ce8e3543c408bdd6bdecec84e0a28ea8100716991fc0d95dae618bae5182"
+        }
+      },
+      "world_transform_matches_settled": true,
+      "source_renderer_match": true,
+      "explicit_physics_steps": 0
+    },
+    {
+      "object_id": "egad_C1",
+      "observation_json_sha256": "8d04c17c50253144f9f60da77fe9d74036993811f1db6314f166aa26acf83485",
+      "network_files": {
+        "color.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C1/color.png",
+          "sha256": "f5f69473b4a046b54071dc06af745e9573ce2d03b77a40b2dcf6b1eb39b92627"
+        },
+        "depth.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C1/depth.png",
+          "sha256": "af4c2a80a80abcca508980f2e858d3d9969f325bca87b4ca3a084416186a1266"
+        },
+        "meta.mat": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C1/meta.mat",
+          "sha256": "2355374adad783e39a961c58ac442fd3f51fd51e90cd31fe992cb02e3089211b"
+        }
+      },
+      "world_transform_matches_settled": true,
+      "source_renderer_match": true,
+      "explicit_physics_steps": 0
+    },
+    {
+      "object_id": "egad_C4",
+      "observation_json_sha256": "7e950edee181013bfaf7cdda5e599e539b41974f2d6d96ccf00b101b5739b0e3",
+      "network_files": {
+        "color.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C4/color.png",
+          "sha256": "724dc92ab49bdbbf6131e7c5351e9567b145bbbd4382bb42bb07f7c673033126"
+        },
+        "depth.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C4/depth.png",
+          "sha256": "fd26d49d6b277c1bfb0da64209ce9ba90471d3cbf3d5a89c268d03fd3bcf5c4b"
+        },
+        "meta.mat": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_C4/meta.mat",
+          "sha256": "c81f4cdd5e46aeba4d8e34b3be470fc6ead77c1c8456243850606bcacd3c24c9"
+        }
+      },
+      "world_transform_matches_settled": true,
+      "source_renderer_match": true,
+      "explicit_physics_steps": 0
+    },
+    {
+      "object_id": "egad_E1",
+      "observation_json_sha256": "5e84c6088d61c8b954b93de5e0795f67b15fe846dde598d828cd83bb672c76b5",
+      "network_files": {
+        "color.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E1/color.png",
+          "sha256": "110e292094f7e1dd18c96f43e0062a59a9f6c5ae764d755dc808e444943a463a"
+        },
+        "depth.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E1/depth.png",
+          "sha256": "7f8aec6930ebcffc3d33f696ad41f2161b993b76bbc813f2b9844214ffed5f4c"
+        },
+        "meta.mat": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E1/meta.mat",
+          "sha256": "2e62a82d76c1bf47a50f396a8aca62959cbee682f92f5861661db964ac85a2a3"
+        }
+      },
+      "world_transform_matches_settled": true,
+      "source_renderer_match": true,
+      "explicit_physics_steps": 0
+    },
+    {
+      "object_id": "egad_E4",
+      "observation_json_sha256": "36ddae0111c1e3bc60f92cd91aea0eccb2bd2efd2b84bb00ef34b7954f26f6b6",
+      "network_files": {
+        "color.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E4/color.png",
+          "sha256": "19d7990b7f0e0f35f5c91a852389193eca073176eee706fc62c43e9b12b74666"
+        },
+        "depth.png": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E4/depth.png",
+          "sha256": "61128834a22433c60bb05066484979e96904ead4522a161f4b73431a60eb352a"
+        },
+        "meta.mat": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations/egad_E4/meta.mat",
+          "sha256": "6ee826c9fba43cd83440347957842effb501691c93b3d6a6a09694cec8a9721b"
+        }
+      },
+      "world_transform_matches_settled": true,
+      "source_renderer_match": true,
+      "explicit_physics_steps": 0
+    }
+  ],
+  "representation_startup_failure": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representation_stage/BATCH_REPRESENTATION.json",
+    "sha256": "d5ade19ad3d6703a2376447300fa3af58827ab6002d7740fd3c9b8801db86e2a",
+    "error": "libgfortran.so.5: cannot open shared object file: No such file or directory",
+    "model_loads": 0,
+    "forwards": 0,
+    "all_six_not_started": true
+  },
+  "tests": {
+    "command": "python -B -m unittest test_boya_fast6_inputs test_boya_fast6_entries",
+    "cwd": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya",
+    "passed": 18,
+    "physics_steps": 0
+  },
+  "new_audit_physics_steps": 0,
+  "new_audit_training_steps": 0,
+  "scope": "After RGBD creation, before any first candidate ranking/outcome. No pipeline source edited."
+}

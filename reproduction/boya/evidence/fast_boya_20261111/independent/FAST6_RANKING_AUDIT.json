@@ -1,0 +1,115 @@
+{
+  "schema": "anydex_boya_fast6_independent_ranking_audit_v1",
+  "complete": true,
+  "created_utc": "2026-11-11T09:01:57.846864+00:00",
+  "protocol_sha256": "74632d0f8ff8981417c05fe22e5fc1cfc7db33ff02e6dd6301923d42f81ca52c",
+  "diagnostic_results_sha256": "b67759e5774458204b541754b70b17b218ed891ee6ee3a2a4d67cedc265f2284",
+  "unique_frozen_files_verified": 778,
+  "head_models_original_four_unchanged": true,
+  "immutable_baseline26_unchanged": true,
+  "source_prior_scoring_implementation_unchanged": true,
+  "models_trained_on_prior32_fit_only": true,
+  "novelty_audit": {
+    "external_mesh_identities": 12,
+    "excluded_mesh_identities": 162,
+    "excluded_object_ids": 110,
+    "object_id_intersection": 0,
+    "intersection": 0,
+    "exclusion_manifest_refs": [
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/objects.json",
+        "sha256": "ea9cb780508291f571d8e46704231a9e7f7e8a411cb82ca4a9a62dfb03a370b2",
+        "mesh_identities": 80
+      },
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json",
+        "sha256": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7",
+        "mesh_identities": 8
+      },
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+        "sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d",
+        "mesh_identities": 50
+      },
+      {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/objects.json",
+        "sha256": "e73bd354d47b69104486728561396025f64484722f75f1c0246bc62144bc5040",
+        "mesh_identities": 24
+      }
+    ],
+    "comparison": "Byte-SHA identity for source/prepared geometry; not semantic or geometric equivalence proof",
+    "training_manifest_metadata_read": true,
+    "training_label_arrays_read": false
+  },
+  "rows": [
+    {
+      "object_id": "egad_A1",
+      "head_queries": 270,
+      "expanded_combinations": 871,
+      "shortlist_count": 219,
+      "geometry_admitted": 38,
+      "ranking_freeze_sha256": "9830205f4f7ca3f27a561f4fc035a0ba96a877759a8a5e1dfd3999a00f67dd96",
+      "all_shortlist_scores_and_target_indices_recomputed": true,
+      "ranking_input_excludes_new_outcomes_and_training_arrays": true
+    },
+    {
+      "object_id": "egad_A4",
+      "head_queries": 483,
+      "expanded_combinations": 1706,
+      "shortlist_count": 239,
+      "geometry_admitted": 27,
+      "ranking_freeze_sha256": "8cccf0ad51e266c8e5f192e9baa12f3777186b47f3dbc21e83554a1cb3106ac3",
+      "all_shortlist_scores_and_target_indices_recomputed": true,
+      "ranking_input_excludes_new_outcomes_and_training_arrays": true
+    },
+    {
+      "object_id": "egad_C1",
+      "head_queries": 129,
+      "expanded_combinations": 283,
+      "shortlist_count": 88,
+      "geometry_admitted": 29,
+      "ranking_freeze_sha256": "0c235a12e4c7c9d70db7278b7de46e0da62dcc4fe20afa1b30d6531ee1f3e6d1",
+      "all_shortlist_scores_and_target_indices_recomputed": true,
+      "ranking_input_excludes_new_outcomes_and_training_arrays": true
+    },
+    {
+      "object_id": "egad_C4",
+      "head_queries": 353,
+      "expanded_combinations": 1249,
+      "shortlist_count": 327,
+      "geometry_admitted": 81,
+      "ranking_freeze_sha256": "3b11ebc6a2c0755f8ad2983276ce3556f4a9ce3c86bf8c07c66c099f0ff3c752",
+      "all_shortlist_scores_and_target_indices_recomputed": true,
+      "ranking_input_excludes_new_outcomes_and_training_arrays": true
+    },
+    {
+      "object_id": "egad_E1",
+      "head_queries": 438,
+      "expanded_combinations": 1618,
+      "shortlist_count": 202,
+      "geometry_admitted": 17,
+      "ranking_freeze_sha256": "4fbea5a41c3b4114c335b57edcc04ba69f5cdb11993877bb5574c0ae447f833d",
+      "all_shortlist_scores_and_target_indices_recomputed": true,
+      "ranking_input_excludes_new_outcomes_and_training_arrays": true
+    },
+    {
+      "object_id": "egad_E4",
+      "head_queries": 116,
+      "expanded_combinations": 276,
+      "shortlist_count": 20,
+      "geometry_admitted": 5,
+      "ranking_freeze_sha256": "094a1f753ea8c83ff56e6f90b3d50db6025e6cec6c008b5d52ec26f2d6c50d37",
+      "all_shortlist_scores_and_target_indices_recomputed": true,
+      "ranking_input_excludes_new_outcomes_and_training_arrays": true
+    }
+  ],
+  "total_queries": 1789,
+  "total_expanded_combinations": 6003,
+  "all_six_have_geometry": true,
+  "no_external_labels_used": true,
+  "no_new_training": true,
+  "audit_CGR_forwards": 0,
+  "audit_head_forwards": 0,
+  "audit_physics_steps": 0,
+  "scope": "Rank recomputed from saved original head outputs and explicit allowed extra-depth domain. No outcome based reranking, no head/network re-execution."
+}

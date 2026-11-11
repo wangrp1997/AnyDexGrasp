@@ -1,0 +1,126 @@
+{
+  "schema": "anydex_boya_candidate_startup_recovery_independent_audit_v1",
+  "passed": true,
+  "source_protocol_sha256": "1e039db0e53ca8646373248a45dcf10af1e69788a5bce88cdb52a69426786f9e",
+  "recovery_protocol_sha256": "639d6e09e09064a8648d2e3b526869654b68afa55d8c679108ea448758a0f023",
+  "source_result_sha256": "1f12e5c00cec7d19402007c04440fe4ac24d39271123895cfbbedb4b27e2ccea",
+  "protocol_differences": [
+    "created_at"
+  ],
+  "job_differences": [
+    {
+      "object_id": "egad_A3_rank00036",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_A3_rank00080",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_A3_rank00095",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_A6_rank00022",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_A6_rank00026",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_A6_rank00033",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_E0_rank00001",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_E0_rank00002",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    },
+    {
+      "object_id": "egad_E0_rank00003",
+      "changed_fields": [
+        "output_dir",
+        "protocol_path",
+        "protocol_sha256"
+      ]
+    }
+  ],
+  "source_construction_only": [
+    {
+      "object_id": "egad_E0_rank00001",
+      "absent_before_trial_loop": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_E0_rank00001/evaluation.json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_E0_rank00001/initialization_audit.json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_E0_rank00001/trace.npz",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_E0_rank00001/contacts.npz",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_E0_rank00001/native_audit.json"
+      ],
+      "log_sha256": "8f7729ab3d69b8443379f1d9998095a65e409a1ff6b8c3e0d72a798f8795afdb"
+    },
+    {
+      "object_id": "egad_A6_rank00022",
+      "absent_before_trial_loop": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A6_rank00022/evaluation.json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A6_rank00022/initialization_audit.json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A6_rank00022/trace.npz",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A6_rank00022/contacts.npz",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A6_rank00022/native_audit.json"
+      ],
+      "log_sha256": "9a610fccc95648ca0982dd154e16bbc7763ed9037a3554c00728b157477b7b86"
+    },
+    {
+      "object_id": "egad_A3_rank00036",
+      "absent_before_trial_loop": [
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A3_rank00036/evaluation.json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A3_rank00036/initialization_audit.json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A3_rank00036/trace.npz",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A3_rank00036/contacts.npz",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/execution/egad_A3_rank00036/native_audit.json"
+      ],
+      "log_sha256": "bb9ff1251309dfc30471cc75e4ae979d05b2a2dc0d7e17259c937d2347e4622f"
+    }
+  ],
+  "zero_commanded_grasp_steps": true,
+  "kit_started": true,
+  "initialization_completed": false,
+  "proof": "Original worker writes initialization/native audit and evaluation.json before first explicit sim.step; all absent, processes returned1. USD files show Kit scene construction had started.",
+  "unchanged_baseline_files": 26,
+  "baseline_mismatches": [],
+  "new_physics_steps": 0
+}

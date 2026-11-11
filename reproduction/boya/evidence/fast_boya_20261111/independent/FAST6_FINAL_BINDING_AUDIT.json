@@ -1,0 +1,89 @@
+{
+  "schema": "anydex_boya_fast6_final_artifact_binding_audit_v1",
+  "complete": true,
+  "created_utc": "2026-11-11T09:13:10.751425+00:00",
+  "protocol_sha256": "74632d0f8ff8981417c05fe22e5fc1cfc7db33ff02e6dd6301923d42f81ca52c",
+  "final_results_sha256": "559489784b15c788c3a304af21952650366cb8b051a57100b45bd054343ecb0f",
+  "final_progress_sha256": "27cf1384aab390aa3ae93e3beeb7ad28a9847ab32291849077508ce0b08a612d",
+  "physical_audit_sha256": "9ea3adb1b20b495d7160de46f9f494484be6be9909634ac3aa305434c2dce0a0",
+  "physical_audit_bound_to_final_results_without_reexecuting": true,
+  "all_per_trial_trace_evaluation_commands_unchanged": true,
+  "baseline26_and_all_protocol_dependencies_unchanged": true,
+  "successes": 3,
+  "denominator": 6,
+  "actual_attempts": 5,
+  "physical_steps": 10500,
+  "initialization_object_steps": 7500,
+  "media_rows": [
+    {
+      "object_id": "egad_A4",
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution/videos/egad_A4/isaac_full_arm_pickup.mp4",
+      "video_sha256": "310b8d30382d61e6ac4968fd30d16a218d99dcf7d31310edc8a20c6183b6a6ad",
+      "render_check_sha256": "1ba18eafc8c58978809e8a36fbd5030c6281108032de7dd7752df873aa3acb4f",
+      "source_trace_and_evaluation_unchanged": true,
+      "replay_physics_steps": 0,
+      "physical_seconds": 8.4,
+      "declared_moving_frames": 210,
+      "declared_final_pause_seconds": 1.0,
+      "final_png_sha256": "ddeb1a63c5684c8cd5bc9735d164f9a2401563f171e69354df9b597df58a8e53"
+    },
+    {
+      "object_id": "egad_A1",
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution/videos/egad_A1/isaac_full_arm_pickup.mp4",
+      "video_sha256": "e0109e1d62ccf93349ad3d455a1f92d30253abc8235d5b74eb9eadc22d73f25c",
+      "render_check_sha256": "7903c7eb9b29006db227cf7374b54120a64fb4de638b9ccf37776afc5062a337",
+      "source_trace_and_evaluation_unchanged": true,
+      "replay_physics_steps": 0,
+      "physical_seconds": 8.4,
+      "declared_moving_frames": 210,
+      "declared_final_pause_seconds": 1.0,
+      "final_png_sha256": "aeff2759ce0fc9eff5eb2893a4ab4486ff644b67d58128060d4ca52f4b27941b"
+    },
+    {
+      "object_id": "egad_C1",
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution/videos/egad_C1/isaac_full_arm_pickup.mp4",
+      "video_sha256": "fc62180383befad2c0c73c6a4c611d1f88d9ee675191dde0f0c5078d8c80d26e",
+      "render_check_sha256": "fa3e8639062a032a11561d2690d5709f9d326aabaff639a9b6f2b39e87ac81a5",
+      "source_trace_and_evaluation_unchanged": true,
+      "replay_physics_steps": 0,
+      "physical_seconds": 8.4,
+      "declared_moving_frames": 210,
+      "declared_final_pause_seconds": 1.0,
+      "final_png_sha256": "98828cadc2fe4048255d32e84272748323d532e200541a30ccf302425f567df0"
+    },
+    {
+      "object_id": "egad_E1",
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution/videos/egad_E1/isaac_full_arm_pickup.mp4",
+      "video_sha256": "a208f95d0593477713ac458a6ff8352ff5be7c3f4507d71b2688de2488329a78",
+      "render_check_sha256": "1d53024e0d36b20c46fb849ffe85502246b61fa60cc601a6b60fe074b1aa4667",
+      "source_trace_and_evaluation_unchanged": true,
+      "replay_physics_steps": 0,
+      "physical_seconds": 8.4,
+      "declared_moving_frames": 210,
+      "declared_final_pause_seconds": 1.0,
+      "final_png_sha256": "1974be42455645314bd8bec2a09506fbb55089eee26d8c8df53955777ffde135"
+    },
+    {
+      "object_id": "egad_E4",
+      "video": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution/videos/egad_E4/isaac_full_arm_pickup.mp4",
+      "video_sha256": "43a6e6b7716bb5d994711d44fcbf2ed5f0caad56dd7128de79141e13f1152644",
+      "render_check_sha256": "6c5c9f328aef0bccb52123433a13b5d37b41200f049b2cc614d86221438d340b",
+      "source_trace_and_evaluation_unchanged": true,
+      "replay_physics_steps": 0,
+      "physical_seconds": 8.4,
+      "declared_moving_frames": 210,
+      "declared_final_pause_seconds": 1.0,
+      "final_png_sha256": "987b9311a03618002ddec5cbdee8fddaf14d811fb7a40106f03c7139c9dfb196"
+    }
+  ],
+  "independently_viewed_final_images": [
+    "egad_A1",
+    "egad_E1"
+  ],
+  "visual_observations": "A1 visibly suspended in hand; E1 tilted/upright at table with empty hand. Both match independent source-bottom/load classification.",
+  "caption_note": "Original renderer object-rise caption measures object reference point, not source-mesh bottom clearance; E1 +88.061mm reference rise is not successful pickup, its source bottom is0.633mm and final load lost.",
+  "full_video_decoding_scope": "This receipt binds video bytes and source replay checks; parent media verification handles complete stream decoding.",
+  "audit_physics_steps": 0,
+  "audit_training_steps": 0,
+  "audit_network_forwards": 0
+}

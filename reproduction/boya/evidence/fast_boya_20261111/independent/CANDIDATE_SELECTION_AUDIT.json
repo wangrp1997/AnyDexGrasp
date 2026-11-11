@@ -1,0 +1,70 @@
+{
+  "schema": "anydex_boya_candidate_diagnostic_independent_selection_audit_v1",
+  "passed": true,
+  "protocol_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v1/protocol.json",
+    "sha256": "1e039db0e53ca8646373248a45dcf10af1e69788a5bce88cdb52a69426786f9e"
+  },
+  "history_actual_entries": 14,
+  "selected_total": 9,
+  "checks": [
+    {
+      "object_id": "egad_A3",
+      "all_admitted": 20,
+      "expected_first_unexecuted_ranks": [
+        36,
+        80,
+        95
+      ],
+      "chosen_ranks": [
+        36,
+        80,
+        95
+      ],
+      "excluded_historical_or_duplicate_ranks": [
+        58
+      ]
+    },
+    {
+      "object_id": "egad_A6",
+      "all_admitted": 7,
+      "expected_first_unexecuted_ranks": [
+        22,
+        26,
+        33
+      ],
+      "chosen_ranks": [
+        22,
+        26,
+        33
+      ],
+      "excluded_historical_or_duplicate_ranks": [
+        17
+      ]
+    },
+    {
+      "object_id": "egad_E0",
+      "all_admitted": 8,
+      "expected_first_unexecuted_ranks": [
+        1,
+        2,
+        3
+      ],
+      "chosen_ranks": [
+        1,
+        2,
+        3
+      ],
+      "excluded_historical_or_duplicate_ranks": [
+        4
+      ]
+    }
+  ],
+  "immutable_files_checked": 325,
+  "mismatches": [],
+  "pose_comparison": "Independent per-array absolute-difference <=2e-12, same exact shape, across palm/open_q/close_q/approach/world_object arrays; rank ignored",
+  "physics_started_before_this_audit": true,
+  "ranking_and_dedup_recomputed_without_execution_outcomes": true,
+  "known_object_multicandidate_diagnostic_not_top1_or_external_rate": true,
+  "new_physics_steps": 0
+}

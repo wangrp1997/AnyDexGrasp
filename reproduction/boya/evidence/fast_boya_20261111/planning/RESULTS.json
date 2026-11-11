@@ -1,0 +1,2195 @@
+{
+  "complete": true,
+  "protocol_sha256": "0442b2275b32f1236419c213f35aa1cc25e6025546d4b0813d1b51baeb80e87e",
+  "results": [
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00017",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00017/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 2.4299715619999915,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 10.816712708910927
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00017/preparation.json"
+    },
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00022",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00022/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 14.314872255083174,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00022/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 0,
+            "wall_s": 12.176811245968565,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00022/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 8,
+            "wall_s": 12.445709173101932,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00022/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 12.128409817116335,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00022/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 12.703950118040666,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 67.64871676103212
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00022/preparation.json"
+    },
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00026",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00026/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 13.246141854906455,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00026/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 6,
+            "wall_s": 12.325749423820525,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00026/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 18,
+            "wall_s": 12.759198096115142,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00026/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 7,
+            "wall_s": 12.643355174921453,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00026/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 15,
+            "wall_s": 14.977967741899192,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 70.58185041695833
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00026/preparation.json"
+    },
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00033",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00033/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.788083802908659,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 16.144852865021676
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_A6_port_rank_00033/preparation.json"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00001",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00001/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 4.811030287062749,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 24.901017430005595
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00001/preparation.json"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00006",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00006/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 13.539007215993479,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00006/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 12.423545516794547,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00006/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 8,
+            "wall_s": 11.892119974130765,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00006/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 0,
+            "wall_s": 11.922919844975695,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00006/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 3,
+            "wall_s": 1.8994654139969498,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 55.48693269188516
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00006/preparation.json"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00011",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00011/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 4.674056081101298,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 22.117215425008908
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00011/preparation.json"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00016",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00016/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.1180757980328053,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 13.166187877999619
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C0_port_rank_00016/preparation.json"
+    },
+    {
+      "object_id": "egad_C3",
+      "trial_id": "egad_C3_port_rank_00016",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C3_port_rank_00016/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 2.8016184009611607,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 10.952189732110128
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C3_port_rank_00016/preparation.json"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00047",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00047/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 2.285030625993386,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 9.877656862838194
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00047/preparation.json"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00051",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00051/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 12.825307329883799,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00051/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 12.263925078092143,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00051/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 12.53823123103939,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00051/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 8,
+            "wall_s": 12.547731074970216,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00051/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 9,
+            "wall_s": 13.155732442857698,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 67.93276468897238
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00051/preparation.json"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00056",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00056/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 2.497081261128187,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 10.072905957931653
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00056/preparation.json"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00065",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00065/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 13.5864779939875,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00065/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 11.948242890881374,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00065/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 6,
+            "wall_s": 3.2679622841533273,
+            "reason": "Bounded trajectory time scaling exceeds frozen two-second approach"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00065/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 13,
+            "wall_s": 11.967724247137085,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00065/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 12,
+            "wall_s": 13.265722119016573,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 58.90898872492835
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_C6_port_rank_00065/preparation.json"
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00046",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00046/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 7.411142457975075,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 32.39845388615504
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00046/preparation.json"
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00059",
+      "status": "ready",
+      "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000",
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 2.6030789031647146,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 11.992621081881225,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 17,
+            "wall_s": 12.448964703129604,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": true,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 7,
+            "wall_s": 12.735769102117047
+          }
+        ],
+        "selected": {
+          "label": "branch_02_direct",
+          "admitted": true,
+          "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/branch_02_direct",
+          "route": null,
+          "seed_index": 7,
+          "wall_s": 12.735769102117047
+        },
+        "baseline_admitted": false,
+        "recovered": true,
+        "physics_steps": 0,
+        "wall_s": 44.43894537491724
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/preparation.json"
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00069",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00069/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 5.9958192221820354,
+            "reason": "Bounded trajectory time scaling exceeds frozen two-second approach"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00069/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 0.5304766220506281,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00069/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 8,
+            "wall_s": 12.056458456907421,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00069/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 9,
+            "wall_s": 0.4968516919761896,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00069/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 11,
+            "wall_s": 3.5623313458636403,
+            "reason": "Bounded trajectory time scaling exceeds frozen two-second approach"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 28.702669403050095
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00069/preparation.json"
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00075",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00075/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 15.006657942198217,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00075/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 9,
+            "wall_s": 12.300196057884023,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00075/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 7,
+            "wall_s": 12.324469010811299,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00075/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 12,
+            "wall_s": 13.006317371036857,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00075/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 16,
+            "wall_s": 13.66830286080949,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 71.69090466294438
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00075/preparation.json"
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00033",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00033/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 13.10302385292016,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00033/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 12.097020830027759,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00033/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 12.188432845985517,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00033/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 23,
+            "wall_s": 12.21625547716394,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00033/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 16,
+            "wall_s": 12.010280404007062,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 65.77423805883154
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00033/preparation.json"
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00035",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00035/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 2.6836489571724087,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 9.695611778879538
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00035/preparation.json"
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00045",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00045/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 13.779439823003486,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00045/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 12.1264622611925,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00045/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 12.213632463943213,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00045/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 6,
+            "wall_s": 12.30855693295598,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00045/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 16,
+            "wall_s": 12.221036619972438,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 66.61236381507479
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00045/preparation.json"
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00048",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00048/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 4.476009930949658,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 17.642737199086696
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E6_port_rank_00048/preparation.json"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00000",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00000/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 4.31503763794899,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00000/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 2,
+            "wall_s": 3.054127771174535,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00000/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 3.035903883166611,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00000/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 11,
+            "wall_s": 2.5467055060435086,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00000/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 21,
+            "wall_s": 3.178546889917925,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 21.507758053019643
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00000/preparation.json"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00002",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00002/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.771563010988757,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00002/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 2,
+            "wall_s": 2.585552893113345,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00002/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 2.5637957418803126,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00002/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 11,
+            "wall_s": 1.8809393357951194,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00002/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 13,
+            "wall_s": 2.7519792169332504,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 19.066135107073933
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00002/preparation.json"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00003",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00003/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 4.632198105100542,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00003/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 5,
+            "wall_s": 2.473077454138547,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00003/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 21,
+            "wall_s": 2.4033689678180963,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00003/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 8,
+            "wall_s": 2.388440129114315,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          },
+          {
+            "label": "branch_03_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00003/plan_000/branch_03_direct",
+            "route": null,
+            "seed_index": 22,
+            "wall_s": 2.472241264069453,
+            "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 20.627674302086234
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00003/preparation.json"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00004",
+      "status": "ready",
+      "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/plan_000",
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 5.24036462418735,
+            "reason": "Bounded trajectory time scaling exceeds frozen two-second approach"
+          },
+          {
+            "label": "branch_00_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/plan_000/branch_00_direct",
+            "route": null,
+            "seed_index": 14,
+            "wall_s": 12.558593378867954,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_01_direct",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/plan_000/branch_01_direct",
+            "route": null,
+            "seed_index": 11,
+            "wall_s": 12.68653239007108,
+            "reason": "Direct path rejected; no obstacle-replanning claim"
+          },
+          {
+            "label": "branch_02_direct",
+            "admitted": true,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/plan_000/branch_02_direct",
+            "route": null,
+            "seed_index": 6,
+            "wall_s": 12.501432850025594
+          }
+        ],
+        "selected": {
+          "label": "branch_02_direct",
+          "admitted": true,
+          "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/plan_000/branch_02_direct",
+          "route": null,
+          "seed_index": 6,
+          "wall_s": 12.501432850025594
+        },
+        "baseline_admitted": false,
+        "recovered": true,
+        "physics_steps": 0,
+        "wall_s": 47.70751733798534
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G0_port_rank_00004/preparation.json"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00000",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00000/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.741221304051578,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 15.972966802073643
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00000/preparation.json"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00006",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00006/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.8085462930612266,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 14.674488605931401
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00006/preparation.json"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00008",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00008/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.742128418991342,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 15.079935792833567
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00008/preparation.json"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00009",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "plan_dir": null,
+      "recovery": {
+        "complete": true,
+        "policy": {
+          "schema": "anydex_boya_bounded_arm_recovery_policy_v1",
+          "baseline_first": true,
+          "extra_halton_seeds": 16,
+          "halton_scramble": false,
+          "halton_skip": 1,
+          "seed_range_fraction": [
+            0.05,
+            0.95
+          ],
+          "per_seed_max_nfev": 300,
+          "max_new_ik_branches": 4,
+          "branch_order": "original maximum unwrapped joint displacement, L2, seed index",
+          "alternate_home_routes": [
+            "cable_home",
+            "qsfp_home",
+            "xr_test_home"
+          ],
+          "alternate_routes_only_for_home_collisions": true,
+          "grasp_pose_change": false,
+          "object_pose_change": false,
+          "hand_command_change": false,
+          "collision_tolerance_change": false,
+          "approach_steps": 500,
+          "close_steps": 250,
+          "hold_steps": 50,
+          "lift_steps": 500,
+          "dt_s": 0.004,
+          "curobo_used": false,
+          "physics_steps": 0,
+          "scope": "Finite local IK branches and named joint-space transit waypoints; sampled source-hull gates retained"
+        },
+        "attempts": [
+          {
+            "label": "baseline",
+            "admitted": false,
+            "plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00009/plan_000/baseline",
+            "route": null,
+            "seed_index": null,
+            "wall_s": 3.660543341888115,
+            "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry"
+          }
+        ],
+        "selected": null,
+        "baseline_admitted": false,
+        "recovered": false,
+        "physics_steps": 0,
+        "wall_s": 15.6596356369555
+      },
+      "preparation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_G3_port_rank_00009/preparation.json"
+    }
+  ],
+  "errors": [],
+  "changed_inputs": [],
+  "physics_steps": 0,
+  "wall_s": 490.2419086578302,
+  "ready_candidates": 2,
+  "ready_objects": [
+    "egad_E3",
+    "egad_G0"
+  ]
+}

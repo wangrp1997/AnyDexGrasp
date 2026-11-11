@@ -1,0 +1,24 @@
+{
+  "stage": "represent",
+  "returncode": 0,
+  "argv": [
+    "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py",
+    "--manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+    "--run-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representation_stage_env_v2",
+    "--device",
+    "cuda:0",
+    "--checkpoint",
+    "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "--seed",
+    "20261108"
+  ],
+  "wall_s": 12.104003608925268,
+  "environment_recovery_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/REPRESENTATION_ENV_RECOVERY.json",
+    "sha256": "e2d0e8ab0251f8de9730a3a581976c91d1703656e0e608817f2db7c4ea420d2f"
+  }
+}

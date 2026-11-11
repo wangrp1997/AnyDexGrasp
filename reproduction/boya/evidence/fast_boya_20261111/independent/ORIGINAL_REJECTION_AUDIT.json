@@ -1,0 +1,288 @@
+{
+  "schema": "anydex_boya_original_planning_failure_independent_audit_v1",
+  "passed": true,
+  "counts": {
+    "pregrasp_ik": 15,
+    "direct_collision": 10,
+    "path_continuation_ik": 4
+  },
+  "direct_collision_home_only": 0,
+  "direct_collision_also_in_approach": 10,
+  "finger_object_only_trial_ids": [
+    "egad_A6_port_rank_00026",
+    "egad_C6_port_rank_00051",
+    "egad_C6_port_rank_00065",
+    "egad_E6_port_rank_00033",
+    "egad_E6_port_rank_00045"
+  ],
+  "rows": [
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00017",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00022",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 2627,
+      "home_only": false,
+      "all_violations_finger_object": false,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00026",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 325,
+      "home_only": false,
+      "all_violations_finger_object": true,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_A6",
+      "trial_id": "egad_A6_port_rank_00033",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00001",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00006",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 3311,
+      "home_only": false,
+      "all_violations_finger_object": false,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00011",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C0",
+      "trial_id": "egad_C0_port_rank_00016",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C3",
+      "trial_id": "egad_C3_port_rank_00016",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00047",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00051",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 71,
+      "home_only": false,
+      "all_violations_finger_object": true,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00056",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_C6",
+      "trial_id": "egad_C6_port_rank_00065",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 123,
+      "home_only": false,
+      "all_violations_finger_object": true,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00046",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00059",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "class": "path_continuation_ik"
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00069",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 3126,
+      "home_only": false,
+      "all_violations_finger_object": false,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_E3",
+      "trial_id": "egad_E3_port_rank_00075",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 2628,
+      "home_only": false,
+      "all_violations_finger_object": false,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00033",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 69,
+      "home_only": false,
+      "all_violations_finger_object": true,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00035",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00045",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 165,
+      "home_only": false,
+      "all_violations_finger_object": true,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_E6",
+      "trial_id": "egad_E6_port_rank_00048",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00000",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "class": "path_continuation_ik"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00002",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "class": "path_continuation_ik"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00003",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "class": "path_continuation_ik"
+    },
+    {
+      "object_id": "egad_G0",
+      "trial_id": "egad_G0_port_rank_00004",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "approach_violations": 984,
+      "home_only": false,
+      "all_violations_finger_object": false,
+      "class": "direct_collision",
+      "unknown_phase_violations": 0
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00000",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00006",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00008",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    },
+    {
+      "object_id": "egad_G3",
+      "trial_id": "egad_G3_port_rank_00009",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "class": "pregrasp_ik"
+    }
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00017/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00022/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00022/plan_000/plan.json": "03f17ecae61dae001175ded83f23d79cfb28de00e3bb222148fb41604b2ce1ed",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00022/plan_000/path_geometry.json": "34d7313bc97ff39cc3d70c9875979ecb805faac411ae9c0a88c2a51fdf32ce33",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00026/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00026/plan_000/plan.json": "b4497002487775fcc3a9d206573d61b22ed985385550b9dfa0ea62fd57c09402",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00026/plan_000/path_geometry.json": "7d222b2d1447d824258b23c0a7bc24ee9cc13af0681781c51623b7b515e8e9eb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_A6_port_rank_00033/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00001/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00006/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00006/plan_000/plan.json": "68e6b7d1ba77d39ba4c818519bdc1b4c967bddedb6b7cb231724ac03a1455105",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00006/plan_000/path_geometry.json": "77a469320a80c111fa5bf25269b07eaadbb9aeb9a9b4200f38b66181ab049b8e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00011/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C0_port_rank_00016/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C3_port_rank_00016/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00047/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00051/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00051/plan_000/plan.json": "9994329eca05f3e6bc0fda63826c12580f90676b713b1ba67211acc3b2f97093",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00051/plan_000/path_geometry.json": "3d885374f8975446d91059aa2a65679dfaa7d45a992892358436a8c1e87e3a12",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00056/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00065/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00065/plan_000/plan.json": "a6c77f9305f1ec03759d33a61520d033031a3534839bc9ce827f8b2e7355e5f7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_C6_port_rank_00065/plan_000/path_geometry.json": "94af09913f936a886ae0c172189c27f288ffcb019da11319bdee8bcc65a5dafa",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00046/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00059/plan_000/admission_failure.json": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00069/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00069/plan_000/plan.json": "d0dbf7bc48168759044a3006d092a94a0d752c876a84b5797e0cb68ddd0e4ca8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00069/plan_000/path_geometry.json": "d60d5ed9a38f17ce50708b97253f6ee5fedf3073ab7799c05d664ba62e6de9a4",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00075/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00075/plan_000/plan.json": "5e2f7a8a5211abe7b3f76110a6c712014cd51dac9112307812c108ee69ab06cd",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E3_port_rank_00075/plan_000/path_geometry.json": "1f1eb7af12ce6c024170f036e15eb3b23c7aae9e20955ac2ab03510ddb729d0c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00033/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00033/plan_000/plan.json": "e47a731776a0699663fc9997ad53ba3cd710d9b2fade6825aca8592e59104383",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00033/plan_000/path_geometry.json": "db5f8e8064b6c66ecfc0b8ed4c81a3b1530ee5f4417ce3166bdda68b78054f89",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00035/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00045/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00045/plan_000/plan.json": "18c8f4217240c9f9cff1a6dfe97e694340d9c264c433a222e542dbe432225daa",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00045/plan_000/path_geometry.json": "e8f900e00223c9991954bbe6ccdb1ccf56df1acb942ecfb952f2054666baffc3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_E6_port_rank_00048/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00000/plan_000/admission_failure.json": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00002/plan_000/admission_failure.json": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00003/plan_000/admission_failure.json": "dc138e8c1c9f1f40d674fe9d6320ba124305fbbaba0457490467eab41224b8c2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00004/plan_000/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00004/plan_000/plan.json": "3e5805dd8ee4f4e3cb9f824f991de71391ecacf22c88c652e6073d86c1e708d0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G0_port_rank_00004/plan_000/path_geometry.json": "8b28d6da737ced62663bd91ccbfc4e2a27835a238a1e281afadaf992753e76f5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00000/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00006/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00008/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/planning/plans/egad_G3_port_rank_00009/plan_000/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+  },
+  "boundary": "Static sampled source-hull rejection attribution, not a dynamic failure attribution or proof of global unreachable geometry",
+  "new_physics_steps": 0,
+  "phase_indexing": "Source plan start_step/end_step inclusive; actual path sample indices retained"
+}

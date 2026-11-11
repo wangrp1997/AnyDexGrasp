@@ -1,0 +1,158 @@
+{
+  "object_count": 6,
+  "stages": [
+    {
+      "stage": "initialize",
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_fast6_runtime.py",
+        "--scene-manifest",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/scenes/objects.json",
+        "--run-dir",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1",
+        "--workers",
+        "3"
+      ],
+      "returncode": 0,
+      "wall_s": 27.924605029867962
+    },
+    {
+      "stage": "observe",
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_boya_fast6_observations.py",
+        "--objects-json",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+        "--output-dir",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/observations"
+      ],
+      "returncode": 0,
+      "wall_s": 98.76352372998372
+    },
+    {
+      "stage": "represent",
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py",
+        "--manifest",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+        "--run-dir",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representation_stage",
+        "--device",
+        "cuda:0",
+        "--checkpoint",
+        "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+        "--seed",
+        "20261108"
+      ],
+      "returncode": 1,
+      "wall_s": 1.5383406470064074
+    },
+    {
+      "stage": "represent",
+      "returncode": 0,
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_collection_representation.py",
+        "--manifest",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+        "--run-dir",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/representation_stage_env_v2",
+        "--device",
+        "cuda:0",
+        "--checkpoint",
+        "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+        "--seed",
+        "20261108"
+      ],
+      "wall_s": 12.104003608925268,
+      "environment_recovery_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/REPRESENTATION_ENV_RECOVERY.json",
+        "sha256": "e2d0e8ab0251f8de9730a3a581976c91d1703656e0e608817f2db7c4ea420d2f"
+      }
+    },
+    {
+      "stage": "score",
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evaluate_boya_fast6.py",
+        "--objects-manifest",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+        "--protocol",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/protocol.json",
+        "--training-results",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/TRAINING_RESULTS.json",
+        "--calibration",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+        "--domain-policy",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/s40_hand_domain_20261107/POLICY.json",
+        "--output-dir",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/diagnostic",
+        "--geometry-workers",
+        "3"
+      ],
+      "returncode": 0,
+      "wall_s": 39.01602709409781
+    },
+    {
+      "stage": "plan",
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_boya_fast6_top1.py",
+        "--protocol",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/protocol.json",
+        "--diagnostic",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/diagnostic",
+        "--backend-config",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/backend_pilot.json",
+        "--calibration",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+        "--native-preflight",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/native_preprocessing/SUMMARY.json",
+        "--output-dir",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/planning",
+        "--workers",
+        "3"
+      ],
+      "returncode": 0,
+      "wall_s": 274.5116214440204
+    },
+    {
+      "stage": "execute",
+      "argv": [
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_fast6_trials.py",
+        "--queue",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/planning/queue_manifest.json",
+        "--diagnostic",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/diagnostic",
+        "--output",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/execution",
+        "--workers",
+        "3",
+        "--render"
+      ],
+      "returncode": 0,
+      "wall_s": 332.37617211882025
+    }
+  ],
+  "status": "complete",
+  "stage": "execute",
+  "physical_results": {
+    "successes": 3,
+    "objects": 6,
+    "actual_attempts": 5,
+    "physical_steps": 10500,
+    "no_plan_objects": [
+      "egad_C4"
+    ],
+    "results_sha256": "559489784b15c788c3a304af21952650366cb8b051a57100b45bd054343ecb0f"
+  }
+}

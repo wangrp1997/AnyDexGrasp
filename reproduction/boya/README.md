@@ -1,3 +1,5 @@
+2026-11-11最新：[有限规划/候选诊断与新六件验收](FAST_BOYA_RESULTS_20261111.md)完成。新六件3/6（A1/C1/E4成功、A4/E1失败、C4无计划）；旧三件9新候选1/9（A6 rank33），纯规划旧8无计划对象恢复2个计划。五个新六件ready均baseline直接通过，新增搜索没有本轮抓取收益证据。全部14段录像与结果：outputs/boya_fast_delivery_20261111_v1/index.html。原四头/435/CGR、旧1/12及CanonDex不变，0训练；整体未验收，停止本轮追加试验。
+
 2026-11-08最新：[公开训练、映射与闭合对齐结果](BOYA_PROTOCOL_ALIGNMENT_RESULTS_20261108.md)。原MSE重新选姿E0成功，但已知四件仍1/4；三组13实际和全部失败/视频保留，原外部1/12不改。该入口与preactivation控制明确分开，当前Boya整体验收仍未通过。
 
 # AnyDexGrasp 的 Boya 仿真适配

@@ -1,0 +1,26 @@
+{
+  "scope": "Post-run provenance clarification; no commands, plans, prior evidence or source files modified",
+  "legacy_fields": [
+    "plan.json seeds",
+    "frozen_input.json seeds",
+    "plan.json planner",
+    "plan.json scope"
+  ],
+  "meaning": "These fields are emitted by the reused native backend and describe its original8 input seeds and native path/audit implementation. The opt-in wrapper changes effective IK branch selection; they are not a complete account of actual recovery search.",
+  "authoritative_recovery": [
+    "PROTOCOL.json policy",
+    "plan_000/ORIGINAL_IK_SEARCH.json",
+    "plan_000/EXPANDED_IK_SEARCH.json",
+    "plan_000/RECOVERY_RESULTS.json",
+    "plan.json planning_recovery"
+  ],
+  "actual_counts": {
+    "original_pregrasp_queries": 232,
+    "expanded_pregrasp_queries": 696,
+    "total_pregrasp_queries": 928,
+    "path_attempts": 83,
+    "named_transit_attempts": 0
+  },
+  "physical_steps": 0,
+  "effective_policy": "Baseline8 then original8 plus fixed16 Halton seeds; at most4 additional unique IK branches; immutable grasp and hand control; original full source geometry and timing checks"
+}

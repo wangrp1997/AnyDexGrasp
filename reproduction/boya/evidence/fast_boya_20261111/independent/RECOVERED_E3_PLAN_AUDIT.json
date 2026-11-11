@@ -1,0 +1,92 @@
+{
+  "schema": "anydex_boya_recovered_plan_independent_audit_v1",
+  "passed": true,
+  "trial_id": "egad_E3_port_rank_00059",
+  "plan_ref": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/plan.json",
+    "sha256": "03aac36e188335d3cd68584957d7ee7d5352c8ae2bcf8d49c4a0447fb3cc707a"
+  },
+  "command_sha256": "01b14a07907c00da0efb29e1b595a23a7a368106036f43095584d3348c4eb1aa",
+  "total_steps": 2188,
+  "phase_counts": {
+    "approach": 500,
+    "close": 250,
+    "hold": 50,
+    "home_to_pregrasp": 838,
+    "lift": 500,
+    "settle": 50
+  },
+  "hand_command_max_error": 0.0,
+  "original_world_object_and_grasp_palm_preserved": true,
+  "desired_palm_checks": [
+    {
+      "phase": "approach",
+      "steps": 500,
+      "matrix_error": 1.1102230246251565e-16
+    },
+    {
+      "phase": "close",
+      "steps": 250,
+      "matrix_error": 0.0
+    },
+    {
+      "phase": "hold",
+      "steps": 50,
+      "matrix_error": 0.0
+    },
+    {
+      "phase": "lift",
+      "steps": 500,
+      "matrix_error": 0.0
+    }
+  ],
+  "arm_velocity_checks": [
+    {
+      "joint": "shoulder_pan_joint",
+      "max_speed_rad_s": 2.0714104388239174,
+      "limit": 2.0943951023931953
+    },
+    {
+      "joint": "shoulder_lift_joint",
+      "max_speed_rad_s": 0.44591013833766846,
+      "limit": 2.0943951023931953
+    },
+    {
+      "joint": "elbow_joint",
+      "max_speed_rad_s": 2.6550945525678493,
+      "limit": 3.141592653589793
+    },
+    {
+      "joint": "wrist_1_joint",
+      "max_speed_rad_s": 1.1855731796909241,
+      "limit": 3.141592653589793
+    },
+    {
+      "joint": "wrist_2_joint",
+      "max_speed_rad_s": 1.6781454580053756,
+      "limit": 3.141592653589793
+    },
+    {
+      "joint": "wrist_3_joint",
+      "max_speed_rad_s": 0.13339125565630175,
+      "limit": 3.141592653589793
+    }
+  ],
+  "geometry_checks": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/path_geometry.json",
+      "sha256": "dc230914146927f3e11dc34ccd9e9f4f7e53d66ec9f7fefbdba74e5d3db7eb9f",
+      "samples": 1388,
+      "tolerance_m": 1e-07
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_planning_20261111_v1/plans/egad_E3_port_rank_00059/plan_000/lift_arm_geometry.json",
+      "sha256": "69fd69ece36e103d03961f7cad1c46859a70db0ebcf3cb60ecabfade205d87a6",
+      "samples": 500,
+      "tolerance_m": 1e-07
+    }
+  ],
+  "geometry_boundary": "Source original full-step sampled collision receipts independently bound; geometry solver itself not rerun in this audit",
+  "physics_steps": 0,
+  "actual_grasp_success_unknown": true
+}
