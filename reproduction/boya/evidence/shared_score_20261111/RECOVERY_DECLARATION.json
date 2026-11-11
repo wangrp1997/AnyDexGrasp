@@ -1,0 +1,15 @@
+{
+  "schema": "anydex_shared_score_serialization_recovery_v2",
+  "failed_run": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_shared_score_20261111_v1",
+  "failed_protocol_sha256": "0f42bc792c0544189baf05d4309bd72299e1820d475ebc7feeaba948bb42e5c9",
+  "failed_progress_sha256": "158101f51646c2a98b6e5d02100935d54b1d52417e7a30d64425e6778a8ad12b",
+  "failed_checkpoint_sha256": "922cd27496d26ee6e47d982794ada64880ab29674d803b763ec32775f77b8893",
+  "change": "At torch.save only, recursively convert numpy scalar metadata to Python scalars; leave every tensor untouched. Record completed fit history before reload.",
+  "old_failed_actual_updates": 1000,
+  "old_progress_counter_erratum": "V1 counter advanced only after strict reload, hence reported0 although first fit completed1000 updates before torch.save. Original progress/log retained.",
+  "fresh_run_updates": 14500,
+  "total_including_failed_attempt": 15500,
+  "parameters_folds_seed_epochs_loss_and_gate_changed": false,
+  "new_CGR_forwards": 0,
+  "new_physics_steps": 0
+}

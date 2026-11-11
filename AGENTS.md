@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-11 后续：共享评分器离线对照完成，未过停止线，勿自动试抓
+
+用户授权先固定映射用原435条比较共享评分器，未新增采数/物理。outputs/boya_shared_score_20261111_v2 complete，协议SHA e99b57abcd9e33743134c211ff133c6da2b26c3df0848c6f1058397862dfc54a，结果SHA e859377fe8e016a6cb2be1815793de0721b6b1d4ced5ab8fc994be3fee4c66d7。新496输入=canonical480+手型4/raw深度5/extra4/flip1/宽度2，仅预执行binding白名单。原32/8声明有标签实际29/6，364fit/71internal不变；混合正负物体22/5，同观测混合组31/4(21/4物体)，空3/2不补负例。
+
+完整32声明物体按seed20261111分4fold8，训练/检查246/118、273/91、277/87、296/68，364恰一次折外。fit-only标准化连续482列、物体等权BCE/AdamWD.01；条件线性17参数/共享线性497参数各1000步lr.01；MLP496→64→1有31873参数、三个固定seed各300步lr.001、概率均值。CV选型落盘后才final32-fit/internal诊断，旧8头只在71内部前向，未把旧fit输出当OOF。
+
+选中shared_mlp64：CV物体AUC .665181、条件线性.576345，gain .088835/22物体11胜2平9负，95%配对对象开发区间[-.038558,.221386]；同观测.622657 vs .545584；macroBrier .239261差于常数.214301。内部物体AUC .752564优于旧原MSE .555604/preact .349744，但条件线性.716557已较高；同观测新.727679略低条件.729167，macroBrier .272021差条件.204459/常数.213963。shared_linear内部.775714/有限混合池首选1.0未被结果驱动改选，不能称5次新成功。10预设门5未过，stop_no_physical_promotion；只有开发有限已执行池排序，不是物理成功率或独立外部泛化。
+
+v1首个condition模型已1000更新，fit_meshes的np.str_导致weights_only安全reload失败；原progress因计数在reload后显示0，明确erratum而不改原回执。独立v2只保存时转Python元数据标量并即时记录fit历史，tensor/超参/fold/seed/门不改；失败和恢复首模型tensor存储字节相同，未放宽安全加载。v2正式25模型14500更新，加失败1000共15500真实数据更新；单测另48合成更新。runner106.441s含保存/评分/末尾哈希，不含前置校验/开发/独立审计。
+
+26tests及原binding输入/25checkpoint独立前向/全预测指标/分组/来源/选型时序/门/成本复算通过，6650inputs/12sources不变。原8权重/435/CGR、旧1/12与3/6不改，0新CGR/物理/外部对象，CanonDex未改。报告reproduction/boya/SHARED_SCORE_RESULTS_20261111.md，证据evidence/shared_score_20261111，图表outputs/boya_shared_score_20261111_v2/review/index.html。本轮已收尾无后台任务；停止继续调参/挑seed/重训/试抓，不晋级默认；整体论文复现未验收。仅轻量源码/证据推用户origin，权重和NPZ等大输出不提交。
+
 ## 2026-11-11 最新：有限诊断与新六件验收完成，3/6，未晋级默认
 
 用户授权尽快产出小闭环：纯规划、多候选诊断、单一统一修改、新6一试。新outputs/boya_fast6_20261111_v1已complete，协议SHA74632d0f8ff8981417c05fe22e5fc1cfc7db33ff02e6dd6301923d42f81ca52c。EGAD A/C/E×1/4固定6，与训练/旧DGN/旧EGAD12源和米制digest无重叠，不证明未见于CGR预训练。原scale.001/.1kg/.6摩擦/同XY；统一原V-HACD+规范凸面，源表面采样差最大33.479mm，非精确CAD；native20µm仅导入门。

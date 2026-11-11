@@ -1,0 +1,31 @@
+test_cross_split_mesh_is_rejected (test_shared_score_data.SharedDataContracts.test_cross_split_mesh_is_rejected) ... ok
+test_declared_empty_meshes_preserved_in_round_robin (test_shared_score_data.SharedDataContracts.test_declared_empty_meshes_preserved_in_round_robin) ... ok
+test_fit_only_statistics_and_unscaled_onehot (test_shared_score_data.SharedDataContracts.test_fit_only_statistics_and_unscaled_onehot) ... ok
+test_metadata_bad_values_and_binding_mismatch_rejected (test_shared_score_data.SharedDataContracts.test_metadata_bad_values_and_binding_mismatch_rejected) ... ok
+test_metadata_layout_and_whitelist (test_shared_score_data.SharedDataContracts.test_metadata_layout_and_whitelist) ... ok
+test_same_mesh_all_gestures_and_collections_stay_together (test_shared_score_data.SharedDataContracts.test_same_mesh_all_gestures_and_collections_stay_together) ... ok
+test_standardizer_rejects_bad_indices_and_nonfinite (test_shared_score_data.SharedDataContracts.test_standardizer_rejects_bad_indices_and_nonfinite) ... ok
+test_all_equal_scores_have_half_auc (test_shared_score_metrics.SharedScoreMetricsTests.test_all_equal_scores_have_half_auc) ... ok
+test_bootstrap_invalid_controls_and_metrics (test_shared_score_metrics.SharedScoreMetricsTests.test_bootstrap_invalid_controls_and_metrics) ... ok
+test_bootstrap_tie_single_object_and_no_common_population (test_shared_score_metrics.SharedScoreMetricsTests.test_bootstrap_tie_single_object_and_no_common_population) ... ok
+test_clipping_for_losses_does_not_clip_rankings (test_shared_score_metrics.SharedScoreMetricsTests.test_clipping_for_losses_does_not_clip_rankings) ... ok
+test_hand_computed_auc_ties_and_losses (test_shared_score_metrics.SharedScoreMetricsTests.test_hand_computed_auc_ties_and_losses) ... ok
+test_input_arrays_are_not_mutated_and_order_does_not_change_ranking (test_shared_score_metrics.SharedScoreMetricsTests.test_input_arrays_are_not_mutated_and_order_does_not_change_ranking) ... ok
+test_invalid_values_shapes_and_identity_are_rejected (test_shared_score_metrics.SharedScoreMetricsTests.test_invalid_values_shapes_and_identity_are_rejected) ... ok
+test_macro_denominators_exclude_single_class_auc_only (test_shared_score_metrics.SharedScoreMetricsTests.test_macro_denominators_exclude_single_class_auc_only) ... ok
+test_paired_bootstrap_common_mixed_objects_and_hand_delta (test_shared_score_metrics.SharedScoreMetricsTests.test_paired_bootstrap_common_mixed_objects_and_hand_delta) ... ok
+test_single_class_and_empty_are_finite_json (test_shared_score_metrics.SharedScoreMetricsTests.test_single_class_and_empty_are_finite_json) ... ok
+test_top_tie_mean_is_not_trial_id_selection (test_shared_score_metrics.SharedScoreMetricsTests.test_top_tie_mean_is_not_trial_id_selection) ... ok
+test_condition_control_cannot_read_cgr (test_shared_score_model.SharedScoreModelTests.test_condition_control_cannot_read_cgr) ... ok
+test_equal_object_weight (test_shared_score_model.SharedScoreModelTests.test_equal_object_weight) ... ok
+test_fit_is_deterministic_and_reload_is_exact (test_shared_score_model.SharedScoreModelTests.test_fit_is_deterministic_and_reload_is_exact) ... ok
+test_nonfinite_and_wrong_input_are_rejected (test_shared_score_model.SharedScoreModelTests.test_nonfinite_and_wrong_input_are_rejected) ... ok
+test_all_predeclared_conditions_are_needed (test_run_shared_score_control.SharedControlTests.test_all_predeclared_conditions_are_needed) ... ok
+test_good_pooled_score_does_not_hide_fold_failures (test_run_shared_score_control.SharedControlTests.test_good_pooled_score_does_not_hide_fold_failures) ... ok
+test_selection_is_cv_only_and_tie_favors_linear (test_run_shared_score_control.SharedControlTests.test_selection_is_cv_only_and_tie_favors_linear) ... ok
+test_safe_reload_preserves_tensors_and_converts_only_metadata (test_shared_score_recovery.SerializationRecoveryTests.test_safe_reload_preserves_tensors_and_converts_only_metadata) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 5.358s
+
+OK
