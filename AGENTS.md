@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-12 最新：闭合几何平移对照完成，1/4→1/4，停止此规则
+
+用户授权尽快验证一套统一局部几何修正。outputs/boya_closure_refinement_20261112_v1 complete，协议SHA17b480f304beeb22f33bd4803842418a47aff417c7257f3bd63b7f94d2b26ddb。已知A0 coarse正对照及原受控腕A3/A6/E0，原候选rank17/58/17/4各baseline/refined一次，共8实际16800步/67.2物理秒；两路均1/4，只有A0成功，三旧失败净恢复0，预设stop_this_rule，不晋级默认。
+
+新增closure_translation_refinement仅用旧单帧可见稀疏点云+手pad闭合FK；125世界XYZ各±10/5/0mm，11共同闭合时刻，min_t max(双侧前向加权最近距离)+.1位移范数，原开手桌面/21扫掠门。四件静态目标均改善，实际无收益。选中Δ A0[-10,-5,0]、A3[-10,-10,10]、A6[5,0,-10]、E0[-5,-5,-5]mm。原姿态方向/评分/手型/开闭端点/20手DOF指令/粗凸代理/.1kg/.6物理不变；仅掌平移，可改变有效插入深度，勿称几何深入不变。优化无源物体mesh/真值pose/历史接触或标签；源mesh仅原执行及事后测量使用。可见面距离不含受载闭合/力平衡模型。
+
+A0参考升高102.543→105.678mm，源底108.577→108.210mm、合格连续末尾1.648→1.632s；三失败两路全0合格离桌步、末态五指失载，源底约.794/.662/.699mm。8条完整2100步、七门/native20µm全过；12tests、独立静态目标/全部20DOF指令/全源顶点底面/承载核验通过，26源码/6934原输入/28派生/8job SHA不变。原435/八权重/CGR/旧外部1/12及新六件3/6保留，0训练/新CGR/回写。受控腕与粗代理的已知物体诊断，非外部泛化或完整臂新成绩。
+
+八段正常速度235帧/25fps/9.4s视频已完成，统一outputs/boya_closure_refinement_20261112_v1/index.html，回放0积分。初RTX在第三段SyntheticData崩溃exit139；原2段/半成品/日志保留。媒体恢复v1无ffprobe、v2 cv2无codec均零新Kit，v3用现成imageio-ffmpeg、6单段进程一次完成，不重跑物理；delivery_videos为2原+6新回放。准备101.935s、执行调度145.387s、仅v3媒体恢复128.683s，边界见报告。报告reproduction/boya/CLOSURE_TRANSLATION_RESULTS_20261112.md，轻量证据reproduction/boya/evidence/boya_closure_refinement_20261112。停止追加平移/评分器补丁、调参、重抓或扩样；整体论文复现仍未验收。本轮已收尾无后台物理/训练；仅相关轻量代码/证据推用户origin，大输出忽略，CanonDex不改。
+
 ## 2026-11-11 后续：共享评分器离线对照完成，未过停止线，勿自动试抓
 
 用户授权先固定映射用原435条比较共享评分器，未新增采数/物理。outputs/boya_shared_score_20261111_v2 complete，协议SHA e99b57abcd9e33743134c211ff133c6da2b26c3df0848c6f1058397862dfc54a，结果SHA e859377fe8e016a6cb2be1815793de0721b6b1d4ced5ab8fc994be3fee4c66d7。新496输入=canonical480+手型4/raw深度5/extra4/flip1/宽度2，仅预执行binding白名单。原32/8声明有标签实际29/6，364fit/71internal不变；混合正负物体22/5，同观测混合组31/4(21/4物体)，空3/2不补负例。

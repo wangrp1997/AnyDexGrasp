@@ -1,0 +1,276 @@
+{
+  "schema": "anydex_boya_closure_translation_results_v1",
+  "status": "complete",
+  "protocol_sha256": "17b480f304beeb22f33bd4803842418a47aff417c7257f3bd63b7f94d2b26ddb",
+  "results": [
+    {
+      "object_id": "egad_A0_baseline",
+      "source_object_id": "egad_A0",
+      "variant": "baseline",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_contact_proxy_alignment_20261108_v2/jobs/egad_A0_coarse.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A0/pool_00017",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_A0_baseline",
+      "candidate_rank": 17,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A0.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_A0_baseline/evaluation.json",
+      "evaluation_sha256": "aed2ed21a694dbca6df5cee68445bdc364febae86d1b378fae365c6c3d28c3cd",
+      "task_success": true,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 45.91376475105062,
+      "argv": [
+        "taskset",
+        "-c",
+        "32-39",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_A0_baseline.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_A0_refined",
+      "source_object_id": "egad_A0",
+      "variant": "refined",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_contact_proxy_alignment_20261108_v2/jobs/egad_A0_coarse.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A0/pool_00017",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_A0_refined",
+      "candidate_rank": 17,
+      "delta_world_m": [
+        -0.01,
+        -0.005,
+        0.0
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A0.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_A0_refined/evaluation.json",
+      "evaluation_sha256": "a21fcf5a51c193cb7297d0f88017a1fb1377da36546522101fc18fe9055bd50d",
+      "task_success": true,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 46.25995557499118,
+      "argv": [
+        "taskset",
+        "-c",
+        "40-47",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_A0_refined.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_A3_baseline",
+      "source_object_id": "egad_A3",
+      "variant": "baseline",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_A3.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A3/pool_00058",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_A3_baseline",
+      "candidate_rank": 58,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A3.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_A3_baseline/evaluation.json",
+      "evaluation_sha256": "28ddfd8f3a614f1bcbcea5ef1f3328a475cfc5bf49d59d36f69a2fb49ecde95f",
+      "task_success": false,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 32.41860915906727,
+      "argv": [
+        "taskset",
+        "-c",
+        "32-39",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_A3_baseline.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_A3_refined",
+      "source_object_id": "egad_A3",
+      "variant": "refined",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_A3.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A3/pool_00058",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_A3_refined",
+      "candidate_rank": 58,
+      "delta_world_m": [
+        -0.01,
+        -0.01,
+        0.01
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A3.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_A3_refined/evaluation.json",
+      "evaluation_sha256": "c1efda35e9c4f2b0b5865896b246732b0084d9b7ae736e8f55477e00353e38fc",
+      "task_success": false,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 32.37106455187313,
+      "argv": [
+        "taskset",
+        "-c",
+        "40-47",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_A3_refined.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_A6_baseline",
+      "source_object_id": "egad_A6",
+      "variant": "baseline",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_A6.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00017",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_A6_baseline",
+      "candidate_rank": 17,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A6.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_A6_baseline/evaluation.json",
+      "evaluation_sha256": "81b1c40cff6e7b971ee11d9cdcb74c935047ff3137ee9ed9cbfd856229531aaa",
+      "task_success": false,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 31.86799535807222,
+      "argv": [
+        "taskset",
+        "-c",
+        "32-39",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_A6_baseline.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_A6_refined",
+      "source_object_id": "egad_A6",
+      "variant": "refined",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_A6.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_A6/pool_00017",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_A6_refined",
+      "candidate_rank": 17,
+      "delta_world_m": [
+        0.005,
+        0.0,
+        -0.01
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A6.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_A6_refined/evaluation.json",
+      "evaluation_sha256": "1572744edb0b488a5e958d584c7dd234aa70ee3e4947cde5d187a6496d27c453",
+      "task_success": false,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 31.57276117312722,
+      "argv": [
+        "taskset",
+        "-c",
+        "40-47",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_A6_refined.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_E0_baseline",
+      "source_object_id": "egad_E0",
+      "variant": "baseline",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_E0.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E0/pool_00004",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_E0_baseline",
+      "candidate_rank": 4,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_E0.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_E0_baseline/evaluation.json",
+      "evaluation_sha256": "aca4533ed407991381f399394bef0cf4585a9a92055259d219abc2f8b41d44dd",
+      "task_success": false,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 32.02191049302928,
+      "argv": [
+        "taskset",
+        "-c",
+        "32-39",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_E0_baseline.json"
+      ],
+      "process_returncode": 0
+    },
+    {
+      "object_id": "egad_E0_refined",
+      "source_object_id": "egad_E0",
+      "variant": "refined",
+      "source_job": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_E0.json",
+      "source_pool": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/diagnostic/egad_E0/pool_00004",
+      "candidate_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/pools/egad_E0_refined",
+      "candidate_rank": 4,
+      "delta_world_m": [
+        -0.005,
+        -0.005,
+        -0.005
+      ],
+      "static_report": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_E0.json",
+      "evaluation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/execution/egad_E0_refined/evaluation.json",
+      "evaluation_sha256": "93ab9beadd1f4ddc5abaadd3df9c368ee4f8ad77bc79f0e3864adc7fbd6f15b9",
+      "task_success": false,
+      "physical_steps": 2100,
+      "task_early_stop": null,
+      "wall_s": 34.83054942009039,
+      "argv": [
+        "taskset",
+        "-c",
+        "40-47",
+        "/home/wangrenpeng/boya-inhand-wm/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py",
+        "--job",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/jobs/egad_E0_refined.json"
+      ],
+      "process_returncode": 0
+    }
+  ],
+  "errors": [],
+  "actual_grasps": 8,
+  "success": 2,
+  "paired_success": {
+    "baseline": 1,
+    "refined": 1
+  },
+  "physical_steps": 16800,
+  "decision": "stop_this_rule",
+  "wall_s": 145.38734409306198,
+  "benchmark_only": true,
+  "training_writeback": false,
+  "default_promotion": false
+}

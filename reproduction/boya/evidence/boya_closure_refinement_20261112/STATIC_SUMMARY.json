@@ -1,0 +1,870 @@
+{
+  "cases": [
+    {
+      "object_id": "egad_A0",
+      "source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A0.json",
+      "source_sha256": "6a7dfe8b62c5a35ab672cbfd235130b80d917e4d2f5220e601c00f68bcc00f59",
+      "protocol": {
+        "world_xyz_grid_m": [
+          -0.01,
+          -0.005,
+          0.0,
+          0.005,
+          0.01
+        ],
+        "candidate_count": 125,
+        "closure_progress": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "roi_radius_m": 0.1,
+        "roi_minimum_world_z_m": 0.002,
+        "distance_clip_m": 0.03,
+        "rear_distance_squared_multiplier": 3.0,
+        "translation_penalty": 0.1,
+        "objective": "min_t max(d_thumb(t),d_original_opponent(t)) + 0.1*norm(delta)",
+        "pad_distance": "min_x sqrt(norm(x-pad)^2 + 3*max(0,-normal_dot(x-pad))^2), clipped at 0.03m",
+        "approach_length_m": 0.1,
+        "approach_samples": 21,
+        "open_hand_table_minimum_m": 0.0005,
+        "hull_interior_tolerance_m": 1e-07,
+        "tie_break": "objective, displacement norm, world XYZ lexicographic",
+        "order": "zero displacement first, then world XYZ lexicographic",
+        "closure_table_policy": "reported nominal FK only; no new hard closure gate",
+        "limited_observation": "Visible points only; no hidden-surface or physical-support guarantee"
+      },
+      "roi_point_count": 689,
+      "visible_point_count": 21778,
+      "admitted": 55,
+      "baseline": {
+        "index": 0,
+        "delta_world_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.0005746341485710904,
+          "approach_samples": 21
+        },
+        "objective_m": 0.012927200171620298,
+        "matched_progress": 1.0,
+        "side_distance_by_progress_m": [
+          [
+            0.02557196764683039,
+            0.02782631388883196
+          ],
+          [
+            0.023470751666181573,
+            0.016906881614042215
+          ],
+          [
+            0.021428873642457946,
+            0.011441593993918297
+          ],
+          [
+            0.019565142800587656,
+            0.023514470637528217
+          ],
+          [
+            0.017944969549451496,
+            0.03
+          ],
+          [
+            0.01663010189450038,
+            0.03
+          ],
+          [
+            0.015550741777102993,
+            0.03
+          ],
+          [
+            0.014254048561496537,
+            0.023064499047482884
+          ],
+          [
+            0.01338916720206592,
+            0.013455155570441904
+          ],
+          [
+            0.013032756673594863,
+            0.005105897469054679
+          ],
+          [
+            0.012927200171620298,
+            0.004363482588358394
+          ]
+        ]
+      },
+      "selected": {
+        "index": 8,
+        "delta_world_m": [
+          -0.01,
+          -0.005,
+          0.0
+        ],
+        "norm_m": 0.011180339887498949,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.0005746341485710904,
+          "approach_samples": 21
+        },
+        "objective_m": 0.007802912144531857,
+        "matched_progress": 0.9,
+        "side_distance_by_progress_m": [
+          [
+            0.016934152094608173,
+            0.03
+          ],
+          [
+            0.015150999983022754,
+            0.021727572815363694
+          ],
+          [
+            0.013281831583819192,
+            0.009850014050241412
+          ],
+          [
+            0.011467595690384889,
+            0.009139115431567863
+          ],
+          [
+            0.009891259231926705,
+            0.020563296651090173
+          ],
+          [
+            0.008811498948187356,
+            0.02624869359884902
+          ],
+          [
+            0.007928447838897599,
+            0.027412666744879348
+          ],
+          [
+            0.007208470221031731,
+            0.02257829646563376
+          ],
+          [
+            0.0065245351366052026,
+            0.015477600417212259
+          ],
+          [
+            0.006610982169914983,
+            0.006684878155781962
+          ],
+          [
+            0.0068106501347809465,
+            0.0023075524376213407
+          ]
+        ]
+      },
+      "original_gate_rechecks": [
+        {
+          "index": 0,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.0005746341485710904,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        },
+        {
+          "index": 8,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.0005746341485710904,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        }
+      ],
+      "nominal_closure_minimum_world_z_m": [
+        0.0005746341485710904,
+        -0.0036294521208515285,
+        -0.005647710665214495,
+        -0.004690951473860033,
+        -0.0009206874359804496,
+        0.005448328971604743,
+        0.013479200828571736,
+        0.022399050984096364,
+        0.028757670681972547,
+        0.03362189905929519,
+        0.03829565581371158
+      ],
+      "shifted_nominal_closure_minimum_world_z_m": [
+        0.0005746341485710904,
+        -0.0036294521208515285,
+        -0.005647710665214495,
+        -0.004690951473860033,
+        -0.0009206874359804496,
+        0.005448328971604743,
+        0.013479200828571736,
+        0.022399050984096364,
+        0.028757670681972547,
+        0.03362189905929519,
+        0.03829565581371158
+      ]
+    },
+    {
+      "object_id": "egad_A3",
+      "source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A3.json",
+      "source_sha256": "962ee8b3343cd25b45568ebbb4e2f7c7323f1e7fc68ed2294b150211682acd0b",
+      "protocol": {
+        "world_xyz_grid_m": [
+          -0.01,
+          -0.005,
+          0.0,
+          0.005,
+          0.01
+        ],
+        "candidate_count": 125,
+        "closure_progress": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "roi_radius_m": 0.1,
+        "roi_minimum_world_z_m": 0.002,
+        "distance_clip_m": 0.03,
+        "rear_distance_squared_multiplier": 3.0,
+        "translation_penalty": 0.1,
+        "objective": "min_t max(d_thumb(t),d_original_opponent(t)) + 0.1*norm(delta)",
+        "pad_distance": "min_x sqrt(norm(x-pad)^2 + 3*max(0,-normal_dot(x-pad))^2), clipped at 0.03m",
+        "approach_length_m": 0.1,
+        "approach_samples": 21,
+        "open_hand_table_minimum_m": 0.0005,
+        "hull_interior_tolerance_m": 1e-07,
+        "tie_break": "objective, displacement norm, world XYZ lexicographic",
+        "order": "zero displacement first, then world XYZ lexicographic",
+        "closure_table_policy": "reported nominal FK only; no new hard closure gate",
+        "limited_observation": "Visible points only; no hidden-surface or physical-support guarantee"
+      },
+      "roi_point_count": 1056,
+      "visible_point_count": 21907,
+      "admitted": 95,
+      "baseline": {
+        "index": 0,
+        "delta_world_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.03587079020811276,
+          "approach_samples": 21
+        },
+        "objective_m": 0.020683263701330945,
+        "matched_progress": 1.0,
+        "side_distance_by_progress_m": [
+          [
+            0.03,
+            0.007517373372434707
+          ],
+          [
+            0.03,
+            0.006447971846460892
+          ],
+          [
+            0.03,
+            0.00890732335224097
+          ],
+          [
+            0.03,
+            0.019911787497317767
+          ],
+          [
+            0.03,
+            0.023747185373479703
+          ],
+          [
+            0.03,
+            0.025107325414536273
+          ],
+          [
+            0.02925203316165453,
+            0.022487096505675284
+          ],
+          [
+            0.02667754362058597,
+            0.017268947305562166
+          ],
+          [
+            0.02433047430093905,
+            0.012446327279933908
+          ],
+          [
+            0.02223311309471275,
+            0.010376433360945939
+          ],
+          [
+            0.020683263701330945,
+            0.01303712877040537
+          ]
+        ]
+      },
+      "selected": {
+        "index": 5,
+        "delta_world_m": [
+          -0.01,
+          -0.01,
+          0.01
+        ],
+        "norm_m": 0.017320508075688773,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.045870790208112765,
+          "approach_samples": 21
+        },
+        "objective_m": 0.009491071738958445,
+        "matched_progress": 1.0,
+        "side_distance_by_progress_m": [
+          [
+            0.03,
+            0.0173270536878458
+          ],
+          [
+            0.03,
+            0.005848596866596398
+          ],
+          [
+            0.026813109343800608,
+            0.0018392393951662356
+          ],
+          [
+            0.023394556973532998,
+            0.002969953976312507
+          ],
+          [
+            0.020064563210560195,
+            0.009173166120292403
+          ],
+          [
+            0.01689140300120299,
+            0.014395490502225687
+          ],
+          [
+            0.013986501973615032,
+            0.016373758525019533
+          ],
+          [
+            0.01154138381931668,
+            0.014233159887183884
+          ],
+          [
+            0.009788364239336095,
+            0.009417190177376897
+          ],
+          [
+            0.008384847017104402,
+            0.002273932422970061
+          ],
+          [
+            0.007548823277442095,
+            0.007759020931389567
+          ]
+        ]
+      },
+      "original_gate_rechecks": [
+        {
+          "index": 0,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.03587079020811276,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        },
+        {
+          "index": 5,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.04587079020811277,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        }
+      ],
+      "nominal_closure_minimum_world_z_m": [
+        0.03587079020811276,
+        0.03718588739210105,
+        0.038913226502414744,
+        0.041111717291466954,
+        0.04367354172521154,
+        0.04659794265265277,
+        0.049832488632163635,
+        0.04841992149320082,
+        0.049215462959152925,
+        0.052450656262103865,
+        0.057391137112130536
+      ],
+      "shifted_nominal_closure_minimum_world_z_m": [
+        0.045870790208112765,
+        0.04718588739210105,
+        0.048913226502414746,
+        0.051111717291466956,
+        0.05367354172521154,
+        0.05659794265265277,
+        0.05983248863216364,
+        0.05841992149320082,
+        0.05921546295915293,
+        0.06245065626210387,
+        0.06739113711213053
+      ]
+    },
+    {
+      "object_id": "egad_A6",
+      "source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_A6.json",
+      "source_sha256": "8f6d7bb17f0fd52a3e052f974cf801276c007cc0fbf710473dd5ca7b7911914f",
+      "protocol": {
+        "world_xyz_grid_m": [
+          -0.01,
+          -0.005,
+          0.0,
+          0.005,
+          0.01
+        ],
+        "candidate_count": 125,
+        "closure_progress": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "roi_radius_m": 0.1,
+        "roi_minimum_world_z_m": 0.002,
+        "distance_clip_m": 0.03,
+        "rear_distance_squared_multiplier": 3.0,
+        "translation_penalty": 0.1,
+        "objective": "min_t max(d_thumb(t),d_original_opponent(t)) + 0.1*norm(delta)",
+        "pad_distance": "min_x sqrt(norm(x-pad)^2 + 3*max(0,-normal_dot(x-pad))^2), clipped at 0.03m",
+        "approach_length_m": 0.1,
+        "approach_samples": 21,
+        "open_hand_table_minimum_m": 0.0005,
+        "hull_interior_tolerance_m": 1e-07,
+        "tie_break": "objective, displacement norm, world XYZ lexicographic",
+        "order": "zero displacement first, then world XYZ lexicographic",
+        "closure_table_policy": "reported nominal FK only; no new hard closure gate",
+        "limited_observation": "Visible points only; no hidden-surface or physical-support guarantee"
+      },
+      "roi_point_count": 784,
+      "visible_point_count": 21962,
+      "admitted": 77,
+      "baseline": {
+        "index": 0,
+        "delta_world_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.049351767296015564,
+          "approach_samples": 21
+        },
+        "objective_m": 0.011344432683983007,
+        "matched_progress": 0.6000000000000001,
+        "side_distance_by_progress_m": [
+          [
+            0.011257422368170405,
+            0.02315157275999393
+          ],
+          [
+            0.01123288598201543,
+            0.021421824085055028
+          ],
+          [
+            0.01123272681299206,
+            0.01815854909738951
+          ],
+          [
+            0.011256913636523952,
+            0.014979181619038849
+          ],
+          [
+            0.011306649010323116,
+            0.011951076791887486
+          ],
+          [
+            0.011346944034170645,
+            0.009221811292334658
+          ],
+          [
+            0.011344432683983007,
+            0.007135541142202755
+          ],
+          [
+            0.01136700789194786,
+            0.005829616511610566
+          ],
+          [
+            0.011414484432675827,
+            0.0025081712223364652
+          ],
+          [
+            0.011496320790298168,
+            0.0026765778436544808
+          ],
+          [
+            0.011678311312384755,
+            0.005864474717551208
+          ]
+        ]
+      },
+      "selected": {
+        "index": 85,
+        "delta_world_m": [
+          0.005,
+          0.0,
+          -0.01
+        ],
+        "norm_m": 0.011180339887498949,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.03935176729601556,
+          "approach_samples": 21
+        },
+        "objective_m": 0.0058229825748873695,
+        "matched_progress": 1.0,
+        "side_distance_by_progress_m": [
+          [
+            0.008163079727878145,
+            0.0201102255829318
+          ],
+          [
+            0.007787350200342737,
+            0.022139017940281513
+          ],
+          [
+            0.00742919964472,
+            0.024270192919826176
+          ],
+          [
+            0.007091279212612351,
+            0.025845382527322908
+          ],
+          [
+            0.00677659805638652,
+            0.023018388198472763
+          ],
+          [
+            0.006488514930045137,
+            0.019971890791301086
+          ],
+          [
+            0.0060935608374479075,
+            0.017042823721941724
+          ],
+          [
+            0.005709346827414005,
+            0.013655510527689518
+          ],
+          [
+            0.00534659789147941,
+            0.01016012441397003
+          ],
+          [
+            0.005009944410841772,
+            0.006779493738742398
+          ],
+          [
+            0.004704948586137475,
+            0.0038127054481473794
+          ]
+        ]
+      },
+      "original_gate_rechecks": [
+        {
+          "index": 0,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.049351767296015564,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        },
+        {
+          "index": 85,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.039351767296015555,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        }
+      ],
+      "nominal_closure_minimum_world_z_m": [
+        0.049351767296015564,
+        0.0510360408870974,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158,
+        0.0527693743590158
+      ],
+      "shifted_nominal_closure_minimum_world_z_m": [
+        0.03935176729601556,
+        0.0410360408870974,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795,
+        0.042769374359015795
+      ]
+    },
+    {
+      "object_id": "egad_E0",
+      "source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/static/egad_E0.json",
+      "source_sha256": "2e4e6288edffa0ec33158cbd1254e85570b22eb9e27dbb299cc9f6f8359f440f",
+      "protocol": {
+        "world_xyz_grid_m": [
+          -0.01,
+          -0.005,
+          0.0,
+          0.005,
+          0.01
+        ],
+        "candidate_count": 125,
+        "closure_progress": [
+          0.0,
+          0.1,
+          0.2,
+          0.30000000000000004,
+          0.4,
+          0.5,
+          0.6000000000000001,
+          0.7000000000000001,
+          0.8,
+          0.9,
+          1.0
+        ],
+        "roi_radius_m": 0.1,
+        "roi_minimum_world_z_m": 0.002,
+        "distance_clip_m": 0.03,
+        "rear_distance_squared_multiplier": 3.0,
+        "translation_penalty": 0.1,
+        "objective": "min_t max(d_thumb(t),d_original_opponent(t)) + 0.1*norm(delta)",
+        "pad_distance": "min_x sqrt(norm(x-pad)^2 + 3*max(0,-normal_dot(x-pad))^2), clipped at 0.03m",
+        "approach_length_m": 0.1,
+        "approach_samples": 21,
+        "open_hand_table_minimum_m": 0.0005,
+        "hull_interior_tolerance_m": 1e-07,
+        "tie_break": "objective, displacement norm, world XYZ lexicographic",
+        "order": "zero displacement first, then world XYZ lexicographic",
+        "closure_table_policy": "reported nominal FK only; no new hard closure gate",
+        "limited_observation": "Visible points only; no hidden-surface or physical-support guarantee"
+      },
+      "roi_point_count": 700,
+      "visible_point_count": 21926,
+      "admitted": 109,
+      "baseline": {
+        "index": 0,
+        "delta_world_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "norm_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.013444708674522222,
+          "approach_samples": 21
+        },
+        "objective_m": 0.013456990430113225,
+        "matched_progress": 1.0,
+        "side_distance_by_progress_m": [
+          [
+            0.02104076886713325,
+            0.03
+          ],
+          [
+            0.020428596818575947,
+            0.03
+          ],
+          [
+            0.019873586996741296,
+            0.02921344096076101
+          ],
+          [
+            0.01906514298589239,
+            0.017375272974822553
+          ],
+          [
+            0.01820942207205578,
+            0.006409829565891556
+          ],
+          [
+            0.017402873112176327,
+            0.013733310673700363
+          ],
+          [
+            0.016652738706767426,
+            0.029099488248770188
+          ],
+          [
+            0.01596144034947091,
+            0.02264277205990968
+          ],
+          [
+            0.015057947239326597,
+            0.013813875111198831
+          ],
+          [
+            0.01421921768217414,
+            0.006588459875974062
+          ],
+          [
+            0.013456990430113225,
+            0.003273148608506739
+          ]
+        ]
+      },
+      "selected": {
+        "index": 32,
+        "delta_world_m": [
+          -0.005,
+          -0.005,
+          -0.005
+        ],
+        "norm_m": 0.008660254037844387,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.008444708674522221,
+          "approach_samples": 21
+        },
+        "objective_m": 0.007538125831284163,
+        "matched_progress": 1.0,
+        "side_distance_by_progress_m": [
+          [
+            0.0138320488509341,
+            0.03
+          ],
+          [
+            0.013156467860046213,
+            0.03
+          ],
+          [
+            0.01257912957767746,
+            0.03
+          ],
+          [
+            0.012055592304075293,
+            0.018953491042429434
+          ],
+          [
+            0.011413522539554,
+            0.007553756932601643
+          ],
+          [
+            0.010619063481910758,
+            0.009021579808203775
+          ],
+          [
+            0.00992076667883198,
+            0.02679675195677054
+          ],
+          [
+            0.009339412026993446,
+            0.02910225027805478
+          ],
+          [
+            0.008367443354485101,
+            0.02049836520550389
+          ],
+          [
+            0.007457417220514605,
+            0.012505059098911494
+          ],
+          [
+            0.006672100427499724,
+            0.005695813001601144
+          ]
+        ]
+      },
+      "original_gate_rechecks": [
+        {
+          "index": 0,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.013444708674522222,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        },
+        {
+          "index": 32,
+          "original_geometry": {
+            "ok": true,
+            "minimum_height_m": 0.008444708674522218,
+            "approach_samples": 21,
+            "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+          }
+        }
+      ],
+      "nominal_closure_minimum_world_z_m": [
+        0.013444708674522222,
+        0.013844913369351716,
+        0.014255350208869526,
+        0.014669052280704184,
+        0.015085451937133808,
+        0.015497971444819236,
+        0.014904736221693277,
+        0.012617970616630753,
+        0.010824042868931863,
+        0.009534942226645651,
+        0.008792921351597718
+      ],
+      "shifted_nominal_closure_minimum_world_z_m": [
+        0.008444708674522221,
+        0.008844913369351715,
+        0.009255350208869525,
+        0.009669052280704183,
+        0.010085451937133807,
+        0.010497971444819235,
+        0.009904736221693276,
+        0.0076179706166307525,
+        0.005824042868931863,
+        0.004534942226645651,
+        0.0037929213515977183
+      ]
+    }
+  ],
+  "complete": true,
+  "new_physics_steps": 0
+}

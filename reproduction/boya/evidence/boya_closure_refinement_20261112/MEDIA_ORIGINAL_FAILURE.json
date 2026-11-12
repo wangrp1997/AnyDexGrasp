@@ -1,0 +1,33 @@
+{
+  "previous_process_pid": 2894330,
+  "previous_process_signal": "SIGSEGV",
+  "previous_process_exit_code": 139,
+  "signal_provenance": "Parent observed original renderer process exit 139; no kill was issued",
+  "original_log": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/render.log",
+    "sha256": "e1affc6715d6acdb5bbd7b4815ca40365aa8eb7992bf7d7fae8bd42da18bbab6"
+  },
+  "original_partial_videos_preserved": true,
+  "last_progress": "egad_A3_baseline frame 50 of 210",
+  "crash_is_replay_only": true,
+  "new_physics_steps": 0,
+  "recovery_preparation_zero_process_failures": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/media_recovery_v1/PREPARATION_FAILURE.json",
+      "sha256": "e3a8689a6247e2b237521a20380c2a1d8243b0a06536d9a13b76b6a5293b514c"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/media_recovery_v2/PREPARATION_FAILURE.json",
+      "sha256": "c740e10a3ee76638c1bf58199392e5afacfe79bea0528cc5d2267b71521842cc"
+    }
+  ],
+  "stack_source": {
+    "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/data/Kit/IsaacLab/3.0/28a56632-7c72-43df-452957bd-19eaa998.py.txt",
+    "sha256": "f5630d8de298baf3bc30bef7944cb79251968d4618c2f7c9b48b8672845a9e03"
+  },
+  "stack_copy": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_closure_refinement_20261112_v1/media_recovery_v3/ORIGINAL_CRASH_STACK.txt",
+    "sha256": "f5630d8de298baf3bc30bef7944cb79251968d4618c2f7c9b48b8672845a9e03"
+  },
+  "crash_stack_function": "SyntheticData._post_process_graph_tick"
+}
