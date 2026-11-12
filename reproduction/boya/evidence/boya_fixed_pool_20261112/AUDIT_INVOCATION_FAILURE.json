@@ -1,0 +1,7 @@
+{
+  "stage": "read_only_full_audit",
+  "reason": "The frozen audit CLI compares declared absolute new job paths to run/jobs without resolving --run; initial relative --run argument failed path equality after catalog audit. No physics, model, or execution source changed.",
+  "failed_argument": "outputs/boya_fixed_pool_20261112_v1",
+  "correction": "Pass the absolute run path; keep the frozen audit source unchanged.",
+  "new_physics_steps": 0
+}
