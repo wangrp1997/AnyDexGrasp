@@ -1,0 +1,101 @@
+{
+  "schema": "anydex_local_reference_checkouts_v1",
+  "date": "2026-11-14",
+  "local_index": "outputs/reference_repos_20261114/README.md",
+  "repositories": [
+    {
+      "name": "jonas_own_hand",
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "branch": "main",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "url": "https://github.com/Jonas-Z-up/AnyDexGrasp_ws.git",
+      "local_path": "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/jonas_own_hand",
+      "sparse_checkout": true,
+      "shallow": true,
+      "selected_files": 393,
+      "selected_bytes": 2388716,
+      "survey_source_hash_matches": [
+        "README.md",
+        "docs/own_hand_pipeline.md",
+        "own_hand/own_hand_grasp.py",
+        "docs/自研灵巧手参数说明_byaq.md",
+        "docs/自研手抓取重标定操作步骤.md",
+        "own_hand/tools/test_own_chain_closure.py",
+        "own_hand/problems/问题分析回执.md",
+        "scripts/hand_bridge.py",
+        "docs/自研手几何数据.md",
+        "own_hand/tools/search_contact_groups.py",
+        "own_hand/docs/自研手几何替换Inspire-进度与计划.md",
+        "scripts/grasp_pipeline.py",
+        "scripts/tools/compute_hand_geometry.py"
+      ],
+      "git_status_clean": true,
+      "submodules_initialized": false
+    },
+    {
+      "name": "kitt_server",
+      "repo": "kittvnebluda/anydexgrasp",
+      "branch": "main",
+      "commit": "0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b",
+      "url": "https://github.com/kittvnebluda/anydexgrasp.git",
+      "local_path": "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kitt_server",
+      "sparse_checkout": true,
+      "shallow": true,
+      "selected_files": 21,
+      "selected_bytes": 44162,
+      "survey_source_hash_matches": [
+        "README.md",
+        "adg_server/hand.py",
+        "adg_server/planner.py"
+      ],
+      "git_status_clean": true,
+      "submodules_initialized": false
+    },
+    {
+      "name": "kywch_pixi",
+      "repo": "kywch/AnyDexGrasp",
+      "branch": "pixi",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "url": "https://github.com/kywch/AnyDexGrasp.git",
+      "local_path": "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kywch_pixi",
+      "sparse_checkout": true,
+      "shallow": true,
+      "selected_files": 473,
+      "selected_bytes": 5680467,
+      "survey_source_hash_matches": [
+        "README.md",
+        "collect_rs_inspire_grasp_data.py",
+        "robosuite_env.py",
+        "robosuite_inspire.py",
+        "InspireHandR_grasp.py",
+        "train_multifinger.py",
+        "AnyDexGrasp/models/minkowski_graspnet.py",
+        "AnyDexGrasp/models/loss.py",
+        "AnyDexGrasp/dataset/multifinger_hand.py",
+        "diverse_lift/lift_env.py"
+      ],
+      "git_status_clean": true,
+      "submodules_initialized": false
+    }
+  ],
+  "total_selected_files": 887,
+  "total_selected_bytes": 8113345,
+  "prior_source_hash_matches": 26,
+  "full_receipt": {
+    "path": "outputs/reference_repos_20261114/CHECKOUT_RECEIPT.json",
+    "sha256": "9b7bf3c91af429c406ffad6fdd89840e61d210aee026c7dda665a6ec8dc7d9a6"
+  },
+  "checkout_scope": "Source, docs, calibration tables and config; sparse checkout excludes large model/mesh/media files and runtime logs; submodules not initialized.",
+  "failures_retained": [
+    "outputs/reference_repos_20261114/CHECKOUT_RECEIPT_initial_sg_partial.json",
+    "outputs/reference_repos_20261114/CHECKOUT_RECEIPT_sg2_verification_symlink.json"
+  ],
+  "actions": {
+    "thirdparty_programs_executed": 0,
+    "new_training": 0,
+    "new_CGR_inference": 0,
+    "new_physics": 0,
+    "hardware_connections": 0,
+    "CanonDex_writes": 0
+  }
+}

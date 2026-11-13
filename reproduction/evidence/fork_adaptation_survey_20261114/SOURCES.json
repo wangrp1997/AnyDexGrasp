@@ -1,0 +1,1103 @@
+{
+  "schema": "anydex_public_fork_reference_survey_v1",
+  "review_date": "2026-11-14",
+  "upstream": "graspnet/AnyDexGrasp",
+  "base_commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "scope": {
+    "fork_list_api": "https://api.github.com/repos/graspnet/AnyDexGrasp/forks?per_page=100&sort=newest",
+    "returned_forks": 23,
+    "excluded_own_fork": "wangrp1997/AnyDexGrasp",
+    "external_fork_repositories": 22,
+    "external_fork_branches": 25,
+    "repositories_with_ahead_branch": 8,
+    "repositories_only_same_base": 12,
+    "repositories_only_behind": 2,
+    "extra_search_api": "https://api.github.com/search/repositories?q=AnyDexGrasp+in:name+fork:true&per_page=100",
+    "additional_related_nonfork_repositories": 3
+  },
+  "inspection": "Branch commit comparison for listed forks; complete recursive trees for selected implementations; static reading of key downloaded modules. Not a runtime or whole-repository correctness audit.",
+  "forks": [
+    {
+      "repo": "VuDinhKhai/AnyDexGrasp",
+      "classification": "inference_imports_only",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "f3d0c0caecf8d488808514c5333a38cd7c665802",
+          "status": "ahead",
+          "ahead_by": 1,
+          "behind_by": 0,
+          "compare_url": "https://github.com/VuDinhKhai/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...f3d0c0caecf8d488808514c5333a38cd7c665802",
+          "changed_paths_returned": [
+            "models/common.py",
+            "ur_toolbox/ur_toolbox/robot/__init__.py"
+          ],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    },
+    {
+      "repo": "RDChen0501/AnyDexGrasp",
+      "classification": "Franka_Allegro_ROS2_integration",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "124c4f4ca6a5a7b7a60d5f39cce4220829485c0f",
+          "status": "ahead",
+          "ahead_by": 7,
+          "behind_by": 0,
+          "compare_url": "https://github.com/RDChen0501/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...124c4f4ca6a5a7b7a60d5f39cce4220829485c0f",
+          "changed_paths_returned": [
+            "calibrate_camera.py",
+            "generate_mesh_and_pointcloud/allegro_urdf/width_16D_angle.json",
+            "realsense.py",
+            "realsense_copy.py",
+            "robot_franka.py",
+            "setup_robot_env.sh",
+            "ur_toolbox/ur_toolbox/robot/Allegro/Allegro.py",
+            "ur_toolbox/ur_toolbox/robot/Allegro/src/allegro_hand/src/allegro_hand/controller_ros2.py",
+            "ur_toolbox/ur_toolbox/robot/Allegro/test_allegro.py",
+            "ur_toolbox/ur_toolbox/robot/franka.py",
+            "utils/collision_detector.py"
+          ],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    },
+    {
+      "repo": "flyingGH/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "suhyeongyu/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "JMDcx/AnyDexGrasp",
+      "classification": "CUDA_environment_and_smoke",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "5225e1943d3fdf3319220328da72da8035c5d185",
+          "status": "ahead",
+          "ahead_by": 1,
+          "behind_by": 0,
+          "compare_url": "https://github.com/JMDcx/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...5225e1943d3fdf3319220328da72da8035c5d185",
+          "changed_paths_returned": [
+            "INSTALL_5090_CONDA.md",
+            "knn/src/knn.h",
+            "models/common.py",
+            "offline_smoke_inspire.py",
+            "pointnet2/_ext_src/include/utils.h",
+            "pointnet2/_ext_src/src/ball_query.cpp",
+            "pointnet2/_ext_src/src/cylinder_query.cpp",
+            "pointnet2/_ext_src/src/group_points.cpp",
+            "pointnet2/_ext_src/src/interpolate.cpp",
+            "pointnet2/_ext_src/src/sampling.cpp"
+          ],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    },
+    {
+      "repo": "YatsenRobot/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "atfinke/AnyDexGrasp",
+      "classification": "ONNX_QNN_architecture_export",
+      "branches": [
+        {
+          "name": "claude/onnx-qnn-conversion-01LfHDdAoY2MqCG2fUeuE5Tv",
+          "commit": "5d9e95e74e7c7b676d6195e3118a0689fa8b5cd5",
+          "status": "ahead",
+          "ahead_by": 8,
+          "behind_by": 0,
+          "compare_url": "https://github.com/atfinke/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...5d9e95e74e7c7b676d6195e3118a0689fa8b5cd5",
+          "changed_paths_returned": [
+            "ACTUAL_TEST_RESULTS.md",
+            "DEPLOYMENT_GUIDE.md",
+            "FINAL_STATUS.md",
+            "ONNX_QNN_README.md",
+            "OPERATOR_IMPLEMENTATIONS.md",
+            "QNN_VERIFICATION_RESULTS.md",
+            "README_ONNX_QNN.md",
+            "VALIDATION_RESULTS.md",
+            "VERIFICATION_STATUS.md",
+            "export_to_onnx.py",
+            "models/graspnet_onnx.py",
+            "models/pointnet2_backbone_onnx.py",
+            "onnx_ops/__init__.py",
+            "onnx_ops/knn_onnx.py",
+            "onnx_ops/pointnet2_onnx.py",
+            "onnx_ops/voxelization_onnx.py",
+            "qnn/convert_to_qnn.py",
+            "qnn/custom_ops/cylinder_query_qnn.cpp",
+            "qnn/custom_ops/furthest_point_sample_qnn.cpp",
+            "test_backbone.py",
+            "test_graspnet_export.py",
+            "test_implementations.py",
+            "test_model.py",
+            "test_onnx_qnn_export.py",
+            "validate_accuracy.py",
+            "validate_onnx_accuracy.py"
+          ],
+          "compare_file_list_may_be_capped": false
+        },
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "0iui0/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "Sclanet-Platform/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "REGATTE/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "ZachJiang/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "BorisGuo6/AnyDexGrasp",
+      "classification": "label_generation_import_fixes",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "e6e5d62139917e6758924365fd7f128f568fb00a",
+          "status": "ahead",
+          "ahead_by": 4,
+          "behind_by": 0,
+          "compare_url": "https://github.com/BorisGuo6/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...e6e5d62139917e6758924365fd7f128f568fb00a",
+          "changed_paths_returned": [
+            "__init__.py",
+            "models/label_generation.py",
+            "models/minkowski_graspnet_single_point.py",
+            "ur_toolbox/python-urx/urx.egg-info/PKG-INFO",
+            "ur_toolbox/ur_toolbox/robot/Inspire/InspireHandR.py",
+            "utils/__init__.py"
+          ],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    },
+    {
+      "repo": "QiyangYan/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "suyourice/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "3NTERS/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "buckmole/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "classification": "Inspire_ROS_Galaxea_integration",
+      "branches": [
+        {
+          "name": "dev",
+          "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+          "status": "ahead",
+          "ahead_by": 15,
+          "behind_by": 0,
+          "compare_url": "https://github.com/SevenFo/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...34323059f21d181ceb107a5bf6e42258c3b5ae58",
+          "changed_paths_returned": [
+            ".gitignore",
+            "adg_utils/collision_detector.py",
+            "adg_utils/np_utils.py",
+            "adg_utils/pt_utils.py",
+            "adg_utils/solvers.py",
+            "dataset/graspnet.py",
+            "dataset/multifinger_hand.py",
+            "generate_mesh_and_pointcloud/recover_inspire_hand_to_stl.py",
+            "inference_v2/configs.py",
+            "inference_v2/main.py",
+            "inference_v2/start_service.py",
+            "inference_v2/utils/camera.py",
+            "inference_v2/utils/data_processing.py",
+            "inference_v2/utils/network.py",
+            "inference_v2/utils/robot_utils.py",
+            "inference_v2/utils/visualization.py",
+            "inference_v3/config.py",
+            "inference_v3/main.py",
+            "inference_v3/utils/data_utils.py",
+            "inference_v3/utils/grasp_utils.py",
+            "inference_v3/utils/net_utils.py",
+            "inference_v3/utils/robot_utils.py",
+            "inference_v3/utils/visualization_utils.py",
+            "models/common_grasp.py",
+            "models/inspire_hand_grasp.py",
+            "models/loss.py",
+            "models/minkowski_graspnet_single_point.py",
+            "models/res4unet.py",
+            "models/resnet.py",
+            "models/resnet_block.py",
+            "models/resunet.py",
+            "pointnet2/pointnet2_modules.py",
+            "pointnet2/pointnet2_utils.py",
+            "robot_allegro_virtual.py",
+            "robot_inspire.py",
+            "robot_inspire_virtual.py",
+            "ros_ws/COMPLETE_USAGE_GUIDE.md",
+            "ros_ws/build_package.sh",
+            "ros_ws/src/anydexgrasp_msgs/CMakeLists.txt",
+            "ros_ws/src/anydexgrasp_msgs/README.md",
+            "ros_ws/src/anydexgrasp_msgs/launch/inspire_grasp_service.launch",
+            "ros_ws/src/anydexgrasp_msgs/msg/GraspPose.msg",
+            "ros_ws/src/anydexgrasp_msgs/package.xml",
+            "ros_ws/src/anydexgrasp_msgs/rviz/grasp_planning.rviz",
+            "ros_ws/src/anydexgrasp_msgs/scripts/anydexgrasp_config.py",
+            "ros_ws/src/anydexgrasp_msgs/scripts/simple_inspire_service.py",
+            "ros_ws/src/anydexgrasp_msgs/scripts/start_service.py",
+            "ros_ws/src/anydexgrasp_msgs/scripts/start_service_v2.py",
+            "ros_ws/src/anydexgrasp_msgs/scripts/test_service_client.py",
+            "ros_ws/src/anydexgrasp_msgs/srv/GraspPlanning.srv"
+          ],
+          "compare_file_list_may_be_capped": false
+        },
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "CloudEngineHub/AnyDexGrasp",
+      "classification": "same_commit_as_base",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        }
+      ]
+    },
+    {
+      "repo": "ZerenYu/AnyDexGrasp",
+      "classification": "Docker_environment_training_commands",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "09f9cb1a0253f059b4fd68bb0101f9a6f39bb2a6",
+          "status": "ahead",
+          "ahead_by": 3,
+          "behind_by": 0,
+          "compare_url": "https://github.com/ZerenYu/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...09f9cb1a0253f059b4fd68bb0101f9a6f39bb2a6",
+          "changed_paths_returned": [
+            "DOCKER_SETUP.md",
+            "Dockerfile",
+            "command_robot_multifinger_grasp.sh",
+            "command_train_representation.sh",
+            "docker-compose.yml",
+            "requirements.txt",
+            "run.sh",
+            "setup_docker.sh"
+          ],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "classification": "Inspire_robosuite_simulation_data_training_evaluation",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+          "status": "identical"
+        },
+        {
+          "name": "pixi",
+          "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+          "status": "ahead",
+          "ahead_by": 20,
+          "behind_by": 0,
+          "compare_url": "https://github.com/kywch/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...3888737ef280fb4707601501c593a5a5a2f0bb20",
+          "changed_paths_returned": [
+            ".gitignore",
+            ".gitmodules",
+            "AnyDexGrasp/__init__.py",
+            "AnyDexGrasp/dataset/__init__.py",
+            "AnyDexGrasp/dataset/graspnet.py",
+            "AnyDexGrasp/dataset/multifinger_hand.py",
+            "AnyDexGrasp/dataset/test_viz.py",
+            "AnyDexGrasp/models/__init__.py",
+            "AnyDexGrasp/models/common.py",
+            "AnyDexGrasp/models/loss.py",
+            "AnyDexGrasp/models/minkowski_graspnet.py",
+            "AnyDexGrasp/models/res4unet.py",
+            "AnyDexGrasp/models/resnet.py",
+            "AnyDexGrasp/models/resnet_block.py",
+            "AnyDexGrasp/models/resunet.py",
+            "AnyDexGrasp/utils/__init__.py",
+            "AnyDexGrasp/utils/collision_detector.py",
+            "AnyDexGrasp/utils/graspnet_utils.py",
+            "AnyDexGrasp/utils/np_utils.py",
+            "AnyDexGrasp/utils/pt_utils.py",
+            "AnyDexGrasp/utils/solvers.py",
+            "InspireHandR_grasp.py",
+            "MinkowskiEngine",
+            "MinkowskiEngine_install.md",
+            "agod_objects/2020.06.12_02h00 dataset.png",
+            "agod_objects/README.md",
+            "agod_objects/convert_obj_to_model_xml.py",
+            "collect_best_grasp_models.py",
+            "collect_rs_inspire_grasp_data.py",
+            "dataset/graspnet.py",
+            "dataset/test_viz.py",
+            "diverse_lift/__init__.py",
+            "diverse_lift/assets/AGOD/06154/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/06154/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/06154/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/06154/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/06154/model.xml",
+            "diverse_lift/assets/AGOD/06154/object_size.json",
+            "diverse_lift/assets/AGOD/06154/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/06154/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/06154/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/06154/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/14752/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/14752/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/14752/model.xml",
+            "diverse_lift/assets/AGOD/14752/object_size.json",
+            "diverse_lift/assets/AGOD/14752/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/14752/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/16035/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/16035/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/16035/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/16035/model.xml",
+            "diverse_lift/assets/AGOD/16035/object_size.json",
+            "diverse_lift/assets/AGOD/16035/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/16035/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/16035/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_4_coll.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_5_coll.obj",
+            "diverse_lift/assets/AGOD/19403/collision/convex_6_coll.obj",
+            "diverse_lift/assets/AGOD/19403/model.xml",
+            "diverse_lift/assets/AGOD/19403/object_size.json",
+            "diverse_lift/assets/AGOD/19403/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/19403/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/19403/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/19403/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/19403/visual/convex_4.obj",
+            "diverse_lift/assets/AGOD/19403/visual/convex_5.obj",
+            "diverse_lift/assets/AGOD/19403/visual/convex_6.obj",
+            "diverse_lift/assets/AGOD/19984/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/19984/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/19984/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/19984/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/19984/collision/convex_4_coll.obj",
+            "diverse_lift/assets/AGOD/19984/collision/convex_5_coll.obj",
+            "diverse_lift/assets/AGOD/19984/model.xml",
+            "diverse_lift/assets/AGOD/19984/object_size.json",
+            "diverse_lift/assets/AGOD/19984/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/19984/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/19984/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/19984/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/19984/visual/convex_4.obj",
+            "diverse_lift/assets/AGOD/19984/visual/convex_5.obj",
+            "diverse_lift/assets/AGOD/20030/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/20030/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/20030/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/20030/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/20030/model.xml",
+            "diverse_lift/assets/AGOD/20030/object_size.json",
+            "diverse_lift/assets/AGOD/20030/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/20030/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/20030/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/20030/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/20064/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/20064/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/20064/model.xml",
+            "diverse_lift/assets/AGOD/20064/object_size.json",
+            "diverse_lift/assets/AGOD/20064/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/20064/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_10_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_11_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_12_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_13_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_14_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_15_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_16_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_17_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_18_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_19_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_20_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_21_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_22_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_23_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_24_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_25_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_26_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_27_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_28_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_29_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_30_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_31_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_32_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_33_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_34_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_35_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_4_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_5_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_6_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_7_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_8_coll.obj",
+            "diverse_lift/assets/AGOD/20123/collision/convex_9_coll.obj",
+            "diverse_lift/assets/AGOD/20123/model.xml",
+            "diverse_lift/assets/AGOD/20123/object_size.json",
+            "diverse_lift/assets/AGOD/20123/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_10.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_11.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_12.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_13.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_14.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_15.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_16.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_17.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_18.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_19.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_20.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_21.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_22.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_23.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_24.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_25.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_26.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_27.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_28.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_29.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_30.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_31.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_32.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_33.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_34.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_35.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_4.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_5.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_6.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_7.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_8.obj",
+            "diverse_lift/assets/AGOD/20123/visual/convex_9.obj",
+            "diverse_lift/assets/AGOD/20340/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/20340/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/20340/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/20340/model.xml",
+            "diverse_lift/assets/AGOD/20340/object_size.json",
+            "diverse_lift/assets/AGOD/20340/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/20340/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/20340/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_10_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_11_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_12_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_13_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_14_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_15_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_4_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_5_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_6_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_7_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_8_coll.obj",
+            "diverse_lift/assets/AGOD/20803/collision/convex_9_coll.obj",
+            "diverse_lift/assets/AGOD/20803/model.xml",
+            "diverse_lift/assets/AGOD/20803/object_size.json",
+            "diverse_lift/assets/AGOD/20803/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_10.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_11.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_12.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_13.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_14.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_15.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_4.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_5.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_6.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_7.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_8.obj",
+            "diverse_lift/assets/AGOD/20803/visual/convex_9.obj",
+            "diverse_lift/assets/AGOD/21352/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/21352/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/21352/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/21352/model.xml",
+            "diverse_lift/assets/AGOD/21352/object_size.json",
+            "diverse_lift/assets/AGOD/21352/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/21352/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/21352/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/21760/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/21760/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/21760/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/21760/model.xml",
+            "diverse_lift/assets/AGOD/21760/object_size.json",
+            "diverse_lift/assets/AGOD/21760/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/21760/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/21760/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/21809/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/21809/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/21809/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/21809/model.xml",
+            "diverse_lift/assets/AGOD/21809/object_size.json",
+            "diverse_lift/assets/AGOD/21809/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/21809/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/21809/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_10_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_4_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_5_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_6_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_7_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_8_coll.obj",
+            "diverse_lift/assets/AGOD/22017/collision/convex_9_coll.obj",
+            "diverse_lift/assets/AGOD/22017/model.xml",
+            "diverse_lift/assets/AGOD/22017/object_size.json",
+            "diverse_lift/assets/AGOD/22017/visual/convex_0.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_1.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_10.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_2.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_3.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_4.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_5.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_6.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_7.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_8.obj",
+            "diverse_lift/assets/AGOD/22017/visual/convex_9.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_0_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_10_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_11_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_12_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_13_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_14_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_15_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_16_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_17_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_18_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_19_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_1_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_20_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_21_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_22_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_23_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_24_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_25_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_26_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_27_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_28_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_29_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_2_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_30_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_31_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_32_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_33_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_3_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_4_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_5_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_6_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_7_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_8_coll.obj",
+            "diverse_lift/assets/AGOD/22262/collision/convex_9_coll.obj"
+          ],
+          "compare_file_list_may_be_capped": true
+        }
+      ]
+    },
+    {
+      "repo": "SeungBack/AnyDexGrasp",
+      "classification": "behind_upstream_only",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "2f6d6a81e3b0f7e06fef223f39687cce383ad745",
+          "status": "behind",
+          "ahead_by": 0,
+          "behind_by": 1,
+          "compare_url": "https://github.com/SeungBack/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...2f6d6a81e3b0f7e06fef223f39687cce383ad745",
+          "changed_paths_returned": [],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    },
+    {
+      "repo": "fyan1998/AnyDexGrasp",
+      "classification": "behind_upstream_only",
+      "branches": [
+        {
+          "name": "main",
+          "commit": "db331b43026f42fcecc822ce7aa89d03c0497a06",
+          "status": "behind",
+          "ahead_by": 0,
+          "behind_by": 4,
+          "compare_url": "https://github.com/fyan1998/AnyDexGrasp/compare/c9c4a43df33e40860417c7e2dd02f5122d3b2da2...db331b43026f42fcecc822ce7aa89d03c0497a06",
+          "changed_paths_returned": [],
+          "compare_file_list_may_be_capped": false
+        }
+      ]
+    }
+  ],
+  "related_nonfork_repositories": [
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "description": "基于Unitree Z1+D435i+五指灵巧手复现AnyDexGrasp实现视觉抓取",
+      "fork": false,
+      "parent": null,
+      "default_branch": "main",
+      "tree_sha": "444199bb10bb715578f014068ab18dbff49a890b",
+      "tree_truncated": false
+    },
+    {
+      "repo": "kittvnebluda/anydexgrasp",
+      "description": null,
+      "fork": false,
+      "parent": null,
+      "default_branch": "main",
+      "tree_sha": "0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b",
+      "tree_truncated": false
+    },
+    {
+      "repo": "Xuanyuan-jiang/anydexgrasp_with_ME",
+      "description": null,
+      "fork": false,
+      "parent": null,
+      "default_branch": "main",
+      "tree_sha": "8a88e2cf2d787fe7d76721fe66f537f1947c81ae",
+      "tree_truncated": false
+    }
+  ],
+  "recursive_tree_checks": [
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "head": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "entries": 1852,
+      "truncated": false
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "head": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "entries": 583,
+      "truncated": false
+    },
+    {
+      "repo": "RDChen0501/AnyDexGrasp",
+      "head": "124c4f4ca6a5a7b7a60d5f39cce4220829485c0f",
+      "entries": 545,
+      "truncated": false
+    }
+  ],
+  "downloaded_source_files": [
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/README.md",
+      "bytes": 2679,
+      "sha256": "10f6ed81f62ce1cfcc8311a69a7b1b1f1e06739a61c966827145dfce6f536eaa"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "collect_rs_inspire_grasp_data.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/collect_rs_inspire_grasp_data.py",
+      "bytes": 13496,
+      "sha256": "1a60aa7608cbcfb0a0923a664a72a66d6ec3633bc0ecc30fd80d56876d3bd9e3"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "robosuite_env.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/robosuite_env.py",
+      "bytes": 18893,
+      "sha256": "d855371e5e26e93fbd9cbdad21806b3882756e389012ecc2f5a2dc827571fe86"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "robosuite_inspire.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/robosuite_inspire.py",
+      "bytes": 22092,
+      "sha256": "faa24e982ff769d017a2c1085e6b46833eb9a0bc54018f19e0366e48fb468b6e"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "InspireHandR_grasp.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/InspireHandR_grasp.py",
+      "bytes": 35436,
+      "sha256": "29c69c45d8209b1dca640f2a9791345df04c184902edebd1e9014bb2fd9843c4"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "train_multifinger.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/train_multifinger.py",
+      "bytes": 24054,
+      "sha256": "0a71949f981ad13ff7dcf995c593b782759490d5b2117b87990ddb2544d2c2fe"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "AnyDexGrasp/models/minkowski_graspnet.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/AnyDexGrasp/models/minkowski_graspnet.py",
+      "bytes": 16922,
+      "sha256": "3ac08e647bfebe35b189d3f610bf0ddf247ac9114aef22f02407c8a6a2fdf58e"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "AnyDexGrasp/models/loss.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/AnyDexGrasp/models/loss.py",
+      "bytes": 28023,
+      "sha256": "2edfc1c4176f9fa44be917381bdd2d57c221cff9b0688f347451dcb0a6f9f150"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "AnyDexGrasp/dataset/multifinger_hand.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/AnyDexGrasp/dataset/multifinger_hand.py",
+      "bytes": 7700,
+      "sha256": "1e99385cf5f3f90c48243983505f4a86b1a7062cad58d41f0fcec172d841e79d"
+    },
+    {
+      "repo": "kywch/AnyDexGrasp",
+      "commit": "3888737ef280fb4707601501c593a5a5a2f0bb20",
+      "path": "diverse_lift/lift_env.py",
+      "url": "https://raw.githubusercontent.com/kywch/AnyDexGrasp/3888737ef280fb4707601501c593a5a5a2f0bb20/diverse_lift/lift_env.py",
+      "bytes": 12573,
+      "sha256": "33a0fad6a7b10093d0e783bedce7a7c403fd32dbc7f273168d80f4219f0f1bbd"
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "path": "inference_v3/config.py",
+      "url": "https://raw.githubusercontent.com/SevenFo/AnyDexGrasp/34323059f21d181ceb107a5bf6e42258c3b5ae58/inference_v3/config.py",
+      "bytes": 2568,
+      "sha256": "aab3cf3970ff89dec6eb2035611273a93329f7b8af51e8ac2a6fed35d68ee4e7"
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "path": "inference_v3/utils/robot_utils.py",
+      "url": "https://raw.githubusercontent.com/SevenFo/AnyDexGrasp/34323059f21d181ceb107a5bf6e42258c3b5ae58/inference_v3/utils/robot_utils.py",
+      "bytes": 735,
+      "sha256": "e9f3fa0505db7a2af918939745fc549c47a0798a2163da66acd06db692ae893e"
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "path": "inference_v3/utils/grasp_utils.py",
+      "url": "https://raw.githubusercontent.com/SevenFo/AnyDexGrasp/34323059f21d181ceb107a5bf6e42258c3b5ae58/inference_v3/utils/grasp_utils.py",
+      "bytes": 8255,
+      "sha256": "db0d59cad179040ca57586087299d5474c819bddb42e9fc7717cac2a5196c469"
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "path": "inference_v3/utils/net_utils.py",
+      "url": "https://raw.githubusercontent.com/SevenFo/AnyDexGrasp/34323059f21d181ceb107a5bf6e42258c3b5ae58/inference_v3/utils/net_utils.py",
+      "bytes": 4563,
+      "sha256": "8b0a693328cadcc942ab403e89d7af3c11bdedd7620bd21111893fd57dd6c428"
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "path": "models/inspire_hand_grasp.py",
+      "url": "https://raw.githubusercontent.com/SevenFo/AnyDexGrasp/34323059f21d181ceb107a5bf6e42258c3b5ae58/models/inspire_hand_grasp.py",
+      "bytes": 1898,
+      "sha256": "8b6367bf09faca9e1fe72e0b99fa0be3238986d608ed391e6d2e476951da82b1"
+    },
+    {
+      "repo": "SevenFo/AnyDexGrasp",
+      "commit": "34323059f21d181ceb107a5bf6e42258c3b5ae58",
+      "path": "ros_ws/COMPLETE_USAGE_GUIDE.md",
+      "url": "https://raw.githubusercontent.com/SevenFo/AnyDexGrasp/34323059f21d181ceb107a5bf6e42258c3b5ae58/ros_ws/COMPLETE_USAGE_GUIDE.md",
+      "bytes": 6617,
+      "sha256": "26487cb45df28938acdfac0fd72480764c5df2bf8a03df05f3d7add0ab621ed3"
+    },
+    {
+      "repo": "RDChen0501/AnyDexGrasp",
+      "commit": "124c4f4ca6a5a7b7a60d5f39cce4220829485c0f",
+      "path": "ur_toolbox/ur_toolbox/robot/franka.py",
+      "url": "https://raw.githubusercontent.com/RDChen0501/AnyDexGrasp/124c4f4ca6a5a7b7a60d5f39cce4220829485c0f/ur_toolbox/ur_toolbox/robot/franka.py",
+      "bytes": 13004,
+      "sha256": "37d130acb4be0fb1ceaf1c2db98afede64075c459de55ff22d67cda13666ef05"
+    },
+    {
+      "repo": "RDChen0501/AnyDexGrasp",
+      "commit": "124c4f4ca6a5a7b7a60d5f39cce4220829485c0f",
+      "path": "calibrate_camera.py",
+      "url": "https://raw.githubusercontent.com/RDChen0501/AnyDexGrasp/124c4f4ca6a5a7b7a60d5f39cce4220829485c0f/calibrate_camera.py",
+      "bytes": 6048,
+      "sha256": "1d6ce2949504763f384a009d55ec1040db7e20b5b5afa4b50b7bb0a788542cb0"
+    },
+    {
+      "repo": "RDChen0501/AnyDexGrasp",
+      "commit": "124c4f4ca6a5a7b7a60d5f39cce4220829485c0f",
+      "path": "robot_franka.py",
+      "url": "https://raw.githubusercontent.com/RDChen0501/AnyDexGrasp/124c4f4ca6a5a7b7a60d5f39cce4220829485c0f/robot_franka.py",
+      "bytes": 40991,
+      "sha256": "d87d62db2b7f46c979e6d4450a7a6080892aa750e103f448ea00f67ab293acaa"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/README.md",
+      "bytes": 7983,
+      "sha256": "c752514ce6222258fcc38a09e6b3610ca8d518829555c7da53368ec966192129"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "docs/own_hand_pipeline.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/docs/own_hand_pipeline.md",
+      "bytes": 5937,
+      "sha256": "87cbf4b05bd56e598ac7258104ab25aba3694f7eab414137f280a02d97881175"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "own_hand/own_hand_grasp.py",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/own_hand/own_hand_grasp.py",
+      "bytes": 17082,
+      "sha256": "fae7d39d1739529ca9bc11a3bd1082040e312f17db3a082c456236fd1c03a943"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "docs/自研灵巧手参数说明_byaq.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/docs/%E8%87%AA%E7%A0%94%E7%81%B5%E5%B7%A7%E6%89%8B%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E_byaq.md",
+      "bytes": 12750,
+      "sha256": "72a99d7f76fc867b2359ac13c669d508df48e036c6fa58129f6e43cb9c2128c3"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "docs/自研手抓取重标定操作步骤.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/docs/%E8%87%AA%E7%A0%94%E6%89%8B%E6%8A%93%E5%8F%96%E9%87%8D%E6%A0%87%E5%AE%9A%E6%93%8D%E4%BD%9C%E6%AD%A5%E9%AA%A4.md",
+      "bytes": 12275,
+      "sha256": "bb6f1a53cb325a5589e76f75abef8bb66aec4e06cd564130704e9f0074ad7ba4"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "own_hand/tools/test_own_chain_closure.py",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/own_hand/tools/test_own_chain_closure.py",
+      "bytes": 5390,
+      "sha256": "f4d9f1b24f85c8e9e466180ec14704ea31a35c7fedd71e4b73d5d863e200722d"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "own_hand/problems/问题分析回执.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/own_hand/problems/%E9%97%AE%E9%A2%98%E5%88%86%E6%9E%90%E5%9B%9E%E6%89%A7.md",
+      "bytes": 4422,
+      "sha256": "a65fc0451f472a14ee76fc5f2062b7cade7756b861994088bd28ba3e38715377"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "scripts/hand_bridge.py",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/scripts/hand_bridge.py",
+      "bytes": 7515,
+      "sha256": "13b09bf49eb98d935110141c9adac668fd090287dbd51ba65d4cc96f415b8fbd"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "docs/自研手几何数据.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/docs/%E8%87%AA%E7%A0%94%E6%89%8B%E5%87%A0%E4%BD%95%E6%95%B0%E6%8D%AE.md",
+      "bytes": 5628,
+      "sha256": "987e7cf8470f566edfdb6ac6b1370c22e6be244ec205db4da957f6c8feab6767"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "own_hand/tools/search_contact_groups.py",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/own_hand/tools/search_contact_groups.py",
+      "bytes": 4273,
+      "sha256": "36f42d5adedfdd2593f531a74b7d9404920eee30a59523d6376f1ecb0cdf4d91"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "own_hand/docs/自研手几何替换Inspire-进度与计划.md",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/own_hand/docs/%E8%87%AA%E7%A0%94%E6%89%8B%E5%87%A0%E4%BD%95%E6%9B%BF%E6%8D%A2Inspire-%E8%BF%9B%E5%BA%A6%E4%B8%8E%E8%AE%A1%E5%88%92.md",
+      "bytes": 14602,
+      "sha256": "e2e6eb4b84412cbde92296565df89bf25d39d4395e74fe9eb9b6f9a8031a62f5"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "scripts/grasp_pipeline.py",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/scripts/grasp_pipeline.py",
+      "bytes": 9068,
+      "sha256": "8308b13c91b8b27acc4140bc97a1cf8d7a898ff1f22dc7b971cb6ef9582e1285"
+    },
+    {
+      "repo": "kittvnebluda/anydexgrasp",
+      "commit": "0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/kittvnebluda/anydexgrasp/0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b/README.md",
+      "bytes": 3169,
+      "sha256": "54bacbb903638de54d6f8e65a32418be2ed07e2685f1ea06695324149e1e13a7"
+    },
+    {
+      "repo": "kittvnebluda/anydexgrasp",
+      "commit": "0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b",
+      "path": "adg_server/hand.py",
+      "url": "https://raw.githubusercontent.com/kittvnebluda/anydexgrasp/0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b/adg_server/hand.py",
+      "bytes": 2086,
+      "sha256": "983a69515ee4ef8757de5b30eb3fef101dde52fcf378fbecabbb016a09f72746"
+    },
+    {
+      "repo": "Xuanyuan-jiang/anydexgrasp_with_ME",
+      "commit": "8a88e2cf2d787fe7d76721fe66f537f1947c81ae",
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/Xuanyuan-jiang/anydexgrasp_with_ME/8a88e2cf2d787fe7d76721fe66f537f1947c81ae/README.md",
+      "bytes": 5618,
+      "sha256": "d25673cfaa7b0a37e1472665f571b64985758b868009ce3677145c3bd5b1cddf"
+    },
+    {
+      "repo": "Jonas-Z-up/AnyDexGrasp_ws",
+      "commit": "444199bb10bb715578f014068ab18dbff49a890b",
+      "path": "scripts/tools/compute_hand_geometry.py",
+      "url": "https://raw.githubusercontent.com/Jonas-Z-up/AnyDexGrasp_ws/444199bb10bb715578f014068ab18dbff49a890b/scripts/tools/compute_hand_geometry.py",
+      "bytes": 20731,
+      "sha256": "62ab2a00890dcb1ade5f67c74899982e502298bcdf06c3852b59588b96f14ae7"
+    },
+    {
+      "repo": "kittvnebluda/anydexgrasp",
+      "commit": "0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b",
+      "path": "adg_server/planner.py",
+      "url": "https://raw.githubusercontent.com/kittvnebluda/anydexgrasp/0b59bfb02bdf59c1a21cae2522edc71bc4ca8f2b/adg_server/planner.py",
+      "bytes": 10333,
+      "sha256": "b16733e1776051295666343321523cc41a1878b15447813fd25daa2165734b75"
+    }
+  ],
+  "limitations": [
+    "Only public visible repositories and branches found by these queries; not an exhaustive global search.",
+    "kywch compare API returned 300 paths; full changed-file count not inferred. Complete tree was retrieved separately.",
+    "Downloaded-file inventory is not a claim of line-by-line inspection of every source.",
+    "No third-party source or install/controller script was executed; no performance claims reproduced.",
+    "Initial final two-file download encountered TLS timeout; one configured alternate-proxy retry succeeded."
+  ],
+  "actions": {
+    "new_training": 0,
+    "new_CGR_inference": 0,
+    "new_physics": 0,
+    "hardware_connections": 0,
+    "thirdparty_code_executions": 0,
+    "CanonDex_writes": 0
+  }
+}

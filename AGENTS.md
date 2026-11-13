@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-14 最新：参考 fork 已检出，几何与 11 分支离线对齐完成
+
+用户授权参考跨手适配。三个固定版本真实 Git 检出在 outputs/reference_repos_20261114：Jonas own_hand、kywch pixi、kitt server；轻量来源锁见 reproduction/evidence/fork_adaptation_survey_20261114。参考工程方法，不借用其它手模型、不运行第三方机器人脚本。报告 reproduction/FORK_ADAPTATION_SURVEY_20261114.md。
+
+新 outputs/boya_reference_alignment_20261114_v2 complete，协议SHA7d55300aab23d9258eafa49c487ea94446556da195a243a1f209c9eb58439c41。独立 NumPy/XML URDF FK 297状态/924槽，矩阵误差最大1.8263e-14，未发现表格/FK接线错误。源pad五点仍candidate_pending_human_review。四型开度均单调闭合，但自由闭合中点开→闭移动42.403/46.318/50.742/33.880mm，接近轴19.864/42.684/19.406/110.066度，g8相邻槽最大34.068度。是静态源标注语义，不是实际物体/手掌漂移或失败因果；未更改映射、动作或标签，g6两点不能唯一确定三角面法向。
+
+新增run_augmented_representation.py opt-in，复用冻结原CGR/helper，AST原增强/反射恢复，全部10矩阵在identity前生成，RNG顺序推进，排除DH3 rig门。单个已用A0旧RGBD，1strict模型/11前向=22528候选，identity17数组与旧缓存全相同；合并来源/全部特征/独立坐标恢复/canonical480通过。通用预几何top1000有106identity/894增强，不是Boya手域后准入或成功率提升。原identity场景云保留给碰撞。21tests，59输入/源码/资产/旧模型哈希不变；原八头/435/CanonDex不改，0手评分头/训练/物理。11前向内部1.1968s、runner27.9884s含序列化，无速度倍数结论。v1静态解析误拒fixed关节零axis保留，0模型/前向/物理；v2仅修独立解析器与测试，无推理重试。
+
+报告reproduction/boya/REFERENCE_ALIGNMENT_RESULTS_20261114.md，轻量证据evidence/reference_alignment_20261114，图表outputs/boya_reference_alignment_20261114_v2/review/index.html。入口未晋级默认，无后台任务，不自动新物理/重训/调阈值；旧57评分漏选及1/12、3/6、所有负结果仍成立，整体论文复现未验收。新手几何更改会改变旧标签动作语义，不能直接套fork闭合锚点/偏移覆盖。只提交轻量相关内容，大输出忽略。
+
 ## 2026-11-12 最新：固定57候选关键验证完成，三件均有成功，现用评分首选0/3
 
 用户授权验证“候选没有好抓法还是评分没选中”。outputs/boya_fixed_pool_20261112_v1物理complete，协议SHA c519b2be601e58fa88101aabb745848f8164301c6748f8df252e64772d77cc32。A3/A6/E0两套旧评分全部已保存几何准入61来源，严格物理数组去重57=31/11/15；不只用漏掉E0成功的旧preact35池。15最早同条件历史复用+42新各一次，成功分别1/31、2/11、2/15，总5/57；新增成功A3 s1642/g8、A6 s1573/g8、E0 s1842/g6。没有改映射、闭合或执行条件，三件均存在能抓起的候选。

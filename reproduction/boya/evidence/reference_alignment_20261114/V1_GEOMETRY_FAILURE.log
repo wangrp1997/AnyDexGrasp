@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py", line 229, in <module>
+    main()
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py", line 222, in main
+    result = audit(args.calibration.resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py", line 139, in audit
+    fk = URDFFK(ET.parse(urdf).getroot())
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py", line 68, in __init__
+    axis=unit(np.fromstring(axis.get('xyz', '1 0 0') if axis is not None else '1 0 0', sep=' ')),
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py", line 31, in unit
+    raise ValueError('Degenerate vector')
+ValueError: Degenerate vector

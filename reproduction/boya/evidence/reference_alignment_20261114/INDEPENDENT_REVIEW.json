@@ -1,0 +1,95 @@
+{
+  "schema": "boya_reference_alignment_independent_review_v1",
+  "status": "complete",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/PROTOCOL.json",
+    "sha256": "7d55300aab23d9258eafa49c487ea94446556da195a243a1f209c9eb58439c41"
+  },
+  "representation": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/RESULTS.json",
+    "sha256": "77723b963054197c6b621be5ffa60e055f2b70ec2f5833e3de3b5780e93a689e"
+  },
+  "geometry": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/GEOMETRY_AUDIT.json",
+    "sha256": "b99994dec96f74461b67a4574f75006cb780a062fe7016df76fd7f483658992a"
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/review_reference_alignment.py": "f9c35cb6856ec3546c9fd9e9368df6a7cb1cdf9980b55a5fbad6bb6bb55cec34"
+  },
+  "branch_candidate_counts": [
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048,
+    2048
+  ],
+  "merged_rows": 22528,
+  "all_paired_features_and_provenance_exact": true,
+  "independent_recovery_max_position_error_m": 9.595216610147617e-08,
+  "independent_recovery_max_rotation_element_error": 8.428887887657055e-08,
+  "identity_all_arrays_exact": true,
+  "identity_sparse_collision_cloud_exact": true,
+  "canonical_bridge": {
+    "cgr_limit": 1000,
+    "thumb_flip_policy": "both",
+    "queries": 8000,
+    "feature_shape": [
+      8000,
+      480
+    ],
+    "global_CGR_top1000_branch_counts": {
+      "0": 106,
+      "1": 110,
+      "2": 104,
+      "3": 85,
+      "4": 62,
+      "5": 99,
+      "6": 90,
+      "7": 85,
+      "8": 73,
+      "9": 92,
+      "10": 94
+    },
+    "old_identity_top1000_retained": 106,
+    "scope": "Generic pregeometry top1000 only; no Boya hand-domain/width/table/cloud admission, head score or physical feasibility claim"
+  },
+  "geometry_extra": {
+    "1": {
+      "max_adjacent_approach_angle_deg": 14.699878909515007,
+      "opponent_normal_points_away_samples": 1,
+      "sample_count": 33,
+      "semantics": "Static annotated normals only; no force-closure or penetration test"
+    },
+    "6": {
+      "max_adjacent_approach_angle_deg": 5.160731485034362,
+      "opponent_normal_points_away_samples": 0,
+      "sample_count": 33,
+      "semantics": "Static annotated normals only; no force-closure or penetration test"
+    },
+    "7": {
+      "max_adjacent_approach_angle_deg": 8.972952108880097,
+      "opponent_normal_points_away_samples": 0,
+      "sample_count": 33,
+      "semantics": "Static annotated normals only; no force-closure or penetration test"
+    },
+    "8": {
+      "max_adjacent_approach_angle_deg": 34.06832346141655,
+      "opponent_normal_points_away_samples": 0,
+      "sample_count": 33,
+      "semantics": "Static annotated normals only; no force-closure or penetration test"
+    }
+  },
+  "frozen_files_unchanged": true,
+  "new_CGR_forwards": 11,
+  "review_model_loads": 0,
+  "new_physics_steps": 0,
+  "new_training_steps": 0,
+  "actual_inference_seconds": 1.1967720354441553,
+  "runner_wall_seconds": 27.98839402711019
+}

@@ -1,0 +1,2679 @@
+{
+  "schema": "boya_original_augmented_representation_v1",
+  "status": "complete",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/PROTOCOL.json",
+    "sha256": "7d55300aab23d9258eafa49c487ea94446556da195a243a1f209c9eb58439c41"
+  },
+  "scope": "Known-scene offline identity + ten original augmentations; no physical or generalization claim",
+  "full_representation_forward": true,
+  "test_time_augmentation_branches": 11,
+  "new_training_steps": 0,
+  "new_physics_steps": 0,
+  "hand_head_loaded": false,
+  "model_load_count": 1,
+  "network_forward_count": 11,
+  "branches": [
+    {
+      "index": 0,
+      "scene_reflection": false,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "d459f75fe8c8dfc05de7f265d24eb964d364b4b51565496143197705a48cef18",
+      "input_coords_sha256": "26721f723a52653e314910db8681c44dcdac0e79b1668ff48a3539a89aa4037a",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/00/raw_camera_candidates.npz",
+          "sha256": "b05aa090ced59b3c238e1d00420c7706517a5159429e2d4a6d1256a1a7a04d8a",
+          "bytes": 12906319
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/00/recovered_camera_candidates.npz",
+          "sha256": "b05aa090ced59b3c238e1d00420c7706517a5159429e2d4a6d1256a1a7a04d8a",
+          "bytes": 12906319
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/00/representation_outputs.npz",
+          "sha256": "a0f5db74380e5d317f11129af5a888325143507444758e638df6f19cc5314015",
+          "bytes": 18224418
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 21778,
+          "coordinate_shape": [
+            21778,
+            4
+          ],
+          "feature_shape": [
+            21778,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 463300096,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            21778,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            21778
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            21778,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            21778,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.056181692983955145,
+          "full_representation_forward": 0.643461064202711,
+          "original_parse_preds": 0.03732366790063679,
+          "output_serialization": 1.1977302869781852
+        }
+      },
+      "wall_seconds": 2.5727727729827166
+    },
+    {
+      "index": 1,
+      "scene_reflection": false,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          0.9654375910758972,
+          -0.2606343626976013,
+          0.0,
+          -0.017160948365926743
+        ],
+        [
+          0.2606343626976013,
+          0.9654375910758972,
+          0.0,
+          -0.008691729977726936
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "f5f537a299ff108fbde57c7c6f3542a7c861230079d13a29d2a24dd904b6e445",
+      "input_coords_sha256": "c0ef44731619ab85f4ede9fae72c5472d4fe49adc811d9b1468e134a0b045179",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/01/raw_camera_candidates.npz",
+          "sha256": "6ebbf806fefc307a32b324aa335f19dfdc83262bd5584aadd0e3fa6452505dda",
+          "bytes": 12897113
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/01/recovered_camera_candidates.npz",
+          "sha256": "0ab5058188129c33e6048284d5d2fe6cdcae8d45eecf048e919d0ebbd3159132",
+          "bytes": 12892774
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/01/representation_outputs.npz",
+          "sha256": "a2e0bee105f5859f2acce59e38326a0760e5bba7007a195ad5f0c1acde3fc2cc",
+          "bytes": 18349455
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23282,
+          "coordinate_shape": [
+            23282,
+            4
+          ],
+          "feature_shape": [
+            23282,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 468743168,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23282,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23282
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23282,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23282,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.013852938078343868,
+          "full_representation_forward": 0.05464726593345404,
+          "original_parse_preds": 0.0027804358396679163,
+          "output_serialization": 1.1719416060950607
+        }
+      },
+      "wall_seconds": 1.8231804228853434
+    },
+    {
+      "index": 2,
+      "scene_reflection": true,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          -0.9999799132347107,
+          -0.006340225227177143,
+          0.0,
+          -0.020677048712968826
+        ],
+        [
+          -0.006340225227177143,
+          0.9999799132347107,
+          0.0,
+          -0.018516018986701965
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "4660b54df8992f927da10855af18016bd74448324e2c7011737ecaae2f236a81",
+      "input_coords_sha256": "b7287b068e4e23d0f2e76af320c137922c8a0afe1b17e463e0c57829c2bf40cb",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/02/raw_camera_candidates.npz",
+          "sha256": "7b85bd4fc086cffd65e1923d8f43355b4087670bca8052c6415f1ffd0eb7011b",
+          "bytes": 12905091
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/02/recovered_camera_candidates.npz",
+          "sha256": "7ccf909fd9c45c3f7067274b9ad833b97fb44e2d922379d6832ee53a6fbaa38f",
+          "bytes": 12901260
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/02/representation_outputs.npz",
+          "sha256": "59f502ee42cb1e45bbcd0ce64b4b18504a6e02396df0f6a4811851e197d06fa9",
+          "bytes": 18288093
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 21614,
+          "coordinate_shape": [
+            21614,
+            4
+          ],
+          "feature_shape": [
+            21614,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 464595968,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            21614,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            21614
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            21614,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            21614,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.018784396117553115,
+          "full_representation_forward": 0.052615131018683314,
+          "original_parse_preds": 0.0026034230832010508,
+          "output_serialization": 1.17342320503667
+        }
+      },
+      "wall_seconds": 1.822598529048264
+    },
+    {
+      "index": 3,
+      "scene_reflection": false,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          0.940628707408905,
+          0.33943718671798706,
+          0.0,
+          0.019541168585419655
+        ],
+        [
+          -0.33943718671798706,
+          0.940628707408905,
+          0.0,
+          0.023709259927272797
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "b247b5315a255f078d615e35efaeca121470b89cb069e23be19f3ac5aa519ed2",
+      "input_coords_sha256": "248613848f8f9673afdc6086e1bbf776283c78e5771bfef3b090034dc46d3f15",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/03/raw_camera_candidates.npz",
+          "sha256": "9207a86745cab910345ff0ee66da1e9af71dd985364d8ae075d337e3d9f90c92",
+          "bytes": 12882026
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/03/recovered_camera_candidates.npz",
+          "sha256": "7945b9429b8e62cbfcd5903f04ae5130b7d18294d3417aed6573ea219e37bd12",
+          "bytes": 12878004
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/03/representation_outputs.npz",
+          "sha256": "cfcf4890f9384d95e223cf42fe7c68b84dc2a8f99db59b83ac63a6033e875293",
+          "bytes": 18343388
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23689,
+          "coordinate_shape": [
+            23689,
+            4
+          ],
+          "feature_shape": [
+            23689,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 469138944,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23689,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23689
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23689,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23689,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.014559426112100482,
+          "full_representation_forward": 0.054925830103456974,
+          "original_parse_preds": 0.002767917001619935,
+          "output_serialization": 1.1752197809983045
+        }
+      },
+      "wall_seconds": 1.8187498468905687
+    },
+    {
+      "index": 4,
+      "scene_reflection": true,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          -0.9208895564079285,
+          -0.3898235857486725,
+          0.0,
+          0.01786169782280922
+        ],
+        [
+          -0.3898235857486725,
+          0.9208895564079285,
+          0.0,
+          -0.035777315497398376
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "99c968cd41070843da7994836c1851fa81ec2d6380c7663a13e35766f0e5907a",
+      "input_coords_sha256": "482840815d570614128cc978a2d5fb599e1a4e0405289ddbcc25a0372900055c",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/04/raw_camera_candidates.npz",
+          "sha256": "04c1680db7233d8b9879cb4b3654ded25ae27ee197d7951a8be1662de2fc2c73",
+          "bytes": 12875934
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/04/recovered_camera_candidates.npz",
+          "sha256": "5a46c32ed58079ce2422a9912ef13ce80ffff335e1b6574d312f6831d7796cf8",
+          "bytes": 12871545
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/04/representation_outputs.npz",
+          "sha256": "4ee26dd3f84392c369a2cc49c8900284889e25c04d0bd0880e13ffbc88a43676",
+          "bytes": 18347749
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23879,
+          "coordinate_shape": [
+            23879,
+            4
+          ],
+          "feature_shape": [
+            23879,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 469646336,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23879,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23879
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23879,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23879,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.01793462596833706,
+          "full_representation_forward": 0.05898546311073005,
+          "original_parse_preds": 0.0033418701495975256,
+          "output_serialization": 1.2017702718731016
+        }
+      },
+      "wall_seconds": 1.8693414749577641
+    },
+    {
+      "index": 5,
+      "scene_reflection": false,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          0.9245322942733765,
+          -0.38110366463661194,
+          0.0,
+          -0.03192863240838051
+        ],
+        [
+          0.38110366463661194,
+          0.9245322942733765,
+          0.0,
+          0.04960270971059799
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "f226d2ffe07c016873ff46da49e4db879054fff7ff1333ba748c917de84f21a1",
+      "input_coords_sha256": "55629439def4e30975c7d1c1f05fc3b390f51f71fec484a635151b14f21c54e3",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/05/raw_camera_candidates.npz",
+          "sha256": "37e5eeb268e040293c3afdfe551a59bc7276c177e2b94af6de8e283ace28d226",
+          "bytes": 12901581
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/05/recovered_camera_candidates.npz",
+          "sha256": "ec72f73f7b3693227d222bc663f0cdd99a83a0e3b8dd63a37edc3ac08c3f207b",
+          "bytes": 12897518
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/05/representation_outputs.npz",
+          "sha256": "d98c5399db187e01adc4384fbb52d87463628509f93eef652b5be23cda65304a",
+          "bytes": 18362526
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23907,
+          "coordinate_shape": [
+            23907,
+            4
+          ],
+          "feature_shape": [
+            23907,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 469707264,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23907,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23907
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23907,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23907,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.028648594161495566,
+          "full_representation_forward": 0.05865568481385708,
+          "original_parse_preds": 0.002768649021163583,
+          "output_serialization": 1.201319572981447
+        }
+      },
+      "wall_seconds": 1.8866790740285069
+    },
+    {
+      "index": 6,
+      "scene_reflection": true,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          -0.9681128859519958,
+          -0.25051432847976685,
+          0.0,
+          0.04686416685581207
+        ],
+        [
+          -0.25051432847976685,
+          0.9681128859519958,
+          0.0,
+          0.019097965210676193
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "1d718a256dbb6a80430cdffb1932f342b5fcca3800096f14820f5904f407b3f0",
+      "input_coords_sha256": "be593832afa0d65171650c0f752edb0790bfb47a0cf8b9446373be34828051fc",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/06/raw_camera_candidates.npz",
+          "sha256": "e28f44eeb370293cd3ee27d9a836c180824f47608bbf508616fcce24ec960279",
+          "bytes": 12903327
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/06/recovered_camera_candidates.npz",
+          "sha256": "d168fe247f62f74b3763d3bdf2ecad51fbec89c4849017c46c2952691e1d7eee",
+          "bytes": 12899300
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/06/representation_outputs.npz",
+          "sha256": "178ae071632e36f92e140063c58ea63312536d420af2e6012bf5773511e8c17c",
+          "bytes": 18357613
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23271,
+          "coordinate_shape": [
+            23271,
+            4
+          ],
+          "feature_shape": [
+            23271,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 468715008,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23271,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23271
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23271,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23271,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.04153250390663743,
+          "full_representation_forward": 0.0563261779025197,
+          "original_parse_preds": 0.007283007958903909,
+          "output_serialization": 1.1712906500324607
+        }
+      },
+      "wall_seconds": 1.8617250320967287
+    },
+    {
+      "index": 7,
+      "scene_reflection": false,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          0.9765865802764893,
+          -0.21512460708618164,
+          0.0,
+          -0.04251512140035629
+        ],
+        [
+          0.21512460708618164,
+          0.9765865802764893,
+          0.0,
+          -0.0088196387514472
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "4169787e092aa2a4bdd1785bbd398f239242ef57f281659f77d55e9666e018f5",
+      "input_coords_sha256": "a8ec799ebf3a2a35c6710af75cc2c5bca800fe04711b73f25c0a9ff93d4ef8f3",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/07/raw_camera_candidates.npz",
+          "sha256": "39690336275102fba9247e6183a0011429832f60e0dc7c1f6890080245da80ba",
+          "bytes": 12905576
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/07/recovered_camera_candidates.npz",
+          "sha256": "463bae6c73a5f9dc26f9024e32610a1ad68fbec7f0171604ad03e83f25bf0001",
+          "bytes": 12901325
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/07/representation_outputs.npz",
+          "sha256": "01d0118163348379049d11d01b17df91fcfee8bb5cd40b529dbebab0a93e2ab8",
+          "bytes": 18349256
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23031,
+          "coordinate_shape": [
+            23031,
+            4
+          ],
+          "feature_shape": [
+            23031,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 468303360,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23031,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23031
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23031,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23031,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.01275486801750958,
+          "full_representation_forward": 0.0546234711073339,
+          "original_parse_preds": 0.0025630840100347996,
+          "output_serialization": 1.1645296569913626
+        }
+      },
+      "wall_seconds": 1.8075724400114268
+    },
+    {
+      "index": 8,
+      "scene_reflection": true,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          -0.9769357442855835,
+          0.21353358030319214,
+          0.0,
+          0.002292877295985818
+        ],
+        [
+          0.21353358030319214,
+          0.9769357442855835,
+          0.0,
+          0.04030188173055649
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "414ea0ba4dedfaae0895235e2fd6b10af67ad5bb76f0a5389ebd019d7cc9b34d",
+      "input_coords_sha256": "afbdb8a6c80a7252799f5e19fc81003faf8b4ec60137ec086b6aaecc6b38573c",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/08/raw_camera_candidates.npz",
+          "sha256": "597a211a0198d620c1d6a2ee5da5863c465a8375ef47c4619941e3a685265338",
+          "bytes": 12925136
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/08/recovered_camera_candidates.npz",
+          "sha256": "0a091d29440b4fb9d46b1770c8dae47901175e33b3eb428626fcc97a75a0c514",
+          "bytes": 12920855
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/08/representation_outputs.npz",
+          "sha256": "09c371ea58ce26cbbb2b7cecda8ccdcd1a59eacb21075cad67d4edf6cdfd85cd",
+          "bytes": 18368126
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 23073,
+          "coordinate_shape": [
+            23073,
+            4
+          ],
+          "feature_shape": [
+            23073,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 468373504,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            23073,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            23073
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            23073,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            23073,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.014630372170358896,
+          "full_representation_forward": 0.054715167032554746,
+          "original_parse_preds": 0.004449342843145132,
+          "output_serialization": 1.163288014009595
+        }
+      },
+      "wall_seconds": 1.8215908028651029
+    },
+    {
+      "index": 9,
+      "scene_reflection": false,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          0.9921653270721436,
+          0.12493182718753815,
+          0.0,
+          0.014833565801382065
+        ],
+        [
+          -0.12493182718753815,
+          0.9921653270721436,
+          0.0,
+          0.029865048825740814
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "532aed35c230f55787ed8f757102143a835aa010b9384875dc95ede4845a81ad",
+      "input_coords_sha256": "505a5dae6e391a7d39f50406eb939e2226db0fde4645a47d34eef661173e253f",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/09/raw_camera_candidates.npz",
+          "sha256": "deafdaf1bb9683a7ab5cbd1c9c6f74955bf0dcd4d20e10b4fc1185a860d7a13b",
+          "bytes": 12936463
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/09/recovered_camera_candidates.npz",
+          "sha256": "e406fa6ed83f1092c066a77e33b748d7f7a46ffc61b7974d17d4ec0cdc775b96",
+          "bytes": 12932347
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/09/representation_outputs.npz",
+          "sha256": "4abac57decd3e04eb3528eac6b399e65818d06309c9979f8c35e9b611637bed2",
+          "bytes": 18367115
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 22513,
+          "coordinate_shape": [
+            22513,
+            4
+          ],
+          "feature_shape": [
+            22513,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 467423744,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            22513,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            22513
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            22513,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            22513,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.021510452032089233,
+          "full_representation_forward": 0.05410422012209892,
+          "original_parse_preds": 0.004787113983184099,
+          "output_serialization": 1.1747857669834048
+        }
+      },
+      "wall_seconds": 1.8322536670602858
+    },
+    {
+      "index": 10,
+      "scene_reflection": true,
+      "thumb_flip_applied": false,
+      "transform": [
+        [
+          -0.9999008774757385,
+          -0.014078101143240929,
+          0.0,
+          -0.01873834617435932
+        ],
+        [
+          -0.014078101143240929,
+          0.9999008774757385,
+          0.0,
+          0.009223846718668938
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "rng_before": {
+        "CPU": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+        "CUDA": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+        "NumPy": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+      },
+      "input_points_sha256": "02e4b479f79037a7eaba659a03fa1d6ae612c666b54b453a106ec7c52818b1f0",
+      "input_coords_sha256": "9ee7b2690e391644774142ea267209027e60e1b2cad758e07ff81d57595dc2fd",
+      "output_files": {
+        "raw_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/10/raw_camera_candidates.npz",
+          "sha256": "072d2e08d6f2655facaaa6ac1433f14251793bab099531ee0a1cd5e8f586e48d",
+          "bytes": 12938300
+        },
+        "recovered_camera_candidates.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/10/recovered_camera_candidates.npz",
+          "sha256": "abb8a551e6510bac062fa60ca1cfb2eb168866657d4d5f2d77a26ce7007dcd5a",
+          "bytes": 12934392
+        },
+        "representation_outputs.npz": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/branches/10/representation_outputs.npz",
+          "sha256": "4e03f86794c39a6f84f7d88bf4611566ced9ceef855d76c882988a89e948c58f",
+          "bytes": 18321679
+        }
+      },
+      "detail": {
+        "sparse_input": {
+          "unique_voxels": 21643,
+          "coordinate_shape": [
+            21643,
+            4
+          ],
+          "feature_shape": [
+            21643,
+            3
+          ]
+        },
+        "native_operator_call_counts": {
+          "furthest_point_sample": 1,
+          "cylinder_query": 1,
+          "grouping_operation": 2
+        },
+        "random_forward_call_counts": {
+          "multinomial": 0,
+          "randperm": 0
+        },
+        "rng": {
+          "seed": 20261108,
+          "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+          "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+          "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+          "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+          "constructor_CUDA_rng_unchanged": true,
+          "constructor_skipped_random_draws_replayed": true,
+          "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff",
+          "CPU_after_frame_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+          "CUDA_after_frame_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf"
+        },
+        "peak_cuda_tensor_memory_bytes": 464660480,
+        "output_shapes": {
+          "stage1_objectness_pred": [
+            21643,
+            2
+          ],
+          "stage1_heatmap_pred": [
+            21643
+          ],
+          "stage2_seed_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_seed_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_xyz": [
+            1,
+            2048,
+            3
+          ],
+          "stage2_view_inds": [
+            1,
+            2048
+          ],
+          "stage2_view_scores": [
+            1,
+            2048
+          ],
+          "stage3_grasp_scores": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_normalized_grasp_widths": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "stage3_grasp_features": [
+            1,
+            2048,
+            992
+          ],
+          "before_generator": [
+            1,
+            2048,
+            512
+          ],
+          "point_features": [
+            1,
+            2048,
+            512
+          ],
+          "raw_CGR_480": [
+            1,
+            2048,
+            480
+          ],
+          "sparse_input_coords": [
+            21643,
+            4
+          ],
+          "sparse_input_XYZ_features": [
+            21643,
+            3
+          ]
+        },
+        "raw_candidates": {
+          "count": 2048,
+          "shape": [
+            2048,
+            15
+          ],
+          "feature_shape": [
+            2048,
+            2261
+          ],
+          "frame": "input camera optical frame",
+          "status": "original parse_preds output before rig-specific width/approach/workspace and collision filtering",
+          "not_feasible_grasp_certificate": true
+        },
+        "timing_seconds": {
+          "sparse_quantization_and_input": 0.015194008126854897,
+          "full_representation_forward": 0.053712560096755624,
+          "original_parse_preds": 0.00294129503890872,
+          "output_serialization": 1.1764067420735955
+        }
+      },
+      "wall_seconds": 1.8251355630345643
+    }
+  ],
+  "output_files": {
+    "raw_camera_candidates.npz": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/raw_camera_candidates.npz",
+      "sha256": "876af67114d273ff4e56469adf1b8ddeb80e87278cf76cf9e2f6e9431ea1da55",
+      "bytes": 141928349
+    },
+    "representation_outputs.npz": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_reference_alignment_20261114_v2/representation/representation_outputs.npz",
+      "sha256": "a0f5db74380e5d317f11129af5a888325143507444758e638df6f19cc5314015",
+      "bytes": 18224418
+    }
+  },
+  "excluded_filters": [
+    "DH3 camera approach/width/workspace gates"
+  ],
+  "downstream_policy": "Boya score/geometry admission remains a separate explicit stage; no automatic promotion",
+  "timing_seconds": {
+    "input_preparation": 0.08233982208184898,
+    "one_model_initialization": 0.9270951561629772,
+    "total_wall": 27.98839402711019
+  },
+  "scene_binding": {
+    "observation_json": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A0/observation.json",
+    "observation_sha256": "8b3bbe1bbd663b2d05801083a8b69789aaf1c155509531c1bb67ee688d3ce12f",
+    "T_WC": [
+      [
+        0.9999999999999999,
+        -0.0,
+        0.0,
+        -0.75
+      ],
+      [
+        0.0,
+        -0.8262272680422532,
+        0.5633369342972592,
+        -0.20000000298023224
+      ],
+      [
+        -0.0,
+        -0.5633369342972592,
+        -0.8262272680422532,
+        0.5
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "file_hashes_verified": true,
+    "source_simulator": "Isaac Sim / PhysX",
+    "source_renderer": "Isaac native RTX camera",
+    "network_inputs": [
+      "calibrated RGB-D camera XYZ"
+    ],
+    "object_pose_as_network_input": false,
+    "boundary": "T_WC and object provenance bind later geometry/execution only; neither is fed to CGR"
+  },
+  "calibration": {
+    "intrinsic_matrix": [
+      [
+        640.0,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        640.0,
+        360.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "factor_depth": 1000.0,
+    "point_units": "metres",
+    "sensor_shape": [
+      720,
+      1280
+    ],
+    "retained_pixels": 542720,
+    "point_min_m": [
+      -0.6489999890327454,
+      -0.0649000033736229,
+      0.43799999356269836
+    ],
+    "point_max_m": [
+      0.6479859352111816,
+      0.24569062888622284,
+      0.6489999890327454
+    ],
+    "voxel_size_m": 0.005,
+    "depth_bounds_m": [
+      0.2,
+      0.65
+    ],
+    "coordinate_quantization": "np.ascontiguousarray(points / voxel_size, dtype=int), author truncation retained",
+    "features": "camera XYZ metres, author 3-channel input",
+    "calibration_boundary": "meta.mat intrinsics/depth scale; actual observation T_WC is metadata, not a network feature",
+    "workspace_image_mask_used": false,
+    "augmentation": "Original identity then ten pre-generated original augment_data transforms; five scene reflections"
+  },
+  "input_files": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A0/depth.png": {
+      "bytes": 6873,
+      "sha256": "68cd49359a15c5f8d65f55b7b45defeaa14e4b01966fd10fa8a95bc28241e43f"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A0/color.png": {
+      "bytes": 205422,
+      "sha256": "21ff4ed533e48a8afe3eaf64e3b7d49ba2e3e7b1994f2ac1d5a97f96daeb7101"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/observations/egad_A0/meta.mat": {
+      "bytes": 320,
+      "sha256": "ac84e1da22edbd696a0462311e18ee71fc1ac26b673af63edfea3569097f7bb5"
+    }
+  },
+  "input_points_sha256": "d459f75fe8c8dfc05de7f265d24eb964d364b4b51565496143197705a48cef18",
+  "checkpoint": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/logs/model/checkpoint.tar.18",
+    "sha256": "31f17275b430053dff78e70c287f80143caae303b29e083b0d93b00d79d66fb1",
+    "weights_only": true,
+    "strict_state_dict_load": true,
+    "tensor_count": 202,
+    "epoch": 19,
+    "num_view": 300,
+    "num_angle": 48,
+    "num_depth": 5,
+    "num_seed": 2048,
+    "half_views": false
+  },
+  "native_dependencies": {
+    "MinkowskiEngine_file": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngine/__init__.py",
+    "MinkowskiEngine_version": "0.5.4",
+    "MinkowskiEngine_extension": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/build_src/MinkowskiEngine/MinkowskiEngineBackend/_C.cpython-312-x86_64-linux-gnu.so",
+    "MinkowskiEngine_extension_sha256": "bbe7f3f5885b5962d8e61e11d43eaf7a64cde6cc7c208078929368449e6ed65e",
+    "pointnet2_utils_file": "/home/wangrenpeng/AnyDexGrasp/pointnet2/pointnet2_utils.py",
+    "pointnet2_utils_sha256": "017b2c62d3538379324c5ae26f292e5849fc53f6edce80afa00de4e286f976a3",
+    "pointnet2_extension": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/pointnet2/lib/pointnet2/_ext.cpython-312-x86_64-linux-gnu.so",
+    "pointnet2_extension_sha256": "343c637093873fc622ee8bfe5f6b3f44df1437598f926b32ca41b47d12850c8c",
+    "cuda_device": "cuda:0",
+    "cuda_device_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "cuda_compute_capability": [
+      12,
+      0
+    ],
+    "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib",
+    "CUDA_VISIBLE_DEVICES": null
+  },
+  "representation_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+    "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "only_ast_change": "Removed the two unused training-label imports; any call raises",
+    "removed_imports": [
+      "from loss import process_grasp_labels, match_grasp_view_and_label"
+    ],
+    "network_layers_and_forward_unchanged": true
+  },
+  "candidate_parser_overlay": {
+    "source": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+    "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "function": "parse_preds",
+    "hardware_module_imported": false,
+    "function_body_unchanged": true
+  },
+  "augmentation_matrices": [
+    [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.9654375910758972,
+        -0.2606343626976013,
+        0.0,
+        -0.017160948365926743
+      ],
+      [
+        0.2606343626976013,
+        0.9654375910758972,
+        0.0,
+        -0.008691729977726936
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        -0.9999799132347107,
+        -0.006340225227177143,
+        0.0,
+        -0.020677048712968826
+      ],
+      [
+        -0.006340225227177143,
+        0.9999799132347107,
+        0.0,
+        -0.018516018986701965
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.940628707408905,
+        0.33943718671798706,
+        0.0,
+        0.019541168585419655
+      ],
+      [
+        -0.33943718671798706,
+        0.940628707408905,
+        0.0,
+        0.023709259927272797
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        -0.9208895564079285,
+        -0.3898235857486725,
+        0.0,
+        0.01786169782280922
+      ],
+      [
+        -0.3898235857486725,
+        0.9208895564079285,
+        0.0,
+        -0.035777315497398376
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.9245322942733765,
+        -0.38110366463661194,
+        0.0,
+        -0.03192863240838051
+      ],
+      [
+        0.38110366463661194,
+        0.9245322942733765,
+        0.0,
+        0.04960270971059799
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        -0.9681128859519958,
+        -0.25051432847976685,
+        0.0,
+        0.04686416685581207
+      ],
+      [
+        -0.25051432847976685,
+        0.9681128859519958,
+        0.0,
+        0.019097965210676193
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.9765865802764893,
+        -0.21512460708618164,
+        0.0,
+        -0.04251512140035629
+      ],
+      [
+        0.21512460708618164,
+        0.9765865802764893,
+        0.0,
+        -0.0088196387514472
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        -0.9769357442855835,
+        0.21353358030319214,
+        0.0,
+        0.002292877295985818
+      ],
+      [
+        0.21353358030319214,
+        0.9769357442855835,
+        0.0,
+        0.04030188173055649
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        0.9921653270721436,
+        0.12493182718753815,
+        0.0,
+        0.014833565801382065
+      ],
+      [
+        -0.12493182718753815,
+        0.9921653270721436,
+        0.0,
+        0.029865048825740814
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    [
+      [
+        -0.9999008774757385,
+        -0.014078101143240929,
+        0.0,
+        -0.01873834617435932
+      ],
+      [
+        -0.014078101143240929,
+        0.9999008774757385,
+        0.0,
+        0.009223846718668938
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ]
+  ],
+  "rng_policy": {
+    "seed": 20261108,
+    "policy": "One post-constructor stream, advanced across all 11 branches; all 10 transforms generated before identity",
+    "constructor_CPU_before_sha256": "e060281fedaa283070273782c558ebcb13713c0c6f792cefe8ee9bda971a7add",
+    "post_initialization_CPU_sha256": "0d44980613f6a0e8ba6f0c1a11beda65c77efa57718d5c26b7f67ea01332ffb4",
+    "post_initialization_CUDA_sha256": "fc00cc2d75e4fd2e8a121bcf3f577b2291ded1ec920d4929f0c117222c8c18cf",
+    "post_initialization_NumPy_sha256": "658562219dcb22a7c6f557e92d40ad390285e417c6da21d37a0653e32413903b",
+    "constructor_CUDA_rng_unchanged": true,
+    "constructor_skipped_random_draws_replayed": true,
+    "NumPy_after_augmentation_generation_sha256": "d2ce76fd85c128b6a8cc658c179ef614d1acdb91b07bdf8edd42e5c405d684ff"
+  },
+  "identity_regression": {
+    "all_arrays_exactly_equal": true,
+    "files": {
+      "raw_camera_candidates.npz": {
+        "candidates": {
+          "shape": [
+            2048,
+            15
+          ],
+          "array_sha256": "960e145a2f78be1ffbb790a133952db4a7b685157a555dd20f646089f02ac128",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "candidate_features": {
+          "shape": [
+            2048,
+            2261
+          ],
+          "array_sha256": "c5877cf30e8000282afe1865985fe246f51ec853c0384bfb2f298ec94ffefea3",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        }
+      },
+      "representation_outputs.npz": {
+        "stage1_objectness_pred": {
+          "shape": [
+            21778,
+            2
+          ],
+          "array_sha256": "9880b40aec7fd95400d416c034b460999422f0a4908bbc267ec218284e153807",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage1_heatmap_pred": {
+          "shape": [
+            21778
+          ],
+          "array_sha256": "52cc0fa0f7449f446976d9a1aa59178c3c3f462a69c94ed7e69aa1f156244e8e",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage2_seed_xyz": {
+          "shape": [
+            1,
+            2048,
+            3
+          ],
+          "array_sha256": "a79242b8235ec4ee2e66522f6afeecc5ccd7c82e41db89894151c80b16b02864",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage2_seed_inds": {
+          "shape": [
+            1,
+            2048
+          ],
+          "array_sha256": "d8de69f7da2443bdba471605397153b3f46896865fe9362a4416df98a92f4d23",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage2_view_xyz": {
+          "shape": [
+            1,
+            2048,
+            3
+          ],
+          "array_sha256": "340395498914a9bcbedff948f514d20e3ae12ef6df9349b3e707c77213ab2472",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage2_view_inds": {
+          "shape": [
+            1,
+            2048
+          ],
+          "array_sha256": "a5ee30d85f762c3918213b177c5a15c166a209b02815ad0bd1d0f145b9f8a244",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage2_view_scores": {
+          "shape": [
+            1,
+            2048
+          ],
+          "array_sha256": "99cc4a8caaa404e79f3736b8d1c196f27fef2dc1e0a680e58ce1753f809cb52b",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage3_grasp_scores": {
+          "shape": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "array_sha256": "93b85d9f4f9947292899d44bcfcd99329833e7da50733863a065bde75fb82b08",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage3_normalized_grasp_widths": {
+          "shape": [
+            1,
+            2048,
+            48,
+            5
+          ],
+          "array_sha256": "31aae387e0ae39f96994321bb341c2a23f6ba22b884bc21de42ef8403462abda",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "stage3_grasp_features": {
+          "shape": [
+            1,
+            2048,
+            992
+          ],
+          "array_sha256": "61f8f94bd8a3ab28c1fc0bb1e763503eb72c10c994562af2da663030119ccdba",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "before_generator": {
+          "shape": [
+            1,
+            2048,
+            512
+          ],
+          "array_sha256": "74fbe1ff350d407f7a54c4c4ec69d95accf68936134719704f6536337cacf05c",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "point_features": {
+          "shape": [
+            1,
+            2048,
+            512
+          ],
+          "array_sha256": "8fdc4e76f66b9d87510fb72d2e87afef38c6f70f2e0f95d024486e6588fabd2f",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "raw_CGR_480": {
+          "shape": [
+            1,
+            2048,
+            480
+          ],
+          "array_sha256": "0906c48309341f94e1b7de0f6db351518afb790a9da43f49c163af13114b345a",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "sparse_input_coords": {
+          "shape": [
+            21778,
+            4
+          ],
+          "array_sha256": "109e38e90eb62fbe0769d459b63cda74027c2a86ff52791468d43db50d45eb09",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        },
+        "sparse_input_XYZ_features": {
+          "shape": [
+            21778,
+            3
+          ],
+          "array_sha256": "9585a7307d6bea601cbc29bbf19f95d62567aa38149ac6541a186ea2d114d3ce",
+          "exactly_equal": true,
+          "max_abs_error": 0.0
+        }
+      }
+    }
+  },
+  "raw_candidates": {
+    "count": 22528,
+    "feature_shape": [
+      22528,
+      2261
+    ],
+    "coordinate_frame": "original camera optical frame",
+    "deduplication": false,
+    "order": "identity then original branch order; original parser row order within branch"
+  },
+  "frozen_files_unchanged_at_end": true
+}
