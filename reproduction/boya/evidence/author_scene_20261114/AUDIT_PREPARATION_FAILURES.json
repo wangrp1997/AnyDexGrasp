@@ -1,0 +1,80 @@
+[
+  {
+    "capture_version": "v2",
+    "attempt": "v1",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v2/independent_audit_v1.log",
+    "sha256": "a0b7bd981da4a886cc2c532673ce2254238bca0f1e77c74eabc86256fbfa17d0",
+    "reason": "Audit used metre-scale trimesh facets: fixed proximity tolerance inflated distances. Fixed by independent hull normalization; capture unchanged.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0,
+    "source_freeze_before_debug_run": false
+  },
+  {
+    "capture_version": "v2",
+    "attempt": "v2",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v2/independent_audit_v2.log",
+    "sha256": "d18bb240015f5b0f0c773adaadc21991de7efc9bb626d8a18c7e1c26e67128ff",
+    "reason": "Audit required exact first-hit identity for bin floor coplanar with analytic ground; two equivalent ties differ by one ulp. Fixed by explicit <=1nm coplanar equivalence, depth unchanged.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0,
+    "source_freeze_before_debug_run": false
+  },
+  {
+    "capture_version": "v2",
+    "attempt": "v3",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v2/independent_audit_v3.log",
+    "sha256": "d1a618f868190afcdd170e4e8858465352a45a95f745b3a1b45316911823b932",
+    "reason": "Audit compared range-masked PNG zero pixels with out-of-range native ray depths. Fixed by original 0.2..0.65m mask; 17 sampled rays correctly masked.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0,
+    "source_freeze_before_debug_run": false
+  },
+  {
+    "capture_version": "v4",
+    "attempt": "v1",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/independent_audit_v1.log",
+    "sha256": "a0b7bd981da4a886cc2c532673ce2254238bca0f1e77c74eabc86256fbfa17d0",
+    "reason": "Audit used metre-scale trimesh facets: fixed proximity tolerance inflated distances. Fixed by independent hull normalization; capture unchanged.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0,
+    "source_freeze_before_debug_run": false
+  },
+  {
+    "capture_version": "v4",
+    "attempt": "v2",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/independent_audit_v2.log",
+    "sha256": "d18bb240015f5b0f0c773adaadc21991de7efc9bb626d8a18c7e1c26e67128ff",
+    "reason": "Audit required exact first-hit identity for bin floor coplanar with analytic ground; two equivalent ties differ by one ulp. Fixed by explicit <=1nm coplanar equivalence, depth unchanged.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0,
+    "source_freeze_before_debug_run": false
+  },
+  {
+    "capture_version": "v4",
+    "attempt": "v3",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/independent_audit_v3.log",
+    "sha256": "d1a618f868190afcdd170e4e8858465352a45a95f745b3a1b45316911823b932",
+    "reason": "Audit compared range-masked PNG zero pixels with out-of-range native ray depths. Fixed by original 0.2..0.65m mask; 17 sampled rays correctly masked.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0,
+    "source_freeze_before_debug_run": false
+  },
+  {
+    "audit": "independent CGR binding",
+    "attempt": "v1",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/independent_cgr_binding_audit.log",
+    "sha256": "43b730071c106edc5abd94c918f982dada9482dfac8d80157d7b91234d63cc01",
+    "audit_source_snapshot": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/independent_cgr_binding_audit_source_v1.py",
+    "audit_source_sha256": "eedefc75360dee8268bdea16f3ba057ea210349d5f0a30e95dbb87f609e310db",
+    "reason": "Independent auditor first used MAX_GRASP_WIDTH=.1 rather than frozen source .099. Width assertion caught it; corrected auditor constant only, original saved forward/outputs unchanged.",
+    "new_physics_steps": 0,
+    "new_CGR_forwards": 0,
+    "new_training_updates": 0
+  }
+]

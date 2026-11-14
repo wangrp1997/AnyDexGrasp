@@ -1,0 +1,447 @@
+{
+  "schema": "anydex_boya_author_fourtype_preparation_independent_audit_v1",
+  "status": "passed",
+  "queue": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/QUEUE_PROTOCOL.json",
+    "sha256": "46d39c3a83340ce30684e295bd73500c25089d4e6f61391701a4b3a725dec2e5"
+  },
+  "launch": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/LAUNCH_SOURCE_SHA256.json",
+    "sha256": "e31c5f000fe8e98a4fefb482332b84732681e04958f532ab57ade986a8a4a9b1"
+  },
+  "input_identity_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/INPUT_IDENTITY_AUDIT.json",
+    "sha256": "8f556bb6103950b1b3d5d3cae39f262ae8111c229e078d02486cf841a2c5bd4a"
+  },
+  "json_parse_and_no_nul": {
+    "checked": 62,
+    "all_passed": true
+  },
+  "independent_domain_and_source_rows": {
+    "raw_candidates": 2048,
+    "source_domain_keep": 97,
+    "raw_world_selected_translation_m": [
+      -0.6446062475442886,
+      0.11623186314504375,
+      0.09713882551075881
+    ],
+    "selected_raw_camera_translation_m": [
+      0.10539375245571136,
+      -0.03433281183242798,
+      0.5109999775886536
+    ],
+    "MT19937_all97_depths_equal": true,
+    "source_single_flip_all388_rows_equal": true
+  },
+  "results": [
+    {
+      "gesture_id": 1,
+      "status": "no_plan",
+      "candidate_sha256": "aad487356fc12ce997243a768fe939dd27fe38c982dabc48c31c25394b86852e",
+      "selected_source_row": 879,
+      "slot_id": "g1:distal_000:ff",
+      "source_geometry_counts": {
+        "input": 2048,
+        "width": 1187,
+        "workspace": 612,
+        "approach": 548,
+        "joint": 97,
+        "top500": 97,
+        "mapping_available": 96,
+        "width_admitted": 96,
+        "collision_admitted": 4,
+        "top10": 4
+      },
+      "source_top500_count": 97,
+      "phase_steps": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "command_rows": 1300,
+      "command_columns": 24,
+      "source_open_hand_max_error_rad": 0.0,
+      "endpoint_candidate_palm_matrix_error": 4.0979940385543756e-08,
+      "violation_count": 979,
+      "violation_kinds": {
+        "object": 979
+      },
+      "violation_links": {
+        "mfdistal": 148,
+        "rfdistal": 60,
+        "ffdistal": 555,
+        "mfmiddle": 81,
+        "ffmiddle": 135
+      },
+      "phase_details": {
+        "home_to_pregrasp": {
+          "violations": 785,
+          "first_global_sample": 426,
+          "last_global_sample": 799,
+          "first_local_sample": 376,
+          "last_local_sample": 749,
+          "first_time_s": 1.708,
+          "last_time_s": 3.2,
+          "max_penetration_m": 0.03446826468034475,
+          "endpoint_sample": 799,
+          "endpoint_violations": 1
+        },
+        "approach": {
+          "violations": 194,
+          "first_global_sample": 800,
+          "last_global_sample": 974,
+          "first_local_sample": 0,
+          "last_local_sample": 174,
+          "first_time_s": 3.204,
+          "last_time_s": 3.9,
+          "max_penetration_m": 0.002506372982909037,
+          "endpoint_sample": 1299,
+          "endpoint_violations": 0
+        }
+      },
+      "all_violations_fingers_vs_primary": true,
+      "primary_object_part_counts": {
+        "0": 939,
+        "1": 40
+      },
+      "all_other_kinds_clear": true,
+      "final_approach_endpoint_violations": 0,
+      "unused_lift_audit": {
+        "ok": true,
+        "samples": 0,
+        "skipped": true,
+        "reason": "Feedback executor owns lift",
+        "scope": "Every commanded lift state: six-arm/wrists/palm self/floor geometry. No predicted finger/object contact or global obstacle replanning."
+      },
+      "arm_wall_s": 10.368215245893225,
+      "pipeline_wall_s": 13.782744518015534
+    },
+    {
+      "gesture_id": 6,
+      "status": "no_plan",
+      "candidate_sha256": "445e97e315547b08cd091f05c6f33184998555547edc5a66ba4d9bdd9e402132",
+      "selected_source_row": 879,
+      "slot_id": "g6:distal_000:ff",
+      "source_geometry_counts": {
+        "input": 2048,
+        "width": 1187,
+        "workspace": 612,
+        "approach": 548,
+        "joint": 97,
+        "top500": 97,
+        "mapping_available": 97,
+        "width_admitted": 97,
+        "collision_admitted": 1,
+        "top10": 1
+      },
+      "source_top500_count": 97,
+      "phase_steps": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "command_rows": 1300,
+      "command_columns": 24,
+      "source_open_hand_max_error_rad": 0.0,
+      "endpoint_candidate_palm_matrix_error": 3.571977569283291e-08,
+      "violation_count": 798,
+      "violation_kinds": {
+        "object": 798
+      },
+      "violation_links": {
+        "mfdistal": 141,
+        "ffdistal": 492,
+        "mfmiddle": 62,
+        "ffmiddle": 103
+      },
+      "phase_details": {
+        "home_to_pregrasp": {
+          "violations": 623,
+          "first_global_sample": 468,
+          "last_global_sample": 799,
+          "first_local_sample": 418,
+          "last_local_sample": 749,
+          "first_time_s": 1.8760000000000001,
+          "last_time_s": 3.2,
+          "max_penetration_m": 0.02967215561940778,
+          "endpoint_sample": 799,
+          "endpoint_violations": 1
+        },
+        "approach": {
+          "violations": 175,
+          "first_global_sample": 800,
+          "last_global_sample": 963,
+          "first_local_sample": 0,
+          "last_local_sample": 163,
+          "first_time_s": 3.204,
+          "last_time_s": 3.856,
+          "max_penetration_m": 0.002944598947736658,
+          "endpoint_sample": 1299,
+          "endpoint_violations": 0
+        }
+      },
+      "all_violations_fingers_vs_primary": true,
+      "primary_object_part_counts": {
+        "0": 774,
+        "1": 24
+      },
+      "all_other_kinds_clear": true,
+      "final_approach_endpoint_violations": 0,
+      "unused_lift_audit": {
+        "ok": true,
+        "samples": 0,
+        "skipped": true,
+        "reason": "Feedback executor owns lift",
+        "scope": "Every commanded lift state: six-arm/wrists/palm self/floor geometry. No predicted finger/object contact or global obstacle replanning."
+      },
+      "arm_wall_s": 10.464721387019381,
+      "pipeline_wall_s": 13.744575537042692
+    },
+    {
+      "gesture_id": 7,
+      "status": "no_plan",
+      "candidate_sha256": "b47fb0203bd7a243d90a946c65ef0275848959fea3b8b30949e390af65c58931",
+      "selected_source_row": 879,
+      "slot_id": "g7:distal_000:ff",
+      "source_geometry_counts": {
+        "input": 2048,
+        "width": 1187,
+        "workspace": 612,
+        "approach": 548,
+        "joint": 97,
+        "top500": 97,
+        "mapping_available": 97,
+        "width_admitted": 97,
+        "collision_admitted": 3,
+        "top10": 3
+      },
+      "source_top500_count": 97,
+      "phase_steps": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "command_rows": 1300,
+      "command_columns": 24,
+      "source_open_hand_max_error_rad": 0.0,
+      "endpoint_candidate_palm_matrix_error": 3.800829168065789e-08,
+      "violation_count": 882,
+      "violation_kinds": {
+        "object": 882
+      },
+      "violation_links": {
+        "mfdistal": 147,
+        "rfdistal": 33,
+        "ffdistal": 505,
+        "mfmiddle": 74,
+        "ffmiddle": 123
+      },
+      "phase_details": {
+        "home_to_pregrasp": {
+          "violations": 712,
+          "first_global_sample": 451,
+          "last_global_sample": 799,
+          "first_local_sample": 401,
+          "last_local_sample": 749,
+          "first_time_s": 1.808,
+          "last_time_s": 3.2,
+          "max_penetration_m": 0.03196815158393382,
+          "endpoint_sample": 799,
+          "endpoint_violations": 1
+        },
+        "approach": {
+          "violations": 170,
+          "first_global_sample": 800,
+          "last_global_sample": 959,
+          "first_local_sample": 0,
+          "last_local_sample": 159,
+          "first_time_s": 3.204,
+          "last_time_s": 3.84,
+          "max_penetration_m": 0.002617229176867353,
+          "endpoint_sample": 1299,
+          "endpoint_violations": 0
+        }
+      },
+      "all_violations_fingers_vs_primary": true,
+      "primary_object_part_counts": {
+        "0": 861,
+        "1": 21
+      },
+      "all_other_kinds_clear": true,
+      "final_approach_endpoint_violations": 0,
+      "unused_lift_audit": {
+        "ok": true,
+        "samples": 0,
+        "skipped": true,
+        "reason": "Feedback executor owns lift",
+        "scope": "Every commanded lift state: six-arm/wrists/palm self/floor geometry. No predicted finger/object contact or global obstacle replanning."
+      },
+      "arm_wall_s": 10.467041290132329,
+      "pipeline_wall_s": 13.70431811711751
+    },
+    {
+      "gesture_id": 8,
+      "status": "no_plan",
+      "candidate_sha256": "6094ee4598ab36c487f18b0abd1417a685b69a97720032c2069c99bb48ebc793",
+      "selected_source_row": 879,
+      "slot_id": "g8:distal_000:ff",
+      "source_geometry_counts": {
+        "input": 2048,
+        "width": 1187,
+        "workspace": 612,
+        "approach": 548,
+        "joint": 97,
+        "top500": 97,
+        "mapping_available": 97,
+        "width_admitted": 97,
+        "collision_admitted": 3,
+        "top10": 3
+      },
+      "source_top500_count": 97,
+      "phase_steps": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "command_rows": 1300,
+      "command_columns": 24,
+      "source_open_hand_max_error_rad": 0.0,
+      "endpoint_candidate_palm_matrix_error": 4.3730478349601754e-08,
+      "violation_count": 978,
+      "violation_kinds": {
+        "object": 978
+      },
+      "violation_links": {
+        "mfdistal": 128,
+        "mfmiddle": 69,
+        "ffdistal": 656,
+        "ffmiddle": 125
+      },
+      "phase_details": {
+        "home_to_pregrasp": {
+          "violations": 702,
+          "first_global_sample": 404,
+          "last_global_sample": 799,
+          "first_local_sample": 354,
+          "last_local_sample": 749,
+          "first_time_s": 1.62,
+          "last_time_s": 3.2,
+          "max_penetration_m": 0.03762664428344674,
+          "endpoint_sample": 799,
+          "endpoint_violations": 1
+        },
+        "approach": {
+          "violations": 276,
+          "first_global_sample": 800,
+          "last_global_sample": 1034,
+          "first_local_sample": 0,
+          "last_local_sample": 234,
+          "first_time_s": 3.204,
+          "last_time_s": 4.14,
+          "max_penetration_m": 0.0035369931080710877,
+          "endpoint_sample": 1299,
+          "endpoint_violations": 0
+        }
+      },
+      "all_violations_fingers_vs_primary": true,
+      "primary_object_part_counts": {
+        "0": 868,
+        "1": 110
+      },
+      "all_other_kinds_clear": true,
+      "final_approach_endpoint_violations": 0,
+      "unused_lift_audit": {
+        "ok": true,
+        "samples": 0,
+        "skipped": true,
+        "reason": "Feedback executor owns lift",
+        "scope": "Every commanded lift state: six-arm/wrists/palm self/floor geometry. No predicted finger/object contact or global obstacle replanning."
+      },
+      "arm_wall_s": 10.480218504089862,
+      "pipeline_wall_s": 13.78907370986417
+    }
+  ],
+  "source_collision_checks": 387,
+  "ready_count": 0,
+  "no_plan_count": 4,
+  "infrastructure_failure_count": 0,
+  "transport_preparations": 0,
+  "physics_steps": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "new_CGR_forwards": 0,
+  "kit_launches": 0,
+  "source_and_inputs_unchanged": true,
+  "output_bindings": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/PIPELINE_RESULTS.json": "ca5a8e50a0a8c6995f61312b6305e9da5957d39171f83d8201ae78c606575053",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/PIPELINE_PROTOCOL.json": "1f6cbc8d6dd1dc1ff9ca037e6c8f1e37beb329433e22704f3da85ea9a700b280",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/COLLECTION_PROTOCOL.json": "25aca45027c8bf63571fe9299b1b29055d994a33e1e22c2981f004b46efe8c87",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/BACKEND.json": "93bca5f660713576e779e55e109be673d3210fbc23f134633311978a250080d3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/ARM_PREPARATION.json": "50176308488eecc52b9b7231738e5dddbeec6e805948179aa071b47b413c4ce5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/pool/generation.json": "6328c77d426cfd0691e2864e4b1d9db908d830ca335d4aac205b23f65d8c8bb5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/pool/candidates.npz": "194568b47e464116adc5cd68ac96127325e366073c4790ec1173bbcdb0ebcd21",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/pool/selected_author_candidate.json": "d60a519445253740cb14cdbdaad80d173cea8af2f8cb93bf198e9b41bdcd2441",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/collection/PREPARATION_ARRAYS.npz": "c24a2b4b7464b318c09721aa47b3b82072a01fded471a58ed7a12372f81f3807",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/collection/PREPARED.json": "ef6c25b468815cb4e16ae8bf441f7d0438a03b2a60ab5ec18c487d888e6ee12e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/native/lift_arm_geometry.json": "d3a1f36b5c570ded6ba49353a091c9d3ca5a5434b611118ba2a9198a70f44bea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/native/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/native/commands.npz": "09cebf71831a1da4bf55ee26aac27a317b52bb35d33d044bb93750ade9b0bd9e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/native/frozen_input.json": "5864d972d62c196cae6593a44aa522da2b7f9268b41149b38a869af632eecac0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/native/plan.json": "849694d153925febf44210af03831432c210079a7abfc43e74700565c2dd6280",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g1/arm/native/path_geometry.json": "19d1d5ae9005a43b9fb4515074f6c8983d0d1d29f2003876c27b81289ced32c5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/PIPELINE_RESULTS.json": "f12eda62c38b3d091ad79199e6177beee14f9228280dcee2b40ed5a41e35e372",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/PIPELINE_PROTOCOL.json": "c4f574b6e71bf7b9112539cf687245149762027c086c2959f7f829360a9c2335",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/COLLECTION_PROTOCOL.json": "9d3a75dbca2e812df08259c92ed7af70ea543b68c123c2d5c3b83fbdd3fbe01e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/BACKEND.json": "93bca5f660713576e779e55e109be673d3210fbc23f134633311978a250080d3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/collection/PREPARATION_ARRAYS.npz": "c5b9f45475ee13ac98e7a69e57a0beffc945371e0396a8fa6763d7d32357b482",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/collection/PREPARED.json": "f35f90c1e9fc0d18f4ca711f6b457248a4397bdc2e13967739f9c773dc1810e1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/pool/generation.json": "d86c308b7732e5a9a8684b1bd5c6ec37693e60cc3d43810b51a5f9c2a5a91d6f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/pool/selected_author_candidate.json": "e778aa0999e8b79baa8d80c519f2fd354b3513b46d897c8890c02e6cfca8763c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/pool/candidates.npz": "0437840f880c18d77719643f95af32c29673a1041c67f40a389a84a92c2122c1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/ARM_PREPARATION.json": "2efc84f50f15e08fedb0966cf662d11a385f66b3b9d40ce0ca3044b77afc64b5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/native/frozen_input.json": "0be6b8d132e74296501273f9efbab8b72a6841c3abd9d4c0d0fe25bba3d2e8d3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/native/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/native/commands.npz": "9860ec8d2cca33263ac13b716351b51a8b02e0a4c0e7d3e466cc3117c00c8e39",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/native/path_geometry.json": "e6a809e9f65f96e9ed9674e4503b8b29ffece0caa68f643578f889c6268007e8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/native/lift_arm_geometry.json": "d3a1f36b5c570ded6ba49353a091c9d3ca5a5434b611118ba2a9198a70f44bea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g6/arm/native/plan.json": "8b520b4c5cd7f9554785f67ebc887997fca91d8db414dea5bf0da7fc3351b425",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/COLLECTION_PROTOCOL.json": "94ecfa02724e4de2eb1eee4c668f8d70edbb45944e10150ef6c6717fc73b46fb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/PIPELINE_RESULTS.json": "450ec13f0db00db8cf78c427bf39e55b167c1780bd21d2b827e06619604dc2ff",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/BACKEND.json": "93bca5f660713576e779e55e109be673d3210fbc23f134633311978a250080d3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/PIPELINE_PROTOCOL.json": "e06cb4a409cd16087280e627c0d4e29062ba1e4d55076c6f3a09c7b8716601a2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/ARM_PREPARATION.json": "67acc2b1fbb7bc0bd539d23e345e668e69bc904ad775993f1403e7ceb0ec4a6e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/pool/generation.json": "6e28b64699e9d1d614bca6cb252169bc638343be6527ead963031fa0db314617",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/pool/candidates.npz": "3cbc40fab2252ecba9daeaa8259195d99b1369832cdd41f7f6505a4a53d5805a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/pool/selected_author_candidate.json": "c680bbd0bad6f8a762da236b4f5adbb5031285961c88ecf0c392f6f05456bf72",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/collection/PREPARATION_ARRAYS.npz": "bc2fccf5df2c36e8b93dd3d908a6bd437edb4c540103bcbf2be70f4f06296667",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/collection/PREPARED.json": "d57c830aaa8b7f9a2f4891f12202158e2f8927a9861b09f6d1ffc03812de9b9b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/native/commands.npz": "3ffa412f20863fdef7471661c706100871f35a1ad1692fac7e07ddf567429d94",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/native/frozen_input.json": "2f793f02be61244582d021f8ebdde3fba894537e4a71628a5524efd043aeb9e3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/native/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/native/plan.json": "fc711ea2328fb536da8c03367b5152975d024a8fd968df3f9b5edb1eaa65d621",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/native/lift_arm_geometry.json": "d3a1f36b5c570ded6ba49353a091c9d3ca5a5434b611118ba2a9198a70f44bea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g7/arm/native/path_geometry.json": "1536331aa7f7a0b7401c3c974b4780ecaf0c0583a89bc3018bda9b3f32f6d926",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/PIPELINE_PROTOCOL.json": "e75b4023089833a04072d74487887fa7ac5d2568ac87d2237680d3d0d189912b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/COLLECTION_PROTOCOL.json": "033e05fc0524e2515d3fe730c755ef8fd4e16302ef418fc6a9123a0347dc63d0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/BACKEND.json": "93bca5f660713576e779e55e109be673d3210fbc23f134633311978a250080d3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/PIPELINE_RESULTS.json": "a6727c9310bddb48bb1c83d41dec9b1533c66f86ac97dfabfa764eac14920923",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/ARM_PREPARATION.json": "719965d7c2ef7e6138d4e603f1dda8d88eb3288e65ba461153c5e6ad890702a9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/pool/generation.json": "5a726e7ea030e3ac790faeb320cf1a4aca0c784c62037b3a3692799ec17a5655",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/pool/candidates.npz": "ac669f39d61f4d4b8f132a208e2ed844a5b26525ff75ce2769ad7c2c54e718c0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/pool/selected_author_candidate.json": "534de742e5d6500da6695d892f04d19e0a11145e813b1bad64057cb81973c4bd",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/collection/PREPARED.json": "7cfde06654fe3cad77c7a280f5b3003e2c5a9b2d345c48abe2e182965d2e475a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/collection/PREPARATION_ARRAYS.npz": "7a38e68b43544ac7c3479ca1b6246d26d8684270144ec67a4d8a970f5bae3c3e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/native/plan.json": "23c532b1d0ca997fd15046eee9a9684d1756974ddb88a47202e00ea64349d7f7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/native/admission_failure.json": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/native/path_geometry.json": "4003574f07f7e2298c36ef4e6c4a6d07388b1ca4d44fa029578851b19a11a5f1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/native/frozen_input.json": "82d3d69ce11eb4b842724aa5fae19942a8619563347758c6479c990a974f10c9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/native/commands.npz": "c45d899e54785ca5eff4b3bc9b82a97c267de136c20e2f02787d232ba35636e4",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/prepare_g8/arm/native/lift_arm_geometry.json": "d3a1f36b5c570ded6ba49353a091c9d3ca5a5434b611118ba2a9198a70f44bea"
+  },
+  "audit_wall_s": 0.3130856710486114,
+  "boundary": "Four fixed first choices failed direct path admission, not actual grasp trials or evidence of global unreachability; source triangle proxy diagnosis is separate."
+}

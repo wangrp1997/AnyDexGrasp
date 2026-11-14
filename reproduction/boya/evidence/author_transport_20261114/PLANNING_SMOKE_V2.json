@@ -1,0 +1,88 @@
+{
+  "schema": "anydex_boya_author_transport_preparation_v1",
+  "complete": true,
+  "admitted": false,
+  "status": "null_geometry",
+  "grasp_attempts": 0,
+  "physics_steps": 0,
+  "scene_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_transport_20261114_v1/planning_smoke_scene.json",
+  "scene_sha256": "a4e9bdf88c86ebf6ef58419c82800766d27b6e21f132d32eb1ed4d09b11c18d9",
+  "seed_plan_path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_port_top1_20261107_v2/plans/graspnet_021_port_rank_00033/plan_000/plan.json",
+  "seed_plan_sha256": "b6331c5725f9ed245a8ab6fe3aabe09ce6be1af4841ba76e0a4b3fe6e00e7069",
+  "policy": {
+    "dt_s": 0.004,
+    "retreat_first_m": 0.004,
+    "retreat_wait_s": 0.1,
+    "retreat_minimum_s": 0.5,
+    "retreat_pregrasp_minimum_s": 2.0,
+    "transport_minimum_s": 3.0,
+    "release_s": 1.0,
+    "release_settle_s": 2.0,
+    "final_window_s": 0.5,
+    "source_rise_m": 0.05,
+    "containment_tolerance_m": 0.002,
+    "max_final_linear_speed_m_s": 0.02,
+    "max_final_angular_speed_rad_s": 0.5,
+    "max_penetration_m": 0.001,
+    "early_stop_penetration_m": 0.005,
+    "max_robot_bin_force_n": 0.001,
+    "contact_capacity": 262144
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+    "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+    "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py": "422324ce9a3047bb98d8e394ee47ceb8b51b5fa8c570676b5aca7b951b82a61e",
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+  },
+  "command_steps": 3750,
+  "independent_coordinates": 24,
+  "actual_joint_coordinates": 28,
+  "plan_sha256": "34d6ad3b23b3d3df3b61ec0872093cece0cce68d71d5095d805521cb00103a20",
+  "wall_s": 18.012952802004293,
+  "interpolation_errors": {
+    "retreat_4mm": [
+      1.8076403288614952e-14,
+      9.188300238469795e-14
+    ],
+    "retreat_pregrasp": [
+      2.008666245341847e-10,
+      1.4504285851783134e-11
+    ],
+    "transport_bin": [
+      2.2177475773156995e-07,
+      5.045533438604506e-07
+    ]
+  },
+  "timing": {
+    "retreat_4mm": {
+      "steps": 125,
+      "duration_s": 0.5,
+      "max_velocity_rad_s": 0.04180436166617563,
+      "max_acceleration_rad_s2": 0.25735953311512016,
+      "max_jerk_rad_s3": 4.604759129556157,
+      "velocity_ratio": 0.013306741603946386,
+      "acceleration_limit_rad_s2": 3.0,
+      "jerk_limit_rad_s3": 30.0
+    },
+    "retreat_pregrasp": {
+      "steps": 500,
+      "duration_s": 2.0,
+      "max_velocity_rad_s": 0.25479279479234673,
+      "max_acceleration_rad_s2": 0.39706597299016266,
+      "max_jerk_rad_s3": 2.00842936986384,
+      "velocity_ratio": 0.08110306551080182,
+      "acceleration_limit_rad_s2": 3.0,
+      "jerk_limit_rad_s3": 30.0
+    },
+    "transport_bin": {
+      "steps": 750,
+      "duration_s": 3.0,
+      "max_velocity_rad_s": 1.348867308021806,
+      "max_acceleration_rad_s2": 1.6255153513812515,
+      "max_jerk_rad_s3": 7.388383658570724,
+      "velocity_ratio": 0.42951868345620486,
+      "acceleration_limit_rad_s2": 3.0,
+      "jerk_limit_rad_s3": 30.0
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "files_sha256": {
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/sensors/contact_sensor/contact_sensor.py": "000dde649a8b270af0f7102fff67a51abc1a2ff359fa3179f52830d5b83fde80"
+  },
+  "finding": "PhysxManager.initialize calls _configure_physics, which sets /physics/disableContactProcessing=True. Official ContactSensor constructor sets False. No reset-callback overwrite or SettingsManager cache claim is made.",
+  "source_lines": {
+    "PhysxManager.initialize": 431,
+    "PhysxManager._configure_physics": 741,
+    "ContactSensor.__init__": 95
+  },
+  "new_Kit_launches": 0
+}

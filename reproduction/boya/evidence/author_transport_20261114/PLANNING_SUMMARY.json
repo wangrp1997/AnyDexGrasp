@@ -1,0 +1,56 @@
+{
+  "physics_steps": 0,
+  "grasp_attempts": 0,
+  "source_snapshot": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_transport_20261114_v1/planning_smoke_v3/author_transport_source_snapshot.py",
+  "source_snapshot_sha256": "88bc598effd84e181c65d6d36df4259f8f93edddc6cd8f077b8c853b30a8086b",
+  "source_snapshot_matches_recorded_sha": true,
+  "open_geometry_ok": true,
+  "post_approach_rigid_geometry_ok": false,
+  "post_approach_violation_count": 1937,
+  "first_violations": [
+    {
+      "sample": 1480,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 3,
+      "distance_m": -0.00041805700760599103
+    },
+    {
+      "sample": 1481,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 3,
+      "distance_m": -0.0008361747404853428
+    },
+    {
+      "sample": 1482,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 3,
+      "distance_m": -0.0012514639309042861
+    },
+    {
+      "sample": 1483,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 3,
+      "distance_m": -0.0016639209540250345
+    },
+    {
+      "sample": 1483,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 5,
+      "distance_m": -0.0002846147797160546
+    },
+    {
+      "sample": 1484,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 3,
+      "distance_m": -0.0020735424752972506
+    }
+  ],
+  "outcome": "null_geometry; no dispatch",
+  "subsequent_changes": "Support/phase/label/contact/clock/zero-step receipts and additional input guards corrected after this saved source snapshot; numerical planner unchanged. Current source bound independently below."
+}

@@ -1,0 +1,61 @@
+{
+  "schema": "anydex_author_transport_independent_prefix_audit_v1",
+  "status": "complete",
+  "prefix_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_transport_20261114_v1/approach_only_v4/closure_prefix.npz",
+  "prefix_sha256": "06ae17ecadbcf942a404def853d7733d602d6afb2854392b83bc96dda6cebef2",
+  "old_plan_commands_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/bridge_final_v2_g6_arm/native/commands.npz",
+  "old_plan_commands_sha256": "b40621a943d5a6cbaad4c139bb0787020710dc38c2b6e8f0c7f4b27e883eec5b",
+  "arrays": [
+    {
+      "array": "initial_position",
+      "shape": [
+        24
+      ],
+      "exact": true
+    },
+    {
+      "array": "joint_names",
+      "shape": [
+        24
+      ],
+      "exact": true
+    },
+    {
+      "array": "joint_target",
+      "shape": [
+        1600,
+        24
+      ],
+      "exact": true
+    },
+    {
+      "array": "phase",
+      "shape": [
+        1600
+      ],
+      "exact": true
+    },
+    {
+      "array": "desired_palm",
+      "shape": [
+        1600,
+        4,
+        4
+      ],
+      "exact": true
+    },
+    {
+      "array": "time_s",
+      "shape": [
+        1600
+      ],
+      "exact": true
+    }
+  ],
+  "full_prefix_steps": 1600,
+  "native_active_coordinates": 24,
+  "new_physics_steps": 0,
+  "new_training_updates": 0,
+  "new_CGR_forwards": 0,
+  "method": "Independent NumPy array_equal over every saved prefix array against full original native plan, preserving initial position and coordinate names"
+}

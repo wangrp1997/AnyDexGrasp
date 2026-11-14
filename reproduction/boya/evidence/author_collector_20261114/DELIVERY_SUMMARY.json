@@ -1,0 +1,155 @@
+{
+  "schema": "anydex_boya_author_collector_delivery_v1",
+  "status": "offline_preparation_and_native_arm_bridge_complete",
+  "final_prepared_paths": [
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/final_v4_g1/PREPARED.json",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/final_v4_g6/PREPARED.json",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/final_v4_g7/PREPARED.json",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/final_v4_g8/PREPARED.json"
+  ],
+  "source_cache": "Existing isolated EGAD A0 development RGBD/CGR, not new clutter observation or final external validation",
+  "source_raw_candidates": 2048,
+  "source_sparse_scene_camera_points": 21778,
+  "domain_joint_candidates": 8,
+  "profiles": [
+    {
+      "requested_gesture_id": 1,
+      "source_reference_type": 1,
+      "seed": 20261114,
+      "counts": {
+        "input": 2048,
+        "width": 1072,
+        "workspace": 568,
+        "approach": 496,
+        "joint": 8,
+        "top500": 8,
+        "mapping_available": 8,
+        "width_admitted": 8,
+        "collision_admitted": 3,
+        "top10": 3
+      },
+      "selected_candidate_sha256": "b2cebdd8d72cfae99712e7d9b1dada9de99e1d1bc9285261398173f525a3defa",
+      "wall_s": 1.920856513082981
+    },
+    {
+      "requested_gesture_id": 6,
+      "source_reference_type": 2,
+      "seed": 20261114,
+      "counts": {
+        "input": 2048,
+        "width": 1072,
+        "workspace": 568,
+        "approach": 496,
+        "joint": 8,
+        "top500": 8,
+        "mapping_available": 8,
+        "width_admitted": 8,
+        "collision_admitted": 3,
+        "top10": 3
+      },
+      "selected_candidate_sha256": "146d763998a807bd0c2f915add92a0eef053b9fe2a292252d8f687f9eb2abedc",
+      "wall_s": 1.9209358610678464
+    },
+    {
+      "requested_gesture_id": 7,
+      "source_reference_type": 3,
+      "seed": 20261114,
+      "counts": {
+        "input": 2048,
+        "width": 1072,
+        "workspace": 568,
+        "approach": 496,
+        "joint": 8,
+        "top500": 8,
+        "mapping_available": 8,
+        "width_admitted": 8,
+        "collision_admitted": 3,
+        "top10": 3
+      },
+      "selected_candidate_sha256": "ee5c6cf30acb499c26731a01905f19b1257eebe652779422b8fe801e7ed2e503",
+      "wall_s": 1.8765366428997368
+    },
+    {
+      "requested_gesture_id": 8,
+      "source_reference_type": 4,
+      "seed": 20261114,
+      "counts": {
+        "input": 2048,
+        "width": 1072,
+        "workspace": 568,
+        "approach": 496,
+        "joint": 8,
+        "top500": 8,
+        "mapping_available": 8,
+        "width_admitted": 8,
+        "collision_admitted": 3,
+        "top10": 3
+      },
+      "selected_candidate_sha256": "e317a70901859a41a4f9ac18db8e17340fdb9ff839a117e212f09d7a21d0f28d",
+      "wall_s": 1.9094458899926394
+    }
+  ],
+  "bridge": {
+    "status": "ready",
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/bridge_final_v2_g6_arm",
+    "wall_s": 13.028619405115023,
+    "active_command_shape": [
+      2100,
+      24
+    ],
+    "planned_mimic_columns": 4,
+    "action_validation": {
+      "numeric_contract_validated": true,
+      "hand_dof": 20,
+      "steps": 2100,
+      "all_hand_commands_exact": true,
+      "max_hand_command_error_rad": 0.0,
+      "max_grasp_palm_matrix_error": 2.9919436095315888e-09,
+      "slot_id": "g6:distal_000:ff",
+      "contract_sha256": "66052bae5888f131987b6587850607f1a71737647169fd15ba04ac47f4d881cd",
+      "physical_semantics_validated": false,
+      "physics_steps": 0,
+      "planned_mimic_expansion": {
+        "native_planned_columns": 24,
+        "derived_mimic_columns": [
+          "FFJ1",
+          "MFJ1",
+          "RFJ1",
+          "LFJ1"
+        ],
+        "physical_joint_commands_observed": false
+      }
+    }
+  },
+  "counts": {
+    "new_RGBD": 0,
+    "new_CGR_forwards": 0,
+    "physical_steps": 0,
+    "new_training_labels": 0,
+    "real_optimizer_updates": 0,
+    "formal_new_models": 0
+  },
+  "preparation_history": {
+    "jobs": 16,
+    "full_source_collision_queries": 128,
+    "explanation": "Four developmental batches of four types preserve old implementation/contract snapshots; only final_v4 is final. No physical retry or model inference."
+  },
+  "native_planning_history": {
+    "actual_preparations": 3,
+    "explanation": "Initial native preparation admitted but post-plan audit expected explicit mimic columns and failed, retained. Second preparation validated planned mimic expansion. Final third preparation freezes optional source-bound primary collision-refinement transport handoff. Zero physics in all three."
+  },
+  "tests": {
+    "unique_tests": 10,
+    "result": "passed",
+    "wall_s": 2.172
+  },
+  "formal_collection_ready": false,
+  "physical_semantics_validated": false,
+  "remaining": [
+    "Fresh dynamic clutter observation to single-CGR-to-source choice integration",
+    "All-body arm/hand path and transport/bin collision checks",
+    "Actual no-reset grasp/retreat/transport/release; any-body authoritative label acceptance",
+    "Compatible task data collection, formal training and frozen external validation"
+  ],
+  "test_development_note": "First source-boundary synthetic test changed one rotation element and was rejected as invalid SO3; fixed to a proper boundary rotation. The first shell patch used unavailable python before switching to the existing venv. No real optimizer, model or simulator was invoked by these failures."
+}

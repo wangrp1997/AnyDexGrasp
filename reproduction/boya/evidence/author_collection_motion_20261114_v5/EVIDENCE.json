@@ -1,0 +1,51 @@
+{
+  "schema": "anydex_boya_collection_source_motion_patch_v5",
+  "complete": true,
+  "scope": "Pinned actual public collection 4cm approach, replacing inherited legacy backend 10cm; no new planning or simulator",
+  "source_motion_policy": {
+    "approach_distance_m": 0.04,
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+      "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb"
+    },
+    "function": "robot_grasp",
+    "assignment_line": 469,
+    "call_lines": {
+      "mfcdetector.detect": 472,
+      "robot.grasp_and_throw": 548
+    },
+    "shared_argument": "approach_dist=approach_distance",
+    "role": "Public collection collision and grasp_and_throw use the same 4cm, including retreat to pregrasp",
+    "backend_distance_is_authoritative": false
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline.py": "b920d4ee5aa5816f19dce398260a6133a8b6771243703a13d87886c0bd7c3800",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline_entry.py": "0afb302792363a7819fc9cb09caa1750ec71884bbccda7e8dd291a5633123dd8"
+  },
+  "unchanged_transport": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py",
+    "sha256": "23458ad5133b8e87192c8d7a20ad1ac4cc80e2a29d42dea64c6180b83922492a"
+  },
+  "tests": {
+    "passed": true,
+    "tests": 21,
+    "subtests": 26,
+    "legacy_backend_point10_overridden_by_pinned_point04": true,
+    "source_hash_tamper_rejected": true,
+    "collision_argument_tamper_rejected": true,
+    "execution_argument_tamper_rejected": true,
+    "actual_retreat_pregrasp_m": 0.04
+  },
+  "new_physics_steps": 0,
+  "new_native_plans": 0,
+  "new_CGR_forwards": 0,
+  "new_training_updates": 0,
+  "new_labels": 0,
+  "old_v4_outputs_and_evidence_rewritten": false,
+  "source_artifacts": {
+    "reproduction/boya/evidence/author_collection_motion_20261114_v5/TESTS.log": "bb5b3e77da048748cf793aa9618b5a4aeac637222e5d1e5b7ffd4b2932b2264e",
+    "reproduction/boya/evidence/author_collection_motion_20261114_v5/author_pipeline.py": "b920d4ee5aa5816f19dce398260a6133a8b6771243703a13d87886c0bd7c3800",
+    "reproduction/boya/evidence/author_collection_motion_20261114_v5/SOURCE_MOTION_POLICY.json": "e4f37dfccd5ab4523bbea7e3791d2c1d32a63d6fe83804f68b8f1554b47d65db",
+    "reproduction/boya/evidence/author_collection_motion_20261114_v5/test_author_pipeline_entry.py": "0afb302792363a7819fc9cb09caa1750ec71884bbccda7e8dd291a5633123dd8"
+  }
+}

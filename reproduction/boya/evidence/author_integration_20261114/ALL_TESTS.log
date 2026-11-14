@@ -1,0 +1,52 @@
+test_actual_commands_and_mimic_mutation (test_author_action_semantics.ActionSemanticsTests.test_actual_commands_and_mimic_mutation) ... ok
+test_all_types_keep_inactive_and_nonflexion_commands_and_four_mimics (test_author_action_semantics.ActionSemanticsTests.test_all_types_keep_inactive_and_nonflexion_commands_and_four_mimics) ... ok
+test_approach_reference_depth_and_actual_row_binding (test_author_action_semantics.ActionSemanticsTests.test_approach_reference_depth_and_actual_row_binding) ... ok
+test_missing_duplicate_joint_or_unknown_phase_rejected (test_author_action_semantics.ActionSemanticsTests.test_missing_duplicate_joint_or_unknown_phase_rejected) ... ok
+test_mutated_endpoint_or_inactive_coordinate_rejected (test_author_action_semantics.ActionSemanticsTests.test_mutated_endpoint_or_inactive_coordinate_rejected) ... ok
+test_reference_midpoint_mutation_and_explicit_path_bypass_rejected (test_author_action_semantics.ActionSemanticsTests.test_reference_midpoint_mutation_and_explicit_path_bypass_rejected) ... ok
+test_source_collection_flip_reverses_approach_but_deployment_retains_it (test_author_action_semantics.ActionSemanticsTests.test_source_collection_flip_reverses_approach_but_deployment_retains_it) ... ok
+test_canonical_source_flag_is_independent_of_collection_pose_flip (test_author_collect.AuthorCollectTests.test_canonical_source_flag_is_independent_of_collection_pose_flip) ... ok
+test_declared_camera_domain_transforms_points_and_directions_only (test_author_collect.AuthorCollectTests.test_declared_camera_domain_transforms_points_and_directions_only) ... ok
+test_filtered_augmented_and_wrong_observation_caches_are_rejected (test_author_collect.AuthorCollectTests.test_filtered_augmented_and_wrong_observation_caches_are_rejected) ... ok
+test_full_policy_top500_flip_single_depth_and_postgeometry_original_rank (test_author_collect.AuthorCollectTests.test_full_policy_top500_flip_single_depth_and_postgeometry_original_rank) ... ok
+test_no_plan_infra_or_wrong_task_never_fabricate_negative_label (test_author_collect.AuthorCollectTests.test_no_plan_infra_or_wrong_task_never_fabricate_negative_label) ... ok
+test_source_masks_strict_boundaries_no_hand_or_table_gate (test_author_collect.AuthorCollectTests.test_source_masks_strict_boundaries_no_hand_or_table_gate) ... ok
+test_changed_grasp_or_endpoint_cannot_be_rehashed_into_same_contract (test_author_collection_bridge.AuthorCollectionBridgeTests.test_changed_grasp_or_endpoint_cannot_be_rehashed_into_same_contract) ... ok
+test_fixed_choice_no_plan_does_not_try_other_top10_or_create_label (test_author_collection_bridge.AuthorCollectionBridgeTests.test_fixed_choice_no_plan_does_not_try_other_top10_or_create_label) ... ok
+test_minimal_pool_preserves_fixed_choice_endpoints_and_depth_once (test_author_collection_bridge.AuthorCollectionBridgeTests.test_minimal_pool_preserves_fixed_choice_endpoints_and_depth_once) ... ok
+test_real_native_24_column_plan_has_exact_source_20_hand_expansion (test_author_collection_bridge.AuthorCollectionBridgeTests.test_real_native_24_column_plan_has_exact_source_20_hand_expansion) ... ok
+test_author_transport (unittest.loader._FailedTest.test_author_transport) ... ERROR
+test_author_pipeline_entry (unittest.loader._FailedTest.test_author_pipeline_entry) ... ERROR
+test_actual_sources_form_common_scene_and_reject_changes (test_author_scene.SceneTests.test_actual_sources_form_common_scene_and_reject_changes) ... ok
+test_bin_cavity_world_geometry_and_invalid_rotation (test_author_scene.SceneTests.test_bin_cavity_world_geometry_and_invalid_rotation) ... ok
+
+======================================================================
+ERROR: test_author_transport (unittest.loader._FailedTest.test_author_transport)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_author_transport
+Traceback (most recent call last):
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_transport.py", line 9, in <module>
+    from reproduction.boya.author_transport import (
+ModuleNotFoundError: No module named 'reproduction'
+
+
+======================================================================
+ERROR: test_author_pipeline_entry (unittest.loader._FailedTest.test_author_pipeline_entry)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_author_pipeline_entry
+Traceback (most recent call last):
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline_entry.py", line 13, in <module>
+    from reproduction.boya import author_pipeline as pipeline
+ModuleNotFoundError: No module named 'reproduction'
+
+
+----------------------------------------------------------------------
+Ran 21 tests in 5.459s
+
+FAILED (errors=2)

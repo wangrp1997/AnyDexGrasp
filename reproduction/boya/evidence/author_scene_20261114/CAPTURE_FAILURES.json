@@ -1,0 +1,53 @@
+[
+  {
+    "version": "v1",
+    "error_receipt": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v1/capture/ERROR.json",
+    "sha256": "c1702debceaeacd01630f23badaf0923874212df4019c8bf92202b3544f471fe",
+    "reason": "Invalid USD bin child path x_-1; no recorded physics tick",
+    "recorded_cost": {
+      "physics_ticks": 0,
+      "initialization_object_steps": 0,
+      "grasp_attempts": 0,
+      "CGR_forwards": 0,
+      "wall_s": 24.342673713108525
+    },
+    "frozen_capture_source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v1/AUTHOR_SCENE_SOURCE.py",
+    "frozen_capture_source_sha256": "470c2ea19f2b13a7e11541b4d5f813e156b36d24fc57a1cc78f30669df5bae95",
+    "source_scene_sha256": "83f752ee6a093ca6cbe6eb64a93e7ac5640f06d0d027c4b890286f7dc86b454f",
+    "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py\", line 201, in capture\n    cfg.func('/World/AuthorBin/'+name, cfg, translation=tuple(center))\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/utils/string.py\", line 221, in __call__\n    return self._resolve()(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sim/utils/prims.py\", line 741, in wrapper\n    prim = func(prim_spawn_path, cfg, *args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sim/spawners/shapes/shapes.py\", line 109, in spawn_cuboid\n    _spawn_geom_from_prim_type(prim_path, cfg, \"Cube\", attributes, translation, orientation, scale, stage=stage)\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sim/spawners/shapes/shapes.py\", line 346, in _spawn_geom_from_prim_type\n    create_prim(prim_path, prim_type=\"Xform\", translation=translation, orientation=orientation, stage=stage)\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sim/utils/prims.py\", line 153, in create_prim\n    prim = stage.DefinePrim(prim_path, prim_type)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\npxr.Tf.ErrorException: \n\tError in 'pxrInternal_v0_25_11__pxrReserved__::UsdStage::_IsValidPathForCreatingPrim' at line 3715 in file ./builds/omniverse/usd-ci/conan/src/0.25.11.kit.5/pxr/usd/usd/stage.cpp : 'Path must be an absolute path: <>'\n"
+  },
+  {
+    "version": "v2",
+    "error_receipt": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v2/capture/ERROR.json",
+    "sha256": "bf1085e236eaa2d0b4c19105edce0712f7bae2c3ce4f3bf87449a1c16f22add2",
+    "reason": "Missing isolated clarabel dependency during native audit; no recorded physics tick",
+    "recorded_cost": {
+      "physics_ticks": 0,
+      "initialization_object_steps": 0,
+      "grasp_attempts": 0,
+      "CGR_forwards": 0,
+      "wall_s": 21.877623840002343
+    },
+    "frozen_capture_source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v2/AUTHOR_SCENE_SOURCE.py",
+    "frozen_capture_source_sha256": "57611ee09ed540e2c453e38149f133e5016e9fbadb1889c2ae2215345d4a7bec",
+    "source_scene_sha256": "77cb0d2bbc7c81755b5a2b41b33c841388968b9f636afc1c01007cf008aaa20e",
+    "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py\", line 230, in capture\n    native = audit_scene(sim, output_dir/'native', ['all'], roots=tuple(roots), fast=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/scripts/research/template_gripper_native_audit.py\", line 42, in audit_scene\n    from canondex.grasp.cooking_audit import convex_distances,convex_witness_bounds\n  File \"/home/wangrenpeng/CanonDex/canondex/grasp/cooking_audit.py\", line 9, in <module>\n    import clarabel\nModuleNotFoundError: No module named 'clarabel'\n"
+  },
+  {
+    "version": "v3",
+    "error_receipt": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v3/capture/ERROR.json",
+    "sha256": "e9e54b93fa355eb059b6f9c552235c35da1939e25139f39df44b000fca27e077",
+    "reason": "Contact processing guard failed before first physics tick",
+    "recorded_cost": {
+      "physics_ticks": 0,
+      "initialization_object_steps": 0,
+      "grasp_attempts": 0,
+      "CGR_forwards": 0,
+      "wall_s": 24.732516641030088
+    },
+    "frozen_capture_source": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v3/AUTHOR_SCENE_SOURCE.py",
+    "frozen_capture_source_sha256": "36f0740cf9a042726f56be1c489b2cb23bc3ebed18cb1d003dcbe5e15bcff47a",
+    "source_scene_sha256": "b2b51c385c41558846b3c87b50cd738e67b2a3c29465ee13aafa2050f9832912",
+    "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py\", line 240, in capture\n    raise ValueError('Explicit enabled native contact processing and collision paths required')\nValueError: Explicit enabled native contact processing and collision paths required\n"
+  }
+]

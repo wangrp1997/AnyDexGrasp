@@ -1,0 +1,8 @@
+{
+  "stage": "bridge_g6_arm",
+  "native_plan_admitted": true,
+  "physics_steps": 0,
+  "labels": 0,
+  "failure": "ActionContract requires 20 named hand targets; source native planner has 16 finger motors plus 8 arm/wrist, and expands 4 mimics only at execution",
+  "resolution": "New bridge expands source mimic equations only in validation arrays, preserving original 24-column native commands. Initial source outputs retained; later final bridge separate."
+}

@@ -1,0 +1,186 @@
+{
+  "schema": "anydex_boya_author_pipeline_fourtype_source4cm_queue_v1",
+  "scope": "Repeat the same four fixed original source choices after correcting the source pregrasp distance adaptation from legacy0.10m to public DH3 collection0.04m; pure preparation only, no simulator or label.",
+  "inputs": {
+    "scene": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observed_scene.json",
+      "sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd"
+    },
+    "observation": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observation.json",
+      "sha256": "d3a9a935360c5c099c3f4c00a483ed79dc9286c446ba5e825f1f138bc32e1c3e"
+    },
+    "raw_candidates": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/representation/representations/development_three_20261114/raw_camera_candidates.npz",
+      "sha256": "6a648c255b957fed56d446343e251e3986e59dd170a63ae6977909edcb448f33"
+    },
+    "representation_outputs": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/representation/representations/development_three_20261114/representation_outputs.npz",
+      "sha256": "3339950ae2dedaedfcb8ef3b98754be1b3d9c8f2650bc925c41f90e312b21f5e"
+    },
+    "representation_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/representation/representations/development_three_20261114/RESULTS.json",
+      "sha256": "c41aeea7aab152dbab01c6543664ac4ef6034218e8b7650cb7b8700e1b978d66"
+    },
+    "calibration": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "sha256": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832"
+    },
+    "hand_cloud_manifest": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v2/hand_clouds/MANIFEST.json",
+      "sha256": "d5ba0f1cae61d5a23ea8f7466ed86d5783d773cb0524344c85b9565220711cf6"
+    },
+    "backend": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.collection.json",
+      "sha256": "d578a7d7441378d9d8e4cb683845ddadf0977e8097edce00615e8a7b8c1c584d"
+    },
+    "archive_sources": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/SCENE_ARCHIVE_SOURCES.json",
+      "sha256": "505b1fd35b1ef3354c4a61f1019f2032cb2a7d12cd1a2e61332baaf19763a1f9"
+    },
+    "input_identity_audit": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/INPUT_IDENTITY_AUDIT.json",
+      "sha256": "8f556bb6103950b1b3d5d3cae39f262ae8111c229e078d02486cf841a2c5bd4a"
+    }
+  },
+  "representation_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/representation/representations/development_three_20261114",
+  "domain": {
+    "mode": "declared_world_rig",
+    "world_workspace_aabb_m": [
+      [
+        -1.0,
+        -0.04,
+        -0.02
+      ],
+      [
+        -0.57,
+        0.24,
+        0.3
+      ]
+    ],
+    "approach_world_cone": {
+      "axis_world": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "cos_threshold": 0.9
+    },
+    "raw_width_bounds_m": [
+      0.01,
+      0.099
+    ],
+    "sensor_input_depth_range_m": [
+      0.2,
+      0.65
+    ]
+  },
+  "jobs": [
+    {
+      "gesture_id": 1,
+      "source_reference_type": 1,
+      "seed": 20261114,
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1",
+      "source_choice_expected_by_identical_snapshot": {
+        "reference": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_snapshot_three_20261114_v1/prepare_g1/PREPARED.json",
+          "sha256": "5db4eb97dca6a5eb6bbee7cc1316f5b07dc3285575fa2eb50bb08ae8eb783fb2"
+        },
+        "raw_source_index": 879,
+        "source_if_flip": false,
+        "extra_depth_m": 0.01,
+        "slot_id": "g1:distal_000:ff"
+      },
+      "maximum_grasp_choices": 1,
+      "fallback_or_retarget": false,
+      "execute": false
+    },
+    {
+      "gesture_id": 6,
+      "source_reference_type": 2,
+      "seed": 20261114,
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6",
+      "source_choice_expected_by_identical_snapshot": {
+        "reference": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_snapshot_three_20261114_v1/prepare_g6/PREPARED.json",
+          "sha256": "2564a7f563ece06b3f79884a6bd7c75f99ae9ff2eef163b2c528f9db5d3f9b47"
+        },
+        "raw_source_index": 879,
+        "source_if_flip": false,
+        "extra_depth_m": 0.01,
+        "slot_id": "g6:distal_000:ff"
+      },
+      "maximum_grasp_choices": 1,
+      "fallback_or_retarget": false,
+      "execute": false
+    },
+    {
+      "gesture_id": 7,
+      "source_reference_type": 3,
+      "seed": 20261114,
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7",
+      "source_choice_expected_by_identical_snapshot": {
+        "reference": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_snapshot_three_20261114_v1/prepare_g7/PREPARED.json",
+          "sha256": "784ce2f377007c5f3119d0f2bc30da037ad1cf9380c6c17d99470fa4558e9138"
+        },
+        "raw_source_index": 879,
+        "source_if_flip": false,
+        "extra_depth_m": 0.01,
+        "slot_id": "g7:distal_000:ff"
+      },
+      "maximum_grasp_choices": 1,
+      "fallback_or_retarget": false,
+      "execute": false
+    },
+    {
+      "gesture_id": 8,
+      "source_reference_type": 4,
+      "seed": 20261114,
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8",
+      "source_choice_expected_by_identical_snapshot": {
+        "reference": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_snapshot_three_20261114_v1/prepare_g8/PREPARED.json",
+          "sha256": "7da4e78f8dc742ecb0e69c195ec9524ccc2da666ec017dcf60063985ffb056d5"
+        },
+        "raw_source_index": 879,
+        "source_if_flip": false,
+        "extra_depth_m": 0.01,
+        "slot_id": "g8:distal_000:ff"
+      },
+      "maximum_grasp_choices": 1,
+      "fallback_or_retarget": false,
+      "execute": false
+    }
+  ],
+  "dispatch": {
+    "parallel_processes": 4,
+    "outer_OMP_NUM_THREADS": 1,
+    "native_prepare_OMP_NUM_THREADS": 4,
+    "native_OMP_threads_upper_bound": 16,
+    "OPENBLAS_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "physics_steps": 0,
+    "kit_launches": 0,
+    "new_CGR_forwards": 0,
+    "training_updates": 0,
+    "labels": 0
+  },
+  "source_freeze": "Wait for v5 code-ready notification. Then verify exact new pipeline source, unchanged transport and other unchanged sources before dispatch. Archive legacy pipeline source separately; never rewrite prior queue.",
+  "root_execution_policy": "Root may choose one ready among these four by fixed gesture priority [1,6,7,8], at most one actual execution; this queue performs no execution.",
+  "prior_queue": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/QUEUE_PROTOCOL.json",
+    "sha256": "46d39c3a83340ce30684e295bd73500c25089d4e6f61391701a4b3a725dec2e5"
+  },
+  "prior_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1/SUMMARY.json",
+    "sha256": "57408628f143c3aaa811c4f9b729b63ad34f6c5afce6070c1a5cb6a10f647ae7"
+  },
+  "only_behavior_change": {
+    "field": "derived_backend.pregrasp_distance_m",
+    "old": 0.1,
+    "new": 0.04,
+    "source": "Public DH3 collect_dh3.py approach_dist consumed by actual grasp_and_throw",
+    "preserve": "Original source candidate, source flip, extra depth once, LUT, calibration, hand cloud, observation, scene/object/bin, source collision gates and native geometry tolerances remain identical."
+  }
+}

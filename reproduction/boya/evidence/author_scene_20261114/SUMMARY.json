@@ -1,0 +1,473 @@
+{
+  "schema": "anydex_boya_author_scene_independent_delivery_v1",
+  "audits": {
+    "v2": {
+      "snapshot_validated": true,
+      "initialization_contact_evidence_usable": false,
+      "all_required_scene_evidence_validated": false,
+      "physics_ticks_read": 750,
+      "object_steps_read": 2250,
+      "existing_frozen_input_count": 53,
+      "existing_frozen_source_count": 517,
+      "existing_frozen_dependencies_unchanged": true,
+      "native_geometry": {
+        "hulls_independently_checked": 1633,
+        "owners": {
+          "/World/AuthorScene/graspnet_000": 955,
+          "/World/AuthorScene/graspnet_002": 370,
+          "/World/AuthorScene/graspnet_005": 308
+        },
+        "maximum_source_to_cooked_closest_triangle_distance_m": 1.9894589391285522e-05,
+        "maximum_cooked_to_source_closest_triangle_distance_m": 0.0,
+        "native20um_pass": true,
+        "boundary": "Source/cooked import preservation; convex proxies remain approximations and runtime shape poses/contact solver are separate"
+      },
+      "contacts": {
+        "schema": "ground_only",
+        "total_recorded_contacts": 0,
+        "final_250_supported_ticks": {
+          "/World/AuthorScene/graspnet_000": 0,
+          "/World/AuthorScene/graspnet_002": 0,
+          "/World/AuthorScene/graspnet_005": 0
+        },
+        "total_rows_by_body": {
+          "/World/AuthorScene/graspnet_000": 0,
+          "/World/AuthorScene/graspnet_002": 0,
+          "/World/AuthorScene/graspnet_005": 0
+        },
+        "evidence_usable": false,
+        "boundary": "Empty stream does not establish absence of physical contact"
+      },
+      "camera": {
+        "pose_matrix_max_error": 1.096557493696082e-07,
+        "rays_independently_checked": 96,
+        "source_object_or_bin_first_hits": 23,
+        "native_depth_median_error_m": 2.7565089599779213e-08,
+        "saved_source_object_or_bin_first_hits": 25,
+        "ground_coplanar_first_hit_ties": 2,
+        "equivalent_ground_bin_hit_classification_differences": [
+          19,
+          39
+        ],
+        "native_depth_max_error_m": 5.430046119969667e-06,
+        "png_quantization_max_error_m": 0.0004940922260284197,
+        "rays_in_network_depth_range": 79,
+        "rays_masked_from_network_png": 17,
+        "raw_depth_files_checked": [],
+        "bin_boxes": [
+          {
+            "center_world_m": [
+              -0.4,
+              -0.25,
+              -0.0050000000000000044
+            ],
+            "extents_m": [
+              0.32,
+              0.32,
+              0.01
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.555,
+              -0.25,
+              0.1
+            ],
+            "extents_m": [
+              0.01,
+              0.32,
+              0.2
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.24500000000000002,
+              -0.25,
+              0.1
+            ],
+            "extents_m": [
+              0.01,
+              0.32,
+              0.2
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.4,
+              -0.405,
+              0.1
+            ],
+            "extents_m": [
+              0.3,
+              0.01,
+              0.2
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.4,
+              -0.095,
+              0.1
+            ],
+            "extents_m": [
+              0.3,
+              0.01,
+              0.2
+            ]
+          }
+        ]
+      },
+      "objects": [
+        {
+          "object_id": "graspnet_000",
+          "source_vertices": 262146,
+          "initial_position_error_m": 1.4901161138336505e-09,
+          "initial_rotation_matrix_error": 5.9425688045313535e-08,
+          "observed_pose_matrix_error": 1.1102230246251565e-16,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.002041690942547546,
+            "max_angular_speed_rad_s": 0.04513419956019287,
+            "max_window_translation_m": 8.690718231973228e-06,
+            "max_window_rotation_rad": 7.530307965125515e-05,
+            "stable": true
+          },
+          "mass_and_friction_readback": {
+            "mass_kg": 0.10000000149011612,
+            "friction": 0.6000000238418579
+          },
+          "source_bottom_initial_m": 0.001881536861944269,
+          "source_bottom_final_m": 0.0018811539524505871,
+          "source_bottom_min_m": 0.001881121130527616,
+          "source_bottom_max_m": 0.0018818349847522647,
+          "observed_source_world_bounds_m": [
+            [
+              -0.7863038099646938,
+              0.016298342494346307,
+              0.0018811539524505871
+            ],
+            [
+              -0.7143987009871118,
+              0.18039694796035927,
+              0.21536139471203736
+            ]
+          ]
+        },
+        {
+          "object_id": "graspnet_002",
+          "source_vertices": 262130,
+          "initial_position_error_m": 8.940696710757479e-09,
+          "initial_rotation_matrix_error": 1.1931826009918631e-07,
+          "observed_pose_matrix_error": 1.1102230246251565e-16,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.00273680728790061,
+            "max_angular_speed_rad_s": 0.04659633348580734,
+            "max_window_translation_m": 1.5637391373003091e-06,
+            "max_window_rotation_rad": 2.300293368415085e-05,
+            "stable": true
+          },
+          "mass_and_friction_readback": {
+            "mass_kg": 0.10000000149011612,
+            "friction": 0.6000000238418579
+          },
+          "source_bottom_initial_m": 0.0006844741468140306,
+          "source_bottom_final_m": 0.0006848083563402024,
+          "source_bottom_min_m": 0.0006844741468140306,
+          "source_bottom_max_m": 0.0006849654115534259,
+          "observed_source_world_bounds_m": [
+            [
+              -0.6642653222623564,
+              0.06772990719849067,
+              0.0006848083563402024
+            ],
+            [
+              -0.5964413396245618,
+              0.13542529539316478,
+              0.10239692870361569
+            ]
+          ]
+        },
+        {
+          "object_id": "graspnet_005",
+          "source_vertices": 262146,
+          "initial_position_error_m": 1.4305114759416426e-08,
+          "initial_rotation_matrix_error": 1.2020266884301724e-07,
+          "observed_pose_matrix_error": 1.1102230246251565e-16,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0008396685283974805,
+            "max_angular_speed_rad_s": 0.036767614465424904,
+            "max_window_translation_m": 2.2891598188485527e-06,
+            "max_window_rotation_rad": 0.00010858861312726018,
+            "stable": true
+          },
+          "mass_and_friction_readback": {
+            "mass_kg": 0.10000000149011612,
+            "friction": 0.6000000238418579
+          },
+          "source_bottom_initial_m": 0.0015583791314851443,
+          "source_bottom_final_m": 0.0015591756239070227,
+          "source_bottom_min_m": 0.0015583791314851443,
+          "source_bottom_max_m": 0.0015594350315955748,
+          "observed_source_world_bounds_m": [
+            [
+              -0.9257660051022172,
+              -0.0014406908655543588,
+              0.0015591756239070227
+            ],
+            [
+              -0.8166214775737737,
+              0.17696364249229646,
+              0.03792214083197745
+            ]
+          ]
+        }
+      ],
+      "audit_wall_s": 16.90434247511439,
+      "audit_source_sha256": "f2e59da0d85e9e358b842a9d63589cfb8240e10cc800c541bd8518da773a73de",
+      "audit_json_sha256": "eb2e06d2cb408c9d9bb451266f30d2f219c0b866b23ff90160474eba7da626e2",
+      "capture_receipt_sha256": "075a761283ff42c4bbb0289b13d0e639f5a7087fab2521ca60b5d462f4aa645c",
+      "original_capture_wall_s": 36.46389203006402
+    },
+    "v4": {
+      "snapshot_validated": true,
+      "initialization_contact_evidence_usable": true,
+      "all_required_scene_evidence_validated": true,
+      "physics_ticks_read": 750,
+      "object_steps_read": 2250,
+      "existing_frozen_input_count": 53,
+      "existing_frozen_source_count": 518,
+      "existing_frozen_dependencies_unchanged": true,
+      "native_geometry": {
+        "hulls_independently_checked": 1633,
+        "owners": {
+          "/World/AuthorScene/graspnet_000": 955,
+          "/World/AuthorScene/graspnet_002": 370,
+          "/World/AuthorScene/graspnet_005": 308
+        },
+        "maximum_source_to_cooked_closest_triangle_distance_m": 1.9894589391285522e-05,
+        "maximum_cooked_to_source_closest_triangle_distance_m": 0.0,
+        "native20um_pass": true,
+        "boundary": "Source/cooked import preservation; convex proxies remain approximations and runtime shape poses/contact solver are separate"
+      },
+      "contacts": {
+        "schema": "full_object_object_floor_bin",
+        "total_recorded_contacts": 1530750,
+        "final_250_supported_ticks": {
+          "/World/AuthorScene/graspnet_000": 250,
+          "/World/AuthorScene/graspnet_002": 250,
+          "/World/AuthorScene/graspnet_005": 250
+        },
+        "total_rows_by_body": {
+          "/World/AuthorScene/graspnet_000": 440250,
+          "/World/AuthorScene/graspnet_002": 387000,
+          "/World/AuthorScene/graspnet_005": 703500
+        },
+        "evidence_usable": true,
+        "boundary": "Empty stream does not establish absence of physical contact"
+      },
+      "camera": {
+        "pose_matrix_max_error": 1.096557493696082e-07,
+        "rays_independently_checked": 96,
+        "source_object_or_bin_first_hits": 23,
+        "native_depth_median_error_m": 2.7565089599779213e-08,
+        "saved_source_object_or_bin_first_hits": 25,
+        "ground_coplanar_first_hit_ties": 2,
+        "equivalent_ground_bin_hit_classification_differences": [
+          19,
+          39
+        ],
+        "native_depth_max_error_m": 5.430046119969667e-06,
+        "png_quantization_max_error_m": 0.0004940922260284197,
+        "rays_in_network_depth_range": 79,
+        "rays_masked_from_network_png": 17,
+        "raw_depth_files_checked": [
+          {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/native_rgbd.npz",
+            "sha256": "2b462d4830410cc5ffac8621ebec659dddca2a9cf2b8ade9338b35a59a3891fd",
+            "sampled_rays_exact": true,
+            "full_depth_png_exact": true,
+            "full_rgb_png_exact": true,
+            "valid_pixels": 558859,
+            "image_pixels": 921600
+          }
+        ],
+        "bin_boxes": [
+          {
+            "center_world_m": [
+              -0.4,
+              -0.25,
+              -0.0050000000000000044
+            ],
+            "extents_m": [
+              0.32,
+              0.32,
+              0.01
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.555,
+              -0.25,
+              0.1
+            ],
+            "extents_m": [
+              0.01,
+              0.32,
+              0.2
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.24500000000000002,
+              -0.25,
+              0.1
+            ],
+            "extents_m": [
+              0.01,
+              0.32,
+              0.2
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.4,
+              -0.405,
+              0.1
+            ],
+            "extents_m": [
+              0.3,
+              0.01,
+              0.2
+            ]
+          },
+          {
+            "center_world_m": [
+              -0.4,
+              -0.095,
+              0.1
+            ],
+            "extents_m": [
+              0.3,
+              0.01,
+              0.2
+            ]
+          }
+        ]
+      },
+      "objects": [
+        {
+          "object_id": "graspnet_000",
+          "source_vertices": 262146,
+          "initial_position_error_m": 1.4901161138336505e-09,
+          "initial_rotation_matrix_error": 5.9425688045313535e-08,
+          "observed_pose_matrix_error": 1.1102230246251565e-16,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.002041690942547546,
+            "max_angular_speed_rad_s": 0.04513419956019287,
+            "max_window_translation_m": 8.690718231973228e-06,
+            "max_window_rotation_rad": 7.530307965125515e-05,
+            "stable": true
+          },
+          "mass_and_friction_readback": {
+            "mass_kg": 0.10000000149011612,
+            "friction": 0.6000000238418579
+          },
+          "source_bottom_initial_m": 0.001881536861944269,
+          "source_bottom_final_m": 0.0018811539524505871,
+          "source_bottom_min_m": 0.001881121130527616,
+          "source_bottom_max_m": 0.0018818349847522647,
+          "observed_source_world_bounds_m": [
+            [
+              -0.7863038099646938,
+              0.016298342494346307,
+              0.0018811539524505871
+            ],
+            [
+              -0.7143987009871118,
+              0.18039694796035927,
+              0.21536139471203736
+            ]
+          ]
+        },
+        {
+          "object_id": "graspnet_002",
+          "source_vertices": 262130,
+          "initial_position_error_m": 8.940696710757479e-09,
+          "initial_rotation_matrix_error": 1.1931826009918631e-07,
+          "observed_pose_matrix_error": 1.1102230246251565e-16,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.00273680728790061,
+            "max_angular_speed_rad_s": 0.04659633348580734,
+            "max_window_translation_m": 1.5637391373003091e-06,
+            "max_window_rotation_rad": 2.300293368415085e-05,
+            "stable": true
+          },
+          "mass_and_friction_readback": {
+            "mass_kg": 0.10000000149011612,
+            "friction": 0.6000000238418579
+          },
+          "source_bottom_initial_m": 0.0006844741468140306,
+          "source_bottom_final_m": 0.0006848083563402024,
+          "source_bottom_min_m": 0.0006844741468140306,
+          "source_bottom_max_m": 0.0006849654115534259,
+          "observed_source_world_bounds_m": [
+            [
+              -0.6642653222623564,
+              0.06772990719849067,
+              0.0006848083563402024
+            ],
+            [
+              -0.5964413396245618,
+              0.13542529539316478,
+              0.10239692870361569
+            ]
+          ]
+        },
+        {
+          "object_id": "graspnet_005",
+          "source_vertices": 262146,
+          "initial_position_error_m": 1.4305114759416426e-08,
+          "initial_rotation_matrix_error": 1.2020266884301724e-07,
+          "observed_pose_matrix_error": 1.1102230246251565e-16,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0008396685283974805,
+            "max_angular_speed_rad_s": 0.036767614465424904,
+            "max_window_translation_m": 2.2891598188485527e-06,
+            "max_window_rotation_rad": 0.00010858861312726018,
+            "stable": true
+          },
+          "mass_and_friction_readback": {
+            "mass_kg": 0.10000000149011612,
+            "friction": 0.6000000238418579
+          },
+          "source_bottom_initial_m": 0.0015583791314851443,
+          "source_bottom_final_m": 0.0015591756239070227,
+          "source_bottom_min_m": 0.0015583791314851443,
+          "source_bottom_max_m": 0.0015594350315955748,
+          "observed_source_world_bounds_m": [
+            [
+              -0.9257660051022172,
+              -0.0014406908655543588,
+              0.0015591756239070227
+            ],
+            [
+              -0.8166214775737737,
+              0.17696364249229646,
+              0.03792214083197745
+            ]
+          ]
+        }
+      ],
+      "audit_wall_s": 25.82776568690315,
+      "audit_source_sha256": "f2e59da0d85e9e358b842a9d63589cfb8240e10cc800c541bd8518da773a73de",
+      "audit_json_sha256": "1a95eab403b8cd745790a138b8188c700dd44901e6ab9cd6ce49ad5d1a7bbc98",
+      "capture_receipt_sha256": "f0871f9b49dfdde66c7f793bf1aea16cd86585b881b0d9b3a8b1667afe6fda49",
+      "original_capture_wall_s": 79.3293243010994
+    }
+  },
+  "total_capture_physics_ticks_read": 1500,
+  "total_capture_object_steps_read": 4500,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_training_updates": 0,
+  "scope": "One fixed previously-used three-body development placement, no grasp, label, training or success-rate claim"
+}

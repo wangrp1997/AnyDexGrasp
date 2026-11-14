@@ -1,0 +1,16 @@
+{
+  "approach_distance_m": 0.04,
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+    "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb"
+  },
+  "function": "robot_grasp",
+  "assignment_line": 469,
+  "call_lines": {
+    "mfcdetector.detect": 472,
+    "robot.grasp_and_throw": 548
+  },
+  "shared_argument": "approach_dist=approach_distance",
+  "role": "Public collection collision and grasp_and_throw use the same 4cm, including retreat to pregrasp",
+  "backend_distance_is_authoritative": false
+}

@@ -1,0 +1,26 @@
+{
+  "status": "complete",
+  "v2_vs_v4_actual_observation_and_geometry_equality": {
+    "pose_xyzw": true,
+    "velocity": true,
+    "color.png": true,
+    "depth.png": true,
+    "native/native_hulls.npz": true,
+    "render_geometry_check.json": true
+  },
+  "frozen_physical_fields_equal": [
+    "objects",
+    "bin",
+    "camera",
+    "physics_config",
+    "dt_s",
+    "initialization_steps",
+    "seed"
+  ],
+  "scope": "Instrumentation repair creates new capture preserving physical setup and exactly matching native pose/velocity trace and RGBD bytes; both actual captures costs remain counted",
+  "capture_ticks_each": 750,
+  "object_steps_each": 2250,
+  "total_ticks": 1500,
+  "total_object_steps": 4500,
+  "new_physics_steps_from_this_check": 0
+}

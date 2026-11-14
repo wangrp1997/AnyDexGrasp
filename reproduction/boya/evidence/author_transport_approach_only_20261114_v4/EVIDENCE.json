@@ -1,0 +1,91 @@
+{
+  "schema": "anydex_boya_author_approach_transport_patch_v4",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "23458ad5133b8e87192c8d7a20ad1ac4cc80e2a29d42dea64c6180b83922492a",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline.py": "aaf176319a57ad1246b4c726b2f4948af56aaedd40070530cb2664ac29a9a243",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_transport.py": "ab1518d05527519559f246644bb89f0e1d5fbe7aed563cabadb76b56b8d56c3b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline_entry.py": "f408513e655332cca3e3d53039dc2f4e7aa2f73c08907621b91c5a69861245d2",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_TRANSPORT_APPROACH_ONLY_20261114.md": "54a4d1cebf67b67acdb8f68c031625269304763d0129fbda5206f16f0a3bf5f3"
+  },
+  "pins": {
+    "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+    "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+    "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py": "422324ce9a3047bb98d8e394ee47ceb8b51b5fa8c570676b5aca7b951b82a61e",
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+  },
+  "tests": {
+    "tests": 19,
+    "subtests": 23,
+    "passed": true,
+    "simulator_launches": 0
+  },
+  "native_approach": {
+    "status": "ready",
+    "wall_s": 9.81195115717128,
+    "steps": 1300,
+    "unused_lift_waypoints": 0
+  },
+  "actual_transport": {
+    "status": "null_local_planning",
+    "wall_s": 4.8786896779201925,
+    "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+    "retry": false,
+    "bin_changed": false
+  },
+  "exact_prefix": {
+    "steps": 1600,
+    "columns": 24,
+    "arrays": 6,
+    "array_equal": true,
+    "source_close": 250,
+    "source_hold": 50
+  },
+  "historical_capture": {
+    "scene": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observed_scene.json",
+    "sources": 518,
+    "objects": 3,
+    "verified_explicit_archive": true,
+    "scene_rewritten": false,
+    "new_camera_render": false
+  },
+  "protocol": {
+    "seed_mode": "native approach-only",
+    "old_world_z_lift_required": false,
+    "preclosure_push_guard": "Original >3cm XY, extended to all source bodies",
+    "close_receipts_before_app_close": true
+  },
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_training_updates": 0,
+  "new_labels": 0,
+  "transport_physical_acceptance": false,
+  "old_report_and_v3_evidence_unchanged": true,
+  "receipt_integrity": {
+    "original_receipt_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_transport_20261114_v1/approach_only_v4/transport/TRANSPORT_PREPARATION.json",
+    "sha256": "a56a6db72aef30aaa708457a32125d56e2514599a2d1119e8b0d71061685fedb",
+    "size": 2291,
+    "nul_bytes": 2291,
+    "valid_json": false,
+    "caller_return_receipt_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_transport_20261114_v1/approach_only_v4/TRANSPORT_RESULT.json",
+    "caller_return_receipt_sha256": "b89d3e9ddf67a66e4d4f394f2b70a1b09cb14ed243f85d7c6d65f50a0a049814",
+    "original_preserved": true,
+    "no_retry": true,
+    "scope": "Actual planner returned null and caller serialized its returned dictionary; original receipt corruption remains visible, no overwrite or physical rerun",
+    "inode": 3485211,
+    "blocks": 1,
+    "nlink": 1,
+    "mtime_ns": 1794649556272981011,
+    "ctime_ns": 1794649556272981011,
+    "no_visible_open_fds": true,
+    "root_privileges_requested": false,
+    "corruption_cause": "undetermined"
+  },
+  "artifacts": {
+    "reproduction/boya/evidence/author_transport_approach_only_20261114_v4/PREFIX_AUDIT.json": "a31ff86a43b7b695e8115d747a6bf5b3b619024463ef4d71ff7a3a2dbb7c8c2e",
+    "reproduction/boya/evidence/author_transport_approach_only_20261114_v4/FROZEN_SMOKE.json": "f1e5ca1c6acb8c4dfe4eb550b91adb7f2f229c068066ae6e0a553f3b378d5a86",
+    "reproduction/boya/evidence/author_transport_approach_only_20261114_v4/RECEIPT_INTEGRITY.json": "575042275080f361094d80c796249cabf5c7eaf842b7c8b524c369879fe9fd7c",
+    "reproduction/boya/evidence/author_transport_approach_only_20261114_v4/TRANSPORT_RESULT.json": "b89d3e9ddf67a66e4d4f394f2b70a1b09cb14ed243f85d7c6d65f50a0a049814",
+    "reproduction/boya/evidence/author_transport_approach_only_20261114_v4/ARM_RESULT.json": "a9a7cb742fb91f1afb443c06554acf46c49fa997b0ae5e8d49999277b911694d",
+    "reproduction/boya/evidence/author_transport_approach_only_20261114_v4/TESTS.log": "f0aedbe1cbb0a2d694e8b0ccdb24ae2f3a80f1dbd4d7a1aed4c3d399b6a4826e"
+  }
+}

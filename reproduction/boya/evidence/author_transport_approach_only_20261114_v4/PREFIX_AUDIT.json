@@ -1,0 +1,199 @@
+{
+  "complete": true,
+  "physics_steps": 0,
+  "original_native_commands_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collector_20261114_v1/bridge_final_v2_g6_arm/native/commands.npz",
+  "original_native_commands_sha256": "b40621a943d5a6cbaad4c139bb0787020710dc38c2b6e8f0c7f4b27e883eec5b",
+  "prefix_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_transport_20261114_v1/approach_only_v4/closure_prefix.npz",
+  "prefix_sha256": "06ae17ecadbcf942a404def853d7733d602d6afb2854392b83bc96dda6cebef2",
+  "compared_steps": 1600,
+  "source_prefix_steps": 1300,
+  "appended_close_steps": 250,
+  "appended_hold_steps": 50,
+  "independent_coordinates": 24,
+  "all_arrays_exact": true,
+  "checks": {
+    "initial_position": {
+      "equal": true,
+      "shape": [
+        24
+      ]
+    },
+    "joint_names": {
+      "equal": true,
+      "shape": [
+        24
+      ]
+    },
+    "time_s": {
+      "equal": true,
+      "shape": [
+        1600
+      ]
+    },
+    "joint_target": {
+      "equal": true,
+      "shape": [
+        1600,
+        24
+      ]
+    },
+    "phase": {
+      "equal": true,
+      "shape": [
+        1600
+      ]
+    },
+    "desired_palm": {
+      "equal": true,
+      "shape": [
+        1600,
+        4,
+        4
+      ]
+    }
+  },
+  "closure": {
+    "parameter_names": [
+      "thumb_progress",
+      "fingers_progress"
+    ],
+    "finger_paths": {
+      "TH": {
+        "motor_names": [
+          "THJ4",
+          "THJ3",
+          "THJ2",
+          "THJ1"
+        ],
+        "open_rad": [
+          0.1272769426055181,
+          0.05091077704220724,
+          0.0,
+          0.0
+        ],
+        "closed_rad": [
+          0.1272769426055181,
+          0.05091077704220724,
+          0.2545538852110362,
+          0.1272769426055181
+        ],
+        "max_command_change_rad": 0.2545538852110362,
+        "participating": true
+      },
+      "FF": {
+        "motor_names": [
+          "FFJ4",
+          "FFJ3",
+          "FFJ2"
+        ],
+        "open_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "closed_rad": [
+          0.0,
+          1.145492483449663,
+          0.3181923565137953
+        ],
+        "max_command_change_rad": 1.145492483449663,
+        "participating": true
+      },
+      "MF": {
+        "motor_names": [
+          "MFJ4",
+          "MFJ3",
+          "MFJ2"
+        ],
+        "open_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "closed_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_command_change_rad": 0.0,
+        "participating": false
+      },
+      "RF": {
+        "motor_names": [
+          "RFJ4",
+          "RFJ3",
+          "RFJ2"
+        ],
+        "open_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "closed_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_command_change_rad": 0.0,
+        "participating": false
+      },
+      "LF": {
+        "motor_names": [
+          "LFJ4",
+          "LFJ3",
+          "LFJ2"
+        ],
+        "open_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "closed_rad": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_command_change_rad": 0.0,
+        "participating": false
+      }
+    },
+    "semantics": "shared command progress along real per-finger template paths; independent drives and original mimics unchanged",
+    "contact_policy": "no fixed contact-anchor tracking; legal object contact is resolved by original physics",
+    "initial_command": [
+      0.1272769426055181,
+      0.05091077704220724,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "final_command": [
+      0.1272769426055181,
+      0.05091077704220724,
+      0.2545538852110362,
+      0.1272769426055181,
+      0.0,
+      1.145492483449663,
+      0.3181923565137953,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+}

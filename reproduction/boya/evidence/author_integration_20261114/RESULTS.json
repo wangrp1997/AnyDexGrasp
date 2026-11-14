@@ -1,0 +1,58 @@
+{
+  "schema": "anydex_boya_author_integration_stage_v1",
+  "status": "implemented_numeric_scene_verified_physical_transport_not_validated",
+  "reference": "user confirmed public source plus released model architecture",
+  "collection_entry_implemented": true,
+  "source_approach_distance_m": 0.04,
+  "source_approach_numeric_validation": true,
+  "pipeline_ready_for_formal_collection": false,
+  "new_initialization_physics_ticks": 1500,
+  "new_initialization_object_steps": 4500,
+  "new_RGBD_captures": 2,
+  "distinct_layouts": 1,
+  "official_CGR_model_loads": 2,
+  "official_identity_forwards": 2,
+  "learned_hand_head_loads": 0,
+  "new_grasp_attempts": 0,
+  "new_transport_labels": 0,
+  "formal_dataset_started": false,
+  "formal_training_updates": 0,
+  "new_formal_models": 0,
+  "new_external_tests": 0,
+  "final_tests_passed": 40,
+  "final_test_wall_s": 5.951,
+  "first_combined_test_import_failures": 2,
+  "first_combined_test_actual_passes": 19,
+  "old_heads_verified_unchanged": 8,
+  "old_labels": 435,
+  "old_labels_merged": false,
+  "old_10cm_fourtype_ready": 0,
+  "source_4cm_fourtype_ready": 0,
+  "source_4cm_approach_collision_samples": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "source_4cm_pregrasp_and_grasp_clear": true,
+  "remaining": [
+    "Generic home path around scene bodies",
+    "Explicit fixed release pose independent of all object GT",
+    "Actual continuous transport and label validation",
+    "Pre-frozen data collection/splits, formal four-head training and frozen external evaluation"
+  ],
+  "known_GT_release_default_dispatch_allowed": false,
+  "source_scene_v4": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/scene.json",
+    "sha256": "5f590f9120cca698dc28b9058ade3a8f245f606ab71d680ed3d9f4b4e411e32c"
+  },
+  "runtime_outputs": [
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_integration_20261114_v1"
+  ]
+}

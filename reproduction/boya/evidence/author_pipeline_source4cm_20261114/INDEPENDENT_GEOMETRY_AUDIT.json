@@ -1,0 +1,369 @@
+{
+  "schema": "anydex_boya_author_fixed_path_triangle_geometry_audit_v1",
+  "status": "passed",
+  "scope": "Post hoc diagnostic only: actual source triangle meshes versus unchanged hand collision source triangles/hulls at fixed path representative states; source ground truth never alters candidate, plan or label.",
+  "primary_object_id": "graspnet_000",
+  "primary_visual_source_triangles": 524288,
+  "primary_visual_source_watertight": true,
+  "primary_collision_proxy_parts": 2,
+  "raw879_point_world_m": [
+    -0.6446062475442886,
+    0.11623186314504375,
+    0.09713882551075881
+  ],
+  "raw879_actual_source_surface_distances": [
+    {
+      "object_id": "graspnet_000",
+      "distance_to_actual_source_surface_m": 0.07511094553657371,
+      "closest_source_point_world_m": [
+        -0.7192465776044908,
+        0.11587034068686715,
+        0.0887516585627093
+      ],
+      "source_triangle_index": 226145,
+      "source_mesh_sha256": "d3b59a5e771abfde6d11f386e229b4799068f344655205d1cd512459e814f30b"
+    },
+    {
+      "object_id": "graspnet_002",
+      "distance_to_actual_source_surface_m": 0.00023652676128200614,
+      "closest_source_point_world_m": [
+        -0.6445506828373158,
+        0.11621172659747314,
+        0.09690980151290376
+      ],
+      "source_triangle_index": 264954,
+      "source_mesh_sha256": "feafcf130e38b25a0938f393f3b81792e761cf50d227150f03fe99c7d2549813"
+    },
+    {
+      "object_id": "graspnet_005",
+      "distance_to_actual_source_surface_m": 0.19924937316633823,
+      "closest_source_point_world_m": [
+        -0.8173408041404477,
+        0.16933434630036692,
+        0.013214979391520089
+      ],
+      "source_triangle_index": 513542,
+      "source_mesh_sha256": "0a5a2b17283cb561a30441327debd199c5418a5012c083357c843fcecdddd7d6"
+    }
+  ],
+  "results": [
+    {
+      "gesture_id": 1,
+      "representatives": [
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "first",
+          "sample": 394,
+          "time_s": 1.58,
+          "link": "rfdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.0005166431469613066,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0011431495594692725,
+          "hand_link_origin_world_m": [
+            -0.7160155359542328,
+            0.17090137585305895,
+            0.23418674052035354
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "deepest",
+          "sample": 442,
+          "time_s": 1.772,
+          "link": "ffdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.03832985058573204,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": true,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": true,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0,
+          "hand_link_origin_world_m": [
+            -0.7247824697911118,
+            0.13032388478961704,
+            0.1998494980374998
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "last",
+          "sample": 656,
+          "time_s": 2.628,
+          "link": "ffdistal",
+          "proxy_object_part": 1,
+          "proxy_signed_distance_m": -2.3526239327350748e-05,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0026529157581794594,
+          "hand_link_origin_world_m": [
+            -0.6962819556541129,
+            0.15119150935471035,
+            0.1140886170941728
+          ]
+        }
+      ],
+      "endpoints": [
+        {
+          "sample": 799,
+          "phase": "home_to_pregrasp",
+          "time_s": 3.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.0025828050224021093,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.005269752765538303
+        },
+        {
+          "sample": 1299,
+          "phase": "approach",
+          "time_s": 5.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.005448812150496771,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.008339454718086876
+        }
+      ],
+      "deepest_original_triangle_intersections_in_violating_phases": true
+    },
+    {
+      "gesture_id": 6,
+      "representatives": [
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "first",
+          "sample": 428,
+          "time_s": 1.716,
+          "link": "mfdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.0010293156904590747,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0010097587953300164,
+          "hand_link_origin_world_m": [
+            -0.7258333505254546,
+            0.15690948737036509,
+            0.23435465315226361
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "deepest",
+          "sample": 476,
+          "time_s": 1.9080000000000001,
+          "link": "ffdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.03500554958477903,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": true,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": true,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0,
+          "hand_link_origin_world_m": [
+            -0.7206699640230994,
+            0.13672548289383052,
+            0.20245549195893195
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "last",
+          "sample": 687,
+          "time_s": 2.7520000000000002,
+          "link": "ffdistal",
+          "proxy_object_part": 1,
+          "proxy_signed_distance_m": -4.0236804345930924e-05,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0026442495603450794,
+          "hand_link_origin_world_m": [
+            -0.6937711043593657,
+            0.1526536483947261,
+            0.11711452654371678
+          ]
+        }
+      ],
+      "endpoints": [
+        {
+          "sample": 799,
+          "phase": "home_to_pregrasp",
+          "time_s": 3.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.0025164036787643507,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.005190637525142847
+        },
+        {
+          "sample": 1299,
+          "phase": "approach",
+          "time_s": 5.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.005347730067261271,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.008193364319476634
+        }
+      ],
+      "deepest_original_triangle_intersections_in_violating_phases": true
+    },
+    {
+      "gesture_id": 7,
+      "representatives": [
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "first",
+          "sample": 413,
+          "time_s": 1.6560000000000001,
+          "link": "rfdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.00011565393509974098,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0014881540558062106,
+          "hand_link_origin_world_m": [
+            -0.7147420834653228,
+            0.1743534707506688,
+            0.2337253890387377
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "deepest",
+          "sample": 462,
+          "time_s": 1.852,
+          "link": "ffdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.0367359775504847,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": true,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": true,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0,
+          "hand_link_origin_world_m": [
+            -0.7228812535477962,
+            0.13370770582707636,
+            0.20152616883728178
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "last",
+          "sample": 677,
+          "time_s": 2.712,
+          "link": "ffdistal",
+          "proxy_object_part": 1,
+          "proxy_signed_distance_m": -1.8455775015021464e-05,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0026760649128977133,
+          "hand_link_origin_world_m": [
+            -0.6949177405648727,
+            0.15187837352324546,
+            0.11635442725722638
+          ]
+        }
+      ],
+      "endpoints": [
+        {
+          "sample": 799,
+          "phase": "home_to_pregrasp",
+          "time_s": 3.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.002712055051256468,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.005396681838832242
+        },
+        {
+          "sample": 1299,
+          "phase": "approach",
+          "time_s": 5.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.005559573527207041,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.008383809937677265
+        }
+      ],
+      "deepest_original_triangle_intersections_in_violating_phases": true
+    },
+    {
+      "gesture_id": 8,
+      "representatives": [
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "first",
+          "sample": 376,
+          "time_s": 1.508,
+          "link": "rfdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.0009393703222428504,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0003082915167473121,
+          "hand_link_origin_world_m": [
+            -0.7113549042501334,
+            0.17749011250538532,
+            0.23102303289703005
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "deepest",
+          "sample": 428,
+          "time_s": 1.716,
+          "link": "ffdistal",
+          "proxy_object_part": 0,
+          "proxy_signed_distance_m": -0.04076257727396737,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.0013160407433653746,
+          "hand_link_origin_world_m": [
+            -0.7264512121378398,
+            0.11863889673409016,
+            0.19672896998882874
+          ]
+        },
+        {
+          "phase": "home_to_pregrasp",
+          "representative": "last",
+          "sample": 654,
+          "time_s": 2.62,
+          "link": "ffdistal",
+          "proxy_object_part": 1,
+          "proxy_signed_distance_m": -3.380880764358024e-05,
+          "actual_object_triangle_surface_vs_hand_collision_hull_intersects": false,
+          "actual_object_triangle_surface_vs_hand_source_collision_triangles_intersects": false,
+          "actual_object_surface_to_hand_hull_unsigned_distance_m": 0.002702532339609682,
+          "hand_link_origin_world_m": [
+            -0.6953472906792547,
+            0.15275875305191403,
+            0.10994750566308942
+          ]
+        }
+      ],
+      "endpoints": [
+        {
+          "sample": 799,
+          "phase": "home_to_pregrasp",
+          "time_s": 3.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.00110306429598448,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.0036449462177846398
+        },
+        {
+          "sample": 1299,
+          "phase": "approach",
+          "time_s": 5.2,
+          "minimum_all_robot_hulls_vs_primary_proxy_signed_distance_m": 0.003968363688336086,
+          "nearest_link": "ffdistal",
+          "nearest_proxy_part": 1,
+          "actual_source_object_surface_to_nearest_hand_hull_unsigned_distance_m": 0.006923476125304155
+        }
+      ],
+      "deepest_original_triangle_intersections_in_violating_phases": false
+    }
+  ],
+  "source_mesh_bindings": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_000/mesh/simplified.obj": "d3b59a5e771abfde6d11f386e229b4799068f344655205d1cd512459e814f30b",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_002/mesh/simplified.obj": "feafcf130e38b25a0938f393f3b81792e761cf50d227150f03fe99c7d2549813",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_005/mesh/simplified.obj": "0a5a2b17283cb561a30441327debd199c5418a5012c083357c843fcecdddd7d6"
+  },
+  "physics_steps": 0,
+  "new_planning_calls": 0,
+  "admission_threshold_changes": 0,
+  "wall_s": 8.431692238897085,
+  "limitations": "Representative states do not certify every proxy violation against exact triangles or continuous clearance. Positive actual-source surface intersections at deepest states establish that the complete failed segments cannot be explained solely by proxy exterior bulges. No force or physical grasp conclusion."
+}
