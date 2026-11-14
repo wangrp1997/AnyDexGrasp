@@ -1,0 +1,270 @@
+{
+  "strata": {
+    "fit": {
+      "1": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "6": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "7": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "8": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      }
+    },
+    "internal": {
+      "1": {
+        "attempts": 1,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 1
+        },
+        "eligible_fraction": 0.0
+      },
+      "6": {
+        "attempts": 1,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 1
+        },
+        "eligible_fraction": 0.0
+      },
+      "7": {
+        "attempts": 1,
+        "eligible": 1,
+        "positive": 1,
+        "negative": 0,
+        "statuses": {
+          "diagnostic_labelled": 1
+        },
+        "eligible_fraction": 1.0
+      },
+      "8": {
+        "attempts": 1,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "no_candidate": 1
+        },
+        "eligible_fraction": 0.0
+      }
+    }
+  },
+  "scene_counts": {
+    "fit": 0,
+    "internal": 1
+  },
+  "total_scenes": 1,
+  "total_attempts": 4,
+  "total_eligible": 1,
+  "schema": "anydex_boya_resident_benchmark_v1",
+  "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal",
+  "selection_basis": "known_scene_control",
+  "scope": "complete_collection",
+  "numeric_replays_performed": 0,
+  "training_updates": 0,
+  "analysis_is_label_certification": false,
+  "inputs": {
+    "ledger": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/LEDGER.json",
+      "sha256": "2295ecd1ede6465703f3fddf0323435d47261524b0828c95f7e590c0bfc98de0"
+    }
+  },
+  "selected_trial_ids": [
+    "s40_lift_internal_00001_s2026111402:g1",
+    "s40_lift_internal_00001_s2026111402:g6",
+    "s40_lift_internal_00001_s2026111402:g7",
+    "s40_lift_internal_00001_s2026111402:g8"
+  ],
+  "first_numeric_audit_receipts": {
+    "s40_lift_internal_00001_s2026111402:g7": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/RUNTIME_AUDIT.json",
+      "sha256": "ada5cd86a390945eb022c41c712947cd6d2a32c80ada1dd4d59b31161a7be55b"
+    }
+  },
+  "stage_costs": {
+    "build": {
+      "count": 1,
+      "wall_sum_s": 6.701727224048227
+    },
+    "capture": {
+      "count": 1,
+      "wall_sum_s": 82.35136265796609
+    },
+    "representation": {
+      "count": 1,
+      "wall_sum_s": 4.078397298930213
+    },
+    "prepare": {
+      "count": 4,
+      "wall_sum_s": 117.11394773307256
+    },
+    "resident_execute": {
+      "count": 1,
+      "wall_sum_s": 323.9498838239815
+    },
+    "audit": {
+      "count": 1,
+      "wall_sum_s": 88.53409269894473
+    }
+  },
+  "stage_span_s": 575.9746277332306,
+  "full_pipeline_wall_s": 577.8716537479777,
+  "scene_stage_spans_s": {
+    "s40_lift_internal_00001_s2026111402": 575.9746277332306
+  },
+  "wall_scope": "driver total_wall including first audit",
+  "wall_is_lower_bound": false,
+  "stage_wall_sums_may_overlap": true,
+  "known_final_execution_physics_steps": 3242,
+  "execution_starts_with_unknown_steps": 0,
+  "reported_timing_seconds": {
+    "build": 6.897566981147975,
+    "capture": 82.56556956307031,
+    "representation_batch": 4.291986137861386,
+    "prepare_sum": 118.16176801826805,
+    "execution_groups_sum": 324.1501005280297,
+    "execution_parallel_wall": 324.1525820500683,
+    "audit": 88.74472090392374,
+    "total_wall": 577.8716537479777
+  },
+  "trial_fingerprints": {
+    "s40_lift_internal_00001_s2026111402:g1": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": null,
+      "commands_sha256": null,
+      "label": null
+    },
+    "s40_lift_internal_00001_s2026111402:g6": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": null,
+      "commands_sha256": null,
+      "label": null
+    },
+    "s40_lift_internal_00001_s2026111402:g7": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": "194000454e9607916914ac29bd7c4d70a2085e7558df1385bb5e354c24b19268",
+      "commands_sha256": "d522530e7520a8cd34034f00a8c6f00bc28b50f6aeaa10b9cd28507bdd93e088",
+      "label": 1
+    },
+    "s40_lift_internal_00001_s2026111402:g8": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": null,
+      "commands_sha256": null,
+      "label": null
+    }
+  },
+  "resident": {
+    "session_count": 1,
+    "Kit_starts": 1,
+    "asset_setup_count": 1,
+    "state_reset_count": 0,
+    "scene_rebuild_count": 0,
+    "known_execution_physics_steps": 3242,
+    "reset_physics_steps": 0,
+    "Kit_launch_wall_sum_s": 2.0178763358853757,
+    "sessions": {
+      "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/resident_session/SESSION_RECEIPT.json": {
+        "status": "closed",
+        "Kit_starts": 1,
+        "asset_setup_count": 1,
+        "state_reset_count": 0,
+        "known_execution_physics_steps": 3242,
+        "execution_starts_with_unknown_steps": 0
+      }
+    },
+    "jobs": {
+      "s40_lift_internal_00001_s2026111402:g7": {
+        "status": "complete",
+        "physics_steps": 3242,
+        "Kit_starts_added": 1,
+        "asset_setups_added": 1,
+        "boundary_resets_added": 0,
+        "native_scene_factory_wall_s": 33.21727135893889,
+        "original_all_body_ready_wall_s": 4.808146829949692,
+        "physics_clock_before_first_command": 0,
+        "execution_steps_unknown": null
+      }
+    }
+  },
+  "execution_process_intervals": [
+    {
+      "started_unix_s": 1794680138.112233,
+      "finished_unix_s": 1794680462.0621169,
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/stages/resident_execute/STAGE.json"
+    }
+  ],
+  "max_execution_process_overlap": 1,
+  "overlap_scope": "Actual stage process lifetimes; not proof that solver kernels overlap"
+}

@@ -1,0 +1,107 @@
+{
+  "status": "fit_inputs_and_captures_pass_internal_and_final_ledger_pending",
+  "capture_audits": [
+    {
+      "status": "pass",
+      "capture": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/capture",
+      "object_ids": [
+        "graspnet_002",
+        "graspnet_005",
+        "graspnet_060"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "all_contact_frames": 750,
+      "all_contacts": 1892396,
+      "per_body_contact_rows": {
+        "/World/AuthorScene/graspnet_002": 386968,
+        "/World/AuthorScene/graspnet_005": 701797,
+        "/World/AuthorScene/graspnet_060": 803631
+      },
+      "final250_table_support_ticks": {
+        "/World/AuthorScene/graspnet_060": 250,
+        "/World/AuthorScene/graspnet_005": 250,
+        "/World/AuthorScene/graspnet_002": 250
+      },
+      "native_hulls": 1111,
+      "native_plane_vs_receipt_error_m": 0.0,
+      "independent_full_source_rays": 96,
+      "independent_ray_depth_max_error_m": 4.440892098500626e-16,
+      "wall_s": 22.706053007859737,
+      "full_receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_collection_audit_20261115_v1/FIT_SCENE1_CAPTURE.json",
+        "sha256": "0f4589364b1f9865b86ff8006d0f155b7de15a6f08aa4f3d2f793eada52644b6"
+      }
+    },
+    {
+      "status": "pass",
+      "capture": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/capture",
+      "object_ids": [
+        "graspnet_063",
+        "graspnet_037",
+        "graspnet_015"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "all_contact_frames": 750,
+      "all_contacts": 1595112,
+      "per_body_contact_rows": {
+        "/World/AuthorScene/graspnet_063": 612265,
+        "/World/AuthorScene/graspnet_037": 336822,
+        "/World/AuthorScene/graspnet_015": 646025
+      },
+      "final250_table_support_ticks": {
+        "/World/AuthorScene/graspnet_015": 250,
+        "/World/AuthorScene/graspnet_037": 250,
+        "/World/AuthorScene/graspnet_063": 250
+      },
+      "native_hulls": 1135,
+      "native_plane_vs_receipt_error_m": 0.0,
+      "independent_full_source_rays": 96,
+      "independent_ray_depth_max_error_m": 8.881784197001252e-16,
+      "wall_s": 19.609344461001456,
+      "full_receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_collection_audit_20261115_v1/FIT_SCENE4_CAPTURE.json",
+        "sha256": "3dba71198de896f036d8de18eff81270021007e752ad9880e2204dfc086e5d4d"
+      }
+    }
+  ],
+  "fit_8_conditions_36_semantic_fields_each_exact": true,
+  "actual_commands_exact_excluding_provenance_strings": true,
+  "fit_two_captures_all_payload_arrays_exact": true,
+  "fit_CGR_34_arrays_exact": true,
+  "comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_collection_audit_20261115_v1/FIT_INPUT_PLAN_COMPARISON.json",
+    "sha256": "48f95eb901937ee91b9ce494afc4b711ab1d400c373e347b4806f289788d4350"
+  },
+  "semantic_comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_collection_audit_20261115_v1/FIT_SELECTED_SEMANTICS.json",
+    "sha256": "63faa796422723abcc329a27f634f91ea071d92ed3ea566ad90e3fe81f67734f"
+  },
+  "sources": {
+    "reproduction/boya/audit_author_resident_collection.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_resident_collection.py",
+      "sha256": "c67eb7873ca9961da542c3631bd92a19dc4977521415f89b9b8fbf9c0ee95c5f"
+    },
+    "reproduction/boya/audit_author_scene.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_scene.py",
+      "sha256": "f2e59da0d85e9e358b842a9d63589cfb8240e10cc800c541bd8518da773a73de"
+    },
+    "reproduction/boya/author_collection_batch.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+      "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+    },
+    "reproduction/boya/evidence/author_resident_collection_inputs_20261115_v1/compare_semantics.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_collection_inputs_20261115_v1/compare_semantics.py",
+      "sha256": "1a820ac382625bc1c8d1cb33cbb6e9685fce8a45c32445152e39c3318f9d3931"
+    },
+    "reproduction/boya/evidence/author_resident_collection_inputs_20261115_v1/audit_ledger.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_collection_inputs_20261115_v1/audit_ledger.py",
+      "sha256": "be178e961197dd9d9be88c83c047f5cdf23558c240c96f8b3d7ef7162b937c68"
+    }
+  },
+  "new_audit_physics_steps": 0,
+  "new_audit_model_forwards": 0,
+  "source_Kit_launches": 0,
+  "cost_scope": "Independent readonly audit overlaps actual collection; separate CPU/IO competition, not a frozen collector stage"
+}

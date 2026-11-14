@@ -1,0 +1,108 @@
+{
+  "schema": "anydex_boya_resident_execution_evidence_v1",
+  "status": "complete",
+  "scope": "Independent saved-artifact/host audit of fixed 3-scene resident diagnostic; no simulator/model imports in audit tools",
+  "executions": 9,
+  "command_physics_steps": 28898,
+  "boundary_resets": 6,
+  "Kit_starts": 3,
+  "diagnostic_positive": 7,
+  "diagnostic_negative": 2,
+  "null_geometry": 2,
+  "no_candidate": 1,
+  "original_runtime_numeric_audits_pass": 9,
+  "collection_statistical_unbiasedness_proven": false,
+  "new_physics_steps_by_this_audit": 0,
+  "labels_generated_by_this_audit": 0,
+  "formal_training_rows": 0,
+  "frozen_execution_sources": {
+    "author_resident_execution.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py",
+      "sha256": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+      "bytes": 22363
+    },
+    "test_author_resident_execution.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_resident_execution.py",
+      "sha256": "5d52aeb48e4985d8c32da5a941deb846644dc0f8ff66f3f1fc8ad98de0979719",
+      "bytes": 15392
+    }
+  },
+  "run_protocols": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/RESIDENT_COLLECTION_PROTOCOL.json",
+      "sha256": "8da19e12bc23bc8ceb7ca70416de00a6ca2ae1eac5eff9ae635fbf95bdc95e96",
+      "bytes": 294104
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/RESIDENT_COLLECTION_PROTOCOL.json",
+      "sha256": "8ad9fe561f81b237d54433966e22947933459c8facc86808b7c891b779b6e99b",
+      "bytes": 294349
+    }
+  ],
+  "report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_EXECUTION_RESULTS_20261115.md",
+    "sha256": "915690f365754d5ae0a6b63221ecda4bb6ec911f30c5381cdf22111eba4c1903",
+    "bytes": 7675
+  },
+  "files": {
+    "ALL_BODY_STATE_COMPARISON.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/ALL_BODY_STATE_COMPARISON.json",
+      "sha256": "ba576acf0e7894e24c04ee1fa15baa9a20338b73984a6c44243a56033b9860a2",
+      "bytes": 50335
+    },
+    "CONTROL_SUMMARY.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/CONTROL_SUMMARY.json",
+      "sha256": "cc169cd2d4f8a5ab2c86b3392ee905538ce1d1bea5f21b72171c648b6bb21510",
+      "bytes": 25562
+    },
+    "FIT_AUDIT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/FIT_AUDIT.json",
+      "sha256": "c810b935c5210ed2c574b7a37d0a554bb31f2e4e51768ceac96f0f96575f9221",
+      "bytes": 51499
+    },
+    "HOST_FINAL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/HOST_FINAL.json",
+      "sha256": "96451b5c2f8e1b5de6c16c453422d2c3aac7e950409b772b97aeeaba1f749dae",
+      "bytes": 1796
+    },
+    "HOST_SAMPLE.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/HOST_SAMPLE.json",
+      "sha256": "8b83375e1e4aaa00e90ae75b045d038dddb4651d7a22a06ff07eaf79c787d2d2",
+      "bytes": 5094
+    },
+    "INTERNAL_ALL_BODY_STATE_COMPARISON.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/INTERNAL_ALL_BODY_STATE_COMPARISON.json",
+      "sha256": "19543081b1e9875b443a189b206fcbbdf351e9741e914d6497b6af6c3d2a53e8",
+      "bytes": 6416
+    },
+    "INTERNAL_AUDIT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/INTERNAL_AUDIT.json",
+      "sha256": "cd307d4d3f43207bfa37734c0e93f547c50efdb5dc8d13537ebbf8bcf3ef0169",
+      "bytes": 8363
+    },
+    "TEST.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/TEST.log",
+      "sha256": "c8b4811c942f643589cd6d622f1586bb1ef07e52b4ed2fd34a1c50799d9e04c8",
+      "bytes": 1552
+    },
+    "TEST_RECEIPT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/TEST_RECEIPT.json",
+      "sha256": "cb13157b1f1fdf42bd3446f9e02c00e42a9004efeb51bbdb86de7172973881ab",
+      "bytes": 1012
+    },
+    "audit.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/audit.py",
+      "sha256": "fa9677b9e215f89fdf02a327cbd8f5593836b5e72b970bccfdee3f903eaa11bc",
+      "bytes": 11892
+    },
+    "compare_states.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/compare_states.py",
+      "sha256": "21f29dfa3057c2a430c300e9cd42257915059eb0d3dddba86919ce052bd59d8e",
+      "bytes": 5629
+    }
+  },
+  "first_numeric_audit_redecoded_by_this_audit": false,
+  "run_source_modified_by_auditor": false,
+  "large_artifacts": "Original public paths and SHA are in FIT_AUDIT/INTERNAL_AUDIT/CONTROL_SUMMARY; not copied here",
+  "resident_trajectory_equivalence_proven": false
+}

@@ -1,0 +1,127 @@
+{
+  "strata": {
+    "fit": {
+      "1": {
+        "attempts": 11,
+        "eligible": 4,
+        "positive": 3,
+        "negative": 1,
+        "statuses": {
+          "null_geometry": 1,
+          "labelled": 4,
+          "placement_null": 4,
+          "no_candidate": 2
+        },
+        "eligible_fraction": 0.36363636363636365
+      },
+      "6": {
+        "attempts": 11,
+        "eligible": 3,
+        "positive": 2,
+        "negative": 1,
+        "statuses": {
+          "null_geometry": 3,
+          "labelled": 3,
+          "placement_null": 4,
+          "infrastructure_failure": 1
+        },
+        "eligible_fraction": 0.2727272727272727
+      },
+      "7": {
+        "attempts": 11,
+        "eligible": 3,
+        "positive": 3,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 2,
+          "labelled": 3,
+          "placement_null": 4,
+          "no_candidate": 2
+        },
+        "eligible_fraction": 0.2727272727272727
+      },
+      "8": {
+        "attempts": 11,
+        "eligible": 4,
+        "positive": 2,
+        "negative": 2,
+        "statuses": {
+          "null_geometry": 1,
+          "labelled": 4,
+          "placement_null": 4,
+          "no_candidate": 2
+        },
+        "eligible_fraction": 0.36363636363636365
+      }
+    },
+    "internal": {
+      "1": {
+        "attempts": 5,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 2,
+          "placement_null": 2,
+          "no_candidate": 1
+        },
+        "eligible_fraction": 0.0
+      },
+      "6": {
+        "attempts": 5,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 3,
+          "placement_null": 2
+        },
+        "eligible_fraction": 0.0
+      },
+      "7": {
+        "attempts": 5,
+        "eligible": 1,
+        "positive": 1,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 1,
+          "placement_null": 2,
+          "labelled": 1,
+          "no_candidate": 1
+        },
+        "eligible_fraction": 0.2
+      },
+      "8": {
+        "attempts": 5,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 1,
+          "placement_null": 2,
+          "no_candidate": 2
+        },
+        "eligible_fraction": 0.0
+      }
+    }
+  },
+  "scene_counts": {
+    "fit": 11,
+    "internal": 5
+  },
+  "total_scenes": 16,
+  "total_attempts": 64,
+  "total_eligible": 15,
+  "schema": "anydex_boya_resident_benchmark_v1",
+  "selection_basis": "observational_queue",
+  "runs": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/LEDGER.json",
+      "sha256": "21f6d23a37170fdbbc3400b006acccbf47b3c95dcf8363e636c50eb5e9ae59d8"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/LEDGER.json",
+      "sha256": "3ac3d1a0ea3246865ccb2d9723d658129e0e391eba38f0cd734805a8880ccdc7"
+    }
+  ]
+}

@@ -1,0 +1,1356 @@
+{
+  "status": "complete_readonly_comparison",
+  "rows": [
+    {
+      "scene_id": "0000001_s40_lift_fit_00001_s2026111401",
+      "gesture_id": 1,
+      "reused": false,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/trace.npz",
+        "sha256": "5de9ecfa6d4d00e3d2477c2d329bca4538069f1c0af459a8c23a0452a34118fb"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/trace.npz",
+        "sha256": "5de9ecfa6d4d00e3d2477c2d329bca4538069f1c0af459a8c23a0452a34118fb"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "dbe057f8c0eff379d0956011563626d42fa562537e98925521b217c278e0629e"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "dbe057f8c0eff379d0956011563626d42fa562537e98925521b217c278e0629e"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "d68c3ea1fdb7ae816c313eeb0983947bf5dbd3546476bda21906f15823730b2e"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "148b22194d476840dc9caf7659979fcd3abea603f5a492f58d48aae9e92b4e43"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_005": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_060": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_002": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": null,
+        "1e-05": null,
+        "0.001": null,
+        "0.01": null,
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.0,
+        "hold": 0.0,
+        "lift": 0.0
+      },
+      "max_joint_delta": {
+        "step": 1,
+        "phase": "settle",
+        "name": "shoulder_pan_joint",
+        "delta_rad": 0.0
+      },
+      "objects": {
+        "graspnet_005": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_060": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_002": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000001_s40_lift_fit_00001_s2026111401",
+      "gesture_id": 6,
+      "reused": true,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/execution/trace.npz",
+        "sha256": "c41d3d4aaa764272ef688e7b5410493c204258121e1b373b4429343d43873573"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/execution/trace.npz",
+        "sha256": "1468ed8b2dfdf159d26df6ba0c5e772480753dbc8c7f14a1233540c334f62f9f"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "686815344902384e6ba78ab4aded746a810d5c7570dbc61672fe88d20571c2c8"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "8cd9ac0d61d186712603e60ae5f6750a482d99dc199efcfc0863ad420d0d09db"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "789e6b3741d94e4870313d31af53161f75a7ed1f84e22fc1a1851b2ad0cb9681"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "d9a3ba9c04b3e3c7b81eea2db22419c3bb8ca230f3595b05d654f10cd8eaeca3"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_005": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_060": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_002": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": {
+          "step": 2221,
+          "phase": "close"
+        },
+        "1e-05": {
+          "step": 2221,
+          "phase": "close"
+        },
+        "0.001": {
+          "step": 2267,
+          "phase": "close"
+        },
+        "0.01": null,
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.003363579511642456,
+        "hold": 0.0024736523628234863,
+        "lift": 0.0024827420711517334
+      },
+      "max_joint_delta": {
+        "step": 2452,
+        "phase": "close",
+        "name": "THJ2",
+        "delta_rad": 0.003363579511642456
+      },
+      "objects": {
+        "graspnet_005": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_060": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_002": {
+          "max_translation_euclidean_m": 0.0008071687319298491,
+          "max_translation_component_m": 0.0005836337804794312,
+          "max_rotation_angle_rad": 0.019060621051903724,
+          "max_rotation_angle_deg": 1.092093141172291,
+          "max_source_bottom_delta_m": 0.0005939226392291108,
+          "first_translation_over_10um": {
+            "step": 2222,
+            "phase": "close"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 5.3773375081319e-07,
+            "home_to_pregrasp": 3.808172427407095e-06,
+            "approach": 4.781929245040135e-06,
+            "close": 0.0008071687319298491,
+            "hold": 0.00025177242105433673,
+            "lift": 0.0003762903424200769
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 9.272843096677843e-06,
+            "home_to_pregrasp": 9.84572514084875e-05,
+            "approach": 0.00010713524848837234,
+            "close": 0.00639165453825174,
+            "hold": 0.0035279811738870718,
+            "lift": 0.019060621051903724
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000001_s40_lift_fit_00001_s2026111401",
+      "gesture_id": 7,
+      "reused": true,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/execution/trace.npz",
+        "sha256": "6c2e741c523f0cb2fe5c21d626b8f48df8367d44a13460a797177ff762fa8f9f"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/execution/trace.npz",
+        "sha256": "e526ea0175b256e356ca10f29effdc2a9211714eee0352494088ec3831f6a337"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "ec702ac8588a7653b988c5f61183788d0b88ae2d66fcffd35dba85a1708491d1"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "97cb0fc92fcb784f633a3bff0767526e1309b25d0875ebd2d5afa2cd0a66233c"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "f9b57900f5780858f8e7749f138eb567b58efab7d20f6470d60e96e58d21a263"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "bfdff90918b00c305c62eeb91bc09f0ace5926ce0b9031bbfa4111c1e1513170"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_005": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_060": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_002": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": {
+          "step": 2249,
+          "phase": "close"
+        },
+        "1e-05": {
+          "step": 2249,
+          "phase": "close"
+        },
+        "0.001": {
+          "step": 2513,
+          "phase": "hold"
+        },
+        "0.01": null,
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.0006006956100463867,
+        "hold": 0.006500557065010071,
+        "lift": 0.009176775813102722
+      },
+      "max_joint_delta": {
+        "step": 2525,
+        "phase": "lift",
+        "name": "THJ2",
+        "delta_rad": 0.009176775813102722
+      },
+      "objects": {
+        "graspnet_005": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_060": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_002": {
+          "max_translation_euclidean_m": 0.0004407463248945011,
+          "max_translation_component_m": 0.00038743019104003906,
+          "max_rotation_angle_rad": 0.014153855604904253,
+          "max_rotation_angle_deg": 0.8109561899985985,
+          "max_source_bottom_delta_m": 0.00036652284824902764,
+          "first_translation_over_10um": {
+            "step": 1037,
+            "phase": "home_to_pregrasp"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 1.5710879088344124e-06,
+            "home_to_pregrasp": 1.9014134218985116e-05,
+            "approach": 1.9789411091572275e-05,
+            "close": 3.234531843749378e-05,
+            "hold": 0.00020407280646524248,
+            "lift": 0.0004407463248945011
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 2.9000299622967072e-05,
+            "home_to_pregrasp": 0.0003894853659547461,
+            "approach": 0.000398838804884749,
+            "close": 0.0016959199850932753,
+            "hold": 0.007035907258551154,
+            "lift": 0.014153855604904253
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000001_s40_lift_fit_00001_s2026111401",
+      "gesture_id": 8,
+      "reused": true,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/execution/trace.npz",
+        "sha256": "669a99312e2321d9ba689ac510dd1f50d96e8a95cfd7781f771a22a124ba534b"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/execution/trace.npz",
+        "sha256": "7c2ffefbc2bc3ae810839616500d181ba952a8df6ce1aea689ffbdb5334923b1"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "3c7841d2ab03556d48bb6c24f4d1ded2aaddad12af04318031a068ed503fda57"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "92c97314af6e65a074f7c01c7f788fda8668dea01a1e658950727ace8d917a68"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "f4f87aab673f83a4e6257ed4f7345bea5cb87ed1f7045f1978b2c0e7cedbcc5a"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "367077f363c4a85915aaeba87a58f3faa8a6de438cfcf0d5f6c4e7736d30daff"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_005": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_060": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_002": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": {
+          "step": 2552,
+          "phase": "close"
+        },
+        "1e-05": {
+          "step": 2552,
+          "phase": "close"
+        },
+        "0.001": {
+          "step": 2683,
+          "phase": "close"
+        },
+        "0.01": {
+          "step": 2777,
+          "phase": "hold"
+        },
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.007196962833404541,
+        "hold": 0.04935133457183838,
+        "lift": 0.049089908599853516
+      },
+      "max_joint_delta": {
+        "step": 2810,
+        "phase": "hold",
+        "name": "RFJ3",
+        "delta_rad": 0.04935133457183838
+      },
+      "objects": {
+        "graspnet_005": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_060": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_002": {
+          "max_translation_euclidean_m": 0.0012100071014729667,
+          "max_translation_component_m": 0.0010433346033096313,
+          "max_rotation_angle_rad": 0.045825966773657384,
+          "max_rotation_angle_deg": 2.62563448823731,
+          "max_source_bottom_delta_m": 0.000388383870315992,
+          "first_translation_over_10um": {
+            "step": 2553,
+            "phase": "close"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 4.6701532436057387e-07,
+            "home_to_pregrasp": 8.069433685595855e-06,
+            "approach": 9.895100354839597e-06,
+            "close": 0.0002508694285530737,
+            "hold": 0.0012100071014729667,
+            "lift": 0.0005143312583606193
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 1.9985827728744215e-05,
+            "home_to_pregrasp": 0.00020649931019260334,
+            "approach": 0.0002682669327675969,
+            "close": 0.004169717852330296,
+            "hold": 0.045825966773657384,
+            "lift": 0.025156462620682222
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000004_s40_lift_fit_00004_s2026111401",
+      "gesture_id": 1,
+      "reused": false,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/trace.npz",
+        "sha256": "873791357806bb55ae64662da59de38b652cd149546c9138d1e5f263b4e4852f"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/trace.npz",
+        "sha256": "873791357806bb55ae64662da59de38b652cd149546c9138d1e5f263b4e4852f"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "aad26f534a3aaf6fb6693aa050cb84ec0dff67dcbf9fe2c0826628f928debfa8"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "aad26f534a3aaf6fb6693aa050cb84ec0dff67dcbf9fe2c0826628f928debfa8"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "4635919215b87e30292d57562a7ed357291eadbc02ade757c0f51d5f0793d363"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "8ef19b84dc018664b29a9ab8f06b1b22376ee1e08076d4b1a5997716c014b18e"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_037": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_015": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_063": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": null,
+        "1e-05": null,
+        "0.001": null,
+        "0.01": null,
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.0,
+        "hold": 0.0,
+        "lift": 0.0
+      },
+      "max_joint_delta": {
+        "step": 1,
+        "phase": "settle",
+        "name": "shoulder_pan_joint",
+        "delta_rad": 0.0
+      },
+      "objects": {
+        "graspnet_037": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_015": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_063": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        }
+      },
+      "label": 0,
+      "original_label": 0,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000004_s40_lift_fit_00004_s2026111401",
+      "gesture_id": 6,
+      "reused": true,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/execution/trace.npz",
+        "sha256": "b35139ff30e04633c4e07b21bce5552f4cfe98cca053f7f73161723985203aad"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/execution/trace.npz",
+        "sha256": "62669ecb33b8575fb79bf183327fe445c9780b8bb765246aacfb62f376534eec"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "5577f694686c2683843c59dac86c6c31d1ac6c7ad34aac6ac497a13cb258bffb"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "920e8182bc59e2d3de6f0d830534e4f2ee6e3a347d6dec62af13637b8ebd84f1"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "121d5c929caf2d9538ad7cec388ac2fc823d15ba236b2b27715682d46eabff30"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "dcc6f7f1fd1056c085d135d411966e9d2d6f3f4b7e657355a20edab0169b6399"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_037": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_015": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_063": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": {
+          "step": 2321,
+          "phase": "close"
+        },
+        "1e-05": {
+          "step": 2321,
+          "phase": "close"
+        },
+        "0.001": {
+          "step": 2337,
+          "phase": "close"
+        },
+        "0.01": {
+          "step": 2663,
+          "phase": "lift"
+        },
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.0045063793659210205,
+        "hold": 0.0036312341690063477,
+        "lift": 0.01121838390827179
+      },
+      "max_joint_delta": {
+        "step": 2670,
+        "phase": "lift",
+        "name": "THJ2",
+        "delta_rad": 0.01121838390827179
+      },
+      "objects": {
+        "graspnet_037": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_015": {
+          "max_translation_euclidean_m": 0.004371642960633444,
+          "max_translation_component_m": 0.0029994845390319824,
+          "max_rotation_angle_rad": 0.6517640983351307,
+          "max_rotation_angle_deg": 37.34333207275255,
+          "max_source_bottom_delta_m": 0.008706791644555997,
+          "first_translation_over_10um": {
+            "step": 40,
+            "phase": "settle"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 1.006943969273851e-05,
+            "home_to_pregrasp": 2.9088391321624566e-05,
+            "approach": 3.9961376563253885e-05,
+            "close": 0.0003943053483588656,
+            "hold": 0.00046154240917562335,
+            "lift": 0.004371642960633444
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.00029538978002885066,
+            "home_to_pregrasp": 0.0010361724427570022,
+            "approach": 0.0012203896272253351,
+            "close": 0.02769315842889135,
+            "hold": 0.02666515474956029,
+            "lift": 0.6517640983351307
+          }
+        },
+        "graspnet_063": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000004_s40_lift_fit_00004_s2026111401",
+      "gesture_id": 7,
+      "reused": true,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/execution/trace.npz",
+        "sha256": "6123f51b66e089e8b385e90bccf3463f11908e8117344297ea2dd23ac4c88d81"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/execution/trace.npz",
+        "sha256": "93fa6e6ff7d2ad7993af4816c6c83ad8e8ecc415cb6743732a6cf88d4454b33f"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "e4c772289f375eb8bee0ca7ffccb62e86651cff45413c69b177263b21a6042fd"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "257c5c5bdf99cfc46a407601d6b12047dd49a7e4d6d02d39868cf57f054e059a"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "7d72d24587ac2998eb22c68da516ac2aeb4390edfd02efad3e4844bc689bd087"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "f5fa39a18ee1540ac9a3fd402e56a0a0c898071c31d68bbf1072cd12d7e88dba"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_037": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_015": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_063": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": {
+          "step": 2475,
+          "phase": "close"
+        },
+        "1e-05": {
+          "step": 2475,
+          "phase": "close"
+        },
+        "0.001": {
+          "step": 2480,
+          "phase": "close"
+        },
+        "0.01": {
+          "step": 2532,
+          "phase": "close"
+        },
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.016138434410095215,
+        "hold": 0.001395009458065033,
+        "lift": 0.010223060846328735
+      },
+      "max_joint_delta": {
+        "step": 2535,
+        "phase": "close",
+        "name": "MFJ3",
+        "delta_rad": 0.016138434410095215
+      },
+      "objects": {
+        "graspnet_037": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_015": {
+          "max_translation_euclidean_m": 0.0007476519464292372,
+          "max_translation_component_m": 0.0007045567035675049,
+          "max_rotation_angle_rad": 0.12105197700179508,
+          "max_rotation_angle_deg": 6.935767383917563,
+          "max_source_bottom_delta_m": 0.0018069445340861828,
+          "first_translation_over_10um": {
+            "step": 42,
+            "phase": "settle"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 1.3103926130211608e-05,
+            "home_to_pregrasp": 2.9068176663134337e-05,
+            "approach": 3.8653840658454724e-05,
+            "close": 0.0007476519464292372,
+            "hold": 0.00030936209315590637,
+            "lift": 0.000513322546016503
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.00018461784389948364,
+            "home_to_pregrasp": 0.0013406130895122037,
+            "approach": 0.0016675574451904185,
+            "close": 0.12105197700179508,
+            "hold": 0.02939494072280371,
+            "lift": 0.04970097742146314
+          }
+        },
+        "graspnet_063": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    },
+    {
+      "scene_id": "0000004_s40_lift_fit_00004_s2026111401",
+      "gesture_id": 8,
+      "reused": true,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/trace.npz",
+        "sha256": "d8dd621cfff8f490ef75f9493912fa8a18c084da2f09f6648ac9322f90b227d1"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/trace.npz",
+        "sha256": "36df4251580c2687e8157c268ca291d8d124d119901317cf2501d303727553e5"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "2d01e1a054e15abb020b0073bb1d87326af4b44828552db62c122dd608dc739b"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "0dbdc860c75ed1ef65d40b2604b85fa1f90e30a2048df7433d9268194c8c43ef"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "08eeb630c7b95117ea2badc902170d8de5d6ecd5826b3eb9ea359abd7e4beaa8"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "edba8148e0f465454ef0455ac64135a42f7ef169db319e2661bd6ed3c0f0df94"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_037": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_015": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_063": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": {
+          "step": 2854,
+          "phase": "close"
+        },
+        "1e-05": {
+          "step": 2854,
+          "phase": "close"
+        },
+        "0.001": {
+          "step": 2887,
+          "phase": "close"
+        },
+        "0.01": {
+          "step": 2951,
+          "phase": "close"
+        },
+        "0.1": {
+          "step": 3256,
+          "phase": "lift"
+        }
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.04415424168109894,
+        "hold": 0.051700659096241,
+        "lift": 0.14062869548797607
+      },
+      "max_joint_delta": {
+        "step": 3293,
+        "phase": "lift",
+        "name": "FFJ3",
+        "delta_rad": 0.14062869548797607
+      },
+      "objects": {
+        "graspnet_037": {
+          "max_translation_euclidean_m": 0.0024718101486560047,
+          "max_translation_component_m": 0.002170160412788391,
+          "max_rotation_angle_rad": 0.1312993358027045,
+          "max_rotation_angle_deg": 7.522897794365913,
+          "max_source_bottom_delta_m": 4.184597362195605e-05,
+          "first_translation_over_10um": {
+            "step": 3376,
+            "phase": "lift"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0024718101486560047
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.1312993358027045
+          }
+        },
+        "graspnet_015": {
+          "max_translation_euclidean_m": 0.14990457431249504,
+          "max_translation_component_m": 0.14919465756975114,
+          "max_rotation_angle_rad": 3.1401200717456854,
+          "max_rotation_angle_deg": 179.91562727534503,
+          "max_source_bottom_delta_m": 0.0016221706684278053,
+          "first_translation_over_10um": {
+            "step": 65,
+            "phase": "home_to_pregrasp"
+          },
+          "phase_max_translation_euclidean_m": {
+            "settle": 6.628782227024029e-06,
+            "home_to_pregrasp": 2.5916736172755213e-05,
+            "approach": 4.3737665493398566e-05,
+            "close": 0.002276647902312597,
+            "hold": 0.0030420711594594794,
+            "lift": 0.14990457431249504
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.00013949222576545216,
+            "home_to_pregrasp": 0.0017391897765523248,
+            "approach": 0.001485678642344482,
+            "close": 0.08379813465668837,
+            "hold": 0.09638623071352766,
+            "lift": 3.1401200717456854
+          }
+        },
+        "graspnet_063": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        }
+      },
+      "label": 0,
+      "original_label": 0,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    }
+  ],
+  "reused_job_count": 6,
+  "new_physics_steps": 0,
+  "scope": "Measured original initial states and all source-body saved trajectories; labels/gates compared, no new labels generated",
+  "claim": "Only saved state comparisons are reported; label agreement alone does not prove unbiased collection or trajectory equivalence",
+  "solver_cache_or_other_cause_proven": false
+}

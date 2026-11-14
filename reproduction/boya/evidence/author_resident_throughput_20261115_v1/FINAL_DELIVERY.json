@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "implementation_commit": "fadc12a",
+  "reports": {
+    "AUTHOR_RESIDENT_THROUGHPUT_RESULTS_20261115.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_THROUGHPUT_RESULTS_20261115.md",
+      "sha256": "8ec1c12db1a30e58ffd9e8a041dc57bd7400d19763261879572e966135ea02d4"
+    },
+    "AUTHOR_RESIDENT_EXECUTION_RESULTS_20261115.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_EXECUTION_RESULTS_20261115.md",
+      "sha256": "915690f365754d5ae0a6b63221ecda4bb6ec911f30c5381cdf22111eba4c1903"
+    },
+    "AUTHOR_RESIDENT_COLLECTION_INPUT_AUDIT_20261115.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_COLLECTION_INPUT_AUDIT_20261115.md",
+      "sha256": "039d2fef57b460109b42e7d2121e19441a04f1eeeacba966526b59a40d38d919"
+    },
+    "AUTHOR_RESIDENT_ETA_RESULTS_20261115.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_ETA_RESULTS_20261115.md",
+      "sha256": "53dedc641a1625d912f27887ef418ee1cc4fd423622ddf892cfd5de28ab05653"
+    }
+  },
+  "independent_evidence": {
+    "author_resident_execution_20261115_v1": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_execution_20261115_v1/EVIDENCE.json",
+      "sha256": "396b3b4acc5b0fa8a1b0a0b0bc3ec7e959e1fcdda19c8a4e1a5ab4a03859e78d"
+    },
+    "author_resident_collection_inputs_20261115_v1": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_collection_inputs_20261115_v1/EVIDENCE.json",
+      "sha256": "05113fa704d2813bf175b42614519dee00047bbe667e6c7abf54c671f97ad81d"
+    },
+    "author_resident_benchmark_20261115_v3": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_benchmark_20261115_v3/EVIDENCE.json",
+      "sha256": "025f91ed85981b4ae4b70538695011347e9bf12aea89d0241de7029dc13d9f18"
+    }
+  },
+  "control_receipts": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_throughput_20261115_v1/CONTROL_RECEIPTS.json",
+    "sha256": "f5a4057860f0e20a4a81c8560252df2d0e6e0d4d45dd907f51579f3c50ac0d57"
+  },
+  "host_final_idle": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_throughput_20261115_v1/HOST_FINAL_IDLE.json",
+    "sha256": "143db6e2ae9233c17363e841fd6dcd1beb50b68fb560b2465e4b50e9cd4a5320"
+  },
+  "old_data_models_unchanged": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_throughput_20261115_v1/UNCHANGED_DATA_MODELS_AFTER.json",
+    "sha256": "dfe97890c5d47fa5e9c33b0898f306148781608c932ffeea7dcbba72eac15b81"
+  },
+  "original_archive": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_throughput_20261115_v1/EVIDENCE.json",
+    "sha256": "3608c09a80cbe8215d31d9aed5d52de52ce31fc5a37806d682aaf8817b1f6ae2"
+  },
+  "original_archive_arithmetic_erratum": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_throughput_20261115_v1/ERRATUM_TOTAL_STEPS.json",
+    "sha256": "13ac4cefb41d95acb699fb8a52df2ccc78cf9bbe62f76cf63cdb5898781fe4c2"
+  },
+  "correct_total_execution_physics_steps": 28898,
+  "initialization_ticks": 2250,
+  "initialization_object_steps": 6750,
+  "total_terminal_slots": 12,
+  "actual_executions": 9,
+  "first_numeric_audits_passed": 9,
+  "all_controls_excluded_from_training": true,
+  "formal_training_updates": 0,
+  "bulk_collection_started": false,
+  "active_task_processes": 0,
+  "fit_days_conditional": 15.016589140230312,
+  "overall_4800_eta": null,
+  "scope": "Final lightweight delivery; original archive scalar corrected by explicit erratum, per-run receipts unchanged. No simulator dispatch or repeated contact decode.",
+  "fit_eta_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_benchmark_20261115_v3/FIT_WORKLOAD_ETA.json",
+    "sha256": "a26945e6d456ef390ed7b3780d9d0934c80e176c3fd6e7db05264391306ed6aa"
+  }
+}

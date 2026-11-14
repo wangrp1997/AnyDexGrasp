@@ -1,10 +1,10 @@
 # 常驻完整链路基准与采满时间估算
 
-本阶段只新增 `author_resident_benchmark.py`、测试和独立只读分析；没有启动 Kit、CGR、规划、物理或训练，没有启动 4000 fit＋800 internal 大采集，也未修改冻结执行器。实际小预算由 root 统一启动。工具只冻结已有 resident 协议的对照关系、读取回执、比较和估算，不是新的调度框架。
+本文记录基准工具的实现范围；工具本身只冻结已有 resident 协议的对照关系、读取回执、比较和估算。实际小预算由 root 另立协议统一运行，实际结果见 [完整吞吐报告](AUTHOR_RESIDENT_THROUGHPUT_RESULTS_20261115.md) 与 [时间估算](AUTHOR_RESIDENT_ETA_RESULTS_20261115.md)。没有启动 4000 fit＋800 internal 大采集或训练，也未修改冻结执行器。
 
 ## 固定对照
 
-沿 `author_resident_collection.freeze_from_batch(source_batch, scene_indices, output_dir, resident_workers=1..3)` 复用原场景描述和原 seed；重新运行 capture、CGR、prepare、execution、首次独立数值 audit。root 当前拟固定旧 serial scene1＋scene4 共八槽，两组三体各一个 resident 进程并行；scene4 旧结果 g1/g8 为有效负例、g6/g7 为正例。另固定 fresh internal 一个本地 index0 场景，共最多三场景/十二槽/九次 ready 执行。选择在运行前冻结，不补候选、不换场景、不因结果追加预算，全部排除训练。本工具最多绑定 6 场景/24 槽，真正运行预算仍由 root 冻结；本报告尚未实际派发这些对照。
+沿 `author_resident_collection.freeze_from_batch(source_batch, scene_indices, output_dir, resident_workers=1..3)` 复用原场景描述和原 seed；重新运行 capture、CGR、prepare、execution、首次独立数值 audit。root 固定旧 serial scene1＋scene4 共八槽，两组三体各一个 resident 进程并行；scene4 旧结果 g1/g8 为有效负例、g6/g7 为正例。另固定 fresh internal 一个本地 index0 场景，共三场景/十二槽，硬预算最多十二次执行，历史预期九次 ready。选择在运行前冻结，不补候选、不换场景、不因结果追加预算，全部排除训练。本工具最多绑定 6 场景/24 槽，真正运行预算及结果以 root 独立协议为准。
 
 该组已知结果适合检查四型正负例、不同指令的常驻 reset、候选和命令一致性与完整成本，不能代表随机场景的产出率。随后 2–3 个 resident session 并发也必须实测；不把 worker 数量或旧两执行的 1.98× 乘进全流程。
 

@@ -1,6 +1,6 @@
 # 常驻完整采集诊断入口（2026-11-15）
 
-新增 `author_resident_collection.py`，复用已有采集阶段，不修改冻结 batch、waves、capture、prepare、执行器或 CanonDex。当前仅完成实现和离线测试；本文件不声称新的真实吞吐、标签或加速倍率。
+新增 `author_resident_collection.py`，复用已有采集阶段，不修改冻结 batch、waves、capture、prepare、执行器或 CanonDex。本文说明实现合同；另立小预算的实际验证及耗时见 [完整吞吐报告](AUTHOR_RESIDENT_THROUGHPUT_RESULTS_20261115.md)。实现测试与实际物理验证分别留证，不将离线测试当作吞吐结果。
 
 `freeze_from_batch(source_batch, scene_indices, output_dir, resident_workers=1)` 从旧 batch 的完整冻结协议取原 scene spec、原 queue seed、传感器/工作区、模型与准备预算。输入索引必须按原顺序且不重复，预算在运行前固定。输出是新 schema `anydex_boya_author_resident_collection_v1`，没有能让旧 `B.run` 接受的父协议兼容视图。旧 RGBD、候选、ready 和执行产物均不复制。
 

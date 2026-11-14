@@ -1,0 +1,104 @@
+{
+  "schema": "anydex_boya_resident_benchmark_v1",
+  "scope": "empirical_expected_workload_scenario",
+  "target_fit": 4000,
+  "target_internal": 800,
+  "seconds_per_attempted_scene": 882.5389873010572,
+  "splits": {
+    "fit": {
+      "gestures": {
+        "1": {
+          "observed_attempts": 11,
+          "observed_eligible": 4,
+          "eligible_fraction": 0.36363636363636365,
+          "target": 1000,
+          "scene_demand_point": 2750,
+          "reason": null
+        },
+        "6": {
+          "observed_attempts": 11,
+          "observed_eligible": 3,
+          "eligible_fraction": 0.2727272727272727,
+          "target": 1000,
+          "scene_demand_point": 3667,
+          "reason": null
+        },
+        "7": {
+          "observed_attempts": 11,
+          "observed_eligible": 3,
+          "eligible_fraction": 0.2727272727272727,
+          "target": 1000,
+          "scene_demand_point": 3667,
+          "reason": null
+        },
+        "8": {
+          "observed_attempts": 11,
+          "observed_eligible": 4,
+          "eligible_fraction": 0.36363636363636365,
+          "target": 1000,
+          "scene_demand_point": 2750,
+          "reason": null
+        }
+      },
+      "required_scene_count_point": 3667,
+      "point_seconds": 3236270.4664329765,
+      "reliable_upper_bound_seconds": null
+    },
+    "internal": {
+      "gestures": {
+        "1": {
+          "observed_attempts": 5,
+          "observed_eligible": 0,
+          "eligible_fraction": 0.0,
+          "target": 200,
+          "scene_demand_point": null,
+          "reason": "zero_observed_eligible_yield"
+        },
+        "6": {
+          "observed_attempts": 5,
+          "observed_eligible": 0,
+          "eligible_fraction": 0.0,
+          "target": 200,
+          "scene_demand_point": null,
+          "reason": "zero_observed_eligible_yield"
+        },
+        "7": {
+          "observed_attempts": 5,
+          "observed_eligible": 1,
+          "eligible_fraction": 0.2,
+          "target": 200,
+          "scene_demand_point": 1000,
+          "reason": null
+        },
+        "8": {
+          "observed_attempts": 5,
+          "observed_eligible": 0,
+          "eligible_fraction": 0.0,
+          "target": 200,
+          "scene_demand_point": null,
+          "reason": "zero_observed_eligible_yield"
+        }
+      },
+      "required_scene_count_point": null,
+      "point_seconds": null,
+      "reliable_upper_bound_seconds": null
+    }
+  },
+  "total_point_seconds": null,
+  "total_point_days": null,
+  "reliable_upper_bound_seconds": null,
+  "automatic_large_collection": false,
+  "timing_from_known_control": true,
+  "assumptions": [
+    "same workload mix and observed all-stage wall per attempted scene",
+    "same backend, audit policy, resource contention and concurrency",
+    "empirical yield persists separately for each split and gesture"
+  ],
+  "limitations": [
+    "small scene sample; scene outcomes across gestures are correlated",
+    "a point expected workload is not a probability guarantee of filling quotas",
+    "known-control timing may differ from random-scene null/execution mix",
+    "capture/prepare/first audit and null costs are included in measured wall",
+    "stage-envelope timing is a lower bound when driver wall is unavailable"
+  ]
+}

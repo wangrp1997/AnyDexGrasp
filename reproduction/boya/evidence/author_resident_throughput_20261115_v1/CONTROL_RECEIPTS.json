@@ -1,0 +1,788 @@
+{
+  "fit": {
+    "protocol": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/RESIDENT_COLLECTION_PROTOCOL.json",
+      "sha256": "8da19e12bc23bc8ceb7ca70416de00a6ca2ae1eac5eff9ae635fbf95bdc95e96"
+    },
+    "progress": {
+      "schema": "anydex_boya_author_resident_collection_v1",
+      "task": "declared_boya_clutter_lift_v1",
+      "status": "complete",
+      "eligible_labels": {
+        "fit": {
+          "1": 2,
+          "6": 2,
+          "7": 2,
+          "8": 2
+        },
+        "internal": {
+          "1": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0
+        }
+      },
+      "positive_labels": {
+        "fit": {
+          "1": 1,
+          "6": 2,
+          "7": 2,
+          "8": 1
+        },
+        "internal": {
+          "1": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0
+        }
+      },
+      "counts_scope": "audited diagnostic labels; all excluded from training",
+      "ledger_rows": 8,
+      "total_scene_budget": 2,
+      "total_gesture_attempt_budget": 8,
+      "known_final_execution_physics_steps": 25656,
+      "execution_starts_with_unknown_steps": 0,
+      "captured_initialization_ticks": 1500,
+      "captured_initialization_object_steps": 4500,
+      "physics_cost_scope": "Known final execution receipts and complete captures only; interrupted starts may have unknown cost",
+      "exclude_training": true,
+      "formal_training_eligible": false,
+      "old435_merged": false,
+      "training_updates": 0,
+      "timing_seconds": {
+        "build": 14.098858619807288,
+        "capture": 121.322712023044,
+        "representation_batch": 6.374685314949602,
+        "prepare_sum": 518.6673119359184,
+        "execution_groups_sum": 1625.9690246642567,
+        "execution_parallel_wall": 868.0199841491412,
+        "audit": 475.58606113656424,
+        "total_wall": 1765.0779746021144
+      },
+      "started_unix_s": 1794678136.534757,
+      "finished_unix_s": 1794679901.6127343,
+      "timing_scope": "Complete parent loop including capture/CGR, prepare, resident worker shutdown, audit and ledger; outer process startup/exit measured separately",
+      "error": null,
+      "parent_launches_kit": false,
+      "unadmitted_execution_costs": []
+    },
+    "outer": {
+      "started_unix_s": 1794678136.0189688,
+      "finished_unix_s": 1794679901.6295595,
+      "wall_s": 1765.6105919859838,
+      "error": null,
+      "wrapper": {
+        "path": "/tmp/run_anydex_resident_control_20261115.py",
+        "sha256": "4785b290bb7cd832873c1e93dfa4dcaa9d4a378ee796c9f81fd968472d317584"
+      },
+      "status": "complete",
+      "wall_scope": "Python wrapper including imports, protocol preflight, complete loop and final lease release; shell/PTY startup excluded"
+    },
+    "first_numeric_audits": [
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/RUNTIME_AUDIT.json",
+          "sha256": "dfb9f8fc66f96d3ccfe40386d4abb5fc7318d90b5b69b4245b813753f151b2de"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3139,
+          "dynamic_object_steps": 9417,
+          "contact_points": 8163718,
+          "max_source_bottom_error_m": 1.3877787807814457e-17,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 4.261729554855265e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 5.603133104159497e-07,
+          "max_mimic_error_rad": 2.0623207092285156e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_002": true,
+            "graspnet_005": false,
+            "graspnet_060": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_002": {
+              "longest_s": 1.572,
+              "trailing_s": 1.572
+            },
+            "graspnet_005": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_060": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1789,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/RUNTIME_AUDIT.json",
+          "sha256": "df1d417d3122254a3839631ca3e812162d0f8a45c4f7a655f345502ad3ae8d71"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3008,
+          "dynamic_object_steps": 9024,
+          "contact_points": 7725550,
+          "max_source_bottom_error_m": 6.938893903907228e-18,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 8.445163257420063e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 3.62579584134437e-08,
+          "max_mimic_error_rad": 2.2172927856445312e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_002": true,
+            "graspnet_005": false,
+            "graspnet_060": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_002": {
+              "longest_s": 1.596,
+              "trailing_s": 1.596
+            },
+            "graspnet_005": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_060": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1658,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/RUNTIME_AUDIT.json",
+          "sha256": "fb111cc3f982cd5256e83182278da83d3b1f5102939197c90964f9db2ed4cdb7"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3021,
+          "dynamic_object_steps": 9063,
+          "contact_points": 7789872,
+          "max_source_bottom_error_m": 6.938893903907228e-18,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 4.434213042259216e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 1.2431972784554546e-08,
+          "max_mimic_error_rad": 2.2605061531066895e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_002": true,
+            "graspnet_005": false,
+            "graspnet_060": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_002": {
+              "longest_s": 1.56,
+              "trailing_s": 1.56
+            },
+            "graspnet_005": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_060": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1671,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/RUNTIME_AUDIT.json",
+          "sha256": "c82a1b9b1dfd9d06d2ce6b8955d26489190c21f089e367635f08759fab03f374"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3312,
+          "dynamic_object_steps": 9936,
+          "contact_points": 8612028,
+          "max_source_bottom_error_m": 1.3877787807814457e-17,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 4.985742270946503e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 3.799119951963803e-07,
+          "max_mimic_error_rad": 2.1159648895263672e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_002": true,
+            "graspnet_005": false,
+            "graspnet_060": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_002": {
+              "longest_s": 1.616,
+              "trailing_s": 1.616
+            },
+            "graspnet_005": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_060": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1962,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/RUNTIME_AUDIT.json",
+          "sha256": "2678920205b1aecae3a95d5110f1d0cbadb6aef8f2a3250816a71ee2dae6fc17"
+        },
+        "status": "pass",
+        "label": 0,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3374,
+          "dynamic_object_steps": 10122,
+          "contact_points": 7907115,
+          "max_source_bottom_error_m": 6.938893903907228e-18,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 6.158789619803429e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 5.469755706144497e-07,
+          "max_mimic_error_rad": 4.738569259643555e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_063": false,
+            "graspnet_037": false,
+            "graspnet_015": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_063": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_037": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_015": {
+              "longest_s": 0.356,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 2024,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/RUNTIME_AUDIT.json",
+          "sha256": "835d88620ff807b74dcf723815fca09b38a0cd9f8ccb2ea76b498466b881314a"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3024,
+          "dynamic_object_steps": 9072,
+          "contact_points": 6705641,
+          "max_source_bottom_error_m": 1.3877787807814457e-17,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 4.023930159746669e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 2.8146587283117697e-07,
+          "max_mimic_error_rad": 3.844499588012695e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_063": false,
+            "graspnet_037": false,
+            "graspnet_015": true
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_063": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_037": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_015": {
+              "longest_s": 1.412,
+              "trailing_s": 1.412
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1674,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/RUNTIME_AUDIT.json",
+          "sha256": "86c77feecc985fb56cef0bb20a4637cd43a5dcc15c8cfc81f31f1e92ea376028"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3196,
+          "dynamic_object_steps": 9588,
+          "contact_points": 7140496,
+          "max_source_bottom_error_m": 1.3877787807814457e-17,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 3.9426962757715955e-05,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 9.429437568542198e-07,
+          "max_mimic_error_rad": 7.795542478561401e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_063": false,
+            "graspnet_037": false,
+            "graspnet_015": true
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_063": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_037": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_015": {
+              "longest_s": 1.464,
+              "trailing_s": 1.464
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1846,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      },
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/RUNTIME_AUDIT.json",
+          "sha256": "5b678ed2411f6aa02b25d88e7669a531a1f40ad987484037b889c2b0a530ebd9"
+        },
+        "status": "pass",
+        "label": 0,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3582,
+          "dynamic_object_steps": 10746,
+          "contact_points": 8248273,
+          "max_source_bottom_error_m": 6.938893903907228e-18,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 0.00011543859727680683,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 1.8222137043721887e-07,
+          "max_mimic_error_rad": 4.32133674621582e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_063": false,
+            "graspnet_037": false,
+            "graspnet_015": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_063": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_037": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_015": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 2232,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      }
+    ],
+    "ledger": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/LEDGER.json",
+      "sha256": "b01e71c7057cf998c5d5e81dd3d71b5c4ae25c0c16d86a22b43fdb9e20209079"
+    },
+    "ledger_scope": "All parent rows exclude training; nested original audits are numeric certificates only"
+  },
+  "internal": {
+    "protocol": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/RESIDENT_COLLECTION_PROTOCOL.json",
+      "sha256": "8ad9fe561f81b237d54433966e22947933459c8facc86808b7c891b779b6e99b"
+    },
+    "progress": {
+      "schema": "anydex_boya_author_resident_collection_v1",
+      "task": "declared_boya_clutter_lift_v1",
+      "status": "complete",
+      "eligible_labels": {
+        "fit": {
+          "1": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0
+        },
+        "internal": {
+          "1": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0
+        }
+      },
+      "positive_labels": {
+        "fit": {
+          "1": 0,
+          "6": 0,
+          "7": 0,
+          "8": 0
+        },
+        "internal": {
+          "1": 0,
+          "6": 0,
+          "7": 1,
+          "8": 0
+        }
+      },
+      "counts_scope": "audited diagnostic labels; all excluded from training",
+      "ledger_rows": 4,
+      "total_scene_budget": 1,
+      "total_gesture_attempt_budget": 4,
+      "known_final_execution_physics_steps": 3242,
+      "execution_starts_with_unknown_steps": 0,
+      "captured_initialization_ticks": 750,
+      "captured_initialization_object_steps": 2250,
+      "physics_cost_scope": "Known final execution receipts and complete captures only; interrupted starts may have unknown cost",
+      "exclude_training": true,
+      "formal_training_eligible": false,
+      "old435_merged": false,
+      "training_updates": 0,
+      "timing_seconds": {
+        "build": 6.897566981147975,
+        "capture": 82.56556956307031,
+        "representation_batch": 4.291986137861386,
+        "prepare_sum": 118.16176801826805,
+        "execution_groups_sum": 324.1501005280297,
+        "execution_parallel_wall": 324.1525820500683,
+        "audit": 88.74472090392374,
+        "total_wall": 577.8716537479777
+      },
+      "started_unix_s": 1794679975.4788558,
+      "finished_unix_s": 1794680553.3505127,
+      "timing_scope": "Complete parent loop including capture/CGR, prepare, resident worker shutdown, audit and ledger; outer process startup/exit measured separately",
+      "error": null,
+      "parent_launches_kit": false,
+      "unadmitted_execution_costs": []
+    },
+    "outer": {
+      "started_unix_s": 1794679974.9583204,
+      "finished_unix_s": 1794680553.3627105,
+      "wall_s": 578.4043912719935,
+      "error": null,
+      "wrapper": {
+        "path": "/tmp/run_anydex_resident_control_20261115.py",
+        "sha256": "4785b290bb7cd832873c1e93dfa4dcaa9d4a378ee796c9f81fd968472d317584"
+      },
+      "status": "complete",
+      "wall_scope": "Python wrapper including imports, protocol preflight, complete loop and final lease release; shell/PTY startup excluded"
+    },
+    "first_numeric_audits": [
+      {
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/RUNTIME_AUDIT.json",
+          "sha256": "ada5cd86a390945eb022c41c712947cd6d2a32c80ada1dd4d59b31161a7be55b"
+        },
+        "status": "pass",
+        "label": 1,
+        "checks": [
+          "all_scene_original_visual_identity_and_converted_geometry_split",
+          "source_candidate_ready_actual_commands_record_and_execution_bindings",
+          "all_contacts_lossless_decode_and_all_body_force_recomputation",
+          "all_source_vertex_bottoms_and_final_lift_labels",
+          "actual_28_targets_from_24_source_coordinates_and_mimics"
+        ],
+        "runtime": {
+          "physics_steps": 3242,
+          "dynamic_object_steps": 9726,
+          "contact_points": 11969336,
+          "max_source_bottom_error_m": 1.3877787807814457e-17,
+          "max_finger_load_error_n": 0.0,
+          "max_penetration_m": 3.468934664851986e-06,
+          "max_illegal_robot_support_force_n": 0.0,
+          "max_joint_limit_violation_rad": 6.928959184193673e-09,
+          "max_mimic_error_rad": 1.9550323486328125e-05,
+          "actual_command_coordinates": 28,
+          "independent_command_coordinates": 24,
+          "object_success": {
+            "graspnet_007": true,
+            "graspnet_021": false,
+            "graspnet_048": false
+          },
+          "pickup_duration_diagnostics": {
+            "graspnet_007": {
+              "longest_s": 1.592,
+              "trailing_s": 1.592
+            },
+            "graspnet_021": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            },
+            "graspnet_048": {
+              "longest_s": 0.0,
+              "trailing_s": 0.0
+            }
+          },
+          "no_added_minimum_hold_duration": true,
+          "bin_geometry_count": 0
+        },
+        "phase_counts": {
+          "settle": 50,
+          "home_to_pregrasp": 1892,
+          "approach": 500,
+          "close": 250,
+          "hold": 50,
+          "lift": 500
+        },
+        "costs": {
+          "Kit_starts": 0,
+          "physics_steps": 0,
+          "planning_calls": 0,
+          "CGR_forwards": 0,
+          "training_updates": 0
+        },
+        "audit_source": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+        }
+      }
+    ],
+    "ledger": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/LEDGER.json",
+      "sha256": "2295ecd1ede6465703f3fddf0323435d47261524b0828c95f7e590c0bfc98de0"
+    },
+    "ledger_scope": "All parent rows exclude training; nested original audits are numeric certificates only"
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema": "anydex_boya_resident_readonly_control_audit_v1",
+  "status": "pass",
+  "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/RESIDENT_COLLECTION_PROTOCOL.json",
+    "sha256": "8ad9fe561f81b237d54433966e22947933459c8facc86808b7c891b779b6e99b"
+  },
+  "sources_unchanged": true,
+  "groups": [
+    {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "session": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/resident_session/SESSION_RECEIPT.json",
+        "sha256": "6ed5a38f9302771548f06e68d3f669e390f9fd561ba8151c2a813a154060d120"
+      },
+      "group": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/resident_session/EXECUTE_MANY_RESULTS.json",
+        "sha256": "3f9699ffda94ab1b8e0fced19280bf3b758ccaebbad248036a56a87bbcdd99f8"
+      },
+      "Kit_starts": 1,
+      "asset_setups": 1,
+      "resets": 0,
+      "rebuilds": 0,
+      "pid": 1755582,
+      "all_jobs_same_process": true,
+      "executed_job_count": 1,
+      "inter_job_physics_clock_gaps": [],
+      "physics_steps": 3242,
+      "jobs": [
+        {
+          "gesture_id": 7,
+          "label": 1,
+          "physics_steps": 3242,
+          "physics_clock_before_first_command": 0,
+          "actual_28_targets_exact": true,
+          "original_velocity_targets_exact": true,
+          "phase_time_palm_exact": true,
+          "independent_runtime_audit": "pass",
+          "reused": false,
+          "asset_setups": 1,
+          "resets": 0,
+          "native_audits": 1,
+          "max_entry_position_error_m": 1.1175870895385742e-08,
+          "max_entry_rotation_matrix_error": 1.6572500133316126e-07,
+          "max_entry_speed": 0.0,
+          "state_writes_during_control": 0,
+          "extra_restore_integration_steps": 0,
+          "native_gate_20um": true,
+          "all_original_lift_gates_pass": true,
+          "commands": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/lift_bound/commands.npz",
+            "sha256": "d522530e7520a8cd34034f00a8c6f00bc28b50f6aeaa10b9cd28507bdd93e088"
+          },
+          "trace": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/trace.npz",
+            "sha256": "cde28b060f38bdf9d551785ef9ac2650a40f28a6977b5f928f9e3549b85d51c6"
+          },
+          "source_sha_verified_by_first_audit": true,
+          "contact_journal": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+            "sha256": "e5f4264db680a4a7285ca890765522e3c43a08a1c1922d6f8400407f1e486ebf",
+            "bytes": 405389969
+          },
+          "first_audit_costs": {
+            "Kit_starts": 0,
+            "physics_steps": 0,
+            "planning_calls": 0,
+            "CGR_forwards": 0,
+            "training_updates": 0
+          },
+          "artifacts": {
+            "READY.json": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/READY.json",
+              "sha256": "d6f3bd093bae15a11e105f5ccf8ec5b887fb633c4d077e1287a9b82a75dcc890"
+            },
+            "RESIDENT_EXECUTION_ENTRY.json": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/RESIDENT_EXECUTION_ENTRY.json",
+              "sha256": "7881585d4b250294bc078de7ba965117963927881666398d25c158b4e1df8236"
+            },
+            "LIFT_PIPELINE_EXECUTION.json": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/LIFT_PIPELINE_EXECUTION.json",
+              "sha256": "fcba7bd71749d9ca42647b3fde42d29b814bc9772db925706db6318a8ef83d07"
+            },
+            "COLLECTION_RECORD.json": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/COLLECTION_RECORD.json",
+              "sha256": "a4024ea6a0e49e55bf4fd1b7472fbb674bfe4214506e8bf4496a03b3e7742f43"
+            },
+            "RUNTIME_AUDIT.json": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/RUNTIME_AUDIT.json",
+              "sha256": "ada5cd86a390945eb022c41c712947cd6d2a32c80ada1dd4d59b31161a7be55b"
+            }
+          },
+          "reference_comparison": {
+            "reference_ready": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/READY.json",
+              "sha256": "34f8664f2bf92798580d332448a128b227838ed4930e4cd4ac8a0ef1c60217a8"
+            },
+            "reference_commands": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/lift_bound/commands.npz",
+              "sha256": "0b59f7dfeb11bf323dadcd4c5a635e5f471de0e2d91d7abecf86f24c36536e47"
+            },
+            "reference_execution": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/LIFT_PIPELINE_EXECUTION.json",
+              "sha256": "a7de6c5b1d45cf609723befb48b153ef5df55709d63241e302f28ecc2d1ec781"
+            },
+            "physical_arrays_equal": {
+              "initial_position": true,
+              "joint_names": true,
+              "joint_target": true,
+              "phase": true,
+              "desired_palm": true,
+              "time_s": true
+            },
+            "original_label": 1,
+            "label_equal": true,
+            "original_steps": 3242,
+            "steps_equal": true
+          },
+          "outcomes": {
+            "graspnet_007": {
+              "task_success": true,
+              "final_reference_rise_m": 0.09977417439222336,
+              "final_source_bottom_m": 0.09928498211531436,
+              "trailing_observed_pickup_run_s": 1.592
+            },
+            "graspnet_021": {
+              "task_success": false,
+              "final_reference_rise_m": 3.725290298461914e-09,
+              "final_source_bottom_m": 0.000486753841006559,
+              "trailing_observed_pickup_run_s": 0.0
+            },
+            "graspnet_048": {
+              "task_success": false,
+              "final_reference_rise_m": 4.470348358154297e-08,
+              "final_source_bottom_m": 0.0006305745772172099,
+              "trailing_observed_pickup_run_s": 0.0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "completed_group_count": 1,
+  "Kit_starts": 1,
+  "executions": 1,
+  "physics_steps": 3242,
+  "label_count": 1,
+  "positive": 1,
+  "negative": 0,
+  "original_runtime_journals_redecoded": false,
+  "read_only": true,
+  "new_physics_steps": 0,
+  "audit_scope": "Independent saved-command expansion, native/three-body initial/reset/material/gates; first original full-contact numeric audits are read and bound, not repeated",
+  "exclude_training": true,
+  "generated_unix_s": 1794680587.9500933
+}

@@ -1,0 +1,240 @@
+{
+  "strata": {
+    "fit": {
+      "1": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "6": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "7": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "8": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      }
+    },
+    "internal": {
+      "1": {
+        "attempts": 1,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 1
+        },
+        "eligible_fraction": 0.0
+      },
+      "6": {
+        "attempts": 1,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "null_geometry": 1
+        },
+        "eligible_fraction": 0.0
+      },
+      "7": {
+        "attempts": 1,
+        "eligible": 1,
+        "positive": 1,
+        "negative": 0,
+        "statuses": {
+          "labelled": 1
+        },
+        "eligible_fraction": 1.0
+      },
+      "8": {
+        "attempts": 1,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {
+          "no_candidate": 1
+        },
+        "eligible_fraction": 0.0
+      }
+    }
+  },
+  "scene_counts": {
+    "fit": 0,
+    "internal": 1
+  },
+  "total_scenes": 1,
+  "total_attempts": 4,
+  "total_eligible": 1,
+  "schema": "anydex_boya_resident_benchmark_v1",
+  "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch",
+  "selection_basis": "known_scene_control",
+  "scope": "complete_collection",
+  "numeric_replays_performed": 0,
+  "training_updates": 0,
+  "analysis_is_label_certification": false,
+  "inputs": {
+    "ledger": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/LEDGER.json",
+      "sha256": "0dc7a9fe8e9c95d7a1afee09bcab7d1e655875a705000183c554d8747030792b"
+    }
+  },
+  "selected_trial_ids": [
+    "s40_lift_internal_00001_s2026111402:g1",
+    "s40_lift_internal_00001_s2026111402:g6",
+    "s40_lift_internal_00001_s2026111402:g7",
+    "s40_lift_internal_00001_s2026111402:g8"
+  ],
+  "first_numeric_audit_receipts": {
+    "s40_lift_internal_00001_s2026111402:g7": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/RUNTIME_AUDIT.json",
+      "sha256": "bac94d35175e00dc09ff74e502e05f77674245657f22deb7f2e18a05857ba738"
+    }
+  },
+  "stage_costs": {
+    "build": {
+      "count": 1,
+      "wall_sum_s": 6.485014093806967
+    },
+    "capture": {
+      "count": 1,
+      "wall_sum_s": 82.07735084812157
+    },
+    "representation": {
+      "count": 1,
+      "wall_sum_s": 3.813931921031326
+    },
+    "prepare": {
+      "count": 4,
+      "wall_sum_s": 116.61810111510567
+    },
+    "execute": {
+      "count": 1,
+      "wall_sum_s": 290.05339741916396
+    },
+    "audit": {
+      "count": 1,
+      "wall_sum_s": 90.19106011395343
+    }
+  },
+  "stage_span_s": 611.3000347614288,
+  "full_pipeline_wall_s": 611.3000347614288,
+  "scene_stage_spans_s": {
+    "s40_lift_internal_00001_s2026111402": 611.3000347614288
+  },
+  "wall_scope": "sum of selected serial scene stage spans; unselected scenes and inter-scene boundaries excluded",
+  "wall_is_lower_bound": true,
+  "stage_wall_sums_may_overlap": true,
+  "known_final_execution_physics_steps": 3242,
+  "execution_starts_with_unknown_steps": 0,
+  "reported_timing_seconds": {},
+  "trial_fingerprints": {
+    "s40_lift_internal_00001_s2026111402:g1": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": null,
+      "commands_sha256": null,
+      "label": null
+    },
+    "s40_lift_internal_00001_s2026111402:g6": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": null,
+      "commands_sha256": null,
+      "label": null
+    },
+    "s40_lift_internal_00001_s2026111402:g7": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": "fae0b39b2a390e975b99774358042fd8859e40900c44787e738322d8e72c9c96",
+      "commands_sha256": "0b59f7dfeb11bf323dadcd4c5a635e5f471de0e2d91d7abecf86f24c36536e47",
+      "label": 1
+    },
+    "s40_lift_internal_00001_s2026111402:g8": {
+      "scene_id": "s40_lift_internal_00001_s2026111402",
+      "split": "internal",
+      "source_object_ids": [
+        "graspnet_007",
+        "graspnet_021",
+        "graspnet_048"
+      ],
+      "source_object_digests": {
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_048": "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+      },
+      "candidate_sha256": null,
+      "commands_sha256": null,
+      "label": null
+    }
+  },
+  "resident": {
+    "session_count": 0,
+    "Kit_starts": 0,
+    "asset_setup_count": 0,
+    "state_reset_count": 0,
+    "scene_rebuild_count": 0,
+    "known_execution_physics_steps": 0,
+    "reset_physics_steps": 0,
+    "Kit_launch_wall_sum_s": 0,
+    "sessions": {},
+    "jobs": {}
+  },
+  "execution_process_intervals": [
+    {
+      "started_unix_s": 1794674141.4558496,
+      "finished_unix_s": 1794674431.509247,
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/stages/execute_g7/STAGE.json"
+    }
+  ],
+  "max_execution_process_overlap": 1,
+  "overlap_scope": "Actual stage process lifetimes; not proof that solver kernels overlap"
+}

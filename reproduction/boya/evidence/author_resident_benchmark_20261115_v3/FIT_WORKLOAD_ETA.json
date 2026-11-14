@@ -1,0 +1,162 @@
+{
+  "schema": "anydex_boya_resident_workload_scenario_v1",
+  "numeric_replays_performed": 0,
+  "physics_steps_added": 0,
+  "training_updates": 0,
+  "interpretation": "Conditional workload-transfer scenario, not a measured random-scene throughput or upper bound",
+  "assumptions": [
+    "Old 11 fit scenes describe future placement and per-gesture executable/eligible fractions; no executed-null fit jobs occurred there",
+    "Measured all-ready control build/capture/CGR/prepare costs transfer to captured random scenes, including planning-null scenes",
+    "Measured two-group parallel wall/serial-work coefficient transfers to enough ready groups to keep two sessions supplied; no 3-worker extrapolation",
+    "Each executed job requires one full first numerical audit; valid negatives count, null/infra never count as zero",
+    "All four gestures continue through the bottleneck quota, including raw over-quota execution costs",
+    "Unattributed inner and outer overhead is charged per attempted scene at the two-scene control rate",
+    "Existing converted assets and prepared hand clouds are reused; future source asset conversion and training time are not measured here"
+  ],
+  "control": {
+    "scenes": 2,
+    "outer_wall_s": 1765.6105919859838,
+    "inner_wall_s": 1765.0779746021144,
+    "prepare_union_s": 259.67397809028625,
+    "phase_sums": {
+      "build": 14.098858619807288,
+      "capture": 121.322712023044,
+      "representation_batch": 6.374685314949602,
+      "prepare_sum": 518.6673119359184,
+      "execution_groups_sum": 1625.9690246642567,
+      "execution_parallel_wall": 868.0199841491412,
+      "audit": 475.58606113656424,
+      "total_wall": 1765.0779746021144
+    },
+    "fixed_execution_per_group_s": 30.800456013297662,
+    "variable_execution_by_gesture_s": {
+      "1": 205.4015074679628,
+      "6": 181.02231788798235,
+      "7": 189.77580796857364,
+      "8": 205.77585692459252
+    },
+    "first_audit_by_gesture_s": {
+      "1": 61.02242911653593,
+      "6": 55.21045229793526,
+      "7": 57.00138797087129,
+      "8": 63.77422662358731
+    },
+    "scheduling_coefficient": 0.533984788883563,
+    "nonoverlapping_bookkeeping_per_attempt_s": 10.267156326095574,
+    "resident_resets": 6
+  },
+  "historical_fit": {
+    "attempted_scenes": 11,
+    "capture_fraction": 0.6363636363636364,
+    "execution_scene_fraction": 0.36363636363636365,
+    "execution_fractions": {
+      "1": 0.36363636363636365,
+      "6": 0.2727272727272727,
+      "7": 0.2727272727272727,
+      "8": 0.36363636363636365
+    },
+    "expected_executions_per_attempt": 1.2727272727272727
+  },
+  "fit": {
+    "target_per_gesture": 1000,
+    "required_scenes_point_scenario": 3667,
+    "required_scenes_by_gesture": {
+      "1": 2750,
+      "6": 3667,
+      "7": 3667,
+      "8": 2750
+    },
+    "components_seconds_per_attempt": {
+      "build_capture_cgr_prepare": 127.74052901530045,
+      "execution_observed_two_group_scheduling": 139.8217644858499,
+      "first_numeric_audit": 75.98383125153751,
+      "bookkeeping": 10.267156326095574,
+      "total": 353.81328107878346
+    },
+    "expected_raw_eligible_by_gesture": {
+      "1": 1333.4545454545455,
+      "6": 1000.090909090909,
+      "7": 1000.090909090909,
+      "8": 1333.4545454545455
+    },
+    "expected_wall_s": 1297433.301715899,
+    "expected_days": 15.016589140230312,
+    "serial_execution_work_seconds_per_attempt": 261.84596901755276,
+    "same_workload_without_execution_overlap_days": 20.19555624691728
+  },
+  "internal": {
+    "target_per_gesture": 200,
+    "observed_eligible_fractions": {
+      "1": 0.0,
+      "6": 0.0,
+      "7": 0.2,
+      "8": 0.0
+    },
+    "required_scenes_by_gesture": {
+      "1": null,
+      "6": null,
+      "7": 1000,
+      "8": null
+    },
+    "no_observed_eligible_gestures": [
+      1,
+      6,
+      8
+    ],
+    "finite_total_eta": null,
+    "reason": "Zero observed production in these gesture strata; fit rates are not transferred"
+  },
+  "overall_completion_eta": null,
+  "audit_inputs_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_benchmark_20261115_v3/FIT_RESIDENT_CONTROL.json": "d87f42ae87b4a940c7f88c179b6079c8b8a8a70504faadaad139195c1d44f603",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_benchmark_20261115_v3/POOLED_YIELDS.json": "0603be5882a0d8192974bce48f515ab7be3f4645442f3ec5bf69f4ffa54c128c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_benchmark_20261115_v3/OLD_SERIAL.json": "a407bffdd320c6fd70ec0c47b3366ed1d5049f1fa608b6cf1d2a11917b185e55",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_benchmark_20261115_v3/OLD_WAVES.json": "657fa123e8232fc74d18dbc8cf2639dab8610cf3dc80f9be4508bde04ccbea1c",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/LEDGER.json": "b01e71c7057cf998c5d5e81dd3d71b5c4ae25c0c16d86a22b43fdb9e20209079",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/RUNTIME_AUDIT.json": "dfb9f8fc66f96d3ccfe40386d4abb5fc7318d90b5b69b4245b813753f151b2de",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/RUNTIME_AUDIT.json": "df1d417d3122254a3839631ca3e812162d0f8a45c4f7a655f345502ad3ae8d71",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/RUNTIME_AUDIT.json": "fb111cc3f982cd5256e83182278da83d3b1f5102939197c90964f9db2ed4cdb7",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/RUNTIME_AUDIT.json": "c82a1b9b1dfd9d06d2ce6b8955d26489190c21f089e367635f08759fab03f374",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/RUNTIME_AUDIT.json": "2678920205b1aecae3a95d5110f1d0cbadb6aef8f2a3250816a71ee2dae6fc17",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/RUNTIME_AUDIT.json": "835d88620ff807b74dcf723815fca09b38a0cd9f8ccb2ea76b498466b881314a",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/RUNTIME_AUDIT.json": "86c77feecc985fb56cef0bb20a4637cd43a5dcc15c8cfc81f31f1e92ea376028",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/RUNTIME_AUDIT.json": "5b678ed2411f6aa02b25d88e7669a531a1f40ad987484037b889c2b0a530ebd9",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/PROGRESS.json": "954b000357eaf00bf246be80663419930315b055c762c341dcdf9c3d479ff9bb",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/OUTER_DRIVER_RESULTS.json": "1893891a780d59db679eae73d5452962f633ec21d3aaf9aa769d3be6e07c9702",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/RESIDENT_COLLECTION_PROTOCOL.json": "8da19e12bc23bc8ceb7ca70416de00a6ca2ae1eac5eff9ae635fbf95bdc95e96",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g1/STAGE.json": "309ada6554cfff2bbd586d230a4fb154b6e2f3a3024fb26f098a970147534511",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g6/STAGE.json": "d33a3e4c14eb431e5e10d53481bfdd590cbf362da742c6c6ee39e729e93843e5",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g7/STAGE.json": "361b28a32570995467d757af78accd4210fd6e0c60ef3c7286a6086e4c14fd13",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g8/STAGE.json": "556e1535110944e98aa1312b3b624c3d87b7eb883bc7bad6f16261f7b486eb56",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/build/STAGE.json": "953ba0fe17f48373ff376db1869bedf4f47a325c5d9b5f545da8d6deb1bc43df",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/capture/STAGE.json": "609a20f316fd0599958220bfcb98dd2bfb15965e4cd9a15cf55b709a645bce64",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g1/STAGE.json": "21dbe10e8cdf0bac4a2ae2cf7050a04604568c406788735caec277826c273ec4",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g6/STAGE.json": "6b7fe40b4bc348d455661270de92ca3b204b79d1723dc8aca23dfb7095d22a2b",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g7/STAGE.json": "cb2c4322f16004747b7c9058fd7ae587714d8b573ae3518ea52a5a490000c0ab",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g8/STAGE.json": "188dfdd60b64f5bc5e798f155b8964d961ad73316ab3638b9af3691026d65dd9",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/resident_execute/STAGE.json": "322807f32808de415f1e72521853220b62d4a2361561f42fcd6dbdb46052247a",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g1/STAGE.json": "7217b03e4045b8e9dd12580559c7c9dd1a9a0fde03c2d722681fd6c1079cdf11",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g6/STAGE.json": "95a99c02209a0462605968a710e4ca2691a3565ebac342bc502104cf685e583c",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g7/STAGE.json": "077b0415cb8182977163e75775e85f7dc0ad0c285b389238a8987218ef55f601",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g8/STAGE.json": "318d22cbe8eb7c282dd04303cb04fe7e8b1f574ffe9ac7367e9ba0a60a2b3b38",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/build/STAGE.json": "0fc9d582c4aa7f80dadc29bb7408cfac26c8308d873460de4093e6ed7ea760b4",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/capture/STAGE.json": "eab37209ec3dadb97087a231b0e9bbcd5330e2b9727aeeb35fc195db98e7736d",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g1/STAGE.json": "4ef19fbcf8e26eaac0ee153ec08424be8af14dce300cb4f9f335110a0a617382",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g6/STAGE.json": "17ea7184be54119b0d341024c8ef6e5fe6a4108767ffd33e7690bfd7ff054d9b",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g7/STAGE.json": "09e3901d269e6df9542f90e55d077d284bdc8a01dd9b89699667dc6960a8adcb",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g8/STAGE.json": "f0c754360f0c9bf15e910f6a2bc3925338fc95fc1d21a7738029a1676dbbc04e",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/resident_execute/STAGE.json": "a52b072b86c2947ba22451b0bc3f039b888e92f17c844fca4a5366c8b076d0bb",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/stages/representation/STAGE.json": "dd6edcf59dea808eda4aa2aae12e747a7fe2f5f0e86f5e88d689af54865b2a36",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/resident_session/SESSION_RECEIPT.json": "aeb6616a7c481b8c2a2fb0f1392fd919f4c88e944d572684837637b10af5556d",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/RESIDENT_EXECUTION_ENTRY.json": "f5a5ea87b5de02994795c446bee8f659874a7cb2d1ff32e7a1225b60f9ed3713",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/RESIDENT_EXECUTION_ENTRY.json": "447b570a4168d356379c5f242fd880cb4594cdae37cb629b875e99a19fa3b4df",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/RESIDENT_EXECUTION_ENTRY.json": "859fb56469923c965248f9e62b7b2d95c4f9b2a03a6486533c7fc2e2d87077e3",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/RESIDENT_EXECUTION_ENTRY.json": "d374b80929a21eec3fae21059afcf41c499662c988c3a2363a12b72d130f4c10",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/resident_session/SESSION_RECEIPT.json": "85ca99e73ac3f7dd0c417d151245a5e14bf92a3e8147cfe233684ac7a419752e",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/RESIDENT_EXECUTION_ENTRY.json": "5336b3d32bbe39386cb9ca70eed33a34bebafb2af23dc5663a3dc9b7e5fb9154",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/RESIDENT_EXECUTION_ENTRY.json": "f6b726c55245d9c8027537ebadb9521b6890b8c8f1a1e2e0263649b283269c3c",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/RESIDENT_EXECUTION_ENTRY.json": "6b6b9907f773b552918111bdadc28f519ad26774f8628351712aab5b6d2d10fe",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/RESIDENT_EXECUTION_ENTRY.json": "589389a57cfc3a61d9af56bf59c6c41d8c817aadfcf4fc2c76c430ff4941c3d0"
+  },
+  "analysis_source_sha256": "1e4319d4099d77a43f3df74427de53b7280691e30f4626dcca249f9ede8d082e"
+}

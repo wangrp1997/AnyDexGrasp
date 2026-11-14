@@ -1,6 +1,16 @@
 # AnyDexGrasp 独立复现工作区
 
-## 2026-11-15 当前：两个固定开发预算已结束，累计15条新标签，正式训练0
+## 2026-11-15 当前：常驻双路完整fit对照完成，正式全量采集等待用户决定
+
+用户最新要求先解决常驻/并行并实测耗时，再由其决定是否启动采集。本轮只冻结3场景/12槽/最多12执行的小诊断，0重试，全部exclude_training；正式4000fit＋800internal没有启动，不自动扩大预算或训练。新author_resident_execution/collection/benchmark已实现，31项CPU测试通过，源码提交fadc12a已push用户origin。fit scene1＋4重新build/capture/CGR/prepare后，两实际Kit各常驻执行四型，共2建场/6边界reset/25656步/6正2负，8原numeric audit全部PASS，与旧对应步数和标签一致。
+
+新fit完整outer1765.611s=29.427min；旧同两scene各自stage跨度合2688.671s=44.811min，观察约1.523倍，仅历史范围比较，非新配对或随机完整采集倍率。随机开发11fit产率4/3/3/4与实测成本迁移情景：各1000fit约3667scene/15.02天连续运行，同工作量执行无重叠约20.20天；internal5scene三型零产出，4800整体ETA未知。不承诺小时级、不套worker数或执行段倍率。GPU0为场景/RTX/CGR服务，实际物理仍CPU；官方GPU多环境批量物理未接通。固定internal小对照已complete，完整outer578.404s=9.640min，g7一次冷执行正例/3242步，g1/g6为null_geometry、g8为no_candidate，不是内部热复用证据。合计9次实际/28898步/7正2负、3无计划，另2250初始化tick/6750对象步；全部9次原audit通过，未知成本0。根归档首次误加总数28998，保留原归档并有ERRATUM_TOTAL_STEPS更正，原逐条/逐run回执不变。最终host34相关PID退出/13槽released/14锁可取，无后台任务，不重复派发。
+
+热复用并非全部物理轨迹一致：实际机器人/全三体初态exact，机器人settle/HOME/approach exact、关节首差在close；物体preclose微差最大43.738um，接触后某原失败轨迹差149.905mm/179.916°。原门与8标签保持，原因未证明，不能说无偏/物理等价。改变几何的同Kit重建仅CPU测试，不扩本轮预算验证。当前新collector硬性诊断排除训练，正式扩采须另冻结生产协议/准入与有限预算。
+
+总报告reproduction/boya/AUTHOR_RESIDENT_THROUGHPUT_RESULTS_20261115.md，动作/初始化/ETA分别独立审计。累计有效新采集标签仍14fit＋1internal=15条，旧435/八权重不改，正式训练/新模型/训后评测0；S40派生40物体32/8未扩大。本轮不改冻结源码或CanonDex，只push轻量代码/文档/证据，大输出继续忽略。下列“常驻尚未实现”等是阶段历史，现已完成同组三体四型的实际常驻对照，不能与GPU向量化混同。
+
+## 2026-11-15 历史：两个固定开发预算已结束，累计15条新标签，正式训练0
 
 主线为公开代码＋发布模型的Boya无箱稳定提起适配，先采集真实标签、再训练、最后冻结外部评测。旧development/batch_v1已结束：40槽产生14条fit标签=10正4负，g1/6/7/8为4/3/3/4，另10null_geometry、3no_candidate、12placement_null、1准备infra。新development_waves/waves_v1固定fresh6也已结束：24槽=1条internal g7正标签＋4null_geometry＋7no_candidate＋12placement_null；3次完整capture共2250初始化tick/6750对象步，实际执行3242步，0infra/0未知执行成本。累计14fit＋1internal=15条有效新标签，不自动并入旧435；正式训练、新正式模型与训后外部评测均0。这些是采集标签，不能报成新模型成功率。
 

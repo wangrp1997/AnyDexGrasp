@@ -1,0 +1,461 @@
+{
+  "strata": {
+    "fit": {
+      "1": {
+        "attempts": 2,
+        "eligible": 2,
+        "positive": 1,
+        "negative": 1,
+        "statuses": {
+          "diagnostic_labelled": 2
+        },
+        "eligible_fraction": 1.0
+      },
+      "6": {
+        "attempts": 2,
+        "eligible": 2,
+        "positive": 2,
+        "negative": 0,
+        "statuses": {
+          "diagnostic_labelled": 2
+        },
+        "eligible_fraction": 1.0
+      },
+      "7": {
+        "attempts": 2,
+        "eligible": 2,
+        "positive": 2,
+        "negative": 0,
+        "statuses": {
+          "diagnostic_labelled": 2
+        },
+        "eligible_fraction": 1.0
+      },
+      "8": {
+        "attempts": 2,
+        "eligible": 2,
+        "positive": 1,
+        "negative": 1,
+        "statuses": {
+          "diagnostic_labelled": 2
+        },
+        "eligible_fraction": 1.0
+      }
+    },
+    "internal": {
+      "1": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "6": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "7": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      },
+      "8": {
+        "attempts": 0,
+        "eligible": 0,
+        "positive": 0,
+        "negative": 0,
+        "statuses": {},
+        "eligible_fraction": null
+      }
+    }
+  },
+  "scene_counts": {
+    "fit": 2,
+    "internal": 0
+  },
+  "total_scenes": 2,
+  "total_attempts": 8,
+  "total_eligible": 8,
+  "schema": "anydex_boya_resident_benchmark_v1",
+  "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit",
+  "selection_basis": "known_scene_control",
+  "scope": "complete_collection",
+  "numeric_replays_performed": 0,
+  "training_updates": 0,
+  "analysis_is_label_certification": false,
+  "inputs": {
+    "ledger": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/LEDGER.json",
+      "sha256": "b01e71c7057cf998c5d5e81dd3d71b5c4ae25c0c16d86a22b43fdb9e20209079"
+    }
+  },
+  "selected_trial_ids": [
+    "s40_lift_fit_00001_s2026111401:g1",
+    "s40_lift_fit_00001_s2026111401:g6",
+    "s40_lift_fit_00001_s2026111401:g7",
+    "s40_lift_fit_00001_s2026111401:g8",
+    "s40_lift_fit_00004_s2026111401:g1",
+    "s40_lift_fit_00004_s2026111401:g6",
+    "s40_lift_fit_00004_s2026111401:g7",
+    "s40_lift_fit_00004_s2026111401:g8"
+  ],
+  "first_numeric_audit_receipts": {
+    "s40_lift_fit_00001_s2026111401:g1": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/RUNTIME_AUDIT.json",
+      "sha256": "dfb9f8fc66f96d3ccfe40386d4abb5fc7318d90b5b69b4245b813753f151b2de"
+    },
+    "s40_lift_fit_00001_s2026111401:g6": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/RUNTIME_AUDIT.json",
+      "sha256": "df1d417d3122254a3839631ca3e812162d0f8a45c4f7a655f345502ad3ae8d71"
+    },
+    "s40_lift_fit_00001_s2026111401:g7": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/RUNTIME_AUDIT.json",
+      "sha256": "fb111cc3f982cd5256e83182278da83d3b1f5102939197c90964f9db2ed4cdb7"
+    },
+    "s40_lift_fit_00001_s2026111401:g8": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/RUNTIME_AUDIT.json",
+      "sha256": "c82a1b9b1dfd9d06d2ce6b8955d26489190c21f089e367635f08759fab03f374"
+    },
+    "s40_lift_fit_00004_s2026111401:g1": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/RUNTIME_AUDIT.json",
+      "sha256": "2678920205b1aecae3a95d5110f1d0cbadb6aef8f2a3250816a71ee2dae6fc17"
+    },
+    "s40_lift_fit_00004_s2026111401:g6": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/RUNTIME_AUDIT.json",
+      "sha256": "835d88620ff807b74dcf723815fca09b38a0cd9f8ccb2ea76b498466b881314a"
+    },
+    "s40_lift_fit_00004_s2026111401:g7": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/RUNTIME_AUDIT.json",
+      "sha256": "86c77feecc985fb56cef0bb20a4637cd43a5dcc15c8cfc81f31f1e92ea376028"
+    },
+    "s40_lift_fit_00004_s2026111401:g8": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/RUNTIME_AUDIT.json",
+      "sha256": "5b678ed2411f6aa02b25d88e7669a531a1f40ad987484037b889c2b0a530ebd9"
+    }
+  },
+  "stage_costs": {
+    "build": {
+      "count": 2,
+      "wall_sum_s": 13.68245011381805
+    },
+    "capture": {
+      "count": 2,
+      "wall_sum_s": 120.8753026209306
+    },
+    "representation": {
+      "count": 1,
+      "wall_sum_s": 6.157509212847799
+    },
+    "prepare": {
+      "count": 8,
+      "wall_sum_s": 516.260581697803
+    },
+    "resident_execute": {
+      "count": 2,
+      "wall_sum_s": 1625.551892524818
+    },
+    "audit": {
+      "count": 8,
+      "wall_sum_s": 474.0169920178596
+    }
+  },
+  "stage_span_s": 1763.428677558899,
+  "full_pipeline_wall_s": 1765.0779746021144,
+  "scene_stage_spans_s": {
+    "s40_lift_fit_00001_s2026111401": 1527.785329580307,
+    "s40_lift_fit_00004_s2026111401": 1688.0696122646332
+  },
+  "wall_scope": "driver total_wall including first audit",
+  "wall_is_lower_bound": false,
+  "stage_wall_sums_may_overlap": true,
+  "known_final_execution_physics_steps": 25656,
+  "execution_starts_with_unknown_steps": 0,
+  "reported_timing_seconds": {
+    "build": 14.098858619807288,
+    "capture": 121.322712023044,
+    "representation_batch": 6.374685314949602,
+    "prepare_sum": 518.6673119359184,
+    "execution_groups_sum": 1625.9690246642567,
+    "execution_parallel_wall": 868.0199841491412,
+    "audit": 475.58606113656424,
+    "total_wall": 1765.0779746021144
+  },
+  "trial_fingerprints": {
+    "s40_lift_fit_00001_s2026111401:g1": {
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_002",
+        "graspnet_005",
+        "graspnet_060"
+      ],
+      "source_object_digests": {
+        "graspnet_002": "65d7dbddbd9519119e7b23eeb3259c26bb79619326a1f46acedc8537ee35164a",
+        "graspnet_005": "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b",
+        "graspnet_060": "7687918eafe20fc68ed463cc6165c5664be17f6fb36852d601096dde28d40694"
+      },
+      "candidate_sha256": "be5f7e6ff23b0ae21203440440bf4f712ebaa1a36d2e2eeb763a92f0002c500f",
+      "commands_sha256": "3073f57951daee27b2388b8eac9d0d8f8f54e899a88d074d3a723120d87123b6",
+      "label": 1
+    },
+    "s40_lift_fit_00001_s2026111401:g6": {
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_002",
+        "graspnet_005",
+        "graspnet_060"
+      ],
+      "source_object_digests": {
+        "graspnet_002": "65d7dbddbd9519119e7b23eeb3259c26bb79619326a1f46acedc8537ee35164a",
+        "graspnet_005": "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b",
+        "graspnet_060": "7687918eafe20fc68ed463cc6165c5664be17f6fb36852d601096dde28d40694"
+      },
+      "candidate_sha256": "99f5a06d15de5cb5572f22c5d862ef9e89d87f425b8d8550996906ad97864e44",
+      "commands_sha256": "633bd51edcd648629402f73453e99d80a45dfaa5444cb3de967229991f6ee3b8",
+      "label": 1
+    },
+    "s40_lift_fit_00001_s2026111401:g7": {
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_002",
+        "graspnet_005",
+        "graspnet_060"
+      ],
+      "source_object_digests": {
+        "graspnet_002": "65d7dbddbd9519119e7b23eeb3259c26bb79619326a1f46acedc8537ee35164a",
+        "graspnet_005": "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b",
+        "graspnet_060": "7687918eafe20fc68ed463cc6165c5664be17f6fb36852d601096dde28d40694"
+      },
+      "candidate_sha256": "0418f22ee269000564015831b574bd46c212ad4e1563ae8b67cb98920ee02105",
+      "commands_sha256": "ab30ffae7d668030d9d1f75a385ed3fd99f319535ce2ad0f570624f8ab1d733a",
+      "label": 1
+    },
+    "s40_lift_fit_00001_s2026111401:g8": {
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_002",
+        "graspnet_005",
+        "graspnet_060"
+      ],
+      "source_object_digests": {
+        "graspnet_002": "65d7dbddbd9519119e7b23eeb3259c26bb79619326a1f46acedc8537ee35164a",
+        "graspnet_005": "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b",
+        "graspnet_060": "7687918eafe20fc68ed463cc6165c5664be17f6fb36852d601096dde28d40694"
+      },
+      "candidate_sha256": "815124ed23083094f576cc2adf6ddbfd4f133a7b14cffb9714ef95cad2035b39",
+      "commands_sha256": "bc5ffcaba47e15785c600490ff18bc73831fb0daed219d21ad08d350892bbc19",
+      "label": 1
+    },
+    "s40_lift_fit_00004_s2026111401:g1": {
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_063",
+        "graspnet_037",
+        "graspnet_015"
+      ],
+      "source_object_digests": {
+        "graspnet_063": "e73016d81cf11f6d9c98dc1e94e5cdd631493194479fa6d81ab7eb9995b8b087",
+        "graspnet_037": "22d0351202c9cd0ad096b04a5128a3193cce52b0f457b16cad0e36402530f527",
+        "graspnet_015": "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8"
+      },
+      "candidate_sha256": "552ca3d7beafe2486c44f7c96edf01f52f5ca06702a55fe84bc51567899f9c8b",
+      "commands_sha256": "7a5047f5caa7df08f51e749123bb45a93e4da5780416b05a33e5baeef2177548",
+      "label": 0
+    },
+    "s40_lift_fit_00004_s2026111401:g6": {
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_063",
+        "graspnet_037",
+        "graspnet_015"
+      ],
+      "source_object_digests": {
+        "graspnet_063": "e73016d81cf11f6d9c98dc1e94e5cdd631493194479fa6d81ab7eb9995b8b087",
+        "graspnet_037": "22d0351202c9cd0ad096b04a5128a3193cce52b0f457b16cad0e36402530f527",
+        "graspnet_015": "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8"
+      },
+      "candidate_sha256": "d3b16f9df81b8b392bfb691eafe0d00f708f423c030aa4a696e2265efa989a68",
+      "commands_sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+      "label": 1
+    },
+    "s40_lift_fit_00004_s2026111401:g7": {
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_063",
+        "graspnet_037",
+        "graspnet_015"
+      ],
+      "source_object_digests": {
+        "graspnet_063": "e73016d81cf11f6d9c98dc1e94e5cdd631493194479fa6d81ab7eb9995b8b087",
+        "graspnet_037": "22d0351202c9cd0ad096b04a5128a3193cce52b0f457b16cad0e36402530f527",
+        "graspnet_015": "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8"
+      },
+      "candidate_sha256": "e73d3bb94d5a695c18dd3a42e6f0077aed1ebbaac6cc5598aba103b342948e9d",
+      "commands_sha256": "2917d7892fd312d6a4f360751e1c385bfffa29476892b1f74e4c6b07055c4b72",
+      "label": 1
+    },
+    "s40_lift_fit_00004_s2026111401:g8": {
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "split": "fit",
+      "source_object_ids": [
+        "graspnet_063",
+        "graspnet_037",
+        "graspnet_015"
+      ],
+      "source_object_digests": {
+        "graspnet_063": "e73016d81cf11f6d9c98dc1e94e5cdd631493194479fa6d81ab7eb9995b8b087",
+        "graspnet_037": "22d0351202c9cd0ad096b04a5128a3193cce52b0f457b16cad0e36402530f527",
+        "graspnet_015": "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8"
+      },
+      "candidate_sha256": "f7265c71c12ef1e31b409d15947de3a16b517c218519c47d805be5e84918ad59",
+      "commands_sha256": "59f0842d483a2c91ebca66bc7615f044eb24de76ff8692f07de3f9c34e634efb",
+      "label": 0
+    }
+  },
+  "resident": {
+    "session_count": 2,
+    "Kit_starts": 2,
+    "asset_setup_count": 2,
+    "state_reset_count": 6,
+    "scene_rebuild_count": 0,
+    "known_execution_physics_steps": 25656,
+    "reset_physics_steps": 0,
+    "Kit_launch_wall_sum_s": 3.27254431694746,
+    "sessions": {
+      "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/resident_session/SESSION_RECEIPT.json": {
+        "status": "closed",
+        "Kit_starts": 1,
+        "asset_setup_count": 1,
+        "state_reset_count": 3,
+        "known_execution_physics_steps": 12480,
+        "execution_starts_with_unknown_steps": 0
+      },
+      "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/resident_session/SESSION_RECEIPT.json": {
+        "status": "closed",
+        "Kit_starts": 1,
+        "asset_setup_count": 1,
+        "state_reset_count": 3,
+        "known_execution_physics_steps": 13176,
+        "execution_starts_with_unknown_steps": 0
+      }
+    },
+    "jobs": {
+      "s40_lift_fit_00001_s2026111401:g1": {
+        "status": "complete",
+        "physics_steps": 3139,
+        "Kit_starts_added": 1,
+        "asset_setups_added": 1,
+        "boundary_resets_added": 0,
+        "native_scene_factory_wall_s": 27.592964278999716,
+        "original_all_body_ready_wall_s": 2.4643789420370013,
+        "physics_clock_before_first_command": 0,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00001_s2026111401:g6": {
+        "status": "complete",
+        "physics_steps": 3008,
+        "Kit_starts_added": 0,
+        "asset_setups_added": 0,
+        "boundary_resets_added": 1,
+        "native_scene_factory_wall_s": null,
+        "original_all_body_ready_wall_s": 2.474388668080792,
+        "physics_clock_before_first_command": 3139,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00001_s2026111401:g7": {
+        "status": "complete",
+        "physics_steps": 3021,
+        "Kit_starts_added": 0,
+        "asset_setups_added": 0,
+        "boundary_resets_added": 1,
+        "native_scene_factory_wall_s": null,
+        "original_all_body_ready_wall_s": 2.6322881400119513,
+        "physics_clock_before_first_command": 6147,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00001_s2026111401:g8": {
+        "status": "complete",
+        "physics_steps": 3312,
+        "Kit_starts_added": 0,
+        "asset_setups_added": 0,
+        "boundary_resets_added": 1,
+        "native_scene_factory_wall_s": null,
+        "original_all_body_ready_wall_s": 2.510286001022905,
+        "physics_clock_before_first_command": 9168,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00004_s2026111401:g1": {
+        "status": "complete",
+        "physics_steps": 3374,
+        "Kit_starts_added": 1,
+        "asset_setups_added": 1,
+        "boundary_resets_added": 0,
+        "native_scene_factory_wall_s": 25.46780959609896,
+        "original_all_body_ready_wall_s": 2.4446121868677437,
+        "physics_clock_before_first_command": 0,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00004_s2026111401:g6": {
+        "status": "complete",
+        "physics_steps": 3024,
+        "Kit_starts_added": 0,
+        "asset_setups_added": 0,
+        "boundary_resets_added": 1,
+        "native_scene_factory_wall_s": null,
+        "original_all_body_ready_wall_s": 2.7632505849469453,
+        "physics_clock_before_first_command": 3374,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00004_s2026111401:g7": {
+        "status": "complete",
+        "physics_steps": 3196,
+        "Kit_starts_added": 0,
+        "asset_setups_added": 0,
+        "boundary_resets_added": 1,
+        "native_scene_factory_wall_s": null,
+        "original_all_body_ready_wall_s": 2.47458482789807,
+        "physics_clock_before_first_command": 6398,
+        "execution_steps_unknown": null
+      },
+      "s40_lift_fit_00004_s2026111401:g8": {
+        "status": "complete",
+        "physics_steps": 3582,
+        "Kit_starts_added": 0,
+        "asset_setups_added": 0,
+        "boundary_resets_added": 1,
+        "native_scene_factory_wall_s": null,
+        "original_all_body_ready_wall_s": 3.0045694469008595,
+        "physics_clock_before_first_command": 9594,
+        "execution_steps_unknown": null
+      }
+    }
+  },
+  "execution_process_intervals": [
+    {
+      "started_unix_s": 1794678539.91105,
+      "finished_unix_s": 1794679407.7136488,
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/resident_execute/STAGE.json"
+    },
+    {
+      "started_unix_s": 1794678539.8997736,
+      "finished_unix_s": 1794679297.6490674,
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/resident_execute/STAGE.json"
+    }
+  ],
+  "max_execution_process_overlap": 2,
+  "overlap_scope": "Actual stage process lifetimes; not proof that solver kernels overlap"
+}

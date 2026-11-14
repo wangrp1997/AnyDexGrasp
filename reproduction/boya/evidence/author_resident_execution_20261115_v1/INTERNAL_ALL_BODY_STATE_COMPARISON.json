@@ -1,0 +1,167 @@
+{
+  "status": "complete_readonly_comparison",
+  "rows": [
+    {
+      "scene_id": "0000000_s40_lift_internal_00001_s2026111402",
+      "gesture_id": 7,
+      "reused": false,
+      "current_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/trace.npz",
+        "sha256": "cde28b060f38bdf9d551785ef9ac2650a40f28a6977b5f928f9e3549b85d51c6"
+      },
+      "original_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/trace.npz",
+        "sha256": "cde28b060f38bdf9d551785ef9ac2650a40f28a6977b5f928f9e3549b85d51c6"
+      },
+      "current_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "8f6542b2aecb0f03bc80258cf3d3bff961c4d8b4b384673c55836911fdb57676"
+      },
+      "original_allbody_trace": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/MULTI_OBJECT_TRACE.json",
+        "sha256": "8f6542b2aecb0f03bc80258cf3d3bff961c4d8b4b384673c55836911fdb57676"
+      },
+      "current_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "0508932ba49a42752c3acc064c22fd5143001b12b2d485f6cc7430c6b6860429"
+      },
+      "original_allbody_initial": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/execution/MULTI_OBJECT_SETUP.json",
+        "sha256": "e5eed7bb99e5c06380fb321d9f14b5c497739e3558e33e0a755c69af339e4c9b"
+      },
+      "measured_initial_all_body_equal": {
+        "graspnet_021": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_048": {
+          "pose_xyzw": true,
+          "velocity": true
+        },
+        "graspnet_007": {
+          "pose_xyzw": true,
+          "velocity": true
+        }
+      },
+      "measured_initial_q_exact": true,
+      "measured_initial_qdot_exact": true,
+      "first_joint_difference": {
+        "1e-07": null,
+        "1e-05": null,
+        "0.001": null,
+        "0.01": null,
+        "0.1": null
+      },
+      "phase_max_joint_delta_rad": {
+        "settle": 0.0,
+        "home_to_pregrasp": 0.0,
+        "approach": 0.0,
+        "close": 0.0,
+        "hold": 0.0,
+        "lift": 0.0
+      },
+      "max_joint_delta": {
+        "step": 1,
+        "phase": "settle",
+        "name": "shoulder_pan_joint",
+        "delta_rad": 0.0
+      },
+      "objects": {
+        "graspnet_021": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_048": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        },
+        "graspnet_007": {
+          "max_translation_euclidean_m": 0.0,
+          "max_translation_component_m": 0.0,
+          "max_rotation_angle_rad": 0.0,
+          "max_rotation_angle_deg": 0.0,
+          "max_source_bottom_delta_m": 0.0,
+          "first_translation_over_10um": null,
+          "phase_max_translation_euclidean_m": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          },
+          "phase_max_rotation_angle_rad": {
+            "settle": 0.0,
+            "home_to_pregrasp": 0.0,
+            "approach": 0.0,
+            "close": 0.0,
+            "hold": 0.0,
+            "lift": 0.0
+          }
+        }
+      },
+      "label": 1,
+      "original_label": 1,
+      "label_equal": true,
+      "original_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      }
+    }
+  ],
+  "reused_job_count": 0,
+  "new_physics_steps": 0,
+  "scope": "Measured original initial states and all source-body saved trajectories; labels/gates compared, no new labels generated",
+  "claim": "Only saved state comparisons are reported; label agreement alone does not prove unbiased collection or trajectory equivalence",
+  "solver_cache_or_other_cause_proven": false
+}

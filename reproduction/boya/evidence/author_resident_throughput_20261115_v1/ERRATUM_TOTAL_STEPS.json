@@ -1,0 +1,16 @@
+{
+  "status": "corrected_arithmetic_only",
+  "supersedes_field": "EVIDENCE.json.total_execution_steps",
+  "original_value": 28998,
+  "correct_value": 28898,
+  "components": {
+    "fit_execution_steps": 25656,
+    "internal_execution_steps": 3242
+  },
+  "reason": "The archival helper hard-coded an incorrect sum; both per-run PROGRESS receipts and CONTROL_RECEIPTS.json contain the correct counts. Preserve the original archive rather than replacing it.",
+  "initialization_ticks_unchanged": 2250,
+  "initialization_object_steps_unchanged": 6750,
+  "execution_labels_changed": 0,
+  "new_physics_steps": 0,
+  "new_numerical_replays": 0
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "anydex_resident_small_control_master_v1",
+  "created_unix_s": 1794677989.337196,
+  "fit_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/RESIDENT_COLLECTION_PROTOCOL.json",
+    "sha256": "8da19e12bc23bc8ceb7ca70416de00a6ca2ae1eac5eff9ae635fbf95bdc95e96"
+  },
+  "internal_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/internal/RESIDENT_COLLECTION_PROTOCOL.json",
+    "sha256": "8ad9fe561f81b237d54433966e22947933459c8facc86808b7c891b779b6e99b"
+  },
+  "total_scenes": 3,
+  "total_gesture_slots": 12,
+  "max_actual_executions": 12,
+  "expected_ready_from_historical_reference": 9,
+  "selection": "known_scene_controls",
+  "exclude_training": true,
+  "formal_training_labels_added": 0,
+  "training_updates": 0,
+  "bulk_collection_authorized": false,
+  "automatic_large_collection": false,
+  "retry_budget": 0,
+  "source_files": {
+    "test_author_resident_execution.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/source_snapshot/test_author_resident_execution.py",
+      "sha256": "5d52aeb48e4985d8c32da5a941deb846644dc0f8ff66f3f1fc8ad98de0979719"
+    },
+    "author_resident_execution.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/source_snapshot/author_resident_execution.py",
+      "sha256": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac"
+    },
+    "author_resident_collection.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/source_snapshot/author_resident_collection.py",
+      "sha256": "6381790f3f246be9e33b1d8d8d89dc9cfef9acc9128357e8e302b718cf65ad65"
+    },
+    "test_author_resident_collection.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/source_snapshot/test_author_resident_collection.py",
+      "sha256": "4ca3b32a7d0aaab2bb4f05e19d0248965ff52df884d750e1c80f0f57f998df79"
+    },
+    "test_author_resident_benchmark.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/source_snapshot/test_author_resident_benchmark.py",
+      "sha256": "5ec16c12c439d9d1d6cc0dbba14b8102148dbc5dcc5ec1ef16b923d6d0753873"
+    },
+    "author_resident_benchmark.py": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/source_snapshot/author_resident_benchmark.py",
+      "sha256": "ed0a29cb988d16025d54f8166855eb7b5b1bd608abbea5a50f768362891a682c"
+    }
+  },
+  "instruction": "Measure complete bounded lifecycle and original independent audits. User decides whether to begin 4000fit+800internal afterward."
+}
