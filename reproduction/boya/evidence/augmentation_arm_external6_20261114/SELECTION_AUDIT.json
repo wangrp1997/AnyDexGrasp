@@ -1,0 +1,91 @@
+{
+  "schema": "boya_augmented_arm6_selection_audit_v1",
+  "objects": [
+    {
+      "object_id": "egad_A2",
+      "source_object_id": "A2",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A2.obj",
+      "source_mesh_sha256": "6f8df6c3f36e49a961bf6288e20b856dae27e594aa1202a715a2f59cb526d602",
+      "meter_geometry_sha256": "99971332902b2fd6ec422b7741b8190f158ba4c67cf52a8d5bd93d6577972c1d",
+      "source_identity_overlap": [],
+      "meter_geometry_overlap": []
+    },
+    {
+      "object_id": "egad_A5",
+      "source_object_id": "A5",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/A5.obj",
+      "source_mesh_sha256": "18b60a82583cd316372daa0afefe181d9a544e79afa8f7f0679771315254f899",
+      "meter_geometry_sha256": "a5c98f7dfb81ddbce6965378dc1213481d805d1d6c25c2488700c7bd65fbc398",
+      "source_identity_overlap": [],
+      "meter_geometry_overlap": []
+    },
+    {
+      "object_id": "egad_C2",
+      "source_object_id": "C2",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C2.obj",
+      "source_mesh_sha256": "d08d4a827111e2b32660db701004a9cb5b2abf8da735bece19bb90c47e4720ea",
+      "meter_geometry_sha256": "4a515cd0e275019b21dfd726e712b3df7673f075de041ab200f2a9d06b641d13",
+      "source_identity_overlap": [],
+      "meter_geometry_overlap": []
+    },
+    {
+      "object_id": "egad_C5",
+      "source_object_id": "C5",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/C5.obj",
+      "source_mesh_sha256": "a8f04c7bf9c4bfaa1c37d3d935b1dc7b422534e8402cb1f971dcf56d94402a38",
+      "meter_geometry_sha256": "6c21c9f92bcaa7d6c6260a1ea895173535e4ce6ee7da61722e6301cf8d32e05a",
+      "source_identity_overlap": [],
+      "meter_geometry_overlap": []
+    },
+    {
+      "object_id": "egad_E2",
+      "source_object_id": "E2",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E2.obj",
+      "source_mesh_sha256": "6bb97b26dec6989108236841666b5e82fc7e505e77a75e2cd4755a41e7fe318d",
+      "meter_geometry_sha256": "2db04c622b5b46139cba48edcadd180a226d9001e37d3211cc3a11d928939741",
+      "source_identity_overlap": [],
+      "meter_geometry_overlap": []
+    },
+    {
+      "object_id": "egad_E5",
+      "source_object_id": "E5",
+      "source_mesh": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_set/E5.obj",
+      "source_mesh_sha256": "7e4176cf9e56b29261a4488244d27b89166656288ca3257e53b0f42f426ca7ca",
+      "meter_geometry_sha256": "3106af2915649893c515d9e2e3c900a5ef88544f801cda148b38f9f75351b70a",
+      "source_identity_overlap": [],
+      "meter_geometry_overlap": []
+    }
+  ],
+  "rule": "EGAD rows A,C,E x columns2,5 in grid order, no outcome/score/shape selection",
+  "exclusion_manifest_refs": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/collection_resume_v3/objects.json",
+      "sha256": "ea9cb780508291f571d8e46704231a9e7f7e8a411cb82ca4a9a62dfb03a370b2"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pilot8_20261105_v1/object_selection.json",
+      "sha256": "b77607dd611af3e7e671d7fb3b106b1b609e75da095d42627778e6c584309aa7"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/collection40_20261105_v1/selection_v2/object_selection.json",
+      "sha256": "487017083e79eb1323f243946ddf2b931dac6bd87d86f52632a254ba5226f60d"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/objects.json",
+      "sha256": "e73bd354d47b69104486728561396025f64484722f75f1c0246bc62144bc5040"
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast6_20261111_v1/objects.json",
+      "sha256": "49e2c3fa7f74afa1ec7c9915b810057e555e3ffbbf622a76f28f070f9b4d7157"
+    }
+  ],
+  "all_identity_and_meter_geometry_disjoint": true,
+  "source_inventory_ref": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/object_alignment_20261106_v1/egad_eval_inventory.json",
+    "sha256": "e6835c6ebd0d550b9ec8576ea8038db74f85976fcbf5db1f0a1a6de7f8ca3251"
+  },
+  "boundary": "Disjoint checked Boya source/digests; upstream CGR pretraining novelty and semantic shape equivalence unverified",
+  "physics_steps": 0,
+  "network_forwards": 0,
+  "training_updates": 0
+}

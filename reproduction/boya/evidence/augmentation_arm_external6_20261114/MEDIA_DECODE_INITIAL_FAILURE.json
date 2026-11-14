@@ -1,0 +1,12 @@
+{
+  "stage": "post_render_independent_decode",
+  "decoder": "cv2.VideoCapture",
+  "status": "failed",
+  "reason": "capture.isOpened() returned false for existing egad_E5__original_mse video; installed cv2 lacks MP4 decoder",
+  "source_sha256": "0fb35231f4088526877f041bca31327aa0e00c37dfed26fb602f26286434745d",
+  "existing_ffmpeg_null_decode_returncode": 0,
+  "new_simulator_processes": 0,
+  "new_physics_steps": 0,
+  "new_render_processes": 0,
+  "action": "Replace only independent decoder with already installed imageio_ffmpeg; preserve all three rendered videos"
+}

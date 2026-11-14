@@ -1,0 +1,109 @@
+{
+  "schema": "boya_augmented_arm6_delivery_summary_v1",
+  "status": "complete",
+  "object_order": [
+    "egad_A2",
+    "egad_A5",
+    "egad_C2",
+    "egad_C5",
+    "egad_E2",
+    "egad_E5"
+  ],
+  "metrics": {
+    "original_mse": {
+      "objects": 6,
+      "actual_attempts": 2,
+      "successes": 2,
+      "actual_failures": 0,
+      "no_plan": 4
+    },
+    "preactivation": {
+      "objects": 6,
+      "actual_attempts": 1,
+      "successes": 1,
+      "actual_failures": 0,
+      "no_plan": 5
+    }
+  },
+  "study_sha256": "a956f2182f88e1b01016af6807c86dbe5270e166380c171e4b3befebd8144ca7",
+  "protocol_sha256": "23a682bdc19a28e1fae3a74a7133c7b886305e3b41858aaf837a845b2e3a4605",
+  "physical_choices_sha256": "4740388df0c172d7084037b3d0d919f6542050e12d1fc9241674380c1e85929d",
+  "initial_frozen_files": 6985,
+  "new_RGBD": 6,
+  "new_CGR_model_loads": 7,
+  "new_CGR_forwards": 72,
+  "augmented_pool_rows": 135168,
+  "extra_identity_control_rows": 12288,
+  "formal_CPU_head_loads": 48,
+  "independent_CPU_head_loads": 48,
+  "head_queries": 56810,
+  "head_outputs20": 1136200,
+  "head_max_recompute_error": 0.0,
+  "full_cloud_checks": 6668,
+  "old_planning_ready": 6,
+  "old_planning_conditions": 6,
+  "new_planning_conditions": 12,
+  "new_arm_candidate_preparations": 42,
+  "actual_grasps": 3,
+  "grasp_physics_steps": 6300,
+  "grasp_physical_s": 25.2,
+  "initialization_object_steps": 7500,
+  "unique_videos": 3,
+  "decoded_frames": 705,
+  "replay_physics_steps": 0,
+  "new_training_updates": 0,
+  "training_writeback": false,
+  "outcome_dependent_retry": false,
+  "default_promotion": false,
+  "stage_costs": [
+    {
+      "stage": "assets",
+      "started_unix_s": 1794632117.0158408,
+      "returncode": 0,
+      "wall_s": 40.732371689984575
+    },
+    {
+      "stage": "initialize",
+      "started_unix_s": 1794632222.074474,
+      "returncode": 0,
+      "wall_s": 87.05315389088355
+    },
+    {
+      "stage": "observe",
+      "started_unix_s": 1794632370.0018227,
+      "returncode": 0,
+      "wall_s": 88.81630791095085
+    },
+    {
+      "stage": "represent",
+      "started_unix_s": 1794632478.8660886,
+      "returncode": 0,
+      "wall_s": 277.5954067851417
+    },
+    {
+      "stage": "score",
+      "started_unix_s": 1794632777.312495,
+      "returncode": 0,
+      "wall_s": 336.6896635580342
+    },
+    {
+      "stage": "plan",
+      "started_unix_s": 1794633153.3579075,
+      "returncode": 0,
+      "wall_s": 1298.2746853108983
+    },
+    {
+      "stage": "execute",
+      "started_unix_s": 1794634599.2846422,
+      "returncode": 0,
+      "wall_s": 133.37041720212437
+    },
+    {
+      "stage": "media",
+      "started_unix_s": 1794634827.4831696,
+      "returncode": 0,
+      "wall_s": 88.58600898296572
+    }
+  ],
+  "scope": "Paired heads on six new-to-Boya objects, original11 augmentation, full arm simulation. No identity physical control; no before/after augmentation improvement claim or paper hardware reproduction."
+}

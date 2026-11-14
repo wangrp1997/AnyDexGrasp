@@ -1,0 +1,224 @@
+{
+  "schema": "boya_augmented_arm6_prephysical_audit_v1",
+  "status": "complete",
+  "protocol_sha256": "23a682bdc19a28e1fae3a74a7133c7b886305e3b41858aaf837a845b2e3a4605",
+  "planning_sha256": "99d41ec51aaf486af8bd2a4b94f421c77faaaef3b5a2595e7d9097881a8b2de8",
+  "branch_audit_sha256": "fb9e212f0d971450ff616f2cd2b82ccfb73c679491eb3ad12bbffbc5888ba5d9",
+  "score_audits": [
+    {
+      "object_id": "egad_A2",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_audit_20261114_v1/egad_A2_SCORE_AUDIT.json",
+      "sha256": "9ae987f077c46b0a3d3b4a0b66579c01863aad039607cb07b6b377f2d4903bf1"
+    },
+    {
+      "object_id": "egad_A5",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_audit_20261114_v1/egad_A5_SCORE_AUDIT.json",
+      "sha256": "d2e0ecb5729a67a73917c6f7d44892c4edd628edeb88b4979818f99d6688fd07"
+    },
+    {
+      "object_id": "egad_C2",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_audit_20261114_v1/egad_C2_SCORE_AUDIT.json",
+      "sha256": "7768ebfa1b8d2cdc2c667684f99f4e04888b6c6eabb891b6a2474076bcf4390f"
+    },
+    {
+      "object_id": "egad_C5",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_audit_20261114_v1/egad_C5_SCORE_AUDIT.json",
+      "sha256": "9ddef6479e03ab47fbfd66c46fc1326e2cb6a9f6d53ba533cbb8b491de1e96cd"
+    },
+    {
+      "object_id": "egad_E2",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_audit_20261114_v1/egad_E2_SCORE_AUDIT.json",
+      "sha256": "5a1065a136fb38a0e8320807c3f2f4cb3d244201360f84c8f85ff6bd0961b634"
+    },
+    {
+      "object_id": "egad_E5",
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_audit_20261114_v1/egad_E5_SCORE_AUDIT.json",
+      "sha256": "7f64419cd079bbdd13050b4642d345007fa031d7f69224e79f8a92f82526d41b"
+    }
+  ],
+  "cases": [
+    {
+      "object_id": "egad_A2",
+      "recipe": "original_mse",
+      "status": "ready",
+      "arm_preparations": 2,
+      "attempted_global_ranks": [
+        50,
+        95
+      ],
+      "selected_trial_id": "egad_A2_original_mse_rank_00095",
+      "selected_binding_sha256": "098ab8e86517d82def464c14e1f97e71102b8dcbc1e6ddec0fc367fcffc1fd59",
+      "selected_commands_sha256": "f98b9ca454f747bea36341611dc00103559e6b732b84c518cd100e5e3b7d44c1"
+    },
+    {
+      "object_id": "egad_A2",
+      "recipe": "preactivation",
+      "status": "ready",
+      "arm_preparations": 1,
+      "attempted_global_ranks": [
+        86
+      ],
+      "selected_trial_id": "egad_A2_preactivation_rank_00086",
+      "selected_binding_sha256": "0ef65613d5504b6afbb480932484a9722fb945344256bb8908d7b14d3b6f6f1d",
+      "selected_commands_sha256": "a65878ba8544f2c4ff15332de2b2a89e3fff63dbcb4dacbc01bc3ff71be1d8e7"
+    },
+    {
+      "object_id": "egad_A5",
+      "recipe": "original_mse",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        8,
+        72,
+        98,
+        111
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_A5",
+      "recipe": "preactivation",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        11,
+        27,
+        86,
+        111
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_C2",
+      "recipe": "original_mse",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        3,
+        56,
+        93,
+        130
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_C2",
+      "recipe": "preactivation",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        9,
+        69,
+        83,
+        173
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_C5",
+      "recipe": "original_mse",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        23,
+        24,
+        26,
+        28
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_C5",
+      "recipe": "preactivation",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        19,
+        30,
+        40,
+        45
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_E2",
+      "recipe": "original_mse",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        7,
+        54,
+        109,
+        117
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_E2",
+      "recipe": "preactivation",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        5,
+        49,
+        51,
+        55
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    },
+    {
+      "object_id": "egad_E5",
+      "recipe": "original_mse",
+      "status": "ready",
+      "arm_preparations": 3,
+      "attempted_global_ranks": [
+        7,
+        9,
+        10
+      ],
+      "selected_trial_id": "egad_E5_original_mse_rank_00010",
+      "selected_binding_sha256": "2731be502a76d5c7bc33b1d77c7159a91f19d718e26887cf76994d00f550875c",
+      "selected_commands_sha256": "a3f975c94894896dcdcf2dc2331ed96383b21d924e927c22f67352b51200a6aa"
+    },
+    {
+      "object_id": "egad_E5",
+      "recipe": "preactivation",
+      "status": "no_full_arm_plan_in_declared_budget",
+      "arm_preparations": 4,
+      "attempted_global_ranks": [
+        0,
+        7,
+        18,
+        25
+      ],
+      "selected_trial_id": null,
+      "selected_binding_sha256": null,
+      "selected_commands_sha256": null
+    }
+  ],
+  "all_twelve_conditions_accounted_for": true,
+  "first_ready_and_budget_verified": true,
+  "original_models_and_435_unchanged": true,
+  "new_physics_steps": 0,
+  "new_IK_calls": 0,
+  "new_model_forwards": 0,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_arm_preflight.py": "4232b87d652cd3f1544daa52403b60e33e807ba19e7a6e953195ac72edf751f3"
+  }
+}

@@ -1,0 +1,1992 @@
+{
+  "schema": "boya_augmented_arm6_saved_planning_rejections_v1",
+  "status": "complete",
+  "planning_results_sha256": "99d41ec51aaf486af8bd2a4b94f421c77faaaef3b5a2595e7d9097881a8b2de8",
+  "conditions": 12,
+  "ready": 3,
+  "candidate_preparations": 42,
+  "baseline_admitted_candidates": 2,
+  "recovered_candidates": 1,
+  "rejected_native_branches": 115,
+  "reason_counts": {
+    "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry": 21,
+    "Direct path rejected; no obstacle-replanning claim": 82,
+    "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved": 12
+  },
+  "branches_with_only_finger_object_violations": 29,
+  "rejections": [
+    {
+      "trial_id": "egad_A2_original_mse_rank_00050",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00008",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_A5_original_mse_rank_00008/plan_000/baseline/path_geometry.json",
+        "sha256": "a58271238ef432c5fd17e2f9e3c8eb0f4dfa57dddf93144b64e9fcf3e41f0c28"
+      },
+      "violation_kinds": {
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0003013134245904627
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00008",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_A5_original_mse_rank_00008/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "6d38d55469803bed57548356df3e238259e4862608bbf97fd42845d1ad1eb182"
+      },
+      "violation_kinds": {
+        "self": 742,
+        "floor": 320,
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.021922209243349422
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00008",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_A5_original_mse_rank_00008/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "0bd2feac51982e6c2435849acff941dfbced4c5ad47b3d6bcc64b3ef0dbbc9c6"
+      },
+      "violation_kinds": {
+        "self": 2913,
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.12195580638494743
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00008",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_A5_original_mse_rank_00008/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "2a4a3794c240098334c9f0319fab222f7b94c5ba9a19cc6ad87d7780d77f4386"
+      },
+      "violation_kinds": {
+        "floor": 1587,
+        "self": 734,
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.29703407987016306
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00008",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_A5_original_mse_rank_00008/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "ce33094150e666a2dd97d68ac4c226f8bc1df932dea5e7d4b23d4b97c96e6c4c"
+      },
+      "violation_kinds": {
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.00030131342471893807
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00072",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00098",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_A5_original_mse_rank_00111",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00003",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00056",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00056/plan_000/baseline/path_geometry.json",
+        "sha256": "2d641c90a6ad85f101250c764e1c4df25e9356d8ee8dfc33d7aaa47cac658f01"
+      },
+      "violation_kinds": {
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.01682059251946592
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00056",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00056/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "71dc61d62d5cdc09655c34c5d27f1bb2e05f32a951c12785cb40b1508c8d060c"
+      },
+      "violation_kinds": {
+        "floor": 1370,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.1499380503466933
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00056",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00056/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "92eec69a22a0efdf122dc5bd3502c194668b503fe94caf5460e5dfa761645916"
+      },
+      "violation_kinds": {
+        "floor": 1308,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.11437077010664978
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00056",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00056/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "a6da0900536052e338826062c1cf72b50436bf78ca89c8d0d4261b84fd2ea06d"
+      },
+      "violation_kinds": {
+        "floor": 2285,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.28974467516678626
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00056",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00056/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "f48775184d2e9e96f1a77c0f0f2c479c3edf16b4dd531c4d8200f80c2435428c"
+      },
+      "violation_kinds": {
+        "floor": 2506,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.28974467516678615
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00093",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00093/plan_000/baseline/path_geometry.json",
+        "sha256": "b0951045339d62020d491bb6f5a6a8414c61b16b3cd986dfb53b36d7c49cf533"
+      },
+      "violation_kinds": {
+        "object": 640
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.012102747255965248
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00093",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00093/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "897e3456e18cf9a8aa22fb143e8aec14e67b95fc3c5783e0965c14575f632131"
+      },
+      "violation_kinds": {
+        "floor": 1431,
+        "object": 640
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.18039287439574178
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00093",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00093/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "3ef25511a92ad96bf10be0c6c9ea7fd4df1c01cc3a8b21d4420e1329d253c933"
+      },
+      "violation_kinds": {
+        "self": 2543,
+        "floor": 1240,
+        "object": 640
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.11107584566027501
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00093",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00093/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "5723e97cd0860bc8cf56a405b44596be9c8f91010f564db08bdf278652be9293"
+      },
+      "violation_kinds": {
+        "floor": 2295,
+        "object": 640
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.3208391172140519
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00093",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00093/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "99a21e2704dad038b24134a6d4bf07ee7b9a9dcf10401f13916f441b37e5e578"
+      },
+      "violation_kinds": {
+        "floor": 1283,
+        "object": 640
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.10369715658864732
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00130",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00130/plan_000/baseline/path_geometry.json",
+        "sha256": "6f6b3ed3923f489a3b5b4a2c8fd2c5d34bac5e2c2012532cd1f3ce92e7e3a747"
+      },
+      "violation_kinds": {
+        "object": 119
+      },
+      "object_contact_links": [
+        "mfmiddle",
+        "rfmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0009989687486314381
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00130",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00130/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "fd4185a44b1d515ca2a66a12aa9eca2a76533252733c5b63027932a7f0ab7d48"
+      },
+      "violation_kinds": {
+        "object": 119
+      },
+      "object_contact_links": [
+        "mfmiddle",
+        "rfmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0009989687486673172
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00130",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00130/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "5c5f9fc01bf426d093844628fbcb50818c4889a1226cf8ae48e7adce25c5deb1"
+      },
+      "violation_kinds": {
+        "floor": 9977,
+        "object": 2060
+      },
+      "object_contact_links": [
+        "fabase",
+        "falink1",
+        "ffbase",
+        "lfbase",
+        "lfproximal",
+        "mfmiddle",
+        "palm",
+        "pmbase",
+        "rfbase",
+        "rfmiddle",
+        "thbase",
+        "thdistal",
+        "thmiddle",
+        "thproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.6032487368605881
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00130",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00130/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "7eaf925094ead9e28385b008210c5f0f4fc37eb6c84f75ecb7784d7a9f6f5301"
+      },
+      "violation_kinds": {
+        "object": 119
+      },
+      "object_contact_links": [
+        "mfmiddle",
+        "rfmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0009989687487649906
+    },
+    {
+      "trial_id": "egad_C2_original_mse_rank_00130",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_C2_original_mse_rank_00130/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "6aaa8d5ede13ffc4cafabaa4a35bd1ac319c4be290ceddd5582421648c614501"
+      },
+      "violation_kinds": {
+        "object": 119
+      },
+      "object_contact_links": [
+        "mfmiddle",
+        "rfmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0009989687486665797
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00023",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00024",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00026",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00028",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00028",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00028",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00028",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_original_mse_rank_00028",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00007",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00007/plan_000/baseline/path_geometry.json",
+        "sha256": "95a16bc9e5acfe8c24cb6e881fa123fc67ae0455f94e456761d422a7bb8caccb"
+      },
+      "violation_kinds": {
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.005981430056489137
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00007",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00007/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "2cdaeeb10ae7c31eacd6a38a8a493e604efd418ead05c4865b324bf3667eccbd"
+      },
+      "violation_kinds": {
+        "object": 566,
+        "floor": 1336,
+        "self": 147
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.09836901079950552
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00007",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00007/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "d11a6d2124de4a7a1ebea24cd9cb80e8aefe3f272ad20fc9ebf2a8195822a971"
+      },
+      "violation_kinds": {
+        "floor": 1631,
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.32152186851657893
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00007",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00007/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "ec5a753b5122dcc46f9ab76c69ccb1025ebbf04b4f47291290599a8f61d5ad93"
+      },
+      "violation_kinds": {
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.005981430056337377
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00007",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00007/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "fa53a9d9a797d2046cb06b7d951a8fc559601e61f13b87655b2e909901a1e0d8"
+      },
+      "violation_kinds": {
+        "self": 325,
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.11158225721393493
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00054",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00054/plan_000/baseline/path_geometry.json",
+        "sha256": "f519cf82f39c184b8d032b529118bd213facc1576a5b1cd0e2e305cc811ac6c2"
+      },
+      "violation_kinds": {
+        "object": 327
+      },
+      "object_contact_links": [
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.006702188698961862
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00054",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00054/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "400388e06ddd1f349929431dcb20836676ab52d2c031f663ee7f619679ce675b"
+      },
+      "violation_kinds": {
+        "object": 320,
+        "self": 1257,
+        "floor": 1272
+      },
+      "object_contact_links": [
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.07714321753106898
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00054",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00054/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "194b28e1201315951d0a876253f615f1ec39c95213ace55acdf50a50007cb568"
+      },
+      "violation_kinds": {
+        "object": 323
+      },
+      "object_contact_links": [
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.00950200028460942
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00054",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00054/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "4b5588f1b90394fcac843b80f20c34ebab6c85d51d74eec0bd550898fc093503"
+      },
+      "violation_kinds": {
+        "floor": 1598,
+        "object": 285
+      },
+      "object_contact_links": [
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.2950717335831258
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00054",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00054/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "ec9c2db4d9aec446ddf47c6f73c73c4824a32416848dd3d30c8eec9360696ceb"
+      },
+      "violation_kinds": {
+        "object": 285
+      },
+      "object_contact_links": [
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.006702188698768961
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00109",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00109/plan_000/baseline/path_geometry.json",
+        "sha256": "41790509a3dcd75bcdc7b27edfdf59c64434a74c8014567476462fbc23a3f69b"
+      },
+      "violation_kinds": {
+        "floor": 3903,
+        "object": 581
+      },
+      "object_contact_links": [
+        "thbase",
+        "thdistal",
+        "thmiddle",
+        "thproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.29688422823839145
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00109",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00109/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "cbcf2ca75a3583bcbabac2d563c1f0b11233f02dceeba0c53da0358d4fb651c7"
+      },
+      "violation_kinds": {
+        "floor": 4499,
+        "object": 214
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.3485322517405196
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00109",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00109/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "0508b5fe8f66dba4429f876301d9e28cd7de5c096289dc5873b54db615fa41fc"
+      },
+      "violation_kinds": {
+        "floor": 3832,
+        "object": 214
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.2948686684976051
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00109",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00109/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "24409a8fa63266861fe5f42301a8a247c64069eb4245d74c935b00f7b37f0b4b"
+      },
+      "violation_kinds": {
+        "object": 969,
+        "floor": 3611
+      },
+      "object_contact_links": [
+        "fabase",
+        "forearm_link",
+        "thdistal",
+        "wrist_1_link",
+        "wrist_2_link",
+        "wrist_3_link"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.2919723628369998
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00109",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E2_original_mse_rank_00109/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "147e0197891400c8d503f6417735200b2abd8c36e1ffc54ad972440975ca5007"
+      },
+      "violation_kinds": {
+        "floor": 3572,
+        "object": 214
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.29197236283699995
+    },
+    {
+      "trial_id": "egad_E2_original_mse_rank_00117",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00007",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00009",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00009/plan_000/baseline/path_geometry.json",
+        "sha256": "2d06846007b0ff27d8623374e01c47cc9e6b505e628ad8c18585a32ca2c31537"
+      },
+      "violation_kinds": {
+        "object": 192
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "ffmiddle",
+        "ffproximal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.009169423669970742
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00009",
+      "recipe": "original_mse",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00009/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "32b04dd5e550b5a409278a93599212aab10d17b29a13622bfb9170b76e5fbef5"
+      },
+      "violation_kinds": {
+        "object": 100
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "ffproximal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0008087091893815582
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00009",
+      "recipe": "original_mse",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00009/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "1eda34b0e53e7f5164e0240ae9d92ff44b62da26fd45e8ca23dbdc51fdc4cc18"
+      },
+      "violation_kinds": {
+        "floor": 1331,
+        "object": 100
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "ffproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.14963974040797443
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00009",
+      "recipe": "original_mse",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00009/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "e58b0654cd5e5c794a74b73c675a10f0d2a6bf23b8fe15d0fc606f0c67a1fe89"
+      },
+      "violation_kinds": {
+        "floor": 1511,
+        "object": 100
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "ffproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.22687593255923574
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00009",
+      "recipe": "original_mse",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00009/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "0e8e404bcf70197c8ee2b758c6d327215c540e3db52a1098145b11cbb4663a12"
+      },
+      "violation_kinds": {
+        "object": 100
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "ffproximal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0008087091901232948
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00010",
+      "recipe": "original_mse",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00010/plan_000/baseline/path_geometry.json",
+        "sha256": "b426d93e980a42fd1e3e7d7ee67d7420f75a37a850c6376ff6799da977c83bd6"
+      },
+      "violation_kinds": {
+        "object": 268,
+        "floor": 136
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "ffmiddle",
+        "ffproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.017157307020208543
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00010",
+      "recipe": "original_mse",
+      "branch": "baseline_via_cable_home",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00010/plan_000/baseline_via_cable_home/path_geometry.json",
+        "sha256": "a83bed8999425de275089b94484129ef9b3bf236f9640aa02709e167c3d9b29c"
+      },
+      "violation_kinds": {
+        "floor": 10512,
+        "object": 451
+      },
+      "object_contact_links": [
+        "lfbase",
+        "lfdistal",
+        "lfmiddle",
+        "lfproximal",
+        "mfdistal",
+        "mfmiddle",
+        "mfproximal",
+        "rfbase",
+        "rfdistal",
+        "rfmiddle",
+        "rfproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.4618481240558834
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00010",
+      "recipe": "original_mse",
+      "branch": "baseline_via_qsfp_home",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00010/plan_000/baseline_via_qsfp_home/path_geometry.json",
+        "sha256": "300301ff2d202e30a2d13e08101269f77a81c54a4955f8f1f55eed308f95b74a"
+      },
+      "violation_kinds": {
+        "floor": 257
+      },
+      "object_contact_links": [],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.030220013656648604
+    },
+    {
+      "trial_id": "egad_E5_original_mse_rank_00010",
+      "recipe": "original_mse",
+      "branch": "baseline_via_xr_test_home",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/original_mse/egad_E5_original_mse_rank_00010/plan_000/baseline_via_xr_test_home/path_geometry.json",
+        "sha256": "9b18d7f9eb447602429fdfa0b6cf5bdabeae9f7033b742d3f8ea725c431a34f3"
+      },
+      "violation_kinds": {
+        "floor": 86
+      },
+      "object_contact_links": [],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.012129218680693138
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00011",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00011/plan_000/baseline/path_geometry.json",
+        "sha256": "a58271238ef432c5fd17e2f9e3c8eb0f4dfa57dddf93144b64e9fcf3e41f0c28"
+      },
+      "violation_kinds": {
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0003013134245904627
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00011",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00011/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "6d38d55469803bed57548356df3e238259e4862608bbf97fd42845d1ad1eb182"
+      },
+      "violation_kinds": {
+        "self": 742,
+        "floor": 320,
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.021922209243349422
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00011",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00011/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "0bd2feac51982e6c2435849acff941dfbced4c5ad47b3d6bcc64b3ef0dbbc9c6"
+      },
+      "violation_kinds": {
+        "self": 2913,
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.12195580638494743
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00011",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00011/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "2a4a3794c240098334c9f0319fab222f7b94c5ba9a19cc6ad87d7780d77f4386"
+      },
+      "violation_kinds": {
+        "floor": 1587,
+        "self": 734,
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.29703407987016306
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00011",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00011/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "ce33094150e666a2dd97d68ac4c226f8bc1df932dea5e7d4b23d4b97c96e6c4c"
+      },
+      "violation_kinds": {
+        "object": 55
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.00030131342471893807
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00027",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00027/plan_000/baseline/path_geometry.json",
+        "sha256": "9cffa631bcd6e71b8712fbaf5f67279b4dff7c6fc031f21373ba487d2abdcaff"
+      },
+      "violation_kinds": {
+        "floor": 2725,
+        "object": 2214,
+        "self": 2241
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "ffmiddle",
+        "lfdistal",
+        "lfmiddle",
+        "lfproximal",
+        "mfdistal",
+        "mfmiddle",
+        "mfproximal",
+        "rfdistal",
+        "rfmiddle",
+        "rfproximal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.14315598945689226
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00027",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00027/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "af384e80b1eb826c3f2e852d4b2a7dbdaf984b4fe1e58d2d6b67b8784d696e7e"
+      },
+      "violation_kinds": {
+        "floor": 2983,
+        "self": 751,
+        "object": 56
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.3573910028073005
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00027",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00027/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "91b640499fa19de791f6b60f52769a3066c75a7ea1188bfb7059f2b8a7d69268"
+      },
+      "violation_kinds": {
+        "floor": 9399,
+        "self": 361,
+        "object": 56
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.8879470376339372
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00027",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00027/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "eed6c7c6ce372fb6115eadc3242eaa35d0ab0be38e0658489efb43451695f4c5"
+      },
+      "violation_kinds": {
+        "self": 2630,
+        "floor": 2130,
+        "object": 56
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.14315599013866911
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00027",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00027/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "e19d32f8adb63e2db180929c860081902d41e32df2f0d846cda0702bfbb1b9f7"
+      },
+      "violation_kinds": {
+        "floor": 2983,
+        "self": 758,
+        "object": 56
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.3573910027965912
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00086",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00086/plan_000/baseline/path_geometry.json",
+        "sha256": "2aa26bf1d49752abb207c9064c5ab9a520729fa73203b0911bb418daa474cbcf"
+      },
+      "violation_kinds": {
+        "floor": 454,
+        "object": 585
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.03709408818792265
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00086",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00086/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "981c4136eab821c19e15f7aa06181552e3efcbe4fecb46e9f824ac2de2deb9c7"
+      },
+      "violation_kinds": {
+        "object": 585
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.01070422773554664
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00086",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00086/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "c303dc66c180e83f55a548b19a37368db8bba4bd02dc282b13e76563a1b15668"
+      },
+      "violation_kinds": {
+        "floor": 1399,
+        "object": 585
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.08743121979810262
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00086",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00086/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "917106a0a93834852426e823bbe70238dc6f95f5e513d3d1146de2b34adf65c9"
+      },
+      "violation_kinds": {
+        "object": 585
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.010704227735506795
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00086",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_A5_preactivation_rank_00086/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "464cf9a767ba43d92993a69a811aa39e1be2a473a0395516add3f6bb63fda665"
+      },
+      "violation_kinds": {
+        "object": 585,
+        "floor": 64
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.010704227735665341
+    },
+    {
+      "trial_id": "egad_A5_preactivation_rank_00111",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00009",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00069",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00083",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00083/plan_000/baseline/path_geometry.json",
+        "sha256": "2d641c90a6ad85f101250c764e1c4df25e9356d8ee8dfc33d7aaa47cac658f01"
+      },
+      "violation_kinds": {
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.01682059251946592
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00083",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00083/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "71dc61d62d5cdc09655c34c5d27f1bb2e05f32a951c12785cb40b1508c8d060c"
+      },
+      "violation_kinds": {
+        "floor": 1370,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.1499380503466933
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00083",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00083/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "92eec69a22a0efdf122dc5bd3502c194668b503fe94caf5460e5dfa761645916"
+      },
+      "violation_kinds": {
+        "floor": 1308,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.11437077010664978
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00083",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00083/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "a6da0900536052e338826062c1cf72b50436bf78ca89c8d0d4261b84fd2ea06d"
+      },
+      "violation_kinds": {
+        "floor": 2285,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.28974467516678626
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00083",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00083/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "f48775184d2e9e96f1a77c0f0f2c479c3edf16b4dd531c4d8200f80c2435428c"
+      },
+      "violation_kinds": {
+        "floor": 2506,
+        "object": 333
+      },
+      "object_contact_links": [
+        "ffdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.28974467516678615
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00173",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00173/plan_000/baseline/path_geometry.json",
+        "sha256": "9e2d48427fb207615a0dbe48b693663a8a00d749ab9161ef309e2d7c305632c9"
+      },
+      "violation_kinds": {
+        "object": 880
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "mfdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.016918514001255505
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00173",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00173",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00173/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "1d444646561bdc16f9823af9140412b85e820f0d053fe973731adf77fecad063"
+      },
+      "violation_kinds": {
+        "floor": 1487,
+        "object": 880
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "mfdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.2673081994671085
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00173",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00173/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "e34e298b81c810fabc00901153fe42271ac1962e460ccdc0875ebb921353a007"
+      },
+      "violation_kinds": {
+        "floor": 2799,
+        "object": 880
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "mfdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.3097491520612835
+    },
+    {
+      "trial_id": "egad_C2_preactivation_rank_00173",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C2_preactivation_rank_00173/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "63bb64cae09b1569a7cd57904ff188743bae923f1e42f093f1d00ac4a28ad402"
+      },
+      "violation_kinds": {
+        "floor": 2756,
+        "self": 1150,
+        "object": 880
+      },
+      "object_contact_links": [
+        "ffdistal",
+        "mfdistal",
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.1293081840918497
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00019",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C5_preactivation_rank_00019/plan_000/baseline/path_geometry.json",
+        "sha256": "79478300b191159677ba92c6ea0a8b8b33dfadb69bd7a7bbaeff2702e60f8761"
+      },
+      "violation_kinds": {
+        "self": 1435,
+        "object": 146
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.040666321126190584
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00019",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C5_preactivation_rank_00019/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "ecdfd740e9bdca0c76e92ef2bb0ecf6aea5fcaa99967d00e14e4fc213dc19f95"
+      },
+      "violation_kinds": {
+        "self": 3509,
+        "floor": 467,
+        "object": 146
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.13651243874688776
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00019",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C5_preactivation_rank_00019/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "0b7bf94aca6f4a27f9bd893b5aced9655efad04678047819d51ed9fc328334dc"
+      },
+      "violation_kinds": {
+        "self": 2489,
+        "floor": 1829,
+        "object": 146
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.1336411356624856
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00019",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_C5_preactivation_rank_00019/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "5e4f8639b69a484e3c72a6c177624d65884c7cfefed3bc619dc7f5af2f3d27de"
+      },
+      "violation_kinds": {
+        "floor": 6329,
+        "self": 2594,
+        "object": 146
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.333381317651034
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00019",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00030",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00040",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00045",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00045",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00045",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00045",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_C5_preactivation_rank_00045",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00005",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00049",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00051",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E2_preactivation_rank_00051/plan_000/baseline/path_geometry.json",
+        "sha256": "95a16bc9e5acfe8c24cb6e881fa123fc67ae0455f94e456761d422a7bb8caccb"
+      },
+      "violation_kinds": {
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.005981430056489137
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00051",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E2_preactivation_rank_00051/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "2cdaeeb10ae7c31eacd6a38a8a493e604efd418ead05c4865b324bf3667eccbd"
+      },
+      "violation_kinds": {
+        "object": 566,
+        "floor": 1336,
+        "self": 147
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.09836901079950552
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00051",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E2_preactivation_rank_00051/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "d11a6d2124de4a7a1ebea24cd9cb80e8aefe3f272ad20fc9ebf2a8195822a971"
+      },
+      "violation_kinds": {
+        "floor": 1631,
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.32152186851657893
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00051",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E2_preactivation_rank_00051/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "ec5a753b5122dcc46f9ab76c69ccb1025ebbf04b4f47291290599a8f61d5ad93"
+      },
+      "violation_kinds": {
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.005981430056337377
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00051",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E2_preactivation_rank_00051/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "fa53a9d9a797d2046cb06b7d951a8fc559601e61f13b87655b2e909901a1e0d8"
+      },
+      "violation_kinds": {
+        "self": 325,
+        "object": 537
+      },
+      "object_contact_links": [
+        "ffmiddle",
+        "thdistal",
+        "thmiddle"
+      ],
+      "only_finger_object_violations": false,
+      "minimum_reported_distance_m": -0.11158225721393493
+    },
+    {
+      "trial_id": "egad_E2_preactivation_rank_00055",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00000",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00007",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00018",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "geometry_ref": null,
+      "violation_kinds": {},
+      "object_contact_links": [],
+      "only_finger_object_violations": false
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00025",
+      "recipe": "preactivation",
+      "branch": "baseline",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E5_preactivation_rank_00025/plan_000/baseline/path_geometry.json",
+        "sha256": "411cdec89b717855d34f39228259242ba149e210839e9b08c51d21f3fa1d0bd5"
+      },
+      "violation_kinds": {
+        "object": 96
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0035025093735852955
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00025",
+      "recipe": "preactivation",
+      "branch": "branch_00_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E5_preactivation_rank_00025/plan_000/branch_00_direct/path_geometry.json",
+        "sha256": "9ec74191112e94a432a933930ba82d2cc4be91cdabbdee2c8b57a0f39b44e310"
+      },
+      "violation_kinds": {
+        "object": 96
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.003502509373599972
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00025",
+      "recipe": "preactivation",
+      "branch": "branch_01_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E5_preactivation_rank_00025/plan_000/branch_01_direct/path_geometry.json",
+        "sha256": "2e0d8de3d8300858769a4a40cd7043420fbfdbfb6b8729ce72ca9cc3c14edcab"
+      },
+      "violation_kinds": {
+        "object": 96
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0035025093736997825
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00025",
+      "recipe": "preactivation",
+      "branch": "branch_02_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E5_preactivation_rank_00025/plan_000/branch_02_direct/path_geometry.json",
+        "sha256": "078c34ffc1f5d7d864b944c6ba4b428dfcd0d18dd3f9f974d4bfc48959ee793b"
+      },
+      "violation_kinds": {
+        "object": 96
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0035025093735837187
+    },
+    {
+      "trial_id": "egad_E5_preactivation_rank_00025",
+      "recipe": "preactivation",
+      "branch": "branch_03_direct",
+      "reason": "Direct path rejected; no obstacle-replanning claim",
+      "geometry_ref": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmented_arm_external6_20261114_v1/planning/preactivation/egad_E5_preactivation_rank_00025/plan_000/branch_03_direct/path_geometry.json",
+        "sha256": "b52b11e119ccbd5a519f086306633508fc82d44d596e47841940bbb5a2b56277"
+      },
+      "violation_kinds": {
+        "object": 96
+      },
+      "object_contact_links": [
+        "thdistal"
+      ],
+      "only_finger_object_violations": true,
+      "minimum_reported_distance_m": -0.0035025093736917876
+    }
+  ],
+  "new_IK_calls": 0,
+  "new_collision_queries": 0,
+  "new_physics_steps": 0,
+  "boundary": "Nested branch rejections are diagnostic counts, not additional independent objects or physical failures; no unreachable-geometry proof",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/summarize_augmented_arm_planning.py": "e4fca12357eb997faae814fc3bb49c4e619516b877ddb078d6809cc4a7ba001c"
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "schema": "boya_augmented_arm6_score_audit_v1",
+  "status": "complete",
+  "protocol_sha256": "85f247a4b967ee1efbf5d16072ff1451ac0e094b49be511c3c9e465af09ffef9",
+  "cases": [
+    {
+      "input_kind": "identity",
+      "recipe": "original_mse",
+      "queries": 413,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 20,
+      "admitted_identity_branch": 20,
+      "first_admitted_identity": [
+        0,
+        647,
+        7,
+        true,
+        1,
+        0
+      ]
+    },
+    {
+      "input_kind": "identity",
+      "recipe": "preactivation",
+      "queries": 413,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 27,
+      "admitted_identity_branch": 27,
+      "first_admitted_identity": [
+        0,
+        1988,
+        7,
+        false,
+        0,
+        0
+      ]
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "original_mse",
+      "queries": 4067,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 68,
+      "admitted_identity_branch": 8,
+      "first_admitted_identity": [
+        2,
+        1342,
+        6,
+        true,
+        0,
+        0
+      ]
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "preactivation",
+      "queries": 4067,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 41,
+      "admitted_identity_branch": 3,
+      "first_admitted_identity": [
+        2,
+        1342,
+        6,
+        true,
+        0,
+        0
+      ]
+    }
+  ],
+  "external_identity_and_augmented_scores_independently_recomputed": true,
+  "all_four_rankings_frozen_before_geometry": true,
+  "inputs_unchanged": true,
+  "audit_CPU_head_loads": 8,
+  "new_CGR_forwards": 0,
+  "new_training_steps": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_arm_scores.py": "4003ad114bdfe31f444bbb66e957ddda02a3dec96f59972d9c152fe06919b97f"
+  }
+}
