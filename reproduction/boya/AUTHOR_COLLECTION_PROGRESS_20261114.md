@@ -1,8 +1,18 @@
 # public存储与固定多场景采集（2026-11-14）
 
+## 2026-11-15 当前：固定开发预算结束，累计15条有效新标签
+
+旧`development/batch_v1`已结束，40槽=14labelled＋10null_geometry＋3no_candidate＋12placement_null＋1准备infra。14条均为fit，10正4负，g1/6/7/8分别4/3/3/4；该预算7次完整capture共5250初始化tick/15750对象步，已知执行44494步，未知执行0。旧index5/g6的2150字节全NUL配置失败原样保留，原因未定，没有重试或计成负例。
+
+新`development_waves/waves_v1`固定fresh6（seed2026111402，3fit＋3internal）也已结束：24槽=1labelled＋4null_geometry＋7no_candidate＋12placement_null。唯一有效新标签是internal g7正例；0infra/0未知执行成本，3次完整capture共2250初始化tick/6750对象步，执行3242步。累计新数据为14fit＋1internal=15条，不与旧435自动混合，正式训练、新正式模型及训后外部评测0。无候选、无计划、放置失败和基础设施失败均不补负标签。
+
+fresh6实际最大Kit重叠仅1，不能用该队列本身证明双Kit并发。另立独立吞吐benchmark已完成，对旧成功g1/g6各一次3139/3008步，两原numeric audit通过、两结果均正，但outer明确排除训练，不计新采集标签。历史两执行stage合471.457s，新并行执行span237.844s，约1.982倍；仅为执行段历史串行对照，不是新配对完整采集倍率。含两审计总302.148s。独立host观察确认2Kit同时存活、同区间双journal增长及GPU0 FD/资源slot。benchmark协议SHA为`080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d`，最终来源和观察证据由[并行采集总报告](AUTHOR_PARALLEL_COLLECTION_RESULTS_20261115.md)汇总。参考[现成常驻/官方场景复用方案](AUTHOR_RESIDENT_REUSE_PLAN_20261115.md)，下一架构主线采用kywch/pixi常驻环境/模型循环与IsaacLab官方场景/克隆/批量相机；常驻及官方向量环境尚未实现，不再继续局部数学优化。
+
+正式目标仍各1000fit＋另200internal，当前两次开发预算不足，正式总场景/尝试预算尚未冻结。数据只按真实有效记录推进，不按成功或正负比例增加预算。下方“10条”“8条”“首条”“运行中”“仅freeze”等均为保留的历史快照，不能覆盖本节当前状态；原不可变协议、源码SHA、失败和审计不回写。
+
 主线仍为公开代码＋发布模型的Boya无箱提起适配：先产生有效数据，再按公开配方训练，最后冻结外部评测。用户已授权在`/mnt/public/datasets/`存放大容量数据。本轮专用根目录为`/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/`；代码、轻量协议摘要和审计回执入Git，RGB-D、接触、轨迹、表示及后续数据/模型留public，不复制进仓库。
 
-## 当前实际状态：10条有效新标签，原开发预算运行中
+## 历史快照：当时10条有效新标签，原开发预算运行中
 
 后续逐型账本已达10条fit标签，g1/6/7/8为3/2/2/3，共7正3负，internal尚0，正式训练0。index5/g6准备阶段读取其独立`BACKEND.json`失败，0实际执行且不记负例/不重试；文件在原协议绑定正确SHA后、准备读取前变为2150字节全NUL。不同g目录/临时文件与inode相互独立，普通及与driver同权限的只读读取结果一致；目前未查明第二写者或存储原因，不能断言是并行覆盖或public文件系统问题。原预算其它任务继续，冻结源码不改。
 

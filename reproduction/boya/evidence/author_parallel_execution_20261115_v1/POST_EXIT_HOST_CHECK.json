@@ -1,0 +1,29 @@
+{
+  "schema": "anydex_boya_post_exit_independent_host_check_v1",
+  "unix_s": 1794675797.3951657,
+  "all_processes_and_groups_absent": true,
+  "all_kit_slots_released": true,
+  "rows": [
+    {
+      "process": {
+        "pid": 1545530,
+        "pgid": 1545530,
+        "start_ticks": 149421173
+      },
+      "proc_path_exists": false,
+      "process_group_exists": false,
+      "resource_slot_final_state": "released"
+    },
+    {
+      "process": {
+        "pid": 1545529,
+        "pgid": 1545529,
+        "start_ticks": 149421173
+      },
+      "proc_path_exists": false,
+      "process_group_exists": false,
+      "resource_slot_final_state": "released"
+    }
+  ],
+  "scope": "Actual host /proc and signal0 group existence queries; no signals, lease acquisition or simulator starts"
+}

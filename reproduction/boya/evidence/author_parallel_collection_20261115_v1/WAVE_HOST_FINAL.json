@@ -1,0 +1,486 @@
+{
+  "schema": "anydex_boya_independent_live_wave_runtime_audit_v1",
+  "status": "complete",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/WAVE_PROTOCOL.json",
+    "sha256": "c657176d0478391e2907289d0c454c57c05deaf3262ba1e3c30a69b991191c25"
+  },
+  "observer": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_parallel_runtime_audit_20261115_v1/observe_wave_runtime.py",
+    "sha256": "2a2c86808a70ae77288e87bae690a613edd0c03385d2683c4fd32cc00f4f2574"
+  },
+  "host_process_count": 556,
+  "sample_interval_s": 2.0,
+  "samples": 354,
+  "first_sample_unix_s": 1794673816.385951,
+  "last_sample_unix_s": 1794674525.8216963,
+  "maximum_reserved_kit_slots": 1,
+  "maximum_identity_verified_stage_processes": 1,
+  "maximum_library_verified_kit_processes": 1,
+  "simultaneous_two_kit_proven": false,
+  "concurrent_journal_growth_proven": false,
+  "witnesses": [
+    {
+      "unix_s": 1794673816.3859525,
+      "kind": "new_maximum_simultaneously_loaded_kit",
+      "kits": [
+        {
+          "slot": 0,
+          "reservation_id": "bf4bdaf3d02441b79b906929fd476562",
+          "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000002_s40_lift_fit_00002_s2026111402/batch/scenes/0000000_s40_lift_fit_00002_s2026111402/stages/capture",
+          "sample": {
+            "process": {
+              "pid": 1479414,
+              "pgid": 1479414,
+              "start_ticks": 149275790
+            },
+            "alive_identity_match": true,
+            "argv": [
+              "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+              "-B",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_capture.py",
+              "--scene",
+              "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000002_s40_lift_fit_00002_s2026111402/batch/scenes/0000000_s40_lift_fit_00002_s2026111402/build/scene.json",
+              "--output-dir",
+              "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000002_s40_lift_fit_00002_s2026111402/batch/scenes/0000000_s40_lift_fit_00002_s2026111402/capture"
+            ],
+            "kit_libraries": [
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+            ],
+            "kit_loaded": true,
+            "gpu_environment": {
+              "CUDA_VISIBLE_DEVICES": "0",
+              "NVIDIA_VISIBLE_DEVICES": "0"
+            },
+            "memory": [
+              "VmHWM:\t  791980 kB",
+              "VmRSS:\t  791980 kB"
+            ],
+            "inherited_lock_fds": [
+              {
+                "fd": 4,
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+                "inode": [
+                  91,
+                  3494629
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  91,
+                  3494629
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              },
+              {
+                "fd": 5,
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/observation/0.lock",
+                "inode": [
+                  72,
+                  69227097
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227097 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  72,
+                  69227097
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227097 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              },
+              {
+                "fd": 6,
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/kit/0.lock",
+                "inode": [
+                  72,
+                  69227100
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227100 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  72,
+                  69227100
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227100 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              }
+            ],
+            "gpu_active_log_lines": [],
+            "gpu0_active_log_confirmed": false,
+            "stage_progress": {
+              "status": "starting",
+              "physics_ticks": 0
+            },
+            "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000002_s40_lift_fit_00002_s2026111402/batch/scenes/0000000_s40_lift_fit_00002_s2026111402/capture/initialization_contacts.jsonl.gz",
+            "journal_bytes": 0
+          }
+        }
+      ],
+      "concurrently_growing_journal_pids": [],
+      "gpu": {
+        "returncode": 0,
+        "stdout": "Sun Nov 15 00:30:16 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:01:00.0 Off |                    0 |\n| N/A   31C    P8             34W /  600W |     690MiB /  97887MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:71:00.0 Off |                    0 |\n| N/A   42C    P0            111W /  600W |   65448MiB /  97887MiB |     30%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "stages": [
+    {
+      "slot": 0,
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000002_s40_lift_fit_00002_s2026111402/batch/scenes/0000000_s40_lift_fit_00002_s2026111402/stages/capture",
+      "reservation_id": "bf4bdaf3d02441b79b906929fd476562",
+      "reserved_unix_s": 1794673814.8352463,
+      "last_observed_state": "released",
+      "process": {
+        "pid": 1479414,
+        "pgid": 1479414,
+        "start_ticks": 149275790
+      },
+      "first_process_observed_unix_s": 1794673816.3859525,
+      "last_process_observed_unix_s": 1794673878.9016871,
+      "first_kit_loaded_observed_unix_s": 1794673816.3859525,
+      "last_kit_loaded_observed_unix_s": 1794673878.9016871,
+      "gpu0_active_log_confirmed": true,
+      "inherited_lock_fds": [
+        {
+          "fd": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+          "inode": [
+            91,
+            3494629
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            91,
+            3494629
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 5,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/observation/0.lock",
+          "inode": [
+            72,
+            69227097
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227097 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227097
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227097 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 6,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/kit/0.lock",
+          "inode": [
+            72,
+            69227100
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227100 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227100
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1479000 00:48:69227100 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        }
+      ],
+      "finished_unix_s": 1794673880.109015
+    },
+    {
+      "slot": 0,
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000005_s40_lift_internal_00002_s2026111402/batch/scenes/0000000_s40_lift_internal_00002_s2026111402/stages/capture",
+      "reservation_id": "bad1aa956d734d7f86d4060349f778fc",
+      "reserved_unix_s": 1794673917.1852458,
+      "last_observed_state": "running",
+      "process": {
+        "pid": 1484239,
+        "pgid": 1484239,
+        "start_ticks": 149286026
+      },
+      "first_process_observed_unix_s": 1794673918.990012,
+      "last_process_observed_unix_s": 1794673963.2823155,
+      "first_kit_loaded_observed_unix_s": 1794673918.990012,
+      "last_kit_loaded_observed_unix_s": 1794673963.2823155,
+      "gpu0_active_log_confirmed": true,
+      "inherited_lock_fds": [
+        {
+          "fd": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+          "inode": [
+            91,
+            3494629
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            91,
+            3494629
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 5,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/observation/0.lock",
+          "inode": [
+            72,
+            69227097
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483908 00:48:69227097 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227097
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483908 00:48:69227097 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 6,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/kit/0.lock",
+          "inode": [
+            72,
+            69227100
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483908 00:48:69227100 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227100
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483908 00:48:69227100 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        }
+      ]
+    },
+    {
+      "slot": 0,
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/stages/capture",
+      "reservation_id": "0e6c04fa3b184e8f9f3c184e6f93a1b7",
+      "reserved_unix_s": 1794673965.6534464,
+      "last_observed_state": "released",
+      "process": {
+        "pid": 1486878,
+        "pgid": 1486878,
+        "start_ticks": 149290871
+      },
+      "first_process_observed_unix_s": 1794673967.2991083,
+      "last_process_observed_unix_s": 1794674045.8392339,
+      "first_kit_loaded_observed_unix_s": 1794673967.2991083,
+      "last_kit_loaded_observed_unix_s": 1794674045.8392339,
+      "gpu0_active_log_confirmed": true,
+      "inherited_lock_fds": [
+        {
+          "fd": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+          "inode": [
+            91,
+            3494629
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            91,
+            3494629
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 5,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/observation/0.lock",
+          "inode": [
+            72,
+            69227097
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483907 00:48:69227097 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227097
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483907 00:48:69227097 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 6,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/kit/0.lock",
+          "inode": [
+            72,
+            69227100
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483907 00:48:69227100 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227100
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483907 00:48:69227100 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        }
+      ],
+      "finished_unix_s": 1794674047.9804142
+    },
+    {
+      "slot": 0,
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/stages/execute_g7",
+      "reservation_id": "dc3cd6b612be4e9db3185593b2b5fbfb",
+      "reserved_unix_s": 1794674141.259846,
+      "last_observed_state": "released",
+      "process": {
+        "pid": 1495250,
+        "pgid": 1495250,
+        "start_ticks": 149308431
+      },
+      "first_process_observed_unix_s": 1794674142.026584,
+      "last_process_observed_unix_s": 1794674429.6178982,
+      "first_kit_loaded_observed_unix_s": 1794674144.0311263,
+      "last_kit_loaded_observed_unix_s": 1794674429.6178982,
+      "gpu0_active_log_confirmed": false,
+      "inherited_lock_fds": [
+        {
+          "fd": 4,
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+          "inode": [
+            91,
+            3494629
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            91,
+            3494629
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1478996 00:5b:3494629 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        },
+        {
+          "fd": 5,
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/resource_slots/kit/0.lock",
+          "inode": [
+            72,
+            69227100
+          ],
+          "lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483907 00:48:69227100 0 EOF"
+          ],
+          "exclusive_flock_observed": true,
+          "current_inode": [
+            72,
+            69227100
+          ],
+          "current_lock_lines": [
+            "lock:\t1: FLOCK  ADVISORY  WRITE 1483907 00:48:69227100 0 EOF"
+          ],
+          "still_same_inode": true,
+          "current_exclusive_flock": true
+        }
+      ],
+      "finished_unix_s": 1794674431.5100303
+    }
+  ],
+  "transient_read_errors": [],
+  "costs_added": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "planning_calls": 0,
+    "CGR_forwards": 0,
+    "labels": 0
+  },
+  "registry": {
+    "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1",
+    "protocol": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/WAVE_PROTOCOL.json",
+      "sha256": "c657176d0478391e2907289d0c454c57c05deaf3262ba1e3c30a69b991191c25"
+    },
+    "state": "released",
+    "owner": {
+      "pid": 1478996,
+      "pgid": 1478995,
+      "start_ticks": 149274902
+    },
+    "started_unix_s": 1794673806.5649407,
+    "finished_unix_s": 1794674524.487685
+  },
+  "observations": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_parallel_runtime_audit_20261115_v1/OBSERVATIONS.jsonl",
+    "sha256": "31c92fd4e04910472bc538c97d68ff2af7c4102db3c84e1acceccd5179f42887"
+  },
+  "changed_runtime_sources": [],
+  "protocol_unchanged": true
+}

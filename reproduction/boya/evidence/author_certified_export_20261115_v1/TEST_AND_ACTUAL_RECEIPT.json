@@ -1,0 +1,42 @@
+{
+  "schema": "anydex_boya_certified_export_validation_receipt_v1",
+  "tests": 7,
+  "contract_cases": 13,
+  "all_pass": true,
+  "unittest_s": 5.848,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_certified_export.py": "1b8d6e496a050194c0729092533c0dc766544b5d99a4f2ac55ca948b72a66dea",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_certified_export.py": "c38ec2694763d30ad77e8b6a1b5acee8a9ce99471f9c14716c3d4b448a9f3661"
+  },
+  "actual_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_certified_export_20261115_v1/MANIFEST.json",
+    "sha256": "305ae40b821d76730abe52ca1741ed118d3bc945ac26f41d5338dd2c72ef4528"
+  },
+  "actual_array_check": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_certified_export_20261115_v1/INDEPENDENT_ARRAY_CHECK.json",
+    "sha256": "e93b901733f67dfcc1ce1779d4b1b283336f8395d1bd1b52b2b6a4643d8b47ec"
+  },
+  "CLI": {
+    "python": "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "arguments": [
+      "-B",
+      "reproduction/boya/author_collection_certified_export.py",
+      "--batch-dir",
+      "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1",
+      "--output-dir",
+      "outputs/boya_author_certified_export_20261115_v1"
+    ],
+    "environment": {
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib",
+      "PYTHONPATH": "/home/wangrenpeng/AnyDexGrasp:/home/wangrenpeng/AnyDexGrasp/reproduction/boya:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/clarabel_0111_overlay"
+    }
+  },
+  "new_numeric_audits": 0,
+  "new_physics_steps": 0,
+  "new_training_updates": 0,
+  "frozen_source_changes": 0
+}

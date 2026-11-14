@@ -1,0 +1,114 @@
+{
+  "schema": "anydex_boya_resident_reuse_readonly_survey_v1",
+  "scope": "Static source and installed metadata only; no third-party execution, model loads, planning, Kit, physics or training",
+  "local_versions": {
+    "isaaclab": "3.0.0rc1",
+    "isaacsim": "6.1.0.0",
+    "newton": "1.5.2"
+  },
+  "reference_checkout": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kywch_pixi",
+    "expected_revision": "3888737ef280fb4707601501c593a5a5a2f0bb20"
+  },
+  "checks": {
+    "interactive_scene_has_legacy_clone_environments": false,
+    "interactive_scene_methods": {
+      "reset": 479,
+      "reset_to": 551,
+      "write_data_to_sim": 503,
+      "update": 519,
+      "filter_collisions": 284
+    },
+    "current_lift_forwards_resident_scene": false,
+    "source_metrics_optimization_created": false,
+    "current_wave_changed": false,
+    "physics_steps": 0,
+    "model_forwards": 0
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kywch_pixi/collect_rs_inspire_grasp_data.py": {
+      "sha256": "1a60aa7608cbcfb0a0923a664a72a66d6ec3633bc0ecc30fd80d56876d3bd9e3",
+      "bytes": 13496
+    },
+    "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kywch_pixi/robosuite_env.py": {
+      "sha256": "d855371e5e26e93fbd9cbdad21806b3882756e389012ecc2f5a2dc827571fe86",
+      "bytes": 18893
+    },
+    "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kywch_pixi/diverse_lift/lift_env.py": {
+      "sha256": "33a0fad6a7b10093d0e783bedce7a7c403fd32dbc7f273168d80f4219f0f1bbd",
+      "bytes": 12573
+    },
+    "/home/wangrenpeng/AnyDexGrasp/outputs/reference_repos_20261114/kywch_pixi/AnyDexGrasp/utils/graspnet_utils.py": {
+      "sha256": "05d67e64399c016bbf87116dd23943cc3ec582848f4c9cc0a3202d24d692e667",
+      "bytes": 16583
+    },
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/envs/direct_rl_env.py": {
+      "sha256": "f7947ade0e544b81bb062640a68edd668f1edc08dd2951bb9176e25c04a694ae",
+      "bytes": 37533
+    },
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/scene/interactive_scene.py": {
+      "sha256": "f78f2a7859beb3384da460bfaca7a6069647163680e53e6e8472cc258199d606",
+      "bytes": 42590
+    },
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/scene/interactive_scene_cfg.py": {
+      "sha256": "615c1689a7e81c2bf7aae0b687aa7920ff9e15e96a74511e218e6ae9f8c26163",
+      "bytes": 11082
+    },
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sensors/camera/camera.py": {
+      "sha256": "2d1fede2b9d46c3af14a1b356a2ea7632ecf492c2f72253e2697158aca79d154",
+      "bytes": 44954
+    },
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sensors/camera/tiled_camera.py": {
+      "sha256": "cf234bb60096d897538d3171c6f0724d056d71cb850a36f3457a93685592026e",
+      "bytes": 1464
+    },
+    "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": {
+      "sha256": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+      "bytes": 7428
+    },
+    "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": {
+      "sha256": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+      "bytes": 33224
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": {
+      "sha256": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+      "bytes": 21411
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": {
+      "sha256": "d5c5c186aa5a49b784e0d224b03ce42d1490b9ee5f7d5f10a6df224c6d9cb6e2",
+      "bytes": 56027
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py": {
+      "sha256": "c5a7cb962bb3d38961d31cc6a70a4a2c748a905d41b9bcc06e6df345387e7fe5",
+      "bytes": 23244
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": {
+      "sha256": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+      "bytes": 24301
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collect.py": {
+      "sha256": "cd978c77007a537e29571e65f8f3fd0c8574c61b44fab62975732d39daa23b8d",
+      "bytes": 27963
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py": {
+      "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5",
+      "bytes": 32964
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_waves.py": {
+      "sha256": "afc7d78face25ce8102458c9a351c4a2cd6f0db45103c2c3dd13478d6496561c",
+      "bytes": 24774
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py": {
+      "sha256": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b",
+      "bytes": 12161
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_REUSE_PLAN_20261115.md": {
+      "sha256": "ce2ad12db96763e2c8aa3c23a8e6a7bb8927c685cd18b3f3fb9a49b1e79fa422",
+      "bytes": 8284
+    }
+  },
+  "official_primary_documents": [
+    "https://isaac-sim.github.io/IsaacLab/main/source/how-to/create_scene.html",
+    "https://isaac-sim.github.io/IsaacLab/main/source/how-to/create_direct_rl_env.html"
+  ]
+}

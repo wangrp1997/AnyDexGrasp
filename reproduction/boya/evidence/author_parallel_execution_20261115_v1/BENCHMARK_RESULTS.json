@@ -1,0 +1,175 @@
+{
+  "schema": "anydex_boya_parallel_execution_benchmark_v1",
+  "status": "complete",
+  "purpose": "diagnostic_only",
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "jobs": [
+    {
+      "job_id": "g1",
+      "execution_stage": {
+        "status": "complete",
+        "complete": true,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+          "--prepared-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1"
+        ],
+        "started_unix_s": 1794675268.862671,
+        "outputs": {
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/LIFT_PIPELINE_EXECUTION.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/LIFT_PIPELINE_EXECUTION.json",
+            "sha256": "906bceb38c5253140c1c72556bb32277d23d35d880b2291a582e3d51c438cafc"
+          }
+        },
+        "retry_count": 0,
+        "child_pid": 1545530,
+        "returncode": 0,
+        "wall_s": 237.84378048195504,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g1/process.log",
+          "sha256": "6677022675dc275092131d5d7caf9d1ad2a0d71043efed0324b8d937d6350587"
+        }
+      },
+      "audit_stage": {
+        "status": "complete",
+        "complete": true,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "--prepared-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1",
+          "--split-manifest",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1/protocol.json",
+          "--output",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/RUNTIME_AUDIT.json"
+        ],
+        "started_unix_s": 1794675506.918007,
+        "outputs": {
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/RUNTIME_AUDIT.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/RUNTIME_AUDIT.json",
+            "sha256": "da18034ab71ec39590e039dd3cb5094561335d093d2be687f104c5c95e70d00f"
+          }
+        },
+        "retry_count": 0,
+        "child_pid": 1556081,
+        "returncode": 0,
+        "wall_s": 63.81630784389563,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/audit_g1/process.log",
+          "sha256": "11bb33f375beda71d978f0307b2264ef700e75bcc729cba3faa12f3807ecb9d9"
+        }
+      },
+      "execution_receipt": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/LIFT_PIPELINE_EXECUTION.json",
+        "sha256": "906bceb38c5253140c1c72556bb32277d23d35d880b2291a582e3d51c438cafc"
+      },
+      "audit_binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/RUNTIME_AUDIT.json",
+        "sha256": "da18034ab71ec39590e039dd3cb5094561335d093d2be687f104c5c95e70d00f"
+      },
+      "persisted_scientific_label": 1,
+      "independent_audit_status": "pass",
+      "physics_steps": 3139,
+      "execution_steps_unknown": false,
+      "exclude_training": true,
+      "formal_training_eligible": false
+    },
+    {
+      "job_id": "g6",
+      "execution_stage": {
+        "status": "complete",
+        "complete": true,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+          "--prepared-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6"
+        ],
+        "started_unix_s": 1794675268.862638,
+        "outputs": {
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/LIFT_PIPELINE_EXECUTION.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/LIFT_PIPELINE_EXECUTION.json",
+            "sha256": "c8c70c44f2423e7a539f45e83b6e2e91217d8b27029c6cb6c0e6d5f0b2126abd"
+          }
+        },
+        "retry_count": 0,
+        "child_pid": 1545529,
+        "returncode": 0,
+        "wall_s": 226.2840016889386,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g6/process.log",
+          "sha256": "8d62729d7972d7e1cd31b26f0611722607239d4621c5d5ef465c4e2a42acf8bc"
+        }
+      },
+      "audit_stage": {
+        "status": "complete",
+        "complete": true,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+          "--prepared-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6",
+          "--split-manifest",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1/protocol.json",
+          "--output",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/RUNTIME_AUDIT.json"
+        ],
+        "started_unix_s": 1794675495.3599877,
+        "outputs": {
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/RUNTIME_AUDIT.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/RUNTIME_AUDIT.json",
+            "sha256": "4409c6994301ad2b254e041278bc06015259003da73d136a9bda2361becb2023"
+          }
+        },
+        "retry_count": 0,
+        "child_pid": 1555642,
+        "returncode": 0,
+        "wall_s": 60.494228875031695,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/audit_g6/process.log",
+          "sha256": "11bb33f375beda71d978f0307b2264ef700e75bcc729cba3faa12f3807ecb9d9"
+        }
+      },
+      "execution_receipt": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/LIFT_PIPELINE_EXECUTION.json",
+        "sha256": "c8c70c44f2423e7a539f45e83b6e2e91217d8b27029c6cb6c0e6d5f0b2126abd"
+      },
+      "audit_binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/RUNTIME_AUDIT.json",
+        "sha256": "4409c6994301ad2b254e041278bc06015259003da73d136a9bda2361becb2023"
+      },
+      "persisted_scientific_label": 1,
+      "independent_audit_status": "pass",
+      "physics_steps": 3008,
+      "execution_steps_unknown": false,
+      "exclude_training": true,
+      "formal_training_eligible": false
+    }
+  ],
+  "known_physics_steps": 6147,
+  "execution_starts_with_unknown_steps": 0,
+  "original_serial_execution_stage_wall_sum_s": 471.4573510410264,
+  "new_execution_stage_span_s": 237.84381341934204,
+  "execution_stage_overlap_s": 226.2839686870575,
+  "actual_Kit_overlap_requires_independent_host_observer": true,
+  "observed_execution_stage_speedup": 1.9822140599881852,
+  "benchmark_pair_wall_including_audits_s": 302.14844434708357,
+  "speedup_scope": "Execution stage span includes original per-stage validation/launch/cleanup; excludes new runtime audits, initial freeze and outer verification",
+  "limitation": "Two known-success plans, one new execution each; historical serial stage walls are not a fresh randomized paired serial benchmark. No complete pipeline speedup, population success rate or new training labels is claimed.",
+  "training_updates": 0,
+  "new_training_labels": 0,
+  "planning_calls": 0,
+  "CGR_forwards": 0,
+  "model_forwards": 0,
+  "retry_count": 0,
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/BENCHMARK_PROTOCOL.json",
+    "sha256": "080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d"
+  }
+}

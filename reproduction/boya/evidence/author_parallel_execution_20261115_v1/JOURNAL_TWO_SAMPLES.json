@@ -1,0 +1,321 @@
+{
+  "schema": "anydex_boya_independent_concurrent_journal_samples_v1",
+  "two_original_journals_increased": true,
+  "samples": [
+    {
+      "read_unix_s": 1794675454.4504657,
+      "stages": [
+        {
+          "process": {
+            "pid": 1545530,
+            "pgid": 1545530,
+            "start_ticks": 149421173
+          },
+          "host_identity_verified": true,
+          "kit_libraries": [
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "inode": [
+                91,
+                3494629
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                91,
+                3494629
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            },
+            {
+              "fd": 6,
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/0.lock",
+              "inode": [
+                72,
+                69468715
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                72,
+                69468715
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            }
+          ],
+          "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "journal_bytes": 208852624,
+          "host_sample_unix_s": 1794675453.4273949
+        },
+        {
+          "process": {
+            "pid": 1545529,
+            "pgid": 1545529,
+            "start_ticks": 149421173
+          },
+          "host_identity_verified": true,
+          "kit_libraries": [
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "inode": [
+                91,
+                3494629
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                91,
+                3494629
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            },
+            {
+              "fd": 5,
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/1.lock",
+              "inode": [
+                72,
+                69472791
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                72,
+                69472791
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            }
+          ],
+          "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "journal_bytes": 208842101,
+          "host_sample_unix_s": 1794675453.4273949
+        }
+      ]
+    },
+    {
+      "read_unix_s": 1794675457.45094,
+      "stages": [
+        {
+          "process": {
+            "pid": 1545530,
+            "pgid": 1545530,
+            "start_ticks": 149421173
+          },
+          "host_identity_verified": true,
+          "kit_libraries": [
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "inode": [
+                91,
+                3494629
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                91,
+                3494629
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            },
+            {
+              "fd": 6,
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/0.lock",
+              "inode": [
+                72,
+                69468715
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                72,
+                69468715
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            }
+          ],
+          "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "journal_bytes": 213711985,
+          "host_sample_unix_s": 1794675455.441949
+        },
+        {
+          "process": {
+            "pid": 1545529,
+            "pgid": 1545529,
+            "start_ticks": 149421173
+          },
+          "host_identity_verified": true,
+          "kit_libraries": [
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+            "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "inode": [
+                91,
+                3494629
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                91,
+                3494629
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            },
+            {
+              "fd": 5,
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/1.lock",
+              "inode": [
+                72,
+                69472791
+              ],
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+              ],
+              "exclusive_flock_observed": true,
+              "current_inode": [
+                72,
+                69472791
+              ],
+              "current_lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+              ],
+              "still_same_inode": true,
+              "current_exclusive_flock": true
+            }
+          ],
+          "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "journal_bytes": 213834009,
+          "host_sample_unix_s": 1794675455.441949
+        }
+      ]
+    }
+  ],
+  "scientific_costs_added": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "model_forwards": 0
+  }
+}

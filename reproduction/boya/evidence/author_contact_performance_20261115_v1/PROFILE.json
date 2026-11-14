@@ -1,0 +1,306 @@
+{
+  "schema": "anydex_boya_offline_contact_profile_v1",
+  "status": "complete",
+  "sample_rule": "Exactly first predeclared 100 or 200 native contact ticks; no success selection",
+  "prepared_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1",
+  "ticks": 100,
+  "repeats": 3,
+  "timings": {
+    "read_and_gzip_decompress_prefix": {
+      "samples": [
+        {
+          "wall_s": 0.12802122998982668,
+          "process_cpu_s": 0.127126617
+        },
+        {
+          "wall_s": 0.12715863902121782,
+          "process_cpu_s": 0.127135909
+        },
+        {
+          "wall_s": 0.11474614613689482,
+          "process_cpu_s": 0.1147400930000001
+        }
+      ],
+      "minimum_wall_s": 0.11474614613689482,
+      "median_wall_s": 0.12715863902121782,
+      "median_process_cpu_s": 0.127126617
+    },
+    "json_decode": {
+      "samples": [
+        {
+          "wall_s": 0.44879389903508127,
+          "process_cpu_s": 0.44868185000000005
+        },
+        {
+          "wall_s": 0.49770629894919693,
+          "process_cpu_s": 0.4969491229999998
+        },
+        {
+          "wall_s": 0.50252277799882,
+          "process_cpu_s": 0.49902629
+        }
+      ],
+      "minimum_wall_s": 0.44879389903508127,
+      "median_wall_s": 0.49770629894919693,
+      "median_process_cpu_s": 0.4969491229999998
+    },
+    "json_encode_original_runtime_options": {
+      "samples": [
+        {
+          "wall_s": 0.5740794490557164,
+          "process_cpu_s": 0.5737891559999997
+        },
+        {
+          "wall_s": 0.571140677202493,
+          "process_cpu_s": 0.5708746049999998
+        },
+        {
+          "wall_s": 0.5613558827899396,
+          "process_cpu_s": 0.5605838350000001
+        }
+      ],
+      "minimum_wall_s": 0.5613558827899396,
+      "median_wall_s": 0.571140677202493,
+      "median_process_cpu_s": 0.5708746049999998
+    },
+    "gzip1_json_and_buffered_file_write": {
+      "samples": [
+        {
+          "wall_s": 0.15854375413618982,
+          "process_cpu_s": 0.15845527699999984
+        },
+        {
+          "wall_s": 0.1565110378433019,
+          "process_cpu_s": 0.15626250900000027
+        },
+        {
+          "wall_s": 0.15782934497110546,
+          "process_cpu_s": 0.1575259520000003
+        }
+      ],
+      "minimum_wall_s": 0.1565110378433019,
+      "median_wall_s": 0.15782934497110546,
+      "median_process_cpu_s": 0.1575259520000003
+    },
+    "experimental_pack_from_original_dicts": {
+      "samples": [
+        {
+          "wall_s": 1.319226612104103,
+          "process_cpu_s": 1.3182132259999992
+        },
+        {
+          "wall_s": 1.3023049749899656,
+          "process_cpu_s": 1.2989828460000004
+        },
+        {
+          "wall_s": 1.2976609210018069,
+          "process_cpu_s": 1.2967014639999999
+        }
+      ],
+      "minimum_wall_s": 1.2976609210018069,
+      "median_wall_s": 1.3023049749899656,
+      "median_process_cpu_s": 1.2989828460000004
+    },
+    "experimental_npz_uncompressed_write": {
+      "samples": [
+        {
+          "wall_s": 0.010197465075179935,
+          "process_cpu_s": 0.009998701000000665
+        },
+        {
+          "wall_s": 0.005946506047621369,
+          "process_cpu_s": 0.005945580000000561
+        },
+        {
+          "wall_s": 0.005585941951721907,
+          "process_cpu_s": 0.005585529999999395
+        }
+      ],
+      "minimum_wall_s": 0.005585941951721907,
+      "median_wall_s": 0.005946506047621369,
+      "median_process_cpu_s": 0.005945580000000561
+    },
+    "experimental_gzip1_columns_and_buffered_file_write": {
+      "samples": [
+        {
+          "wall_s": 0.07018828997388482,
+          "process_cpu_s": 0.06952336400000014
+        },
+        {
+          "wall_s": 0.06945005408488214,
+          "process_cpu_s": 0.06924517800000096
+        },
+        {
+          "wall_s": 0.06959230499342084,
+          "process_cpu_s": 0.0693742309999994
+        }
+      ],
+      "minimum_wall_s": 0.06945005408488214,
+      "median_wall_s": 0.06959230499342084,
+      "median_process_cpu_s": 0.0693742309999994
+    },
+    "experimental_gzip_decompress_and_npz_load": {
+      "samples": [
+        {
+          "wall_s": 0.03724115691147745,
+          "process_cpu_s": 0.037030245000000406
+        },
+        {
+          "wall_s": 0.03704275214113295,
+          "process_cpu_s": 0.03623926300000058
+        },
+        {
+          "wall_s": 0.03398436214774847,
+          "process_cpu_s": 0.03397668499999895
+        }
+      ],
+      "minimum_wall_s": 0.03398436214774847,
+      "median_wall_s": 0.03704275214113295,
+      "median_process_cpu_s": 0.03623926300000058
+    },
+    "experimental_restore_original_dicts": {
+      "samples": [
+        {
+          "wall_s": 1.4082074139732867,
+          "process_cpu_s": 1.406675696999999
+        },
+        {
+          "wall_s": 0.9559810811188072,
+          "process_cpu_s": 0.9469556969999999
+        },
+        {
+          "wall_s": 0.9253637760411948,
+          "process_cpu_s": 0.9165828230000006
+        }
+      ],
+      "minimum_wall_s": 0.9253637760411948,
+      "median_wall_s": 0.9559810811188072,
+      "median_process_cpu_s": 0.9469556969999999
+    },
+    "original_three_body_loads_full_source_vertices_and_depth": {
+      "samples": [
+        {
+          "wall_s": 0.7452925280667841,
+          "process_cpu_s": 0.7422210580000019
+        },
+        {
+          "wall_s": 0.752494027139619,
+          "process_cpu_s": 0.7516954949999999
+        },
+        {
+          "wall_s": 0.7404040119145066,
+          "process_cpu_s": 0.7402517760000009
+        }
+      ],
+      "minimum_wall_s": 0.7404040119145066,
+      "median_wall_s": 0.7452925280667841,
+      "median_process_cpu_s": 0.7422210580000019
+    }
+  },
+  "classification": {
+    "counts": {
+      "object_contacts": 252790,
+      "zero_force": 251731,
+      "positive_separation": 252248,
+      "object_ground": 252790
+    },
+    "pairs": [
+      {
+        "group": "object_contacts",
+        "bodies": [
+          "/World/AuthorScene/graspnet_060",
+          "/World/ground/collisionPlane"
+        ],
+        "count": 107390
+      },
+      {
+        "group": "object_contacts",
+        "bodies": [
+          "/World/AuthorScene/graspnet_005",
+          "/World/ground/collisionPlane"
+        ],
+        "count": 93800
+      },
+      {
+        "group": "object_contacts",
+        "bodies": [
+          "/World/Object",
+          "/World/ground/collisionPlane"
+        ],
+        "count": 51600
+      }
+    ]
+  },
+  "source_vertex_counts": {
+    "graspnet_002": 262130,
+    "graspnet_005": 262146,
+    "graspnet_060": 365532
+  },
+  "max_recomputed_source_bottom_error_m": 0.0,
+  "exact_roundtrip": {
+    "all_fields_values_optional_normals_contact_order_equal": true,
+    "signed_zero_preserved": true,
+    "canonical_sha256": "2dffc756c95bb6a8e91baecc0c805880baff9450578903420e97a273e06e26f7"
+  },
+  "json_uncompressed_bytes": 68049134,
+  "original_inputs_sha256": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.json": "73a9e5c113af7309fa98074336d81102fb27f39263ceef04e3c92a1bbbae39e8",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz": "833b8e719cf966c4d7587073d7e6bbaba7a7d19e1ce2dc6a6e3ad5e340170066",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture/observed_scene.json": "22fa4eb713dae4e5e7a6aef2166fae6d6ada48bc22c23674db6ba2f24f27e933",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_TRACE.json": "dbe057f8c0eff379d0956011563626d42fa562537e98925521b217c278e0629e",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_SETUP.json": "148b22194d476840dc9caf7659979fcd3abea603f5a492f58d48aae9e92b4e43",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "d5c5c186aa5a49b784e0d224b03ce42d1490b9ee5f7d5f10a6df224c6d9cb6e2",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_002/mesh/simplified.obj": "feafcf130e38b25a0938f393f3b81792e761cf50d227150f03fe99c7d2549813",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_005/mesh/simplified.obj": "0a5a2b17283cb561a30441327debd199c5418a5012c083357c843fcecdddd7d6",
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_060/mesh/simplified.obj": "2dac1a62345ba54801fe65d850d35db54fc07836d2681ea8480ab50f3c72c7f6"
+  },
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/profile_author_contacts.py",
+    "sha256": "a8769ae9424c2f4ec161644c1d8b68b95cd9efe4cab7dca223dd13b8bdeee7fb"
+  },
+  "artifacts": {
+    "aggregate_profile.txt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_contact_profile_20261115_v1/aggregate_profile.txt",
+      "bytes": 4460,
+      "sha256": "14c2c27a7e44462afd8fa905b3ae86585bc1724bbfff27cabb233d55894b72c4"
+    },
+    "aggregate.cprofile": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_contact_profile_20261115_v1/aggregate.cprofile",
+      "bytes": 7081,
+      "sha256": "76f3e61966d0c9c19bd371e20bca7a6644cd43d42f326f5d00353a1ec210a3e0"
+    },
+    "sample.columns.npz": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_contact_profile_20261115_v1/sample.columns.npz",
+      "bytes": 18458070,
+      "sha256": "c85c77498a3eb257ddcaa297fce65234d5334a541768ee72838fe9116cd45e0f"
+    },
+    "sample.columns.npz.gz": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_contact_profile_20261115_v1/sample.columns.npz.gz",
+      "bytes": 3580690,
+      "sha256": "7a725b10794fe00aca7c17af28ad89519ee43f97c2c20563d1fa05713173dad2"
+    },
+    "sample.jsonl.gz": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_contact_profile_20261115_v1/sample.jsonl.gz",
+      "bytes": 8511391,
+      "sha256": "4c48b89ff63ffab99f2aa77a23cd24d171f9bf19584edc92844f015c75cf6e35"
+    }
+  },
+  "environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  },
+  "physics_steps": 0,
+  "original_input_writes": 0,
+  "simulator_launches": 0,
+  "label_updates": 0,
+  "wall_s": 24.678711297921836,
+  "limitations": [
+    "Offline prefix CPU and buffered-file-write measurements; not an end-to-end speedup claim",
+    "First ticks contain resting contacts; loaded grasp phases are not represented",
+    "Dictionary-to-columns packing measured; direct native-array ingestion is not implemented or timed",
+    "Experimental npz/gzip is not integrated with any execution entry or dataset audit",
+    "Cold filesystem/cache, native physics, Kit startup and durable fsync were not benchmarked"
+  ]
+}

@@ -1,8 +1,10 @@
-2026-11-14最新实际采集：[public固定开发队列](boya/AUTHOR_COLLECTION_PROGRESS_20261114.md)已产生**10条有效新fit标签（7正3负），四型3/2/2/3，internal尚0**，剩余原预算继续运行，正式训练仍0。目标是各1000fit+另200internal；旧435不自动合并，尚未采足4000fit。大数据位于`/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/`，Git只放轻量代码和证据。新增[三场景并行入口](boya/AUTHOR_COLLECTION_WAVES_20261114.md)及独立导出，23项组合测试通过，但新队列仅freeze、尚无真实并行或加速结论。旧队列一条准备基础设施失败保留且不补负例/重试，暂缓新并行启动，详见进展报告。采集标签不作为训后成功率；先采足数据，再训练，最后评测。
+2026-11-15当前实际采集：两个固定开发预算均已结束，累计**15条有效新标签=14fit（10正4负）＋1internal（g7正例）**；不自动并入旧435，正式训练/新正式模型/训后外部评测仍0。旧10场景40槽的fit四型数为4/3/3/4；fresh6波次24槽为1labelled、4null_geometry、7no_candidate、12placement_null，0infra/0未知执行成本，3capture共2250初始化tick/6750对象步＋3242执行步。完整[采集进展](boya/AUTHOR_COLLECTION_PROGRESS_20261114.md)与[本阶段总报告](boya/AUTHOR_PARALLEL_COLLECTION_RESULTS_20261115.md)分开记录标签、无计划及实际成本。目标仍各1000fit＋另200internal，尚未采足，正式总尝试预算未冻结。大数据位于`/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/`，Git只放轻量代码和证据。
 
-2026-11-14用户最新纠正：**主线只验稳定提起，不需要投放箱**，替代下方历史搬运要求。原算法数值组件、Boya动作合同及原采集接口已有核验；新的无箱四型真实正负标签链路已接通，内部划分与批量实际并发仍待验收。独立author_lift_pipeline绑定lift任务，旧author_pipeline保留历史transport语义。旧435条（四型98/120/117/100）仅是历史数据，不替代本次新采集；435只略超论文DH3少样本400，远少于完整约4000条。详见[五步清单](boya/ALIGNMENT_DELIVERY_CHECKLIST_20261114.md)。
+fresh6运行了新的[wave入口](boya/AUTHOR_COLLECTION_WAVES_20261114.md)，其实际最大Kit重叠仅1。另立独立吞吐benchmark已完成：旧成功g1/g6各一次3139/3008步、两原numeric audit通过，两正结果排除训练，累计有效采集标签仍15条。两旧执行stage合471.457s，新并行执行span237.844s，约**1.982倍，仅执行段历史串行对照**；含两审计302.148s，不是新配对完整采集倍率。独立host观察已确认2Kit、同区间双journal增长和GPU0 FD/slot，协议及证据见[总报告](boya/AUTHOR_PARALLEL_COLLECTION_RESULTS_20261115.md)。旧NUL配置准备失败保留、原因未定、不重试。后续参考[kywch常驻循环与官方IsaacLab复用方案](boya/AUTHOR_RESIDENT_REUSE_PLAN_20261115.md)，常驻/官方向量环境仍未实现；不把方案写成已加速。采集标签不作为训后成功率，先采足数据、再训练、最后评测。
 
-以下按日期保留阶段历史，不能将其中投放位/搬运要求继续当作当前任务的前置条件。
+用户已纠正：**主线只验稳定提起，不需要投放箱**，替代下方历史搬运要求。原算法数值组件、Boya动作合同及原采集接口已有核验；新的无箱四型真实正负标签及首条internal链路已实际接通，完整扩采和整条采集吞吐仍未验收。独立author_lift_pipeline绑定lift任务，旧author_pipeline保留历史transport语义。旧435条（四型98/120/117/100）仅是历史数据，不替代本次新采集；435只略超论文DH3少样本400，远少于完整约4000条。详见[五步清单](boya/ALIGNMENT_DELIVERY_CHECKLIST_20261114.md)。
+
+以下按日期保留阶段历史，“运行中”“仅freeze”“新增0标签”等只适用于当时快照，不能将其中投放位/搬运要求继续当作当前任务的前置条件。
 
 2026-11-14后续并行集成：[绕障接近与固定投放](boya/AUTHOR_HOME_RELEASE_INTEGRATION_20261114.md)推进到当时第3步搬运验收。g1/6/7保留原候选与手指动作，通用关节绕障及全段限速/碰撞检查通过；g8真实碰撞保留null，不能把规划3ready写成抓取成功率。固定投放、全3体刚体门及原生碰撞修正交付已补齐；三路搬运准备仍因投放末段真实自碰/箱壁碰拒绝，0物理/标签，单参考初值检查也未得到clear目标。87项测试通过；新数据集、正式重训和外部验收尚未开始。详见五步清单。
 

@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "tests": 16,
+  "wall_s": 6.58,
+  "new_Kit_starts": 0,
+  "new_physics_steps": 0,
+  "command": "env PYTHONPATH=/home/wangrenpeng/AnyDexGrasp/reproduction/boya:/home/wangrenpeng/AnyDexGrasp PYTHONDONTWRITEBYTECODE=1 /home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest test_author_parallel_execution_benchmark test_author_collection_certified_export test_profile_author_contacts",
+  "stdout": "................\n----------------------------------------------------------------------\nRan 16 tests in 6.580s\n\nOK\n",
+  "initial_invocation": {
+    "status": "import_error",
+    "cause": "Root test command omitted reproduction/boya from PYTHONPATH; no implementation change",
+    "failed_imports": [
+      "author_parallel_execution_benchmark",
+      "author_collection_batch"
+    ],
+    "new_Kit_starts": 0,
+    "new_physics_steps": 0
+  },
+  "sources": {
+    "reproduction/boya/author_parallel_execution_benchmark.py": "0c5ab8a245f6fbe1d8e5c4fae44337b40ce52ded786ea20bb531ec5069533006",
+    "reproduction/boya/test_author_parallel_execution_benchmark.py": "dc8e8fb9abe1011a7b2e55d49e377258e695a40aa3d8cec52a591fd33d829ffd",
+    "reproduction/boya/author_collection_certified_export.py": "1b8d6e496a050194c0729092533c0dc766544b5d99a4f2ac55ca948b72a66dea",
+    "reproduction/boya/test_author_collection_certified_export.py": "c38ec2694763d30ad77e8b6a1b5acee8a9ce99471f9c14716c3d4b448a9f3661",
+    "reproduction/boya/profile_author_contacts.py": "a8769ae9424c2f4ec161644c1d8b68b95cd9efe4cab7dca223dd13b8bdeee7fb",
+    "reproduction/boya/test_profile_author_contacts.py": "585ab92068c3e85b95de1b0f84afc2c80a8bde2c5f936614b927cc43bae92c1d"
+  }
+}

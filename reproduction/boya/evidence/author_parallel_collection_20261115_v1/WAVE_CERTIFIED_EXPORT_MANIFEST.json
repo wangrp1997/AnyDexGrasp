@@ -1,0 +1,157 @@
+{
+  "schema": "anydex_boya_author_certified_collection_export_v1",
+  "task": "declared_boya_clutter_lift_v1",
+  "source_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/WAVE_PROTOCOL.json",
+    "sha256": "c657176d0478391e2907289d0c454c57c05deaf3262ba1e3c30a69b991191c25"
+  },
+  "old435_merged": false,
+  "training_updates": 0,
+  "exported_labels": 1,
+  "quota_excess_not_exported": 0,
+  "mesh_sha256_semantics": "Compatibility primary only; scene_mesh_sha256 binds all three source identities",
+  "fit_source_object_ids": [],
+  "internal_source_object_ids": [
+    "graspnet_007",
+    "graspnet_021",
+    "graspnet_048"
+  ],
+  "fit_source_mesh_sha256": [],
+  "internal_source_mesh_sha256": [
+    "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+    "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+    "591a14421cfc875e11c57d2b61493d1cdf85f9b71cb3b235714529efe9c6be74"
+  ],
+  "datasets": {
+    "1": {
+      "binding": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_wave_certified_export_20261115_v1/gesture_1.npz",
+        "sha256": "7ffa387e4b3af3a1c15fac9ae0b31b41dcddd88ba6c7df5d772c6d3ad95ba87b"
+      },
+      "counts": {
+        "fit": 0,
+        "internal": 0
+      },
+      "positive": 0,
+      "negative": 0
+    },
+    "6": {
+      "binding": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_wave_certified_export_20261115_v1/gesture_6.npz",
+        "sha256": "7ffa387e4b3af3a1c15fac9ae0b31b41dcddd88ba6c7df5d772c6d3ad95ba87b"
+      },
+      "counts": {
+        "fit": 0,
+        "internal": 0
+      },
+      "positive": 0,
+      "negative": 0
+    },
+    "7": {
+      "binding": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_wave_certified_export_20261115_v1/gesture_7.npz",
+        "sha256": "666544a0b1f1968265ec68a946bb19dcf36a615d20e0fa675c5d5bc8489a6044"
+      },
+      "counts": {
+        "fit": 0,
+        "internal": 1
+      },
+      "positive": 1,
+      "negative": 0
+    },
+    "8": {
+      "binding": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_wave_certified_export_20261115_v1/gesture_8.npz",
+        "sha256": "7ffa387e4b3af3a1c15fac9ae0b31b41dcddd88ba6c7df5d772c6d3ad95ba87b"
+      },
+      "counts": {
+        "fit": 0,
+        "internal": 0
+      },
+      "positive": 0,
+      "negative": 0
+    }
+  },
+  "audits": {
+    "s40_lift_internal_00001_s2026111402:g7": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_wave_certified_export_20261115_v1/audits/ce09ddcd25d3932deadd033f0dade791737c7566b9570142b08e48f17102bc82.json",
+      "sha256": "bac94d35175e00dc09ff74e502e05f77674245657f22deb7f2e18a05857ba738"
+    }
+  },
+  "size_ready": false,
+  "wrapped_export_schema": "anydex_boya_author_collection_wave_export_v1",
+  "export_mode": "wave",
+  "independent_audit_mode": "reuse_original_pass_certificate_after_full_input_sha_revalidation",
+  "certificate_reuse": {
+    "s40_lift_internal_00001_s2026111402:g7": {
+      "original_certificate": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7/RUNTIME_AUDIT.json",
+        "sha256": "bac94d35175e00dc09ff74e502e05f77674245657f22deb7f2e18a05857ba738"
+      },
+      "original_audit_stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/stages/audit_g7/STAGE.json",
+        "sha256": "d5c47b253a4ba2092d97aa341d5a7d8d679b0bdeb88d2151c1212496b015b402"
+      },
+      "original_ledger": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/ledger/0000000_g7.json",
+        "sha256": "afd9de22c0deee06d696ba90ee20393f20c2d1890b9e854c8002a952e2fa0182"
+      },
+      "parent_ledger": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/ledger/0000004_g7.json",
+        "sha256": "6bffbd16a442da86b60071ca50903753c6ae7cd16fd606f3d58e736c073fb115"
+      },
+      "prepared_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/children/0000004_s40_lift_internal_00001_s2026111402/batch/scenes/0000000_s40_lift_internal_00001_s2026111402/g7",
+      "original_audit_source": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+        "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+      },
+      "original_numeric_audit_wall_s": 89.76595450588502,
+      "logical_input_files": 728,
+      "numeric_replays": 0,
+      "verification_wall_s": 0.482581018935889,
+      "newly_hashed_files": 733,
+      "newly_hashed_bytes": 629936334
+    }
+  },
+  "verification_cost": {
+    "wall_s": 3.354182950919494,
+    "hash_wall_s": 0.9857421012129635,
+    "full_file_reads": 1466,
+    "full_bytes_read": 1259872668,
+    "unique_verified_files": 733,
+    "verification_passes": 2,
+    "deduplication": "Only invocation-local exact (canonical path, expected SHA); complete content rehashed before publication",
+    "mtime_cache_used": false,
+    "sampled_hashes_used": false,
+    "numeric_replays": 0
+  },
+  "certified_export_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_certified_export.py",
+    "sha256": "1b8d6e496a050194c0729092533c0dc766544b5d99a4f2ac55ca948b72a66dea"
+  },
+  "wrapped_sources": {
+    "author_collection_batch.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+      "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+    },
+    "author_collection_export.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_export.py",
+      "sha256": "a7fb4159bd9d649d290753d5a92891540407728ea59d88a25001106d485f9fe1"
+    },
+    "author_collection_wave_export.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_export.py",
+      "sha256": "3252143090a204ccd5fa450fc613b301701d4a4be1d6924ba584081f2b6a3e1f"
+    },
+    "author_collection_waves.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_waves.py",
+      "sha256": "afc7d78face25ce8102458c9a351c4a2cd6f0db45103c2c3dd13478d6496561c"
+    },
+    "audit_author_collection_runtime.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+      "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5"
+    }
+  },
+  "new_simulator_launches": 0,
+  "new_physics_steps": 0,
+  "new_training_updates": 0
+}

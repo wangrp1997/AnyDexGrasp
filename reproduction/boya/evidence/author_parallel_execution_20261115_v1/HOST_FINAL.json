@@ -1,0 +1,762 @@
+{
+  "schema": "anydex_boya_independent_benchmark_host_audit_v1",
+  "status": "complete",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/BENCHMARK_PROTOCOL.json",
+    "sha256": "080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d"
+  },
+  "samples": 211,
+  "last_sample_unix_s": 1794675571.8131418,
+  "maximum_reserved_kit_slots": 2,
+  "maximum_library_verified_kit_processes": 2,
+  "simultaneous_two_kit_proven": true,
+  "two_journals_growing_proven": true,
+  "witnesses": [
+    {
+      "kind": "new_maximum_library_verified_kit",
+      "unix_s": 1794675269.9073203,
+      "kits": [
+        {
+          "slot": 0,
+          "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g1",
+          "sample": {
+            "process": {
+              "pid": 1545530,
+              "pgid": 1545530,
+              "start_ticks": 149421173
+            },
+            "alive_identity_match": true,
+            "argv": [
+              "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+              "-B",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+              "--prepared-dir",
+              "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1"
+            ],
+            "kit_libraries": [
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+            ],
+            "kit_loaded": true,
+            "gpu_environment": {
+              "CUDA_VISIBLE_DEVICES": "0",
+              "NVIDIA_VISIBLE_DEVICES": "0"
+            },
+            "memory": [
+              "VmHWM:\t  656572 kB",
+              "VmRSS:\t  656572 kB"
+            ],
+            "inherited_lock_fds": [
+              {
+                "fd": 4,
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+                "inode": [
+                  91,
+                  3494629
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  91,
+                  3494629
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              },
+              {
+                "fd": 6,
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/0.lock",
+                "inode": [
+                  72,
+                  69468715
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  72,
+                  69468715
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              }
+            ],
+            "gpu_active_log_lines": [],
+            "gpu0_active_log_confirmed": false,
+            "stage_progress": null,
+            "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+            "journal_bytes": 0
+          }
+        },
+        {
+          "slot": 1,
+          "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g6",
+          "sample": {
+            "process": {
+              "pid": 1545529,
+              "pgid": 1545529,
+              "start_ticks": 149421173
+            },
+            "alive_identity_match": true,
+            "argv": [
+              "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+              "-B",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+              "--prepared-dir",
+              "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6"
+            ],
+            "kit_libraries": [
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+            ],
+            "kit_loaded": true,
+            "gpu_environment": {
+              "CUDA_VISIBLE_DEVICES": "0",
+              "NVIDIA_VISIBLE_DEVICES": "0"
+            },
+            "memory": [
+              "VmHWM:\t  658380 kB",
+              "VmRSS:\t  658380 kB"
+            ],
+            "inherited_lock_fds": [
+              {
+                "fd": 4,
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+                "inode": [
+                  91,
+                  3494629
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  91,
+                  3494629
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              },
+              {
+                "fd": 5,
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/1.lock",
+                "inode": [
+                  72,
+                  69472791
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  72,
+                  69472791
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              }
+            ],
+            "gpu_active_log_lines": [],
+            "gpu0_active_log_confirmed": false,
+            "stage_progress": null,
+            "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+            "journal_bytes": 0
+          }
+        }
+      ],
+      "growing_journal_pids": [],
+      "gpu": {
+        "returncode": 0,
+        "stdout": "Sun Nov 15 00:54:29 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:01:00.0 Off |                    0 |\n| N/A   32C    P8             34W /  600W |     690MiB /  97887MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:71:00.0 Off |                    0 |\n| N/A   43C    P0            116W /  600W |   69779MiB /  97887MiB |     37%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|  No running processes found                                                             |\n+-----------------------------------------------------------------------------------------+\n",
+        "stderr": ""
+      }
+    },
+    {
+      "kind": "two_concurrently_growing_journals",
+      "unix_s": 1794675326.4171073,
+      "kits": [
+        {
+          "slot": 0,
+          "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g1",
+          "sample": {
+            "process": {
+              "pid": 1545530,
+              "pgid": 1545530,
+              "start_ticks": 149421173
+            },
+            "alive_identity_match": true,
+            "argv": [
+              "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+              "-B",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+              "--prepared-dir",
+              "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1"
+            ],
+            "kit_libraries": [
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+            ],
+            "kit_loaded": true,
+            "gpu_environment": {
+              "CUDA_VISIBLE_DEVICES": "0",
+              "NVIDIA_VISIBLE_DEVICES": "0"
+            },
+            "memory": [
+              "VmHWM:\t 3214324 kB",
+              "VmRSS:\t 3214324 kB"
+            ],
+            "inherited_lock_fds": [
+              {
+                "fd": 4,
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+                "inode": [
+                  91,
+                  3494629
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  91,
+                  3494629
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              },
+              {
+                "fd": 6,
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/0.lock",
+                "inode": [
+                  72,
+                  69468715
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  72,
+                  69468715
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              }
+            ],
+            "gpu_active_log_lines": [],
+            "gpu0_active_log_confirmed": false,
+            "stage_progress": {
+              "complete": false,
+              "phase": "settle",
+              "total_physics_steps": 50,
+              "wall_s": 50.773034248966724,
+              "maxima": {
+                "joint_limit_violation_rad": 0.0,
+                "mimic_error_rad": 1.777311631201428e-11,
+                "penetration_m": 0.0,
+                "palm_position_error_m": 4.993349269777392e-07,
+                "palm_orientation_error_rad": 6.606653169043559e-07,
+                "illegal_object_contact_force_n": 0.0,
+                "base_position_drift_m": 0.0,
+                "base_orientation_drift_rad": 0.0
+              },
+              "planning_success": true,
+              "arm_motion_started": false,
+              "first_arm_motion": null
+            },
+            "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+            "journal_bytes": 5074510
+          }
+        },
+        {
+          "slot": 1,
+          "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g6",
+          "sample": {
+            "process": {
+              "pid": 1545529,
+              "pgid": 1545529,
+              "start_ticks": 149421173
+            },
+            "alive_identity_match": true,
+            "argv": [
+              "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+              "-B",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+              "--prepared-dir",
+              "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6"
+            ],
+            "kit_libraries": [
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+            ],
+            "kit_loaded": true,
+            "gpu_environment": {
+              "CUDA_VISIBLE_DEVICES": "0",
+              "NVIDIA_VISIBLE_DEVICES": "0"
+            },
+            "memory": [
+              "VmHWM:\t 3202908 kB",
+              "VmRSS:\t 3202908 kB"
+            ],
+            "inherited_lock_fds": [
+              {
+                "fd": 4,
+                "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+                "inode": [
+                  91,
+                  3494629
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  91,
+                  3494629
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              },
+              {
+                "fd": 5,
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/1.lock",
+                "inode": [
+                  72,
+                  69472791
+                ],
+                "lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+                ],
+                "exclusive_flock_observed": true,
+                "current_inode": [
+                  72,
+                  69472791
+                ],
+                "current_lock_lines": [
+                  "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+                ],
+                "still_same_inode": true,
+                "current_exclusive_flock": true
+              }
+            ],
+            "gpu_active_log_lines": [],
+            "gpu0_active_log_confirmed": false,
+            "stage_progress": {
+              "complete": false,
+              "phase": "settle",
+              "total_physics_steps": 50,
+              "wall_s": 50.90227147517726,
+              "maxima": {
+                "joint_limit_violation_rad": 0.0,
+                "mimic_error_rad": 1.7595924717284106e-11,
+                "penetration_m": 0.0,
+                "palm_position_error_m": 4.993349269777392e-07,
+                "palm_orientation_error_rad": 6.606653169043559e-07,
+                "illegal_object_contact_force_n": 0.0,
+                "base_position_drift_m": 0.0,
+                "base_orientation_drift_rad": 0.0
+              },
+              "planning_success": true,
+              "arm_motion_started": false,
+              "first_arm_motion": null
+            },
+            "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+            "journal_bytes": 5074510
+          }
+        }
+      ],
+      "growing_journal_pids": [
+        1545530,
+        1545529
+      ],
+      "gpu": {
+        "returncode": 0,
+        "stdout": "Sun Nov 15 00:55:26 2026       \n+-----------------------------------------------------------------------------------------+\n| NVIDIA-SMI 580.159.03             Driver Version: 580.159.03     CUDA Version: 13.0     |\n+-----------------------------------------+------------------------+----------------------+\n| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |\n| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |\n|                                         |                        |               MIG M. |\n|=========================================+========================+======================|\n|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:01:00.0 Off |                    0 |\n| N/A   36C    P0             87W /  600W |    2008MiB /  97887MiB |      0%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n|   1  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:71:00.0 Off |                    0 |\n| N/A   43C    P0            114W /  600W |   69535MiB /  97887MiB |     34%      Default |\n|                                         |                        |             Disabled |\n+-----------------------------------------+------------------------+----------------------+\n\n+-----------------------------------------------------------------------------------------+\n| Processes:                                                                              |\n|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |\n|        ID   ID                                                               Usage      |\n|=========================================================================================|\n|    0   N/A  N/A         1545529      C   .../tendon-spin/.venv/bin/python        654MiB |\n|    0   N/A  N/A         1545530      C   .../tendon-spin/.venv/bin/python        654MiB |\n+-----------------------------------------------------------------------------------------+\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "stages": [
+    {
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g1",
+      "slot": 0,
+      "reservation_id": "5c056be40145461db38a6ce49a5e507b",
+      "last_resource_state": {
+        "reservation_id": "5c056be40145461db38a6ce49a5e507b",
+        "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g1",
+        "worker": {
+          "pid": 1545434,
+          "pgid": 1545433,
+          "start_ticks": 149421046
+        },
+        "parent_protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/BENCHMARK_PROTOCOL.json",
+          "sha256": "080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d"
+        },
+        "resource": "kit",
+        "slot": 0,
+        "state": "released",
+        "reserved_unix_s": 1794675268.5898387,
+        "process": {
+          "pid": 1545530,
+          "pgid": 1545530,
+          "start_ticks": 149421173
+        },
+        "pgid": 1545530,
+        "finished_unix_s": 1794675506.7166939
+      },
+      "first_library_verified_unix_s": 1794675269.9073203,
+      "last_library_verified_unix_s": 1794675505.7649226,
+      "last_sample": {
+        "process": {
+          "pid": 1545530,
+          "pgid": 1545530,
+          "start_ticks": 149421173
+        },
+        "alive_identity_match": true,
+        "argv": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+          "--prepared-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1"
+        ],
+        "kit_libraries": [
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+        ],
+        "kit_loaded": true,
+        "gpu_environment": {
+          "CUDA_VISIBLE_DEVICES": "0",
+          "NVIDIA_VISIBLE_DEVICES": "0"
+        },
+        "memory": [
+          "VmHWM:\t 3234540 kB",
+          "VmRSS:\t 3234540 kB"
+        ],
+        "inherited_lock_fds": [
+          {
+            "fd": 4,
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+            "inode": [
+              91,
+              3494629
+            ],
+            "lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+            ],
+            "exclusive_flock_observed": true,
+            "current_inode": [
+              91,
+              3494629
+            ],
+            "current_lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+            ],
+            "still_same_inode": true,
+            "current_exclusive_flock": true
+          },
+          {
+            "fd": 6,
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/0.lock",
+            "inode": [
+              72,
+              69468715
+            ],
+            "lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+            ],
+            "exclusive_flock_observed": true,
+            "current_inode": [
+              72,
+              69468715
+            ],
+            "current_lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69468715 0 EOF"
+            ],
+            "still_same_inode": true,
+            "current_exclusive_flock": true
+          }
+        ],
+        "gpu_active_log_lines": [],
+        "gpu0_active_log_confirmed": false,
+        "stage_progress": {
+          "complete": false,
+          "phase": "lift",
+          "total_physics_steps": 3139,
+          "wall_s": 229.0316671228502,
+          "maxima": {
+            "joint_limit_violation_rad": 5.603133104159497e-07,
+            "mimic_error_rad": 2.0623207092285156e-05,
+            "penetration_m": 4.261729554855265e-05,
+            "palm_position_error_m": 0.005588582742133084,
+            "palm_orientation_error_rad": 0.00797519774921113,
+            "illegal_object_contact_force_n": 0.0,
+            "base_position_drift_m": 0.0,
+            "base_orientation_drift_rad": 0.0
+          },
+          "planning_success": true,
+          "arm_motion_started": true,
+          "first_arm_motion": {
+            "step": 58,
+            "simulation_s": 0.232,
+            "wall_s": 51.108367800945416,
+            "maximum_joint_displacement_rad": 0.00014085292816168327,
+            "meaning": "Observed arm movement; separate from completed execution and successful pickup"
+          }
+        },
+        "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+        "journal_bytes": 288234340
+      }
+    },
+    {
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g6",
+      "slot": 1,
+      "reservation_id": "ae1da268d0ae4f6fa95313e0dc314c8e",
+      "last_resource_state": {
+        "reservation_id": "ae1da268d0ae4f6fa95313e0dc314c8e",
+        "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/stages/execute_g6",
+        "worker": {
+          "pid": 1545434,
+          "pgid": 1545433,
+          "start_ticks": 149421046
+        },
+        "parent_protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/BENCHMARK_PROTOCOL.json",
+          "sha256": "080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d"
+        },
+        "resource": "kit",
+        "slot": 1,
+        "state": "released",
+        "reserved_unix_s": 1794675268.590151,
+        "process": {
+          "pid": 1545529,
+          "pgid": 1545529,
+          "start_ticks": 149421173
+        },
+        "pgid": 1545529,
+        "finished_unix_s": 1794675495.1554463
+      },
+      "first_library_verified_unix_s": 1794675269.9073203,
+      "last_library_verified_unix_s": 1794675493.7112257,
+      "last_sample": {
+        "process": {
+          "pid": 1545529,
+          "pgid": 1545529,
+          "start_ticks": 149421173
+        },
+        "alive_identity_match": true,
+        "argv": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+          "--prepared-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6"
+        ],
+        "kit_libraries": [
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/omni.kit.loop-isaac/bin/libomni.kit.loop-isaac.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.actions.core-1.2.0+00c488ae.lx64.r.cp312/bin/libomni.kit.actions.core_tests.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.audiodeviceenum-1.0.2+00c488ae.lx64.r.cp312/bin/libomni.kit.audiodeviceenum.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.command_tests.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.commands-1.5.0+00c488ae.lx64.r.cp312/bin/libomni.kit.commands.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.exec.core-0.13.6+00c488ae.lx64.r.cp312/bin/libomni.kit.exec.core.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.telemetry-0.5.2+00c488ae.lx64.r.cp312/bin/libomni.kit.telemetry.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.layers-2.7.2+00c488ae.lx64.r.cp312/bin/libomni.kit.usd.layers.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.kit.usd.mdl-1.1.11+00c488ae.lx64.r.cp312/bin/deps/libomni.usdMdl.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.protobuf.lib-1.0.1+00c488ae.lx64.r/bin/libomni.usd.hydra.protoserializerregistry.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd-1.18.0+00c488ae.lx64.r.cp312/bin/libomni.usd.cppcommands.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.core-1.10.10+00c488ae.lx64.r/bin/libomni.usd.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.libs-1.0.3+00c488ae.lx64.r.cp312/bin/libomni.usd-abi.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usd.metrics.assembler-110.1.2+110.1.0.lx64.r.cp312.u7f4/bin/libomni.usd.metrics.assembler.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.usdphysics-110.3.2+110.3.0.lx64.r.cp312.u7f4/bin/libomni.usdphysics.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/kernel/plugins/libomni.kit.app.plugin.so",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/kit/libcarb.so"
+        ],
+        "kit_loaded": true,
+        "gpu_environment": {
+          "CUDA_VISIBLE_DEVICES": "0",
+          "NVIDIA_VISIBLE_DEVICES": "0"
+        },
+        "memory": [
+          "VmHWM:\t 3211612 kB",
+          "VmRSS:\t 3211612 kB"
+        ],
+        "inherited_lock_fds": [
+          {
+            "fd": 4,
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+            "inode": [
+              91,
+              3494629
+            ],
+            "lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+            ],
+            "exclusive_flock_observed": true,
+            "current_inode": [
+              91,
+              3494629
+            ],
+            "current_lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:5b:3494629 0 EOF"
+            ],
+            "still_same_inode": true,
+            "current_exclusive_flock": true
+          },
+          {
+            "fd": 5,
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/resource_slots/kit/1.lock",
+            "inode": [
+              72,
+              69472791
+            ],
+            "lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+            ],
+            "exclusive_flock_observed": true,
+            "current_inode": [
+              72,
+              69472791
+            ],
+            "current_lock_lines": [
+              "lock:\t1: FLOCK  ADVISORY  WRITE 1545434 00:48:69472791 0 EOF"
+            ],
+            "still_same_inode": true,
+            "current_exclusive_flock": true
+          }
+        ],
+        "gpu_active_log_lines": [],
+        "gpu0_active_log_confirmed": false,
+        "stage_progress": {
+          "complete": false,
+          "phase": "lift",
+          "total_physics_steps": 3008,
+          "wall_s": 217.54943424114026,
+          "maxima": {
+            "joint_limit_violation_rad": 9.727900618372587e-08,
+            "mimic_error_rad": 2.2277235984802246e-05,
+            "penetration_m": 8.408306166529655e-05,
+            "palm_position_error_m": 0.005483595404065243,
+            "palm_orientation_error_rad": 0.007718010876442067,
+            "illegal_object_contact_force_n": 0.0,
+            "base_position_drift_m": 0.0,
+            "base_orientation_drift_rad": 0.0
+          },
+          "planning_success": true,
+          "arm_motion_started": true,
+          "first_arm_motion": {
+            "step": 58,
+            "simulation_s": 0.232,
+            "wall_s": 51.226085818139836,
+            "maximum_joint_displacement_rad": 0.00014085292816168327,
+            "meaning": "Observed arm movement; separate from completed execution and successful pickup"
+          }
+        },
+        "journal_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/jobs/g6/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+        "journal_bytes": 270503680
+      }
+    }
+  ],
+  "costs_added": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "planning_calls": 0,
+    "CGR_forwards": 0
+  },
+  "registry": {
+    "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1",
+    "protocol": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/benchmark_execution_20261115_v1/BENCHMARK_PROTOCOL.json",
+      "sha256": "080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d"
+    },
+    "state": "released",
+    "owner": {
+      "pid": 1545434,
+      "pgid": 1545433,
+      "start_ticks": 149421046
+    },
+    "started_unix_s": 1794675268.5875316,
+    "finished_unix_s": 1794675571.5811527
+  },
+  "changed_sources": [],
+  "protocol_unchanged": true,
+  "observations": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_parallel_execution_benchmark_audit_20261115_v1/OBSERVATIONS.jsonl",
+    "sha256": "c6b60b31bcdfacf6585853cfb3458c31288893aece2ffddb04abec57077af5e9"
+  }
+}

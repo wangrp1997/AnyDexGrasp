@@ -1,0 +1,28 @@
+{
+  "schema": "anydex_boya_parallel_benchmark_implementation_verification_v1",
+  "test_command": "cd reproduction/boya && /home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest test_author_parallel_execution_benchmark -v",
+  "tests_passed": 5,
+  "test_wall_s": 0.666,
+  "scientific_costs": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "planning_calls": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0
+  },
+  "test_process_scope": "Two ordinary Python child processes only; real resource FD/flock inheritance, simultaneous process lifetime and group cleanup checked",
+  "actual_original_plan_preflight": {
+    "gestures": [
+      1,
+      6
+    ],
+    "dependencies_verified_per_job": 692,
+    "wall_s": 2.414942719042301,
+    "status": "pass",
+    "original_serial_stage_wall_sum_s": 471.4573510410264
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_parallel_execution_benchmark.py": "0c5ab8a245f6fbe1d8e5c4fae44337b40ce52ded786ea20bb531ec5069533006",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_parallel_execution_benchmark.py": "dc8e8fb9abe1011a7b2e55d49e377258e695a40aa3d8cec52a591fd33d829ffd"
+  }
+}

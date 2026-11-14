@@ -1,0 +1,1355 @@
+{
+  "schema": "anydex_boya_fixed_collection_read_only_completion_summary_v1",
+  "status": "pass",
+  "scope": "Original ten-scene / forty gesture-slot development budget only; initialization audits and existing negative-record review",
+  "batch_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/BATCH_PROTOCOL.json",
+    "sha256": "e0b8aa9f7a53d2b75576900b26cf2ee3d4259631113e099a7ccadac6793bf055"
+  },
+  "auditor": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_scenes_20261114/capture_prefix_checks.py",
+    "sha256": "c42a5e1fd8ad7a0cd98d1b37a72c11ab924f48e58d9c3188661ad5c2793b9a0c"
+  },
+  "finalizer": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/watch_collection_finish.py",
+    "sha256": "1d0e7e036ed797fb6fb3213c2fd356e328f39e520c602f906864bbeb746b1e62"
+  },
+  "previous_capture_summary": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/SUMMARY.json",
+    "sha256": "fcfdea5fffeb3ad3f9fdfd0ca53664c7a28c2b39324d665d80534391426eeb33"
+  },
+  "scene_slots": 10,
+  "gesture_scene_slots": 40,
+  "capture_results": [
+    {
+      "queue_index": 0,
+      "scene_id": "s40_lift_fit_00000_s2026111401",
+      "split": "fit",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_PREFIX1_AUDIT.json",
+        "sha256": "bfac63baedafc2bfabf7a244b099e969051ee0745b7c8cd1b621c8059d704569"
+      },
+      "frames": 750,
+      "contact_rows": 2274278,
+      "gzip_bytes": 75908172,
+      "compressed_contact_sha256": "02e09306ee7be50d7747a01d7107956080d18b1e0189b7f7e65cd1cb75426b23",
+      "logical_jsonl_sha256": "9395ebaced09941976dc16f004dd8938226dc915826f1ab8943fad4dc53aee63",
+      "native_hulls": 1648,
+      "native_max_source_outside_cooked_bound_m": 1.9831489483821945e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_017": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 1319795
+        },
+        "/World/AuthorScene/graspnet_046": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 438612
+        },
+        "/World/AuthorScene/graspnet_011": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 515871
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_017",
+          "vertices": 262146,
+          "source_initial_bottom_m": 0.004999998944450759,
+          "source_final_bottom_m": 0.0004824398009622907,
+          "source_minimum_bottom_m": 0.0004786622826909587,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 1319795,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0007696411629345644,
+            "max_angular_speed_rad_s": 0.019045535187535684,
+            "max_window_translation_m": 1.8852324677824966e-07,
+            "max_window_rotation_rad": 3.8487711914016475e-06
+          }
+        },
+        {
+          "object_id": "graspnet_046",
+          "vertices": 2506593,
+          "source_initial_bottom_m": 0.0050000045625982065,
+          "source_final_bottom_m": 0.0015434123300733724,
+          "source_minimum_bottom_m": 0.001543248919830445,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 438612,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0016810378803924404,
+            "max_angular_speed_rad_s": 0.028286803496079184,
+            "max_window_translation_m": 3.9851901293743647e-07,
+            "max_window_rotation_rad": 6.711149503850709e-06
+          }
+        },
+        {
+          "object_id": "graspnet_011",
+          "vertices": 262146,
+          "source_initial_bottom_m": 0.0049999992894559885,
+          "source_final_bottom_m": 0.00034373431581670444,
+          "source_minimum_bottom_m": 0.0003418244161229843,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 515871,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.000704474542986621,
+            "max_angular_speed_rad_s": 0.029347504757859345,
+            "max_window_translation_m": 2.383114529385343e-06,
+            "max_window_rotation_rad": 9.770172216164786e-05
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "4f0c36d65acfbf59385e40ceb99bdf70fc5f78a8d1325e4b62b31ef4c5f627b0",
+      "observed_scene_sha256": "71763653abd899bb25c64c4ad098b4dedfacc8e64c9ce5a135e08326602ae3b2",
+      "source_ray_error_max_m": 3.27644144371142e-07,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 1,
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "split": "fit",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/s40_lift_fit_00001_s2026111401.json",
+        "sha256": "6741763ce903b6a8eecbf942c20529ea48630ca45c42f95aa416511605fc2e6c"
+      },
+      "frames": 750,
+      "contact_rows": 1892396,
+      "gzip_bytes": 63886617,
+      "compressed_contact_sha256": "a0be136dbbec51d2f74b9f13484d61776a1c7b244be8ea6fb72a7012775710db",
+      "logical_jsonl_sha256": "7ffc7a469bf59a245dae32cbf31a49fe9e9137f4cb194ae488a920c4568b0aec",
+      "native_hulls": 1111,
+      "native_max_source_outside_cooked_bound_m": 1.9894589397389157e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_002": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 386968
+        },
+        "/World/AuthorScene/graspnet_005": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 701797
+        },
+        "/World/AuthorScene/graspnet_060": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 803631
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_002",
+          "vertices": 262130,
+          "source_initial_bottom_m": 0.004999997817408598,
+          "source_final_bottom_m": 0.0006842695581294952,
+          "source_minimum_bottom_m": 0.0006842458736168802,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 386968,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0020046091093780375,
+            "max_angular_speed_rad_s": 0.025990998710351806,
+            "max_window_translation_m": 5.466030494924424e-07,
+            "max_window_rotation_rad": 8.883441943802276e-06
+          }
+        },
+        {
+          "object_id": "graspnet_005",
+          "vertices": 262146,
+          "source_initial_bottom_m": 0.0049999994448738615,
+          "source_final_bottom_m": 0.0015593437029076257,
+          "source_minimum_bottom_m": 0.0015579916212538,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 701797,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0007934554655122809,
+            "max_angular_speed_rad_s": 0.04189303089581044,
+            "max_window_translation_m": 2.178654744832217e-06,
+            "max_window_rotation_rad": 0.00012937763451166353
+          }
+        },
+        {
+          "object_id": "graspnet_060",
+          "vertices": 365532,
+          "source_initial_bottom_m": 0.005000001163485753,
+          "source_final_bottom_m": 0.0007925318215065702,
+          "source_minimum_bottom_m": 0.0007919310969353131,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 803631,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0007621831758978331,
+            "max_angular_speed_rad_s": 0.04207273054964609,
+            "max_window_translation_m": 3.5816530361671084e-06,
+            "max_window_rotation_rad": 0.00019654833391641264
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "9fe1e412cf5e819dd5b517f0b79341341a23e867cc78ac2d97d7f54734b840c2",
+      "observed_scene_sha256": "22fa4eb713dae4e5e7a6aef2166fae6d6ada48bc22c23674db6ba2f24f27e933",
+      "source_ray_error_max_m": 1.8495511805438625e-07,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 2,
+      "scene_id": "s40_lift_fit_00002_s2026111401",
+      "split": "fit",
+      "status": "placement_null_no_capture",
+      "physics_ticks": 0,
+      "initialization_object_steps": 0,
+      "labels_from_null": false
+    },
+    {
+      "queue_index": 3,
+      "scene_id": "s40_lift_fit_00003_s2026111401",
+      "split": "fit",
+      "status": "placement_null_no_capture",
+      "physics_ticks": 0,
+      "initialization_object_steps": 0,
+      "labels_from_null": false
+    },
+    {
+      "queue_index": 4,
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "split": "fit",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/s40_lift_fit_00004_s2026111401.json",
+        "sha256": "fd5cae18cd8e470d11f45c431c7ad0cdfc46044cc71f0a858d9e98a6c7bf2757"
+      },
+      "frames": 750,
+      "contact_rows": 1595112,
+      "gzip_bytes": 54379073,
+      "compressed_contact_sha256": "bc42e230ee2e6567469fb7e7095a89689f27434c4feecf6a325aa6bbf9f904b9",
+      "logical_jsonl_sha256": "e26d5948070fdf9588fca03df1893b5dde197f640173389e7e4e6f70a44f42ca",
+      "native_hulls": 1135,
+      "native_max_source_outside_cooked_bound_m": 1.7653904811366573e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_063": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 612265
+        },
+        "/World/AuthorScene/graspnet_037": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 336822
+        },
+        "/World/AuthorScene/graspnet_015": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 646025
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_063",
+          "vertices": 301209,
+          "source_initial_bottom_m": 0.00499999765490388,
+          "source_final_bottom_m": 0.0016120208498117232,
+          "source_minimum_bottom_m": 0.001610888799735137,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 612265,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0014434065641382087,
+            "max_angular_speed_rad_s": 0.050246884481155336,
+            "max_window_translation_m": 1.4744432755479146e-05,
+            "max_window_rotation_rad": 0.0005244578381329876
+          }
+        },
+        {
+          "object_id": "graspnet_037",
+          "vertices": 244406,
+          "source_initial_bottom_m": 0.005000000642643436,
+          "source_final_bottom_m": 0.0012576441701502572,
+          "source_minimum_bottom_m": 0.0012554578896483252,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 336822,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.000857722919420598,
+            "max_angular_speed_rad_s": 0.03493207241547357,
+            "max_window_translation_m": 7.768735652905776e-06,
+            "max_window_rotation_rad": 0.00032169917841481027
+          }
+        },
+        {
+          "object_id": "graspnet_015",
+          "vertices": 262146,
+          "source_initial_bottom_m": 0.004999998772740807,
+          "source_final_bottom_m": 0.0008872835862309206,
+          "source_minimum_bottom_m": 0.0008715468115773894,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 646025,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.002357820678406298,
+            "max_angular_speed_rad_s": 0.06661994008094099,
+            "max_window_translation_m": 1.4299341321333506e-05,
+            "max_window_rotation_rad": 0.0004166565699595156
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "a765165c6dd032829b5c7d99374a7277cdddd02820e1b143b197c5f714b81860",
+      "observed_scene_sha256": "5bd5c6a0aad4e70f2dbc763c8d9d255b29053d868d789c52ff518f777019f7d5",
+      "source_ray_error_max_m": 2.2933446819362047e-07,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 5,
+      "scene_id": "s40_lift_fit_00005_s2026111401",
+      "split": "fit",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/s40_lift_fit_00005_s2026111401.json",
+        "sha256": "a5634c321fd7ae9b03b68e7f42b9387eb28134c9a364d1f6683b69616d7009c1"
+      },
+      "frames": 750,
+      "contact_rows": 2129577,
+      "gzip_bytes": 71135392,
+      "compressed_contact_sha256": "0a7c73bcd69dd9f71f601ee1f62e51e6a935fdc22080cd8590e78e571000cb74",
+      "logical_jsonl_sha256": "7e98e849d501d12e6ea832d9c7d91f47c5ba0eb7deda66ee149f518c08410335",
+      "native_hulls": 1846,
+      "native_max_source_outside_cooked_bound_m": 1.5248176353725616e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_070": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 314858
+        },
+        "/World/AuthorScene/graspnet_014": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 1435969
+        },
+        "/World/AuthorScene/graspnet_058": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 378750
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_070",
+          "vertices": 368117,
+          "source_initial_bottom_m": 0.00499999918741801,
+          "source_final_bottom_m": 0.0010263615720431662,
+          "source_minimum_bottom_m": 0.0010259712623375342,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 314858,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.002480779307161409,
+            "max_angular_speed_rad_s": 0.04275278235965886,
+            "max_window_translation_m": 4.29579317617183e-05,
+            "max_window_rotation_rad": 0.0007439412676900418
+          }
+        },
+        {
+          "object_id": "graspnet_014",
+          "vertices": 262146,
+          "source_initial_bottom_m": 0.0050000051073163625,
+          "source_final_bottom_m": 0.0005520627666548879,
+          "source_minimum_bottom_m": 0.0005493574034412009,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 1435969,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.001468751421403721,
+            "max_angular_speed_rad_s": 0.050008913901049085,
+            "max_window_translation_m": 1.2052464035322163e-05,
+            "max_window_rotation_rad": 0.00040716631395506636
+          }
+        },
+        {
+          "object_id": "graspnet_058",
+          "vertices": 175781,
+          "source_initial_bottom_m": 0.004999999266824762,
+          "source_final_bottom_m": 0.002052884980368222,
+          "source_minimum_bottom_m": 0.00205144971164601,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 378750,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0018914303786692972,
+            "max_angular_speed_rad_s": 0.058979817059414345,
+            "max_window_translation_m": 1.2833395286829547e-06,
+            "max_window_rotation_rad": 2.949513126782559e-05
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "7f3f74058a1cbcb1f4c379f4fac3dd90b01ddb4801e616de024afa2075752444",
+      "observed_scene_sha256": "4551ea4b33a608f671e37ba86aae5c5b20ef01bfc4daba593a23c525e8ce8b54",
+      "source_ray_error_max_m": 1.4053713903727783e-07,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 6,
+      "scene_id": "s40_lift_fit_00006_s2026111401",
+      "split": "fit",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/s40_lift_fit_00006_s2026111401.json",
+        "sha256": "1af415bf5e1899c5b1ba99130d49dc2dbaf16fc0508686a25fd77797594eb0ba"
+      },
+      "frames": 750,
+      "contact_rows": 1368551,
+      "gzip_bytes": 45494418,
+      "compressed_contact_sha256": "f6138755f2c689e7e280fd785d159349f24c0c6d7f913fcba043973045316f3b",
+      "logical_jsonl_sha256": "614a394262b2ec2e8c68c1c9b51ff39e13c6e705a2f06a6c8737e2e692df294a",
+      "native_hulls": 696,
+      "native_max_source_outside_cooked_bound_m": 1.8991098555729663e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_037": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 336773
+        },
+        "/World/AuthorScene/graspnet_029": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 464317
+        },
+        "/World/AuthorScene/graspnet_038": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 567461
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_037",
+          "vertices": 244406,
+          "source_initial_bottom_m": 0.005000000743388144,
+          "source_final_bottom_m": 0.001257604184559228,
+          "source_minimum_bottom_m": 0.0012552548968130343,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 336773,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0009395198183740061,
+            "max_angular_speed_rad_s": 0.03179497308049302,
+            "max_window_translation_m": 3.7132012081580996e-06,
+            "max_window_rotation_rad": 0.00015898262502418538
+          }
+        },
+        {
+          "object_id": "graspnet_029",
+          "vertices": 332460,
+          "source_initial_bottom_m": 0.00499999985997523,
+          "source_final_bottom_m": 0.0005490649234769877,
+          "source_minimum_bottom_m": 0.0005478085140502281,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 464317,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0007959287032333623,
+            "max_angular_speed_rad_s": 0.062437052369263876,
+            "max_window_translation_m": 2.9368574801529753e-07,
+            "max_window_rotation_rad": 8.008178494172893e-06
+          }
+        },
+        {
+          "object_id": "graspnet_038",
+          "vertices": 247564,
+          "source_initial_bottom_m": 0.005000000099068216,
+          "source_final_bottom_m": 0.0013396754741063638,
+          "source_minimum_bottom_m": 0.0013393012289863414,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 567461,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.001520857450555548,
+            "max_angular_speed_rad_s": 0.025405879385317916,
+            "max_window_translation_m": 3.3522396874033545e-06,
+            "max_window_rotation_rad": 0.00013864500986170237
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "14775beeab42b1531a1ad7f68d4ee5710bf2c15350e9a32d457a517361a91a92",
+      "observed_scene_sha256": "362644b275d606558e930401c4a2077a522d0005cc22028f064f4e59c2916bc4",
+      "source_ray_error_max_m": 1.7918324746180048e-07,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 7,
+      "scene_id": "s40_lift_fit_00007_s2026111401",
+      "split": "fit",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/s40_lift_fit_00007_s2026111401.json",
+        "sha256": "7ea9a5637ea4b420ca126cac2f66571ab5219b004484aa147a817488a7aa46d2"
+      },
+      "frames": 750,
+      "contact_rows": 1637169,
+      "gzip_bytes": 54861580,
+      "compressed_contact_sha256": "db644e04420ced5e1679789dd27abc318eac9989b57465ace3f9fcd32f404f2c",
+      "logical_jsonl_sha256": "b602e2ff90bd10f2edb77ec0d58383154a95403662f1fa895a5b5d42eb977da3",
+      "native_hulls": 985,
+      "native_max_source_outside_cooked_bound_m": 1.8690932011733146e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_040": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 576733
+        },
+        "/World/AuthorScene/graspnet_030": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 448138
+        },
+        "/World/AuthorScene/graspnet_056": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 612298
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_040",
+          "vertices": 221937,
+          "source_initial_bottom_m": 0.005000001711804217,
+          "source_final_bottom_m": 0.0015835413142736322,
+          "source_minimum_bottom_m": 0.0015830267160240157,
+          "all_750_supported_ticks": 744,
+          "last250_supported_ticks": 250,
+          "contact_rows": 576733,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.00048370528313791455,
+            "max_angular_speed_rad_s": 0.01598175786430056,
+            "max_window_translation_m": 1.3577290553992788e-06,
+            "max_window_rotation_rad": 4.45286790170157e-05
+          }
+        },
+        {
+          "object_id": "graspnet_030",
+          "vertices": 285165,
+          "source_initial_bottom_m": 0.0049999998709102725,
+          "source_final_bottom_m": 0.00024454322835839107,
+          "source_minimum_bottom_m": 0.00024429616526701163,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 448138,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0008693941671615802,
+            "max_angular_speed_rad_s": 0.063341786214888,
+            "max_window_translation_m": 1.283007637020717e-06,
+            "max_window_rotation_rad": 8.334395161886436e-05
+          }
+        },
+        {
+          "object_id": "graspnet_056",
+          "vertices": 488891,
+          "source_initial_bottom_m": 0.0049999984811952905,
+          "source_final_bottom_m": -9.51677474468407e-05,
+          "source_minimum_bottom_m": -9.532539095731887e-05,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 612298,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0005514562302414925,
+            "max_angular_speed_rad_s": 0.012677505791006866,
+            "max_window_translation_m": 4.5555670154768804e-07,
+            "max_window_rotation_rad": 1.9188622818579462e-05
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "211a810e4b70f02bbf334dd30b03a41013614db37e72295e008b5f47a16e79ef",
+      "observed_scene_sha256": "cdef22fa638644080022ac156c911f77d4f9f724af7e30f5e40c1a5aced8265f",
+      "source_ray_error_max_m": 8.451669808451356e-08,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 8,
+      "scene_id": "s40_lift_internal_00000_s2026111401",
+      "split": "internal",
+      "status": "complete",
+      "full_audit": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_QUEUE_AUDIT/s40_lift_internal_00000_s2026111401.json",
+        "sha256": "157cc7ae2a7613d3c5930a16e050876313afa1c1c8d2465d7e19028e7752e7ca"
+      },
+      "frames": 750,
+      "contact_rows": 2900085,
+      "gzip_bytes": 96550641,
+      "compressed_contact_sha256": "06b6296cd0a47fb0de777ae9a9154310c469dee64704586127542f4a5603e34f",
+      "logical_jsonl_sha256": "3d71ad332b9cf09fbefec252c77527ebd6238e7c69525401248cdcc99f6c0116",
+      "native_hulls": 2260,
+      "native_max_source_outside_cooked_bound_m": 1.9921994313410366e-05,
+      "all_body_support": {
+        "/World/AuthorScene/graspnet_021": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 1731800
+        },
+        "/World/AuthorScene/graspnet_007": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 666662
+        },
+        "/World/AuthorScene/graspnet_069": {
+          "final_window_supported_ticks": 250,
+          "contact_rows": 501623
+        }
+      },
+      "bodies": [
+        {
+          "object_id": "graspnet_021",
+          "vertices": 262146,
+          "source_initial_bottom_m": 0.005000001847645114,
+          "source_final_bottom_m": 0.0004868936631159393,
+          "source_minimum_bottom_m": 0.0004864028407977859,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 1731800,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0023130467138674816,
+            "max_angular_speed_rad_s": 0.08203435899439158,
+            "max_window_translation_m": 4.18779738346663e-05,
+            "max_window_rotation_rad": 0.0014825037172152206
+          }
+        },
+        {
+          "object_id": "graspnet_007",
+          "vertices": 262140,
+          "source_initial_bottom_m": 0.005000012736147613,
+          "source_final_bottom_m": 0.000987859202433869,
+          "source_minimum_bottom_m": 0.0009876215900178065,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 666662,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.0012854658848013582,
+            "max_angular_speed_rad_s": 0.02744134731424909,
+            "max_window_translation_m": 9.025356686400141e-07,
+            "max_window_rotation_rad": 1.6787492390197057e-05
+          }
+        },
+        {
+          "object_id": "graspnet_069",
+          "vertices": 355357,
+          "source_initial_bottom_m": 0.004999999313200349,
+          "source_final_bottom_m": 0.00040420049116342976,
+          "source_minimum_bottom_m": 0.00040017062134001594,
+          "all_750_supported_ticks": 743,
+          "last250_supported_ticks": 250,
+          "contact_rows": 501623,
+          "independent_stability": {
+            "max_linear_speed_m_s": 0.00015798162501855296,
+            "max_angular_speed_rad_s": 0.004942534256339098,
+            "max_window_translation_m": 2.999552763413457e-07,
+            "max_window_rotation_rad": 6.198094964367702e-06
+          }
+        }
+      ],
+      "actual_gpu_active_log_lines": [
+        "| 0   | NVIDIA RTX PRO 6000 Blackwell .. | Yes: 0 |     | 97887   MB | 10de      | 0          |"
+      ],
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "render_physics_steps": 0,
+      "observation_sha256": "77ec779759be62367ec222b621c8e00efbfb83fea233ffbbbc37eac906ec2e56",
+      "observed_scene_sha256": "81c8ad961eb3fe94b0548b375d9ae0eba3b14395adc0926a2bb471f200e1fd0a",
+      "source_ray_error_max_m": 1.2836691010154055e-07,
+      "grasp_attempts_during_capture": 0,
+      "physical_steps_added_by_audit": 0
+    },
+    {
+      "queue_index": 9,
+      "scene_id": "s40_lift_internal_00001_s2026111401",
+      "split": "internal",
+      "status": "placement_null_no_capture",
+      "physics_ticks": 0,
+      "initialization_object_steps": 0,
+      "labels_from_null": false
+    }
+  ],
+  "initialization_ticks_known": 5250,
+  "initialization_object_steps_known": 15750,
+  "complete_capture_contact_rows": 13797168,
+  "complete_capture_gzip_bytes": 462215893,
+  "physical_cost_unknown_scenes": [],
+  "ledger_statuses": {
+    "null_geometry": 10,
+    "labelled": 14,
+    "placement_null": 12,
+    "infrastructure_failure": 1,
+    "no_candidate": 3
+  },
+  "ledger_bindings": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000000_g1.json",
+      "sha256": "5b65623c46379c400dce466de610b85e7b2d5818a2d83222c94ebcb6b2b4974a"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000000_g6.json",
+      "sha256": "e9aef97338a1d4d78c70524d00647adee98971b109cd06c1e8170ae0c3d26225"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000000_g7.json",
+      "sha256": "b1579143924b466fd92ab64ea5b86efeb64bde1f73d2ea14cd9ae3a1ce4aab52"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000000_g8.json",
+      "sha256": "e1370e0353fe69ce6424c29d12d5906e5024c347e727e614654ef9e9dbf384eb"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g1.json",
+      "sha256": "a1163a4f2340240d6cdd920ed18a056a8cd97919b4512176bb2cf79f2dc7461a"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g6.json",
+      "sha256": "cabd77acb40e03240660418f02b9183fbdee7a8915e3718e40d0a7e023857c31"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g7.json",
+      "sha256": "488e2dd2bb830343d59bd0b65161586e0aa5fc1f2d077421d15e640a0ca4b042"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g8.json",
+      "sha256": "aa338dfb41db74fabfe5b054631c1ec1fc23f8d346b08df1e13cd84eb9362ae2"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000002_g1.json",
+      "sha256": "22649f54adbebe4db87c895b0e8c8c22bf82f7ec97e7662dc7aa491efac3359d"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000002_g6.json",
+      "sha256": "213511a35cca8082f2b5ae987e1eda29c90e71e7732d38dd4c45f9a363e2049a"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000002_g7.json",
+      "sha256": "f4df314821dde8119861dd81c3a25f151b2bf6374360725e196870ccf8ac508d"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000002_g8.json",
+      "sha256": "60feddf42f7301f313a6762d22e8111f2e4beb8baab86ab13f328e5224696172"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000003_g1.json",
+      "sha256": "74c455a12fcca841cf9a55d27e70df6293d3bbaa3e6480299835eb17846a99ab"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000003_g6.json",
+      "sha256": "4377a8fbc53b2f26e6d782a7af799d6a93c732bb0433fe9c49f0b7627c84f549"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000003_g7.json",
+      "sha256": "7f420f42b22044fa67b080fd6e162a9eb110e0826010f983b4af8a20241a8061"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000003_g8.json",
+      "sha256": "3816f86370ca70fb8eb6419ea8cf2589eada031e2b990ec4c49709de89fe92bd"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g1.json",
+      "sha256": "c3d46d8b3de0e4acb252497827f0c92e5848efac2210432252773e3e56b65869"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g6.json",
+      "sha256": "1f9cca952583d557bc4648e5f2df9213552ebc1e8d41b94975d3fba4fe3bc0a4"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g7.json",
+      "sha256": "0c392cba42bfe730500096873b02826550a851079f4ac51c5976edcc4912d6c2"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g8.json",
+      "sha256": "99e0b952c37537d667c7cfef6468d5b7a45628c5f292b6eb11aab71139b5a5d2"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000005_g1.json",
+      "sha256": "24cb65f92c1ce62aac37d65f5a954b120a97220aabea039db2678a47ba6c54a9"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000005_g6.json",
+      "sha256": "88c843a10fbe0cd9934f0d9178de67d93f2a86dec635a1c4c073e16cdfbe5669"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000005_g7.json",
+      "sha256": "ffd37c13eb9c9aed9394cdff861899399fda2c828bc345f89da0d5366a54c797"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000005_g8.json",
+      "sha256": "10c27d38e72b0c15c89e2f16331990a64c69c17bfd01549a1473fd723776143a"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g1.json",
+      "sha256": "551d80546163fbfb92f3fffaa63a8d584a5d3a7f25a4dd27c550e58f738f9087"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g6.json",
+      "sha256": "209670a870092914f780e8449d5d802225b2b104722aa33be8ef8008a42e1432"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g7.json",
+      "sha256": "eca016d98ea1a5cdfe3f51cdfb924a6536926c53dbe24d57393045df643b449f"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g8.json",
+      "sha256": "2cc7fc40df74485add76e1223da84359ad7de8ee9549a9e2913d0d58e9f4d0a4"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000007_g1.json",
+      "sha256": "f66b4100cbad6101dcf318199d8f007d600e6c97ebf9ed06cb8d059090ed475a"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000007_g6.json",
+      "sha256": "f7a0058b8d8da3935f0b182e5cf60c605406c992e27a23e8c462f75cbb002dc1"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000007_g7.json",
+      "sha256": "39e5e61d4a1a71c795f8f9e453fdee441727fc465781163f23e447e80c0631ca"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000007_g8.json",
+      "sha256": "4f2ab369a47b05bad38a5d6fda145d2cd7111e66a11fcd0c871b6e481c8b24cd"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000008_g1.json",
+      "sha256": "62d1cdefe3bdd7a8c676b22629af517900fd0bf96a8f03357482204f70c83760"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000008_g6.json",
+      "sha256": "5c9dc5927631d060aa2a73c563d9aa031e7af9b7539478b4c35c88c084bb605b"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000008_g7.json",
+      "sha256": "3242c5adb752e107ececd64cdf4e10c5e3ab23291d92fb58966047ad694f02f6"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000008_g8.json",
+      "sha256": "4f26ee4b0e77edff41164dcbd6787f7fec2a593385c94242bb1cbfe7d85479e8"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000009_g1.json",
+      "sha256": "b5650d2fc71383dbf501c568d6416320dd802bd429e58a3c6fdde68b9a587a52"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000009_g6.json",
+      "sha256": "00ec63c648165f3806f0b59c83ff55b275f2e9d2ec073b1a625900501e0d3447"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000009_g7.json",
+      "sha256": "2a66f5d488d906fe0af54e629a5a0e29a62d103d3991b66745ab28d55c1f6064"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000009_g8.json",
+      "sha256": "e5e20bcb925361f10cb05cc9087db15d3ed09b29f06e2daf915f88ab659683b1"
+    }
+  ],
+  "existing_record_labels": {
+    "1": 10,
+    "0": 4
+  },
+  "existing_record_bindings": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/COLLECTION_RECORD.json",
+      "sha256": "f191f6c5c257959f2db998d80f5bb22909fd1595e7fc696ff477cd4a88e9e950"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/COLLECTION_RECORD.json",
+      "sha256": "2dfa2deb70ad81e0047a52bebeb49e53bee2a7bbf9d7a49cef1bba8a95e52db2"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/COLLECTION_RECORD.json",
+      "sha256": "d043285407ed3a765deade37cb4f708d74e4e6c2fa8b69983738d49a4144516c"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/COLLECTION_RECORD.json",
+      "sha256": "ef15730b684ac3fb5991a801df20903250b63d658407b26b9f1b59da20db28db"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/COLLECTION_RECORD.json",
+      "sha256": "c4938ec8a37bee3a19f517171bbf8d65dbb708c98bf1756fff9b91262fc55931"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/COLLECTION_RECORD.json",
+      "sha256": "3586bc4c6a97e3044a19298c96b1ca94eae5be30729fd8699618cc3e8b62dbc4"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/COLLECTION_RECORD.json",
+      "sha256": "ebe50b592dff191d12813492493d61801e3dca7278c8dcab3279be02a36a3503"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/COLLECTION_RECORD.json",
+      "sha256": "91669ec3bf4424b66a32d1aafe2b7d318bce6a95a8c15ac60101156f4363783c"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000005_s40_lift_fit_00005_s2026111401/g1/COLLECTION_RECORD.json",
+      "sha256": "ac9801afed4da2703b625a4316f098cf5117c124219abfa11824ddd1c84d9386"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000005_s40_lift_fit_00005_s2026111401/g8/COLLECTION_RECORD.json",
+      "sha256": "2e8d5ec5ce57d8dcf0160aebed4155c3a57027e6e07e17740a3c64b7615eaa91"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g1/COLLECTION_RECORD.json",
+      "sha256": "a999e72a289ef61e70a690fa5f28b3ef27e03f7649c6350633dda542cc785507"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g6/COLLECTION_RECORD.json",
+      "sha256": "a56bd229690f2dad5f0bc0560c6cfb71b15c616ed6786509e8be278ba5cda86f"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g7/COLLECTION_RECORD.json",
+      "sha256": "ee63661338619aace3bb6c2466a14c07d506be66068df849f55bf6172472443d"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g8/COLLECTION_RECORD.json",
+      "sha256": "d83da7c9913acf835a1482755fa7ba9bc7f1b57b41207085ab95c633e855e84d"
+    }
+  ],
+  "negative_record_reviews": [
+    {
+      "prepared_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1",
+      "original_label": 0,
+      "status": "existing_certified_negative_review_pass",
+      "scope": "Read certified runtime audit and evaluation; no repeated contact journal decode",
+      "physics_steps": 3374,
+      "phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 2024,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "original_validity_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      },
+      "objects": [
+        {
+          "object_id": "graspnet_063",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": -1.4901161193847656e-08,
+          "final_source_bottom_m": 0.0016118677493133955,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_037",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": -5.774199962615967e-08,
+          "final_source_bottom_m": 0.001257899303423942,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_015",
+          "qualifying_steps": 89,
+          "longest_observed_pickup_run_s": 0.356,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": -0.00635509192943573,
+          "final_source_bottom_m": 0.0008750713660189494,
+          "peak_held_reference_rise_m": 0.01754394918680191,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "minimum_continuous_hold_s": null,
+      "bin_geometry_count": 0,
+      "bindings": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/COLLECTION_RECORD.json",
+          "sha256": "c4938ec8a37bee3a19f517171bbf8d65dbb708c98bf1756fff9b91262fc55931"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/RUNTIME_AUDIT.json",
+          "sha256": "2df8d6093161b9ec9a7108a311d07fdabb1c05446d925fd0f59c4896fe0644d1"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/LIFT_EVALUATION.json",
+          "sha256": "2228e0f74ecfda4669b78f6f60e4769d70ed28472d1643892b754e92f0d13b19"
+        }
+      ]
+    },
+    {
+      "prepared_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8",
+      "original_label": 0,
+      "status": "existing_certified_negative_review_pass",
+      "scope": "Read certified runtime audit and evaluation; no repeated contact journal decode",
+      "physics_steps": 3582,
+      "phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 2232,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "original_validity_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      },
+      "objects": [
+        {
+          "object_id": "graspnet_063",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 1.1548399925231934e-07,
+          "final_source_bottom_m": 0.0016119270596707813,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_037",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 8.381903171539307e-08,
+          "final_source_bottom_m": 0.0012579925694613733,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_015",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": -0.012147922068834305,
+          "final_source_bottom_m": 0.0008774006175765112,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "minimum_continuous_hold_s": null,
+      "bin_geometry_count": 0,
+      "bindings": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/COLLECTION_RECORD.json",
+          "sha256": "91669ec3bf4424b66a32d1aafe2b7d318bce6a95a8c15ac60101156f4363783c"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/RUNTIME_AUDIT.json",
+          "sha256": "6203efa8b978740f7b181fb5d1cecde80c47b4dfb5dacd71916160e33ccecc58"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/execution/LIFT_EVALUATION.json",
+          "sha256": "fb6db943cecec753aa085601f29e9c3a196be9527c9b16abb0bc7591c37c799e"
+        }
+      ]
+    },
+    {
+      "prepared_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000005_s40_lift_fit_00005_s2026111401/g8",
+      "original_label": 0,
+      "status": "existing_certified_negative_review_pass",
+      "scope": "Read certified runtime audit and evaluation; no repeated contact journal decode",
+      "physics_steps": 3016,
+      "phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 1666,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "original_validity_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      },
+      "objects": [
+        {
+          "object_id": "graspnet_070",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 5.587190389633179e-05,
+          "final_source_bottom_m": 0.0010386542870912119,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_014",
+          "qualifying_steps": 37,
+          "longest_observed_pickup_run_s": 0.148,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 0.00012783333659172058,
+          "final_source_bottom_m": 0.0005380717804350822,
+          "peak_held_reference_rise_m": 0.013764597475528717,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_058",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 1.862645149230957e-08,
+          "final_source_bottom_m": 0.0020533619895145537,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "minimum_continuous_hold_s": null,
+      "bin_geometry_count": 0,
+      "bindings": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000005_s40_lift_fit_00005_s2026111401/g8/COLLECTION_RECORD.json",
+          "sha256": "2e8d5ec5ce57d8dcf0160aebed4155c3a57027e6e07e17740a3c64b7615eaa91"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000005_s40_lift_fit_00005_s2026111401/g8/RUNTIME_AUDIT.json",
+          "sha256": "14f6f057ea6c5392c9642e0c47ecbe4f6458f8da7a42bb8ef85bde8373aa1d37"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000005_s40_lift_fit_00005_s2026111401/g8/execution/LIFT_EVALUATION.json",
+          "sha256": "02dc034610649d879e963d0d0c781a8fb296dcf222c95ee035396a27d772c65a"
+        }
+      ]
+    },
+    {
+      "prepared_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g6",
+      "original_label": 0,
+      "status": "existing_certified_negative_review_pass",
+      "scope": "Read certified runtime audit and evaluation; no repeated contact journal decode",
+      "physics_steps": 3011,
+      "phase_counts": {
+        "settle": 50,
+        "home_to_pregrasp": 1661,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "lift": 500
+      },
+      "original_validity_gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_arm_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true,
+        "all_dynamic_contacts": true,
+        "all_dynamic_objects_no_arm_support": true,
+        "author_phase_order": true,
+        "no_runtime_error": true,
+        "no_early_physical_stop": true
+      },
+      "objects": [
+        {
+          "object_id": "graspnet_037",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": -5.587935447692871e-09,
+          "final_source_bottom_m": 0.001257813939320028,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_029",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 6.05359673500061e-08,
+          "final_source_bottom_m": 0.0005486001081785128,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "object_id": "graspnet_038",
+          "qualifying_steps": 0,
+          "longest_observed_pickup_run_s": 0.0,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final_reference_rise_m": 0.054248254746198654,
+          "final_source_bottom_m": 0.003607422447707606,
+          "peak_held_reference_rise_m": null,
+          "final_state_still_lifted_and_bearing": false,
+          "task_success": false,
+          "final_finger_loads_n": [
+            4.3756513595581055,
+            4.459386397153139,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "minimum_continuous_hold_s": null,
+      "bin_geometry_count": 0,
+      "bindings": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g6/COLLECTION_RECORD.json",
+          "sha256": "a56bd229690f2dad5f0bc0560c6cfb71b15c616ed6786509e8be278ba5cda86f"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g6/RUNTIME_AUDIT.json",
+          "sha256": "d14f098dd62e8b5d147bb9b9e19752f4b0e6170724ee8cfe9c6b285573544387"
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000006_s40_lift_fit_00006_s2026111401/g6/execution/LIFT_EVALUATION.json",
+          "sha256": "f8340c6391591959ba5c175282a2d3dc54b9c0cb60a9fcf459da90be07f3a011"
+        }
+      ]
+    }
+  ],
+  "first_negative_independent_trace_review": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/NEGATIVE_TRACE_REVIEW/s40_lift_fit_00004_s2026111401_g1.json",
+    "sha256": "a5d995df79db94fcd870f1ccaf4b6dc572aae00e60a561e99a1201e955399d8d"
+  },
+  "costs_added": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "planning_calls": 0,
+    "CGR_forwards": 0,
+    "labels_created": 0,
+    "training_updates": 0
+  },
+  "limitations": [
+    "Existing certified negative audits are read rather than contact-recomputed again",
+    "Native20um is an import-preservation check, not exact source CAD collision geometry",
+    "This audit does not train a model or claim full algorithm alignment or external success rate"
+  ]
+}

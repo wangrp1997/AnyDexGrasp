@@ -1,0 +1,76 @@
+{
+  "schema": "anydex_boya_parallel_benchmark_independent_closeout_v1",
+  "status": "pass",
+  "purpose": "diagnostic_only",
+  "exclude_training": true,
+  "new_training_labels": 0,
+  "actual_kit_processes": [
+    1545529,
+    1545530
+  ],
+  "actual_gpu0_processes_confirmed_by_nvidia_smi": [
+    1545529,
+    1545530
+  ],
+  "gpu1_task_processes_observed": false,
+  "independent_host_process_and_library_verification": true,
+  "distinct_kit_slots_and_shared_global_exclusive_flock": true,
+  "observed_library_verified_kit_overlap_span_s": 223.80390548706055,
+  "kit_overlap_scope": "Span of repeated host identity/library observations; separate from scheduler stage overlap",
+  "two_original_contact_journals_growing": true,
+  "all_original_commands_and_native_expanded_targets_exact": true,
+  "actual_steps": {
+    "g1": 3139,
+    "g6": 3008,
+    "total": 6147
+  },
+  "total_physics_seconds": 24.588,
+  "dynamic_object_steps": 18441,
+  "contact_points_independently_certified": 15885725,
+  "scientific_runtime_audits": {
+    "g1": "pass",
+    "g6": "pass"
+  },
+  "persisted_diagnostic_outcomes": {
+    "g1": 1,
+    "g6": 1
+  },
+  "original_serial_stage_wall_sum_s": 471.4573510410264,
+  "new_execution_stage_span_s": 237.84381341934204,
+  "observed_execution_stage_speedup": 1.9822140599881852,
+  "benchmark_pair_wall_including_audits_s": 302.14844434708357,
+  "speedup_scope": "Historical original execution-stage wall sum / new execution-stage span; includes launch, native work, final source checks and cleanup. Initial per-stage dependency checks precede the stage timer. New independent runtime audits and outer verification are excluded from this ratio.",
+  "no_fresh_randomized_serial_pair": true,
+  "no_full_pipeline_speedup_claim": true,
+  "no_population_success_rate_claim": true,
+  "unknown_step_starts": 0,
+  "infrastructure_failures": 0,
+  "retries": 0,
+  "new_planning_calls": 0,
+  "new_CGR_forwards": 0,
+  "new_model_forwards": 0,
+  "new_training_updates": 0,
+  "all_frozen_dependencies_and_sources_unchanged": true,
+  "original_execution_started_markers": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/EXECUTION_STARTED.json",
+      "sha256": "8eddd0d9f8608212b7d5fb68ee96f5d70c01ba77e2cbf2854135aee31058ff21",
+      "unchanged": true
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/EXECUTION_STARTED.json",
+      "sha256": "65f07d7385e46f47ce00d7eff9acb954d9640201bc7e3998582567ab49b4f2cb",
+      "unchanged": true
+    }
+  ],
+  "both_processes_and_process_groups_gone": true,
+  "all_kit_slots_released": true,
+  "raw_auditor_eligibility_scope": "The unchanged scientific auditor certifies the physical labels and may report formal_training_eligible=true; the outer benchmark protocol independently excludes both repeated diagnostic records from all collection/training totals.",
+  "observer_and_closeout_added_costs": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "planning_calls": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0
+  }
+}

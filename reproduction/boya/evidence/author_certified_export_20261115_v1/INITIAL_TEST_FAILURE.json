@@ -1,0 +1,14 @@
+{
+  "schema": "anydex_boya_development_test_failure_v1",
+  "tests": 7,
+  "wall_s": 5.871,
+  "errors": 1,
+  "failing_test": "test_wave_uses_same_admitted_prefix_and_certificates",
+  "error": "ValueError('Actual lift-task ready preparation required')",
+  "cause": "Synthetic fixture did not mock W._admit second validate_trial; real native preparation is intentionally absent",
+  "correction": "Fixture-only mock returns the already frozen synthetic trial; production entry unchanged",
+  "source_sha256": "d0ee9a43baf5fb61fd6d091e8c7b3b64fc0a914538896c1c6e3bae3b2b99a720",
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "numeric_audit_replays": 0
+}

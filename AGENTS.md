@@ -1,6 +1,14 @@
 # AnyDexGrasp 独立复现工作区
 
-## 2026-11-14 最新：public固定开发采集已有10条有效标签，7正3负，正式训练仍0
+## 2026-11-15 当前：两个固定开发预算已结束，累计15条新标签，正式训练0
+
+主线为公开代码＋发布模型的Boya无箱稳定提起适配，先采集真实标签、再训练、最后冻结外部评测。旧development/batch_v1已结束：40槽产生14条fit标签=10正4负，g1/6/7/8为4/3/3/4，另10null_geometry、3no_candidate、12placement_null、1准备infra。新development_waves/waves_v1固定fresh6也已结束：24槽=1条internal g7正标签＋4null_geometry＋7no_candidate＋12placement_null；3次完整capture共2250初始化tick/6750对象步，实际执行3242步，0infra/0未知执行成本。累计14fit＋1internal=15条有效新标签，不自动并入旧435；正式训练、新正式模型与训后外部评测均0。这些是采集标签，不能报成新模型成功率。
+
+fresh6实际最大Kit重叠仅1，不能以fresh6本身证明双Kit并发。另立的吞吐benchmark已完成：旧成功g1/g6各一次3139/3008步，两原numeric audit通过，两标签均正但明确排除训练，不能混入上述15条。相同两条旧执行stage合471.457s，新并行执行span237.844s，约1.982倍；这只是历史串行对照的执行段倍率，不是新配对完整采集倍率，含两审计总302.148s。独立host观察确认2Kit同时存活、同区间两journal增长、GPU0 FD与资源slot。benchmark协议SHA080e470ce022322b7b4a7ec73afadb7edba6bc568d3912682b4e3bb148d11d5d，最终证据见新总报告。旧NUL配置失败原样保留，原因未定且不重试。正式目标仍每型1000fit＋另200internal，当前不足；正式总场景/尝试预算尚未冻结，不自动扩采或按正负比例补例。
+
+后续架构参考已检出的kywch/pixi常驻环境/模型循环与本机官方IsaacLab场景克隆、批量状态和相机接口；常驻/官方向量环境尚未实现或运行，不再追加局部数学优化。具体复用接点见reproduction/boya/AUTHOR_RESIDENT_REUSE_PLAN_20261115.md；阶段总报告为reproduction/boya/AUTHOR_PARALLEL_COLLECTION_RESULTS_20261115.md。完整采集、标签及成本以public原ledger/PROGRESS和轻量审计为准。下面均按日期保留历史快照，其中“运行中”“仅freeze”“新增0标签”“搬运投放”等不表示当前状态，也不恢复已被用户撤销的投放要求。只更新滚动文档，不回写冻结源码、历史证据或失败；阶段轻量成果commit/push用户origin，大数据忽略，CanonDex只读。
+
+## 2026-11-14 历史快照：public固定开发采集当时已有10条有效标签，7正3负
 
 接续快照：四型新fit标签g1/6/7/8为3/2/2/3，共10条=7正3负，internal仍0；原10场景固定预算继续运行，不能把7/10当训后成功率。新增三场景wave调度/独立导出，23项组合检查通过，但尚无实际并发或加速证据。独立fresh6仅freeze（3fit+3internal/seed2026111402，3ready+3placement_null），0启动；因旧批次index5/g6准备时BACKEND.json在写后SHA绑定到读取间变为2150字节全NUL，保留infra且0执行/不记负例/不重试，原因未定，暂不启动新wave。旧预算的其余有效任务继续按原规则执行，未修改冻结源码。正式目标仍每型1000fit+200internal，不自动混旧435；正式训练/新模型外部评测均0。当前数量继续以ledger为准，以下首标签段为较早快照。
 

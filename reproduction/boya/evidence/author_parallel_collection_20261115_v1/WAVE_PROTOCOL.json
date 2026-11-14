@@ -1,0 +1,45 @@
+{
+  "schema": "anydex_boya_author_collection_waves_v1",
+  "task": "declared_boya_clutter_lift_v1",
+  "plan": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/WAVE_PLAN.json",
+    "sha256": "74d8ca0032fd45bd474572e06e6807c30f94806a90b0fa17b0444b55f8ab78db"
+  },
+  "child_index": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development_waves/waves_v1/CHILD_FREEZE_INDEX.json",
+    "sha256": "a83c0a841e4e15f185cfb40a04b7096019ac8909d41ad9983e251617fe3da8dd"
+  },
+  "sources": {
+    "author_collection_waves.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_waves.py",
+      "sha256": "afc7d78face25ce8102458c9a351c4a2cd6f0db45103c2c3dd13478d6496561c"
+    },
+    "author_collection_wave_resources.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py",
+      "sha256": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b"
+    },
+    "author_collection_wave_export.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_export.py",
+      "sha256": "3252143090a204ccd5fa450fc613b301701d4a4be1d6924ba584081f2b6a3e1f"
+    },
+    "author_collection_batch.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+      "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+    }
+  },
+  "quotas": {
+    "fit": 1000,
+    "internal": 200
+  },
+  "wave_width": 3,
+  "resource_limits": {
+    "observation": 1,
+    "kit": 3,
+    "prepare": 3,
+    "audit": 2
+  },
+  "total_scene_budget": 6,
+  "total_gesture_attempt_budget": 24,
+  "old435_merged": false,
+  "automatic_training": false
+}
