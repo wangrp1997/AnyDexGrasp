@@ -29,7 +29,7 @@ def synthetic(fit=301,check=7):
 class AuthorPipelineTests(unittest.TestCase):
     def test_scaled_data_enters_actual_author_training_and_safe_best_checkpoints(self):
         torch.set_num_threads(2)
-        data = synthetic()
+        data = synthetic(fit=1001)
         cls,inference,loss,poly = training.components()
         def positive_initialization(**kwargs):
             model = cls(**kwargs)
@@ -38,7 +38,7 @@ class AuthorPipelineTests(unittest.TestCase):
             with torch.no_grad(): model.bn7.bias.fill_(1.2)
             return model
         with tempfile.TemporaryDirectory(prefix='anydex_author_training_') as tmp:
-            for cap,updates in ((100,1),(300,3)):
+            for cap,updates in ((100,1),(300,3),(1000,8)):
                 with self.subTest(cap=cap),patch.object(training,'components',
                         return_value=(positive_initialization,inference,loss,poly)):
                     result = training.fit_head(data,Path(tmp)/str(cap),gesture=1,

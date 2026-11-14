@@ -8,9 +8,40 @@ import numpy as np
 import trimesh
 
 import author_scene as scene
+import author_transport as transport
 
 
 class SceneTests(unittest.TestCase):
+    def test_explicit_lift_scene_has_no_bin_and_keeps_real_dynamic_assets(self):
+        root = scene.ROOT
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp)/'lift'
+            spec = scene.build(
+                root/'outputs/s40_stable_supplement_20261107_v2/settling/objects.json',
+                root/'outputs/s40_stable_supplement_20261107_v2/collection/native_preprocessing/SUMMARY.json',
+                root/'reproduction/boya/backend.collection.json', path, task='lift')
+            self.assertEqual(spec['schema'], scene.LIFT_SCHEMA)
+            self.assertEqual(spec['task'], scene.LIFT_TASK)
+            self.assertIsNone(spec['bin'])
+            self.assertEqual(spec['original_object_ids'], [r[0] for r in scene.OBJECTS])
+            self.assertEqual(scene.bin_boxes(None), [])
+            self.assertEqual(transport.bin_boxes(None), [])
+            self.assertEqual(transport.validate_scene(path/'scene.json'), spec)
+            for row in spec['objects']:
+                self.assertEqual((row['mass_kg'], row['friction'], row['scale']), (.1, .6, 1.))
+                self.assertEqual(scene.sha(row['source_mesh']), row['source_mesh_sha256'])
+                if row['collision_refinement']:
+                    self.assertEqual(scene.sha(row['collision_refinement']), row['collision_refinement_sha256'])
+            for schema, task, bin_value in [
+                ('anydex_boya_author_scene_v1', scene.LIFT_TASK, None),
+                (scene.LIFT_SCHEMA, 'wrong_task', None),
+                (scene.LIFT_SCHEMA, scene.LIFT_TASK, {})]:
+                with self.subTest(schema=schema, task=task, bin=bin_value):
+                    bad = copy.deepcopy(spec); bad.update(schema=schema, task=task, bin=bin_value)
+                    scene.save(path/'invalid.json', bad)
+                    with self.assertRaises(ValueError): scene.validate(bad)
+                    with self.assertRaises(ValueError): transport.validate_scene(path/'invalid.json')
+
     def test_actual_sources_form_common_scene_and_reject_changes(self):
         root = scene.ROOT
         with tempfile.TemporaryDirectory() as tmp:

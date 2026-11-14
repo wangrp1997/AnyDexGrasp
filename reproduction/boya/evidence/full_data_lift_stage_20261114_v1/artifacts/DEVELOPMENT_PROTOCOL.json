@@ -1,0 +1,74 @@
+{
+  "schema": "anydex_boya_lift_development_four_type_v1",
+  "scope": "Development collection-chain acceptance only; not model success rate, formal training data, independent external test or the 4000-fit queue",
+  "scene_objects": [
+    "graspnet_000",
+    "graspnet_002",
+    "graspnet_005"
+  ],
+  "placements_source": "author_scene.OBJECTS fixed previously used development placement",
+  "bin": null,
+  "gestures": [
+    {
+      "gesture_id": 1,
+      "source_type": 1,
+      "seed": 20261114,
+      "max_candidates": 1,
+      "max_actual_executions": 1
+    },
+    {
+      "gesture_id": 6,
+      "source_type": 2,
+      "seed": 20261114,
+      "max_candidates": 1,
+      "max_actual_executions": 1
+    },
+    {
+      "gesture_id": 7,
+      "source_type": 3,
+      "seed": 20261114,
+      "max_candidates": 1,
+      "max_actual_executions": 1
+    },
+    {
+      "gesture_id": 8,
+      "source_type": 4,
+      "seed": 20261114,
+      "max_candidates": 1,
+      "max_actual_executions": 1
+    }
+  ],
+  "initialize_once": true,
+  "initialization_ticks": 750,
+  "initialization_object_steps": 2250,
+  "representation_forwards": 1,
+  "representation_model_loads": 1,
+  "hand_head_loads": 0,
+  "training_updates": 0,
+  "training_dataset_writeback": false,
+  "physical_failure_retry": false,
+  "candidate_fallback": false,
+  "formal_target": {
+    "fit_per_gesture": 1000,
+    "total_fit": 4000,
+    "internal_validation": "separate source objects, additional labels"
+  },
+  "pre_capture_source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py": "c5a7cb962bb3d38961d31cc6a70a4a2c748a905d41b9bcc06e6df345387e7fe5",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "d5c5c186aa5a49b784e0d224b03ce42d1490b9ee5f7d5f10a6df224c6d9cb6e2",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d"
+  },
+  "calibration": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+    "sha256": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832"
+  },
+  "cloud_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v2/hand_clouds/MANIFEST.json",
+    "sha256": "d5ba0f1cae61d5a23ea8f7466ed86d5783d773cb0524344c85b9565220711cf6"
+  },
+  "backend": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.collection.json",
+    "sha256": "d578a7d7441378d9d8e4cb683845ddadf0977e8097edce00615e8a7b8c1c584d"
+  },
+  "stage_policy": "Each stage binds final current implementation before its first dispatch; all four prepared conditions freeze before any grasp execution; null remains in development ledger"
+}

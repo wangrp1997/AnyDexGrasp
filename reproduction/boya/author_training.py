@@ -128,7 +128,11 @@ def fit_head(data,output,*,gesture,sample_cap,seed,device='cpu',
     if type(gesture) is not int or gesture not in (1,6,7,8):
         raise ValueError('Explicit supported Boya gesture required')
     fit,check = validate_arrays(data)
+    available_fit_records = len(fit)
     selected = author.select_training_records(data['trial_id'][fit],sample_cap=sample_cap)
+    if development_epochs is None and len(selected) != sample_cap:
+        raise ValueError(f'Formal sample_cap={sample_cap} requires {sample_cap} actual fit labels; '
+                         f'only {available_fit_records} available (internal validation does not count)')
     fit = fit[:len(selected)]
     if development_epochs is not None and (type(development_epochs) is not int or not 1<=development_epochs<=2):
         raise ValueError('Synthetic development override is1..2 epochs only')
@@ -152,6 +156,8 @@ def fit_head(data,output,*,gesture,sample_cap,seed,device='cpu',
     output.mkdir(parents=True)
     report = dict(schema='anydex_boya_literal_author_training_v1',status='running',
         recipe=RECIPE,gesture_id=gesture,sample_cap=sample_cap,fit_records=len(fit),
+        available_fit_records=available_fit_records,requested_fit_records=sample_cap,
+        requested_fit_count_met=len(fit)==sample_cap,
         internal_records=len(check),seed=seed,epochs=epochs,
         development_only=development_epochs is not None,
         fit_trial_ids=list(map(str,data['trial_id'][fit])),

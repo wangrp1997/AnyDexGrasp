@@ -1,0 +1,120 @@
+{
+  "schema": "anydex_boya_author_lift_capture_independent_audit_v1",
+  "status": "pass",
+  "capture_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture",
+  "task": "declared_boya_clutter_lift_v1",
+  "bin": null,
+  "original_object_ids": [
+    "graspnet_000",
+    "graspnet_002",
+    "graspnet_005"
+  ],
+  "capture_physics_ticks": 750,
+  "capture_initialization_object_steps": 2250,
+  "capture_render_physics_steps": 0,
+  "trace_shape": [
+    751,
+    3,
+    7
+  ],
+  "recomputed_stability": [
+    {
+      "object_id": "graspnet_000",
+      "max_linear_speed_m_s": 0.002041690942547546,
+      "max_angular_speed_rad_s": 0.04513419956019287,
+      "max_window_translation_m": 8.690718231973228e-06,
+      "max_window_rotation_rad": 7.530307965125515e-05
+    },
+    {
+      "object_id": "graspnet_002",
+      "max_linear_speed_m_s": 0.00273680728790061,
+      "max_angular_speed_rad_s": 0.04659633348580734,
+      "max_window_translation_m": 1.5637391373003091e-06,
+      "max_window_rotation_rad": 2.300293368415085e-05
+    },
+    {
+      "object_id": "graspnet_005",
+      "max_linear_speed_m_s": 0.0008396685283974805,
+      "max_angular_speed_rad_s": 0.036767614465424904,
+      "max_window_translation_m": 2.2891598188485527e-06,
+      "max_window_rotation_rad": 0.00010858861312726018
+    }
+  ],
+  "max_observed_pose_transform_error": 0.0,
+  "contact_frames": 750,
+  "all_contacts": 1530750,
+  "per_body_contact_rows": {
+    "/World/AuthorScene/graspnet_000": 440250,
+    "/World/AuthorScene/graspnet_002": 387000,
+    "/World/AuthorScene/graspnet_005": 703500
+  },
+  "final_250_ground_supported_ticks": {
+    "/World/AuthorScene/graspnet_000": 250,
+    "/World/AuthorScene/graspnet_002": 250,
+    "/World/AuthorScene/graspnet_005": 250
+  },
+  "final_250_mean_ground_force_n": {
+    "/World/AuthorScene/graspnet_000": 0.9799923534720146,
+    "/World/AuthorScene/graspnet_002": 0.9799946057354664,
+    "/World/AuthorScene/graspnet_005": 0.9799976244802238
+  },
+  "max_contact_penetration_m": 7.096678018569946e-07,
+  "max_single_contact_force_n": 0.7984060049057007,
+  "static_collision_paths": [
+    "/World/ground/collisionPlane"
+  ],
+  "no_bin_in_all_saved_contact_pairs": true,
+  "native_hulls": 1633,
+  "native_per_body_hulls": {
+    "/World/AuthorScene/graspnet_000": 955,
+    "/World/AuthorScene/graspnet_002": 370,
+    "/World/AuthorScene/graspnet_005": 308
+  },
+  "native_reported_20um_gate": true,
+  "native_max_source_outside_cooked_bound_m": 1.9894589397389157e-05,
+  "native_max_cooked_outside_source_bound_m": 0.0,
+  "all_native_arrays_finite": true,
+  "native_plane_inequality_recomputed_max_m": 1.8317756303884436e-05,
+  "native_plane_inequality_vs_receipt_max_delta_m": 0.0,
+  "native_scope": "Saved cooked/source arrays and receipt checked; original convex-distance solver not rerun; 20um is import fidelity rather than exact source CAD/solver validation",
+  "source_input_bindings_verified": 572,
+  "source_bindings": 519,
+  "input_bindings": 53,
+  "capture_files_before_after_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/CONTACT_SENSOR_CHECK.json": "9840989b7383eaf6aa353edf07b1d2bf296e52e4f41bb90474c7ea1c2ca233b6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/CONTACT_SENSOR_CONFIG.json": "b65a5844603d6282c7cdc400652bcbace0259895345ae94d56528abfd2a1a230",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/PROGRESS.json": "5367658b2b67910dc42bd69ee0c2b0e0e2a6a45095d4d07d66d32a1f9d5886e5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/RESULTS.json": "5367658b2b67910dc42bd69ee0c2b0e0e2a6a45095d4d07d66d32a1f9d5886e5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/color.png": "93dd7f23990d299b1927d0f37a642f8bbfa04e6071c1d79fbc2335b3937b9bff",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/depth.png": "e49327cad8091c67fc5e53b4757b3c7cea4193137196a4aaf392de27219190ea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/initialization_contacts.json": "b99be45a97f2e0c41bbbb7182cc2872e39b6b281e3522ef3db2ee88091c9e20c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/initialization_trace.npz": "e332860388c82e541e685c41102bdd09d41d9751baec8de524a7a7c5c5252364",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/meta.mat": "9cda7713dba388505db0ab44090d558a0aa1302e225bd08874a8a89018fcad72",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/native/native_audit.json": "d078b421be8ce0b7e6834a1dd32528bc40a4c38a36399606f97bb017387f24b1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/native/native_hulls.npz": "96a786357613985d60eec91a08199fc21b2b2e6c72c5924b157b319011cec9fe",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/native_rgbd.npz": "5e705e9e35f33287707c510e003a07e8b2016e8611cf89cbc9192533f66ec678",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/observation.json": "d239736a2322b9ea72ad62f2bd8c6044ff8a2c625b07e9436e9af73abae48f60",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/observed_scene.json": "0a0c971968af02760e411244e62bda12c98658d178d6cd583c96f4b6cce7ed92",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/render_geometry_check.json": "80f53bf063ecff9c1d460912da1d1bd35e9e1708f069b398eaf411b7c025d6bc",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/scene.json": "0589576d2e95f2b3772d2ded2811817cbef53bcd4c69acbd071401d742ec608f"
+  },
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_lift_capture_review_20261114_v1/audit_capture.py": "6d693fab7920560054a9b6660614124bedf37c7740d5e1acc796d5638d13a04c"
+  },
+  "rgb_png_exact": true,
+  "depth_png_exact": true,
+  "meta_exact": true,
+  "valid_depth_pixels": 558859,
+  "independent_rays": 96,
+  "independent_source_first_object_hits": 37,
+  "independent_vs_declared_source_first_depth_max_error_m": 6.661338147750939e-16,
+  "independent_vs_rtx_max_absolute_depth_error_m": 6.899380145863887e-06,
+  "audit_Kit_launches": 0,
+  "audit_physics_steps": 0,
+  "audit_IK_calls": 0,
+  "audit_CGR_forwards": 0,
+  "audit_grasp_attempts": 0,
+  "audit_labels": 0,
+  "audit_training_updates": 0,
+  "wall_s": 18.807824320159853
+}

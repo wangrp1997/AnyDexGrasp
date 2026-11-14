@@ -1,0 +1,22 @@
+{
+  "schema": "anydex_boya_session_test_observations_v1",
+  "source": "Observed tool returns from this session; independent agent receipts carry exact logs and source SHA",
+  "dataset_scale_tests": 4,
+  "root_combined_pipeline_and_scale_tests": 8,
+  "initial_combined_passed": 7,
+  "initial_combined_errors": 1,
+  "initial_error": "Open3D import missing existing libusb library path; not model/data/physics failure",
+  "only_failed_geometry_case_recovered_passed": 1,
+  "formal_training_updates": 0,
+  "synthetic_optimizer_updates": 13,
+  "synthetic_checkpoint_retained": false,
+  "integration_tests": "41 original regressions plus 11 affected entry checks; overlapping cases, not 52 distinct physical trials",
+  "backend_tests": 26,
+  "planner_tests": "6 original plus 3 rounding-guard regression invocations; overlapping cases",
+  "root_sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_training.py": "d1ed3a520da1a61fe9877fe4aea5bda00e39176133a0895429543f2e652d0409",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_dataset_scale.py": "97dc84479afd9e114afb4e35d06ec2539d76848a35dcf1169166a362c4013c50",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline.py": "00f932e0195d607f8f41985d160a8cab8081c25e473b59e5da43c07d2bac5e88",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_dataset_scale.py": "b7a8ad476423c621ca71a6598c778d3881ee6a04ee7c054cf6218c18b3f66517"
+  }
+}

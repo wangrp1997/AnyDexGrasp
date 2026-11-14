@@ -24,6 +24,8 @@ DT = .004
 STEPS = 750
 OBJECTS = [('graspnet_000', [-.75, .10]), ('graspnet_002', [-.63, .10]),
            ('graspnet_005', [-.89, .10])]
+LIFT_SCHEMA = 'anydex_boya_author_lift_scene_v1'
+LIFT_TASK = 'declared_boya_clutter_lift_v1'
 
 
 def sha(path):
@@ -58,6 +60,8 @@ def transform(value):
 
 def bin_boxes(spec):
     """World boxes for the axis-aligned bin, shared with source ray checks."""
+    if spec is None:
+        return []
     T = transform(spec['world_T_bin'])
     if not np.allclose(T[:3, :3], np.eye(3), atol=1e-12, rtol=0):
         raise ValueError('This frozen development bin must be axis aligned')
@@ -75,7 +79,8 @@ def bin_boxes(spec):
 
 
 def validate(scene):
-    if scene['schema'] != 'anydex_boya_author_scene_v1':
+    lift = scene.get('schema') == LIFT_SCHEMA and scene.get('task') == LIFT_TASK
+    if scene['schema'] != 'anydex_boya_author_scene_v1' and not lift:
         raise ValueError('Independent author scene schema required')
     rows = scene['objects']
     ids = [r['object_id'] for r in rows]
@@ -90,12 +95,19 @@ def validate(scene):
             raise ValueError('Frozen source geometry and native .1kg/.6 profile required')
         if row.get('collision_refinement') and sha(row['collision_refinement']) != row['collision_refinement_sha256']:
             raise ValueError('Frozen collision refinement changed')
+    if lift:
+        if scene['bin'] is not None:
+            raise ValueError('Explicit lift scene requires bin=None')
+    elif scene['bin'] is None:
+        raise ValueError('Original transport scene requires a bin')
     bin_boxes(scene['bin'])
     verify(scene['input_sha256'])
     verify(scene['source_sha256'])
 
 
-def build(source_manifest, native_summary, backend_path, output_dir):
+def build(source_manifest, native_summary, backend_path, output_dir, *, task='transport_release'):
+    if task not in ('transport_release', 'lift'):
+        raise ValueError('Explicit supported scene task required')
     source = read(source_manifest)
     native = {r['object_id']: r for r in read(native_summary)['results']}
     backend = read(backend_path)
@@ -122,7 +134,8 @@ def build(source_manifest, native_summary, backend_path, output_dir):
     for folder, pattern in [(CANON/'canondex', '**/*.py'), (CANON/'scripts/research', '*.py')]:
         for path in folder.glob(pattern):
             sources[str(path)] = sha(path)
-    for name in ['settle_s40_scenes.py', 'render_s40_observations.py', 'author_transport.py']:
+    extra_sources = ['author_lift.py'] if task == 'lift' else []
+    for name in ['settle_s40_scenes.py', 'render_s40_observations.py', 'author_transport.py']+extra_sources:
         path = Path(__file__).with_name(name)
         sources[str(path)] = sha(path)
     Tbin = np.eye(4)
@@ -138,6 +151,12 @@ def build(source_manifest, native_summary, backend_path, output_dir):
                  scope='Three previously used S40 development objects; one fixed co-located placement, not random-scene coverage or external generalization',
                  state_boundary='Initialize once, settle all bodies together, capture without integration; execution cold-recreates measured poses with explicit zero twist',
                  training_started=False, grasp_attempts=0)
+    if task == 'lift':
+        scene.update(schema=LIFT_SCHEMA, task=LIFT_TASK, bin=None,
+                     scene_id='development_three_lift_20261114',
+                     original_object_ids=[row['object_id'] for row in rows],
+                     target_semantics='Compatibility primary only; lift success is evaluated separately for every original tabletop body',
+                     task_boundary='No bin geometry, transport, release or containment; complete native lift and original physical validity gates')
     validate(scene)
     output_dir.mkdir(parents=True, exist_ok=False)
     save(output_dir/'scene.json', scene)
@@ -235,7 +254,8 @@ def capture(scene_path, output_dir):
         native = audit_scene(sim, output_dir/'native', ['all'], roots=tuple(roots), fast=True)
         if not native['within_20um']:
             raise ValueError('Native20um object import gate failed')
-        static_paths = [str(prim.GetPath()) for parent in ['/World/ground', '/World/AuthorBin']
+        static_parents = ['/World/ground'] + (['/World/AuthorBin'] if scene['bin'] is not None else [])
+        static_paths = [str(prim.GetPath()) for parent in static_parents
                         for prim in Usd.PrimRange(sim.stage.GetPrimAtPath(parent))
                         if prim.HasAPI(UsdPhysics.CollisionAPI)]
         save(output_dir/'CONTACT_SENSOR_CONFIG.json', dict(static_collision_paths=static_paths,
@@ -367,12 +387,13 @@ def main():
     p.add_argument('--native-summary', type=Path, required=True)
     p.add_argument('--backend', type=Path, required=True)
     p.add_argument('--output-dir', type=Path, required=True)
+    p.add_argument('--task', choices=('transport_release', 'lift'), default='transport_release')
     p = sub.add_parser('capture')
     p.add_argument('--scene', type=Path, required=True)
     p.add_argument('--output-dir', type=Path, required=True)
     args = parser.parse_args()
     if args.command == 'build':
-        build(args.source_manifest.resolve(), args.native_summary.resolve(), args.backend.resolve(), args.output_dir.resolve())
+        build(args.source_manifest.resolve(), args.native_summary.resolve(), args.backend.resolve(), args.output_dir.resolve(), task=args.task)
     else:
         capture(args.scene.resolve(), args.output_dir.resolve())
 

@@ -1,0 +1,46 @@
+{
+  "stage": "prepare_g8",
+  "status": "finished",
+  "argv": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py",
+    "prepare",
+    "--scene",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/observed_scene.json",
+    "--representation-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/representation/representations/development_three_lift_20261114",
+    "--observation",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/observation.json",
+    "--gesture-id",
+    "8",
+    "--source-type",
+    "4",
+    "--seed",
+    "20261114",
+    "--calibration",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+    "--cloud-manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v2/hand_clouds/MANIFEST.json",
+    "--backend",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.collection.json",
+    "--output-dir",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8"
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/run_stage.py": "713bc91ec05fd124e34871215f2eacd5225cc814ed7455664b3c363216fa657c"
+  },
+  "development_protocol_sha256": "f730cf79efde8256a76f88afcdc8f1b5848ab96b219bb8903d36b16bf0e64746",
+  "environment": {
+    "OMNI_KIT_ACCEPT_EULA": "YES",
+    "CUDA_VISIBLE_DEVICES": "0",
+    "PYTHONPATH": "/home/wangrenpeng/AnyDexGrasp:/home/wangrenpeng/AnyDexGrasp/reproduction/boya:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/clarabel_0111_overlay",
+    "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib",
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "4"
+  },
+  "returncode": 0,
+  "wall_s": 7.496164322132245
+}

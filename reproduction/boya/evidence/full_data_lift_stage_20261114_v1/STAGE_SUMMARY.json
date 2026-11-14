@@ -1,0 +1,56 @@
+{
+  "schema": "anydex_boya_full_data_lift_stage_summary_v1",
+  "status": "components_complete_collection_acceptance_not_complete",
+  "target": {
+    "fit_per_gesture": 1000,
+    "total_fit": 4000,
+    "internal": "additional, source-object-disjoint"
+  },
+  "actual_dataset": {
+    "total": 435,
+    "fit": 364,
+    "internal": 71,
+    "new_formal_labels": 0,
+    "fit_deficit_if_old_compatible": 3636
+  },
+  "actual_runs": {
+    "scene_initialization_ticks": 750,
+    "initialization_object_steps": 2250,
+    "initialization_physical_seconds": 3.0,
+    "CGR_model_loads": 1,
+    "CGR_forwards": 1,
+    "hand_head_loads": 0,
+    "native_preparation_processes": 4,
+    "declared_seed_entries_per_preparation": 8,
+    "seed_uniques_per_preparation": 7,
+    "planning_outcomes": [
+      "null_geometry",
+      "null_geometry",
+      "null_geometry",
+      "null_geometry"
+    ],
+    "grasp_executions": 0,
+    "grasp_physics_steps": 0,
+    "new_labels": 0,
+    "formal_optimizer_updates": 0,
+    "synthetic_optimizer_updates": 13,
+    "synthetic_planner_IK_calls": 64,
+    "replay_integration_steps": 0
+  },
+  "costs": {
+    "job_wall_s": {
+      "capture": 81.23998891701922,
+      "prepare_g8": 7.496164322132245,
+      "prepare_g1": 7.609805284999311,
+      "represent": 4.275675284909084,
+      "prepare_g7": 7.572053621057421,
+      "prepare_g6": 7.529384339926764
+    },
+    "parallel_preparation_wall_s": 15.030321183847263,
+    "note": "Initialization, representation and preparation boundaries differ; no full collection-to-lift timing or success rate exists"
+  },
+  "sources_unchanged_after_prepare": true,
+  "protected_data_models_unchanged": true,
+  "no_background_physics_or_training_dispatched": true,
+  "next": "Finish general batch collection protocol and physical label-chain acceptance, then collect sufficient labels, train, and only then evaluate"
+}

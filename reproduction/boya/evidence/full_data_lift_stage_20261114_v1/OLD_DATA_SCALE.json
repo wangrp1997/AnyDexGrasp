@@ -1,0 +1,71 @@
+{
+  "schema": "anydex_boya_author_dataset_scale_v1",
+  "status": "insufficient_fit_labels",
+  "target_fit_per_gesture": 1000,
+  "target_total_fit": 4000,
+  "actual_total_labels": 435,
+  "actual_fit_labels": 364,
+  "actual_internal_labels": 71,
+  "fit_deficit": 3636,
+  "per_gesture": [
+    {
+      "gesture_id": 1,
+      "total_labels": 98,
+      "fit_labels": 83,
+      "internal_labels": 15,
+      "fit_positive": 62,
+      "fit_negative": 21,
+      "fit_target": 1000,
+      "fit_deficit": 917,
+      "full_fit_count_met": false
+    },
+    {
+      "gesture_id": 6,
+      "total_labels": 120,
+      "fit_labels": 98,
+      "internal_labels": 22,
+      "fit_positive": 65,
+      "fit_negative": 33,
+      "fit_target": 1000,
+      "fit_deficit": 902,
+      "full_fit_count_met": false
+    },
+    {
+      "gesture_id": 7,
+      "total_labels": 117,
+      "fit_labels": 98,
+      "internal_labels": 19,
+      "fit_positive": 74,
+      "fit_negative": 24,
+      "fit_target": 1000,
+      "fit_deficit": 902,
+      "full_fit_count_met": false
+    },
+    {
+      "gesture_id": 8,
+      "total_labels": 100,
+      "fit_labels": 85,
+      "internal_labels": 15,
+      "fit_positive": 53,
+      "fit_negative": 32,
+      "fit_target": 1000,
+      "fit_deficit": 915,
+      "full_fit_count_met": false
+    }
+  ],
+  "fit_objects": 29,
+  "internal_objects": 6,
+  "nulls_counted_as_labels": false,
+  "internal_counted_as_fit": false,
+  "physical_semantics_certified": false,
+  "sampling_distribution_certified": false,
+  "physics_steps": 0,
+  "CGR_forwards": 0,
+  "optimizer_updates": 0,
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_1.npz": "3ed91e3b22f442b2997d6bf1638e683f5df75bee0e1c50759749ba09293f9259",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_6.npz": "c1dfdb84ea60c33b090081de0fc4ad51a0c34748dfb5e5ec9dff0a4873ddbc39",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_7.npz": "0cf4a7b126801be0085708fb0d550bfe7f7ffdccd452719817ae3db8ca172f0b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_8.npz": "2f68bc7d68b9e46d2089c0820eb8411aeaed604941cd01e69ea7690989b06196"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema": "anydex_boya_author_lift_backend_test_receipt_v1",
+  "tests": 26,
+  "passed": 26,
+  "failed": 0,
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=repo:repo/reproduction/boya existing-venv-python -B -m unittest reproduction.boya.test_author_transport reproduction.boya.test_author_scene reproduction.boya.test_author_lift -v",
+  "elapsed_s": 2.634,
+  "earlier_test_failure": {
+    "kind": "Test fixture incorrectly assumed every source body had an optional native repair",
+    "exception": "TypeError: Path(None)",
+    "fix": "Check repair SHA only when the real native summary declares a repair",
+    "tests": 26,
+    "passed": 25,
+    "failed": 1,
+    "physics_steps": 0
+  },
+  "ready_native_method_ast_equal_after_declared_three_adaptations": true,
+  "physical_runtime_verified": false,
+  "physics_steps": 0,
+  "IK_calls": 0,
+  "CGR_forwards": 0,
+  "labels": 0,
+  "training_updates": 0,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py": "c5a7cb962bb3d38961d31cc6a70a4a2c748a905d41b9bcc06e6df345387e7fe5",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "d5c5c186aa5a49b784e0d224b03ce42d1490b9ee5f7d5f10a6df224c6d9cb6e2",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_scene.py": "0bdce79582869932ca63f8426f552c1ca18097deea54098ce9326120125af5a3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_lift.py": "0b3f377fed60522890dc31e95d5c38c9526965e7a93cafd17f63869e8768cec0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_transport.py": "e64681f51db7c411e2b48a38827f75bbb5281248b4aaa8b74da59611f2af6519"
+  }
+}

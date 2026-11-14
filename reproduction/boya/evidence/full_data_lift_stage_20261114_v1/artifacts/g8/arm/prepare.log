@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/native_arm.py", line 10, in <module>
+    if __name__=='__main__':backend.main(sys.argv[1:])
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py", line 352, in main
+    prepare(args, preparation_cache=preparation_cache)
+  File "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py", line 183, in prepare
+    raise RuntimeError('Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry')
+RuntimeError: Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry

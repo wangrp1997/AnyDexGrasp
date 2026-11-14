@@ -1,0 +1,14 @@
+{
+  "status": "environment_import_failure_in_one_test",
+  "command": "python -B -m unittest -v test_author_pipeline test_author_dataset_scale",
+  "tests_run": 8,
+  "passed": 7,
+  "errors": 1,
+  "failed_case": "test_author_pipeline.AuthorPipelineTests.test_full_boya_surface_loader_and_original_detector",
+  "error": "ImportError: libusb-1.0.so.0: cannot open shared object file: No such file or directory",
+  "LD_LIBRARY_PATH_supplied": false,
+  "synthetic_optimizer_updates": 13,
+  "real_dataset_optimizer_updates": 0,
+  "physics_steps": 0,
+  "recovery": "Rerun only failed geometry case with existing project native library paths; no installation or real training"
+}

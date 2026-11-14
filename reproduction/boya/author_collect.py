@@ -25,6 +25,9 @@ SCHEMA = 'anydex_boya_author_collection_protocol_v1'
 CANDIDATE_SCHEMA = 'anydex_boya_author_collection_candidate_v1'
 CANONICAL_SOURCE_SHA = collision.DEPLOYMENT_SOURCE_SHA
 GESTURES = (1, 6, 7, 8)
+TRANSPORT_TASK = 'declared_boya_clutter_transport_release_v1'
+LIFT_TASK = 'declared_boya_clutter_lift_v1'
+TASKS = (TRANSPORT_TASK, LIFT_TASK)
 
 
 def _json(value):
@@ -139,13 +142,16 @@ def validate_cache_receipt(receipt, bindings, raw_count, sensor_adapter):
 
 def prepare_collection(raw_candidates, raw_features, scene_points, *, world_T_camera,
                        calibration, library, gesture_id, source_reference_type, seed,
-                       domain, scene_binding, input_bindings, action_contract=None):
+                       domain, scene_binding, input_bindings, action_contract=None,
+                       task=TRANSPORT_TASK):
     """Prepare a top10 list and the source index-0 choice, without execution.
 
     `scene_points` are the original CGR sparse input camera points, without a
     second downsample or object-only crop. Candidate JSON is the downstream
     transport API; poses are optical/world, 16+4 commands require later binding.
     """
+    if task not in TASKS:
+        raise ValueError('Explicit supported collection task required')
     if gesture_id not in GESTURES or type(gesture_id) is not int:
         raise ValueError('Explicit supported Boya gesture 1/6/7/8 required')
     if not isinstance(scene_binding, dict) or not scene_binding.get('scene_id'):
@@ -222,7 +228,7 @@ def prepare_collection(raw_candidates, raw_features, scene_points, *, world_T_ca
             collision_profile=dict(name='dh3_collection', **collision.PROFILES['dh3_collection']),
             action_contract=None, command_binding=None, evaluation_binding=None,
             label=None, label_state='unexecuted', physical_semantics_validated=False,
-            task='declared_boya_clutter_transport_release_v1')
+            task=task)
         if action_contract is not None:
             entry['action_contract'] = _json(action_contract.for_slot(hand.slot['slot_id']))
         entry['candidate_sha256'] = _candidate_id(entry)
@@ -277,6 +283,13 @@ def write_bound_commands(candidate, arrays, output, *, execution_spec, action_co
         raise ValueError('Prepared candidate changed')
     if not execution_spec or execution_spec.get('task') != candidate['task']:
         raise ValueError('Explicit compatible transport execution specification required')
+    if candidate['task'] not in TASKS:
+        raise ValueError('Unsupported bound collection task')
+    if candidate['task'] == LIFT_TASK:
+        ids = execution_spec.get('original_object_ids')
+        if (not isinstance(ids, list) or not ids or not all(isinstance(x, str) and x for x in ids)
+                or len(set(ids)) != len(ids)):
+            raise ValueError('Lift commands must bind every unique original tabletop object ID')
     if any(np.asarray(v).dtype.hasobject for v in arrays.values()):
         raise ValueError('Object/pickled command arrays forbidden')
     reserved = {'collection_candidate_sha256', 'collection_execution_spec_sha256'}
@@ -328,8 +341,13 @@ def collect_execution(candidate, command_binding, evaluation_path):
     if (evaluation.get('collection_candidate_sha256') != candidate['candidate_sha256']
             or evaluation.get('commands_sha256') != command_binding['commands_sha256']):
         raise ValueError('Executor must echo actual command and candidate SHA')
-    label = None; reason = 'unexecuted_or_incomplete_transport'
-    phases = {'approach', 'close', 'retreat', 'transport', 'release', 'post_release'}
+    task = candidate['task']
+    if task not in TASKS or command_binding['execution_spec'].get('task') != task:
+        raise ValueError('Unsupported or mismatched collection task')
+    is_lift = task == LIFT_TASK
+    label = None; reason = 'unexecuted_or_incomplete_lift' if is_lift else 'unexecuted_or_incomplete_transport'
+    phases = ({'approach', 'close', 'hold', 'lift'} if is_lift else
+              {'approach', 'close', 'retreat', 'transport', 'release', 'post_release'})
     if (evaluation.get('infrastructure_error') or evaluation.get('error') or evaluation.get('errors')
             or evaluation.get('exception')):
         reason = 'infrastructure_error'
@@ -338,7 +356,24 @@ def collect_execution(candidate, command_binding, evaluation_path):
             and phases.issubset(evaluation.get('completed_phases', []))
             and evaluation.get('task') == candidate['task'] and type(evaluation.get('task_success')) is bool
             and command_binding.get('action_contract_validated') is True):
-        label = int(evaluation['task_success']); reason = 'executed_transport_success' if label else 'executed_transport_failure'
+        if is_lift:
+            expected = command_binding['execution_spec'].get('original_object_ids')
+            rows = evaluation.get('object_outcomes')
+            valid = (isinstance(expected, list) and bool(expected) and len(set(expected)) == len(expected)
+                     and isinstance(rows, list) and len(rows) == len(expected)
+                     and all(isinstance(row, dict) and isinstance(row.get('object_id'), str)
+                             and type(row.get('task_success')) is bool for row in rows))
+            if valid:
+                actual = [row['object_id'] for row in rows]
+                valid = (len(set(actual)) == len(actual) and set(actual) == set(expected)
+                         and any(row['task_success'] for row in rows) == evaluation['task_success'])
+            if valid:
+                label = int(any(row['task_success'] for row in rows))
+                reason = 'executed_lift_success' if label else 'executed_lift_failure'
+            else:
+                reason = 'invalid_or_incomplete_per_object_lift_outcomes'
+        else:
+            label = int(evaluation['task_success']); reason = 'executed_transport_success' if label else 'executed_transport_failure'
     return dict(schema='anydex_boya_author_collection_record_v1', candidate=_json(candidate),
         command_binding=_json(command_binding), evaluation_binding=dict(path=str(path.resolve()), sha256=sha(path)),
         label=label, label_state=reason, task=candidate['task'],
@@ -386,7 +421,7 @@ def run_protocol(protocol_path, output):
         calibration=cal, library=library, gesture_id=protocol['gesture_id'],
         source_reference_type=protocol['source_reference_type'], seed=protocol['seed'],
         domain=protocol['domain'], scene_binding=protocol['scene_binding'],
-        input_bindings=bindings, action_contract=action_contract)
+        input_bindings=bindings, action_contract=action_contract, task=protocol.get('task', TRANSPORT_TASK))
     for entry in bindings.values():
         if sha(entry['path']) != entry['sha256']: raise ValueError('Input changed during preparation')
     np.savez_compressed(output/'PREPARATION_ARRAYS.npz', **arrays)

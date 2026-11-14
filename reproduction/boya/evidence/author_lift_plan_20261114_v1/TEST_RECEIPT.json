@@ -1,0 +1,28 @@
+{
+  "schema": "anydex_boya_author_lift_plan_test_receipt_v1",
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "reproduction/boya/test_author_lift_plan.py",
+    "-v"
+  ],
+  "exit_code": 0,
+  "passed": true,
+  "tests": 6,
+  "wall_s": 0.8513951550703496,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_plan.py": "72f7ed5e2aa1c081d3e0ce87487a4d9675171ddf284dd47c6997963c90f5203c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_lift_plan.py": "255b5a9f140e226fedf1837a1fb8211a5d5f52f47186a1b620b8bde9e7c224a0"
+  },
+  "test_log_sha256": "5dec6b2ae21926cc6131a2e03a7d70fb440dbe0000a7bad4c5f6072b8c4d1a35",
+  "current_run_real_native_ik_calls_on_analytic_robot": 32,
+  "previous_development_run_real_native_ik_calls_on_analytic_robot": 32,
+  "candidate_prepare_calls": 0,
+  "physics_steps": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "real_closure_check": "All 300 appended 24-coordinate joint targets and desired palms equal the frozen source helper on existing g1 source endpoints",
+  "boundary": "The 32 successful native IK calls use a synthetic analytic robot; two negative IK tests are mocked; no new real-scene candidate plan or physical grasp is produced"
+}

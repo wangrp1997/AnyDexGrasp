@@ -1,0 +1,1425 @@
+{
+  "schema": "anydex_boya_lift_null_readonly_audit_v1",
+  "scope": "No candidate replacement/IK/optimization/planning/Kit/physics; existing source and commands/FK only",
+  "conclusion": "Different fixed source grasp poses with unchanged native IK/initial/seeds/budget; four local misses before HOME or collision do not establish pipeline unusability or global unreachability",
+  "camera_world_transform_max_error": 0.0,
+  "observed_source_pose_max_errors": {
+    "graspnet_000": 0.0,
+    "graspnet_002": 0.0,
+    "graspnet_005": 0.0
+  },
+  "native_current_capture_old_capture_sources": [
+    {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+      "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+      "old_new_current_identical": true
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_admission.py",
+      "sha256": "6a399855cd15fa14755ea48b473754fa1ce986cf631999372d333c17013309ea",
+      "old_new_current_identical": true
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+      "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+      "old_new_current_identical": true
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+      "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+      "old_new_current_identical": true
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/planning/model.py",
+      "sha256": "3d0469d645fa882c26e83eb70879cc1b29b57063e4bf27c5fb7aa2f0214a1e33",
+      "old_new_current_identical": true
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/robots/kinematics.py",
+      "sha256": "3ee84ac980455b75a6f5729701921109fd3bd4aeae1868d4f015333b578136d1",
+      "old_new_current_identical": true
+    }
+  ],
+  "per_seed_max_nfev_from_source_ast": 300,
+  "conditions": [
+    {
+      "gesture_id": 1,
+      "status": "null_geometry",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "new_native_plan_exists": false,
+      "candidate": {
+        "new_raw_row": 1538,
+        "old_raw_row": 879,
+        "new_score": 0.7961859703063965,
+        "old_score": 0.47305241227149963,
+        "new_extra_m": 0.0,
+        "old_extra_m": 0.01,
+        "new_flip": true,
+        "old_flip": false,
+        "new_slot": "g1:distal_000:ff",
+        "old_slot": "g1:distal_000:ff"
+      },
+      "native_input": {
+        "semantic_arguments_equal": true,
+        "excluded_path_and_clock_keys": [
+          "candidates",
+          "output_dir",
+          "process_start_monotonic_s",
+          "world_object_pose"
+        ],
+        "eight_seeds_equal": true,
+        "initial_full28_equal": true,
+        "base_transform_max_error": 0.0,
+        "opened_motors_equal": true,
+        "closed_motors_equal": true,
+        "native_sources": [
+          {
+            "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+            "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "current_sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+            "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "current_sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+            "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "current_sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py",
+            "sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "current_sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "unchanged": true
+          }
+        ]
+      },
+      "palm_delta": {
+        "translation_m": [
+          -0.2158573156313609,
+          0.04652808923110492,
+          -0.11758432211145775
+        ],
+        "translation_norm_m": 0.25017057501929696,
+        "rotation_deg": 170.62849529969282,
+        "new_world_xyz": [
+          -0.8021418570687969,
+          0.14220473887906815,
+          0.09739245237129507
+        ],
+        "old_world_xyz": [
+          -0.586284541437436,
+          0.09567664964796323,
+          0.21497677448275282
+        ]
+      },
+      "compatibility_relocation": {
+        "new": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            -0.022774772760437163,
+            -0.0831651964191581,
+            0.9962754939424502
+          ],
+          "target_pregrasp_world": [
+            [
+              -0.22930302643007044,
+              -0.6517463213896182,
+              0.7229431890716668,
+              -0.8012308661583795
+            ],
+            [
+              0.9650073078998118,
+              -0.2492870396053902,
+              0.08134413061025561,
+              0.14553134673583448
+            ],
+            [
+              0.12720462951468478,
+              0.716297915981808,
+              0.6861022356691096,
+              0.05754143261359706
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "old": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            0.12232581167779004,
+            -0.14432824832956642,
+            -0.9819397906855026
+          ],
+          "target_pregrasp_world": [
+            [
+              0.7468208636631956,
+              0.49909704427047435,
+              -0.4395005551735241,
+              -0.5911775739045476
+            ],
+            [
+              0.6625779194985278,
+              -0.615066867720633,
+              0.42741460998114283,
+              0.10144977958114589
+            ],
+            [
+              -0.05700086131245259,
+              -0.6104055116337062,
+              -0.7900354505823345,
+              0.25425436611017294
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "existing_old_pregrasp_q_fk": {
+        "vs_old_target": {
+          "position_m": 9.436452415093698e-12,
+          "rotation_rad": 1.9874474151924618e-10
+        },
+        "vs_new_target": {
+          "position_m": 0.2911383663367876,
+          "rotation_rad": 2.9780290407714367
+        },
+        "original_selected_seed_index": 0
+      },
+      "declared_seed_fk_only": [
+        {
+          "seed_index": 0,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5128510044433072,
+            "rotation_rad": 2.386625774867726
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2461434755361866,
+            "rotation_rad": 1.215182937830677
+          }
+        },
+        {
+          "seed_index": 1,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5128510044433072,
+            "rotation_rad": 2.386625774867726
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2461434755361866,
+            "rotation_rad": 1.215182937830677
+          }
+        },
+        {
+          "seed_index": 2,
+          "seed_rad": {
+            "shoulder_pan_joint": -0.116113964711325,
+            "shoulder_lift_joint": -2.841066976586813,
+            "elbow_joint": -1.474947333335876,
+            "wrist_1_joint": -0.917485551243164,
+            "wrist_2_joint": -1.588036839162008,
+            "wrist_3_joint": 0.05413817986846
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.2146012647725785,
+            "rotation_rad": 1.3779775731142412
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.312480440079801,
+            "rotation_rad": 2.037138409569491
+          }
+        },
+        {
+          "seed_index": 3,
+          "seed_rad": {
+            "shoulder_pan_joint": 1.442342638969421,
+            "shoulder_lift_joint": -1.589592596093649,
+            "elbow_joint": -1.273367404937744,
+            "wrist_1_joint": -3.764151712457174,
+            "wrist_2_joint": -1.717654053364889,
+            "wrist_3_joint": -0.06290036836733
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0705139632434753,
+            "rotation_rad": 2.7283916566149293
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8546676214530672,
+            "rotation_rad": 2.4633713568405216
+          }
+        },
+        {
+          "seed_index": 4,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 1.5594077110290527,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.9834833121328601,
+            "rotation_rad": 2.459810063435383
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.7564664706125692,
+            "rotation_rad": 2.459660403618221
+          }
+        },
+        {
+          "seed_index": 5,
+          "seed_rad": {
+            "shoulder_pan_joint": 0.0,
+            "shoulder_lift_joint": -2.5,
+            "elbow_joint": -1.4,
+            "wrist_1_joint": -2.3,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.49064100661238647,
+            "rotation_rad": 2.944717328931789
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3467573124578034,
+            "rotation_rad": 2.3943659800785975
+          }
+        },
+        {
+          "seed_index": 6,
+          "seed_rad": {
+            "shoulder_pan_joint": 3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.4954672781202167,
+            "rotation_rad": 3.115529123265508
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2903742406295485,
+            "rotation_rad": 2.3266977735109773
+          }
+        },
+        {
+          "seed_index": 7,
+          "seed_rad": {
+            "shoulder_pan_joint": -3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0361161058910642,
+            "rotation_rad": 0.8620628857676494
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8007078905735378,
+            "rotation_rad": 2.52017192529217
+          }
+        }
+      ],
+      "original_planning_cost": {
+        "declared_ik_queries": 8,
+        "per_query_max_nfev": 300,
+        "actual_nfev_unavailable": true,
+        "wall_s": 3.5111770280636847,
+        "physics_steps": 0
+      },
+      "limitation": "Native rejection receipt does not persist failed optimizer endpoints/nfev/residuals; this audit does not rerun any IK and cannot infer those missing quantities or global unreachability"
+    },
+    {
+      "gesture_id": 6,
+      "status": "null_geometry",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "new_native_plan_exists": false,
+      "candidate": {
+        "new_raw_row": 1538,
+        "old_raw_row": 879,
+        "new_score": 0.7961859703063965,
+        "old_score": 0.47305241227149963,
+        "new_extra_m": 0.0,
+        "old_extra_m": 0.01,
+        "new_flip": true,
+        "old_flip": false,
+        "new_slot": "g6:distal_000:ff",
+        "old_slot": "g6:distal_000:ff"
+      },
+      "native_input": {
+        "semantic_arguments_equal": true,
+        "excluded_path_and_clock_keys": [
+          "candidates",
+          "output_dir",
+          "process_start_monotonic_s",
+          "world_object_pose"
+        ],
+        "eight_seeds_equal": true,
+        "initial_full28_equal": true,
+        "base_transform_max_error": 0.0,
+        "opened_motors_equal": true,
+        "closed_motors_equal": true,
+        "native_sources": [
+          {
+            "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+            "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "current_sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+            "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "current_sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+            "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "current_sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py",
+            "sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "current_sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "unchanged": true
+          }
+        ]
+      },
+      "palm_delta": {
+        "translation_m": [
+          -0.22842821521336043,
+          0.050435233290379036,
+          -0.11372630847130433
+        ],
+        "translation_norm_m": 0.2601092760766646,
+        "rotation_deg": 170.6284952996928,
+        "new_world_xyz": [
+          -0.7990980583121958,
+          0.1738858753645421,
+          0.09961361347232917
+        ],
+        "old_world_xyz": [
+          -0.5706698430988354,
+          0.12345064207416305,
+          0.2133399219436335
+        ]
+      },
+      "compatibility_relocation": {
+        "new": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            -0.022774772760437163,
+            -0.0831651964191581,
+            0.9962754939424502
+          ],
+          "target_pregrasp_world": [
+            [
+              -0.038386708380298756,
+              -0.6835724075618368,
+              0.7288725706458165,
+              -0.7981870674017784
+            ],
+            [
+              0.9866960160606469,
+              -0.14124584504631296,
+              -0.08050206921067428,
+              0.17721248322130842
+            ],
+            [
+              0.15797921543599686,
+              0.7160854522173087,
+              0.6799001342939703,
+              0.059762593714631156
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "old": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            0.12232581167779004,
+            -0.14432824832956642,
+            -0.9819397906855026
+          ],
+          "target_pregrasp_world": [
+            [
+              0.608166647109811,
+              0.5855389737588848,
+              -0.5359826858701724,
+              -0.575562875565947
+            ],
+            [
+              0.785103605322924,
+              -0.5434074603268627,
+              0.2971879219787653,
+              0.1292237720073457
+            ],
+            [
+              -0.11724187925889927,
+              -0.6015417211386938,
+              -0.7901910525166305,
+              0.2526175135710536
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "existing_old_pregrasp_q_fk": {
+        "vs_old_target": {
+          "position_m": 6.3605751482935405e-12,
+          "rotation_rad": 1.5385132490184864e-10
+        },
+        "vs_new_target": {
+          "position_m": 0.29842497768504106,
+          "rotation_rad": 2.978029040774793
+        },
+        "original_selected_seed_index": 0
+      },
+      "declared_seed_fk_only": [
+        {
+          "seed_index": 0,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.508452500062056,
+            "rotation_rad": 2.374782773417336
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2352475078430374,
+            "rotation_rad": 1.1011667647991468
+          }
+        },
+        {
+          "seed_index": 1,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.508452500062056,
+            "rotation_rad": 2.374782773417336
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2352475078430374,
+            "rotation_rad": 1.1011667647991468
+          }
+        },
+        {
+          "seed_index": 2,
+          "seed_rad": {
+            "shoulder_pan_joint": -0.116113964711325,
+            "shoulder_lift_joint": -2.841066976586813,
+            "elbow_joint": -1.474947333335876,
+            "wrist_1_joint": -0.917485551243164,
+            "wrist_2_joint": -1.588036839162008,
+            "wrist_3_joint": 0.05413817986846
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.1971213296411089,
+            "rotation_rad": 1.3521079879925944
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3122337099580213,
+            "rotation_rad": 1.992196663934407
+          }
+        },
+        {
+          "seed_index": 3,
+          "seed_rad": {
+            "shoulder_pan_joint": 1.442342638969421,
+            "shoulder_lift_joint": -1.589592596093649,
+            "elbow_joint": -1.273367404937744,
+            "wrist_1_joint": -3.764151712457174,
+            "wrist_2_joint": -1.717654053364889,
+            "wrist_3_joint": -0.06290036836733
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.090560730859362,
+            "rotation_rad": 2.7279198309946393
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8717237088999549,
+            "rotation_rad": 2.2712214603721064
+          }
+        },
+        {
+          "seed_index": 4,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 1.5594077110290527,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0016384144963872,
+            "rotation_rad": 2.4841216151353898
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.770910536279942,
+            "rotation_rad": 2.272485013658794
+          }
+        },
+        {
+          "seed_index": 5,
+          "seed_rad": {
+            "shoulder_pan_joint": 0.0,
+            "shoulder_lift_joint": -2.5,
+            "elbow_joint": -1.4,
+            "wrist_1_joint": -2.3,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.48673522768050653,
+            "rotation_rad": 2.979405407691881
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3283943025138585,
+            "rotation_rad": 2.5887203760725215
+          }
+        },
+        {
+          "seed_index": 6,
+          "seed_rad": {
+            "shoulder_pan_joint": 3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.513755969212225,
+            "rotation_rad": 3.010437997232221
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.31415163569548477,
+            "rotation_rad": 2.48220071300553
+          }
+        },
+        {
+          "seed_index": 7,
+          "seed_rad": {
+            "shoulder_pan_joint": -3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0435190924893722,
+            "rotation_rad": 0.8303689746611612
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8110383385180768,
+            "rotation_rad": 2.489845573174599
+          }
+        }
+      ],
+      "original_planning_cost": {
+        "declared_ik_queries": 8,
+        "per_query_max_nfev": 300,
+        "actual_nfev_unavailable": true,
+        "wall_s": 3.214364827843383,
+        "physics_steps": 0
+      },
+      "limitation": "Native rejection receipt does not persist failed optimizer endpoints/nfev/residuals; this audit does not rerun any IK and cannot infer those missing quantities or global unreachability"
+    },
+    {
+      "gesture_id": 7,
+      "status": "null_geometry",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "new_native_plan_exists": false,
+      "candidate": {
+        "new_raw_row": 1538,
+        "old_raw_row": 879,
+        "new_score": 0.7961859703063965,
+        "old_score": 0.47305241227149963,
+        "new_extra_m": 0.0,
+        "old_extra_m": 0.01,
+        "new_flip": true,
+        "old_flip": false,
+        "new_slot": "g7:distal_000:ff",
+        "old_slot": "g7:distal_000:ff"
+      },
+      "native_input": {
+        "semantic_arguments_equal": true,
+        "excluded_path_and_clock_keys": [
+          "candidates",
+          "output_dir",
+          "process_start_monotonic_s",
+          "world_object_pose"
+        ],
+        "eight_seeds_equal": true,
+        "initial_full28_equal": true,
+        "base_transform_max_error": 0.0,
+        "opened_motors_equal": true,
+        "closed_motors_equal": true,
+        "native_sources": [
+          {
+            "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+            "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "current_sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+            "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "current_sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+            "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "current_sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py",
+            "sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "current_sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "unchanged": true
+          }
+        ]
+      },
+      "palm_delta": {
+        "translation_m": [
+          -0.22258269632697403,
+          0.04859568639768887,
+          -0.118253794293609
+        ],
+        "translation_norm_m": 0.2566876648876678,
+        "rotation_deg": 170.6284952996928,
+        "new_world_xyz": [
+          -0.8002497390144654,
+          0.1603784056048223,
+          0.09720375144476862
+        ],
+        "old_world_xyz": [
+          -0.5776670426874914,
+          0.11178271920713344,
+          0.2154575457383776
+        ]
+      },
+      "compatibility_relocation": {
+        "new": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            -0.022774772760437163,
+            -0.0831651964191581,
+            0.9962754939424502
+          ],
+          "target_pregrasp_world": [
+            [
+              -0.11658630375107727,
+              -0.6790749660920835,
+              0.7247515603327097,
+              -0.7993387481040479
+            ],
+            [
+              0.983532453118208,
+              -0.18040727887263505,
+              -0.010822540970201737,
+              0.16370501346158864
+            ],
+            [
+              0.13809977350069044,
+              0.7115549199863683,
+              0.6889252850652609,
+              0.057352731687070606
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "old": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            0.12232581167779004,
+            -0.14432824832956642,
+            -0.9819397906855026
+          ],
+          "target_pregrasp_world": [
+            [
+              0.6670677731794845,
+              0.5592422285389871,
+              -0.49220800054866154,
+              -0.582560075154603
+            ],
+            [
+              0.7401088251100129,
+              -0.5730182262023774,
+              0.3519787485547345,
+              0.1175558491403161
+            ],
+            [
+              -0.0852027756568995,
+              -0.5990811650007272,
+              -0.7961421008599731,
+              0.2547351373657977
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "existing_old_pregrasp_q_fk": {
+        "vs_old_target": {
+          "position_m": 7.153108206068573e-12,
+          "rotation_rad": 1.7164168720738443e-10
+        },
+        "vs_new_target": {
+          "position_m": 0.29678704904962844,
+          "rotation_rad": 2.97802904077273
+        },
+        "original_selected_seed_index": 0
+      },
+      "declared_seed_fk_only": [
+        {
+          "seed_index": 0,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5111822583654473,
+            "rotation_rad": 2.370798479303341
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2382293380626892,
+            "rotation_rad": 1.151495197674459
+          }
+        },
+        {
+          "seed_index": 1,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5111822583654473,
+            "rotation_rad": 2.370798479303341
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.2382293380626892,
+            "rotation_rad": 1.151495197674459
+          }
+        },
+        {
+          "seed_index": 2,
+          "seed_rad": {
+            "shoulder_pan_joint": -0.116113964711325,
+            "shoulder_lift_joint": -2.841066976586813,
+            "elbow_joint": -1.474947333335876,
+            "wrist_1_joint": -0.917485551243164,
+            "wrist_2_joint": -1.588036839162008,
+            "wrist_3_joint": 0.05413817986846
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.205382102264385,
+            "rotation_rad": 1.351297260127931
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3116905377956237,
+            "rotation_rad": 2.0176748817106818
+          }
+        },
+        {
+          "seed_index": 3,
+          "seed_rad": {
+            "shoulder_pan_joint": 1.442342638969421,
+            "shoulder_lift_joint": -1.589592596093649,
+            "elbow_joint": -1.273367404937744,
+            "wrist_1_joint": -3.764151712457174,
+            "wrist_2_joint": -1.717654053364889,
+            "wrist_3_joint": -0.06290036836733
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0824908079560542,
+            "rotation_rad": 2.727404881103469
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8642039261706483,
+            "rotation_rad": 2.3507065669825002
+          }
+        },
+        {
+          "seed_index": 4,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 1.5594077110290527,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.9943283311943045,
+            "rotation_rad": 2.4729908960787785
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.7645398702328449,
+            "rotation_rad": 2.351755398768032
+          }
+        },
+        {
+          "seed_index": 5,
+          "seed_rad": {
+            "shoulder_pan_joint": 0.0,
+            "shoulder_lift_joint": -2.5,
+            "elbow_joint": -1.4,
+            "wrist_1_joint": -2.3,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.4880173006500208,
+            "rotation_rad": 2.9720085175632134
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3370270411131734,
+            "rotation_rad": 2.5090938706826633
+          }
+        },
+        {
+          "seed_index": 6,
+          "seed_rad": {
+            "shoulder_pan_joint": 3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5064494101439713,
+            "rotation_rad": 3.0594298184098716
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3037916511519383,
+            "rotation_rad": 2.421487291807093
+          }
+        },
+        {
+          "seed_index": 7,
+          "seed_rad": {
+            "shoulder_pan_joint": -3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0415384052629584,
+            "rotation_rad": 0.8294882363997226
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8052647373146137,
+            "rotation_rad": 2.5104898368817317
+          }
+        }
+      ],
+      "original_planning_cost": {
+        "declared_ik_queries": 8,
+        "per_query_max_nfev": 300,
+        "actual_nfev_unavailable": true,
+        "wall_s": 3.2451931659597903,
+        "physics_steps": 0
+      },
+      "limitation": "Native rejection receipt does not persist failed optimizer endpoints/nfev/residuals; this audit does not rerun any IK and cannot infer those missing quantities or global unreachability"
+    },
+    {
+      "gesture_id": 8,
+      "status": "null_geometry",
+      "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+      "new_native_plan_exists": false,
+      "candidate": {
+        "new_raw_row": 1538,
+        "old_raw_row": 879,
+        "new_score": 0.7961859703063965,
+        "old_score": 0.47305241227149963,
+        "new_extra_m": 0.0,
+        "old_extra_m": 0.01,
+        "new_flip": true,
+        "old_flip": false,
+        "new_slot": "g8:distal_000:ff",
+        "old_slot": "g8:distal_000:ff"
+      },
+      "native_input": {
+        "semantic_arguments_equal": true,
+        "excluded_path_and_clock_keys": [
+          "candidates",
+          "output_dir",
+          "process_start_monotonic_s",
+          "world_object_pose"
+        ],
+        "eight_seeds_equal": true,
+        "initial_full28_equal": true,
+        "base_transform_max_error": 0.0,
+        "opened_motors_equal": true,
+        "closed_motors_equal": true,
+        "native_sources": [
+          {
+            "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+            "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "current_sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+            "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "current_sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+            "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "current_sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+            "unchanged": true
+          },
+          {
+            "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py",
+            "sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "current_sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+            "unchanged": true
+          }
+        ]
+      },
+      "palm_delta": {
+        "translation_m": [
+          -0.21414105275947737,
+          0.04599437295035137,
+          -0.1181456024378934
+        ],
+        "translation_norm_m": 0.24885790362262164,
+        "rotation_deg": 170.62849529969282,
+        "new_world_xyz": [
+          -0.803384521790268,
+          0.13520093463248417,
+          0.09709417634855794
+        ],
+        "old_world_xyz": [
+          -0.5892434690307906,
+          0.0892065616821328,
+          0.21523977878645134
+        ]
+      },
+      "compatibility_relocation": {
+        "new": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 1.1102230246251565e-16,
+          "independent_relocation_error": 2.220446049250313e-16,
+          "normalized_direction": [
+            -0.022774772760437163,
+            -0.0831651964191581,
+            0.9962754939424502
+          ],
+          "target_pregrasp_world": [
+            [
+              -0.3694388896738527,
+              -0.6252636770704697,
+              0.6874301716777254,
+              -0.8024735308798505
+            ],
+            [
+              0.9241396239525455,
+              -0.3247287352208172,
+              0.20128885702575763,
+              0.1385275424892505
+            ],
+            [
+              0.09736971930429947,
+              0.7096453921912016,
+              0.6977983627842629,
+              0.05724315659085993
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        },
+        "old": {
+          "primary_source_vs_world_max_error": 0.0,
+          "source_palm_vs_bridge_max_error": 0.0,
+          "native_palm_vs_bridge_max_error": 2.220446049250313e-16,
+          "independent_relocation_error": 4.440892098500626e-16,
+          "normalized_direction": [
+            0.12232581167779004,
+            -0.14432824832956642,
+            -0.9819397906855026
+          ],
+          "target_pregrasp_world": [
+            [
+              0.8335179218068,
+              0.4342423895319321,
+              -0.34158662321652916,
+              -0.5941365014979022
+            ],
+            [
+              0.552454706146132,
+              -0.6622990947516032,
+              0.5061162976512389,
+              0.09497969161531546
+            ],
+            [
+              -0.006455360862435698,
+              -0.6105681421633494,
+              -0.7919374167769389,
+              0.25451737041387146
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        }
+      },
+      "existing_old_pregrasp_q_fk": {
+        "vs_old_target": {
+          "position_m": 9.26228639746246e-12,
+          "rotation_rad": 2.1654637742756874e-10
+        },
+        "vs_new_target": {
+          "position_m": 0.29020311605126886,
+          "rotation_rad": 2.97802904076304
+        },
+        "original_selected_seed_index": 0
+      },
+      "declared_seed_fk_only": [
+        {
+          "seed_index": 0,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5142681348076644,
+            "rotation_rad": 2.385835551506138
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.24903945993698293,
+            "rotation_rad": 1.3235725764022215
+          }
+        },
+        {
+          "seed_index": 1,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 0.0,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.5142681348076644,
+            "rotation_rad": 2.385835551506138
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.24903945993698293,
+            "rotation_rad": 1.3235725764022215
+          }
+        },
+        {
+          "seed_index": 2,
+          "seed_rad": {
+            "shoulder_pan_joint": -0.116113964711325,
+            "shoulder_lift_joint": -2.841066976586813,
+            "elbow_joint": -1.474947333335876,
+            "wrist_1_joint": -0.917485551243164,
+            "wrist_2_joint": -1.588036839162008,
+            "wrist_3_joint": 0.05413817986846
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.21862275877844659,
+            "rotation_rad": 1.3980179778184507
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.31355578978784865,
+            "rotation_rad": 2.0929722749762507
+          }
+        },
+        {
+          "seed_index": 3,
+          "seed_rad": {
+            "shoulder_pan_joint": 1.442342638969421,
+            "shoulder_lift_joint": -1.589592596093649,
+            "elbow_joint": -1.273367404937744,
+            "wrist_1_joint": -3.764151712457174,
+            "wrist_2_joint": -1.717654053364889,
+            "wrist_3_joint": -0.06290036836733
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0663956295134869,
+            "rotation_rad": 2.7236901613637525
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.8505429782633357,
+            "rotation_rad": 2.611414987690856
+          }
+        },
+        {
+          "seed_index": 4,
+          "seed_rad": {
+            "elbow_joint": -2.07,
+            "shoulder_lift_joint": -1.12,
+            "shoulder_pan_joint": 1.5594077110290527,
+            "wrist_1_joint": -3.08,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.9798451427881869,
+            "rotation_rad": 2.437941023843593
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.7529163989025667,
+            "rotation_rad": 2.605926376390382
+          }
+        },
+        {
+          "seed_index": 5,
+          "seed_rad": {
+            "shoulder_pan_joint": 0.0,
+            "shoulder_lift_joint": -2.5,
+            "elbow_joint": -1.4,
+            "wrist_1_joint": -2.3,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.4923457428771874,
+            "rotation_rad": 2.9230851153601893
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.3507016434967069,
+            "rotation_rad": 2.2482470386765847
+          }
+        },
+        {
+          "seed_index": 6,
+          "seed_rad": {
+            "shoulder_pan_joint": 3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": -1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 0.49183625122738567,
+            "rotation_rad": 3.084786974478408
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.28491489145356996,
+            "rotation_rad": 2.2111476347214705
+          }
+        },
+        {
+          "seed_index": 7,
+          "seed_rad": {
+            "shoulder_pan_joint": -3.141592653589793,
+            "shoulder_lift_joint": -1.5,
+            "elbow_joint": 1.5,
+            "wrist_1_joint": -1.57,
+            "wrist_2_joint": 1.57,
+            "wrist_3_joint": 0.0
+          },
+          "existing_seed_fk_vs_new_target": {
+            "position_m": 1.0345829669151652,
+            "rotation_rad": 0.8982205925090828
+          },
+          "existing_seed_fk_vs_old_target": {
+            "position_m": 0.7985150126870426,
+            "rotation_rad": 2.5620031773946685
+          }
+        }
+      ],
+      "original_planning_cost": {
+        "declared_ik_queries": 8,
+        "per_query_max_nfev": 300,
+        "actual_nfev_unavailable": true,
+        "wall_s": 3.106753221945837,
+        "physics_steps": 0
+      },
+      "limitation": "Native rejection receipt does not persist failed optimizer endpoints/nfev/residuals; this audit does not rerun any IK and cannot infer those missing quantities or global unreachability"
+    }
+  ],
+  "input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/observation.json": "d239736a2322b9ea72ad62f2bd8c6044ff8a2c625b07e9436e9af73abae48f60",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observation.json": "d3a9a935360c5c099c3f4c00a483ed79dc9286c446ba5e825f1f138bc32e1c3e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/observed_scene.json": "0a0c971968af02760e411244e62bda12c98658d178d6cd583c96f4b6cce7ed92",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observed_scene.json": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/arm/native/frozen_input.json": "3e79bc578480c1d0040e2fc1da093ac2ece630625a7f6d8f28576ee59e1bc734",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/arm/native/frozen_input.json": "0b60bc42385944beb1b5ffed34b95bf098d7e9123fad0e95948a70ffa76fecdb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/arm/native/plan.json": "5969ff00f7340788dd11cce5c5b90b77f40c086cc495955042976690ff2963b3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/pool/selected_author_candidate.json": "552348c7b561d9a836e2f40eaab19234e49f51d57b3419e4f287387b2667a6d3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/pool/selected_author_candidate.json": "f3bc4e25079ae2ff9fd1941029a63ed1e59fff7a6a8a112239c1e12eefb230fd",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/arm/native/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/arm/ARM_PREPARATION.json": "33d721fc7c9ff099b5a939274beb0181237a892f99dae0140eea6da3ff645a3a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/pool/candidates.npz": "cbd7bdb5ac65ec99ede797cea364f8449b6a1e471c9da06d06cca3d4f4089884",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/pool/candidates.npz": "7f92ce400e4f393f115867938b1de2b5e84df43afa1d53de17e1d0cfd9a37082",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/arm/native/commands.npz": "1906d44d6b5874dfbc6e36aa0f668b9c9ddda04ea85faa85c77161d1b64e2493",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g1/LIFT_PIPELINE_RESULTS.json": "5ec1a289f21a58d91693fc4d9324338666315ce6cc2b7e9b92797dc91e3d2cb5",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/arm/native/frozen_input.json": "35034bc4be91da4188d0c80d743e79f488d4e5852bdc453201db672cd9a65055",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/arm/native/frozen_input.json": "f9d39b8d9c5aefea14f5a0182f16c63f2bd1e690a19fd96976946fab531d71a9",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/arm/native/plan.json": "58a3acff44e9be255068c8a9ec4619e5ded9f170c3b0c8046e4ec55c11bd6270",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/pool/selected_author_candidate.json": "46b971891e3c9ec7c6b837935cc310b8ac654a650f474dd623368ab2c0e192de",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/pool/selected_author_candidate.json": "350be58d28e5462814accad4981fc4e7ad5db5d5f1139feaab792841ea5e30c1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/arm/native/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/arm/ARM_PREPARATION.json": "33c537577faa8567aea3d030c71054c8cc10d150f73e874f6d9d61fbcd5d8f75",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/pool/candidates.npz": "25ddd92d2fd624063261302d31525381e90060085a8c3dada01df78e57a25beb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/pool/candidates.npz": "20ce461a18dd08e946519f27e1f1aca8cb9383ba4dec893bd5d8a60d658986d0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/arm/native/commands.npz": "32975cc47fd200709489eacc0af737e84aeeebf32fc2eeb949aae18fce5378ac",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g6/LIFT_PIPELINE_RESULTS.json": "ee6c85c550f7481d5e114b62d68cc31f52507ea599ca156c6aaabfda61447515",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/arm/native/frozen_input.json": "0fa59135c84f6a5d8a241815e5f8447111f14e7a1a55fd7a700922e4aaa634d4",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/arm/native/frozen_input.json": "88821308f55af3aadadf6d6c3f1cab0e82684603f8de9f4cf391cb16b1d361ab",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/arm/native/plan.json": "eb06bd8c0c494f424ca0c6ba40c6faa1e7f832cb4d947221c6be3f0114f47de8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/pool/selected_author_candidate.json": "5eaecdf55e44d8280251d3bade33a55c33c1b4518819f05cf58afcde3f6b8159",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/pool/selected_author_candidate.json": "a6d31328217d8d43aadbb3e73b5877b02463f99bf02f73cdd4ceae62ade7fa3f",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/arm/native/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/arm/ARM_PREPARATION.json": "bc856a4706eb8bf30739a181dc1fbdb8fd626f5f9596a5421b7f5fafdbfefb3e",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/pool/candidates.npz": "af9d0b07b00c8ffe16e1812ef0e5d96ad5d0dec05980dad605b94e0bdaa5ce42",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/pool/candidates.npz": "60f05dfb6452a97322fa1204c9aa0481f0c3d45f9451a7c25b79072388e93e3b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/arm/native/commands.npz": "afb4e3d5de7c237bf9d73f2c13e48107a7c971242aa2e57b44418ddb2977edaa",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g7/LIFT_PIPELINE_RESULTS.json": "a547ebda4e9b9c65ead0b36ea9232812ea0738ec9ac026efe12b2485743ae98c",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/arm/native/frozen_input.json": "60fdb2737d58d8c89167fefc7cf008e113b9f509ffd1eacd2eb397645652b6d6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8/arm/native/frozen_input.json": "b850cfa0ec64ecdfdb3ba4c6466e3b6d58948c1a2ffbc88ab0b3bde6613acfa3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8/arm/native/plan.json": "382fc4ac7d449d88616f02708a77bfc21525eb78c4cb9532751fe2ff64b98c03",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/pool/selected_author_candidate.json": "8e1fb4ac881a68f49e45b4933daaa763245bab04fe0406690f7cb45ca21a8c20",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8/pool/selected_author_candidate.json": "dd62e4d9baab935cd6c53f62c91bcf6ca6286a804c723bf7c0063718ea24014d",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/arm/native/admission_failure.json": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/arm/ARM_PREPARATION.json": "df1f7e40a5e538d48cd7cd3572adaa6f6f79e6aebb6b6a68b0b2404449dcb851",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/pool/candidates.npz": "0463a22244136034219f8e723ba578f321b15947716e98287faf3a7088104698",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8/pool/candidates.npz": "07bd4912e5ece127de3b139b6413f570cf9e591affa39c9507cd825316d1259a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8/pool/world_object_pose.json": "d9112176c4214d2179e4a9036c51db16a86378b9a02b7d897ee5edc47b2bcc45",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g8/arm/native/commands.npz": "f99375972f9a1468481ff9347d2a5b9eedd5a718482e52376f749724fc58e6f6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/g8/LIFT_PIPELINE_RESULTS.json": "f83d6c864a719d788a7adc05f35c7cf70bcae2d21cd5074cb5cb26561a3d34e3"
+  },
+  "costs": {
+    "physical_steps": 0,
+    "new_labels": 0,
+    "new_CGR": 0,
+    "new_IK_calls": 0,
+    "new_planning_calls": 0,
+    "existing_state_FK_evaluations": 36
+  },
+  "original_four_condition_cost": {
+    "declared_ik_queries": 32,
+    "actual_nfev_unavailable": true,
+    "physics_steps": 0,
+    "plans": 0,
+    "home_driver_calls": 0,
+    "lift_preparations": 0
+  },
+  "next_scope": "Separate frozen multi-scene collection protocol; no same-candidate extra seed/threshold change and no success-rate evaluation before data/training"
+}

@@ -106,7 +106,9 @@ def scene_source_bindings(scene, archive_sources=None):
 def validate_scene(path, archive_sources=None):
     """Validate frozen physical inputs; IDs carry no candidate segmentation."""
     scene = read(path)
-    if scene.get('schema') != 'anydex_boya_author_scene_v1':
+    lift_scene = (scene.get('schema') == 'anydex_boya_author_lift_scene_v1'
+                  and scene.get('task') == 'declared_boya_clutter_lift_v1')
+    if scene.get('schema') != 'anydex_boya_author_scene_v1' and not lift_scene:
         raise ValueError('Explicit author-scene schema required')
     rows = scene['objects']
     if len(rows) < 2 or len({r['object_id'] for r in rows}) != len(rows):
@@ -128,17 +130,23 @@ def validate_scene(path, archive_sources=None):
         if repair and sha(repair) != row['collision_refinement_sha256']:
             raise ValueError('Native collision repair binding changed')
     bin_spec = scene['bin']
-    transform(bin_spec['world_T_bin'])
-    half = np.asarray(bin_spec['inner_half_extents_m'], dtype=float)
-    if half.shape != (3,) or not np.isfinite(half).all() or np.any(half <= 0):
-        raise ValueError('Finite positive bin interior required')
-    if not all(np.isfinite(bin_spec[k]) and 0 < bin_spec[k] <= .05
-               for k in ('floor_thickness_m', 'wall_thickness_m')):
-        raise ValueError('Explicit positive bin wall/floor thickness required')
-    if bin_spec['friction'] != .6:
-        raise ValueError('Frozen bin friction required')
-    if 'release_palm_pose' in bin_spec:
-        transform(bin_spec['release_palm_pose'])
+    if lift_scene:
+        if bin_spec is not None:
+            raise ValueError('Explicit lift scene must contain bin=None')
+    else:
+        if bin_spec is None:
+            raise ValueError('Original transport scene requires its frozen bin')
+        transform(bin_spec['world_T_bin'])
+        half = np.asarray(bin_spec['inner_half_extents_m'], dtype=float)
+        if half.shape != (3,) or not np.isfinite(half).all() or np.any(half <= 0):
+            raise ValueError('Finite positive bin interior required')
+        if not all(np.isfinite(bin_spec[k]) and 0 < bin_spec[k] <= .05
+                   for k in ('floor_thickness_m', 'wall_thickness_m')):
+            raise ValueError('Explicit positive bin wall/floor thickness required')
+        if bin_spec['friction'] != .6:
+            raise ValueError('Frozen bin friction required')
+        if 'release_palm_pose' in bin_spec:
+            transform(bin_spec['release_palm_pose'])
     for path, digest in scene.get('input_sha256', {}).items():
         if sha(path) != digest:
             raise ValueError('Scene dependency changed: '+path)
@@ -152,6 +160,8 @@ def bin_boxes(bin_spec):
     The bin frame is the interior centre, and its interior is +/- half extents.
     No lid or invisible collision wall is introduced above the physical rim.
     """
+    if bin_spec is None:
+        return []
     frame = transform(bin_spec['world_T_bin'])
     x, y, z = map(float, bin_spec['inner_half_extents_m'])
     floor, wall = bin_spec['floor_thickness_m'], bin_spec['wall_thickness_m']

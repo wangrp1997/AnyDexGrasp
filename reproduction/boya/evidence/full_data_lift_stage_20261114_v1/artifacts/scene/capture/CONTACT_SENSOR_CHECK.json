@@ -1,0 +1,28 @@
+{
+  "contact_processing_enabled": true,
+  "rigid_body_paths": [
+    "/World/AuthorScene/graspnet_000",
+    "/World/AuthorScene/graspnet_002",
+    "/World/AuthorScene/graspnet_005"
+  ],
+  "target_collision_paths": [
+    "/World/AuthorScene/graspnet_000",
+    "/World/AuthorScene/graspnet_002",
+    "/World/AuthorScene/graspnet_005",
+    "/World/ground/collisionPlane"
+  ],
+  "evidence": {
+    "/World/AuthorScene/graspnet_000": {
+      "final_window_supported_ticks": 250,
+      "contact_rows": 440250
+    },
+    "/World/AuthorScene/graspnet_002": {
+      "final_window_supported_ticks": 250,
+      "contact_rows": 387000
+    },
+    "/World/AuthorScene/graspnet_005": {
+      "final_window_supported_ticks": 250,
+      "contact_rows": 703500
+    }
+  }
+}

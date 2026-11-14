@@ -1,0 +1,26 @@
+{
+  "schema": "anydex_boya_author_lift_endpoint_roundoff_regression_v1",
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "reproduction.boya.test_author_lift_plan.LiftPlanTests.test_existing_24_coordinate_prefix_is_accepted_and_not_mutated",
+    "reproduction.boya.test_author_lift_plan.LiftPlanTests.test_transport_closed_or_changed_open_prefix_is_rejected",
+    "reproduction.boya.test_author_lift_plan.LiftPlanTests.test_native_approach_endpoint_roundoff_is_accepted_without_changing_bytes",
+    "-v"
+  ],
+  "exit_code": 0,
+  "passed": true,
+  "tests": 3,
+  "wall_s": 0.707648023031652,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_plan.py": "ee5d2257c3c0e589897d96d545479185317207a5a0693237832f3552c5a4224f",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_lift_plan.py": "05499528c43cb071cdb9996b4301253e71afa55949e24ae31ffb3161bd09860b"
+  },
+  "log_sha256": "e285e4ebf5b5e4595af6057d38987f3b36e7d8aab596bd6817468d729177a3d0",
+  "new_native_ik_calls": 0,
+  "physics_steps": 0,
+  "training_updates": 0,
+  "scope": "Only guard for arithmetic roundoff changed; all prefix bytes still exact; original6test numerical results retained without repeating32IK"
+}
