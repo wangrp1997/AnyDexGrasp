@@ -1,0 +1,705 @@
+{
+  "schema": "anydex_boya_full_alignment_gap_audit_v1",
+  "status": "audit_complete_pipeline_not_ready",
+  "original_commit": "c9c4a43df33e40860417c7e2dd02f5122d3b2da2",
+  "pipeline_ready": false,
+  "launch_collection": false,
+  "launch_training": false,
+  "launch_external_test": false,
+  "gaps": [
+    {
+      "id": "collection_candidates",
+      "title": "采集候选与随机深入",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+          "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb",
+          "matches": [
+            {
+              "line": 430,
+              "text": "ggarray = ggarray[source_index][::-1][:500]"
+            },
+            {
+              "line": 437,
+              "text": "grasp_features = grasp_features[source_index][::-1][:500]"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "sha256": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+          "matches": [
+            {
+              "line": 124,
+              "text": "palm=map_slot(used,camera,slot,insertion_m=.01*a.extra_depth_index)"
+            },
+            {
+              "line": 130,
+              "text": "raw_depth_m=float(row[2]),additional_depth_index=a.extra_depth_index,additional_depth_m=.01*a.extra_depth_index,"
+            },
+            {
+              "line": 158,
+              "text": "gesture_id=a.gesture_id,additional_depth_index=a.extra_depth_index,scale=obs['object_scale'],selected_indices=list(range(len(records))),"
+            }
+          ]
+        }
+      ],
+      "finding": "Author collection: top500, fixed type, random extra per candidate. Old collection uses fixed object/type/extra slots and up to1000; requires a new sampler."
+    },
+    {
+      "id": "flip_policy",
+      "title": "采集翻面策略",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+          "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb",
+          "matches": [
+            {
+              "line": 433,
+              "text": "ggarray, if_flip = flip_ggarray(ggarray)"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py",
+          "sha256": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+          "matches": [
+            {
+              "line": 121,
+              "text": "for flipped in [False,True]:"
+            }
+          ]
+        }
+      ],
+      "finding": "One source-hand rig flip versus both orientations. Choose one documented Boya rig convention; do not silently count both as exact author collection."
+    },
+    {
+      "id": "collision_predicate",
+      "title": "碰撞算法",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+          "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+          "matches": [
+            {
+              "line": 166,
+              "text": "output = voxel_grid.check_if_included(ps)"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py",
+          "sha256": "3ce2a0545524196b916cdd72922d3146e4277728cba33287442804f375a13375",
+          "matches": [
+            {
+              "line": 29,
+              "text": "h=ConvexHull(v)"
+            }
+          ]
+        }
+      ],
+      "finding": "Surface-cloud voxel inclusion differs from per-link convex interior tests. New extracted voxel kernel is verified, hand cloud/LUT integration is still pending."
+    },
+    {
+      "id": "collision_sweep",
+      "title": "接近扫掠",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+          "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+          "matches": [
+            {
+              "line": 161,
+              "text": "meshes_pointclouds = meshes_pointclouds + meshes_pointclouds_cache"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py",
+          "sha256": "3ce2a0545524196b916cdd72922d3146e4277728cba33287442804f375a13375",
+          "matches": [
+            {
+              "line": 36,
+              "text": "for distance in np.linspace(0.,.1,21):"
+            }
+          ]
+        }
+      ],
+      "finding": "Author loop accumulates translated clouds recursively. With .08m its shifts are0/2/5/7/8/10/13/15cm, not merely a uniform0..8cm sweep. Preserve source behavior explicitly."
+    },
+    {
+      "id": "hand_surface_cloud",
+      "title": "手点云资产",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_allegro_hand_to_stl.py",
+          "sha256": "25db45b21fdf106b84e87542f3558ffb19c533c1d7064bb0da9f018a3f8beb70",
+          "matches": [
+            {
+              "line": 124,
+              "text": "pcd = o3.geometry.TriangleMesh.sample_points_uniformly(mesh, 300000)"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py",
+          "sha256": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+          "matches": [
+            {
+              "line": 104,
+              "text": "self.meshes = {n: self.hand.mesh(n) for n in self.hand.collision_links}"
+            }
+          ]
+        }
+      ],
+      "finding": "Generate full open-hand surface clouds from validated Boya mesh/FK at every used LUT slot; source hull vertices alone are not the author hand cloud."
+    },
+    {
+      "id": "dataset_cap",
+      "title": "更多数据是否真正进入训练",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/dataset/multifinger_hand.py",
+          "sha256": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e",
+          "matches": [
+            {
+              "line": 77,
+              "text": "if self.dataset_type == \"train\" and data_num == 100:"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_s40_code_recipe.py",
+          "sha256": "ce302f406422dbbf043194cdbd873cd369b66a5cb03fc731a41d649f9669b62c",
+          "matches": [
+            {
+              "line": 98,
+              "text": "if manifest['sample_count']!=435: raise ValueError('Expected435 real labeled trials')"
+            }
+          ]
+        }
+      ],
+      "finding": "Keep first100 baseline; separately explicit300/1000 extensions. Do not silently use the legacy first100 loader for the expanded dataset."
+    },
+    {
+      "id": "singleton_batch",
+      "title": "扩采后的尾批处理",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py",
+          "sha256": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf",
+          "matches": [
+            {
+              "line": 173,
+              "text": "if batch_data_label[\"result\"].shape[0] == 1:"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py",
+          "sha256": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+          "matches": [
+            {
+              "line": 54,
+              "text": "batches[-2]=np.concatenate((batches[-2],batches[-1]));batches.pop()"
+            }
+          ]
+        }
+      ],
+      "finding": "Author skips singleton batches; old adapter merges them. This did not affect current fit heads below128 rows but matters when scaling data. New primitive calls the original epoch directly."
+    },
+    {
+      "id": "checkpoint_selection",
+      "title": "模型选择规则",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py",
+          "sha256": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf",
+          "matches": [
+            {
+              "line": 135,
+              "text": "def save_model(epoch, mean_indicators, best_indicators):"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_s40_code_recipe.py",
+          "sha256": "ce302f406422dbbf043194cdbd873cd369b66a5cb03fc731a41d649f9669b62c",
+          "matches": [
+            {
+              "line": 121,
+              "text": "selected_epoch=100,model_selection='fixed final100; no epoch or threshold selection',"
+            }
+          ]
+        }
+      ],
+      "finding": "Author saves best validation P/R checkpoints at preset thresholds. Old fixed-final is a declared difference. Freeze a fresh internal validation policy; never select on previously used external objects."
+    },
+    {
+      "id": "task_semantics",
+      "title": "采集动作和标签",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+          "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+          "matches": [
+            {
+              "line": 406,
+              "text": "self.throw(acc=acc, vel=vel)"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/BOYA_MAPPING_CLOSURE_ALIGNMENT_20261108.md",
+          "sha256": "5c1c23cb08d4ab0379ad8f6386dc59ce8fb85e2bf07bf1158f56856fbe3a5a4d",
+          "matches": [
+            {
+              "line": 16,
+              "text": "| 退出路径 | `ur.py:401–406` 先沿接近方向退4mm，再退到pregrasp、throw | 当前诊断垂直抬100mm | 明确任务差异，本轮不改，以免同时混入路径变量 |"
+            }
+          ]
+        }
+      ],
+      "finding": "Old labels measure lift/retention, author records transfer to a bin. A transport label cannot be inferred from old lift traces; implement and validate transport before collecting that task."
+    },
+    {
+      "id": "scene_distribution",
+      "title": "训练场景分布",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/methods.tex",
+          "sha256": "0d771ba5c0b20a4afdd732ec6432f00a645f30eaedbf00f1b0b34697482f24f1",
+          "matches": [
+            {
+              "line": 101,
+              "text": "We provide an overview of the complete data collection pipeline, summarized in Algorithm~\\ref{alg_datacollection}. Initially, we randomly place objects on the table. We then run the representation model to generate dense contact-centric grasp representations for the scene. We sample a CGR and a grasp type of the robotic hand, and map the CGR to a multi-finger grasp pose. Collision detection is performed to ensure that the grasp pose does not collide with the scene. If no collision happens, we execute the grasp process. During this process, we record whether the grasp is successful and store the necessary information in the dataset."
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_s40_settled_collection.py",
+          "sha256": "6b2615eeebbd7a046f851e426e72e2e757b752d384ee9b8e220439382f98b580",
+          "matches": [
+            {
+              "line": 5,
+              "text": "Each new attempt cold-resets to the settled measured pose with declared zero"
+            }
+          ]
+        }
+      ],
+      "finding": "Old isolated target collection is not the author random tabletop multi-object distribution. New scene interface must represent all scene objects and record initialization separately."
+    },
+    {
+      "id": "prehead_hand_filter",
+      "title": "评分前手几何过滤",
+      "status": "open_pipeline_gap",
+      "evidence": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+          "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+          "matches": [
+            {
+              "line": 607,
+              "text": "source_index = ggarray[:, 0].argsort()"
+            }
+          ]
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_hand_domain.py",
+          "sha256": "5b8197c3a281eeac3bbc7546b8f795bb8608f84a51ac26cfeae3aa37d2d09ea0",
+          "matches": [
+            {
+              "line": 3,
+              "text": "Only the TABLE PREFIX of the existing collision predicate is evaluated here."
+            }
+          ]
+        }
+      ],
+      "finding": "Old Boya domain applies hand/table/extra feasibility before top1000 and head scoring. Source DH3 uses sensor/rig filters, then score, then hand collision. Keep camera/workspace adaptation explicit and remove the extra pre-head hand predicate from the aligned path."
+    }
+  ],
+  "old_dataset_support": {
+    "1": {
+      "train": {
+        "records": 83,
+        "positive": 62,
+        "negative": 21,
+        "output_counts": [
+          1,
+          1,
+          0,
+          0,
+          6,
+          1,
+          3,
+          3,
+          15,
+          8,
+          5,
+          2,
+          16,
+          11,
+          3,
+          0,
+          4,
+          4,
+          0,
+          0
+        ]
+      },
+      "internal_check": {
+        "records": 15,
+        "positive": 11,
+        "negative": 4,
+        "output_counts": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          2,
+          4,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "6": {
+      "train": {
+        "records": 98,
+        "positive": 65,
+        "negative": 33,
+        "output_counts": [
+          2,
+          1,
+          0,
+          1,
+          8,
+          2,
+          3,
+          3,
+          16,
+          10,
+          7,
+          3,
+          17,
+          15,
+          6,
+          0,
+          3,
+          1,
+          0,
+          0
+        ]
+      },
+      "internal_check": {
+        "records": 22,
+        "positive": 14,
+        "negative": 8,
+        "output_counts": [
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          2,
+          1,
+          2,
+          5,
+          1,
+          2,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "7": {
+      "train": {
+        "records": 98,
+        "positive": 74,
+        "negative": 24,
+        "output_counts": [
+          0,
+          1,
+          0,
+          2,
+          9,
+          3,
+          3,
+          3,
+          17,
+          9,
+          7,
+          4,
+          19,
+          14,
+          5,
+          0,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "internal_check": {
+        "records": 19,
+        "positive": 16,
+        "negative": 3,
+        "output_counts": [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1,
+          3,
+          1,
+          2,
+          1,
+          4,
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      }
+    },
+    "8": {
+      "train": {
+        "records": 85,
+        "positive": 53,
+        "negative": 32,
+        "output_counts": [
+          3,
+          2,
+          2,
+          0,
+          2,
+          1,
+          1,
+          2,
+          15,
+          10,
+          6,
+          3,
+          15,
+          10,
+          6,
+          1,
+          3,
+          3,
+          0,
+          0
+        ]
+      },
+      "internal_check": {
+        "records": 15,
+        "positive": 7,
+        "negative": 8,
+        "output_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1,
+          4,
+          3,
+          3,
+          0,
+          1,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "old_fit_records": 364,
+  "old_internal_records": 71,
+  "old_fit_empty_output_cells": 17,
+  "old_fit_one_or_two_record_cells": 20,
+  "reference_conflicts": {
+    "paper": {
+      "epochs": 20,
+      "initial_lr": 0.0001,
+      "scheduler": "segmented; exact milestones not published",
+      "loss": "supplement describes cross entropy"
+    },
+    "public_code": {
+      "epochs": 100,
+      "initial_lr": 0.0005,
+      "weight_decay": 0.0005,
+      "scheduler": "PolyLR power .99",
+      "loss": "selected-output MSE after final ReLU",
+      "default_output_count": 240,
+      "dataset_training_cap_per_type": 100
+    },
+    "published_models": {
+      "output_count": 20,
+      "canonical_input_dim": 480
+    },
+    "target_status": "User confirmed public code plus published models as primary reference",
+    "primary": "public_code_and_published_models",
+    "training_target": {
+      "epochs": 100,
+      "initial_lr": 0.0005,
+      "weight_decay": 0.0005,
+      "batch_size": 128,
+      "scheduler": "PolyLR power .99 once per epoch",
+      "loss": "selected-output MSE after final ReLU",
+      "output_count": 20,
+      "explicit_override": "num_two_finger_angle=1 to match published heads",
+      "checkpoint_selection": "original save_model P/R rule at .5/.7/.9"
+    },
+    "paper_discrepancies_are_separate": true,
+    "author_complete_training_history_recovered": false,
+    "deployment_reference": {
+      "primary_hand_profile": "public DH3 code",
+      "collection": {
+        "source": "collect_dh3_grasp_data.py",
+        "CGR_branches": 1,
+        "top_CGR": 500,
+        "hand_type": "fixed requested ordinal",
+        "extra_depth": "independent uniform0/10/20/30mm",
+        "hand_voxel_m": 0.003,
+        "approach_m": 0.04,
+        "collision_point_threshold": 2,
+        "min_width_m": 0.01,
+        "rig_flip": "R[1,1]>0: negate columns0:2"
+      },
+      "deployment": {
+        "source": "robot_dh3.py",
+        "CGR_branches": 11,
+        "top_CGR": 1000,
+        "score_topk": 3500,
+        "strict_score_threshold": 0.85,
+        "collision_topk": 400,
+        "hand_voxel_m": 0.003,
+        "approach_m": 0.05,
+        "collision_point_threshold": 0,
+        "min_width_m": 0.045,
+        "rig_flip": "R[1,1]>0: negate columns1:3"
+      },
+      "literal_collection_deployment_flip_difference_preserved_and_disclosed": true,
+      "loader_override": "Deterministic four-head loader; original nested dictionary reset is a documented I/O defect",
+      "boya_substitutions": "Boya hand mesh/FK, width/reference table, controller, simulation/sensor and arm require separate validation",
+      "author_parameters_do_not_establish_boya_hardware_equivalence": true
+    }
+  },
+  "expansion": {
+    "status": "specification_not_started",
+    "authorized_in_session": true,
+    "source_objects": "S40 first; verify official identity/scale and scene assets before launch",
+    "tentative_boya_types": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "types_require_calibration_semantics_validation": true,
+    "valid_training_records_per_type": [
+      100,
+      300,
+      1000
+    ],
+    "nested_same_collection_prefix": true,
+    "valid_total_four_types": [
+      400,
+      1200,
+      4000
+    ],
+    "larger_data_is_explicit_extension": true,
+    "include_both_outcomes": true,
+    "success_rate_not_a_stopping_or_sampling_rule": true,
+    "null_is_not_negative": true,
+    "object_group_split_before_collection": true,
+    "exact_split_and_attempt_budget_frozen_before_launch": false,
+    "legacy435_automatic_merge": false,
+    "legacy_compatibility_status": "pending action/label/collection protocol comparison",
+    "scene_initialization_must_precede_RGBD": true,
+    "observation_must_match_execution_start": true,
+    "external_test_must_follow_final_training": true,
+    "previously_used_external_objects_are_development": true,
+    "learning_curve_cannot_use_external_results_to_change_sampler_or_training": true
+  },
+  "remaining_hand_and_scene_checks": [
+    "Boya pad and per-type reference frames/action semantics, including inactive fingers and closure endpoints",
+    "Source contact geometry, stable initialization and dynamic multi-object scene support",
+    "Choice of one author deployment profile; hand-specific parameters explicitly adapted without mixing branches",
+    "Transport execution and labels; existing lift-only records do not prove transfer success"
+  ],
+  "source_and_input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/collect_allegro_grasp_data.py": "d833b95ab50afcd9924ca6e97b21e6b7f65aa304f9a808599c0cdf48c98b7bbb",
+    "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb",
+    "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+    "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf",
+    "/home/wangrenpeng/AnyDexGrasp/dataset/multifinger_hand.py": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet.py": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d",
+    "/home/wangrenpeng/AnyDexGrasp/models/loss.py": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/utils/solvers.py": "a9f2b274f438a1a29c1ae17c22a1f553dbe978354ba7143222a653e17a38f713",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_full_alignment.py": "b71ee3a0d9460ea2883dc14bec060735c806849c20572deccbc28d754b9c07fc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_protocol.py": "05afd8f176b41f89c56d8e6130ad887c6e75a059ef9c5b0d453ca4f7c1da54fa",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py": "3ce2a0545524196b916cdd72922d3146e4277728cba33287442804f375a13375",
+    "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_allegro_hand_to_stl.py": "25db45b21fdf106b84e87542f3558ffb19c533c1d7064bb0da9f018a3f8beb70",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_s40_code_recipe.py": "ce302f406422dbbf043194cdbd873cd369b66a5cb03fc731a41d649f9669b62c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/BOYA_MAPPING_CLOSURE_ALIGNMENT_20261108.md": "5c1c23cb08d4ab0379ad8f6386dc59ce8fb85e2bf07bf1158f56856fbe3a5a4d",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/methods.tex": "0d771ba5c0b20a4afdd732ec6432f00a645f30eaedbf00f1b0b34697482f24f1",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_s40_settled_collection.py": "6b2615eeebbd7a046f851e426e72e2e757b752d384ee9b8e220439382f98b580",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_hand_domain.py": "5b8197c3a281eeac3bbc7546b8f795bb8608f84a51ac26cfeae3aa37d2d09ea0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_1.npz": "3ed91e3b22f442b2997d6bf1638e683f5df75bee0e1c50759749ba09293f9259",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_6.npz": "c1dfdb84ea60c33b090081de0fc4ad51a0c34748dfb5e5ec9dff0a4873ddbc39",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_7.npz": "0cf4a7b126801be0085708fb0d550bfe7f7ffdccd452719817ae3db8ca172f0b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_8.npz": "2f68bc7d68b9e46d2089c0820eb8411aeaed604941cd01e69ea7690989b06196"
+  },
+  "new_CGR_forwards": 0,
+  "new_physics_steps": 0,
+  "real_data_optimizer_updates": 0,
+  "new_models_written": 0
+}

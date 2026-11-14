@@ -1,0 +1,107 @@
+{
+  "reference_choice": {
+    "paper": {
+      "epochs": 20,
+      "initial_lr": 0.0001,
+      "scheduler": "segmented; exact milestones not published",
+      "loss": "supplement describes cross entropy"
+    },
+    "public_code": {
+      "epochs": 100,
+      "initial_lr": 0.0005,
+      "weight_decay": 0.0005,
+      "scheduler": "PolyLR power .99",
+      "loss": "selected-output MSE after final ReLU",
+      "default_output_count": 240,
+      "dataset_training_cap_per_type": 100
+    },
+    "published_models": {
+      "output_count": 20,
+      "canonical_input_dim": 480
+    },
+    "target_status": "User confirmed public code plus published models as primary reference",
+    "primary": "public_code_and_published_models",
+    "training_target": {
+      "epochs": 100,
+      "initial_lr": 0.0005,
+      "weight_decay": 0.0005,
+      "batch_size": 128,
+      "scheduler": "PolyLR power .99 once per epoch",
+      "loss": "selected-output MSE after final ReLU",
+      "output_count": 20,
+      "explicit_override": "num_two_finger_angle=1 to match published heads",
+      "checkpoint_selection": "original save_model P/R rule at .5/.7/.9"
+    },
+    "paper_discrepancies_are_separate": true,
+    "author_complete_training_history_recovered": false,
+    "deployment_reference": {
+      "primary_hand_profile": "public DH3 code",
+      "collection": {
+        "source": "collect_dh3_grasp_data.py",
+        "CGR_branches": 1,
+        "top_CGR": 500,
+        "hand_type": "fixed requested ordinal",
+        "extra_depth": "independent uniform0/10/20/30mm",
+        "hand_voxel_m": 0.003,
+        "approach_m": 0.04,
+        "collision_point_threshold": 2,
+        "min_width_m": 0.01,
+        "rig_flip": "R[1,1]>0: negate columns0:2"
+      },
+      "deployment": {
+        "source": "robot_dh3.py",
+        "CGR_branches": 11,
+        "top_CGR": 1000,
+        "score_topk": 3500,
+        "strict_score_threshold": 0.85,
+        "collision_topk": 400,
+        "hand_voxel_m": 0.003,
+        "approach_m": 0.05,
+        "collision_point_threshold": 0,
+        "min_width_m": 0.045,
+        "rig_flip": "R[1,1]>0: negate columns1:3"
+      },
+      "literal_collection_deployment_flip_difference_preserved_and_disclosed": true,
+      "loader_override": "Deterministic four-head loader; original nested dictionary reset is a documented I/O defect",
+      "boya_substitutions": "Boya hand mesh/FK, width/reference table, controller, simulation/sensor and arm require separate validation",
+      "author_parameters_do_not_establish_boya_hardware_equivalence": true
+    }
+  },
+  "data_expansion": {
+    "status": "specification_not_started",
+    "authorized_in_session": true,
+    "source_objects": "S40 first; verify official identity/scale and scene assets before launch",
+    "tentative_boya_types": [
+      1,
+      6,
+      7,
+      8
+    ],
+    "types_require_calibration_semantics_validation": true,
+    "valid_training_records_per_type": [
+      100,
+      300,
+      1000
+    ],
+    "nested_same_collection_prefix": true,
+    "valid_total_four_types": [
+      400,
+      1200,
+      4000
+    ],
+    "larger_data_is_explicit_extension": true,
+    "include_both_outcomes": true,
+    "success_rate_not_a_stopping_or_sampling_rule": true,
+    "null_is_not_negative": true,
+    "object_group_split_before_collection": true,
+    "exact_split_and_attempt_budget_frozen_before_launch": false,
+    "legacy435_automatic_merge": false,
+    "legacy_compatibility_status": "pending action/label/collection protocol comparison",
+    "scene_initialization_must_precede_RGBD": true,
+    "observation_must_match_execution_start": true,
+    "external_test_must_follow_final_training": true,
+    "previously_used_external_objects_are_development": true,
+    "learning_curve_cannot_use_external_results_to_change_sampler_or_training": true
+  },
+  "pipeline_ready": false
+}

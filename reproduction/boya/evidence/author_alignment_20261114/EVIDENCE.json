@@ -1,0 +1,105 @@
+{
+  "schema": "anydex_boya_public_code_alignment_stage_v1",
+  "status": "component_stage_complete_pipeline_not_ready",
+  "reference": "public code plus published models, confirmed by user",
+  "pipeline_ready": false,
+  "formal_collection_started": false,
+  "formal_training_started": false,
+  "new_external_tests": 0,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "real_data_optimizer_updates": 0,
+  "new_formal_models": 0,
+  "synthetic_Adam_updates_including_development_failure": 8,
+  "temporary_synthetic_checkpoints": 6,
+  "temporary_synthetic_checkpoints_removed": true,
+  "unique_tests_passed": 8,
+  "subtests_passed": 25,
+  "collision_binding_check_repeated_after_new_binding_assertion": true,
+  "source_and_input_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_protocol.py": "05afd8f176b41f89c56d8e6130ad887c6e75a059ef9c5b0d453ca4f7c1da54fa",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_hand_clouds.py": "30b8b6f059ad9b97a7a7c34a3cd1d2650d1081afcc8fc6bbd3bff67c94bdf9ca",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collision.py": "1e06c915c43fd31ee4575f0d56e5222fadd73229c9fcaca01e84d128a783022d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_training.py": "18f5c6c52dd335ddb0788a6ebb658ac523bb84aab557242c2a13eb74f1299740",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_full_alignment.py": "b71ee3a0d9460ea2883dc14bec060735c806849c20572deccbc28d754b9c07fc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_stage.py": "b19439c838836e31aff028617aca1b12898b392f4d377694e535ccee263dc33d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_protocol.py": "5162f22959500fe1c933b1bf07aa242cdd51516f4c92409ed3abd25e592e54fb",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline.py": "dc71ee3d6ae88a2aa8c61640aa46fff41d68bb012770193c69a420d289f2ae01",
+    "/home/wangrenpeng/AnyDexGrasp/AGENTS.md": "c30cee89eb37f3cfc9cd7223181651910136e57b8eab18c404a08ef8c19ee987",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/README.md": "a4531207b6e142b47f6582c1e64ab3b0c4202e1e01772d190779dcfd8d1c1e05",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/README.md": "263e30c8990ab3ae1a8d887b3a7b3a962d499557843129603949fa4aa656ba6e",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/PUBLIC_CODE_ALIGNMENT_STAGE_20261114.md": "2ac6727f28d8c370e7830a52f331947cf6ac25e9f7af71d9a4b01609154c57d5",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/REPRODUCTION_READINESS_20261114.md": "78d07d475a9dd3d9eaf342ab08b8a7759bdf43cf58d517366e22e2fbcaae64c1",
+    "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797",
+    "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_dh3_hand_to_stl.py": "3a123241195638c6ca7a7b1cd438fe9c4504e4fd567ceea5acf0d8dc1ea62a81",
+    "/home/wangrenpeng/AnyDexGrasp/generate_mesh_and_pointcloud/recover_allegro_hand_to_stl.py": "25db45b21fdf106b84e87542f3558ffb19c533c1d7064bb0da9f018a3f8beb70",
+    "/home/wangrenpeng/AnyDexGrasp/collect_allegro_grasp_data.py": "d833b95ab50afcd9924ca6e97b21e6b7f65aa304f9a808599c0cdf48c98b7bbb",
+    "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb",
+    "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1",
+    "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf",
+    "/home/wangrenpeng/AnyDexGrasp/dataset/multifinger_hand.py": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet.py": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d",
+    "/home/wangrenpeng/AnyDexGrasp/models/loss.py": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8",
+    "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26",
+    "/home/wangrenpeng/AnyDexGrasp/utils/solvers.py": "a9f2b274f438a1a29c1ae17c22a1f553dbe978354ba7143222a653e17a38f713",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_collection_pool.py": "a1b67bb922fd5535a6d7705dc10ebfc77270a34b9022c06fae4e5a470e196856",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/build_trial_pool.py": "3ce2a0545524196b916cdd72922d3146e4277728cba33287442804f375a13375",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/asset_adapter.py": "d77a262b5475ee709173e798906eb219d9cf02bcd4335d29202eeadb75dd8ea3",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_s40_code_recipe.py": "ce302f406422dbbf043194cdbd873cd369b66a5cb03fc731a41d649f9669b62c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/train_boya_decision.py": "c95b74d9d0ff2f5602664c9eb61df767fd4b3df22acab3d8327c52d6381671c2",
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/BOYA_MAPPING_CLOSURE_ALIGNMENT_20261108.md": "5c1c23cb08d4ab0379ad8f6386dc59ce8fb85e2bf07bf1158f56856fbe3a5a4d",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/paper_code_audit/source/sections/methods.tex": "0d771ba5c0b20a4afdd732ec6432f00a645f30eaedbf00f1b0b34697482f24f1",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_s40_settled_collection.py": "6b2615eeebbd7a046f851e426e72e2e757b752d384ee9b8e220439382f98b580",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/boya_hand_domain.py": "5b8197c3a281eeac3bbc7546b8f795bb8608f84a51ac26cfeae3aa37d2d09ea0",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_1.npz": "3ed91e3b22f442b2997d6bf1638e683f5df75bee0e1c50759749ba09293f9259",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_6.npz": "c1dfdb84ea60c33b090081de0fc4ad51a0c34748dfb5e5ec9dff0a4873ddbc39",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_7.npz": "0cf4a7b126801be0085708fb0d550bfe7f7ffdccd452719817ae3db8ca172f0b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_8.npz": "2f68bc7d68b9e46d2089c0820eb8411aeaed604941cd01e69ea7690989b06196"
+  },
+  "evidence_files": {
+    "COLLISION_BINDING_TESTS.log": {
+      "sha256": "ca703b023150cb1b52bafc7143c836055bd56b782fb07293f5e934b02b08ed28",
+      "bytes": 251
+    },
+    "HAND_SURFACE_AUDIT.json": {
+      "sha256": "01a0c7d88c3560486112abe875caadf7bf74ba1c9330627b33906582b65b8e19",
+      "bytes": 23449
+    },
+    "HAND_SURFACE_SUMMARY.json": {
+      "sha256": "15a5a855a5ab7378985e14034832abb8541f0eacd96a83051a3702e9c01d2531",
+      "bytes": 1166
+    },
+    "PIPELINE_TESTS.log": {
+      "sha256": "63d897b26bfe78925059b78f868ca7ef966a3e55f5894a95ff16304918a6f23b",
+      "bytes": 796
+    },
+    "PRIMITIVE_TESTS.log": {
+      "sha256": "28a3ee62d4877d6ec6296a3571f114aba3617724f56497df9d5b681664955ee8",
+      "bytes": 706
+    },
+    "PUBLIC_CODE_TARGET.json": {
+      "sha256": "7fea215fc72fa6eea916fe665b16352e18af2c41ac1d14fab83f0f639aced91e",
+      "bytes": 3853
+    },
+    "SOURCE_GAP_AUDIT.json": {
+      "sha256": "e89814c3e618a9f8a220c490ef602d4f8f534b7d0b3f9941bba69318a40fc632",
+      "bytes": 25502
+    }
+  },
+  "raw_output_dirs": [
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v1",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v2"
+  ],
+  "historical_outputs_preserved": true,
+  "old435_automatic_merge": false,
+  "default_pipeline_promoted": false,
+  "remaining": [
+    "Boya pad/reference/approach/closure action semantics",
+    "new collection path, pre-head filter/order alignment",
+    "dynamic multi-object scenes and transport/drop labels",
+    "frozen object split, attempt budget and observation/start binding",
+    "formal collection, retraining/internal validation and then new external evaluation"
+  ]
+}

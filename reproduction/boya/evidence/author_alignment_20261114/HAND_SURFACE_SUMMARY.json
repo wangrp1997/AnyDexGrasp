@@ -1,0 +1,41 @@
+{
+  "schema": "anydex_boya_author_hand_surfaces_v1",
+  "status": "complete",
+  "calibration": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+    "sha256": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832"
+  },
+  "gestures": [
+    1,
+    6,
+    7,
+    8
+  ],
+  "sampling": {
+    "points_per_state": 300000,
+    "voxel_sizes_m": [
+      0.001,
+      0.002,
+      0.003,
+      0.004,
+      0.005
+    ],
+    "seed_base": 20261114,
+    "method": "Open3D triangle-area uniform surface sampling"
+  },
+  "physics_steps": 0,
+  "CGR_forwards": 0,
+  "calibration_semantics_validated": false,
+  "dynamic_hand_model_validated": false,
+  "states_count": 132,
+  "total_uniform_samples": 39600000,
+  "all_source_collision_links_retained": true,
+  "source_meshes_convexified": false,
+  "wall_s": 39.12424944690429,
+  "original_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v2/hand_clouds/MANIFEST.json",
+    "sha256": "d5ba0f1cae61d5a23ea8f7466ed86d5783d773cb0524344c85b9565220711cf6"
+  },
+  "asset_npz_bytes": 658268502,
+  "downsampled_points": 28863752
+}
