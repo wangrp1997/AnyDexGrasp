@@ -1,6 +1,8 @@
 # AnyDexGrasp 独立复现工作区
 
-## 2026-11-14 最新：public采集已产生首条审计通过正标签，固定开发队列运行中，正式训练仍0
+## 2026-11-14 最新：public固定开发采集已有10条有效标签，7正3负，正式训练仍0
+
+接续快照：四型新fit标签g1/6/7/8为3/2/2/3，共10条=7正3负，internal仍0；原10场景固定预算继续运行，不能把7/10当训后成功率。新增三场景wave调度/独立导出，23项组合检查通过，但尚无实际并发或加速证据。独立fresh6仅freeze（3fit+3internal/seed2026111402，3ready+3placement_null），0启动；因旧批次index5/g6准备时BACKEND.json在写后SHA绑定到读取间变为2150字节全NUL，保留infra且0执行/不记负例/不重试，原因未定，暂不启动新wave。旧预算的其余有效任务继续按原规则执行，未修改冻结源码。正式目标仍每型1000fit+200internal，不自动混旧435；正式训练/新模型外部评测均0。当前数量继续以ledger为准，以下首标签段为较早快照。
 
 用户授权/mnt/public/datasets存大文件。新专用根/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1，轻代码/证据push，原始数据/轨迹/接触/模型不进Git。新场景构建/批量/无损capture与execute/独立标签审计已并行交付；开发queue预冻结8fit+2internal/seed2026111401/三体同split/每型固定首选一次，7ready+3placement_null不补例。原32+8按全三体隔离，新增NPZ三体身份列和训练数量门；目标仍每型1000fit+另200internal，旧435不自动混入。
 

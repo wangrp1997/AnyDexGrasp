@@ -1,0 +1,59 @@
+{
+  "schema": "anydex_boya_independent_wave_review_evidence_v1",
+  "review_status": "code_review_and_zero_physics_checks_pass_actual_launch_paused",
+  "review": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_COLLECTION_WAVES_REVIEW_20261114.md",
+    "sha256": "de91f49ddc8f659471cc7d1816b7894db9fbfe9055128a8025ed10077118683f"
+  },
+  "artifacts": {
+    "test_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_waves_review_20261114_v1/TEST_RECEIPT.json",
+      "sha256": "2ae73babdacba9cf0798e918c874229c9d044623bb309f3a87b3e0aa107c03c5"
+    },
+    "real_fd_inheritance": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_waves_review_20261114_v1/REAL_FD_INHERITANCE.json",
+      "sha256": "c942f574f57923bb2e3064833c00a09a78927361cd5b9b1640cf214493ec0e17"
+    },
+    "independent_fd_script": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_waves_review_20261114_v1/check_actual_fd_inheritance.py",
+      "sha256": "ca412400bc8850708e04feafe714eb87348f92d5fea9eb3d42b5164cd06cf8b8"
+    }
+  },
+  "sources": {
+    "waves": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_waves.py",
+      "sha256": "afc7d78face25ce8102458c9a351c4a2cd6f0db45103c2c3dd13478d6496561c"
+    },
+    "resources": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py",
+      "sha256": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b"
+    },
+    "export": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_export.py",
+      "sha256": "3252143090a204ccd5fa450fc613b301701d4a4be1d6924ba584081f2b6a3e1f"
+    }
+  },
+  "verified": [
+    "Parent close-only legacy GPU0 lease inherited by worker and actual stage; true exclusive flock checked.",
+    "Per-stage thread-local pass_fds inherits own slots only; real subprocess FD inspection passed.",
+    "All stage lifetimes including no-slot build must prove full PGID exit or quarantine.",
+    "Both reservation-before-Popen and Popen-before-PID-persist faults block later dispatch.",
+    "Registry checks unresolved prior new-W runs before another new-W run; legacy hand-run entries do not read it.",
+    "Original queue.seed, scene mapping and four-gesture order preserved.",
+    "Wave-order quota admission, quota-excess raw cost preservation, later quota split skipping.",
+    "Partial parent admission and partial dead-worker output recovery without relaunch.",
+    "Shared source/checkpoint hash dedup per verification; selected worker checks its own child dependencies.",
+    "Recursive raw STAGE output bindings and complete three-body split identities checked."
+  ],
+  "actual_parallel_Kit_runs": 0,
+  "simulator_processes": 0,
+  "physics_steps": 0,
+  "planning_calls": 0,
+  "CGR_forwards": 0,
+  "training_updates": 0,
+  "limitations": [
+    "No actual three-Kit concurrency, memory peak, or throughput measured.",
+    "Registry is read only by new W entry; legacy/manual entry points retain flock cooperation only.",
+    "Original fixed batch index5/g6 BACKEND.json changed from bound JSON to all NUL; cause unresolved and new parallel dispatch paused."
+  ]
+}

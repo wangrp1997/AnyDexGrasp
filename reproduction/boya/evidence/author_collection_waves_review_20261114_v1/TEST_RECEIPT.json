@@ -1,0 +1,23 @@
+{
+  "schema": "anydex_boya_independent_wave_review_tests_v1",
+  "tests_run": 23,
+  "failures": 0,
+  "errors": 0,
+  "unittest_reported_wall_s": 17.028,
+  "total_wall_s": 17.104757827008143,
+  "sources_unchanged": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_waves.py": "afc7d78face25ce8102458c9a351c4a2cd6f0db45103c2c3dd13478d6496561c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_export.py": "3252143090a204ccd5fa450fc613b301701d4a4be1d6924ba584081f2b6a3e1f",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_waves.py": "d8f03ba9382b7b7e9872c3c449063739cbbc493c4f560d4509a1e8ea5e146173",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_wave_export.py": "7ab17c592c42460982336097aa0166ff224570d96172ba6bb8770b1a4c89e295"
+  },
+  "simulator_processes": 0,
+  "physics_steps": 0,
+  "planning_calls": 0,
+  "CGR_forwards": 0,
+  "training_updates": 0,
+  "scope": "Synthetic batch fixtures plus real standard-library subprocess/flock lifecycle tests; no Kit, native robot planning, dataset collection, or model execution.",
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/wangrenpeng/AnyDexGrasp:/home/wangrenpeng/AnyDexGrasp/reproduction/boya /home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest reproduction.boya.test_author_collection_waves reproduction.boya.test_author_collection_wave_export -v"
+}

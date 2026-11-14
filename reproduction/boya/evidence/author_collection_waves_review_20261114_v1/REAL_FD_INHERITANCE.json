@@ -1,0 +1,30 @@
+{
+  "physics_steps": 0,
+  "planning_calls": 0,
+  "results": {
+    "0": {
+      "only_own_slot_and_parent_lease": true,
+      "returncode": 0,
+      "visible_lock_files": [
+        "global.lock",
+        "slots/prepare/0.lock"
+      ]
+    },
+    "1": {
+      "only_own_slot_and_parent_lease": true,
+      "returncode": 0,
+      "visible_lock_files": [
+        "global.lock",
+        "slots/prepare/1.lock"
+      ]
+    }
+  },
+  "simulator_processes": 0,
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py",
+    "sha256": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b"
+  },
+  "sources_unchanged": true,
+  "status": "pass",
+  "test": "two_actual_prepare_subprocesses"
+}
