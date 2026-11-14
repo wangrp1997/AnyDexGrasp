@@ -1,0 +1,684 @@
+{
+  "status": "complete",
+  "scope": "Three known objects with controlled wrist; A0 separate reference object. Not external/full-arm/paper acceptance.",
+  "primary_recipe": "original_mse",
+  "primary_success_identity": 1,
+  "primary_success_augmented": 1,
+  "secondary_recipe": "preactivation",
+  "secondary_success_identity": 0,
+  "secondary_success_augmented": 2,
+  "denominator": 3,
+  "A0_all_four_conditions_failed": true,
+  "conditions": 16,
+  "unique_physical_poses": 14,
+  "new_physical_attempts": 7,
+  "reused_attempts": 7,
+  "new_physics_steps": 14700,
+  "reused_physics_steps": 13775,
+  "new_CGR_models": 3,
+  "new_CGR_forwards": 33,
+  "new_candidates": 67584,
+  "new_head_loads_formal": 24,
+  "new_head_loads_audit": 24,
+  "queries_recomputed": 15408,
+  "full_cloud_checks": 2268,
+  "new_training_updates": 0,
+  "new_RGBD": 0,
+  "training_writeback": false,
+  "default_promotion": false,
+  "metrics": [
+    {
+      "input_kind": "identity",
+      "recipe": "original_mse",
+      "success": 1,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": false,
+        "egad_A6": false,
+        "egad_E0": true,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    },
+    {
+      "input_kind": "identity",
+      "recipe": "preactivation",
+      "success": 0,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": false,
+        "egad_A6": false,
+        "egad_E0": false,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "original_mse",
+      "success": 1,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": true,
+        "egad_A6": false,
+        "egad_E0": false,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "preactivation",
+      "success": 2,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": true,
+        "egad_A6": false,
+        "egad_E0": true,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    }
+  ],
+  "comparison": [
+    {
+      "object_id": "egad_A3",
+      "head_models_loaded": 8,
+      "wall_s": 102.55648979498073,
+      "cases": [
+        {
+          "input_kind": "identity",
+          "recipe": "original_mse",
+          "domain_counts": {
+            "input": 2048,
+            "raw_width_pass": 1117,
+            "world_workspace_pass": 574,
+            "common_pass": 353,
+            "mapped_pose_queries": 2822,
+            "support_plane_tests": 11288,
+            "hand_domain_raw": 61,
+            "hand_domain_pose_queries": 341,
+            "raw_topk": 61,
+            "head_queries": 341,
+            "allowed_extra_combinations": 1243
+          },
+          "head_queries": 341,
+          "expanded_combinations": 1243,
+          "shortlist": 129,
+          "geometry_checked": 129,
+          "geometry_admitted": 12,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 61,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "first_admitted_identity": [
+            0,
+            398,
+            1,
+            false,
+            2,
+            3
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "identity",
+          "recipe": "preactivation",
+          "domain_counts": {
+            "input": 2048,
+            "raw_width_pass": 1117,
+            "world_workspace_pass": 574,
+            "common_pass": 353,
+            "mapped_pose_queries": 2822,
+            "support_plane_tests": 11288,
+            "hand_domain_raw": 61,
+            "hand_domain_pose_queries": 341,
+            "raw_topk": 61,
+            "head_queries": 341,
+            "allowed_extra_combinations": 1243
+          },
+          "head_queries": 341,
+          "expanded_combinations": 1243,
+          "shortlist": 203,
+          "geometry_checked": 203,
+          "geometry_admitted": 20,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 61,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "first_admitted_identity": [
+            0,
+            0,
+            7,
+            false,
+            0,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "augmented11",
+          "recipe": "original_mse",
+          "domain_counts": {
+            "input": 22528,
+            "raw_width_pass": 13287,
+            "world_workspace_pass": 6920,
+            "common_pass": 4220,
+            "mapped_pose_queries": 33754,
+            "support_plane_tests": 135016,
+            "hand_domain_raw": 690,
+            "hand_domain_pose_queries": 3880,
+            "raw_topk": 690,
+            "head_queries": 3880,
+            "allowed_extra_combinations": 14214
+          },
+          "head_queries": 3880,
+          "expanded_combinations": 14214,
+          "shortlist": 400,
+          "geometry_checked": 400,
+          "geometry_admitted": 26,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 61,
+            "1": 59,
+            "2": 62,
+            "3": 61,
+            "4": 63,
+            "5": 70,
+            "6": 61,
+            "7": 60,
+            "8": 64,
+            "9": 64,
+            "10": 65
+          },
+          "first_admitted_identity": [
+            9,
+            772,
+            8,
+            false,
+            1,
+            1
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "augmented11",
+          "recipe": "preactivation",
+          "domain_counts": {
+            "input": 22528,
+            "raw_width_pass": 13287,
+            "world_workspace_pass": 6920,
+            "common_pass": 4220,
+            "mapped_pose_queries": 33754,
+            "support_plane_tests": 135016,
+            "hand_domain_raw": 690,
+            "hand_domain_pose_queries": 3880,
+            "raw_topk": 690,
+            "head_queries": 3880,
+            "allowed_extra_combinations": 14214
+          },
+          "head_queries": 3880,
+          "expanded_combinations": 14214,
+          "shortlist": 400,
+          "geometry_checked": 400,
+          "geometry_admitted": 36,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 61,
+            "1": 59,
+            "2": 62,
+            "3": 61,
+            "4": 63,
+            "5": 70,
+            "6": 61,
+            "7": 60,
+            "8": 64,
+            "9": 64,
+            "10": 65
+          },
+          "first_admitted_identity": [
+            9,
+            772,
+            8,
+            false,
+            1,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        }
+      ]
+    },
+    {
+      "object_id": "egad_A6",
+      "head_models_loaded": 8,
+      "wall_s": 93.94797993986867,
+      "cases": [
+        {
+          "input_kind": "identity",
+          "recipe": "original_mse",
+          "domain_counts": {
+            "input": 2048,
+            "raw_width_pass": 1022,
+            "world_workspace_pass": 567,
+            "common_pass": 299,
+            "mapped_pose_queries": 2392,
+            "support_plane_tests": 9568,
+            "hand_domain_raw": 26,
+            "hand_domain_pose_queries": 148,
+            "raw_topk": 26,
+            "head_queries": 148,
+            "allowed_extra_combinations": 503
+          },
+          "head_queries": 148,
+          "expanded_combinations": 503,
+          "shortlist": 36,
+          "geometry_checked": 36,
+          "geometry_admitted": 6,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 26,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "first_admitted_identity": [
+            0,
+            702,
+            7,
+            true,
+            1,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "identity",
+          "recipe": "preactivation",
+          "domain_counts": {
+            "input": 2048,
+            "raw_width_pass": 1022,
+            "world_workspace_pass": 567,
+            "common_pass": 299,
+            "mapped_pose_queries": 2392,
+            "support_plane_tests": 9568,
+            "hand_domain_raw": 26,
+            "hand_domain_pose_queries": 148,
+            "raw_topk": 26,
+            "head_queries": 148,
+            "allowed_extra_combinations": 503
+          },
+          "head_queries": 148,
+          "expanded_combinations": 503,
+          "shortlist": 62,
+          "geometry_checked": 62,
+          "geometry_admitted": 7,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 26,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "first_admitted_identity": [
+            0,
+            418,
+            6,
+            true,
+            0,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "augmented11",
+          "recipe": "original_mse",
+          "domain_counts": {
+            "input": 22528,
+            "raw_width_pass": 12882,
+            "world_workspace_pass": 6960,
+            "common_pass": 3909,
+            "mapped_pose_queries": 31270,
+            "support_plane_tests": 125080,
+            "hand_domain_raw": 397,
+            "hand_domain_pose_queries": 2354,
+            "raw_topk": 397,
+            "head_queries": 2354,
+            "allowed_extra_combinations": 8021
+          },
+          "head_queries": 2354,
+          "expanded_combinations": 8021,
+          "shortlist": 400,
+          "geometry_checked": 400,
+          "geometry_admitted": 55,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 26,
+            "1": 26,
+            "2": 30,
+            "3": 50,
+            "4": 36,
+            "5": 52,
+            "6": 31,
+            "7": 51,
+            "8": 45,
+            "9": 24,
+            "10": 26
+          },
+          "first_admitted_identity": [
+            6,
+            1735,
+            8,
+            false,
+            1,
+            1
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "augmented11",
+          "recipe": "preactivation",
+          "domain_counts": {
+            "input": 22528,
+            "raw_width_pass": 12882,
+            "world_workspace_pass": 6960,
+            "common_pass": 3909,
+            "mapped_pose_queries": 31270,
+            "support_plane_tests": 125080,
+            "hand_domain_raw": 397,
+            "hand_domain_pose_queries": 2354,
+            "raw_topk": 397,
+            "head_queries": 2354,
+            "allowed_extra_combinations": 8021
+          },
+          "head_queries": 2354,
+          "expanded_combinations": 8021,
+          "shortlist": 400,
+          "geometry_checked": 400,
+          "geometry_admitted": 50,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 26,
+            "1": 26,
+            "2": 30,
+            "3": 50,
+            "4": 36,
+            "5": 52,
+            "6": 31,
+            "7": 51,
+            "8": 45,
+            "9": 24,
+            "10": 26
+          },
+          "first_admitted_identity": [
+            6,
+            1735,
+            8,
+            false,
+            1,
+            1
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        }
+      ]
+    },
+    {
+      "object_id": "egad_E0",
+      "head_models_loaded": 8,
+      "wall_s": 85.13016774714924,
+      "cases": [
+        {
+          "input_kind": "identity",
+          "recipe": "original_mse",
+          "domain_counts": {
+            "input": 2048,
+            "raw_width_pass": 1078,
+            "world_workspace_pass": 551,
+            "common_pass": 313,
+            "mapped_pose_queries": 2504,
+            "support_plane_tests": 10016,
+            "hand_domain_raw": 20,
+            "hand_domain_pose_queries": 82,
+            "raw_topk": 20,
+            "head_queries": 82,
+            "allowed_extra_combinations": 217
+          },
+          "head_queries": 82,
+          "expanded_combinations": 217,
+          "shortlist": 11,
+          "geometry_checked": 11,
+          "geometry_admitted": 8,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 20,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "first_admitted_identity": [
+            0,
+            1931,
+            6,
+            true,
+            3,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "identity",
+          "recipe": "preactivation",
+          "domain_counts": {
+            "input": 2048,
+            "raw_width_pass": 1078,
+            "world_workspace_pass": 551,
+            "common_pass": 313,
+            "mapped_pose_queries": 2504,
+            "support_plane_tests": 10016,
+            "hand_domain_raw": 20,
+            "hand_domain_pose_queries": 82,
+            "raw_topk": 20,
+            "head_queries": 82,
+            "allowed_extra_combinations": 217
+          },
+          "head_queries": 82,
+          "expanded_combinations": 217,
+          "shortlist": 12,
+          "geometry_checked": 12,
+          "geometry_admitted": 8,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 20,
+            "1": 0,
+            "2": 0,
+            "3": 0,
+            "4": 0,
+            "5": 0,
+            "6": 0,
+            "7": 0,
+            "8": 0,
+            "9": 0,
+            "10": 0
+          },
+          "first_admitted_identity": [
+            0,
+            715,
+            6,
+            true,
+            1,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "augmented11",
+          "recipe": "original_mse",
+          "domain_counts": {
+            "input": 22528,
+            "raw_width_pass": 13420,
+            "world_workspace_pass": 6811,
+            "common_pass": 3971,
+            "mapped_pose_queries": 31766,
+            "support_plane_tests": 127064,
+            "hand_domain_raw": 210,
+            "hand_domain_pose_queries": 899,
+            "raw_topk": 210,
+            "head_queries": 899,
+            "allowed_extra_combinations": 1796
+          },
+          "head_queries": 899,
+          "expanded_combinations": 1796,
+          "shortlist": 100,
+          "geometry_checked": 100,
+          "geometry_admitted": 75,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 20,
+            "1": 20,
+            "2": 20,
+            "3": 23,
+            "4": 11,
+            "5": 18,
+            "6": 17,
+            "7": 18,
+            "8": 18,
+            "9": 23,
+            "10": 22
+          },
+          "first_admitted_identity": [
+            2,
+            1931,
+            6,
+            true,
+            3,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        },
+        {
+          "input_kind": "augmented11",
+          "recipe": "preactivation",
+          "domain_counts": {
+            "input": 22528,
+            "raw_width_pass": 13420,
+            "world_workspace_pass": 6811,
+            "common_pass": 3971,
+            "mapped_pose_queries": 31766,
+            "support_plane_tests": 127064,
+            "hand_domain_raw": 210,
+            "hand_domain_pose_queries": 899,
+            "raw_topk": 210,
+            "head_queries": 899,
+            "allowed_extra_combinations": 1796
+          },
+          "head_queries": 899,
+          "expanded_combinations": 1796,
+          "shortlist": 115,
+          "geometry_checked": 115,
+          "geometry_admitted": 66,
+          "hand_domain_CGR_topk_branch_counts": {
+            "0": 20,
+            "1": 20,
+            "2": 20,
+            "3": 23,
+            "4": 11,
+            "5": 18,
+            "6": 17,
+            "7": 18,
+            "8": 18,
+            "9": 23,
+            "10": 22
+          },
+          "first_admitted_identity": [
+            6,
+            621,
+            6,
+            true,
+            3,
+            0
+          ],
+          "full_cloud_before_rank_freeze": false,
+          "arm_checked": 0,
+          "new_physics_steps": 0
+        }
+      ]
+    }
+  ],
+  "source_protocol_sha256": "54f914f347f2a741c24ba48e447733b7d14b88c5b3c255eb363567bcdbeaee9f",
+  "timings": {
+    "representation_batch": {
+      "complete": true,
+      "model_loads": 3,
+      "network_forwards": 33,
+      "wall_s": 130.858064717846
+    },
+    "offline_batch": {
+      "complete": true,
+      "wall_s": 382.28723998600617
+    },
+    "physical_dispatch_s": 100.91558134998195,
+    "media_render_s": 133.11337029607967
+  },
+  "media": {
+    "complete": true,
+    "videos": 14,
+    "new_replays": 7,
+    "reused": 7,
+    "physics_steps": 0,
+    "all_frames_decoded": true
+  },
+  "inputs_unchanged": true,
+  "delivery_root": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1",
+  "formal_physics_root": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3"
+}

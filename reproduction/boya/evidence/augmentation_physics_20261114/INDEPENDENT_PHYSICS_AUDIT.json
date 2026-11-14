@@ -1,0 +1,1006 @@
+{
+  "status": "complete",
+  "cases": [
+    {
+      "object_id": "egad_A3",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A3/evaluation.json",
+        "sha256": "f4a040a5289d5c93b3228ec266f09e1ee92b231236322f35267e3f438fac4cd6"
+      },
+      "physical_steps": 1175,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": false
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 0.0,
+        "mimic_error_rad": 8.940696716308594e-08,
+        "penetration_m": 7.575657218694687e-05,
+        "palm_position_error_m": 9.418399135809014e-06,
+        "palm_orientation_error_rad": 1.724219798446854e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 8428,
+        "final_bottom_clearance_m": 0.0007938576673314026,
+        "final_reference_rise_m": null,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "final_finger_loads_n": [
+          0.40980765223503113,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A3_identity_original_mse",
+      "source_object_id": "egad_A3",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A3_rank00036",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/execution/egad_A3_rank00036/evaluation.json",
+        "sha256": "0a249eaa96ced32ede8c471c506232dc591169b86cda5ec5f65bde97958ef70c"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 4.3998582555104804e-07,
+        "mimic_error_rad": 1.9595026969909668e-05,
+        "penetration_m": 6.208429113030434e-05,
+        "palm_position_error_m": 0.00036373878585724875,
+        "palm_orientation_error_rad": 1.3735054041744115e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 8428,
+        "final_bottom_clearance_m": 0.0007938925599195916,
+        "final_reference_rise_m": -0.029298778623342514,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 0.368,
+          "trailing_s": 0.0,
+          "steps": 94
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A3_identity_preactivation",
+      "source_object_id": "egad_A3",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A3_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A3_augmented11_original_mse/evaluation.json",
+        "sha256": "f1c3bf266838785a15b54f67c0181bb758c7408581171a5d132ee30626ad64a2"
+      },
+      "physical_steps": 2100,
+      "task_success": true,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.6169955188161111e-06,
+        "mimic_error_rad": 2.0742416381835938e-05,
+        "penetration_m": 0.00012882934242952615,
+        "palm_position_error_m": 7.897700343935748e-05,
+        "palm_orientation_error_rad": 1.0311093138411481e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 8428,
+        "final_bottom_clearance_m": 0.10281643585430741,
+        "final_reference_rise_m": 0.095261599868536,
+        "final_state_still_lifted_and_bearing": true,
+        "qualifying_pickup": {
+          "longest_s": 1.608,
+          "trailing_s": 1.608,
+          "steps": 402
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 2.0,
+          "trailing_s": 2.0,
+          "steps": 500
+        },
+        "final_finger_loads_n": [
+          12.611333847045898,
+          8.293824195861816,
+          3.5309996604919434,
+          4.569909334182739,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A3_augmented11_original_mse",
+      "source_object_id": "egad_A3",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A3_augmented11_preactivation",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A3_augmented11_preactivation/evaluation.json",
+        "sha256": "3f798fa302baa86e903437cc52e83876bbf30e0e26edf98f9237602a7c2c775f"
+      },
+      "physical_steps": 2100,
+      "task_success": true,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.4655209952252335e-06,
+        "mimic_error_rad": 2.2590160369873047e-05,
+        "penetration_m": 4.717125557363033e-05,
+        "palm_position_error_m": 2.7977779333437726e-05,
+        "palm_orientation_error_rad": 1.0311093138411481e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 8428,
+        "final_bottom_clearance_m": 0.10988110401518139,
+        "final_reference_rise_m": 0.13487952575087547,
+        "final_state_still_lifted_and_bearing": true,
+        "qualifying_pickup": {
+          "longest_s": 1.504,
+          "trailing_s": 1.504,
+          "steps": 376
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 2.0,
+          "trailing_s": 2.0,
+          "steps": 500
+        },
+        "final_finger_loads_n": [
+          11.0140550583601,
+          8.628399133682251,
+          4.846257209777832,
+          2.0016322135925293,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A3_augmented11_preactivation",
+      "source_object_id": "egad_A3",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A6",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A6/evaluation.json",
+        "sha256": "5dabc8d689867aa5c2193ca25fce3c03dbf2809a2375ef478a37778f331d0cb7"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 4.2973488234565593e-07,
+        "mimic_error_rad": 2.1822750568389893e-05,
+        "penetration_m": 7.821433246135712e-05,
+        "palm_position_error_m": 4.734980324999294e-05,
+        "palm_orientation_error_rad": 4.1576389236242885e-08
+      },
+      "pickup": {
+        "source_mesh_vertices": 6971,
+        "final_bottom_clearance_m": 0.0006623703655745769,
+        "final_reference_rise_m": 0.0014722496271133423,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 0.32,
+          "trailing_s": 0.0,
+          "steps": 80
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A6_identity_original_mse",
+      "source_object_id": "egad_A6",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A6",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/evaluation.json",
+        "sha256": "1dca35c39c91115e229200a7b02cbde749970f66db78debc383daa7189920f3d"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 3.552088179148427e-09,
+        "mimic_error_rad": 4.410743713378906e-06,
+        "penetration_m": 9.644223609939218e-05,
+        "palm_position_error_m": 0.00014779789572206357,
+        "palm_orientation_error_rad": 1.9177652503022434e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 6971,
+        "final_bottom_clearance_m": 0.000662350528791331,
+        "final_reference_rise_m": 0.00927678495645523,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A6_identity_preactivation",
+      "source_object_id": "egad_A6",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A6_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A6_augmented11_original_mse/evaluation.json",
+        "sha256": "481f0d7f2ed1b6cefabdfb1dcfdc852eb724c882053d50100725d7a5adc3c433"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.4337632643635079e-11,
+        "mimic_error_rad": 1.5497207641601562e-05,
+        "penetration_m": 3.048381768167019e-05,
+        "palm_position_error_m": 0.0001314281324643493,
+        "palm_orientation_error_rad": 7.52972972070926e-08
+      },
+      "pickup": {
+        "source_mesh_vertices": 6971,
+        "final_bottom_clearance_m": 0.0006622188396179685,
+        "final_reference_rise_m": -0.018931444734334946,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A6_augmented11_original_mse",
+      "source_object_id": "egad_A6",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_E0",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_E0/evaluation.json",
+        "sha256": "91aa8e7e497a15f959695acd9390d9c31191962b33b111e751692da53bdfcfc7"
+      },
+      "physical_steps": 2100,
+      "task_success": true,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.2398686521919444e-08,
+        "mimic_error_rad": 2.4706125259399414e-05,
+        "penetration_m": 6.362795829772949e-05,
+        "palm_position_error_m": 5.610185702376897e-05,
+        "palm_orientation_error_rad": 1.4403915340812169e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 2880,
+        "final_bottom_clearance_m": 0.07409396140700802,
+        "final_reference_rise_m": 0.11098976992070675,
+        "final_state_still_lifted_and_bearing": true,
+        "qualifying_pickup": {
+          "longest_s": 1.216,
+          "trailing_s": 1.216,
+          "steps": 304
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 2.0,
+          "trailing_s": 2.0,
+          "steps": 500
+        },
+        "final_finger_loads_n": [
+          3.497011661529541,
+          3.6408143043518066,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_E0_identity_original_mse",
+      "source_object_id": "egad_E0",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_E0_rank00001",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/execution/egad_E0_rank00001/evaluation.json",
+        "sha256": "2feba1634534c0c1dbb5077c54a3b555bfa31d62cdb9f188c1eb233f7080c262"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.520126957643697e-08,
+        "mimic_error_rad": 2.2158026695251465e-05,
+        "penetration_m": 2.1502841264009476e-05,
+        "palm_position_error_m": 2.853589006669581e-05,
+        "palm_orientation_error_rad": 1.6258944034757574e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 2880,
+        "final_bottom_clearance_m": 0.0014340922220307112,
+        "final_reference_rise_m": 0.0725171584635973,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.032,
+          "trailing_s": 0.0,
+          "steps": 8
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 1.372,
+          "trailing_s": 0.0,
+          "steps": 343
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_E0_identity_preactivation",
+      "source_object_id": "egad_E0",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_E0_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_E0_augmented11_original_mse/evaluation.json",
+        "sha256": "e974ce5ef080bfbaae502d096cf5bff673d6f23ca542595a834c0094f17371ed"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.6352972309618963e-08,
+        "mimic_error_rad": 2.238154411315918e-05,
+        "penetration_m": 0.00013097457122057676,
+        "palm_position_error_m": 1.0692232646410603e-05,
+        "palm_orientation_error_rad": 1.3959737383556879e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 2880,
+        "final_bottom_clearance_m": 0.0019810303045487143,
+        "final_reference_rise_m": 0.0901703704148531,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.0,
+          "trailing_s": 0.0,
+          "steps": 0
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 1.408,
+          "trailing_s": 0.0,
+          "steps": 352
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_E0_augmented11_original_mse",
+      "source_object_id": "egad_E0",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_E0_augmented11_preactivation",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_E0_augmented11_preactivation/evaluation.json",
+        "sha256": "2fe3488671f659f9f4c43ba144dc97e1c53f1ea1eda86ce2f329b1536e10d3f3"
+      },
+      "physical_steps": 2100,
+      "task_success": true,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 2.4757127903285436e-08,
+        "mimic_error_rad": 2.396106719970703e-05,
+        "penetration_m": 4.035141319036484e-05,
+        "palm_position_error_m": 7.642387115380962e-05,
+        "palm_orientation_error_rad": 1.2805836969904905e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 2880,
+        "final_bottom_clearance_m": 0.026870313093348433,
+        "final_reference_rise_m": 0.13178867287933826,
+        "final_state_still_lifted_and_bearing": true,
+        "qualifying_pickup": {
+          "longest_s": 0.6920000000000001,
+          "trailing_s": 0.6920000000000001,
+          "steps": 173
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 2.0,
+          "trailing_s": 2.0,
+          "steps": 500
+        },
+        "final_finger_loads_n": [
+          3.9381349086761475,
+          3.6528027057647705,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_E0_augmented11_preactivation",
+      "source_object_id": "egad_E0",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A0",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A0/evaluation.json",
+        "sha256": "fc812252041cf4669411fa0e18e74a5b91b18c42d566e7f18c56554a1d160de9"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 9.941096834609198e-09,
+        "mimic_error_rad": 2.16066837310791e-05,
+        "penetration_m": 1.9144965335726738e-05,
+        "palm_position_error_m": 1.0825224121547547e-05,
+        "palm_orientation_error_rad": 2.0460057506181148e-07
+      },
+      "pickup": {
+        "source_mesh_vertices": 3862,
+        "final_bottom_clearance_m": 0.00039713937060560645,
+        "final_reference_rise_m": 0.09154298156499863,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.056,
+          "trailing_s": 0.0,
+          "steps": 15
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 1.0,
+          "trailing_s": 0.0,
+          "steps": 251
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A0_identity_original_mse",
+      "source_object_id": "egad_A0",
+      "kind": "reused",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A0_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A0_augmented11_original_mse/evaluation.json",
+        "sha256": "ecb92e077055067b3e932e0ea155d450240e3bff0253bea139ae730a3fc6d071"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 5.445530604220039e-08,
+        "mimic_error_rad": 2.244114875793457e-05,
+        "penetration_m": 2.8094742447137833e-05,
+        "palm_position_error_m": 1.3022765109019286e-05,
+        "palm_orientation_error_rad": 7.56555310989401e-08
+      },
+      "pickup": {
+        "source_mesh_vertices": 3862,
+        "final_bottom_clearance_m": 0.002305667972103978,
+        "final_reference_rise_m": 0.11094004288315773,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.852,
+          "trailing_s": 0.0,
+          "steps": 213
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 1.288,
+          "trailing_s": 0.0,
+          "steps": 322
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A0_augmented11_original_mse",
+      "source_object_id": "egad_A0",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    },
+    {
+      "object_id": "egad_A0_augmented11_preactivation",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A0_augmented11_preactivation/evaluation.json",
+        "sha256": "5426680a991c8bd0381499688c2026d5e0ce7ec9faeb5b52cb675462fa6de040"
+      },
+      "physical_steps": 2100,
+      "task_success": false,
+      "delta_world_m": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "complete_20hand_commands_bitwise_unchanged": true,
+      "gantry_relative_commands_within_2e_minus8_m": true,
+      "desired_palm_only_declared_translation": true,
+      "object_initial_state_and_physics_preserved": true,
+      "native_within_20um": true,
+      "gates": {
+        "joint_limits": true,
+        "mimics": true,
+        "penetration": true,
+        "palm_tracking": true,
+        "no_nonhand_object_support": true,
+        "fixed_base": true,
+        "complete_execution": true
+      },
+      "reconstructed_maxima": {
+        "joint_limit_violation_rad": 1.8075956731422593e-08,
+        "mimic_error_rad": 2.2530555725097656e-05,
+        "penetration_m": 3.995631413999945e-05,
+        "palm_position_error_m": 2.230996180448428e-05,
+        "palm_orientation_error_rad": 7.56555310989401e-08
+      },
+      "pickup": {
+        "source_mesh_vertices": 3862,
+        "final_bottom_clearance_m": 0.0013978562979643921,
+        "final_reference_rise_m": 0.06357952579855919,
+        "final_state_still_lifted_and_bearing": false,
+        "qualifying_pickup": {
+          "longest_s": 0.368,
+          "trailing_s": 0.0,
+          "steps": 92
+        },
+        "bilateral_load_during_lift": {
+          "longest_s": 0.964,
+          "trailing_s": 0.0,
+          "steps": 241
+        },
+        "final_finger_loads_n": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "candidate_id": "egad_A0_augmented11_preactivation",
+      "source_object_id": "egad_A0",
+      "kind": "new",
+      "independently_reconstructed_commands": {
+        "all_2100_commands_reconstructed": true,
+        "twenty_hand_and_three_gantry_joint_targets_bitwise_equal": true,
+        "velocity_time_phase_palm_bitwise_equal": true,
+        "initial_object_and_palm_verified": true
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "input_kind": "identity",
+      "recipe": "original_mse",
+      "success": 1,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": false,
+        "egad_A6": false,
+        "egad_E0": true,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    },
+    {
+      "input_kind": "identity",
+      "recipe": "preactivation",
+      "success": 0,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": false,
+        "egad_A6": false,
+        "egad_E0": false,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "original_mse",
+      "success": 1,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": true,
+        "egad_A6": false,
+        "egad_E0": false,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "preactivation",
+      "success": 2,
+      "denominator": 3,
+      "outcomes": {
+        "egad_A3": true,
+        "egad_A6": false,
+        "egad_E0": true,
+        "egad_A0": false
+      },
+      "A0_positive_control": false
+    }
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_cohort_physics.py": "54fc895b5093bbf76ab65f357035586ebf0e2fca595bc67604e241e4f8832585"
+  },
+  "all_condition_aliases_exact": true,
+  "commands_independently_reconstructed": true,
+  "all_source_vertex_bottoms_and_bilateral_loads_recomputed": true,
+  "inputs_unchanged": true,
+  "new_physics_steps": 0,
+  "new_training_updates": 0
+}

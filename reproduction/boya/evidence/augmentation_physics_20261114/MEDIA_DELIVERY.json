@@ -1,0 +1,1758 @@
+{
+  "schema": "boya_fixed_pool_media_delivery_v1",
+  "complete": true,
+  "cases": [
+    {
+      "candidate_id": "egad_A3_identity_original_mse",
+      "source_object_id": "egad_A3",
+      "original_execution_id": "egad_A3",
+      "kind": "reused",
+      "task_success": false,
+      "physical_steps": 1175,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A3",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A3/evaluation.json",
+        "sha256": "f4a040a5289d5c93b3228ec266f09e1ee92b231236322f35267e3f438fac4cd6"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A3/trace.npz",
+        "sha256": "07b0743d2615f07bd6d82b4074cf9bcaabca4c1c7b51925428b2385246893a93"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/jobs/egad_A3.json",
+        "sha256": "c945cf005374e584262ee4b1437a8fefebe2751bbc6091627ec2368fce9f5c91"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A3/hand_only.mp4",
+        "sha256": "a16d48991f4faf3297ac89f7c34a99b55312e4dd3781359450218eca104d1b24"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A3/render_check.json",
+        "sha256": "337110f9ff2e97960a91cd03ec98d4f6ea7353f9042dc3afa68247384baae3f3"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A3",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "07b0743d2615f07bd6d82b4074cf9bcaabca4c1c7b51925428b2385246893a93",
+        "source_evaluation_sha256": "f4a040a5289d5c93b3228ec266f09e1ee92b231236322f35267e3f438fac4cd6",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A3/mesh/simplified.obj": "4d8828030028f7b3c616f1c55f10f4848d651856872a1bf251780a388e17f0ab"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          4.753528161215649e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.08943588760278731,
+              -0.45628365773179025,
+              0.4826926678791893
+            ],
+            "target": [
+              -0.6654538810253143,
+              0.11973433569073677,
+              0.07948007248342037
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3090629993157006,
+              0.24845615934881402,
+              0.6587282789447679
+            ],
+            "target": [
+              -0.6654538810253143,
+              0.11973433569073677,
+              0.07948007248342037
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.4425965711805557,
+          "hand": 3.9331532118055557
+        },
+        "frames": 117,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "a16d48991f4faf3297ac89f7c34a99b55312e4dd3781359450218eca104d1b24"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 117,
+        "nominal_total_frames": 142,
+        "gif_frames": 117,
+        "gif_duration_ms": 5680,
+        "encoder_expected_frames": 142,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 142,
+        "fps": 25.0,
+        "duration_s": 5.68,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_A3_identity_preactivation",
+      "source_object_id": "egad_A3",
+      "original_execution_id": "egad_A3_rank00036",
+      "kind": "reused",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/videos/egad_A3_rank00036",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/execution/egad_A3_rank00036/evaluation.json",
+        "sha256": "0a249eaa96ced32ede8c471c506232dc591169b86cda5ec5f65bde97958ef70c"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/execution/egad_A3_rank00036/trace.npz",
+        "sha256": "5c178ec2e5efebdeadbd48a30a19bb3fb8bfe5b5d5a11e5bfce379da7bbf2f1f"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_A3_rank00036.json",
+        "sha256": "770a6acf52da8cad9268faa494efe6d3178f586b6b9d5f215307fb242583cc79"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/videos/egad_A3_rank00036/hand_only.mp4",
+        "sha256": "96aa2329a52be3e191f3c80c81da3178ef8d6749809e72e8ec4f127d1b3f848f"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/videos/egad_A3_rank00036/render_check.json",
+        "sha256": "22748e140179f28c89b180e3f7d14e5a4e3e7dac9097daa4f752f7c02958d50c"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A3_rank00036",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "5c178ec2e5efebdeadbd48a30a19bb3fb8bfe5b5d5a11e5bfce379da7bbf2f1f",
+        "source_evaluation_sha256": "0a249eaa96ced32ede8c471c506232dc591169b86cda5ec5f65bde97958ef70c",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A3/mesh/simplified.obj": "4d8828030028f7b3c616f1c55f10f4848d651856872a1bf251780a388e17f0ab"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.141768460414404e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.11897449783310887,
+              -0.5662426517225743,
+              0.671613486466031
+            ],
+            "target": [
+              -0.8314649760723114,
+              0.14624782651662827,
+              0.17287015169858932
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.5453990042406964,
+              0.2890346321503052,
+              0.8154107770501358
+            ],
+            "target": [
+              -0.8314649760723114,
+              0.14624782651662827,
+              0.17287015169858932
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.500634765625,
+          "hand": 4.1678125
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "96aa2329a52be3e191f3c80c81da3178ef8d6749809e72e8ec4f127d1b3f848f"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_A3_augmented11_original_mse",
+      "source_object_id": "egad_A3",
+      "original_execution_id": "egad_A3_augmented11_original_mse",
+      "kind": "new",
+      "task_success": true,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_original_mse/videos/egad_A3_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A3_augmented11_original_mse/evaluation.json",
+        "sha256": "f1c3bf266838785a15b54f67c0181bb758c7408581171a5d132ee30626ad64a2"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A3_augmented11_original_mse/trace.npz",
+        "sha256": "c1e2e9c8abad49c846168f4517584f58690cebff01f51e152d7130ccc231f2a1"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_A3_augmented11_original_mse.json",
+        "sha256": "ac0bbc999d1c8c81a7f68832bd84aee79e7a74ff473c7103b897c7ca0dbbd601"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_original_mse/videos/egad_A3_augmented11_original_mse/hand_only.mp4",
+        "sha256": "15c1b1c35c51e5ce209c0a987d3ec175223e34bb2f8398afe568f009fb97cdc7"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_original_mse/videos/egad_A3_augmented11_original_mse/render_check.json",
+        "sha256": "853a403986557bb5cd77fcf9fe085f8e06f64f94f0ddb4d354225dd7ff0e81e4"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A3_augmented11_original_mse",
+        "task_success": true,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "c1e2e9c8abad49c846168f4517584f58690cebff01f51e152d7130ccc231f2a1",
+        "source_evaluation_sha256": "f1c3bf266838785a15b54f67c0181bb758c7408581171a5d132ee30626ad64a2",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A3/mesh/simplified.obj": "4d8828030028f7b3c616f1c55f10f4848d651856872a1bf251780a388e17f0ab"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.836090596449379e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.10362615212091797,
+              -0.48870869018843777,
+              0.5964302052606911
+            ],
+            "target": [
+              -0.746028870344162,
+              0.15369402803480625,
+              0.14674830250442028
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3796234365261577,
+              0.2804129412712054,
+              0.7169834120682164
+            ],
+            "target": [
+              -0.746028870344162,
+              0.15369402803480625,
+              0.14674830250442028
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 4.641654730902777,
+          "hand": 5.68140625
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "15c1b1c35c51e5ce209c0a987d3ec175223e34bb2f8398afe568f009fb97cdc7"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_original_mse/ATTEMPT.json",
+        "sha256": "5cab7473e19e60280a9fd7f80c5cc2c825edd95faf1d5751632b153607be2843"
+      }
+    },
+    {
+      "candidate_id": "egad_A3_augmented11_preactivation",
+      "source_object_id": "egad_A3",
+      "original_execution_id": "egad_A3_augmented11_preactivation",
+      "kind": "new",
+      "task_success": true,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_preactivation/videos/egad_A3_augmented11_preactivation",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A3_augmented11_preactivation/evaluation.json",
+        "sha256": "3f798fa302baa86e903437cc52e83876bbf30e0e26edf98f9237602a7c2c775f"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A3_augmented11_preactivation/trace.npz",
+        "sha256": "9e7c8def02b4096f195fd82422a48ea7bfa77324d48ea0cbae92632460520bbb"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_A3_augmented11_preactivation.json",
+        "sha256": "e1dd2a63641b86586a9cd59518c8b7d971e3e1b09279aadbe8ebeddf139175b4"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_preactivation/videos/egad_A3_augmented11_preactivation/hand_only.mp4",
+        "sha256": "2888576e5246ad2fe40d2910b3471a0b3b1645e27b52dbf79452978f843907a0"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_preactivation/videos/egad_A3_augmented11_preactivation/render_check.json",
+        "sha256": "e63183bae6550681d819c7020d5f386f39461e6365c74648c17b794dcb0f2333"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A3_augmented11_preactivation",
+        "task_success": true,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "9e7c8def02b4096f195fd82422a48ea7bfa77324d48ea0cbae92632460520bbb",
+        "source_evaluation_sha256": "3f798fa302baa86e903437cc52e83876bbf30e0e26edf98f9237602a7c2c775f",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A3/mesh/simplified.obj": "4d8828030028f7b3c616f1c55f10f4848d651856872a1bf251780a388e17f0ab"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.491751543043661e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.08438194256649267,
+              -0.5135387359894727,
+              0.6138996837224752
+            ],
+            "target": [
+              -0.7457872331142426,
+              0.14786655455827713,
+              0.1509159803390503
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3930152288241877,
+              0.2773121537002662,
+              0.7334211764780008
+            ],
+            "target": [
+              -0.7457872331142426,
+              0.14786655455827713,
+              0.1509159803390503
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 4.523764105902778,
+          "hand": 5.615607638888889
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "2888576e5246ad2fe40d2910b3471a0b3b1645e27b52dbf79452978f843907a0"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A3_augmented11_preactivation/ATTEMPT.json",
+        "sha256": "f1d729f4d03bc9c9217cb27ed73f0b11ac5a0f758d3372d04ca8630404989b57"
+      }
+    },
+    {
+      "candidate_id": "egad_A6_identity_original_mse",
+      "source_object_id": "egad_A6",
+      "original_execution_id": "egad_A6",
+      "kind": "reused",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A6",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A6/evaluation.json",
+        "sha256": "5dabc8d689867aa5c2193ca25fce3c03dbf2809a2375ef478a37778f331d0cb7"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A6/trace.npz",
+        "sha256": "7f8d02bb28fd3f449fd22482358cb1312ef60f3e02af0f14eca7c4d393704b43"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/jobs/egad_A6.json",
+        "sha256": "8df7c93005a46e3adb8d5d00c4df44f110b1b9d6027d0ac9b71f6533f9815aad"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A6/hand_only.mp4",
+        "sha256": "aa9c2d1788019674bc8da8a506357a8400a79d99cf94c6a2164121d9a9b7c133"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A6/render_check.json",
+        "sha256": "14a1b644b5e85b468b12d10f1cecff7385de880a57f04dd608ef84d3d8baa259"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A6",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "7f8d02bb28fd3f449fd22482358cb1312ef60f3e02af0f14eca7c4d393704b43",
+        "source_evaluation_sha256": "5dabc8d689867aa5c2193ca25fce3c03dbf2809a2375ef478a37778f331d0cb7",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A6/mesh/simplified.obj": "dc4289c97053a894c2c187a6540d27f1197d61269891f6dcb3d0994a4dd56f1f"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.588088675011556e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              0.02531216935332814,
+              -0.6211184048008541,
+              0.6615313258241746
+            ],
+            "target": [
+              -0.6853923201560974,
+              0.08958608470857143,
+              0.1640381831675768
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.4207545884629078,
+              0.23665853836993347,
+              0.825864224643706
+            ],
+            "target": [
+              -0.6853923201560974,
+              0.08958608470857143,
+              0.1640381831675768
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.1144053819444446,
+          "hand": 4.1016634114583335
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "aa9c2d1788019674bc8da8a506357a8400a79d99cf94c6a2164121d9a9b7c133"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_A6_identity_preactivation",
+      "source_object_id": "egad_A6",
+      "original_execution_id": "egad_A6",
+      "kind": "reused",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/egad_A6",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/evaluation.json",
+        "sha256": "1dca35c39c91115e229200a7b02cbde749970f66db78debc383daa7189920f3d"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/execution/egad_A6/trace.npz",
+        "sha256": "b43ec19aaccfcf413a91f39fb7d5d27cb6feee7d363a1e2fddd95a7523182c1f"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/jobs/egad_A6.json",
+        "sha256": "29c39a5a96f923aa5ddf9a3a290235d4663536a4fdad7a47b7707c7c1b412c85"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/egad_A6/hand_only.mp4",
+        "sha256": "47c4fa5cd68abd24014bc6b0d0fc5e3db9fb3a46f1a1b0664138f5f0acaf0574"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/egad_floating_three_20261108_v1/videos/egad_A6/render_check.json",
+        "sha256": "f9bf54bf29036d7ee8247e549537f19c4358179457d93158d73015598fee02fe"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A6",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "b43ec19aaccfcf413a91f39fb7d5d27cb6feee7d363a1e2fddd95a7523182c1f",
+        "source_evaluation_sha256": "1dca35c39c91115e229200a7b02cbde749970f66db78debc383daa7189920f3d",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A6/mesh/simplified.obj": "dc4289c97053a894c2c187a6540d27f1197d61269891f6dcb3d0994a4dd56f1f"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          7.317012696305576e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              0.0056480055323777645,
+              -0.5838033219448266,
+              0.6461567337006406
+            ],
+            "target": [
+              -0.6809678673744202,
+              0.10281255096197128,
+              0.1655256226658821
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.4207024455950017,
+              0.2507594666060876,
+              0.8312867430644054
+            ],
+            "target": [
+              -0.6809678673744202,
+              0.10281255096197128,
+              0.1655256226658821
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.0773036024305553,
+          "hand": 4.1404416232638885
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "47c4fa5cd68abd24014bc6b0d0fc5e3db9fb3a46f1a1b0664138f5f0acaf0574"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_A6_augmented11_original_mse",
+      "source_object_id": "egad_A6",
+      "original_execution_id": "egad_A6_augmented11_original_mse",
+      "kind": "new",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A6_augmented11_original_mse/videos/egad_A6_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A6_augmented11_original_mse/evaluation.json",
+        "sha256": "481f0d7f2ed1b6cefabdfb1dcfdc852eb724c882053d50100725d7a5adc3c433"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A6_augmented11_original_mse/trace.npz",
+        "sha256": "a3516b3ed030488557e5dc762c52ccc5375535d2c6ba65515d01192d80048da6"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_A6_augmented11_original_mse.json",
+        "sha256": "c8c8728167469ac4d5fe2af294786d7b12ee230cbfbfd2ec900b24574e18e50b"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A6_augmented11_original_mse/videos/egad_A6_augmented11_original_mse/hand_only.mp4",
+        "sha256": "77cf9a4e950b070bd82380f668d395b33b173797c5aedad26b00484c726cd75a"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A6_augmented11_original_mse/videos/egad_A6_augmented11_original_mse/render_check.json",
+        "sha256": "bbf5d39724c21b55c9d5d72c763b8e5c577c7d24ea8f003a77f7f8bdb2a46fcb"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A6_augmented11_original_mse",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "a3516b3ed030488557e5dc762c52ccc5375535d2c6ba65515d01192d80048da6",
+        "source_evaluation_sha256": "481f0d7f2ed1b6cefabdfb1dcfdc852eb724c882053d50100725d7a5adc3c433",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A6/mesh/simplified.obj": "dc4289c97053a894c2c187a6540d27f1197d61269891f6dcb3d0994a4dd56f1f"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          6.423278312021375e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.1278685303073812,
+              -0.5058968430716109,
+              0.6121058290124752
+            ],
+            "target": [
+              -0.7769655883312225,
+              0.14320021495223045,
+              0.15773788839578629
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.4489573113218177,
+              0.2775985595503495,
+              0.7625304390873219
+            ],
+            "target": [
+              -0.7769655883312225,
+              0.14320021495223045,
+              0.15773788839578629
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 4.230601128472222,
+          "hand": 4.106067708333334
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "77cf9a4e950b070bd82380f668d395b33b173797c5aedad26b00484c726cd75a"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A6_augmented11_original_mse/ATTEMPT.json",
+        "sha256": "8cbb4ed878fea9133142a747c2a4c7d7fc4d9ca8cd4a68e0b2362a9219dc7a95"
+      }
+    },
+    {
+      "candidate_id": "egad_E0_identity_original_mse",
+      "source_object_id": "egad_E0",
+      "original_execution_id": "egad_E0",
+      "kind": "reused",
+      "task_success": true,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_E0",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_E0/evaluation.json",
+        "sha256": "91aa8e7e497a15f959695acd9390d9c31191962b33b111e751692da53bdfcfc7"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_E0/trace.npz",
+        "sha256": "2e3c7ae0632f801e05cf7968535b3ce3c8400f4e57e32d6328cd32bcf11a2658"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/jobs/egad_E0.json",
+        "sha256": "f56a7e5a5bd468ae2ff0abf2a4ed45685e129ff271b3b2553eda463856e60f36"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_E0/hand_only.mp4",
+        "sha256": "6c7e935f419039e623afb88a2b2e2b576a3634a98b048aad27f7f605595bfc26"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_E0/render_check.json",
+        "sha256": "f657f063ad26eab56a4e2e29498f8777bec9d963fdc590f8b41e4ba456ee39d5"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_E0",
+        "task_success": true,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "2e3c7ae0632f801e05cf7968535b3ce3c8400f4e57e32d6328cd32bcf11a2658",
+        "source_evaluation_sha256": "91aa8e7e497a15f959695acd9390d9c31191962b33b111e751692da53bdfcfc7",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E0/mesh/simplified.obj": "2f001c397145c5746ed61708d5ba5ed16edd536d7c597ce36141f95da24130f4"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.723779226502392e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.18579243152616198,
+              -0.6062883806300384,
+              0.5203982339998638
+            ],
+            "target": [
+              -0.7737232744693756,
+              -0.0183575376868248,
+              0.1088466439396143
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3417943584127587,
+              0.09525667910185183,
+              0.6201106194886591
+            ],
+            "target": [
+              -0.7737232744693756,
+              -0.0183575376868248,
+              0.1088466439396143
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 4.22302734375,
+          "hand": 6.000354817708334
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "6c7e935f419039e623afb88a2b2e2b576a3634a98b048aad27f7f605595bfc26"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_E0_identity_preactivation",
+      "source_object_id": "egad_E0",
+      "original_execution_id": "egad_E0_rank00001",
+      "kind": "reused",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/videos/egad_E0_rank00001",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/execution/egad_E0_rank00001/evaluation.json",
+        "sha256": "2feba1634534c0c1dbb5077c54a3b555bfa31d62cdb9f188c1eb233f7080c262"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/execution/egad_E0_rank00001/trace.npz",
+        "sha256": "5ed704733087e1534dd37fe1064af7348d702fd0176dadd1ec0860972440fde0"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/jobs/egad_E0_rank00001.json",
+        "sha256": "f2f478186cea79d55c304f50b0319815eac5104bbf760723fb2c1253f25cbaa8"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/videos/egad_E0_rank00001/hand_only.mp4",
+        "sha256": "e4d64fa4c9f76b90e42c7f7d99f4331219035b528fbde0f8c137fdf05785e48f"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_candidate_diagnostic_20261111_v2/videos/egad_E0_rank00001/render_check.json",
+        "sha256": "eae8d000c6404ffa1d8062cc2c275a08c9cf3e1fbae7a50a0e4548c4dc3747a5"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_E0_rank00001",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "5ed704733087e1534dd37fe1064af7348d702fd0176dadd1ec0860972440fde0",
+        "source_evaluation_sha256": "2feba1634534c0c1dbb5077c54a3b555bfa31d62cdb9f188c1eb233f7080c262",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E0/mesh/simplified.obj": "2f001c397145c5746ed61708d5ba5ed16edd536d7c597ce36141f95da24130f4"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.138987902752994e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.15965393129098593,
+              -0.4718433512438518,
+              0.5543964011825548
+            ],
+            "target": [
+              -0.7627964317798615,
+              0.13129914924502373,
+              0.13219665084034204
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3850999565444875,
+              0.2557598541979489,
+              0.6922698231285053
+            ],
+            "target": [
+              -0.7627964317798615,
+              0.13129914924502373,
+              0.13219665084034204
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 2.7225629340277777,
+          "hand": 3.3732682291666665
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "e4d64fa4c9f76b90e42c7f7d99f4331219035b528fbde0f8c137fdf05785e48f"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_E0_augmented11_original_mse",
+      "source_object_id": "egad_E0",
+      "original_execution_id": "egad_E0_augmented11_original_mse",
+      "kind": "new",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_original_mse/videos/egad_E0_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_E0_augmented11_original_mse/evaluation.json",
+        "sha256": "e974ce5ef080bfbaae502d096cf5bff673d6f23ca542595a834c0094f17371ed"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_E0_augmented11_original_mse/trace.npz",
+        "sha256": "c20da5013c39d9823738e0eea70e6630f703f37b8808cc91363f0a4f938cdba2"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_E0_augmented11_original_mse.json",
+        "sha256": "b78adc868d7d8305d25a12d8de93f916372567568d2388aef4343cb19a19c724"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_original_mse/videos/egad_E0_augmented11_original_mse/hand_only.mp4",
+        "sha256": "722f78df95dcb2ff23d324980dca55324d0561cd9579180d0827f2a431ad07c8"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_original_mse/videos/egad_E0_augmented11_original_mse/render_check.json",
+        "sha256": "119233f7e251cb8f6c072a029507c39328175fafa5d68c3f6115f483c6093652"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_E0_augmented11_original_mse",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "c20da5013c39d9823738e0eea70e6630f703f37b8808cc91363f0a4f938cdba2",
+        "source_evaluation_sha256": "e974ce5ef080bfbaae502d096cf5bff673d6f23ca542595a834c0094f17371ed",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E0/mesh/simplified.obj": "2f001c397145c5746ed61708d5ba5ed16edd536d7c597ce36141f95da24130f4"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.37277203729519e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.09953390849937516,
+              -0.6125441189278213,
+              0.5465220388738645
+            ],
+            "target": [
+              -0.7301361262798309,
+              0.01805809885263443,
+              0.10510048642754555
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.329085702219971,
+              0.13784801404066244,
+              0.6441551047736714
+            ],
+            "target": [
+              -0.7301361262798309,
+              0.01805809885263443,
+              0.10510048642754555
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.850755208333333,
+          "hand": 5.509793836805556
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "722f78df95dcb2ff23d324980dca55324d0561cd9579180d0827f2a431ad07c8"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_original_mse/ATTEMPT.json",
+        "sha256": "c151c542b913ccf9ebab32423e30d897f88d55d565581379b314238425a21cde"
+      }
+    },
+    {
+      "candidate_id": "egad_E0_augmented11_preactivation",
+      "source_object_id": "egad_E0",
+      "original_execution_id": "egad_E0_augmented11_preactivation",
+      "kind": "new",
+      "task_success": true,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_preactivation/videos/egad_E0_augmented11_preactivation",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_E0_augmented11_preactivation/evaluation.json",
+        "sha256": "2fe3488671f659f9f4c43ba144dc97e1c53f1ea1eda86ce2f329b1536e10d3f3"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_E0_augmented11_preactivation/trace.npz",
+        "sha256": "7e4f97c234aa321ea5beee62c082fc9e23ae8dc7f89faa3bdb778f779183906b"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_E0_augmented11_preactivation.json",
+        "sha256": "c751e750cf47120a8e6e5e3110cda5f5938b83cc1a44104820888b651b511cc1"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_preactivation/videos/egad_E0_augmented11_preactivation/hand_only.mp4",
+        "sha256": "76c2f15246fa36ff7d9d6c3350a99758bfe2af3cebbad887739f5cd5ca2d75a3"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_preactivation/videos/egad_E0_augmented11_preactivation/render_check.json",
+        "sha256": "686697500206c3d17e9b53c27190117101e77c49974dc20ce75120613918a3db"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_E0_augmented11_preactivation",
+        "task_success": true,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "7e4f97c234aa321ea5beee62c082fc9e23ae8dc7f89faa3bdb778f779183906b",
+        "source_evaluation_sha256": "2fe3488671f659f9f4c43ba144dc97e1c53f1ea1eda86ce2f329b1536e10d3f3",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_E0/mesh/simplified.obj": "2f001c397145c5746ed61708d5ba5ed16edd536d7c597ce36141f95da24130f4"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.947603738723789e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.16403361032053243,
+              -0.6124873571629881,
+              0.5192382784932743
+            ],
+            "target": [
+              -0.754556268453598,
+              -0.021964699029922485,
+              0.10587241780012846
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3189220921476048,
+              0.09090846570887888,
+              0.6138016591247346
+            ],
+            "target": [
+              -0.754556268453598,
+              -0.021964699029922485,
+              0.10587241780012846
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.967953559027778,
+          "hand": 6.461348741319444
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "76c2f15246fa36ff7d9d6c3350a99758bfe2af3cebbad887739f5cd5ca2d75a3"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_E0_augmented11_preactivation/ATTEMPT.json",
+        "sha256": "0f7f1701e645457522127d5a84cc83756c4f105cc2cfdcae0cbc465962374e78"
+      }
+    },
+    {
+      "candidate_id": "egad_A0_identity_original_mse",
+      "source_object_id": "egad_A0",
+      "original_execution_id": "egad_A0",
+      "kind": "reused",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A0",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A0/evaluation.json",
+        "sha256": "fc812252041cf4669411fa0e18e74a5b91b18c42d566e7f18c56554a1d160de9"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/execution/egad_A0/trace.npz",
+        "sha256": "f527356521b8fe02f18b50835d75f95e8eae36e74d09797ad14e05c720f33c2d"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/jobs/egad_A0.json",
+        "sha256": "81be82f10af35bbfe012c6f0846a1b450ed2835628c426d9ff2f55d31ec3ecf6"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A0/hand_only.mp4",
+        "sha256": "29a03761704e033cba58e8731de0477f42a4b6bc8c06637226207ff8cd2bcb80"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_original_recipe_alignment_20261108_v1/physical_control/videos/egad_A0/render_check.json",
+        "sha256": "8fd851d24e22649cd221b81ae561e789edabd9c9c195a635e031e74e365ad52b"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A0",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "f527356521b8fe02f18b50835d75f95e8eae36e74d09797ad14e05c720f33c2d",
+        "source_evaluation_sha256": "fc812252041cf4669411fa0e18e74a5b91b18c42d566e7f18c56554a1d160de9",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A0/mesh/simplified.obj": "3b06c6eb2e1c89b22ee467138b92535f258dbccd366313c7e04b669943f4f6f2"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.754342341210633e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.1280761823833667,
+              -0.6357240586697377,
+              0.5420726623588326
+            ],
+            "target": [
+              -0.7545851767063141,
+              -0.009215064346790314,
+              0.1035163663327694
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3326353606222223,
+              0.10639497243639133,
+              0.6237615318570867
+            ],
+            "target": [
+              -0.7545851767063141,
+              -0.009215064346790314,
+              0.1035163663327694
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.754970703125,
+          "hand": 5.820093315972223
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "29a03761704e033cba58e8731de0477f42a4b6bc8c06637226207ff8cd2bcb80"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged"
+    },
+    {
+      "candidate_id": "egad_A0_augmented11_original_mse",
+      "source_object_id": "egad_A0",
+      "original_execution_id": "egad_A0_augmented11_original_mse",
+      "kind": "new",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_original_mse/videos/egad_A0_augmented11_original_mse",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A0_augmented11_original_mse/evaluation.json",
+        "sha256": "ecb92e077055067b3e932e0ea155d450240e3bff0253bea139ae730a3fc6d071"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A0_augmented11_original_mse/trace.npz",
+        "sha256": "496aa1c40163d443d33f7597ee44e0b2499ddde9270f787830cd0ab956dbf6b1"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_A0_augmented11_original_mse.json",
+        "sha256": "a80a2f376be733b09399e5c4ad1bd52d6ad2f18119114c41202f1c72dd811042"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_original_mse/videos/egad_A0_augmented11_original_mse/hand_only.mp4",
+        "sha256": "ac106ef694b22338dfc39c9d2e49b340994aff0597d79eada0a3128078c9092e"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_original_mse/videos/egad_A0_augmented11_original_mse/render_check.json",
+        "sha256": "d601c9b18278435f8e6b85f529eaa1293bd134862378567eacd50b1162225ae8"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A0_augmented11_original_mse",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "496aa1c40163d443d33f7597ee44e0b2499ddde9270f787830cd0ab956dbf6b1",
+        "source_evaluation_sha256": "ecb92e077055067b3e932e0ea155d450240e3bff0253bea139ae730a3fc6d071",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A0/mesh/simplified.obj": "3b06c6eb2e1c89b22ee467138b92535f258dbccd366313c7e04b669943f4f6f2"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          5.602174396774343e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.04419417420264249,
+              -0.6300918932831668,
+              0.5760895620538262
+            ],
+            "target": [
+              -0.7279409766197205,
+              0.05365490913391113,
+              0.09746680036187172
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.3723909883691745,
+              0.18254491148380195,
+              0.6774718109363803
+            ],
+            "target": [
+              -0.7279409766197205,
+              0.05365490913391113,
+              0.09746680036187172
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.784243706597222,
+          "hand": 5.633474392361111
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "ac106ef694b22338dfc39c9d2e49b340994aff0597d79eada0a3128078c9092e"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_original_mse/ATTEMPT.json",
+        "sha256": "bcf8e5e8da04235c834f8515f8e8afdd189fa4052ee8727cdd27e439264aabf2"
+      }
+    },
+    {
+      "candidate_id": "egad_A0_augmented11_preactivation",
+      "source_object_id": "egad_A0",
+      "original_execution_id": "egad_A0_augmented11_preactivation",
+      "kind": "new",
+      "task_success": false,
+      "physical_steps": 2100,
+      "media_directory": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_preactivation/videos/egad_A0_augmented11_preactivation",
+      "evaluation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A0_augmented11_preactivation/evaluation.json",
+        "sha256": "5426680a991c8bd0381499688c2026d5e0ce7ec9faeb5b52cb675462fa6de040"
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/execution/egad_A0_augmented11_preactivation/trace.npz",
+        "sha256": "fb250930094c9f9d39c1c8f28851b36a81e81d94db378a550f023e6b08e9be76"
+      },
+      "source_job": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/jobs/egad_A0_augmented11_preactivation.json",
+        "sha256": "d408d8fd3e4523b667a2fcba54a7660987bdd09cab244497392b7630bf109540"
+      },
+      "video": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_preactivation/videos/egad_A0_augmented11_preactivation/hand_only.mp4",
+        "sha256": "369adc7161784ca225fe98708e4814438335b9a3e756fa772bcab8a5ab76b52c"
+      },
+      "render_check": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_preactivation/videos/egad_A0_augmented11_preactivation/render_check.json",
+        "sha256": "3236c5183b95a080f98a342d053642106567a31e1ea8c45b0e8a099020c760f9"
+      },
+      "original_render_receipt": {
+        "complete": true,
+        "object_id": "egad_A0_augmented11_preactivation",
+        "task_success": false,
+        "renderer": "Isaac Sim RTX source-visual playback",
+        "source_trace_sha256": "fb250930094c9f9d39c1c8f28851b36a81e81d94db378a550f023e6b08e9be76",
+        "source_evaluation_sha256": "5426680a991c8bd0381499688c2026d5e0ce7ec9faeb5b52cb675462fa6de040",
+        "physics_steps_during_replay": 0,
+        "visual_mesh_sha256": {
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/palm.stl": "e20de01c6a55dc419d86cb5f94b83db2a16b341ff9f8c0f3431998b43f3329b6",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thbase.stl": "7d7b6317167073d3e98f0de94b2596a5d37ad52305f31a4f0fade153eb6dd3d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thproximal.stl": "4b6af54b3d938c28addeb9697b96239056c34e15d4023f011c5656853400c07a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thmiddle.stl": "bdb9328ddd124d1855d0d89cbb49d810d0eb76936b0a8eada4219fae272c8391",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/thdistal.stl": "d6a3639576ed92f25bacdba830fa72928b752b909f7432f798cbedda2157a111",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffbase.stl": "ba77e740cf829bcecce1bceac0835229d18bbf0c645db88dd2ed0a01d14350bb",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffproximal.stl": "7d8f39bd649b700a7d9405ff74540b0f9c4e7d19e4fe80d6a61df3f0308814d9",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffmiddle.stl": "eaea40eb5dd9c21a8f20e4eb840748292e8240d2a2f127ddea13056a6acfbd53",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfbase.stl": "af179da71c38b28e81cc48ce4ee3d33a375c8a657ce53eb67691a2524b7572ce",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfproximal.stl": "ecd104d562d0e6b32428b2006acbabee0304428e3b6e3348dcaac5430881c9f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfmiddle.stl": "c8200dab19b90c01a491a2bffb1d378380ebf75c7a70e0a1843c71da4d9c0371",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfbase.stl": "74dd13a864bb3a157a371d0eb6687c82896783ec497c4e874449fda7cd81c33a",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfproximal.stl": "3c871bb97066cda05145ca93b90e090c8dc5d8430c28906811d007c981cf4bd3",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfmiddle.stl": "3c6ce167ab427a7d1fd3ebe5ead2003ed33f0e388296e9f98ecaaf38b59136f4",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/rfdistal.stl": "667cc40e2c5097fca8ccf2ec9ca2fa1f24b58d44b586ca6a4837440f30080d15",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfbase.stl": "b2b657b77e38f8e264186c4951f65605e168ba7f1b37fb6051ae3c6cdb510986",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfproximal.stl": "15c775c851f5e29d17c18523a3686d0251a11ca2b4a5e715a8271ba3c4307c6c",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfmiddle.stl": "640f21ba6d56dd0267cbeef8ee6ae95d28afbef1cb7beb2ef88987a1dc6e1f5e",
+          "/home/wangrenpeng/tendon-spin/assets/hand/meshes/lfdistal.stl": "b6e80c18cc2cf3fd74762cc99c29ad782b00ebf89f1cc273b7b80b33f4b0c53a",
+          "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/assets_v3/egad_A0/mesh/simplified.obj": "3b06c6eb2e1c89b22ee467138b92535f258dbccd366313c7e04b669943f4f6f2"
+        },
+        "source_visual_meshes": true,
+        "root_and_fingers_from_actual_recorded_native_body_states": true,
+        "max_render_matrix_errors": [
+          0.0,
+          6.519870039734497e-16,
+          0.0
+        ],
+        "camera_setups": {
+          "overview": {
+            "eye": [
+              -0.031069528573566818,
+              -0.6636611630382,
+              0.598538877631555
+            ],
+            "target": [
+              -0.7471107542514801,
+              0.05238006263971329,
+              0.0973100196570158
+            ]
+          },
+          "hand": {
+            "eye": [
+              -1.4259333757558745,
+              0.18814458694059222,
+              0.7082503790109709
+            ],
+            "target": [
+              -0.7471107542514801,
+              0.05238006263971329,
+              0.0973100196570158
+            ]
+          }
+        },
+        "pixel_motion": {
+          "overview": 3.478293185763889,
+          "hand": 5.263714192708333
+        },
+        "frames": 210,
+        "fps": 25,
+        "final_pause_s": 1.0,
+        "video_sha256": "369adc7161784ca225fe98708e4814438335b9a3e756fa772bcab8a5ab76b52c"
+      },
+      "frame_expectation": {
+        "renderer_motion_frames": 210,
+        "nominal_total_frames": 235,
+        "gif_frames": 210,
+        "gif_duration_ms": 9400,
+        "encoder_expected_frames": 235,
+        "rule": "sum(max(1, round(GIF frame duration_ms * fps / 1000))); original encoder rule"
+      },
+      "decoded_video_stream": {
+        "width": 1280,
+        "height": 560,
+        "decoded_frames": 235,
+        "fps": 25.0,
+        "duration_s": 9.4,
+        "decoder": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/imageio_ffmpeg/binaries/ffmpeg-linux-x86_64-v9.0.2"
+      },
+      "physics_steps_during_replay": 0,
+      "alias_boundary": "candidate_id labels this finite pool; original_execution_id and saved media remain unchanged",
+      "attempt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/egad_A0_augmented11_preactivation/ATTEMPT.json",
+        "sha256": "15ca5ccce0da3347105e2863e7e0f8a3350888c2045388ba7f6726919f9517fb"
+      }
+    }
+  ],
+  "expected_cases": 14,
+  "reused_videos": 7,
+  "new_replay_videos": 7,
+  "errors": [],
+  "source_protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/protocol.json",
+    "sha256": "54f914f347f2a741c24ba48e447733b7d14b88c5b3c255eb363567bcdbeaee9f"
+  },
+  "source_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/RESULTS.json",
+    "sha256": "13959d387d174e6f83100ddc0bc53ad312381d25b0ce41f60ad97f752f775f7c"
+  },
+  "dispatch": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/DISPATCH.json",
+    "sha256": "51981b10beb68fb2ef9b20e5cba0b5b977cfd3b948ea747376b35c1230d80da0"
+  },
+  "render_invocations": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/physical_runtime_v3/media_v1/RENDER_INVOCATION_001.json",
+      "sha256": "16c0128c762dc6173aa3c99b2f592554b3310a4d0e1444fa85e3e5d716106770"
+    }
+  ],
+  "render_invocation_wall_s": 133.11337029607967,
+  "sum_attempt_process_wall_s": 229.2516793613322,
+  "failed_replay_attempts": [],
+  "physics_steps_during_replay": 0,
+  "new_grasp_executions": 0,
+  "replay_gpu": 0,
+  "workers": 2,
+  "boundary": "Finite known-object pool, fixed controller, saved native traces; oracle-any is not deployment success rate."
+}

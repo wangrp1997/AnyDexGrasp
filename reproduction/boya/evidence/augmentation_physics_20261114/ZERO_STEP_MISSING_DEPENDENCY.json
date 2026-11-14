@@ -1,0 +1,6 @@
+{
+  "error": "ModuleNotFoundError(\"No module named 'clarabel'\")",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_physics_20261114_v1/diagnose_zero_step_v2.py\", line 17, in <module>\n    e.run(job)\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_boya_floating_diagnostic.py\", line 313, in run\n    native = audit_scene(sim, out, ['all','object'], roots=('/World/Robot','/World/Object'), fast=True)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/scripts/research/template_gripper_native_audit.py\", line 42, in audit_scene\n    from canondex.grasp.cooking_audit import convex_distances,convex_witness_bounds\n  File \"/home/wangrenpeng/CanonDex/canondex/grasp/cooking_audit.py\", line 9, in <module>\n    import clarabel\nModuleNotFoundError: No module named 'clarabel'\n",
+  "physics_steps": 0,
+  "scope": "build_scene only; executor run never called"
+}
