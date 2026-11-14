@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "command": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest discover -s reproduction/boya -p test_author_collection_scenes.py -v",
+  "tests": 6,
+  "failures": 0,
+  "errors": 0,
+  "module_sha256": "66994aa03dcf22658a0eeb74e58a593973bd32f3eae6a7002590593911787815",
+  "test_source_sha256": "23b0e76cbe9336192c295a9eadf45e1445fc7e2053f8f6b1d938bf9844ced04b",
+  "scope": "Synthetic source mesh/URDF fixtures: deterministic geometry, split isolation, drift rejection, terminal null, build binding, exact 3mm arithmetic",
+  "initial_development_failures": [
+    {
+      "reason": "Exact decimal 3mm AABB threshold affected by floating addition",
+      "corrected_by": "Subtract separation and absorb only <2e-15m machine roundoff"
+    },
+    {
+      "reason": "Canonical native physics value SHA compared to file byte SHA",
+      "phase": "Before random geometry or spec generation",
+      "retained_receipt": "outputs/boya_author_collection_scenes_20261114_v1/FAILURE.json"
+    }
+  ],
+  "physics_steps": 0,
+  "planning_calls": 0,
+  "new_labels": 0
+}

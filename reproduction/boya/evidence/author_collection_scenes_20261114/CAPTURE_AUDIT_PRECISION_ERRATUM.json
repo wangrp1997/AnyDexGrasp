@@ -1,0 +1,20 @@
+{
+  "status": "audit_precision_failure",
+  "source_sha256": "123aef8fd62265abb0d4e93e84e054906a6a828409a67f13356142010cfbc517",
+  "reason": "Audit retained float32 pose/twist NPZ while original window_metrics explicitly promotes to float64 before stationarity metrics",
+  "passed_before_failure": [
+    "gzip SHA",
+    "logical full JSONL SHA",
+    "750frames",
+    "2274278 contact rows",
+    "all3 last250support",
+    "source initial5mm",
+    "native20um"
+  ],
+  "physics_steps_added": 0,
+  "failed_source_archive": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_collection_scenes_20261114_v2/CAPTURE_AUDIT_FAILED_SOURCE.py",
+    "sha256": "123aef8fd62265abb0d4e93e84e054906a6a828409a67f13356142010cfbc517"
+  },
+  "corrected_source_sha256": "c42a5e1fd8ad7a0cd98d1b37a72c11ab924f48e58d9c3188661ad5c2793b9a0c"
+}

@@ -13,7 +13,7 @@ from pathlib import Path
 
 import numpy as np
 
-from author_training import validate_arrays
+from author_training import validate_arrays, source_object_set
 
 GESTURES = (1, 6, 7, 8)
 TARGET = dict(fit_per_gesture=1000, total_fit=4000,
@@ -39,8 +39,8 @@ def assess(data_by_gesture, *, fit_per_gesture=1000):
         if trial_ids & ids:
             raise ValueError('A trial cannot count for more than one gesture')
         trial_ids.update(ids)
-        fit_objects.update(map(str, data['mesh_sha256'][fit]))
-        check_objects.update(map(str, data['mesh_sha256'][check]))
+        fit_objects.update(source_object_set(data,fit))
+        check_objects.update(source_object_set(data,check))
         rows.append(dict(gesture_id=gesture, total_labels=len(ids), fit_labels=len(fit),
                          internal_labels=len(check), fit_positive=int(data['labels'][fit].sum()),
                          fit_negative=int(len(fit)-data['labels'][fit].sum()),

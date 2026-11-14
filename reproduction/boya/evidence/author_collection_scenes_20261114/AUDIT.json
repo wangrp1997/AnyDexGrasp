@@ -1,0 +1,353 @@
+{
+  "schema": "anydex_boya_author_collection_scene_independent_audit_v1",
+  "status": "complete",
+  "queue_path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/scene_queue/QUEUE.json",
+  "queue_sha256": "971e661ca0b2be4d06495fc3e27596353f330c1e3736c77abda19cbc56fe6eb3",
+  "protocol_sha256": "39976176d8beb0b43310ab07ef678cac3c28931624d62d65e2247f7e47c4ecca",
+  "catalog_sha256": "9ec77459365e02720bebdbfbd048b1ea05d5ec0bc11c8100a050514a6f4ea133",
+  "module_sha256": "66994aa03dcf22658a0eeb74e58a593973bd32f3eae6a7002590593911787815",
+  "test_source_sha256": "23b0e76cbe9336192c295a9eadf45e1445fc7e2053f8f6b1d938bf9844ced04b",
+  "independent_auditor_sha256": "ed1a14a4d11391195c542f2a6660d7398901fa09c5010757da30a593a96a01d7",
+  "all_input_file_count": 785,
+  "all_source_file_count": 520,
+  "source_objects": 40,
+  "source_collision_parts": 418,
+  "native_preflight_assets_checked": 40,
+  "fit_objects": 32,
+  "internal_objects": 8,
+  "scenes": 10,
+  "ready_scene_inputs": 7,
+  "placement_nulls": 3,
+  "reconstructed_vertices_checked": 8337148,
+  "scene_results": [
+    {
+      "scene_id": "s40_lift_fit_00000_s2026111401",
+      "split": "fit",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_017",
+        "graspnet_046",
+        "graspnet_011"
+      ],
+      "source_identity_sha256": {
+        "graspnet_017": "c725008c1ed98eff08fd4dafa223a3d492d5aeac9cd6e2c176ee558c6fc638cb",
+        "graspnet_046": "72d0a3e78c9d48710c8081efa7144d866f048fe5c02fee1f46064f0ddcac634f",
+        "graspnet_011": "e4f4fc360a3613c818ed7ce8ab537d30cdb55ee78e70267c91eaf3b249219baf"
+      },
+      "spec_sha256": "95cec0576a75efd9cdedf834d79cb9ab872330dfac9d92a9d860cad94ed6ceb5",
+      "attempts": [
+        1,
+        1,
+        6
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "5d4ad3d9ea1453c7fa8eb686f887117dcb1b1570eb76d22bd1dc656b16036969",
+      "source_bottoms_m": [
+        0.0049999999999999975,
+        0.0049999999999999975,
+        0.005000000000000001
+      ],
+      "minimum_pair_separating_gap_m": 0.02273284035542611,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "split": "fit",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_002",
+        "graspnet_005",
+        "graspnet_060"
+      ],
+      "source_identity_sha256": {
+        "graspnet_002": "65d7dbddbd9519119e7b23eeb3259c26bb79619326a1f46acedc8537ee35164a",
+        "graspnet_005": "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b",
+        "graspnet_060": "7687918eafe20fc68ed463cc6165c5664be17f6fb36852d601096dde28d40694"
+      },
+      "spec_sha256": "ca084dcd794bd6895dcdf50179cf8f13e98b907d3dec161f8c421980cd94080a",
+      "attempts": [
+        1,
+        1,
+        21
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "0ba2d0d49bee3e4ce3fe77cf027975bd412860c71a637d932bdaa62bf14aef0c",
+      "source_bottoms_m": [
+        0.0050000000000000044,
+        0.005000000000000001,
+        0.005000000000000001
+      ],
+      "minimum_pair_separating_gap_m": 0.03186908391444811,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_fit_00002_s2026111401",
+      "split": "fit",
+      "status": "placement_null",
+      "object_ids": [
+        "graspnet_041",
+        "graspnet_063",
+        "graspnet_038"
+      ],
+      "source_identity_sha256": {
+        "graspnet_041": "4b5823b39d23fbe665ad4d9e34decbad49f09ad9fc81725bc79dd490e344c988",
+        "graspnet_063": "e73016d81cf11f6d9c98dc1e94e5cdd631493194479fa6d81ab7eb9995b8b087",
+        "graspnet_038": "7e8bcbbbff701f8c845d45759b0822baf33a2f8c50e155da448aec99f40deea6"
+      },
+      "spec_sha256": "952adfaa441303f707a438f75d48a938570cf57d7fe7c88cbb945a6e747a17e7",
+      "attempts": [
+        1,
+        256,
+        0
+      ],
+      "placement_statuses": [
+        "placed",
+        "fixed_layout_budget_exhausted",
+        "not_attempted_after_scene_null"
+      ]
+    },
+    {
+      "scene_id": "s40_lift_fit_00003_s2026111401",
+      "split": "fit",
+      "status": "placement_null",
+      "object_ids": [
+        "graspnet_034",
+        "graspnet_038",
+        "graspnet_040"
+      ],
+      "source_identity_sha256": {
+        "graspnet_034": "cf74eafe57bf148fe842203377247184bcffd36ff1f4401ba5022316aaf0dc24",
+        "graspnet_038": "7e8bcbbbff701f8c845d45759b0822baf33a2f8c50e155da448aec99f40deea6",
+        "graspnet_040": "000b26d8e5b90911e6aebc8c2e1eb49487ee704955d5ced0773bd2ee25420b6d"
+      },
+      "spec_sha256": "8c4cd77795dfaf943b01836dbde7884590714f9bc45ee27fc3f78c0c525d7cf9",
+      "attempts": [
+        1,
+        2,
+        256
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "fixed_layout_budget_exhausted"
+      ]
+    },
+    {
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "split": "fit",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_063",
+        "graspnet_037",
+        "graspnet_015"
+      ],
+      "source_identity_sha256": {
+        "graspnet_063": "e73016d81cf11f6d9c98dc1e94e5cdd631493194479fa6d81ab7eb9995b8b087",
+        "graspnet_037": "22d0351202c9cd0ad096b04a5128a3193cce52b0f457b16cad0e36402530f527",
+        "graspnet_015": "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8"
+      },
+      "spec_sha256": "6fd260c6d7c0374a26e6ff18cde6e9e0e35f157155c95ea679a933762e6e447f",
+      "attempts": [
+        1,
+        1,
+        21
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "bd0bfd1cb153c68d8c1a7d279ac6705de41e32a2d039bee1ef23b7170327cd32",
+      "source_bottoms_m": [
+        0.0049999999999999975,
+        0.005000000000000001,
+        0.0049999999999999975
+      ],
+      "minimum_pair_separating_gap_m": 0.013873424458618389,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_fit_00005_s2026111401",
+      "split": "fit",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_070",
+        "graspnet_014",
+        "graspnet_058"
+      ],
+      "source_identity_sha256": {
+        "graspnet_070": "934d4c5460a79dc4901acc02cabaed723a854d1a513e570bf52d721dfbb58e22",
+        "graspnet_014": "b72a1b0c9289b4939a39088ece44491fb07f62454a46f2255a5b50a59ad70bde",
+        "graspnet_058": "2b49bba517d64fff71686d4a3c0aa3ad1ac50f178a009eda6f246e0a3939fcee"
+      },
+      "spec_sha256": "8adcafda44ece5e10e39d7bfa209566eef223fc1f86be7577d604dd1de36fda2",
+      "attempts": [
+        1,
+        1,
+        4
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "4535b8bae25b0b2e0a532ca0036321c9cbc20cca1c9bb90863eb2156cf96b958",
+      "source_bottoms_m": [
+        0.0049999999999999975,
+        0.0049999999999999975,
+        0.0049999999999999975
+      ],
+      "minimum_pair_separating_gap_m": 0.023880716397767676,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_fit_00006_s2026111401",
+      "split": "fit",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_037",
+        "graspnet_029",
+        "graspnet_038"
+      ],
+      "source_identity_sha256": {
+        "graspnet_037": "22d0351202c9cd0ad096b04a5128a3193cce52b0f457b16cad0e36402530f527",
+        "graspnet_029": "827b4d57077a2ef490c07dfa2b56524d0f99709bfe4b9b2aad80f12d3fd5dac8",
+        "graspnet_038": "7e8bcbbbff701f8c845d45759b0822baf33a2f8c50e155da448aec99f40deea6"
+      },
+      "spec_sha256": "c315088ce0a575433cb90c436e307795b0679ce4c44ce18c9465d6f605729a1d",
+      "attempts": [
+        1,
+        2,
+        36
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "68e2473afc3d905b4c264e95a9b5c11fd3cf88197847cbebf77eb1333f9b36e4",
+      "source_bottoms_m": [
+        0.005000000000000001,
+        0.004999999999999999,
+        0.005000000000000001
+      ],
+      "minimum_pair_separating_gap_m": 0.01849450667512427,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_fit_00007_s2026111401",
+      "split": "fit",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_040",
+        "graspnet_030",
+        "graspnet_056"
+      ],
+      "source_identity_sha256": {
+        "graspnet_040": "000b26d8e5b90911e6aebc8c2e1eb49487ee704955d5ced0773bd2ee25420b6d",
+        "graspnet_030": "81c7527453c69a77de9e371d8348adc10e76823f7155da3af6b6aa0c322cd88d",
+        "graspnet_056": "195c78452eb066f2c325ec86c891a785a2f1cf612fc961c32f20c8b12f6992b3"
+      },
+      "spec_sha256": "83ceaaf0d497d57d6a6104e093477cafa3e56827f4b2070ba4b9f9a923ff3cb9",
+      "attempts": [
+        1,
+        4,
+        16
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "5632d17e5dbf053836cf1969b1fdba9cb3f2837a7a1dc5219a0f5a9c5b83f06e",
+      "source_bottoms_m": [
+        0.0049999999999999975,
+        0.004999999999999999,
+        0.005000000000000001
+      ],
+      "minimum_pair_separating_gap_m": 0.0103553753074195,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_internal_00000_s2026111401",
+      "split": "internal",
+      "status": "ready",
+      "object_ids": [
+        "graspnet_021",
+        "graspnet_007",
+        "graspnet_069"
+      ],
+      "source_identity_sha256": {
+        "graspnet_021": "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+        "graspnet_007": "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+        "graspnet_069": "bf3496ff7696018ad8f8c93ea26a5cd7bdd794b5c7b2d3ea6a5a0fd5a904a693"
+      },
+      "spec_sha256": "2b8a37c1a520c015261b03f29f6db426f093b8121ad1e908018cd4bd15f64328",
+      "attempts": [
+        1,
+        1,
+        3
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "placed"
+      ],
+      "scene_sha256": "28f59c1100ec552e89724d23e9702d1c857c85dfa108620bc6fbdc51ae024dbd",
+      "source_bottoms_m": [
+        0.005000000000000001,
+        0.0049999999999999975,
+        0.005000000000000001
+      ],
+      "minimum_pair_separating_gap_m": 0.03372416745433973,
+      "max_reconstructed_AABB_error_m": 0.0,
+      "build_input_validated": true
+    },
+    {
+      "scene_id": "s40_lift_internal_00001_s2026111401",
+      "split": "internal",
+      "status": "placement_null",
+      "object_ids": [
+        "graspnet_069",
+        "graspnet_008",
+        "graspnet_044"
+      ],
+      "source_identity_sha256": {
+        "graspnet_069": "bf3496ff7696018ad8f8c93ea26a5cd7bdd794b5c7b2d3ea6a5a0fd5a904a693",
+        "graspnet_008": "92a272fa6899c70ccf7f0a70a0398030cd30f90a892fbe61a0a37e73ea141201",
+        "graspnet_044": "e4370d59e6ce1eda8365b937c60ab1975a02be6f847458f2f1ccc77f290f106c"
+      },
+      "spec_sha256": "309412604fd97c7be1328a5ce0cca152783422dff8d5f84f1d8d314379faaf7a",
+      "attempts": [
+        1,
+        16,
+        256
+      ],
+      "placement_statuses": [
+        "placed",
+        "placed",
+        "fixed_layout_budget_exhausted"
+      ]
+    }
+  ],
+  "physics_steps": 0,
+  "planning_calls": 0,
+  "CGR_forwards": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "boundary": "Initial source placement only: settling, observed RGBD, reachability and grasp success remain unvalidated"
+}

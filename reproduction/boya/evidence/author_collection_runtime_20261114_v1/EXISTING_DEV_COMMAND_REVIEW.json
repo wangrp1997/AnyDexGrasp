@@ -1,0 +1,51 @@
+{
+  "schema": "anydex_boya_existing_development_command_expansion_review_v1",
+  "status": "pass",
+  "old_dataset_not_merged": true,
+  "old_result_not_new_label": true,
+  "steps": 2100,
+  "independent_columns": 24,
+  "actual_columns": 28,
+  "exact_targets_equal": true,
+  "max_target_error_rad": 0.0,
+  "exact_desired_palm_equal": true,
+  "exact_clock_equal": true,
+  "legal_hand_rigid_owners": [
+    "ffbase",
+    "ffdistal",
+    "ffmiddle",
+    "ffproximal",
+    "lfbase",
+    "lfdistal",
+    "lfmiddle",
+    "lfproximal",
+    "mfbase",
+    "mfdistal",
+    "mfmiddle",
+    "mfproximal",
+    "pmbase",
+    "rfbase",
+    "rfdistal",
+    "rfmiddle",
+    "rfproximal",
+    "thbase",
+    "thdistal",
+    "thmiddle",
+    "thproximal"
+  ],
+  "source_bindings": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A0/cohorts/cohort_0000/plans/p000/plan.json": "16900c2ef13bc385861cf31e3acdf72514c43daae55afb64137f318e4688adce",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A0/cohorts/cohort_0000/plans/p000/commands.npz": "094437ff8a23208947715b4c0af5fb8bd411588c2067e8ef4ba8fe04b3796bec",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A0/cohorts/cohort_0000/execution_000/trace.npz": "8a5cc62c0625e10d5e47a6d7e6a090aca5798ba55f7314bc166bf56cdd841502",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/egad_external12_20261107_v1/execution/execution/egad_A0/cohorts/cohort_0000/execution_000/evaluation.json": "7eb1794e8c10e3b9cdfa38eb5b0365f0181007c6902b3d5466dc2c55f3dd9f6f",
+    "/home/wangrenpeng/CanonDex/outputs/research/template_arm_native_video_20261027_v1/ur16e_boya.urdf": "b7e8164ee0bd34a8c18891c1f32df1621103d2ffc95f1ad80948b1ce4f208d87",
+    "/home/wangrenpeng/tendon-spin/assets/hand/boya.urdf": "4aa1dbbb7b930bc29ac824b25697cde6c2bed3318d8b0dd5ea6439b643f34cca"
+  },
+  "costs": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "planning_calls": 0,
+    "new_labels": 0,
+    "training_updates": 0
+  }
+}

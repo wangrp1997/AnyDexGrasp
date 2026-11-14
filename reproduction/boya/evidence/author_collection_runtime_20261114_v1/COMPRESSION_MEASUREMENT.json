@@ -1,0 +1,27 @@
+{
+  "schema": "anydex_author_capture_lossless_compression_measurement_v1",
+  "input_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_data_lift_20261114_v1/scene/capture/initialization_contacts.json",
+  "measurements": [
+    {
+      "gzip_level": 1,
+      "source_bytes": 691903579,
+      "source_sha256": "b99be45a97f2e0c41bbbb7182cc2872e39b6b281e3522ef3db2ee88091c9e20c",
+      "compressed_bytes": 59541998,
+      "ratio": 0.08605534037857607,
+      "wall_s": 1.731763067888096,
+      "compressed_output_retained": false
+    },
+    {
+      "gzip_level": 6,
+      "source_bytes": 691903579,
+      "source_sha256": "b99be45a97f2e0c41bbbb7182cc2872e39b6b281e3522ef3db2ee88091c9e20c",
+      "compressed_bytes": 47923112,
+      "ratio": 0.0692627028599313,
+      "wall_s": 3.6174775320105255,
+      "compressed_output_retained": false
+    }
+  ],
+  "physics_steps": 0,
+  "Kit_launches": 0,
+  "scope": "Existing raw JSON bytes streamed through standard gzip and discarded after counting; no contact data omitted, source artifact unchanged; timings are one local measurement not a capture speedup claim"
+}

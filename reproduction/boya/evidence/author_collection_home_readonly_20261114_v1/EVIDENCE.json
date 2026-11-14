@@ -1,0 +1,62 @@
+{
+  "schema": "anydex_boya_collection_home_readonly_evidence_v1",
+  "audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_home_readonly_20261114_v1/STATIC_FK_AUDIT.json",
+    "sha256": "d34c9dfb468abfd33f6bba5f10fa1c00e92bf1a6e0f5ed53cacc2f8882b5f6a3"
+  },
+  "report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_COLLECTION_HOME_READONLY_20261114.md",
+    "sha256": "45e9f80f43b9c15ba83266db2ad18f5ff890146968adb59ce2aa4279d0ef666c"
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+      "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+      "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_route.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_route.py",
+      "sha256": "cc390e0363696c5c65c368672a385c885f5ccb4ba450bdb1323d7766b2a0fcc6"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collect.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collect.py",
+      "sha256": "cd978c77007a537e29571e65f8f3fd0c8574c61b44fab62975732d39daa23b8d"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_action_semantics.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_action_semantics.py",
+      "sha256": "667c0e8e49428f30f200052eddf9ddcf6bd52b71edcbc32a957710bf6b8858a4"
+    },
+    "/home/wangrenpeng/CanonDex/canondex/robots/reference.py": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/robots/reference.py",
+      "sha256": "7bd09451947b61284876a6a912edaa51db9a671a9f7dba1fcc748f428dc35b21"
+    },
+    "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+      "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3"
+    },
+    "/home/wangrenpeng/BoyaBlindGrasp/assets/sources/arm_home.srdf": {
+      "path": "/home/wangrenpeng/BoyaBlindGrasp/assets/sources/arm_home.srdf",
+      "sha256": "f3eb636107851bacad3143f2b322debde7f9c3c561430ec8cdc453806798f2bc"
+    }
+  },
+  "conclusion": {
+    "initial_and_pregrasp_clear": true,
+    "fixed_approach_floor_collision": true,
+    "HOME_searches_started": 0,
+    "original_triangle_floor_depth_matches_saved_exactly": true,
+    "native_named_HOME_is_not_verified_author_ready_equivalence": true,
+    "unregistered_hardware_and_simulator_pose_differences_are_not_installation_error_evidence": true
+  },
+  "costs": {
+    "CGR_forwards": 0,
+    "IK_queries": 0,
+    "RRT_searches": 0,
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "training_updates": 0
+  },
+  "frozen_runtime_files_modified": false
+}

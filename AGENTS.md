@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-14 最新：public采集已产生首条审计通过正标签，固定开发队列运行中，正式训练仍0
+
+用户授权/mnt/public/datasets存大文件。新专用根/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1，轻代码/证据push，原始数据/轨迹/接触/模型不进Git。新场景构建/批量/无损capture与execute/独立标签审计已并行交付；开发queue预冻结8fit+2internal/seed2026111401/三体同split/每型固定首选一次，7ready+3placement_null不补例。原32+8按全三体隔离，新增NPZ三体身份列和训练数量门；目标仍每型1000fit+另200internal，旧435不自动混入。
+
+development/batch_v1已freeze并完成前缀1：017/046/011真实750init tick/2250对象步、2274278接触、1648原生凸体/RGBD/源射线/GPU0独立核验通过，官方CGR1load/1forward、0评分头/训练。首场四型同raw816均规划null，原因是固定4cmapproach末段指尖碰地板（最深5.861/1.499/4.801/6.750mm），HOME端点clear、RRT未搜索；不能归为HOME不可达或报0/4抓取成功率。
+
+队列index1三体002/005/060实际capture/CGR通过、四型均ready，g1已实际3139步，独立8163718接触/24→28指令/全三体底面与承载核验通过，产生首条fit正标签；002源底97.945mm/升98.787mm、末尾受载1.572s为诊断非额外门。这是采集正例，不是新模型测试。其它固定任务继续运行，PROGRESS仅场景末刷新，型内实时计数读ledger。首条链路通过不代表全四型/内部/批量完整验收。正式4000fit队列/正式训练/新模型外部评测仍未开始，旧435/八权重不变。
+
+运行源码已freeze，队列971e661c...，batch协议完整SHA见阶段证据。后续继续读实际PROGRESS/ledger，不从本快照推断剩余场景结果。报告reproduction/boya/AUTHOR_COLLECTION_PROGRESS_20261114.md；仅相关轻量源码/报告/证据阶段push用户origin，CanonDex不改。下文此前“无后台任务/批量未实现”仅指旧阶段。
+
 ## 2026-11-14 最新实际状态：无箱采集组件完成，新场景四型均停在IK，尚未采集或训练
 
 用户再次强调先采集、再训练、最后评测，不能把采集入口开发当作训练后的抓取评测。新独立author_lift_plan/author_lift/author_lift_pipeline已实现和测试；原transport默认保持历史任务。新无箱三体场景实际750初始化tick/2250对象步，三体稳定、有地面承载，原生1633凸体导入门与RGB-D核验通过，渲染0积分；新identity CGR仅1次载入/1前向，0手型头。

@@ -1,0 +1,65 @@
+test_completed_stage_is_reused_tampering_rejected_and_started_stage_never_retried (reproduction.boya.test_author_collection_batch.BatchTests.test_completed_stage_is_reused_tampering_rejected_and_started_stage_never_retried) ... ok
+test_export_new_only_nonpickle_full_scene_columns_and_independent_audit (reproduction.boya.test_author_collection_batch.BatchTests.test_export_new_only_nonpickle_full_scene_columns_and_independent_audit) ... ERROR
+test_export_refuses_independent_audit_failure_without_training (reproduction.boya.test_author_collection_batch.BatchTests.test_export_refuses_independent_audit_failure_without_training) ... ERROR
+test_freeze_is_zero_dispatch_and_pins_venv_budget_entries_and_gpu0 (reproduction.boya.test_author_collection_batch.BatchTests.test_freeze_is_zero_dispatch_and_pins_venv_budget_entries_and_gpu0) ... ok
+test_frozen_placement_null_never_builds_captures_or_creates_negative (reproduction.boya.test_author_collection_batch.BatchTests.test_frozen_placement_null_never_builds_captures_or_creates_negative) ... ok
+test_late_trial_verification_failure_keeps_physical_cost_without_label (reproduction.boya.test_author_collection_batch.BatchTests.test_late_trial_verification_failure_keeps_physical_cost_without_label) ... ok
+test_nonprimary_source_overlap_rejected_even_with_distinct_primary (reproduction.boya.test_author_collection_batch.BatchTests.test_nonprimary_source_overlap_rejected_even_with_distinct_primary) ... ok
+test_one_forward_per_scene_bounded_prepares_fixed_order_no_plan_not_negative (reproduction.boya.test_author_collection_batch.BatchTests.test_one_forward_per_scene_bounded_prepares_fixed_order_no_plan_not_negative) ... ok
+test_ready_executes_once_serial_and_quota_keeps_first_prefix_regardless_of_class (reproduction.boya.test_author_collection_batch.BatchTests.test_ready_executes_once_serial_and_quota_keeps_first_prefix_regardless_of_class) ... ok
+test_runtime_audit_is_executed_and_bound_before_any_label_admission (reproduction.boya.test_author_collection_batch.BatchTests.test_runtime_audit_is_executed_and_bound_before_any_label_admission) ... ok
+test_source_mutation_in_subprocess_leaves_infrastructure_receipt (reproduction.boya.test_author_collection_batch.BatchTests.test_source_mutation_in_subprocess_leaves_infrastructure_receipt) ... ok
+test_unknown_or_live_interrupted_child_blocks_further_stages (reproduction.boya.test_author_collection_batch.BatchTests.test_unknown_or_live_interrupted_child_blocks_further_stages) ... ok
+
+======================================================================
+ERROR: test_export_new_only_nonpickle_full_scene_columns_and_independent_audit (reproduction.boya.test_author_collection_batch.BatchTests.test_export_new_only_nonpickle_full_scene_columns_and_independent_audit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_batch.py", line 215, in test_export_new_only_nonpickle_full_scene_columns_and_independent_audit
+    manifest=E.export(out,root/'export')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_export.py", line 40, in export
+    trial=batch.validate_trial(path,spec)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py", line 276, in validate_trial
+    protocol=read(prepared_dir/'LIFT_PIPELINE_PROTOCOL.json')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py", line 50, in read
+    return json.loads(Path(path).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpm40jhplg/batch/scenes/0000000_fit_scene_0/g1/LIFT_PIPELINE_PROTOCOL.json'
+
+======================================================================
+ERROR: test_export_refuses_independent_audit_failure_without_training (reproduction.boya.test_author_collection_batch.BatchTests.test_export_refuses_independent_audit_failure_without_training)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_batch.py", line 229, in test_export_refuses_independent_audit_failure_without_training
+    with self.assertRaises(ValueError):E.export(out,root/'export')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_export.py", line 40, in export
+    trial=batch.validate_trial(path,spec)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py", line 276, in validate_trial
+    protocol=read(prepared_dir/'LIFT_PIPELINE_PROTOCOL.json')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py", line 50, in read
+    return json.loads(Path(path).read_text())
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpp27uceyb/batch/scenes/0000000_fit_scene_0/g1/LIFT_PIPELINE_PROTOCOL.json'
+
+----------------------------------------------------------------------
+Ran 12 tests in 3.343s
+
+FAILED (errors=2)

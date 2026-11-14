@@ -3,6 +3,7 @@ from pathlib import Path
 import tempfile
 import unittest
 from unittest.mock import patch
+import hashlib
 
 import numpy as np
 
@@ -21,6 +22,39 @@ def dataset(gesture, fit=1000, check=50):
 
 
 class DatasetScaleTests(unittest.TestCase):
+    def test_all_scene_bodies_checked_within_and_across_gestures(self):
+        def multi(g):
+            d=dataset(g,fit=100,check=5)
+            def group(prefix):return [hashlib.sha256(f'{prefix}_{i}'.encode()).hexdigest() for i in range(3)]
+            d['scene_mesh_sha256']=np.array([group(f'g{g}_fit')]*100+[group(f'g{g}_check')]*5)
+            d['scene_object_ids']=np.array([[f'g{g}_body_{i}' for i in range(3)]]*105)
+            return d
+        data={g:multi(g) for g in scale.GESTURES}
+        result=scale.assess(data,fit_per_gesture=100)
+        self.assertEqual((result['fit_objects'],result['internal_objects']),(12,12))
+        # All compatibility-primary columns remain isolated: a different
+        # visible body leaking into validation must still reject the dataset.
+        data[6]['scene_mesh_sha256'][-1,2]=data[1]['scene_mesh_sha256'][0,1]
+        with self.assertRaisesRegex(ValueError,'across gestures'):
+            scale.assess(data,fit_per_gesture=100)
+        data[1]['scene_mesh_sha256'][-1,2]=data[1]['scene_mesh_sha256'][0,1]
+        with self.assertRaisesRegex(ValueError,'Whole-scene'):
+            training.validate_arrays(data[1])
+
+    def test_partial_or_malformed_scene_identity_rejected(self):
+        for mutation in ('missing_ids','missing_mesh','wrong_shape','duplicate','not_sha'):
+            with self.subTest(mutation=mutation):
+                d=dataset(1,fit=100,check=5)
+                d['scene_mesh_sha256']=np.array([[hashlib.sha256(f'{i}_{j}'.encode()).hexdigest()
+                    for j in range(3)] for i in range(105)])
+                d['scene_object_ids']=np.array([['a','b','c']]*105)
+                if mutation=='missing_ids':del d['scene_object_ids']
+                if mutation=='missing_mesh':del d['scene_mesh_sha256']
+                if mutation=='wrong_shape':d['scene_mesh_sha256']=d['scene_mesh_sha256'][:,:2]
+                if mutation=='duplicate':d['scene_object_ids'][0,2]='a'
+                if mutation=='not_sha':d['scene_mesh_sha256'][0,2]='bad'
+                with self.assertRaises(ValueError):training.validate_arrays(d)
+
     def test_internal_rows_do_not_fill_fit_quota(self):
         data={g:dataset(g,fit=999,check=501) for g in scale.GESTURES}
         result=scale.assess(data)

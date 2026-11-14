@@ -1,0 +1,361 @@
+{
+  "schema": "anydex_boya_author_collection_first_prefix_null_diagnosis_v1",
+  "status": "pass",
+  "scene_id": "s40_lift_fit_00000_s2026111401",
+  "scene_objects": [
+    "graspnet_017",
+    "graspnet_046",
+    "graspnet_011"
+  ],
+  "bin": null,
+  "results": [
+    {
+      "gesture_id": 1,
+      "status": "null_geometry",
+      "stage": "bounded_HOME",
+      "candidate_sha256": "49343c13bc3516823bc5acb77dec2f7cd411e6c1c0dc56539a987a323db3b8c5",
+      "source_row_index": 816,
+      "slot_id": "g1:distal_005:ff",
+      "source4cm": 0.04,
+      "phase_rows": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "frozen_sample_count": 551,
+      "fixed_pregrasp_endpoint_index_zero_based": 799,
+      "fixed_pregrasp_finger_source_bottom_m": {
+        "ffdistal": 0.03605064497299587,
+        "mfdistal": 0.03312522863056028
+      },
+      "fixed_pregrasp_endpoint_violations": [],
+      "settle_violations": [],
+      "original_direct_report_and_fixed_report_exact_same_violations": true,
+      "original_direct_all_path_violations": 257,
+      "fixed_violations": 257,
+      "violations": [
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "mfdistal",
+          "count": 146,
+          "first_command_index_zero_based": 1154,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 355,
+          "min_distance_m": -0.005860968877584669
+        },
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "ffdistal",
+          "count": 111,
+          "first_command_index_zero_based": 1189,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 390,
+          "min_distance_m": -0.002935552537921552
+        }
+      ],
+      "final_finger_source_bottom_m": {
+        "ffdistal": -0.002935552537921566,
+        "mfdistal": -0.005860968877584673
+      },
+      "independent_XML_NumPy_FK_floor_max_error_m": 4.0245584642661925e-16,
+      "independent_all_approach_finger_source_vertex_flags_exact": true,
+      "RRT_reason": "frozen_endpoint_or_non_home_collision",
+      "RRT_search_skipped": true,
+      "home_cost": {
+        "rrt_preparations": 1,
+        "retime_preparations": 0,
+        "measured_child_calls_wall_s": 16.112054422032088,
+        "reported_child_wall_s": 15.548249268904328,
+        "reported_search_wall_s": 0.0,
+        "actual_search_runs": 0,
+        "ik_calls": 0,
+        "physics_steps": 0
+      },
+      "source_palm_start_xyz_m": [
+        -0.6098766904248707,
+        0.14397329291475533,
+        0.20089092248898965
+      ],
+      "source_palm_final_xyz_m": [
+        -0.6009647069454713,
+        0.14478134829952555,
+        0.16190472497401093
+      ],
+      "source_palm_endpoint_displacement_m": 0.03999999999648596,
+      "interpretation": "Only unchanged approach finger/floor collisions, also present at the final grasp endpoint; HOME endpoint clear and no RRT search was executed. No global reachability or physical-success conclusion."
+    },
+    {
+      "gesture_id": 6,
+      "status": "null_geometry",
+      "stage": "bounded_HOME",
+      "candidate_sha256": "66efefc15dc73ebd41cf5ef61c0d6b5cc868cca2b021f0b3bd978cb069100c06",
+      "source_row_index": 816,
+      "slot_id": "g6:distal_004:ff",
+      "source4cm": 0.04,
+      "phase_rows": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "frozen_sample_count": 551,
+      "fixed_pregrasp_endpoint_index_zero_based": 799,
+      "fixed_pregrasp_finger_source_bottom_m": {
+        "ffdistal": 0.037486898591225226,
+        "mfdistal": 0.044331185570192305
+      },
+      "fixed_pregrasp_endpoint_violations": [],
+      "settle_violations": [],
+      "original_direct_report_and_fixed_report_exact_same_violations": true,
+      "original_direct_all_path_violations": 86,
+      "fixed_violations": 86,
+      "violations": [
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "ffdistal",
+          "count": 86,
+          "first_command_index_zero_based": 1214,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 415,
+          "min_distance_m": -0.0014992989281973033
+        }
+      ],
+      "final_finger_source_bottom_m": {
+        "ffdistal": -0.001499298928197463,
+        "mfdistal": 0.005344988052544908
+      },
+      "independent_XML_NumPy_FK_floor_max_error_m": 3.157196726277789e-16,
+      "independent_all_approach_finger_source_vertex_flags_exact": true,
+      "RRT_reason": "frozen_endpoint_or_non_home_collision",
+      "RRT_search_skipped": true,
+      "home_cost": {
+        "rrt_preparations": 1,
+        "retime_preparations": 0,
+        "measured_child_calls_wall_s": 16.111982635920867,
+        "reported_child_wall_s": 15.54841794888489,
+        "reported_search_wall_s": 0.0,
+        "actual_search_runs": 0,
+        "ik_calls": 0,
+        "physics_steps": 0
+      },
+      "source_palm_start_xyz_m": [
+        -0.5957823571428854,
+        0.17010798388969675,
+        0.20695800997846456
+      ],
+      "source_palm_final_xyz_m": [
+        -0.5868703736632794,
+        0.170916039276441,
+        0.16797181246336718
+      ],
+      "source_palm_endpoint_displacement_m": 0.03999999999668752,
+      "interpretation": "Only unchanged approach finger/floor collisions, also present at the final grasp endpoint; HOME endpoint clear and no RRT search was executed. No global reachability or physical-success conclusion."
+    },
+    {
+      "gesture_id": 7,
+      "status": "null_geometry",
+      "stage": "bounded_HOME",
+      "candidate_sha256": "9df304892e2d73b6c8c9b76382be9b82b8ec6542d7bca664ffa2237db7498af4",
+      "source_row_index": 816,
+      "slot_id": "g7:distal_004:ff",
+      "source4cm": 0.04,
+      "phase_rows": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "frozen_sample_count": 551,
+      "fixed_pregrasp_endpoint_index_zero_based": 799,
+      "fixed_pregrasp_finger_source_bottom_m": {
+        "ffdistal": 0.03751285545082973,
+        "mfdistal": 0.034185103646686595
+      },
+      "fixed_pregrasp_endpoint_violations": [],
+      "settle_violations": [],
+      "original_direct_report_and_fixed_report_exact_same_violations": true,
+      "original_direct_all_path_violations": 220,
+      "fixed_violations": 220,
+      "violations": [
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "mfdistal",
+          "count": 134,
+          "first_command_index_zero_based": 1166,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 367,
+          "min_distance_m": -0.004801093867360655
+        },
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "ffdistal",
+          "count": 86,
+          "first_command_index_zero_based": 1214,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 415,
+          "min_distance_m": -0.0014733420656667696
+        }
+      ],
+      "final_finger_source_bottom_m": {
+        "ffdistal": -0.0014733420656667037,
+        "mfdistal": -0.004801093867360572
+      },
+      "independent_XML_NumPy_FK_floor_max_error_m": 3.191891195797325e-16,
+      "independent_all_approach_finger_source_vertex_flags_exact": true,
+      "RRT_reason": "frozen_endpoint_or_non_home_collision",
+      "RRT_search_skipped": true,
+      "home_cost": {
+        "rrt_preparations": 1,
+        "retime_preparations": 0,
+        "measured_child_calls_wall_s": 16.111650852952152,
+        "reported_child_wall_s": 15.548086626920849,
+        "reported_search_wall_s": 0.0,
+        "actual_search_runs": 0,
+        "ik_calls": 0,
+        "physics_steps": 0
+      },
+      "source_palm_start_xyz_m": [
+        -0.6034221624298268,
+        0.1585282383562803,
+        0.20615284322743122
+      ],
+      "source_palm_final_xyz_m": [
+        -0.5945101789505918,
+        0.15933629374220576,
+        0.16716664571253026
+      ],
+      "source_palm_endpoint_displacement_m": 0.03999999999639689,
+      "interpretation": "Only unchanged approach finger/floor collisions, also present at the final grasp endpoint; HOME endpoint clear and no RRT search was executed. No global reachability or physical-success conclusion."
+    },
+    {
+      "gesture_id": 8,
+      "status": "null_geometry",
+      "stage": "bounded_HOME",
+      "candidate_sha256": "a4085b356e37809c2161cf5dfae44eb9b1c477863deb79c7fe89b7b334d9ed7e",
+      "source_row_index": 816,
+      "slot_id": "g8:distal_006:ff",
+      "source4cm": 0.04,
+      "phase_rows": {
+        "settle": 50,
+        "home_to_pregrasp": 750,
+        "approach": 500
+      },
+      "frozen_sample_count": 551,
+      "fixed_pregrasp_endpoint_index_zero_based": 799,
+      "fixed_pregrasp_finger_source_bottom_m": {
+        "ffdistal": 0.03530871281008123,
+        "mfdistal": 0.032236324735562615
+      },
+      "fixed_pregrasp_endpoint_violations": [],
+      "settle_violations": [],
+      "original_direct_report_and_fixed_report_exact_same_violations": true,
+      "original_direct_all_path_violations": 275,
+      "fixed_violations": 275,
+      "violations": [
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "mfdistal",
+          "count": 154,
+          "first_command_index_zero_based": 1146,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 347,
+          "min_distance_m": -0.006749872768340229
+        },
+        {
+          "phase": "approach",
+          "kind": "floor",
+          "link": "ffdistal",
+          "count": 121,
+          "first_command_index_zero_based": 1179,
+          "last_command_index_zero_based": 1299,
+          "first_approach_step_one_based": 380,
+          "min_distance_m": -0.0036774846977489263
+        }
+      ],
+      "final_finger_source_bottom_m": {
+        "ffdistal": -0.003677484697748954,
+        "mfdistal": -0.006749872768340274
+      },
+      "independent_XML_NumPy_FK_floor_max_error_m": 3.0531133177191805e-16,
+      "independent_all_approach_finger_source_vertex_flags_exact": true,
+      "RRT_reason": "frozen_endpoint_or_non_home_collision",
+      "RRT_search_skipped": true,
+      "home_cost": {
+        "rrt_preparations": 1,
+        "retime_preparations": 0,
+        "measured_child_calls_wall_s": 17.47743961098604,
+        "reported_child_wall_s": 16.54733336204663,
+        "reported_search_wall_s": 0.0,
+        "actual_search_runs": 0,
+        "ik_calls": 0,
+        "physics_steps": 0
+      },
+      "source_palm_start_xyz_m": [
+        -0.6095531679289818,
+        0.1400363893858341,
+        0.1995934310719862
+      ],
+      "source_palm_final_xyz_m": [
+        -0.6006411844509731,
+        0.14084444477031494,
+        0.16060723355727236
+      ],
+      "source_palm_endpoint_displacement_m": 0.03999999999591212,
+      "interpretation": "Only unchanged approach finger/floor collisions, also present at the final grasp endpoint; HOME endpoint clear and no RRT search was executed. No global reachability or physical-success conclusion."
+    }
+  ],
+  "input_sha256": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/capture/observed_scene.json": "71763653abd899bb25c64c4ad098b4dedfacc8e64c9ce5a135e08326602ae3b2",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/arm/native/plan.json": "feb7fef30c0b7a1efb595373c1ff62f78504283bf72d09192356d8c3ea2ff137",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/pool/selected_author_candidate.json": "6ffe3c210489d46cd07f919243ff1e5c8d5b1b1b52a502a0f708a23b6c694111",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/home/rrt/fixed_segments_geometry.json": "b51e251113a679831952a94576be4b0f09e55eb49b573ab082fdd4d2e074d774",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/arm/native/path_geometry.json": "c29a87e651a8b3562bee92bf3b7002f24237b025cc64de55372442dcaa92f821",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/home/HOME_ROUTE_PREPARATION.json": "01048b13ebb801afa34de0b2eecbe16426e8d3d5a17895afac0cccc4c8b734e5",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/home/rrt/HOME_ROUTE_PREPARATION.json": "2356a73926777790dfa0b0d7a5cd4e941d7cd34352d859664be9e860766d6179",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/LIFT_PIPELINE_RESULTS.json": "7674be14d729022cfda2fde85b25dc4d4d09f63ca847b6fe2cc1c7552023d8c9",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g1/arm/native/commands.npz": "7390b51a47ff9c02ebb669a66a01a449991bb76554a16cdc41727a6b2dcb7b76",
+    "/home/wangrenpeng/CanonDex/outputs/research/template_arm_native_video_20261027_v1/ur16e_boya.urdf": "b7e8164ee0bd34a8c18891c1f32df1621103d2ffc95f1ad80948b1ce4f208d87",
+    "/home/wangrenpeng/tendon-spin/assets/hand/meshes/ffdistal.stl": "55c99e7dd89d2725cd8c27a550065e2fad79273e5badd26c71efc7674852c630",
+    "/home/wangrenpeng/tendon-spin/assets/hand/meshes/mfdistal.stl": "428d52b6cfcd4bc638890ee8e07e76775e9e7c7acd9649f6ef090401f086bf3f",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/arm/native/plan.json": "24b07422837d225fa9ffc680ce1e8a45dc9517d1d564f146ee46fed967cdf18d",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/pool/selected_author_candidate.json": "a2fd2f3ac6fbe4fbecffaa850aa8f366b040c389779bb64959626f1577945a16",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/home/rrt/fixed_segments_geometry.json": "66d3641bbead8defca30f0f4396df866cd172b9e836a247eebea76d8d277875d",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/arm/native/path_geometry.json": "16e8a3d501930bfdd18c1eb445a8e69074f97bb04716260dd441940197012e0b",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/home/HOME_ROUTE_PREPARATION.json": "f815b3656b723caffbb37fae59ad4062b6dc7e700c0c960ced1242e09157f0ba",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/home/rrt/HOME_ROUTE_PREPARATION.json": "893827fea8e52c6f8ddd0a68b15ca2b784a402fdc2a202ba9f327b1bc3e575bf",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/LIFT_PIPELINE_RESULTS.json": "0d523398e30c17f3515e5c6355eaa7e3c11c7cac7ccf9a74e9ae2803ad1150e9",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g6/arm/native/commands.npz": "8b512d1434d516e40fd89abdcff8999fd0d573d673ae8d1445bf61f1f9d5b382",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/arm/native/plan.json": "9cb0321429288e15d722bfe7b6e9aa65dcdc949d391e5df949a7a5f705c50e5a",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/pool/selected_author_candidate.json": "16eef19673f14a32c5cb68dfc0e2d166f4eb5221b6a32d815ce4b5e7e7304dba",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/home/rrt/fixed_segments_geometry.json": "52352ce3d04bac965add49a1f7b0b129a8a78a2d44347d006c04898f767b5058",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/arm/native/path_geometry.json": "b0638874f807bf50777d85acf80a8b673758b116f1533c49ae9e5db93ec3e2aa",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/home/HOME_ROUTE_PREPARATION.json": "a2c15dfc4db6295556206fc57e6cb0d14e627bbe14a3c655c1b577d31ae002de",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/home/rrt/HOME_ROUTE_PREPARATION.json": "dc6e8a9a7b1302603dda2d611baba6da9a463859298472701aa0a64d7496772d",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/LIFT_PIPELINE_RESULTS.json": "5fc2d5be692c10074d8faa342b6eff4f235a02ad6b2e8a7610253d66f126cdbb",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g7/arm/native/commands.npz": "6bcf3361c38cb7983d299963667a09b0ae3a5aa0f5e12848dcd12d454847c6f0",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/arm/native/plan.json": "709a791986594778d9394d086c767c2b054f6c0676bd188266d402197f807f61",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/pool/selected_author_candidate.json": "45fbe5e807d195400df409955162a0fefe9b3215d685511e4b148fc372594e04",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/home/rrt/fixed_segments_geometry.json": "9c4d3c505cfc7a2d749c860ac7d86d13dca124dba4c2893fd0e6747f136078a3",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/arm/native/path_geometry.json": "b5d678c1a07c7bb0a8bb8b06dad1120f3718ba6604827afa29feae0b5146ec05",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/home/HOME_ROUTE_PREPARATION.json": "1784cea3156c3d5fefcd13accf24991e0cf8a7b140bf6c33453ee95a5d85f4c2",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/home/rrt/HOME_ROUTE_PREPARATION.json": "fe0f8157ddbec886d176837a8dbdb1e4268778e99c4196a21edae3f043e48068",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/LIFT_PIPELINE_RESULTS.json": "ba0569f7e07401026176ba90afb5b8c21243be3abf66b180398f1ea11fa5fbd7",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000000_s40_lift_fit_00000_s2026111401/g8/arm/native/commands.npz": "4a55b4b64b8b7669541a8e2ed14aba7359f6af8c4351a53f97103a59be8fce27"
+  },
+  "diagnostic_source_sha256": "0f19e76d147221c4257a01bb2b3636fe8f6cd129a11416083d3f0cda58969f31",
+  "index_semantics": "command_index zero-based; first_approach_step_one_based explicitly one-based",
+  "costs": {
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "IK_calls": 0,
+    "planning_calls": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0,
+    "new_labels": 0
+  },
+  "source_or_frozen_output_modified": false
+}

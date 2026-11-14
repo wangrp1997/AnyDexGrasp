@@ -1,0 +1,78 @@
+{
+  "schema": "anydex_boya_author_collection_batch_evidence_v1",
+  "scope": "Tool implementation and synthetic scheduling/export tests; root owns actual development dispatch",
+  "sources": {
+    "author_collection_batch.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+      "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+    },
+    "author_collection_export.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_export.py",
+      "sha256": "a7fb4159bd9d649d290753d5a92891540407728ea59d88a25001106d485f9fe1"
+    },
+    "test_author_collection_batch.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_batch.py",
+      "sha256": "551eea2d2f25050cfeeddf55f0299203cfae24f9ea23ae39370c51fa1fa22569"
+    },
+    "AUTHOR_COLLECTION_BATCH_20261114.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_COLLECTION_BATCH_20261114.md",
+      "sha256": "191629fa2a1fb024a527e909613a625868eea3134c48c55d9ffff1f9bf536ec0"
+    }
+  },
+  "tests": {
+    "final_passed": 14,
+    "final_wall_s": 3.976,
+    "first_attempt": {
+      "tests": 12,
+      "errors": 2,
+      "reason": "Duplicate module import names in export mocks; preserved"
+    },
+    "second_attempt": {
+      "tests": 12,
+      "passed": true
+    },
+    "final_attempt": {
+      "tests": 14,
+      "passed": true
+    }
+  },
+  "artifacts": {
+    "TESTS_V1.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_batch_20261114_v1/TESTS_V1.log",
+      "sha256": "138208c84a3c8674f2aaecc9a2cf7d023e4d143034c0f3664f91a97e9741080a"
+    },
+    "TESTS_V2.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_batch_20261114_v1/TESTS_V2.log",
+      "sha256": "34389b445e36e31725f382e42443feb34713511c159234de4fc599bea287a24d"
+    },
+    "TESTS_V3.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_batch_20261114_v1/TESTS_V3.log",
+      "sha256": "23446df55cbf13fbc006756e59d21e6a487e2b049a1d61230e9196a73e204801"
+    },
+    "REAL_QUEUE_READONLY.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_batch_20261114_v1/REAL_QUEUE_READONLY.json",
+      "sha256": "af15263993c309f07b60c25f399fcdb4a63961dafee9343b05e96041118f2016"
+    }
+  },
+  "tested_policy": {
+    "prepare_workers_max": 3,
+    "physics_concurrency": 1,
+    "gpu": 0,
+    "one_identity_CGR_per_ready_scene": true,
+    "one_candidate_and_execution_per_scene_gesture": true,
+    "placement_null_no_label": true,
+    "independent_audit_before_ledger_label": true,
+    "all_scene_source_split_isolation": true,
+    "resume_retries_started_stage": false,
+    "old435_merged": false,
+    "automatic_training": false
+  },
+  "implementation_test_costs": {
+    "Kit_starts": 0,
+    "CGR_forwards": 0,
+    "robot_planning_calls": 0,
+    "actual_physics_steps": 0,
+    "real_labels": 0,
+    "training_updates": 0
+  }
+}

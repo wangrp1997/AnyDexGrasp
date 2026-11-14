@@ -1,0 +1,31 @@
+{
+  "schema": "anydex_boya_streamed_runtime_source_review_v1",
+  "original_lift": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py",
+    "sha256": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d"
+  },
+  "original_finish_ast_sha256": "c03faa3144c027e8803c4ed54ba3bfa8ba257fc819dea0984abe624b6aace5f7",
+  "original_finish_ast_rewritten": false,
+  "save_dependency_proxy_only": true,
+  "unchanged_inherited_methods": [
+    "factory",
+    "ready",
+    "before_step",
+    "after_step"
+  ],
+  "contact_fields_dropped": false,
+  "contact_sampling": false,
+  "one_complete_contact_row_per_native_tick": true,
+  "compression": "gzip level1 JSONL",
+  "pointer_schema": "anydex_boya_contact_journal_pointer_v1",
+  "physics_device": "cpu",
+  "renderer_active_gpu": 0,
+  "renderer_multi_gpu_enabled": false,
+  "receipt_before_real_app_close": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_execute.py": "3f2dc9db664a028649d5b665a80327fbdd4299d737625db900c833d779e68765",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_audit_author_collection_runtime.py": "a674fe1b25ae6067d70eac0abd8253dfdba280d9c1c3488c658850ad8886f71e"
+  }
+}

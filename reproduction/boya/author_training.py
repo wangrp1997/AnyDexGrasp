@@ -61,7 +61,28 @@ def validate_arrays(data):
         raise ValueError('Nonempty held-out internal split and at least two fit rows required')
     if set(data['mesh_sha256'][fit]) & set(data['mesh_sha256'][check]):
         raise ValueError('Source object leakage between fit and internal validation')
+    scene_columns = {'scene_mesh_sha256', 'scene_object_ids'}
+    if scene_columns & data.keys():
+        if not scene_columns <= data.keys():
+            raise ValueError('Complete whole-scene identity columns required')
+        for key in scene_columns:
+            a = data[key]
+            if a.shape != (n,3) or a.dtype.kind not in ('U','S'):
+                raise ValueError('Three original scene bodies per labelled trial required')
+            if any(len(set(map(str,row)))!=3 or any(not str(x) for x in row) for row in a):
+                raise ValueError('Three unique nonempty whole-scene identities required')
+        if any(len(str(h))!=64 or any(c not in '0123456789abcdef' for c in str(h))
+               for h in data['scene_mesh_sha256'].ravel()):
+            raise ValueError('Whole-scene source mesh SHA256 values required')
+        if source_object_set(data,fit) & source_object_set(data,check):
+            raise ValueError('Whole-scene source object leakage between fit and internal validation')
     return fit,check
+
+
+def source_object_set(data, indices):
+    """All participating source bodies; primary-only fallback for legacy rows."""
+    key = 'scene_mesh_sha256' if 'scene_mesh_sha256' in data else 'mesh_sha256'
+    return set(map(str, data[key][indices].ravel()))
 
 
 class CanonicalDataset(torch.utils.data.Dataset):
