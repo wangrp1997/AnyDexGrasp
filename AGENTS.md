@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-14 后续并行集成：三型绕障接近通过，仍在第3步搬运验收
+
+用户要求多agent加速，动作/路径、采集集成、搬运后端三路并行，root独立核保存数组。原4cm四型首选仍raw879/rank73/nonflip/extra10mm，无重跑387原碰撞查询或端点IK。六笛卡尔路线共40次IK均null保留；新统一RRT-Connect(seed20261114/.25rad/.05rad/goalbias.2/1200iter/32connect)四型均28iter连通，首连接无第二解。初次全HOME拼接jerk31.90–32.28>30，四条均拒绝；g8另15tick手指碰000，最深.415224mm，保持null不派搬运。只对原几何清楚g1/6/7另冻结确定性统一伸时，原connected_path NPZ字节SHA不变，无新搜索/IK，HOME2180/1887/2025步，全tick全场景清楚、jerk28.941/28.799/28.991<30。原初态/预抓24列及掌姿终点/18非arm/50settle/500approach exact，root独立核导数通过。ready只代表纯规划，不能报新成功率3/4或0/4。
+
+固定release已去除compatprimary物体GT偏移，显式scene/bin/SHA sidecar固定世界掌XYZ[-.4,-.25,.35]、参考HOME方向，SHA43223161bf53e4fa40335960e1b51185320646c8ee38f03793f2bea4fed7522c；这是Boya仿真适配非作者硬件TCP。首次缺16电机的真实FK失败0物理保留，修复后完整FK及独立XML误差0。post刚体门现对全部3源体+5箱体部件对称，不再漏primary；仍非动态物体预测。新pipeline补交原已验arm_collision_refinements.json到实际native父目录，同时锁来源/副本/combinedURDF/physics及其37唯一mesh，执行前后SHA复核后才生成可训练标签，防止基础设施/完整性失败遗留有效记录。
+
+新continuation复用原候选和已准备HOME，三路各一次退4mm/回预抓/固定投放/松手准备已完成，原transport IK96×3全返回，但post全部null_geometry：g1/6/7 object2126/2413/2263+self4185/4857/4505；open及close/hold/retreat4mm/wait/回预抓全清楚，碰撞仅transport_bin/release/settle。首碰上臂-箱x正墙，三路release终点同时自碰及箱壁碰，最大约69mm；仅换中间路径也不能修此末端分支。0ready/0infra/0物理/0标签，不称新成功率。协议47f65a07...、并行wall27.639s；root独立源/命令/释放目标审计与74tests通过。后续先核同fixedrelease从统一参考初值的IK分支，不改release/候选/门。
+
+后续同fixedrelease单HOME参考初值另协议一次原IK/13nfev收敛，末端自碰消失但上臂仍撞箱x+/y+，源STL也真相交，仍无clear目标；不是全局不可达证明。87tests通过(74集成+13新调度/固定目标)，新统一RRT+same-path retime driver已独立实现但尚未接当前pipeline；不得说正式采集全自动验收。下一阶段先按机器人/箱体共同几何另协议标定固定释放位，不按物体成功结果逐件调目标。
+
+结果以reproduction/boya/AUTHOR_HOME_RELEASE_INTEGRATION_20261114.md及新轻证据为准，原74a78c9阶段证据不回写。正式新数据集、四头重训、新正式模型、冻结外部验收尚未开始；旧435/八权重13文件SHA复核不变，原作者源码不改，CanonDex只读。前三型绕障时长发生变化，不可称执行时长不变。已授权对齐和扩采，不重复问许可；每阶段轻量成果push用户origin，所有大输出继续ignore。
+
 ## 2026-11-14 并行集成：新入口已到完整臂准备，搬运未验收，正式重训0
 
 用户明确要求多个agent加速推进。动作语义、采集/桥接、搬运后端并行实现，独立源码/几何/表示审核后集成。当前五步交付：第1数值组件完成，第2动作计算合同与新采集入口已实现并实际核验，第3接近/固定投放/搬运尚未通过，第4正式新数据＋重训、第5冻结外部验收未开始。不能再说只有数值函数，但也不能说已经完整对齐或重新训练。报告reproduction/boya/AUTHOR_COLLECTION_INTEGRATION_20261114.md、五步清单已更新。

@@ -1,0 +1,2737 @@
+{
+  "schema": "anydex_boya_author_component_integration_v1",
+  "status": "null_geometry",
+  "complete": true,
+  "stage": "transport",
+  "physics_steps": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "new_CGR_forwards": 0,
+  "new_collection_collision_queries": 0,
+  "new_native_approach_IK": 0,
+  "new_HOME_search_calls": 0,
+  "reused_preparation": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7",
+  "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7",
+  "protocol_sha256": "55fd6c8b62a55e9ee24f171cf3456804694a8fdcdf95f7ce57de3dfeae7ee563",
+  "candidate_sha256": "2447c5c2490fc1d1a70927bbeffec801f54c50760b326bbc23f9ba596daf3592",
+  "transport_preparation": {
+    "schema": "anydex_boya_author_transport_preparation_v1",
+    "complete": true,
+    "admitted": false,
+    "status": "null_geometry",
+    "grasp_attempts": 0,
+    "physics_steps": 0,
+    "scene_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observed_scene.json",
+    "scene_sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd",
+    "seed_plan_path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/native/plan.json",
+    "seed_plan_sha256": "09be79ffc813d1d48d8ceb1ab1a4d90785a6627be655a2a65d97d14ab5209932",
+    "policy": {
+      "dt_s": 0.004,
+      "retreat_first_m": 0.004,
+      "retreat_wait_s": 0.1,
+      "retreat_minimum_s": 0.5,
+      "retreat_pregrasp_minimum_s": 2.0,
+      "transport_minimum_s": 3.0,
+      "release_s": 1.0,
+      "release_settle_s": 2.0,
+      "final_window_s": 0.5,
+      "source_rise_m": 0.05,
+      "containment_tolerance_m": 0.002,
+      "max_final_linear_speed_m_s": 0.02,
+      "max_final_angular_speed_rad_s": 0.5,
+      "max_penetration_m": 0.001,
+      "early_stop_penetration_m": 0.005,
+      "max_robot_bin_force_n": 0.001,
+      "contact_capacity": 262144
+    },
+    "scene_archive_sources": {
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/AUTHOR_SCENE_SOURCE.py",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/AUTHOR_TRANSPORT_SOURCE.py"
+    },
+    "capture_source_bindings": {
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/AUTHOR_SCENE_SOURCE.py",
+        "sha256": "5211d58488f0c1d1e73b6a18cffe79964f370045da0d567bf4ebc2e11f6c940d",
+        "historical_archive": true
+      },
+      "/home/wangrenpeng/CanonDex/canondex/video.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/video.py",
+        "sha256": "733a0770bc4e369e31086e131044370a2512bce2da0ac141f9f4161fe25cf634",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/__main__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/__main__.py",
+        "sha256": "58aabbd5d6c12604ba1ee182263c5643ef35bb22d621bdc1c7ec6c97069c14d9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/playback.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/playback.py",
+        "sha256": "e660a6dcb625e744b2d21ecf2cc5e5f70ea93e4e5a4026b24b463dc8f5235e62",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/paths.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/paths.py",
+        "sha256": "4737b905a86f67fac2bebb4d9634ad63274107c974327fc31a097452f653c9df",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/recording.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/recording.py",
+        "sha256": "aeac4249ee6ece4ded185d322427d56f1e0f94be3347bafc1f01dbae4f19cd7b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/floor.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/floor.py",
+        "sha256": "5ff134e8e6fc1a018613ec1cec8a0b5967809fc237db98b5453522c19c77bdc6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/render_poses.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/render_poses.py",
+        "sha256": "a201291970ad4e8a685ffb58159e2b4a8e1916f9ffcad282a9bcee39212840a3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/convex_cooking.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/convex_cooking.py",
+        "sha256": "99d3b63ec972402cf44c4d6f0652f89821cdaa20aeef0a4a872760b3277de5a8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/task_execution.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/task_execution.py",
+        "sha256": "6e7f42dd94aafbc2c3fe30855b6057ae735521879d5246db5cc288b8566f8a8b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_floating_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_floating_grasp_baselines.py",
+        "sha256": "7fd0cb2a7bb5cc98bb22506955d2cb5799e9ae27b63a1d177bb4709af005bb9b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/batch_grasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/batch_grasp.py",
+        "sha256": "aca697ab4f85b4ed54d67433aa092beb72b12662bfc5275ff5ad175870b9be9a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py",
+        "sha256": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/task_objects.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/task_objects.py",
+        "sha256": "d322dce2faaf15b6717231f61c4d07e26bd10ebd6fb5bebda95655f51c62dc7e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_force_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_force_closure.py",
+        "sha256": "16819acd7026d4e3231abde2d10b946f726039f1e4a896dbb47c9d4762b6c574",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py",
+        "sha256": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_grasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_grasp.py",
+        "sha256": "23bdead1a731b7435988a839a15d3929af7d085993ba2165d4ace9273555efab",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_grasp_baselines.py",
+        "sha256": "e239adcb8c94167866289050793c587e9f82b23caa3a476a16897b9fd712416b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_grasp_experimental.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/evaluate_grasp_experimental.py",
+        "sha256": "54a9909311e001cca83117177a51a4bc2e1584c127d8a4019682c2e568be993d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/planning_world.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/planning_world.py",
+        "sha256": "67912f753c37381708cc0c6ce347ec2d321dc1333c64cf8d22ae74ed4f756c24",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py",
+        "sha256": "422324ce9a3047bb98d8e394ee47ceb8b51b5fa8c570676b5aca7b951b82a61e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/gesture_collision.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/gesture_collision.py",
+        "sha256": "5e307c25ba3e454198fdae5d4f0b9576d4fcfe24c9f1542c3a995f5ed78ab4da",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/check_position.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/check_position.py",
+        "sha256": "247e7380b6911e68549af9f63b7f5acc13948c86e335c8dbadf66485e366f614",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py",
+        "sha256": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/physx_step_profile.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/physx_step_profile.py",
+        "sha256": "d70560cdac2ed6be82aaa7f90f8af5c18419bc48f5d1e9868e6e204c62f0b8e6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/settle_object.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/settle_object.py",
+        "sha256": "a98032ae5b38cc773e6de50c4cc18c1750f0e8863743b723f79f8a31274099d5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/physx_compat.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/physx_compat.py",
+        "sha256": "b3e41466761b1c986e1e093531c702748b1882eabdb9fa61d30da8cb7e5f2ecf",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/camera.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/camera.py",
+        "sha256": "2a09739581f4ddf239b963f982380d7c790250c3c7870da52bb62357bf1d8087",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/admm_hand.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/admm_hand.py",
+        "sha256": "dacbdc71fb30e993579891ad082bf96b51a739b1d01e56e066d1531ac5e88878",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/probe_contact_formation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/probe_contact_formation.py",
+        "sha256": "c7c2a9036d2032246b4915b8fc841d8adede3b27633d875bb85c4019124a0e35",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/preview_gestures.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/preview_gestures.py",
+        "sha256": "a857141923a8b74fdcd88d7c08c7e773a684c90ea19a3570a473eafcdebb8409",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/static_contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/static_contacts.py",
+        "sha256": "3fea15c280802592e9e942e48ca7ed645f167e431fd4350cef49cf9ce3746086",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/template_process_rollout.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/template_process_rollout.py",
+        "sha256": "fcc17b01c05ec42baa14a9ef196981202a0a1a065866fbaff4362598e214e41e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/render_sync.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/render_sync.py",
+        "sha256": "8222e96d8305cd61e300935506ff09678bdc5df902bddff8da11d221e0ec5951",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/task_joint_control.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/task_joint_control.py",
+        "sha256": "f2c199fd319036e98dc2dd7e9fef95b7dfeda466b867b1adb5ac48e6d51b7890",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/joint_diagnostics.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/joint_diagnostics.py",
+        "sha256": "196172793dce34ba43b0b6920d7d515f4df8e0c0998eaf10806014a212c5d006",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/robot_collision.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/robot_collision.py",
+        "sha256": "d95602fb5c6f9e75d761b5f2b2a172a4d23e336a3659796c712ba8da923d93d8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py",
+        "sha256": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/tasks/geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/tasks/geometry.py",
+        "sha256": "a6fc885b830b076ddb3ac39c4247f81f915eeb5a2c465187f646ccc5a7c77317",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/tasks/__main__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/tasks/__main__.py",
+        "sha256": "4451bbd2fdf15952d00fa746c2e29cb4af9205e563fa2c1ea696758fd0bc936b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/tasks/partnet.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/tasks/partnet.py",
+        "sha256": "00b36819a7cbb5c7ba6917d3ff5bbe249dcebc2255ead93069004d4f18181976",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/tasks/config.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/tasks/config.py",
+        "sha256": "243798261a48a5af9f855d0c038089f85cfb100d926a3e9a97d9b81dad8c49b1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/tasks/planning.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/tasks/planning.py",
+        "sha256": "bd630fe81fe00880238643421b709028444fa6028caef4d84b0332495e27e70e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/tasks/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/tasks/__init__.py",
+        "sha256": "333af2962d441571f20b59561f9c911b044f3b70f5a6258cf8189c050369ebc0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/candidate_pool_storage.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/candidate_pool_storage.py",
+        "sha256": "06f1617e70051d8a508821ef6b516bcfd8a444ac40fbac03bff145dafb03de70",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_resources.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_resources.py",
+        "sha256": "b8ff6d68bfc61103bce24089ba25f0f3d6d1806aaafae65f14909073d4f936ff",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/report.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/report.py",
+        "sha256": "a6f66db723a219222eef8df21dd1141c013fa6bc22c89dfdcd69435ec4597a63",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/tabletop.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/tabletop.py",
+        "sha256": "d79be2ba183f7cf3bb890dccf18cd33727aa8e447c53b1296ad6a0e84661a934",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_batch.py",
+        "sha256": "dd242da308b7e836c1003845e89b33fc5fa2217aab6a9c9918c8f658e5acfe5d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/resource_gate.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/resource_gate.py",
+        "sha256": "3fe055dbe50f8c6ff68fc0c727c8b819322d4f894b7b2f74f5a6ed8bbfad500a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/input_reuse.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/input_reuse.py",
+        "sha256": "3207d4b2704ff72047dcbbbc16651f319438ec1fe3a9a1ba138598d421c51028",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/parallel.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/parallel.py",
+        "sha256": "88d1067a55aae041c3a5dd6b6bb07289102a5a05f950d9faf33a52e30a9fe767",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_worker.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_worker.py",
+        "sha256": "8b0673b9ba5b906086e6c65d2c093fc47345a9956ef0ac5452ed66ab0dd4c919",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/source_reference.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/source_reference.py",
+        "sha256": "b3223d950cb30c1ecc546c1e868ed77f9af1a004b6959931176a6677983fbfab",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/artifact_storage.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/artifact_storage.py",
+        "sha256": "59aa2673b210cd837886a2f0f3f0e9b2ff288b8bf99b64b3f463c5a6830c50a9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/__init__.py",
+        "sha256": "2465ca98847d2d293140b128e29e1cc58769625779ac3626e5536fd386ac284a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_storage.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/source_arm_storage.py",
+        "sha256": "cef58a8ad30fc1b32661e9a4021bb669360e01f503bef94b74a3fdc074cc02eb",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/grasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/grasp.py",
+        "sha256": "3c0e09be0816d6e69bd2ebab386530bf73ac834ea391ba1337f79fc6a2956f21",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/evaluation_storage.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/evaluation_storage.py",
+        "sha256": "548dd25876493279baac2f72429aa9875e39558459891f2c501a1c0a754e13c9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/benchmark/jobs.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/benchmark/jobs.py",
+        "sha256": "2b28ad1d86aac1f3c806d6598beaa681423ef14e797ac89de9748f0cfe634b81",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/__init__.py",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/ur16e_boya.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/ur16e_boya.py",
+        "sha256": "7176f5b1042c4d4d273a339668e288e7f0b254a4ee7a6d5c07232d885eedc150",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/arm_actuation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/arm_actuation.py",
+        "sha256": "1fd8d897bfe8852d6560e89ed0ef8eb3b279b5e6d605cbed28dc44d4720fc03b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/combine_urdf.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/combine_urdf.py",
+        "sha256": "b8bc4d485bf33b3ce2389c7609e168b156733ad8214065d070f15566afc3c19d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/reference.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/reference.py",
+        "sha256": "7bd09451947b61284876a6a912edaa51db9a671a9f7dba1fcc748f428dc35b21",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/hand_actuation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/hand_actuation.py",
+        "sha256": "3a9b0f8afbe3940c111e660189e5424331734e4b20ca961ee3a80f519e7d628b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/robots/kinematics.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/robots/kinematics.py",
+        "sha256": "3ee84ac980455b75a6f5729701921109fd3bd4aeae1868d4f015333b578136d1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_capture.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_capture.py",
+        "sha256": "a057dc8c9a042cbca5fa85b3308c2268ac1b9f97dd4ffa499c0183c2270562c3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py",
+        "sha256": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/grasp_layout_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/grasp_layout_transfer.py",
+        "sha256": "e09bed25d58b57a5d148b833fb3d26391e2fe11baae1887ff5e4355de2c13391",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_closure.py",
+        "sha256": "e8e720901d07b278ae8466047900623a70d3cc7c328675a4cded59227da929dd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/dexterous_envelope.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/dexterous_envelope.py",
+        "sha256": "a88f58a6908f63484fd4e7ac274e47d1338a06ba2ec64380a26a25b59961c5c3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/interaction_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/interaction_transfer.py",
+        "sha256": "fdfe289eddf5fc9a7b713ad3b158aa3c67feedb8f7f1778374da40025d68e780",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/capture_enclosure_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/capture_enclosure_refinement.py",
+        "sha256": "7f637aa2ef55742359602710ee8bcf15ec83570bead70b07668632a8f6018fc5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_closure.py",
+        "sha256": "271eee97701be75e04afd9510aeb6842f025a591bf8a6f6620127103c5084f4d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_recording.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_recording.py",
+        "sha256": "04d898a72e3687760e813e5e648ff80978e7d9dd599e8d01f050e2ae1d620ae9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/tactile_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/tactile_closure.py",
+        "sha256": "98b271fdb3c554593404059d68104474142c64a113614aade0ae49a1061dfa8f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_surface.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_surface.py",
+        "sha256": "211f0fde761c23525aa4180c1552f190ac9fb3652d524063a872e9fc007ddbd6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/rim_affordance.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/rim_affordance.py",
+        "sha256": "21193995db96fc4d9a42a1327d56916d71c1122fe6ac7b932750de84820977c1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/cooking_audit.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/cooking_audit.py",
+        "sha256": "dbcafd7c4ca662968048723e04ddc68f7d4bac5839d528758071baa0df68fd52",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/local_capture_target.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/local_capture_target.py",
+        "sha256": "14ad477f5acd8e7ca6c9731a14cd50cd80dddb26c631ee0357d699c558e8a565",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/arm_proposal_priority.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/arm_proposal_priority.py",
+        "sha256": "d7a454abf87a8b1ec4733831e20a7c9ef64efef707267f6efe03edd2413905b4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/scene_rollout_optimizer.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/scene_rollout_optimizer.py",
+        "sha256": "4489b5f4d13046263e5715ceb7e1138ce3bf724ed6fbab57f62dbb18d2cc1997",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/capture_direction_prior.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/capture_direction_prior.py",
+        "sha256": "e8db7e185b9722782394cfb8984f4f5b525e0e8bae0f5467ad7a338a077e7378",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/batch_execution.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/batch_execution.py",
+        "sha256": "2866f28802430011d71d00cff51b07d784ec242f8f12944abbf391cc82c9534c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experience_shape_retrieval.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experience_shape_retrieval.py",
+        "sha256": "e07e3df05442f933ca8bddb43906311ec2872fdbd0392b42a5ec7ececccf190c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_region_matching.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_region_matching.py",
+        "sha256": "41225ba844c891c745ea0503cabb0da61b8a6a74d674dbc650389cf13b064c77",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/semantic_experience_retrieval.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/semantic_experience_retrieval.py",
+        "sha256": "ddedd23bdd5d3356da3f81e2e51ead255f46271441e20d5a04d4c7c368f10bed",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/authoring.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/authoring.py",
+        "sha256": "9508865cab971470b1123f3b981a249d1532de78f75fdbe6cd780406023f76c0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/hand_aperture_pool.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/hand_aperture_pool.py",
+        "sha256": "a92c5ec27a8f3eaaba5c988369b3e0bda87408cf6ac99836d06716a0dc983b99",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/gesture_preference.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/gesture_preference.py",
+        "sha256": "fbf794479833441c1960fbc755acd2a26b4d2ef5d9d27eefb7772609b627db19",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_experience_retrieval.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_experience_retrieval.py",
+        "sha256": "6348f17d6900c6134ebb7cad9fd70c4281a985ef108193f2472f06390d74fc93",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_arm_research.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_arm_research.py",
+        "sha256": "78bd30b48e7a1eb3e7ab7da2140192fe5acdf3c6a6c8709ef33139c70c90c2bc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/objects.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/objects.py",
+        "sha256": "7f6cbe8553c93bc5eb038b244a9c98639435bd4cb40e12688664d281b1ee655d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_search_schedule.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_search_schedule.py",
+        "sha256": "fe7acaebca7730683067a48dac35d2add61a56cd09f93f51db9eafa561bbed1d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py",
+        "sha256": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/force_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/force_closure.py",
+        "sha256": "2d968dd901c35d7947f898a679305c555928934011d347dd5a2f4e7650205d93",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experience_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experience_transfer.py",
+        "sha256": "5597bccbb8136902eae1c460808865acc44a480e175b5b2829080ead97b72753",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/grasp_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/grasp_experience.py",
+        "sha256": "cc8c46464d09e9beeafa8c1ff69d549e080434a24ccf0bb613799ea94ed86fa9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_process_geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_process_geometry.py",
+        "sha256": "20671fab27c769e26294d368ce014b87ff2768339c5dc73d4461d27d906f5aa1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experience_refinement_stage.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experience_refinement_stage.py",
+        "sha256": "b7bee22061e4f7f2416ce575378dead073abd6d707e13d367529e689bacb653c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_execution.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_execution.py",
+        "sha256": "871e789e29b31d58c485eabda68f6367e963776b8494cfbb8663f8aaa26af067",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/collision_partition_cache.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/collision_partition_cache.py",
+        "sha256": "ddf578e0194fc9c438f687564dd64c1f4155c0aa8293903b10b807499a8470f9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/resident_validation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/resident_validation.py",
+        "sha256": "a827b89e72e8cd61fa2ce4ca3a24b503405740120d444e23e133e8e88dfbdbe9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_hand_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_hand_refinement.py",
+        "sha256": "520202b1a196b54f8f8cd4950238cb4dafba41672373da7f8f51c815a211339a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/sampling_first_search.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/sampling_first_search.py",
+        "sha256": "be4cb499c68e38fc3fada41650865b6db70585aa3b53778dfba1cde61492e6f7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/adaptive_contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/adaptive_contacts.py",
+        "sha256": "28b76c256a5d85b4831e510ecb7a81f6c3c5d7ac74957eaa450f607ea317e060",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/graspdatagen_pool.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/graspdatagen_pool.py",
+        "sha256": "92bf179d92e797f54e88869688c758e53a0e2ee29676927ca9cc6a761876758f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/tabletop_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/tabletop_pickup.py",
+        "sha256": "30baf8a65dbba30d4618774b3040c879ba76fc6219d5c979fbee195c3dc4ed00",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/research_workspace.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/research_workspace.py",
+        "sha256": "e6c51933fb7ac458e02dddaecb8bbbe7a4002b0de56d13ce18d5ea57248ac688",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/scene_proposal_priority.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/scene_proposal_priority.py",
+        "sha256": "55c136afcc6e766cd7ccf3fd56c58c154717c50791c6a88850834e14b0cb7ca6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/geometry_gesture_memory.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/geometry_gesture_memory.py",
+        "sha256": "f91d5c68f8fe4c5ac61647b3147d1fc8dcf12e6e9b91472ec91bbeae31b2419c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/evaluation_scope.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/evaluation_scope.py",
+        "sha256": "9ff6db27bb2c77131be0791e25c6f0e14b7add2a8823fb23ca551f1e496fc966",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/collision_geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/collision_geometry.py",
+        "sha256": "5ce6261668c923530bf8f864c9c66eaf8976840aa7b86a5c0af76369d7f8fb0c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_selection.py",
+        "sha256": "09ca4b2d455f3dfa0fb358b92fc6ca6e3accdb531966ca2943a88f2ead7246d1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/two_finger_template_proposals.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/two_finger_template_proposals.py",
+        "sha256": "c4bad2a6d807dd32ef39624152aa5914a3fab0f6277aedaf27161efbac848aff",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py",
+        "sha256": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experience_geometry_metrics.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experience_geometry_metrics.py",
+        "sha256": "ef9b1cdcd70de7a03c1c7ec91af367ed9714dd78f1b17885f12e907d5bff6397",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/convex_partition.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/convex_partition.py",
+        "sha256": "ac38d94ebeb8ac344db41640cebe531e8ca7cf9dec545b4714913a99017d510b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_lift.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_lift.py",
+        "sha256": "9666ab3f9cb714f0f036bfc6df581b9008ad70ddd2547bd8046711d9756952be",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_table_constraint.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_table_constraint.py",
+        "sha256": "9bac086165dbb83f4c8928c61669209bf1a04ced51b57f0232bb8d0272a6d47e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/settling.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/settling.py",
+        "sha256": "08c6ce2d638ea30cb2268f6a0bd84f0b6ab41ca16c9aaa8f341561cb6398ba2a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/vlm_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/vlm_selection.py",
+        "sha256": "68da1098a5770111a72bd860ed9cf784f2f46ff9147830526a1d5bf3efbb7fca",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_online_ik.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_online_ik.py",
+        "sha256": "a41fb90c6720ec7d93a6ee427e088895d971b860f68ad894173b0c04105da76f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py",
+        "sha256": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_drive.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_drive.py",
+        "sha256": "88b6ce75cf857708eab30a4b3c7acb3031e8384f7d0ebd9a74859f246cbe0ef5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/physics.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/physics.py",
+        "sha256": "d980fbcf47a6edace8a72c7d2d5d19f91bec7543ef58d266ffe7a8a050911b5b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/arm_service_client.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/arm_service_client.py",
+        "sha256": "6f921460f60f3353a3b15bf5a25ff8b47a9899ff91273d1d288cf8571c1c67f1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_experience_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_experience_refinement.py",
+        "sha256": "1282cdd9749a0a5b5aea4fa5b9c2794b86322815328674c465e5c51270231ced",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/resident_batches.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/resident_batches.py",
+        "sha256": "28235206420bdaf46e025b303722d5dd9ea78adad446cdb1ed66e4ef629734bd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_compat.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_compat.py",
+        "sha256": "b220a042c7ecc75074d224f19596f6e810677d288236234159337324e26f3d40",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_admission.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_admission.py",
+        "sha256": "6a399855cd15fa14755ea48b473754fa1ce986cf631999372d333c17013309ea",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/prototype_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/prototype_experience.py",
+        "sha256": "46db3e8debc894af2b60ec0aecbf1c79bc2f229bb8e173348f0ff190a1f6fd62",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_designs.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_designs.py",
+        "sha256": "e612ce9e39908f89deb809fb58ffebea31c984103bf163e64ebc6d03fa33c565",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/blind_teacher_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/blind_teacher_transfer.py",
+        "sha256": "e27cf24bd4e945cfdac952a7e7ce7eed8afcf74fac5402fafd345d679942e34e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_sequence.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_sequence.py",
+        "sha256": "e54bf29d995c87c47f32a697b4fec45337aca63fe3ab0d7aadca7cfc859d2468",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_variants.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_variants.py",
+        "sha256": "bac569f27e18a47c063fe2a5ec1f25f634cc730add1c372451499f0ebd755dfc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/workshop.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/workshop.py",
+        "sha256": "dbc69c830fb9a81e93728f03d33e20e0af20f94d913398bfa375f3f9824c2fc4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/live_arm_scene.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/live_arm_scene.py",
+        "sha256": "639cf9dc9177a48d76de7c139ecf9dc005c5e1818bb33b7b2b5e1747d940ece5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_hand_resynthesis.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_hand_resynthesis.py",
+        "sha256": "cf9f4f447aad5967563bcdf510ac358988d253d0abe826d2333d13305320095e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_registry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_registry.py",
+        "sha256": "d63b3cd9a6ae0d03de47d8a53c0355ee54f6ccaac3af2ecd88279da4ae98a029",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/evaluation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/evaluation.py",
+        "sha256": "cf402cb1de9120f2848062aabb868e47e0c9e39fbea70af8d396dd981502be63",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experience_memory.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experience_memory.py",
+        "sha256": "9e61eacd4857f563d121afa83397b1114de2f711fa22c60d20397988e1c4506c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/arm_preparation_cache.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/arm_preparation_cache.py",
+        "sha256": "7c7e1b35c4cd9491c0d35b13f2fcadde1905d9680f9760709d14bf22f0f3891a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/collision_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/collision_refinement.py",
+        "sha256": "4d68f22cf028237c98e1a37c3851f8920ea413c96f3a4ffc56dd1e62828b9610",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/sampled_teacher.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/sampled_teacher.py",
+        "sha256": "d1c40b80a2f88750fa64f5bebf9176fe455eecfd5eabd7e79fe00239aa9d0c58",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/generation_service.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/generation_service.py",
+        "sha256": "4c95e8c637221b8991e5dfce1302b71d6459ea19126df02ef1363d219c7d3429",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/resident_client.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/resident_client.py",
+        "sha256": "17baab8abf9530c14d7845f510869422c35f2d52fd15fd697134a318123b8c60",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/native_object_preprocess.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/native_object_preprocess.py",
+        "sha256": "8429f33fc5d0b0e3462a7e6e2088078b6ab6a8c15e94c03fdcb1b72493d347cd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/lift_control.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/lift_control.py",
+        "sha256": "c19251340b296d0bc90bf92338467934fe914e4e36f533dd312244f042a74756",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper.py",
+        "sha256": "4c2cc4fcd44a8cebdc0b44b32d0af24e9ddcf7a30fd27332e3333cd080dd0655",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/__init__.py",
+        "sha256": "ef50425f513d06be588d423c58d10a395833af7cb4634a7f2df61997cf51a9f1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/source_arm.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/source_arm.py",
+        "sha256": "8f329b91d3d8b5b9acd253fdcba01b934ae709c395115c676a143024d376e967",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contacts.py",
+        "sha256": "7efbc05021ace68269f641c59bf1ab1c2210e885cd0f19f54d84d5532bf154fd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_adapter.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_adapter.py",
+        "sha256": "39767ba74903a9e920d3133c92fccd69827e964612c54c9509fad1562fb8b691",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_pose_fallback.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_pose_fallback.py",
+        "sha256": "5f0b09185bd62522d548a40dff4d8250a0abbd758252846752709dce4e45266b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/scene_config.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/scene_config.py",
+        "sha256": "8e1862f218cc6a107ab1b8c1828aa5605b80c186585c069535c70b6adeed39ce",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/gestures.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/gestures.py",
+        "sha256": "236cc014acd8e4d24e53e8019a904e048faeb2e2386c9ad46f7ddf82cecaa627",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/macro_relation_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/macro_relation_transfer.py",
+        "sha256": "52e6d264f6f1b8666bd170d47cfec4511177e1a615c7c2c13aea7ad2035892e7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/adaptation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/adaptation.py",
+        "sha256": "9cbd534b30117e3b17aa515e9aac42459bc6d879919b809751938b4b20a3fa0f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_jaw_assignment.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_jaw_assignment.py",
+        "sha256": "2c76910ca56aa8ed36c264bdf1505aaea48f3ac7d575110c5c4923676de8f8f6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/candidate_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/candidate_selection.py",
+        "sha256": "0f49f7fbe95cb6f49bfb4fed8171278eb740f2f11db7908041e0572ecb5eab9b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_admm.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_admm.py",
+        "sha256": "781641521b2a4000199d088936351c7cac461e040aaac828799400e951f89a15",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/compact_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/compact_experience.py",
+        "sha256": "ab621644fc8f32720153dead6d90a3a085edb8560dfbbc6b2abf2a8e340c756b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_geometry.py",
+        "sha256": "c2b40befdaac966bf3640a004a59a80b19abc48d4487ecfd3c0a4b8107d033ab",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/template_process.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_process.py",
+        "sha256": "90d5480bf2685d42b32f63c73745567d555d663e0fcce75d5c5e697915350809",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/runtime.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/runtime.py",
+        "sha256": "411a59bbe074712f4eb6b93658a2290227b5669fbe9bd3aeaae225a4f9935ea7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/support_union_penetration_cuda.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/support_union_penetration_cuda.py",
+        "sha256": "a286a1a630f9377ba7e73766eba4e519e569b3ea1542f3d798262064f40ed00e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/reuse.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/reuse.py",
+        "sha256": "687b8bb3e260f9ec39a620a9e8242ded2c6d16bf76d92caba71ace7c57b06c07",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/__init__.py",
+        "sha256": "310fd70f9a3ec7024f3a77fa2da3d046011a30710669c444acc33e9429554497",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/carried_object.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/carried_object.py",
+        "sha256": "7a2d4caf4377e57db532755fef1b44449c9606787c6a54576c772526eee874bc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/world_mesh_aabb.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/world_mesh_aabb.py",
+        "sha256": "6922f9d290e674dd03a2a3a900721f9f7249efc144767f91bbac8431e518bcbe",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/spheres.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/spheres.py",
+        "sha256": "a6bea0d618d04cd6cb57074c88b207576130fd87b51492444e267a8dde807246",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/model.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/model.py",
+        "sha256": "3d0469d645fa882c26e83eb70879cc1b29b57063e4bf27c5fb7aa2f0214a1e33",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/_world_mesh_aabb_bounds.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/_world_mesh_aabb_bounds.py",
+        "sha256": "3b5c9828e8c6cd7270fd7fc8b7b3ad8213042b10ce90b8001b6201ee23720864",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/source_pair_guard.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/source_pair_guard.py",
+        "sha256": "f36b054c568aba60ee17cf6408693ac29b07053a08adc4b3f59211bfd19e7693",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/_world_mesh_aabb_kernels.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/_world_mesh_aabb_kernels.py",
+        "sha256": "d0cd6d701b882353994b0816fb62b3d4b093f2d4d69b4953a31b7fa5a17904c9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/pair_config.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/pair_config.py",
+        "sha256": "ef65292da46b8fcf44e6f188c346c5432d55755ec233c4440fa5365458e87518",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/rigid_pair_certificate.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/rigid_pair_certificate.py",
+        "sha256": "f1d0166a70370f4ef9ea88afb21b69c04f759158df4e78f7f9a14cd8cf7161b0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/benchmark_cost.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/benchmark_cost.py",
+        "sha256": "06700f44ce404af3b33aa1dfc0d7a9e4460b73816be9aa2f80264c7c320f49b5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/floor.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/floor.py",
+        "sha256": "0b0271654c122fbb7537359903660d7a2511e3a73631e20f92a9025b9f813d09",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/motion.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/motion.py",
+        "sha256": "143d2f2af15fbee0469dc4a59b23442b91ede9673bf4ab8fce5afae372d56e98",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/planning/support_union_cuda.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/planning/support_union_cuda.py",
+        "sha256": "be94120770d472c578f961c1cc31b29fa2d8305cdf86563f68b542bde5e9ea0f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/assets.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/assets.py",
+        "sha256": "b71c92d1ae77992ad0c68fdb7486f517ef79202d31a020ac16a6f27cd835085a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/outcome.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/outcome.py",
+        "sha256": "d212d4010a1729cea8c0368b2457e1763d31404ef59739c6f0062c93a03f6643",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/interchange.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/interchange.py",
+        "sha256": "eb6a4c90519e0a6f63850295e8013f97346af0907857a7054db345f0397f77ea",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/dgn_expand.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/dgn_expand.py",
+        "sha256": "76380b2fafc9e7f61f1710b471a7add8b6df84319a58dcc3275da355310a6c97",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/statistics.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/statistics.py",
+        "sha256": "3e40a3cb958f9b1434179a3699ba314ddd87b681d56934e53fe98b3375b3ab3b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/dgn_scenes.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/dgn_scenes.py",
+        "sha256": "7ae6b7dd63c853e6eb5c59fa4194554591bf75022c0c83017135490cb9e91102",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/corpus.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/corpus.py",
+        "sha256": "8ff4af0585ac6e17268aa4b691a2ea70d895aa95b246aa8036ad92ffde4be386",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/__init__.py",
+        "sha256": "361a4414003261b6743e41cd9b02054de9bbc1ed560aeada13a3748073c2b6ec",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/data/grab_contact.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/data/grab_contact.py",
+        "sha256": "253c80d019e0d9ca4110176dfadf81d61a2a18c28389cfcb5d72c96ed1502f22",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/__init__.py",
+        "sha256": "6d3de9b88477bffd3a6b580ca604951ea24687224a3455f38775111081b3c0b5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/assets.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/assets.py",
+        "sha256": "0693b3b35773a4dd8e3083ee36af1d25684c37538fe7ce46b98f5ed6dfec82e6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/compat.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/compat.py",
+        "sha256": "4e00f752e5ec3df5964fff334de8169d3128983b934d9b20e5950120c3adccb5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/floating.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/floating.py",
+        "sha256": "a394cb95da6f9b5a8d98e92165d3a4b2da1774e0e3ab4b99a14e08fb6474f293",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/bodex.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/bodex.py",
+        "sha256": "21c7fc5901beac753ef481e632c9e58f90edcd266b12a78c463f636dbaa86501",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/evaluate.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/evaluate.py",
+        "sha256": "54d64f6d628c77f9c4ebd532a524ed3266fdd1eeb839eec5a1ef41d85b075199",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/isaac_assets.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/isaac_assets.py",
+        "sha256": "61e9f777c98d713822e49dbb10215b6eda9a3a6e13cc9d88b140a590f285e722",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/graspqp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/graspqp.py",
+        "sha256": "d1e6a1dd21019181b96e22275fd67c1f751c22036577adae9ee841cb91851de3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/fast_graspd_boya.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/fast_graspd_boya.py",
+        "sha256": "fb6a349cbde496f9c59be217b70616a4b827a0d3ab35576e8244f947857647c1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/dexonomy.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/dexonomy.py",
+        "sha256": "c1556454c529f716acb7ac3b8f3ec13a8658c8f33186f01bf07c9e63155d97ec",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/table_aware.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/table_aware.py",
+        "sha256": "e8f67752108ca85646c89388519fd92777e41df6a3296efebf675dfef6a03aa4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/runtime.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/baselines/runtime.py",
+        "sha256": "87820c0c2d8797352dd9e3808ad30f19967b3e5bfd9428498c788e33cea6fa46",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/__init__.py",
+        "sha256": "0a07a64858a9983f16301a51a5b5e7042ffe0227b5d9ffff34eb9fdfcde1ba04",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/__init__.py",
+        "sha256": "e52a22a1a250a3932e0376f723f1f0cb5d0c82926600066038952c8528073bac",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/contacts.py",
+        "sha256": "c64e3c5c3e846e2a7d68a7a5424069aea085785428a0b07805b0e4e88c67b93e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/offline.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/offline.py",
+        "sha256": "204b49bd62b3c3764dcca5d280ce98f0e3b86dee4a32fd48aa9c34ac6509f0f7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/closure_feedback.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/closure_feedback.py",
+        "sha256": "5d679ad3f46c91c3aa07b523aa026c53a1013ea6d28590824e0cd487dc571648",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/collision_surface.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/collision_surface.py",
+        "sha256": "f96d8dbeb56ce589eae815b471c9912f42a4262173affeda3dc00c3959f66f70",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/matcher.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/matcher.py",
+        "sha256": "64bca52b362dd34ff5ab8c9cbc5b4a1dc73f681f46c1e11ea3544fa8c43498b2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/graph.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/graph.py",
+        "sha256": "7f355caaa3ed8b2a26b19971bc8b4709ae0bc923e486c01ebbc0ae9ab661bf94",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/geometry.py",
+        "sha256": "47214f168a7a4e83bbbbb758690c2f9e39d7943165e0ca823fae7d6136b89755",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/__init__.py",
+        "sha256": "0fc4d0cffb501fca196ee9f9aa179b2934e3d62dc24cd1a759af837f8d703746",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/hand.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/hand.py",
+        "sha256": "d549d073cba53e2e4ce012147d4ad2d04a858832926dc7fc3f003c7f557d8d21",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/source_admm.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/contact_relation/source_admm.py",
+        "sha256": "342f004c9205276d63b5da08a9b0080ab7378852d42069b6ae662c95cf4366a9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/contact_qp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/contact_qp.py",
+        "sha256": "f8ada1a9662a068b8a4f6092e1794ede7ef1316a2632e3868ee8059b1ee506d5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/plan.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/plan.py",
+        "sha256": "870ef7bdad449b31f8cac76d13fd572cff2a59fd8e0d72f0f468c62b6db080b4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/__init__.py",
+        "sha256": "86b3d0cc5ffb38abb8d41424895e816324fd107bdc7b192dabfc1581524526a9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/evaluation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/evaluation.py",
+        "sha256": "3172ebd6969a54bf60828ab2e9e587e75167e843cae4a0d0cf8288eb9a53d947",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/source_hand_sqp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/source_hand_sqp.py",
+        "sha256": "350b87de736df52ffa034f0aedbabcba80e1f8879a29eae2d4fea80918ff60f8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/hand_projection.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/hand_projection.py",
+        "sha256": "c53cb8eb08ff8a3276fae8e275effb5d8e85b49c8f8e5934438774462e848a54",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/ls_template.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/experimental/ls_template.py",
+        "sha256": "b54419444275ff44493764ca725ab7976bcdd185fabde79e385b64b3bd88f425",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/init_pipeline.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/init_pipeline.py",
+        "sha256": "fa704b90ff3f4676dd5cb8461fffd183c19258e680f754b0e258752516cf7b20",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/synthesis_filters.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/synthesis_filters.py",
+        "sha256": "7bd54b8799aca7e047206b94ea52ae83594c1b7b782e81b042eab02e72251a2a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/filters.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/filters.py",
+        "sha256": "a624e7de955441a5b8408facb6b52ddfdb6113371098cf3a2a34055de9de0629",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/initialization.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/initialization.py",
+        "sha256": "5afd55a25dd2a9afcd451bb1428fdd8afcb8809660295c5b67e9c4d3145b9c22",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/tabletop_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/tabletop_refinement.py",
+        "sha256": "6e10e3d01b3be7d43ced97138d31c641f3656c3d5efe450e380735626c63502a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/contact_update.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/contact_update.py",
+        "sha256": "1cf979392a11d12f5f201bd665d7aec0136152578050e79c41544ca8648ae6c8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/retention.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/retention.py",
+        "sha256": "072a75fbb4fc8d06176caec62ed21a76bc9f6ab1bca62e8ae2e2ec9b8d22ddb4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+        "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/control.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/control.py",
+        "sha256": "e29b8bd908aca004a48a0911464b5961790ba0f7bb5964a3282bb7c11e8d1327",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/refine_pipeline.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/refine_pipeline.py",
+        "sha256": "f18c2ebeb79a6f503bd8ebe9157e851e85878d999ab4eeb36252d3151a0d2778",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/template_library.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/template_library.py",
+        "sha256": "99c0234d8c16d1955cecac7f6ce9e5fbe2e13c5f34663f89f5103b79e692fe4b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/plan.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/plan.py",
+        "sha256": "757bb2dac0bb2beb184009b352ed8ec9386bed3056bd179c34df6ec6e522b725",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/geometry.py",
+        "sha256": "067fe46c1fab1a92c024a4c85254daea1c4f667be383d91ec04c2159fbb98af3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/qp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/qp.py",
+        "sha256": "c1217128a175a979536fc1c1320ac0416d4e19d07d6425a92d1f0c57bbb7eb36",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/matching.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/matching.py",
+        "sha256": "8dc7cd61a8c798ec8bf4aaf911ef34a095367daaf56afdd7b131c36b1f876921",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/solver.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/solver.py",
+        "sha256": "17cbe6c3d005dacbfb325fa9a44488e9dec1a182e3ad1a30c737c632eee6539b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/__init__.py",
+        "sha256": "9c83a922b4f6086ce253795da24f99697f278644763a1fc5c18587a0730937d0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/contact_links.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/contact_links.py",
+        "sha256": "eec9727002d01c629701880db1c406fa6485a033eb4724c6a9c9a939da95aa78",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/contacts.py",
+        "sha256": "81125ae005fbbb06707b80be3af82784fa0e1d3551a6ad02d61946523273d41e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/admm/surface.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/surface.py",
+        "sha256": "70c667895f0b08c1763c5dc87aa85931985f56a3766c0f2912053466030bfc15",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/deformable_registration.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/deformable_registration.py",
+        "sha256": "94ff80906ee2e6350d79eb1cea553a7783a1910be6f677d849d342c05d5c39c2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/utility.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/utility.py",
+        "sha256": "0b6a418d3dd6237422bc15b84b4c0bdbd3d5ae3af367cca7e84d5f6952c85fe1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/rigid_registration.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/rigid_registration.py",
+        "sha256": "c94af78fa6b3f617f156671b1740f5ead82de0bbc2c016e1b4fe0217fabda59c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/constrained_deformable_registration.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/constrained_deformable_registration.py",
+        "sha256": "b273d1c9b23af53e61c2319c5ab67754fdf306394a47e4e87466c4ca159442bd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/affine_registration.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/affine_registration.py",
+        "sha256": "83b2ffc15ea3a672337e7c61a35782fbe7a0a2c7b48c1b753c979cd7bcaf0e97",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/__init__.py",
+        "sha256": "361048a5eb5a62e2efdb2e655c701e023a7e63deb28d6f844f215c2f8e152982",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/emregistration.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/_vendor/pycpd/emregistration.py",
+        "sha256": "8ea08cf0cbaa3b7971b27321bcf30c35221cb66cfa27add29c30c4ba972ab3b1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/__init__.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/__init__.py",
+        "sha256": "c98a5e16b35b72e4039a41fa659dd69b734e043cbd7fe2ebaa85428f426d8f26",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/q1.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/q1.py",
+        "sha256": "385a54cca97b109a509d1724f21449a20a22db04bf48d39974e36494d61e9258",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/base.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/base.py",
+        "sha256": "81b5e113597ce8336603f58091113805f23930f4f1f917cedcd571ce424bd474",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/dfc.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/dfc.py",
+        "sha256": "480560861b36df6436b4065f904711becef97e3c9de7db035dbd37179578cce1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/rotation.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/rotation.py",
+        "sha256": "c464e3be4e3de49b67737fa867d59d0fd2a63ff32bb5ccafc9637306226d63c3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/qp.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/qp.py",
+        "sha256": "61b8ce65d82f7ca5c05a91542891fea838debb583af7959ca9c504ecae0799ec",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/tdg.py": {
+        "path": "/home/wangrenpeng/CanonDex/canondex/grasp/metrics/dgb/tdg.py",
+        "sha256": "41b1ddc36d793e2f714038a8dda5a343d61dd400ca091f75be125ddfa88d7150",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/compare_experience_geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/compare_experience_geometry.py",
+        "sha256": "1acc21b28adfd2ab1ed8417f30ff3a615ace58f9b4edef453cc7ff4f1d3b8382",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/fetch_official_grasp_sources.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/fetch_official_grasp_sources.py",
+        "sha256": "884cacf4af8a2f1fda4afb2a6870ff741c542d0fbb9c31d6b21a9410eb781ce2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_plan_sequence.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_plan_sequence.py",
+        "sha256": "2b5299c4c087e33c34f1e1d815952491e53efeba50b578524c29fdf8a90474b2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_graspqp_execution_limits.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_graspqp_execution_limits.py",
+        "sha256": "fa9930c6a97592931a435b2caf942fbf456db16aff2dba0a22d5843a63cc1ebd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/import_objaverse_subset.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/import_objaverse_subset.py",
+        "sha256": "8677251121fac8f84d628e39c2836636c060d041864bf04e1dacf33fee5842f8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_grasp_baselines.py",
+        "sha256": "8481cd873e9c9c06865c0853026ce0fa27935e04c5613e87696ce5d809f3e2ad",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_bowl_upright_layout.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_bowl_upright_layout.py",
+        "sha256": "2fe2c61cbdd605b92435e11b15b95c16642b7ced99034b294668b171e2f1c3b8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_panda_bottle_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_panda_bottle_closure.py",
+        "sha256": "a90e3e4d5ec9842f6fcc2385c69145c8dfc5e532d9f333ebc34a3efe0c3f6c47",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/reconstruct_grab_hand.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/reconstruct_grab_hand.py",
+        "sha256": "7dc3f6ef382b03523520173d5095e81b8e66ec2573e07b4c16879221fb54b593",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/prepare_contact_refined_six_direction.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/prepare_contact_refined_six_direction.py",
+        "sha256": "f45cc136277252bdc0b33453e486e973c1874dbe9bd0bb101ba6110916646d70",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_grasp_baselines.py",
+        "sha256": "b296d5b2489fd71e2ae08df2be0684c4eff00483a574c29c963bb6a34c02bf5b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/recover_template_gripper_geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/recover_template_gripper_geometry.py",
+        "sha256": "9e44362820bddb20392075c96798f24513bb09c9db3d5b8fd843032e81730a58",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/optimize_template_process.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/optimize_template_process.py",
+        "sha256": "ef99397eb0dcd0c9b17edbbe5fea663932bdaa4222f894571ab0d3e539c2b656",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_lift_planning.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_lift_planning.py",
+        "sha256": "342daf6772dd28f4c3b1fb85238c1aaad77b542a74a67d1cf2078b6144e718c0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/optimize_scene_rollouts.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/optimize_scene_rollouts.py",
+        "sha256": "7e5d8061be3c8fdf81b12d48d657180197a40f34cb64bcfe1f6d1d1cbd004479",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/admit_template_capture.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/admit_template_capture.py",
+        "sha256": "1f5efbe2b64470bf91268e0aa68b1ae7e63229eca4e9a8d312d9021701e724ad",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/update_gesture_preferences.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/update_gesture_preferences.py",
+        "sha256": "ade06df0391b53e2d9633da9c60f1e177ade33ed0c88ddd7b6b4df8989e0a0cd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/build_grasp_experience_pool.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/build_grasp_experience_pool.py",
+        "sha256": "8b35911f18573f0c6ec464095e4bf625c9a5f16c9169d483dbf33e1d3e175fa0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/visualize_template_gripper_failure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/visualize_template_gripper_failure.py",
+        "sha256": "65103b3a3b2ac1f4d52b09852560e68305873174d9d13f2ec2ac23ab251740cd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_template_arm_positive.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_template_arm_positive.py",
+        "sha256": "b3e7a0c7b9fb3f14ec5320d61da770dfed0a086616896f3f1e6bb2b731e0fe5a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_template_thumb_contact_moments.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_template_thumb_contact_moments.py",
+        "sha256": "e234b555a99c9528fdbe7a25c4f43573b90eb85345def9ae3b1682183d9d9faf",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_scene_rollout_search.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_scene_rollout_search.py",
+        "sha256": "c88a605bb1ee510772aaed21da6e5387dc0fccb17f453991752b75f3c6fc3931",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_official_fast_graspd_boya.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_official_fast_graspd_boya.py",
+        "sha256": "3aa17da760709deaa6686eb79e4884b6ef8f0f74874d23147bab6e702dac310f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/freeze_pose_direction_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/freeze_pose_direction_comparison.py",
+        "sha256": "8f82900798f9ac81428ca60d1b2fd737b5ac7fab47b9cdff6d91a351fd69cabe",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_gripper_gpu.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_gripper_gpu.py",
+        "sha256": "61ed93d1847880ebb1698839cf07fc84fb305d8cfadf31e51a1cb5d2c03ab3e2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_pose_direction_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_pose_direction_comparison.py",
+        "sha256": "14afabbb073ea5376b482409a37961dde1e67236c544024f98021fe6b4e9ac7e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/search_template_arm_placements.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/search_template_arm_placements.py",
+        "sha256": "fcaa60d0ddc2785e63678495c3e071b0c37ea6e6b83fdc6d4cb58be9363f3d96",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_contact_relation_pilot.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_contact_relation_pilot.py",
+        "sha256": "f14cd862c26ce9caede9aec548dbb8fdffb0d9be2d3a0c03d304886683242044",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_adaptive_contact_pilot.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_adaptive_contact_pilot.py",
+        "sha256": "b749f4bfdb0167144382b675d0aa2af0be07000da49a389e80a932107bc3896a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_paired_hand_update.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_paired_hand_update.py",
+        "sha256": "289aa7486cc605ddfb3c6cc37bf3a6624c05a79ba2c55bcc6a5c5f145d6b0126",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_selected_table_rescue.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_selected_table_rescue.py",
+        "sha256": "f9e9092d44d8c7e68cfebf1117920e2439fa457976e21378ee8f5f48d1ca5ed1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/build_semantic_contact_preview.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/build_semantic_contact_preview.py",
+        "sha256": "78fa8348e26e47e6155fb39888cb92937112cf587ebb39b7216673cc53373543",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_selected_sample_pilot.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_selected_sample_pilot.py",
+        "sha256": "4abb237a6229f2ebc62aac942127095c1152f3b6dd15f39694915cd3b4d826ee",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/tactile_arm_runtime.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/tactile_arm_runtime.py",
+        "sha256": "794a083d4079911d7fc46504b966803ecc2824c020809cc0d85d46aa2c3daac2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/regress_paired_hand_update.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/regress_paired_hand_update.py",
+        "sha256": "20aed81ca759c01ea28f6a58619754a4aa5158a96170a502b22f8f9d959975da",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_template_thumb_backdrive.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_template_thumb_backdrive.py",
+        "sha256": "f763fe9878ed7b89cbd6a17c1b4a8ee6f556951859c9f1ddeda749e3894c0ad4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_rejected_arm_candidate.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_rejected_arm_candidate.py",
+        "sha256": "81b149469363bda8ee2c037fe119e38a154b9f4f41cf293369b0db93b30cd24b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_experience_geometry_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_experience_geometry_comparison.py",
+        "sha256": "2125c997e661f8b110ea2c7a19c2a3fc64343ae40f11dc4a1cd20ab0cd62d795",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_far_workspace_evaluation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_far_workspace_evaluation.py",
+        "sha256": "9efee6313e4fe243a1cf2de6f622256836b65d1fb328fc6ed5206a97f71fe194",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/check_template_gripper_adapter.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/check_template_gripper_adapter.py",
+        "sha256": "c1b9d424df3ff191417383c68c666a2ae49a65fcd8568c7d09b5887df6902720",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_gripper_geometry.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_gripper_geometry.py",
+        "sha256": "0ee2709aeed4a6df7a0f5e4d79ea32650e2e1bcb0e01731845846d2dfbd5f096",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_template_evolution.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_template_evolution.py",
+        "sha256": "46a899a4ad5badb8f71db6f3ff5574c2c8802a819478e0a028d6a11b725ee01c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/serve_template_generation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/serve_template_generation.py",
+        "sha256": "64fa05cdf985eafefeee70aad994d736997f6100d7194e6ca5de6d9dff58a98b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_admm_limits.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_admm_limits.py",
+        "sha256": "0cb038173e1333ee47de334d29d211408b8b46ade6c36eaf73b2982586798c5e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/search_dgn_arm_workspace.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/search_dgn_arm_workspace.py",
+        "sha256": "5c02906e5d57e51fe5567e1c4d6c01a5ec59fd4a90783e3fd596747fe4f89dbc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py",
+        "sha256": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/summarize_boya_tripod_forensics.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/summarize_boya_tripod_forensics.py",
+        "sha256": "26f3256c416a9b8587a15b2bff54d955ac3cc02ea8810fa5f72c2f10687583dc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/train_candidate_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/train_candidate_selection.py",
+        "sha256": "8d66fae5fba9d84a253232f67f30fc64b2ef0bc89c36376b1bffc308a54846d5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_live_capture_regrasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_live_capture_regrasp.py",
+        "sha256": "f1e30bb7e966101fe6ec04c28ad11ed5cdb64c79087f3330cae62517c41b8c00",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/check_contact_search_conditional_theory.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/check_contact_search_conditional_theory.py",
+        "sha256": "3c7b99ac060c0389f61eceec0354950b8b59c36b1a06461af32f59ff61c37ca6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_resident_full_arm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_resident_full_arm.py",
+        "sha256": "6be676967a8cefde8b189e6d625d8b8dee7b3f809f338c248b2aaf5966e29298",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/serve_capture_dashboard.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/serve_capture_dashboard.py",
+        "sha256": "8ee8061e747199aad6554d1fbde558f2d46e7b62483550c961dda6d96dfbdb4a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_paired_hand_update_overhead.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_paired_hand_update_overhead.py",
+        "sha256": "4341615fb01e266cec6e8611cbe1b50274b2d84bedceb66678f180dbe7a3badc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_boya_wrap_bottle.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_boya_wrap_bottle.py",
+        "sha256": "7be0236c903933176be55231d4880a4b221b0ecd4b644e17c99e988d68f76715",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_template_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_template_selection.py",
+        "sha256": "9ae4a915a89fba33808052ce172d641a973b6a180fb7dd66e7697790e097cae2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_paired_hand_update_results.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_paired_hand_update_results.py",
+        "sha256": "7c6f054dc10c6c5758d4c7c1fbe637393bd02853c4d062cdb1dc3ea702c20ded",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/template_gripper_native_audit.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/template_gripper_native_audit.py",
+        "sha256": "6afb707878810da195de9f55bd6fc761c4edf4f2237372eee0545c8909bae574",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/refine_capture_entry_depth.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/refine_capture_entry_depth.py",
+        "sha256": "3c244c99aade80300d5b875d6df75b1afbadf1893ac6f739c46db0321f26c7db",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_grasp_benchmark.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_grasp_benchmark.py",
+        "sha256": "84ec16e6b1f85f9ed3efadd86e7382ab609b40434e77c076263f1301ce253144",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_template_gripper_video.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_template_gripper_video.py",
+        "sha256": "9409bc0b8ca8d5eb845029021cfb12e9733a67c252141e74c13888a153c8eae4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/refine_capture_enclosure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/refine_capture_enclosure.py",
+        "sha256": "340b82c7064af6dd247d25ec19984eb572ad30e89008dd88cdd6600c69a3d9c2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/serve_template_arm_service.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/serve_template_arm_service.py",
+        "sha256": "6af76bac55e94b6ccb6205bd8a9900c3655495af0bc99f1086556cdef0aba5ed",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_grasp_baselines.py",
+        "sha256": "ec1c60d44b0fb8b18952826586a5700b312e8c7c87ae4116d2ddf00e7e7a8288",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/derive_boya_paired_hand_update.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/derive_boya_paired_hand_update.py",
+        "sha256": "a53642a0bb50f44535ed50335f3bcfafef0cded216799d97d708d5737946b111",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_boya_tripod_target_restart.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_boya_tripod_target_restart.py",
+        "sha256": "445ce9851a4de148e8d46c265b07ff86b7e15317de9082d29343232c6019626a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/prepare_sampled_teacher_trial.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/prepare_sampled_teacher_trial.py",
+        "sha256": "a994840d0e047e680d2d919186e3ffb8825428cb3301540455a02faa04796b14",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/summarize_baseline_bottlenecks.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/summarize_baseline_bottlenecks.py",
+        "sha256": "9a79cf3add99e4ea98d0df78278d6560f2a841fd07f12bc645ca7155fdeefebc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/refine_experience_contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/refine_experience_contacts.py",
+        "sha256": "2d91a168271faaefc315a423e206fb4c6ace1045a8b809148a324dabde2bfe53",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/build_contact_prior_catalogue.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/build_contact_prior_catalogue.py",
+        "sha256": "26d87622c1ce66d6e2f385ec70e4e2c1566c6ecd912fbf9d1bfa4c0be7c7050c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_planning_endpoint.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_planning_endpoint.py",
+        "sha256": "b30fbd2d1c08d1bd45dcbd09c2b6bab139d62b654a095343f2e0c9fef24a2c0e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_qp_fallback.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_qp_fallback.py",
+        "sha256": "eb511d8481a12d1b3536ca498fcd390aa210058e36ff2d61603fabe1400016fd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_table_aware_bodex.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_table_aware_bodex.py",
+        "sha256": "77c5c2b95e2e4c0493ada646070075cc4eadb3c38ba10ed2c6250c2883e828cc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_template_pose_fallback.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_template_pose_fallback.py",
+        "sha256": "8fef8644f0384337b15cd7922a2d925e45971882801c826ebef944856336a2d2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_panda_bottle_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_panda_bottle_closure.py",
+        "sha256": "31e0fc366420663c3a68a9c7c72d17b7c574167445edfbf2ff3213b5c391a1cc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_archived_boya_natural_failure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_archived_boya_natural_failure.py",
+        "sha256": "81d576bb810e78d3663f947f2536efd292c41797c207dd6fe5f18f3f7470dbd3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/build_grasp_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/build_grasp_experience.py",
+        "sha256": "6a5432ce0415968dede98f945cdb63eeaa9c187279e1f77489daa0c45f100c01",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/plot_template_selection_audit.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/plot_template_selection_audit.py",
+        "sha256": "02ed4ade8eb3033864455dc74b7caf8f0f875d3a521b4bb046e7cdb733a69587",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_template_gripper.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_template_gripper.py",
+        "sha256": "b24cebb52b712f4abee60399ee9894b3d66a6d20cc59b8760add44f76fd0e4fa",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/select_vlm_gestures.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/select_vlm_gestures.py",
+        "sha256": "f99445e8997732d487fecc8b6ea671b40646f4fcbf4472b95ee373979d78ab67",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_failed_mug_gripper_candidates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_failed_mug_gripper_candidates.py",
+        "sha256": "0bf40b7296c992d94cbd6fa4d2c193c48c635317fb2d40aebc42eca1dd3ca094",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_object_offset_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_object_offset_refinement.py",
+        "sha256": "788f6fc56526d99d5ae79115503aed9a9cdbdc0d4cf75666832d9402d35cf176",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_pickup_orientation_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_pickup_orientation_campaign.py",
+        "sha256": "b72d82ce2570f28ca40e99f10227c93c20c1f20a89df25c03ee631e67621b26f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_contact_sampling_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_contact_sampling_campaign.py",
+        "sha256": "f7b7cda1400b389ded4f43605e135bf0c4df6ee874b9f9aa6075f9e52e94ced0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_repaired_collision_grasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_repaired_collision_grasp.py",
+        "sha256": "972a677dd486e67b7d24e8b781734c4c26657c658826b4016f21311274f9a590",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_template_arm_isaac.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_template_arm_isaac.py",
+        "sha256": "0970d749cedd7e2ed7d4e48179e1cdc3ead2e42997ba55442fb1e52dcacfbe9b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_boya_tripod_initialization.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_boya_tripod_initialization.py",
+        "sha256": "c693037e8f7f460927fb66d69326431cbb2499c4240bd5835cdae245bac950df",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/check_target_update_derivation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/check_target_update_derivation.py",
+        "sha256": "161f601e48d370b997fa9d684b20b3d70cca992d368caa0a2abcb4f0110c25f6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/capture_enclosure_fallback.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/capture_enclosure_fallback.py",
+        "sha256": "c112e8054273ef391268ee30fc2095d5acb85e9b8d4f141acfdb1c4506ce79e3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/report_gesture_template_variants.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/report_gesture_template_variants.py",
+        "sha256": "292acc5c13785291d3f8e5d57086b3daf84305e737f21dfa724e9776829ed007",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/shared_paired_hand_observation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/shared_paired_hand_observation.py",
+        "sha256": "2eb9b47c8e0d49046daaed71b2eb8762139f8e5c2dda3589388326747c12ca7c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_template_pose_continuation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_template_pose_continuation.py",
+        "sha256": "bbf24f9a57ee9cdbab57e281d5598780e96752e5a618430de30d3a13e0d4f258",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/summarize_source_arm_failures.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/summarize_source_arm_failures.py",
+        "sha256": "08242b2a57f08d9cad19338d8d24b84be65f6a3b3fd921381a035cd0074f912f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_grasp_layout_ablation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_grasp_layout_ablation.py",
+        "sha256": "0c08514532c959bb8732ca0c23ec153af191ddbb1e292fb882dbd1869b27b206",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_object_direction_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_object_direction_refinement.py",
+        "sha256": "910cff3b36f20b782b21bd0c80365fdf8f9faa06e999ada521286e16290e020c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/refine_source_hand.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/refine_source_hand.py",
+        "sha256": "76bddc98d92da08a840295ff04ba2411635b48c234c627e17728377185767725",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_cumotion_fk.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_cumotion_fk.py",
+        "sha256": "b8c115e64b11c901cbef292ab5d5458eaf22d0fa180cd143624e22613ecf2249",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/report_six_direction_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/report_six_direction_baselines.py",
+        "sha256": "dad6f18f0d2437dbd68f8d5b282172c5526ef76a2cb8cc9046bc0d799a2d2726",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_boya_squeeze_preload.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_boya_squeeze_preload.py",
+        "sha256": "0155c42b2ab163770de860af4367e82285d320e095a381691741e0967a6b00de",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/download_siglip2.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/download_siglip2.py",
+        "sha256": "578f67e2835108566c8109ac2c24bc004fdbe7f71c5894f4983cb3d44351c572",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_nonphone_targeted_repairs.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_nonphone_targeted_repairs.py",
+        "sha256": "aff0c6140cee61d1a4d537bd1e7bb1e34106ae4554cf3bd66c1c4a86f47851f8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_drive_damping.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_drive_damping.py",
+        "sha256": "cdb922aeb5d88c50b0d50f86219aef715385a88749c409243c9776bb895b8a2a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/prepare_nonphone_replacement.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/prepare_nonphone_replacement.py",
+        "sha256": "1b0bbd08507f1891dc7d864d000b620180018d37485fa06c61040047d3d6827b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/archive_dgn_arm_followup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/archive_dgn_arm_followup.py",
+        "sha256": "d4dd2bbbb2a712ab65e35c0d9243bbc5e206c38e204920392ed6a7a230602a58",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/check_contact_mode_screening.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/check_contact_mode_screening.py",
+        "sha256": "775fb31a6a2bc4625500398285ff2e08b881b6dedf05360f8992eaf7dd4d7276",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_live_capture_regrasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_live_capture_regrasp.py",
+        "sha256": "658325f63926797dd3e7606c08b369da0d18c553cac71612fdabb0f01cd43693",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/restore_archived_boya_failure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/restore_archived_boya_failure.py",
+        "sha256": "75c52655ef090742f146476316e8cf8f7dd18a0f72afca8e770e9b87de86c196",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/query_grasp_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/query_grasp_experience.py",
+        "sha256": "85b69b8e990800097f933e4fea3dcd0841683c085912d479fa3f71d25944bf13",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_template_region_matching.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_template_region_matching.py",
+        "sha256": "989f2c764e4f7a589d546be335671fa5db2689a23b6c3e529569d353b9bb4352",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_template_gripper_tabletop.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_template_gripper_tabletop.py",
+        "sha256": "e1baa3f92a4157c8297cdbc59b4ffebbee9f53f5ed12563ced4c285956151cca",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_grasp_support.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_grasp_support.py",
+        "sha256": "f58be58c9d418af4e8649252326a436e508b029dd498117ee26d8eb30678d7f8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_phone_gripper_candidates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_phone_gripper_candidates.py",
+        "sha256": "0e7e87d1a77dbcfd09b462d9886e91cad9621c5c8e8379cb8bf358e7a1b04b47",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/prepare_grab_contact_pilot.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/prepare_grab_contact_pilot.py",
+        "sha256": "d378cb4e0ff820c36d5efa9e3daf5e1136470d5e69de8d41fd3ebd2d6fc2c9d4",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_thumb_effort_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_thumb_effort_comparison.py",
+        "sha256": "1924bcae8367ee779de98463e9527046b1d2b8eac5099818caff9c05d0872220",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_shared_hand_observation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_shared_hand_observation.py",
+        "sha256": "2aaf8cde5579d960ea73c4aa51e87f6eedeb637dcd14dd7e3ff8c20520654ed2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_pickup_orientation_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_pickup_orientation_campaign.py",
+        "sha256": "8e7d925a036aa2d07325e0a41fa354af2b4d023d9495f01f8a63cfad9b4193b5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_template_selection_bias.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_template_selection_bias.py",
+        "sha256": "25614dd578f956fa5bd460844980e7af0e0d06425dd7b17e1d2ffb48eeb792b9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/preview_template_jaw_assignment.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/preview_template_jaw_assignment.py",
+        "sha256": "6d0687e71a3ea026ecdf0e2c39da0d347a6614af824f30deb5144b4db64d34ca",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_tactile_arm_trial.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_tactile_arm_trial.py",
+        "sha256": "4fa52bf46bc4d2590ca75fc2c9596c343ca80e64fa34c1e4d22d3020f410136c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_dexonomy_baseline.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_dexonomy_baseline.py",
+        "sha256": "642abece2783e4a604c58c130e35a631d88229f60db314e3dea1a1912a0db9b5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_pickup_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_pickup_batch.py",
+        "sha256": "25e3cf30c62a9e705a7d2083fd4813956b17afcb0334b0f6b28bd5aaf1fbc622",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_resident_full_arm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_resident_full_arm.py",
+        "sha256": "fe8975d77c7a44588ff4071d30da398a9d34844828438a8c4a28b23c33f7c2f9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_data_pipeline.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_data_pipeline.py",
+        "sha256": "d1fb474a09127d7a81cd62587b635d27b14dc8444e28399b48cde8e5c8067f22",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/execute_experience_geometry_choices.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/execute_experience_geometry_choices.py",
+        "sha256": "3d796319633b31dc04db94a777a2eda82e2af424f19a551cdf9796d46c73ce39",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_source_admm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_source_admm.py",
+        "sha256": "a6672c3c2d9e06014a2f527a776c9db901aaa0b79470b7846fa5fbcee2812aac",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/archive_boya_tripod_evidence.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/archive_boya_tripod_evidence.py",
+        "sha256": "b9bdaa5a19c31105d05207bba0168752a009403d7ecf36a8057a288c42fddba1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_capture.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_capture.py",
+        "sha256": "98d7ef0b69cb542b1a837cfc40377f76345336f514bbf62c9b999ae1c8f9e36f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/preprocess_native_object.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/preprocess_native_object.py",
+        "sha256": "af40ffb83886fc07c115c8565fdb1d63a372f01600259fda50d849ed2de8224c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_contact_sampling_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_contact_sampling_campaign.py",
+        "sha256": "62e505829716dcefcba2c23fa1fc4a52a44cedffb796e93aa23eba9d80f111b0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_gripper_failure_repairs.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_gripper_failure_repairs.py",
+        "sha256": "a9f78f695445f3aef8fb78aaaa3ad1f9658293cba299b1c4f86e7b19106b07fe",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/select_tabletop_workspace.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/select_tabletop_workspace.py",
+        "sha256": "ee009197979c0494c6f505c4acec12b1052ca9fcf59a8fafa473cd59a6d63f39",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_batch_queue.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_batch_queue.py",
+        "sha256": "ef136773706e23630fc951a990f75393ce341c621dc43deb28947303ddbe6863",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/generate_sequential_template.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/generate_sequential_template.py",
+        "sha256": "8a19dd548aa08fc271d6fd1bcf4d14bfc1cf389fa38990c8fde38c3328076183",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/prepare_bowl_upright_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/prepare_bowl_upright_pickup.py",
+        "sha256": "f080f156246a73dc0ee27e7e33f7489d58acb53d0e85707031c48ebf17cf7c72",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_dgn_arm_followup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_dgn_arm_followup.py",
+        "sha256": "c3362c90c1c3992fd7f51c6990416b1503dc30e27f90eb3dd4c1a7759d1a987e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_static_force.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_static_force.py",
+        "sha256": "ff84ecaaca9203d2c6c0e8cef9544ecc91bb561047463c2afd18e79e2ae70b9c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py",
+        "sha256": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_native_contact_depth.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_native_contact_depth.py",
+        "sha256": "6a1e91c7e24572d9d08b7911f824022335e38e963034b509baf8fb1c0844261c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_sequence.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_sequence.py",
+        "sha256": "fe0fced7aa2a4baf04fe1c1ed9ab4ee05b8c1ad1cc8fcf13676b7e139b5b566d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_ready_queue_new_objects.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_ready_queue_new_objects.py",
+        "sha256": "6f2f10fec5ca7c0f7ec915a536cf25e448796919018e561ee429c484324a5254",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_contact_relation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_contact_relation.py",
+        "sha256": "e5a35118abb52138d6b05ea10f2f1175e6d2e3ecc1a5cc3ed70e0a5dac8046da",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_hand_aperture_phone_candidates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_hand_aperture_phone_candidates.py",
+        "sha256": "2a0464c0f0b587412a0d59627e62adeca20c95a7d990d59e23858eaa039d829e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_hand_arm_memory_pilot.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_hand_arm_memory_pilot.py",
+        "sha256": "0f6698bf8db2880b302087da482c62701bb7bbf5a16fd6ee0ac2938f307ac030",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/build_compact_grasp_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/build_compact_grasp_experience.py",
+        "sha256": "c10a6b821433e2501d4b334e533ee6451b3b3f90450e85624f8f190a7ce49127",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_bowl_gripper_candidates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_bowl_gripper_candidates.py",
+        "sha256": "fec789e033262355989e25faa963cf50571e6c0870ef2fb4265d5b667cbd69ef",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_source_hand_resynthesis.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_source_hand_resynthesis.py",
+        "sha256": "fb8fa7fe6f71b14a2aff7fd2b637f9acd0aeb0927eb222669d245ec41b72b220",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/admit_table_aware_bodex.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/admit_table_aware_bodex.py",
+        "sha256": "e7879491b1a4413e772fa67a761c1a412e07434da736494e2045426333ee1618",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/summarize_boya_wrap_bottle.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/summarize_boya_wrap_bottle.py",
+        "sha256": "164aa4c86c6c759841ff7eb51104df16467ca80ed31268d83be3a798692e285b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_collision_surface_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_collision_surface_transfer.py",
+        "sha256": "e16a78470119e0719760dfc63208b9b14f4cb9789ff8d00721d3c93e0f62adf9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/refine_template_gripper_admm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/refine_template_gripper_admm.py",
+        "sha256": "d3e43777ff293ac1e3576938e51a081fc40d263872255d531f0fdca56dd14bdd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/check_source_hand_distance_versions.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/check_source_hand_distance_versions.py",
+        "sha256": "8bc5c9677737937890da35b7cf1482734b41e4d0fc9b08bc99147a23c3443990",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_frozen_pose_retry.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_frozen_pose_retry.py",
+        "sha256": "3a9f514ca68d82df0917a9d160a7641d487cb7f51a393be9926be84943dce2a8",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_resident_template_cpu.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_resident_template_cpu.py",
+        "sha256": "bab611bce168134216a1bf59565c99d07990cde7c7b2378ebd677b49f11009a7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_boya_tripod_restart_isaac.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_boya_tripod_restart_isaac.py",
+        "sha256": "7fd845e93588fc9e3131cfc20e6e976385cb7d27dc3f8f8551b26bab774e4048",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/compare_planning_reuse.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/compare_planning_reuse.py",
+        "sha256": "c36a38b795ea27bb9c3db50db6df07d5f19c82c4ef6ca21c4861cfed2375d3f1",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_ranked_source_search.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_ranked_source_search.py",
+        "sha256": "8d11c075de0fd8c76e02b595a78e98e2e9d339797de66a7e314ce81921633b6e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_gesture_drafts.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_gesture_drafts.py",
+        "sha256": "763a2e115e9ef692ee822fd39316d23114c5d03bbbe562ec23a4908f48734060",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_gpu_benchmark.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_gpu_benchmark.py",
+        "sha256": "df5f1582f95a104fd5eb75832f93b61b44a2f8835787a8c31878a7a72e50c31d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_target_input_evidence.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_target_input_evidence.py",
+        "sha256": "d20323e2145ddeb7a6f5e312233d930b6fad0388b1969b5ab0220eb1ea6cc757",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_side_grasp_long_lift.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_side_grasp_long_lift.py",
+        "sha256": "31f0354dfaf986b37bb1d75455aa24afbef50f9893a3a1f55f5e45af5083eff7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_template_region_matching.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_template_region_matching.py",
+        "sha256": "4d194bd1e29c5d59a3d26c9005d7bceb3ec97e1764569de1e2f6e0d155c4a8f0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/test_boya_admm_hand_sqp.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/test_boya_admm_hand_sqp.py",
+        "sha256": "8ab41e538f2d4bf84227495a8191101793614edb88742335c4ec2bf71cb3a156",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/fit_template_gripper_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/fit_template_gripper_closure.py",
+        "sha256": "ec355587e861d093f32eafd76341bf4bc426a3e97df2f010a49f8c87948bac02",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/generate_boya_template_gripper.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/generate_boya_template_gripper.py",
+        "sha256": "5c760ce3a8e2cbcda950809d979a4408eeea77f3fcd53be0baf3b03b05f5e696",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/select_geometry_gestures.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/select_geometry_gestures.py",
+        "sha256": "a6f2594b0d1edb4e318e63fa0aa8d5e194dc8dc042f618b337271a48eafc06cb",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/check_template_gripper_admm_derivation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/check_template_gripper_admm_derivation.py",
+        "sha256": "d3b47f79902dd5c4bc1df79bc31de39078d63a167a9da13c80fe94fc58e23b2b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/record_object_replay_fixture.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/record_object_replay_fixture.py",
+        "sha256": "13073d92ac128d7751586c50e043b8e7a281db0efbfa2ed49c2143e65c6dfdfc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/compare_contact_relation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/compare_contact_relation.py",
+        "sha256": "e387d7a75594a34221abf5fec67a8021eb37ad110651ceadd8f7285ad8e7c12d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/preview_graspdatagen_tabletop.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/preview_graspdatagen_tabletop.py",
+        "sha256": "7a1cd29622182e2da964fac1db963bf22cdafa2762031298c33f0be897ace654",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/summarize_template_gripper_fusion.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/summarize_template_gripper_fusion.py",
+        "sha256": "8060396804ce4ed8ba72846bb44990347246bd3382228ecfa38b4d2f46e435d2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_target_force_mapping.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_target_force_mapping.py",
+        "sha256": "6a52435aeac1b6d232d938bbc09e8623bb0216b99c6512ff1e595ddcf6b99d7b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_template_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_template_selection.py",
+        "sha256": "dce51a9bb92dc459e9f72ea4682e3edf45062ed28b4e93771f290849b9540e73",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_grasp_baselines_isaac.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_grasp_baselines_isaac.py",
+        "sha256": "5f4240d909fe170c32d5563ac8fbf16aadcb30e8d36e4e196c710044ad134217",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_dynamic_contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_dynamic_contacts.py",
+        "sha256": "4c6ea5b56037021184e73423a54473963c91b3dbe26d95543112fc419b733270",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_motion_contacts.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_motion_contacts.py",
+        "sha256": "b251d8d5e799ea9b007b420af7a8a4948c5f02ea2d33ee79d70a97a9214e702c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_official_graspqp_boya.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_official_graspqp_boya.py",
+        "sha256": "3e51af1d135669f33326cf782c48dbc807c510d9998d7eab989e938edae198dc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_gripper_execution.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_gripper_execution.py",
+        "sha256": "1f2bf2d2f720cb34e66c36a1dd3d8f953b15a11022e35df5f9e2c4d64dc06c45",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/generate_independent_gripper_pool.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/generate_independent_gripper_pool.py",
+        "sha256": "aca01c9b85f1c895799ae751af8196c0d3079a5453bbe7a237aea5d07bc2623b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_online_template_schedule.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_online_template_schedule.py",
+        "sha256": "ae14e480bd3f46105ca20dab70f8b99ba76524de0e116cec59eaacb1236633dd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_box_geometry_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_box_geometry_comparison.py",
+        "sha256": "aaaa9f30b86769379d9baf0be0ef7e282b54cfdcd32840e1ff132cda8eed9ea9",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_dgn_parallel_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_dgn_parallel_pickup.py",
+        "sha256": "3f1665262dd6d09343d40df6b62f6d9fe0b2ea9781448e8d3c99b27b94e73762",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_native_memory.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_native_memory.py",
+        "sha256": "650a3986f0b3d3ff19e87a22aa5aab944663ce25d877acc5e92c5e6b2938549d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_official_grasp_smoke.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_official_grasp_smoke.py",
+        "sha256": "45012aa74bd9c553d30ce0b5c4ab643cb2473e8873559211f11c16acf488b046",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_collision_throughput.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_collision_throughput.py",
+        "sha256": "68432edd8fd49ee16b372ba450545eb90ba1a3c00b12b000abcdaa3eacc8b345",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/build_canondex_object_set.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/build_canondex_object_set.py",
+        "sha256": "da798101065b18bb1ca3e17bd9a652327195ae86951037f8a9540e22b70b9e5c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_latency.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_template_latency.py",
+        "sha256": "07c95c67528e5f2ffce3418fbbd13bd8a9bc6901dc0be5388b43309e483ed5dc",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/regress_shared_hand_observation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/regress_shared_hand_observation.py",
+        "sha256": "f2e1ca40c3b5292e005baa44d118dc18b78a91c1818e812f9319e65e59db98e6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_dgn_arm_aware_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_dgn_arm_aware_comparison.py",
+        "sha256": "897c0ef4c847d20bedfe07f8e4413fea1b208f7d716d829bd9c38bf9ec008039",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_planning_reuse.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_planning_reuse.py",
+        "sha256": "f1fe8b18a621323eaa83ea1c9e658870b9253ee66b9fcb30c39a05712f0f57ef",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_grasp_cooking.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_grasp_cooking.py",
+        "sha256": "0ad2b4ab0316fb973c468dcd0b4da346d3a436c14b55d05597d058d8d60a9458",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/inspect_template_gripper_side_candidates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/inspect_template_gripper_side_candidates.py",
+        "sha256": "7194ce5320e7fe9e59c0eeb8f5de6fb2579f073d703e03c0621bd342e7f35932",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_template_positive_control.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_template_positive_control.py",
+        "sha256": "107308ca025d60fba7b36f2f746212eb06ea02d5fd1243e52c9255ba93bff46b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_dgn_pose_fallback_comparison.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_dgn_pose_fallback_comparison.py",
+        "sha256": "8b98eee513c5ea3dc6a2b046e996bd86e92399bfc3fd676217c257c852f39dd7",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_two_sided_template_closure.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_two_sided_template_closure.py",
+        "sha256": "3128426aa66a63cd479a6518825a85b5b4798c548ddc8ab1598dc5d5ac02499a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/archive_dgn_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/archive_dgn_pickup.py",
+        "sha256": "e56e05b8ffe11285fc4bb5cc65f6cd52145b67bd520b0b9e270b63191cb35da5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_grasp_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_grasp_batch.py",
+        "sha256": "3a19ede8e2c26d44360c76dfba694654a2da33d61fb067b9634542e40748884f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_boya_wrap_bottle_isaac.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_boya_wrap_bottle_isaac.py",
+        "sha256": "cc146a8158b084745e43892e00ba86fda789558505a7def2d6f01ec50cc3625a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/repair_dgn_native_assets.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/repair_dgn_native_assets.py",
+        "sha256": "41212ede208ac6835fb996951e80a86156e74f9d3ca18c49d1eab4810da73357",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_grasp_floor.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_grasp_floor.py",
+        "sha256": "a4958c1a986fd0470ba74377c09917c1d0bc17625b24b319e02db59e1853ed65",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_object_turntable.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_object_turntable.py",
+        "sha256": "c6815fac30e9fd3216a902cce08766b93538bba3b4beb8bf93cc2aeb931c3e41",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_capture_background.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_capture_background.py",
+        "sha256": "351b0c8ad9dbc88196d1b0a91402c5986c053ac263e54c582a730322b5224e34",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/analyze_automatic_resident_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/analyze_automatic_resident_pickup.py",
+        "sha256": "3bf7e76795713fa1934b76596768789b67e631ce583bf3a5a67d00906107aaa2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/repair_bodex_scene_convexes.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/repair_bodex_scene_convexes.py",
+        "sha256": "e0fc030d851742407b21b8f11010aecbe8fb271a70c65d6725903464764e4a4c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_grasp_clamp.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_grasp_clamp.py",
+        "sha256": "698f546f058d9e4935a805701327369e24d8c3b47834100b91aa6399d51e0851",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/rerun_boya_tripod_diagnostic.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/rerun_boya_tripod_diagnostic.py",
+        "sha256": "bee91b923c88d0db1c245a009c719876e3c89783e78cede12f8cba305b9b2645",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_gesture_slots.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_gesture_slots.py",
+        "sha256": "7ecd141ab6772c61d9093b34f47754f1e302d9a8c96fa0867f5018b9f7887ffd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/launch_official_dexevolve.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/launch_official_dexevolve.py",
+        "sha256": "d4d73f6dbb26b706525ffb6ead2fc73e3448c1b305a87a90862925e51a13b623",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_online_scene_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_online_scene_campaign.py",
+        "sha256": "44229f075a6e30ff72d9c8db5815c39cc44b98912207d25e9ba4040722166b04",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_object_cooking_refinement.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_object_cooking_refinement.py",
+        "sha256": "e4a66b4970de02ee0530b93810c9cba07740c555094a6d9afb9889f15fd5cbaf",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_planning.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_planning.py",
+        "sha256": "14cec6e313024054586d337b2940a7390f5560d08656e7561dbccb6f244c3ca5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_gesture_selection.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_gesture_selection.py",
+        "sha256": "7508e86e6adffd4cc3d83e0824adb68e9753998d58345463af5a58148cc9dcb0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/compare_refinement_workers.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/compare_refinement_workers.py",
+        "sha256": "a6082fcbf6ad005a22ee7b76db655949322d429bd5017813b6d189072402ac50",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_arm_parallel.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_arm_parallel.py",
+        "sha256": "5ed0cf37c89ac46ab3db24923d5ef70b0a6b1d941bf77ede38daf9220bb179f6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_template_sequence_video.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_template_sequence_video.py",
+        "sha256": "42ccbfa136eaa542a0fb5fd32de6011bc800f7df27320835886b22199a8069a0",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_contact_relation_admm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_contact_relation_admm.py",
+        "sha256": "ef27aab0fe912008a11e552d5702b09497a31d8a9271ccc0ac2244ce536baef2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_official_dexevolve_smoke.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_official_dexevolve_smoke.py",
+        "sha256": "ae81f6d581e69cab96c4279820f11326009492b3637a56bd4b63d6b8e8f74c8b",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_fast_graspd_boya.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_fast_graspd_boya.py",
+        "sha256": "2a5f497c504677d807012f2cdd3fe654ee1568867d018ba5e64f387e7e2457d6",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_capture_shapes_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_capture_shapes_campaign.py",
+        "sha256": "d0c5893a314ae06e7eee157aa79ff6e2f072c9fca2f2ab15ca441fe8412c1c33",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_scene_cases.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_scene_cases.py",
+        "sha256": "b25c216a49c65bd66fe7d2acc2c713c23cef641e41313baf7bc2281b67a1783d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/profile_contact_relation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/profile_contact_relation.py",
+        "sha256": "0967e5adfe90fbade1c20e614afb9a60278f9b56f0338489f8ff524c341e8950",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/launch_official_graspqp_fit.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/launch_official_graspqp_fit.py",
+        "sha256": "5d08ee017542221ddf47fbbcfc636a5ce03f04d4c7041d3e79b694a7823dd495",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_contact_formation.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_contact_formation.py",
+        "sha256": "1f65cd63445d8d38fb8df19a2d892dceb828587d9ea50771b3ff09c4b172df2d",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/adapt_graspdatagen_templates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/adapt_graspdatagen_templates.py",
+        "sha256": "e620abcb95e1645b005630350fddc6b4ba25fad2b5c9e54ddebe72cb5a7c8006",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_dgn_parallel_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_dgn_parallel_pickup.py",
+        "sha256": "612d2bf906aef345e29abad3dd79cd6aa7c4fc058d447fbf579dd2fa69adc036",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/execute_contact_refined_pool.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/execute_contact_refined_pool.py",
+        "sha256": "f43ed2c1b75d97a2d32d2b9f08edb572ce918f8b0a7d71a3db47853534555f80",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_curobo_fk.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_curobo_fk.py",
+        "sha256": "0fc54078dc96113bbbc438851893d65976b3fba912cb262ef304aa94c81ef53f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_contact_edit_isaac_entry.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_contact_edit_isaac_entry.py",
+        "sha256": "d00d39bafae76f5c6219051fda8ca1134f339f310dc9d2037ef5452993c27246",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/diagnose_grasp_execution.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/diagnose_grasp_execution.py",
+        "sha256": "3c0368caa68a4378ee6c2df4782b0cd2cbbee43a3a93d8add0b09eaf5b5b59a3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_gripper_failure_repairs.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_gripper_failure_repairs.py",
+        "sha256": "ea10626f393d2dfe207bb1b09b2f544f037a31a06fec740f42aa6ccb8b0be286",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_compact_grasp_experience.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_compact_grasp_experience.py",
+        "sha256": "a841a8bf3dfe0c44c8e6a6fc2439d2f7ea22cb9fa894ef0b681c0d4bcb413499",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_blind_teacher_transfer.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_blind_teacher_transfer.py",
+        "sha256": "c610786d26a059b2831c91e24468c17c0b4bdb1c71ca5426be7f2b5c260ec7fb",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_contact_edit_validation_inputs.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_contact_edit_validation_inputs.py",
+        "sha256": "f2342c8f58df8fd947d5e6437db959c1323f4bdd892dd9a206d95addafc59e8a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_capture_contact_sequence.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_capture_contact_sequence.py",
+        "sha256": "113b12503490dc8e97665cd754fb9acbb2b58e4889f395dffa0612463d530c30",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/evaluate_grasp_baselines_six_direction.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/evaluate_grasp_baselines_six_direction.py",
+        "sha256": "786f9552bd901b0e7255b446b1c61f081f3fa2159016b36e69b233da475de878",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_contact_relation_admm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_contact_relation_admm.py",
+        "sha256": "9df5ebbe6729681fa27bbfbf2fd254f50bc9f2ad56bfa6082e2f47e24d4c83fd",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_siglip2_experience_retrieval.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_siglip2_experience_retrieval.py",
+        "sha256": "706ae9e6df5f5426118b87ab350f2a6a569d37c38d0d4ec335b9bf53a0c75112",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/refit_collision_precision.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/refit_collision_precision.py",
+        "sha256": "d1394e02f44ad6f7316cfc5433c76c218f5e8ad1bc746fb74e0a9545c9abe0eb",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/preview_graspdatagen_pinch.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/preview_graspdatagen_pinch.py",
+        "sha256": "ab589504340d90567f11eddedec7d1110aebbc9a72ae4bacd75b1ee9c885cbcb",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/optimize_gesture_templates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/optimize_gesture_templates.py",
+        "sha256": "1d932aa8513ec5877ed0255e452aa2d742aab5d20ea3a1d29d0d1c149fe74694",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/render_contact_relation_preview.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/render_contact_relation_preview.py",
+        "sha256": "4b308fc1e0654da226a172b30f3bbc2edb3a86a7a3208acb6081bfa1b81f7fa5",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_workspace_grasp.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_workspace_grasp.py",
+        "sha256": "d823ef8af5757cf1901195e5d2b51aa52fdcba1c33a3c15f5b2600b02bef0506",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/test_boya_squeeze_preload.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/test_boya_squeeze_preload.py",
+        "sha256": "9e288756b30a760925c0e39504deb5196a56a097b1253cbfefa2a5b3f43b3232",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/survey_gesture_source_six_direction.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/survey_gesture_source_six_direction.py",
+        "sha256": "7cdf3115491c550402b4d99c560f011b710f7696b1de6572d74b572b1e15fc25",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/prepare_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/prepare_grasp_baselines.py",
+        "sha256": "fec9140f509de2d62da032ce689fbbf608be91f1b6593ccc352eb925ead6a5a3",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_template_contact_kinematics.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_template_contact_kinematics.py",
+        "sha256": "d04caa33d978a1fe01a261d9fd260cf9c8139286cc25c6435e911e2bc0074668",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/audit_pregrasp_candidates.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/audit_pregrasp_candidates.py",
+        "sha256": "11f9ac11a5936ca56e4cb0a58f6749259dfad7e545b70e6a845d98e3a27b953f",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_grasp_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_grasp_batch.py",
+        "sha256": "fb334adc2182f5d4eccb345bc440f3590f9b6f7575a0e6322cfa011faa8a035c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_blind_teacher_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_blind_teacher_batch.py",
+        "sha256": "f445f1549e4274a5885c4060678b6c09a896f736ae140a48d891f8d077b681c2",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_selection_campaign.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_template_selection_campaign.py",
+        "sha256": "0e809d66d8c66e60e4bf935f5a9f280be97c6b306ed4ba7d37a3cdbdbbb8006e",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/validate_template_pose_fallback.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/validate_template_pose_fallback.py",
+        "sha256": "f67a93f776a5a2768394f14b86c20f805a770c964deb71e04b4c118125583720",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/benchmark_resident_template_cpu.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_resident_template_cpu.py",
+        "sha256": "0a3de859f94aa10fb3fa6fd9944eeb05cdb499143be5c68e8aafd2f28b1fe739",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/report_grasp_baselines.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/report_grasp_baselines.py",
+        "sha256": "6b77c0be199a3994ab6462777547dad4e1667c9f43706825abd1b060f6908238",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/verify_parallel_batch.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/verify_parallel_batch.py",
+        "sha256": "3271f74664b862da3ee0992ab07a1d91aacb7041221e4457560db5987ce19617",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/probe_template_gripper_contact_pair.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/probe_template_gripper_contact_pair.py",
+        "sha256": "7644a5f87681025a3bbb64c29ac074d189c19264d4319f55f363d672589f244c",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/run_semantic_experience_pickup.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/run_semantic_experience_pickup.py",
+        "sha256": "f7bdf45147d1a86a27e74d46250b2801d7478526fbdea500c46e89de5385e998",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/direct_open_close_arm.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/direct_open_close_arm.py",
+        "sha256": "0c1b8d571595b557232e389d3958935b285afdca3111a699b87b3fe94d238987",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/CanonDex/scripts/research/compare_vlm_semantics.py": {
+        "path": "/home/wangrenpeng/CanonDex/scripts/research/compare_vlm_semantics.py",
+        "sha256": "b20ef90cd9c39aba717160e53a432b80fb249dd8b879fb27bb77a6b000da0187",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/settle_s40_scenes.py": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/settle_s40_scenes.py",
+        "sha256": "742b9bd7a02c9aeca7c13af024b048e6ca7fc4af9de8e59813b8d14b4bcfda46",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_s40_observations.py": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_s40_observations.py",
+        "sha256": "7aabcaeb603e5b86226493ddef463be55cc152b441aa978374352a0b0b44852a",
+        "historical_archive": false
+      },
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/AUTHOR_TRANSPORT_SOURCE.py",
+        "sha256": "7e2c8985f38db54cd6f684f4d54d71b9a83d3f775d7d0082147e0ffefef2bf1e",
+        "historical_archive": true
+      }
+    },
+    "source_sha256": {
+      "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+      "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+      "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py": "422324ce9a3047bb98d8e394ee47ceb8b51b5fa8c570676b5aca7b951b82a61e",
+      "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+      "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45"
+    },
+    "release_spec": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/FIXED_RELEASE.json",
+      "sha256": "43223161bf53e4fa40335960e1b51185320646c8ee38f03793f2bea4fed7522c",
+      "world_T_release_palm": [
+        [
+          0.0007962574874067301,
+          -0.013184925338607408,
+          -0.9999127580533358,
+          -0.4
+        ],
+        [
+          0.9999996829318324,
+          -4.10025819803366e-10,
+          0.0007963267134376482,
+          -0.25
+        ],
+        [
+          -1.0499918251862382e-05,
+          -0.9999130750939378,
+          0.013184921157760834,
+          0.35
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "pose_rule": "fixed_world_se3"
+    },
+    "seed_approach_only": true,
+    "unused_world_z_lift_required": false,
+    "closure_source": "Original TwoSidedClosure, 250 close + 50 hold, original fixed arm and palm",
+    "command_steps": 5259,
+    "independent_coordinates": 24,
+    "actual_joint_coordinates": 28,
+    "plan_sha256": "82331a076ac14aad12b9503b2e8852431f4c78820b354f2de6de5070167f9abd",
+    "wall_s": 25.729085270082578,
+    "interpolation_errors": {
+      "retreat_4mm": [
+        1.2522663949207482e-14,
+        8.234374813751504e-14
+      ],
+      "retreat_pregrasp": [
+        4.2419527887585994e-12,
+        3.453644582953719e-13
+      ],
+      "transport_bin": [
+        1.1073881957624802e-06,
+        2.481194362517451e-06
+      ]
+    },
+    "timing": {
+      "retreat_4mm": {
+        "steps": 125,
+        "duration_s": 0.5,
+        "max_velocity_rad_s": 0.037569754238409026,
+        "max_acceleration_rad_s2": 0.23127512768783554,
+        "max_jerk_rad_s3": 4.137912706925206,
+        "velocity_ratio": 0.011958824195580964,
+        "acceleration_limit_rad_s2": 3.0,
+        "jerk_limit_rad_s3": 30.0
+      },
+      "retreat_pregrasp": {
+        "steps": 500,
+        "duration_s": 2.0,
+        "max_velocity_rad_s": 0.08712320587916933,
+        "max_acceleration_rad_s2": 0.1380199607797783,
+        "max_jerk_rad_s3": 0.7032878255458508,
+        "velocity_ratio": 0.027732177747365354,
+        "acceleration_limit_rad_s2": 3.0,
+        "jerk_limit_rad_s3": 30.0
+      },
+      "transport_bin": {
+        "steps": 984,
+        "duration_s": 3.936,
+        "max_velocity_rad_s": 1.9157432410410458,
+        "max_acceleration_rad_s2": 2.9373234831306383,
+        "max_jerk_rad_s3": 19.78580641080058,
+        "velocity_ratio": 0.6098000130131416,
+        "acceleration_limit_rad_s2": 3.0,
+        "jerk_limit_rad_s3": 30.0
+      }
+    }
+  },
+  "wall_s": 26.759605119936168
+}

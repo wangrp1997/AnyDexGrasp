@@ -1,0 +1,188 @@
+{
+  "schema": "anydex_boya_author_component_transport_final_v1",
+  "complete": true,
+  "protocol_sha256": "47f65a0736026b98958b6fef8a23f6ae30382a0a637541c88f4001e6e2c5be02",
+  "candidate_order": [
+    1,
+    6,
+    7
+  ],
+  "prior_g8_null_preserved": true,
+  "ready": 0,
+  "null_geometry": 3,
+  "infrastructure_failures": 0,
+  "physical_execution_dispatched": false,
+  "new_labels": 0,
+  "formal_training_updates": 0,
+  "new_CGR_forwards": 0,
+  "new_collection_collision_queries": 0,
+  "new_native_approach_IK": 0,
+  "new_HOME_search_calls": 0,
+  "original_transport_IK_calls_started": 288,
+  "original_transport_IK_calls_returned": 288,
+  "original_transport_IK_calls_raised": 0,
+  "original_transport_IK_max_nfev": 300,
+  "original_transport_IK_wall_s": 13.384530940791592,
+  "queue_wall_s": 27.639367792988196,
+  "component_wall_s": [
+    26.738578516058624,
+    27.1623675909359,
+    26.759605119936168
+  ],
+  "original3_source_object_proxy_violations": 0,
+  "floor_violations": 0,
+  "violation_phases": [
+    "transport_bin",
+    "release",
+    "release_settle"
+  ],
+  "violating_links": [
+    "upper_arm_link"
+  ],
+  "self_others": [
+    "wrist_1_link",
+    "wrist_2_link",
+    "wrist_3_link",
+    "fabase"
+  ],
+  "bin_owners": [
+    "wall_x_plus",
+    "wall_y_plus"
+  ],
+  "violations": [
+    {
+      "gesture_id": 1,
+      "count": 6311,
+      "by_kind": {
+        "object": 2126,
+        "self": 4185
+      },
+      "by_phase": {
+        "transport_bin": 1811,
+        "release": 1500,
+        "release_settle": 3000
+      },
+      "by_owner": {
+        "bin:wall_x_plus": 1121,
+        "bin:wall_y_plus": 1005
+      },
+      "commands": 5270,
+      "first": {
+        "sample": 1419,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.0007612687315485935,
+        "command_sample": 4149,
+        "time_s": 16.6,
+        "phase": "transport_bin",
+        "owner": "bin:wall_x_plus"
+      },
+      "deepest": {
+        "sample": 1789,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900113873221239,
+        "command_sample": 4519,
+        "time_s": 18.080000000000002,
+        "phase": "transport_bin",
+        "owner": "wrist_2_link"
+      },
+      "open_ok": true,
+      "full_scene_seed_parts": 27
+    },
+    {
+      "gesture_id": 6,
+      "count": 7270,
+      "by_kind": {
+        "object": 2413,
+        "self": 4857
+      },
+      "by_phase": {
+        "transport_bin": 2770,
+        "release": 1500,
+        "release_settle": 3000
+      },
+      "by_owner": {
+        "bin:wall_x_plus": 1273,
+        "bin:wall_y_plus": 1140
+      },
+      "commands": 5266,
+      "first": {
+        "sample": 1556,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.0005181328440314861,
+        "command_sample": 3993,
+        "time_s": 15.976,
+        "phase": "transport_bin",
+        "owner": "bin:wall_x_plus"
+      },
+      "deepest": {
+        "sample": 1995,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900538113719337,
+        "command_sample": 4432,
+        "time_s": 17.732,
+        "phase": "transport_bin",
+        "owner": "wrist_2_link"
+      },
+      "open_ok": true,
+      "full_scene_seed_parts": 27
+    },
+    {
+      "gesture_id": 7,
+      "count": 6768,
+      "by_kind": {
+        "object": 2263,
+        "self": 4505
+      },
+      "by_phase": {
+        "transport_bin": 2268,
+        "release": 1500,
+        "release_settle": 3000
+      },
+      "by_owner": {
+        "bin:wall_x_plus": 1195,
+        "bin:wall_y_plus": 1068
+      },
+      "commands": 5259,
+      "first": {
+        "sample": 1489,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.0008638465501858595,
+        "command_sample": 4064,
+        "time_s": 16.26,
+        "phase": "transport_bin",
+        "owner": "bin:wall_x_plus"
+      },
+      "deepest": {
+        "sample": 1933,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900113873337459,
+        "command_sample": 4508,
+        "time_s": 18.036,
+        "phase": "transport_bin",
+        "owner": "wrist_2_link"
+      },
+      "open_ok": true,
+      "full_scene_seed_parts": 27
+    }
+  ],
+  "triangle_representatives": 9,
+  "triangle_surface_intersections": 9,
+  "result_interpretation": "All three complete transport preparations are null_geometry. Exact source surfaces cross at the selected deepest self and final bin states. No physical success rate or training negatives exist.",
+  "old_collision_queries_reused": 387,
+  "physics_steps": 0,
+  "Kit_launches": 0,
+  "frozen_pipeline_sha256": "2376c747bd2770e724e3bf4314af688a9a046245d386305c7b71b5373f77d2b0",
+  "frozen_tests_sha256": "353b9946f8e4e247303dc0963c580ec94ab4eb0714a1d2deef402e5299a98b17"
+}

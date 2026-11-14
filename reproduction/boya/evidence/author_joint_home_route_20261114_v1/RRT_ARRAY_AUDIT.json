@@ -1,0 +1,319 @@
+{
+  "complete": true,
+  "physics_steps": 0,
+  "ik_calls": 0,
+  "results": {
+    "1": {
+      "status": "null_geometry",
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 50,
+        "connect_extend_calls": 22,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          23,
+          2
+        ],
+        "connected": true,
+        "waypoints": 14
+      },
+      "oracle": {
+        "audit_calls": 49,
+        "unique_checked_states": 192,
+        "signed_distance_queries": 6040,
+        "exact_cache_hits": 5,
+        "minimum_floor_m": -0.022228246677118285,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0002148610779579424
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0032600579384806407
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.006480297021279124
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00986449760363634
+          }
+        ]
+      },
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.17691642724069168,
+        "acceleration_ratio": 0.7161588087255718,
+        "jerk_ratio": 1.0708905647666134,
+        "max_velocity_rad_s": 0.4830077755239859,
+        "max_acceleration_rad_s2": 2.1484764261767153,
+        "max_jerk_rad_s3": 32.1267169429984
+      },
+      "search_wall_s": 0.6765876240096986,
+      "wall_s": 18.29660252807662,
+      "non_home_commands_exact": true,
+      "pregrasp_joint_palm_endpoint_exact": true,
+      "non_arm18_exact": true,
+      "source_snapshots_and_input_SHA_passed": true,
+      "commands_sha256": "595ebd4a259ef0732cdc3a48fbce7f82ddd14740e751ac922b046dfd0b80891a",
+      "full_geometry_sha256": "323abecedfeecd56b401a821e062dedf4c2fd1b54c1eff95009f542585919359"
+    },
+    "6": {
+      "status": "null_geometry",
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 48,
+        "connect_extend_calls": 20,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          21,
+          2
+        ],
+        "connected": true,
+        "waypoints": 12
+      },
+      "oracle": {
+        "audit_calls": 48,
+        "unique_checked_states": 188,
+        "signed_distance_queries": 5939,
+        "exact_cache_hits": 1,
+        "minimum_floor_m": -0.02722739187113992,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0027533294064898614
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.007938504760013395
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 0,
+            "distance_m": -4.296912136469652e-05
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.012976976831492397
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffmiddle",
+            "other": 0,
+            "distance_m": -0.0009596794237747858
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 0,
+            "distance_m": -0.010051861456984815
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.015368376081508036
+          }
+        ]
+      },
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.18729388664155347,
+        "acceleration_ratio": 0.7197315667952878,
+        "jerk_ratio": 1.0634113464224233,
+        "max_velocity_rad_s": 0.48821335493540174,
+        "max_acceleration_rad_s2": 2.1591947003858634,
+        "max_jerk_rad_s3": 31.902340392672702
+      },
+      "search_wall_s": 0.6472573021892458,
+      "wall_s": 17.08819147804752,
+      "non_home_commands_exact": true,
+      "pregrasp_joint_palm_endpoint_exact": true,
+      "non_arm18_exact": true,
+      "source_snapshots_and_input_SHA_passed": true,
+      "commands_sha256": "5895d6eb5a52826ef2ab2dee8d131e6287f5c739c232264b4de4eb4001d4c1c6",
+      "full_geometry_sha256": "01768835e596df7dc4e0f3f6094d6133d476c2aad186554860c98e0be9a247ce"
+    },
+    "7": {
+      "status": "null_geometry",
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 49,
+        "connect_extend_calls": 21,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          22,
+          2
+        ],
+        "connected": true,
+        "waypoints": 13
+      },
+      "oracle": {
+        "audit_calls": 49,
+        "unique_checked_states": 190,
+        "signed_distance_queries": 6039,
+        "exact_cache_hits": 2,
+        "minimum_floor_m": -0.0251956985286139,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0015637838120024748
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.005932905295317245
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.010340064656354887
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 0,
+            "distance_m": -0.0015017514083159804
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.014709458759542498
+          }
+        ]
+      },
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.18073806059308423,
+        "acceleration_ratio": 0.7232790971943569,
+        "jerk_ratio": 1.0692664541983588,
+        "max_velocity_rad_s": 0.48780999907202527,
+        "max_acceleration_rad_s2": 2.169837291583071,
+        "max_jerk_rad_s3": 32.07799362595076
+      },
+      "search_wall_s": 0.6809088659938425,
+      "wall_s": 17.759549382142723,
+      "non_home_commands_exact": true,
+      "pregrasp_joint_palm_endpoint_exact": true,
+      "non_arm18_exact": true,
+      "source_snapshots_and_input_SHA_passed": true,
+      "commands_sha256": "04c31ea02053d68307d655c4e094743ab02ffc4e2910320c86159307900d1fbd",
+      "full_geometry_sha256": "c324c36045459510776a514f5cc442e532b4ff706c9627ce54c707a37b20949d"
+    },
+    "8": {
+      "status": "null_geometry",
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 51,
+        "connect_extend_calls": 23,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          24,
+          2
+        ],
+        "connected": true,
+        "waypoints": 15
+      },
+      "oracle": {
+        "audit_calls": 50,
+        "unique_checked_states": 196,
+        "signed_distance_queries": 4498,
+        "exact_cache_hits": 5,
+        "minimum_floor_m": -0.020141369289577958,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0006162511807276637
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.002678499042605219
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.005056788643718488
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.007715468651720115
+          }
+        ]
+      },
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.17691642724069168,
+        "acceleration_ratio": 0.7214218995891623,
+        "jerk_ratio": 1.0759551051624703,
+        "max_velocity_rad_s": 0.4837614586169353,
+        "max_acceleration_rad_s2": 2.164265698767487,
+        "max_jerk_rad_s3": 32.27865315487411
+      },
+      "search_wall_s": 0.68483806704171,
+      "wall_s": 18.879615138983354,
+      "non_home_commands_exact": true,
+      "pregrasp_joint_palm_endpoint_exact": true,
+      "non_arm18_exact": true,
+      "source_snapshots_and_input_SHA_passed": true,
+      "commands_sha256": "f0b7d2277c9f8c623097d8a65a8bc6e19bb2c160b3e8904db71c6ba42b7e0eba",
+      "full_geometry_sha256": "400c0dedd25ada04de1da4a058bda5a81327b28f526c7a3011b5da9fb3083455"
+    }
+  }
+}

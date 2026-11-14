@@ -48,6 +48,11 @@ def read(path):
     return json.loads(Path(path).read_text())
 
 
+def json_sha(value):
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':'),
+                                     allow_nan=False).encode()).hexdigest()
+
+
 def save(path, value):
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -202,7 +207,34 @@ def preclosure_pushes(states, settled_xy, phase):
             if np.linalg.norm(np.asarray(states[key]['pose_xyzw'][:2])-xy) > .03]
 
 
-def _waypoint_targets(palm, direction, approach_distance, bin_spec, source_pose):
+def load_release_spec(scene_path, release_spec_path, *, scene=None):
+    """Require an explicitly frozen world palm pose, independent of bodies."""
+    if release_spec_path is None:
+        raise ValueError('Explicit fixed release_spec_path required; no object-relative default release')
+    scene_path, release_spec_path = Path(scene_path).resolve(), Path(release_spec_path).resolve()
+    scene = read(scene_path) if scene is None else scene
+    spec = read(release_spec_path)
+    if (spec.get('schema') != 'anydex_boya_author_fixed_release_v1'
+            or spec.get('frame') != 'world' or spec.get('link') != 'palm'
+            or spec.get('pose_rule') != 'fixed_world_se3'
+            or spec.get('depends_on_candidate_pose') is not False
+            or spec.get('depends_on_object_pose') is not False):
+        raise ValueError('Explicit body/candidate-independent fixed world palm release required')
+    if (Path(spec['scene']['path']).resolve() != scene_path
+            or spec['scene']['sha256'] != sha(scene_path)
+            or spec['bin_sha256'] != json_sha(scene['bin'])):
+        raise ValueError('Fixed release sidecar belongs to a different frozen scene/bin')
+    transform(spec['world_T_release_palm'])
+    if not all(isinstance(spec.get(name), dict) and spec[name]
+               for name in ('source_sha256', 'source_policy', 'adaptation')):
+        raise ValueError('Fixed release source and explicit adaptation provenance required')
+    for name, digest in spec['source_sha256'].items():
+        if not Path(name).is_absolute() or sha(name) != digest:
+            raise ValueError('Fixed release provenance changed: '+name)
+    return spec
+
+
+def _waypoint_targets(palm, direction, approach_distance, release_palm_pose):
     palm = transform(palm)
     direction = np.asarray(direction, dtype=float)
     if direction.shape != (3,) or not np.isclose(np.linalg.norm(direction), 1., atol=1e-8):
@@ -210,15 +242,7 @@ def _waypoint_targets(palm, direction, approach_distance, bin_spec, source_pose)
     first, pre = palm.copy(), palm.copy()
     first[:3, 3] -= POLICY['retreat_first_m']*direction
     pre[:3, 3] -= approach_distance*direction
-    if 'release_palm_pose' in bin_spec:
-        release = transform(bin_spec['release_palm_pose']).copy()
-    else:
-        frame = transform(bin_spec['world_T_bin'])
-        if not np.allclose(frame[2, :3], [0, 0, 1], atol=1e-8, rtol=0):
-            raise ValueError('Default release adaptation supports upright bin only')
-        release = palm.copy()
-        release[:2, 3] += frame[:2, 3]-np.asarray(source_pose)[:2, 3]
-        release[2, 3] = max(palm[2, 3], frame[2, 3]+bin_spec['inner_half_extents_m'][2]+.15)
+    release = transform(release_palm_pose).copy()
     return [('retreat_4mm', first, POLICY['retreat_minimum_s']),
             ('retreat_pregrasp', pre, POLICY['retreat_pregrasp_minimum_s']),
             ('transport_bin', release, POLICY['transport_minimum_s'])]
@@ -247,7 +271,34 @@ def _append_source_closure(model, family, seed, commands, phases, desired):
     return closure.audit()
 
 
-def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=None):
+def scene_collision_obstacles(scene, object_asset):
+    """Source-hull initial-pose proxies; post-close scope includes every body.
+
+    The original seed already audits the compatibility body's open approach.
+    Its closed-hand/post-close rigid gate must have the same scope whichever
+    source body is selected as that implementation compatibility handle.
+    These frozen meshes do not predict the dynamic bodies' later trajectories.
+    """
+    import trimesh
+    open_extras, post_all = [], []
+    for row in scene['objects']:
+        asset = object_asset(SimpleNamespace(object_root=Path(row['object_root'])),
+                             np.asarray(row['world_T_object']), row['scale'])
+        for source in asset.collision_parts:
+            mesh = source.copy()
+            mesh.apply_transform(row['world_T_object'])
+            post_all.append(mesh)
+            if row['object_id'] != scene['target_object_id']:
+                open_extras.append(mesh)
+    for box in bin_boxes(scene['bin']):
+        mesh = trimesh.creation.box(extents=box['extents_m'])
+        mesh.apply_transform(box['world_T_box'])
+        open_extras.append(mesh)
+        post_all.append(mesh)
+    return open_extras, post_all
+
+
+def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=None, release_spec_path=None):
     """Extend one admitted approach/closure plan; local failure becomes null.
 
     The bin and release frame are inputs.  No retry, target repositioning,
@@ -265,7 +316,6 @@ def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=
     from canondex.grasp.admm.arm_only_ik import ARM_JOINTS, arm_only_palm_ik
     from canondex.grasp.template_arm_bridge import (ArmPathGeometry, interpolate_palm,
         timed_segment, smooth_fraction, palm_error, with_hand_command)
-    import trimesh
 
     began = time.monotonic()
     output_dir.mkdir(parents=True, exist_ok=False)
@@ -283,6 +333,10 @@ def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=
                                  {str(Path(__file__).resolve()): sha(__file__)})
     save(output_dir/'TRANSPORT_PREPARATION.json', receipt)
     try:
+        release_spec = load_release_spec(scene_path, release_spec_path, scene=scene)
+        release_path = Path(release_spec_path).resolve()
+        receipt['release_spec'] = dict(path=str(release_path), sha256=sha(release_path),
+            world_T_release_palm=release_spec['world_T_release_palm'], pose_rule=release_spec['pose_rule'])
         if not seed.get('complete') or not seed.get('admitted'):
             raise ValueError('Admitted source approach/closure plan required')
         for key, name in (('commands_sha256', 'commands.npz'),
@@ -350,7 +404,7 @@ def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=
             source_direction = pool['proposal_approach_direction'][seed['index']]
         direction = np.asarray(seed['palm'])[:3, :3]@np.asarray(seed['source_palm'])[:3, :3].T@source_direction
         targets = _waypoint_targets(palm, direction, args.get('pregrasp_distance_m', .1),
-                                    scene['bin'], np.asarray(seed['world_T_object']))
+                                    release_spec['world_T_release_palm'])
         ik_audits, timing, errors = [], {}, {}
         for phase, goal, minimum_s in targets:
             start = model.fk.transforms(last, reference.base_transform)['palm']
@@ -389,24 +443,14 @@ def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=
             commands.append(model.vector(state)); phases.append('release_settle'); desired.append(targets[-1][1].copy())
         full_states = [model.full_state(dict(zip(names, map(float, q)))) for q in commands]
         rigid = [n for n in model.collision_links if not n.startswith(('th', 'ff', 'mf', 'rf', 'lf'))]
-        # Retain the source target admission, and additionally audit stationary
-        # distractors/bin for all open-hand states and rigid links afterwards.
-        obstacles = []
-        for row in scene['objects']:
-            if row['object_id'] == scene['target_object_id']:
-                continue
-            asset = object_asset(SimpleNamespace(object_root=Path(row['object_root'])),
-                                 np.asarray(row['world_T_object']), row['scale'])
-            for mesh in asset.collision_parts:
-                mesh = mesh.copy(); mesh.apply_transform(row['world_T_object']); obstacles.append(mesh)
-        for box in bin_boxes(scene['bin']):
-            mesh = trimesh.creation.box(extents=box['extents_m'])
-            mesh.apply_transform(box['world_T_box']); obstacles.append(mesh)
+        # Open admission remains original seed target + scene extras/bin.
+        # Post-close rigid admission is symmetric across every source body.
+        open_extras, post_all = scene_collision_obstacles(scene, object_asset)
         open_states = [s for s, p in zip(full_states, phases) if p in ('settle', 'home_to_pregrasp', 'approach')]
         post_states = [s for s, p in zip(full_states, phases) if p not in ('settle', 'home_to_pregrasp', 'approach')]
-        open_audit = ArmPathGeometry(model, model.ignored_pairs(), obstacles, np.eye(4),
+        open_audit = ArmPathGeometry(model, model.ignored_pairs(), open_extras, np.eye(4),
                                     vectorized_broadphase=True).audit(open_states)
-        rigid_audit = ArmPathGeometry(model, model.ignored_pairs(), obstacles, np.eye(4),
+        rigid_audit = ArmPathGeometry(model, model.ignored_pairs(), post_all, np.eye(4),
             collision_links=rigid, vectorized_broadphase=True).audit(post_states)
         source_geometry = read(seed_plan_dir/'path_geometry.json')
         geometry = dict(ok=bool(source_geometry['ok'] and open_audit['ok']),
@@ -414,7 +458,9 @@ def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=
                         violations=source_geometry['violations']+open_audit['violations'])
         save(output_dir/'path_geometry.json', geometry)
         save(output_dir/'lift_arm_geometry.json', dict(rigid_audit,
-            scope='All post-approach rigid arm/wrists/palm against self/floor/static scene and bin; fingers/actual moving objects remain runtime-audited'))
+            scope='Post-approach rigid arm/wrists/palm against rigid self/floor, every source body at its frozen initial pose and five bin boxes; sampled source convex proxies, not dynamic trajectory prediction; finger contacts, finger-vs-rigid self contacts and actual moving objects remain runtime-audited',
+            initial_pose_proxy_object_ids=[row['object_id'] for row in scene['objects']],
+            primary_body_excluded=False, dynamic_object_trajectories_predicted=False))
         np.savez_compressed(output_dir/'commands.npz', initial_position=old['initial_position'],
             joint_names=names, joint_target=commands, phase=phases, desired_palm=desired,
             time_s=np.arange(1, len(commands)+1)*POLICY['dt_s'])
@@ -436,6 +482,8 @@ def prepare_transport(seed_plan_dir, scene_path, output_dir, *, archive_sources=
             if binding['historical_archive']:
                 plan.setdefault('extra_input_sha256', {})[binding['path']] = binding['sha256']
         plan.setdefault('extra_input_sha256', {})[str(scene_path.resolve())] = sha(scene_path)
+        plan['extra_input_sha256'][str(release_path)] = sha(release_path)
+        plan['extra_input_sha256'].update(release_spec['source_sha256'])
         plan['phases'] = [dict(name=p, start_step=i+1) for i, p in enumerate(phases)
                           if i == 0 or phases[i-1] != p]
         save(output_dir/'plan.json', plan)
@@ -780,6 +828,12 @@ def execution_steps(args, scene_path):
     binding = plan.get('author_transport')
     if not binding or binding['scene_sha256'] != sha(scene_path):
         raise ValueError('Execution requires the prepared unchanged multi-object transport scene')
+    release_binding = binding.get('release_spec')
+    if not release_binding or sha(release_binding['path']) != release_binding['sha256']:
+        raise ValueError('Execution requires the prepared unchanged explicit fixed release')
+    release_spec = load_release_spec(scene_path, release_binding['path'])
+    if not np.array_equal(release_spec['world_T_release_palm'], release_binding['world_T_release_palm']):
+        raise ValueError('Prepared fixed release SE3 changed')
     if getattr(args, 'tactile_feedback', False):
         raise ValueError('Feedback changes the frozen transport trajectory')
     runtime = MultiObjectRuntime(scene_path, args.output_dir,
@@ -849,12 +903,14 @@ def main():
     parser.add_argument('--scene', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--archive-sources', type=Path, help='Explicit original source path -> exact historical capture snapshot path JSON')
+    parser.add_argument('--release-spec', type=Path, help='Explicit scene-bound fixed world palm release SE3 JSON; required for prepare')
     args = parser.parse_args()
     if args.stage == 'prepare':
         if not args.seed_plan_dir:
             parser.error('--seed-plan-dir required')
         print(json.dumps(prepare_transport(args.seed_plan_dir, args.scene, args.output_dir,
-            archive_sources=read(args.archive_sources) if args.archive_sources else None), indent=2))
+            archive_sources=read(args.archive_sources) if args.archive_sources else None,
+            release_spec_path=args.release_spec), indent=2))
     else:
         if not args.plan_dir:
             parser.error('--plan-dir required')

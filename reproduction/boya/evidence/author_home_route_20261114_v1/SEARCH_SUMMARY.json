@@ -1,0 +1,1854 @@
+{
+  "1": {
+    "schema": "anydex_boya_author_home_route_preparation_v1",
+    "status": "null_geometry",
+    "admitted": false,
+    "complete": true,
+    "physics_steps": 0,
+    "grasp_attempts": 0,
+    "training_updates": 0,
+    "ik_calls": 10,
+    "attempts": [
+      {
+        "route_index": 0,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 2.5118430551102334e-12,
+            "rotation_error_rad": 5.663105327055399e-11,
+            "nfev": 7,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.7468208635524272,
+              0.49909704431036883,
+              -0.43950055531644133,
+              -0.5911775739008934
+            ],
+            [
+              0.6625779196131683,
+              -0.61506686768534,
+              0.42741460985421437,
+              0.10144977958826142
+            ],
+            [
+              -0.05700086143114317,
+              -0.610405511636648,
+              -0.7900354505714976,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.28225693199783564
+      },
+      {
+        "route_index": 1,
+        "clearance_m": 0.15,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.7468208635524272,
+              0.49909704431036883,
+              -0.43950055531644133,
+              -0.5911775739008934
+            ],
+            [
+              0.6625779196131683,
+              -0.61506686768534,
+              0.42741460985421437,
+              -0.04855022041173858
+            ],
+            [
+              -0.05700086143114317,
+              -0.610405511636648,
+              -0.7900354505714976,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.30820963880978525
+      },
+      {
+        "route_index": 2,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 6.244606499201485e-12,
+            "rotation_error_rad": 1.3194905728095304e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.7468208635524272,
+              0.49909704431036883,
+              -0.43950055531644133,
+              -0.5911775739008934
+            ],
+            [
+              0.6625779196131683,
+              -0.61506686768534,
+              0.42741460985421437,
+              0.2514497795882614
+            ],
+            [
+              -0.05700086143114317,
+              -0.610405511636648,
+              -0.7900354505714976,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.2705349801108241
+      },
+      {
+        "route_index": 3,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 7.906447369979111e-12,
+            "rotation_error_rad": 1.6124716530313502e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.7468208635524272,
+              0.49909704431036883,
+              -0.43950055531644133,
+              -0.5911775739008934
+            ],
+            [
+              0.6625779196131683,
+              -0.61506686768534,
+              0.42741460985421437,
+              0.10144977958826142
+            ],
+            [
+              -0.05700086143114317,
+              -0.610405511636648,
+              -0.7900354505714976,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.37936431216076016
+      },
+      {
+        "route_index": 4,
+        "clearance_m": 0.3,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.7468208635524272,
+              0.49909704431036883,
+              -0.43950055531644133,
+              -0.5911775739008934
+            ],
+            [
+              0.6625779196131683,
+              -0.61506686768534,
+              0.42741460985421437,
+              -0.04855022041173858
+            ],
+            [
+              -0.05700086143114317,
+              -0.610405511636648,
+              -0.7900354505714976,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3470424360129982
+      },
+      {
+        "route_index": 5,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 1.4452370802510906e-11,
+            "rotation_error_rad": 2.9801441965933516e-10,
+            "nfev": 9,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.7468208635524272,
+              0.49909704431036883,
+              -0.43950055531644133,
+              -0.5911775739008934
+            ],
+            [
+              0.6625779196131683,
+              -0.61506686768534,
+              0.42741460985421437,
+              0.2514497795882614
+            ],
+            [
+              -0.05700086143114317,
+              -0.610405511636648,
+              -0.7900354505714976,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.4104304660577327
+      }
+    ],
+    "policy": {
+      "schema": "anydex_boya_author_home_route_policy_v1",
+      "dt_s": 0.004,
+      "clearances_m": [
+        0.15,
+        0.3
+      ],
+      "world_y_offsets_m": [
+        0.0,
+        -0.15,
+        0.15
+      ],
+      "route_order": "clearance outer, world_y_offset inner; first admitted",
+      "max_routes": 6,
+      "ik_waypoints_per_route": 2,
+      "max_ik_calls": 12,
+      "per_ik_max_nfev": 300,
+      "bounds_margin_rad": 1e-06,
+      "minimum_home_s": 3.0,
+      "acceleration_rad_s2": 3.0,
+      "jerk_rad_s3": 30.0,
+      "geometry_tolerance_m": 1e-07,
+      "preflight_fixed_segments_first": true,
+      "fixed_candidate": true,
+      "fixed_initial": true,
+      "fixed_pregrasp_joints": true,
+      "unchanged_non_home_commands": true,
+      "approach_distance_m": 0.04,
+      "scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+    },
+    "protocol_sha256": "713562dfd63d3f97465eeda72b83ffcca329406544d3405e38ec4c566c9c3158",
+    "baseline_admitted": false,
+    "reason": "frozen_home_route_budget_exhausted",
+    "search_skipped": false,
+    "wall_s": 12.092713254038244
+  },
+  "6": {
+    "schema": "anydex_boya_author_home_route_preparation_v1",
+    "status": "null_geometry",
+    "admitted": false,
+    "complete": true,
+    "physics_steps": 0,
+    "grasp_attempts": 0,
+    "training_updates": 0,
+    "ik_calls": 10,
+    "attempts": [
+      {
+        "route_index": 0,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 2.5118430551102334e-12,
+            "rotation_error_rad": 5.663105327055399e-11,
+            "nfev": 7,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.6081666470080968,
+              0.5855389737679093,
+              -0.5359826859757251,
+              -0.5755628755640146
+            ],
+            [
+              0.7851036053881748,
+              -0.5434074602864408,
+              0.29718792188029697,
+              0.1292237720121032
+            ],
+            [
+              -0.11724187934956715,
+              -0.601541721166424,
+              -0.7901910524820673,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.2514441250823438
+      },
+      {
+        "route_index": 1,
+        "clearance_m": 0.15,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.6081666470080968,
+              0.5855389737679093,
+              -0.5359826859757251,
+              -0.5755628755640146
+            ],
+            [
+              0.7851036053881748,
+              -0.5434074602864408,
+              0.29718792188029697,
+              -0.0207762279878968
+            ],
+            [
+              -0.11724187934956715,
+              -0.601541721166424,
+              -0.7901910524820673,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.30853376910090446
+      },
+      {
+        "route_index": 2,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 6.244606499201485e-12,
+            "rotation_error_rad": 1.3194905728095304e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.6081666470080968,
+              0.5855389737679093,
+              -0.5359826859757251,
+              -0.5755628755640146
+            ],
+            [
+              0.7851036053881748,
+              -0.5434074602864408,
+              0.29718792188029697,
+              0.2792237720121032
+            ],
+            [
+              -0.11724187934956715,
+              -0.601541721166424,
+              -0.7901910524820673,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.2759991071652621
+      },
+      {
+        "route_index": 3,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 7.906447369979111e-12,
+            "rotation_error_rad": 1.6124716530313502e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.6081666470080968,
+              0.5855389737679093,
+              -0.5359826859757251,
+              -0.5755628755640146
+            ],
+            [
+              0.7851036053881748,
+              -0.5434074602864408,
+              0.29718792188029697,
+              0.1292237720121032
+            ],
+            [
+              -0.11724187934956715,
+              -0.601541721166424,
+              -0.7901910524820673,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3938351641409099
+      },
+      {
+        "route_index": 4,
+        "clearance_m": 0.3,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.6081666470080968,
+              0.5855389737679093,
+              -0.5359826859757251,
+              -0.5755628755640146
+            ],
+            [
+              0.7851036053881748,
+              -0.5434074602864408,
+              0.29718792188029697,
+              -0.0207762279878968
+            ],
+            [
+              -0.11724187934956715,
+              -0.601541721166424,
+              -0.7901910524820673,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.35720031801611185
+      },
+      {
+        "route_index": 5,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 1.4452370802510906e-11,
+            "rotation_error_rad": 2.9801441965933516e-10,
+            "nfev": 9,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.6081666470080968,
+              0.5855389737679093,
+              -0.5359826859757251,
+              -0.5755628755640146
+            ],
+            [
+              0.7851036053881748,
+              -0.5434074602864408,
+              0.29718792188029697,
+              0.2792237720121032
+            ],
+            [
+              -0.11724187934956715,
+              -0.601541721166424,
+              -0.7901910524820673,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3150403629988432
+      }
+    ],
+    "policy": {
+      "schema": "anydex_boya_author_home_route_policy_v1",
+      "dt_s": 0.004,
+      "clearances_m": [
+        0.15,
+        0.3
+      ],
+      "world_y_offsets_m": [
+        0.0,
+        -0.15,
+        0.15
+      ],
+      "route_order": "clearance outer, world_y_offset inner; first admitted",
+      "max_routes": 6,
+      "ik_waypoints_per_route": 2,
+      "max_ik_calls": 12,
+      "per_ik_max_nfev": 300,
+      "bounds_margin_rad": 1e-06,
+      "minimum_home_s": 3.0,
+      "acceleration_rad_s2": 3.0,
+      "jerk_rad_s3": 30.0,
+      "geometry_tolerance_m": 1e-07,
+      "preflight_fixed_segments_first": true,
+      "fixed_candidate": true,
+      "fixed_initial": true,
+      "fixed_pregrasp_joints": true,
+      "unchanged_non_home_commands": true,
+      "approach_distance_m": 0.04,
+      "scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+    },
+    "protocol_sha256": "bb3000603b85571da8836bf07942b1a21f727dfd5072b3a77dcf936c9f05d0b2",
+    "baseline_admitted": false,
+    "reason": "frozen_home_route_budget_exhausted",
+    "search_skipped": false,
+    "wall_s": 11.514377000974491
+  },
+  "7": {
+    "schema": "anydex_boya_author_home_route_preparation_v1",
+    "status": "null_geometry",
+    "admitted": false,
+    "complete": true,
+    "physics_steps": 0,
+    "grasp_attempts": 0,
+    "training_updates": 0,
+    "ik_calls": 10,
+    "attempts": [
+      {
+        "route_index": 0,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 2.5118430551102334e-12,
+            "rotation_error_rad": 5.663105327055399e-11,
+            "nfev": 7,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.667067773072836,
+              0.559242228560787,
+              -0.4922080006684289,
+              -0.5825600751524942
+            ],
+            [
+              0.7401088251942488,
+              -0.5730182261619192,
+              0.35197874844347676,
+              0.11755584914578453
+            ],
+            [
+              -0.0852027757601614,
+              -0.5990811650190749,
+              -0.7961421008351157,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.25931249815039337
+      },
+      {
+        "route_index": 1,
+        "clearance_m": 0.15,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.667067773072836,
+              0.559242228560787,
+              -0.4922080006684289,
+              -0.5825600751524942
+            ],
+            [
+              0.7401088251942488,
+              -0.5730182261619192,
+              0.35197874844347676,
+              -0.03244415085421547
+            ],
+            [
+              -0.0852027757601614,
+              -0.5990811650190749,
+              -0.7961421008351157,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3191884581465274
+      },
+      {
+        "route_index": 2,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 6.244606499201485e-12,
+            "rotation_error_rad": 1.3194905728095304e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.667067773072836,
+              0.559242228560787,
+              -0.4922080006684289,
+              -0.5825600751524942
+            ],
+            [
+              0.7401088251942488,
+              -0.5730182261619192,
+              0.35197874844347676,
+              0.2675558491457845
+            ],
+            [
+              -0.0852027757601614,
+              -0.5990811650190749,
+              -0.7961421008351157,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.2649336189497262
+      },
+      {
+        "route_index": 3,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 7.906447369979111e-12,
+            "rotation_error_rad": 1.6124716530313502e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.667067773072836,
+              0.559242228560787,
+              -0.4922080006684289,
+              -0.5825600751524942
+            ],
+            [
+              0.7401088251942488,
+              -0.5730182261619192,
+              0.35197874844347676,
+              0.11755584914578453
+            ],
+            [
+              -0.0852027757601614,
+              -0.5990811650190749,
+              -0.7961421008351157,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.41527115809731185
+      },
+      {
+        "route_index": 4,
+        "clearance_m": 0.3,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.667067773072836,
+              0.559242228560787,
+              -0.4922080006684289,
+              -0.5825600751524942
+            ],
+            [
+              0.7401088251942488,
+              -0.5730182261619192,
+              0.35197874844347676,
+              -0.03244415085421547
+            ],
+            [
+              -0.0852027757601614,
+              -0.5990811650190749,
+              -0.7961421008351157,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.35267655504867435
+      },
+      {
+        "route_index": 5,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 1.4452370802510906e-11,
+            "rotation_error_rad": 2.9801441965933516e-10,
+            "nfev": 9,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.667067773072836,
+              0.559242228560787,
+              -0.4922080006684289,
+              -0.5825600751524942
+            ],
+            [
+              0.7401088251942488,
+              -0.5730182261619192,
+              0.35197874844347676,
+              0.2675558491457845
+            ],
+            [
+              -0.0852027757601614,
+              -0.5990811650190749,
+              -0.7961421008351157,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.2842703990172595
+      }
+    ],
+    "policy": {
+      "schema": "anydex_boya_author_home_route_policy_v1",
+      "dt_s": 0.004,
+      "clearances_m": [
+        0.15,
+        0.3
+      ],
+      "world_y_offsets_m": [
+        0.0,
+        -0.15,
+        0.15
+      ],
+      "route_order": "clearance outer, world_y_offset inner; first admitted",
+      "max_routes": 6,
+      "ik_waypoints_per_route": 2,
+      "max_ik_calls": 12,
+      "per_ik_max_nfev": 300,
+      "bounds_margin_rad": 1e-06,
+      "minimum_home_s": 3.0,
+      "acceleration_rad_s2": 3.0,
+      "jerk_rad_s3": 30.0,
+      "geometry_tolerance_m": 1e-07,
+      "preflight_fixed_segments_first": true,
+      "fixed_candidate": true,
+      "fixed_initial": true,
+      "fixed_pregrasp_joints": true,
+      "unchanged_non_home_commands": true,
+      "approach_distance_m": 0.04,
+      "scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+    },
+    "protocol_sha256": "4be0b20f357be0e59bdf6581b37ada593dd506d980cfcf83d12e5aba31474e4a",
+    "baseline_admitted": false,
+    "reason": "frozen_home_route_budget_exhausted",
+    "search_skipped": false,
+    "wall_s": 11.35436053108424
+  },
+  "8": {
+    "schema": "anydex_boya_author_home_route_preparation_v1",
+    "status": "null_geometry",
+    "admitted": false,
+    "complete": true,
+    "physics_steps": 0,
+    "grasp_attempts": 0,
+    "training_updates": 0,
+    "ik_calls": 10,
+    "attempts": [
+      {
+        "route_index": 0,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 2.5118430551102334e-12,
+            "rotation_error_rad": 5.663105327055399e-11,
+            "nfev": 7,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8335179217089776,
+              0.43424238959298456,
+              -0.34158662337761597,
+              -0.594136501494305
+            ],
+            [
+              0.5524547062922716,
+              -0.6622990947285661,
+              0.5061162975218659,
+              0.0949796916222802
+            ],
+            [
+              -0.006455360986533731,
+              -0.6105681421449178,
+              -0.7919374167901382,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3108630860224366
+      },
+      {
+        "route_index": 1,
+        "clearance_m": 0.15,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8335179217089776,
+              0.43424238959298456,
+              -0.34158662337761597,
+              -0.594136501494305
+            ],
+            [
+              0.5524547062922716,
+              -0.6622990947285661,
+              0.5061162975218659,
+              -0.05502030837771979
+            ],
+            [
+              -0.006455360986533731,
+              -0.6105681421449178,
+              -0.7919374167901382,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3144670429173857
+      },
+      {
+        "route_index": 2,
+        "clearance_m": 0.15,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 6.244606499201485e-12,
+            "rotation_error_rad": 1.3194905728095304e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8335179217089776,
+              0.43424238959298456,
+              -0.34158662337761597,
+              -0.594136501494305
+            ],
+            [
+              0.5524547062922716,
+              -0.6622990947285661,
+              0.5061162975218659,
+              0.2449796916222802
+            ],
+            [
+              -0.006455360986533731,
+              -0.6105681421449178,
+              -0.7919374167901382,
+              0.6199949754698262
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3003644780255854
+      },
+      {
+        "route_index": 3,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.0,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 7.906447369979111e-12,
+            "rotation_error_rad": 1.6124716530313502e-10,
+            "nfev": 8,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.17442477431049622
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8335179217089776,
+              0.43424238959298456,
+              -0.34158662337761597,
+              -0.594136501494305
+            ],
+            [
+              0.5524547062922716,
+              -0.6622990947285661,
+              0.5061162975218659,
+              0.0949796916222802
+            ],
+            [
+              -0.006455360986533731,
+              -0.6105681421449178,
+              -0.7919374167901382,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.34824731294065714
+      },
+      {
+        "route_index": 4,
+        "clearance_m": 0.3,
+        "world_y_offset_m": -0.15,
+        "ik_calls": 1,
+        "ik_audits": [],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.024424774310496222
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8335179217089776,
+              0.43424238959298456,
+              -0.34158662337761597,
+              -0.594136501494305
+            ],
+            [
+              0.5524547062922716,
+              -0.6622990947285661,
+              0.5061162975218659,
+              -0.05502030837771979
+            ],
+            [
+              -0.006455360986533731,
+              -0.6105681421449178,
+              -0.7919374167901382,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.3536347358021885
+      },
+      {
+        "route_index": 5,
+        "clearance_m": 0.3,
+        "world_y_offset_m": 0.15,
+        "ik_calls": 2,
+        "ik_audits": [
+          {
+            "max_hand_joint_delta_rad": 0.0,
+            "position_error_m": 1.4452370802510906e-11,
+            "rotation_error_rad": 2.9801441965933516e-10,
+            "nfev": 9,
+            "original_arm_hard_bounds_retained": true
+          }
+        ],
+        "admitted": false,
+        "cartesian_waypoints": [
+          [
+            [
+              0.0007962574874067301,
+              -0.013184925338607408,
+              -0.9999127580533358,
+              -0.4978113585672529
+            ],
+            [
+              0.9999996829318324,
+              -4.10025819803366e-10,
+              0.0007963267134376482,
+              0.3244247743104962
+            ],
+            [
+              -1.0499918251862382e-05,
+              -0.9999130750939378,
+              0.013184921157760834,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          [
+            [
+              0.8335179217089776,
+              0.43424238959298456,
+              -0.34158662337761597,
+              -0.594136501494305
+            ],
+            [
+              0.5524547062922716,
+              -0.6622990947285661,
+              0.5061162975218659,
+              0.2449796916222802
+            ],
+            [
+              -0.006455360986533731,
+              -0.6105681421449178,
+              -0.7919374167901382,
+              0.7699949754698261
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              1.0
+            ]
+          ]
+        ],
+        "error": "Six-arm IK did not converge to the source palm pose within its original budget; hand values preserved",
+        "wall_s": 0.5719838868826628
+      }
+    ],
+    "policy": {
+      "schema": "anydex_boya_author_home_route_policy_v1",
+      "dt_s": 0.004,
+      "clearances_m": [
+        0.15,
+        0.3
+      ],
+      "world_y_offsets_m": [
+        0.0,
+        -0.15,
+        0.15
+      ],
+      "route_order": "clearance outer, world_y_offset inner; first admitted",
+      "max_routes": 6,
+      "ik_waypoints_per_route": 2,
+      "max_ik_calls": 12,
+      "per_ik_max_nfev": 300,
+      "bounds_margin_rad": 1e-06,
+      "minimum_home_s": 3.0,
+      "acceleration_rad_s2": 3.0,
+      "jerk_rad_s3": 30.0,
+      "geometry_tolerance_m": 1e-07,
+      "preflight_fixed_segments_first": true,
+      "fixed_candidate": true,
+      "fixed_initial": true,
+      "fixed_pregrasp_joints": true,
+      "unchanged_non_home_commands": true,
+      "approach_distance_m": 0.04,
+      "scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+    },
+    "protocol_sha256": "9f40c94b6fd6ef428012f30e84c6519462113f22aafe0c6f769edc61b28f079d",
+    "baseline_admitted": false,
+    "reason": "frozen_home_route_budget_exhausted",
+    "search_skipped": false,
+    "wall_s": 11.643369070021436
+  }
+}

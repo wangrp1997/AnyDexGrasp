@@ -1,0 +1,42 @@
+{
+  "policy": {
+    "schema": "anydex_boya_author_home_route_policy_v1",
+    "dt_s": 0.004,
+    "clearances_m": [
+      0.15,
+      0.3
+    ],
+    "world_y_offsets_m": [
+      0.0,
+      -0.15,
+      0.15
+    ],
+    "route_order": "clearance outer, world_y_offset inner; first admitted",
+    "max_routes": 6,
+    "ik_waypoints_per_route": 2,
+    "max_ik_calls": 12,
+    "per_ik_max_nfev": 300,
+    "bounds_margin_rad": 1e-06,
+    "minimum_home_s": 3.0,
+    "acceleration_rad_s2": 3.0,
+    "jerk_rad_s3": 30.0,
+    "geometry_tolerance_m": 1e-07,
+    "preflight_fixed_segments_first": true,
+    "fixed_candidate": true,
+    "fixed_initial": true,
+    "fixed_pregrasp_joints": true,
+    "unchanged_non_home_commands": true,
+    "approach_distance_m": 0.04,
+    "scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+  },
+  "implementation_sha256": "d6acc99c7ca1b3baa3959d6c53d2572515adb2737c2564241d0d660ac56bae0c",
+  "types": [
+    1,
+    6,
+    7,
+    8
+  ],
+  "root_input": "boya_author_pipeline_fourtype_20261114_v2",
+  "physics_steps": 0,
+  "scene_sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd"
+}

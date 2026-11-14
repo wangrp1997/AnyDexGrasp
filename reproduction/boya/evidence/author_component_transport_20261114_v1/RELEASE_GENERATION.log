@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py", line 143, in <module>
+    main()
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py", line 136, in main
+    result = build_release_spec(args.scene, args.backend, args.output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py", line 105, in build_release_spec
+    home, fk = _home_fk(config)
+               ^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py", line 81, in _home_fk
+    home = model.full_state(dict(reference.arm_home, FAJ1=0., FAJ3=0.))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/CanonDex/canondex/planning/model.py", line 58, in full_state
+    raise ValueError(f"Invalid named state: missing={sorted(missing)}, extra={sorted(extra)}")
+ValueError: Invalid named state: missing=['FFJ2', 'FFJ3', 'FFJ4', 'LFJ2', 'LFJ3', 'LFJ4', 'MFJ2', 'MFJ3', 'MFJ4', 'RFJ2', 'RFJ3', 'RFJ4', 'THJ1', 'THJ2', 'THJ3', 'THJ4'], extra=[]

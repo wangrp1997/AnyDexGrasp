@@ -1,0 +1,43 @@
+{
+  "schema": "anydex_boya_author_joint_home_delivery_v1",
+  "complete": true,
+  "rrt_initial_results": "4null; g1/6/7 geometryclear jerkfailed;g8geometryandjerkfailed",
+  "retime_only_types": [
+    1,
+    6,
+    7
+  ],
+  "retime_ready_types": [
+    1,
+    6,
+    7
+  ],
+  "type8_new_preparation_count": 0,
+  "all_same_candidate_path_endpoints": true,
+  "new_search_runs": 4,
+  "retime_search_calls": 0,
+  "new_ik_calls": 0,
+  "physics_steps": 0,
+  "training_updates": 0,
+  "new_labels": 0,
+  "physical_task_validated": false,
+  "full_reproduction_accepted": false,
+  "source_sha256": {
+    "reproduction/boya/author_home_route.py": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+    "reproduction/boya/author_joint_home_route.py": "cc390e0363696c5c65c368672a385c885f5ccb4ba450bdb1323d7766b2a0fcc6",
+    "reproduction/boya/author_home_retime.py": "0beb0b8aa0640d6ced6c9ed3a7f3ad500fd6f335ccac17eaa8699986507bf884",
+    "reproduction/boya/test_author_home_route.py": "ebc4faeaaf1d416df761e486cb6229330208fcd947f9234ffc358efe2d0f584a",
+    "reproduction/boya/test_author_joint_home_route.py": "52fbb01110fc78e8b46145e254f339a5fae170646ee70e97d5ab856cfd1f8fca",
+    "reproduction/boya/test_author_home_retime.py": "ff87c38bc90c60234d92a7b78ebf563cc9ab73b67ec338608119b429657b2ee0"
+  },
+  "numerical_costs": {
+    "original_cartesian_six_route_ik_calls": 40,
+    "original_cartesian_preparation_wall_s": 46.60481985611841,
+    "rrt_search_wall_s": 2.689591859234497,
+    "rrt_preparation_sum_wall_s": 72.02395852725022,
+    "retime_preparation_sum_wall_s": 46.0448529869318,
+    "parallel_wall_s_not_sum": true
+  },
+  "independent_fk_commands": 7742,
+  "independent_fk_max_desired_matrix_error": 1.4291645644703976e-10
+}

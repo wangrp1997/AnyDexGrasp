@@ -1,0 +1,379 @@
+{
+  "schema": "anydex_boya_author_component_array_audit_v1",
+  "status": "passed",
+  "results": [
+    {
+      "gesture_id": 1,
+      "status": "null_geometry",
+      "original_candidate_exact": true,
+      "new_prefix_exact": true,
+      "command_steps": 5270,
+      "route_audit": {
+        "reference_commands_sha256": "1906d44d6b5874dfbc6e36aa0f668b9c9ddda04ea85faa85c77161d1b64e2493",
+        "proposed_commands_sha256": "42522e16682ef5973387dda82eabc4aedc5698c28429b81cff4b2b71ca51d1fd",
+        "unchanged_arrays": {
+          "settle_joint_target": true,
+          "settle_desired_palm": true,
+          "approach_joint_target": true,
+          "approach_desired_palm": true
+        },
+        "initial_position_exact": true,
+        "pregrasp_joint_and_palm_endpoint_exact": true,
+        "home_hand_16_motors_exact": true,
+        "home_non_arm_18_columns_exact": true,
+        "approach_steps": 500,
+        "native_columns": 24,
+        "old_home_steps": 750,
+        "new_home_steps": 2180,
+        "maximum_joint_limit_violation_rad": 0.0,
+        "maximum_command_velocity_limit_ratio": 0.1705867797008554,
+        "home_arm_derivatives": {
+          "velocity_limit_ratio": 0.17056231521561188,
+          "max_acceleration_rad_s2": 2.0071071911709204,
+          "max_jerk_rad_s3": 28.940665516841158
+        },
+        "full_prefix_arm_derivatives": {
+          "velocity_limit_ratio": 0.17056231521561188,
+          "max_acceleration_rad_s2": 2.0071071911709204,
+          "max_jerk_rad_s3": 28.940665516841158
+        },
+        "proposed_plan_admitted": true
+      },
+      "original_transport_IK_returns": 96,
+      "open_geometry_ok": true,
+      "post_geometry_ok": false,
+      "post_violation_counts": [
+        {
+          "phase": "release",
+          "kind": "object",
+          "count": 500
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "count": 1000
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "count": 1000
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "count": 2000
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "count": 626
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "count": 1185
+        }
+      ],
+      "release_endpoint_violations": [
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_1_link",
+          "distance_m": -0.014207003102508458
+        },
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_2_link",
+          "distance_m": -0.06900113873221239
+        },
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_3_link",
+          "distance_m": -0.05103269800188247
+        },
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "fabase",
+          "distance_m": -0.005833089218302659
+        },
+        {
+          "sample": 2539,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 24,
+          "distance_m": -0.010138686874672294
+        },
+        {
+          "sample": 2539,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 26,
+          "distance_m": -0.001318446426200264
+        }
+      ],
+      "fixed_release_desired_endpoint_exact": true,
+      "protocol_sha256": "de1273c15514f229629f9e3a317c4043a69e9aab7703bcfa9d65364cc7ed614b",
+      "transport_plan_sha256": "30fbc1dd38bb7c0f069ac65eaf746d537306aa921d644af51cf2e5bda90dae72"
+    },
+    {
+      "gesture_id": 6,
+      "status": "null_geometry",
+      "original_candidate_exact": true,
+      "new_prefix_exact": true,
+      "command_steps": 5266,
+      "route_audit": {
+        "reference_commands_sha256": "32975cc47fd200709489eacc0af737e84aeeebf32fc2eeb949aae18fce5378ac",
+        "proposed_commands_sha256": "94b97de881b114cc5a4e86144781b2f4558fd3fe70ccffdd27c2bd0fb8d08cd3",
+        "unchanged_arrays": {
+          "settle_joint_target": true,
+          "settle_desired_palm": true,
+          "approach_joint_target": true,
+          "approach_desired_palm": true
+        },
+        "initial_position_exact": true,
+        "pregrasp_joint_and_palm_endpoint_exact": true,
+        "home_hand_16_motors_exact": true,
+        "home_non_arm_18_columns_exact": true,
+        "approach_steps": 500,
+        "native_columns": 24,
+        "old_home_steps": 750,
+        "new_home_steps": 1887,
+        "maximum_joint_limit_violation_rad": 0.0,
+        "maximum_command_velocity_limit_ratio": 0.18082437218876815,
+        "home_arm_derivatives": {
+          "velocity_limit_ratio": 0.18080020696114596,
+          "max_acceleration_rad_s2": 2.017757167186579,
+          "max_jerk_rad_s3": 28.798519563846824
+        },
+        "full_prefix_arm_derivatives": {
+          "velocity_limit_ratio": 0.18080020696114596,
+          "max_acceleration_rad_s2": 2.017757167186579,
+          "max_jerk_rad_s3": 28.798519563846824
+        },
+        "proposed_plan_admitted": true
+      },
+      "original_transport_IK_returns": 96,
+      "open_geometry_ok": true,
+      "post_geometry_ok": false,
+      "post_violation_counts": [
+        {
+          "phase": "release",
+          "kind": "object",
+          "count": 500
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "count": 1000
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "count": 1000
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "count": 2000
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "count": 913
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "count": 1857
+        }
+      ],
+      "release_endpoint_violations": [
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_1_link",
+          "distance_m": -0.014207003104603813
+        },
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_2_link",
+          "distance_m": -0.06900113873447657
+        },
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_3_link",
+          "distance_m": -0.05103269800205902
+        },
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "fabase",
+          "distance_m": -0.005833089218426522
+        },
+        {
+          "sample": 2828,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 24,
+          "distance_m": -0.010138686874754829
+        },
+        {
+          "sample": 2828,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 26,
+          "distance_m": -0.0013184464262959287
+        }
+      ],
+      "fixed_release_desired_endpoint_exact": true,
+      "protocol_sha256": "b6e12c9bd1808179765bb81c72ae8e7d72d939f2ea8a55c388868a7e4b1eaa55",
+      "transport_plan_sha256": "d36da84aa6a4144aa633bc692f19fabe60e43d0d350276bb9d0998aa910d93d6"
+    },
+    {
+      "gesture_id": 7,
+      "status": "null_geometry",
+      "original_candidate_exact": true,
+      "new_prefix_exact": true,
+      "command_steps": 5259,
+      "route_audit": {
+        "reference_commands_sha256": "afb4e3d5de7c237bf9d73f2c13e48107a7c971242aa2e57b44418ddb2977edaa",
+        "proposed_commands_sha256": "387c9fd2fdc1f785a14f4b320ba5c4e2d580b448aa8a9eea08c28eb2d4198b3b",
+        "unchanged_arrays": {
+          "settle_joint_target": true,
+          "settle_desired_palm": true,
+          "approach_joint_target": true,
+          "approach_desired_palm": true
+        },
+        "initial_position_exact": true,
+        "pregrasp_joint_and_palm_endpoint_exact": true,
+        "home_hand_16_motors_exact": true,
+        "home_non_arm_18_columns_exact": true,
+        "approach_steps": 500,
+        "native_columns": 24,
+        "old_home_steps": 750,
+        "new_home_steps": 2025,
+        "maximum_joint_limit_violation_rad": 0.0,
+        "maximum_command_velocity_limit_ratio": 0.1744344016990976,
+        "home_arm_derivatives": {
+          "velocity_limit_ratio": 0.1744344016990976,
+          "max_acceleration_rad_s2": 2.027062516746919,
+          "max_jerk_rad_s3": 28.99058844374469
+        },
+        "full_prefix_arm_derivatives": {
+          "velocity_limit_ratio": 0.1744344016990976,
+          "max_acceleration_rad_s2": 2.027062516746919,
+          "max_jerk_rad_s3": 28.99058844374469
+        },
+        "proposed_plan_admitted": true
+      },
+      "original_transport_IK_returns": 96,
+      "open_geometry_ok": true,
+      "post_geometry_ok": false,
+      "post_violation_counts": [
+        {
+          "phase": "release",
+          "kind": "object",
+          "count": 500
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "count": 1000
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "count": 1000
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "count": 2000
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "count": 763
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "count": 1505
+        }
+      ],
+      "release_endpoint_violations": [
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_1_link",
+          "distance_m": -0.014207003103583018
+        },
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_2_link",
+          "distance_m": -0.06900113873337459
+        },
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_3_link",
+          "distance_m": -0.051032698001975525
+        },
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "fabase",
+          "distance_m": -0.0058330892183686076
+        },
+        {
+          "sample": 2683,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 24,
+          "distance_m": -0.01013868687471822
+        },
+        {
+          "sample": 2683,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 26,
+          "distance_m": -0.0013184464262535021
+        }
+      ],
+      "fixed_release_desired_endpoint_exact": true,
+      "protocol_sha256": "55fd6c8b62a55e9ee24f171cf3456804694a8fdcdf95f7ce57de3dfeae7ee563",
+      "transport_plan_sha256": "82331a076ac14aad12b9503b2e8852431f4c78820b354f2de6de5070167f9abd"
+    }
+  ],
+  "release_spec_audit": {
+    "release_spec_sha256": "43223161bf53e4fa40335960e1b51185320646c8ee38f03793f2bea4fed7522c",
+    "release_rotation_max_error": 0.0,
+    "fixed_translation_exact": true,
+    "candidate_and_object_pose_independent": true,
+    "source_sha256_verified": 11
+  },
+  "source_sha256": "f0cf6f72dc5a652c78e72793604bf700a95198c171a00bfb97a308f379af4f7e",
+  "scope": "Saved command arrays, exact candidate provenance, frozen dependencies and independent geometry receipt aggregation; no physics or replanning",
+  "physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "training_updates": 0,
+  "new_labels": 0
+}

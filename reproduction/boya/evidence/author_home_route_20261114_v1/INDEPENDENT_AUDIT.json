@@ -1,0 +1,113 @@
+{
+  "schema": "anydex_author_home_route_independent_audit_v1",
+  "complete": true,
+  "all_inputs_and_seed_sha_unchanged": true,
+  "source_commands_audited": 5200,
+  "independent_xml_numpy_fk_max_desired_matrix_error": 1.6108619993460138e-10,
+  "results": {
+    "1": {
+      "status": "null_geometry",
+      "ik_calls": 10,
+      "successful_ik_calls": 4,
+      "successful_ik_nfev": 32,
+      "failed_ik_calls": 6,
+      "baseline_violations": 808,
+      "baseline_queries": 32960,
+      "source_home_limits": {
+        "ok": true,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.255239115617551,
+        "acceleration_ratio": 0.2743355428831695,
+        "jerk_ratio": 0.09276468138202006,
+        "max_velocity_rad_s": 0.8018573305328541,
+        "max_acceleration_rad_s2": 0.8230066286495086,
+        "max_jerk_rad_s3": 2.782940441460602
+      },
+      "home_endpoint_independent_fk_matrix_error": 1.1102230246251565e-16,
+      "wall_s": 12.092713254038244,
+      "protocol_sha256": "713562dfd63d3f97465eeda72b83ffcca329406544d3405e38ec4c566c9c3158",
+      "receipt_sha256": "96c222f3cc0ff8f0d717640738355fdddf8d38150b70a240fc9e7de4261b1f84"
+    },
+    "6": {
+      "status": "null_geometry",
+      "ik_calls": 10,
+      "successful_ik_calls": 4,
+      "successful_ik_nfev": 32,
+      "failed_ik_calls": 6,
+      "baseline_violations": 763,
+      "baseline_queries": 31397,
+      "source_home_limits": {
+        "ok": true,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.20357029920380926,
+        "acceleration_ratio": 0.21348589665515227,
+        "jerk_ratio": 0.07218879094032331,
+        "max_velocity_rad_s": 0.623999462114222,
+        "max_acceleration_rad_s2": 0.6404576899654568,
+        "max_jerk_rad_s3": 2.165663728209699
+      },
+      "home_endpoint_independent_fk_matrix_error": 1.1102230246251565e-16,
+      "wall_s": 11.514377000974491,
+      "protocol_sha256": "bb3000603b85571da8836bf07942b1a21f727dfd5072b3a77dcf936c9f05d0b2",
+      "receipt_sha256": "b5b1bd522123047dc2c768bcc93dfa9e74ca053e5933554737b9d6b1ef5033f5"
+    },
+    "7": {
+      "status": "null_geometry",
+      "ik_calls": 10,
+      "successful_ik_calls": 4,
+      "successful_ik_nfev": 32,
+      "failed_ik_calls": 6,
+      "baseline_violations": 795,
+      "baseline_queries": 33033,
+      "source_home_limits": {
+        "ok": true,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.22116800857160357,
+        "acceleration_ratio": 0.23452592555021448,
+        "jerk_ratio": 0.0793033325928912,
+        "max_velocity_rad_s": 0.6854975138272934,
+        "max_acceleration_rad_s2": 0.7035777766506435,
+        "max_jerk_rad_s3": 2.379099977786736
+      },
+      "home_endpoint_independent_fk_matrix_error": 2.220446049250313e-16,
+      "wall_s": 11.35436053108424,
+      "protocol_sha256": "4be0b20f357be0e59bdf6581b37ada593dd506d980cfcf83d12e5aba31474e4a",
+      "receipt_sha256": "ee44faf70400cf95a497f1f1b3f0fab36fbf3aff6985a95ac72a8652fc7efa97"
+    },
+    "8": {
+      "status": "null_geometry",
+      "ik_calls": 10,
+      "successful_ik_calls": 4,
+      "successful_ik_nfev": 32,
+      "failed_ik_calls": 6,
+      "baseline_violations": 694,
+      "baseline_queries": 24988,
+      "source_home_limits": {
+        "ok": true,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.29599615993314027,
+        "acceleration_ratio": 0.31814193929627366,
+        "jerk_ratio": 0.10757751370849926,
+        "max_velocity_rad_s": 0.9298993615367429,
+        "max_acceleration_rad_s2": 0.954425817888821,
+        "max_jerk_rad_s3": 3.2273254112549776
+      },
+      "home_endpoint_independent_fk_matrix_error": 1.1102230246251565e-16,
+      "wall_s": 11.643369070021436,
+      "protocol_sha256": "9f40c94b6fd6ef428012f30e84c6519462113f22aafe0c6f769edc61b28f079d",
+      "receipt_sha256": "644d91c5e852232c124d366b7b2c5851f772850bde23cfd9f9b8c9917be8e35d"
+    }
+  },
+  "total_search_wall_s": 46.60481985611841,
+  "total_ik_calls": 40,
+  "successful_ik_nfev": 128,
+  "failed_ik_nfev_available": false,
+  "failed_ik_nfev_per_call_upper_bound": 300,
+  "new_command_arrays": 0,
+  "physics_steps": 0,
+  "training_updates": 0,
+  "new_labels": 0,
+  "postrun_endpoint_contract_only_diff": "--- frozen_v1\n+++ final_endpoint_contract\n@@ -49,7 +49,7 @@\n     if list(dict.fromkeys(map(str, old['phase']))) != ['settle', 'home_to_pregrasp', 'approach']:\n         raise ValueError('Original open-hand three-phase prefix required')\n     home = phase_slice(old['phase'], 'home_to_pregrasp')\n-    q, p = np.asarray(commands), np.asarray(palms)\n+    q, p = np.asarray(commands), np.array(palms, copy=True)\n     if (q.ndim != 2 or q.shape[1] != 24 or not len(q)\n             or p.shape != (len(q), 4, 4) or not np.isfinite(q).all()\n             or not np.isfinite(p).all() or old['joint_target'].shape[1] != 24):\n@@ -63,6 +63,9 @@\n     expected = old['initial_position'][hand]\n     if not np.array_equal(q[:, hand], np.broadcast_to(expected, (len(q), len(hand)))):\n         raise ValueError('Frozen wrist/open-hand command changed during HOME')\n+    # Preserve the exact old desired endpoint, including its original IK\n+    # residual convention; the following approach remains byte-identical.\n+    p[-1] = old['desired_palm'][home.stop-1]\n     result = dict(initial_position=old['initial_position'].copy(), joint_names=old['joint_names'].copy())\n     result['joint_target'] = np.concatenate([old['joint_target'][:home.start], q, old['joint_target'][home.stop:]])\n     result['desired_palm'] = np.concatenate([old['desired_palm'][:home.start], p, old['desired_palm'][home.stop:]])\n",
+  "final_source_sha256": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+  "audit_source_sha256": "07d966adb22d58bee27ed9de3c29ccf9d39484f453dee055954932221968cc39"
+}

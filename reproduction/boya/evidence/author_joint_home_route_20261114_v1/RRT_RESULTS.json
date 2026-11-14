@@ -1,0 +1,636 @@
+{
+  "results": {
+    "1": {
+      "schema": "anydex_boya_author_joint_home_preparation_v1",
+      "status": "null_geometry",
+      "admitted": false,
+      "complete": true,
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "physics_steps": 0,
+      "ik_calls": 0,
+      "grasp_attempts": 0,
+      "labels": 0,
+      "training_updates": 0,
+      "policy": {
+        "schema": "anydex_boya_author_joint_home_policy_v1",
+        "algorithm": "RRT-Connect",
+        "random_seed": 20261114,
+        "step_l2_rad": 0.25,
+        "edge_max_per_joint_rad": 0.05,
+        "goal_bias": 0.2,
+        "max_iterations": 1200,
+        "max_connect_extends": 32,
+        "tree_order": "start then goal, alternate each iteration",
+        "nearest": "Euclidean unwrapped six-arm radians",
+        "sample": "uniform original six-arm hard bounds; goal bias targets opposite tree root",
+        "solution": "first connection, no shortcuts, no smoothing search or second solution retry",
+        "timing": "Each edge is a separate original two-knot quintic timed_segment, concatenate without duplicate start; original limits and final whole-HOME derivative audit",
+        "minimum_total_home_s": 3.0,
+        "dt_s": 0.004,
+        "acceleration_rad_s2": 3.0,
+        "jerk_rad_s3": 30.0,
+        "geometry_tolerance_m": 1e-07,
+        "original_approach_distance_m": 0.04,
+        "fixed_initial": true,
+        "fixed_pregrasp_joint_endpoint": true,
+        "fixed_non_arm_coordinates": true,
+        "original_approach_rows_exact": true,
+        "ik_calls": 0,
+        "physics_steps": 0,
+        "geometry_scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+      },
+      "protocol_sha256": "ed7c289bb3634600862935627eb9892a898129277d66b5ac6a8b18629095a6fa",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 50,
+        "connect_extend_calls": 22,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          23,
+          2
+        ],
+        "connected": true,
+        "waypoints": 14
+      },
+      "oracle": {
+        "audit_calls": 49,
+        "unique_checked_states": 192,
+        "signed_distance_queries": 6040,
+        "exact_cache_hits": 5,
+        "minimum_floor_m": -0.022228246677118285,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0002148610779579424
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0032600579384806407
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.006480297021279124
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00986449760363634
+          }
+        ]
+      },
+      "search_wall_s": 0.6765876240096986,
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.17691642724069168,
+        "acceleration_ratio": 0.7161588087255718,
+        "jerk_ratio": 1.0708905647666134,
+        "max_velocity_rad_s": 0.4830077755239859,
+        "max_acceleration_rad_s2": 2.1484764261767153,
+        "max_jerk_rad_s3": 32.1267169429984
+      },
+      "wall_s": 18.29660252807662,
+      "final_geometry": {
+        "ok": true,
+        "samples": 2654,
+        "signed_distance_queries": 74336,
+        "violations": []
+      }
+    },
+    "6": {
+      "schema": "anydex_boya_author_joint_home_preparation_v1",
+      "status": "null_geometry",
+      "admitted": false,
+      "complete": true,
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "physics_steps": 0,
+      "ik_calls": 0,
+      "grasp_attempts": 0,
+      "labels": 0,
+      "training_updates": 0,
+      "policy": {
+        "schema": "anydex_boya_author_joint_home_policy_v1",
+        "algorithm": "RRT-Connect",
+        "random_seed": 20261114,
+        "step_l2_rad": 0.25,
+        "edge_max_per_joint_rad": 0.05,
+        "goal_bias": 0.2,
+        "max_iterations": 1200,
+        "max_connect_extends": 32,
+        "tree_order": "start then goal, alternate each iteration",
+        "nearest": "Euclidean unwrapped six-arm radians",
+        "sample": "uniform original six-arm hard bounds; goal bias targets opposite tree root",
+        "solution": "first connection, no shortcuts, no smoothing search or second solution retry",
+        "timing": "Each edge is a separate original two-knot quintic timed_segment, concatenate without duplicate start; original limits and final whole-HOME derivative audit",
+        "minimum_total_home_s": 3.0,
+        "dt_s": 0.004,
+        "acceleration_rad_s2": 3.0,
+        "jerk_rad_s3": 30.0,
+        "geometry_tolerance_m": 1e-07,
+        "original_approach_distance_m": 0.04,
+        "fixed_initial": true,
+        "fixed_pregrasp_joint_endpoint": true,
+        "fixed_non_arm_coordinates": true,
+        "original_approach_rows_exact": true,
+        "ik_calls": 0,
+        "physics_steps": 0,
+        "geometry_scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+      },
+      "protocol_sha256": "d7210bfbfcdd9e9c8286c3fc4b019a6985152d0a476061ebf095689c5ee04791",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 48,
+        "connect_extend_calls": 20,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          21,
+          2
+        ],
+        "connected": true,
+        "waypoints": 12
+      },
+      "oracle": {
+        "audit_calls": 48,
+        "unique_checked_states": 188,
+        "signed_distance_queries": 5939,
+        "exact_cache_hits": 1,
+        "minimum_floor_m": -0.02722739187113992,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0027533294064898614
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.007938504760013395
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 0,
+            "distance_m": -4.296912136469652e-05
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.012976976831492397
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffmiddle",
+            "other": 0,
+            "distance_m": -0.0009596794237747858
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 0,
+            "distance_m": -0.010051861456984815
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.015368376081508036
+          }
+        ]
+      },
+      "search_wall_s": 0.6472573021892458,
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.18729388664155347,
+        "acceleration_ratio": 0.7197315667952878,
+        "jerk_ratio": 1.0634113464224233,
+        "max_velocity_rad_s": 0.48821335493540174,
+        "max_acceleration_rad_s2": 2.1591947003858634,
+        "max_jerk_rad_s3": 31.902340392672702
+      },
+      "wall_s": 17.08819147804752,
+      "final_geometry": {
+        "ok": true,
+        "samples": 2372,
+        "signed_distance_queries": 65249,
+        "violations": []
+      }
+    },
+    "7": {
+      "schema": "anydex_boya_author_joint_home_preparation_v1",
+      "status": "null_geometry",
+      "admitted": false,
+      "complete": true,
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "physics_steps": 0,
+      "ik_calls": 0,
+      "grasp_attempts": 0,
+      "labels": 0,
+      "training_updates": 0,
+      "policy": {
+        "schema": "anydex_boya_author_joint_home_policy_v1",
+        "algorithm": "RRT-Connect",
+        "random_seed": 20261114,
+        "step_l2_rad": 0.25,
+        "edge_max_per_joint_rad": 0.05,
+        "goal_bias": 0.2,
+        "max_iterations": 1200,
+        "max_connect_extends": 32,
+        "tree_order": "start then goal, alternate each iteration",
+        "nearest": "Euclidean unwrapped six-arm radians",
+        "sample": "uniform original six-arm hard bounds; goal bias targets opposite tree root",
+        "solution": "first connection, no shortcuts, no smoothing search or second solution retry",
+        "timing": "Each edge is a separate original two-knot quintic timed_segment, concatenate without duplicate start; original limits and final whole-HOME derivative audit",
+        "minimum_total_home_s": 3.0,
+        "dt_s": 0.004,
+        "acceleration_rad_s2": 3.0,
+        "jerk_rad_s3": 30.0,
+        "geometry_tolerance_m": 1e-07,
+        "original_approach_distance_m": 0.04,
+        "fixed_initial": true,
+        "fixed_pregrasp_joint_endpoint": true,
+        "fixed_non_arm_coordinates": true,
+        "original_approach_rows_exact": true,
+        "ik_calls": 0,
+        "physics_steps": 0,
+        "geometry_scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+      },
+      "protocol_sha256": "8f10855793c0e177d68f197b6502e6b5da89f8e88ac9bbb78d28916b0ccfec0d",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 49,
+        "connect_extend_calls": 21,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          22,
+          2
+        ],
+        "connected": true,
+        "waypoints": 13
+      },
+      "oracle": {
+        "audit_calls": 49,
+        "unique_checked_states": 190,
+        "signed_distance_queries": 6039,
+        "exact_cache_hits": 2,
+        "minimum_floor_m": -0.0251956985286139,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0015637838120024748
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.005932905295317245
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.010340064656354887
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 0,
+            "distance_m": -0.0015017514083159804
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.014709458759542498
+          }
+        ]
+      },
+      "search_wall_s": 0.6809088659938425,
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.18073806059308423,
+        "acceleration_ratio": 0.7232790971943569,
+        "jerk_ratio": 1.0692664541983588,
+        "max_velocity_rad_s": 0.48780999907202527,
+        "max_acceleration_rad_s2": 2.169837291583071,
+        "max_jerk_rad_s3": 32.07799362595076
+      },
+      "wall_s": 17.759549382142723,
+      "final_geometry": {
+        "ok": true,
+        "samples": 2505,
+        "signed_distance_queries": 69993,
+        "violations": []
+      }
+    },
+    "8": {
+      "schema": "anydex_boya_author_joint_home_preparation_v1",
+      "status": "null_geometry",
+      "admitted": false,
+      "complete": true,
+      "reason": "first_rrt_connection_failed_final_tick_or_derivative_gate",
+      "physics_steps": 0,
+      "ik_calls": 0,
+      "grasp_attempts": 0,
+      "labels": 0,
+      "training_updates": 0,
+      "policy": {
+        "schema": "anydex_boya_author_joint_home_policy_v1",
+        "algorithm": "RRT-Connect",
+        "random_seed": 20261114,
+        "step_l2_rad": 0.25,
+        "edge_max_per_joint_rad": 0.05,
+        "goal_bias": 0.2,
+        "max_iterations": 1200,
+        "max_connect_extends": 32,
+        "tree_order": "start then goal, alternate each iteration",
+        "nearest": "Euclidean unwrapped six-arm radians",
+        "sample": "uniform original six-arm hard bounds; goal bias targets opposite tree root",
+        "solution": "first connection, no shortcuts, no smoothing search or second solution retry",
+        "timing": "Each edge is a separate original two-knot quintic timed_segment, concatenate without duplicate start; original limits and final whole-HOME derivative audit",
+        "minimum_total_home_s": 3.0,
+        "dt_s": 0.004,
+        "acceleration_rad_s2": 3.0,
+        "jerk_rad_s3": 30.0,
+        "geometry_tolerance_m": 1e-07,
+        "original_approach_distance_m": 0.04,
+        "fixed_initial": true,
+        "fixed_pregrasp_joint_endpoint": true,
+        "fixed_non_arm_coordinates": true,
+        "original_approach_rows_exact": true,
+        "ik_calls": 0,
+        "physics_steps": 0,
+        "geometry_scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+      },
+      "protocol_sha256": "08ad3cecfa3a40d56a6a922d120918eb2b023c6323332d9477d56e3d25eb4455",
+      "search": {
+        "iterations_executed": 28,
+        "extend_calls": 51,
+        "connect_extend_calls": 23,
+        "collision_rejected_edges": 27,
+        "tree_nodes": [
+          24,
+          2
+        ],
+        "connected": true,
+        "waypoints": 15
+      },
+      "oracle": {
+        "audit_calls": 50,
+        "unique_checked_states": 196,
+        "signed_distance_queries": 4498,
+        "exact_cache_hits": 5,
+        "minimum_floor_m": -0.020141369289577958,
+        "first_rejected_edge_violations": [
+          {
+            "sample": 0,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0006162511807276637
+          },
+          {
+            "sample": 1,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.002678499042605219
+          },
+          {
+            "sample": 2,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.005056788643718488
+          },
+          {
+            "sample": 3,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.007715468651720115
+          }
+        ]
+      },
+      "search_wall_s": 0.68483806704171,
+      "derivative_audit": {
+        "ok": false,
+        "joint_limit_excess_rad": 0.0,
+        "velocity_ratio": 0.17691642724069168,
+        "acceleration_ratio": 0.7214218995891623,
+        "jerk_ratio": 1.0759551051624703,
+        "max_velocity_rad_s": 0.4837614586169353,
+        "max_acceleration_rad_s2": 2.164265698767487,
+        "max_jerk_rad_s3": 32.27865315487411
+      },
+      "wall_s": 18.879615138983354,
+      "final_geometry": {
+        "ok": false,
+        "samples": 2823,
+        "signed_distance_queries": 59096,
+        "violations": [
+          {
+            "sample": 2278,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -5.0176077490509535e-05,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2279,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00017293579053448416,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2280,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00025423485898769943,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2281,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0003086009559681805,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2282,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0003567408356992402,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2283,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0003937527612531619,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2284,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0004152244583021693,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2285,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.0004065284637746625,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2286,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00038591160141170436,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2287,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00035580999635503527,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2288,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00032636329822010104,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2289,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00028524861074612825,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2290,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00021295947174129054,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2291,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -0.00012622402695550844,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          },
+          {
+            "sample": 2292,
+            "kind": "object",
+            "link": "ffdistal",
+            "other": 1,
+            "distance_m": -3.6796428421463634e-05,
+            "obstacle_owner": {
+              "object_id": "graspnet_000",
+              "source_part": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "total_preparation_wall_s": 72.02395852725022,
+  "search_runs": 4,
+  "retries": 0,
+  "physics_steps": 0,
+  "ik_calls": 0,
+  "all_initial_null_preserved": true
+}

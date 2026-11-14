@@ -1,0 +1,112 @@
+{
+  "schema": "anydex_boya_fixed_release_complete_fk_v2",
+  "complete": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py": "fb99c4cfb7261ab30115fb705314145c4787ed9650ce16ef14c9af4e1c98cb77",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "c54ea3443e169fe451472464772149cd65475f6bf6a4cf66298ae3605772faa7",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_transport.py": "810f575f899bc542cb70e6630c6787a1d3c12236f01eae4fd1fde5b2705dd275",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_FIXED_RELEASE_FK_20261114.md": "84278b8ccbcee105b1c95e75d454de431acc5ce17ab7e61956e07dc95114a69d"
+  },
+  "prior_failure_preserved_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/RELEASE_TOOL_FREEZE.json": "4bdff10948e9ff9b06283378c6c53cfb3edccdb867c0c982806bc5fc41841bb8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/RELEASE_GENERATION.log": "273c77c812dbac8ec5cae1e973282c6f05d996f6a6f8803795b06fd4f71f3a28",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/RELEASE_GENERATION_FAILURE.json": "a0bfce3818ff1f0ca6631d7cef4e7637412156b03a8f0028d25e8d30ccfb6687",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/FROZEN_author_release.py": "9d26377b8238fd6d76dc865dfaef006609120630fb82314e8e573588d46252ec"
+  },
+  "prior_failure": {
+    "schema": "anydex_boya_release_generation_failure_v1",
+    "status": "infrastructure_failure",
+    "attempt": 1,
+    "returncode": 1,
+    "tool_freeze_sha256": "4bdff10948e9ff9b06283378c6c53cfb3edccdb867c0c982806bc5fc41841bb8",
+    "log": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/RELEASE_GENERATION.log",
+    "log_sha256": "273c77c812dbac8ec5cae1e973282c6f05d996f6a6f8803795b06fd4f71f3a28",
+    "error": "PlanningModel.full_state missing 16 Boya hand independent motors",
+    "output_sidecar_exists": false,
+    "physics_steps": 0,
+    "candidate_reads": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0
+  },
+  "independent_xml_audit": {
+    "complete": true,
+    "build_wall_s": 0.39169028494507074,
+    "sidecar_sha256": "43223161bf53e4fa40335960e1b51185320646c8ee38f03793f2bea4fed7522c",
+    "scene_sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd",
+    "independent_xml_fk_max_matrix_error": 0.0,
+    "changed_finger_xml_fk_max_error": 0.0,
+    "independent_coordinates": 24,
+    "expanded_coordinates": 28,
+    "palm_chain_joints": [
+      "base_link-base_link_inertia",
+      "shoulder_pan_joint",
+      "shoulder_lift_joint",
+      "elbow_joint",
+      "wrist_1_joint",
+      "wrist_2_joint",
+      "wrist_3_joint",
+      "arm_to_boya",
+      "FAJ1",
+      "FAJ3",
+      "PALM"
+    ],
+    "fixed_release_se3": [
+      [
+        0.0007962574874067301,
+        -0.013184925338607408,
+        -0.9999127580533358,
+        -0.4
+      ],
+      [
+        0.9999996829318324,
+        -4.10025819803366e-10,
+        0.0007963267134376482,
+        -0.25
+      ],
+      [
+        -1.0499918251862382e-05,
+        -0.9999130750939378,
+        0.013184921157760834,
+        0.35
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "physics_steps": 0,
+    "Kit_launches": 0,
+    "native_plans": 0,
+    "training_updates": 0,
+    "CGR_forwards": 0,
+    "labels": 0
+  },
+  "tests": {
+    "passed": true,
+    "tests": 14,
+    "strict_missing_coordinate_regression": true
+  },
+  "changes": {
+    "full_24_active_initialization": true,
+    "expanded_four_mimics": true,
+    "finger_zero_execution_command": false,
+    "transport_source_changed": false,
+    "fixed_xyz_or_rotation_rule_changed": false
+  },
+  "costs": {
+    "real_sidecar_generation": 1,
+    "native_plans": 0,
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0,
+    "labels": 0
+  },
+  "artifacts": {
+    "reproduction/boya/evidence/author_fixed_release_fk_20261114_v2/DRY_RELEASE_AUDIT.json": "5468bebdf7fd68eef2f1ebbd305d1280e50444b3b6b49b085fd8cb0cc3bad38d",
+    "reproduction/boya/evidence/author_fixed_release_fk_20261114_v2/SOURCE_FREEZE.json": "7cfeb7043dabde1f507b5497ab72c15c1ae00b699e028a3d4fafc8a9a838e40a",
+    "reproduction/boya/evidence/author_fixed_release_fk_20261114_v2/TESTS.log": "a2df44528f04b8a814b8b2a74ecbd1811264aa06a3c6776e682e9b556eb321a6"
+  }
+}

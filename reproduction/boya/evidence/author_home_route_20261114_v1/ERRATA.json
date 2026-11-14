@@ -1,0 +1,6 @@
+{
+  "prelaunch_test_fixture": "Initial changed phase fixture merely shortened a valid contiguous HOME, so its rejection expectation was wrong; corrected fixture to a noncontiguous phase before actual search. No search/source policy changed.",
+  "independent_audit_v1": "Initial audit used generic pi velocity caps; actual planning always used original URDF model limits. Corrected independent audit reads exact per-joint XML lower/upper/velocity; both audit versions preserved, no planning rerun.",
+  "postsearch_source": "Only exact old desired pregrasp endpoint retention and input-array copy guard were added after all-null frozen search; actual v1 source snapshots stay bound to d6acc99c7ca1b3baa3959d6c53d2572515adb2737c2564241d0d660ac56bae0c. No routes re-run. Final source7tests passed.",
+  "failed_ik_cost": "40 actual IK calls,16 successful with128 reported nfev,24 failed with original backend exception only. Failed per-call actual nfev unavailable; each max300, do not report zero or a fabricated exact sum."
+}

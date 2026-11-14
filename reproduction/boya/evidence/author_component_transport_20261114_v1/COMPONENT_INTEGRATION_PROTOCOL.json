@@ -1,0 +1,288 @@
+{
+  "schema": "anydex_boya_author_component_queue_v1",
+  "candidate_order": [
+    1,
+    6,
+    7
+  ],
+  "prior_g8_null_preserved": true,
+  "sources": {
+    "author_pipeline.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline.py",
+      "sha256": "2376c747bd2770e724e3bf4314af688a9a046245d386305c7b71b5373f77d2b0",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_pipeline.py"
+    },
+    "test_author_pipeline_entry.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline_entry.py",
+      "sha256": "353b9946f8e4e247303dc0963c580ec94ab4eb0714a1d2deef402e5299a98b17",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_test_author_pipeline_entry.py"
+    },
+    "author_transport.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py",
+      "sha256": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_transport.py"
+    },
+    "author_home_route.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_route.py",
+      "sha256": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_home_route.py"
+    },
+    "author_joint_home_route.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_route.py",
+      "sha256": "cc390e0363696c5c65c368672a385c885f5ccb4ba450bdb1323d7766b2a0fcc6",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_joint_home_route.py"
+    },
+    "author_home_retime.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_retime.py",
+      "sha256": "0beb0b8aa0640d6ced6c9ed3a7f3ad500fd6f335ccac17eaa8699986507bf884",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_home_retime.py"
+    },
+    "author_release.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py",
+      "sha256": "fb99c4cfb7261ab30115fb705314145c4787ed9650ce16ef14c9af4e1c98cb77",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_release.py"
+    },
+    "author_collect.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collect.py",
+      "sha256": "9d93f72307b80ef9ea4202dd8eb95ccbfc99b400dac11ce79e599c3318ed4d41",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_collect.py"
+    },
+    "author_action_semantics.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_action_semantics.py",
+      "sha256": "667c0e8e49428f30f200052eddf9ddcf6bd52b71edcbc32a957710bf6b8858a4",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_action_semantics.py"
+    },
+    "author_collection_bridge.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_bridge.py",
+      "sha256": "ea828ba4c4c15377cb830c68ea3037273ff0c32efe7f4fffa8f3f45eab72439f",
+      "archive": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/LAUNCH_author_collection_bridge.py"
+    },
+    "run_integrations.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/run_integrations.py",
+      "sha256": "3725f6e70a69411f10b68e966f0a8d9bd2f19d487ebb5ab9b7d75a2c59d65581"
+    },
+    "run_one_integration.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/run_one_integration.py",
+      "sha256": "95e475d62549070c1f0075154981079f83bf9fbd48d756d2daa304cfbf3cd0e9"
+    }
+  },
+  "inputs": {
+    "fixed_release": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/FIXED_RELEASE.json",
+      "sha256": "43223161bf53e4fa40335960e1b51185320646c8ee38f03793f2bea4fed7522c"
+    },
+    "scene_archive_sources": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/SCENE_ARCHIVE_SOURCES.json",
+      "sha256": "505b1fd35b1ef3354c4a61f1019f2032cb2a7d12cd1a2e61332baaf19763a1f9"
+    },
+    "observed_scene": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observed_scene.json",
+      "sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd"
+    },
+    "old_queue_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/QUEUE_PROTOCOL.json",
+      "sha256": "4f451bf371bd24f5a93e0a9eebe41fdd246d21bd9cb33e1da507e4253bff70c3"
+    },
+    "tests": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/PIPELINE_TESTS_V3.log",
+      "sha256": "664ad72e54bce8f4ff7dcc549340e78d82e90b89883f7c694857b821694e9595"
+    },
+    "g1_old_results": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/PIPELINE_RESULTS.json",
+      "sha256": "7df5b1fc3a9a7ada76a0182ed9d553555e1da26f819484bae608c888a046ada7"
+    },
+    "g1_old_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/PIPELINE_PROTOCOL.json",
+      "sha256": "70fa075074d5a94f2073e64a01e36e51e35fbf5672daa8ccc97bfe2442ccdde8"
+    },
+    "g1_old_backend": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/BACKEND.json",
+      "sha256": "c886b1eac7366a6ea162edf69ca6bde0245840b7ac984750d36a311afae89be7"
+    },
+    "g1_old_candidate": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/pool/selected_author_candidate.json",
+      "sha256": "f3bc4e25079ae2ff9fd1941029a63ed1e59fff7a6a8a112239c1e12eefb230fd"
+    },
+    "g1_old_seed": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/arm/native/plan.json",
+      "sha256": "5969ff00f7340788dd11cce5c5b90b77f40c086cc495955042976690ff2963b3"
+    },
+    "g1_old_commands": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1/arm/native/commands.npz",
+      "sha256": "1906d44d6b5874dfbc6e36aa0f668b9c9ddda04ea85faa85c77161d1b64e2493"
+    },
+    "g1_route_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g1/HOME_ROUTE_PREPARATION.json",
+      "sha256": "c42c6477e9834e77b870468670fb28736cb554709cba534696eca781401630d4"
+    },
+    "g1_route_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g1/HOME_ROUTE_PROTOCOL.json",
+      "sha256": "c9bd3912c63b03f08e3287850d6ea316876b72df21c186f3400883816ff88878"
+    },
+    "g1_route_plan": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g1/native/plan.json",
+      "sha256": "c99ba9e9092a163b93b3056482f15c9e52d3985661d6a182d0251e2c62d7af60"
+    },
+    "g1_route_commands": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g1/native/commands.npz",
+      "sha256": "42522e16682ef5973387dda82eabc4aedc5698c28429b81cff4b2b71ca51d1fd"
+    },
+    "g1_route_geometry": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g1/native/path_geometry.json",
+      "sha256": "06c6a04700a9c8a560f498483f3e75ca2eb207d33346d634632f3a3aed0770ea"
+    },
+    "g6_old_results": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/PIPELINE_RESULTS.json",
+      "sha256": "5065907567f0413f04026d472b5222f6ea30f604417a700aedcc44f02206306e"
+    },
+    "g6_old_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/PIPELINE_PROTOCOL.json",
+      "sha256": "3c776dc583b6d49820d4573271093b662e733657fe82b13007b1f8022433351c"
+    },
+    "g6_old_backend": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/BACKEND.json",
+      "sha256": "c886b1eac7366a6ea162edf69ca6bde0245840b7ac984750d36a311afae89be7"
+    },
+    "g6_old_candidate": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/pool/selected_author_candidate.json",
+      "sha256": "350be58d28e5462814accad4981fc4e7ad5db5d5f1139feaab792841ea5e30c1"
+    },
+    "g6_old_seed": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/arm/native/plan.json",
+      "sha256": "58a3acff44e9be255068c8a9ec4619e5ded9f170c3b0c8046e4ec55c11bd6270"
+    },
+    "g6_old_commands": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6/arm/native/commands.npz",
+      "sha256": "32975cc47fd200709489eacc0af737e84aeeebf32fc2eeb949aae18fce5378ac"
+    },
+    "g6_route_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g6/HOME_ROUTE_PREPARATION.json",
+      "sha256": "6920152b230db8f7c86cf75ec9892294e11d34e0143b85f475a8e572dfae339f"
+    },
+    "g6_route_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g6/HOME_ROUTE_PROTOCOL.json",
+      "sha256": "b823f70a3f5578840befe7dfd75f682c476cb1d763972d950b7daff00731b5fd"
+    },
+    "g6_route_plan": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g6/native/plan.json",
+      "sha256": "c479486bc4e90b5150e038bb237eb611cfe328b96d7730f746de16462609ada0"
+    },
+    "g6_route_commands": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g6/native/commands.npz",
+      "sha256": "94b97de881b114cc5a4e86144781b2f4558fd3fe70ccffdd27c2bd0fb8d08cd3"
+    },
+    "g6_route_geometry": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g6/native/path_geometry.json",
+      "sha256": "e8639b0e57074197182213b973d2fbb4b8998890ab406774bbd6df763323ae00"
+    },
+    "g7_old_results": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/PIPELINE_RESULTS.json",
+      "sha256": "184fe56e04126c33aa06447a96a47c153a16e5e637e487d76a7fc606d70c955f"
+    },
+    "g7_old_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/PIPELINE_PROTOCOL.json",
+      "sha256": "01832ead52fa92509428e5e9d7aea37da23fc3ef267de33453ff8556a7948382"
+    },
+    "g7_old_backend": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/BACKEND.json",
+      "sha256": "c886b1eac7366a6ea162edf69ca6bde0245840b7ac984750d36a311afae89be7"
+    },
+    "g7_old_candidate": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/pool/selected_author_candidate.json",
+      "sha256": "a6d31328217d8d43aadbb3e73b5877b02463f99bf02f73cdd4ceae62ade7fa3f"
+    },
+    "g7_old_seed": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/arm/native/plan.json",
+      "sha256": "eb06bd8c0c494f424ca0c6ba40c6faa1e7f832cb4d947221c6be3f0114f47de8"
+    },
+    "g7_old_commands": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7/arm/native/commands.npz",
+      "sha256": "afb4e3d5de7c237bf9d73f2c13e48107a7c971242aa2e57b44418ddb2977edaa"
+    },
+    "g7_route_receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/HOME_ROUTE_PREPARATION.json",
+      "sha256": "530566ad0cd40034538cde54e40cbc0644c125a3ddee6f0bf0d1b253ae116749"
+    },
+    "g7_route_protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/HOME_ROUTE_PROTOCOL.json",
+      "sha256": "e51efcccfbf9acf59390843bd414fe71d9fe0ea2eca76e7bd24a09880436c4c6"
+    },
+    "g7_route_plan": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/native/plan.json",
+      "sha256": "09be79ffc813d1d48d8ceb1ab1a4d90785a6627be655a2a65d97d14ab5209932"
+    },
+    "g7_route_commands": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/native/commands.npz",
+      "sha256": "387c9fd2fdc1f785a14f4b320ba5c4e2d580b448aa8a9eea08c28eb2d4198b3b"
+    },
+    "g7_route_geometry": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/native/path_geometry.json",
+      "sha256": "5cce397d2ffdd934bd88191123e3c8375b3d4a8ee389bb20bb8568d9a587a88d"
+    }
+  },
+  "jobs": [
+    {
+      "gesture_id": 1,
+      "prepared_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g1",
+      "routed_plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g1/native",
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1"
+    },
+    {
+      "gesture_id": 6,
+      "prepared_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g6",
+      "routed_plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g6/native",
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6"
+    },
+    {
+      "gesture_id": 7,
+      "prepared_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_fourtype_20261114_v2/prepare_g7",
+      "routed_plan_dir": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_home_retime_20261114_v1/g7/native",
+      "output": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7"
+    }
+  ],
+  "max_transport_dispatches": 3,
+  "per_job_timeout_s": 360,
+  "concurrent_processes": 3,
+  "omp_threads_per_process": 1,
+  "openblas_threads_per_process": 1,
+  "mkl_threads_per_process": 1,
+  "fixed_first_source_row": 879,
+  "seed": 20261114,
+  "extra_depth_m": 0.01,
+  "source_if_flip": false,
+  "approach_distance_m": 0.04,
+  "no_candidate_fallback": true,
+  "no_retry": true,
+  "no_bin_adjustment": true,
+  "no_new_HOME_or_approach_planning": true,
+  "old_collision_queries_reused": 387,
+  "new_collection_collision_queries": 0,
+  "new_CGR_forwards": 0,
+  "physics_steps": 0,
+  "training_updates": 0,
+  "new_labels": 0,
+  "execute_forbidden": true,
+  "transport_budget": {
+    "dt_s": 0.004,
+    "retreat_first_m": 0.004,
+    "retreat_wait_s": 0.1,
+    "retreat_minimum_s": 0.5,
+    "retreat_pregrasp_minimum_s": 2.0,
+    "transport_minimum_s": 3.0,
+    "release_s": 1.0,
+    "release_settle_s": 2.0,
+    "final_window_s": 0.5,
+    "source_rise_m": 0.05,
+    "containment_tolerance_m": 0.002,
+    "max_final_linear_speed_m_s": 0.02,
+    "max_final_angular_speed_rad_s": 0.5,
+    "max_penetration_m": 0.001,
+    "early_stop_penetration_m": 0.005,
+    "max_robot_bin_force_n": 0.001,
+    "contact_capacity": 262144
+  },
+  "scope": "Already-ready independently frozen retime HOME plans -> one original local transport preparation each. Every source body initial-pose proxy plus five bin boxes for post rigid; no dynamic trajectory prediction or exact CAD claim.",
+  "counter": "Transparent wrapper forwards identical arguments and result/exception once to original arm_only_palm_ik; original max_nfev and solver unchanged",
+  "release_rule": "Explicit fixed world SE3 sidecar, no candidate/object dependent release",
+  "native_arm_delivery": "Configured canonical exact-byte arm repair plus all37 combined URDF meshes locked by helper in each new protocol and boundplan"
+}

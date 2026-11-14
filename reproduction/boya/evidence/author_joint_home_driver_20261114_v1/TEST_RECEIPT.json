@@ -1,0 +1,30 @@
+{
+  "schema": "anydex_boya_author_joint_home_driver_test_receipt_v1",
+  "command": "PYTHONDONTWRITEBYTECODE=1 /home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest reproduction/boya/test_author_joint_home_driver.py -v",
+  "exit_code": 0,
+  "tests": 10,
+  "passed": true,
+  "test_names": [
+    "test_ready_has_one_search_no_retime_and_protocol_precedes_call",
+    "test_timing_only_failure_retimes_exactly_once_on_identical_path",
+    "test_collision_unknown_null_budget_and_infrastructure_never_retry",
+    "test_position_limit_or_passing_derivative_does_not_enter_retime",
+    "test_tampered_geometry_is_infrastructure_failure_without_retime",
+    "test_retime_failure_is_final_without_another_search",
+    "test_exception_records_one_attempt_and_unknown_search_cost_without_retry",
+    "test_changed_seed_fails_before_any_child",
+    "test_path_change_after_retime_is_infrastructure_failure_not_ready",
+    "test_input_change_during_child_cannot_be_admitted"
+  ],
+  "observed_unittest_elapsed_s": 0.065,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_driver.py": "283d164856eed5a3c4e56589f52b35ee470ba154d2bf3bf7871376f672a59945",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_joint_home_driver.py": "65aa91f89520c0f843d3d9fcce4d894fdfdb64f18d277c5f94a5205511374bea"
+  },
+  "children": "mocked only; real seed/protocol/artifact SHA paths exercised using temporary files",
+  "actual_search_calls": 0,
+  "actual_retime_calls": 0,
+  "ik_calls": 0,
+  "physics_steps": 0,
+  "provenance": "Recorded from the successful tool execution in this session; no second test execution for receipt generation"
+}

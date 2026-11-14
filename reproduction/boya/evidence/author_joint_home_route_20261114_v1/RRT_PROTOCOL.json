@@ -1,0 +1,48 @@
+{
+  "schema": "anydex_boya_author_joint_home_fourtype_protocol_v1",
+  "policy": {
+    "schema": "anydex_boya_author_joint_home_policy_v1",
+    "algorithm": "RRT-Connect",
+    "random_seed": 20261114,
+    "step_l2_rad": 0.25,
+    "edge_max_per_joint_rad": 0.05,
+    "goal_bias": 0.2,
+    "max_iterations": 1200,
+    "max_connect_extends": 32,
+    "tree_order": "start then goal, alternate each iteration",
+    "nearest": "Euclidean unwrapped six-arm radians",
+    "sample": "uniform original six-arm hard bounds; goal bias targets opposite tree root",
+    "solution": "first connection, no shortcuts, no smoothing search or second solution retry",
+    "timing": "Each edge is a separate original two-knot quintic timed_segment, concatenate without duplicate start; original limits and final whole-HOME derivative audit",
+    "minimum_total_home_s": 3.0,
+    "dt_s": 0.004,
+    "acceleration_rad_s2": 3.0,
+    "jerk_rad_s3": 30.0,
+    "geometry_tolerance_m": 1e-07,
+    "original_approach_distance_m": 0.04,
+    "fixed_initial": true,
+    "fixed_pregrasp_joint_endpoint": true,
+    "fixed_non_arm_coordinates": true,
+    "original_approach_rows_exact": true,
+    "ik_calls": 0,
+    "physics_steps": 0,
+    "geometry_scope": "Source CoACD convex hulls for every scene body, five bin boxes, original robot source convex hulls/self/floor; every emitted tick, sampled not continuous"
+  },
+  "types": [
+    1,
+    6,
+    7,
+    8
+  ],
+  "seed_directory": "outputs/boya_author_pipeline_fourtype_20261114_v2",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_route.py": "cc390e0363696c5c65c368672a385c885f5ccb4ba450bdb1323d7766b2a0fcc6",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_route.py": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45"
+  },
+  "scene_sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd",
+  "each_type_runs": 1,
+  "retries": 0,
+  "physics_steps": 0,
+  "ik_calls": 0
+}

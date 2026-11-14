@@ -1,0 +1,93 @@
+{
+  "schema": "anydex_boya_native_repair_readonly_numeric_audit_v1",
+  "complete": true,
+  "backend": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.collection.json",
+    "sha256": "d578a7d7441378d9d8e4cb683845ddadf0977e8097edce00615e8a7b8c1c584d"
+  },
+  "canonical_repair": {
+    "path": "/home/wangrenpeng/CanonDex/outputs/research/old_template_bottle_far_side_20261101_v2/arm_collision_refinements.json",
+    "sha256": "d5bb28808a0987d8e33c0cd41aeff0d46c65f808563338bda7d1d56648ea71f1"
+  },
+  "combined_urdf_sha256": "b7e8164ee0bd34a8c18891c1f32df1621103d2ffc95f1ad80948b1ce4f208d87",
+  "physics_config_sha256": "d5a7ce2f7c46032ef6f2b438e329cd6edb35f9d6ba88be2bc6d2971ac78f1bb8",
+  "physics_profile_sha256": "313c8cf410446696aae09af01391457de93e34866c55d26732fa8cfaab2cc2a5",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/collision_partition_cache.py": "ddf578e0194fc9c438f687564dd64c1f4155c0aa8293903b10b807499a8470f9",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/collision_refinement.py": "4d68f22cf028237c98e1a37c3851f8920ea413c96f3a4ffc56dd1e62828b9610"
+  },
+  "link_audits": [
+    {
+      "link": "wrist_1_link",
+      "source_parts": 493,
+      "refined_parts": 500,
+      "partition_identity": {
+        "schema_version": 1,
+        "input_mesh_sha256": "f2471d2b8bfa5cff605ff45f2e169c5fc6ab0dc8d8effd120f85294d538e386f",
+        "vertex_limit": 64,
+        "max_extent": 0.02,
+        "partition_source_sha256": "ac38d94ebeb8ac344db41640cebe531e8ca7cf9dec545b4714913a99017d510b",
+        "cache_source_sha256": "ddf578e0194fc9c438f687564dd64c1f4155c0aa8293903b10b807499a8470f9",
+        "libraries": {
+          "numpy": "2.3.1",
+          "scipy": "1.17.0",
+          "trimesh": "4.11.1"
+        }
+      },
+      "partition_key": "948064ef6ff70a44746a25548de900de5d89fa909d922a9381c6979296368824",
+      "cache_npz_sha256": "3d5a0a43decb7b1081ea4e39118d88e5ed4b75c859751695a29b00252de9de1c",
+      "cache_receipt_sha256": "0d46cc67826402ce279f6369906f4e9d677b9a23eb9206762ac5bd1ec3cf7461",
+      "partition_arrays_sha256": "f2686b49d755f7c93c3f3db63bc8c87e6ae9f7bb1be1240af563244b0af7b31e",
+      "named_parent_identities_validated": true,
+      "all_frozen_child_identities_validated": true,
+      "original_vertex_limit": 64,
+      "max_refined_vertices": 62,
+      "source_volume_sum_m3": 0.0010515839334897695,
+      "refined_volume_sum_m3": 0.0010515839334897695,
+      "new_partition_computation": false,
+      "cache_writes": false
+    },
+    {
+      "link": "upper_arm_link",
+      "source_parts": 3309,
+      "refined_parts": 3316,
+      "partition_identity": {
+        "schema_version": 1,
+        "input_mesh_sha256": "e828ed778a7fcdaed539f2f814b987b33a9abe45f3282383f87fbe2a42c69d50",
+        "vertex_limit": 64,
+        "max_extent": 0.02,
+        "partition_source_sha256": "ac38d94ebeb8ac344db41640cebe531e8ca7cf9dec545b4714913a99017d510b",
+        "cache_source_sha256": "ddf578e0194fc9c438f687564dd64c1f4155c0aa8293903b10b807499a8470f9",
+        "libraries": {
+          "numpy": "2.3.1",
+          "scipy": "1.17.0",
+          "trimesh": "4.11.1"
+        }
+      },
+      "partition_key": "ded3f3b8a274af484d1b97750fab1660918f99a0e1563e5f13525b0e18b55f9e",
+      "cache_npz_sha256": "6d320709f7c65ed30419a473faf8ffda3b5894814cc87d1e60072daeea12f86c",
+      "cache_receipt_sha256": "203debdfcbe231a356eb127b1a2228087b1d71ec822751dc9b9a03cb57b9edf0",
+      "partition_arrays_sha256": "8a87eb6130d7741b0b199238bf0ba084ae59135c6667ad3d51923bb7231992d4",
+      "named_parent_identities_validated": true,
+      "all_frozen_child_identities_validated": true,
+      "original_vertex_limit": 64,
+      "max_refined_vertices": 64,
+      "source_volume_sum_m3": 0.012601212841625567,
+      "refined_volume_sum_m3": 0.01260121284162557,
+      "new_partition_computation": false,
+      "cache_writes": false
+    }
+  ],
+  "wall_s": 0.45689884084276855,
+  "scope": "Actual current model hulls, exact existing cached partition arrays, original refine_collision_parts; no native cooking or runtime acceptance claim",
+  "costs": {
+    "Kit_launches": 0,
+    "IK_calls": 0,
+    "physics_steps": 0,
+    "native_plans": 0,
+    "new_partitions": 0,
+    "cache_writes": 0,
+    "labels": 0
+  }
+}

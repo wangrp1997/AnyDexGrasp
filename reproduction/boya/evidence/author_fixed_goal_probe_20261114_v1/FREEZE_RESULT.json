@@ -1,0 +1,36 @@
+{
+  "status": "frozen",
+  "complete": true,
+  "policy": {
+    "schema": "anydex_boya_fixed_goal_single_home_seed_v1",
+    "seed": "Original reference HOME six arm joints; other 18 active values from last transport_bin row before release",
+    "target": "Exact explicit fixed release SE3; no candidate/body-relative offset or target adjustment",
+    "ik_calls": 1,
+    "max_nfev": 300,
+    "bounds_margin_rad": 1e-06,
+    "additional_seeds": 0,
+    "retries": 0,
+    "geometry_tolerance_m": 1e-07,
+    "geometry": "Original ArmPathGeometry, same rigid links/self/floor and all three initial source-body proxies plus five bin boxes",
+    "triangle_check": "Deepest rejected original convex pair, original source collision triangles; triangle surface intersection only, not volume penetration",
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "training_updates": 0,
+    "labels": 0
+  },
+  "ik_calls": 0,
+  "physics_steps": 0,
+  "protocol_sha256": "96bca7a61bd1a3a753fe52ef269f47bf83edf479909b92043107be065df7d71c",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_fixed_goal_probe.py": "61f70d975a8e53de3b803995f2cadb100e3bee32c604fcd86546113d89ffb31a",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_route.py": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45",
+    "/home/wangrenpeng/CanonDex/canondex/planning/model.py": "3d0469d645fa882c26e83eb70879cc1b29b57063e4bf27c5fb7aa2f0214a1e33",
+    "/home/wangrenpeng/CanonDex/canondex/robots/reference.py": "7bd09451947b61284876a6a912edaa51db9a671a9f7dba1fcc748f428dc35b21",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea"
+  },
+  "closed_boundary_command_index": 4519,
+  "obstacle_count": 27,
+  "wall_s": 3.2369705948513
+}

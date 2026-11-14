@@ -1,0 +1,287 @@
+{
+  "schema": "anydex_boya_fixed_goal_single_home_seed_v1",
+  "status": "null_geometry",
+  "complete": true,
+  "ik_calls": 1,
+  "physics_steps": 0,
+  "Kit_launches": 0,
+  "labels": 0,
+  "training_updates": 0,
+  "protocol_sha256": "96bca7a61bd1a3a753fe52ef269f47bf83edf479909b92043107be065df7d71c",
+  "old_straight_endpoint": {
+    "ok": false,
+    "geometry_sha256": "906c3d310fcac686249451a35b217ecf2f4ff4d9ddbcb19c4566f64e96897e49",
+    "violation_count": 6,
+    "deepest_violation": {
+      "sample": 0,
+      "kind": "self",
+      "link": "upper_arm_link",
+      "other": "wrist_2_link",
+      "distance_m": -0.06900113873221239
+    },
+    "deepest_source_triangle_check": {
+      "pair": {
+        "sample": 0,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900113873221239
+      },
+      "right_scope": "Original URDF source collision triangles",
+      "surface_intersection": true,
+      "collision_count": 1,
+      "contact_count": 1,
+      "left_vertices": 1371,
+      "left_triangles": 2738,
+      "right_vertices": 893,
+      "right_triangles": 1782,
+      "scope": "Original source triangle surface intersection; no signed solid penetration depth or containment claim"
+    }
+  },
+  "original_ik_audit": {
+    "kind": "six_arm_ik_preserve_raw_source_hand",
+    "solved_joint_names": [
+      "shoulder_pan_joint",
+      "shoulder_lift_joint",
+      "elbow_joint",
+      "wrist_1_joint",
+      "wrist_2_joint",
+      "wrist_3_joint"
+    ],
+    "preserved_hand_joint_names": [
+      "FAJ1",
+      "FAJ3",
+      "THJ4",
+      "THJ3",
+      "THJ2",
+      "THJ1",
+      "FFJ4",
+      "FFJ3",
+      "FFJ2",
+      "FFJ1",
+      "MFJ4",
+      "MFJ3",
+      "MFJ2",
+      "MFJ1",
+      "RFJ4",
+      "RFJ3",
+      "RFJ2",
+      "RFJ1",
+      "LFJ4",
+      "LFJ3",
+      "LFJ2",
+      "LFJ1"
+    ],
+    "preserved_hand_joint_count": 22,
+    "hand_joint_delta_rad": {
+      "FAJ1": 0.0,
+      "FAJ3": 0.0,
+      "THJ4": 0.0,
+      "THJ3": 0.0,
+      "THJ2": 0.0,
+      "THJ1": 0.0,
+      "FFJ4": 0.0,
+      "FFJ3": 0.0,
+      "FFJ2": 0.0,
+      "FFJ1": 0.0,
+      "MFJ4": 0.0,
+      "MFJ3": 0.0,
+      "MFJ2": 0.0,
+      "MFJ1": 0.0,
+      "RFJ4": 0.0,
+      "RFJ3": 0.0,
+      "RFJ2": 0.0,
+      "RFJ1": 0.0,
+      "LFJ4": 0.0,
+      "LFJ3": 0.0,
+      "LFJ2": 0.0,
+      "LFJ1": 0.0
+    },
+    "max_hand_joint_delta_rad": 0.0,
+    "position_error_m": 2.2123443632707514e-11,
+    "rotation_error_rad": 7.225393009238434e-11,
+    "weighted_rotation_error": 1.083808951385765e-11,
+    "nfev": 13,
+    "original_arm_hard_bounds_retained": true,
+    "raw_joint_limit_excess_rad": {},
+    "solve_arm_bounds_margin_rad": 1e-06,
+    "raw_passive_equality_residual_rad": {
+      "FFJ1": 0.0,
+      "MFJ1": 0.0,
+      "RFJ1": 0.0,
+      "LFJ1": 0.0
+    },
+    "representable_by_planning_model_mimic_tolerance": true,
+    "policy": "Preserve raw22; change only six arm angles. Passive source squeeze values are control metadata, never observed geometry"
+  },
+  "local_ik_converged": true,
+  "solver_observation": {
+    "calls": 1,
+    "x": [
+      2.1021005131753583,
+      -1.301359183871308,
+      -2.325677946547588,
+      -2.6821326832774672,
+      0.532248208986527,
+      0.022401825492150015
+    ],
+    "nfev": 13,
+    "status": 1,
+    "success": true,
+    "message": "`gtol` termination condition is satisfied."
+  },
+  "residual": {
+    "position_error_m": 2.2123443632707514e-11,
+    "rotation_error_rad": 7.225387693026558e-11,
+    "weighted_rotation_error": 1.0838081539539837e-11
+  },
+  "actual_world_T_palm": [
+    [
+      0.0007962575582970213,
+      -0.013184925325270162,
+      -0.9999127580534554,
+      -0.40000000001920616
+    ],
+    [
+      0.999999682931776,
+      -4.049301253605688e-10,
+      0.0007963267842664259,
+      -0.2500000000107362
+    ],
+    [
+      -1.0499914079852335e-05,
+      -0.9999130750941135,
+      0.01318492114442689,
+      0.3500000000023033
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "target_world_T_palm": [
+    [
+      0.0007962574874067301,
+      -0.013184925338607408,
+      -0.9999127580533358,
+      -0.4
+    ],
+    [
+      0.9999996829318324,
+      -4.10025819803366e-10,
+      0.0007963267134376482,
+      -0.25
+    ],
+    [
+      -1.0499918251862382e-05,
+      -0.9999130750939378,
+      0.013184921157760834,
+      0.35
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "all22_raw_non_arm_values_exact": true,
+  "all18_active_non_arm_values_exact": true,
+  "HOME_seed_goal_endpoint": {
+    "ok": false,
+    "geometry_sha256": "c94ea3f85a3ceaaed7674970589e2f8b602a0f5d849160c133b04b4a5d310c81",
+    "violation_count": 2,
+    "deepest_violation": {
+      "sample": 0,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 24,
+      "distance_m": -0.013358140897797646,
+      "obstacle_owner": {
+        "bin_part": "wall_x_plus"
+      }
+    },
+    "deepest_source_triangle_check": {
+      "pair": {
+        "sample": 0,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.013358140897797646,
+        "obstacle_owner": {
+          "bin_part": "wall_x_plus"
+        }
+      },
+      "right_scope": "Frozen bin box triangles or original source object CoACD-part triangles; not exact object CAD",
+      "surface_intersection": true,
+      "collision_count": 1,
+      "contact_count": 1,
+      "left_vertices": 1371,
+      "left_triangles": 2738,
+      "right_vertices": 8,
+      "right_triangles": 12,
+      "scope": "Original source triangle surface intersection; no signed solid penetration depth or containment claim"
+    }
+  },
+  "solved_raw28": {
+    "shoulder_pan_joint": 2.1021005131753583,
+    "shoulder_lift_joint": -1.301359183871308,
+    "elbow_joint": -2.325677946547588,
+    "wrist_1_joint": -2.6821326832774672,
+    "wrist_2_joint": 0.532248208986527,
+    "wrist_3_joint": 0.022401825492150015,
+    "FAJ1": 0.0,
+    "FAJ3": 0.0,
+    "THJ4": 0.12509698546362286,
+    "THJ3": -0.2501939709272457,
+    "THJ2": 0.12509698546362286,
+    "THJ1": 0.8756788982453599,
+    "FFJ4": 0.0,
+    "FFJ3": 0.8756788982453599,
+    "FFJ2": 0.8756788982453599,
+    "FFJ1": 0.8756788982453599,
+    "MFJ4": 0.0,
+    "MFJ3": 0.8256401040599108,
+    "MFJ2": 0.8756788982453599,
+    "MFJ1": 0.8756788982453599,
+    "RFJ4": 0.0,
+    "RFJ3": 0.7756013098744616,
+    "RFJ2": 0.8756788982453599,
+    "RFJ1": 0.8756788982453599,
+    "LFJ4": 0.0,
+    "LFJ3": 0.8756788982453599,
+    "LFJ2": 0.8756788982453599,
+    "LFJ1": 0.8756788982453599
+  },
+  "solved_active24": [
+    2.1021005131753583,
+    -1.301359183871308,
+    -2.325677946547588,
+    -2.6821326832774672,
+    0.532248208986527,
+    0.022401825492150015,
+    0.0,
+    0.0,
+    0.12509698546362286,
+    -0.2501939709272457,
+    0.12509698546362286,
+    0.8756788982453599,
+    0.0,
+    0.8756788982453599,
+    0.8756788982453599,
+    0.0,
+    0.8256401040599108,
+    0.8756788982453599,
+    0.0,
+    0.7756013098744616,
+    0.8756788982453599,
+    0.0,
+    0.8756788982453599,
+    0.8756788982453599
+  ],
+  "carry_route_ready": false,
+  "meaning": "Single fixed endpoint diagnostic only; no path, dynamic clearance, physical success or unreachability claim",
+  "wall_s": 3.442745581967756
+}

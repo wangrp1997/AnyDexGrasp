@@ -1,0 +1,163 @@
+{
+  "schema": "anydex_boya_final_native_entry_readonly_binding_audit_v1",
+  "complete": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline.py": "2376c747bd2770e724e3bf4314af688a9a046245d386305c7b71b5373f77d2b0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_pipeline_entry.py": "353b9946f8e4e247303dc0963c580ec94ab4eb0714a1d2deef402e5299a98b17",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45",
+    "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+    "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+    "/home/wangrenpeng/CanonDex/canondex/scene/robot_collision.py": "d95602fb5c6f9e75d761b5f2b2a172a4d23e336a3659796c712ba8da923d93d8",
+    "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py": "422324ce9a3047bb98d8e394ee47ceb8b51b5fa8c570676b5aca7b951b82a61e"
+  },
+  "execution_order": {
+    "post_integrity_call_lines": {
+      "_verify": [
+        747,
+        747,
+        748,
+        748
+      ],
+      "_verify_plan_dependencies": [
+        749
+      ]
+    },
+    "collect_execution_line": 750,
+    "simulator_close_line": 769,
+    "post_integrity_checks_precede_label_creation": true,
+    "label_and_receipts_precede_process_terminating_close": true,
+    "exclusive_start_marker_precedes_launcher": true
+  },
+  "actual_component_preparations": [
+    {
+      "gesture_id": 1,
+      "protocol": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/COMPONENT_INTEGRATION_PROTOCOL.json",
+        "sha256": "de1273c15514f229629f9e3a317c4043a69e9aab7703bcfa9d65364cc7ed614b"
+      },
+      "preparation_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/COMPONENT_INTEGRATION_RESULTS.json",
+        "sha256": "136151778a50d093d33557f65296f4dba5f686e9d682896d67e8e2275ee66655"
+      },
+      "transport_plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/transport_raw/plan.json",
+        "sha256": "30fbc1dd38bb7c0f069ac65eaf746d537306aa921d644af51cf2e5bda90dae72"
+      },
+      "status": "null_geometry",
+      "complete": true,
+      "protocol_binding_counts": {
+        "inputs": 56,
+        "sources": 13,
+        "capture_source_bindings": 518
+      },
+      "native_arm_repair_and_mesh_input_count": 41,
+      "staged_lookup_is_execution_plan_parent": true,
+      "transport_plan_dependency_counts": {
+        "source_sha256": 8,
+        "extra_input_sha256": 638
+      },
+      "native_artifact_sha256": {
+        "commands.npz": "6671e4b30991927e053cdd418150e10d0febf02486d04e47989cbc9e88727a85",
+        "path_geometry.json": "e3b1591ac2b69dc824ded439982072c1edc6316077a92a39db3fabe7bf0994c1",
+        "lift_arm_geometry.json": "1165ee721eecf9ae11a399acc689e2c3bae34fad401d33a73d8f1404f988af0e"
+      },
+      "all_checked_dependencies_match": true,
+      "ready_plan_created": false,
+      "execution_started": false
+    },
+    {
+      "gesture_id": 6,
+      "protocol": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/COMPONENT_INTEGRATION_PROTOCOL.json",
+        "sha256": "b6e12c9bd1808179765bb81c72ae8e7d72d939f2ea8a55c388868a7e4b1eaa55"
+      },
+      "preparation_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/COMPONENT_INTEGRATION_RESULTS.json",
+        "sha256": "850e20709c664783122902b7d2904c9bd318b8703a1b60b720fc63853d190eee"
+      },
+      "transport_plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/transport_raw/plan.json",
+        "sha256": "d36da84aa6a4144aa633bc692f19fabe60e43d0d350276bb9d0998aa910d93d6"
+      },
+      "status": "null_geometry",
+      "complete": true,
+      "protocol_binding_counts": {
+        "inputs": 56,
+        "sources": 13,
+        "capture_source_bindings": 518
+      },
+      "native_arm_repair_and_mesh_input_count": 41,
+      "staged_lookup_is_execution_plan_parent": true,
+      "transport_plan_dependency_counts": {
+        "source_sha256": 8,
+        "extra_input_sha256": 638
+      },
+      "native_artifact_sha256": {
+        "commands.npz": "224660ae339b7c1aae401d57717b47cac67da5278497710b93dce8a4fbaf0c7d",
+        "path_geometry.json": "adff245698c6494e8c0f733bfbbcd2a601d519235f152314fec4473b587e5fcc",
+        "lift_arm_geometry.json": "d1e7ca4db7ec0bd3106e4de601d5dfd314131e817c8668cb5e66c64b85ed99a7"
+      },
+      "all_checked_dependencies_match": true,
+      "ready_plan_created": false,
+      "execution_started": false
+    },
+    {
+      "gesture_id": 7,
+      "protocol": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/COMPONENT_INTEGRATION_PROTOCOL.json",
+        "sha256": "55fd6c8b62a55e9ee24f171cf3456804694a8fdcdf95f7ce57de3dfeae7ee563"
+      },
+      "preparation_result": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/COMPONENT_INTEGRATION_RESULTS.json",
+        "sha256": "847f46c1894ae549c2fb836ed8db9988114999e95bc7d6c3a13673fd229e436f"
+      },
+      "transport_plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/transport_raw/plan.json",
+        "sha256": "82331a076ac14aad12b9503b2e8852431f4c78820b354f2de6de5070167f9abd"
+      },
+      "status": "null_geometry",
+      "complete": true,
+      "protocol_binding_counts": {
+        "inputs": 56,
+        "sources": 13,
+        "capture_source_bindings": 518
+      },
+      "native_arm_repair_and_mesh_input_count": 41,
+      "staged_lookup_is_execution_plan_parent": true,
+      "transport_plan_dependency_counts": {
+        "source_sha256": 8,
+        "extra_input_sha256": 638
+      },
+      "native_artifact_sha256": {
+        "commands.npz": "d1291471ac5c2d8738b4eebf77d9add631f121b9d045b4860b0d912a47be895d",
+        "path_geometry.json": "e4c47fe32f6d6e48962ddbca14eb11fd961f4471ba9c1fced7454e3f48eb1b8e",
+        "lift_arm_geometry.json": "b7c31ef11e6f48e42a68e96f73aacac545b2c0fcdf177c18f48dce0267188391"
+      },
+      "all_checked_dependencies_match": true,
+      "ready_plan_created": false,
+      "execution_started": false
+    }
+  ],
+  "allbody_import_path_review": {
+    "robot": "preserve_hand_collision \u2192 original cached_split_convex \u2192 per-link refine_collision_parts \u2192 author_convex \u2192 later native cooking audit",
+    "primary_body": "original spawn_object \u2192 spawn_mesh_object \u2192 source split_convex \u2192 optional object repair \u2192 author_convex",
+    "other_bodies": "namespaced_spawn of the same original spawn_object with each scene repair; no static replacement",
+    "bin": "five explicitly frozen cuboids; no mesh partition repair",
+    "contact_processing": "create_scene(self_collisions=True) sets /physics/disableContactProcessing=False; RobotContactReports independently checks false",
+    "actual_dynamic_acceptance": "Not run by this audit; native cooking/contact/drive/trajectory gates remain runtime requirements"
+  },
+  "native_only_artifact_checks": {
+    "path_geometry_and_lift_arm_geometry": "Original native executor verifies both before scene creation/integration; final actual null-plan files independently hash-verified here. They are not implicitly covered by source/extra_input maps.",
+    "final_ready_plan_bindings": "No real READY/bound transport plan exists because all three preparations are null_geometry; 41 extra-input insertion is source/test-reviewed only, not claimed as a successful actual ready receipt."
+  },
+  "wall_s": 1.1934237838722765,
+  "costs": {
+    "Kit_launches": 0,
+    "IK_calls": 0,
+    "planning_calls": 0,
+    "physics_steps": 0,
+    "new_labels": 0,
+    "cache_writes": 0,
+    "staging_calls": 0
+  }
+}

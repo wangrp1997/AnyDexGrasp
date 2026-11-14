@@ -1,0 +1,34 @@
+{
+  "policy": {
+    "schema": "anydex_boya_author_home_retime_policy_v1",
+    "dt_s": 0.004,
+    "max_iterations_including_original": 8,
+    "scale_rule": "max(velocity_ratio,sqrt(acceleration_ratio),cbrt(jerk_ratio))*1.01",
+    "scale_scope": "Common duration multiplier for every original connected-path edge",
+    "path_coordinates_exact": true,
+    "search_calls": 0,
+    "ik_calls": 0,
+    "physics_steps": 0,
+    "geometry_tolerance_m": 1e-07,
+    "acceleration_rad_s2": 3.0,
+    "jerk_rad_s3": 30.0,
+    "require_original_final_geometry_ok": true,
+    "scope": "Same original initial/pregrasp joints and source hull gates; only HOME time parameterization changes"
+  },
+  "types": [
+    1,
+    6,
+    7
+  ],
+  "excluded_type8_reason": "Original final whole-scene geometry has15 collision ticks, deepest-.0004152244583021693m; no new preparation",
+  "old_rrt_protocol_sha256": "358fadb43f2bc7ad10bff047f89559a07db879b8dc26fb26d8801ccad88b599d",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_retime.py": "0beb0b8aa0640d6ced6c9ed3a7f3ad500fd6f335ccac17eaa8699986507bf884",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_route.py": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_route.py": "cc390e0363696c5c65c368672a385c885f5ccb4ba450bdb1323d7766b2a0fcc6",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45"
+  },
+  "search_calls": 0,
+  "ik_calls": 0,
+  "physics_steps": 0
+}

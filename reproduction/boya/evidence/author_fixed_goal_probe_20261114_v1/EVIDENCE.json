@@ -1,0 +1,33 @@
+{
+  "schema": "anydex_boya_fixed_goal_probe_evidence_v1",
+  "complete": true,
+  "status": "null_geometry",
+  "artifacts_sha256": {
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/FREEZE_RESULT.json": "ff66a3dc8219871342d7ba08e4d2165e7a7897c52b25d85546461b2bd116bccf",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/HOME_seed_goal_endpoint_geometry.json": "c94ea3f85a3ceaaed7674970589e2f8b602a0f5d849160c133b04b4a5d310c81",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/INDEPENDENT_NUMERIC_AUDIT.json": "7fdac73f8519253026a6c6d9c90f64eb52033b7a87be35a62c4b9a26d799fcfa",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/INDEPENDENT_NUMERIC_AUDIT.py": "9d72512dafeb2b307871b1c625494e814d6d3f4e979ddc1986a9bf4e79a3fc22",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/PROTOCOL.json": "96bca7a61bd1a3a753fe52ef269f47bf83edf479909b92043107be065df7d71c",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/RESULT.json": "8860f37e9b7fe706eb267b66cbcf22921001c45a508fc360b2926557bfc9c82f",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/RUN_STARTED.json": "1ced19680ef1ce926800615a749a1acd948e5648bb229005b4930e8b60cd5031",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/TESTS.json": "93fe93131f16b7e6138520637df71f284fc01d13eb277bb5fbd4d11c974bbf32",
+    "reproduction/boya/evidence/author_fixed_goal_probe_20261114_v1/old_straight_endpoint_geometry.json": "906c3d310fcac686249451a35b217ecf2f4ff4d9ddbcb19c4566f64e96897e49",
+    "reproduction/boya/author_fixed_goal_probe.py": "61f70d975a8e53de3b803995f2cadb100e3bee32c604fcd86546113d89ffb31a",
+    "reproduction/boya/test_author_fixed_goal_probe.py": "f8c764894dbdffe34d3f278e22a2a81b4c7c0bb057c10f4aeffc9df5faabb330",
+    "reproduction/boya/AUTHOR_FIXED_GOAL_PROBE_20261114.md": "1dee45de2ef897626cdbc316db0b1be6869fdce45266c09e0f329bd1f263340a"
+  },
+  "protocol_sha256": "96bca7a61bd1a3a753fe52ef269f47bf83edf479909b92043107be065df7d71c",
+  "source_sha256": "61f70d975a8e53de3b803995f2cadb100e3bee32c604fcd86546113d89ffb31a",
+  "unchanged_sidecar_sha256": "43223161bf53e4fa40335960e1b51185320646c8ee38f03793f2bea4fed7522c",
+  "actual_costs": {
+    "original_IK_calls": 1,
+    "nfev": 13,
+    "additional_seeds": 0,
+    "retries": 0,
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "training_updates": 0,
+    "labels": 0
+  },
+  "interpretation": "Single original HOME seed converges but remains in bin-wall collision; no globally unreachable or successful grasp claim"
+}

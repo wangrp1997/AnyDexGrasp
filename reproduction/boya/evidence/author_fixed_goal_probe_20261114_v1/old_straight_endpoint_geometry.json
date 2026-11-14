@@ -1,0 +1,189 @@
+{
+  "ok": false,
+  "samples": 1,
+  "signed_distance_queries": 7,
+  "min_floor_m": 0.10411656383076956,
+  "violations": [
+    {
+      "sample": 0,
+      "kind": "self",
+      "link": "upper_arm_link",
+      "other": "wrist_1_link",
+      "distance_m": -0.014207003102508458
+    },
+    {
+      "sample": 0,
+      "kind": "self",
+      "link": "upper_arm_link",
+      "other": "wrist_2_link",
+      "distance_m": -0.06900113873221239
+    },
+    {
+      "sample": 0,
+      "kind": "self",
+      "link": "upper_arm_link",
+      "other": "wrist_3_link",
+      "distance_m": -0.05103269800188247
+    },
+    {
+      "sample": 0,
+      "kind": "self",
+      "link": "upper_arm_link",
+      "other": "fabase",
+      "distance_m": -0.005833089218302659
+    },
+    {
+      "sample": 0,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 24,
+      "distance_m": -0.010138686874672294,
+      "obstacle_owner": {
+        "bin_part": "wall_x_plus"
+      }
+    },
+    {
+      "sample": 0,
+      "kind": "object",
+      "link": "upper_arm_link",
+      "other": 26,
+      "distance_m": -0.001318446426200264,
+      "obstacle_owner": {
+        "bin_part": "wall_y_plus"
+      }
+    }
+  ],
+  "tolerance_m": 1e-07,
+  "collision_links": [
+    "shoulder_link",
+    "upper_arm_link",
+    "forearm_link",
+    "wrist_1_link",
+    "wrist_2_link",
+    "wrist_3_link",
+    "fabase",
+    "falink1",
+    "pmbase",
+    "palm"
+  ],
+  "object_collision_parts": 27,
+  "self_pairs": [
+    [
+      "shoulder_link",
+      "forearm_link"
+    ],
+    [
+      "shoulder_link",
+      "wrist_1_link"
+    ],
+    [
+      "shoulder_link",
+      "wrist_2_link"
+    ],
+    [
+      "shoulder_link",
+      "wrist_3_link"
+    ],
+    [
+      "shoulder_link",
+      "fabase"
+    ],
+    [
+      "shoulder_link",
+      "falink1"
+    ],
+    [
+      "shoulder_link",
+      "pmbase"
+    ],
+    [
+      "shoulder_link",
+      "palm"
+    ],
+    [
+      "upper_arm_link",
+      "wrist_1_link"
+    ],
+    [
+      "upper_arm_link",
+      "wrist_2_link"
+    ],
+    [
+      "upper_arm_link",
+      "wrist_3_link"
+    ],
+    [
+      "upper_arm_link",
+      "fabase"
+    ],
+    [
+      "upper_arm_link",
+      "falink1"
+    ],
+    [
+      "upper_arm_link",
+      "pmbase"
+    ],
+    [
+      "upper_arm_link",
+      "palm"
+    ],
+    [
+      "forearm_link",
+      "wrist_2_link"
+    ],
+    [
+      "forearm_link",
+      "wrist_3_link"
+    ],
+    [
+      "forearm_link",
+      "fabase"
+    ],
+    [
+      "forearm_link",
+      "falink1"
+    ],
+    [
+      "forearm_link",
+      "pmbase"
+    ],
+    [
+      "forearm_link",
+      "palm"
+    ],
+    [
+      "wrist_1_link",
+      "wrist_3_link"
+    ],
+    [
+      "wrist_1_link",
+      "fabase"
+    ],
+    [
+      "wrist_1_link",
+      "falink1"
+    ],
+    [
+      "wrist_1_link",
+      "pmbase"
+    ],
+    [
+      "wrist_1_link",
+      "palm"
+    ],
+    [
+      "wrist_2_link",
+      "falink1"
+    ],
+    [
+      "wrist_2_link",
+      "pmbase"
+    ],
+    [
+      "wrist_2_link",
+      "palm"
+    ]
+  ],
+  "scope": "Every commanded pre-contact state, full source hulls and object convex union; sampled, not continuous sweep or obstacle replanning"
+}

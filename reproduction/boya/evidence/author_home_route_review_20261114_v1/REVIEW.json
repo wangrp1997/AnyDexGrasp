@@ -1,0 +1,45 @@
+{
+  "schema": "anydex_boya_author_home_route_independent_review_v1",
+  "complete": true,
+  "reviewed_source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_home_route.py": "1bf86feaccd7880128b54ace69b1289027d313e7f8a641bc44ef6aa00d0ff0d8",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_joint_home_route.py": "cc390e0363696c5c65c368672a385c885f5ccb4ba450bdb1323d7766b2a0fcc6",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline.py": "8f09114db718b6aadc4644ddf840c8f1e98c285c8d3a6a2c2ec4d04476bcd2db",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_HOME_ROUTE_REVIEW_20261114.md": "c8e1dd2b3ef60cb3f733b000c46c2039277d65b4bb3f6d0c0be5c71607d1d947",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/template_arm_bridge.py": "985aedbc25f6cca7ee98f0f34df402da0426bee27911fde16a478fef2a5788ea"
+  },
+  "scope": "Read-only source review, not a new source freeze or runtime acceptance",
+  "checks": {
+    "HOME_changes_six_arm_only": true,
+    "eighteen_non_arm_columns_preserved": true,
+    "frozen_pregrasp_endpoint_not_resolved": true,
+    "fixed_segments_all_scene_original_geometry": true,
+    "final_every_tick_original_geometry_and_derivatives": true,
+    "source_union_not_native_refinement_substitution": true,
+    "pipeline_independent_array_preservation": true,
+    "fixed_release_explicit": true,
+    "single_start_guard": true,
+    "durable_label_before_close": true
+  },
+  "finding": {
+    "old_primary_post_rigid_omission_fixed_separately": true,
+    "fixed_transport_sha256": "a41ddee86be4afa552d00b00913ca1ec2b8684646ee5241bde50dd39da3e4b45",
+    "new_label_blocker_identified": false
+  },
+  "remaining_runtime_validation": [
+    "All source bodies are free dynamic objects during the longer HOME duration",
+    "Initial-pose convex proxies do not predict their future trajectories",
+    "Post-close finger contacts and finger-vs-rigid self contacts remain native runtime checks",
+    "No new physical success/acceptance conclusion"
+  ],
+  "costs": {
+    "new_planner_entry_calls": 0,
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0,
+    "labels": 0
+  },
+  "other_agent_sources_modified": false
+}

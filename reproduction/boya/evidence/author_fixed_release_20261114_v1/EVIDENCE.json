@@ -1,0 +1,88 @@
+{
+  "schema": "anydex_boya_fixed_release_patch_v1",
+  "complete": true,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py": "c54ea3443e169fe451472464772149cd65475f6bf6a4cf66298ae3605772faa7",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py": "9d26377b8238fd6d76dc865dfaef006609120630fb82314e8e573588d46252ec",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_transport.py": "29e6f731ceeffbd666c63e554f77e2366d8e8981d89756ac02099e2c55ba477b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_FIXED_RELEASE_20261114.md": "e22ea945a627ae0e940c5d9307659fafc832be81c48f6ace190e37152c6d17cd"
+  },
+  "source_pins": {
+    "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+    "/home/wangrenpeng/CanonDex/scripts/research/run_template_arm_positive.py": "ac25304f49ab1314a05612f610d5b1b006a59a8b4b019816c25b23bc568fb7e3",
+    "/home/wangrenpeng/CanonDex/canondex/scene/grasp_object.py": "422324ce9a3047bb98d8e394ee47ceb8b51b5fa8c570676b5aca7b951b82a61e",
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+  },
+  "source_fixed_throw": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+      "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+    },
+    "throw_pose_line": 235,
+    "throw_movel_line": 252,
+    "actual_throw_call_line": 406,
+    "subsequent_open_line": 407,
+    "literal_tcp_xyz_rotvec_poses": {
+      "global_camera": [
+        -0.410796973800367,
+        -0.5401806313280444,
+        0.22974717091039015,
+        1.202156341186167,
+        2.8652524529413563,
+        -0.16828893640775433
+      ],
+      "wrist_camera": [
+        -0.3204891342444824,
+        0.0,
+        0.6039789076893695,
+        2.2151031430447197,
+        2.2263986774485334,
+        0.013764345054940088
+      ]
+    },
+    "coordinate_units": "metres/radians; original robot TCP/base convention",
+    "selection": "Fixed camera-installation branch only; no object or grasp position input",
+    "numeric_tcp_poses_copied_into_boya": false
+  },
+  "fixed_pose_adaptation": {
+    "world_xyz_m": [
+      -0.4,
+      -0.25,
+      0.35
+    ],
+    "rotation": "Original reference home palm FK; actual independent XML audit delegated to root",
+    "original_author_tcp_numeric_pose": false,
+    "depends_on_candidate_pose": false,
+    "depends_on_object_pose": false,
+    "reachability_or_physics_accepted": false
+  },
+  "tests": {
+    "passed": true,
+    "tests": 13,
+    "body_primary_and_candidate_invariant": true,
+    "missing_invalid_inputs_fail_closed": true,
+    "home_fk_mocked_only_in_invariance_test": true
+  },
+  "implementation": {
+    "prepare_requires_explicit_release_spec_path": true,
+    "no_default_sidecar_discovery": true,
+    "no_bin_or_compatibility_object_inputs_to_waypoint_release": true,
+    "sidecar_and_sources_bound_to_plan": true,
+    "execution_revalidates": true,
+    "original_policy_unchanged": true
+  },
+  "costs": {
+    "real_sidecar_generation": 0,
+    "native_plans": 0,
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "CGR_forwards": 0,
+    "training_updates": 0,
+    "labels": 0
+  },
+  "old_scenes_observations_queues_and_evidence_rewritten": false,
+  "artifacts": {
+    "reproduction/boya/evidence/author_fixed_release_20261114_v1/SOURCE_FIXED_THROW_POLICY.json": "df09ac44f9a955a720c4f001b32c97f24ccf0c8a18075f47da54f44f5616290d",
+    "reproduction/boya/evidence/author_fixed_release_20261114_v1/TESTS.log": "fbf7985df334c3925abbcb8a2e9aee90d7bfa38d1c31dfdf5ad4886c54d4a209"
+  }
+}

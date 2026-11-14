@@ -1,0 +1,2659 @@
+{
+  "schema": "anydex_boya_author_saved_post_geometry_breakdown_v1",
+  "scope": "Saved violations only; post sample indexes mapped to full command indexes without replanning.",
+  "owner_indexes": {
+    "0": "graspnet_000",
+    "1": "graspnet_000",
+    "2": "graspnet_002",
+    "3": "graspnet_002",
+    "4": "graspnet_002",
+    "5": "graspnet_002",
+    "6": "graspnet_002",
+    "7": "graspnet_002",
+    "8": "graspnet_002",
+    "9": "graspnet_002",
+    "10": "graspnet_002",
+    "11": "graspnet_002",
+    "12": "graspnet_002",
+    "13": "graspnet_002",
+    "14": "graspnet_002",
+    "15": "graspnet_002",
+    "16": "graspnet_002",
+    "17": "graspnet_002",
+    "18": "graspnet_002",
+    "19": "graspnet_005",
+    "20": "graspnet_005",
+    "21": "graspnet_005",
+    "22": "bin:floor",
+    "23": "bin:wall_x_minus",
+    "24": "bin:wall_x_plus",
+    "25": "bin:wall_y_minus",
+    "26": "bin:wall_y_plus"
+  },
+  "results": [
+    {
+      "gesture_id": 1,
+      "commands": 5270,
+      "phases": {
+        "settle": 50,
+        "home_to_pregrasp": 2180,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "retreat_4mm": 125,
+        "retreat_wait": 25,
+        "retreat_pregrasp": 500,
+        "transport_bin": 840,
+        "release": 250,
+        "release_settle": 500
+      },
+      "post_samples": 2540,
+      "count": 6311,
+      "counts_by_kind": {
+        "object": 2126,
+        "self": 4185
+      },
+      "counts_by_object_owner": {
+        "bin:wall_x_plus": 1121,
+        "bin:wall_y_plus": 1005
+      },
+      "counts_by_phase": {
+        "transport_bin": 1811,
+        "release": 1500,
+        "release_settle": 3000
+      },
+      "first": {
+        "sample": 1419,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.0007612687315485935,
+        "command_sample": 4149,
+        "time_s": 16.6,
+        "phase": "transport_bin",
+        "owner": "bin:wall_x_plus"
+      },
+      "deepest": {
+        "sample": 1789,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900113873221239,
+        "command_sample": 4519,
+        "time_s": 18.080000000000002,
+        "phase": "transport_bin",
+        "owner": "wrist_2_link"
+      },
+      "final_command_violations": [
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_1_link",
+          "distance_m": -0.014207003102508458,
+          "command_sample": 5269,
+          "time_s": 21.080000000000002,
+          "phase": "release_settle",
+          "owner": "wrist_1_link"
+        },
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_2_link",
+          "distance_m": -0.06900113873221239,
+          "command_sample": 5269,
+          "time_s": 21.080000000000002,
+          "phase": "release_settle",
+          "owner": "wrist_2_link"
+        },
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_3_link",
+          "distance_m": -0.05103269800188247,
+          "command_sample": 5269,
+          "time_s": 21.080000000000002,
+          "phase": "release_settle",
+          "owner": "wrist_3_link"
+        },
+        {
+          "sample": 2539,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "fabase",
+          "distance_m": -0.005833089218302659,
+          "command_sample": 5269,
+          "time_s": 21.080000000000002,
+          "phase": "release_settle",
+          "owner": "fabase"
+        },
+        {
+          "sample": 2539,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 24,
+          "distance_m": -0.010138686874672294,
+          "command_sample": 5269,
+          "time_s": 21.080000000000002,
+          "phase": "release_settle",
+          "owner": "bin:wall_x_plus"
+        },
+        {
+          "sample": 2539,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 26,
+          "distance_m": -0.001318446426200264,
+          "command_sample": 5269,
+          "time_s": 21.080000000000002,
+          "phase": "release_settle",
+          "owner": "bin:wall_y_plus"
+        }
+      ],
+      "grouped": [
+        {
+          "phase": "release",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 250,
+          "first": {
+            "sample": 1790,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2039,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 4769,
+            "time_s": 19.080000000000002,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 1790,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 250,
+          "first": {
+            "sample": 1790,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2039,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 4769,
+            "time_s": 19.080000000000002,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 1790,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 250,
+          "first": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2039,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 4769,
+            "time_s": 19.080000000000002,
+            "phase": "release",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 250,
+          "first": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2039,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4769,
+            "time_s": 19.080000000000002,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 250,
+          "first": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2039,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4769,
+            "time_s": 19.080000000000002,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 250,
+          "first": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2039,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 4769,
+            "time_s": 19.080000000000002,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 1790,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 4520,
+            "time_s": 18.084,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 500,
+          "first": {
+            "sample": 2040,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2539,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 5269,
+            "time_s": 21.080000000000002,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 2040,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 500,
+          "first": {
+            "sample": 2040,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2539,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 5269,
+            "time_s": 21.080000000000002,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 2040,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 500,
+          "first": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2539,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 5269,
+            "time_s": 21.080000000000002,
+            "phase": "release_settle",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 500,
+          "first": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2539,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 5269,
+            "time_s": 21.080000000000002,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 500,
+          "first": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2539,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 5269,
+            "time_s": 21.080000000000002,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 500,
+          "first": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2539,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 5269,
+            "time_s": 21.080000000000002,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 2040,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 4770,
+            "time_s": 19.084,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 371,
+          "first": {
+            "sample": 1419,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.0007612687315485935,
+            "command_sample": 4149,
+            "time_s": 16.6,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 1789,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874672294,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 1437,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.016618971477823777,
+            "command_sample": 4167,
+            "time_s": 16.672,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 255,
+          "first": {
+            "sample": 1420,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0003150744840396723,
+            "command_sample": 4150,
+            "time_s": 16.604,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 1789,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.001318446426200264,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 1434,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.007339152091974204,
+            "command_sample": 4164,
+            "time_s": 16.66,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 309,
+          "first": {
+            "sample": 1481,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0001101982545082883,
+            "command_sample": 4211,
+            "time_s": 16.848,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 1789,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218302659,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 1632,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.006103424882241807,
+            "command_sample": 4362,
+            "time_s": 17.452,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 186,
+          "first": {
+            "sample": 1604,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.00010593353763129933,
+            "command_sample": 4334,
+            "time_s": 17.34,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 1789,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 1789,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003102508458,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 340,
+          "first": {
+            "sample": 1450,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.0004110682162580005,
+            "command_sample": 4180,
+            "time_s": 16.724,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 1789,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 1789,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873221239,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 350,
+          "first": {
+            "sample": 1440,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -9.07027929175153e-05,
+            "command_sample": 4170,
+            "time_s": 16.684,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 1789,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800188247,
+            "command_sample": 4519,
+            "time_s": 18.080000000000002,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 1661,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051097877689294434,
+            "command_sample": 4391,
+            "time_s": 17.568,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          }
+        }
+      ],
+      "open_ok": true,
+      "seed_full_scene_parts": 27,
+      "seed_full_scene_samples": 2730,
+      "extra_open_parts": 25,
+      "extra_open_samples": 2730,
+      "original_ik_counts": {
+        "schema": "anydex_boya_author_continuation_planning_counts_v1",
+        "gesture_id": 1,
+        "original_ik_source": {
+          "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+          "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a"
+        },
+        "original_ik_calls_started": 96,
+        "original_ik_calls_returned": 96,
+        "original_ik_calls_raised": 0,
+        "original_ik_wall_s": 4.269864909816533,
+        "max_nfev_values": [
+          300
+        ],
+        "physics_steps": 0,
+        "instrumentation": "Forward identical args/kwargs once to the original callable; preserve its result or exception",
+        "child_wall_s": 26.746014091884717
+      },
+      "transport_ik_audits": 96,
+      "inputs": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/transport_raw/plan.json": "30fbc1dd38bb7c0f069ac65eaf746d537306aa921d644af51cf2e5bda90dae72",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/transport_raw/commands.npz": "6671e4b30991927e053cdd418150e10d0febf02486d04e47989cbc9e88727a85",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/transport_raw/lift_arm_geometry.json": "1165ee721eecf9ae11a399acc689e2c3bae34fad401d33a73d8f1404f988af0e",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g1/transport_raw/path_geometry.json": "e3b1591ac2b69dc824ded439982072c1edc6316077a92a39db3fabe7bf0994c1"
+      }
+    },
+    {
+      "gesture_id": 6,
+      "commands": 5266,
+      "phases": {
+        "settle": 50,
+        "home_to_pregrasp": 1887,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "retreat_4mm": 125,
+        "retreat_wait": 25,
+        "retreat_pregrasp": 500,
+        "transport_bin": 1129,
+        "release": 250,
+        "release_settle": 500
+      },
+      "post_samples": 2829,
+      "count": 7270,
+      "counts_by_kind": {
+        "object": 2413,
+        "self": 4857
+      },
+      "counts_by_object_owner": {
+        "bin:wall_x_plus": 1273,
+        "bin:wall_y_plus": 1140
+      },
+      "counts_by_phase": {
+        "transport_bin": 2770,
+        "release": 1500,
+        "release_settle": 3000
+      },
+      "first": {
+        "sample": 1556,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.0005181328440314861,
+        "command_sample": 3993,
+        "time_s": 15.976,
+        "phase": "transport_bin",
+        "owner": "bin:wall_x_plus"
+      },
+      "deepest": {
+        "sample": 1995,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900538113719337,
+        "command_sample": 4432,
+        "time_s": 17.732,
+        "phase": "transport_bin",
+        "owner": "wrist_2_link"
+      },
+      "final_command_violations": [
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_1_link",
+          "distance_m": -0.014207003104603813,
+          "command_sample": 5265,
+          "time_s": 21.064,
+          "phase": "release_settle",
+          "owner": "wrist_1_link"
+        },
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_2_link",
+          "distance_m": -0.06900113873447657,
+          "command_sample": 5265,
+          "time_s": 21.064,
+          "phase": "release_settle",
+          "owner": "wrist_2_link"
+        },
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_3_link",
+          "distance_m": -0.05103269800205902,
+          "command_sample": 5265,
+          "time_s": 21.064,
+          "phase": "release_settle",
+          "owner": "wrist_3_link"
+        },
+        {
+          "sample": 2828,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "fabase",
+          "distance_m": -0.005833089218426522,
+          "command_sample": 5265,
+          "time_s": 21.064,
+          "phase": "release_settle",
+          "owner": "fabase"
+        },
+        {
+          "sample": 2828,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 24,
+          "distance_m": -0.010138686874754829,
+          "command_sample": 5265,
+          "time_s": 21.064,
+          "phase": "release_settle",
+          "owner": "bin:wall_x_plus"
+        },
+        {
+          "sample": 2828,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 26,
+          "distance_m": -0.0013184464262959287,
+          "command_sample": 5265,
+          "time_s": 21.064,
+          "phase": "release_settle",
+          "owner": "bin:wall_y_plus"
+        }
+      ],
+      "grouped": [
+        {
+          "phase": "release",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 250,
+          "first": {
+            "sample": 2079,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2328,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 4765,
+            "time_s": 19.064,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 2079,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 250,
+          "first": {
+            "sample": 2079,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2328,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 4765,
+            "time_s": 19.064,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 2079,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 250,
+          "first": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2328,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 4765,
+            "time_s": 19.064,
+            "phase": "release",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 250,
+          "first": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2328,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4765,
+            "time_s": 19.064,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 250,
+          "first": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2328,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 4765,
+            "time_s": 19.064,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 250,
+          "first": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2328,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 4765,
+            "time_s": 19.064,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 2079,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 4516,
+            "time_s": 18.068,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 500,
+          "first": {
+            "sample": 2329,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2828,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 5265,
+            "time_s": 21.064,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 2329,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 500,
+          "first": {
+            "sample": 2329,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2828,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 5265,
+            "time_s": 21.064,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 2329,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 500,
+          "first": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2828,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 5265,
+            "time_s": 21.064,
+            "phase": "release_settle",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 500,
+          "first": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2828,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 5265,
+            "time_s": 21.064,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 500,
+          "first": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2828,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 5265,
+            "time_s": 21.064,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 500,
+          "first": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2828,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 5265,
+            "time_s": 21.064,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 2329,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 4766,
+            "time_s": 19.068,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 523,
+          "first": {
+            "sample": 1556,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.0005181328440314861,
+            "command_sample": 3993,
+            "time_s": 15.976,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2078,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.010138686874754829,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 1575,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01564433304929589,
+            "command_sample": 4012,
+            "time_s": 16.052,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 390,
+          "first": {
+            "sample": 1557,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -5.125632031421367e-05,
+            "command_sample": 3994,
+            "time_s": 15.98,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2078,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262959287,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 1570,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0065766684295344695,
+            "command_sample": 4007,
+            "time_s": 16.032,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 475,
+          "first": {
+            "sample": 1604,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -8.147380055570537e-05,
+            "command_sample": 4041,
+            "time_s": 16.168,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2078,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.005833089218426522,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 1751,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.007788835569606155,
+            "command_sample": 4188,
+            "time_s": 16.756,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 343,
+          "first": {
+            "sample": 1736,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -4.2347060000159646e-05,
+            "command_sample": 4173,
+            "time_s": 16.696,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2078,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 2078,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003104603813,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 517,
+          "first": {
+            "sample": 1562,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.0003226594426225247,
+            "command_sample": 3999,
+            "time_s": 16.0,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2078,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873447657,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 1995,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900538113719337,
+            "command_sample": 4432,
+            "time_s": 17.732,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 522,
+          "first": {
+            "sample": 1557,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.0006635278362785014,
+            "command_sample": 3994,
+            "time_s": 15.98,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2078,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05103269800205902,
+            "command_sample": 4515,
+            "time_s": 18.064,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 1778,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05249811766422613,
+            "command_sample": 4215,
+            "time_s": 16.864,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          }
+        }
+      ],
+      "open_ok": true,
+      "seed_full_scene_parts": 27,
+      "seed_full_scene_samples": 2437,
+      "extra_open_parts": 25,
+      "extra_open_samples": 2437,
+      "original_ik_counts": {
+        "schema": "anydex_boya_author_continuation_planning_counts_v1",
+        "gesture_id": 6,
+        "original_ik_source": {
+          "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+          "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a"
+        },
+        "original_ik_calls_started": 96,
+        "original_ik_calls_returned": 96,
+        "original_ik_calls_raised": 0,
+        "original_ik_wall_s": 4.678243432659656,
+        "max_nfev_values": [
+          300
+        ],
+        "physics_steps": 0,
+        "instrumentation": "Forward identical args/kwargs once to the original callable; preserve its result or exception",
+        "child_wall_s": 27.168194208992645
+      },
+      "transport_ik_audits": 96,
+      "inputs": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/transport_raw/plan.json": "d36da84aa6a4144aa633bc692f19fabe60e43d0d350276bb9d0998aa910d93d6",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/transport_raw/commands.npz": "224660ae339b7c1aae401d57717b47cac67da5278497710b93dce8a4fbaf0c7d",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/transport_raw/lift_arm_geometry.json": "d1e7ca4db7ec0bd3106e4de601d5dfd314131e817c8668cb5e66c64b85ed99a7",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g6/transport_raw/path_geometry.json": "adff245698c6494e8c0f733bfbbcd2a601d519235f152314fec4473b587e5fcc"
+      }
+    },
+    {
+      "gesture_id": 7,
+      "commands": 5259,
+      "phases": {
+        "settle": 50,
+        "home_to_pregrasp": 2025,
+        "approach": 500,
+        "close": 250,
+        "hold": 50,
+        "retreat_4mm": 125,
+        "retreat_wait": 25,
+        "retreat_pregrasp": 500,
+        "transport_bin": 984,
+        "release": 250,
+        "release_settle": 500
+      },
+      "post_samples": 2684,
+      "count": 6768,
+      "counts_by_kind": {
+        "object": 2263,
+        "self": 4505
+      },
+      "counts_by_object_owner": {
+        "bin:wall_x_plus": 1195,
+        "bin:wall_y_plus": 1068
+      },
+      "counts_by_phase": {
+        "transport_bin": 2268,
+        "release": 1500,
+        "release_settle": 3000
+      },
+      "first": {
+        "sample": 1489,
+        "kind": "object",
+        "link": "upper_arm_link",
+        "other": 24,
+        "distance_m": -0.0008638465501858595,
+        "command_sample": 4064,
+        "time_s": 16.26,
+        "phase": "transport_bin",
+        "owner": "bin:wall_x_plus"
+      },
+      "deepest": {
+        "sample": 1933,
+        "kind": "self",
+        "link": "upper_arm_link",
+        "other": "wrist_2_link",
+        "distance_m": -0.06900113873337459,
+        "command_sample": 4508,
+        "time_s": 18.036,
+        "phase": "transport_bin",
+        "owner": "wrist_2_link"
+      },
+      "final_command_violations": [
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_1_link",
+          "distance_m": -0.014207003103583018,
+          "command_sample": 5258,
+          "time_s": 21.036,
+          "phase": "release_settle",
+          "owner": "wrist_1_link"
+        },
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_2_link",
+          "distance_m": -0.06900113873337459,
+          "command_sample": 5258,
+          "time_s": 21.036,
+          "phase": "release_settle",
+          "owner": "wrist_2_link"
+        },
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "wrist_3_link",
+          "distance_m": -0.051032698001975525,
+          "command_sample": 5258,
+          "time_s": 21.036,
+          "phase": "release_settle",
+          "owner": "wrist_3_link"
+        },
+        {
+          "sample": 2683,
+          "kind": "self",
+          "link": "upper_arm_link",
+          "other": "fabase",
+          "distance_m": -0.0058330892183686076,
+          "command_sample": 5258,
+          "time_s": 21.036,
+          "phase": "release_settle",
+          "owner": "fabase"
+        },
+        {
+          "sample": 2683,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 24,
+          "distance_m": -0.01013868687471822,
+          "command_sample": 5258,
+          "time_s": 21.036,
+          "phase": "release_settle",
+          "owner": "bin:wall_x_plus"
+        },
+        {
+          "sample": 2683,
+          "kind": "object",
+          "link": "upper_arm_link",
+          "other": 26,
+          "distance_m": -0.0013184464262535021,
+          "command_sample": 5258,
+          "time_s": 21.036,
+          "phase": "release_settle",
+          "owner": "bin:wall_y_plus"
+        }
+      ],
+      "grouped": [
+        {
+          "phase": "release",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 250,
+          "first": {
+            "sample": 1934,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2183,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 4758,
+            "time_s": 19.036,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 1934,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 250,
+          "first": {
+            "sample": 1934,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2183,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 4758,
+            "time_s": 19.036,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 1934,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 250,
+          "first": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2183,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 4758,
+            "time_s": 19.036,
+            "phase": "release",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 250,
+          "first": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2183,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4758,
+            "time_s": 19.036,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 250,
+          "first": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2183,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4758,
+            "time_s": 19.036,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "release",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 250,
+          "first": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2183,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 4758,
+            "time_s": 19.036,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 1934,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 4509,
+            "time_s": 18.04,
+            "phase": "release",
+            "owner": "wrist_3_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 500,
+          "first": {
+            "sample": 2184,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 2683,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 5258,
+            "time_s": 21.036,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 2184,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 500,
+          "first": {
+            "sample": 2184,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 2683,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 5258,
+            "time_s": 21.036,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 2184,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 500,
+          "first": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 2683,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 5258,
+            "time_s": 21.036,
+            "phase": "release_settle",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 500,
+          "first": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 2683,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 5258,
+            "time_s": 21.036,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 500,
+          "first": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 2683,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 5258,
+            "time_s": 21.036,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "release_settle",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 500,
+          "first": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 2683,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 5258,
+            "time_s": 21.036,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 2184,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 4759,
+            "time_s": 19.04,
+            "phase": "release_settle",
+            "owner": "wrist_3_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_x_plus",
+          "count": 445,
+          "first": {
+            "sample": 1489,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.0008638465501858595,
+            "command_sample": 4064,
+            "time_s": 16.26,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          },
+          "last": {
+            "sample": 1933,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01013868687471822,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          },
+          "deepest": {
+            "sample": 1507,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 24,
+            "distance_m": -0.01611880271847048,
+            "command_sample": 4082,
+            "time_s": 16.332,
+            "phase": "transport_bin",
+            "owner": "bin:wall_x_plus"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "object",
+          "link": "upper_arm_link",
+          "owner": "bin:wall_y_plus",
+          "count": 318,
+          "first": {
+            "sample": 1490,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.00039089684343523675,
+            "command_sample": 4065,
+            "time_s": 16.264,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          },
+          "last": {
+            "sample": 1933,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.0013184464262535021,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          },
+          "deepest": {
+            "sample": 1503,
+            "kind": "object",
+            "link": "upper_arm_link",
+            "other": 26,
+            "distance_m": -0.006906601686221325,
+            "command_sample": 4078,
+            "time_s": 16.316,
+            "phase": "transport_bin",
+            "owner": "bin:wall_y_plus"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "fabase",
+          "count": 390,
+          "first": {
+            "sample": 1544,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -7.758620888203248e-05,
+            "command_sample": 4119,
+            "time_s": 16.48,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          },
+          "last": {
+            "sample": 1933,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.0058330892183686076,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          },
+          "deepest": {
+            "sample": 1696,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "fabase",
+            "distance_m": -0.00675801489618604,
+            "command_sample": 4271,
+            "time_s": 17.088,
+            "phase": "transport_bin",
+            "owner": "fabase"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_1_link",
+          "count": 254,
+          "first": {
+            "sample": 1680,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -9.396621529724706e-05,
+            "command_sample": 4255,
+            "time_s": 17.024,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          },
+          "last": {
+            "sample": 1933,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          },
+          "deepest": {
+            "sample": 1933,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_1_link",
+            "distance_m": -0.014207003103583018,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "wrist_1_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_2_link",
+          "count": 427,
+          "first": {
+            "sample": 1507,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -4.1439104362877384e-05,
+            "command_sample": 4082,
+            "time_s": 16.332,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          },
+          "last": {
+            "sample": 1933,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          },
+          "deepest": {
+            "sample": 1933,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_2_link",
+            "distance_m": -0.06900113873337459,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "wrist_2_link"
+          }
+        },
+        {
+          "phase": "transport_bin",
+          "kind": "self",
+          "link": "upper_arm_link",
+          "owner": "wrist_3_link",
+          "count": 434,
+          "first": {
+            "sample": 1500,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.00044257340301237947,
+            "command_sample": 4075,
+            "time_s": 16.304000000000002,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          },
+          "last": {
+            "sample": 1933,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.051032698001975525,
+            "command_sample": 4508,
+            "time_s": 18.036,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          },
+          "deepest": {
+            "sample": 1716,
+            "kind": "self",
+            "link": "upper_arm_link",
+            "other": "wrist_3_link",
+            "distance_m": -0.05163064329633453,
+            "command_sample": 4291,
+            "time_s": 17.168,
+            "phase": "transport_bin",
+            "owner": "wrist_3_link"
+          }
+        }
+      ],
+      "open_ok": true,
+      "seed_full_scene_parts": 27,
+      "seed_full_scene_samples": 2575,
+      "extra_open_parts": 25,
+      "extra_open_samples": 2575,
+      "original_ik_counts": {
+        "schema": "anydex_boya_author_continuation_planning_counts_v1",
+        "gesture_id": 7,
+        "original_ik_source": {
+          "path": "/home/wangrenpeng/CanonDex/canondex/grasp/admm/arm_only_ik.py",
+          "sha256": "51dd1806a5d5a1f2fe040163600cd1c4fc1364080c60478f664c6fbbcf38d92a"
+        },
+        "original_ik_calls_started": 96,
+        "original_ik_calls_returned": 96,
+        "original_ik_calls_raised": 0,
+        "original_ik_wall_s": 4.436422598315403,
+        "max_nfev_values": [
+          300
+        ],
+        "physics_steps": 0,
+        "instrumentation": "Forward identical args/kwargs once to the original callable; preserve its result or exception",
+        "child_wall_s": 26.76611671410501
+      },
+      "transport_ik_audits": 96,
+      "inputs": {
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/transport_raw/plan.json": "82331a076ac14aad12b9503b2e8852431f4c78820b354f2de6de5070167f9abd",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/transport_raw/commands.npz": "d1291471ac5c2d8738b4eebf77d9add631f121b9d045b4860b0d912a47be895d",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/transport_raw/lift_arm_geometry.json": "b7c31ef11e6f48e42a68e96f73aacac545b2c0fcdf177c18f48dce0267188391",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_pipeline_home_release_20261114_v1/integration_g7/transport_raw/path_geometry.json": "e4c47fe32f6d6e48962ddbca14eb11fd961f4471ba9c1fced7454e3f48eb1b8e"
+      }
+    }
+  ],
+  "physics_steps": 0,
+  "new_planning_calls": 0
+}

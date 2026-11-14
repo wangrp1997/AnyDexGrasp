@@ -1,0 +1,237 @@
+{
+  "schema": "anydex_boya_author_fixed_release_v1",
+  "scene": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_scene_20261114_v4/capture/observed_scene.json",
+    "sha256": "35145a6be4c21843ac8ea365a9f68feb4f934c96d0d366b230f5869b7da6cbbd"
+  },
+  "bin_sha256": "c382ae78af58bdd15657dd1d674fef03dfc1b6df774cb4bac88c28266f67b6f6",
+  "world_T_release_palm": [
+    [
+      0.0007962574874067301,
+      -0.013184925338607408,
+      -0.9999127580533358,
+      -0.4
+    ],
+    [
+      0.9999996829318324,
+      -4.10025819803366e-10,
+      0.0007963267134376482,
+      -0.25
+    ],
+    [
+      -1.0499918251862382e-05,
+      -0.9999130750939378,
+      0.013184921157760834,
+      0.35
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "frame": "world",
+  "link": "palm",
+  "pose_rule": "fixed_world_se3",
+  "depends_on_candidate_pose": false,
+  "depends_on_object_pose": false,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_release.py": "fb99c4cfb7261ab30115fb705314145c4787ed9650ce16ef14c9af4e1c98cb77",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.collection.json": "d578a7d7441378d9d8e4cb683845ddadf0977e8097edce00615e8a7b8c1c584d",
+    "/home/wangrenpeng/CanonDex/outputs/research/template_arm_native_video_20261027_v1/ur16e_boya.urdf": "b7e8164ee0bd34a8c18891c1f32df1621103d2ffc95f1ad80948b1ce4f208d87",
+    "/home/wangrenpeng/tendon-spin/assets/hand/boya.urdf": "4aa1dbbb7b930bc29ac824b25697cde6c2bed3318d8b0dd5ea6439b643f34cca",
+    "/home/wangrenpeng/tendon-spin/assets/grasp/scene.xml": "08627d514b8d73e91b55cfc8381f95cc478a59245cf470d15fead1ea912c647e",
+    "/home/wangrenpeng/BoyaBlindGrasp/assets/sources/canondex_ur_by.urdf.xacro": "6cec01b3d4fe0f0338d5f3b568aed2c404a653bde8abc472e7ecf6c9ca1568b3",
+    "/home/wangrenpeng/BoyaBlindGrasp/assets/sources/arm_home.srdf": "f3eb636107851bacad3143f2b322debde7f9c3c561430ec8cdc453806798f2bc",
+    "/home/wangrenpeng/CanonDex/canondex/planning/model.py": "3d0469d645fa882c26e83eb70879cc1b29b57063e4bf27c5fb7aa2f0214a1e33",
+    "/home/wangrenpeng/CanonDex/canondex/robots/reference.py": "7bd09451947b61284876a6a912edaa51db9a671a9f7dba1fcc748f428dc35b21",
+    "/home/wangrenpeng/CanonDex/canondex/robots/kinematics.py": "3ee84ac980455b75a6f5729701921109fd3bd4aeae1868d4f015333b578136d1"
+  },
+  "source_policy": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/ur_toolbox/ur_toolbox/robot/ur.py",
+      "sha256": "72125be1412d9039a8a789e9188e2529eacc61ed78c1b595f27b154c7f2a01de"
+    },
+    "throw_pose_line": 235,
+    "throw_movel_line": 252,
+    "actual_throw_call_line": 406,
+    "subsequent_open_line": 407,
+    "literal_tcp_xyz_rotvec_poses": {
+      "global_camera": [
+        -0.410796973800367,
+        -0.5401806313280444,
+        0.22974717091039015,
+        1.202156341186167,
+        2.8652524529413563,
+        -0.16828893640775433
+      ],
+      "wrist_camera": [
+        -0.3204891342444824,
+        0.0,
+        0.6039789076893695,
+        2.2151031430447197,
+        2.2263986774485334,
+        0.013764345054940088
+      ]
+    },
+    "coordinate_units": "metres/radians; original robot TCP/base convention",
+    "selection": "Fixed camera-installation branch only; no object or grasp position input",
+    "numeric_tcp_poses_copied_into_boya": false
+  },
+  "adaptation": {
+    "method": "fixed_home_fk_rotation_and_declared_world_xyz",
+    "fixed_world_xyz_m": [
+      -0.4,
+      -0.25,
+      0.35
+    ],
+    "home_palm_world_se3": [
+      [
+        0.0007962574874067301,
+        -0.013184925338607408,
+        -0.9999127580533358,
+        -0.4978113585672529
+      ],
+      [
+        0.9999996829318324,
+        -4.10025819803366e-10,
+        0.0007963267134376482,
+        0.17442477431049622
+      ],
+      [
+        -1.0499918251862382e-05,
+        -0.9999130750939378,
+        0.013184921157760834,
+        0.46999497546982616
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "home_full_state": {
+      "shoulder_pan_joint": 0.0,
+      "shoulder_lift_joint": -1.12,
+      "elbow_joint": -2.07,
+      "wrist_1_joint": -3.08,
+      "wrist_2_joint": -1.57,
+      "wrist_3_joint": 0.0,
+      "FAJ1": 0.0,
+      "FAJ3": 0.0,
+      "THJ4": 0.0,
+      "THJ3": 0.0,
+      "THJ2": 0.0,
+      "THJ1": 0.0,
+      "FFJ4": 0.0,
+      "FFJ3": 0.0,
+      "FFJ2": 0.0,
+      "MFJ4": 0.0,
+      "MFJ3": 0.0,
+      "MFJ2": 0.0,
+      "RFJ4": 0.0,
+      "RFJ3": 0.0,
+      "RFJ2": 0.0,
+      "LFJ4": 0.0,
+      "LFJ3": 0.0,
+      "LFJ2": 0.0,
+      "FFJ1": 0.0,
+      "MFJ1": 0.0,
+      "RFJ1": 0.0,
+      "LFJ1": 0.0
+    },
+    "reference_home": {
+      "source_parameter": "group_state[@name='home'][@group='ur_arm']",
+      "source_files": [
+        {
+          "path": "/home/wangrenpeng/BoyaBlindGrasp/assets/sources/arm_home.srdf",
+          "sha256": "f3eb636107851bacad3143f2b322debde7f9c3c561430ec8cdc453806798f2bc",
+          "role": "named ROS arm pose"
+        }
+      ],
+      "pose_name": "home",
+      "joint_names": [
+        "elbow_joint",
+        "shoulder_lift_joint",
+        "shoulder_pan_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint"
+      ],
+      "positions_rad": [
+        -2.07,
+        -1.12,
+        0.0,
+        -3.08,
+        -1.57,
+        0.0
+      ]
+    },
+    "fk_coordinate_semantics": {
+      "independent_coordinates": 24,
+      "expanded_coordinates": 28,
+      "independent_names": [
+        "shoulder_pan_joint",
+        "shoulder_lift_joint",
+        "elbow_joint",
+        "wrist_1_joint",
+        "wrist_2_joint",
+        "wrist_3_joint",
+        "FAJ1",
+        "FAJ3",
+        "THJ4",
+        "THJ3",
+        "THJ2",
+        "THJ1",
+        "FFJ4",
+        "FFJ3",
+        "FFJ2",
+        "MFJ4",
+        "MFJ3",
+        "MFJ2",
+        "RFJ4",
+        "RFJ3",
+        "RFJ2",
+        "LFJ4",
+        "LFJ3",
+        "LFJ2"
+      ],
+      "zero_hand_coordinates": "Two wrists and sixteen finger motors; four distal mimics are derived",
+      "purpose": "Complete FK input only; finger zero is not an execution/open-hand command",
+      "palm_rotation_depends_on_finger_joints": false
+    },
+    "base_transform": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "declaration": "Boya simulator frame adaptation, not the original robot TCP numeric pose; freeze before candidates",
+    "physical_or_reachability_acceptance": false
+  },
+  "physics_steps": 0,
+  "candidate_reads": 0
+}
