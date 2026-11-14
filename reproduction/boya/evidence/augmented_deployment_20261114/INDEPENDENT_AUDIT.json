@@ -1,0 +1,90 @@
+{
+  "schema": "boya_augmented_deployment_audit_v1",
+  "status": "complete",
+  "protocol_sha256": "1ad0711f30698deeaf3a194721a58f8b7311ac2ae370aabc5a1726ad14558315",
+  "cases": [
+    {
+      "input_kind": "identity",
+      "recipe": "original_mse",
+      "queries": 226,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 59,
+      "admitted_identity_branch": 59,
+      "first_admitted_identity": [
+        0,
+        1369,
+        6,
+        true,
+        3,
+        0
+      ]
+    },
+    {
+      "input_kind": "identity",
+      "recipe": "preactivation",
+      "queries": 226,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 103,
+      "admitted_identity_branch": 103,
+      "first_admitted_identity": [
+        0,
+        1369,
+        6,
+        true,
+        3,
+        0
+      ]
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "original_mse",
+      "queries": 2729,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 159,
+      "admitted_identity_branch": 23,
+      "first_admitted_identity": [
+        1,
+        223,
+        6,
+        true,
+        2,
+        1
+      ]
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "preactivation",
+      "queries": 2729,
+      "canonical_all_exact": true,
+      "outputs20_max_error": 0.0,
+      "ranking_all_exact": true,
+      "geometry_admitted": 134,
+      "admitted_identity_branch": 19,
+      "first_admitted_identity": [
+        1,
+        223,
+        6,
+        true,
+        2,
+        0
+      ]
+    }
+  ],
+  "old_preactivation_full_geometry_reproduced": true,
+  "old_head_arrays_exact": true,
+  "all_four_rankings_frozen_before_geometry": true,
+  "inputs_unchanged": true,
+  "audit_CPU_head_loads": 8,
+  "new_CGR_forwards": 0,
+  "new_training_steps": 0,
+  "new_physics_steps": 0,
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_deployment.py": "bbc8e8ce5532e5886a1a96aab7e643a134722356630989817fbb2be192c29fba"
+  }
+}

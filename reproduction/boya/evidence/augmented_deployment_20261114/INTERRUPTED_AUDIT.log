@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_deployment.py", line 94, in <module>
+    args = parser.parse_args(); audit(args.protocol.resolve(), args.output.resolve())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_deployment.py", line 42, in audit
+    canonical = canonical_candidate(raw['candidates'][source], raw['candidate_features'][source], functions, if_flip=query['if_flip'])
+                                                               ~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 257, in __getitem__
+    return format.read_array(
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/lib/_format_impl.py", line 869, in read_array
+    data = _read_bytes(fp, read_size, "array data")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/lib/_format_impl.py", line 1013, in _read_bytes
+    r = fp.read(size - len(data))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/zipfile/__init__.py", line 1008, in read
+    data = self._read1(n)
+           ^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/zipfile/__init__.py", line 1084, in _read1
+    data = self._decompressor.decompress(data, n)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

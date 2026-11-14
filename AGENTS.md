@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-14 后续：A0两输入×两旧头离线部署对照完成，无新物理
+
+用户问下一步，已先完成现成A0的2×2离线接入验证：outputs/boya_augmentation_deployment_20261114_v1，协议SHA1ad0711f30698deeaf3a194721a58f8b7311ac2ae370aabc5a1726ad14558315。原identity/11分支缓存×code100原MSE/现用preactivation各四旧头；冻结原映射/闭合/严格float32>.85/top1000/3500/400。手域raw38→484，查询226→2729，可用深入600→7724。短名单MSE138→400、现用185→400；完整几何准入MSE59→159、现用103→134，共1123完整点云检查。四组排名在任何完整点云检查前全冻结，原桌面前缀单列10880/134016次。
+
+两个identity首准入均原行1369/g6/flipTrue/rawdepth3/extra0；两个增强首准入均分支1/行223（合并2271）/g6/flipTrue/rawdepth2，原MSE extra1、现用extra0。首准入评分名次1基2/11/1/52。不是臂ready或物理成功；不能把59→159/103→134当抓起提升。原准入在增强下仅保留23/59、19/103，两个旧首准入仍保留，说明预算挤出旧姿态。A0是已用正对照，不是新外部评测。
+
+独立canonical5910查询/头118200输出/排序与门复算误差0；旧现用头226×20和103准入全部同序，3新tests过。92原输入/源码/模型/资产不变，原八权重/435/CGR及默认不变。0新CGR/训练/臂计划/物理；CanonDex仅原Boya只读FK/源几何，无项目任务或修改。正式8头加载，中止/恢复审计各8，共24次CPU旧头加载。独立审计初版逐行重复解压NPZ，精准SIGINT退出130，源码/日志/回执保留audit_interrupted_v1；仅审计改成一次读数组后恢复，四正式评分/几何未重跑。runner89.597s不含开发/测试/审计，不作速度比较。
+
+报告reproduction/boya/AUGMENTED_DEPLOYMENT_RESULTS_20261114.md，轻量证据evidence/augmented_deployment_20261114，本地入口outputs/boya_augmentation_deployment_20261114_v1/index.html。全部任务结束。下一阶段建议对固定A3/A6/E0复用观测作同样离线对照，再独立协议冻结首选后受控腕每条件一次，A0单列；本轮尚未启动，不自动重训/改映射/调阈值/物理重抓。g8几何语义另立，不同轮混改。整体论文复现仍未验收，仅轻量相关内容推用户origin。
+
 ## 2026-11-14 最新：参考 fork 已检出，几何与 11 分支离线对齐完成
 
 用户授权参考跨手适配。三个固定版本真实 Git 检出在 outputs/reference_repos_20261114：Jonas own_hand、kywch pixi、kitt server；轻量来源锁见 reproduction/evidence/fork_adaptation_survey_20261114。参考工程方法，不借用其它手模型、不运行第三方机器人脚本。报告 reproduction/FORK_ADAPTATION_SURVEY_20261114.md。

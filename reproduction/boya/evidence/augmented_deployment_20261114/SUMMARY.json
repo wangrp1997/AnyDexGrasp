@@ -1,0 +1,522 @@
+{
+  "schema": "boya_augmented_deployment_pair_results_v1",
+  "status": "complete",
+  "scope": "Same known A0, 2x2 offline hand-domain/head/full-cloud comparison; no physical efficacy or generalization claim",
+  "protocol_sha256": "1ad0711f30698deeaf3a194721a58f8b7311ac2ae370aabc5a1726ad14558315",
+  "cases": [
+    {
+      "input_kind": "identity",
+      "recipe": "original_mse",
+      "domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 1091,
+        "world_workspace_pass": 551,
+        "common_pass": 340,
+        "mapped_pose_queries": 2720,
+        "support_plane_tests": 10880,
+        "hand_domain_raw": 38,
+        "hand_domain_pose_queries": 226,
+        "raw_topk": 38,
+        "head_queries": 226,
+        "allowed_extra_combinations": 600
+      },
+      "head_queries": 226,
+      "expanded_combinations": 600,
+      "shortlist": 138,
+      "geometry_checked": 138,
+      "geometry_admitted": 59,
+      "hand_domain_CGR_topk_branch_counts": {
+        "0": 38,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "first_admitted": {
+        "query_index": 217,
+        "source_candidate_index": 1369,
+        "source_cgr_rank": 36,
+        "gesture_id": 6,
+        "if_flip": true,
+        "official_policy_if_flip": true,
+        "raw_depth_index": 3,
+        "cgr_score": 0.23221652209758759,
+        "canonical_CGR480_identity": {
+          "shape": [
+            480
+          ],
+          "dtype": "<f4",
+          "c_order_bytes_sha256": "528c384b88523082208984d8c047f822775ef468754f52792acb4a4666dac44f"
+        },
+        "domain_source_slot": "g6:distal_000:ff",
+        "allowed_extra_depth_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "table_minimum_heights_m": [
+          0.01826229664088274,
+          0.018645932601337782,
+          0.019029568561792824,
+          0.019413204522247866
+        ],
+        "requested_opening_m": 0.13051790938638097,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "source_branch": 0,
+        "source_branch_row": 1369,
+        "source_scene_reflection": false,
+        "extra_depth_index": 0,
+        "target_index": 12,
+        "learned_score": 1.799927830696106,
+        "global_score_rank": 1,
+        "source_slot": "g6:distal_000:ff",
+        "actual_reference_width_m": 0.13051790938638097,
+        "raw_width_m": 0.08364299684762955,
+        "raw_depth_m": 0.029999999329447746,
+        "additional_depth_index": 0,
+        "additional_depth_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.01826229664088274,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "score_source": "Frozen Boya head, globally ranked before geometry",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        }
+      },
+      "first_admitted_identity": [
+        0,
+        1369,
+        6,
+        true,
+        3,
+        0
+      ],
+      "full_cloud_before_rank_freeze": false,
+      "arm_checked": 0,
+      "new_physics_steps": 0
+    },
+    {
+      "input_kind": "identity",
+      "recipe": "preactivation",
+      "domain_counts": {
+        "input": 2048,
+        "raw_width_pass": 1091,
+        "world_workspace_pass": 551,
+        "common_pass": 340,
+        "mapped_pose_queries": 2720,
+        "support_plane_tests": 10880,
+        "hand_domain_raw": 38,
+        "hand_domain_pose_queries": 226,
+        "raw_topk": 38,
+        "head_queries": 226,
+        "allowed_extra_combinations": 600
+      },
+      "head_queries": 226,
+      "expanded_combinations": 600,
+      "shortlist": 185,
+      "geometry_checked": 185,
+      "geometry_admitted": 103,
+      "hand_domain_CGR_topk_branch_counts": {
+        "0": 38,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "10": 0
+      },
+      "first_admitted": {
+        "query_index": 217,
+        "source_candidate_index": 1369,
+        "source_cgr_rank": 36,
+        "gesture_id": 6,
+        "if_flip": true,
+        "official_policy_if_flip": true,
+        "raw_depth_index": 3,
+        "cgr_score": 0.23221652209758759,
+        "canonical_CGR480_identity": {
+          "shape": [
+            480
+          ],
+          "dtype": "<f4",
+          "c_order_bytes_sha256": "528c384b88523082208984d8c047f822775ef468754f52792acb4a4666dac44f"
+        },
+        "domain_source_slot": "g6:distal_000:ff",
+        "allowed_extra_depth_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "table_minimum_heights_m": [
+          0.01826229664088274,
+          0.018645932601337782,
+          0.019029568561792824,
+          0.019413204522247866
+        ],
+        "requested_opening_m": 0.13051790938638097,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "source_branch": 0,
+        "source_branch_row": 1369,
+        "source_scene_reflection": false,
+        "extra_depth_index": 0,
+        "target_index": 12,
+        "learned_score": 1.4907712936401367,
+        "global_score_rank": 10,
+        "source_slot": "g6:distal_000:ff",
+        "actual_reference_width_m": 0.13051790938638097,
+        "raw_width_m": 0.08364299684762955,
+        "raw_depth_m": 0.029999999329447746,
+        "additional_depth_index": 0,
+        "additional_depth_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.01826229664088274,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "score_source": "Frozen Boya head, globally ranked before geometry",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        }
+      },
+      "first_admitted_identity": [
+        0,
+        1369,
+        6,
+        true,
+        3,
+        0
+      ],
+      "full_cloud_before_rank_freeze": false,
+      "arm_checked": 0,
+      "new_physics_steps": 0
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "original_mse",
+      "domain_counts": {
+        "input": 22528,
+        "raw_width_pass": 13354,
+        "world_workspace_pass": 6840,
+        "common_pass": 4188,
+        "mapped_pose_queries": 33504,
+        "support_plane_tests": 134016,
+        "hand_domain_raw": 484,
+        "hand_domain_pose_queries": 2729,
+        "raw_topk": 484,
+        "head_queries": 2729,
+        "allowed_extra_combinations": 7724
+      },
+      "head_queries": 2729,
+      "expanded_combinations": 7724,
+      "shortlist": 400,
+      "geometry_checked": 400,
+      "geometry_admitted": 159,
+      "hand_domain_CGR_topk_branch_counts": {
+        "0": 38,
+        "1": 53,
+        "2": 43,
+        "3": 43,
+        "4": 45,
+        "5": 42,
+        "6": 50,
+        "7": 41,
+        "8": 41,
+        "9": 44,
+        "10": 44
+      },
+      "first_admitted": {
+        "query_index": 2728,
+        "source_candidate_index": 2271,
+        "source_cgr_rank": 483,
+        "gesture_id": 6,
+        "if_flip": true,
+        "official_policy_if_flip": false,
+        "raw_depth_index": 2,
+        "cgr_score": 0.032630931586027145,
+        "canonical_CGR480_identity": {
+          "shape": [
+            480
+          ],
+          "dtype": "<f4",
+          "c_order_bytes_sha256": "4ccd7578b68c50516b93acae7e2635173841af6124ab0195ca62f4075893d66a"
+        },
+        "domain_source_slot": "g6:distal_000:ff",
+        "allowed_extra_depth_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "table_minimum_heights_m": [
+          0.007122245041732762,
+          0.007438017813354812,
+          0.007753790584976862,
+          0.008069563356598912
+        ],
+        "requested_opening_m": 0.13051790938638097,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "source_branch": 1,
+        "source_branch_row": 223,
+        "source_scene_reflection": false,
+        "extra_depth_index": 1,
+        "target_index": 9,
+        "learned_score": 3.171353340148926,
+        "global_score_rank": 0,
+        "source_slot": "g6:distal_000:ff",
+        "actual_reference_width_m": 0.13051790938638097,
+        "raw_width_m": 0.08302661776542664,
+        "raw_depth_m": 0.019999999552965164,
+        "additional_depth_index": 1,
+        "additional_depth_m": 0.01,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.007438017813354798,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "score_source": "Frozen Boya head, globally ranked before geometry",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        }
+      },
+      "first_admitted_identity": [
+        1,
+        223,
+        6,
+        true,
+        2,
+        1
+      ],
+      "full_cloud_before_rank_freeze": false,
+      "arm_checked": 0,
+      "new_physics_steps": 0
+    },
+    {
+      "input_kind": "augmented11",
+      "recipe": "preactivation",
+      "domain_counts": {
+        "input": 22528,
+        "raw_width_pass": 13354,
+        "world_workspace_pass": 6840,
+        "common_pass": 4188,
+        "mapped_pose_queries": 33504,
+        "support_plane_tests": 134016,
+        "hand_domain_raw": 484,
+        "hand_domain_pose_queries": 2729,
+        "raw_topk": 484,
+        "head_queries": 2729,
+        "allowed_extra_combinations": 7724
+      },
+      "head_queries": 2729,
+      "expanded_combinations": 7724,
+      "shortlist": 400,
+      "geometry_checked": 400,
+      "geometry_admitted": 134,
+      "hand_domain_CGR_topk_branch_counts": {
+        "0": 38,
+        "1": 53,
+        "2": 43,
+        "3": 43,
+        "4": 45,
+        "5": 42,
+        "6": 50,
+        "7": 41,
+        "8": 41,
+        "9": 44,
+        "10": 44
+      },
+      "first_admitted": {
+        "query_index": 2728,
+        "source_candidate_index": 2271,
+        "source_cgr_rank": 483,
+        "gesture_id": 6,
+        "if_flip": true,
+        "official_policy_if_flip": false,
+        "raw_depth_index": 2,
+        "cgr_score": 0.032630931586027145,
+        "canonical_CGR480_identity": {
+          "shape": [
+            480
+          ],
+          "dtype": "<f4",
+          "c_order_bytes_sha256": "4ccd7578b68c50516b93acae7e2635173841af6124ab0195ca62f4075893d66a"
+        },
+        "domain_source_slot": "g6:distal_000:ff",
+        "allowed_extra_depth_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "table_minimum_heights_m": [
+          0.007122245041732762,
+          0.007438017813354812,
+          0.007753790584976862,
+          0.008069563356598912
+        ],
+        "requested_opening_m": 0.13051790938638097,
+        "width_expansion": 1.7,
+        "width_clamped": true,
+        "source_branch": 1,
+        "source_branch_row": 223,
+        "source_scene_reflection": false,
+        "extra_depth_index": 0,
+        "target_index": 8,
+        "learned_score": 1.8576878309249878,
+        "global_score_rank": 51,
+        "source_slot": "g6:distal_000:ff",
+        "actual_reference_width_m": 0.13051790938638097,
+        "raw_width_m": 0.08302661776542664,
+        "raw_depth_m": 0.019999999552965164,
+        "additional_depth_index": 0,
+        "additional_depth_m": 0.0,
+        "geometry": {
+          "ok": true,
+          "minimum_height_m": 0.007122245041732762,
+          "approach_samples": 21,
+          "boundary": "Partial visible scene points; original complete-arm source-geometry and native gates still required"
+        },
+        "score_source": "Frozen Boya head, globally ranked before geometry",
+        "jaw_assignment": {
+          "thumb": "th",
+          "opponent": "ff"
+        }
+      },
+      "first_admitted_identity": [
+        1,
+        223,
+        6,
+        true,
+        2,
+        0
+      ],
+      "full_cloud_before_rank_freeze": false,
+      "arm_checked": 0,
+      "new_physics_steps": 0
+    }
+  ],
+  "models": {
+    "original_mse": {
+      "1": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g01.pt",
+        "sha256": "72b40881fd5f13cabda542d079305ce632bda295c2258ee9360b5b12f339d6c3",
+        "strict_load": true,
+        "fit_mesh_groups": 28,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      },
+      "6": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g06.pt",
+        "sha256": "1fddda3c8822d393224125cf755c2963457f147f943c2d7218ea86372def5433",
+        "strict_load": true,
+        "fit_mesh_groups": 28,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      },
+      "7": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g07.pt",
+        "sha256": "9ce49ebd7110cecc9eb5cca75b5a016e5ae445250827f82cfe05ca316d178fc6",
+        "strict_load": true,
+        "fit_mesh_groups": 28,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      },
+      "8": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g08.pt",
+        "sha256": "010a3ff995945e076d03c96b5665017a6d6275ac1cd876b8b1739428fbe1df66",
+        "strict_load": true,
+        "fit_mesh_groups": 24,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      }
+    },
+    "preactivation": {
+      "1": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g01.pt",
+        "sha256": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+        "strict_load": true,
+        "fit_mesh_groups": 28,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      },
+      "6": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g06.pt",
+        "sha256": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+        "strict_load": true,
+        "fit_mesh_groups": 28,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      },
+      "7": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g07.pt",
+        "sha256": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+        "strict_load": true,
+        "fit_mesh_groups": 28,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      },
+      "8": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g08.pt",
+        "sha256": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+        "strict_load": true,
+        "fit_mesh_groups": 24,
+        "fixed_epoch": 100,
+        "fit_scope": "Original 32-fit Boya heads; known-scene diagnostic, not an unseen test"
+      }
+    }
+  },
+  "head_models_loaded": 8,
+  "ranking_labels_read": false,
+  "threshold_changed": false,
+  "mapping_changed": false,
+  "closure_changed": false,
+  "new_CGR_forwards": 0,
+  "new_training_steps": 0,
+  "new_physics_steps": 0,
+  "arm_checked": 0,
+  "frozen_inputs_unchanged": true,
+  "wall_seconds": 89.5971866978798,
+  "full_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_augmentation_deployment_20261114_v1/comparison/RESULTS.json",
+    "sha256": "50e67f900e9c6a8b56bb1bed98e09f981d1ff6ee46456b978ed5829bf846b2d6"
+  },
+  "new_source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/compare_augmented_deployment.py": "4732b96c816fff3e815174e5f9b05e4155e24a5d356fd8051b0e631f302d2ece",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_augmented_deployment.py": "bbc8e8ce5532e5886a1a96aab7e643a134722356630989817fbb2be192c29fba",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_augmented_deployment.py": "a1a64d3c1537b0c025e0fc160b937a1bf184db8c49906cb1fbbddc09cc0a2a0d"
+  },
+  "identity_retention": {
+    "original_mse": {
+      "identity_admitted": 59,
+      "retained_in_augmented_admitted": 23,
+      "old_first_retained": true
+    },
+    "preactivation": {
+      "identity_admitted": 103,
+      "retained_in_augmented_admitted": 19,
+      "old_first_retained": true
+    }
+  }
+}
