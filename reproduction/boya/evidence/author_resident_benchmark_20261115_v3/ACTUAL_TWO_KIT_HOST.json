@@ -1,0 +1,313 @@
+{
+  "schema": "anydex_boya_resident_actual_host_observation_v1",
+  "raw_observations": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_host_observer_20261115_v1/HOST_OBSERVATIONS.jsonl",
+    "sha256": "594a4e2cb9018c0d861eb52fab627e657b2812062a489f1cb14f5ea43756f851"
+  },
+  "observer_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_resident_host_observer_20261115_v1/observe.py",
+    "sha256": "70288c21fb5e1e73815a4bed312e061b5ad1c572033c5e0417330034252e0b19"
+  },
+  "samples": [
+    {
+      "unix_s": 1794678598.2023485,
+      "processes": [
+        {
+          "pid": 1690951,
+          "start_ticks": 149748276,
+          "pgid": 1690951,
+          "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py execute-many --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/resident_session --source-bindings /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/RESIDENT_SOURCE_BINDINGS.json",
+          "status_lines": [
+            "State:\tS (sleeping)",
+            "VmRSS:\t 3211252 kB",
+            "Threads:\t75"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "target": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:5b:3494629 0 EOF"
+              ]
+            },
+            {
+              "fd": 6,
+              "target": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/resource_slots/kit/1.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:48:69475328 0 EOF"
+              ]
+            }
+          ],
+          "gpu_device_paths": [
+            "/dev/nvidia-uvm",
+            "/dev/nvidia1",
+            "/dev/nvidiactl"
+          ],
+          "maps_sha256": "9b5e1cb19f9ac8fa6638070d51e968b74eedb0ed350b08415376469f518386e1",
+          "native_maps_count": 2360,
+          "physx_map_examples": []
+        },
+        {
+          "pid": 1690952,
+          "start_ticks": 149748277,
+          "pgid": 1690952,
+          "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py execute-many --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/resident_session --source-bindings /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/RESIDENT_SOURCE_BINDINGS.json",
+          "status_lines": [
+            "State:\tR (running)",
+            "VmRSS:\t 3235544 kB",
+            "Threads:\t75"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "target": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:5b:3494629 0 EOF"
+              ]
+            },
+            {
+              "fd": 5,
+              "target": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/resource_slots/kit/0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:48:69470098 0 EOF"
+              ]
+            }
+          ],
+          "gpu_device_paths": [
+            "/dev/nvidia-uvm",
+            "/dev/nvidia1",
+            "/dev/nvidiactl"
+          ],
+          "maps_sha256": "c3d54c2b4a0176ccaee9a78109dddca2eaa8040155632dded66862892c8ca8cc",
+          "native_maps_count": 2360,
+          "physx_map_examples": []
+        }
+      ],
+      "journals": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "bytes": 9936104,
+          "mtime_ns": 1794678597710150813
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "bytes": 7132023,
+          "mtime_ns": 1794678598104144412
+        }
+      ],
+      "gpu0": {
+        "returncode": 0,
+        "stdout": "0, GPU-4d3badb8-5fb0-b880-f08e-6407f0093e86, 2025 MiB, 0 %\n",
+        "stderr": ""
+      }
+    },
+    {
+      "unix_s": 1794678608.3064785,
+      "processes": [
+        {
+          "pid": 1690951,
+          "start_ticks": 149748276,
+          "pgid": 1690951,
+          "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py execute-many --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/resident_session --source-bindings /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/RESIDENT_SOURCE_BINDINGS.json",
+          "status_lines": [
+            "State:\tR (running)",
+            "VmRSS:\t 3211688 kB",
+            "Threads:\t74"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "target": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:5b:3494629 0 EOF"
+              ]
+            },
+            {
+              "fd": 6,
+              "target": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/resource_slots/kit/1.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:48:69475328 0 EOF"
+              ]
+            }
+          ],
+          "gpu_device_paths": [
+            "/dev/nvidia-uvm",
+            "/dev/nvidia1",
+            "/dev/nvidiactl"
+          ],
+          "maps_sha256": "8640cec7c449130cd50bd90c02db739d25a05e0f4d8eba962ee84f126075dfcd",
+          "native_maps_count": 2360,
+          "physx_map_examples": []
+        },
+        {
+          "pid": 1690952,
+          "start_ticks": 149748277,
+          "pgid": 1690952,
+          "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py execute-many --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/resident_session --source-bindings /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/RESIDENT_SOURCE_BINDINGS.json",
+          "status_lines": [
+            "State:\tR (running)",
+            "VmRSS:\t 3236032 kB",
+            "Threads:\t74"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "target": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:5b:3494629 0 EOF"
+              ]
+            },
+            {
+              "fd": 5,
+              "target": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/resource_slots/kit/0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:48:69470098 0 EOF"
+              ]
+            }
+          ],
+          "gpu_device_paths": [
+            "/dev/nvidia-uvm",
+            "/dev/nvidia1",
+            "/dev/nvidiactl"
+          ],
+          "maps_sha256": "a4d8e4afbdfa366172da87bb562ae98729c02dcf5ca3659b9c48c02f82534ada",
+          "native_maps_count": 2360,
+          "physx_map_examples": []
+        }
+      ],
+      "journals": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "bytes": 26860054,
+          "mtime_ns": 1794678607874985658
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "bytes": 23490101,
+          "mtime_ns": 1794678607945984504
+        }
+      ],
+      "gpu0": {
+        "returncode": 0,
+        "stdout": "0, GPU-4d3badb8-5fb0-b880-f08e-6407f0093e86, 2025 MiB, 0 %\n",
+        "stderr": ""
+      }
+    },
+    {
+      "unix_s": 1794678618.4106364,
+      "processes": [
+        {
+          "pid": 1690951,
+          "start_ticks": 149748276,
+          "pgid": 1690951,
+          "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py execute-many --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g7 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g8 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/resident_session --source-bindings /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/RESIDENT_SOURCE_BINDINGS.json",
+          "status_lines": [
+            "State:\tR (running)",
+            "VmRSS:\t 3212032 kB",
+            "Threads:\t74"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "target": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:5b:3494629 0 EOF"
+              ]
+            },
+            {
+              "fd": 6,
+              "target": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/resource_slots/kit/1.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:48:69475328 0 EOF"
+              ]
+            }
+          ],
+          "gpu_device_paths": [
+            "/dev/nvidia-uvm",
+            "/dev/nvidia1",
+            "/dev/nvidiactl"
+          ],
+          "maps_sha256": "92cedf15e8018c6dc38c5f3d8aedbd3903e4b819218952ccb36e74f6df73b649",
+          "native_maps_count": 2360,
+          "physx_map_examples": []
+        },
+        {
+          "pid": 1690952,
+          "start_ticks": 149748277,
+          "pgid": 1690952,
+          "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py execute-many --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g6 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g7 /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g8 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/resident_session --source-bindings /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/RESIDENT_SOURCE_BINDINGS.json",
+          "status_lines": [
+            "State:\tR (running)",
+            "VmRSS:\t 3236032 kB",
+            "Threads:\t74"
+          ],
+          "locks": [
+            {
+              "fd": 4,
+              "target": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:5b:3494629 0 EOF"
+              ]
+            },
+            {
+              "fd": 5,
+              "target": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/resource_slots/kit/0.lock",
+              "lock_lines": [
+                "lock:\t1: FLOCK  ADVISORY  WRITE 1672035 00:48:69470098 0 EOF"
+              ]
+            }
+          ],
+          "gpu_device_paths": [
+            "/dev/nvidia-uvm",
+            "/dev/nvidia1",
+            "/dev/nvidiactl"
+          ],
+          "maps_sha256": "a4d8e4afbdfa366172da87bb562ae98729c02dcf5ca3659b9c48c02f82534ada",
+          "native_maps_count": 2360,
+          "physx_map_examples": []
+        }
+      ],
+      "journals": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "bytes": 45736887,
+          "mtime_ns": 1794678618232817366
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+          "bytes": 39816225,
+          "mtime_ns": 1794678618229817415
+        }
+      ],
+      "gpu0": {
+        "returncode": 0,
+        "stdout": "0, GPU-4d3badb8-5fb0-b880-f08e-6407f0093e86, 2025 MiB, 0 %\n",
+        "stderr": ""
+      }
+    }
+  ],
+  "all_checks_pass": true,
+  "checks": [
+    "Two same live PID/startticks identities across three snapshots",
+    "Both native PhysX libraries mapped",
+    "Both inherit actual global exclusive lease and different exclusive Kit slot FDs",
+    "Both independent g1 compressed contact journals strictly grow"
+  ],
+  "gpu_index_device_mapping": {
+    "index": 0,
+    "uuid": "GPU-4d3badb8-5fb0-b880-f08e-6407f0093e86",
+    "minor_number": 1,
+    "pci_bus_id": "00000000:01:00.0",
+    "verification_command": "nvidia-smi -q -x -i 0"
+  },
+  "observation_scope": "Process/module/FD/independent journal progress; not a replacement for full numeric physics audit",
+  "observer_intentionally_stopped": {
+    "pid": 1677077,
+    "signal": "SIGTERM",
+    "collection_processes_signalled": 0,
+    "reason": "Root requested reduced sampling after concurrent journal proof"
+  },
+  "observer_simulator_launches": 0,
+  "observer_physics_steps": 0,
+  "all_collection_results_excluded_from_training": true
+}

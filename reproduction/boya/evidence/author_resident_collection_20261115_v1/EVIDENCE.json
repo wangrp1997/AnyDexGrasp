@@ -1,0 +1,57 @@
+{
+  "schema": "anydex_boya_resident_collection_implementation_evidence_v1",
+  "status": "implementation_and_offline_contracts_passed",
+  "sources": {
+    "author_resident_collection.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_collection.py",
+      "sha256": "6381790f3f246be9e33b1d8d8d89dc9cfef9acc9128357e8e302b718cf65ad65"
+    },
+    "test_author_resident_collection.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_resident_collection.py",
+      "sha256": "4ca3b32a7d0aaab2bb4f05e19d0248965ff52df884d750e1c80f0f57f998df79"
+    },
+    "author_resident_execution.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py",
+      "sha256": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac"
+    },
+    "author_collection_batch.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+      "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+    },
+    "author_collection_wave_resources.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py",
+      "sha256": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b"
+    },
+    "AUTHOR_RESIDENT_COLLECTION_20261115.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_RESIDENT_COLLECTION_20261115.md",
+      "sha256": "94ac4e98a7ab2349e410104bd6f1026c099cbe889bcded6e41bd190b5a247a83"
+    }
+  },
+  "tests": {
+    "count": 12,
+    "elapsed_seconds": 7.038,
+    "status": "pass",
+    "log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_collection_20261115_v1/UNITTESTS.log",
+      "sha256": "a8191bcb9f317f18fcb36c50ef395aa5105f546d280142e56c30d7e8ac3c3a00"
+    }
+  },
+  "new_Kit_launches": 0,
+  "new_model_forwards": 0,
+  "new_planning_calls": 0,
+  "new_physics_steps": 0,
+  "new_training_updates": 0,
+  "source_runtime_frozen": true,
+  "runtime_acceptance": "Actual complete collection/parallel resident reset/throughput not established by these tests",
+  "diagnostic_exclusion": {
+    "label": null,
+    "formal_training_eligible": false,
+    "exclude_training": true
+  },
+  "interface": {
+    "freeze": "freeze-from-batch --source-batch DIR --scene-indices I... --resident-workers 1..3 --output-dir FRESH_DIR",
+    "run": "run --run-dir FRESH_DIR"
+  },
+  "source_seed_policy": "Original queue.seed unchanged for every CGR frame and original prepare; layouts unchanged; no SeedSequence",
+  "budget": "Each selected scene has four fixed slots and at most four executions; no started retry or fallback"
+}
