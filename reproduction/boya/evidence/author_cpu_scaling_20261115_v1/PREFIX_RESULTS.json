@@ -1,0 +1,548 @@
+{
+  "schema": "anydex_boya_author_cpu_prefix_control_v1",
+  "status": "complete",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/CPU_PREFIX_PROTOCOL.json",
+    "sha256": "5a820283712c7a2ad84d735c5e74dfbeff63e385542f96f61e1ee891d3ca60ad"
+  },
+  "groups": [
+    {
+      "name": "cpu_1",
+      "mode": "cpu",
+      "count": 1,
+      "status": "partial_scaling_complete",
+      "started_unix_s": 1794721614.5552535,
+      "finished_unix_s": 1794721674.7463133,
+      "wall_s": 60.1910609730985,
+      "workers": [
+        {
+          "worker_id": "worker_00",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_1/worker_00/STAGE.json",
+            "sha256": "91e3643e5794b089e583289052cc4514635eb136f1e28124df7df52656f8f2e0"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_1/worker_00/result/SCALING_EXECUTION.json",
+            "sha256": "da80dad2624cd0eccc2a374eb6e6b51bb47a93f193aa62c85c907f199e6bf17e"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3300524,
+            "pgid": 3300524,
+            "start_ticks": 154055744
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        }
+      ],
+      "error": null,
+      "exclude_training": true,
+      "label": null,
+      "raw_label": null,
+      "prefix_interval_stats": {
+        "span_s": 5.021568298339844,
+        "union_s": 5.021568298339844,
+        "peak_concurrency": 1,
+        "all_worker_overlap_s": 5.021568298339844,
+        "evidence_scope": "Measured execution-prefix intervals; exact simultaneous Kit activity also has host samples"
+      },
+      "setup_sum_s": 54.030394077301025,
+      "execution_wall_sum_s": 5.021564983995631,
+      "environment_steps": 100,
+      "prefix_environment_steps_per_s": 19.914097361388176,
+      "outer_environment_steps_per_s": 1.6613762639055907
+    },
+    {
+      "name": "cpu_4",
+      "mode": "cpu",
+      "count": 4,
+      "status": "partial_scaling_complete",
+      "started_unix_s": 1794721674.763091,
+      "finished_unix_s": 1794721735.1128469,
+      "wall_s": 60.34975749393925,
+      "workers": [
+        {
+          "worker_id": "worker_00",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_00/STAGE.json",
+            "sha256": "ef6007bdb0d1c6eaceecb2b2b898b8de76cfc566d4a6fb3627bb52e3e6511591"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_00/result/SCALING_EXECUTION.json",
+            "sha256": "626c5094963f8fb25843e7c571dad626e2b554b0b796585a55c8a3a421f747b0"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3303119,
+            "pgid": 3303119,
+            "start_ticks": 154061776
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_01",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_01/STAGE.json",
+            "sha256": "54a60724fa6b7f9d98c98632cdb2fdf92c6c7671ec506f48b4fb03a22013735c"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_01/result/SCALING_EXECUTION.json",
+            "sha256": "2d47f42fd589393c470ac0c570a7e524ccf61db49d327687ba4e967f89da51a4"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3303118,
+            "pgid": 3303118,
+            "start_ticks": 154061775
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_02",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_02/STAGE.json",
+            "sha256": "a7037ff4b89a8ae19f01a7755b33a08fdf2c47b6a42534cb70310041b9964e08"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_02/result/SCALING_EXECUTION.json",
+            "sha256": "e99037e7c196e66a13cf3e0b71ca044b2a7e23dbc933ff3ed5d066728ade4a76"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3303120,
+            "pgid": 3303120,
+            "start_ticks": 154061776
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_03",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_03/STAGE.json",
+            "sha256": "3601706f5c8fe9656f996543d6ddc917639e8f1363a861d51dfaa867f74f1261"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_4/worker_03/result/SCALING_EXECUTION.json",
+            "sha256": "39830e7604bc5c36103735e611769084da6e08076dd83a3f66d43e35567a0587"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3303117,
+            "pgid": 3303117,
+            "start_ticks": 154061775
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        }
+      ],
+      "error": null,
+      "exclude_training": true,
+      "label": null,
+      "raw_label": null,
+      "prefix_interval_stats": {
+        "span_s": 6.408663034439087,
+        "union_s": 6.408663034439087,
+        "peak_concurrency": 4,
+        "all_worker_overlap_s": 4.118260145187378,
+        "evidence_scope": "Measured execution-prefix intervals; exact simultaneous Kit activity also has host samples"
+      },
+      "setup_sum_s": 213.35944199562073,
+      "execution_wall_sum_s": 21.88396369991824,
+      "environment_steps": 400,
+      "prefix_environment_steps_per_s": 62.4155144139217,
+      "outer_environment_steps_per_s": 6.62802994759624
+    },
+    {
+      "name": "cpu_8",
+      "mode": "cpu",
+      "count": 8,
+      "status": "partial_scaling_complete",
+      "started_unix_s": 1794721735.1293917,
+      "finished_unix_s": 1794721800.4656324,
+      "wall_s": 65.33624202385545,
+      "workers": [
+        {
+          "worker_id": "worker_00",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_00/STAGE.json",
+            "sha256": "d33505c7134929daba7c6a9851074d3ce441723fd0d3c04c31c0c19397f0b13b"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_00/result/SCALING_EXECUTION.json",
+            "sha256": "46f6a73549d8d1fe8b41e702ca5b26ffee269b95da185486ed8a033c41a28953"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306134,
+            "pgid": 3306134,
+            "start_ticks": 154067829
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_01",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_01/STAGE.json",
+            "sha256": "e912b948afe92c170b21a4ed98ff8f3802ffd0ca29a14327cf85389585f5c187"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_01/result/SCALING_EXECUTION.json",
+            "sha256": "7caabd16db274f91865e7e96cdf7c476d406824318b7095dd53de5bcbc077018"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306138,
+            "pgid": 3306138,
+            "start_ticks": 154067830
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_02",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_02/STAGE.json",
+            "sha256": "b49b76fa6b924249bdd5faea6f8234074f375b19c8dc7a2867cbc3672fa750b0"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_02/result/SCALING_EXECUTION.json",
+            "sha256": "45e02a3bc63f5ba5714acb8a8ada23142f3c5221498819dffd5264aa163a4fd5"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306139,
+            "pgid": 3306139,
+            "start_ticks": 154067830
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_03",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_03/STAGE.json",
+            "sha256": "af4757c7165d235c973c0a912793c6678f8accd4766a769952f3deee3db8ddc3"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_03/result/SCALING_EXECUTION.json",
+            "sha256": "a3d9dca294e381e5ff132d3d7c5144cbb2cf16e45ebe3b7231536ead6804bf1f"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306140,
+            "pgid": 3306140,
+            "start_ticks": 154067830
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_04",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_04/STAGE.json",
+            "sha256": "e22dd709c9d7787359127805bb5457d9248a19e8c997a35b058fc0d16eabeea3"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_04/result/SCALING_EXECUTION.json",
+            "sha256": "858bc471e51ef01cb0f1320bb52850e22877ff173f6e84d4ecf3ec9a3f737ccc"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306133,
+            "pgid": 3306133,
+            "start_ticks": 154067829
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_05",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_05/STAGE.json",
+            "sha256": "0d9ead5bb89e2b5590bace67841b6b826d781208b9f73044ff1995afc9ec3b43"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_05/result/SCALING_EXECUTION.json",
+            "sha256": "037bfe8f48342366b937076adab9d609fac3d3f0e36a368c5062d2db0baebed2"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306137,
+            "pgid": 3306137,
+            "start_ticks": 154067829
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_06",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_06/STAGE.json",
+            "sha256": "27e2e0451f2227d8ccaadbc4991bd8f093fb3e32029a5028ab607160db669b37"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_06/result/SCALING_EXECUTION.json",
+            "sha256": "fde655495ab163ea402e42f662ff702022673cdec372114b4d4da014fc1358a1"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306136,
+            "pgid": 3306136,
+            "start_ticks": 154067829
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        },
+        {
+          "worker_id": "worker_07",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_07/STAGE.json",
+            "sha256": "d8b77f65ed792817d649421fd67d1328092faa209ce3b77547285822765c1b21"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/cpu_8/worker_07/result/SCALING_EXECUTION.json",
+            "sha256": "17e71f00567998d64e2c6860198083728dbfad3275eb26fe239295f8ccf17ae0"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3306135,
+            "pgid": 3306135,
+            "start_ticks": 154067829
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        }
+      ],
+      "error": null,
+      "exclude_training": true,
+      "label": null,
+      "raw_label": null,
+      "prefix_interval_stats": {
+        "span_s": 8.860896348953247,
+        "union_s": 8.860896348953247,
+        "peak_concurrency": 8,
+        "all_worker_overlap_s": 2.092846393585205,
+        "evidence_scope": "Measured execution-prefix intervals; exact simultaneous Kit activity also has host samples"
+      },
+      "setup_sum_s": 454.21412897109985,
+      "execution_wall_sum_s": 45.86009688209742,
+      "environment_steps": 800,
+      "prefix_environment_steps_per_s": 90.28431983571339,
+      "outer_environment_steps_per_s": 12.244352831127102
+    }
+  ],
+  "error": null,
+  "wall_s": 185.93107864493504,
+  "resource_samples": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_prefix_control_20261115_v1/RESOURCE_SAMPLES.jsonl",
+    "sha256": "d9df78cd1f77d64239a59a32a5df7646bf21aabec1d45a706196c31582da3f12"
+  },
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "label": null,
+  "raw_label": null,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "full_lift_certified": false,
+  "full_collection_ETA": null
+}

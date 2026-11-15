@@ -1,5 +1,19 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前：CPU1/4/8前缀与CPU1/8完整对照通过，执行容量显著提高，collector尚未切八路
+
+用户授权CPU常驻并行路线。独立cpu_prefix_control_20261115_v1固定同旧scene4/g6各100tick、1→4→8进程，共13Kit/1300环境步/0重试。前缀包络5.021568/6.408663/8.860896s，19.914/62.416/90.284envstep/s，实测峰值重叠1/4/8，共同重叠5.022/4.118/2.093s；组wall60.191/60.350/65.336s。独立前缀审计24.187898s通过后，按事前min(前缀增益,含启动增益)、至少1.10、5%内优先小规模规则选8，不看标签选并发。
+
+另冻结cpu_full_control_20261115_v1：CPU1一次→CPU8各一次，同原3024命令，9Kit/27216env/0重试。完整执行包络143.979669/168.788235s、组wall196.751887/225.859960s，对应吞吐6.824157/含启动6.968987倍；已知同模板控制，非随机完整采集倍率，不能与旧resident1.52相乘。9完整原门/独立全数值审计全PASS、9诊断正例排除训练，不报模型9/9成功率。8并行保存q与primary pose相对本次单路exact，不外推全物理等价。CPU实际MBP/ordinal-1/CPU完整接触；原250Hz/.1kg/.6/24→28/原速度/三体向下力/native20um及全点日志均保留，CanonDex/冻结源不改，仅GPU0服务建场。
+
+首次独立audit每份一次。单路audit109.115760s，与CPU8实际执行重叠41.785691s；八份审核最多2子进程，wall435.359416s、各worker合861.146544s，原全点数值审核不删减。组执行＋audit阶段成本合305.867647/661.219376s，折算诊断吞吐11.770/43.556条/小时、比3.700650；它是成本合计，不是连续完整采集wall。含开发/交接间隙至证书实际488.684938/789.109227s单列，不抹掉间隙或套采满ETA。全部审计私有投影有额外成本，非旧resident原audit成本。
+
+本轮合22Kit/28516独立时钟暨env/85548三体步，62326116接触点；无在途未知，audit新增Kit/积分0。6前缀+6完整新检查及2复用full检查过。host最终22Kit+9审核进程组退出、16槽released、20锁可取、registryreleased，无后台物理/审核。旧13数据权重/15新标签绑定不变，正式新标签/训练/模型/外测0，累计14fit+1internal。
+
+另只读64旧槽：fit14labelled/7geometry/16placement/6nocandidate/1infra，internal1/7/8/4；14geometry均frozen_endpoint_or_non_home_collision且HOME搜索跳过，保存路径10条仅approach-floor、4条其它或跨段碰撞；10nocandidate原碰撞前21–61候选，碰撞后0。未新规划/放门/换候选/计负例，internal三型仍0。
+
+报告 reproduction/boya/AUTHOR_CPU_SCALING_RESULTS_20261115.md、轻证据 evidence/author_cpu_scaling_20261115_v1。现有resident collector仍硬性最多3路/串行audit，本次独立8路控制＋2路审核不冒称已接生产全流水。下一项是opt-in采集器并发/审核生命周期集成及新有限全链路队列；未自动追加该队列或正式4000+800，旧15.02天仅旧条件情景、整体ETA仍未知。轻量阶段提交push用户origin，大输出public/ignored。
+
 ## 2026-11-15 当前：Fabric 双关闭小对照完成，默认已满足该建议，未测出新加速
 
 用户授权按网络官方建议开始小规模验证。新增独立 author_fabric_execution/control/audit，复用原 scaling/vector/profile、原命令及完整逐点日志，不改冻结源或 CanonDex。协议 fabric_control_20261115_v1 固定原 scene4/g6、baseline→both_disabled 各100tick、2Kit/0重试/每worker600s，仅 GPU0 UUID。实读关键发现：baseline 在 App 后就已 fabricUpdateTransformations=false、fabricUpdateVelocities=false、fabricUseGPUInterop=true，两组积分时亦均如此；这是相同实际配置的重复，不是有效开关干预，不能套上游7倍或把 wall 比称关闭 Fabric 的净收益。

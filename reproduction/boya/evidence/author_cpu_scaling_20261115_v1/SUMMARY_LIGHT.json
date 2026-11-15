@@ -1,0 +1,364 @@
+{
+  "status": "all_prefix_and_full_integrity_pass",
+  "prefix_groups": [
+    {
+      "name": "cpu_1",
+      "count": 1,
+      "metrics": {
+        "mode": "cpu",
+        "count": 1,
+        "environment_steps": 100,
+        "physics_clock_steps": 100,
+        "prefix_wall_s": 5.021568298339844,
+        "prefix_envsteps_per_s": 19.914097361388176,
+        "outer_group_wall_s": 60.1910609730985,
+        "startup_inclusive_envsteps_per_s": 1.6613762639055907,
+        "prefix_intervals": {
+          "span_s": 5.021568298339844,
+          "union_s": 5.021568298339844,
+          "idle_s": 0.0,
+          "peak_concurrency": 1,
+          "all_worker_overlap_s": 5.021568298339844,
+          "worker_duration_sum_s": 5.021568298339844
+        },
+        "scope": "Bounded execution prefix including generator close; group wall includes process startup/close. No lift, full collection or ETA claim."
+      },
+      "resources": {
+        "sample_count": 29,
+        "sampled_peak_live_owned_workers": 1,
+        "sampled_peak_sum_worker_rss_bytes": 3224657920,
+        "captured_worker_cpu_s": 186.42,
+        "gpu_utilization_percent": {
+          "min": 0.0,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "gpu_memory_used_mib": {
+          "min": 719.0,
+          "mean": 1357.2758620689656,
+          "max": 1388.0
+        },
+        "gpu_power_w": {
+          "min": 35.45,
+          "mean": 84.84655172413794,
+          "max": 87.83
+        },
+        "gpu_sampling_error_count": 0,
+        "scope": "Two-second host snapshots. CPU seconds cover only each PID first-to-last captured counter; startup/exit edges are excluded. NVML covers the whole device and cannot attribute utilization to these workers alone. Sampled occupancy can miss short overlaps."
+      }
+    },
+    {
+      "name": "cpu_4",
+      "count": 4,
+      "metrics": {
+        "mode": "cpu",
+        "count": 4,
+        "environment_steps": 400,
+        "physics_clock_steps": 400,
+        "prefix_wall_s": 6.408663034439087,
+        "prefix_envsteps_per_s": 62.4155144139217,
+        "outer_group_wall_s": 60.34975749393925,
+        "startup_inclusive_envsteps_per_s": 6.62802994759624,
+        "prefix_intervals": {
+          "span_s": 6.408663034439087,
+          "union_s": 6.408663034439087,
+          "idle_s": 0.0,
+          "peak_concurrency": 4,
+          "all_worker_overlap_s": 4.118260145187378,
+          "worker_duration_sum_s": 21.883991241455078
+        },
+        "scope": "Bounded execution prefix including generator close; group wall includes process startup/close. No lift, full collection or ETA claim."
+      },
+      "resources": {
+        "sample_count": 30,
+        "sampled_peak_live_owned_workers": 4,
+        "sampled_peak_sum_worker_rss_bytes": 12958359552,
+        "captured_worker_cpu_s": 766.09,
+        "gpu_utilization_percent": {
+          "min": 0.0,
+          "mean": 0.03333333333333333,
+          "max": 1.0
+        },
+        "gpu_memory_used_mib": {
+          "min": 729.0,
+          "mean": 3214.6666666666665,
+          "max": 3377.0
+        },
+        "gpu_power_w": {
+          "min": 74.92,
+          "mean": 87.235,
+          "max": 89.17
+        },
+        "gpu_sampling_error_count": 0,
+        "scope": "Two-second host snapshots. CPU seconds cover only each PID first-to-last captured counter; startup/exit edges are excluded. NVML covers the whole device and cannot attribute utilization to these workers alone. Sampled occupancy can miss short overlaps."
+      }
+    },
+    {
+      "name": "cpu_8",
+      "count": 8,
+      "metrics": {
+        "mode": "cpu",
+        "count": 8,
+        "environment_steps": 800,
+        "physics_clock_steps": 800,
+        "prefix_wall_s": 8.860896348953247,
+        "prefix_envsteps_per_s": 90.28431983571339,
+        "outer_group_wall_s": 65.33624202385545,
+        "startup_inclusive_envsteps_per_s": 12.244352831127102,
+        "prefix_intervals": {
+          "span_s": 8.860896348953247,
+          "union_s": 8.860896348953247,
+          "idle_s": 0.0,
+          "peak_concurrency": 8,
+          "all_worker_overlap_s": 2.092846393585205,
+          "worker_duration_sum_s": 45.860140562057495
+        },
+        "scope": "Bounded execution prefix including generator close; group wall includes process startup/close. No lift, full collection or ETA claim."
+      },
+      "resources": {
+        "sample_count": 32,
+        "sampled_peak_live_owned_workers": 8,
+        "sampled_peak_sum_worker_rss_bytes": 25908031488,
+        "captured_worker_cpu_s": 1498.95,
+        "gpu_utilization_percent": {
+          "min": 0.0,
+          "mean": 0.0,
+          "max": 0.0
+        },
+        "gpu_memory_used_mib": {
+          "min": 740.0,
+          "mean": 5629.875,
+          "max": 6015.0
+        },
+        "gpu_power_w": {
+          "min": 87.1,
+          "mean": 88.3659375,
+          "max": 97.24
+        },
+        "gpu_sampling_error_count": 0,
+        "scope": "Two-second host snapshots. CPU seconds cover only each PID first-to-last captured counter; startup/exit edges are excluded. NVML covers the whole device and cannot attribute utilization to these workers alone. Sampled occupancy can miss short overlaps."
+      }
+    }
+  ],
+  "prefix_selection": {
+    "selected_parallel_count": 8,
+    "comparisons": [
+      {
+        "count": 1,
+        "prefix_gain": 1.0,
+        "startup_inclusive_gain": 1.0,
+        "score": 1.0,
+        "eligible": false
+      },
+      {
+        "count": 4,
+        "prefix_gain": 3.134237685055228,
+        "startup_inclusive_gain": 3.9894815470728817,
+        "score": 3.134237685055228,
+        "eligible": true
+      },
+      {
+        "count": 8,
+        "prefix_gain": 4.533688783241935,
+        "startup_inclusive_gain": 7.370005878345027,
+        "score": 4.533688783241935,
+        "eligible": true
+      }
+    ],
+    "full_followup_allowed": true,
+    "reason": "Frozen throughput rule; no labels/success outcomes used",
+    "full_followup_is_formal_collection": false
+  },
+  "full_groups": [
+    {
+      "name": "cpu_1",
+      "count": 1,
+      "full_execution_intervals": {
+        "span_s": 143.9796690940857,
+        "union_s": 143.9796690940857,
+        "idle_s": 0.0,
+        "peak_concurrency": 1,
+        "all_worker_overlap_s": 143.9796690940857,
+        "worker_duration_sum_s": 143.9796690940857
+      },
+      "full_execution_span_s": 143.9796690940857,
+      "outer_group_wall_s": 196.7518865368329,
+      "execution_diagnostic_trials_per_hour": 25.00353016957919,
+      "startup_inclusive_diagnostic_trials_per_hour": 18.29715619690418,
+      "first_audit_phase_wall_s": 109.11576004396193,
+      "first_audit_worker_wall_sum_s": 109.11576004396193,
+      "accounted_execution_outer_plus_audit_phase_s": 305.8676465807948,
+      "diagnostic_trials_per_accounted_hour": 11.769796643232292,
+      "actual_group_start_to_last_certificate_s": 488.6849377155304,
+      "diagnostic_labels": [
+        1
+      ],
+      "contact_points": 6618168,
+      "resources": {
+        "sample_count": 97,
+        "sampled_peak_live_owned_workers": 1,
+        "sampled_peak_sum_worker_rss_bytes": 3268812800,
+        "captured_worker_cpu_s": 344.68,
+        "gpu_utilization_percent": {
+          "min": 0.0,
+          "mean": 0.020618556701030927,
+          "max": 2.0
+        },
+        "gpu_memory_used_mib": {
+          "min": 750.0,
+          "mean": 1384.1546391752577,
+          "max": 1399.0
+        },
+        "gpu_power_w": {
+          "min": 35.21,
+          "mean": 86.31917525773197,
+          "max": 88.53
+        },
+        "gpu_sampling_error_count": 0,
+        "scope": "Two-second host snapshots. CPU seconds cover only each PID first-to-last captured counter; startup/exit edges are excluded. NVML covers the whole device and cannot attribute utilization to these workers alone. Sampled occupancy can miss short overlaps."
+      },
+      "first_audit_certificates": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_1_worker_00.json",
+          "sha256": "7d2b229c6dfaba8294030e317db62a4034154330f9e8f7851da8b5b4616051a4"
+        }
+      ]
+    },
+    {
+      "name": "cpu_8",
+      "count": 8,
+      "full_execution_intervals": {
+        "span_s": 168.78823518753052,
+        "union_s": 168.78823518753052,
+        "idle_s": 0.0,
+        "peak_concurrency": 8,
+        "all_worker_overlap_s": 150.23325753211975,
+        "worker_duration_sum_s": 1276.20761179924
+      },
+      "full_execution_span_s": 168.78823518753052,
+      "outer_group_wall_s": 225.85995988710783,
+      "execution_diagnostic_trials_per_hour": 170.62800596263148,
+      "startup_inclusive_diagnostic_trials_per_hour": 127.51264108253264,
+      "first_audit_phase_wall_s": 435.3594159979839,
+      "first_audit_worker_wall_sum_s": 861.1465441638138,
+      "accounted_execution_outer_plus_audit_phase_s": 661.2193758850917,
+      "diagnostic_trials_per_accounted_hour": 43.55589241686852,
+      "actual_group_start_to_last_certificate_s": 789.1092267036438,
+      "diagnostic_labels": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "contact_points": 52945344,
+      "resources": {
+        "sample_count": 111,
+        "sampled_peak_live_owned_workers": 8,
+        "sampled_peak_sum_worker_rss_bytes": 25896321024,
+        "captured_worker_cpu_s": 2901.65,
+        "gpu_utilization_percent": {
+          "min": 0.0,
+          "mean": 0.036036036036036036,
+          "max": 4.0
+        },
+        "gpu_memory_used_mib": {
+          "min": 740.0,
+          "mean": 5743.594594594595,
+          "max": 6024.0
+        },
+        "gpu_power_w": {
+          "min": 81.16,
+          "mean": 88.00747747747748,
+          "max": 90.25
+        },
+        "gpu_sampling_error_count": 0,
+        "scope": "Two-second host snapshots. CPU seconds cover only each PID first-to-last captured counter; startup/exit edges are excluded. NVML covers the whole device and cannot attribute utilization to these workers alone. Sampled occupancy can miss short overlaps."
+      },
+      "first_audit_certificates": [
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_00.json",
+          "sha256": "95ee4d1aba4095e722dd76d65b4ae12290c083b45d6d8b3573007243fb1969b4"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_01.json",
+          "sha256": "ac2181691de759ae01fb739e0a84ad914a9f4d6497e13d609cb5cfffd2e8dad7"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_02.json",
+          "sha256": "6604ee1f76d1767fd69995d0df635860a89fcaefc14b7dfa97cb0ba603fdaaa2"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_03.json",
+          "sha256": "bb856f7ef1409d9bcca89a9fd91dfb3f202a71e300d8d2cd242a3e69d37e47ac"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_04.json",
+          "sha256": "37c5b2ee7c8ba4cae96c14d9d73836fda061f835a66d77b36814850ed1b88da8"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_05.json",
+          "sha256": "1a8edc4b27e106f99537fa57e7e3a6722b149635db1c3e6ae627fa7a27bc21fd"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_06.json",
+          "sha256": "9f6395dbcce372ff3be00a1cb19e59d18abd60aa4ac15a04848d6f748d3128a5"
+        },
+        {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/audits/cpu_8_worker_07.json",
+          "sha256": "ba013bcebd6a46f24c0165f9d867c0b6b180c3bb7e1c1a6f93a85fcacd9d3be4"
+        }
+      ]
+    }
+  ],
+  "full_comparisons": {
+    "full_execution_throughput_gain": 6.824156621300934,
+    "startup_inclusive_gain": 6.968986858411767,
+    "accounted_outer_plus_audit_gain": 3.7006495300760727
+  },
+  "pipeline": {
+    "baseline_audit_overlaps_parallel_execution_s": 41.78569054603577,
+    "audit_child_intervals": {
+      "span_s": 435.3574929237366,
+      "union_s": 435.3574929237366,
+      "idle_s": 0.0,
+      "peak_concurrency": 2,
+      "all_worker_overlap_s": 0.0,
+      "worker_duration_sum_s": 863.9263226985931
+    },
+    "parallel_audit_phase_wall_s": 435.3594159979839,
+    "parallel_audit_worker_wall_sum_s": 861.1465441638138,
+    "source": "Actual once-only audit subprocesses; original numeric audit retained"
+  },
+  "actual_Kit_launches": 22,
+  "prefix_physical_steps": 1300,
+  "full_physical_steps": 27216,
+  "total_environment_steps": 28516,
+  "total_dynamic_object_steps": 85548,
+  "full_diagnostic_trials": 9,
+  "full_diagnostic_positive": 9,
+  "total_contact_points": 62326116,
+  "label": null,
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "audit_Kit_launches": 0,
+  "audit_physics_steps": 0,
+  "limitations": [
+    "Known g6 template repeated, not new training examples or model success rates",
+    "Accounted phases sum measured execution/first-audit costs; development and handoff gaps are not erased from the separately reported certificate latency",
+    "Only baseline audit overlapped physics; remaining eight first audits used at most two children",
+    "No new capture/preparation in this benchmark; no 4000+800 collection ETA",
+    "Existing resident collector is still pinned to at most three workers and serial audit; this is an independent performance/control branch"
+  ],
+  "summary_input_files": 1600,
+  "source_bound_full_summary": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cpu_full_20261115_v1/SUMMARY_WITH_INPUTS.json",
+    "sha256": "c666cc550fdc6735bb70fe4d5dc67bbe574127ecd93c5e6ee525b04e39b4d932",
+    "bytes": 348328
+  }
+}
