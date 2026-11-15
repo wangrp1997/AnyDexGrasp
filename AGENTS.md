@@ -1,5 +1,13 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：修复版完整常驻对照通过，但未加速，本组慢1.62%，已收尾
+
+用户明确追加1Kit后，public stream_collection_bound_control_20261116_v1已完整完成。复用cold1098.021376s，与新resident1115.850096s（18:18→18:36）比较，多17.828720s/1.623713%，冷/常驻比.984022。固定两场原g1，2capture×750及2exec3389/3749均完整，4原独立审核全PASS；两场8组件/50数组RGBD/原CGR/候选/科学指令exact，标签均[1,0]，数值准入通过但不证明物理轨迹等价。单组旧cold复用有顺序/缓存/宿主负载影响，不推总体均值或4800ETA。两组都有相同流水/CGR常驻，不是全流水相对旧8路采集的净收益。
+
+新prebind服务确实单Kit走完capture0→capture1→execute0→execute1/closed，旧XML失败保持。explicit_context_clears2+execution_scene_rebuilds1，执行asset_setup仍2，跨几何资产未复用；单Kit没有带来可见完整吞吐收益，保持opt-in，不晋级默认/替换旧8路。相同R.execute jobwall冷472.406735/307.336563、新473.377583/337.195573；含建场/执行/存储，不是纯积分或kernel。保存scene0 native审计机器人/手12681凸体、含模板主物体13916，cooked max53/over64为0；仅几何事实，不单凭数量归因慢或推旧GPU回退。后续先量物理建场/推进/接触/存储成本再优化，不恢复生产。
+
+本修复组1Kit/8638env/25914三体步，0重试/未知；10所属组全退/3槽released/5锁可取/registryreleased。连前轮冷与失败合6Kit/18776env/56328三体步/30所属组全退，无后台任务，失败成本不抹除。23不同CPU用例通过（原21+2新；本轮6中4复用不重复计）。全部诊断exclude_training，累计26fit+5internal=31，正式4800/训练/新模型/训后外测0，未派下一批。报告reproduction/boya/AUTHOR_COLLECTION_STREAM_BOUND_RESULTS_20261116.md，轻证据evidence/author_collection_stream_bound_20261116_v1；原待审批/运行中段为历史，冻结源/失败/CanonDex不改，轻成果push用户origin。
+
 ## 2026-11-16 当前运行：用户明确追加1Kit，修复版常驻两场对照进行中
 
 用户在预算问题中选择“追加1次Kit完成比较”，仅授权修复版两场g1常驻组、最多17500env/1Kit/0重试，复用已经完整的cold1098.021376s，不重跑cold或恢复旧失败。新增author_collection_stream_continuation独立freeze在public stream_collection_bound_control_20261116_v1；旧control/failed结果只读绑定，新observations/plan/execution在全新目录。SOURCE冷组通过路径路由只读用于比较，无旧结果搬运/改写。新手模型预绑定已实际落盘且在capture前完成，目前尚未完成首条抓取，不报加速。

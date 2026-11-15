@@ -1,0 +1,283 @@
+{
+  "status": "complete_no_measured_speedup",
+  "cold_wall_s": 1098.021375634009,
+  "resident_wall_s": 1115.8500956539065,
+  "delta_s": 17.828720019897446,
+  "resident_slower_percent": 1.623713382592662,
+  "speedup": 0.9840222982555291,
+  "comparison": {
+    "same_scientific_arrays": [
+      {
+        "scene": 0,
+        "component": 0,
+        "exact": true
+      },
+      {
+        "scene": 0,
+        "component": 1,
+        "exact": true
+      },
+      {
+        "scene": 0,
+        "component": 2,
+        "exact": true
+      },
+      {
+        "scene": 0,
+        "component": 3,
+        "exact": true
+      },
+      {
+        "scene": 1,
+        "component": 0,
+        "exact": true
+      },
+      {
+        "scene": 1,
+        "component": 1,
+        "exact": true
+      },
+      {
+        "scene": 1,
+        "component": 2,
+        "exact": true
+      },
+      {
+        "scene": 1,
+        "component": 3,
+        "exact": true
+      }
+    ],
+    "same_labels": true,
+    "diagnostic_labels": [
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "resident_Kit_starts": 1,
+    "cold_Kit_starts": 4,
+    "speedup": 0.9840222982555291,
+    "comparison_qualified": true,
+    "scope": "Saved completed cold baseline versus new prebound resident group; fixed two scenes/g1, order/cache effects remain, not production yield/ETA"
+  },
+  "modes": [
+    {
+      "mode": "cold",
+      "wall_s": 1098.021375634009,
+      "Kit_starts": 4,
+      "captures": [
+        {
+          "frames": 750,
+          "contacts": 3198137
+        },
+        {
+          "frames": 750,
+          "contacts": 1812269
+        }
+      ],
+      "executions": [
+        {
+          "steps": 3389,
+          "contacts": 15585416,
+          "label": 1,
+          "audit": "pass"
+        },
+        {
+          "steps": 3749,
+          "contacts": 10137568,
+          "label": 0,
+          "audit": "pass"
+        }
+      ],
+      "last_execution_progress_clocks": [
+        {
+          "total_physics_steps": 3389,
+          "wall_s": 412.20309805101715
+        },
+        {
+          "total_physics_steps": 3749,
+          "wall_s": 265.6351513310801
+        }
+      ],
+      "execution_session_job_wall_s": [
+        472.4067346882075,
+        307.3365630940534
+      ]
+    },
+    {
+      "mode": "resident",
+      "wall_s": 1115.8500956539065,
+      "Kit_starts": 1,
+      "captures": [
+        {
+          "frames": 750,
+          "contacts": 3198137
+        },
+        {
+          "frames": 750,
+          "contacts": 1812269
+        }
+      ],
+      "executions": [
+        {
+          "steps": 3389,
+          "contacts": 15585416,
+          "label": 1,
+          "audit": "pass"
+        },
+        {
+          "steps": 3749,
+          "contacts": 10137568,
+          "label": 0,
+          "audit": "pass"
+        }
+      ],
+      "last_execution_progress_clocks": [
+        {
+          "total_physics_steps": 3389,
+          "wall_s": 419.60050478810444
+        },
+        {
+          "total_physics_steps": 3749,
+          "wall_s": 300.1954131089151
+        }
+      ],
+      "execution_session_job_wall_s": [
+        473.3775833910331,
+        337.19557301094756
+      ],
+      "worker_job_wall_s": [
+        100.54225092497654,
+        54.7659297240898,
+        474.54797884402797,
+        337.7500030139927
+      ],
+      "explicit_context_clears": 2,
+      "execution_scene_rebuilds": 1,
+      "execution_asset_setups": 2
+    }
+  ],
+  "scientific_arrays": [
+    {
+      "scene": 0,
+      "component": 0,
+      "exact": true,
+      "arrays": {
+        "rgb": true,
+        "depth_m": true
+      }
+    },
+    {
+      "scene": 0,
+      "component": 1,
+      "exact": true,
+      "arrays": {
+        "stage1_objectness_pred": true,
+        "stage1_heatmap_pred": true,
+        "stage2_seed_xyz": true,
+        "stage2_seed_inds": true,
+        "stage2_view_xyz": true,
+        "stage2_view_inds": true,
+        "stage2_view_scores": true,
+        "stage3_grasp_scores": true,
+        "stage3_normalized_grasp_widths": true,
+        "stage3_grasp_features": true,
+        "before_generator": true,
+        "point_features": true,
+        "raw_CGR_480": true,
+        "sparse_input_coords": true,
+        "sparse_input_XYZ_features": true
+      }
+    },
+    {
+      "scene": 0,
+      "component": 2,
+      "exact": true,
+      "arrays": {
+        "candidates": true,
+        "candidate_features": true
+      }
+    },
+    {
+      "scene": 0,
+      "component": 3,
+      "exact": true,
+      "arrays": {
+        "initial_position": true,
+        "joint_names": true,
+        "joint_target": true,
+        "phase": true,
+        "desired_palm": true,
+        "time_s": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 0,
+      "exact": true,
+      "arrays": {
+        "rgb": true,
+        "depth_m": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 1,
+      "exact": true,
+      "arrays": {
+        "stage1_objectness_pred": true,
+        "stage1_heatmap_pred": true,
+        "stage2_seed_xyz": true,
+        "stage2_seed_inds": true,
+        "stage2_view_xyz": true,
+        "stage2_view_inds": true,
+        "stage2_view_scores": true,
+        "stage3_grasp_scores": true,
+        "stage3_normalized_grasp_widths": true,
+        "stage3_grasp_features": true,
+        "before_generator": true,
+        "point_features": true,
+        "raw_CGR_480": true,
+        "sparse_input_coords": true,
+        "sparse_input_XYZ_features": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 2,
+      "exact": true,
+      "arrays": {
+        "candidates": true,
+        "candidate_features": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 3,
+      "exact": true,
+      "arrays": {
+        "initial_position": true,
+        "joint_names": true,
+        "joint_target": true,
+        "phase": true,
+        "desired_palm": true,
+        "time_s": true
+      }
+    }
+  ],
+  "exact_scientific_array_count": 50,
+  "additional_Kit_starts": 1,
+  "new_environment_steps": 8638,
+  "total_Kit_starts_including_failure": 6,
+  "total_environment_steps_including_failure": 18776,
+  "total_three_body_steps_including_failure": 56328,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "unknown_costs": 0
+}
