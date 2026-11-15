@@ -1,6 +1,16 @@
 # AnyDexGrasp 独立复现工作区
 
-## 2026-11-15 当前：常驻双路完整fit对照完成，正式全量采集等待用户决定
+## 2026-11-15 当前：GPU单/双环境物理接通，主要耗时在fetch，尚不能加速大采集
+
+用户追问为何不接GPU，已实际实现独立author_gpu_vector_execution与官方clone/原共享barrier；原commands/三体几何/250Hz/质量摩擦/完整逐点接触与判定逻辑保留，CPU→GPU为显式后端变化，不宣称轨迹等价。真实GPU0 UUID固定，NVML0对应minor1，GPU1其它任务不干预。两次实读均GPU dynamics/broadphase、tensor ordinal0、full filtered6 CUDA；1135hulls原native20um通过。原v1绑定导入顺序失败1Kit/0步留档，v2只提前原bind_hand，11CPUtests过，CanonDex只读。
+
+public gpu_vector_control_20261115_v2原单3024+双3374/组1800s/0重试，实际单路过慢，另存取消意图后仅子PGID SIGINT安全收尾：937已返回sim.step及937全观测，第938在fetch_results中断是否完成未知，成本必须[937,938]tick/[2811,2814]三体步，标签/raw为空，不认证完整gates/抓取失败。close前718.326s/父719.738s；后组未派发。唯一partial审计13.864s核937trace/937contact/2021298点、696SHA/前937原28目标exact，通过的仅完整性，未调用完整执行audit。
+
+另独立gpu_partition_profile_20261115_v1协议ff421bb1dd8f7269a37315d141b3f10379b4e3bc0a8468c50ed27c5a97926f80，复用原step_limit，各20tick单g6与双g1/g6一次0重试，完整接触和原条件不变，均partial_profile/labelsnull。single前缀12.0385s、fetch11.0209s、接触读取.04509s；双前缀13.6242s、fetch12.4350s、读取.10859s，跨环境接触0，主要物理等待约91%。没有额外CUDA同步；inclusive不可相加，不能进一步未经实测归因GPUkernel/driver/CPU接触生成/几何/参数。原barrier可预写第21命令但不积分。两组outer169.313s，2Kit/40shared/60env/180三体步，不能外推完整lift/采集ETA。现成packed readback可参考但不是本次主要瓶颈，停止本轮追加批次/调物理/降精度。
+
+本阶段共4Kit、[977,978]shared/[997,998]env/[2991,2994]三体步，0完整抓取/标签/训练/CGR；32组件CPUtests及3+15mock控制场景通过，mock非实测。4Kit子进程组全退、3当前槽released、4锁可取/registryreleased，无后台任务。557运行source/原input/旧13数据权重/原15新标签绑定均不变。总报告reproduction/boya/AUTHOR_GPU_CONTROL_RESULTS_20261115.md；轻总证据evidence/author_gpu_control_20261115_v1，另有partial/短前缀独立证据。当前GPU接通但未证明加速/完整提起准入；常驻CPU旧fit约15.02天条件情景不改，internal三型零产出、整体4800总ETA未知。正式扩采/训练仍0，累计仅14fit+1internal，不自动恢复生产；阶段轻量push用户origin，大输出忽略，CanonDex不改。
+
+## 2026-11-15 历史：常驻双路完整fit对照完成，正式全量采集等待用户决定
 
 用户最新要求先解决常驻/并行并实测耗时，再由其决定是否启动采集。本轮只冻结3场景/12槽/最多12执行的小诊断，0重试，全部exclude_training；正式4000fit＋800internal没有启动，不自动扩大预算或训练。新author_resident_execution/collection/benchmark已实现，31项CPU测试通过，源码提交fadc12a已push用户origin。fit scene1＋4重新build/capture/CGR/prepare后，两实际Kit各常驻执行四型，共2建场/6边界reset/25656步/6正2负，8原numeric audit全部PASS，与旧对应步数和标签一致。
 

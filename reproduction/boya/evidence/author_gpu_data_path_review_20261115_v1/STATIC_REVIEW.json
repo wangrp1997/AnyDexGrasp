@@ -1,0 +1,189 @@
+{
+  "schema": "anydex_boya_gpu_readback_static_review_v1",
+  "created_unix_s": 1794710434.2440677,
+  "status": "static_readback_path_difference_established_not_profiled",
+  "sources": {
+    "current_adapter": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py",
+      "sha256": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d"
+    },
+    "original_native_executor": {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py",
+      "sha256": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e"
+    },
+    "original_allbody_lift": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py",
+      "sha256": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d"
+    },
+    "original_compact_contact_readback": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py",
+      "sha256": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41"
+    },
+    "existing_batched_gripper": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py",
+      "sha256": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423"
+    },
+    "existing_native_step_profiler": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/physx_step_profile.py",
+      "sha256": "d70560cdac2ed6be82aaa7f90f8af5c18419bc48f5d1e9868e6e204c62f0b8e6"
+    },
+    "existing_full_arm_clock_profiler": {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_arm_parallel.py",
+      "sha256": "5ed0cf37c89ac46ab3db24923d5ef70b0a6b1d941bf77ede38daf9220bb179f6"
+    },
+    "official_contact_sensor": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/sensors/contact_sensor/contact_sensor.py",
+      "sha256": "000dde649a8b270af0f7102fff67a51abc1a2ff359fa3179f52830d5b83fde80"
+    },
+    "official_physx_manager": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py",
+      "sha256": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35"
+    },
+    "official_rigid_collection": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/assets/rigid_object_collection/rigid_object_collection.py",
+      "sha256": "42f5fc28c6facd7b3c59c5e25054cb50bce2b33d584a7ea052296b96051c3947"
+    },
+    "official_articulation_data": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/assets/articulation/articulation_data.py",
+      "sha256": "9f25446dff165278af62147c50d5153cc1a1236ccc308cb83a316892cdeb54bf"
+    },
+    "official_rigid_data": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/assets/rigid_object/rigid_object_data.py",
+      "sha256": "6e03c85172da8712bdebc6e19c89cea7868afb02f9e96259c82a281cca4270b4"
+    },
+    "warp_numpy": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/warp/_src/types.py",
+      "sha256": "e3b7584bf6ae8872f46e7d9a6c5e8d22bb5fd5b9f669ba0aae73b271b7e0dc34"
+    }
+  },
+  "findings": [
+    {
+      "source": "original_native_executor",
+      "lines": [
+        358,
+        359,
+        360,
+        372,
+        378
+      ],
+      "fact": "Each lane uploads two newly constructed target tensors and independently copies joint position, velocity, all-body pose and primary pose to host every tick"
+    },
+    {
+      "source": "original_allbody_lift",
+      "lines": [
+        215,
+        219,
+        224,
+        225
+      ],
+      "fact": "Adds all-three-body contact read plus second full robot contact read and six pose/velocity CPU copies per lane per tick"
+    },
+    {
+      "source": "original_compact_contact_readback",
+      "lines": [
+        15,
+        35
+      ],
+      "fact": "Four filtered6 readers per lane invoke 24 numpy calls per tick; transfer is active-prefix preserving gaps, not full configured payload every time"
+    },
+    {
+      "source": "warp_numpy",
+      "lines": [
+        4304,
+        4306,
+        4329
+      ],
+      "fact": "CUDA numpy() explicitly performs synchronous device-to-host copy on CUDA default stream"
+    },
+    {
+      "source": "existing_batched_gripper",
+      "lines": [
+        92,
+        93,
+        148,
+        151,
+        211,
+        280,
+        289
+      ],
+      "fact": "Existing shared asset views, commands preloaded on GPU, one packed state copy across all environments and two whole-batch filtered6 readers already exist"
+    },
+    {
+      "source": "official_rigid_collection",
+      "lines": [
+        41,
+        182,
+        1345,
+        1363
+      ],
+      "fact": "Official RigidObjectCollection exposes batched environment/body states, permanent wrench composer and one rigid body view for heterogeneous objects"
+    },
+    {
+      "source": "official_contact_sensor",
+      "lines": [
+        421,
+        424,
+        451,
+        459,
+        490,
+        524
+      ],
+      "fact": "Official code refreshes native reads eagerly, keeps buffer processing on device and captures only postprocessing kernels; graph-capturing PhysX reads is explicitly forbidden"
+    },
+    {
+      "source": "official_physx_manager",
+      "lines": [
+        509,
+        521,
+        522
+      ],
+      "fact": "Actual physics simulate/fetch_results is another possible host wait; current aggregate progress cannot distinguish it from readback"
+    },
+    {
+      "source": "official_articulation_data",
+      "lines": [
+        53,
+        133,
+        151
+      ],
+      "fact": "Per-step timestamp cache means repeated property access is not automatically another backend fetch; host CPU conversions can still repeat"
+    }
+  ],
+  "static_per_active_lane_tick": {
+    "normal_contact_view_reads": 4,
+    "contact_numpy_calls": 24,
+    "robot_and_object_state_cpu_calls": 10,
+    "target_tensor_constructions": 2,
+    "scope": "Static normal path call count, not measured profiler attribution or kernel count"
+  },
+  "no_unique_cause_claim": true,
+  "no_source_metrics_change": true,
+  "next_measurement": {
+    "reuse": [
+      "existing profile_physx_steps",
+      "original profile_execution",
+      "existing benchmark_template_arm_parallel timing partitions"
+    ],
+    "required_partitions": [
+      "simulate/fetch_results",
+      "native state/readback",
+      "four complete contact reads",
+      "allbody analysis and full journal serialization",
+      "controls and writes"
+    ],
+    "scope": "Future explicitly frozen finite run only; no attach or hot change of active v2"
+  },
+  "limitations": [
+    "One/two lanes may not amortize GPU launch/synchronization costs",
+    "Cannot infer isolated timing from GPU utilization or static call counts",
+    "Official high-level sensor averages/aggregates are not replacements for complete raw point streams required by the current audit",
+    "No forecast of a batched speedup is supported until measured with complete preserved audits"
+  ],
+  "actions": {
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "attaches": 0,
+    "stops": 0,
+    "frozen_source_edits": 0
+  }
+}

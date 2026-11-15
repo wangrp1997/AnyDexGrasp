@@ -1,0 +1,78 @@
+{
+  "status": "partial_integrity_pass",
+  "full_execution_audit_run": false,
+  "full_gates_certified": false,
+  "label": null,
+  "raw_label": null,
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "known_completed_shared_ticks": 937,
+  "integrated_shared_tick_interval": [
+    937,
+    938
+  ],
+  "integrated_dynamic_object_step_interval": [
+    2811,
+    2814
+  ],
+  "inflight_scope": "SIGINT in physx_sim.fetch_results for the next single synchronous sim.step; its integration completion is unconfirmed. Completed callback counters are not an exact total integration count.",
+  "command_steps": 3024,
+  "observations": 937,
+  "contact_rows": 937,
+  "contact_points": 2021298,
+  "phase_prefix": [
+    "settle",
+    "home_to_pregrasp"
+  ],
+  "actual_24_to_28_prefix_targets_exact": true,
+  "actual_palm_phase_clock_prefix_exact": true,
+  "gpu_probes": {
+    "initial_gpu_probe": {
+      "active_contact_records": 5369,
+      "native_cuda_views": 2,
+      "buffers_sha256": "91ffec0268f9fd3ebc5e000cb1858a6ae25b8a7c6648cfad7b2a082a711e98bb"
+    },
+    "first_tick_gpu_probe": {
+      "active_contact_records": 2157,
+      "native_cuda_views": 2,
+      "buffers_sha256": "89ad2276f05be521eeed16f7716d202527c6857d977bd542b1748fb5f0c36882"
+    }
+  },
+  "full_native_gates_present": false,
+  "batch_dispatched": false,
+  "new_labels": 0,
+  "training_updates": 0,
+  "execution_wall_before_close_s": 718.3257450261153,
+  "outer_wall_s": 719.7382939259987,
+  "audit_wall_s": 13.863646093057469,
+  "audit_physics_steps": 0,
+  "audit_Kit_launches": 0,
+  "schema": "anydex_boya_gpu_partial_light_evidence_v1",
+  "full_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_gpu_vector_audit_20261115_v1/single_g6/AUDIT.json",
+    "sha256": "fd7c110be68d4e40d421de015e00755ec908ebd6c55cc2a1b1d0f7b6cf943bf4"
+  },
+  "script": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_partial_20261115_v1/audit_partial.py",
+    "sha256": "e359c7ce859fa769fc9082b80eb22d88bc00289e2e1483f00fe1b639a2ca0e89"
+  },
+  "log": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_partial_20261115_v1/AUDIT.log",
+    "sha256": "14fd858056981bced26bc21bf7c1a9c87f1be136343d70192db408b5ae962c13"
+  },
+  "input_bindings": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_partial_20261115_v1/INPUT_BINDINGS.json",
+    "sha256": "c2281cceab890126fe36b6cfa30af4193a280bf4c0aba6f73055271697a6923c"
+  },
+  "input_binding_count": 696,
+  "source_native_hulls": 1135,
+  "native_within_20um": true,
+  "full_auditor_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_audit.py",
+    "sha256": "7c508445f7905845b952b622d15a7767ad61eabcae038ed1f4b372796ae5b7ec"
+  },
+  "report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_GPU_PARTIAL_RESULTS_20261115.md",
+    "sha256": "f0f7b946d1a4f80b819510f018ed118a328b2cd9b9fecf22ef9af454cdf7442c"
+  }
+}

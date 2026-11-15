@@ -1,0 +1,215 @@
+{
+  "schema": "anydex_boya_gpu_profile_control_independent_cpu_review_v1",
+  "status": "pass",
+  "cases": [
+    {
+      "case": "first_stage_failure",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        null
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "clock_count_mismatch",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "integrated_count_mismatch",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "recorded_count_mismatch",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "lane_count_mismatch",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "completion_tick_mismatch",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "missing_initial_probe",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "missing_first_tick_probe",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "native_binary_label",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "profile_binary_label",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "profile_count_mismatch",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "profile_training_eligible",
+      "dispatched_stages": 1,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "second_stage_count_mismatch",
+      "dispatched_stages": 2,
+      "status": "stopped_after_failure",
+      "admissions": [
+        "bounded_prefix_complete_excluded_training",
+        "stopped_after_invalid_prefix"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "both_20_tick_prefixes_complete",
+      "dispatched_stages": 2,
+      "status": "bounded_prefixes_complete",
+      "admissions": [
+        "bounded_prefix_complete_excluded_training",
+        "bounded_prefix_complete_excluded_training"
+      ],
+      "rerun_rejected": true,
+      "registry_released": true,
+      "leases_reacquired": true,
+      "synthetic_only": true
+    },
+    {
+      "case": "changed_source_before_start",
+      "status": "rejected",
+      "dispatched_stages": 0,
+      "start_marker": false,
+      "synthetic_only": true
+    }
+  ],
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_profile_control_review_20261115_v1/test_control_cpu.py": "d6d246e5722b87eaa67c63f9b0046244bdbbc23eac17b572c50404257951d8e7",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_profile_control.py": "0d0eee9ce37872807a635559af89d1abce05362a938cc3e844bc5f3eaa97e558",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_control.py": "143b527f70ead1fc991b58598f88fe9d03592d4f3578c5fd817e5289318cdda0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+  },
+  "actual_existing_paths_exercised": [
+    "driver/global flock leases and release",
+    "active_run registry release",
+    "RUN_STARTED guard",
+    "admitted predicate",
+    "stop on first failed or inconsistent prefix",
+    "JSON result persistence",
+    "synthetic declared source binding verification"
+  ],
+  "mocked": [
+    "ResourcePool stage context",
+    "SubprocessProxy",
+    "B._stage"
+  ],
+  "limitations": [
+    "No real slot FD inheritance, Kit/GPU startup, physical clock or live artifact validity tested",
+    "Synthetic fixture counts are test inputs, not measured physical steps",
+    "No real freeze command or public run artifact was modified"
+  ],
+  "Kit_launches": 0,
+  "physics_steps": 0,
+  "child_processes": 0,
+  "model_forwards": 0,
+  "wall_s": 0.027648518094792962
+}

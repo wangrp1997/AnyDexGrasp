@@ -1,0 +1,397 @@
+{
+  "schema": "anydex_boya_gpu_capability_probe_v1",
+  "status": "static_sources_verified",
+  "versions": {
+    "isaacsim": "6.1.0.0",
+    "isaaclab": "3.0.0rc1",
+    "isaaclab_physx": null,
+    "warp-lang": "1.16.0",
+    "torch": "2.11.0+cu130"
+  },
+  "sources": {
+    "tensors": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physics.tensors-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physics/tensors/api.py",
+      "sha256": "1ba654210857a63b98236512e5f225723c3eb1dee64e867eaa4fade0578ccb7b"
+    },
+    "manager": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py",
+      "sha256": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35"
+    },
+    "cfg": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py",
+      "sha256": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2"
+    },
+    "sensor": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/sensors/contact_sensor/contact_sensor.py",
+      "sha256": "000dde649a8b270af0f7102fff67a51abc1a2ff359fa3179f52830d5b83fde80"
+    },
+    "convex": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physx.asset_validator-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physxassetvalidator/scripts/cookingApproximationChecker.py",
+      "sha256": "a37c1f2ab87c10cd143884395d42f4d6ecad90889e7392f6503a5ef123336893"
+    },
+    "mimic": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/isaacsim.asset.transformer.rules/docs/CHANGELOG.md",
+      "sha256": "731a48d74937be061cd50fbb2781039c343e9e23e3759d38eb841c4a6a7de4f8"
+    }
+  },
+  "facts": [
+    {
+      "id": "gpu_enabled_from_device",
+      "source": "manager",
+      "lines": [
+        780
+      ],
+      "interpretation": "GPU dynamics is explicitly enabled for cuda device; check live readback too"
+    },
+    {
+      "id": "gpu_broadphase",
+      "source": "manager",
+      "lines": [
+        778
+      ],
+      "interpretation": "GPU and CPU broadphase differ"
+    },
+    {
+      "id": "gpu_disables_ccd",
+      "source": "manager",
+      "lines": [
+        783
+      ],
+      "interpretation": "This backend disables CCD on GPU"
+    },
+    {
+      "id": "initialization_disables_processing",
+      "source": "manager",
+      "lines": [
+        741
+      ],
+      "interpretation": "Manager initialization disables contact processing"
+    },
+    {
+      "id": "gpu_suppresses_usd_readback",
+      "source": "manager",
+      "lines": [
+        753
+      ],
+      "interpretation": "GPU initialization suppresses USD readback; read tensor states"
+    },
+    {
+      "id": "sensor_enables_processing",
+      "source": "sensor",
+      "lines": [
+        95
+      ],
+      "interpretation": "Official sensor reenables processing"
+    },
+    {
+      "id": "gpu_frontend_excludes_numpy",
+      "source": "tensors",
+      "lines": [
+        53
+      ],
+      "interpretation": "Use Warp/Torch frontend for GPU pipeline"
+    },
+    {
+      "id": "physx_parameters_on_cpu",
+      "source": "tensors",
+      "lines": [
+        158
+      ],
+      "interpretation": "CPU material/property tensors do not imply CPU dynamics"
+    },
+    {
+      "id": "raw_contacts",
+      "source": "tensors",
+      "lines": [
+        5147
+      ],
+      "interpretation": "All sensor contacts with other_actor_ids; no filter required"
+    },
+    {
+      "id": "raw_actor_mapping_on_cpu",
+      "source": "tensors",
+      "lines": [
+        5230
+      ],
+      "interpretation": "Resolve actor IDs after copying uint64 IDs to CPU"
+    },
+    {
+      "id": "filtered_contacts",
+      "source": "tensors",
+      "lines": [
+        4990
+      ],
+      "interpretation": "Normal scalar force, point, normal, separation, counts and starts"
+    },
+    {
+      "id": "friction_contacts",
+      "source": "tensors",
+      "lines": [
+        5074
+      ],
+      "interpretation": "Per-filter friction vector, point, counts and starts"
+    },
+    {
+      "id": "shared_pair_tables",
+      "source": "sensor",
+      "lines": [
+        121
+      ],
+      "interpretation": "Copy normal count/start before reading friction"
+    },
+    {
+      "id": "gpu_capacity_fixed",
+      "source": "cfg",
+      "lines": [
+        29
+      ],
+      "interpretation": "Freeze sufficient capacity and reject overflow; do not silently drop contacts"
+    },
+    {
+      "id": "convex_gpu_check",
+      "source": "convex",
+      "lines": [
+        97
+      ],
+      "interpretation": "Official GPU compatibility query exists; full checker resets/detaches simulation and is not called here"
+    },
+    {
+      "id": "mimic_runtime_schema",
+      "source": "mimic",
+      "lines": [
+        97
+      ],
+      "interpretation": "Runtime consumes Newton mimic schema; this alone does not establish GPU trajectory correctness"
+    }
+  ],
+  "tensor_api_methods": {
+    "SimulationView": {
+      "__init__": 114,
+      "device": 128,
+      "is_valid": 137,
+      "device_ordinal": 149,
+      "param_device_ordinal": 156,
+      "cuda_context": 163,
+      "invalidate": 169,
+      "set_subspace_roots": 184,
+      "get_object_type": 205,
+      "create_articulation_view": 239,
+      "create_rigid_body_view": 286,
+      "create_volume_deformable_body_view": 334,
+      "create_surface_deformable_body_view": 355,
+      "create_deformable_material_view": 376,
+      "create_rigid_contact_view": 397,
+      "create_sdf_shape_view": 448,
+      "flush": 469,
+      "clear_forces": 473,
+      "enable_warnings": 478,
+      "update_articulations_kinematic": 493,
+      "initialize_kinematic_bodies": 510,
+      "check": 518,
+      "step": 537,
+      "set_gravity": 540,
+      "get_gravity": 561
+    },
+    "ArticulationView": {
+      "__init__": 591,
+      "count": 605,
+      "max_links": 612,
+      "max_dofs": 619,
+      "max_shapes": 626,
+      "max_fixed_tendons": 633,
+      "max_spatial_tendons": 640,
+      "is_homogeneous": 647,
+      "shared_metatype": 655,
+      "jacobian_shape": 663,
+      "generalized_mass_matrix_shape": 676,
+      "prim_paths": 689,
+      "dof_paths": 696,
+      "link_paths": 704,
+      "get_metatype": 710,
+      "get_dof_types": 765,
+      "get_dof_motions": 798,
+      "get_dof_limits": 832,
+      "get_drive_types": 863,
+      "get_dof_stiffnesses": 895,
+      "get_dof_dampings": 921,
+      "get_dof_max_forces": 947,
+      "get_dof_drive_model_properties": 973,
+      "get_dof_friction_coefficients": 1006,
+      "get_dof_friction_properties": 1035,
+      "get_dof_max_velocities": 1067,
+      "get_dof_armatures": 1093,
+      "set_dof_limits": 1119,
+      "set_dof_stiffnesses": 1152,
+      "set_dof_dampings": 1184,
+      "set_dof_max_forces": 1216,
+      "set_dof_drive_model_properties": 1248,
+      "set_dof_friction_coefficients": 1307,
+      "set_dof_friction_properties": 1341,
+      "set_dof_max_velocities": 1380,
+      "set_dof_armatures": 1411,
+      "get_link_transforms": 1442,
+      "get_link_velocities": 1472,
+      "get_link_accelerations": 1501,
+      "get_root_transforms": 1530,
+      "get_root_velocities": 1557,
+      "set_root_transforms": 1584,
+      "set_root_velocities": 1614,
+      "get_dof_positions": 1643,
+      "get_dof_velocities": 1672,
+      "set_dof_positions": 1701,
+      "set_dof_velocities": 1732,
+      "set_dof_actuation_forces": 1763,
+      "set_dof_position_targets": 1794,
+      "set_dof_velocity_targets": 1827,
+      "apply_forces_and_torques_at_position": 1860,
+      "get_dof_position_targets": 1909,
+      "get_dof_velocity_targets": 1938,
+      "get_dof_actuation_forces": 1967,
+      "get_dof_projected_joint_forces": 1995,
+      "get_jacobians": 2026,
+      "get_generalized_mass_matrices": 2061,
+      "get_coriolis_and_centrifugal_compensation_forces": 2095,
+      "get_gravity_compensation_forces": 2129,
+      "get_articulation_mass_center": 2163,
+      "get_articulation_centroidal_momentum": 2192,
+      "get_link_incoming_joint_force": 2228,
+      "get_masses": 2257,
+      "get_inv_masses": 2283,
+      "get_coms": 2309,
+      "get_inertias": 2338,
+      "get_inv_inertias": 2366,
+      "get_disable_gravities": 2393,
+      "set_masses": 2419,
+      "set_coms": 2450,
+      "set_inertias": 2483,
+      "set_disable_gravities": 2516,
+      "get_material_properties": 2547,
+      "get_compliant_material_properties": 2579,
+      "get_contact_offsets": 2619,
+      "get_rest_offsets": 2645,
+      "set_material_properties": 2671,
+      "set_compliant_material_properties": 2710,
+      "set_contact_offsets": 2758,
+      "set_rest_offsets": 2789,
+      "get_fixed_tendon_stiffnesses": 2820,
+      "get_fixed_tendon_dampings": 2846,
+      "get_fixed_tendon_limit_stiffnesses": 2872,
+      "get_fixed_tendon_limits": 2898,
+      "get_fixed_tendon_rest_lengths": 2924,
+      "get_fixed_tendon_offsets": 2950,
+      "get_spatial_tendon_stiffnesses": 2976,
+      "get_spatial_tendon_dampings": 3005,
+      "get_spatial_tendon_limit_stiffnesses": 3034,
+      "get_spatial_tendon_offsets": 3063,
+      "set_fixed_tendon_properties": 3092,
+      "set_spatial_tendon_properties": 3160,
+      "check": 3219
+    },
+    "RigidBodyView": {
+      "__init__": 3253,
+      "count": 3266,
+      "max_shapes": 3273,
+      "prim_paths": 3280,
+      "get_transforms": 3286,
+      "get_velocities": 3313,
+      "get_accelerations": 3340,
+      "set_kinematic_targets": 3367,
+      "set_transforms": 3399,
+      "set_velocities": 3430,
+      "apply_forces_and_torques_at_position": 3460,
+      "apply_forces": 3509,
+      "get_masses": 3533,
+      "get_inv_masses": 3558,
+      "get_coms": 3583,
+      "get_inertias": 3611,
+      "get_inv_inertias": 3638,
+      "get_disable_gravities": 3665,
+      "get_disable_simulations": 3690,
+      "set_masses": 3715,
+      "set_coms": 3745,
+      "set_inertias": 3777,
+      "set_disable_gravities": 3810,
+      "set_disable_simulations": 3840,
+      "wake_up": 3878,
+      "get_material_properties": 3906,
+      "get_compliant_material_properties": 3938,
+      "get_contact_offsets": 3979,
+      "get_rest_offsets": 4004,
+      "set_material_properties": 4029,
+      "set_compliant_material_properties": 4067,
+      "set_contact_offsets": 4115,
+      "set_rest_offsets": 4145,
+      "check": 4175
+    },
+    "DeformableBodyView": {
+      "__init__": 4208,
+      "count": 4222,
+      "prim_paths": 4229,
+      "simulation_mesh_prim_paths": 4240,
+      "collision_mesh_prim_paths": 4254,
+      "max_simulation_elements_per_body": 4267,
+      "max_simulation_nodes_per_body": 4274,
+      "max_rest_nodes_per_body": 4281,
+      "max_collision_elements_per_body": 4295,
+      "max_collision_nodes_per_body": 4302,
+      "num_nodes_per_element": 4309,
+      "get_simulation_element_indices": 4318,
+      "get_simulation_nodal_positions": 4346,
+      "set_simulation_nodal_positions": 4372,
+      "get_simulation_nodal_velocities": 4401,
+      "set_simulation_nodal_velocities": 4420,
+      "get_simulation_nodal_kinematic_targets": 4440,
+      "set_simulation_nodal_kinematic_targets": 4461,
+      "get_rest_element_indices": 4484,
+      "get_rest_nodal_positions": 4509,
+      "get_collision_element_indices": 4536,
+      "get_collision_nodal_positions": 4556,
+      "get_transforms": 4575,
+      "check": 4604
+    },
+    "DeformableMaterialView": {
+      "__init__": 4636,
+      "count": 4649,
+      "get_dynamic_friction": 4655,
+      "set_dynamic_friction": 4680,
+      "get_youngs_modulus": 4710,
+      "set_youngs_modulus": 4736,
+      "get_poissons_ratio": 4767,
+      "set_poissons_ratio": 4792,
+      "check": 4823
+    },
+    "RigidContactView": {
+      "__init__": 4856,
+      "sensor_count": 4871,
+      "filter_count": 4878,
+      "max_contact_data_count": 4886,
+      "sensor_paths": 4895,
+      "filter_paths": 4902,
+      "sensor_names": 4909,
+      "filter_names": 4916,
+      "get_net_contact_forces": 4922,
+      "get_contact_force_matrix": 4954,
+      "get_contact_data": 4990,
+      "get_friction_data": 5074,
+      "get_raw_contact_data": 5147,
+      "get_other_actor_paths_from_ids": 5225,
+      "check": 5250
+    },
+    "SdfShapeView": {
+      "__init__": 5282,
+      "count": 5296,
+      "max_num_points": 5303,
+      "object_paths": 5310,
+      "get_sdf_and_gradients": 5316,
+      "check": 5351
+    }
+  },
+  "live_gpu_validated": false,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "limitations": [
+    "No live device/contact/force/mimic/cooked-hull check is inferred from source availability",
+    "CPU callback availability and completeness on GPU remain a live measurement",
+    "No fixed convex vertex limit is inferred without matching installed evidence"
+  ]
+}

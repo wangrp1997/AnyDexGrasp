@@ -1,0 +1,605 @@
+{
+  "schema": "anydex_boya_gpu_prefix_integrity_audit_v1",
+  "status": "prefix_integrity_pass",
+  "shared_ticks": 40,
+  "environment_steps": 60,
+  "dynamic_object_steps": 180,
+  "trace_rows": 60,
+  "contact_rows": 60,
+  "contact_points": 129420,
+  "full_gates_certified": false,
+  "full_lift_certified": false,
+  "full_collection_ETA": null,
+  "label": null,
+  "raw_label": null,
+  "formal_training_eligible": false,
+  "exclude_training": true,
+  "new_labels": 0,
+  "training_updates": 0,
+  "timing_scope": "Host wall and wait attribution only, no added GPU sync. fetch includes blocked wait for submitted async work; sim.step includes fetch and simulate. Only disjoint exclusive buckets may be summed. Initialization/finalization kept separate. Native per-lane physics buckets overlap across lanes.",
+  "outer_wall_s": 169.3129584840499,
+  "audit_wall_s": 1.7940235130954534,
+  "audit_physics_steps": 0,
+  "audit_Kit_launches": 0,
+  "input_binding_count": 751,
+  "groups": [
+    {
+      "group": "single_g6",
+      "physical_ticks": 20,
+      "environment_steps": 20,
+      "dynamic_object_steps": 60,
+      "cross_environment_contacts": 0,
+      "gpu_probes": {
+        "initial_gpu_probe": {
+          "active_contact_records": 5369,
+          "native_cuda_views": 2,
+          "buffers_sha256": "933eaf540381ec8d88c53a57da43916ad9f2139a9236d5e6d148ab0f4e2a4d97"
+        },
+        "first_tick_gpu_probe": {
+          "active_contact_records": 2157,
+          "native_cuda_views": 2,
+          "buffers_sha256": "f1881d2eb1e7e22c79291e43a6d66a451cc682d1df8c5f6577f33a07eb0d6dfa"
+        }
+      },
+      "lanes": [
+        {
+          "environment": 0,
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "original_object_ids": [
+            "graspnet_063",
+            "graspnet_037",
+            "graspnet_015"
+          ],
+          "candidate_sha256": "d3b16f9df81b8b392bfb691eafe0d00f708f423c030aa4a696e2265efa989a68",
+          "commands_sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+          "trace_rows": 20,
+          "contact_rows": 20,
+          "contact_points": 43140,
+          "targets24_to_28_prefix_exact": true,
+          "palm_phase_clock_prefix_exact": true,
+          "entry_origin_projection_ok": true,
+          "native_hulls": 1135,
+          "native_20um_receipt": true,
+          "label": null,
+          "raw_label": null,
+          "formal_training_eligible": false
+        }
+      ],
+      "timing": {
+        "prefix_wall_s": 12.038499710848555,
+        "group_wall_before_close_s": 68.67883995291777,
+        "profile_wall_before_close_s": 69.12300913501531,
+        "physx_simulate_s": 0.0024427457246929407,
+        "physx_fetch_results_s": 11.020907475613058,
+        "sim_step_inclusive_s": 11.027216320624575,
+        "fetch_fraction_of_prefix": 0.9154718395417255,
+        "filtered6_readback_inclusive_s": 0.04509339760988951,
+        "allbody_decode_s": 0.4780927791725844,
+        "journal_inclusive_s": 0.16145477793179452,
+        "exclusive_instrumented_sum_s": 12.006641102023423,
+        "uninstrumented_prefix_residual_s": 0.03185860882513225,
+        "timing_all_sections": {
+          "initialization": {
+            "artifact.save_json": {
+              "calls": 1,
+              "inclusive_wall_s": 0.0002314029261469841,
+              "exclusive_wall_s": 0.0002314029261469841
+            },
+            "json.encode": {
+              "calls": 286,
+              "inclusive_wall_s": 0.6000290918163955,
+              "exclusive_wall_s": 0.6000290918163955
+            },
+            "physx.fetch_results": {
+              "calls": 1,
+              "inclusive_wall_s": 0.0007522860541939735,
+              "exclusive_wall_s": 0.0007522860541939735
+            },
+            "robot.update": {
+              "calls": 4,
+              "inclusive_wall_s": 0.0008253038395196199,
+              "exclusive_wall_s": 0.0008253038395196199
+            },
+            "torch.cpu_host_copy": {
+              "calls": 42,
+              "inclusive_wall_s": 0.0012685246765613556,
+              "exclusive_wall_s": 0.0012685246765613556
+            },
+            "object.update": {
+              "calls": 22,
+              "inclusive_wall_s": 6.177159957587719e-05,
+              "exclusive_wall_s": 6.177159957587719e-05
+            },
+            "warp.numpy_host_copy": {
+              "calls": 52,
+              "inclusive_wall_s": 0.0019894917495548725,
+              "exclusive_wall_s": 0.0019894917495548725
+            },
+            "robot.control_write": {
+              "calls": 1,
+              "inclusive_wall_s": 0.00029589910991489887,
+              "exclusive_wall_s": 0.00029589910991489887
+            },
+            "object.force_write": {
+              "calls": 5,
+              "inclusive_wall_s": 0.0019007509108632803,
+              "exclusive_wall_s": 0.0019007509108632803
+            },
+            "robot.snapshot": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0004483859520405531,
+              "exclusive_wall_s": 0.0003183616790920496
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 3,
+              "inclusive_wall_s": 0.009895383147522807,
+              "exclusive_wall_s": 0.009895383147522807
+            }
+          },
+          "execution_prefix": {
+            "torch.cpu_host_copy": {
+              "calls": 203,
+              "inclusive_wall_s": 0.006353959906846285,
+              "exclusive_wall_s": 0.006353959906846285
+            },
+            "robot.snapshot": {
+              "calls": 21,
+              "inclusive_wall_s": 0.007987091550603509,
+              "exclusive_wall_s": 0.005036397138610482
+            },
+            "robot.control_write": {
+              "calls": 21,
+              "inclusive_wall_s": 0.0035687966737896204,
+              "exclusive_wall_s": 0.0035687966737896204
+            },
+            "object.force_write": {
+              "calls": 63,
+              "inclusive_wall_s": 0.02601873455569148,
+              "exclusive_wall_s": 0.02601873455569148
+            },
+            "physx.simulate": {
+              "calls": 20,
+              "inclusive_wall_s": 0.0024427457246929407,
+              "exclusive_wall_s": 0.0024427457246929407
+            },
+            "physx.fetch_results": {
+              "calls": 20,
+              "inclusive_wall_s": 11.020907475613058,
+              "exclusive_wall_s": 11.020907475613058
+            },
+            "sim.step": {
+              "calls": 20,
+              "inclusive_wall_s": 11.027216320624575,
+              "exclusive_wall_s": 0.003866099286824465
+            },
+            "barrier.step_callback": {
+              "calls": 20,
+              "inclusive_wall_s": 11.027499104151502,
+              "exclusive_wall_s": 0.00028278352692723274
+            },
+            "warp.numpy_host_copy": {
+              "calls": 492,
+              "inclusive_wall_s": 0.02248282148502767,
+              "exclusive_wall_s": 0.02248282148502767
+            },
+            "json.encode": {
+              "calls": 25,
+              "inclusive_wall_s": 0.1297389268875122,
+              "exclusive_wall_s": 0.1297389268875122
+            },
+            "barrier.after_tick": {
+              "calls": 20,
+              "inclusive_wall_s": 0.018473702250048518,
+              "exclusive_wall_s": 0.016231175512075424
+            },
+            "robot.update": {
+              "calls": 20,
+              "inclusive_wall_s": 0.005352904321625829,
+              "exclusive_wall_s": 0.005352904321625829
+            },
+            "object.update": {
+              "calls": 60,
+              "inclusive_wall_s": 0.00018138042651116848,
+              "exclusive_wall_s": 0.00018138042651116848
+            },
+            "contact.filtered6_readback": {
+              "calls": 80,
+              "inclusive_wall_s": 0.04509339760988951,
+              "exclusive_wall_s": 0.023883873829618096
+            },
+            "primary.contact_decode": {
+              "calls": 20,
+              "inclusive_wall_s": 0.001228981651365757,
+              "exclusive_wall_s": 0.001228981651365757
+            },
+            "primary.contact_decode_and_read": {
+              "calls": 20,
+              "inclusive_wall_s": 0.015808068914338946,
+              "exclusive_wall_s": 0.00047858618199825287
+            },
+            "robot.contact_decode_and_read": {
+              "calls": 40,
+              "inclusive_wall_s": 0.02293243375606835,
+              "exclusive_wall_s": 0.002506236545741558
+            },
+            "all_body.contact_decode": {
+              "calls": 20,
+              "inclusive_wall_s": 0.4780927791725844,
+              "exclusive_wall_s": 0.4780927791725844
+            },
+            "all_body.contact_loads": {
+              "calls": 60,
+              "inclusive_wall_s": 0.01239710277877748,
+              "exclusive_wall_s": 0.01239710277877748
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 60,
+              "inclusive_wall_s": 0.13139306660741568,
+              "exclusive_wall_s": 0.13139306660741568
+            },
+            "gzip.write": {
+              "calls": 20,
+              "inclusive_wall_s": 0.038371327333152294,
+              "exclusive_wall_s": 0.038371327333152294
+            },
+            "journal.encode_gzip_append": {
+              "calls": 20,
+              "inclusive_wall_s": 0.16145477793179452,
+              "exclusive_wall_s": 0.0010894564911723137
+            },
+            "all_body.after_step": {
+              "calls": 20,
+              "inclusive_wall_s": 0.8359169214963913,
+              "exclusive_wall_s": 0.02695398824289441
+            },
+            "artifact.savez_compressed": {
+              "calls": 1,
+              "inclusive_wall_s": 0.047409208957105875,
+              "exclusive_wall_s": 0.047409208957105875
+            },
+            "journal.close": {
+              "calls": 2,
+              "inclusive_wall_s": 0.00037229317240417004,
+              "exclusive_wall_s": 0.00037229317240417004
+            }
+          },
+          "finalization": {
+            "json.encode": {
+              "calls": 7,
+              "inclusive_wall_s": 0.007516213459894061,
+              "exclusive_wall_s": 0.007516213459894061
+            },
+            "artifact.save_json": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0064172029960900545,
+              "exclusive_wall_s": 0.0005083049181848764
+            },
+            "journal.close": {
+              "calls": 2,
+              "inclusive_wall_s": 3.054272383451462e-06,
+              "exclusive_wall_s": 3.054272383451462e-06
+            }
+          }
+        }
+      },
+      "label": null,
+      "full_lift_certified": false
+    },
+    {
+      "group": "batch_g1_g6",
+      "physical_ticks": 20,
+      "environment_steps": 40,
+      "dynamic_object_steps": 120,
+      "cross_environment_contacts": 0,
+      "gpu_probes": {
+        "initial_gpu_probe": {
+          "active_contact_records": 10738,
+          "native_cuda_views": 4,
+          "buffers_sha256": "bb803283b5e3cb95663ac5bb480099ad5f41e8cabf4d30446d91788aed484dee"
+        },
+        "first_tick_gpu_probe": {
+          "active_contact_records": 4314,
+          "native_cuda_views": 4,
+          "buffers_sha256": "a67c031a668e98338e6a0114847d1a5d84c85844a4c5158a0561a0b9a6f15a67"
+        }
+      },
+      "lanes": [
+        {
+          "environment": 0,
+          "origin_m": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "original_object_ids": [
+            "graspnet_063",
+            "graspnet_037",
+            "graspnet_015"
+          ],
+          "candidate_sha256": "552ca3d7beafe2486c44f7c96edf01f52f5ca06702a55fe84bc51567899f9c8b",
+          "commands_sha256": "7a5047f5caa7df08f51e749123bb45a93e4da5780416b05a33e5baeef2177548",
+          "trace_rows": 20,
+          "contact_rows": 20,
+          "contact_points": 43140,
+          "targets24_to_28_prefix_exact": true,
+          "palm_phase_clock_prefix_exact": true,
+          "entry_origin_projection_ok": true,
+          "native_hulls": 1135,
+          "native_20um_receipt": true,
+          "label": null,
+          "raw_label": null,
+          "formal_training_eligible": false
+        },
+        {
+          "environment": 1,
+          "origin_m": [
+            4.0,
+            0.0,
+            0.0
+          ],
+          "original_object_ids": [
+            "graspnet_063",
+            "graspnet_037",
+            "graspnet_015"
+          ],
+          "candidate_sha256": "d3b16f9df81b8b392bfb691eafe0d00f708f423c030aa4a696e2265efa989a68",
+          "commands_sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+          "trace_rows": 20,
+          "contact_rows": 20,
+          "contact_points": 43140,
+          "targets24_to_28_prefix_exact": true,
+          "palm_phase_clock_prefix_exact": true,
+          "entry_origin_projection_ok": true,
+          "native_hulls": 1135,
+          "native_20um_receipt": true,
+          "label": null,
+          "raw_label": null,
+          "formal_training_eligible": false
+        }
+      ],
+      "timing": {
+        "prefix_wall_s": 13.62422002502717,
+        "group_wall_before_close_s": 95.85179124586284,
+        "profile_wall_before_close_s": 96.64173513581045,
+        "physx_simulate_s": 0.0033183987252414227,
+        "physx_fetch_results_s": 12.434994009090587,
+        "sim_step_inclusive_s": 12.44245912367478,
+        "fetch_fraction_of_prefix": 0.9127123597716404,
+        "filtered6_readback_inclusive_s": 0.10859446320682764,
+        "allbody_decode_s": 0.12760005262680352,
+        "journal_inclusive_s": 0.3241117591969669,
+        "exclusive_instrumented_sum_s": 13.549563192063943,
+        "uninstrumented_prefix_residual_s": 0.07465683296322823,
+        "timing_all_sections": {
+          "initialization": {
+            "artifact.save_json": {
+              "calls": 1,
+              "inclusive_wall_s": 0.00020353193394839764,
+              "exclusive_wall_s": 0.00020353193394839764
+            },
+            "json.encode": {
+              "calls": 295,
+              "inclusive_wall_s": 1.201380796963349,
+              "exclusive_wall_s": 1.201380796963349
+            },
+            "physx.fetch_results": {
+              "calls": 1,
+              "inclusive_wall_s": 8.293380960822105e-05,
+              "exclusive_wall_s": 8.293380960822105e-05
+            },
+            "robot.update": {
+              "calls": 7,
+              "inclusive_wall_s": 0.0009620361961424351,
+              "exclusive_wall_s": 0.0009620361961424351
+            },
+            "torch.cpu_host_copy": {
+              "calls": 77,
+              "inclusive_wall_s": 0.002458201488479972,
+              "exclusive_wall_s": 0.002458201488479972
+            },
+            "object.update": {
+              "calls": 43,
+              "inclusive_wall_s": 0.0001162458211183548,
+              "exclusive_wall_s": 0.0001162458211183548
+            },
+            "warp.numpy_host_copy": {
+              "calls": 100,
+              "inclusive_wall_s": 0.004632851807400584,
+              "exclusive_wall_s": 0.004632851807400584
+            },
+            "robot.control_write": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0005988387856632471,
+              "exclusive_wall_s": 0.0005988387856632471
+            },
+            "object.force_write": {
+              "calls": 11,
+              "inclusive_wall_s": 0.0021825777366757393,
+              "exclusive_wall_s": 0.0021825777366757393
+            },
+            "robot.snapshot": {
+              "calls": 3,
+              "inclusive_wall_s": 0.0007804178167134523,
+              "exclusive_wall_s": 0.0005639237351715565
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 6,
+              "inclusive_wall_s": 0.018702982924878597,
+              "exclusive_wall_s": 0.018702982924878597
+            }
+          },
+          "execution_prefix": {
+            "torch.cpu_host_copy": {
+              "calls": 406,
+              "inclusive_wall_s": 0.013616630807518959,
+              "exclusive_wall_s": 0.013616630807518959
+            },
+            "robot.snapshot": {
+              "calls": 42,
+              "inclusive_wall_s": 0.015237880637869239,
+              "exclusive_wall_s": 0.009841879364103079
+            },
+            "robot.control_write": {
+              "calls": 42,
+              "inclusive_wall_s": 0.007496468722820282,
+              "exclusive_wall_s": 0.007496468722820282
+            },
+            "object.force_write": {
+              "calls": 126,
+              "inclusive_wall_s": 0.05604792688973248,
+              "exclusive_wall_s": 0.05604792688973248
+            },
+            "physx.simulate": {
+              "calls": 20,
+              "inclusive_wall_s": 0.0033183987252414227,
+              "exclusive_wall_s": 0.0033183987252414227
+            },
+            "physx.fetch_results": {
+              "calls": 20,
+              "inclusive_wall_s": 12.434994009090587,
+              "exclusive_wall_s": 12.434994009090587
+            },
+            "sim.step": {
+              "calls": 20,
+              "inclusive_wall_s": 12.44245912367478,
+              "exclusive_wall_s": 0.004146715858951211
+            },
+            "barrier.step_callback": {
+              "calls": 20,
+              "inclusive_wall_s": 12.442764469888061,
+              "exclusive_wall_s": 0.00030534621328115463
+            },
+            "warp.numpy_host_copy": {
+              "calls": 1104,
+              "inclusive_wall_s": 0.051544345216825604,
+              "exclusive_wall_s": 0.051544345216825604
+            },
+            "contact.filtered6_readback": {
+              "calls": 180,
+              "inclusive_wall_s": 0.10859446320682764,
+              "exclusive_wall_s": 0.059727381682023406
+            },
+            "json.encode": {
+              "calls": 49,
+              "inclusive_wall_s": 0.263864231063053,
+              "exclusive_wall_s": 0.263864231063053
+            },
+            "barrier.after_tick": {
+              "calls": 20,
+              "inclusive_wall_s": 0.05683760973624885,
+              "exclusive_wall_s": 0.033295579021796584
+            },
+            "robot.update": {
+              "calls": 40,
+              "inclusive_wall_s": 0.005520709790289402,
+              "exclusive_wall_s": 0.005520709790289402
+            },
+            "object.update": {
+              "calls": 120,
+              "inclusive_wall_s": 0.00030566868372261524,
+              "exclusive_wall_s": 0.00030566868372261524
+            },
+            "primary.contact_decode": {
+              "calls": 40,
+              "inclusive_wall_s": 0.002149170031771064,
+              "exclusive_wall_s": 0.002149170031771064
+            },
+            "primary.contact_decode_and_read": {
+              "calls": 40,
+              "inclusive_wall_s": 0.026973295724019408,
+              "exclusive_wall_s": 0.0009281362872570753
+            },
+            "robot.contact_decode_and_read": {
+              "calls": 80,
+              "inclusive_wall_s": 0.04697082191705704,
+              "exclusive_wall_s": 0.0034191629383713007
+            },
+            "all_body.contact_decode": {
+              "calls": 40,
+              "inclusive_wall_s": 0.12760005262680352,
+              "exclusive_wall_s": 0.12760005262680352
+            },
+            "all_body.contact_loads": {
+              "calls": 120,
+              "inclusive_wall_s": 0.03259965148754418,
+              "exclusive_wall_s": 0.03259965148754418
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 120,
+              "inclusive_wall_s": 0.2808698369190097,
+              "exclusive_wall_s": 0.2808698369190097
+            },
+            "gzip.write": {
+              "calls": 40,
+              "inclusive_wall_s": 0.07268824288621545,
+              "exclusive_wall_s": 0.07268824288621545
+            },
+            "journal.encode_gzip_append": {
+              "calls": 40,
+              "inclusive_wall_s": 0.3241117591969669,
+              "exclusive_wall_s": 0.0023343900684267282
+            },
+            "all_body.after_step": {
+              "calls": 40,
+              "inclusive_wall_s": 0.8985648984089494,
+              "exclusive_wall_s": 0.07925782003439963
+            },
+            "artifact.savez_compressed": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0031093342695385218,
+              "exclusive_wall_s": 0.0031093342695385218
+            },
+            "journal.close": {
+              "calls": 4,
+              "inclusive_wall_s": 0.0005821033846586943,
+              "exclusive_wall_s": 0.0005821033846586943
+            }
+          },
+          "finalization": {
+            "json.encode": {
+              "calls": 13,
+              "inclusive_wall_s": 0.014358337270095944,
+              "exclusive_wall_s": 0.014358337270095944
+            },
+            "artifact.save_json": {
+              "calls": 3,
+              "inclusive_wall_s": 0.011813970981165767,
+              "exclusive_wall_s": 0.0007302337326109409
+            },
+            "journal.close": {
+              "calls": 4,
+              "inclusive_wall_s": 4.576984792947769e-06,
+              "exclusive_wall_s": 4.576984792947769e-06
+            }
+          }
+        }
+      },
+      "label": null,
+      "full_lift_certified": false
+    }
+  ],
+  "full_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_gpu_prefix_audit_20261115_v1/AUDIT.json",
+    "sha256": "8c081d404e5941db1fbf113f97650f08607ebab490cbd9c4d9ce21c6b697c22f"
+  },
+  "script": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_prefix_20261115_v1/audit_prefixes.py",
+    "sha256": "00de82f4dd6408a3bfd926a2c2cf6efa52b4a8c39c1d26544b397c9e799481f7"
+  },
+  "log": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_prefix_20261115_v1/AUDIT.log",
+    "sha256": "49263740b497a9467caeba7ff44cc9184fdc96221382733b5cb3b072b89d8848"
+  },
+  "inputs": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_prefix_20261115_v1/INPUT_BINDINGS.json",
+    "sha256": "61a2bac4c0f384c9691cac3dc2bdf18e00a68abd261028fe4f64f791a3891857"
+  },
+  "report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_GPU_PREFIX_AUDIT_20261115.md",
+    "sha256": "e5c78b1c4be9843bcf8fc60b9a3320a9417bc83d017b02fcfcd699ae990ca595"
+  }
+}

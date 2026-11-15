@@ -1,4 +1,6 @@
-2026-11-14最新：[public多场景采集](AUTHOR_COLLECTION_PROGRESS_20261114.md)已启动固定8fit+2internal开发队列，7ready/3placement_null不补样本；全三体按原32+8隔离，接触无损流式压缩。首场四型固定首选因指尖碰地板而规划null；第二场四型均ready，g1已实际3139步并通过独立审计，产生首条fit正标签。其余原预算运行中，正式训练0。目标仍四型各1000fit+另200internal，旧435不自动混入；正式扩采尚未启动。大数据在`/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/`，代码与轻量证据入Git。先采集、再训练、最后评测。
+2026-11-15 当前：[GPU 接通与计时诊断](AUTHOR_GPU_CONTROL_RESULTS_20261115.md)完成。单／双环境真实 GPU 物理、共享时钟和完整接触读取已接通；两组各 20 tick、双环境无跨场景接触，但等待 `fetch_results` 占前缀约 91%，当前小规模配置仍慢，完整 GPU 提起尚未验收。旧长诊断保留 937 步完整观测及最多 1 在途步，标签为空；全部失败、成本和日志保留，未降精度或启动大采集。上一阶段[常驻两路完整对照](AUTHOR_RESIDENT_THROUGHPUT_RESULTS_20261115.md)已完成，fit 各 1000 条仍仅有约 15.02 天的条件情景，4000＋800 总 ETA 未知。有效新数据仍为 14 fit＋1 internal，正式训练 0；旧 435／八权重不变，当前无后台任务。大数据留 public，阶段轻量代码／证据 push 用户 origin。
+
+2026-11-14 历史：[public多场景采集](AUTHOR_COLLECTION_PROGRESS_20261114.md)当时启动固定8fit+2internal开发队列，7ready/3placement_null不补样本；全三体按原32+8隔离，接触无损流式压缩。首场四型固定首选因指尖碰地板而规划null；第二场四型均ready，g1实际3139步并通过独立审计，产生首条fit正标签。该队列及后续固定开发 wave 现均已结束，结果以顶部当前状态为准。目标仍四型各1000fit+另200internal，旧435不自动混入；正式扩采尚未启动。大数据在`/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/`，代码与轻量证据入Git。先采集、再训练、最后评测。
 
 2026-11-14用户最新纠正：**主线只验稳定提起，不需要投放箱**，替代下方历史搬运要求。原算法数值组件、Boya计算动作合同及原采集接口已有核验；新的无箱提起采集闭环尚未验收，独立author_lift_pipeline已绑定lift任务，旧author_pipeline保留历史transport语义。训练数据仍为旧435条（四型98/120/117/100），本轮新增正式标签0、正式重训0；435只略超论文DH3少样本400，远少于完整约4000条。后续先接提起闭环，再扩采、训练及内部检查，最后冻结外部验收。详见[范围与数据核验](LIFT_SCOPE_AND_DATA_STATUS_20261114.md)及[五步清单](ALIGNMENT_DELIVERY_CHECKLIST_20261114.md)。
 

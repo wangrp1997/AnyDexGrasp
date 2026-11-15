@@ -1,0 +1,29 @@
+{
+  "schema": "anydex_boya_gpu_vector_cpu_evidence_v1",
+  "status": "cpu_interface_pass",
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "bd5e916ca7635a5cc2c805c54852bdd0db199dafe411898184eacf11403e896d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_gpu_vector_execution.py": "58256f4bc6cd9ecdc0d696c6c158ae7acb6cb7c3dd45fe70c689dd9617075625",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_GPU_VECTOR_EXECUTION_20261115.md": "9a058e8d4c95ef6ac63fc28438c7e5823e2773abd7edf2c001e272fbdc97394c"
+  },
+  "evidence_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_vector_execution_20261115_v1/CPU_TESTS_BARE_DISCOVER.log": "14c6fa3695e737846e5e1ce4f054fb4ec3ddb3d6484453f30c9f74f3ff0dfc60",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_vector_execution_20261115_v1/CPU_TESTS_FINAL.log": "30145845be04c72df81bb5f5f2d08cf4d73b90a37039c5767e833f1a84f3b476",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_vector_execution_20261115_v1/REAL_SOURCE_PREFLIGHT.json": "0e83886f21c5609f9895ab60a677f46a1085d3d1ce85911684a3c8946d2df5d2"
+  },
+  "tests_passed": 10,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "IK_solves": 0,
+  "CGR_forwards": 0,
+  "formal_labels": 0,
+  "training_updates": 0,
+  "physical_gpu_validated": false,
+  "old_prepared_inputs_read_only": true,
+  "legacy_and_CanonDex_sources_modified": false,
+  "failure_history": "Root bare-discover test child initially lacked inherited sys.path; fixture now gives explicit child PYTHONPATH. Production adapter unchanged by that fixture fix. No physical attempt or retry.",
+  "real_source_preflight": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_vector_execution_20261115_v1/REAL_SOURCE_PREFLIGHT.json",
+    "sha256": "0e83886f21c5609f9895ab60a677f46a1085d3d1ce85911684a3c8946d2df5d2"
+  }
+}

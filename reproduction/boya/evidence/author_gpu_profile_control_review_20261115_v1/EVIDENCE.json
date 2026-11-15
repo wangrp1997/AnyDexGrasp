@@ -1,0 +1,35 @@
+{
+  "schema": "anydex_boya_gpu_profile_control_independent_evidence_v1",
+  "status": "pass",
+  "review_kind": "CPU control flow with synthetic child outputs; no physical execution",
+  "case_count": 15,
+  "Kit_launches": 0,
+  "physics_steps": 0,
+  "root_command": "python -B reproduction/boya/evidence/author_gpu_profile_control_review_20261115_v1/test_control_cpu.py",
+  "artifacts": {
+    "test_control_cpu.py": {
+      "path": "reproduction/boya/evidence/author_gpu_profile_control_review_20261115_v1/test_control_cpu.py",
+      "sha256": "d6d246e5722b87eaa67c63f9b0046244bdbbc23eac17b572c50404257951d8e7",
+      "bytes": 8924
+    },
+    "CPU_REVIEW.json": {
+      "path": "reproduction/boya/evidence/author_gpu_profile_control_review_20261115_v1/CPU_REVIEW.json",
+      "sha256": "9669a3fc08ced9f184fe66a72a0b1ee713ff8c19338f974735b31a57863b48da",
+      "bytes": 6635
+    }
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_profile_control_review_20261115_v1/test_control_cpu.py": "d6d246e5722b87eaa67c63f9b0046244bdbbc23eac17b572c50404257951d8e7",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_profile_control.py": "0d0eee9ce37872807a635559af89d1abce05362a938cc3e844bc5f3eaa97e558",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_control.py": "143b527f70ead1fc991b58598f88fe9d03592d4f3578c5fd817e5289318cdda0",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+  },
+  "conclusion": "No control-flow blocker found in tested branches; partial prefixes remain unlabeled and excluded from training.",
+  "limitations": [
+    "No real slot FD inheritance, Kit/GPU startup, physical clock or live artifact validity tested",
+    "Synthetic fixture counts are test inputs, not measured physical steps",
+    "No real freeze command or public run artifact was modified"
+  ]
+}

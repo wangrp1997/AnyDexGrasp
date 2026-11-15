@@ -1,0 +1,25 @@
+{
+  "schema": "anydex_boya_author_gpu_vector_execution_v1",
+  "status": "infrastructure_failure",
+  "complete": false,
+  "device": "cuda:0",
+  "physical_clock_steps": 0,
+  "recorded_command_environment_steps": 0,
+  "actual_integrated_environment_steps": 0,
+  "Kit_launch_wall_s": 4.702007265063003,
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 426, in run_group\n    for stream in streams:ready_events.append(next(stream))\n                                              ^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py\", line 307, in execution_steps\n    event = next(generator)\n            ^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py\", line 175, in execution_steps\n    sim,robot,urdf,objects=runtime_factory(args,initial,asset,build_scene)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 400, in factory\n    def factory(self, *args): return scene.factory(self, *args, prototype_factory=base.factory)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 315, in factory\n    result = prototype_factory(runtime, args, initial, asset, clone_build)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py\", line 587, in factory\n    result = build_scene(before_reset)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 314, in clone_build\n    return build(setup)\n           ^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py\", line 166, in build_scene\n    sim,robot,urdf,_=create_scene(args.output_dir,reference,\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/scene/runtime.py\", line 91, in create_scene\n    sim.canondex_robot_physics[\"hand_actuation\"] = audit_hand_actuation(robot, profile.hand_damping_mode,\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/robots/hand_actuation.py\", line 58, in audit_hand_actuation\n    expected = hand_drive_parameters(mode, scene or HAND_SCENE)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/robots/hand_actuation.py\", line 24, in hand_drive_parameters\n    root = ET.parse(scene).getroot()\n           ^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/xml/etree/ElementTree.py\", line 1204, in parse\n    tree.parse(source, parser)\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/xml/etree/ElementTree.py\", line 558, in parse\n    source = open(source, \"rb\")\n             ^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/wangrenpeng/CanonDex/third_party/tendon-spin/assets/grasp/scene.xml'\n",
+  "wall_before_close_s": 37.90400199801661,
+  "original_receipt": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json",
+    "sha256": "42bb6060166992b3a73a0e2fae897d6bbe10ae583f121ef0903f706a8dc1dbbb"
+  },
+  "old_source_snapshot": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/frozen_sources/author_gpu_vector_execution.py",
+    "sha256": "bd5e916ca7635a5cc2c805c54852bdd0db199dafe411898184eacf11403e896d"
+  },
+  "raw_labels": [
+    null
+  ],
+  "formal_training_eligible": false,
+  "old_receipt_modified": false
+}

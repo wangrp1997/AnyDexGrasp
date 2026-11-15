@@ -1,0 +1,31 @@
+{
+  "schema": "anydex_boya_gpu_data_path_review_evidence_v1",
+  "status": "read_only_review_complete",
+  "files": {
+    "SOURCE_FACTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_data_path_review_20261115_v1/SOURCE_FACTS.json",
+      "sha256": "fccba8c3a222a43b4a6fec5cfa990355f461d96d79f8b4e1681741c7cfb00d17",
+      "bytes": 22394
+    },
+    "STATIC_REVIEW.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_data_path_review_20261115_v1/STATIC_REVIEW.json",
+      "sha256": "c22eb747d1c2fbce2399229f2731bf9bc820d672859d27ee196d433d9a7488c4",
+      "bytes": 7227
+    }
+  },
+  "report": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_GPU_DATA_PATH_REVIEW_20261115.md",
+    "sha256": "a9601fe9c625887cec288933b493e09130501cfade5ee2da61ec9f668b538562"
+  },
+  "actions": {
+    "Kit_launches": 0,
+    "physics_steps": 0,
+    "signals_sent": 0,
+    "process_attach": 0,
+    "frozen_source_edits": 0
+  },
+  "limitations": [
+    "Static differences and historical timing do not profile the current GPU run",
+    "SIGINT permits finalization but does not prove an interrupted native step completed"
+  ]
+}

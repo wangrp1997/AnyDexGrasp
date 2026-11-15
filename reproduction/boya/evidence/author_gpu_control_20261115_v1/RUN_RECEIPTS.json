@@ -1,0 +1,1900 @@
+{
+  "schema": "anydex_boya_gpu_actual_receipt_archive_v1",
+  "receipts": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_RESULTS.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_RESULTS.json",
+        "sha256": "cf2557048109bcd9d7a9eee02f98dded61ab8da6ce764f06df5068a4245458db"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_control_v1",
+        "status": "stopped_after_failure",
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_PROTOCOL.json",
+          "sha256": "0254f4f89f30b24bf61d8a6e36c003155ecdc669118abc131b34c42c0ab39a49"
+        },
+        "stages": [
+          {
+            "name": "single_g6",
+            "stage": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/STAGE.json",
+              "sha256": "dc81a0f4f476b23d6877a40ef652eac30529022defebc8a7dc143a58211e23ed"
+            }
+          }
+        ],
+        "wall_s": 39.21369426883757,
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "training_updates": 0,
+        "label": null,
+        "retry_count": 0
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/STAGE.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/STAGE.json",
+        "sha256": "dc81a0f4f476b23d6877a40ef652eac30529022defebc8a7dc143a58211e23ed"
+      },
+      "receipt": {
+        "status": "infrastructure_failure",
+        "complete": false,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py",
+          "run",
+          "--prepared-dirs",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+          "--output-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/result",
+          "--device",
+          "cuda:0",
+          "--env-roots",
+          "/World/envs/env_0",
+          "--origins-json",
+          "[[0, 0, 0]]",
+          "--protocol",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_PROTOCOL.json"
+        ],
+        "started_unix_s": 1794709153.1718485,
+        "outputs": {},
+        "retry_count": 0,
+        "child_pid": 2806232,
+        "returncode": 1,
+        "error": "RuntimeError('Declared subprocess returned 1')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py\", line 238, in _stage\n    raise RuntimeError('Declared subprocess returned '+str(process.returncode))\nRuntimeError: Declared subprocess returned 1\n",
+        "wall_s": 39.17411715397611,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/process.log",
+          "sha256": "783bdff00457adda7b22af6df3c9fb5ed2d62c9b321f2ee067ed76b2012c189a"
+        }
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json",
+        "sha256": "42bb6060166992b3a73a0e2fae897d6bbe10ae583f121ef0903f706a8dc1dbbb"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_vector_execution_v1",
+        "status": "infrastructure_failure",
+        "complete": false,
+        "device": "cuda:0",
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "label": null,
+        "automatic_training": false,
+        "retry_count": 0,
+        "source_sha256": {
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "bd5e916ca7635a5cc2c805c54852bdd0db199dafe411898184eacf11403e896d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+          "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+          "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+          "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+          "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+          "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f"
+        },
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_PROTOCOL.json",
+          "sha256": "0254f4f89f30b24bf61d8a6e36c003155ecdc669118abc131b34c42c0ab39a49"
+        },
+        "environment_roots": [
+          "/World/envs/env_0"
+        ],
+        "origins_m": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "jobs": [
+          {
+            "environment": 0,
+            "source_prepared": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+            "input_bindings": {
+              "protocol": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_PROTOCOL.json",
+                "sha256": "2bab63bb3f1b5ce97fd3d91efaa752c665a9d0c77c4caa38e015a0e1fdc58d0c"
+              },
+              "scene": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/observed_scene.json",
+                "sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9"
+              },
+              "candidate": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/pool/selected_author_candidate.json",
+                "sha256": "6e4c4d65f6c5245006f388d322fb56ebedded3808491280533b25d213d16ea00"
+              },
+              "plan": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/plan.json",
+                "sha256": "814bcb33d99a78198b3060473af5543ca7a51bdc1a71f2b54cee0ac42dbab8b5"
+              },
+              "commands": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/commands.npz",
+                "sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea"
+              },
+              "command_binding": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/COMMAND_BINDING.json",
+                "sha256": "745034fddbc775eddbb2bc57f7017b2ff6b616ee025f5ecf9c55b5150578fdb1"
+              },
+              "ready": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/READY.json",
+                "sha256": "1eddfedb5c30387690f39736c567553ad4285d5afa3da8344de1615d8f9fb86b"
+              },
+              "preparation": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_RESULTS.json",
+                "sha256": "7105755f969004530c6b857f9f0c62eba3f37b2362bc64e039978d53210c36d5"
+              }
+            },
+            "command_steps": 3024,
+            "recorded_physical_steps": 0,
+            "observations_completed_steps": 0,
+            "evaluation": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/result/env_0/execution/LIFT_EVALUATION.json",
+              "sha256": "ddc64d36ace9acd01844ad268c4672cb184ab08cfc0afcf201202b759b4ea9c1"
+            },
+            "label": null,
+            "raw_label": null,
+            "formal_training_eligible": false,
+            "exclude_training": true
+          }
+        ],
+        "physical_clock_steps": 0,
+        "recorded_command_environment_steps": 0,
+        "actual_integrated_environment_steps": 0,
+        "labels_scope": "Diagnostic raw labels at each original command completion, never admitted to training",
+        "physics_scope": "Explicit CPU-to-GPU PhysX backend change; preserved dt, source assets, commands, force/control and original validity/label logic; numerical equivalence is not assumed",
+        "Kit_launch_wall_s": 4.702007265063003,
+        "ast_adaptations": {
+          "robot_namespace": 1,
+          "desired_origin": 1,
+          "observed_origin": 1
+        },
+        "finish_ast_sha256": "c03faa3144c027e8803c4ed54ba3bfa8ba257fc819dea0984abe624b6aace5f7",
+        "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 426, in run_group\n    for stream in streams:ready_events.append(next(stream))\n                                              ^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py\", line 307, in execution_steps\n    event = next(generator)\n            ^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py\", line 175, in execution_steps\n    sim,robot,urdf,objects=runtime_factory(args,initial,asset,build_scene)\n                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 400, in factory\n    def factory(self, *args): return scene.factory(self, *args, prototype_factory=base.factory)\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 315, in factory\n    result = prototype_factory(runtime, args, initial, asset, clone_build)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_transport.py\", line 587, in factory\n    result = build_scene(before_reset)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 314, in clone_build\n    return build(setup)\n           ^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py\", line 166, in build_scene\n    sim,robot,urdf,_=create_scene(args.output_dir,reference,\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/scene/runtime.py\", line 91, in create_scene\n    sim.canondex_robot_physics[\"hand_actuation\"] = audit_hand_actuation(robot, profile.hand_damping_mode,\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/robots/hand_actuation.py\", line 58, in audit_hand_actuation\n    expected = hand_drive_parameters(mode, scene or HAND_SCENE)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/robots/hand_actuation.py\", line 24, in hand_drive_parameters\n    root = ET.parse(scene).getroot()\n           ^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/xml/etree/ElementTree.py\", line 1204, in parse\n    tree.parse(source, parser)\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/xml/etree/ElementTree.py\", line 558, in parse\n    source = open(source, \"rb\")\n             ^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/home/wangrenpeng/CanonDex/third_party/tendon-spin/assets/grasp/scene.xml'\n",
+        "native_scene": {
+          "asset_setup_count": 1,
+          "physics_scene_count": 1,
+          "cross_environment_contacts": 0,
+          "actual_gpu_validated": false,
+          "clone_api": "isaaclab.cloner.usd_replicate/filter_collisions",
+          "environment_roots": [
+            "/World/envs/env_0"
+          ],
+          "origins_m": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "structural_exclusions_per_env": 28
+        },
+        "tail_observations": {},
+        "wall_before_close_s": 37.90400199801661,
+        "contact_journals": [
+          {
+            "schema": "anydex_boya_contact_journal_pointer_v1",
+            "compression": "gzip",
+            "record_format": "jsonl",
+            "record_count": 0,
+            "data": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+              "sha256": "458c5a203299dd326aa747fee1bbc7709bfbd560507d1603459d9f7d9eb6be76",
+              "bytes": 20
+            },
+            "source_bindings": {
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "bd5e916ca7635a5cc2c805c54852bdd0db199dafe411898184eacf11403e896d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+              "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+              "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+              "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+              "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+              "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f"
+            },
+            "lossless": true,
+            "contact_records_omitted": 0,
+            "semantics": "Each line is one complete original runtime contact row; this document is an explicit pointer, not a rows array"
+          }
+        ]
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_RESULTS.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_RESULTS.json",
+        "sha256": "ef2e38e7dd3be6d3b46d257dd7b869a313828794204f039dbf7913ceaa5975b0"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_control_v1",
+        "status": "stopped_after_failure",
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json",
+          "sha256": "b3bb4d9bd01f8fb5fc8410b6c65a0d191ab2dc5f6e16e018e91c6f64c397389b"
+        },
+        "stages": [
+          {
+            "name": "single_g6",
+            "stage": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/STAGE.json",
+              "sha256": "c010ae8f89f90d72bf6d4eec177587d6b04d68b62f9cf2d01b2c2fde3d5cc6dc"
+            }
+          }
+        ],
+        "wall_s": 719.7382939259987,
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "training_updates": 0,
+        "label": null,
+        "retry_count": 0
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/STAGE.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/STAGE.json",
+        "sha256": "c010ae8f89f90d72bf6d4eec177587d6b04d68b62f9cf2d01b2c2fde3d5cc6dc"
+      },
+      "receipt": {
+        "status": "infrastructure_failure",
+        "complete": false,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py",
+          "run",
+          "--prepared-dirs",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+          "--output-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result",
+          "--device",
+          "cuda:0",
+          "--env-roots",
+          "/World/envs/env_0",
+          "--origins-json",
+          "[[0, 0, 0]]",
+          "--protocol",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json"
+        ],
+        "started_unix_s": 1794709919.9175928,
+        "outputs": {},
+        "retry_count": 0,
+        "child_pid": 2840509,
+        "returncode": 1,
+        "error": "RuntimeError('Declared subprocess returned 1')",
+        "traceback": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py\", line 238, in _stage\n    raise RuntimeError('Declared subprocess returned '+str(process.returncode))\nRuntimeError: Declared subprocess returned 1\n",
+        "wall_s": 719.6869556959718,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/process.log",
+          "sha256": "84c8bdf1dc3106295111077f28d08dfe87afda468ca46f0a5e8ca4e301cfbc42"
+        }
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result/GPU_VECTOR_EXECUTION.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result/GPU_VECTOR_EXECUTION.json",
+        "sha256": "f50d38ab02a35f36d4430b20f314483a4f51b61359b9973174dcab5792e34463"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_vector_execution_v1",
+        "status": "infrastructure_failure",
+        "complete": false,
+        "device": "cuda:0",
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "label": null,
+        "automatic_training": false,
+        "retry_count": 0,
+        "source_sha256": {
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+          "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+          "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+          "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+          "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+          "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f"
+        },
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json",
+          "sha256": "b3bb4d9bd01f8fb5fc8410b6c65a0d191ab2dc5f6e16e018e91c6f64c397389b"
+        },
+        "environment_roots": [
+          "/World/envs/env_0"
+        ],
+        "origins_m": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "jobs": [
+          {
+            "environment": 0,
+            "source_prepared": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+            "input_bindings": {
+              "protocol": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_PROTOCOL.json",
+                "sha256": "2bab63bb3f1b5ce97fd3d91efaa752c665a9d0c77c4caa38e015a0e1fdc58d0c"
+              },
+              "scene": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/observed_scene.json",
+                "sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9"
+              },
+              "candidate": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/pool/selected_author_candidate.json",
+                "sha256": "6e4c4d65f6c5245006f388d322fb56ebedded3808491280533b25d213d16ea00"
+              },
+              "plan": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/plan.json",
+                "sha256": "814bcb33d99a78198b3060473af5543ca7a51bdc1a71f2b54cee0ac42dbab8b5"
+              },
+              "commands": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/commands.npz",
+                "sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea"
+              },
+              "command_binding": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/COMMAND_BINDING.json",
+                "sha256": "745034fddbc775eddbb2bc57f7017b2ff6b616ee025f5ecf9c55b5150578fdb1"
+              },
+              "ready": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/READY.json",
+                "sha256": "1eddfedb5c30387690f39736c567553ad4285d5afa3da8344de1615d8f9fb86b"
+              },
+              "preparation": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_RESULTS.json",
+                "sha256": "7105755f969004530c6b857f9f0c62eba3f37b2362bc64e039978d53210c36d5"
+              }
+            },
+            "command_steps": 3024,
+            "recorded_physical_steps": 937,
+            "observations_completed_steps": 937,
+            "evaluation": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result/env_0/execution/LIFT_EVALUATION.json",
+              "sha256": "3ed87728e8b6736d6a8211839f0a1365156611a2dfee4c5b276adec2a5c559f8"
+            },
+            "label": null,
+            "raw_label": null,
+            "formal_training_eligible": false,
+            "exclude_training": true
+          }
+        ],
+        "physical_clock_steps": 937,
+        "recorded_command_environment_steps": 937,
+        "actual_integrated_environment_steps": 937,
+        "labels_scope": "Diagnostic raw labels at each original command completion, never admitted to training",
+        "physics_scope": "Explicit CPU-to-GPU PhysX backend change; preserved dt, source assets, commands, force/control and original validity/label logic; numerical equivalence is not assumed",
+        "reference_assets": {
+          "hand_urdf": {
+            "path": "/home/wangrenpeng/tendon-spin/assets/hand/boya.urdf",
+            "sha256": "4aa1dbbb7b930bc29ac824b25697cde6c2bed3318d8b0dd5ea6439b643f34cca"
+          },
+          "hand_scene": {
+            "path": "/home/wangrenpeng/tendon-spin/assets/grasp/scene.xml",
+            "sha256": "08627d514b8d73e91b55cfc8381f95cc478a59245cf470d15fead1ea912c647e"
+          },
+          "reference_root": "/home/wangrenpeng/BoyaBlindGrasp/downloads/canondex_support_adapter_20261024_v2/reference"
+        },
+        "Kit_launch_wall_s": 3.151442499132827,
+        "ast_adaptations": {
+          "robot_namespace": 1,
+          "desired_origin": 1,
+          "observed_origin": 1
+        },
+        "finish_ast_sha256": "c03faa3144c027e8803c4ed54ba3bfa8ba257fc819dea0984abe624b6aace5f7",
+        "lane_recorded_physical_steps": [
+          937
+        ],
+        "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 481, in run_group\n    clock=shared_clock([replay(e,s) for e,s in zip(ready_events,streams)],step,on_step=after_tick)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 181, in shared_clock\n    result = advance_together(wrapped, step, on_step=on_step)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py\", line 56, in advance_together\n    step(scene);ticks+=1\n    ^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py\", line 468, in step\n    sim.step(render=False)\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sim/simulation_context.py\", line 793, in step\n    self.physics_manager.step()\n  File \"/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py\", line 522, in step\n    physx_sim.fetch_results()\nKeyboardInterrupt\n",
+        "native_scene": {
+          "asset_setup_count": 1,
+          "physics_scene_count": 1,
+          "cross_environment_contacts": 0,
+          "actual_gpu_validated": true,
+          "clone_api": "isaaclab.cloner.usd_replicate/filter_collisions",
+          "environment_roots": [
+            "/World/envs/env_0"
+          ],
+          "origins_m": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "structural_exclusions_per_env": 28,
+          "native_scene": {
+            "physxScene:enableGPUDynamics": true,
+            "physxScene:broadphaseType": "GPU",
+            "physxScene:enableCCD": false,
+            "physxScene:timeStepsPerSecond": 250
+          },
+          "rigid_bodies_per_env": [
+            32
+          ]
+        },
+        "tail_observations": {},
+        "wall_before_close_s": 718.3257450261153,
+        "contact_journals": [
+          {
+            "schema": "anydex_boya_contact_journal_pointer_v1",
+            "compression": "gzip",
+            "record_format": "jsonl",
+            "record_count": 937,
+            "data": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+              "sha256": "7b9988ab3245602942d4b93ef4c6f17a3c44c63c048b8eaf31aee80ddc9f046f",
+              "bytes": 91419469
+            },
+            "source_bindings": {
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+              "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+              "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+              "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+              "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+              "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f"
+            },
+            "lossless": true,
+            "contact_records_omitted": 0,
+            "semantics": "Each line is one complete original runtime contact row; this document is an explicit pointer, not a rows array"
+          }
+        ]
+      },
+      "nested_probe_omissions": {
+        "initial_gpu_probe": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result/initial_gpu_probe/PROBE.json",
+          "sha256": "bef84c63b9d8edb0df03c8fb031bef8b6e7e7d6595fbeaf2e9cde2956a55ada7"
+        },
+        "first_tick_gpu_probe": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result/first_tick_gpu_probe/PROBE.json",
+          "sha256": "0e457fdc5b5add077a5483555e2f4c4f26913d4b55f49e87b78a9760aa9ec519"
+        }
+      },
+      "archive_scope": "Selected original fields; large nested probes omitted with exact source bindings"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/CANCELLATION_INTENT.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/CANCELLATION_INTENT.json",
+        "sha256": "c51789215cadc31a2c25882a7d8cd8a75becd409f3f2d439e2dd9608b0164df4"
+      },
+      "receipt": {
+        "schema": "anydex_gpu_diagnostic_cancellation_intent_v1",
+        "reason": "Sustained execution throughput predicts original fixed 1800s timeout; stop before timeout SIGTERM would bypass Python finally. Follow with independent bounded partition timing, not an outcome-driven retry.",
+        "decision_basis": "Timing only; no terminal lift outcome used",
+        "signal": "SIGINT",
+        "target_pid": 2840509,
+        "target_pgid": 2840509,
+        "cmdline": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py run --prepared-dirs /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6 --output-dir /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/result --device cuda:0 --env-roots /World/envs/env_0 --origins-json [[0, 0, 0]] --protocol /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json ",
+        "unix_s": 1794710638.6136286,
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json",
+          "sha256": "b3bb4d9bd01f8fb5fc8410b6c65a0d191ab2dc5f6e16e018e91c6f64c397389b"
+        },
+        "last_periodic_progress": {
+          "physics_ticks": 900,
+          "lane_recorded_steps": [
+            900
+          ],
+          "wall_s": 682.037480650004
+        },
+        "step_accounting": "Completed counter and native observations will be audited; at most one in-flight simulate/fetch tick may remain unconfirmed. Do not invent an exact completed cost for that tick.",
+        "label": null,
+        "exclude_training": true,
+        "second_group_not_to_start_after_incomplete_first": true
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_RESULTS.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_RESULTS.json",
+        "sha256": "6c86c96902a8f2d228ff16f261bec2cc52e0d5c9df4cb9469a4cbd3a8df6dc9d"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_profile_control_v1",
+        "status": "bounded_prefixes_complete",
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json",
+          "sha256": "ff421bb1dd8f7269a37315d141b3f10379b4e3bc0a8468c50ed27c5a97926f80"
+        },
+        "stages": [
+          {
+            "name": "single_g6",
+            "stage": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/STAGE.json",
+              "sha256": "7b7d3428e6bb7921ef586a0268bded8a38a9ea10f34e0bb4726a530f216f7d7d"
+            },
+            "admission": "bounded_prefix_complete_excluded_training"
+          },
+          {
+            "name": "batch_g1_g6",
+            "stage": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/STAGE.json",
+              "sha256": "7158371b21a8d2e8bcf04a763e05ff0c31ffc9a5bf8fc7af99341a0a2a47943c"
+            },
+            "admission": "bounded_prefix_complete_excluded_training"
+          }
+        ],
+        "wall_s": 169.3129584840499,
+        "full_physical_validation": false,
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "training_updates": 0,
+        "label": null,
+        "raw_label": null,
+        "retry_count": 0
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/STAGE.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/STAGE.json",
+        "sha256": "7b7d3428e6bb7921ef586a0268bded8a38a9ea10f34e0bb4726a530f216f7d7d"
+      },
+      "receipt": {
+        "status": "complete",
+        "complete": true,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py",
+          "--prepared-dirs",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+          "--output-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result",
+          "--env-roots",
+          "/World/envs/env_0",
+          "--origins-json",
+          "[[0, 0, 0]]",
+          "--prefix-ticks",
+          "20",
+          "--protocol",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json"
+        ],
+        "started_unix_s": 1794711295.0324683,
+        "outputs": {
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json",
+            "sha256": "d49a42cd13609b24dd3d7e25edd12a42cd6659ad0313afcdd340b7896c72c1aa"
+          },
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_PROFILE.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_PROFILE.json",
+            "sha256": "25c33fe1ced1461ae847c64cad9954c489d91f5373bdd2f99ecb473929334848"
+          }
+        },
+        "retry_count": 0,
+        "child_pid": 2896831,
+        "returncode": 0,
+        "wall_s": 70.57846970902756,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/process.log",
+          "sha256": "7dcefbe3c767f4dea5e594493c40a4c1bcf77f5a0c1ad1bdaf3b5c6d8bce0ebe"
+        }
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json",
+        "sha256": "d49a42cd13609b24dd3d7e25edd12a42cd6659ad0313afcdd340b7896c72c1aa"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_vector_execution_v1",
+        "status": "partial_profile",
+        "complete": false,
+        "device": "cuda:0",
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "label": null,
+        "automatic_training": false,
+        "retry_count": 0,
+        "source_sha256": {
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+          "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+          "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+          "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+          "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+          "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+        },
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json",
+          "sha256": "ff421bb1dd8f7269a37315d141b3f10379b4e3bc0a8468c50ed27c5a97926f80"
+        },
+        "environment_roots": [
+          "/World/envs/env_0"
+        ],
+        "origins_m": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "jobs": [
+          {
+            "environment": 0,
+            "environment_root": "/World/envs/env_0",
+            "origin_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source_prepared": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+            "input_bindings": {
+              "protocol": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_PROTOCOL.json",
+                "sha256": "2bab63bb3f1b5ce97fd3d91efaa752c665a9d0c77c4caa38e015a0e1fdc58d0c"
+              },
+              "scene": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/observed_scene.json",
+                "sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9"
+              },
+              "candidate": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/pool/selected_author_candidate.json",
+                "sha256": "6e4c4d65f6c5245006f388d322fb56ebedded3808491280533b25d213d16ea00"
+              },
+              "plan": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/plan.json",
+                "sha256": "814bcb33d99a78198b3060473af5543ca7a51bdc1a71f2b54cee0ac42dbab8b5"
+              },
+              "commands": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/commands.npz",
+                "sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea"
+              },
+              "command_binding": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/COMMAND_BINDING.json",
+                "sha256": "745034fddbc775eddbb2bc57f7017b2ff6b616ee025f5ecf9c55b5150578fdb1"
+              },
+              "ready": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/READY.json",
+                "sha256": "1eddfedb5c30387690f39736c567553ad4285d5afa3da8344de1615d8f9fb86b"
+              },
+              "preparation": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_RESULTS.json",
+                "sha256": "7105755f969004530c6b857f9f0c62eba3f37b2362bc64e039978d53210c36d5"
+              }
+            },
+            "command_steps": 3024,
+            "completion_tick": 20,
+            "tail_integrated_steps": 0,
+            "evaluation": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/env_0/execution/LIFT_EVALUATION.json",
+              "sha256": "7de5c5858cd51346bd5e71c4e780743d58e30d43ac7c4324c10cdea16c3e5fee"
+            },
+            "diagnostic_record": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/env_0/DIAGNOSTIC_RECORD.json",
+              "sha256": "29db7c4c1b2fb347514baaf61cdba2d5d9ff65ef88774fa6754d4ae99e3f8f63"
+            },
+            "complete": false,
+            "raw_label": null,
+            "label": null,
+            "label_state": "infrastructure_error",
+            "gates": {
+              "joint_limits": false,
+              "mimics": false,
+              "penetration": false,
+              "palm_tracking": false,
+              "no_arm_object_support": false,
+              "fixed_base": false,
+              "complete_execution": false,
+              "all_dynamic_contacts": true,
+              "all_dynamic_objects_no_arm_support": true,
+              "author_phase_order": false,
+              "no_runtime_error": false,
+              "no_early_physical_stop": true
+            },
+            "formal_training_eligible": false,
+            "exclude_training": true,
+            "trace_frame": "Original plan world frame",
+            "contact_position_frame": "Physical translated environment world",
+            "source_pose_translation_removed_m": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "physical_clock_steps": 20,
+        "recorded_command_environment_steps": 20,
+        "actual_integrated_environment_steps": 20,
+        "labels_scope": "Diagnostic raw labels at each original command completion, never admitted to training",
+        "physics_scope": "Explicit CPU-to-GPU PhysX backend change; preserved dt, source assets, commands, force/control and original validity/label logic; numerical equivalence is not assumed",
+        "reference_assets": {
+          "hand_urdf": {
+            "path": "/home/wangrenpeng/tendon-spin/assets/hand/boya.urdf",
+            "sha256": "4aa1dbbb7b930bc29ac824b25697cde6c2bed3318d8b0dd5ea6439b643f34cca"
+          },
+          "hand_scene": {
+            "path": "/home/wangrenpeng/tendon-spin/assets/grasp/scene.xml",
+            "sha256": "08627d514b8d73e91b55cfc8381f95cc478a59245cf470d15fead1ea912c647e"
+          },
+          "reference_root": "/home/wangrenpeng/BoyaBlindGrasp/downloads/canondex_support_adapter_20261024_v2/reference"
+        },
+        "Kit_launch_wall_s": 4.884959558956325,
+        "ast_adaptations": {
+          "robot_namespace": 1,
+          "desired_origin": 1,
+          "observed_origin": 1
+        },
+        "finish_ast_sha256": "c03faa3144c027e8803c4ed54ba3bfa8ba257fc819dea0984abe624b6aace5f7",
+        "lane_recorded_physical_steps": [
+          20
+        ],
+        "clock": {
+          "physics_ticks": 20,
+          "lane_steps": [
+            20
+          ],
+          "recorded_environment_steps": 20,
+          "integrated_environment_steps": 20,
+          "all_streams_complete": false,
+          "command_steps": 3024,
+          "original_command_steps": [
+            3024
+          ],
+          "scheduler_barrier_upper_bound": 3024,
+          "barrier_metadata_only": true,
+          "commands_added": 0,
+          "completed_lane_tail_integrated_steps": [
+            0
+          ],
+          "actual_integrated_environment_steps": 20,
+          "prefix_limited": true,
+          "requested_prefix_ticks": 20,
+          "prefix_clock_including_generator_close_wall_s": 12.038499710848555,
+          "next_unintegrated_command_may_have_been_prepared": true
+        },
+        "native_scene": {
+          "asset_setup_count": 1,
+          "physics_scene_count": 1,
+          "cross_environment_contacts": 0,
+          "actual_gpu_validated": true,
+          "clone_api": "isaaclab.cloner.usd_replicate/filter_collisions",
+          "environment_roots": [
+            "/World/envs/env_0"
+          ],
+          "origins_m": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "structural_exclusions_per_env": 28,
+          "native_scene": {
+            "physxScene:enableGPUDynamics": true,
+            "physxScene:broadphaseType": "GPU",
+            "physxScene:enableCCD": false,
+            "physxScene:timeStepsPerSecond": 250
+          },
+          "rigid_bodies_per_env": [
+            32
+          ]
+        },
+        "tail_observations": {},
+        "wall_before_close_s": 68.67883995291777,
+        "contact_journals": [
+          {
+            "schema": "anydex_boya_contact_journal_pointer_v1",
+            "compression": "gzip",
+            "record_format": "jsonl",
+            "record_count": 20,
+            "data": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+              "sha256": "e638fee68d1c6090a813a722f24de1d9d05f49b2bf2067450e968027538d3e6b",
+              "bytes": 1952570
+            },
+            "source_bindings": {
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+              "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+              "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+              "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+              "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+              "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+            },
+            "lossless": true,
+            "contact_records_omitted": 0,
+            "semantics": "Each line is one complete original runtime contact row; this document is an explicit pointer, not a rows array"
+          }
+        ],
+        "purpose": "performance_diagnostic_prefix",
+        "training_eligible": false,
+        "prefix_limited": true,
+        "requested_prefix_ticks": 20
+      },
+      "nested_probe_omissions": {
+        "initial_gpu_probe": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/initial_gpu_probe/PROBE.json",
+          "sha256": "e7db762ccd4fdab2e295d9d45860ecaea9670567338e1353c95381dd0fe291ec"
+        },
+        "first_tick_gpu_probe": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/first_tick_gpu_probe/PROBE.json",
+          "sha256": "50b08a1934eac45eea39d0ac12648ebded05497b5567536848018766a700fe90"
+        }
+      },
+      "archive_scope": "Selected original fields; large nested probes omitted with exact source bindings"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_PROFILE.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_PROFILE.json",
+        "sha256": "25c33fe1ced1461ae847c64cad9954c489d91f5373bdd2f99ecb473929334848"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_vector_profile_v1",
+        "status": "partial_profile",
+        "complete": false,
+        "label": null,
+        "raw_label": null,
+        "formal_training_eligible": false,
+        "exclude_training": true,
+        "purpose": "performance_diagnostic_prefix",
+        "prefix_ticks": 20,
+        "source_sha256": {
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+          "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+          "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+          "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+          "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+          "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+        },
+        "actual_physics_steps": 20,
+        "timing_semantics": "Host wall time without added CUDA synchronization; inclusive buckets overlap; exclusive buckets are disjoint among instrumented scopes; GPU async work may be charged to the later blocking read",
+        "control_semantics": "Frozen original commands and all original gates/full pointwise journals; native step_limit ends an incomplete prefix; no success or failure label",
+        "next_unintegrated_command_may_have_been_prepared": true,
+        "actual_integrated_environment_steps": 20,
+        "wall_before_close_s": 69.12300913501531,
+        "timing": {
+          "initialization": {
+            "artifact.save_json": {
+              "calls": 1,
+              "inclusive_wall_s": 0.0002314029261469841,
+              "exclusive_wall_s": 0.0002314029261469841
+            },
+            "json.encode": {
+              "calls": 286,
+              "inclusive_wall_s": 0.6000290918163955,
+              "exclusive_wall_s": 0.6000290918163955
+            },
+            "physx.fetch_results": {
+              "calls": 1,
+              "inclusive_wall_s": 0.0007522860541939735,
+              "exclusive_wall_s": 0.0007522860541939735
+            },
+            "robot.update": {
+              "calls": 4,
+              "inclusive_wall_s": 0.0008253038395196199,
+              "exclusive_wall_s": 0.0008253038395196199
+            },
+            "torch.cpu_host_copy": {
+              "calls": 42,
+              "inclusive_wall_s": 0.0012685246765613556,
+              "exclusive_wall_s": 0.0012685246765613556
+            },
+            "object.update": {
+              "calls": 22,
+              "inclusive_wall_s": 6.177159957587719e-05,
+              "exclusive_wall_s": 6.177159957587719e-05
+            },
+            "warp.numpy_host_copy": {
+              "calls": 52,
+              "inclusive_wall_s": 0.0019894917495548725,
+              "exclusive_wall_s": 0.0019894917495548725
+            },
+            "robot.control_write": {
+              "calls": 1,
+              "inclusive_wall_s": 0.00029589910991489887,
+              "exclusive_wall_s": 0.00029589910991489887
+            },
+            "object.force_write": {
+              "calls": 5,
+              "inclusive_wall_s": 0.0019007509108632803,
+              "exclusive_wall_s": 0.0019007509108632803
+            },
+            "robot.snapshot": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0004483859520405531,
+              "exclusive_wall_s": 0.0003183616790920496
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 3,
+              "inclusive_wall_s": 0.009895383147522807,
+              "exclusive_wall_s": 0.009895383147522807
+            }
+          },
+          "execution_prefix": {
+            "torch.cpu_host_copy": {
+              "calls": 203,
+              "inclusive_wall_s": 0.006353959906846285,
+              "exclusive_wall_s": 0.006353959906846285
+            },
+            "robot.snapshot": {
+              "calls": 21,
+              "inclusive_wall_s": 0.007987091550603509,
+              "exclusive_wall_s": 0.005036397138610482
+            },
+            "robot.control_write": {
+              "calls": 21,
+              "inclusive_wall_s": 0.0035687966737896204,
+              "exclusive_wall_s": 0.0035687966737896204
+            },
+            "object.force_write": {
+              "calls": 63,
+              "inclusive_wall_s": 0.02601873455569148,
+              "exclusive_wall_s": 0.02601873455569148
+            },
+            "physx.simulate": {
+              "calls": 20,
+              "inclusive_wall_s": 0.0024427457246929407,
+              "exclusive_wall_s": 0.0024427457246929407
+            },
+            "physx.fetch_results": {
+              "calls": 20,
+              "inclusive_wall_s": 11.020907475613058,
+              "exclusive_wall_s": 11.020907475613058
+            },
+            "sim.step": {
+              "calls": 20,
+              "inclusive_wall_s": 11.027216320624575,
+              "exclusive_wall_s": 0.003866099286824465
+            },
+            "barrier.step_callback": {
+              "calls": 20,
+              "inclusive_wall_s": 11.027499104151502,
+              "exclusive_wall_s": 0.00028278352692723274
+            },
+            "warp.numpy_host_copy": {
+              "calls": 492,
+              "inclusive_wall_s": 0.02248282148502767,
+              "exclusive_wall_s": 0.02248282148502767
+            },
+            "json.encode": {
+              "calls": 25,
+              "inclusive_wall_s": 0.1297389268875122,
+              "exclusive_wall_s": 0.1297389268875122
+            },
+            "barrier.after_tick": {
+              "calls": 20,
+              "inclusive_wall_s": 0.018473702250048518,
+              "exclusive_wall_s": 0.016231175512075424
+            },
+            "robot.update": {
+              "calls": 20,
+              "inclusive_wall_s": 0.005352904321625829,
+              "exclusive_wall_s": 0.005352904321625829
+            },
+            "object.update": {
+              "calls": 60,
+              "inclusive_wall_s": 0.00018138042651116848,
+              "exclusive_wall_s": 0.00018138042651116848
+            },
+            "contact.filtered6_readback": {
+              "calls": 80,
+              "inclusive_wall_s": 0.04509339760988951,
+              "exclusive_wall_s": 0.023883873829618096
+            },
+            "primary.contact_decode": {
+              "calls": 20,
+              "inclusive_wall_s": 0.001228981651365757,
+              "exclusive_wall_s": 0.001228981651365757
+            },
+            "primary.contact_decode_and_read": {
+              "calls": 20,
+              "inclusive_wall_s": 0.015808068914338946,
+              "exclusive_wall_s": 0.00047858618199825287
+            },
+            "robot.contact_decode_and_read": {
+              "calls": 40,
+              "inclusive_wall_s": 0.02293243375606835,
+              "exclusive_wall_s": 0.002506236545741558
+            },
+            "all_body.contact_decode": {
+              "calls": 20,
+              "inclusive_wall_s": 0.4780927791725844,
+              "exclusive_wall_s": 0.4780927791725844
+            },
+            "all_body.contact_loads": {
+              "calls": 60,
+              "inclusive_wall_s": 0.01239710277877748,
+              "exclusive_wall_s": 0.01239710277877748
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 60,
+              "inclusive_wall_s": 0.13139306660741568,
+              "exclusive_wall_s": 0.13139306660741568
+            },
+            "gzip.write": {
+              "calls": 20,
+              "inclusive_wall_s": 0.038371327333152294,
+              "exclusive_wall_s": 0.038371327333152294
+            },
+            "journal.encode_gzip_append": {
+              "calls": 20,
+              "inclusive_wall_s": 0.16145477793179452,
+              "exclusive_wall_s": 0.0010894564911723137
+            },
+            "all_body.after_step": {
+              "calls": 20,
+              "inclusive_wall_s": 0.8359169214963913,
+              "exclusive_wall_s": 0.02695398824289441
+            },
+            "artifact.savez_compressed": {
+              "calls": 1,
+              "inclusive_wall_s": 0.047409208957105875,
+              "exclusive_wall_s": 0.047409208957105875
+            },
+            "journal.close": {
+              "calls": 2,
+              "inclusive_wall_s": 0.00037229317240417004,
+              "exclusive_wall_s": 0.00037229317240417004
+            }
+          },
+          "finalization": {
+            "json.encode": {
+              "calls": 7,
+              "inclusive_wall_s": 0.007516213459894061,
+              "exclusive_wall_s": 0.007516213459894061
+            },
+            "artifact.save_json": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0064172029960900545,
+              "exclusive_wall_s": 0.0005083049181848764
+            },
+            "journal.close": {
+              "calls": 2,
+              "inclusive_wall_s": 3.054272383451462e-06,
+              "exclusive_wall_s": 3.054272383451462e-06
+            }
+          }
+        },
+        "group_receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/GPU_VECTOR_EXECUTION.json",
+          "sha256": "d49a42cd13609b24dd3d7e25edd12a42cd6659ad0313afcdd340b7896c72c1aa"
+        },
+        "error": null,
+        "native_execution_profiles": [
+          {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/result/env_0/execution/evaluation.json",
+            "sha256": "0b703b158477932ede92f197c76facbfa1f25bb7c62076229342e327e13fd437",
+            "profile": {
+              "command_write_s": 0.01976082380861044,
+              "physics_step_update_s": 11.884107851656154,
+              "snapshot_and_state_s": 0.011571700917556882,
+              "contact_read_s": 0.026980686467140913,
+              "checks_and_record_s": 0.00948773929849267,
+              "measured_steps": 20,
+              "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+            }
+          }
+        ]
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/STAGE.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/STAGE.json",
+        "sha256": "7158371b21a8d2e8bcf04a763e05ff0c31ffc9a5bf8fc7af99341a0a2a47943c"
+      },
+      "receipt": {
+        "status": "complete",
+        "complete": true,
+        "command": [
+          "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+          "-B",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py",
+          "--prepared-dirs",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+          "--output-dir",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result",
+          "--env-roots",
+          "/World/envs/env_0",
+          "/World/envs/env_1",
+          "--origins-json",
+          "[[0, 0, 0], [4, 0, 0]]",
+          "--prefix-ticks",
+          "20",
+          "--protocol",
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json"
+        ],
+        "started_unix_s": 1794711365.624955,
+        "outputs": {
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_EXECUTION.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_EXECUTION.json",
+            "sha256": "e0e5dab803e9a0255b91be64dd927ea5976aef0a034339d7fe92e62a2ae36444"
+          },
+          "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_PROFILE.json": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_PROFILE.json",
+            "sha256": "5d0949516d908831f14a1455daeea073371a6cabc9858f0cb1fdba9aeb0baa9f"
+          }
+        },
+        "retry_count": 0,
+        "child_pid": 2899532,
+        "returncode": 0,
+        "wall_s": 98.67310422682203,
+        "log": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/process.log",
+          "sha256": "9e1abfe83041bb5d122304a58c0a2cb742170901b3025c5de67345abee50cd35"
+        }
+      }
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_EXECUTION.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_EXECUTION.json",
+        "sha256": "e0e5dab803e9a0255b91be64dd927ea5976aef0a034339d7fe92e62a2ae36444"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_vector_execution_v1",
+        "status": "partial_profile",
+        "complete": false,
+        "device": "cuda:0",
+        "exclude_training": true,
+        "formal_training_eligible": false,
+        "label": null,
+        "automatic_training": false,
+        "retry_count": 0,
+        "source_sha256": {
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+          "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+          "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+          "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+          "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+          "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+        },
+        "protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json",
+          "sha256": "ff421bb1dd8f7269a37315d141b3f10379b4e3bc0a8468c50ed27c5a97926f80"
+        },
+        "environment_roots": [
+          "/World/envs/env_0",
+          "/World/envs/env_1"
+        ],
+        "origins_m": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            4.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "jobs": [
+          {
+            "environment": 0,
+            "environment_root": "/World/envs/env_0",
+            "origin_m": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "source_prepared": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1",
+            "input_bindings": {
+              "protocol": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/LIFT_PIPELINE_PROTOCOL.json",
+                "sha256": "fd5671ba19776f0fd7f1425542465cad0fae0eede8ac583b1d70e9c5396b481b"
+              },
+              "scene": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/observed_scene.json",
+                "sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9"
+              },
+              "candidate": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/pool/selected_author_candidate.json",
+                "sha256": "540201e8a0235534db73c1a01ad9294f7ee1c85c1cb845e9fbf248a2dd6918e8"
+              },
+              "plan": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/lift_bound/plan.json",
+                "sha256": "ca447d871d46a034c38feff8741559d873e08fed7e72ea5ce4429ea4a8ce4ada"
+              },
+              "commands": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/lift_bound/commands.npz",
+                "sha256": "7a5047f5caa7df08f51e749123bb45a93e4da5780416b05a33e5baeef2177548"
+              },
+              "command_binding": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/lift_bound/COMMAND_BINDING.json",
+                "sha256": "758200e75188651163e65ca9043a9ba5b27c5aadd50f60060a5f98d5b60d0fa4"
+              },
+              "ready": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/READY.json",
+                "sha256": "670072c1fefb7d3a99de0c036fd66baa3d80600345f460856a48f535eaefb9a0"
+              },
+              "preparation": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/LIFT_PIPELINE_RESULTS.json",
+                "sha256": "9db0adc68557f806097ded0441bcc0c627b987ff77c1293cb44ee455db385bad"
+              }
+            },
+            "command_steps": 3374,
+            "completion_tick": 20,
+            "tail_integrated_steps": 0,
+            "evaluation": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_0/execution/LIFT_EVALUATION.json",
+              "sha256": "62419dddc208480caa79991a5d16e0bb970d0b85a81a399bdc75459f6bc9cb48"
+            },
+            "diagnostic_record": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_0/DIAGNOSTIC_RECORD.json",
+              "sha256": "718c37e974b90ad6e8435b0df9ba294d3d9acaef2c5a7c4370e5da6000248e89"
+            },
+            "complete": false,
+            "raw_label": null,
+            "label": null,
+            "label_state": "infrastructure_error",
+            "gates": {
+              "joint_limits": false,
+              "mimics": false,
+              "penetration": false,
+              "palm_tracking": false,
+              "no_arm_object_support": false,
+              "fixed_base": false,
+              "complete_execution": false,
+              "all_dynamic_contacts": true,
+              "all_dynamic_objects_no_arm_support": true,
+              "author_phase_order": false,
+              "no_runtime_error": false,
+              "no_early_physical_stop": true
+            },
+            "formal_training_eligible": false,
+            "exclude_training": true,
+            "trace_frame": "Original plan world frame",
+            "contact_position_frame": "Physical translated environment world",
+            "source_pose_translation_removed_m": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          {
+            "environment": 1,
+            "environment_root": "/World/envs/env_1",
+            "origin_m": [
+              4.0,
+              0.0,
+              0.0
+            ],
+            "source_prepared": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+            "input_bindings": {
+              "protocol": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_PROTOCOL.json",
+                "sha256": "2bab63bb3f1b5ce97fd3d91efaa752c665a9d0c77c4caa38e015a0e1fdc58d0c"
+              },
+              "scene": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/observed_scene.json",
+                "sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9"
+              },
+              "candidate": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/pool/selected_author_candidate.json",
+                "sha256": "6e4c4d65f6c5245006f388d322fb56ebedded3808491280533b25d213d16ea00"
+              },
+              "plan": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/plan.json",
+                "sha256": "814bcb33d99a78198b3060473af5543ca7a51bdc1a71f2b54cee0ac42dbab8b5"
+              },
+              "commands": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/commands.npz",
+                "sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea"
+              },
+              "command_binding": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/COMMAND_BINDING.json",
+                "sha256": "745034fddbc775eddbb2bc57f7017b2ff6b616ee025f5ecf9c55b5150578fdb1"
+              },
+              "ready": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/READY.json",
+                "sha256": "1eddfedb5c30387690f39736c567553ad4285d5afa3da8344de1615d8f9fb86b"
+              },
+              "preparation": {
+                "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/LIFT_PIPELINE_RESULTS.json",
+                "sha256": "7105755f969004530c6b857f9f0c62eba3f37b2362bc64e039978d53210c36d5"
+              }
+            },
+            "command_steps": 3024,
+            "completion_tick": 20,
+            "tail_integrated_steps": 0,
+            "evaluation": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_1/execution/LIFT_EVALUATION.json",
+              "sha256": "c046217de5851b4b8550ae665c55433c2110071960029a29b35579c45b95d2c9"
+            },
+            "diagnostic_record": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_1/DIAGNOSTIC_RECORD.json",
+              "sha256": "35fe8392a9f0848c4456938b42b24c95b8b822934ff35ca88be2814501129903"
+            },
+            "complete": false,
+            "raw_label": null,
+            "label": null,
+            "label_state": "infrastructure_error",
+            "gates": {
+              "joint_limits": false,
+              "mimics": false,
+              "penetration": false,
+              "palm_tracking": false,
+              "no_arm_object_support": false,
+              "fixed_base": false,
+              "complete_execution": false,
+              "all_dynamic_contacts": true,
+              "all_dynamic_objects_no_arm_support": true,
+              "author_phase_order": false,
+              "no_runtime_error": false,
+              "no_early_physical_stop": true
+            },
+            "formal_training_eligible": false,
+            "exclude_training": true,
+            "trace_frame": "Original plan world frame",
+            "contact_position_frame": "Physical translated environment world",
+            "source_pose_translation_removed_m": [
+              4.0,
+              0.0,
+              0.0
+            ]
+          }
+        ],
+        "physical_clock_steps": 20,
+        "recorded_command_environment_steps": 40,
+        "actual_integrated_environment_steps": 40,
+        "labels_scope": "Diagnostic raw labels at each original command completion, never admitted to training",
+        "physics_scope": "Explicit CPU-to-GPU PhysX backend change; preserved dt, source assets, commands, force/control and original validity/label logic; numerical equivalence is not assumed",
+        "reference_assets": {
+          "hand_urdf": {
+            "path": "/home/wangrenpeng/tendon-spin/assets/hand/boya.urdf",
+            "sha256": "4aa1dbbb7b930bc29ac824b25697cde6c2bed3318d8b0dd5ea6439b643f34cca"
+          },
+          "hand_scene": {
+            "path": "/home/wangrenpeng/tendon-spin/assets/grasp/scene.xml",
+            "sha256": "08627d514b8d73e91b55cfc8381f95cc478a59245cf470d15fead1ea912c647e"
+          },
+          "reference_root": "/home/wangrenpeng/BoyaBlindGrasp/downloads/canondex_support_adapter_20261024_v2/reference"
+        },
+        "Kit_launch_wall_s": 3.318440947914496,
+        "ast_adaptations": {
+          "robot_namespace": 1,
+          "desired_origin": 1,
+          "observed_origin": 1
+        },
+        "finish_ast_sha256": "c03faa3144c027e8803c4ed54ba3bfa8ba257fc819dea0984abe624b6aace5f7",
+        "lane_recorded_physical_steps": [
+          20,
+          20
+        ],
+        "clock": {
+          "physics_ticks": 20,
+          "lane_steps": [
+            20,
+            20
+          ],
+          "recorded_environment_steps": 40,
+          "integrated_environment_steps": 40,
+          "all_streams_complete": false,
+          "command_steps": 3374,
+          "original_command_steps": [
+            3374,
+            3024
+          ],
+          "scheduler_barrier_upper_bound": 3374,
+          "barrier_metadata_only": true,
+          "commands_added": 0,
+          "completed_lane_tail_integrated_steps": [
+            0,
+            0
+          ],
+          "actual_integrated_environment_steps": 40,
+          "prefix_limited": true,
+          "requested_prefix_ticks": 20,
+          "prefix_clock_including_generator_close_wall_s": 13.62422002502717,
+          "next_unintegrated_command_may_have_been_prepared": true
+        },
+        "native_scene": {
+          "asset_setup_count": 1,
+          "physics_scene_count": 1,
+          "cross_environment_contacts": 0,
+          "actual_gpu_validated": true,
+          "clone_api": "isaaclab.cloner.usd_replicate/filter_collisions",
+          "environment_roots": [
+            "/World/envs/env_0",
+            "/World/envs/env_1"
+          ],
+          "origins_m": [
+            [
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              4.0,
+              0.0,
+              0.0
+            ]
+          ],
+          "structural_exclusions_per_env": 28,
+          "native_scene": {
+            "physxScene:enableGPUDynamics": true,
+            "physxScene:broadphaseType": "GPU",
+            "physxScene:enableCCD": false,
+            "physxScene:timeStepsPerSecond": 250
+          },
+          "rigid_bodies_per_env": [
+            32,
+            32
+          ]
+        },
+        "tail_observations": {},
+        "wall_before_close_s": 95.85179124586284,
+        "contact_journals": [
+          {
+            "schema": "anydex_boya_contact_journal_pointer_v1",
+            "compression": "gzip",
+            "record_format": "jsonl",
+            "record_count": 20,
+            "data": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+              "sha256": "9b7731f7431d880107a1c3b6a4dabd913a018d8e881920f7cbb180146e71fe1b",
+              "bytes": 1945632
+            },
+            "source_bindings": {
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+              "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+              "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+              "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+              "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+              "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+            },
+            "lossless": true,
+            "contact_records_omitted": 0,
+            "semantics": "Each line is one complete original runtime contact row; this document is an explicit pointer, not a rows array"
+          },
+          {
+            "schema": "anydex_boya_contact_journal_pointer_v1",
+            "compression": "gzip",
+            "record_format": "jsonl",
+            "record_count": 20,
+            "data": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_1/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+              "sha256": "b917c63e22f69dc9c7896b3c1203b9f43a462f57798a156f603e72dbb2e7a062",
+              "bytes": 1948845
+            },
+            "source_bindings": {
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+              "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+              "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+              "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+              "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+              "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+              "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+              "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+              "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+            },
+            "lossless": true,
+            "contact_records_omitted": 0,
+            "semantics": "Each line is one complete original runtime contact row; this document is an explicit pointer, not a rows array"
+          }
+        ],
+        "purpose": "performance_diagnostic_prefix",
+        "training_eligible": false,
+        "prefix_limited": true,
+        "requested_prefix_ticks": 20
+      },
+      "nested_probe_omissions": {
+        "initial_gpu_probe": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/initial_gpu_probe/PROBE.json",
+          "sha256": "14cd54cf5b2a609834eb0c20cf001c7c314ea778b33c703a2707e2396d86a103"
+        },
+        "first_tick_gpu_probe": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/first_tick_gpu_probe/PROBE.json",
+          "sha256": "66d1786e49998be43afa37edbca3179850627ee721567792d37601e79be714b5"
+        }
+      },
+      "archive_scope": "Selected original fields; large nested probes omitted with exact source bindings"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_PROFILE.json": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_PROFILE.json",
+        "sha256": "5d0949516d908831f14a1455daeea073371a6cabc9858f0cb1fdba9aeb0baa9f"
+      },
+      "receipt": {
+        "schema": "anydex_boya_author_gpu_vector_profile_v1",
+        "status": "partial_profile",
+        "complete": false,
+        "label": null,
+        "raw_label": null,
+        "formal_training_eligible": false,
+        "exclude_training": true,
+        "purpose": "performance_diagnostic_prefix",
+        "prefix_ticks": 20,
+        "source_sha256": {
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+          "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+          "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+          "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+          "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+          "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+          "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+          "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+          "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+        },
+        "actual_physics_steps": 20,
+        "timing_semantics": "Host wall time without added CUDA synchronization; inclusive buckets overlap; exclusive buckets are disjoint among instrumented scopes; GPU async work may be charged to the later blocking read",
+        "control_semantics": "Frozen original commands and all original gates/full pointwise journals; native step_limit ends an incomplete prefix; no success or failure label",
+        "next_unintegrated_command_may_have_been_prepared": true,
+        "actual_integrated_environment_steps": 40,
+        "wall_before_close_s": 96.64173513581045,
+        "timing": {
+          "initialization": {
+            "artifact.save_json": {
+              "calls": 1,
+              "inclusive_wall_s": 0.00020353193394839764,
+              "exclusive_wall_s": 0.00020353193394839764
+            },
+            "json.encode": {
+              "calls": 295,
+              "inclusive_wall_s": 1.201380796963349,
+              "exclusive_wall_s": 1.201380796963349
+            },
+            "physx.fetch_results": {
+              "calls": 1,
+              "inclusive_wall_s": 8.293380960822105e-05,
+              "exclusive_wall_s": 8.293380960822105e-05
+            },
+            "robot.update": {
+              "calls": 7,
+              "inclusive_wall_s": 0.0009620361961424351,
+              "exclusive_wall_s": 0.0009620361961424351
+            },
+            "torch.cpu_host_copy": {
+              "calls": 77,
+              "inclusive_wall_s": 0.002458201488479972,
+              "exclusive_wall_s": 0.002458201488479972
+            },
+            "object.update": {
+              "calls": 43,
+              "inclusive_wall_s": 0.0001162458211183548,
+              "exclusive_wall_s": 0.0001162458211183548
+            },
+            "warp.numpy_host_copy": {
+              "calls": 100,
+              "inclusive_wall_s": 0.004632851807400584,
+              "exclusive_wall_s": 0.004632851807400584
+            },
+            "robot.control_write": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0005988387856632471,
+              "exclusive_wall_s": 0.0005988387856632471
+            },
+            "object.force_write": {
+              "calls": 11,
+              "inclusive_wall_s": 0.0021825777366757393,
+              "exclusive_wall_s": 0.0021825777366757393
+            },
+            "robot.snapshot": {
+              "calls": 3,
+              "inclusive_wall_s": 0.0007804178167134523,
+              "exclusive_wall_s": 0.0005639237351715565
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 6,
+              "inclusive_wall_s": 0.018702982924878597,
+              "exclusive_wall_s": 0.018702982924878597
+            }
+          },
+          "execution_prefix": {
+            "torch.cpu_host_copy": {
+              "calls": 406,
+              "inclusive_wall_s": 0.013616630807518959,
+              "exclusive_wall_s": 0.013616630807518959
+            },
+            "robot.snapshot": {
+              "calls": 42,
+              "inclusive_wall_s": 0.015237880637869239,
+              "exclusive_wall_s": 0.009841879364103079
+            },
+            "robot.control_write": {
+              "calls": 42,
+              "inclusive_wall_s": 0.007496468722820282,
+              "exclusive_wall_s": 0.007496468722820282
+            },
+            "object.force_write": {
+              "calls": 126,
+              "inclusive_wall_s": 0.05604792688973248,
+              "exclusive_wall_s": 0.05604792688973248
+            },
+            "physx.simulate": {
+              "calls": 20,
+              "inclusive_wall_s": 0.0033183987252414227,
+              "exclusive_wall_s": 0.0033183987252414227
+            },
+            "physx.fetch_results": {
+              "calls": 20,
+              "inclusive_wall_s": 12.434994009090587,
+              "exclusive_wall_s": 12.434994009090587
+            },
+            "sim.step": {
+              "calls": 20,
+              "inclusive_wall_s": 12.44245912367478,
+              "exclusive_wall_s": 0.004146715858951211
+            },
+            "barrier.step_callback": {
+              "calls": 20,
+              "inclusive_wall_s": 12.442764469888061,
+              "exclusive_wall_s": 0.00030534621328115463
+            },
+            "warp.numpy_host_copy": {
+              "calls": 1104,
+              "inclusive_wall_s": 0.051544345216825604,
+              "exclusive_wall_s": 0.051544345216825604
+            },
+            "contact.filtered6_readback": {
+              "calls": 180,
+              "inclusive_wall_s": 0.10859446320682764,
+              "exclusive_wall_s": 0.059727381682023406
+            },
+            "json.encode": {
+              "calls": 49,
+              "inclusive_wall_s": 0.263864231063053,
+              "exclusive_wall_s": 0.263864231063053
+            },
+            "barrier.after_tick": {
+              "calls": 20,
+              "inclusive_wall_s": 0.05683760973624885,
+              "exclusive_wall_s": 0.033295579021796584
+            },
+            "robot.update": {
+              "calls": 40,
+              "inclusive_wall_s": 0.005520709790289402,
+              "exclusive_wall_s": 0.005520709790289402
+            },
+            "object.update": {
+              "calls": 120,
+              "inclusive_wall_s": 0.00030566868372261524,
+              "exclusive_wall_s": 0.00030566868372261524
+            },
+            "primary.contact_decode": {
+              "calls": 40,
+              "inclusive_wall_s": 0.002149170031771064,
+              "exclusive_wall_s": 0.002149170031771064
+            },
+            "primary.contact_decode_and_read": {
+              "calls": 40,
+              "inclusive_wall_s": 0.026973295724019408,
+              "exclusive_wall_s": 0.0009281362872570753
+            },
+            "robot.contact_decode_and_read": {
+              "calls": 80,
+              "inclusive_wall_s": 0.04697082191705704,
+              "exclusive_wall_s": 0.0034191629383713007
+            },
+            "all_body.contact_decode": {
+              "calls": 40,
+              "inclusive_wall_s": 0.12760005262680352,
+              "exclusive_wall_s": 0.12760005262680352
+            },
+            "all_body.contact_loads": {
+              "calls": 120,
+              "inclusive_wall_s": 0.03259965148754418,
+              "exclusive_wall_s": 0.03259965148754418
+            },
+            "all_body.source_mesh_metrics": {
+              "calls": 120,
+              "inclusive_wall_s": 0.2808698369190097,
+              "exclusive_wall_s": 0.2808698369190097
+            },
+            "gzip.write": {
+              "calls": 40,
+              "inclusive_wall_s": 0.07268824288621545,
+              "exclusive_wall_s": 0.07268824288621545
+            },
+            "journal.encode_gzip_append": {
+              "calls": 40,
+              "inclusive_wall_s": 0.3241117591969669,
+              "exclusive_wall_s": 0.0023343900684267282
+            },
+            "all_body.after_step": {
+              "calls": 40,
+              "inclusive_wall_s": 0.8985648984089494,
+              "exclusive_wall_s": 0.07925782003439963
+            },
+            "artifact.savez_compressed": {
+              "calls": 2,
+              "inclusive_wall_s": 0.0031093342695385218,
+              "exclusive_wall_s": 0.0031093342695385218
+            },
+            "journal.close": {
+              "calls": 4,
+              "inclusive_wall_s": 0.0005821033846586943,
+              "exclusive_wall_s": 0.0005821033846586943
+            }
+          },
+          "finalization": {
+            "json.encode": {
+              "calls": 13,
+              "inclusive_wall_s": 0.014358337270095944,
+              "exclusive_wall_s": 0.014358337270095944
+            },
+            "artifact.save_json": {
+              "calls": 3,
+              "inclusive_wall_s": 0.011813970981165767,
+              "exclusive_wall_s": 0.0007302337326109409
+            },
+            "journal.close": {
+              "calls": 4,
+              "inclusive_wall_s": 4.576984792947769e-06,
+              "exclusive_wall_s": 4.576984792947769e-06
+            }
+          }
+        },
+        "group_receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/GPU_VECTOR_EXECUTION.json",
+          "sha256": "e0e5dab803e9a0255b91be64dd927ea5976aef0a034339d7fe92e62a2ae36444"
+        },
+        "error": null,
+        "native_execution_profiles": [
+          {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_0/execution/evaluation.json",
+            "sha256": "8078008e170825a55c44f1ec8482d24409e2a7cc9049685504a44a521f688ea1",
+            "profile": {
+              "command_write_s": 0.021786794997751713,
+              "physics_step_update_s": 13.465570037951693,
+              "snapshot_and_state_s": 0.010551569517701864,
+              "contact_read_s": 0.024429258424788713,
+              "checks_and_record_s": 0.01426694099791348,
+              "measured_steps": 20,
+              "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+            }
+          },
+          {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/result/env_1/execution/evaluation.json",
+            "sha256": "a7a8da7e9645436af0a4fa7159b8922c54774914591caa5afab54ee78dde9a4b",
+            "profile": {
+              "command_write_s": 0.021711735986173153,
+              "physics_step_update_s": 13.493074903264642,
+              "snapshot_and_state_s": 0.010346765164285898,
+              "contact_read_s": 0.025711590191349387,
+              "checks_and_record_s": 0.008788000093773007,
+              "measured_steps": 20,
+              "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "scope": "Original small receipts and selected execution fields with exact original SHA; nested GPU probes are separately bound, not copied. Full arrays/contact payloads remain in public."
+}

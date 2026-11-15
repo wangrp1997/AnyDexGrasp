@@ -1,0 +1,31 @@
+{
+  "status": "pass",
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "-m",
+    "unittest",
+    "test_author_gpu_capability_probe",
+    "-v"
+  ],
+  "cwd": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya",
+  "returncode": 0,
+  "test_count": 7,
+  "unittest_reported_wall_s": 0.026,
+  "tool_process_wall_s": 0.091113737,
+  "sources": {
+    "probe": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py",
+      "sha256": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f"
+    },
+    "tests": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_gpu_capability_probe.py",
+      "sha256": "f04377f0c8d181ad2baf69143e0847a369061a9ae0f26a39e6436a4420796e24"
+    }
+  },
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "CUDA_kernels_launched": 0,
+  "live_GPU_validated": false,
+  "scope": "Actual CPU unittest execution; GPU-shaped fixtures are plain NumPy arrays with device text and do not establish actual CUDA support"
+}

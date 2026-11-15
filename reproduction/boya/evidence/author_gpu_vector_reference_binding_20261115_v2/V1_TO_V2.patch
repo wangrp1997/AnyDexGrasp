@@ -1,0 +1,42 @@
+--- v1/author_gpu_vector_execution.py
++++ v2/author_gpu_vector_execution.py
+@@ -113,6 +113,31 @@
+         pipeline._verify_protocol(job['protocol']); pipeline.common._verify(job['bindings'])
+         pipeline.common._verify_plan_dependencies(job['plan'])
+         pipeline._verify_plan_artifacts(Path(job['ready']['plan']['path']).parent, job['plan'])
++
++
++def bind_reference_assets(jobs):
++    """Use the native binding before physics imports capture module defaults."""
++    storage, lift, _, _ = _modules()
++    lift.common._backend_path()
++    keys = ('hand_urdf', 'hand_scene', 'reference_root')
++    paths = {key: Path(jobs[0]['plan']['arguments'][key]).resolve() for key in keys}
++    _need(all(Path(job['plan']['arguments'][key]).resolve() == paths[key]
++              for job in jobs for key in keys), 'Shared native reference paths must agree')
++    _need(paths['hand_urdf'].is_file() and paths['hand_scene'].is_file()
++          and paths['reference_root'].is_dir(), 'Bound hand URDF/scene and reference directory must exist before Kit')
++    from run_template_arm_positive import bind_hand
++    bind_hand(SimpleNamespace(**paths))
++    # These modules use import-time constants. A caller with stale imports must
++    # start a fresh process; silently editing captured defaults is unnecessary.
++    for name, attribute in (('canondex.robots.hand_actuation', 'HAND_SCENE'),
++                            ('canondex.robots.ur16e_boya', 'SCENE_XML')):
++        module = sys.modules.get(name)
++        if module is not None:
++            _need(Path(getattr(module, attribute)).resolve() == paths['hand_scene'],
++                  'Stale native hand reference was imported before binding: '+name)
++    return dict(hand_urdf=dict(path=str(paths['hand_urdf']), sha256=storage.sha(paths['hand_urdf'])),
++                hand_scene=dict(path=str(paths['hand_scene']), sha256=storage.sha(paths['hand_scene'])),
++                reference_root=str(paths['reference_root']))
+ 
+ 
+ def source_bindings():
+@@ -388,6 +413,7 @@
+     journals=[]; streams=[]; tails={}; launcher=None; begin=time.monotonic(); exit_code=1
+     scene = VectorScene(roots, origins, jobs, out)
+     try:
++        receipt['reference_assets'] = bind_reference_assets(jobs)
+         from isaaclab.app import AppLauncher
+         mark=time.monotonic(); launcher=AppLauncher(headless=True,device=device,visualizer=None,kit_args=KIT_ARGS)
+         receipt['Kit_launch_wall_s']=time.monotonic()-mark

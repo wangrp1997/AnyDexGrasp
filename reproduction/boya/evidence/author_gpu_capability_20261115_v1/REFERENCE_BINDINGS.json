@@ -1,0 +1,42 @@
+{
+  "scope": "Read-only references, not executed or modified",
+  "sources": [
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py",
+      "sha256": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9"
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py",
+      "sha256": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42"
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py",
+      "sha256": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41"
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_gripper_gpu.py",
+      "sha256": "61ed93d1847880ebb1698839cf07fc84fb305d8cfadf31e51a1cb5d2c03ab3e2"
+    },
+    {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_arm_parallel.py",
+      "sha256": "5ed0cf37c89ac46ab3db24923d5ef70b0a6b1d941bf77ede38daf9220bb179f6"
+    },
+    {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/extscache/omni.physx-110.3.2+110.3.0.lx64.r.cp312.u7f4/omni/physx/bindings/_physx.pyi",
+      "sha256": "23ea6ea0070a56fccee5d90843186e2b1a430f5112800a9549b8becdb88480b4"
+    },
+    {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/isaacsim.asset.transformer.rules/isaacsim/asset/transformer/rules/isaac_sim/urdf_to_mjc_physx_conversion.py",
+      "sha256": "3302c8a2aef5d91b347dc617c1897f2038870f157c0e16f8578732e85657b25d"
+    },
+    {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaacsim/exts/isaacsim.asset.importer.urdf/docs/CHANGELOG.md",
+      "sha256": "15118bad8f10b757fd6ef696086d45948fafe9bd5d0e94782514fa8f40bb359f"
+    }
+  ],
+  "notes": [
+    "Original Boya RobotContactReports/ObjectContactReports use tensor filtered six-buffer reads, not CPU-only contact callbacks",
+    "Existing benchmarks already support device cuda and shared physics clock; they are references, not new Boya GPU validation",
+    "Official asset validator full CheckStage mutates settings and resets/detaches simulation; this probe never calls it"
+  ]
+}

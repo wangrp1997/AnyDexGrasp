@@ -1,0 +1,122 @@
+{
+  "schema": "anydex_boya_gpu_final_state_verification_v1",
+  "status": "pass",
+  "unix_s": 1794711639.4848917,
+  "protocols": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_PROTOCOL.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/GPU_CONTROL_PROTOCOL.json",
+      "sha256": "0254f4f89f30b24bf61d8a6e36c003155ecdc669118abc131b34c42c0ab39a49"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/GPU_CONTROL_PROTOCOL.json",
+      "sha256": "b3bb4d9bd01f8fb5fc8410b6c65a0d191ab2dc5f6e16e018e91c6f64c397389b"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/GPU_PROFILE_CONTROL_PROTOCOL.json",
+      "sha256": "ff421bb1dd8f7269a37315d141b3f10379b4e3bc0a8468c50ed27c5a97926f80"
+    }
+  },
+  "archived_frozen_sources_verified": true,
+  "v2_and_profile_runtime_sources_unchanged": true,
+  "owned_children": [
+    {
+      "pid": 2806232,
+      "identity": null,
+      "process_group_alive": false,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/single_g6/STAGE.json",
+        "sha256": "dc81a0f4f476b23d6877a40ef652eac30529022defebc8a7dc143a58211e23ed"
+      }
+    },
+    {
+      "pid": 2840509,
+      "identity": null,
+      "process_group_alive": false,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/single_g6/STAGE.json",
+        "sha256": "c010ae8f89f90d72bf6d4eec177587d6b04d68b62f9cf2d01b2c2fde3d5cc6dc"
+      }
+    },
+    {
+      "pid": 2899532,
+      "identity": null,
+      "process_group_alive": false,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/batch_g1_g6/STAGE.json",
+        "sha256": "7158371b21a8d2e8bcf04a763e05ff0c31ffc9a5bf8fc7af99341a0a2a47943c"
+      }
+    },
+    {
+      "pid": 2896831,
+      "identity": null,
+      "process_group_alive": false,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/single_g6/STAGE.json",
+        "sha256": "7b7d3428e6bb7921ef586a0268bded8a38a9ea10f34e0bb4726a530f216f7d7d"
+      }
+    }
+  ],
+  "resource_slots": [
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/resource_slots/kit/0.json",
+        "sha256": "1340b3307e225f831e4a1b2fd2cc81ab6f0e3602a4ff6a9c1ced4814175723cc"
+      },
+      "state": "released"
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/resource_slots/kit/0.json",
+        "sha256": "d9e9dea97bc0324618406a7168d240c89ea647e9b4a6f2794e2e24904ea69e86"
+      },
+      "state": "released"
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/resource_slots/kit/0.json",
+        "sha256": "7db1b04d07b37f5f3c7322f4dca92a1ad2ad20d1a6b34097ace45494065a021a"
+      },
+      "state": "released"
+    }
+  ],
+  "released_registry": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.wave_active.json",
+    "sha256": "e299713f5ecd0f42b15139bb22cd622836c9a7d6037d090542191e6a0c55bf93"
+  },
+  "available_locks": [
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v1/DRIVER.lock",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_vector_control_20261115_v2/DRIVER.lock",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/gpu_partition_profile_20261115_v1/DRIVER.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock"
+  ],
+  "unchanged_old_data_models": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_1.npz": "3ed91e3b22f442b2997d6bf1638e683f5df75bee0e1c50759749ba09293f9259",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_6.npz": "c1dfdb84ea60c33b090081de0fc4ad51a0c34748dfb5e5ec9dff0a4873ddbc39",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_7.npz": "0cf4a7b126801be0085708fb0d550bfe7f7ffdccd452719817ae3db8ca172f0b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_8.npz": "2f68bc7d68b9e46d2089c0820eb8411aeaed604941cd01e69ea7690989b06196",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g01.pt": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g06.pt": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g07.pt": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g08.pt": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g01.pt": "72b40881fd5f13cabda542d079305ce632bda295c2258ee9360b5b12f339d6c3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g06.pt": "1fddda3c8822d393224125cf755c2963457f147f943c2d7218ea86372def5433",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g07.pt": "9ce49ebd7110cecc9eb5cca75b5a016e5ae445250827f82cfe05ca316d178fc6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g08.pt": "010a3ff995945e076d03c96b5665017a6d6275ac1cd876b8b1739428fbe1df66"
+  },
+  "unchanged_new_data_reference": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_parallel_collection_20261115_v1/ROOT_VERIFICATION.json",
+    "sha256": "9c0c6dcd45fbc29e8de178576b0607cf6745e312cede9a4c4c7c1fd13db6c511"
+  },
+  "fit_labels": 14,
+  "internal_labels": 1,
+  "positives": 11,
+  "negatives": 4,
+  "collection_labels_added": 0,
+  "training_updates": 0,
+  "verification_physics_steps": 0,
+  "verifier": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_gpu_control_20261115_v1/verify_final.py",
+    "sha256": "ee42a669fce5d07a72eeccbfba8f01294563deff927a5c846e92860ceafd573f"
+  }
+}

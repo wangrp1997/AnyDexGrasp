@@ -1,0 +1,451 @@
+{
+  "schema": "anydex_boya_gpu_data_path_source_facts_v1",
+  "created_unix_s": 1794710830.6822033,
+  "sources": {
+    "native": {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py",
+      "sha256": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e"
+    },
+    "lift": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py",
+      "sha256": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d"
+    },
+    "runtime": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py",
+      "sha256": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637"
+    },
+    "compact": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py",
+      "sha256": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41"
+    },
+    "batch_reference": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py",
+      "sha256": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423"
+    },
+    "robot_contacts": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py",
+      "sha256": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42"
+    },
+    "object_contacts": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py",
+      "sha256": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9"
+    },
+    "warp": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/warp/_src/types.py",
+      "sha256": "e3b7584bf6ae8872f46e7d9a6c5e8d22bb5fd5b9f669ba0aae73b271b7e0dc34"
+    },
+    "collection": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/assets/rigid_object_collection/rigid_object_collection.py",
+      "sha256": "42f5fc28c6facd7b3c59c5e25054cb50bce2b33d584a7ea052296b96051c3947"
+    },
+    "official_sensor": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/sensors/contact_sensor/contact_sensor.py",
+      "sha256": "000dde649a8b270af0f7102fff67a51abc1a2ff359fa3179f52830d5b83fde80"
+    },
+    "articulation_data": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/assets/articulation/articulation_data.py",
+      "sha256": "9f25446dff165278af62147c50d5153cc1a1236ccc308cb83a316892cdeb54bf"
+    },
+    "rigid_data": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/assets/rigid_object/rigid_object_data.py",
+      "sha256": "6e03c85172da8712bdebc6e19c89cea7868afb02f9e96259c82a281cca4270b4"
+    },
+    "manager": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py",
+      "sha256": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35"
+    },
+    "context": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/sim/simulation_context.py",
+      "sha256": "c3c17f084bc21ddfd80649f8179a6aa916d857a1dcaa1cc1c7f2b7c3945936b2"
+    },
+    "launcher": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/app/app_launcher.py",
+      "sha256": "af8a09c87a05221f309892e24788a59c9776e7e9097b3cde0b57e607d4eb3675"
+    },
+    "step_profiler": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/physx_step_profile.py",
+      "sha256": "d70560cdac2ed6be82aaa7f90f8af5c18419bc48f5d1e9868e6e204c62f0b8e6"
+    },
+    "arm_profiler": {
+      "path": "/home/wangrenpeng/CanonDex/scripts/research/benchmark_template_arm_parallel.py",
+      "sha256": "5ed0cf37c89ac46ab3db24923d5ef70b0a6b1d941bf77ede38daf9220bb179f6"
+    },
+    "stage": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+      "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+    },
+    "control": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_control.py",
+      "sha256": "143b527f70ead1fc991b58598f88fe9d03592d4f3578c5fd817e5289318cdda0"
+    },
+    "vector": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py",
+      "sha256": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d"
+    },
+    "journal": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py",
+      "sha256": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153"
+    },
+    "history": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/collection_20261105/backend_benchmark_audit.json",
+      "sha256": "9b4ee8ef4ce0b3697f6d9c91cbfcd09ea54f204bea3c1265b341979e1f1b4d07"
+    }
+  },
+  "facts": [
+    {
+      "source": "native",
+      "claim": "Per-command host-to-device tensor construction",
+      "line": 324,
+      "all_matching_lines": [
+        324
+      ],
+      "snippet": "    report['temporal_adapter']=plan.get('temporal_adapter')\n    tensor=lambda a:torch.tensor(a,dtype=torch.float32,device=robot.device)\n    step=0\n    profile = ({key:0. for key in ('command_write_s','physics_step_update_s',"
+    },
+    {
+      "source": "native",
+      "claim": "Original per-lane position and next-line velocity target upload",
+      "line": 358,
+      "all_matching_lines": [
+        358
+      ],
+      "snippet": "                report['phases'].append(dict(name=current_phase,start_step=i+1,steps=0))\n            robot.actuators.target_command.set_position_index(value=tensor(command[None]))\n            robot.actuators.target_command.set_velocity_index(value=tensor(velocity[None]))\n            robot.write_data_to_sim();obj.write_data_to_sim()"
+    },
+    {
+      "source": "runtime",
+      "claim": "Separate joint position, velocity, body-pose CPU copies",
+      "line": 125,
+      "all_matching_lines": [
+        125
+      ],
+      "snippet": "    return {\n        \"joint_pos\": robot.data.joint_pos.torch[0].detach().cpu().numpy().copy(),\n        \"joint_vel\": robot.data.joint_vel.torch[0].detach().cpu().numpy().copy(),\n        \"body_pose\": robot.data.body_link_pose_w.torch[0].detach().cpu().numpy().copy(),"
+    },
+    {
+      "source": "native",
+      "claim": "Two native filtered6 contact reads per lane",
+      "line": 381,
+      "all_matching_lines": [
+        381
+      ],
+      "snippet": "                now=time.monotonic();profile['snapshot_and_state_s']+=now-stamp;stamp=now\n            contact=object_contacts.read();robot_contact=own.read()\n            if feedback is not None and phase in ('close','hold','lift'):\n                feedback.observe(contact)"
+    },
+    {
+      "source": "lift",
+      "claim": "Additional full-scene object contact read",
+      "line": 214,
+      "all_matching_lines": [
+        214
+      ],
+      "snippet": "        contacts = common.decode_contacts(self.contact_bodies, self.contact_targets,\n            contact_data_to_host(self.contacts, self.dt, POLICY['contact_capacity'], compact=True),\n            POLICY['contact_capacity'])\n        robot_contacts = self.robot_contacts.read()"
+    },
+    {
+      "source": "lift",
+      "claim": "Additional robot contact read with same robot/static coverage",
+      "line": 216,
+      "all_matching_lines": [
+        216
+      ],
+      "snippet": "            POLICY['contact_capacity'])\n        robot_contacts = self.robot_contacts.read()\n        states = {}\n        for key, body in self.bodies.items():"
+    },
+    {
+      "source": "lift",
+      "claim": "Pose and following velocity CPU read for each of three bodies",
+      "line": 150,
+      "all_matching_lines": [
+        150,
+        219
+      ],
+      "snippet": "            body.update(self.dt)\n            actual_pose = body.data.root_link_pose_w.torch[0].cpu().numpy().copy()\n            actual_velocity = body.data.root_link_vel_w.torch[0].cpu().numpy().copy()\n            desired = self.assets[key].pose_xyzw"
+    },
+    {
+      "source": "compact",
+      "claim": "Two pair-table host conversions per contact read",
+      "line": 15,
+      "all_matching_lines": [
+        15
+      ],
+      "snippet": "        return [value.numpy() for value in buffers]\n    counts, starts = (value.numpy() for value in buffers[4:])\n    if (counts.shape != starts.shape or counts.dtype.kind not in 'iu'\n            or starts.dtype.kind not in 'iu' or np.any(counts < 0)):"
+    },
+    {
+      "source": "compact",
+      "claim": "Four payload host conversions, active prefix only",
+      "line": 32,
+      "all_matching_lines": [
+        32
+      ],
+      "snippet": "    # Read one unused row for shape information in that case, then discard it.\n    return [value[:max(end, 1)].numpy()[:end] for value in buffers[:4]] + [counts, starts]"
+    },
+    {
+      "source": "warp",
+      "claim": "Official synchronous numpy() transfer contract",
+      "line": 4306,
+      "all_matching_lines": [
+        4306
+      ],
+      "snippet": "        \"\"\"Convert the array to a :class:`numpy.ndarray` (aliasing memory through the array interface protocol)\n        If the array is on the GPU, a synchronous device-to-host copy (on the CUDA default stream) will be\n        automatically performed to ensure that any outstanding work is completed.\n        \"\"\""
+    },
+    {
+      "source": "warp",
+      "claim": "Official numpy() implementation uses CUDA default stream",
+      "line": 4329,
+      "all_matching_lines": [
+        4329,
+        4958,
+        4964
+      ],
+      "snippet": "            # use the CUDA default stream for synchronous behaviour with other streams\n            with warp.ScopedStream(self.device.null_stream):\n                a = self.to(\"cpu\", requires_grad=False)\n            # convert through __array_interface__"
+    },
+    {
+      "source": "batch_reference",
+      "claim": "Existing batched Articulation view",
+      "line": 81,
+      "all_matching_lines": [
+        81
+      ],
+      "snippet": "                      global_paths=['/World/ground'])\n    robot.cfg.prim_path = '/World/envs/env_.*/Robot'\n    obj.cfg.prim_path = '/World/envs/env_.*/Object'\n    # Audit all structural exclusions after namespace operations; a broken"
+    },
+    {
+      "source": "batch_reference",
+      "claim": "Existing full command array uploaded before loop",
+      "line": 209,
+      "all_matching_lines": [
+        209
+      ],
+      "snippet": "    velocity = np.swapaxes(np.array(velocity), 0, 1)\n    command_gpu = tensor(commands)\n    position_gpu = tensor(desired[:, :, :3, 3], torch.float64)\n    quaternion_gpu = tensor(Rotation.from_matrix(desired[:, :, :3, :3].reshape(-1, 3, 3)).as_quat()"
+    },
+    {
+      "source": "batch_reference",
+      "claim": "Existing one packed state transfer across all environments",
+      "line": 280,
+      "all_matching_lines": [
+        280
+      ],
+      "snippet": "        pose = obj.data.root_link_pose_w.torch\n        packed = torch.cat([q, v, body.reshape(count, -1), pose, force, torque], dim=1).cpu().numpy()\n        if not np.isfinite(packed).all():\n            raise FloatingPointError('Nonfinite batched native state')"
+    },
+    {
+      "source": "batch_reference",
+      "claim": "Existing two whole-batch detailed contact reads",
+      "line": 289,
+      "all_matching_lines": [
+        289
+      ],
+      "snippet": "        stages['state_readback'] += time.perf_counter()-mark; mark = time.perf_counter()\n        raw, own_raw = contacts.read(details=True), own.read(details=True)\n        object_rows, robot_rows = [[] for _ in indices], [[] for _ in indices]\n        for contact in raw:"
+    },
+    {
+      "source": "collection",
+      "claim": "Official environment/body batching interface",
+      "line": 43,
+      "all_matching_lines": [
+        43
+      ],
+      "snippet": "\n    This class represents a collection of rigid objects in the simulation, where the state of the\n    rigid objects can be accessed and modified using a batched ``(env_ids, object_ids)`` API.\n"
+    },
+    {
+      "source": "collection",
+      "claim": "Official single native view for object collection",
+      "line": 1360,
+      "all_matching_lines": [
+        1360
+      ],
+      "snippet": "        # -- object view\n        self._root_view = self._physics_sim_view.create_rigid_body_view(root_prim_path_exprs)\n\n        # check if the rigid body was created"
+    },
+    {
+      "source": "collection",
+      "claim": "Official persistent force path retained",
+      "line": 1400,
+      "all_matching_lines": [
+        1400
+      ],
+      "snippet": "        self._instantaneous_wrench_composer = WrenchComposer(self)\n        self._permanent_wrench_composer = WrenchComposer(self)\n\n        # set information about rigid body into data"
+    },
+    {
+      "source": "official_sensor",
+      "claim": "PhysX reads explicitly not CUDA-graph capturable",
+      "line": 424,
+      "all_matching_lines": [
+        424
+      ],
+      "snippet": "\n        The PhysX tensor reads enqueue their work on the legacy CUDA stream and therefore cannot\n        be captured into a CUDA graph. They run eagerly on every update and refresh preallocated\n        output buffers in place (see :meth:`_fetch_physx_buffers`). The warp kernels that consume"
+    },
+    {
+      "source": "official_sensor",
+      "claim": "Only device postprocessing graph is replayed",
+      "line": 470,
+      "all_matching_lines": [
+        470
+      ],
+      "snippet": "            self._compute_graph = capture.graph\n        wp.capture_launch(self._compute_graph)\n\n    @staticmethod"
+    },
+    {
+      "source": "articulation_data",
+      "claim": "State properties are cached, not automatically repeated backend fetches",
+      "line": 56,
+      "all_matching_lines": [
+        56
+      ],
+      "snippet": "        simulation step. Each property getter pulls fresh data from the PhysX tensor API on first\n        access per timestamp, then caches the result until the next step. This differs from Newton,\n        where solver-owned buffers and nonidentity public-order shadows are refreshed automatically\n        by the simulation."
+    },
+    {
+      "source": "rigid_data",
+      "claim": "Rigid pose fetch under timestamp guard",
+      "line": 268,
+      "all_matching_lines": [
+        268
+      ],
+      "snippet": "            # read data from simulation\n            self._root_link_pose_w.data = self._root_view.get_transforms().view(wp.transformf)\n            self._root_link_pose_w.timestamp = self._sim_timestamp\n"
+    },
+    {
+      "source": "manager",
+      "claim": "Original native physics step and next-line fetch_results",
+      "line": 521,
+      "all_matching_lines": [
+        521
+      ],
+      "snippet": "        physx_sim = omni.physx.get_physx_simulation_interface()\n        physx_sim.simulate(sim.cfg.dt, 0.0)\n        physx_sim.fetch_results()\n        device = PhysicsManager._device"
+    },
+    {
+      "source": "step_profiler",
+      "claim": "Existing profiler measures original host waits without extra synchronization calls",
+      "line": 3,
+      "all_matching_lines": [
+        3
+      ],
+      "snippet": "\nNo extra synchronize, simulate or fetch calls are issued. These timers attribute\nhost wall time, including waits; they do not measure isolated GPU kernel costs.\n\"\"\""
+    },
+    {
+      "source": "arm_profiler",
+      "claim": "Existing full-arm shared-clock step wall partition",
+      "line": 209,
+      "all_matching_lines": [
+        209
+      ],
+      "snippet": "            elapsed=time.monotonic()-mark\n            result['profile']['physics_step_s']+=elapsed;result['step_wall_s'].append(elapsed)\n        def native_scene(sim):\n            scene=sim.stage.GetPrimAtPath(sim.cfg.physics_prim_path)"
+    },
+    {
+      "source": "stage",
+      "claim": "Frozen stage timeout",
+      "line": 226,
+      "all_matching_lines": [
+        226
+      ],
+      "snippet": "            try:\n                process.wait(timeout=protocol['stage_timeout_s'])\n            except BaseException:\n                try:os.killpg(process.pid,signal.SIGTERM)"
+    },
+    {
+      "source": "stage",
+      "claim": "Timeout or interrupted parent first sends SIGTERM to child group",
+      "line": 228,
+      "all_matching_lines": [
+        228
+      ],
+      "snippet": "            except BaseException:\n                try:os.killpg(process.pid,signal.SIGTERM)\n                except ProcessLookupError:pass\n                try:process.wait(timeout=5.)"
+    },
+    {
+      "source": "stage",
+      "claim": "Five-second escalation if child did not exit",
+      "line": 232,
+      "all_matching_lines": [
+        232
+      ],
+      "snippet": "                except subprocess.TimeoutExpired:\n                    try:os.killpg(process.pid,signal.SIGKILL)\n                    except ProcessLookupError:pass\n                    process.wait(timeout=5.)"
+    },
+    {
+      "source": "launcher",
+      "claim": "Official SIGTERM close policy precedes user unwinding",
+      "line": 1537,
+      "all_matching_lines": [
+        1537
+      ],
+      "snippet": "          exception turns into exit code 1.\n        * ``SIGTERM`` / ``kill -ABRT``: ``close(exit_code=128 + signum)`` \u2014 full\n          teardown before exiting on isaacsim.simulation_app >= 2.18.5, truthful\n          status either way; if ``close()`` returns (fast shutdown disabled),"
+    },
+    {
+      "source": "launcher",
+      "claim": "Official SIGINT permits Python KeyboardInterrupt unwinding",
+      "line": 1583,
+      "all_matching_lines": [
+        1583
+      ],
+      "snippet": "            # no SIGSEGV handler and default SIGINT \u2014 see the class docstring\n            signal.signal(signal.SIGINT, signal.default_int_handler)\n\n        def _close_at_exit(self):"
+    },
+    {
+      "source": "launcher",
+      "claim": "Abort signal invokes app.close directly",
+      "line": 1604,
+      "all_matching_lines": [
+        1604
+      ],
+      "snippet": "                # builds exit with the status but skip the teardown\n                self._close_app(128 + signum)\n            # close() only returns when fast shutdown is disabled\n            signal.signal(signum, signal.SIG_DFL)"
+    },
+    {
+      "source": "context",
+      "claim": "Attempt count incremented before physics_manager.step",
+      "line": 792,
+      "all_matching_lines": [
+        792
+      ],
+      "snippet": "        self.physics_manager.wait_for_playing()\n        self._physics_step_count += 1\n        self.physics_manager.step()\n        if render and self.is_rendering:"
+    },
+    {
+      "source": "vector",
+      "claim": "Returned-clock count incremented after sim.step returns",
+      "line": 469,
+      "all_matching_lines": [
+        469
+      ],
+      "snippet": "            sim.step(render=False)\n            receipt['physical_clock_steps']+=1\n            receipt['actual_integrated_environment_steps']+=len(jobs)\n        def after_tick(tick, counts):"
+    },
+    {
+      "source": "vector",
+      "claim": "Partial receipt preserves distinct observation count",
+      "line": 524,
+      "all_matching_lines": [
+        524
+      ],
+      "snippet": "                    recorded_physical_steps=(receipt.get('lane_recorded_physical_steps') or [0]*len(jobs))[i],\n                    observations_completed_steps=runtime.steps if runtime is not None else 0,\n                    evaluation=(dict(path=str(evaluation),sha256=storage.sha(evaluation)) if evaluation.exists() else None),\n                    label=None,raw_label=None,formal_training_eligible=False,exclude_training=True))"
+    },
+    {
+      "source": "vector",
+      "claim": "Vector final receipt saved before real app close",
+      "line": 531,
+      "all_matching_lines": [
+        531
+      ],
+      "snippet": "        receipt.update(wall_before_close_s=time.monotonic()-begin, contact_journals=[j.pointer() for j in journals if j.closed])\n        storage.save(out/'GPU_VECTOR_EXECUTION.json',receipt)\n        if launcher is not None:launcher.app.close(exit_code=exit_code)\n"
+    },
+    {
+      "source": "control",
+      "claim": "Top control stops before next group after first failed stage",
+      "line": 108,
+      "all_matching_lines": [
+        108
+      ],
+      "snippet": "                stages.append(dict(name=job['name'], stage=B.binding(stage/'STAGE.json')))\n                if not result['complete']:\n                    break\n                native = B.read(output/'GPU_VECTOR_EXECUTION.json')"
+    },
+    {
+      "source": "journal",
+      "claim": "Complete contact journal needs close/footer",
+      "line": 46,
+      "all_matching_lines": [
+        46
+      ],
+      "snippet": "        self.raw=self.path.open('xb')\n        self.stream=gzip.GzipFile(filename='',fileobj=self.raw,mode='wb',compresslevel=1,mtime=0)\n        self.records=0;self.closed=False;self.source_bindings=dict(source_bindings or {})\n"
+    },
+    {
+      "source": "history",
+      "claim": "Historical in-flight interrupted-clock accounting retained",
+      "line": 148,
+      "all_matching_lines": [
+        148
+      ],
+      "snippet": "      \"interruption_accounting\": {\n        \"recorded_shared_ticks\": 431,\n        \"known_recorded_environment_steps\": 862,\n        \"interrupted_shared_step_ordinal\": 432,"
+    },
+    {
+      "source": "history",
+      "claim": "Historical measured slow sim.step/fetch result, not unique cause for current run",
+      "line": 158,
+      "all_matching_lines": [
+        158
+      ],
+      "snippet": "  \"conclusion\": \"CPU serial resident: two complete new plans with original gates, both positive. GPU true dynamics/shared-clock route reached 431 saved steps per lane, interrupted as prohibitively slow; no complete GPU grasp validation or speedup claim.\",\n  \"bottleneck_evidence\": \"Saved original worker profile: GPU sim.step 351.46s vs cross-environment guard 0.719s; interruption stack at PhysX fetch_results. Not evidence of source/file reread bottleneck. Shared GPU0 workload existed; not an isolated intrinsic CPU-vs-GPU benchmark.\",\n  \"source_sha256\": \"9d33a76dfc3c9c43db354fe8858038ab62e1775c62afc11b2ae3a3f0390d28da\",\n  \"tests\": {"
+    }
+  ],
+  "scope": "Static source verification, no live profiler or cancellation performed"
+}
