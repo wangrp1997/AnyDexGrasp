@@ -1,0 +1,185 @@
+{
+  "status": "incomplete_comparison",
+  "comparison_qualified": false,
+  "speedup": null,
+  "modes": [
+    {
+      "mode": "cold",
+      "status": "complete",
+      "wall_s": 1098.021375634009,
+      "captures": [
+        {
+          "frames": 750,
+          "contacts": 3198137
+        },
+        {
+          "frames": 750,
+          "contacts": 1812269
+        }
+      ],
+      "executions": [
+        {
+          "status": "success",
+          "physics_steps": 3389,
+          "label": 1,
+          "complete": true
+        },
+        {
+          "status": "physical_failure",
+          "physics_steps": 3749,
+          "label": 0,
+          "complete": true
+        }
+      ]
+    },
+    {
+      "mode": "resident",
+      "status": "stopped",
+      "wall_s": 351.0793607328087,
+      "captures": [
+        {
+          "frames": 750,
+          "contacts": 3198137
+        },
+        {
+          "frames": 750,
+          "contacts": 1812269
+        }
+      ],
+      "executions": [
+        {
+          "status": "infrastructure_failure",
+          "physics_steps": 0,
+          "label": null,
+          "complete": false
+        },
+        {
+          "status": "not_started",
+          "physics_steps": 0,
+          "label": null
+        }
+      ]
+    }
+  ],
+  "scientific_arrays": [
+    {
+      "scene": 0,
+      "component": 0,
+      "exact": true,
+      "arrays": {
+        "rgb": true,
+        "depth_m": true
+      }
+    },
+    {
+      "scene": 0,
+      "component": 1,
+      "exact": true,
+      "arrays": {
+        "stage1_objectness_pred": true,
+        "stage1_heatmap_pred": true,
+        "stage2_seed_xyz": true,
+        "stage2_seed_inds": true,
+        "stage2_view_xyz": true,
+        "stage2_view_inds": true,
+        "stage2_view_scores": true,
+        "stage3_grasp_scores": true,
+        "stage3_normalized_grasp_widths": true,
+        "stage3_grasp_features": true,
+        "before_generator": true,
+        "point_features": true,
+        "raw_CGR_480": true,
+        "sparse_input_coords": true,
+        "sparse_input_XYZ_features": true
+      }
+    },
+    {
+      "scene": 0,
+      "component": 2,
+      "exact": true,
+      "arrays": {
+        "candidates": true,
+        "candidate_features": true
+      }
+    },
+    {
+      "scene": 0,
+      "component": 3,
+      "exact": true,
+      "arrays": {
+        "initial_position": true,
+        "joint_names": true,
+        "joint_target": true,
+        "phase": true,
+        "desired_palm": true,
+        "time_s": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 0,
+      "exact": true,
+      "arrays": {
+        "rgb": true,
+        "depth_m": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 1,
+      "exact": true,
+      "arrays": {
+        "stage1_objectness_pred": true,
+        "stage1_heatmap_pred": true,
+        "stage2_seed_xyz": true,
+        "stage2_seed_inds": true,
+        "stage2_view_xyz": true,
+        "stage2_view_inds": true,
+        "stage2_view_scores": true,
+        "stage3_grasp_scores": true,
+        "stage3_normalized_grasp_widths": true,
+        "stage3_grasp_features": true,
+        "before_generator": true,
+        "point_features": true,
+        "raw_CGR_480": true,
+        "sparse_input_coords": true,
+        "sparse_input_XYZ_features": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 2,
+      "exact": true,
+      "arrays": {
+        "candidates": true,
+        "candidate_features": true
+      }
+    },
+    {
+      "scene": 1,
+      "component": 3,
+      "exact": true,
+      "arrays": {
+        "initial_position": true,
+        "joint_names": true,
+        "joint_target": true,
+        "phase": true,
+        "desired_palm": true,
+        "time_s": true
+      }
+    }
+  ],
+  "Kit_starts": 5,
+  "initialization_ticks": 3000,
+  "execution_steps": 7138,
+  "environment_steps": 10138,
+  "three_body_steps": 30414,
+  "initialization_contacts": 10020812,
+  "unknown_execution_costs": 0,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "failure": "Native hand module captured default XML before bind_hand; resident first execution0steps; second never started",
+  "execution_contacts": 25722984,
+  "scientific_array_count": 50
+}

@@ -1,0 +1,263 @@
+{
+  "status": "cold_complete_resident_infrastructure_failure_no_speedup",
+  "implementation_parent_commit": "f8f2190",
+  "additional_budget_approval": "pending",
+  "physical_comparison_qualified": false,
+  "speedup": null,
+  "actual_Kit_starts": 5,
+  "actual_environment_steps": 10138,
+  "actual_three_body_steps": 30414,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "unknown_execution_costs": 0,
+  "repair_cpu_tests": 21,
+  "repair_additional_Kit_starts": 0,
+  "repair_additional_physics_steps": 0,
+  "source_and_report": {
+    "reproduction/boya/author_collection_service_bound.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_service_bound.py",
+      "sha256": "44a25d3af8d9126eef53bb75fe93e6633dacb9aad39f4896a55ae66f62b2c0eb",
+      "bytes": 3826
+    },
+    "reproduction/boya/test_author_collection_service_bound.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_collection_service_bound.py",
+      "sha256": "8002f264f149b1a90a8014faa8cddeef42192881755bb7af5a247463595cdfba",
+      "bytes": 3056
+    },
+    "reproduction/boya/AUTHOR_COLLECTION_STREAM_COMPARISON_20261116.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_COLLECTION_STREAM_COMPARISON_20261116.md",
+      "sha256": "000cb976c38eab00ced02802b4d8ac82cfd9762652bf2387558b57d99ae93a66",
+      "bytes": 4586
+    }
+  },
+  "public_receipts": {
+    "CONTROL.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/CONTROL.json",
+      "sha256": "dac6733a267f5558e036408dc47d1f7de7e9d51257e66c44d0e3615d49c49a1e",
+      "bytes": 145973
+    },
+    "RESULTS.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/RESULTS.json",
+      "sha256": "9506cd6db8ae19eaeb984c51f4829ee9bf09ca6e3859c8b547567cb20973932a",
+      "bytes": 41191
+    },
+    "cold/RESULTS.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/RESULTS.json",
+      "sha256": "ffa6498c7fa5a28b52d9adbb46340f4bc3a87609788127148dab9c8fd28b7151",
+      "bytes": 35317
+    },
+    "resident/RESULTS.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/RESULTS.json",
+      "sha256": "f138a7f991c662a0c88434f40d9f68688ddde1dbbc956110105a5afd18b8e4fe",
+      "bytes": 1297
+    },
+    "resident/runtime/WORKER_RECEIPT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/runtime/WORKER_RECEIPT.json",
+      "sha256": "e4784260038af884333f3c9f09643590dc9957696520d18fb323b95808717e71",
+      "bytes": 151182
+    },
+    "resident/runtime/SERVICE_ERROR.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/runtime/SERVICE_ERROR.json",
+      "sha256": "563d58e279b76035ddeb3972fd1a0aa48b35cefc33e62ec39457fc6a6aa39a73",
+      "bytes": 4200
+    },
+    "HOST_FINAL_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/HOST_FINAL_AUDIT.json",
+      "sha256": "d3458ab2606d37ee4b7a0f1e5d41c36e499bd221bed1bbe89f6562cbe1474756",
+      "bytes": 6762
+    },
+    "cold/scenes/00/capture/INDEPENDENT_CAPTURE_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/capture/INDEPENDENT_CAPTURE_AUDIT.json",
+      "sha256": "8d77e82231627e1caf8842f4247c89712d80b8c21f169424ea8b2aff2c58f68d",
+      "bytes": 91251
+    },
+    "cold/scenes/01/capture/INDEPENDENT_CAPTURE_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/capture/INDEPENDENT_CAPTURE_AUDIT.json",
+      "sha256": "c84ac94d979fafccb781a9e4d5ac7d92708d0534c83cbb97eb16baa3e4b3fdde",
+      "bytes": 92901
+    },
+    "resident/scenes/00/capture/INDEPENDENT_CAPTURE_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/00/capture/INDEPENDENT_CAPTURE_AUDIT.json",
+      "sha256": "3394a6a92c3573eae13422a70b6dd9cfed69010f6cc820a247083d08249e28e1",
+      "bytes": 91324
+    },
+    "resident/scenes/01/capture/INDEPENDENT_CAPTURE_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/01/capture/INDEPENDENT_CAPTURE_AUDIT.json",
+      "sha256": "1f95c335f4b01bbaeafe494c6aaab7813efdcae077fe0b7a5275e9c4293ffa0b",
+      "bytes": 92971
+    },
+    "cold/scenes/00/g1/RUNTIME_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/RUNTIME_AUDIT.json",
+      "sha256": "9b591cfba6a44707b867cd09f61db26bad10348e582d1086d3b816f5626cb289",
+      "bytes": 111051
+    },
+    "cold/scenes/01/g1/RUNTIME_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/g1/RUNTIME_AUDIT.json",
+      "sha256": "a9aedc49346c4b64de0cb67d3b4c7609d410b70efa19a2c63e154b8ce888d624",
+      "bytes": 112704
+    },
+    "cold/scenes/00/g1/LIFT_PIPELINE_EXECUTION.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/LIFT_PIPELINE_EXECUTION.json",
+      "sha256": "ec6241b34825be3b3383fd9a2b65b4e43321b9279ffda6386636f262637ba6d4",
+      "bytes": 272
+    },
+    "cold/scenes/01/g1/LIFT_PIPELINE_EXECUTION.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/g1/LIFT_PIPELINE_EXECUTION.json",
+      "sha256": "05f6a2c0ace037a6d77fddc4b470cedd67c9568442827a9730a9e6ef6b911ee4",
+      "bytes": 281
+    },
+    "resident/scenes/00/g1/LIFT_PIPELINE_EXECUTION.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/00/g1/LIFT_PIPELINE_EXECUTION.json",
+      "sha256": "9f1779e458a303157d52aaf01e78bb4a2ebb05242b38d26bd2f92551783c436f",
+      "bytes": 3435
+    },
+    "cold/cold_jobs/000/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/cold_jobs/000/STAGE.json",
+      "sha256": "bb4cb5ebf8d08f48907da00981567f27fdb3b82651112b3c111363406212855a",
+      "bytes": 1297
+    },
+    "cold/cold_jobs/001/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/cold_jobs/001/STAGE.json",
+      "sha256": "0e05432de340e19e6a4d2a0834ea4c750b95389e59bc08901ba245954b472e39",
+      "bytes": 1296
+    },
+    "cold/cold_jobs/002/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/cold_jobs/002/STAGE.json",
+      "sha256": "a20213072a37e32aeb9f6d1eb076a6abcd4e9a49a528a07587c847123f3b76d7",
+      "bytes": 1895
+    },
+    "cold/cold_jobs/003/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/cold_jobs/003/STAGE.json",
+      "sha256": "8c7b92ab537c586310150c7d1889df75c51ae310e2a3ae3accb8165fa102f193",
+      "bytes": 1896
+    },
+    "cold/scenes/00/stages/audit_g1/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/stages/audit_g1/STAGE.json",
+      "sha256": "fac49fc74f0a07d206ac89ef9384ada87dab9b81b514cbf1553371f504b3fcbe",
+      "bytes": 1430
+    },
+    "cold/scenes/00/stages/build/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/stages/build/STAGE.json",
+      "sha256": "c54f5e987acbed3128cfbce7c152a04c8d1017b78676428403810e10282351be",
+      "bytes": 1325
+    },
+    "cold/scenes/00/stages/capture_audit/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/stages/capture_audit/STAGE.json",
+      "sha256": "26f243552c93ceac943758b3264532edf870c076c4ef7304609d015026433603",
+      "bytes": 1396
+    },
+    "cold/scenes/00/stages/prepare_g1/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/stages/prepare_g1/STAGE.json",
+      "sha256": "6c5f1f0d5d589563c9638de79436d8fa3a5525ae9083da347e8e83f74afdb871",
+      "bytes": 2294
+    },
+    "cold/scenes/01/stages/audit_g1/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/stages/audit_g1/STAGE.json",
+      "sha256": "bde95c80f2011cd1a278a289b0524ef4c8b8eb244353c5b7cef3b6b1ec3c75d7",
+      "bytes": 1429
+    },
+    "cold/scenes/01/stages/build/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/stages/build/STAGE.json",
+      "sha256": "840cca2c6bfe2e6d0c7da2936e1dc0edb4687d3ddafe6cff0632e320cba66038",
+      "bytes": 1325
+    },
+    "cold/scenes/01/stages/capture_audit/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/stages/capture_audit/STAGE.json",
+      "sha256": "967527d651fff6376017a94a5aecf3fcac976d70f73b3095455ef9d2b8621ba3",
+      "bytes": 1394
+    },
+    "cold/scenes/01/stages/prepare_g1/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/01/stages/prepare_g1/STAGE.json",
+      "sha256": "7eb7711370a8ab4e110b521d674a2ea36a6dfb0f9cd271fcd2742833ba6e82bb",
+      "bytes": 2294
+    },
+    "resident/scenes/00/stages/build/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/00/stages/build/STAGE.json",
+      "sha256": "1deaac35648822664a12f9e3f6095a7575aff2e0a61ba41889e54cdc89f8e7a6",
+      "bytes": 1340
+    },
+    "resident/scenes/00/stages/capture_audit/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/00/stages/capture_audit/STAGE.json",
+      "sha256": "0870946efc30a3b5d63876c2f0f1f774396176d4a05c3fd18194beedebc12b6c",
+      "bytes": 1415
+    },
+    "resident/scenes/00/stages/prepare_g1/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/00/stages/prepare_g1/STAGE.json",
+      "sha256": "bd937d634c4a859752a9d26f31b14d2a6bd9cbab9747654ac64762f28cdc2cea",
+      "bytes": 2325
+    },
+    "resident/scenes/01/stages/build/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/01/stages/build/STAGE.json",
+      "sha256": "d390a1bf3d1f666ea2ed509c17114331170cf36c8699f7f40361338d43f99f3b",
+      "bytes": 1341
+    },
+    "resident/scenes/01/stages/capture_audit/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/01/stages/capture_audit/STAGE.json",
+      "sha256": "df0ccb642247af26d45cf79be3e813fac8aa055ef96ee58f16727cb4481dba5b",
+      "bytes": 1416
+    },
+    "resident/scenes/01/stages/prepare_g1/STAGE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/scenes/01/stages/prepare_g1/STAGE.json",
+      "sha256": "9c5e6e18805ca80ba07f4b0ffe5ffa64586965aa2e5d53d493b76feb8c10fd88",
+      "bytes": 2326
+    }
+  },
+  "local_artifacts": {
+    "CONTROL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/CONTROL.json",
+      "sha256": "dac6733a267f5558e036408dc47d1f7de7e9d51257e66c44d0e3615d49c49a1e",
+      "bytes": 145973
+    },
+    "CPU_TESTS.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/CPU_TESTS.log",
+      "sha256": "05af1d3c4709e774ced771c2b421e1c19beff1e1f09d3ed0da0d5fdbe49808c0",
+      "bytes": 5122
+    },
+    "HOST_FINAL_AUDIT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/HOST_FINAL_AUDIT.json",
+      "sha256": "d3458ab2606d37ee4b7a0f1e5d41c36e499bd221bed1bbe89f6562cbe1474756",
+      "bytes": 6762
+    },
+    "HOST_LAUNCH.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/HOST_LAUNCH.json",
+      "sha256": "d44abd2601a06414640677f05b67b8afc229c010c03188621a0a27f698f7d390",
+      "bytes": 148
+    },
+    "MEASUREMENTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/MEASUREMENTS.json",
+      "sha256": "1de6e259e23cd0b81b0b12a2a77131b87aa909fae34168f2560f1060d599f7d4",
+      "bytes": 4206
+    },
+    "PREFLIGHT_ASSERTION_CORRECTION.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/PREFLIGHT_ASSERTION_CORRECTION.json",
+      "sha256": "b09de343c851b2e4335acc51563cf94888e1e92d4b16460a5e2b9d6cc315764a",
+      "bytes": 194
+    },
+    "PROPOSED_BOUND_CONTROL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/PROPOSED_BOUND_CONTROL.json",
+      "sha256": "0d0bf1e1e0555dd4e5c8e485abe27b192c3f2132d663119c3f8d80fa6c55f2db",
+      "bytes": 3889
+    },
+    "REAL_NATIVE_PREFLIGHT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/REAL_NATIVE_PREFLIGHT.json",
+      "sha256": "d3a4728c0e0ea2aa77507608c4ae875030f2a7a5362912a8731b21f728881159",
+      "bytes": 1524
+    },
+    "RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/RESULTS.json",
+      "sha256": "9506cd6db8ae19eaeb984c51f4829ee9bf09ca6e3859c8b547567cb20973932a",
+      "bytes": 41191
+    },
+    "resident_runtime_SERVICE_ERROR.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/resident_runtime_SERVICE_ERROR.json",
+      "sha256": "563d58e279b76035ddeb3972fd1a0aa48b35cefc33e62ec39457fc6a6aa39a73",
+      "bytes": 4200
+    },
+    "resident_runtime_WORKER_RECEIPT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_collection_stream_comparison_20261116_v1/resident_runtime_WORKER_RECEIPT.json",
+      "sha256": "e4784260038af884333f3c9f09643590dc9957696520d18fb323b95808717e71",
+      "bytes": 151182
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "schema": "anydex_boya_bound_service_proposal_v1",
+  "status": "awaiting_additional_Kit_budget_approval",
+  "previous_control": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/CONTROL.json",
+    "sha256": "dac6733a267f5558e036408dc47d1f7de7e9d51257e66c44d0e3615d49c49a1e",
+    "bytes": 145973
+  },
+  "previous_result": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/RESULTS.json",
+    "sha256": "9506cd6db8ae19eaeb984c51f4829ee9bf09ca6e3859c8b547567cb20973932a",
+    "bytes": 41191
+  },
+  "saved_cold_result": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/RESULTS.json",
+    "sha256": "ffa6498c7fa5a28b52d9adbb46340f4bc3a87609788127148dab9c8fd28b7151",
+    "bytes": 35317
+  },
+  "failure": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/resident/runtime/SERVICE_ERROR.json",
+    "sha256": "563d58e279b76035ddeb3972fd1a0aa48b35cefc33e62ec39457fc6a6aa39a73",
+    "bytes": 4200
+  },
+  "new_service": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_service_bound.py",
+    "sha256": "44a25d3af8d9126eef53bb75fe93e6633dacb9aad39f4896a55ae66f62b2c0eb",
+    "bytes": 3826
+  },
+  "planned_root": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_bound_control_20261116_v1",
+  "rows": [
+    {
+      "scene_id": "s40_lift_fit_00009_s2026111501",
+      "split": "fit",
+      "scene_spec": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/scene_queue/specs/s40_lift_fit_00009_s2026111501.json",
+        "sha256": "ddb880064618a5dd539f40a63af739d89b56f75d057be4fea0e9702c77fff258"
+      },
+      "source_object_ids": [
+        "graspnet_014",
+        "graspnet_026",
+        "graspnet_017"
+      ],
+      "source_object_digests": {
+        "graspnet_014": "b72a1b0c9289b4939a39088ece44491fb07f62454a46f2255a5b50a59ad70bde",
+        "graspnet_026": "660b6775c75300f3e7e34e7086cb3aadfd611f209f10496145bdbf826112e42c",
+        "graspnet_017": "c725008c1ed98eff08fd4dafa223a3d492d5aeac9cd6e2c176ee558c6fc638cb"
+      },
+      "status": "ready",
+      "max_candidates_per_gesture": 1,
+      "max_executions_per_gesture": 1
+    },
+    {
+      "scene_id": "s40_lift_fit_00013_s2026111501",
+      "split": "fit",
+      "scene_spec": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/scene_queue/specs/s40_lift_fit_00013_s2026111501.json",
+        "sha256": "d9d3a330d41812b3aecef0de50ae4cdb72c3ed6f8e2e2722485613b2e0442b9c"
+      },
+      "source_object_ids": [
+        "graspnet_015",
+        "graspnet_029",
+        "graspnet_005"
+      ],
+      "source_object_digests": {
+        "graspnet_015": "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8",
+        "graspnet_029": "827b4d57077a2ef490c07dfa2b56524d0f99709bfe4b9b2aad80f12d3fd5dac8",
+        "graspnet_005": "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b"
+      },
+      "status": "ready",
+      "max_candidates_per_gesture": 1,
+      "max_executions_per_gesture": 1
+    }
+  ],
+  "gesture_ids": [
+    1
+  ],
+  "worker_roles": [
+    "capture",
+    "capture",
+    "execute",
+    "execute"
+  ],
+  "additional_Kit_starts": 1,
+  "total_Kit_starts_including_failed_control": 6,
+  "max_execution_steps_per_job": 8000,
+  "max_new_environment_steps": 17500,
+  "known_prior_environment_steps": 10138,
+  "max_combined_environment_steps": 27638,
+  "original_environment_step_budget": 35000,
+  "exclude_training": true,
+  "retry_budget": 0,
+  "resume_original_failed_jobs": false,
+  "automatic_training": false,
+  "gpu_uuid": "GPU-4d3badb8-5fb0-b880-f08e-6407f0093e86"
+}

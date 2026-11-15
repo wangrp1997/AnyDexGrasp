@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：冷组18分18秒完成，常驻组绑定失败，未获得有效加速比
+
+用户“比较下”授权原固定两场/g1对照，公共stream_collection_control_20261116_v1已实际结束。cold完整1098.021376s/4Kit/2×750init/3389+3749执行步，2初始化及2原抓取数值审核全PASS，1正1负仅诊断exclude_training；resident351.079361s因失败停止，1Kit完成两capture及各独立audit，2CGR/2ready，但首条execute0步/infra/labelnull，第二条未启动。两组8组件RGBD/原CGR/候选/科学命令exact，不代表resident完整执行已验收。不得用351与1098相除冒称3倍加速。
+
+根因为观测先导入native hand模块捕获CanonDex/third_party旧XML默认值，后续bind_hand不能改已捕获默认参数。新增独立author_collection_service_bound仅在任何capture/Kit之前用原backend真路径调用原bind_hand，拒绝stale imports并逐执行核计划引用；旧源/失败不改。4新+17既有=21CPU检查通过；两个真实无Kit前检分别重现旧默认拒绝与正确XML读取（22关节=18主动含2腕16手+4被动），首次错误len16断言及更正另留档，0新物理。修复版尚未实跑，不宣称完整链路已修复。
+
+本轮合5Kit/10138env/30414三体步（3000init+7138execution），初始化10020812接触，unknown0/重试0/新增训练标签0。20所属组全退，4槽released/6锁可取/registryreleased，无后台任务；累计26fit+5internal=31，正式4800/训练/新模型/外测0。原最多5Kit预算耗尽，已询问是否追加1Kit/最多17500env，仅修复版两场g1常驻组并复用旧cold基线，未获答复前不启动。不得重启本轮失败任务或自动补例。
+
+报告reproduction/boya/AUTHOR_COLLECTION_STREAM_COMPARISON_20261116.md，轻证据evidence/author_collection_stream_comparison_20261116_v1。上一节“待权限/0物理”是启动前快照；CanonDex和全部历史冻结源保持，阶段轻量成果push用户origin。
+
 ## 2026-11-16 当前：完整采集常驻入口已实现，17项离线检查通过，真实对照待权限
 
 用户要求落实成熟加速方案，新增独立author_collection_service/client、author_stream_representation、author_collection_stream_control。单拥有线程的Kit衔接capture与execute，CGR原逐帧循环/模型常驻，第二场观测与第一场规划可重叠，执行与前一条原数值审核可重叠。观测之间仍重建SimulationContext/场景，尚未实现跨观测USD/原生资产缓存；不能宣称全部资产复用或物理等价。原750初始化/250Hz/三体完整接触/原命令/判定保留，物理仍CPU。
