@@ -1,0 +1,139 @@
+{
+  "schema": "anydex_boya_verified_full_control_v1",
+  "status": "stopped",
+  "group": {
+    "name": "cpu_4",
+    "count": 4,
+    "mode": "cpu",
+    "workers": [
+      {
+        "worker_id": "worker_00",
+        "status": "diagnostic_full",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_00/STAGE.json",
+          "sha256": "797b6d35888eadd7290383bba5d0028fdc3879aed68fc65ea9e1452ba8c907b4"
+        },
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_00/result/SCALING_EXECUTION.json",
+          "sha256": "078843dd4934ddcc6774d4955d70f9204bf0e752adfd651cafdcda46747727d2"
+        },
+        "partial_receipt": null,
+        "process": {
+          "pid": 4136534,
+          "pgid": 4136534,
+          "start_ticks": 156152017
+        }
+      },
+      {
+        "worker_id": "worker_01",
+        "status": "diagnostic_full",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_01/STAGE.json",
+          "sha256": "0514dea17579290c1a10cbbc1f1b1336c6b0ff719a03ab27b7fae35d5b6a5214"
+        },
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_01/result/SCALING_EXECUTION.json",
+          "sha256": "ef4837c1e48117f17878a030637180d30f45e3fa2a2103b93b10c19069d6b131"
+        },
+        "partial_receipt": null,
+        "process": {
+          "pid": 4136538,
+          "pgid": 4136538,
+          "start_ticks": 156152018
+        }
+      },
+      {
+        "worker_id": "worker_02",
+        "status": "diagnostic_full",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_02/STAGE.json",
+          "sha256": "f5914e7cd0c4ba2b7f645fb47d53d965e22acaa17c89cabb1bc3e6f892781464"
+        },
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_02/result/SCALING_EXECUTION.json",
+          "sha256": "a7c0c49c91ec7845f099a2055cc43ca429bf9432b341342851609e1de71dbcb3"
+        },
+        "partial_receipt": null,
+        "process": {
+          "pid": 4136535,
+          "pgid": 4136535,
+          "start_ticks": 156152017
+        }
+      },
+      {
+        "worker_id": "worker_03",
+        "status": "diagnostic_full",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_03/STAGE.json",
+          "sha256": "a8d4053d77d0423ffd1248bb9ed5bb1f141a018f74dc66f5a30d17b501f1f679"
+        },
+        "receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_03/result/SCALING_EXECUTION.json",
+          "sha256": "a7b1e4b701e3fb767ecaaabada2127b3b88f5d464633a272069ae99da1bcde85"
+        },
+        "partial_receipt": null,
+        "process": {
+          "pid": 4136537,
+          "pgid": 4136537,
+          "start_ticks": 156152018
+        }
+      }
+    ],
+    "status": "full_complete",
+    "started_unix_s": 1794742577.177564,
+    "finished_unix_s": 1794742810.1260216,
+    "wall_s": 232.9484582329169,
+    "label": null,
+    "exclude_training": true
+  },
+  "audits": [],
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py\", line 180, in stage\n    slots.append(self._acquire(kind, reservation))\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_control.py\", line 55, in _acquire\n    need(kind == 'kit', 'Scaling controls reserve only their own Kit slots')\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_control.py\", line 46, in need\n    raise ValueError(message)\nValueError: Scaling controls reserve only their own Kit slots\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_control.py\", line 100, in run\n    audits=list(executor.map(lambda w:audit_one(root,w,p,pool),group['workers']))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 619, in result_iterator\n    yield _result_or_cancel(fs.pop())\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 317, in _result_or_cancel\n    return fut.result(timeout)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 456, in result\n    return self.__get_result()\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/concurrent/futures/_base.py\", line 401, in __get_result\n    raise self._exception\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/concurrent/futures/thread.py\", line 59, in run\n    result = self.fn(*self.args, **self.kwargs)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_control.py\", line 100, in <lambda>\n    audits=list(executor.map(lambda w:audit_one(root,w,p,pool),group['workers']))\n                                      ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_control.py\", line 78, in audit_one\n    with pool.stage(('audit',),directory):\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/contextlib.py\", line 137, in __enter__\n    return next(self.gen)\n           ^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py\", line 206, in stage\n    raise Quarantined('Stage group did not verifiably exit: '+str(stage_dir))\nauthor_collection_wave_resources.Quarantined: Stage group did not verifiably exit: /mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/audits/worker_00\n",
+  "cost_snapshots": [
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_03/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "011ea3855742e0ee51c50cb2072633b9d1432b8ca61749e09f5f15cc2196ad45"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_00/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "dff83c031e4cc60824e477e9b5682ee9ea4e2dbfd1f0776df6685484bbbdd3f1"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_02/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "105820409bd515d0fd3cbd0986e7e132cec0232feccb2400a3e9cd88339dbebd"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_01/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "049a31e4b9486cfabd25ad3602a9b54cea767be2fed6fafe22461c908c5d16b6"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    }
+  ],
+  "wall_s": 233.00146110192873,
+  "label": null,
+  "exclude_training": true,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "resource_samples": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/RESOURCE_SAMPLES.jsonl",
+    "sha256": "0be36e1ff80f651cbf8aed102e4a5b14ffd2ac61f2fdb5bcf6cb53ae9a624b2f"
+  }
+}

@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前：tmpfs完整执行日志及四份首次原数值审核通过，生产尚未恢复
+
+用户要求先验证。独立author_storage_path_validation冻结/tmp与tmpfs各4路，每份原完整3024帧/1895914265字节，8份全部写入/隔离压缩/两次独立全读回通过，0Kit/0物理，外层147.836573s；两路径都未复现损坏，不能归因原ZFS故障或声称tmpfs普遍更快。新author_verified_full_control_v2仅补真实协议缺的venv解释器绑定并改raw spool至/dev/shm，四路同一已知g6模板各一次原3024步，4Kit/12096env/36288三体步，四份封口和最终raw SHA/无空洞通过，原控制命令/250Hz/质量摩擦/全部逐点接触与判定保持。
+
+原控制器执行后误以仅支持Kit的ScalingPool申请audit，任何审核子进程启动前失败，原stopped及未启动quarantine保留。另独立author_verified_saved_audit使用原ResourcePool两audit槽，对四份保存结果各做首次原完整数值审核，4 full_integrity_pass/0额外Kit/物理/重试。物理组233.001461s、独立审核225.544539s不含修复交接，不外推生产吞吐。v2冻结源码不回写，其原整体控制器仍stopped；不能重启本轮或拿四次同模板诊断当四型新数据。新7项CPU检查含真实audit池普通Python子进程释放验证通过。
+
+本轮新增训练标签0，累计20fit+1internal仍21，训练/新模型/训后评测0，剩15场景/60槽未派发。13旧数据权重及原15标签核验入口/上一批6标签导出NPZ绑定复核保持。收尾确认原audit全未spawn、所有所属组退出，独立留复核证据后在全局锁内释放滚动registry；原隔离事件/停止回执不删改。6槽released/9锁可取，无后台任务。tmpfs raw易失，持久gzip/seal已fsync及全读回，不证明断电恢复或随机长期可靠性，原故障根因仍未知。
+
+报告reproduction/boya/AUTHOR_STORAGE_PATH_VALIDATION_RESULTS_20261115.md，证据evidence/author_storage_path_validation_20261115_v1；大数据public/临时目录忽略、CanonDex只读。当前完成执行日志验证，下一项是将该方案和正确审核资源池集成到原有限生产入口；capture日志仍原路径，本轮未验证其新集成。不自动恢复15或全量4000+800，不扩大诊断预算。下段为前轮失败快照，不表示本次仍未通过执行日志验证。
+
 ## 2026-11-15 当前：日志完整性防线已实现，完整验证发现原始空洞，生产仍停止
 
 用户授权推进日志修复。独立 author_verified_contact_journal／contact_compressor 保留完整逐行原字节，写入前逻辑SHA、raw spool、隔离标准库压缩、fsync及全解压读回；只在seal通过后交原pointer，失败无重试。18 CPU/mock通过；独立与空Kit各原／新四路、每份1024帧399120740字节，共16份全通过，1Kit/0物理。但完整四路各3024步诊断未通过，不能称已修复或恢复剩15场景。

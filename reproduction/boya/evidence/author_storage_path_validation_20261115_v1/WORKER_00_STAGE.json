@@ -1,0 +1,46 @@
+{
+  "status": "diagnostic_full",
+  "complete": true,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_execution.py",
+    "--prepared-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+    "--output-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_00/result",
+    "--protocol",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/VERIFIED_FULL_PROTOCOL.json"
+  ],
+  "worker_id": "worker_00",
+  "started_unix_s": 1794742577.178504,
+  "process": {
+    "pid": 4136534,
+    "pgid": 4136534,
+    "start_ticks": 156152017
+  },
+  "retry_count": 0,
+  "signals": [],
+  "physical_steps_unknown": false,
+  "receipt": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v2/cpu_4/worker_00/result/SCALING_EXECUTION.json",
+    "sha256": "078843dd4934ddcc6774d4955d70f9204bf0e752adfd651cafdcda46747727d2"
+  },
+  "physical_steps_known": 3024,
+  "physical_cost": {
+    "returned_physical_steps": 3024,
+    "actual_simulation_step_counter": 3024,
+    "observations_completed_steps_per_lane": [
+      3024
+    ],
+    "physical_steps_unknown": false,
+    "inflight_step_unconfirmed": false,
+    "physical_steps_lower_bound": 3024,
+    "physical_steps_upper_bound": 3024,
+    "integrated_environment_steps_lower_bound": 3024,
+    "integrated_environment_steps_upper_bound": 3024
+  },
+  "wall_s": 232.9458696229849,
+  "finished_unix_s": 1794742810.125292,
+  "returncode": 0
+}

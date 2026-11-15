@@ -1,0 +1,55 @@
+{
+  "schema": "anydex_boya_full_storage_path_validation_v1",
+  "source": {
+    "path": "/tmp/anydex_verified_full_control_20261115_v1/eb25429ed0e703833ab1c9d879a337cf2a0c79554d05463b941045c9e55923ba/CONTACTS.raw.jsonl",
+    "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+    "bytes": 1895914265
+  },
+  "expected": {
+    "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+    "bytes": 1895914265,
+    "records": 3024
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_storage_path_validation.py": "73ea901063a30f8c1bd373f4682e6dad9bca5d8d25c5caa5e3c5bf1f243b182f",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_contact_journal.py": "ce86c7184690f34da5cb080db154ba18fb32401e9b9e6813afb89cadffd624fc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_compressor.py": "2f082056df81f55b77ac2cccf25d2cad2729a0cc8a870d3f4b289662d81d4a3c"
+  },
+  "python": {
+    "path": "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/bin/python3.12",
+    "sha256": "5ebcd7993f0e40cb4b16e15d2c4c3c343ecad419966299b8e8f6f9e6a36bf779",
+    "bytes": 30976376
+  },
+  "paths": {
+    "disk": "/tmp/anydex_storage_path_validation_20261115_v1",
+    "tmpfs": "/dev/shm/anydex_storage_path_validation_20261115_v1"
+  },
+  "filesystems": {
+    "disk": {
+      "target": "/",
+      "fstype": "zfs"
+    },
+    "tmpfs": {
+      "target": "/dev/shm",
+      "fstype": "tmpfs"
+    }
+  },
+  "destination_filesystem": {
+    "target": "/mnt/public",
+    "fstype": "zfs"
+  },
+  "groups": [
+    "disk",
+    "tmpfs"
+  ],
+  "writers": 4,
+  "attempts": 8,
+  "retries": 0,
+  "per_worker_timeout_s": 600,
+  "max_Kit_starts": 0,
+  "physics_steps": 0,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "exclude_training": true,
+  "policy": "Two independent predetermined storage groups, once each; no repairs or automatic physical followup"
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "anydex_boya_contact_journal_pointer_v1",
+  "compression": "gzip",
+  "record_format": "jsonl",
+  "record_count": 3024,
+  "data": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/storage_path_validation_20261115_v1/disk/writer_00/CONTACTS.jsonl.gz",
+    "sha256": "7e11f6c0f2d5c8f8ed4e1d503a9a4cbc42652a265e46082bb0cdff088431a807",
+    "bytes": 232895120
+  },
+  "source_bindings": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_storage_path_validation.py": "73ea901063a30f8c1bd373f4682e6dad9bca5d8d25c5caa5e3c5bf1f243b182f",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_contact_journal.py": "ce86c7184690f34da5cb080db154ba18fb32401e9b9e6813afb89cadffd624fc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_compressor.py": "2f082056df81f55b77ac2cccf25d2cad2729a0cc8a870d3f4b289662d81d4a3c"
+  },
+  "lossless": true,
+  "contact_records_omitted": 0,
+  "logical": {
+    "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+    "bytes": 1895914265,
+    "records": 3024
+  },
+  "integrity_seal": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/storage_path_validation_20261115_v1/disk/writer_00/CONTACTS.jsonl.gz.SEAL.json",
+    "sha256": "0b09c4f59636506397519f5333391f9547a4c23de6d189bb2a5991b60ec2dd2d"
+  },
+  "semantics": "Each line is one complete original contact row; logical bytes verified after isolated compression"
+}
