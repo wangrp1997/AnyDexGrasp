@@ -1,5 +1,11 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前运行：用户明确追加1Kit，修复版常驻两场对照进行中
+
+用户在预算问题中选择“追加1次Kit完成比较”，仅授权修复版两场g1常驻组、最多17500env/1Kit/0重试，复用已经完整的cold1098.021376s，不重跑cold或恢复旧失败。新增author_collection_stream_continuation独立freeze在public stream_collection_bound_control_20261116_v1；旧control/failed结果只读绑定，新observations/plan/execution在全新目录。SOURCE冷组通过路径路由只读用于比较，无旧结果搬运/改写。新手模型预绑定已实际落盘且在capture前完成，目前尚未完成首条抓取，不报加速。
+
+本组2新增协议检查+4复用绑定检查共6过；前轮21中的4绑定检查重复，因此累计23项不同CPU检查，不能加成27。已有5Kit/10138env均保留；本组额外最多17500env，组合上限27638仍小于原35000env，但Kit总预算经本次明确批准增至6。所有新结果exclude_training，累计31条训练兼容标签不变，正式训练/模型/外测0。不得因用户批准1Kit再扩组或重试；完成后独立收尾与轻成果push。
+
 ## 2026-11-16 当前：冷组18分18秒完成，常驻组绑定失败，未获得有效加速比
 
 用户“比较下”授权原固定两场/g1对照，公共stream_collection_control_20261116_v1已实际结束。cold完整1098.021376s/4Kit/2×750init/3389+3749执行步，2初始化及2原抓取数值审核全PASS，1正1负仅诊断exclude_training；resident351.079361s因失败停止，1Kit完成两capture及各独立audit，2CGR/2ready，但首条execute0步/infra/labelnull，第二条未启动。两组8组件RGBD/原CGR/候选/科学命令exact，不代表resident完整执行已验收。不得用351与1098相除冒称3倍加速。
