@@ -1,0 +1,92 @@
+{
+  "scope": "Read-only comparison; no repair, replay, recompression, physics, or labels",
+  "rows": [
+    {
+      "worker": 0,
+      "state": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_00/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz.STATE.json",
+      "path": "/tmp/anydex_verified_full_control_20261115_v1/fb1bd005d4881390160bf9816e71db0e31f034d9121878bb06b7de4cded93e9c/CONTACTS.raw.jsonl",
+      "expected": {
+        "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+        "bytes": 1895914265,
+        "records": 3024
+      },
+      "observed": {
+        "sha256": "0400bbf3e55cebb8512e24a85d41166fd41be0e132bf25ad79a7c667f4752303",
+        "bytes": 1895914265
+      },
+      "same_stat": true,
+      "differs_from_worker03_bytes": 1048576,
+      "zero_bytes_where_reference_nonzero": 1048576,
+      "first_difference_spans": [
+        [
+          1310720000,
+          1311768576
+        ]
+      ]
+    },
+    {
+      "worker": 1,
+      "state": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_01/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz.STATE.json",
+      "path": "/tmp/anydex_verified_full_control_20261115_v1/8d70b9c53b79538eaf4cecc28f7c6086d4accc2ace91790e584e6f2403cdab5f/CONTACTS.raw.jsonl",
+      "expected": {
+        "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+        "bytes": 1895914265,
+        "records": 3024
+      },
+      "observed": {
+        "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+        "bytes": 1895914265
+      },
+      "same_stat": true,
+      "differs_from_worker03_bytes": 0,
+      "zero_bytes_where_reference_nonzero": 0,
+      "first_difference_spans": []
+    },
+    {
+      "worker": 2,
+      "state": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_02/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz.STATE.json",
+      "path": "/tmp/anydex_verified_full_control_20261115_v1/50338561d066bd94cf0dc2d6a8bb2f1285183146d9239dddbbdb67644416243f/CONTACTS.raw.jsonl",
+      "expected": {
+        "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+        "bytes": 1895914265,
+        "records": 3024
+      },
+      "observed": {
+        "sha256": "7578188058f278797de9097b07e7fc6a82e3a8279413732ac1e307e7ba94a65f",
+        "bytes": 1895914265
+      },
+      "same_stat": true,
+      "differs_from_worker03_bytes": 2097152,
+      "zero_bytes_where_reference_nonzero": 2097152,
+      "first_difference_spans": [
+        [
+          25165824,
+          26214400
+        ],
+        [
+          51380224,
+          52428800
+        ]
+      ]
+    },
+    {
+      "worker": 3,
+      "state": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_03/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz.STATE.json",
+      "path": "/tmp/anydex_verified_full_control_20261115_v1/eb25429ed0e703833ab1c9d879a337cf2a0c79554d05463b941045c9e55923ba/CONTACTS.raw.jsonl",
+      "expected": {
+        "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+        "bytes": 1895914265,
+        "records": 3024
+      },
+      "observed": {
+        "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+        "bytes": 1895914265
+      },
+      "same_stat": true,
+      "differs_from_worker03_bytes": 0,
+      "zero_bytes_where_reference_nonzero": 0,
+      "first_difference_spans": []
+    }
+  ],
+  "wall_s": 7.99606279283762
+}

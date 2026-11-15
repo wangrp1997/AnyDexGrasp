@@ -1,0 +1,89 @@
+{
+  "status": "stopped_raw_spool_integrity_failure",
+  "storage_only": {
+    "Kit_starts": 1,
+    "physics_steps": 0,
+    "records_per_writer": 1024,
+    "outputs": 16,
+    "all_verified": true
+  },
+  "full_diagnostic": {
+    "Kit_starts": 4,
+    "returned_steps_per_worker": [
+      3024,
+      3024,
+      3024,
+      3024
+    ],
+    "total_environment_steps": 12096,
+    "dynamic_object_steps": 36288,
+    "retries": 0,
+    "new_training_labels": 0,
+    "full_numeric_audits": 0,
+    "raw_digest_matches_workers": [
+      1,
+      3
+    ],
+    "raw_holes_workers": {
+      "0": [
+        [
+          1310720000,
+          1311768576
+        ]
+      ],
+      "2": [
+        [
+          25165824,
+          26214400
+        ],
+        [
+          51380224,
+          52428800
+        ]
+      ]
+    },
+    "sealed_workers": [
+      3
+    ],
+    "status": "Group canceled on worker02 seal failure; workers00/01 compressors interrupted, worker03 finished but stage canceled during close"
+  },
+  "standalone_copy_probe": {
+    "writers": 4,
+    "records_per_writer": 3024,
+    "bytes_per_writer": 1895914265,
+    "all_verified": true,
+    "Kit_starts": 0,
+    "physics_steps": 0
+  },
+  "total_Kit_starts": 5,
+  "total_environment_steps": 12096,
+  "total_dynamic_object_steps": 36288,
+  "training_updates": 0,
+  "new_training_labels": 0,
+  "cumulative_valid_new_labels": {
+    "fit": 20,
+    "internal": 1
+  },
+  "remaining_production_scenes": 15,
+  "remaining_production_slots": 60,
+  "production_resumed": false,
+  "root_cause": "Unproven; zero-filled sparse ranges established in two raw files, no corruption reproduced by bounded standalone copies",
+  "known_unexecuted_limitation": "Full control audit_one expects inputs.python absent from actual inherited full protocol; group stopped before that branch. Frozen source preserved; a future independent control must bind the interpreter and test the real protocol contract.",
+  "frozen_storage_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/CONTACT_STORAGE_PROTOCOL.json",
+    "sha256": "743748ba046c628c79f3232e673577ebffe7293b4415cae4eaf9fb73cb9ea233",
+    "bytes": 241123
+  },
+  "frozen_full_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/VERIFIED_FULL_PROTOCOL.json",
+    "sha256": "a6339fce9d49eb9b87625bfef7b8ef1557f34e0eb22ee6c26ac85275755eb6c5",
+    "bytes": 166914
+  },
+  "cpu_tests": 18,
+  "source_input_archive_verification_passed": true,
+  "final_host": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_contact_integrity_20261115_v1/FINAL_HOST.json",
+    "sha256": "dadd09b7ebe144670c20200a1c67bc03bf3dc850b6a452cf0efd8ccbd536a656",
+    "bytes": 5609
+  }
+}

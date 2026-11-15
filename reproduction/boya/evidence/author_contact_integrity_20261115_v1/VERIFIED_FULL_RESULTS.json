@@ -1,0 +1,130 @@
+{
+  "schema": "anydex_boya_verified_full_control_v1",
+  "status": "stopped",
+  "group": {
+    "name": "cpu_4",
+    "count": 4,
+    "mode": "cpu",
+    "workers": [
+      {
+        "worker_id": "worker_00",
+        "status": "infrastructure_failure",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_00/STAGE.json",
+          "sha256": "e6690210cb9026b5dbe72bd4dcb73a91eba470ef8b566a9178a57f236fe5a30e"
+        },
+        "receipt": null,
+        "partial_receipt": null,
+        "process": {
+          "pid": 4068340,
+          "pgid": 4068340,
+          "start_ticks": 156001192
+        }
+      },
+      {
+        "worker_id": "worker_01",
+        "status": "infrastructure_failure",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_01/STAGE.json",
+          "sha256": "92116a62b3942cb9a46550bcb33342f6726fe22aa02bb7136eaf8f9a325f26a6"
+        },
+        "receipt": null,
+        "partial_receipt": null,
+        "process": {
+          "pid": 4068341,
+          "pgid": 4068341,
+          "start_ticks": 156001192
+        }
+      },
+      {
+        "worker_id": "worker_02",
+        "status": "infrastructure_failure",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_02/STAGE.json",
+          "sha256": "2c30695823b290ffa31cb27e2b4d13aec9d06dd918b4b422b16ad1e1d5b9a9e8"
+        },
+        "receipt": null,
+        "partial_receipt": null,
+        "process": {
+          "pid": 4068338,
+          "pgid": 4068338,
+          "start_ticks": 156001192
+        }
+      },
+      {
+        "worker_id": "worker_03",
+        "status": "infrastructure_failure",
+        "stage": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_03/STAGE.json",
+          "sha256": "eb6dbe85faf5a1b2327f9225fe4b6e501c63bf5db015facf52023344761e0afa"
+        },
+        "receipt": null,
+        "partial_receipt": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_03/result/SCALING_EXECUTION.json",
+          "sha256": "94d20afe55a9bfb00cdae07c6b4d9ff94961d2dfea12f2663c3df6ec999fda7a"
+        },
+        "process": {
+          "pid": 4068339,
+          "pgid": 4068339,
+          "start_ticks": 156001192
+        }
+      }
+    ],
+    "status": "stopped_after_failure",
+    "started_unix_s": 1794741068.9796326,
+    "finished_unix_s": 1794741313.7819433,
+    "wall_s": 244.80231215595268,
+    "label": null,
+    "exclude_training": true
+  },
+  "audits": [],
+  "error": null,
+  "cost_snapshots": [
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_03/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "50460261b5715cb6f3f0439c238759c6e5bc464c5a542e7401444160063c48f8"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_00/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "879d344f11525df26de7487106858666f9d7918f07b4e36cbf1b45754cf6a81f"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_02/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "2f36c0717452421dcc9f58ece6aabca90ee293a0a5416124678d1a80023998b0"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    },
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_01/result/env_0/execution/CONTACT_STORAGE_COST.json",
+        "sha256": "56ae12381899fdc131bb68331ed495fb8a57ce140013f0bf38eff9fbfe82efe5"
+      },
+      "runtime_steps": 3024,
+      "trace_rows": 3024,
+      "contact_records": 3024
+    }
+  ],
+  "wall_s": 244.88327119895257,
+  "label": null,
+  "exclude_training": true,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "resource_samples": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/RESOURCE_SAMPLES.jsonl",
+    "sha256": "31cc6a0025727ec81370d2b512fa389102066e85c6173078facf574865176fdb"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "failed",
+  "expected": {
+    "sha256": "e62a6e4d93d3280669686a40cabcb4a3d46c796e9a3c768109b6a52485965716",
+    "bytes": 1895914265,
+    "records": 3024
+  },
+  "raw_spool": "/tmp/anydex_verified_full_control_20261115_v1/50338561d066bd94cf0dc2d6a8bb2f1285183146d9239dddbbdb67644416243f/CONTACTS.raw.jsonl",
+  "destination": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_02/result/env_0/execution/MULTI_OBJECT_CONTACTS.jsonl.gz",
+  "records": 3024,
+  "source_bindings": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_execution.py": "263cf9fd7b146da66a31bd43c70d43bac01361c9904b627cc03bbd357d092e0d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_execute.py": "80603c076d458bfb856356368c6601fa8b638996bb61019123d5e2cc561be153",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py": "40e519d035c45bd25289fe5dcb154808baef1153e82c62e0cf69b5110b47b20d",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift_pipeline.py": "7ce962e8b18d821fc8871d7721d79b3f3ac0d5ddafc302337e7fce015df7254a",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_execution.py": "346aa86a4632f88c4c8c3dc046e60e2a2c4954482ef13bec01a928401c3c4dac",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/arm_parallel.py": "a5a36298a3a5064053d4f61fa95a8947cf171179848e194147328bdc77beae26",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/template_gripper_batch.py": "0874cbe61bf1be56c2e726cc930d416fabe87d901dc47b7b3726d961cf218423",
+    "/home/wangrenpeng/CanonDex/canondex/grasp/arm_resident_scene.py": "dc8d343bb60a6af4b0e19f006044740e64d0308d79422781c23e898ccbd73557",
+    "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+    "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+    "/home/wangrenpeng/CanonDex/canondex/scene/execute_motion.py": "b809b9b5410e30e3c4cdd7bacec60b85a17ca18b8097125a23cd9a6389403b42",
+    "/home/wangrenpeng/CanonDex/canondex/scene/object_contacts.py": "7dec9f73ae6acdd4e0c8fbc9a56fd4d50cc6fbbf3623e240a7e9ea967e4715b9",
+    "/home/wangrenpeng/CanonDex/scripts/research/execute_template_arm_positive.py": "a290fffb110b79235b9dc60bfbc0d2d640b71d6b847e404e6de5a9b540a3fe2e",
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/usd.py": "6205e890f1fc194e3791394d5ee730d89cfe913bb2962de59a03d958d7b3918c",
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab/source/isaaclab/isaaclab/cloner/collision_filter.py": "e429baac2d391bed938e139f2aabb61d1900cb8f57c7fafea27732397b55b4f0",
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+    "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager_cfg.py": "b28ec403c4d534101eab541aff92952b96eb63f0526b0dc0a53277638ca732b2",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_capability_probe.py": "b8aca3d387b8589aefe6001511b5a01b7fb4d799cd70f2b5ba531f7b1f42d67f",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_execution.py": "59d1663e98333cf790aa8ed878c6b8215b481dab59d7b32056835e23d878c73a",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_compressor.py": "2f082056df81f55b77ac2cccf25d2cad2729a0cc8a870d3f4b289662d81d4a3c",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_contact_journal.py": "ce86c7184690f34da5cb080db154ba18fb32401e9b9e6813afb89cadffd624fc",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_execution.py": "4c669bff14226d5f45fde6f328e2a037aa45d191e1dc92401ceb5098d7e6c787",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_full_execution.py": "4095477e27f08a52ddd175669c55dcb75e122f282d9b97be5c4a8a68f1cbd5dd",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_execution.py": "4037bebc5296977848cc2413d833d396eb2669df470b9c74a53863c91dbf0375",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b"
+  },
+  "compressor_attempts": 1,
+  "error": "JournalIntegrityError('Isolated compressor failed; raw spool and worker receipt retained')",
+  "raw_spool_retained": true,
+  "wall_s": 0.31740154209546745
+}

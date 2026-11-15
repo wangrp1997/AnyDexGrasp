@@ -1,0 +1,36 @@
+{
+  "status": "infrastructure_failure",
+  "complete": false,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_execution.py",
+    "--prepared-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+    "--output-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_00/result",
+    "--protocol",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/VERIFIED_FULL_PROTOCOL.json"
+  ],
+  "worker_id": "worker_00",
+  "started_unix_s": 1794741068.9808335,
+  "process": {
+    "pid": 4068340,
+    "pgid": 4068340,
+    "start_ticks": 156001192
+  },
+  "retry_count": 0,
+  "signals": [
+    {
+      "signal": "SIGINT",
+      "sent": true,
+      "unix_s": 1794741287.3800645
+    }
+  ],
+  "physical_steps_unknown": true,
+  "cancellation_reason": "group_stop",
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_cpu_full_control.py\", line 140, in stage\n    C.need(process.returncode==0 and value.get('cancellation_reason') is None,'Full worker failed/canceled')\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_control.py\", line 46, in need\n    raise ValueError(message)\nValueError: Full worker failed/canceled\n",
+  "wall_s": 219.3145525320433,
+  "finished_unix_s": 1794741288.2960103,
+  "returncode": 1
+}

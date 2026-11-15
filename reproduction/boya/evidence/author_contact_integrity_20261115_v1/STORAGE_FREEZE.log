@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_storage_control.py", line 117, in <module>
+    a=p.parse_args();result=freeze(a.root)if a.action=='freeze'else run(a.root)
+                            ^^^^^^^^^^^^^^
+  File "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_storage_control.py", line 57, in freeze
+    gpu_uuid=P.GPU_UUID,gpu_identity=C.gpu_identity(inputs['nvidia_smi']['path'],P.GPU_UUID),
+                                                    ~~~~~~^^^^^^^^^^^^^^
+KeyError: 'nvidia_smi'

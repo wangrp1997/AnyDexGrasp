@@ -1,0 +1,76 @@
+{
+  "schema": "anydex_boya_contact_storage_control_v1",
+  "status": "verified_storage_control",
+  "stages": [
+    {
+      "mode": "standalone",
+      "status": "complete",
+      "command": [
+        "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_storage_probe.py",
+        "--root",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/standalone",
+        "--protocol",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/CONTACT_STORAGE_PROTOCOL.json",
+        "--mode",
+        "standalone"
+      ],
+      "physics_steps": 0,
+      "retry_count": 0,
+      "started_unix_s": 1794740203.432062,
+      "process": {
+        "pid": 4031561,
+        "pgid": 4031561,
+        "start_ticks": 155914629
+      },
+      "returncode": 0,
+      "finished_unix_s": 1794740269.9479318,
+      "result": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/standalone/RESULTS.json",
+        "sha256": "11d7be921a26e17bd27e2da9c7234f0a279fbf2e58987c81cb6dc0d50229108d"
+      }
+    },
+    {
+      "mode": "kit",
+      "status": "complete",
+      "command": [
+        "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_storage_probe.py",
+        "--root",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/kit",
+        "--protocol",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/CONTACT_STORAGE_PROTOCOL.json",
+        "--mode",
+        "kit"
+      ],
+      "physics_steps": 0,
+      "retry_count": 0,
+      "started_unix_s": 1794740270.7482154,
+      "process": {
+        "pid": 4034352,
+        "pgid": 4034352,
+        "start_ticks": 155921361
+      },
+      "returncode": 0,
+      "finished_unix_s": 1794740355.6878328,
+      "result": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/kit/RESULTS.json",
+        "sha256": "1d1de215b76aba9bdc49ce0b1e7b9acd4511f648b603ee30386aed31dab9059c"
+      }
+    }
+  ],
+  "error": null,
+  "wall_s": 153.00716435583308,
+  "physics_steps": 0,
+  "max_Kit_attempts": 1,
+  "actual_Kit_starts": 1,
+  "resource_samples": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_storage_control_20261115_v2/RESOURCE_SAMPLES.jsonl",
+    "sha256": "b91f39fec5c6cbc03fde3f796b93669dcfc075f508b16ba39b49631b86e9ae8c"
+  },
+  "label": null,
+  "exclude_training": true,
+  "new_training_labels": 0
+}

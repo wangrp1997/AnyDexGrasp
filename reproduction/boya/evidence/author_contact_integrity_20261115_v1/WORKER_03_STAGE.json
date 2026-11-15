@@ -1,0 +1,54 @@
+{
+  "status": "infrastructure_failure",
+  "complete": false,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_full_execution.py",
+    "--prepared-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+    "--output-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_03/result",
+    "--protocol",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/VERIFIED_FULL_PROTOCOL.json"
+  ],
+  "worker_id": "worker_03",
+  "started_unix_s": 1794741068.9818208,
+  "process": {
+    "pid": 4068339,
+    "pgid": 4068339,
+    "start_ticks": 156001192
+  },
+  "retry_count": 0,
+  "signals": [
+    {
+      "signal": "SIGINT",
+      "sent": true,
+      "unix_s": 1794741287.4176774
+    }
+  ],
+  "physical_steps_unknown": false,
+  "cancellation_reason": "group_stop",
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_cpu_full_control.py\", line 140, in stage\n    C.need(process.returncode==0 and value.get('cancellation_reason') is None,'Full worker failed/canceled')\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_control.py\", line 46, in need\n    raise ValueError(message)\nValueError: Full worker failed/canceled\n",
+  "partial_receipt": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/verified_full_control_20261115_v1/cpu_4/worker_03/result/SCALING_EXECUTION.json",
+    "sha256": "94d20afe55a9bfb00cdae07c6b4d9ff94961d2dfea12f2663c3df6ec999fda7a"
+  },
+  "physical_steps_known": 3024,
+  "physical_cost": {
+    "returned_physical_steps": 3024,
+    "actual_simulation_step_counter": 3024,
+    "observations_completed_steps_per_lane": [
+      3024
+    ],
+    "physical_steps_unknown": false,
+    "inflight_step_unconfirmed": false,
+    "physical_steps_lower_bound": 3024,
+    "physical_steps_upper_bound": 3024,
+    "integrated_environment_steps_lower_bound": 3024,
+    "integrated_environment_steps_upper_bound": 3024
+  },
+  "wall_s": 244.79798005893826,
+  "finished_unix_s": 1794741313.781113,
+  "returncode": 0
+}

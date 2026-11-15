@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前：日志完整性防线已实现，完整验证发现原始空洞，生产仍停止
+
+用户授权推进日志修复。独立 author_verified_contact_journal／contact_compressor 保留完整逐行原字节，写入前逻辑SHA、raw spool、隔离标准库压缩、fsync及全解压读回；只在seal通过后交原pointer，失败无重试。18 CPU/mock通过；独立与空Kit各原／新四路、每份1024帧399120740字节，共16份全通过，1Kit/0物理。但完整四路各3024步诊断未通过，不能称已修复或恢复剩15场景。
+
+完整诊断4Kit/12096env/36288三体步，四份原runtime/trace/contact计数均3024，0完整数值audit/训练标签/重试。worker02 raw JSON先失败，整组停止；00/01压缩器中断，03已封口及原finish但退出时取消，原stage失败全部保留。停机只读比较：00偏移1310720000..1311768576为1MiB全零；02偏移25165824..26214400与51380224..52428800共2MiB全零，SEEK_HOLE一致；01/03全raw SHA与写入前exact。四份1.896GB原始文件及失败原样留档，不修补、补压缩或重抓。/tmp/public报告ZFS和1MiB块，但根因仍未证明；独立四路同完整原始文件复制/fsync读回全过，0Kit，未复现间歇故障。
+
+本轮合5Kit/12096env/36288三体步，新增标签0，累计仍20fit+1internal=21，训练0。两组外层153.007164s/244.883271s不含开发交接取证，不外推产率。5槽released/8锁可取、所属组全退、registryreleased，无后台任务。完整控制器未执行audit_one还存在实际继承协议缺inputs.python的问题，CPU fixture未覆盖；冻结版本保留，未来须独立修复并核真实协议，禁止重启本轮。未实施tmpfs方案或新物理批次，剩15场景/60槽未派发，原坏gzip和所有冻结源/CanonDex保持。
+
+报告reproduction/boya/AUTHOR_CONTACT_INTEGRITY_RESULTS_20261115.md，轻证据evidence/author_contact_integrity_20261115_v1。当前只证明能拒绝坏日志，生产准入仍失败；先验证可靠写入路径，再考虑有限完整验证和剩余原预算，4000+800/训练/外测均未启动。用户追问为何耗时后，本轮停止追加实验并收尾，不继续扩大诊断。
+
 ## 2026-11-15 当前：生产试采新增6fit有效标签，接触gzip损坏后停止，15场景未派发
 
 用户批准32场景/128槽有限新随机试采。首capture因freeze未继承原clarabel路径0tick导入失败，原protocol acc3f763.../1Kit/53.460996s停止保留，原父unknown_capture=1保留。恢复原已验依赖并实际子进程预检通过后，仅原未启动index1..31在独立d1c9dbb3...协议接续，首失败不重跑、不重抽、不扩原预算。接续前两窗64槽=6labelled+14nocandidate+10geometry+32placement_null+2auditinfra；剩15场景/60槽未启动，原首次失败4槽另列合原128。接续1792.661695s=29.877695min停止，两段run wall合30.768712min，首启动至接续停机span39.281108min含8.512397min依赖修复交接，不代表完整随机产率或加速倍数。
