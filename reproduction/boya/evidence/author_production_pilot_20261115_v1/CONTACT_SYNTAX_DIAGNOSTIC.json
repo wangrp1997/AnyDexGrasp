@@ -1,0 +1,77 @@
+{
+  "status": "diagnosed_unusable_saved_streams",
+  "rows": [
+    {
+      "gesture_id": 6,
+      "pointer": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/windows/01/scenes/0000011_s40_lift_fit_00006_s2026111501/g6/execution/MULTI_OBJECT_CONTACTS.json",
+        "sha256": "420e9112b9bacbd4edf9e82841ee1e3c06985cca2cc04741b07235aa2657c161"
+      },
+      "source_bytes": 198003355,
+      "expected_sha": "41119a76d22314d5614358b6f074de29471b564911a0e5d4fcf8bb03495a3bbd",
+      "source_before": "41119a76d22314d5614358b6f074de29471b564911a0e5d4fcf8bb03495a3bbd",
+      "source_after": "41119a76d22314d5614358b6f074de29471b564911a0e5d4fcf8bb03495a3bbd",
+      "local_copy": {
+        "path": "/tmp/anydex_contact_integrity_20261115_v1/g6.jsonl.gz",
+        "sha256": "41119a76d22314d5614358b6f074de29471b564911a0e5d4fcf8bb03495a3bbd"
+      },
+      "expected_records": 3509,
+      "stable_and_byte_identical": true,
+      "original": {
+        "records_reached": 742,
+        "error": "JSONDecodeError(\"Expecting ',' delimiter: line 1 column 20986 (char 20985)\")",
+        "first_error_detail": {
+          "line_bytes": 1736450,
+          "line_sha256": "e90e0f51cb7b1c1916e4b5899e57519fae8ceb002667ad54278d835202f5878d",
+          "column": 20986,
+          "position": 20985,
+          "near_error_hex": "5d2c22706f736974696f6e5f776f726c645f6d223a5b2d302e74696f5d2c22706f736974696f6e5f776f726c645f6d22"
+        }
+      },
+      "byte_identical_copy": {
+        "records_reached": 742,
+        "error": "JSONDecodeError(\"Expecting ',' delimiter: line 1 column 20986 (char 20985)\")",
+        "first_error_detail": {
+          "line_bytes": 1736450,
+          "line_sha256": "e90e0f51cb7b1c1916e4b5899e57519fae8ceb002667ad54278d835202f5878d",
+          "column": 20986,
+          "position": 20985,
+          "near_error_hex": "5d2c22706f736974696f6e5f776f726c645f6d223a5b2d302e74696f5d2c22706f736974696f6e5f776f726c645f6d22"
+        }
+      }
+    },
+    {
+      "gesture_id": 8,
+      "pointer": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/windows/01/scenes/0000011_s40_lift_fit_00006_s2026111501/g8/execution/MULTI_OBJECT_CONTACTS.json",
+        "sha256": "484ceaecc61e274091511ee59416aeec1b4dc600558c745f75b4f8ecb87cec2c"
+      },
+      "source_bytes": 219832040,
+      "expected_sha": "18459db081b633686d47f983fb1d8f00105e308007398e25d8ac9d12c9c858ed",
+      "source_before": "18459db081b633686d47f983fb1d8f00105e308007398e25d8ac9d12c9c858ed",
+      "source_after": "18459db081b633686d47f983fb1d8f00105e308007398e25d8ac9d12c9c858ed",
+      "local_copy": {
+        "path": "/tmp/anydex_contact_integrity_20261115_v1/g8.jsonl.gz",
+        "sha256": "18459db081b633686d47f983fb1d8f00105e308007398e25d8ac9d12c9c858ed"
+      },
+      "expected_records": 3679,
+      "stable_and_byte_identical": true,
+      "original": {
+        "records_reached": 719,
+        "error": "error('Error -3 while decompressing data: invalid distance code')",
+        "first_error_detail": null
+      },
+      "byte_identical_copy": {
+        "records_reached": 719,
+        "error": "error('Error -3 while decompressing data: invalid distance code')",
+        "first_error_detail": null
+      }
+    }
+  ],
+  "wall_s": 9.375892444048077,
+  "scope": "Read-only gzip/JSON syntax diagnostic on original and byte-identical copies; no repair, no label certification, no force/source-bottom/command audit rerun",
+  "new_Kit_starts": 0,
+  "new_physics_steps": 0,
+  "new_labels": 0,
+  "root_cause_proven": false
+}

@@ -1,5 +1,19 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前：生产试采新增6fit有效标签，接触gzip损坏后停止，15场景未派发
+
+用户批准32场景/128槽有限新随机试采。首capture因freeze未继承原clarabel路径0tick导入失败，原protocol acc3f763.../1Kit/53.460996s停止保留，原父unknown_capture=1保留。恢复原已验依赖并实际子进程预检通过后，仅原未启动index1..31在独立d1c9dbb3...协议接续，首失败不重跑、不重抽、不扩原预算。接续前两窗64槽=6labelled+14nocandidate+10geometry+32placement_null+2auditinfra；剩15场景/60槽未启动，原首次失败4槽另列合原128。接续1792.661695s=29.877695min停止，两段run wall合30.768712min，首启动至接续停机span39.281108min含8.512397min依赖修复交接，不代表完整随机产率或加速倍数。
+
+新增6条fit全正，g1/6/7/8=2/1/2/1，internal新增0；已在接续run/export独立导出，parent结果仍stopped，另PARTIAL_EXPORT_RECEIPT不改旧OUTER。累计实际新标签20fit+1internal=21，原14fit+1internal/旧435不自动混入该6条数组。正式4000fit+800internal/训练/新模型/训后评测均0，旧13数据权重SHA保持。
+
+新fit scene6的g6/g8原首次审核分别报JSON/deflate异常与invalid distance code，原审计CLI退出0但证书failed，父准入正确拒绝，标签null而非负例。g6第742行JSON异常，进一步纯gzip读289406976解压字节后报invalid literal/length；g8至第719行报invalid distance。原压缩字节SHA/size与producer pointer相符，/tmp字节相同副本同处失败，确认现存流不可用，损坏根因未证明。原数据/证书/失败不修补或重抓，未重新认证两标签；源/命令/完整点门不放宽。当前保持停止，不再自动派发剩15或新物理批次。
+
+合17Kit=初失败1+capture8+execution8；capture6000tick/18000对象步、8独立初始化审计全PASS/15080831点，2CGRload/8forward/0评分头。8执行25462步/76386对象步含坏g6/g8的3509/3679步，完整trace tick/最终成本对齐；6份原数值PASS共33994219执行点，2份失败不认证gates。接续报告31462env/94386三体步，接续成本未知0；初父保守unknown_capture1和ERROR报0tick分别保留不合并为“全未知0”。前缀独立核1556文件与6条NPZ/标签/全三体/split/features/证书通过，0新积分/完整数值重审。
+
+host实见峰4Kit/2audit，初2+接续74所属stage组、两父/两观察进程全退；接续10槽released/12锁可取，初2槽/4锁释放，registryreleased，无本轮后台任务。CanonDex只读，所有运行冻结源/归档保持。59项不同CPU/mock覆盖通过（原39、新生产13、接续4、后续修复3；重复不累计）。独立future v2补证书status检查以在audit退出0但failed时立即停新派发；bootstrap_v2恢复原环境并Kit前真实依赖预检，显式新seed。v2仅CPU/metadata验证、未新物理运行，未解决gzip损坏根因，也未扩大本批预算。
+
+报告reproduction/boya/AUTHOR_PRODUCTION_PILOT_RESULTS_20261115.md，轻证据evidence/author_production_pilot_20261115_v1；初59e9bd1已push，收尾轻成果继续push origin，原始轨迹/接触/NPZ留public/ignored。下一准入项是日志写入前逻辑SHA与关闭后持久readback等完整性机制和独立验证，再考虑剩15；internal三型仍零产出，整体4800ETA未知。不得把本批说成跑完32或用诊断倍率预测采满；不自动恢复采集/训练。下方启动快照均为历史。
+
 ## 2026-11-15 启动快照：固定32场景有限生产试采，首个0tick依赖失败保留，31未启动场景独立接续
 
 用户批准下一步并明确“开始”：16fit+16internal、128手型槽、固定seed2026111501、原首选每型一次、0自动重试，不启动全量4000+800或训练。新author_production_collection独立生产schema，原八路诊断/冻结源保持。只在原数值证书和独立初始化全点审计通过后准入0/1，null不作负例，原15/旧435不自动混入导出。4窗口、最多8CPU冷session/2audit/3prepare/1observation；parent整批持GPU0全局lease，GPU1不选；原250Hz/.1kg/.6/原三体/24→28/native20um/完整接触和所有门保留。52项不同CPU/mock覆盖（13新+39复用），另4接续测试通过，非实测成绩。

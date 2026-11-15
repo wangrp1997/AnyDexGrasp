@@ -1,5 +1,7 @@
 # 新随机场景有限生产试采（2026-11-15）
 
+**最终状态：接续第二窗因两份完整接触日志损坏停止；6条新fit标签已通过独立复核并导出，15场景未派发。** 初依赖失败和两条审核失败均保留，不重试、不计负例。累计20fit+1internal，训练0；全部所属进程和锁释放。当前结论见 [完整结果](AUTHOR_PRODUCTION_PILOT_RESULTS_20261115.md)。以下保留启动过程与协议说明，不能将“进行中”当作当前运行状态。
+
 用户批准后，已启动 **16 fit＋16 internal、共 32 场景／128 手型槽**的有限生产试采。首次运行已在 **53.460996 秒**按规则停止：新冻结入口未继承此前已验证的 clarabel 覆盖路径和共享库路径，第一 capture 在原生审计导入时报 `ModuleNotFoundError: clarabel`，ERROR/PROGRESS 均记录初始化 0 tick；原父成本表仍保留保守的 1 次未知 capture 标志，不回写。该轮 1 Kit、0 CGR／规划／抓取／标签／训练，无物理重试。首个失败场景保留，剩余 31 个未启动场景拟在独立接续协议恢复原依赖环境后继续；原预算不增加、不重抽随机布局。
 
 新协议为 `anydex_boya_author_production_pilot_v1`，SHA256 `acc3f76398eece862006e2e91d46f3745257c2f43f90735e7cf74fef5cca81e8`。真实运行根为 `/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run`。本文件为滚动进度，不是完成证明；完成必须同时有 `PRODUCTION_RESULTS.json`、`OUTER_WALL.json`、独立审核和已释放的资源证据。

@@ -1,0 +1,124 @@
+{
+  "status": "pass",
+  "capture": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/windows/01/scenes/0000014_s40_lift_internal_00007_s2026111501/capture",
+  "object_ids": [
+    "graspnet_021",
+    "graspnet_009",
+    "graspnet_007"
+  ],
+  "source_meshes": [
+    {
+      "object_id": "graspnet_021",
+      "source_vertices": 262146,
+      "source_triangles": 524288,
+      "observed_source_bounds_m": [
+        [
+          -0.8276852668935619,
+          0.00640917714640591,
+          0.0004867358617188025
+        ],
+        [
+          -0.7716069162135751,
+          0.06219238780553656,
+          0.05607060798429929
+        ]
+      ],
+      "recomputed_stability": {
+        "max_linear_speed_m_s": 0.0015009312716324726,
+        "max_angular_speed_rad_s": 0.05336153459249428,
+        "max_window_translation_m": 1.390230187777542e-05,
+        "max_window_rotation_rad": 0.00048268931521486247,
+        "stable": true
+      }
+    },
+    {
+      "object_id": "graspnet_009",
+      "source_vertices": 262140,
+      "source_triangles": 524288,
+      "observed_source_bounds_m": [
+        [
+          -0.8415557980400489,
+          0.08190410399169928,
+          0.0013379798209015364
+        ],
+        [
+          -0.6398555906444943,
+          0.17688744398511336,
+          0.016724011598163356
+        ]
+      ],
+      "recomputed_stability": {
+        "max_linear_speed_m_s": 0.00032244496334663447,
+        "max_angular_speed_rad_s": 0.010521992257935193,
+        "max_window_translation_m": 8.693286388410863e-08,
+        "max_window_rotation_rad": 2.5595319931012816e-06,
+        "stable": true
+      }
+    },
+    {
+      "object_id": "graspnet_007",
+      "source_vertices": 262140,
+      "source_triangles": 524288,
+      "observed_source_bounds_m": [
+        [
+          -0.7534199887042842,
+          -0.015983604765057634,
+          0.0009880082459634704
+        ],
+        [
+          -0.6412683627737841,
+          0.07655098002351346,
+          0.08225597740696243
+        ]
+      ],
+      "recomputed_stability": {
+        "max_linear_speed_m_s": 0.0010425477903593897,
+        "max_angular_speed_rad_s": 0.02166363899633625,
+        "max_window_translation_m": 1.5656515849692852e-06,
+        "max_window_rotation_rad": 4.083793652501273e-05,
+        "stable": true
+      }
+    }
+  ],
+  "physics_ticks": 750,
+  "initialization_object_steps": 2250,
+  "all_contact_frames": 750,
+  "all_contacts": 2728412,
+  "per_body_contact_rows": {
+    "/World/AuthorScene/graspnet_021": 1731758,
+    "/World/AuthorScene/graspnet_009": 329250,
+    "/World/AuthorScene/graspnet_007": 667404
+  },
+  "final250_table_support_ticks": {
+    "/World/AuthorScene/graspnet_021": 250,
+    "/World/AuthorScene/graspnet_007": 250,
+    "/World/AuthorScene/graspnet_009": 250
+  },
+  "minimum_contact_separation_m": -2.8170179575681686e-06,
+  "maximum_contact_force_n": 5.081816673278809,
+  "native_hulls": 2109,
+  "native_per_body_hulls": {
+    "/World/AuthorScene/graspnet_021": 1449,
+    "/World/AuthorScene/graspnet_009": 119,
+    "/World/AuthorScene/graspnet_007": 541
+  },
+  "native_plane_inequality_max_m": 1.7632296024257255e-05,
+  "native_plane_vs_receipt_error_m": 0.0,
+  "native_scope": "Every saved source/cooked/plane array checked; original convex-distance optimizer not rerun; native20um is import fidelity",
+  "independent_full_source_rays": 96,
+  "independent_ray_depth_max_error_m": 3.3306690738754696e-16,
+  "rgbd_and_meta_exact": true,
+  "wall_s": 24.52322658780031,
+  "independent_audit_Kit_launches": 0,
+  "independent_audit_physics_steps": 0,
+  "independent_audit_model_forwards": 0,
+  "cost_scope": "Read-only diagnostic audit performed alongside the actual run; not a collector built-in stage",
+  "audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_resident_collection.py",
+    "sha256": "c67eb7873ca9961da542c3631bd92a19dc4977521415f89b9b8fbf9c0ee95c5f"
+  },
+  "full_audit": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/windows/01/scenes/0000014_s40_lift_internal_00007_s2026111501/capture/INDEPENDENT_CAPTURE_AUDIT.json",
+    "sha256": "f9ab66c69cb03b320bed2f6293857d431c4e5d7990333177c272d114a2d3c3ef"
+  }
+}

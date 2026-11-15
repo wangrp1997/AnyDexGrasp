@@ -1,0 +1,98 @@
+{
+  "status": "stopped_with_certified_prefix",
+  "original_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "acc3f76398eece862006e2e91d46f3745257c2f43f90735e7cf74fef5cca81e8"
+  },
+  "continuation_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "d1c9dbb38f4b9bea9554774c7768b6a24ab5f4dc3dd26e7e543648bf8aa71d8c"
+  },
+  "original_scene_budget": 32,
+  "original_slot_budget": 128,
+  "original_capture_failure_slots": 4,
+  "continuation_terminal_slots": 64,
+  "not_started_scenes": 15,
+  "not_started_slots": 60,
+  "failed_scene_retries": 0,
+  "sampler_redraws": 0,
+  "new_fit_counts": {
+    "1": 2,
+    "6": 1,
+    "7": 2,
+    "8": 1
+  },
+  "new_internal_counts": {
+    "1": 0,
+    "6": 0,
+    "7": 0,
+    "8": 0
+  },
+  "new_labels": 6,
+  "new_positive": 6,
+  "new_negative": 0,
+  "cumulative_actual_fit": 20,
+  "cumulative_actual_internal": 1,
+  "old435_merged": false,
+  "training_updates": 0,
+  "new_models": 0,
+  "completed_capture_Kit_starts": 8,
+  "execution_Kit_starts": 8,
+  "initial_failed_Kit_starts": 1,
+  "total_Kit_starts": 17,
+  "reported_execution_steps": 25462,
+  "completed_capture_ticks": 6000,
+  "total_reported_env_steps": 31462,
+  "total_reported_object_steps": 94386,
+  "continuation_unknown_costs": 0,
+  "initial_parent_unknown_capture_flag_preserved": 1,
+  "initial_error_reported_ticks": 0,
+  "first_numeric_audits": 8,
+  "passed_numeric_audits": 6,
+  "failed_numeric_audits": 2,
+  "certified_execution_contacts": 33994219,
+  "certified_initialization_contacts": 15080831,
+  "models": [
+    {
+      "report": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/windows/01/representation/BATCH_REPRESENTATION.json",
+        "sha256": "519521c7ce79cc67c743f8ade3df0f6687e7b07d9bee0a3f6c5d8d91182c7882"
+      },
+      "loads": 1,
+      "forwards": 5
+    },
+    {
+      "report": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/windows/00/representation/BATCH_REPRESENTATION.json",
+        "sha256": "84a49b3dab28fe940a7ec3147f8ffdf3c1f00f81b72dba82ce9e5f2e95a29f31"
+      },
+      "loads": 1,
+      "forwards": 3
+    }
+  ],
+  "host_samples": 880,
+  "peak_kits": 4,
+  "peak_audits": 2,
+  "max_same_sample_growing_journals": 4,
+  "all_owned_stage_groups_exited": 76,
+  "continuation_released_slots": 10,
+  "continuation_available_locks": 12,
+  "outer_clocks": {
+    "initial_failed_s": 53.460995625006035,
+    "continuation_stopped_s": 1792.661695141811,
+    "sum_run_wall_s": 1846.122690766817,
+    "initial_start_to_continuation_stop_s": 2356.866509437561,
+    "handoff_gap_s": 510.7438180446625
+  },
+  "prefix_verification": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/PREFIX_AUDIT.json",
+    "sha256": "55c889c7d5c9d8b0c78d8259478d6e542dacfe0fbe398a1e80790db577c54247"
+  },
+  "syntax_diagnostic": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/CONTACT_SYNTAX_DIAGNOSTIC.json",
+    "sha256": "03a355b13c3b055adfb0d2033bc8fa091c0d85047fc41883b79dfdc600208be3"
+  },
+  "storage_root_cause_proven": false,
+  "remaining_dispatch_authorized_to_resume_automatically": false,
+  "scope": "Partial finite pilot; failed streams remain excluded; no new physics after contact integrity failure; original failed prefix and all costs preserved"
+}
