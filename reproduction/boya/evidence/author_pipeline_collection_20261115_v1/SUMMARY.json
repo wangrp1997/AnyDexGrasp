@@ -1,0 +1,608 @@
+{
+  "status": "pass",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/PIPELINE_COLLECTION_PROTOCOL.json",
+    "sha256": "1020cf12313ad87abf668d2eb469bf9ffb39276eecc4ee280574efaa0c2f6fd3"
+  },
+  "outer": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/OUTER_WALL.json",
+    "sha256": "4423412f8744827ab5cffe2c1617f13d8de81e998fd9ff7236c62dd3fa8c1b48"
+  },
+  "result": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/PIPELINE_COLLECTION_RESULTS.json",
+    "sha256": "69a0a3764d071470fb0e39cc17251a13a8c8412275297d86aca2c7db0d96eba7"
+  },
+  "outer_wall_s": 905.7301476520952,
+  "outer_minutes": 15.095502460868254,
+  "stage_timings": {
+    "execute": {
+      "count": 8,
+      "sum_worker_wall_s": 2012.894969701767,
+      "active_union_s": 275.47250962257385,
+      "envelope_s": 275.47250962257385
+    },
+    "audit": {
+      "count": 8,
+      "sum_worker_wall_s": 484.660080909729,
+      "active_union_s": 259.44475293159485,
+      "envelope_s": 259.44475293159485
+    },
+    "build": {
+      "count": 2,
+      "sum_worker_wall_s": 14.284016370773315,
+      "active_union_s": 14.284016370773315,
+      "envelope_s": 80.79575324058533
+    },
+    "capture": {
+      "count": 2,
+      "sum_worker_wall_s": 121.27762985229492,
+      "active_union_s": 121.27762985229492,
+      "envelope_s": 128.8619351387024
+    },
+    "prepare": {
+      "count": 8,
+      "sum_worker_wall_s": 522.7762358188629,
+      "active_union_s": 262.88785576820374,
+      "envelope_s": 263.18295645713806
+    },
+    "representation": {
+      "count": 1,
+      "sum_worker_wall_s": 6.112350225448608,
+      "active_union_s": 6.112350225448608,
+      "envelope_s": 6.112350225448608
+    }
+  },
+  "stages": [
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/stages/resident_execute/STAGE.json",
+        "sha256": "facd21fd7440b78fe08879521c80ea0a9dc8efdd17c42dbb598e6f79dd23b30a"
+      },
+      "child_pid": 3571996,
+      "started_unix_s": 1794728755.000708,
+      "estimated_finished_unix_s": 1794729030.4297109,
+      "wall_s": 275.4290027269162
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/stages/resident_execute/STAGE.json",
+        "sha256": "72f308dbdfbfcff29a4ac97610124873030045f71d7c5710c262727bdbf2329e"
+      },
+      "child_pid": 3571993,
+      "started_unix_s": 1794728754.9572012,
+      "estimated_finished_unix_s": 1794729019.6710536,
+      "wall_s": 264.71385231404565
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/stages/resident_execute/STAGE.json",
+        "sha256": "af362c382c048eba4157ffa43354ffc770b7b7a2c795872c54495c52330d8750"
+      },
+      "child_pid": 3571997,
+      "started_unix_s": 1794728755.0005307,
+      "estimated_finished_unix_s": 1794728999.6679292,
+      "wall_s": 244.66739842598327
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/stages/resident_execute/STAGE.json",
+        "sha256": "c2974258f31724af93c6561151086dfbcdfa2288b80416f4d6aa8b80c11d42a7"
+      },
+      "child_pid": 3571995,
+      "started_unix_s": 1794728754.9987676,
+      "estimated_finished_unix_s": 1794729021.084113,
+      "wall_s": 266.08534517884254
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g1/STAGE.json",
+        "sha256": "4c034ebe8064c6ac47506c1e7f66ecb6613a35fd8437a4c731167b8e5fd8cbe5"
+      },
+      "child_pid": 3590094,
+      "started_unix_s": 1794729169.4789898,
+      "estimated_finished_unix_s": 1794729232.9324977,
+      "wall_s": 63.453507993137464
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g6/STAGE.json",
+        "sha256": "c494a64aabe6f1cda7bf98ec3092309c149d86b826af6443cd8fdb3e4e8148dc"
+      },
+      "child_pid": 3587637,
+      "started_unix_s": 1794729109.3790207,
+      "estimated_finished_unix_s": 1794729169.273426,
+      "wall_s": 59.894405405037105
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g7/STAGE.json",
+        "sha256": "859d423c4aad6afa0dff1cc5bde1a2629078c258960329666f2e7db0fe01141b"
+      },
+      "child_pid": 3584925,
+      "started_unix_s": 1794729047.9150567,
+      "estimated_finished_unix_s": 1794729109.1633127,
+      "wall_s": 61.24825592292473
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/audit_g8/STAGE.json",
+        "sha256": "e69789a555e6dd58c428c916a3c243ccaca71d9035f63ea05f7b1a5750152a03"
+      },
+      "child_pid": 3589288,
+      "started_unix_s": 1794729151.4097214,
+      "estimated_finished_unix_s": 1794729217.7169728,
+      "wall_s": 66.30725157121196
+    },
+    {
+      "kind": "build",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/build/STAGE.json",
+        "sha256": "8c8c10ccf16c550da3f596cf9d7c6baba24edeec2268225ff40f5b68a0f05b36"
+      },
+      "child_pid": 3555168,
+      "started_unix_s": 1794728347.3643732,
+      "estimated_finished_unix_s": 1794728354.8782215,
+      "wall_s": 7.5138483580667526
+    },
+    {
+      "kind": "capture",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/capture/STAGE.json",
+        "sha256": "f1cd95b20ed57ee2dabaf71c219ccc2a571f4869de41e7981d0a66672cfb76a3"
+      },
+      "child_pid": 3555432,
+      "started_unix_s": 1794728355.2637215,
+      "estimated_finished_unix_s": 1794728420.970111,
+      "wall_s": 65.706389359897
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g1/STAGE.json",
+        "sha256": "fa2dd868f457506e4e1bd65432a090b5783525696c07d2ac37658cfff11877b0"
+      },
+      "child_pid": 3561669,
+      "started_unix_s": 1794728490.9239244,
+      "estimated_finished_unix_s": 1794728557.5002062,
+      "wall_s": 66.57628168002702
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g6/STAGE.json",
+        "sha256": "fe4f04b1ba0d0b8acc0cc79990e5a3aee7edf145b401a4b6f2fb0496366d3cb3"
+      },
+      "child_pid": 3561670,
+      "started_unix_s": 1794728490.9239545,
+      "estimated_finished_unix_s": 1794728555.2828882,
+      "wall_s": 64.35893376590684
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g7/STAGE.json",
+        "sha256": "bc7be6f0a3040a396722c7ded25fe3ed8c2fa7d75bea80dae7771f9b7a362f68"
+      },
+      "child_pid": 3561671,
+      "started_unix_s": 1794728490.9238937,
+      "estimated_finished_unix_s": 1794728555.2826493,
+      "wall_s": 64.35875564091839
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/stages/prepare_g8/STAGE.json",
+        "sha256": "980505f1b49134fefaf5b1f891b09afb8f1b34b38dcc46c166608d023d7131c3"
+      },
+      "child_pid": 3564243,
+      "started_unix_s": 1794728555.606107,
+      "estimated_finished_unix_s": 1794728623.5741997,
+      "wall_s": 67.96809262596071
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/stages/resident_execute/STAGE.json",
+        "sha256": "2dcfe9576924ec4978a5da6db3a5d4ecacfe1e28f2892aca52d96b6396535e1d"
+      },
+      "child_pid": 3571994,
+      "started_unix_s": 1794728754.9974456,
+      "estimated_finished_unix_s": 1794728999.4822385,
+      "wall_s": 244.48479291587137
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/stages/resident_execute/STAGE.json",
+        "sha256": "7e46c6747f1786b9e61a3d5d62083c725039273ad4119cd6ab1195a122d6a69a"
+      },
+      "child_pid": 3571999,
+      "started_unix_s": 1794728755.0057259,
+      "estimated_finished_unix_s": 1794728973.2486799,
+      "wall_s": 218.24295392190106
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/stages/resident_execute/STAGE.json",
+        "sha256": "fa5e5ae720313a085fa509da060568e841feccb638e57b292d3bea91fa2ef3a1"
+      },
+      "child_pid": 3571998,
+      "started_unix_s": 1794728755.0055873,
+      "estimated_finished_unix_s": 1794728990.9873013,
+      "wall_s": 235.98171395715326
+    },
+    {
+      "kind": "execute",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/stages/resident_execute/STAGE.json",
+        "sha256": "c8110aa930cfbe8fccd42fc2fadedd6141549001a9141b736e498f6bd5bc5025"
+      },
+      "child_pid": 3571992,
+      "started_unix_s": 1794728754.9572775,
+      "estimated_finished_unix_s": 1794729018.2471874,
+      "wall_s": 263.2899097651243
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g1/STAGE.json",
+        "sha256": "d83df882ade552cea4673f537faff7403780513bde175acdf2cde990ef29a357"
+      },
+      "child_pid": 3584004,
+      "started_unix_s": 1794729027.6851587,
+      "estimated_finished_unix_s": 1794729086.9739609,
+      "wall_s": 59.288802264025435
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g6/STAGE.json",
+        "sha256": "a4dd7cbf6c8b3794bb166f75790244f3be5e04de7faab3717ddaf55c898b85d2"
+      },
+      "child_pid": 3581501,
+      "started_unix_s": 1794728973.4877448,
+      "estimated_finished_unix_s": 1794729027.4793317,
+      "wall_s": 53.99158685002476
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g7/STAGE.json",
+        "sha256": "67b760367705a309aef823651c6e102dd1cca64b24d05678ba9d7df74da450b1"
+      },
+      "child_pid": 3582417,
+      "started_unix_s": 1794728991.200194,
+      "estimated_finished_unix_s": 1794729047.701553,
+      "wall_s": 56.50135931093246
+    },
+    {
+      "kind": "audit",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/audit_g8/STAGE.json",
+        "sha256": "82ec2daa5874dc5508a9282603aa82a4a6cfb3d0883ac9d1b0c213877ada7365"
+      },
+      "child_pid": 3586638,
+      "started_unix_s": 1794729087.1946647,
+      "estimated_finished_unix_s": 1794729151.1695766,
+      "wall_s": 63.97491203597747
+    },
+    {
+      "kind": "build",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/build/STAGE.json",
+        "sha256": "18126be9a35e29ad54ea6ec34a692198073dc7c721ffcfaaf6953b6aa03b020f"
+      },
+      "child_pid": 3558460,
+      "started_unix_s": 1794728421.3899584,
+      "estimated_finished_unix_s": 1794728428.1601264,
+      "wall_s": 6.770168182905763
+    },
+    {
+      "kind": "capture",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/capture/STAGE.json",
+        "sha256": "71870b0e58bebc117c592bd7815077caba0f26b1443c822f66a136763f3cd421"
+      },
+      "child_pid": 3558742,
+      "started_unix_s": 1794728428.5544162,
+      "estimated_finished_unix_s": 1794728484.1256566,
+      "wall_s": 55.57124048890546
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g1/STAGE.json",
+        "sha256": "a65aa5685b59aef56c1968ba195725cccacfaeaa7b0aae799f48ec179176c0cb"
+      },
+      "child_pid": 3567068,
+      "started_unix_s": 1794728623.8693004,
+      "estimated_finished_unix_s": 1794728689.5745533,
+      "wall_s": 65.70525289396755
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g6/STAGE.json",
+        "sha256": "31f3360283f499f06b3941ac72d2ed226f9679707d93eb08e98e11808402c851"
+      },
+      "child_pid": 3567069,
+      "started_unix_s": 1794728623.8693368,
+      "estimated_finished_unix_s": 1794728686.0803835,
+      "wall_s": 62.211046798853204
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g7/STAGE.json",
+        "sha256": "9f24af09a3700bfe035381ecc8562b3892b11cde77d1dae1a41ae1b1cdbecfb4"
+      },
+      "child_pid": 3567070,
+      "started_unix_s": 1794728623.8694973,
+      "estimated_finished_unix_s": 1794728687.663993,
+      "wall_s": 63.79449559003115
+    },
+    {
+      "kind": "prepare",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/stages/prepare_g8/STAGE.json",
+        "sha256": "1fce353e87078536f090a6e3599dd3efb6b28c87ee298d0440d78cb9477d49b7"
+      },
+      "child_pid": 3569469,
+      "started_unix_s": 1794728686.3034732,
+      "estimated_finished_unix_s": 1794728754.1068501,
+      "wall_s": 67.80337687279098
+    },
+    {
+      "kind": "representation",
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/stages/representation/STAGE.json",
+        "sha256": "d62a9731be1d6e988bf6061cb2fe57e777f139545e0beb99fe2ebc05524cbfc7"
+      },
+      "child_pid": 3561418,
+      "started_unix_s": 1794728484.53711,
+      "estimated_finished_unix_s": 1794728490.6494603,
+      "wall_s": 6.112350316019729
+    }
+  ],
+  "execute_audit_stage_overlap_s": 56.94196605682373,
+  "timing_scope": "Stage intervals use saved start plus monotonic wall; overlapping worker sums are not additive to full outer wall",
+  "host": {
+    "sample_count": 447,
+    "peak_observed_kits": 8,
+    "peak_observed_audits": 2,
+    "max_journals_growing_in_one_sample": 8,
+    "samples_with_execute_and_audit": 27,
+    "peak_owned_workers_rss_bytes": 25953374208,
+    "gpu_uuids": [
+      "GPU-4d3badb8-5fb0-b880-f08e-6407f0093e86"
+    ],
+    "sampling_error_count": 0,
+    "samples": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pipeline_collection_20261115_v1/HOST_SAMPLES.jsonl",
+      "sha256": "e13be3f5c1978d070689643dea86a8229aa281451027367a855066aeac3d5bc7"
+    },
+    "observer_end": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pipeline_collection_20261115_v1/HOST_SAMPLES.FINISHED.json",
+      "sha256": "32f2ff68f16c8becbc31fb9ddd8c5e742535910320ee93e6617eb41ee7b132b4"
+    }
+  },
+  "labels": [
+    {
+      "queue_index": 1,
+      "gesture_id": 1,
+      "diagnostic_label": 1,
+      "steps": 3139,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/RUNTIME_AUDIT.json",
+        "sha256": "44fb880a911b1a1082ec8893aaf84fa3ad9af1e2da4f19b5df84c39cd0181bdb"
+      },
+      "audit_wall_s": 63.02530680084601,
+      "contact_points": 8163718
+    },
+    {
+      "queue_index": 1,
+      "gesture_id": 6,
+      "diagnostic_label": 1,
+      "steps": 3008,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/RUNTIME_AUDIT.json",
+        "sha256": "05d212c4de922c8303232d4469604366d2295b330cb4dd75db83c828bdb60c61"
+      },
+      "audit_wall_s": 59.474799264920875,
+      "contact_points": 7722007
+    },
+    {
+      "queue_index": 1,
+      "gesture_id": 7,
+      "diagnostic_label": 1,
+      "steps": 3021,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/RUNTIME_AUDIT.json",
+        "sha256": "066c59036b98c4575f90dcb83698cca22f4a1dd4456eb1e6676134ef841a4d4c"
+      },
+      "audit_wall_s": 60.844113630009815,
+      "contact_points": 7790743
+    },
+    {
+      "queue_index": 1,
+      "gesture_id": 8,
+      "diagnostic_label": 1,
+      "steps": 3312,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/RUNTIME_AUDIT.json",
+        "sha256": "d311e6706879c9d1f899d59b5e84cbdfc2899245304642b7c1e3e5f46e121065"
+      },
+      "audit_wall_s": 65.88045199890621,
+      "contact_points": 8606095
+    },
+    {
+      "queue_index": 4,
+      "gesture_id": 1,
+      "diagnostic_label": 0,
+      "steps": 3374,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/RUNTIME_AUDIT.json",
+        "sha256": "666c8ee1f3d84b6b05f6de1cbe61db68728e14feddb55adf8b400137a35fbc9a"
+      },
+      "audit_wall_s": 58.87200786708854,
+      "contact_points": 7907115
+    },
+    {
+      "queue_index": 4,
+      "gesture_id": 6,
+      "diagnostic_label": 1,
+      "steps": 3024,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/RUNTIME_AUDIT.json",
+        "sha256": "8e7ea96d78f97374a696a5362a12abeddf2c72cbbdc600b0182b513b9938dd78"
+      },
+      "audit_wall_s": 53.54911498678848,
+      "contact_points": 6618168
+    },
+    {
+      "queue_index": 4,
+      "gesture_id": 7,
+      "diagnostic_label": 1,
+      "steps": 3196,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/RUNTIME_AUDIT.json",
+        "sha256": "c789f3d43f6b21419e2853df8ab7ac28fc67ce8ec53257f3c08b678cd1152b74"
+      },
+      "audit_wall_s": 56.09489373117685,
+      "contact_points": 7145383
+    },
+    {
+      "queue_index": 4,
+      "gesture_id": 8,
+      "diagnostic_label": 0,
+      "steps": 3582,
+      "numeric_audit": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/RUNTIME_AUDIT.json",
+        "sha256": "046e617f285ba6cabec31fb6467d798ba2f455f656494a255be5988c11bfaa40"
+      },
+      "audit_wall_s": 63.531918990192935,
+      "contact_points": 8241212
+    }
+  ],
+  "positive": 6,
+  "negative": 2,
+  "execution_steps": 25656,
+  "execution_object_steps": 76968,
+  "capture_ticks": 1500,
+  "capture_object_steps": 4500,
+  "total_Kit_starts": 10,
+  "total_env_steps": 27156,
+  "total_object_steps": 81468,
+  "execution_contact_points": 62194441,
+  "capture_audits": [
+    {
+      "binding": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pipeline_collection_20261115_v1/SCENE1_CAPTURE_AUDIT.json",
+        "sha256": "8d34923e00b5ac3089364191589baebb37dee81d5407494c68d04b3a3bb8560d"
+      },
+      "status": "pass",
+      "capture": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture",
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "all_contact_frames": 750,
+      "all_contacts": 1892396,
+      "per_body_contact_rows": {
+        "/World/AuthorScene/graspnet_002": 386968,
+        "/World/AuthorScene/graspnet_005": 701797,
+        "/World/AuthorScene/graspnet_060": 803631
+      },
+      "final250_table_support_ticks": {
+        "/World/AuthorScene/graspnet_060": 250,
+        "/World/AuthorScene/graspnet_005": 250,
+        "/World/AuthorScene/graspnet_002": 250
+      },
+      "minimum_contact_separation_m": -4.7762878239154816e-06,
+      "maximum_contact_force_n": 4.754215717315674,
+      "native_hulls": 1111,
+      "native_per_body_hulls": {
+        "/World/AuthorScene/graspnet_002": 370,
+        "/World/AuthorScene/graspnet_005": 308,
+        "/World/AuthorScene/graspnet_060": 433
+      },
+      "native_plane_inequality_max_m": 1.6205618297342184e-05,
+      "native_plane_vs_receipt_error_m": 0.0,
+      "native_scope": "Every saved source/cooked/plane array checked; original convex-distance optimizer not rerun; native20um is import fidelity",
+      "independent_full_source_rays": 96,
+      "independent_ray_depth_max_error_m": 4.440892098500626e-16,
+      "rgbd_and_meta_exact": true,
+      "wall_s": 22.066789653152227,
+      "independent_audit_Kit_launches": 0,
+      "independent_audit_physics_steps": 0,
+      "independent_audit_model_forwards": 0,
+      "cost_scope": "Read-only diagnostic audit performed alongside the actual run; not a collector built-in stage"
+    },
+    {
+      "binding": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pipeline_collection_20261115_v1/SCENE4_CAPTURE_AUDIT.json",
+        "sha256": "1aecdfa2873ffbd53d1cce9f5fde159f8db5bb92530cc064caa79fbdd5fbf261"
+      },
+      "status": "pass",
+      "capture": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/capture",
+      "physics_ticks": 750,
+      "initialization_object_steps": 2250,
+      "all_contact_frames": 750,
+      "all_contacts": 1595112,
+      "per_body_contact_rows": {
+        "/World/AuthorScene/graspnet_063": 612265,
+        "/World/AuthorScene/graspnet_037": 336822,
+        "/World/AuthorScene/graspnet_015": 646025
+      },
+      "final250_table_support_ticks": {
+        "/World/AuthorScene/graspnet_063": 250,
+        "/World/AuthorScene/graspnet_037": 250,
+        "/World/AuthorScene/graspnet_015": 250
+      },
+      "minimum_contact_separation_m": -1.830514520406723e-06,
+      "maximum_contact_force_n": 4.70809268951416,
+      "native_hulls": 1135,
+      "native_per_body_hulls": {
+        "/World/AuthorScene/graspnet_063": 328,
+        "/World/AuthorScene/graspnet_037": 222,
+        "/World/AuthorScene/graspnet_015": 585
+      },
+      "native_plane_inequality_max_m": 1.639487709561953e-05,
+      "native_plane_vs_receipt_error_m": 0.0,
+      "native_scope": "Every saved source/cooked/plane array checked; original convex-distance optimizer not rerun; native20um is import fidelity",
+      "independent_full_source_rays": 96,
+      "independent_ray_depth_max_error_m": 8.881784197001252e-16,
+      "rgbd_and_meta_exact": true,
+      "wall_s": 19.402881359914318,
+      "independent_audit_Kit_launches": 0,
+      "independent_audit_physics_steps": 0,
+      "independent_audit_model_forwards": 0,
+      "cost_scope": "Read-only diagnostic audit performed alongside the actual run; not a collector built-in stage"
+    }
+  ],
+  "historical_reference": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_resident_throughput_20261115_v1/CONTROL_RECEIPTS.json",
+    "sha256": "f5a4057860f0e20a4a81c8560252df2d0e6e0d4d45dd907f51579f3c50ac0d57"
+  },
+  "historical_resident_outer_s": 1765.6105919859838,
+  "historical_wall_ratio": 1.9493781857244548,
+  "historical_comparison_scope": "Same two known fit scenes and eight first-candidate trials; historical clocks, not randomized or paired timing. Old uses two hot sessions, new eight cold sessions.",
+  "diagnostic_labels_per_hour": 31.79755037927977,
+  "formal_new_labels": 0,
+  "training_updates": 0,
+  "runtime_audits_per_trial": 1,
+  "retries": 0,
+  "verification_Kit_launches": 0,
+  "verification_physics_steps": 0,
+  "summarizer": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_pipeline_collection_20261115_v1/summarize.py",
+    "sha256": "a3b878eb08c6e4ea9f37f9f1d53171d3806fcbe1183bef3faca998f2dd648415"
+  }
+}

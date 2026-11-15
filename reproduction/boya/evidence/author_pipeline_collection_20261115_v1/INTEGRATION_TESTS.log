@@ -1,0 +1,39 @@
+test_actual_stage_handoff_overlaps_and_preserves_fixed_ledger (test_author_pipeline_collection.PipelineTests.test_actual_stage_handoff_overlaps_and_preserves_fixed_ledger) ... ok
+test_audit_failure_rejects_labels_and_preserves_execution_cost (test_author_pipeline_collection.PipelineTests.test_audit_failure_rejects_labels_and_preserves_execution_cost) ... ok
+test_cancel_records_intent_before_existing_owned_sigint_cleanup (test_author_pipeline_collection.PipelineTests.test_cancel_records_intent_before_existing_owned_sigint_cleanup) ... ok
+test_changed_pinned_original_is_rejected (test_author_pipeline_collection.PipelineTests.test_changed_pinned_original_is_rejected) ... ok
+test_completed_job_survives_reported_session_close_failure (test_author_pipeline_collection.PipelineTests.test_completed_job_survives_reported_session_close_failure) ... ok
+test_freeze_has_eight_slots_two_audits_and_no_dispatch (test_author_pipeline_collection.PipelineTests.test_freeze_has_eight_slots_two_audits_and_no_dispatch) ... ok
+test_missing_finalization_keeps_unknown_cost_and_no_audit_label (test_author_pipeline_collection.PipelineTests.test_missing_finalization_keeps_unknown_cost_and_no_audit_label) ... ok
+test_no_restart_after_started (test_author_pipeline_collection.PipelineTests.test_no_restart_after_started) ... ok
+test_nulls_are_not_negative_or_scheduled (test_author_pipeline_collection.PipelineTests.test_nulls_are_not_negative_or_scheduled) ... ok
+test_postexecution_source_change_cannot_publish_label_or_erase_cost (test_author_pipeline_collection.PipelineTests.test_postexecution_source_change_cannot_publish_label_or_erase_cost) ... ok
+test_audit_failure_preserves_cost_and_rejects_label (test_author_resident_collection.ResidentCollectionTests.test_audit_failure_preserves_cost_and_rejects_label) ... ok
+test_bound_input_change_prevents_any_dispatch (test_author_resident_collection.ResidentCollectionTests.test_bound_input_change_prevents_any_dispatch) ... ok
+test_capture_binds_full_initialization_and_lossless_contacts (test_author_resident_collection.ResidentCollectionTests.test_capture_binds_full_initialization_and_lossless_contacts) ... ok
+test_freeze_reference_exact_and_no_runtime_or_legacy_parent (test_author_resident_collection.ResidentCollectionTests.test_freeze_reference_exact_and_no_runtime_or_legacy_parent) ... ok
+test_later_group_failure_retains_complete_job_and_explicit_not_started (test_author_resident_collection.ResidentCollectionTests.test_later_group_failure_retains_complete_job_and_explicit_not_started) ... ok
+test_missing_group_finalization_does_not_claim_zero_physics (test_author_resident_collection.ResidentCollectionTests.test_missing_group_finalization_does_not_claim_zero_physics) ... ok
+test_new_execute_entry_uses_original_kit_slot_classifier (test_author_resident_collection.ResidentCollectionTests.test_new_execute_entry_uses_original_kit_slot_classifier) ... ok
+test_new_native_resident_dependency_is_frozen_before_execution (test_author_resident_collection.ResidentCollectionTests.test_new_native_resident_dependency_is_frozen_before_execution) ... ok
+test_nulls_are_not_negative_and_only_ready_executes (test_author_resident_collection.ResidentCollectionTests.test_nulls_are_not_negative_and_only_ready_executes) ... ok
+test_one_model_for_two_scenes_prepare_three_and_resident_groups_two (test_author_resident_collection.ResidentCollectionTests.test_one_model_for_two_scenes_prepare_three_and_resident_groups_two) ... ok
+test_postexecution_integrity_failure_cannot_create_label_and_retains_cost (test_author_resident_collection.ResidentCollectionTests.test_postexecution_integrity_failure_cannot_create_label_and_retains_cost) ... ok
+test_started_run_is_never_restarted (test_author_resident_collection.ResidentCollectionTests.test_started_run_is_never_restarted) ... ok
+test_author_collection_wave_resources (unittest.loader._FailedTest.test_author_collection_wave_resources) ... ERROR
+
+======================================================================
+ERROR: test_author_collection_wave_resources (unittest.loader._FailedTest.test_author_collection_wave_resources)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_author_collection_wave_resources
+Traceback (most recent call last):
+  File "/home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/unittest/loader.py", line 137, in loadTestsFromName
+    module = __import__(module_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'test_author_collection_wave_resources'
+
+
+----------------------------------------------------------------------
+Ran 23 tests in 17.641s
+
+FAILED (errors=1)

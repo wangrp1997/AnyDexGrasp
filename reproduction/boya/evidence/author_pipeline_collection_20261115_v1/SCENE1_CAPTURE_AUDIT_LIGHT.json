@@ -1,0 +1,124 @@
+{
+  "status": "pass",
+  "capture": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture",
+  "object_ids": [
+    "graspnet_002",
+    "graspnet_005",
+    "graspnet_060"
+  ],
+  "source_meshes": [
+    {
+      "object_id": "graspnet_002",
+      "source_vertices": 262130,
+      "source_triangles": 524288,
+      "observed_source_bounds_m": [
+        [
+          -0.8559895728943573,
+          0.02482023241511909,
+          0.0006842695581295022
+        ],
+        [
+          -0.7883985137833976,
+          0.09229550089996805,
+          0.10239763690202931
+        ]
+      ],
+      "recomputed_stability": {
+        "max_linear_speed_m_s": 0.0020046091093780375,
+        "max_angular_speed_rad_s": 0.025990998710351806,
+        "max_window_translation_m": 5.466030494924424e-07,
+        "max_window_rotation_rad": 8.883441943802276e-06,
+        "stable": true
+      }
+    },
+    {
+      "object_id": "graspnet_005",
+      "source_vertices": 262146,
+      "source_triangles": 524288,
+      "observed_source_bounds_m": [
+        [
+          -0.7456432541133089,
+          -0.014057436230009185,
+          0.0015593437029076292
+        ],
+        [
+          -0.6296865679179541,
+          0.1692291461811969,
+          0.03792204571497232
+        ]
+      ],
+      "recomputed_stability": {
+        "max_linear_speed_m_s": 0.0007934554655122809,
+        "max_angular_speed_rad_s": 0.04189303089581044,
+        "max_window_translation_m": 2.178654744832217e-06,
+        "max_window_rotation_rad": 0.00012937763451166353,
+        "stable": true
+      }
+    },
+    {
+      "object_id": "graspnet_060",
+      "source_vertices": 365532,
+      "source_triangles": 731060,
+      "observed_source_bounds_m": [
+        [
+          -0.9484715083999014,
+          0.12550211545854256,
+          0.0007925318215065702
+        ],
+        [
+          -0.8586877425095969,
+          0.21176064806349504,
+          0.039647077416998
+        ]
+      ],
+      "recomputed_stability": {
+        "max_linear_speed_m_s": 0.0007621831758978331,
+        "max_angular_speed_rad_s": 0.04207273054964609,
+        "max_window_translation_m": 3.5816530361671084e-06,
+        "max_window_rotation_rad": 0.00019654833391641264,
+        "stable": true
+      }
+    }
+  ],
+  "physics_ticks": 750,
+  "initialization_object_steps": 2250,
+  "all_contact_frames": 750,
+  "all_contacts": 1892396,
+  "per_body_contact_rows": {
+    "/World/AuthorScene/graspnet_002": 386968,
+    "/World/AuthorScene/graspnet_005": 701797,
+    "/World/AuthorScene/graspnet_060": 803631
+  },
+  "final250_table_support_ticks": {
+    "/World/AuthorScene/graspnet_060": 250,
+    "/World/AuthorScene/graspnet_005": 250,
+    "/World/AuthorScene/graspnet_002": 250
+  },
+  "minimum_contact_separation_m": -4.7762878239154816e-06,
+  "maximum_contact_force_n": 4.754215717315674,
+  "native_hulls": 1111,
+  "native_per_body_hulls": {
+    "/World/AuthorScene/graspnet_002": 370,
+    "/World/AuthorScene/graspnet_005": 308,
+    "/World/AuthorScene/graspnet_060": 433
+  },
+  "native_plane_inequality_max_m": 1.6205618297342184e-05,
+  "native_plane_vs_receipt_error_m": 0.0,
+  "native_scope": "Every saved source/cooked/plane array checked; original convex-distance optimizer not rerun; native20um is import fidelity",
+  "independent_full_source_rays": 96,
+  "independent_ray_depth_max_error_m": 4.440892098500626e-16,
+  "rgbd_and_meta_exact": true,
+  "wall_s": 22.066789653152227,
+  "independent_audit_Kit_launches": 0,
+  "independent_audit_physics_steps": 0,
+  "independent_audit_model_forwards": 0,
+  "cost_scope": "Read-only diagnostic audit performed alongside the actual run; not a collector built-in stage",
+  "audit_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_resident_collection.py",
+    "sha256": "c67eb7873ca9961da542c3631bd92a19dc4977521415f89b9b8fbf9c0ee95c5f"
+  },
+  "full_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_pipeline_collection_20261115_v1/SCENE1_CAPTURE_AUDIT.json",
+    "sha256": "8d34923e00b5ac3089364191589baebb37dee81d5407494c68d04b3a3bb8560d"
+  }
+}

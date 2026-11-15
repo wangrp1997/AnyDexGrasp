@@ -1,0 +1,2167 @@
+{
+  "status": "pass",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/PIPELINE_COLLECTION_PROTOCOL.json",
+    "sha256": "1020cf12313ad87abf668d2eb469bf9ffb39276eecc4ee280574efaa0c2f6fd3"
+  },
+  "reference_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/BATCH_PROTOCOL.json",
+    "sha256": "e0b8aa9f7a53d2b75576900b26cf2ee3d4259631113e099a7ccadac6793bf055"
+  },
+  "scenes": [
+    {
+      "source_queue_index": 1,
+      "scene_id": "s40_lift_fit_00001_s2026111401",
+      "capture": {
+        "initialization_trace.npz": {
+          "exact": true,
+          "arrays": {
+            "pose_xyzw": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                751,
+                3,
+                7
+              ]
+            },
+            "velocity": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                751,
+                3,
+                6
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture/initialization_trace.npz",
+            "sha256": "cfc13ccc87e170607cffd280bdd38f27adecf2a5ac452600011fc476f613059b"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture/initialization_trace.npz",
+            "sha256": "cfc13ccc87e170607cffd280bdd38f27adecf2a5ac452600011fc476f613059b"
+          }
+        },
+        "native_rgbd.npz": {
+          "exact": true,
+          "arrays": {
+            "rgb": {
+              "exact": true,
+              "dtype": "uint8",
+              "shape": [
+                720,
+                1280,
+                3
+              ]
+            },
+            "depth_m": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                720,
+                1280
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture/native_rgbd.npz",
+            "sha256": "43a9922281efee05a5c0c0b871faac40c03680959628945c1e2dcb658dedcbb7"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/capture/native_rgbd.npz",
+            "sha256": "43a9922281efee05a5c0c0b871faac40c03680959628945c1e2dcb658dedcbb7"
+          }
+        }
+      },
+      "representation": {
+        "raw_camera_candidates.npz": {
+          "exact": true,
+          "arrays": {
+            "candidates": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                2048,
+                15
+              ]
+            },
+            "candidate_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                2048,
+                2261
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/representation/representations/s40_lift_fit_00001_s2026111401/raw_camera_candidates.npz",
+            "sha256": "e6e3956082b2c05c78b96d26f18055acd68702c2c8e048a0c3e960985a2a9e32"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/representation/representations/s40_lift_fit_00001_s2026111401/raw_camera_candidates.npz",
+            "sha256": "e6e3956082b2c05c78b96d26f18055acd68702c2c8e048a0c3e960985a2a9e32"
+          }
+        },
+        "representation_outputs.npz": {
+          "exact": true,
+          "arrays": {
+            "stage1_objectness_pred": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                22210,
+                2
+              ]
+            },
+            "stage1_heatmap_pred": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                22210
+              ]
+            },
+            "stage2_seed_xyz": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                3
+              ]
+            },
+            "stage2_seed_inds": {
+              "exact": true,
+              "dtype": "int64",
+              "shape": [
+                1,
+                2048
+              ]
+            },
+            "stage2_view_xyz": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                3
+              ]
+            },
+            "stage2_view_inds": {
+              "exact": true,
+              "dtype": "int64",
+              "shape": [
+                1,
+                2048
+              ]
+            },
+            "stage2_view_scores": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048
+              ]
+            },
+            "stage3_grasp_scores": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                48,
+                5
+              ]
+            },
+            "stage3_normalized_grasp_widths": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                48,
+                5
+              ]
+            },
+            "stage3_grasp_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                992
+              ]
+            },
+            "before_generator": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                512
+              ]
+            },
+            "point_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                512
+              ]
+            },
+            "raw_CGR_480": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                480
+              ]
+            },
+            "sparse_input_coords": {
+              "exact": true,
+              "dtype": "int32",
+              "shape": [
+                22210,
+                4
+              ]
+            },
+            "sparse_input_XYZ_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                22210,
+                3
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/representation/representations/s40_lift_fit_00001_s2026111401/representation_outputs.npz",
+            "sha256": "30ba383a29c185bed25c9373beb701b812174c5cfdbd369258198bed6252360f"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/representation/representations/s40_lift_fit_00001_s2026111401/representation_outputs.npz",
+            "sha256": "30ba383a29c185bed25c9373beb701b812174c5cfdbd369258198bed6252360f"
+          }
+        }
+      },
+      "gestures": {
+        "1": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "8418ece7bccf530bd1600cdb25c6002b8b35dbac2092f18414c627f0a4c4095c",
+          "reference_candidate_sha256": "bcc3dc3db0311c5b55550fff7c3c4b43f8c290a17f1ee3e3c4e936d6f17836b7",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/pool/candidates.npz",
+              "sha256": "d9a388e8b6bd6720a3f51e8f59a79d621cb4a58170c12ccd8ea7829588c7be2e"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/pool/candidates.npz",
+              "sha256": "220a5e8841c91ef0a6990b32aae209af11653f153687f3860eca8071c7d8a0d3"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/arm/native/commands.npz",
+              "sha256": "c7a06a8f1a38c11bc7e26206ed18b516a4cbac8b17c7e6572e95fc61c0801b34"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/arm/native/commands.npz",
+              "sha256": "c7a06a8f1a38c11bc7e26206ed18b516a4cbac8b17c7e6572e95fc61c0801b34"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3139,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3139
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3139,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3139
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/lift_bound/commands.npz",
+              "sha256": "7c52ce5ba277bdb6c10e5d7dc7a702970ec6f6fa728453d8b6e4654e701bf72f"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g1/lift_bound/commands.npz",
+              "sha256": "41560290055e475f9cccc3debd07f3ed43272a6fe8ae9957ac55a99456d566b7"
+            }
+          }
+        },
+        "6": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "df3cca8dcb10f04dd75f4a31a98548247406c769d66fa4f17ab64170f931ff80",
+          "reference_candidate_sha256": "bb1d59cc3765ee3416a0b4372e287f3130fcd1064b22853738c56d41dbcdd2f8",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/pool/candidates.npz",
+              "sha256": "09537b18b612513ff1c7d8d66c3ceb41538a2a06d563bdf50fcbcfe7a817da7c"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/pool/candidates.npz",
+              "sha256": "416e8d46b66d2da345e43819cbc5a74a9dbfbb9497532b59e1b9cbb8d255baaa"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/arm/native/commands.npz",
+              "sha256": "8ed84404935d9f89e142a7861a082763817c02c9bd71b4421bda03c5dec62a78"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/arm/native/commands.npz",
+              "sha256": "8ed84404935d9f89e142a7861a082763817c02c9bd71b4421bda03c5dec62a78"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3008,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3008
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3008,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3008
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/lift_bound/commands.npz",
+              "sha256": "dd1c2baa50a0ed072ef00fdc35d66b886178bdf5bd5e55d644659645e6d8f1e9"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g6/lift_bound/commands.npz",
+              "sha256": "3296c87923792fa8ffcdf64576f1955a4b192442efa2708b70c9b16d6797e186"
+            }
+          }
+        },
+        "7": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "160a5e85bdba69bbb140cd12d40ea9cf815c6e1522ef2c3b4c34a506a407f190",
+          "reference_candidate_sha256": "a93e85c97e471d878bd1f01ddf5efe924a4b8a3d88285b20e8edbe0944efa4b1",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/pool/candidates.npz",
+              "sha256": "ada90d6fa91828d3edb72ea4fca48a24b561a761026cb0cd0650cdd1d0f9c8ec"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/pool/candidates.npz",
+              "sha256": "f99a4c47da3c2a0dad0682e41b2ee1ff9a61dfb975fbe9ffed07b2418b69a62b"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/arm/native/commands.npz",
+              "sha256": "5356d8abba7a5bf5abd8b72c164af653c37c6c072592a9fa29461e128c429784"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/arm/native/commands.npz",
+              "sha256": "5356d8abba7a5bf5abd8b72c164af653c37c6c072592a9fa29461e128c429784"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3021,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3021
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3021,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3021
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/lift_bound/commands.npz",
+              "sha256": "7ce58c4b6c2f83cad64bb68e2979f8a87970894b4f7b7c4f3a14c4747c30bf55"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g7/lift_bound/commands.npz",
+              "sha256": "d71ebe526d4ab758e294748b6b8558b943201af341b78c01e78b4114d8682388"
+            }
+          }
+        },
+        "8": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "2958cb0c640c826ed03db85e8443d7392719ced6269dcaa826f9d597fea96975",
+          "reference_candidate_sha256": "94acef081a40f86bf5e776426f63e5a04fec8ec51ebef97c365e86befc47d6d4",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/pool/candidates.npz",
+              "sha256": "eae4f830d25599db5d6eff69395b562f468b94d3e39100e1d90ef2ed3a93e99f"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/pool/candidates.npz",
+              "sha256": "8ba8824f9180a33e2b30d1ef216ade2f9143ccc4b96ce0b7795c786874ef8438"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/arm/native/commands.npz",
+              "sha256": "547ad5d1f3a4b2f2fdcb20b10d0b1cbabba215846fbc2443eb7dadbbd7c206b1"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/arm/native/commands.npz",
+              "sha256": "547ad5d1f3a4b2f2fdcb20b10d0b1cbabba215846fbc2443eb7dadbbd7c206b1"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3312,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3312
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3312,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3312
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/lift_bound/commands.npz",
+              "sha256": "8cad346a5d83cdb7013e656001e30b6e08a0f924368d3aa7653559b8d34f8157"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000001_s40_lift_fit_00001_s2026111401/g8/lift_bound/commands.npz",
+              "sha256": "c343e49b3fddac925c292e9fdc6aba2dfa853e9e85c6678738e69890308beb92"
+            }
+          }
+        }
+      }
+    },
+    {
+      "source_queue_index": 4,
+      "scene_id": "s40_lift_fit_00004_s2026111401",
+      "capture": {
+        "initialization_trace.npz": {
+          "exact": true,
+          "arrays": {
+            "pose_xyzw": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                751,
+                3,
+                7
+              ]
+            },
+            "velocity": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                751,
+                3,
+                6
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/initialization_trace.npz",
+            "sha256": "147d62367d5fa2065f600c75a6f85e003022ee1e4cd543ee1bf964fdda00d021"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/initialization_trace.npz",
+            "sha256": "147d62367d5fa2065f600c75a6f85e003022ee1e4cd543ee1bf964fdda00d021"
+          }
+        },
+        "native_rgbd.npz": {
+          "exact": true,
+          "arrays": {
+            "rgb": {
+              "exact": true,
+              "dtype": "uint8",
+              "shape": [
+                720,
+                1280,
+                3
+              ]
+            },
+            "depth_m": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                720,
+                1280
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/native_rgbd.npz",
+            "sha256": "f0739b2182691855eaa0ab88b4d5c44b93fe8fc38dbb66f0f17338591cb56f42"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/capture/native_rgbd.npz",
+            "sha256": "f0739b2182691855eaa0ab88b4d5c44b93fe8fc38dbb66f0f17338591cb56f42"
+          }
+        }
+      },
+      "representation": {
+        "raw_camera_candidates.npz": {
+          "exact": true,
+          "arrays": {
+            "candidates": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                2048,
+                15
+              ]
+            },
+            "candidate_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                2048,
+                2261
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/representation/representations/s40_lift_fit_00004_s2026111401/raw_camera_candidates.npz",
+            "sha256": "99d835074010a138474002b54a2184dfc5bf1ea7dd1dad59b7967317fe6bb139"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/representation/representations/s40_lift_fit_00004_s2026111401/raw_camera_candidates.npz",
+            "sha256": "99d835074010a138474002b54a2184dfc5bf1ea7dd1dad59b7967317fe6bb139"
+          }
+        },
+        "representation_outputs.npz": {
+          "exact": true,
+          "arrays": {
+            "stage1_objectness_pred": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                22288,
+                2
+              ]
+            },
+            "stage1_heatmap_pred": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                22288
+              ]
+            },
+            "stage2_seed_xyz": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                3
+              ]
+            },
+            "stage2_seed_inds": {
+              "exact": true,
+              "dtype": "int64",
+              "shape": [
+                1,
+                2048
+              ]
+            },
+            "stage2_view_xyz": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                3
+              ]
+            },
+            "stage2_view_inds": {
+              "exact": true,
+              "dtype": "int64",
+              "shape": [
+                1,
+                2048
+              ]
+            },
+            "stage2_view_scores": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048
+              ]
+            },
+            "stage3_grasp_scores": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                48,
+                5
+              ]
+            },
+            "stage3_normalized_grasp_widths": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                48,
+                5
+              ]
+            },
+            "stage3_grasp_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                992
+              ]
+            },
+            "before_generator": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                512
+              ]
+            },
+            "point_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                512
+              ]
+            },
+            "raw_CGR_480": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                1,
+                2048,
+                480
+              ]
+            },
+            "sparse_input_coords": {
+              "exact": true,
+              "dtype": "int32",
+              "shape": [
+                22288,
+                4
+              ]
+            },
+            "sparse_input_XYZ_features": {
+              "exact": true,
+              "dtype": "float32",
+              "shape": [
+                22288,
+                3
+              ]
+            }
+          },
+          "left": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/representation/representations/s40_lift_fit_00004_s2026111401/representation_outputs.npz",
+            "sha256": "f5f9c2c8fb6e6c8300f4c07ea5d559cd433c4065c64ce929aa16eb783a68afc0"
+          },
+          "right": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/representation/representations/s40_lift_fit_00004_s2026111401/representation_outputs.npz",
+            "sha256": "f5f9c2c8fb6e6c8300f4c07ea5d559cd433c4065c64ce929aa16eb783a68afc0"
+          }
+        }
+      },
+      "gestures": {
+        "1": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "8309ae9a9767aad650a905c1a1d2209cfe4e83bdb98958dd1090eb78dcfd60f9",
+          "reference_candidate_sha256": "96190410c0f17d9bcf40789e170862dc48a68839ddebcc70a43b380e38691c0a",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/pool/candidates.npz",
+              "sha256": "c8a8022930afbc65f5e6acb74ab4df63a434b0b4789f50ad731a4a15c142969c"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/pool/candidates.npz",
+              "sha256": "06291a2861bbf71afa3b2349fafcb6cdf1308f71df9415ec77ff75e40b13b046"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/arm/native/commands.npz",
+              "sha256": "3ff7de694879499b04164a37071e0130ed7857e4768f4960dd1b4569fed8f21d"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/arm/native/commands.npz",
+              "sha256": "3ff7de694879499b04164a37071e0130ed7857e4768f4960dd1b4569fed8f21d"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3374,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3374
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3374,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3374
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/lift_bound/commands.npz",
+              "sha256": "c7f6c1c1ea67cc700afe7143dabf5f836d8cc992b622ba11143d170a70a03f06"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g1/lift_bound/commands.npz",
+              "sha256": "a83f8cd1b2984bacae9b4c2ec822a6c9ea3e6f2ad26d0d59d816e3f13180063f"
+            }
+          }
+        },
+        "6": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "12af635604ceb8f88c64b41db9541887a97919b28a35e9365c2e0e082d669e0f",
+          "reference_candidate_sha256": "da1735a8952fa992eca8724744be3619ffbad0daa90818ef43014292eb4fd2c1",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/pool/candidates.npz",
+              "sha256": "eabbfd89925253fecd520744c3a6f44a1e2139542b4572515d1cbf115374f0a1"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/pool/candidates.npz",
+              "sha256": "26ecc4544c102431e4daed5f50129896dfea9a85ff175fa28d1bf1c2039c11ea"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/arm/native/commands.npz",
+              "sha256": "8e2ee3d567e0fdf91879d0a792e1927e83b74c70a1a06befa7739e18b7b289e1"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/arm/native/commands.npz",
+              "sha256": "8e2ee3d567e0fdf91879d0a792e1927e83b74c70a1a06befa7739e18b7b289e1"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3024,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3024
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3024,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3024
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/commands.npz",
+              "sha256": "149ae5fa690f9c55bace28c049302ddfb8da3832816e6ed3ef07166701d3b2e0"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g6/lift_bound/commands.npz",
+              "sha256": "ac2ffb50dd355c39ccd6cea65616a53be445b329395f7c24fa8613c814aa0a14"
+            }
+          }
+        },
+        "7": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "63e7d9486de9743a8db6f715660a1ae4b168b1061f7aa19d69a79955780537d7",
+          "reference_candidate_sha256": "d97c90d1c49018493a56812547ca55525dd20332475b38604dffa108667259e6",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/pool/candidates.npz",
+              "sha256": "2153033d7b6cb21d4145551eacb23c5c7c6504bba7c56556493e60e3eab9359c"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/pool/candidates.npz",
+              "sha256": "27ea11f748f8eb7d468f76da6152452e793709b3deaa35c2f87d86ba18dcf367"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/arm/native/commands.npz",
+              "sha256": "49feb5e011166e97ec63b1605765dacb5da7c5973f5bd4e0d50cf2feed374922"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/arm/native/commands.npz",
+              "sha256": "49feb5e011166e97ec63b1605765dacb5da7c5973f5bd4e0d50cf2feed374922"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3196,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3196
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3196,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3196
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/lift_bound/commands.npz",
+              "sha256": "fc0b7f85f3271fe925776e5ba06ecf1093e3f5cbeb070b2511440784b06af4a5"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g7/lift_bound/commands.npz",
+              "sha256": "6865246b0afed902971b02dd35908135999be2637cbe32cdc7ee1eae4efc4926"
+            }
+          }
+        },
+        "8": {
+          "status": "ready",
+          "reference_status": "ready",
+          "candidate_sha256": "edda6298332fa83a3f445c6c8e446f38aacff6084087951baf5a3a9955f760ac",
+          "reference_candidate_sha256": "0c54756c001e445c1597618290841e957b33f9f2fc18adb7222425cd0635f56f",
+          "candidate_exact": false,
+          "pool/candidates.npz": {
+            "exact": false,
+            "arrays": {
+              "independent_motor_names": {
+                "exact": true,
+                "dtype": "<U4",
+                "shape": [
+                  16
+                ]
+              },
+              "proposal_q": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_q_close": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  16
+                ]
+              },
+              "proposal_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  4,
+                  4
+                ]
+              },
+              "proposal_approach_direction": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1,
+                  3
+                ]
+              },
+              "world_T_object": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  4,
+                  4
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "canonical_cgr480": {
+                "exact": true,
+                "dtype": "float32",
+                "shape": [
+                  1,
+                  480
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/pool/candidates.npz",
+              "sha256": "597cf00bd1e7ed9686b8fc246ce86259de9ea94dc7b727961e2028c67b4999fd"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/pool/candidates.npz",
+              "sha256": "67a1af0e9a8f97879234726f48b2cb05a2d443b91719225d0ff7d90581d26663"
+            }
+          },
+          "arm/native/commands.npz": {
+            "exact": true,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  1300
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  1300,
+                  4,
+                  4
+                ]
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/arm/native/commands.npz",
+              "sha256": "50cf9bae5577bf73435840bd347f23461977cd28feaaa6283c13930b98c72e73"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/arm/native/commands.npz",
+              "sha256": "50cf9bae5577bf73435840bd347f23461977cd28feaaa6283c13930b98c72e73"
+            }
+          },
+          "lift_bound/commands.npz": {
+            "exact": false,
+            "arrays": {
+              "initial_position": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_names": {
+                "exact": true,
+                "dtype": "<U19",
+                "shape": [
+                  24
+                ]
+              },
+              "joint_target": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3582,
+                  24
+                ]
+              },
+              "phase": {
+                "exact": true,
+                "dtype": "<U16",
+                "shape": [
+                  3582
+                ]
+              },
+              "desired_palm": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3582,
+                  4,
+                  4
+                ]
+              },
+              "time_s": {
+                "exact": true,
+                "dtype": "float64",
+                "shape": [
+                  3582
+                ]
+              },
+              "collection_candidate_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              },
+              "collection_execution_spec_sha256": {
+                "exact": false,
+                "dtype": "<U64",
+                "shape": []
+              }
+            },
+            "left": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/lift_bound/commands.npz",
+              "sha256": "efe491a9f913aac810ccf8709cc92ddc94891b990141012dcff7897312e6fc00"
+            },
+            "right": {
+              "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/scenes/0000004_s40_lift_fit_00004_s2026111401/g8/lift_bound/commands.npz",
+              "sha256": "5a9bf120ee4deaba1ac213627ba6559725200b97847421d5beca71dd1f092fd2"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "scope": "Path/JSON timestamps are not compared; array dtype/shape/C-order bytes are compared. Pending stages remain explicit.",
+  "audit_Kit_launches": 0,
+  "audit_physics_steps": 0,
+  "audit_model_forwards": 0,
+  "protocol_filename_adapter": {
+    "source": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_resident_collection.py",
+      "sha256": "c67eb7873ca9961da542c3631bd92a19dc4977521415f89b9b8fbf9c0ee95c5f"
+    },
+    "protocol_literal_lines": [
+      185,
+      207
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "original_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_collection.py",
+    "sha256": "6381790f3f246be9e33b1d8d8d89dc9cfef9acc9128357e8e302b718cf65ad65"
+  },
+  "adapter": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline_collection.py",
+    "sha256": "c4a4c0e03c8eac4bada4e4c9f2e722fc1335bb502822ccaf5f984ab326fbbb4b"
+  },
+  "changes": {
+    "expression_sites": {
+      "1 <= resident_workers <= 3": 1,
+      "1 <= protocol['resident_workers'] <= 3": 1,
+      "('domain', 'native_deps', 'env', 'inherited_env', 'stage_timeout_s')": 1,
+      "directory / 'resident_session'": 1,
+      "directory / 'RESIDENT_SOURCE_BINDINGS.json'": 1,
+      "directory / 'stages/resident_execute'": 1,
+      "groups.setdefault(item[0], [])": 1,
+      "directory / 'stages/resident_execute/STAGE.json'": 2,
+      "directory / 'resident_session/EXECUTE_MANY_RESULTS.json'": 1,
+      "directory / 'resident_session/SESSION_RECEIPT.json'": 1,
+      "group_results[i]": 1,
+      "R.ResourcePool(root / 'resource_slots', lease_fd, B.binding(root / PROTOCOL))": 1
+    },
+    "extra_hooks": [
+      "private AuditPipeline lifecycle",
+      "original audit stage future handoff",
+      "queue after each complete execution subprocess",
+      "drain before final receipts"
+    ]
+  }
+}

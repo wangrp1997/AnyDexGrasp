@@ -1,0 +1,87 @@
+{
+  "schema": "anydex_boya_author_pipeline_collection_v1",
+  "task": "declared_boya_clutter_lift_v1",
+  "status": "complete",
+  "eligible_labels": {
+    "fit": {
+      "1": 2,
+      "6": 2,
+      "7": 2,
+      "8": 2
+    },
+    "internal": {
+      "1": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    }
+  },
+  "positive_labels": {
+    "fit": {
+      "1": 1,
+      "6": 2,
+      "7": 2,
+      "8": 1
+    },
+    "internal": {
+      "1": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    }
+  },
+  "counts_scope": "audited diagnostic labels; all excluded from training",
+  "ledger_rows": 8,
+  "total_scene_budget": 2,
+  "total_gesture_attempt_budget": 8,
+  "known_final_execution_physics_steps": 25656,
+  "execution_starts_with_unknown_steps": 0,
+  "captured_initialization_ticks": 1500,
+  "captured_initialization_object_steps": 4500,
+  "physics_cost_scope": "Known final execution receipts and complete captures only; interrupted starts may have unknown cost",
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "old435_merged": false,
+  "training_updates": 0,
+  "timing_seconds": {
+    "build": 14.690309874014929,
+    "capture": 121.75034762499854,
+    "representation_batch": 6.3329932319466025,
+    "prepare_sum": 525.146585001843,
+    "execution_groups_sum": 2016.2822258209344,
+    "audit": 486.4233938890975,
+    "execution_parallel_wall": 275.8707811301574,
+    "total_wall": 904.1063154828735
+  },
+  "started_unix_s": 1794728347.160803,
+  "finished_unix_s": 1794729251.2671216,
+  "timing_scope": "Complete parent loop including capture/CGR, prepare, resident worker shutdown, audit and ledger; outer process startup/exit measured separately",
+  "error": null,
+  "parent_launches_kit": false,
+  "unadmitted_execution_costs": [],
+  "pipeline": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/pipeline_collection_20261115_v1/AUDIT_PIPELINE_RESULTS.json",
+    "sha256": "57e712cf83d84260abb530e732e97c33843bfae743c798062b3b9011f83181cc"
+  },
+  "original_collector_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_resident_collection.py",
+    "sha256": "6381790f3f246be9e33b1d8d8d89dc9cfef9acc9128357e8e302b718cf65ad65"
+  },
+  "adapter": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_pipeline_collection.py",
+    "sha256": "c4a4c0e03c8eac4bada4e4c9f2e722fc1335bb502822ccaf5f984ab326fbbb4b"
+  },
+  "execution_grouping": "one_original_ready_trial_per_cold_resident_session",
+  "run_api_wall_s": 905.1189758752007,
+  "pipeline_validity": "pass",
+  "ledger_statuses": [
+    "diagnostic_labelled",
+    "diagnostic_labelled",
+    "diagnostic_labelled",
+    "diagnostic_labelled",
+    "diagnostic_labelled",
+    "diagnostic_labelled",
+    "diagnostic_labelled",
+    "diagnostic_labelled"
+  ]
+}

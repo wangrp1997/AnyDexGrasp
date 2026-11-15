@@ -1,6 +1,18 @@
 # AnyDexGrasp 独立复现工作区
 
-## 2026-11-15 当前：CPU1/4/8前缀与CPU1/8完整对照通过，执行容量显著提高，collector尚未切八路
+## 2026-11-15 当前：八路执行与两路首次审计已接独立采集入口，固定完整流程15.10分钟
+
+用户授权继续集成后，新增opt-in author_pipeline_collection/run/observe，私有AST编译原固定SHA collector，仅改调度/分组/输出路径，不修改冻结源或CanonDex。固定旧scene1+4重新build/capture/CGR/prepare，最多8CPU执行+2原首次audit，0重试/8槽全部诊断排除训练。外层905.730148s=15.095502min，旧同组resident1765.610592s=29.426843min，历史wall比1.949378/约减少48.7%；非新配对或随机完整采集倍率，不能据此除旧15.02天或推4800总ETA。原默认collector仍不变，新独立入口已实际接通完整链。
+
+八条执行25656步、62194441接触点、8原数值audit全部PASS，6正2负与旧标签相同；父labelnull/exclude_training=true，新增训练标签0。独立主机447采样实见8Kit/2audit、八journal同区间增长、27次执行与审计同存，stage重叠56.941966s。新分组为8冷session各一计划、每个1Kit/1资产/0reset；旧为2热session各四型，不能说八路热复用或物理轨迹等价。原250Hz/.1kg/.6/CPU物理/24→28/完整三体接触/native20um/全判定门均保持，仅GPU0场景/RTX/CGR，不动GPU1。
+
+两capture独立审核各一次PASS，1500初始化tick/4500对象步、3487508初始化接触、1111/1135hulls、每场96全源射线/RGBD/三体承载通过。与原开发两场初始化/RGBD/34表示数组exact，8候选各36科学字段与池/命令数值数组exact；新路径来源SHA元数据保留变化，不冒称所有NPZ字节或轨迹相同。父ledger独立核745文件/8原证书/三体split/features/成本/排除训练通过，没有第二遍执行点流审计。全轮10Kit/27156env/81468三体步，0未知成本，1CGRload/2forward/0评分头/训练。额外只读capture审计在运行期间做，其竞争开销未从实测wall扣除。
+
+10新CPU/mock与原resident/wave合39tests通过；首次组合误写不存在模块的1导入错误留档，更正后39通过才冻结/派物理。29所属stage组/父/观察进程全退，14槽released、16锁可取、registryreleased，无本轮后台任务。555项源绑定/24组输入和源归档通过，13旧数据权重与15原标签不变，累计仍14fit+1internal。报告reproduction/boya/AUTHOR_PIPELINE_COLLECTION_RESULTS_20261115.md、轻证据evidence/author_pipeline_collection_20261115_v1；大输出public/ignored，轻量commit/push用户origin。
+
+该新入口硬限最多2场景并排除训练，正式4000fit+800internal/训练/新模型/训后评测仍0，internal三型仍零产出。约31.80条/小时只属本组全ready已知条件，不能当随机产率。下一生产协议须独立冻结对象/场景与尝试预算/训练准入，再由用户决定启动；不自动补例、重抓或恢复生产。下段“collector尚未切八路”是集成前阶段历史。
+
+## 2026-11-15 历史：CPU1/4/8前缀与CPU1/8完整对照通过，执行容量显著提高，collector彼时尚未切八路
 
 用户授权CPU常驻并行路线。独立cpu_prefix_control_20261115_v1固定同旧scene4/g6各100tick、1→4→8进程，共13Kit/1300环境步/0重试。前缀包络5.021568/6.408663/8.860896s，19.914/62.416/90.284envstep/s，实测峰值重叠1/4/8，共同重叠5.022/4.118/2.093s；组wall60.191/60.350/65.336s。独立前缀审计24.187898s通过后，按事前min(前缀增益,含启动增益)、至少1.10、5%内优先小规模规则选8，不看标签选并发。
 
