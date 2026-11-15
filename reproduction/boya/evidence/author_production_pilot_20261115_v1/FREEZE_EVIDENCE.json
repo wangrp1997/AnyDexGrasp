@@ -1,0 +1,113 @@
+{
+  "status": "continuation_running",
+  "original_protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_PRODUCTION_PROTOCOL.json",
+    "sha256": "acc3f76398eece862006e2e91d46f3745257c2f43f90735e7cf74fef5cca81e8"
+  },
+  "continuation_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_continuation_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "d1c9dbb38f4b9bea9554774c7768b6a24ab5f4dc3dd26e7e543648bf8aa71d8c"
+  },
+  "source_adapter": {
+    "original": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_production_collection.py",
+      "sha256": "99f73043c4013437d39f20835b3d0dd4938fa03e03ef70117c541b5f1df1bc4a"
+    },
+    "edits": {
+      "'anydex_boya_author_production_pilot_v1'": 1,
+      "32": 7,
+      "[r['split'] for r in queue['scenes']] != ['fit', 'internal'] * 16": 1,
+      "'run_production_collection.py'": 1,
+      "'observe_production_collection.py'": 1,
+      "128": 5,
+      "list(range(w * WINDOW, (w + 1) * WINDOW))": 2,
+      "p['total_scene_budget'] != WINDOW": 1,
+      "p['total_gesture_attempt_budget'] != 32": 1
+    },
+    "scientific_changes": false,
+    "failed_scene_retries": 0,
+    "remaining_scenes": 31,
+    "remaining_slots": 124
+  },
+  "artifacts": {
+    "ADMISSION_TESTS.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/ADMISSION_TESTS.log",
+      "sha256": "794986d87f8300edea0c1e82fb23467ddbf4fb652ba89787c3e1d62947422dbd"
+    },
+    "COMBINED_TESTS.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/COMBINED_TESTS.log",
+      "sha256": "58aa779658902ad8cf8e90d08683deca6046ae0c126f56377155cbe4f3c29c62"
+    },
+    "CONTINUATION_FREEZE.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/CONTINUATION_FREEZE.log",
+      "sha256": "a9dfd9b2786c783ff6d7e7a6a90cffe01f9bd8842abf1f115351fefa208da991"
+    },
+    "CONTINUATION_PLAN.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/CONTINUATION_PLAN.json",
+      "sha256": "731ae2ca28e7c7efafe22808598388d4fb79d68092a7c11df92382f69b9a4463"
+    },
+    "CONTINUATION_PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/CONTINUATION_PROTOCOL.json",
+      "sha256": "d1c9dbb38f4b9bea9554774c7768b6a24ab5f4dc3dd26e7e543648bf8aa71d8c"
+    },
+    "CONTINUATION_TESTS.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/CONTINUATION_TESTS.log",
+      "sha256": "833cd49f96c7c7c8a905c0d00093408d0b3d577fd019e17599362421a60c5c51"
+    },
+    "CPU_TESTS_INITIAL.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/CPU_TESTS_INITIAL.log",
+      "sha256": "1e5b5aac6df5864851d3d217afcabaa9f7b016148e6491507524259021441b76"
+    },
+    "DEPENDENCY_PREFLIGHT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/DEPENDENCY_PREFLIGHT.json",
+      "sha256": "9ee8d83f771630d55fedd8ce2105d441100c95aefb6842cb91ed32319bd4bdcc"
+    },
+    "FREEZE_PROGRESS.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/FREEZE_PROGRESS.md",
+      "sha256": "0a85436223fa680586300cb80747ec757036f3eba7536d4b2affb756ac95a829"
+    },
+    "INITIAL_FAILURE_AUDIT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_FAILURE_AUDIT.json",
+      "sha256": "856b0e70163ee3d3adaeba08a3cb020b0d799669c8067909a24ea719884acc50"
+    },
+    "INITIAL_FREEZE.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_FREEZE.log",
+      "sha256": "571124eba50945d5cb79c6c984b6bb600799f2e1a4b28fb9af85e978b942eac1"
+    },
+    "INITIAL_HOST_PREFLIGHT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_HOST_PREFLIGHT.json",
+      "sha256": "175503e42f7fcaa34133ddaeaf12326e69c086077042b50a05d2f9c1604b7c51"
+    },
+    "INITIAL_OUTER_DRIVER.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_OUTER_DRIVER.log",
+      "sha256": "8e748d81d67c40e03883c3d456ae9882beb85bfb6aeb68990f1d07920c29060a"
+    },
+    "INITIAL_OUTER_WALL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_OUTER_WALL.json",
+      "sha256": "684337f76918e69ecc4e278cc3ae0bf77e091d4aeb7ea6df0f635aa2271a4db3"
+    },
+    "INITIAL_PRODUCTION_PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_PRODUCTION_PROTOCOL.json",
+      "sha256": "acc3f76398eece862006e2e91d46f3745257c2f43f90735e7cf74fef5cca81e8"
+    },
+    "INITIAL_PRODUCTION_RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_PRODUCTION_RESULTS.json",
+      "sha256": "c29d68d00540b752e0972fe6197b269fb16adb4c403a472b20c3d711b7af4a4b"
+    },
+    "INITIAL_STOP_INTENT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/INITIAL_STOP_INTENT.json",
+      "sha256": "037758f23c843463dea9cdcf6c656c7bc71dfd7432a8dc1e50491e3ea8109730"
+    },
+    "STOP_TEST.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/STOP_TEST.log",
+      "sha256": "07b93afeb2d2a6aeacebdfbf80071baaf06a889cc9ab4f57d33aa2edaefb1ac4"
+    }
+  },
+  "combined_scene_budget": 32,
+  "combined_slot_budget": 128,
+  "failed_scene_retries": 0,
+  "seed": 2026111501,
+  "old435_merged": false,
+  "training_updates": 0,
+  "binding_scope": "Runtime protocols and source archives immutable; INITIAL_FAILURE_AUDIT registry SHA is a point-in-time mutable global observation, later reused by the continuation"
+}

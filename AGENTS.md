@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 启动快照：固定32场景有限生产试采，首个0tick依赖失败保留，31未启动场景独立接续
+
+用户批准下一步并明确“开始”：16fit+16internal、128手型槽、固定seed2026111501、原首选每型一次、0自动重试，不启动全量4000+800或训练。新author_production_collection独立生产schema，原八路诊断/冻结源保持。只在原数值证书和独立初始化全点审计通过后准入0/1，null不作负例，原15/旧435不自动混入导出。4窗口、最多8CPU冷session/2audit/3prepare/1observation；parent整批持GPU0全局lease，GPU1不选；原250Hz/.1kg/.6/原三体/24→28/native20um/完整接触和所有门保留。52项不同CPU/mock覆盖（13新+39复用），另4接续测试通过，非实测成绩。
+
+初32随机场景19ready（12fit+7internal）/13placement_null（4fit+9internal），不补抽。首protocol acc3f763... 在首capture因freeze未继承原clarabel覆盖PYTHONPATH与LD_LIBRARY_PATH报ModuleNotFoundError，outer53.460996s；1Kit，ERROR/PROGRESS报0初始化tick/0对象步，0CGR/规划/抓取/标签/训练。原父表保守unknown_capture=1保留不回写，失败不是抓取负例。初轮2所属stage组及父/观察进程全退、2槽released/4锁可取，源与失败全保留，无物理重试。
+
+独立author_production_continuation以固定SHA私有AST仅改剩余31场景/124槽及尾窗7；新协议d1c9dbb3...严格取原queue index1..31，15fit+16internal，4窗8/8/8/7，不重抽/不改布局/不重跑原index0。首失败四槽与新124槽合原128预算。精确子进程依赖预检通过，恢复原已验inherited_env且绑定clarabel包。接续运行public根production_pilot_20261115_continuation_v1/run；初根production_pilot_20261115_v1/run保持stopped。已完成首个新capture750tick，首次独立初始化审核进行中；新标签数/完整wall/internal覆盖须读实际ledger，不能从此启动快照推断完成。
+
+首infra/完整性错误停新非audit派发和后窗，已启动安全收尾并记成本；1200s/stage，控制器4h后停止新派发，持久STOP_REQUEST触发STOP_INTENT；RUN_STARTED后拒绝重启。该批为原32有限预算内的新训练标签试采，不自动扩预算、换候选、凑比例、训练或外测。报告reproduction/boya/AUTHOR_PRODUCTION_PILOT_PROGRESS_20261115.md、轻证据evidence/author_production_pilot_20261115_v1；大输出public/ignored，CanonDex只读，轻量阶段push origin。父PROGRESS仅窗末刷新，窗内读stage/ledger/host。下段是此前已知两场景加速对照，不能当本随机试采结果。
+
 ## 2026-11-15 当前：八路执行与两路首次审计已接独立采集入口，固定完整流程15.10分钟
 
 用户授权继续集成后，新增opt-in author_pipeline_collection/run/observe，私有AST编译原固定SHA collector，仅改调度/分组/输出路径，不修改冻结源或CanonDex。固定旧scene1+4重新build/capture/CGR/prepare，最多8CPU执行+2原首次audit，0重试/8槽全部诊断排除训练。外层905.730148s=15.095502min，旧同组resident1765.610592s=29.426843min，历史wall比1.949378/约减少48.7%；非新配对或随机完整采集倍率，不能据此除旧15.02天或推4800总ETA。原默认collector仍不变，新独立入口已实际接通完整链。

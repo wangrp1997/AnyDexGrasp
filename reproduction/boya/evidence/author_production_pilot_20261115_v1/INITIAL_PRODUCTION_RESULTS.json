@@ -1,0 +1,66 @@
+{
+  "schema": "anydex_boya_author_production_pilot_v1",
+  "task": "declared_boya_clutter_lift_v1",
+  "status": "stopped",
+  "total_scene_budget": 32,
+  "total_gesture_attempt_budget": 128,
+  "terminal_slots": 32,
+  "eligible_labels": {
+    "fit": {
+      "1": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "internal": {
+      "1": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    }
+  },
+  "positive_labels": {
+    "fit": {
+      "1": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    },
+    "internal": {
+      "1": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0
+    }
+  },
+  "status_counts": {
+    "infrastructure_failure": 12,
+    "placement_null": 20
+  },
+  "known_final_execution_physics_steps": 0,
+  "execution_starts_with_unknown_steps": 0,
+  "captured_initialization_ticks": 0,
+  "captured_initialization_object_steps": 0,
+  "capture_attempts": 1,
+  "capture_starts_with_unknown_steps": 1,
+  "windows_finished": 1,
+  "started_unix_s": 1794733171.248663,
+  "finished_unix_s": 1794733222.6904483,
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_production_collection.py\", line 341, in run\n    control.check()\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_production_collection.py\", line 52, in check\n    if self.event.is_set() and not audit:raise ProductionStopped('Production dispatch stopped; see STOP_INTENT.json')\n                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nauthor_production_collection.ProductionStopped: Production dispatch stopped; see STOP_INTENT.json\n",
+  "exclude_training": false,
+  "old435_merged": false,
+  "training_updates": 0,
+  "new_model_count": 0,
+  "automatic_training": false,
+  "budget_exhaustion_is_target_completion": false,
+  "target_fit_per_gesture": 1000,
+  "target_internal_per_gesture": 200,
+  "controller_wall_s": 51.44201389607042,
+  "parent_Kit_launches": 0,
+  "window_results": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/windows/00/RESIDENT_COLLECTION_RESULTS.json",
+      "sha256": "e248741773d032c3a5375e1c201da2c5db5f264ba42adf8b28834d1844e2e2f4"
+    }
+  ]
+}

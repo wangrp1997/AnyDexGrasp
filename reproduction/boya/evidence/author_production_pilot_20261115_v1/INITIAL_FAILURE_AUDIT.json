@@ -1,0 +1,64 @@
+{
+  "status": "pass",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "acc3f76398eece862006e2e91d46f3745257c2f43f90735e7cf74fef5cca81e8"
+  },
+  "error": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/windows/00/scenes/0000000_s40_lift_fit_00000_s2026111501/capture/ERROR.json",
+    "sha256": "20b56b8e47371db22c22b569bd4fb04806af203f163e1d31eed3fd8254afb361"
+  },
+  "stages": [
+    {
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/windows/00/scenes/0000000_s40_lift_fit_00000_s2026111501/stages/build/STAGE.json",
+        "sha256": "2a46293fed4f43033ef9bf1a52c9e465e1189b98f30729d4380749b6e8b19385"
+      },
+      "pid": 3746026,
+      "returncode": 0,
+      "status": "complete"
+    },
+    {
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/windows/00/scenes/0000000_s40_lift_fit_00000_s2026111501/stages/capture/STAGE.json",
+        "sha256": "9b3f271c8ea3cee3069a39281856be55414fd2b8f854cc36f1a379036fd0cc33"
+      },
+      "pid": 3746296,
+      "returncode": 1,
+      "status": "infrastructure_failure"
+    }
+  ],
+  "actual_capture_Kit_starts": 1,
+  "reported_initialization_ticks": 0,
+  "reported_initialization_object_steps": 0,
+  "original_parent_unknown_capture_flag": 1,
+  "manual_tick_scope": "Native audit import fails before original initialization loop; no full initialization certificate",
+  "original_capture_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scene.py",
+    "sha256": "c5a7cb962bb3d38961d31cc6a70a4a2c748a905d41b9bcc06e6df345387e7fe5"
+  },
+  "new_labels": 0,
+  "new_CGR_forwards": 0,
+  "grasp_attempts": 0,
+  "training_updates": 0,
+  "no_retries": true,
+  "available_locks": [
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/DRIVER.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/resource_slots/observation/0.lock",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/resource_slots/kit/0.lock"
+  ],
+  "registry": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.wave_active.json",
+    "sha256": "eb74082c5c304bfd7e6d4c5ad7f59f0443caff2ca493165573a9c173d91d5331"
+  },
+  "root_source_bindings_unchanged": true,
+  "initial_env": {
+    "PYTHONPATH": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya:/home/wangrenpeng/AnyDexGrasp",
+    "LD_LIBRARY_PATH": ""
+  },
+  "verified_reference_env": {
+    "PYTHONPATH": "/home/wangrenpeng/AnyDexGrasp:/home/wangrenpeng/AnyDexGrasp/reproduction/boya:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/clarabel_0111_overlay",
+    "LD_LIBRARY_PATH": "/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/os_libs:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/openblas/lib:/home/wangrenpeng/AnyDexGrasp/outputs/native_deps/cuda-13.0/lib64:/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/torch/lib"
+  }
+}

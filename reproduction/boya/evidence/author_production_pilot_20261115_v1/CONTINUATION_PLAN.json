@@ -1,0 +1,96 @@
+{
+  "original_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "acc3f76398eece862006e2e91d46f3745257c2f43f90735e7cf74fef5cca81e8"
+  },
+  "original_result": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/PRODUCTION_RESULTS.json",
+    "sha256": "c29d68d00540b752e0972fe6197b269fb16adb4c403a472b20c3d711b7af4a4b"
+  },
+  "failed_capture_error": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/run/windows/00/scenes/0000000_s40_lift_fit_00000_s2026111501/capture/ERROR.json",
+    "sha256": "20b56b8e47371db22c22b569bd4fb04806af203f163e1d31eed3fd8254afb361"
+  },
+  "excluded_failed_scene": {
+    "scene_id": "s40_lift_fit_00000_s2026111501",
+    "split": "fit",
+    "scene_spec": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_pilot_20261115_v1/scene_queue/specs/s40_lift_fit_00000_s2026111501.json",
+      "sha256": "04dc059579091b806cef66da2d68de1afefb2b3ae126f2d0097568b3e74c4d95"
+    },
+    "source_object_ids": [
+      "graspnet_060",
+      "graspnet_030",
+      "graspnet_052"
+    ],
+    "source_object_digests": {
+      "graspnet_060": "7687918eafe20fc68ed463cc6165c5664be17f6fb36852d601096dde28d40694",
+      "graspnet_030": "81c7527453c69a77de9e371d8348adc10e76823f7155da3af6b6aa0c322cd88d",
+      "graspnet_052": "a69edd7487c608d455757aa1985a7977fba0651c7d4382d7699be40286123928"
+    },
+    "status": "ready",
+    "max_candidates_per_gesture": 1,
+    "max_executions_per_gesture": 1
+  },
+  "remaining_original_scene_indices": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  "remaining_scenes": 31,
+  "remaining_slots": 124,
+  "combined_original_scene_budget": 32,
+  "combined_original_slot_budget": 128,
+  "failed_scene_retries": 0,
+  "seed": 2026111501,
+  "sampler_redraws": 0,
+  "source_adapter": {
+    "original": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_production_collection.py",
+      "sha256": "99f73043c4013437d39f20835b3d0dd4938fa03e03ef70117c541b5f1df1bc4a"
+    },
+    "edits": {
+      "'anydex_boya_author_production_pilot_v1'": 1,
+      "32": 7,
+      "[r['split'] for r in queue['scenes']] != ['fit', 'internal'] * 16": 1,
+      "'run_production_collection.py'": 1,
+      "'observe_production_collection.py'": 1,
+      "128": 5,
+      "list(range(w * WINDOW, (w + 1) * WINDOW))": 2,
+      "p['total_scene_budget'] != WINDOW": 1,
+      "p['total_gesture_attempt_budget'] != 32": 1
+    },
+    "scientific_changes": false,
+    "failed_scene_retries": 0,
+    "remaining_scenes": 31,
+    "remaining_slots": 124
+  }
+}
