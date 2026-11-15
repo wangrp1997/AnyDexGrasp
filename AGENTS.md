@@ -1,5 +1,13 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前运行：用户要求先跑完原剩余15场景，再估计采满耗时
+
+用户“先跑完再顾及吧”授权执行原32预算内的尾批。新production_tail_20261115_v1只取原index17..31，7fit+8internal/15场景/60槽，原seed2026111501/原三体spec顺序不变，10ready+5placement_null，两窗8/7，0重试/不补抽。新author_production_tail私有AST仅改剩余预算/窗口/新入口并接author_verified_execution；执行raw写/dev/shm/anydex_production_tail_20261115_v1，原完整接触隔离压缩+全读回+seal后才可准入，capture仍原完整初始化及独立审核。原250Hz/质量摩擦/24→28/三体/全部物理判定不变，最多8CPU执行/2原审核/3prepare/1observation，固定GPU0不动GPU1。
+
+5项新增CPU/mock检查通过，覆盖8/7尾窗导出、证书exit0但failed停后窗、真实seal篡改拒绝、真实ExpandedPool audit槽普通Python进程退出释放；未另加诊断物理批次。真实依赖预检通过，561源码/归档冻结；协议04552e9a7ef2db6cf8c7e1b21a022014a816d695cbd4a62f1557b1e29597d2ea。run/父PROGRESS仅窗末更新，已进第1个实际capture，实时状态读窗口ledger/STAGE和HOST_OBSERVATIONS。新增标签/成本/总wall等完成后报告，不能把本快照当最终计数；启动时累计20fit+1internal，训练/新模型/外测0。
+
+保持旧失败/坏gzip及所有冻结源码，CanonDex只读，大日志public/tmpfs忽略。首infra/完整性错误停新非audit派发并收尾，不重抓/凑比例或扩原预算。先完成这15场景，再按实际随机产出估时，不直接外推旧15天或诊断倍率。报告reproduction/boya/AUTHOR_PRODUCTION_TAIL_PROGRESS_20261115.md；阶段轻量代码/证据push用户origin。下段“不自动恢复15”为此前验证阶段，已被本轮用户明确运行要求替代。
+
 ## 2026-11-15 当前：tmpfs完整执行日志及四份首次原数值审核通过，生产尚未恢复
 
 用户要求先验证。独立author_storage_path_validation冻结/tmp与tmpfs各4路，每份原完整3024帧/1895914265字节，8份全部写入/隔离压缩/两次独立全读回通过，0Kit/0物理，外层147.836573s；两路径都未复现损坏，不能归因原ZFS故障或声称tmpfs普遍更快。新author_verified_full_control_v2仅补真实协议缺的venv解释器绑定并改raw spool至/dev/shm，四路同一已知g6模板各一次原3024步，4Kit/12096env/36288三体步，四份封口和最终raw SHA/无空洞通过，原控制命令/250Hz/质量摩擦/全部逐点接触与判定保持。
