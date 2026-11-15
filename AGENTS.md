@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前：原尾批15场景全部完成，新增6fit+4internal，累计31条，训练0
+
+用户要求先跑完再估时，原index17..31/seed2026111501、15场景/60槽全部完成并导出。外层2875.152003s=47.919200min；新增10标签=6fit+4internal/8正2负，fit g1/6/7/8=2/2/1/1（正1/2/1/0），internal各1且全正。累计26fit+5internal=31：fit8/6/6/6、internal1/1/2/1，四型internal均不再为零；旧435/八权重保持，不自动合并旧集，训练/新模型/训后评测0，未派下一批。
+
+60终态10labelled+15nocandidate+15geometry+20placement_null；无新增infra/完整性错误/重试/补抽。10capture各750tick，独立全点审核全PASS，7500init/22500对象步/20748079初始化点；2CGRload/10forward/0手型头。10真实执行32723步/98169对象步/128797269点，10原首次完整数值audit全PASS，tmpfs raw/隔离压缩/全读回seal与最终raw SHA通过，原CPU250Hz/.1kg/.6/三体/24→28/全部判定不变。合20Kit/40223env/120669三体步，未知0；1395host采样实见8Kit/2audit，92所属stage组及父/observer全退，14槽released/16锁可取、registryreleased，无后台任务。
+
+独立收尾核1280去重绑定/NPZ480特征与标签/全三体split/证书/13旧数据权重/原15标签及前批6导出，0重复完整点流审核/新物理。新增5CPU/mock检查含真实ExpandedPool审核槽，mock非成绩。原32预算终结：初失败4槽+旧64+新60=128，合16生产试采标签12fit+4internal，加原15成31；52placement+25geometry+29nocandidate+16labelled+6infra槽（初单场依赖4槽和旧坏gzip2槽）。三段37Kit/已报告71685env/215055三体步，原初父unknown_capture1和ERROR0tick仍分别保留，不称全历史未知0；原坏流及失败不回写。
+
+每型1000fit+200internal仍缺3974fit+795internal。按本轮15场景和原32预算的混合组成/实测产率保持、24h连续运行，两个条件情景约33.08/27.16天补满；这是敏感性情景而非置信区间或工期承诺，不能把4800除总产率、把原三段wall和当连续实测或直接与旧fit-only15.02天比较。当前混合配比会超采internal，若以后另冻结split预算需重新估时；本轮不为此扩采、凑比例或训练。
+
+报告reproduction/boya/AUTHOR_PRODUCTION_TAIL_RESULTS_20261115.md；轻证据evidence/author_production_tail_20261115_v1。启动代码ac9d053已push，最终轻成果继续push用户origin；大输出public/tmpfs忽略，CanonDex只读。下段“当前运行”是启动快照，现已结束，不重启尾批。
+
 ## 2026-11-15 当前运行：用户要求先跑完原剩余15场景，再估计采满耗时
 
 用户“先跑完再顾及吧”授权执行原32预算内的尾批。新production_tail_20261115_v1只取原index17..31，7fit+8internal/15场景/60槽，原seed2026111501/原三体spec顺序不变，10ready+5placement_null，两窗8/7，0重试/不补抽。新author_production_tail私有AST仅改剩余预算/窗口/新入口并接author_verified_execution；执行raw写/dev/shm/anydex_production_tail_20261115_v1，原完整接触隔离压缩+全读回+seal后才可准入，capture仍原完整初始化及独立审核。原250Hz/质量摩擦/24→28/三体/全部物理判定不变，最多8CPU执行/2原审核/3prepare/1observation，固定GPU0不动GPU1。

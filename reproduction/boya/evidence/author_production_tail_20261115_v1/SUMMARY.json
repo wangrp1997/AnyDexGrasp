@@ -1,0 +1,141 @@
+{
+  "status": "complete_verified",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "04552e9a7ef2db6cf8c7e1b21a022014a816d695cbd4a62f1557b1e29597d2ea"
+  },
+  "outer": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/OUTER_WALL.json",
+    "sha256": "b6a762b341dd36d47ef9b28055ce9973a84966e47b743f60f6cfb9201cbbd5c8"
+  },
+  "audit": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/TAIL_AUDIT.json",
+    "sha256": "b9c5cf11cf9025a3bdc74511f5994cb5897a906676473bc225e0590b3791b303"
+  },
+  "tail_scene_budget": 15,
+  "tail_slot_budget": 60,
+  "tail_status_counts": {
+    "placement_null": 20,
+    "labelled": 10,
+    "no_candidate": 15,
+    "null_geometry": 15
+  },
+  "new_counts": {
+    "fit": {
+      "1": 2,
+      "6": 2,
+      "7": 1,
+      "8": 1
+    },
+    "internal": {
+      "1": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+    }
+  },
+  "new_positive": {
+    "fit": {
+      "1": 1,
+      "6": 2,
+      "7": 1,
+      "8": 0
+    },
+    "internal": {
+      "1": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+    }
+  },
+  "new_labels": 10,
+  "new_fit": 6,
+  "new_internal": 4,
+  "new_positive_total": 8,
+  "new_negative_total": 2,
+  "cumulative_counts": {
+    "fit": {
+      "1": 8,
+      "6": 6,
+      "7": 6,
+      "8": 6
+    },
+    "internal": {
+      "1": 1,
+      "6": 1,
+      "7": 2,
+      "8": 1
+    }
+  },
+  "cumulative_fit": 26,
+  "cumulative_internal": 5,
+  "cumulative_labels": 31,
+  "outer_wall_s": 2875.1520026579965,
+  "execution_steps": 32723,
+  "initialization_ticks": 7500,
+  "total_env_steps": 40223,
+  "total_object_steps": 120669,
+  "Kit_starts": 20,
+  "execution_contact_points": 128797269,
+  "initialization_contact_points": 20748079,
+  "model_loads": 2,
+  "model_forwards": 10,
+  "hand_head_loads": 0,
+  "training_updates": 0,
+  "new_models": 0,
+  "first_execution_audits": 10,
+  "first_capture_audits": 10,
+  "unknown_costs": 0,
+  "source_redraws": 0,
+  "failed_trial_retries": 0,
+  "old435_merged": false,
+  "formal4000_plus800_complete": false,
+  "production_budget_extended": false,
+  "full_original32": {
+    "scene_budget": 32,
+    "slot_budget": 128,
+    "status_counts": {
+      "placement_null": 52,
+      "null_geometry": 25,
+      "no_candidate": 29,
+      "labelled": 16,
+      "infrastructure_failure": 6
+    },
+    "valid_counts": {
+      "fit": {
+        "1": 4,
+        "6": 3,
+        "7": 3,
+        "8": 2
+      },
+      "internal": {
+        "1": 1,
+        "6": 1,
+        "7": 1,
+        "8": 1
+      }
+    },
+    "valid_labels": 16,
+    "reported_env_steps": 71685,
+    "reported_object_steps": 215055,
+    "total_Kit_starts": 37,
+    "frozen_run_wall_sum_s": 4721.274693424813,
+    "old_failed_capture_unknown_flag_preserved": 1,
+    "old_failed_capture_ERROR_reported_ticks": 0,
+    "original_failed_scene_not_retried": true,
+    "original_bad_gzip_records_excluded": true
+  },
+  "host_samples": 1395,
+  "peak_kits": 8,
+  "peak_audits": 2,
+  "owned_stage_groups_exited": 92,
+  "released_slots": 14,
+  "available_locks": 16,
+  "checked_file_count": 1280,
+  "ETA_SCENARIOS": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/ETA_SCENARIOS.json",
+    "sha256": "1a07cc9fc4e866c953acf2cd5dbfe774e196807c60d87f112b29cdbdf15ce4c4"
+  },
+  "no_background_tasks": true,
+  "additional_training_dispatched": false
+}

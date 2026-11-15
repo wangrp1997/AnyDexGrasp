@@ -1,0 +1,130 @@
+{
+  "schema": "anydex_boya_author_collection_export_v1",
+  "task": "declared_boya_clutter_lift_v1",
+  "source_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/PRODUCTION_PROTOCOL.json",
+    "sha256": "04552e9a7ef2db6cf8c7e1b21a022014a816d695cbd4a62f1557b1e29597d2ea"
+  },
+  "old435_merged": false,
+  "training_updates": 0,
+  "mesh_sha256_semantics": "Compatibility primary only; scene_mesh_sha256 is the required all-body isolation column",
+  "fit_source_object_ids": [
+    "graspnet_005",
+    "graspnet_014",
+    "graspnet_015",
+    "graspnet_017",
+    "graspnet_026",
+    "graspnet_029"
+  ],
+  "internal_source_object_ids": [
+    "graspnet_007",
+    "graspnet_021",
+    "graspnet_044"
+  ],
+  "fit_source_mesh_sha256": [
+    "660b6775c75300f3e7e34e7086cb3aadfd611f209f10496145bdbf826112e42c",
+    "827b4d57077a2ef490c07dfa2b56524d0f99709bfe4b9b2aad80f12d3fd5dac8",
+    "b72a1b0c9289b4939a39088ece44491fb07f62454a46f2255a5b50a59ad70bde",
+    "c725008c1ed98eff08fd4dafa223a3d492d5aeac9cd6e2c176ee558c6fc638cb",
+    "d5aa0d1f40e679b07c8d93ab958c1b26dcbacd4be220b03c1a3a4ac5aadb483b",
+    "ec4c5da5c9d9e57d8dd9739965cb1faa8f3d63e474ad2ff867957bcf930ef8e8"
+  ],
+  "internal_source_mesh_sha256": [
+    "114179b0e2e17bc082d6ca17624596fb02fb7313151cbbd2d8e50bcbbc297775",
+    "361626d75eb7e60a6d128b4e68a6d08b1890d2e73669e32ad08fb2640b882e74",
+    "e4370d59e6ce1eda8365b937c60ab1975a02be6f847458f2f1ccc77f290f106c"
+  ],
+  "datasets": {
+    "1": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/gesture_1.npz",
+        "sha256": "bdf3bacc72f04da1a37033975ad52baae5484dd1ba6e66feb8c8b080759a06ff"
+      },
+      "counts": {
+        "fit": 2,
+        "internal": 1
+      },
+      "positive": 2,
+      "negative": 1
+    },
+    "6": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/gesture_6.npz",
+        "sha256": "122d29345f2072382698da6b2689ee14876f6fef8e0e873f222ef40c0f247ae9"
+      },
+      "counts": {
+        "fit": 2,
+        "internal": 1
+      },
+      "positive": 3,
+      "negative": 0
+    },
+    "7": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/gesture_7.npz",
+        "sha256": "b8ff03086e26e9ec97a6cfa87913e21bc202c91f85ffbd6dcf6fc0cd410a04ca"
+      },
+      "counts": {
+        "fit": 1,
+        "internal": 1
+      },
+      "positive": 2,
+      "negative": 0
+    },
+    "8": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/gesture_8.npz",
+        "sha256": "f574741be13224e51b13451d88593706866fe23ac72b2a4d7cece7d8a58c7473"
+      },
+      "counts": {
+        "fit": 1,
+        "internal": 1
+      },
+      "positive": 1,
+      "negative": 1
+    }
+  },
+  "audits": {
+    "s40_lift_fit_00009_s2026111501:g1": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/ababf780ba2689d627942b7451741b3b6b86d0392a4c91d7b34fb5433d902152.json",
+      "sha256": "227f0ebf16ca1cf02795fc789114c5833e83e42ae7a41b5575426fc9e92e0ada"
+    },
+    "s40_lift_fit_00009_s2026111501:g6": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/eea4addb95da386f0b53dbe65a5f1e2b0cb3b203b5d74635f6d042d6efa664fa.json",
+      "sha256": "172b8e1891927911f959405674be18155c54ccb892ed9965c561e020c9edfc1e"
+    },
+    "s40_lift_fit_00009_s2026111501:g7": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/6da293676966fbfd9583bcf5e8d0b60a6ccb005dec24216b72bd395fcc39184b.json",
+      "sha256": "5b617e4d7fc577aca43e8c5e767f39a83f89cfe71135d7d3a95cef3103658400"
+    },
+    "s40_lift_fit_00009_s2026111501:g8": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/81e51b68887b0c0f95648201ab8101d002418bf6a3ed22780b113bfb9c2e18c3.json",
+      "sha256": "ccefa6558e8830ae91c61ad7c0acfada5a5372f3ee09959fed854f4e4c8ac13c"
+    },
+    "s40_lift_internal_00010_s2026111501:g1": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/1ca41ac0f3822ae46e2ae08dbf3582eae2f904fad7b27be1adc3d10d63b3fb02.json",
+      "sha256": "391996ea2adf26e7904a4c0dbaf188745ed6870c0f587fda57fd6d8ca78a2d83"
+    },
+    "s40_lift_internal_00010_s2026111501:g6": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/7c268f54f0107808cce8d3ca09a9a0fd208146c855270e735d204a6b038a5440.json",
+      "sha256": "421f1449efc18fd557a3b374d0ab6673b6d3388215dda1344fd8c2412a88389a"
+    },
+    "s40_lift_internal_00010_s2026111501:g7": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/1f44e2122abd78bb9a868613fe2161b5dae2533428ce9e483828c458a636b4f6.json",
+      "sha256": "a2e12d66fcf73fcb871a36fbc85d84ffd18e9d0c8f02ef02420ef5e90590a0a6"
+    },
+    "s40_lift_internal_00010_s2026111501:g8": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/78454c3664b37333137f56f71978ac0b9f34b6a713d941449eef651d7c2613ea.json",
+      "sha256": "a29c9cc553d072b3c654a70aed34e8c26ca6e777624ed21adaaaa13d98a8e66c"
+    },
+    "s40_lift_fit_00013_s2026111501:g1": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/fc3e3b8e619f45c60bbba3efe024b785bf71737dff7b702c77730bbd509ecfaf.json",
+      "sha256": "0b728ff419a03888a9ddd2b34d0f1550d290877ba1de0828e8968d5e2af0c174"
+    },
+    "s40_lift_fit_00013_s2026111501:g6": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/export/audits/82599af9b60bf698470b157c3cc89bc26f289392a4439b0a63b07c9ecc6825dd.json",
+      "sha256": "a4451adf8b6d28c8de82c1ff7d75a4aca16fb11fa0a1a98fc24a22b92dd053a6"
+    }
+  },
+  "size_ready": false
+}

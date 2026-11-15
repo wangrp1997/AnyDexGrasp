@@ -1,0 +1,72 @@
+{
+  "schema": "anydex_boya_author_production_tail_v1",
+  "task": "declared_boya_clutter_lift_v1",
+  "status": "complete",
+  "total_scene_budget": 15,
+  "total_gesture_attempt_budget": 60,
+  "terminal_slots": 60,
+  "eligible_labels": {
+    "fit": {
+      "1": 2,
+      "6": 2,
+      "7": 1,
+      "8": 1
+    },
+    "internal": {
+      "1": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+    }
+  },
+  "positive_labels": {
+    "fit": {
+      "1": 1,
+      "6": 2,
+      "7": 1,
+      "8": 0
+    },
+    "internal": {
+      "1": 1,
+      "6": 1,
+      "7": 1,
+      "8": 1
+    }
+  },
+  "status_counts": {
+    "labelled": 10,
+    "no_candidate": 15,
+    "null_geometry": 15,
+    "placement_null": 20
+  },
+  "known_final_execution_physics_steps": 32723,
+  "execution_starts_with_unknown_steps": 0,
+  "captured_initialization_ticks": 7500,
+  "captured_initialization_object_steps": 22500,
+  "capture_attempts": 10,
+  "capture_starts_with_unknown_steps": 0,
+  "windows_finished": 2,
+  "started_unix_s": 1794745151.6343477,
+  "finished_unix_s": 1794748014.8403518,
+  "error": null,
+  "exclude_training": false,
+  "old435_merged": false,
+  "training_updates": 0,
+  "new_model_count": 0,
+  "automatic_training": false,
+  "budget_exhaustion_is_target_completion": false,
+  "target_fit_per_gesture": 1000,
+  "target_internal_per_gesture": 200,
+  "controller_wall_s": 2863.2068594810553,
+  "parent_Kit_launches": 0,
+  "window_results": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/00/RESIDENT_COLLECTION_RESULTS.json",
+      "sha256": "7c5c03746f8198a8f421b474e083d77da112f2e1a134477fb7e636ac1bd3e1b2"
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/RESIDENT_COLLECTION_RESULTS.json",
+      "sha256": "18cf4e4b2b35a255e58e2f34ea6487f750656b8e85139f078d475116201c4fdf"
+    }
+  ]
+}

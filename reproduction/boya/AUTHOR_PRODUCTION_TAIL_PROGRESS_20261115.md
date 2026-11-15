@@ -1,5 +1,7 @@
 # 原固定队列尾批：15 场景运行中
 
+收尾：本轮15场景／60槽已全部完成，新增6fit＋4internal，外层47.9192分钟，累计26fit＋5internal；全部审核／进程／锁收尾通过，训练0。最终状态见[完整结果](AUTHOR_PRODUCTION_TAIL_RESULTS_20261115.md)。下文保留启动快照。
+
 用户要求先跑完剩余队列再估计采满耗时。本批只取原 seed2026111501、32 场景预算内尚未启动的原 index17..31，**15 场景／60 手型槽，7 fit＋8 internal**；原三体身份、scene spec 和顺序保持，10 ready／5 placement_null，不重抽、不补例、不重抓。
 
 运行根为 `/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run`。协议 SHA 为 `04552e9a7ef2db6cf8c7e1b21a022014a816d695cbd4a62f1557b1e29597d2ea`，两窗 8／7；最多 8 CPU 执行、2 原首次数值审核、3 prepare、1 observation。GPU0 UUID 固定，GPU1 不选。窗口开始后父 PROGRESS 仍可能显示冻结快照；实时读窗口 ledger、实际 STAGE 和只读 host observer。

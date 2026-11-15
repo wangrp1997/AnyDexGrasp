@@ -1,0 +1,64 @@
+{
+  "schema": "anydex_boya_author_pipeline_collection_v1",
+  "audits": [
+    {
+      "local_queue_index": 1,
+      "gesture_id": 1,
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/stages/audit_g1",
+      "queued_unix_s": 1794747901.6059859,
+      "command": [
+        "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+        "--prepared-dir",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1",
+        "--split-manifest",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1/protocol.json",
+        "--output",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/RUNTIME_AUDIT.json"
+      ],
+      "expected": [
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/RUNTIME_AUDIT.json"
+      ],
+      "status": "complete",
+      "started_unix_s": 1794747901.6071703,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/stages/audit_g1/STAGE.json",
+        "sha256": "c2fed39e74709efeef6837572d387986c3dd7207d4d2244495e8fd4a7b89dd82"
+      },
+      "finished_unix_s": 1794747982.3575218
+    },
+    {
+      "local_queue_index": 1,
+      "gesture_id": 6,
+      "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/stages/audit_g6",
+      "queued_unix_s": 1794747927.7556202,
+      "command": [
+        "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+        "-B",
+        "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+        "--prepared-dir",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g6",
+        "--split-manifest",
+        "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1/protocol.json",
+        "--output",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g6/RUNTIME_AUDIT.json"
+      ],
+      "expected": [
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g6/RUNTIME_AUDIT.json"
+      ],
+      "status": "complete",
+      "started_unix_s": 1794747927.7561288,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/stages/audit_g6/STAGE.json",
+        "sha256": "b70bf9b5f4d09966cbeef7d102219f8a4368a5d854cf9784af41bff4a299ee9d"
+      },
+      "finished_unix_s": 1794748006.5487015
+    }
+  ],
+  "peak_active_audits": 2,
+  "queued_audits": 2,
+  "all_futures_terminal": true,
+  "numeric_audits_reused_from_history": 0,
+  "new_physics_steps": 0
+}

@@ -1,0 +1,136 @@
+{
+  "current": {
+    "fit": {
+      "1": 8,
+      "6": 6,
+      "7": 6,
+      "8": 6
+    },
+    "internal": {
+      "1": 1,
+      "6": 1,
+      "7": 2,
+      "8": 1
+    }
+  },
+  "targets_per_gesture": {
+    "fit": 1000,
+    "internal": 200
+  },
+  "scenarios": [
+    {
+      "name": "remaining15_scene_mix",
+      "observed_labels_per_batch": {
+        "fit": {
+          "1": 2,
+          "6": 2,
+          "7": 1,
+          "8": 1
+        },
+        "internal": {
+          "1": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1
+        }
+      },
+      "observed_batch_wall_s": 2875.1520026579965,
+      "scenes_per_repeated_batch": 15,
+      "additional_batches_by_split_gesture": {
+        "fit": {
+          "1": 496,
+          "6": 497,
+          "7": 994,
+          "8": 994
+        },
+        "internal": {
+          "1": 199,
+          "6": 199,
+          "7": 198,
+          "8": 199
+        }
+      },
+      "additional_batches_to_fill_all_quotas": 994,
+      "additional_days_continuous": 33.07755891946815,
+      "scope": "Deterministic what-if repeating observed mixed split/gesture yields and frozen execution clocks, not a statistical confidence interval or promised completion date"
+    },
+    {
+      "name": "original32_budget_aggregate",
+      "observed_labels_per_batch": {
+        "fit": {
+          "1": 4,
+          "6": 3,
+          "7": 3,
+          "8": 2
+        },
+        "internal": {
+          "1": 1,
+          "6": 1,
+          "7": 1,
+          "8": 1
+        }
+      },
+      "observed_batch_wall_s": 4721.274693424813,
+      "scenes_per_repeated_batch": 32,
+      "additional_batches_by_split_gesture": {
+        "fit": {
+          "1": 248,
+          "6": 332,
+          "7": 332,
+          "8": 497
+        },
+        "internal": {
+          "1": 199,
+          "6": 199,
+          "7": 198,
+          "8": 199
+        }
+      },
+      "additional_batches_to_fill_all_quotas": 497,
+      "additional_days_continuous": 27.158258363797827,
+      "scope": "Deterministic what-if repeating observed mixed split/gesture yields and frozen execution clocks, not a statistical confidence interval or promised completion date"
+    }
+  ],
+  "assumptions": [
+    "Observed rates and costs stay fixed, continuous24h operation, same S40 object pools and candidate/control rules",
+    "No future training, engineering, handoff gaps, machine downtime or additional integrity failures included",
+    "Original32 time is a sum of three frozen runs with different storage adapters and a stopped corrupted prefix; not a new continuous matched benchmark",
+    "Split allocation stays as in each pilot; internal may exceed its quota while slow fit gestures fill",
+    "Only15 tail scenes and one32-scene budget were observed; this range is sensitivity between simple scenarios, not uncertainty bounds",
+    "Changing formal split allocation or object pool needs a separately frozen protocol; no new work dispatched by this calculation"
+  ],
+  "original_failed_capture_unknown_flag_preserved": 1,
+  "original_failed_capture_ERROR_reported_ticks": 0,
+  "prior_15_binding": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_parallel_collection_20261115_v1/ROOT_VERIFICATION.json",
+    "sha256": "9c0c6dcd45fbc29e8de178576b0607cf6745e312cede9a4c4c7c1fd13db6c511"
+  },
+  "legacy_fit_ledger_bindings": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g1.json": "c3d46d8b3de0e4acb252497827f0c92e5848efac2210432252773e3e56b65869",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g7.json": "eca016d98ea1a5cdfe3f51cdfb924a6536926c53dbe24d57393045df643b449f",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000005_g8.json": "10c27d38e72b0c15c89e2f16331990a64c69c17bfd01549a1473fd723776143a",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g8.json": "aa338dfb41db74fabfe5b054631c1ec1fc23f8d346b08df1e13cd84eb9362ae2",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g8.json": "99e0b952c37537d667c7cfef6468d5b7a45628c5f292b6eb11aab71139b5a5d2",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000005_g1.json": "24cb65f92c1ce62aac37d65f5a954b120a97220aabea039db2678a47ba6c54a9",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g1.json": "a1163a4f2340240d6cdd920ed18a056a8cd97919b4512176bb2cf79f2dc7461a",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g6.json": "209670a870092914f780e8449d5d802225b2b104722aa33be8ef8008a42e1432",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g8.json": "2cc7fc40df74485add76e1223da84359ad7de8ee9549a9e2913d0d58e9f4d0a4",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g7.json": "488e2dd2bb830343d59bd0b65161586e0aa5fc1f2d077421d15e640a0ca4b042",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g6.json": "1f9cca952583d557bc4648e5f2df9213552ebc1e8d41b94975d3fba4fe3bc0a4",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000006_g1.json": "551d80546163fbfb92f3fffaa63a8d584a5d3a7f25a4dd27c550e58f738f9087",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000001_g6.json": "cabd77acb40e03240660418f02b9183fbdee7a8915e3718e40d0a7e023857c31",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/development/batch_v1/ledger/0000004_g7.json": "0c392cba42bfe730500096873b02826550a851079f4ac51c5976edcc4912d6c2"
+  },
+  "legacy_wave_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_author_wave_certified_export_20261115_v1/MANIFEST.json",
+    "sha256": "d8f8f74ea35755bd631c0ed407b81a8639728ff65baa677fa85d9501ec092d56"
+  },
+  "prior6_prefix": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_production_pilot_20261115_v1/PREFIX_AUDIT.json",
+    "sha256": "55c889c7d5c9d8b0c78d8259478d6e542dacfe0fbe398a1e80790db577c54247"
+  },
+  "tail_audit": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/TAIL_AUDIT.json",
+    "sha256": "b9c5cf11cf9025a3bdc74511f5994cb5897a906676473bc225e0590b3791b303"
+  }
+}

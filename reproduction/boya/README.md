@@ -1,4 +1,6 @@
-2026-11-15 当前：[原队列尾批运行中](AUTHOR_PRODUCTION_TAIL_PROGRESS_20261115.md)。用户要求先跑完再估时，已启动原seed2026111501未开始的index17..31：7fit＋8internal、15场景／60槽，两窗8／7，10ready／5placement_null，不重抽或重试。执行接入已验证的tmpfs完整日志／隔离压缩／全读回，原完整接触、判定及capture审核保持，最多8执行＋2首次原审核；新增5项CPU检查含真实审核资源池验证通过。561源码冻结，首个capture已启动；父PROGRESS仅窗末更新，窗内看ledger/STAGE。启动时20fit＋1internal、训练0，完成后报告实际新增及产率，不直接套诊断倍率。
+2026-11-15 当前：[原15场景尾批完成](AUTHOR_PRODUCTION_TAIL_RESULTS_20261115.md)。外层**47.9192分钟**，60槽新增**6fit＋4internal，8正2负**，累计26fit＋5internal=31；fit8/6/6/6、internal1/1/2/1，四型internal均已有记录。10次执行及10capture首次原审核全PASS，32723执行步＋7500初始化tick／120669三体步，20Kit，0重试／未知／训练；日志全读回seal和最终raw SHA通过。独立核1280绑定／导出三体split／旧数据权重保持，92所属stage组和父/observer全退，14槽／16锁释放，无后台任务。原32预算已终结，初失败和旧坏gzip排除保留，未自动派下一批。维持观察到的混合配比和产率，补满每型1000fit＋200internal的两个条件情景约27–33天连续运行；不是可靠工期或统计区间，正式全量仍未启动。
+
+2026-11-15 启动快照：[原队列尾批运行](AUTHOR_PRODUCTION_TAIL_PROGRESS_20261115.md)。用户要求先跑完再估时，已启动原seed2026111501未开始的index17..31：7fit＋8internal、15场景／60槽，两窗8／7，10ready／5placement_null，不重抽或重试。执行接入已验证的tmpfs完整日志／隔离压缩／全读回，原完整接触、判定及capture审核保持，最多8执行＋2首次原审核；新增5项CPU检查含真实审核资源池验证通过。561源码冻结，首个capture已启动；父PROGRESS仅窗末更新，窗内看ledger/STAGE。启动时20fit＋1internal／训练0，最终结果见顶部。
 
 2026-11-15 前一阶段：[完整日志路径验证](AUTHOR_STORAGE_PATH_VALIDATION_RESULTS_20261115.md)通过：/tmp和tmpfs各4份完整3024帧／1.896GB日志，写入、压缩及两次独立读回全过；使用tmpfs raw的四路完整仿真也完成，4份首次原完整数值审核全部通过。原控制器误用Kit专用审核池的stopped和未启动隔离事件保留，审核另用正确两路池独立完成，未重跑物理。新增4Kit／12096环境步、0训练标签，7项新CPU检查通过；最终raw无空洞、旧数据权重保持，所属组全退，6槽／9锁和registry释放。原损坏根因未证明，tmpfs raw易失，不外推长期可靠性。当前仍20fit＋1internal／训练0，剩15场景未派发；下一步接回有限采集入口，本轮未恢复生产。
 
