@@ -1,0 +1,102 @@
+{
+  "schema": "anydex_boya_scaling_real_source_preflight_v1",
+  "source": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/resident_collection_control_20261115_v1/fit/scenes/0000004_s40_lift_fit_00004_s2026111401/g6",
+  "source_read_only": true,
+  "lanes": 8,
+  "command_steps": [
+    3024,
+    3024,
+    3024,
+    3024,
+    3024,
+    3024,
+    3024,
+    3024
+  ],
+  "ready_sha256": "1eddfedb5c30387690f39736c567553ad4285d5afa3da8344de1615d8f9fb86b",
+  "geometry": {
+    "sha256": "d9e6636e7520dda1406d4f39c051b88e40c875ebc4d41661ccf2a2142bdc5999",
+    "inputs": {
+      "objects": [
+        {
+          "object_id": "graspnet_063",
+          "object_root": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063",
+          "source_mesh_sha256": "d27cb811132c465627af3aa295fecc19d71c5de9b24a7a97e54a27dd1e31fbeb",
+          "scale": 1.0,
+          "mass_kg": 0.1,
+          "friction": 0.6,
+          "collision_refinement_sha256": null,
+          "native_object_urdf_sha256": "6b627568c0ba220c1ba9b946feac30c32a33a867e94aa6cfb7068f200604cf1b"
+        },
+        {
+          "object_id": "graspnet_037",
+          "object_root": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037",
+          "source_mesh_sha256": "fcbe65a2f3f3245802f05c16ac747db4aab0349c8bb4977133ac02b09e013d70",
+          "scale": 1.0,
+          "mass_kg": 0.1,
+          "friction": 0.6,
+          "collision_refinement_sha256": null,
+          "native_object_urdf_sha256": "e3d473133e356bf04d91eb4268b254c9dfe93f9fc15671becbc7faaa5824bdb9"
+        },
+        {
+          "object_id": "graspnet_015",
+          "object_root": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015",
+          "source_mesh_sha256": "f834ec1a5115fd28750e51a434893ca5ac745b5d89ec3ae3ac2682cd6ad347b7",
+          "scale": 1.0,
+          "mass_kg": 0.1,
+          "friction": 0.6,
+          "collision_refinement_sha256": null,
+          "native_object_urdf_sha256": "d0ef2935f3c666d2ec992f79bd124ec3edd2b691268cf250dd85b9f775676508"
+        }
+      ],
+      "target_object_id": "graspnet_063",
+      "native_roles": {
+        "robot_urdf": "b7e8164ee0bd34a8c18891c1f32df1621103d2ffc95f1ad80948b1ce4f208d87",
+        "hand_urdf": "4aa1dbbb7b930bc29ac824b25697cde6c2bed3318d8b0dd5ea6439b643f34cca",
+        "hand_scene": "08627d514b8d73e91b55cfc8381f95cc478a59245cf470d15fead1ea912c647e",
+        "package": "c96082d77da7fdc767b944cd1ebdd5fc8bdcd7b7d17c1995512f63676d505984",
+        "physics_config": "d5a7ce2f7c46032ef6f2b438e329cd6edb35f9d6ba88be2bc6d2971ac78f1bb8",
+        "diagnostic_config": "5ca9f0b9657638c034700f58a323a19676c7964a1fb551528730de712ab75a3d"
+      },
+      "mesh_inputs": {
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063/PROVENANCE.json": "1e9634c603b2438f524cc40c39295b05de3bfd58529e33de544d7f5bbb28ee6d",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063/info/tabletop_pose.json": "e21ae2fa98de95247cace27e314bcf7bc711ec9d00ce36e614b86b20712c8594",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063/info/source_geometry.json": "572f31774954a0a868e59a0208f73d08ccc7e7f21e1cf457c32f5b5f87aa3adf",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063/urdf/coacd.urdf": "6b627568c0ba220c1ba9b946feac30c32a33a867e94aa6cfb7068f200604cf1b",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063/mesh/simplified.obj": "d27cb811132c465627af3aa295fecc19d71c5de9b24a7a97e54a27dd1e31fbeb",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_063/urdf/meshes/coacd_convex_piece_0.obj": "a7eebbb283061db48e4b21f25885e23993e3a8b8bcfafcb45987d65cd9745f88",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/PROVENANCE.json": "e627b5e3fb9d674a328e6046ddf58bbe5484254fb71506b3867bcbb6e347518f",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/urdf/coacd.urdf": "e3d473133e356bf04d91eb4268b254c9dfe93f9fc15671becbc7faaa5824bdb9",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/info/source_geometry.json": "75b6992f8d32f442d49bfa902fcda9a70e962043479321901074a6274f3c38c8",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/info/tabletop_pose.json": "5acdf17c325010c2728d0db63b88be5b92972f1bc8cff37a3e83a9a2105e5919",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/mesh/simplified.obj": "fcbe65a2f3f3245802f05c16ac747db4aab0349c8bb4977133ac02b09e013d70",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/urdf/meshes/coacd_convex_piece_2.obj": "d7bdf319c40cc74ddc0c752dba00cf620b3d54b143151f4c8ba9e7d0cc2d2f2d",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/urdf/meshes/coacd_convex_piece_0.obj": "8afb5d51bc38e428edb6a107041c605f8dfb808199fc6f036a9811dc5867d9b1",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_037/urdf/meshes/coacd_convex_piece_1.obj": "6d0a0fb9d9c19941de3e154c9c06e35cf1614a5c6f92c9a22ab93f695accff84",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/PROVENANCE.json": "38357663cd13ba4e8f7f6b237bed21e0c04f53c4fa1f2b58c64191fb50d911ce",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/info/source_geometry.json": "185e2c118e7197675bfa07bd64743ecd6ba1af913229765091139ce0d1d4aeb5",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/info/tabletop_pose.json": "156c599ec54c89b6e7d994f71ebdc7b6849579404bb85a416abe958bb22b9891",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/urdf/coacd.urdf": "d0ef2935f3c666d2ec992f79bd124ec3edd2b691268cf250dd85b9f775676508",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/mesh/simplified.obj": "f834ec1a5115fd28750e51a434893ca5ac745b5d89ec3ae3ac2682cd6ad347b7",
+        "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/urdf/meshes/coacd_convex_piece_0.obj": "9f8d44b00f43fc5169d53008a26b8ab35db71015d59a22b75c527a64a99fba73"
+      },
+      "dt_s": 0.004,
+      "bin": null
+    }
+  },
+  "all_geometry_identical": true,
+  "all_command_sha256": [
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+    "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea"
+  ],
+  "source_sha256": "aad39785b30c1f25b2d81a61a17468d6f1b889e78f834f57a36b85bf1557bc81",
+  "wall_s": 0.7091089270543307,
+  "Kit_starts": 0,
+  "physics_steps": 0
+}

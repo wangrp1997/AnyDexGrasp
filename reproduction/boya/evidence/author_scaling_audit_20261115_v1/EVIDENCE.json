@@ -1,0 +1,88 @@
+{
+  "schema": "anydex_boya_author_scaling_audit_static_evidence_v1",
+  "status": "cpu_tests_pass_actual_audit_pending",
+  "created_unix_s": 1794715133.2363129,
+  "owned_files": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_audit.py",
+      "sha256": "1e802aec11fa33dfc8d604d83de4f48a8b09411e904d4125c1335c3b2d92c455",
+      "bytes": 35891
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_scaling_audit.py",
+      "sha256": "47c475f22ae80af737d5fcb20d705dd29a9281cb73d4942e570115ba34ee864a",
+      "bytes": 17559
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_SCALING_AUDIT_20261115.md",
+      "sha256": "d23e780f4f2f1fa49dbe40e9a9aa27b2b7b2dd2092ccf022b61be8e12c07dc72",
+      "bytes": 4811
+    }
+  ],
+  "static_review_sources": [
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_execution.py",
+      "sha256": "4037bebc5296977848cc2413d833d396eb2669df470b9c74a53863c91dbf0375",
+      "bytes": 16728
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_control.py",
+      "sha256": "8d263bbfb4b83e9b3415f9269741e713f5018e8101b96e0ae6a4e008dfca0f88",
+      "bytes": 30104
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_profile.py",
+      "sha256": "ea3c7ef466ac1978d49a63a7035e9ba483cdb9f24693f06b5b278c249c6b4f1b",
+      "bytes": 13108
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_gpu_vector_audit.py",
+      "sha256": "7c508445f7905845b952b622d15a7767ad61eabcae038ed1f4b372796ae5b7ec",
+      "bytes": 29069
+    },
+    {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_collection_runtime.py",
+      "sha256": "be0ae018d3b4ab569764602a1516db3f2767b6fb6effe41e54706fd576bb03b5",
+      "bytes": 32964
+    }
+  ],
+  "test_log": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_scaling_audit_20261115_v1/CPU_TESTS.log",
+    "sha256": "93e54a1c5c1c5e564727f170a059127915a8e23125ceceb0dd2f930ae40aa955",
+    "bytes": 2264
+  },
+  "tests": 11,
+  "test_wall_s": 2.235,
+  "test_physics_steps": 0,
+  "test_Kit_launches": 0,
+  "actual_audit_runs": 0,
+  "actual_output_planned": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_scaling_audit_20261115_v1/actual/AUDIT.json",
+  "comparison": {
+    "modes": [
+      "gpu",
+      "cpu"
+    ],
+    "sizes": [
+      1,
+      4,
+      8
+    ],
+    "ticks_per_lane": 100,
+    "worker_attempts": 16,
+    "environment_steps": 2600,
+    "worker_physics_clock_steps": 1600,
+    "retries": 0
+  },
+  "label": null,
+  "raw_label": null,
+  "formal_training_eligible": false,
+  "exclude_training": true,
+  "full_gates_certified": false,
+  "full_lift_certified": false,
+  "full_collection_ETA": null,
+  "notes": [
+    "Static reviewed-source hashes are snapshots; only controller protocol freezes runtime source versions.",
+    "CPU comparisons use prefix endpoint span, GPU uses monotonic shared prefix duration; startup-inclusive throughput uses real full group wall.",
+    "No new simulator, planning, CGR or training launched. Frozen original files and CanonDex unchanged."
+  ]
+}

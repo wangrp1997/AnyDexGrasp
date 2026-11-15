@@ -1,0 +1,295 @@
+{
+  "schema": "anydex_boya_author_fabric_audit_v1",
+  "status": "prefix_integrity_pass",
+  "baseline_over_disabled_wall": {
+    "prefix_wall_s": 0.9958282832660195,
+    "outer_group_wall_s": 1.0330205441036844,
+    "fetch_results_wall_s": 0.9996009977391471
+  },
+  "paired_outputs": {
+    "native_trace": {
+      "all_arrays_exact": true,
+      "fields": {
+        "time_s": {
+          "exact": true,
+          "shape": [
+            100
+          ],
+          "dtype": "float64",
+          "max_abs_difference": 0.0
+        },
+        "phase": {
+          "exact": true,
+          "shape": [
+            100
+          ],
+          "dtype": "<U16"
+        },
+        "object_pose_xyzw": {
+          "exact": true,
+          "shape": [
+            100,
+            7
+          ],
+          "dtype": "float32",
+          "max_abs_difference": 0.0
+        },
+        "joint_pos": {
+          "exact": true,
+          "shape": [
+            100,
+            28
+          ],
+          "dtype": "float32",
+          "max_abs_difference": 0.0
+        },
+        "joint_target": {
+          "exact": true,
+          "shape": [
+            100,
+            28
+          ],
+          "dtype": "float32",
+          "max_abs_difference": 0.0
+        },
+        "body_pose_xyzw": {
+          "exact": true,
+          "shape": [
+            100,
+            29,
+            7
+          ],
+          "dtype": "float32",
+          "max_abs_difference": 0.0
+        },
+        "desired_palm": {
+          "exact": true,
+          "shape": [
+            100,
+            4,
+            4
+          ],
+          "dtype": "float64",
+          "max_abs_difference": 0.0
+        },
+        "finger_loads_n": {
+          "exact": true,
+          "shape": [
+            100,
+            5
+          ],
+          "dtype": "int64",
+          "max_abs_difference": 0.0
+        },
+        "object_depth_m": {
+          "exact": true,
+          "shape": [
+            100
+          ],
+          "dtype": "float64",
+          "max_abs_difference": 0.0
+        },
+        "robot_depth_m": {
+          "exact": true,
+          "shape": [
+            100
+          ],
+          "dtype": "float64",
+          "max_abs_difference": 0.0
+        },
+        "joint_velocity": {
+          "exact": true,
+          "shape": [
+            100,
+            28
+          ],
+          "dtype": "float32",
+          "max_abs_difference": 0.0
+        },
+        "joint_velocity_target": {
+          "exact": true,
+          "shape": [
+            100,
+            28
+          ],
+          "dtype": "float32",
+          "max_abs_difference": 0.0
+        },
+        "body_names": {
+          "exact": true,
+          "shape": [
+            29
+          ],
+          "dtype": "<U14"
+        },
+        "joint_names": {
+          "exact": true,
+          "shape": [
+            28
+          ],
+          "dtype": "<U19"
+        }
+      }
+    },
+    "all_body_trace_exact": true,
+    "all_body_first_differing_tick": null,
+    "full_contact_rows_exact": false,
+    "full_contacts_first_differing_tick": 1,
+    "contact_rows_compared": 100,
+    "all_three_body_entry_exact": true,
+    "scope": "Observed prefix equality only; no full trajectory equivalence or population claim"
+  },
+  "physical_clock_steps": 200,
+  "environment_steps": 200,
+  "dynamic_object_steps": 600,
+  "trace_rows": 200,
+  "contact_rows": 200,
+  "contact_points": 431400,
+  "label": null,
+  "raw_label": null,
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "full_gates_certified": false,
+  "full_lift_certified": false,
+  "full_collection_ETA": null,
+  "audit_Kit_launches": 0,
+  "audit_physics_steps": 0,
+  "audit_wall_s": 6.879915983881801,
+  "limitations": [
+    "One fixed-order pair without independent replication",
+    "Inclusive timers overlap; no added CUDA synchronization or kernel attribution",
+    "Compatibility status does not identify the actual kernel path",
+    "100-tick prefix cannot certify complete grasp or new collection ETA"
+  ],
+  "full_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fabric_cpu_20261115_v1/INDEPENDENT_AUDIT.json",
+    "sha256": "202500eeb07afc15dae6099a9b7d648a48dca2284c1d15e5b0d09cf65630df45",
+    "bytes": 7685507
+  },
+  "unique_input_bindings": 1286,
+  "groups": [
+    {
+      "name": "baseline",
+      "metrics": {
+        "prefix_wall_s": 58.41739570698701,
+        "outer_group_wall_s": 124.02348493179306,
+        "fetch_results_wall_s": 54.55339875863865,
+        "sim_step_wall_s": 54.583945837570354,
+        "full_filtered_contact_readback_wall_s": 0.23329059057869017,
+        "prefix_envsteps_per_s": 1.7118188647365447
+      },
+      "actual_settings": {
+        "/physics/fabricUpdateTransformations": false,
+        "/physics/fabricUpdateVelocities": false,
+        "/physics/fabricUseGPUInterop": true,
+        "/physics/suppressReadback": true,
+        "/physics/disableContactProcessing": false
+      },
+      "actual_setting_ticks": 100,
+      "lane_integrity": [
+        {
+          "environment": 0,
+          "original_object_ids": [
+            "graspnet_063",
+            "graspnet_037",
+            "graspnet_015"
+          ],
+          "candidate_sha256": "d3b16f9df81b8b392bfb691eafe0d00f708f423c030aa4a696e2265efa989a68",
+          "commands_sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+          "scene_sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9",
+          "trace_rows": 100,
+          "contact_rows": 100,
+          "contact_points": 215700,
+          "max_source_bottom_error_m": 3.469446951953614e-18,
+          "max_finger_load_error_n": 0.0,
+          "targets24_to_28_prefix_exact": true,
+          "original_arm_velocity_targets_exact": true,
+          "full_source_vertices": true,
+          "label": null,
+          "raw_label": null,
+          "full_gates_certified": false
+        }
+      ],
+      "convex_compatibility": {
+        "status": "queried",
+        "checked_convex_prims": 13846,
+        "gpu_compatible": 13846,
+        "gpu_incompatible": 0,
+        "physics_clock_before": 100,
+        "physics_clock_after": 100,
+        "physics_steps_added": 0,
+        "root_layer_sha256_before": "9586b93f462450df99a13997688d590fa412f7064c534a6194e6f7b9ae88f9c4",
+        "root_layer_sha256_after": "9586b93f462450df99a13997688d590fa412f7064c534a6194e6f7b9ae88f9c4",
+        "wall_s": 3.8346976512111723,
+        "measured_prefix_includes_this_query": false,
+        "validator_extension_enabled_before_query": false,
+        "scope": "Official per-prim compatibility predicate only; no actual CPU/GPU kernel attribution"
+      }
+    },
+    {
+      "name": "both_disabled",
+      "metrics": {
+        "prefix_wall_s": 58.66211744397879,
+        "outer_group_wall_s": 120.05906914407387,
+        "fetch_results_wall_s": 54.57517437660135,
+        "sim_step_wall_s": 54.60675056511536,
+        "full_filtered_contact_readback_wall_s": 0.275146379834041,
+        "prefix_envsteps_per_s": 1.7046776413329796
+      },
+      "actual_settings": {
+        "/physics/fabricUpdateTransformations": false,
+        "/physics/fabricUpdateVelocities": false,
+        "/physics/fabricUseGPUInterop": true,
+        "/physics/suppressReadback": true,
+        "/physics/disableContactProcessing": false
+      },
+      "actual_setting_ticks": 100,
+      "lane_integrity": [
+        {
+          "environment": 0,
+          "original_object_ids": [
+            "graspnet_063",
+            "graspnet_037",
+            "graspnet_015"
+          ],
+          "candidate_sha256": "d3b16f9df81b8b392bfb691eafe0d00f708f423c030aa4a696e2265efa989a68",
+          "commands_sha256": "2bd97148919c3f10be5c2be315de1328446b824b1bcd9880926bf3000d7c20ea",
+          "scene_sha256": "dc824d45ac0517f9d5b04ac68cadecc00fa9f4d5e21d1a60f2ceded828a278d9",
+          "trace_rows": 100,
+          "contact_rows": 100,
+          "contact_points": 215700,
+          "max_source_bottom_error_m": 3.469446951953614e-18,
+          "max_finger_load_error_n": 0.0,
+          "targets24_to_28_prefix_exact": true,
+          "original_arm_velocity_targets_exact": true,
+          "full_source_vertices": true,
+          "label": null,
+          "raw_label": null,
+          "full_gates_certified": false
+        }
+      ],
+      "convex_compatibility": {
+        "status": "queried",
+        "checked_convex_prims": 13846,
+        "gpu_compatible": 13846,
+        "gpu_incompatible": 0,
+        "physics_clock_before": 100,
+        "physics_clock_after": 100,
+        "physics_steps_added": 0,
+        "root_layer_sha256_before": "f5abafa582e7ff793821ceb4552c458fdb515e5d900080e0d370f16842cce123",
+        "root_layer_sha256_after": "f5abafa582e7ff793821ceb4552c458fdb515e5d900080e0d370f16842cce123",
+        "wall_s": 2.569730375893414,
+        "measured_prefix_includes_this_query": false,
+        "validator_extension_enabled_before_query": false,
+        "scope": "Official per-prim compatibility predicate only; no actual CPU/GPU kernel attribution"
+      }
+    }
+  ],
+  "effective_intervention": false,
+  "interpretation": "Both measured arms already have both publication flags disabled; wall ratios describe repeat runs, not a Fabric intervention speedup.",
+  "exact_contact_multiset_comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_fabric_control_20261115_v1/CONTACT_ORDER_COMPARISON.json",
+    "sha256": "eed32805f412d6912fc07e2bc50a418d44809843b263c07a4013245552bf9b70",
+    "bytes": 4947
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "status": "static_dependency_review",
+  "sources": {
+    "native_snapshot": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/runtime.py",
+      "sha256": "86305cf18a5008fcf81bf577c172bb6e133990d35c0a98188f7ab43e37a89637",
+      "anchors": {
+        "def snapshot": [
+          123
+        ],
+        "body_link_pose_w.torch": [
+          127
+        ],
+        "sim.step(render=False)": [],
+        "use_fabric=device !=": [
+          46
+        ]
+      }
+    },
+    "native_contacts": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/contact_readback.py",
+      "sha256": "37c7a3b754f8dc659954a36068559928e9d656072c18cd235335893ee104fd41",
+      "anchors": {
+        "get_contact_data": [
+          10
+        ]
+      }
+    },
+    "native_fabric_compatibility": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/scene/physx_compat.py",
+      "sha256": "b3e41466761b1c986e1e093531c702748b1882eabdb9fa61d30da8cb7e5f2ecf",
+      "anchors": {
+        "def forward_fabric": [
+          38
+        ],
+        "sim.forward()": [
+          48
+        ],
+        "finally:": [
+          49
+        ]
+      }
+    },
+    "physx_manager": {
+      "path": "/home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/isaaclab_physx/physics/physx_manager.py",
+      "sha256": "a20f98c841ea031329d0d083303e1fb4c84cb13a7ba3f4cc6bbeee028302bd35",
+      "anchors": {
+        "def step": [
+          509
+        ],
+        "physx_sim.simulate": [
+          521
+        ],
+        "physx_sim.fetch_results": [
+          522,
+          960
+        ],
+        "def _load_fabric": [
+          860
+        ]
+      }
+    },
+    "new_worker": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_fabric_execution.py",
+      "sha256": "b3cf5571edbfe60b1da448be13b2e79322e2ca755b5068cb55198b3282d0c383",
+      "anchors": {
+        "def configure": [
+          29
+        ],
+        "def convex_compatibility": [
+          53
+        ],
+        "settings_after_ticks": [
+          124,
+          157
+        ],
+        "def check_cross": [
+          153
+        ]
+      }
+    }
+  },
+  "conclusion": [
+    "Existing native robot snapshots use PhysX-backed tensor asset data; contacts use get_contact_data.",
+    "One-time native forward_fabric remains intact and restores its prior publication flag.",
+    "Both arms use the same original headless native control and full pointwise journal.",
+    "Compatibility uses only the per-prim predicate after timing; the full checker/cache reset is not called."
+  ],
+  "official_sources": [
+    "https://docs.isaacsim.omniverse.nvidia.com/latest/reference_material/sim_performance_optimization_handbook.html",
+    "https://github.com/isaac-sim/IsaacSim/issues/740"
+  ],
+  "static_review_Kit_launches": 0,
+  "static_review_physics_steps": 0
+}

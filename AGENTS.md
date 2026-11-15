@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-15 当前：Fabric 双关闭小对照完成，默认已满足该建议，未测出新加速
+
+用户授权按网络官方建议开始小规模验证。新增独立 author_fabric_execution/control/audit，复用原 scaling/vector/profile、原命令及完整逐点日志，不改冻结源或 CanonDex。协议 fabric_control_20261115_v1 固定原 scene4/g6、baseline→both_disabled 各100tick、2Kit/0重试/每worker600s，仅 GPU0 UUID。实读关键发现：baseline 在 App 后就已 fabricUpdateTransformations=false、fabricUpdateVelocities=false、fabricUseGPUInterop=true，两组积分时亦均如此；这是相同实际配置的重复，不是有效开关干预，不能套上游7倍或把 wall 比称关闭 Fabric 的净收益。
+
+两组前缀58.417396/58.662117s，fetch54.553399/54.575174s约93%，接触读取.233291/.275146s；组wall124.023485/120.059069s，控制器244.123901s，不含事后独立审计。精确2Kit/200shared/200env/600三体步，native尝试=返回=全观测100/组，无在途未知。独立审计6.879916s核1286绑定、200trace/200contact/431400点，原24→28和速度目标及所有14个native数组、全三体entry/轨迹exact。原接触列表100行均有顺序差异，原audit保留false；另2.643654s只读核每tick/每类完整精确多重集合100/100相同、每组215700点，不删零力/字段/重复项、不取整；不能说原始逐行相同或完整轨迹等价。
+
+后置官方单prim兼容查询每组13846凸网格prim（机器人12711、primary328、另两体807）全返回GPU compatible，查询前后stage layer SHA和100tick不变；未调用完整CheckStage/reset/detach/cache release。prim不是唯一cooked hull，不证明所有接触/约束kernel都在GPU。原三体1135hulls/native20um保持。无任务相机/visualizer，原一次forward_fabric保持，RGBD capture未改。8新CPUtests+30复用检查过，mock不冒充实测。
+
+本轮0完整抓取/新标签/CGR/训练；只认证前缀完整性，旧14fit+1internal及13旧数据权重文件SHA不变。2自有Kit进程组全退、当前slot released、3锁可取、registry released，无后台物理。报告 reproduction/boya/AUTHOR_FABRIC_RESULTS_20261115.md，轻证据 evidence/author_fabric_control_20261115_v1，大输出public/ignored。fetch内部归因仍未知；CPU/GPU1/4/8代码已具备离线检查但尚无实跑，未自动追加该预算。正式扩采/训练仍0，旧fit15.02天条件情景及4800总ETA未知不变。
+
 ## 2026-11-15 当前：GPU单/双环境物理接通，主要耗时在fetch，尚不能加速大采集
 
 用户追问为何不接GPU，已实际实现独立author_gpu_vector_execution与官方clone/原共享barrier；原commands/三体几何/250Hz/质量摩擦/完整逐点接触与判定逻辑保留，CPU→GPU为显式后端变化，不宣称轨迹等价。真实GPU0 UUID固定，NVML0对应minor1，GPU1其它任务不干预。两次实读均GPU dynamics/broadphase、tensor ordinal0、full filtered6 CUDA；1135hulls原native20um通过。原v1绑定导入顺序失败1Kit/0步留档，v2只提前原bind_hand，11CPUtests过，CanonDex只读。

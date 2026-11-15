@@ -1,0 +1,96 @@
+{
+  "schema": "anydex_boya_author_fabric_final_state_v1",
+  "status": "pass",
+  "unix_s": 1794718869.1557384,
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/FABRIC_CONTROL_PROTOCOL.json",
+    "sha256": "5c3c70d3727b2a754bde734f9c754f1101f82c605aef26caca3ec127c883d316"
+  },
+  "result": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/FABRIC_CONTROL_RESULTS.json",
+    "sha256": "ea7bddc158ca9a0310841a206aa44c10273b7c70d28ce776b7081707ffa2074c"
+  },
+  "frozen_sources_and_inputs_unchanged": true,
+  "source_archive": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/SOURCE_ARCHIVE.json",
+    "sha256": "1552116263ae676840fd8b867c112bed6342cc1d16d7080c3af84be7dc8a305e"
+  },
+  "owned_workers": [
+    {
+      "process": {
+        "pid": 3183572,
+        "pgid": 3183572,
+        "start_ticks": 153754433
+      },
+      "current_identity": null,
+      "process_group_alive": false,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/baseline/worker_00/STAGE.json",
+        "sha256": "16b6ef8f6ff8b53851dfa6c78ac1aff43e701a520e4bbb778abe775ae9931ba7"
+      },
+      "returncode": 0
+    },
+    {
+      "process": {
+        "pid": 3188688,
+        "pgid": 3188688,
+        "start_ticks": 153766835
+      },
+      "current_identity": null,
+      "process_group_alive": false,
+      "stage": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/both_disabled/worker_00/STAGE.json",
+        "sha256": "280d94e76e45f6c1f6355fed87faf927b582e110fbd3a42ad8419418fd811ab1"
+      },
+      "returncode": 0
+    }
+  ],
+  "released_slots": [
+    {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/resource_slots/kit/0.json",
+        "sha256": "232d6ee14f77f3527922446dcb5daf4a428b7b2363ef7042ba24cdeec78d0e42"
+      },
+      "state": "released"
+    }
+  ],
+  "available_locks": [
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/DRIVER.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/resource_slots/kit/0.lock"
+  ],
+  "registry": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.wave_active.json",
+    "sha256": "443e423ae5f9c163833f6cf1275a4278ea9d6e4a10ba4211e696079e4375d950"
+  },
+  "old_gpu_protocols_unchanged": true,
+  "old_data_models_verified": {
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/manifest.json": "c85a284be680707a2b3bcaae7950e1981bd907a9e88870c434ced1c22f6e91bb",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_1.npz": "3ed91e3b22f442b2997d6bf1638e683f5df75bee0e1c50759749ba09293f9259",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_6.npz": "c1dfdb84ea60c33b090081de0fc4ad51a0c34748dfb5e5ec9dff0a4873ddbc39",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_7.npz": "0cf4a7b126801be0085708fb0d550bfe7f7ffdccd452719817ae3db8ca172f0b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_stable_supplement_20261107_v2/training_delivery_v3/merged_dataset/gesture_8.npz": "2f68bc7d68b9e46d2089c0820eb8411aeaed604941cd01e69ea7690989b06196",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g01.pt": "ad2c45f7d8376171141bd7fd50bf16d1250bfb0ea0582c3b520c60cb7daa157b",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g06.pt": "1479881a0aa108ebaa3739d12f7dfadffa1b1ab88dbf1057575eb9d9cae7a6b8",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g07.pt": "d0a513507b12a27e391aded54763e4b8fab3bcf03de86fa40d8637cf24a342ea",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_preactivation_control_20261107_v1/internal_check/g08.pt": "9c876bc2c64c64c67fa2b9a0a98356751158a3443400bb094b3b93d1006b5e1a",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g01.pt": "72b40881fd5f13cabda542d079305ce632bda295c2258ee9360b5b12f339d6c3",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g06.pt": "1fddda3c8822d393224125cf755c2963457f147f943c2d7218ea86372def5433",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g07.pt": "9ce49ebd7110cecc9eb5cca75b5a016e5ae445250827f82cfe05ca316d178fc6",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_code_recipe_20261107_v1/internal_check/g08.pt": "010a3ff995945e076d03c96b5665017a6d6275ac1cd876b8b1739428fbe1df66"
+  },
+  "old_data_models_count": 13,
+  "old_new_labels_reference": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_parallel_collection_20261115_v1/ROOT_VERIFICATION.json",
+    "sha256": "9c0c6dcd45fbc29e8de178576b0607cf6745e312cede9a4c4c7c1fd13db6c511"
+  },
+  "fit_labels": 14,
+  "internal_labels": 1,
+  "new_collection_labels": 0,
+  "training_updates": 0,
+  "verification_physics_steps": 0,
+  "verifier": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_fabric_control_20261115_v1/verify_final.py",
+    "sha256": "6dd9e0c3da84f219b610aa94549c3c222d2532de277293c81557348b52c29e8a"
+  }
+}

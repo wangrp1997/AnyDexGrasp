@@ -1,0 +1,40 @@
+{
+  "schema": "anydex_boya_author_scaling_control_cpu_tests_v1",
+  "status": "pass",
+  "command": "/home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest test_author_scaling_control -v",
+  "working_directory": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya",
+  "exit_code": 0,
+  "tests": 9,
+  "unittest_reported_wall_s": 0.03,
+  "recorded_from_completed_tool_result": true,
+  "tests_rerun_for_receipt": false,
+  "cases": [
+    "accounting/labels/backend/probe mismatches reject",
+    "interval span/union/peak and touching boundary",
+    "all eight CPU dispatcher threads meet one barrier",
+    "eight actual flock slots without changing original kit limit3",
+    "first GPU or first CPU group failure stops all later groups",
+    "RUN_STARTED rejects repeated run; registry and locks release",
+    "changed frozen data/output path rejects",
+    "only matching owned PID/starttime/PGID can be signaled; SIGINT before SIGTERM",
+    "failed 37-returned/38-attempted worker keeps cost bounds and unknown",
+    "source archive deduplicates aliases and preserves exact bytes"
+  ],
+  "case_note": "9 unittest methods; several contain independent rejection subcases",
+  "source_sha256": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_control.py": "8d263bbfb4b83e9b3415f9269741e713f5018e8101b96e0ae6a4e008dfca0f88",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_scaling_control.py": "5b7dfd239ef4c0eadf10d1dd111c7ec6486db93e575d45dc6f9acc442ad5fb3b",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_SCALING_CONTROL_20261115.md": "b12418b008a452c7155dd448762e0276b1fda409f83cfb7c904c64fb57b95f94",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_scaling_execution.py": "4037bebc5296977848cc2413d833d396eb2669df470b9c74a53863c91dbf0375"
+  },
+  "Kit_launches": 0,
+  "physics_steps": 0,
+  "model_forwards": 0,
+  "real_child_processes": 0,
+  "real_signals": 0,
+  "limitations": [
+    "Children, GPU queries, and full run-stage execution are mocked in dispatcher tests",
+    "Eight thread concurrency is CPU dispatch evidence only, not simultaneous Kit or GPU proof",
+    "No live protocol freeze, public output modification, simulation, or model execution in this validation"
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "schema": "anydex_boya_author_fabric_control_v1",
+  "status": "complete",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/FABRIC_CONTROL_PROTOCOL.json",
+    "sha256": "5c3c70d3727b2a754bde734f9c754f1101f82c605aef26caca3ec127c883d316"
+  },
+  "groups": [
+    {
+      "name": "baseline",
+      "mode": "gpu",
+      "count": 1,
+      "status": "partial_scaling_complete",
+      "started_unix_s": 1794718601.4410431,
+      "finished_unix_s": 1794718725.4645264,
+      "wall_s": 124.02348493179306,
+      "workers": [
+        {
+          "worker_id": "worker_00",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/baseline/worker_00/STAGE.json",
+            "sha256": "16b6ef8f6ff8b53851dfa6c78ac1aff43e701a520e4bbb778abe775ae9931ba7"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/baseline/worker_00/result/SCALING_EXECUTION.json",
+            "sha256": "3e1dfc87c22121b4b821e4afcfee943debc2c3a2ab66f99e4528f534aaefeb0d"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3183572,
+            "pgid": 3183572,
+            "start_ticks": 153754433
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        }
+      ],
+      "error": null,
+      "exclude_training": true,
+      "label": null,
+      "raw_label": null,
+      "prefix_interval_stats": {
+        "span_s": 58.417399406433105,
+        "union_s": 58.417399406433105,
+        "peak_concurrency": 1,
+        "all_worker_overlap_s": 58.417399406433105,
+        "evidence_scope": "Measured execution-prefix intervals; exact simultaneous Kit activity also has host samples"
+      },
+      "setup_sum_s": 58.77781105041504,
+      "execution_wall_sum_s": 58.41739570698701,
+      "environment_steps": 100,
+      "prefix_environment_steps_per_s": 1.7118187563308012,
+      "outer_environment_steps_per_s": 0.8062989042357194
+    },
+    {
+      "name": "both_disabled",
+      "mode": "gpu",
+      "count": 1,
+      "status": "partial_scaling_complete",
+      "started_unix_s": 1794718725.4799716,
+      "finished_unix_s": 1794718845.5390391,
+      "wall_s": 120.05906914407387,
+      "workers": [
+        {
+          "worker_id": "worker_00",
+          "status": "partial_scaling",
+          "stage": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/both_disabled/worker_00/STAGE.json",
+            "sha256": "280d94e76e45f6c1f6355fed87faf927b582e110fbd3a42ad8419418fd811ab1"
+          },
+          "receipt": {
+            "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/both_disabled/worker_00/result/SCALING_EXECUTION.json",
+            "sha256": "845c05f540202c68db62fbb42dfced8ec0bbf14a59e2014d580842aeef421c51"
+          },
+          "partial_receipt": null,
+          "process": {
+            "pid": 3188688,
+            "pgid": 3188688,
+            "start_ticks": 153766835
+          },
+          "returncode": 0,
+          "physics_steps_known": 100,
+          "physical_steps_unknown": false,
+          "physical_cost": {
+            "returned_physical_steps": 100,
+            "actual_simulation_step_counter": 100,
+            "observations_completed_steps_per_lane": [
+              100
+            ],
+            "physical_steps_unknown": false,
+            "inflight_step_unconfirmed": false,
+            "physical_steps_lower_bound": 100,
+            "physical_steps_upper_bound": 100,
+            "integrated_environment_steps_lower_bound": 100,
+            "integrated_environment_steps_upper_bound": 100
+          }
+        }
+      ],
+      "error": null,
+      "exclude_training": true,
+      "label": null,
+      "raw_label": null,
+      "prefix_interval_stats": {
+        "span_s": 58.66212201118469,
+        "union_s": 58.66212201118469,
+        "peak_concurrency": 1,
+        "all_worker_overlap_s": 58.66212201118469,
+        "evidence_scope": "Measured execution-prefix intervals; exact simultaneous Kit activity also has host samples"
+      },
+      "setup_sum_s": 55.99616765975952,
+      "execution_wall_sum_s": 58.66211744397879,
+      "environment_steps": 100,
+      "prefix_environment_steps_per_s": 1.7046775086133725,
+      "outer_environment_steps_per_s": 0.8329233327637874
+    }
+  ],
+  "error": null,
+  "wall_s": 244.12390122096986,
+  "resource_samples": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fabric_control_20261115_v1/RESOURCE_SAMPLES.jsonl",
+    "sha256": "1db2a6603f0cd573793ce9da5a94d5cb1d028417b4cea812b304590b091e8a65"
+  },
+  "label": null,
+  "raw_label": null,
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "retries": 0,
+  "full_lift_certified": false,
+  "full_collection_ETA": null
+}
