@@ -1,5 +1,13 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：完整采集常驻入口已实现，17项离线检查通过，真实对照待权限
+
+用户要求落实成熟加速方案，新增独立author_collection_service/client、author_stream_representation、author_collection_stream_control。单拥有线程的Kit衔接capture与execute，CGR原逐帧循环/模型常驻，第二场观测与第一场规划可重叠，执行与前一条原数值审核可重叠。观测之间仍重建SimulationContext/场景，尚未实现跨观测USD/原生资产缓存；不能宣称全部资产复用或物理等价。原750初始化/250Hz/三体完整接触/原命令/判定保留，物理仍CPU。
+
+7新增+2verified+8resident=17CPU检查通过，含真实无Kit子进程生命周期/持槽/并行审核/退出释放；mock非物理性能。工作区outputs/boya_stream_collection_control_20261116_v1已freeze两个既有fit场景00009/00013、仅g1、cold4Kit→resident1Kit、最多35000env步、0重试/补例，全部exclude_training。两模式均含相同流水与常驻CGR，只能测Kit复用的成对效果，不能归为全部流水相对旧入口净收益。原数组/候选/命令与独立原审核通过前不得报倍率；单组已知场景不推采满ETA。
+
+公共目录freeze两次在启动前因自动权限审核超时未派发；普通沙箱nvidia-smi无法连接驱动，已发明确固定预算权限请求，等待回复。当前本阶段0Kit/物理/标签/训练，累计仍26fit+5internal=31，正式4800/训练/新模型/外测0；无真实常驻对照在后台。报告reproduction/boya/AUTHOR_COLLECTION_SERVICE_STATUS_20261116.md，轻证据evidence/author_collection_service_20261116_v1。历史冻结源和CanonDex不改。
+
 ## 2026-11-15 当前：原文／现成加速方案核查完成，尚未新增性能实现或物理批次
 
 用户质疑速度并要求查论文／网络与创新空间。本轮查原论文、作者采集源码及NVIDIA／DexGraspNet一手资料，0Kit／物理／标签／训练／依赖安装。已确认原采集网络与机器人在循环外创建；IsaacLab官方资产复制／隔离、DexGraspNet多环境GPU验证、cuRobo GPU规划均有现成实现。最新官方cuRobo v0.9.0（2026-11-04）特定RTX5090基准4.4ms规划不迁移为本项目实测；本机Python3.12，curobo未装，不能拿旧0.7.x兼容约束代替当前版本核验。
