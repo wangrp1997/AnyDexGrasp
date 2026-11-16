@@ -1,0 +1,55 @@
+{
+  "scope": "Full source hand vertices against world z=0, 33 fixed free-FK closure samples per branch; no continuous, self, object collision, contact or dynamics certification",
+  "branches": [
+    {
+      "opponent": "ff",
+      "sampled_closure_poses": 33,
+      "minimum_source_surface_z_m": -0.0029514656199316133,
+      "at": {
+        "progress": 0.40724068512102823,
+        "link": "lfdistal"
+      },
+      "no_sample_below_floor": false,
+      "check_wall_s": 0.04398269206285477
+    },
+    {
+      "opponent": "mf",
+      "sampled_closure_poses": 33,
+      "minimum_source_surface_z_m": -0.0006102504277345974,
+      "at": {
+        "progress": 0.0,
+        "link": "thdistal"
+      },
+      "no_sample_below_floor": false,
+      "check_wall_s": 0.043397533940151334
+    },
+    {
+      "opponent": "rf",
+      "sampled_closure_poses": 33,
+      "minimum_source_surface_z_m": -0.0014186215693711701,
+      "at": {
+        "progress": 0.0,
+        "link": "thdistal"
+      },
+      "no_sample_below_floor": false,
+      "check_wall_s": 0.052698574028909206
+    },
+    {
+      "opponent": "lf",
+      "sampled_closure_poses": 33,
+      "minimum_source_surface_z_m": -0.001159303062117173,
+      "at": {
+        "progress": 0.0,
+        "link": "thdistal"
+      },
+      "no_sample_below_floor": false,
+      "check_wall_s": 0.057071960996836424
+    }
+  ],
+  "physics_steps": 0,
+  "labels": 0,
+  "source_renderer": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_author_boya_candidate_comparison.py",
+    "sha256": "2d45a80dd74474bdea0dd416d4eba70982f1a8bf1717ae2ccffd74b81a1d81e5"
+  }
+}

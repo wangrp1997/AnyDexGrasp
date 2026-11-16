@@ -1,0 +1,37 @@
+{
+  "status": "static_geometry_only",
+  "benchmark_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/RESULTS.json",
+    "sha256": "568c065d897115e752b38af7076b7a91ec6dfa44a07b1e2524c74cf86ed2c75f"
+  },
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_fast_contact_alignment.py",
+    "sha256": "bb8e32126eef37f9c5bb28ca74e85c3e99dec1a3d1e196074bd35816d7e9689f"
+  },
+  "reference_renderer": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_author_boya_candidate_comparison.py",
+    "sha256": "2d45a80dd74474bdea0dd416d4eba70982f1a8bf1717ae2ccffd74b81a1d81e5"
+  },
+  "source_candidate": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/pool/selected_author_candidate.json",
+    "sha256": "439c9e8e2ed0b1a5dd4636fb4cc99ce279aece8844f70d55269793b737a78ab9"
+  },
+  "display_opponent": "ff",
+  "selection": "Fixed ff branch to isolate old/new wrist effect; no historical success used",
+  "closure_progress": 0.40724068512102823,
+  "target_width_mm": 83.86754989624023,
+  "old_midpoint_drift_mm": 20.63220335603963,
+  "old_reference_orientation_difference_deg": 17.337315002551488,
+  "new_reference_max_matrix_error": 1.1102230246251565e-16,
+  "old_contact_pose_source_surface_min_z_m": -0.010484310823751529,
+  "new_contact_pose_source_surface_min_z_m": -0.0029514656199316133,
+  "new_open_pose_source_surface_min_z_m": 0.004372818403427556,
+  "entire_closure_collision_checked": false,
+  "real_thumb_contact_or_force_validated": false,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "production_ready": false
+}

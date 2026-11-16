@@ -1,0 +1,78 @@
+{
+  "status": "fast_geometric_contact_width_mapper_benchmarked_not_execution_admitted",
+  "parent_commit": "5ced8cb",
+  "source_files": {
+    "author_fast_contact_alignment.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_fast_contact_alignment.py",
+      "sha256": "9364c2bdf5dab2b744641ddb87b68383e905acce05060de69c5ca10806dc3a3e"
+    },
+    "benchmark_author_fast_contact_alignment.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/benchmark_author_fast_contact_alignment.py",
+      "sha256": "f42a5a6fae5410d9c0ebdcd3699d85539bf0e8b23670f2d40015c104ed733da2"
+    },
+    "test_author_fast_contact_alignment.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_fast_contact_alignment.py",
+      "sha256": "edb7ee06d0b06f16b50b6402e40898109a0ddc231d70c928b3fbf7d64c2ed863"
+    },
+    "render_fast_contact_alignment.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_fast_contact_alignment.py",
+      "sha256": "bb8e32126eef37f9c5bb28ca74e85c3e99dec1a3d1e196074bd35816d7e9689f"
+    }
+  },
+  "raw_artifacts": {
+    "EXAMPLE_MAPPINGS.npz": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/EXAMPLE_MAPPINGS.npz",
+      "sha256": "8d940e1bead678ee98b9b6e7e3c0b4e003dabd745f9889780b9fb5cbb87f5a08"
+    },
+    "PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/PROTOCOL.json",
+      "sha256": "95913cd9d6690caa1525e68d25ed4295938d3eb3e0c53624a7a64c7ff11d6f40"
+    },
+    "RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/RESULTS.json",
+      "sha256": "568c065d897115e752b38af7076b7a91ec6dfa44a07b1e2524c74cf86ed2c75f"
+    },
+    "STATIC_BRANCH_FLOOR_CHECK.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/STATIC_BRANCH_FLOOR_CHECK.json",
+      "sha256": "b811c970becd29b8cc8626ed40216b67ebeb6c43c29f79bc5e510bd3ce13d7ea"
+    },
+    "visual/VISUAL_COMPARISON.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/visual/VISUAL_COMPARISON.json",
+      "sha256": "db589c8e1dd8b9de0d2a17e91af51a3db144b3a2fee97534f3412d74ddd798be"
+    },
+    "visual/closed_configuration_alignment.png": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/visual/closed_configuration_alignment.png",
+      "sha256": "23c94ed795d84558c7cdd027eba83b5247aef5ee731335feff213027ce1f2897"
+    },
+    "visual/open_then_contact.png": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/visual/open_then_contact.png",
+      "sha256": "96c19e29a03f3a8cde003ea0237fd05b825a81744932db9dd13f3cc37a026802"
+    }
+  },
+  "cpu_tests_passed": 8,
+  "cpu_test_names": [
+    "batched_fk_vs_independent_original_XML",
+    "raw_width_not_preopening_and_four_opponents",
+    "contact_frame_rigid_alignment",
+    "all_five_closure_and_original_mimics",
+    "out_of_range_no_clamping",
+    "nonmonotonic_first_crossing",
+    "inputs_and_endpoints_unchanged",
+    "invalid_rotation_and_depth_rejected"
+  ],
+  "independent_FK_cases": 64,
+  "source_poses_contact_references_not_hardware_calibrated": true,
+  "one_g1_wrap_thumb_required_other_fingers_optional": true,
+  "fixed_refinement_passes": 2,
+  "production_ready": false,
+  "example_four_branches_show_negative_floor_z": true,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "CGR_forwards": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "old_valid_dataset_fit": 26,
+  "old_valid_dataset_internal": 5,
+  "new_mapping_compatible_data_not_certified": true
+}

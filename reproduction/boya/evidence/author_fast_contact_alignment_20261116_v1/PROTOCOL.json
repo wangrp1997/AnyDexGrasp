@@ -1,0 +1,68 @@
+{
+  "inputs": {
+    "candidate": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/pool/selected_author_candidate.json",
+      "sha256": "439c9e8e2ed0b1a5dd4636fb4cc99ce279aece8844f70d55269793b737a78ab9"
+    },
+    "raw": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/representation/representations/s40_lift_fit_00013_s2026111501/raw_camera_candidates.npz",
+      "sha256": "4c0b1779a95e1819cf1f931500ed75d27ec7030f0e44d36b7ac28d8bce4a598f"
+    },
+    "calibration": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+      "sha256": "eef533044ac769f5a985f5daf06964c6d7d26502b0c65c2a78e63fb8ce6ac832"
+    }
+  },
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/benchmark_author_fast_contact_alignment.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/benchmark_author_fast_contact_alignment.py",
+      "sha256": "f42a5a6fae5410d9c0ebdcd3699d85539bf0e8b23670f2d40015c104ed733da2"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_fast_contact_alignment.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_fast_contact_alignment.py",
+      "sha256": "9364c2bdf5dab2b744641ddb87b68383e905acce05060de69c5ca10806dc3a3e"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_action_semantics.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_action_semantics.py",
+      "sha256": "667c0e8e49428f30f200052eddf9ddcf6bd52b71edcbc32a957710bf6b8858a4"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_reference_geometry.py",
+      "sha256": "2c7fde4a7eb5936da4b012dace0024833d9ad30754b8be047f39af19b10bd50e"
+    }
+  },
+  "gesture": 1,
+  "groups": [
+    "th",
+    "ff",
+    "mf",
+    "rf",
+    "lf"
+  ],
+  "thumb_required": true,
+  "optional_opponents": [
+    "ff",
+    "mf",
+    "rf",
+    "lf"
+  ],
+  "grid_size": 513,
+  "fixed_refinement_passes": 2,
+  "numeric_width_tolerance_m": 1e-06,
+  "source_width_multiplier": 1.0,
+  "target_definition": "Original raw CGR width; 1.7 preopening request is not the contact target",
+  "single_calls": 129,
+  "batch_repetitions": 5,
+  "independent_fk_audit_cases": 64,
+  "max_branches_per_CGR": 4,
+  "no_object_mesh_or_GT_target_in_mapper": true,
+  "source_CGR_frozen": true,
+  "physics_steps": 0,
+  "Kit_starts": 0,
+  "CGR_forwards": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "production_ready": false,
+  "whole_closure_collision_or_force_validation": false
+}
