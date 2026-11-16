@@ -1,0 +1,51 @@
+{
+  "status": "recorded",
+  "timing": {
+    "sim_step_calls": 3818,
+    "sim_step_s": 82.23580434639007,
+    "observer_calls": 3818,
+    "observer_s": 95.99842752679251,
+    "full_vertex_metric_calls": 11457,
+    "full_vertex_metric_s": 4.897936932975426,
+    "contact_json_append_calls": 3818,
+    "contact_json_append_s": 27.324499960057437,
+    "phases": {
+      "settle": {
+        "steps": 50,
+        "observer_s": 1.2184493548702449
+      },
+      "home_to_pregrasp": {
+        "steps": 2468,
+        "observer_s": 53.86356961703859
+      },
+      "approach": {
+        "steps": 500,
+        "observer_s": 16.287559814285487
+      },
+      "close": {
+        "steps": 250,
+        "observer_s": 10.408670180477202
+      },
+      "hold": {
+        "steps": 50,
+        "observer_s": 1.4179787712637335
+      },
+      "lift": {
+        "steps": 500,
+        "observer_s": 12.802199788857251
+      }
+    }
+  },
+  "wall_s": 251.59814580297098,
+  "physics_changed": false,
+  "full_source_vertices_retained": true,
+  "implementation": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_fast_geometry_checks.py",
+    "sha256": "4c0227456db48790d5e6e6cc5446698ae9d5914c55f67da373c3012eb7c2709f"
+  },
+  "profiler": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_observer_partition.py",
+    "sha256": "aadf4f1af83f135ddcbaec88dce87c0f3936622212ec6d8413bd4a07489af671"
+  },
+  "scope": "sim_step is direct wall time; observer includes metrics and JSON append, nested fields must not be added"
+}

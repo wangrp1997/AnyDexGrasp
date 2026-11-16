@@ -1,6 +1,12 @@
 # AnyDexGrasp
 Dexterous grasp pose detection network built upon [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine).
 
+## Boya提速进展（2026-11-17）
+
+新入口[`author_accelerated_fixed_scene_collection.py`](reproduction/boya/author_accelerated_fixed_scene_collection.py)保留固定场景、原物理和全部检查，编译全源几何计算以减少临时数组。完整同一份保存数据的审核从69.2降到30.6秒；新一轮同图像、同3818步命令的完整提起与审核通过，parent耗时9分49秒，执行器从旧对应310.6降到250.7秒。对应阶段总和约缩短27%，属历史匹配观察，不能当全量采集倍率；旧36分12秒是两轮，不能与新一轮直接相除。
+
+同时纠正此前计时解释：旧“物理推进＋更新”桶包含外层观测。新直接测得物理82.2秒、完整观测96.0秒；仍需改善接触处理与存储，尚未达到作者实机节奏。原几何、250Hz、64迭代、质量摩擦和完整接触保持，原生轨迹与旧对应场景exact。25项检查通过。仅1条排除训练的诊断正例，正式扩采/训练未启动，新映射fit仍2条。运行命令与完整限制见[提速报告](reproduction/boya/AUTHOR_COLLECTION_SPEEDUP_20261117.md)，来源与结果见[轻量证据](reproduction/boya/evidence/author_collection_speedup_20261117_v1/SUMMARY.json)。
+
 ## Boya当前入口：固定场景连续采集（2026-11-16）
 
 已实际跑通同一个机器人、桌面、相机和物理世界中的两轮“换物体→稳定→拍照→CGR→抓取→记标签”，拍照到抓取不清场、不重建、不重置物体。1Kit/1建场/1相机，CGR载入1次、前向2次；两轮分别提起成功和提起失败，初始化及完整执行审核均通过。两轮完整耗时36分11.808秒，**尚未证明整体加速**，主要耗时仍在物理执行和审核；这两条为排除训练的流程诊断，正式扩采和训练未启动。此前新映射2fit保持不变。

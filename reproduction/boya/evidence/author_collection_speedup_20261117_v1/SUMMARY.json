@@ -1,0 +1,160 @@
+{
+  "status": "complete",
+  "old_scene_index": 0,
+  "new_scene_count": 1,
+  "new_full_parent_wall_s": 589.3495410340838,
+  "comparison": [
+    {
+      "root": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4",
+      "stages_s": {
+        "capture_audit": 165.35088558401912,
+        "prepare": 99.70298229902983,
+        "runtime_audit": 80.35959276696667,
+        "capture": 143.04659708682448,
+        "execution_worker": 311.4047704548575,
+        "representation": 4.701342721935362
+      },
+      "sum_stages_s": 804.566170913633,
+      "pipeline_execute_wall_s": 310.5664261698257
+    },
+    {
+      "root": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1",
+      "stages_s": {
+        "capture_audit": 14.424714441876858,
+        "prepare": 86.51692053792067,
+        "runtime_audit": 69.84649840905331,
+        "capture": 156.94855911890045,
+        "execution_worker": 252.9161463419441,
+        "representation": 3.3628945329692215
+      },
+      "sum_stages_s": 584.0157333826646,
+      "pipeline_execute_wall_s": 250.70854562800378
+    }
+  ],
+  "historical_matched_stage_sum_ratio": 1.3776446847647803,
+  "comparison_scope": "One matched command/image/trajectory historical control; old parent has two scenes, so its full parent wall must not be divided by new one-scene wall",
+  "source_array_equality": {
+    "actual_RGBD": {
+      "rgb": true,
+      "depth_m": true
+    },
+    "all_initialization_states": {
+      "pose_xyzw": true,
+      "velocity": true
+    },
+    "complete_native_trajectory": {
+      "time_s": true,
+      "phase": true,
+      "object_pose_xyzw": true,
+      "joint_pos": true,
+      "joint_target": true,
+      "body_pose_xyzw": true,
+      "desired_palm": true,
+      "finger_loads_n": true,
+      "object_depth_m": true,
+      "robot_depth_m": true,
+      "joint_velocity": true,
+      "joint_velocity_target": true,
+      "body_names": true,
+      "joint_names": true
+    },
+    "original_24_commands": {
+      "joint_names": true,
+      "joint_target": true,
+      "desired_palm": true,
+      "phase": true,
+      "time_s": true,
+      "initial_position": true
+    }
+  },
+  "all_body_trace_maximum_differences": {
+    "pose_xyzw": 0.0,
+    "velocity": 0.0,
+    "finger_loads_n": 0.0,
+    "source_bottom_m": 1.3877787807814457e-17,
+    "source_top_m": 2.7755575615628914e-17
+  },
+  "full_lossless_contact_JSONL_payload_exact": true,
+  "full_contact_logical_payload": {
+    "sha256": "b6d2f0d382689d2e2abe750ce18a807b308b385c5f387e6db473ff52c1407b1d",
+    "bytes": 2466275238,
+    "records": 3818
+  },
+  "full_control_photo_clock": 750,
+  "full_control_final_clock": 4568,
+  "full_control_initialization_ticks": 750,
+  "full_control_execution_ticks": 3818,
+  "full_control_native_startup_integrations": 2,
+  "full_control_actual_integrated_ticks": 4570,
+  "total_Kit_starts": 3,
+  "total_environment_clock_ticks": 4696,
+  "total_extra_native_startup_integrations": 6,
+  "total_actual_integrated_ticks": 4702,
+  "all_source_geometry_and_original_physics_gates_retained": true,
+  "direct_execution_partition": {
+    "sim_step_calls": 3818,
+    "sim_step_s": 82.23580434639007,
+    "observer_calls": 3818,
+    "observer_s": 95.99842752679251,
+    "full_vertex_metric_calls": 11457,
+    "full_vertex_metric_s": 4.897936932975426,
+    "contact_json_append_calls": 3818,
+    "contact_json_append_s": 27.324499960057437,
+    "phases": {
+      "settle": {
+        "steps": 50,
+        "observer_s": 1.2184493548702449
+      },
+      "home_to_pregrasp": {
+        "steps": 2468,
+        "observer_s": 53.86356961703859
+      },
+      "approach": {
+        "steps": 500,
+        "observer_s": 16.287559814285487
+      },
+      "close": {
+        "steps": 250,
+        "observer_s": 10.408670180477202
+      },
+      "hold": {
+        "steps": 50,
+        "observer_s": 1.4179787712637335
+      },
+      "lift": {
+        "steps": 500,
+        "observer_s": 12.802199788857251
+      }
+    }
+  },
+  "prior_misattribution_corrected": "Native physics_step_update_s includes outer observer across a generator yield; cannot attribute entire inclusive bucket to PhysX",
+  "diagnostics_positive": 1,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "bulk_started": false,
+  "old_mapping_labels_unchanged": {
+    "fit": 26,
+    "internal": 5
+  },
+  "prior_new_mapping_fit_unchanged": 2,
+  "full_control_candidate_raw_index": 34,
+  "tests": {
+    "status": "pass",
+    "unique_tests": 25,
+    "new_tests": 7,
+    "old_tests": 18,
+    "suite_wall_s": 2.691,
+    "Kit_starts": 0,
+    "physics_steps": 0
+  },
+  "generic_entry_static_fixture": {
+    "status": "pass",
+    "rounds": 2,
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "mocked_GPU_identity_rejected_by_live_run": true
+  },
+  "no_owned_background_tasks": true,
+  "all_source_input_archives_unchanged": true,
+  "unresolved": "Direct physics still averages 21.54ms per 4ms tick; full observer and complete JSON serialization remain expensive; no paper-level overall speed claim"
+}

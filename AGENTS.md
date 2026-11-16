@@ -1,5 +1,19 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-17 当前：完整同动作提速控制通过，纠正“物理等待”归因，新增训练0
+
+用户要求参考作者速度实际提速。先查明原native physics_step_update_s跨generator yield，包含外层after_step完整观测/网格/JSON，不能当纯PhysX。此前主要归因物理过早；历史报告/证据不改，本条纠正说明。CPU Fabric独立2Kit×64tick对照实跑，后48步USD .712482s/Fabric .764302s、状态及所有有效接触exact，未提速且未晋级。各另实读2个native reset update_simulation积分，合132步/parent275.701s；线程实验未派发。原生初始化不在SimContext计数，本阶段单独计，不能混旧历史口径。
+
+新增author_fast_geometry_checks以Numba/fastmathFalse全顶点Z扫描、全三角面Moller射线循环，0采样/近似/物理变更；原250Hz/64迭代/原几何/质量摩擦/完整接触/全部门保持。0物理核22128个旧三体姿态，极值最大差2.776e-17m；192射线最大4.441e-16m。极值组件配对4.98–6.22倍。完整同一旧scene01 capture审核新顺序对照69.177→30.590s约2.26倍，96射线43.308→4.566s，全部750帧/3046112接触/2472hulls/RGBD和SHA均PASS。不能用旧404s/current30s虚报13倍，不把组件倍率套完整采集。
+
+public fast_geometry_world_control_20261117_v1单轮已complete，1Kit/1world/1camera/原6银行体，freshRGBD/CGR1load1forward、raw34/ff/3818步提起026、原capture及原版完整runtime audit PASS。与旧v4首轮实拍/751初始化帧/24指令全数组/3818 native trace14数组/三体pose与velocity及loads exact；源底/顶最多2.776e-17m差；3818接触JSONL逻辑2466275238字节SHA exact。末源底101.800mm/升100.300mm、末受载1.608s仅诊断。新parent589.350s=9分49.350；对应阶段合计804.566→584.016s观察1.378倍，仅历史匹配、非随机化完整采集倍率；旧parent2171.808含两轮，严禁除以新一轮报3.69倍。执行器wall310.566→250.709s。capture worker156.949/audit14.425/CGR3.363/prepare86.517/execute worker252.916/runtime audit69.846s；未改的阶段变快也不能都归因代码。
+
+独立author_observer_partition实测3818次sim.step仅82.236s，完整observer95.998s（含全源极值4.898/接触JSON append27.324s，不相加），原inclusive桶180.127s。物理平均21.538ms/4ms tick，仍慢约5.38倍，完整接触解码/整理/2.47GB逻辑JSON也是大开销，不能继续把全部时间归咎PhysX。仍未达到作者实机总体节奏，不报采足ETA。
+
+通用入口author_accelerated_fixed_scene_collection.py使用相同fast worker/observer/audit，无调试历史依赖，仍有限诊断exclude_training；2轮6bank的静态freeze通过0Kit/mockGPUfixture不能实跑。25CPUtests（7新+18既有）过。阶段3Kit/4696环境时钟+6native初始化=4702积分，0未知成本/抓取重试，1诊断正例、正式fit新增0/训练0；此前新映射2fit、旧26fit+5internal、旧435与八权重不改不混。正式单型配额未冻，不恢复旧4800或启动训练/实机。
+
+两新控制根source/input/archive保持，自有PGID全退、4预约released、所有锁可取/registryreleased，无后台任务。报告AUTHOR_COLLECTION_SPEEDUP_20261117.md，轻证据evidence/author_collection_speedup_20261117_v1，完整接触/轨迹等大数据public忽略；阶段轻成果commit/push origin，CanonDex及原冻结源码只读。
+
 ## 2026-11-16 当前：同一物理世界连续拍照/抓取两轮已验收，整体加速未证明
 
 用户明确改为固定场景模拟现实，为后续实机采集组织做准备。新增独立author_live_world/contract/collection/service及只读audit，通用入口author_fixed_scene_collection.py路由v4修复层；一次创建原native机器人、地面、相机和6物体银行，每轮边界才摆放/复位。capture→execute沿同一sim/robot/camera/actors，0清场重建/0观测后物体位姿或速度写入；实测非零速度保留，原750初始化/稳定窗口/250Hz/全部物理门/完整接触/源底面承载保持。初始手/腕重绑定为拍照实测值，原六臂初值及24列逐步目标、掌姿、时间、phase exact；原50settle接预张开，原250close/50hold/lift不变。CPU PhysX连续求解器/银行结构改变，不声称轨迹等价。CanonDex和原冻结源码不改。

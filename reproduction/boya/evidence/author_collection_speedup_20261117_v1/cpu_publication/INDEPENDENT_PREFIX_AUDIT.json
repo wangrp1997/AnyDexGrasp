@@ -1,0 +1,186 @@
+{
+  "status": "pass",
+  "scope": "Full 64-tick stationary-prefix readback only; not closed-hand/lift or collection admission",
+  "sources": {
+    "usd": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/jobs/usd/PROFILE.json",
+      "sha256": "014922b4ee3d58ed40f4d44c59e2425056481228f96292e18aab10f152677a7f"
+    },
+    "fabric": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/jobs/fabric/PROFILE.json",
+      "sha256": "958257d41b01dddab07f051ad024021c40b4008bda9c100fc779c74dd592245a"
+    }
+  },
+  "profile_protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/PROTOCOL.json",
+    "sha256": "07e6a4c67fd1fd8ca69358b8cc5b7415604dd3615c84d9a61dead95ca1015a7a"
+  },
+  "same_initial_measured_state_exact": true,
+  "initial_differences": {
+    "joint_pos": {
+      "exact": true,
+      "shape_a": [
+        28
+      ],
+      "shape_b": [
+        28
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "joint_velocity": {
+      "exact": true,
+      "shape_a": [
+        28
+      ],
+      "shape_b": [
+        28
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "robot_body_pose": {
+      "exact": true,
+      "shape_a": [
+        29,
+        7
+      ],
+      "shape_b": [
+        29,
+        7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "graspnet_026:pose_xyzw": {
+      "exact": true,
+      "shape_a": [
+        7
+      ],
+      "shape_b": [
+        7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "graspnet_026:velocity": {
+      "exact": true,
+      "shape_a": [
+        6
+      ],
+      "shape_b": [
+        6
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "graspnet_036:pose_xyzw": {
+      "exact": true,
+      "shape_a": [
+        7
+      ],
+      "shape_b": [
+        7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "graspnet_036:velocity": {
+      "exact": true,
+      "shape_a": [
+        6
+      ],
+      "shape_b": [
+        6
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "graspnet_011:pose_xyzw": {
+      "exact": true,
+      "shape_a": [
+        7
+      ],
+      "shape_b": [
+        7
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "graspnet_011:velocity": {
+      "exact": true,
+      "shape_a": [
+        6
+      ],
+      "shape_b": [
+        6
+      ],
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "full_prefix_state_exact": true,
+  "state_differences": {
+    "joint_pos": {
+      "exact": true,
+      "shape_a": [
+        64,
+        28
+      ],
+      "shape_b": [
+        64,
+        28
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "object_pose_velocity": {
+      "exact": true,
+      "shape_a": [
+        64,
+        3,
+        13
+      ],
+      "shape_b": [
+        64,
+        3,
+        13
+      ],
+      "maximum_absolute_difference": 0.0
+    },
+    "robot_body_pose": {
+      "exact": true,
+      "shape_a": [
+        64,
+        29,
+        7
+      ],
+      "shape_b": [
+        64,
+        29,
+        7
+      ],
+      "maximum_absolute_difference": 0.0
+    }
+  },
+  "full_referenced_contact_fields_exact": true,
+  "all_pair_counts_exact": true,
+  "contact_points": [
+    137547,
+    137547
+  ],
+  "maximum_contact_differences": {
+    "force": 0.0,
+    "point": 0.0,
+    "normal": 0.0,
+    "separation": 0.0
+  },
+  "measured_step_wall_s": [
+    0.71248156321235,
+    0.7643019224051386
+  ],
+  "measured_fetch_wall_s": [
+    0.7071428918279707,
+    0.7577776859980077
+  ],
+  "observed_step_wall_ratio_usd_over_fabric": 0.9321990987151805,
+  "actual_commanded_steps": 128,
+  "native_startup_steps": 4,
+  "actual_integrated_steps": 132,
+  "current_CPU_PhysX_and_original_scene_settings": true,
+  "full_lift_validated": false,
+  "sampling_or_training_started": false,
+  "labels": 0,
+  "Kit_starts": 0,
+  "physics_steps": 0
+}

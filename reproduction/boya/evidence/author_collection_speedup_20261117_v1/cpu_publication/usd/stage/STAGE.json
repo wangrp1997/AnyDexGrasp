@@ -1,0 +1,29 @@
+{
+  "status": "complete",
+  "complete": true,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_cpu_fabric_control.py",
+    "worker",
+    "--root",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1",
+    "--mode",
+    "usd"
+  ],
+  "started_unix_s": 1794852690.4817433,
+  "outputs": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/jobs/usd/PROFILE.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/jobs/usd/PROFILE.json",
+      "sha256": "014922b4ee3d58ed40f4d44c59e2425056481228f96292e18aab10f152677a7f"
+    }
+  },
+  "retry_count": 0,
+  "child_pid": 4099747,
+  "returncode": 0,
+  "wall_s": 140.99498288379982,
+  "log": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/jobs/usd/stage/process.log",
+    "sha256": "7a6dbaafbb13dd58260a8812a551689e2f6f72504922965214b9fc4e73b02689"
+  }
+}

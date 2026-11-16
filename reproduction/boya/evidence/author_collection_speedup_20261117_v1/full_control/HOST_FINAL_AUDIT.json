@@ -1,0 +1,77 @@
+{
+  "status": "pass",
+  "checked_unix_s": 1794854622.4600215,
+  "runs": [
+    {
+      "root": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1",
+      "owner": {
+        "pid": 4099671,
+        "pgid": 4099671,
+        "start_ticks": 167163061
+      },
+      "owner_group_alive": false,
+      "resource_slots": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/resource_slots/kit/0.json",
+          "state": "released",
+          "pgid": 4106422
+        }
+      ],
+      "locks_available": [
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/DRIVER.lock",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/cpu_fabric_profile_20261117_v1/resource_slots/kit/0.lock"
+      ],
+      "sources_inputs_archives_unchanged": true
+    },
+    {
+      "root": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1",
+      "owner": {
+        "pid": 4150555,
+        "pgid": 4150555,
+        "start_ticks": 167285203
+      },
+      "owner_group_alive": false,
+      "resource_slots": [
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/resource_slots/prepare/0.json",
+          "state": "released",
+          "pgid": 4157648
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/resource_slots/kit/0.json",
+          "state": "released",
+          "pgid": 4150686
+        },
+        {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/resource_slots/audit/0.json",
+          "state": "released",
+          "pgid": 4170022
+        }
+      ],
+      "locks_available": [
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/DRIVER.lock",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/resource_slots/prepare/0.lock",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/resource_slots/kit/0.lock",
+        "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/resource_slots/audit/0.lock"
+      ],
+      "sources_inputs_archives_unchanged": true
+    }
+  ],
+  "global_lock_available": true,
+  "registry": {
+    "run_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1",
+    "protocol": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/PROTOCOL.json",
+      "sha256": "982013e90ffc6a4c64c9a9e96120a56594e98a292054339c20e9c6bb89ae4161"
+    },
+    "state": "released",
+    "owner": {
+      "pid": 4150555,
+      "pgid": 4150555,
+      "start_ticks": 167285203
+    },
+    "started_unix_s": 1794853911.699158,
+    "finished_unix_s": 1794854501.0013604
+  },
+  "no_owned_background_groups": true
+}

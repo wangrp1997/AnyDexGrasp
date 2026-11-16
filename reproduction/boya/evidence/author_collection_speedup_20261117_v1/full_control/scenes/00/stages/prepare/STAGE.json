@@ -1,0 +1,43 @@
+{
+  "status": "complete",
+  "complete": true,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_contact_pipeline.py",
+    "prepare",
+    "--scene",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/capture/observed_scene.json",
+    "--observation",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/capture/observation.json",
+    "--representation-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/representation/representations/s40_lift_fit_00003_s2026111601",
+    "--seed",
+    "2026111601",
+    "--calibration",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_adapter_preparation_20261105_v2/calibration.json",
+    "--cloud-manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_full_alignment_20261114_v2/hand_clouds/MANIFEST.json",
+    "--backend",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/backend.collection.json",
+    "--domain",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/DOMAIN.json",
+    "--output-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/contact"
+  ],
+  "started_unix_s": 1794854089.5333574,
+  "outputs": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/contact/pipeline/LIFT_PIPELINE_RESULTS.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+      "sha256": "f32fba8a3103ca205f2c7608754a497e44a513e388e34f44af58ed0ed7fceb1a"
+    }
+  },
+  "retry_count": 0,
+  "child_pid": 4157648,
+  "returncode": 0,
+  "wall_s": 86.51692053792067,
+  "log": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/stages/prepare/process.log",
+    "sha256": "edfe48822c19ac1fefc920e259c19be43123d6254fe51cf5ea2cc276b4cea464"
+  }
+}

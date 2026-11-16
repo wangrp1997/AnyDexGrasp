@@ -1,0 +1,31 @@
+         45329059 function calls (45223020 primitive calls) in 69.163 seconds
+
+   Ordered by: cumulative time
+   List reduced from 866 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.010    0.010   69.162   69.162 /home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_live_world.py:56(capture)
+        1    6.093    6.093   69.069   69.069 /home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_live_world.py:capture:37(capture_audit)
+       96    8.417    0.088   43.308    0.451 /home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_scene.py:68(first_depth)
+      192   17.070    0.089   30.647    0.160 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/_core/numeric.py:1556(cross)
+      483   13.550    0.028   13.550    0.028 {method 'astype' of 'numpy.ndarray' objects}
+        3    0.000    0.000    6.256    2.085 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/trimesh/exchange/load.py:258(load_mesh)
+        3    0.056    0.019    5.969    1.990 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/trimesh/exchange/load.py:157(load_scene)
+        3    0.637    0.212    5.903    1.968 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/trimesh/exchange/obj.py:27(load_obj)
+      765    0.002    0.000    4.633    0.006 /home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/__init__.py:299(loads)
+      765    0.002    0.000    4.589    0.006 /home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/decoder.py:333(decode)
+      765    4.586    0.006    4.586    0.006 /home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/json/decoder.py:344(raw_decode)
+      288    0.002    0.000    4.044    0.014 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/_core/einsumfunc.py:1057(einsum)
+      288    4.042    0.014    4.042    0.014 {built-in method numpy._core._multiarray_umath.c_einsum}
+  3053573    0.582    0.000    2.934    0.000 {method 'all' of 'numpy.ndarray' objects}
+  3053575    0.404    0.000    2.351    0.000 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/numpy/_core/_methods.py:66(_all)
+     2001    0.006    0.000    2.150    0.001 /home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py:42(sha)
+  3063669    2.043    0.000    2.043    0.000 {method 'reduce' of 'numpy.ufunc' objects}
+     9939    0.161    0.000    1.651    0.000 {built-in method builtins.all}
+      751    0.001    0.000    1.600    0.002 /home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/gzip.py:442(readline)
+      751    0.267    0.000    1.599    0.002 {method 'readline' of '_io.BufferedReader' objects}
+  3166721    0.836    0.000    1.472    0.000 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/trimesh/exchange/obj.py:155(<genexpr>)
+     4708    1.379    0.000    1.379    0.000 {method 'update' of '_hashlib.HASH' objects}
+   101809    0.103    0.000    1.332    0.000 /home/wangrenpeng/tendon-spin/runtime/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/_compression.py:66(readinto)
+        3    0.179    0.060    1.200    0.400 /home/wangrenpeng/tendon-spin/.venv/lib/python3.12/site-packages/trimesh/exchange/obj.py:560(_parse_vertices)
+    29121    1.193    0.000    1.193    0.000 {method 'read' of '_io.BufferedReader' objects}

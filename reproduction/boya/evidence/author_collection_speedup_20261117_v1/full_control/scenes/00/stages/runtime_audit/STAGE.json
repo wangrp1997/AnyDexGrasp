@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "complete": true,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_fast_live_world.py",
+    "runtime",
+    "--prepared-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/live",
+    "--split-manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1/protocol.json",
+    "--output",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/live/RUNTIME_AUDIT.json"
+  ],
+  "started_unix_s": 1794854430.1468408,
+  "outputs": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/live/RUNTIME_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/live/RUNTIME_AUDIT.json",
+      "sha256": "2a1a006e888050b0d782b221fcf93b14b9f4fafd9850aacf40e7b84798921652"
+    }
+  },
+  "retry_count": 0,
+  "child_pid": 4170022,
+  "returncode": 0,
+  "wall_s": 69.84649840905331,
+  "log": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/fast_geometry_world_control_20261117_v1/scenes/00/stages/runtime_audit/process.log",
+    "sha256": "6e4549bc612fd5f6de5e2ce6cc88b9ebdf587051875afb67257574ce9a248f7a"
+  }
+}
