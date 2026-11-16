@@ -1,0 +1,120 @@
+{
+  "status": "saved_target_pose_and_geometry_change_verified",
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_contact_wrist_delta.py",
+    "sha256": "2cb677bc1c802e9a8356441b633126a603ee2dc6627a8ef508bf1d426c69a911"
+  },
+  "source_protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/PROTOCOL.json",
+    "sha256": "95913cd9d6690caa1525e68d25ed4295938d3eb3e0c53624a7a64c7ff11d6f40"
+  },
+  "source_mappings": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/EXAMPLE_MAPPINGS.npz",
+    "sha256": "8d940e1bead678ee98b9b6e7e3c0b4e003dabd745f9889780b9fb5cbb87f5a08"
+  },
+  "source_candidate": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/pool/selected_author_candidate.json",
+    "sha256": "439c9e8e2ed0b1a5dd4636fb4cc99ce279aece8844f70d55269793b737a78ab9"
+  },
+  "world_T_palm_old": [
+    [
+      0.8959127533180858,
+      -0.43046235184163084,
+      -0.10973833463734525,
+      -0.8318495699044552
+    ],
+    [
+      -0.10001525467641119,
+      -0.4361451136143112,
+      0.8943010615572207,
+      -0.03814252071629262
+    ],
+    [
+      -0.4328247766406391,
+      -0.7902402188684973,
+      -0.43380077133247436,
+      0.1337789102521567
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_T_palm_new": [
+    [
+      0.7862747349880366,
+      -0.6177483892834398,
+      0.012608277329135708,
+      -0.8311076464793163
+    ],
+    [
+      -0.17417157198439073,
+      -0.20201626140779547,
+      0.9637705606830407,
+      -0.049032015559144076
+    ],
+    [
+      -0.5928206344519215,
+      -0.7599844456727605,
+      -0.26643449045401074,
+      0.11511091223940616
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "old_to_new_world_rigid_transform": [
+    [
+      0.9689673758281647,
+      0.20206406936348215,
+      0.1423809553730802,
+      -0.03641288774396545
+    ],
+    [
+      -0.17484471391227818,
+      0.9674292549294925,
+      -0.18305726624065002,
+      -0.13308712363803146
+    ],
+    [
+      -0.1747327977158676,
+      0.15248196148671672,
+      0.9727372208482358,
+      -0.15455616938066097
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "world_palm_origin_translation_delta_mm": [
+    0.7419234251389017,
+    -10.889494842851455,
+    -18.667998012750555
+  ],
+  "palm_origin_translation_norm_mm": 21.624654866732946,
+  "rotation_difference_deg": 17.33731500255137,
+  "world_rotation_axis": [
+    0.5629916713693888,
+    0.532076094574635,
+    -0.6324044651573123
+  ],
+  "full_source_mesh_old_to_new_transform_max_error_m": 3.3306690738754696e-16,
+  "hand_vertex_motion_rms_mm": 18.463605212679823,
+  "identical_finger_joint_configuration": true,
+  "palm_goal_changed": true,
+  "robot_joint_IK_solved": false,
+  "robot_executed": false,
+  "valid_collision_free_grasp_certified": false,
+  "physics_steps": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0
+}

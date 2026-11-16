@@ -1,0 +1,613 @@
+{
+  "status": "finite_source_mesh_distance_measurement_complete",
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_contact_reference_width.py",
+    "sha256": "0d6f037b7e6db8822aaa7009d9b491d165ba5eb48cabe8d4c927466bc821320f"
+  },
+  "source_candidate": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/pool/selected_author_candidate.json",
+    "sha256": "439c9e8e2ed0b1a5dd4636fb4cc99ce279aece8844f70d55269793b737a78ab9"
+  },
+  "mappings": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fast_contact_alignment_20261116_v1/EXAMPLE_MAPPINGS.npz",
+    "sha256": "8d940e1bead678ee98b9b6e7e3c0b4e003dabd745f9889780b9fb5cbb87f5a08"
+  },
+  "scene": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/capture/observed_scene.json",
+    "sha256": "96f7328253816453242d4b147fe93b84bfcb063fa782c54fcf5de0d815b68462"
+  },
+  "object_bindings": {
+    "graspnet_015": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/mesh/simplified.obj",
+      "sha256": "f834ec1a5115fd28750e51a434893ca5ac745b5d89ec3ae3ac2682cd6ad347b7"
+    },
+    "graspnet_029": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_029/mesh/simplified.obj",
+      "sha256": "e253c33eeef4c7f03dc2190cd156f6693ee4e7be29e0f5c65d29136d9df958e2"
+    },
+    "graspnet_005": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_005/mesh/simplified.obj",
+      "sha256": "0a5a2b17283cb561a30441327debd199c5418a5012c083357c843fcecdddd7d6"
+    }
+  },
+  "branches": [
+    {
+      "opponent": "ff",
+      "closure_progress": 0.40724068512102823,
+      "raw_CGR_width_mm": 83.86754989624023,
+      "measured_reference_point_distance_mm": 83.8675498962402,
+      "points": [
+        {
+          "group": "th",
+          "world_point_m": [
+            -0.8911655732707688,
+            0.03241053804133462,
+            0.02645647297003445
+          ],
+          "point_to_own_rendered_link_surface_mm": 3.878959614448864e-14,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 0.9421280338518226,
+            "nearest_surface_world_m": [
+              -0.8910333544731837,
+              0.031498607851962644,
+              0.026260241597806093
+            ],
+            "triangle_index": 63650,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": 0.9999999999999993
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 0.9421280338518226,
+              "nearest_surface_world_m": [
+                -0.8910333544731837,
+                0.031498607851962644,
+                0.026260241597806093
+              ],
+              "triangle_index": 63650,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 0.9999999999999993
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 60.36957156638858,
+              "nearest_surface_world_m": [
+                -0.8314155852127876,
+                0.03311355439475955,
+                0.017858225114382363
+              ],
+              "triangle_index": 489556,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -9.442271710594816e-17
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 134.56505428174887,
+              "nearest_surface_world_m": [
+                -0.8284555006134414,
+                0.15124478612429945,
+                0.019133761469565337
+              ],
+              "triangle_index": 374945,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -4.969616689786745e-18
+            }
+          ]
+        },
+        {
+          "group": "ff",
+          "world_point_m": [
+            -0.8890252732914521,
+            0.11321262898030293,
+            0.0488217840898819
+          ],
+          "point_to_own_rendered_link_surface_mm": 2.8609792490763985e-14,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 18.016245665707928,
+            "nearest_surface_world_m": [
+              -0.8876144108758838,
+              0.09681134028724547,
+              0.041501107595290576
+            ],
+            "triangle_index": 396688,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": -1.5902773407317583e-16
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 18.016245665707928,
+              "nearest_surface_world_m": [
+                -0.8876144108758838,
+                0.09681134028724547,
+                0.041501107595290576
+              ],
+              "triangle_index": 396688,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -1.5902773407317583e-16
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 91.41377109766967,
+              "nearest_surface_world_m": [
+                -0.8263826262064221,
+                0.05101888163036947,
+                0.02506648777410893
+              ],
+              "triangle_index": 94,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -5.521796321985272e-19
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 71.51370358060562,
+              "nearest_surface_world_m": [
+                -0.8419635987431355,
+                0.162273021418705,
+                0.02662974762828067
+              ],
+              "triangle_index": 425140,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -2.5179391228252843e-16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opponent": "mf",
+      "closure_progress": 0.44484354536520476,
+      "raw_CGR_width_mm": 83.86754989624023,
+      "measured_reference_point_distance_mm": 83.86754989624004,
+      "points": [
+        {
+          "group": "th",
+          "world_point_m": [
+            -0.8911655732707688,
+            0.0324105380413347,
+            0.026456472970034492
+          ],
+          "point_to_own_rendered_link_surface_mm": 3.469446951953614e-15,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 0.9421280338519068,
+            "nearest_surface_world_m": [
+              -0.8910333544731837,
+              0.031498607851962644,
+              0.026260241597806117
+            ],
+            "triangle_index": 63650,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": 1.0000000000000004
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 0.9421280338519068,
+              "nearest_surface_world_m": [
+                -0.8910333544731837,
+                0.031498607851962644,
+                0.026260241597806117
+              ],
+              "triangle_index": 63650,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 1.0000000000000004
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 60.36957156638858,
+              "nearest_surface_world_m": [
+                -0.8314155852127876,
+                0.03311355439475955,
+                0.017858225114382363
+              ],
+              "triangle_index": 489556,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -8.227476519758055e-17
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 134.56505428174881,
+              "nearest_surface_world_m": [
+                -0.8284555006134414,
+                0.15124478612429945,
+                0.019133761469565337
+              ],
+              "triangle_index": 374945,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -5.135270579446303e-17
+            }
+          ]
+        },
+        {
+          "group": "mf",
+          "world_point_m": [
+            -0.889025273291452,
+            0.11321262898030286,
+            0.04882178408988187
+          ],
+          "point_to_own_rendered_link_surface_mm": 1.5515838457795457e-14,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 18.016245665707842,
+            "nearest_surface_world_m": [
+              -0.8876144108758838,
+              0.09681134028724547,
+              0.041501107595290576
+            ],
+            "triangle_index": 396688,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": 2.650462234552931e-16
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 18.016245665707842,
+              "nearest_surface_world_m": [
+                -0.8876144108758838,
+                0.09681134028724547,
+                0.041501107595290576
+              ],
+              "triangle_index": 396688,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 2.650462234552931e-16
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 91.41377109766954,
+              "nearest_surface_world_m": [
+                -0.8263826262064221,
+                0.05101888163036947,
+                0.02506648777410893
+              ],
+              "triangle_index": 94,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 2.4627211596054314e-16
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 71.51370358060561,
+              "nearest_surface_world_m": [
+                -0.8419635987431354,
+                0.16227302141870492,
+                0.026629747628280652
+              ],
+              "triangle_index": 425140,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 1.7007132671714637e-16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opponent": "rf",
+      "closure_progress": 0.4191895358510851,
+      "raw_CGR_width_mm": 83.86754989624023,
+      "measured_reference_point_distance_mm": 83.86754989624009,
+      "points": [
+        {
+          "group": "th",
+          "world_point_m": [
+            -0.891165573270769,
+            0.03241053804133469,
+            0.02645647297003445
+          ],
+          "point_to_own_rendered_link_surface_mm": 3.469446951953614e-15,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 0.9421280338519001,
+            "nearest_surface_world_m": [
+              -0.8910333544731838,
+              0.03149860785196264,
+              0.026260241597806076
+            ],
+            "triangle_index": 63650,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": 0.9999999999999997
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 0.9421280338519001,
+              "nearest_surface_world_m": [
+                -0.8910333544731838,
+                0.03149860785196264,
+                0.026260241597806076
+              ],
+              "triangle_index": 63650,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 0.9999999999999997
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 60.369571566388686,
+              "nearest_surface_world_m": [
+                -0.8314155852127876,
+                0.03311355439475955,
+                0.017858225114382363
+              ],
+              "triangle_index": 489556,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -1.5184939885459497e-17
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 134.56505428174884,
+              "nearest_surface_world_m": [
+                -0.8284555006134414,
+                0.15124478612429945,
+                0.019133761469565337
+              ],
+              "triangle_index": 374945,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 3.0369879770918994e-17
+            }
+          ]
+        },
+        {
+          "group": "rf",
+          "world_point_m": [
+            -0.8890252732914521,
+            0.11321262898030289,
+            0.04882178408988186
+          ],
+          "point_to_own_rendered_link_surface_mm": 1.5515838457795457e-14,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 18.01624566570787,
+            "nearest_surface_world_m": [
+              -0.8876144108758838,
+              0.09681134028724547,
+              0.041501107595290576
+            ],
+            "triangle_index": 396688,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": -2.473764752249402e-16
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 18.01624566570787,
+              "nearest_surface_world_m": [
+                -0.8876144108758838,
+                0.09681134028724547,
+                0.041501107595290576
+              ],
+              "triangle_index": 396688,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -2.473764752249402e-16
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 91.41377109766964,
+              "nearest_surface_world_m": [
+                -0.8263826262064221,
+                0.05101888163036947,
+                0.02506648777410893
+              ],
+              "triangle_index": 94,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -1.9740421851097349e-16
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 71.51370358060562,
+              "nearest_surface_world_m": [
+                -0.8419635987431355,
+                0.16227302141870498,
+                0.026629747628280624
+              ],
+              "triangle_index": 425140,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -2.8050725315685183e-16
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "opponent": "lf",
+      "closure_progress": 0.41415388623196764,
+      "raw_CGR_width_mm": 83.86754989624023,
+      "measured_reference_point_distance_mm": 83.86754989623626,
+      "points": [
+        {
+          "group": "th",
+          "world_point_m": [
+            -0.8911655732707688,
+            0.03241053804133652,
+            0.026456472970034964
+          ],
+          "point_to_own_rendered_link_surface_mm": 2.7097246932071045e-14,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 0.9421280338537742,
+            "nearest_surface_world_m": [
+              -0.8910333544731833,
+              0.031498607851962665,
+              0.0262602415978062
+            ],
+            "triangle_index": 63650,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": 0.9999999999999997
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 0.9421280338537742,
+              "nearest_surface_world_m": [
+                -0.8910333544731833,
+                0.031498607851962665,
+                0.0262602415978062
+              ],
+              "triangle_index": 63650,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 0.9999999999999997
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 60.36957156638863,
+              "nearest_surface_world_m": [
+                -0.8314155852127876,
+                0.03311355439475955,
+                0.017858225114382363
+              ],
+              "triangle_index": 489556,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 2.595244271333078e-17
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 134.5650542817472,
+              "nearest_surface_world_m": [
+                -0.8284555006134414,
+                0.15124478612429945,
+                0.019133761469565337
+              ],
+              "triangle_index": 374945,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 8.945310041616141e-17
+            }
+          ]
+        },
+        {
+          "group": "lf",
+          "world_point_m": [
+            -0.8890252732914521,
+            0.11321262898030102,
+            0.04882178408988136
+          ],
+          "point_to_own_rendered_link_surface_mm": 0.0,
+          "nearest_object_surface": {
+            "object_id": "graspnet_015",
+            "distance_mm": 18.016245665705963,
+            "nearest_surface_world_m": [
+              -0.8876144108758838,
+              0.09681134028724547,
+              0.041501107595290576
+            ],
+            "triangle_index": 396688,
+            "zero_area_triangles": 4,
+            "watertight": true,
+            "winding_consistent": true,
+            "winding_number": -1.9436723053388158e-16
+          },
+          "all_scene_distances": [
+            {
+              "object_id": "graspnet_015",
+              "distance_mm": 18.016245665705963,
+              "nearest_surface_world_m": [
+                -0.8876144108758838,
+                0.09681134028724547,
+                0.041501107595290576
+              ],
+              "triangle_index": 396688,
+              "zero_area_triangles": 4,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": -1.9436723053388158e-16
+            },
+            {
+              "object_id": "graspnet_029",
+              "distance_mm": 91.41377109766823,
+              "nearest_surface_world_m": [
+                -0.8263826262064221,
+                0.05101888163036947,
+                0.02506648777410893
+              ],
+              "triangle_index": 94,
+              "zero_area_triangles": 0,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 3.876301018033661e-16
+            },
+            {
+              "object_id": "graspnet_005",
+              "distance_mm": 71.51370358060677,
+              "nearest_surface_world_m": [
+                -0.8419635987431348,
+                0.16227302141870387,
+                0.026629747628279767
+              ],
+              "triangle_index": 425140,
+              "zero_area_triangles": 2,
+              "watertight": true,
+              "winding_consistent": true,
+              "winding_number": 6.6261555863823264e-18
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "width_semantics": "Distance of two selected source-surface reference points; not the whole-hand envelope, closest inner-surface gap or actual loaded contact width",
+  "contact_or_bearing_certified": false,
+  "physical_grasp_complete": false,
+  "production_ready": false,
+  "mesh_scope": "Complete original source triangles; zero-area triangles retained as edges; source assets not repaired or changed",
+  "winding_scope": "Diagnostic winding only; no inside/outside certificate for nonwatertight or inconsistent meshes",
+  "physics_steps": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0
+}

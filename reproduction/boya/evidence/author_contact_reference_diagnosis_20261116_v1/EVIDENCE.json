@@ -1,0 +1,42 @@
+{
+  "status": "saved_target_pose_and_reference_width_audited_geometry_only",
+  "parent_commit": "7c06f71",
+  "sources": {
+    "render_contact_wrist_delta.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_contact_wrist_delta.py",
+      "sha256": "2cb677bc1c802e9a8356441b633126a603ee2dc6627a8ef508bf1d426c69a911"
+    },
+    "audit_contact_reference_width.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_contact_reference_width.py",
+      "sha256": "0d6f037b7e6db8822aaa7009d9b491d165ba5eb48cabe8d4c927466bc821320f"
+    }
+  },
+  "artifacts": {
+    "outputs/boya_contact_width_diagnosis_20261116_v2/MEASUREMENTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_contact_width_diagnosis_20261116_v2/MEASUREMENTS.json",
+      "sha256": "9625fce27d6361de667a13cc1ab82ee035e2b3f28f2cc9dfae4b487c4679b149"
+    },
+    "outputs/boya_contact_palm_delta_20261116_v1/target_palm_pose_delta.png": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_contact_palm_delta_20261116_v1/target_palm_pose_delta.png",
+      "sha256": "c243391fa970252779571d33cbeec28d34b75efb8491135baf7b2af3689155c2"
+    },
+    "outputs/boya_contact_palm_delta_20261116_v1/POSE_DELTA_AUDIT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_contact_palm_delta_20261116_v1/POSE_DELTA_AUDIT.json",
+      "sha256": "a00fa5eab56f2187f2138c2d115b35ca269bc8c1d445c39455ac0f1eb766f525"
+    }
+  },
+  "analytic_distance_checks_passed": 2,
+  "all_measured_pad_distances_finite": true,
+  "pose_png_decoded_size": [
+    2040,
+    1150
+  ],
+  "semantics": "Preclosure reference sets target palm; continued execution closure/contact/bearing still required. Free FK after contact is not actual constrained motion.",
+  "actual_robot_IK_or_motion": false,
+  "geometry_admission_implemented": false,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0
+}
