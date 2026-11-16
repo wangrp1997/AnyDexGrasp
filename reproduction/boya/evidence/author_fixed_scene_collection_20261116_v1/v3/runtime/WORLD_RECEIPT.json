@@ -1,0 +1,45 @@
+{
+  "schema": "anydex_boya_live_world_collection_v1",
+  "status": "closed_after_failure",
+  "Kit_starts": 1,
+  "world_builds": 1,
+  "boundary_resets": 1,
+  "stage_rebuilds": 0,
+  "camera_builds": 1,
+  "bank_size": 6,
+  "actor_handles": {
+    "graspnet_026": 138588344334240,
+    "graspnet_036": 138588339558144,
+    "graspnet_011": 138517899877056,
+    "graspnet_014": 138517891291840,
+    "graspnet_015": 138517897945664,
+    "graspnet_022": 138517909549712
+  },
+  "robot_handle": 138582811824672,
+  "camera_handle": 138587825963712,
+  "sim_handle": 138587822406928,
+  "sim_steps": 750,
+  "events": [
+    {
+      "kind": "between_round_placement",
+      "scene_id": "s40_lift_fit_00003_s2026111601",
+      "sim_step": 0,
+      "active": [
+        "graspnet_026",
+        "graspnet_036",
+        "graspnet_011"
+      ],
+      "actor_state_writes": true,
+      "world_rebuild": false
+    },
+    {
+      "kind": "photograph",
+      "state_sha256": "83ec793e8f660f880fb2385cf8972927adcc30aa951d8f3a2c0294055f8fee5d",
+      "sim_step": 750,
+      "world_builds": 1,
+      "wall_s": 194.46499652508646
+    }
+  ],
+  "phase": "observed",
+  "deferred_closes": 1
+}

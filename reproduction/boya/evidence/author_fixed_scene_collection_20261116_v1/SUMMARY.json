@@ -1,0 +1,467 @@
+{
+  "schema": "anydex_boya_fixed_scene_control_evidence_v1",
+  "status": "complete",
+  "current_run": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4",
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/PROTOCOL.json",
+    "sha256": "04e5b0829dbdc892da447b1208a2c5273c46ca20a3c9e54f22307760fc3a9420"
+  },
+  "result": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/RESULTS.json",
+    "sha256": "55703d4756fb4fe127458de1dfd62485538f6a718803af5b6f7a178f0bbd96ae"
+  },
+  "parent_wall_s": 2171.8084704270586,
+  "static_freeze_preparation_wall_s": 15.537964287912473,
+  "rounds": [
+    {
+      "index": 0,
+      "scene_id": "s40_lift_fit_00003_s2026111601",
+      "object_ids": [
+        "graspnet_026",
+        "graspnet_036",
+        "graspnet_011"
+      ],
+      "raw_index": 34,
+      "label": 1,
+      "execution_steps": 3818,
+      "initialization_steps": 750,
+      "photo_global_clock": 750,
+      "capture_wall_s": 143.04659708682448,
+      "execution_wall_s": 311.4047704548575,
+      "stages_wall_s": {
+        "capture_audit": 165.35088558401912,
+        "prepare": 99.70298229902983,
+        "runtime_audit": 80.35959276696667
+      },
+      "capture_contact_points": 1641259,
+      "all_original_physics_gates_passed": true,
+      "capture_audit": "pass",
+      "full_runtime_audit": "pass",
+      "native_setup_wall_s": 26.728479040088132,
+      "native_loop_wall_s": 249.23563039395958,
+      "native_execution_profile": {
+        "command_write_s": 3.3265198268927634,
+        "physics_step_update_s": 231.76822407380678,
+        "snapshot_and_state_s": 1.3647076862398535,
+        "contact_read_s": 7.174417156493291,
+        "checks_and_record_s": 3.937100302428007,
+        "measured_steps": 3818,
+        "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+      },
+      "initial_state_mode": "bound_measured_live_state_without_reset",
+      "observed_to_execution_errors": {
+        "command_position": 7.629394538355427e-08,
+        "object_reference_pose": 1.52237727979454e-08,
+        "observed_joint_position": 0.0,
+        "observed_joint_velocity": 0.0,
+        "observed_object_pose": 0.0,
+        "observed_object_velocity": 0.0
+      },
+      "object_outcomes": [
+        {
+          "object_id": "graspnet_026",
+          "task_success": true,
+          "observed_pickup": true,
+          "final_source_bottom_m": 0.10180038179588048,
+          "final_reference_rise_m": 0.10029997304081917,
+          "trailing_observed_pickup_run_s": 1.608,
+          "final": {
+            "pose_xyzw": [
+              -0.7690612077713013,
+              0.15015721321105957,
+              0.1303970068693161,
+              0.03158307075500488,
+              0.049672722816467285,
+              0.9473487138748169,
+              0.31474679708480835
+            ],
+            "velocity": [
+              0.0017863959074020386,
+              0.004098635632544756,
+              -0.017033949494361877,
+              -0.8255696296691895,
+              -0.32827144861221313,
+              -2.217402219772339
+            ],
+            "robot_load_n": 11.82031665649265,
+            "finger_loads_n": [
+              5.621563337743282,
+              5.887137255631387,
+              0.31161606311798096,
+              0,
+              0
+            ],
+            "illegal_robot_support_force_n": 0.0,
+            "source_bottom_m": 0.10180038179588048,
+            "source_top_m": 0.16886798897533256
+          }
+        },
+        {
+          "object_id": "graspnet_036",
+          "task_success": false,
+          "observed_pickup": false,
+          "final_source_bottom_m": 0.0012884270275557788,
+          "final_reference_rise_m": -6.146728992462158e-08,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final": {
+            "pose_xyzw": [
+              -0.6784452199935913,
+              0.05633613094687462,
+              0.019986264407634735,
+              0.004823947325348854,
+              0.009285816922783852,
+              -0.17644113302230835,
+              0.9842556118965149
+            ],
+            "velocity": [
+              8.114214870147407e-05,
+              -1.9135504771838896e-05,
+              -1.0532890883041546e-05,
+              0.0012851415667682886,
+              0.0038744304329156876,
+              -2.947339635284152e-05
+            ],
+            "robot_load_n": 0.0,
+            "finger_loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "illegal_robot_support_force_n": 0.0,
+            "source_bottom_m": 0.0012884270275557788,
+            "source_top_m": 0.03606096166424271
+          }
+        },
+        {
+          "object_id": "graspnet_011",
+          "task_success": false,
+          "observed_pickup": false,
+          "final_source_bottom_m": 0.00034395736350948183,
+          "final_reference_rise_m": 1.210719347000122e-07,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final": {
+            "pose_xyzw": [
+              -0.8328680992126465,
+              0.13135379552841187,
+              0.023184509947896004,
+              0.0006862282752990723,
+              -0.002991780638694763,
+              0.4674782454967499,
+              0.883999228477478
+            ],
+            "velocity": [
+              -0.0002686401130631566,
+              6.458924326580018e-05,
+              -5.4778342018835247e-05,
+              -0.0026570765767246485,
+              -0.011675660498440266,
+              0.000588804017752409
+            ],
+            "robot_load_n": 0.0,
+            "finger_loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "illegal_robot_support_force_n": 0.0,
+            "source_bottom_m": 0.00034395736350948183,
+            "source_top_m": 0.04601520446042259
+          }
+        }
+      ],
+      "candidate": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/00/live/COLLECTION_RECORD.json",
+        "sha256": "e97ec02bf0d62db7fdc6728832478e6e1dcd0af8d0abadaab5fa7dd9af3648a9"
+      },
+      "native_evaluation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/00/live/execution/evaluation.json",
+        "sha256": "7de83f10916a31f469894887760729e2d685d71f5ea8b723793537ab4c20c4c9"
+      },
+      "original_commands_preserved": true,
+      "same_24_targets_with_only_initial_hand_rebound": true,
+      "exclude_training": true
+    },
+    {
+      "index": 1,
+      "scene_id": "s40_lift_fit_00004_s2026111601",
+      "object_ids": [
+        "graspnet_014",
+        "graspnet_015",
+        "graspnet_022"
+      ],
+      "raw_index": 296,
+      "label": 0,
+      "execution_steps": 3558,
+      "initialization_steps": 750,
+      "photo_global_clock": 5318,
+      "capture_wall_s": 286.2069626690354,
+      "execution_wall_s": 485.42932202410884,
+      "stages_wall_s": {
+        "capture_audit": 404.18275447399355,
+        "prepare": 118.54631421295926,
+        "runtime_audit": 123.75224678497761
+      },
+      "capture_contact_points": 3046112,
+      "all_original_physics_gates_passed": true,
+      "capture_audit": "pass",
+      "full_runtime_audit": "pass",
+      "native_setup_wall_s": 24.045800529886037,
+      "native_loop_wall_s": 397.65859774383716,
+      "native_execution_profile": {
+        "command_write_s": 2.990781740285456,
+        "physics_step_update_s": 383.2251715338789,
+        "snapshot_and_state_s": 1.2693594451993704,
+        "contact_read_s": 6.53426477778703,
+        "checks_and_record_s": 2.2935040902812034,
+        "measured_steps": 3558,
+        "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+      },
+      "initial_state_mode": "bound_measured_live_state_without_reset",
+      "observed_to_execution_errors": {
+        "command_position": 7.629394538355427e-08,
+        "object_reference_pose": 9.712863402455696e-09,
+        "observed_joint_position": 0.0,
+        "observed_joint_velocity": 0.0,
+        "observed_object_pose": 0.0,
+        "observed_object_velocity": 0.0
+      },
+      "object_outcomes": [
+        {
+          "object_id": "graspnet_014",
+          "task_success": false,
+          "observed_pickup": false,
+          "final_source_bottom_m": 0.0005545833732675462,
+          "final_reference_rise_m": -0.0025847069919109344,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final": {
+            "pose_xyzw": [
+              -0.8963912129402161,
+              -0.08145031332969666,
+              0.031922224909067154,
+              0.3596287965774536,
+              -0.30035877227783203,
+              0.6256231665611267,
+              -0.6237367987632751
+            ],
+            "velocity": [
+              0.038552284240722656,
+              -0.07901284098625183,
+              0.004934931639581919,
+              2.482560157775879,
+              1.2078182697296143,
+              0.0011309944093227386
+            ],
+            "robot_load_n": 0.0,
+            "finger_loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "illegal_robot_support_force_n": 0.0,
+            "source_bottom_m": 0.0005545833732675462,
+            "source_top_m": 0.06223775232730703
+          }
+        },
+        {
+          "object_id": "graspnet_015",
+          "task_success": false,
+          "observed_pickup": false,
+          "final_source_bottom_m": 0.0008711191445302247,
+          "final_reference_rise_m": -4.544854164123535e-07,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final": {
+            "pose_xyzw": [
+              -0.6384766697883606,
+              0.1492161899805069,
+              0.033755186945199966,
+              -0.010893300175666809,
+              0.003932848572731018,
+              0.9600374698638916,
+              0.27963173389434814
+            ],
+            "velocity": [
+              -0.0005248805973678827,
+              0.00023691078240517527,
+              -3.8879079511389136e-05,
+              -0.011278134770691395,
+              -0.010619406588375568,
+              -8.876400534063578e-05
+            ],
+            "robot_load_n": 0.0,
+            "finger_loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "illegal_robot_support_force_n": 0.0,
+            "source_bottom_m": 0.0008711191445302247,
+            "source_top_m": 0.06657961108289089
+          }
+        },
+        {
+          "object_id": "graspnet_022",
+          "task_success": false,
+          "observed_pickup": false,
+          "final_source_bottom_m": 0.0006224950064277687,
+          "final_reference_rise_m": -1.862645149230957e-08,
+          "trailing_observed_pickup_run_s": 0.0,
+          "final": {
+            "pose_xyzw": [
+              -0.832371175289154,
+              0.1718311607837677,
+              0.03445492312312126,
+              0.037768617272377014,
+              -0.038907527923583984,
+              0.908187210559845,
+              0.4150371849536896
+            ],
+            "velocity": [
+              0.0002964359591715038,
+              -0.00022915533918421715,
+              -9.479676373302937e-05,
+              0.0030327800195664167,
+              0.009746866300702095,
+              0.001361892675049603
+            ],
+            "robot_load_n": 0.0,
+            "finger_loads_n": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "illegal_robot_support_force_n": 0.0,
+            "source_bottom_m": 0.0006224950064277687,
+            "source_top_m": 0.0701899590321147
+          }
+        }
+      ],
+      "candidate": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/live/COLLECTION_RECORD.json",
+        "sha256": "ab45d2ade4fda686199fe4a45558ac0c831a5de054f418950776fd6ac92fbe94"
+      },
+      "native_evaluation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/live/execution/evaluation.json",
+        "sha256": "2f79572a9a19df8aca1c9edceb7365b5e713169751450a89bd7cbe10d5754290"
+      },
+      "original_commands_preserved": true,
+      "same_24_targets_with_only_initial_hand_rebound": true,
+      "exclude_training": true
+    }
+  ],
+  "current_Kit_starts": 1,
+  "current_environment_steps": 8876,
+  "current_initialization_steps": 1500,
+  "current_execution_steps": 7376,
+  "current_active_three_object_steps": 26628,
+  "bank_size": 6,
+  "current_bank_body_clock_opportunities": 53256,
+  "bank_clock_scope": "Body count times world ticks; not a count of awake solver work or all contacts",
+  "prior_pregrasp_integration_failures": 3,
+  "prior_Kit_starts": 3,
+  "prior_initialization_steps": 2250,
+  "total_Kit_starts": 4,
+  "total_environment_steps": 11126,
+  "total_active_three_object_steps": 33378,
+  "total_bank_body_clock_opportunities": 66756,
+  "unknown_execution_cost": 0,
+  "grasp_retries": 0,
+  "diagnostic_positive": 1,
+  "diagnostic_negative": 1,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "exclude_training": true,
+  "bulk_started": false,
+  "old_mapping_labels_unchanged": {
+    "fit": 26,
+    "internal": 5
+  },
+  "prior_new_mapping_fit_labels_unchanged": 2,
+  "original_435_and_eight_scoring_heads_unchanged": true,
+  "cgr_model_loads": 1,
+  "cgr_forwards": 2,
+  "scoring_head_loads": 0,
+  "same_robot_camera_world": true,
+  "stage_rebuilds": 0,
+  "boundary_resets": 2,
+  "no_actor_pose_or_velocity_writes_after_photograph": true,
+  "all_audits_passed": true,
+  "host_final_audit": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/HOST_FINAL_AUDIT.json",
+    "sha256": "25f40303ac222d8ecb85669d2c687e2bf2e19223d399634b7519c42f7ebfde2f"
+  },
+  "tests": {
+    "command": "PYTHONPATH=reproduction/boya OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/wangrenpeng/tendon-spin/.venv/bin/python -B -m unittest -v test_author_live_world test_author_contact_pipeline",
+    "exit_code": 0,
+    "unique_tests": 18,
+    "new_live_world_tests": 13,
+    "existing_mapping_tests": 5,
+    "observed_suite_wall_s": 2.263,
+    "Kit_starts": 0,
+    "physics_steps": 0
+  },
+  "generic_entry_static_freeze": {
+    "protocol": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_fixed_scene_entry_preflight_20261116_v2/PROTOCOL.json",
+      "sha256": "7ca55374a7ada9cb5cfb9c6a4e6cab6ff44b6ca82d3f6325167f8d59e062ad2b"
+    },
+    "status": "pass",
+    "Kit_starts": 0,
+    "physics_steps": 0,
+    "GPU_identity_mocked": true,
+    "usable_as_physical_run_protocol": false
+  },
+  "historical_cold_native_profiles": [
+    {
+      "index": 0,
+      "source": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/00/g1_contact/pipeline/execution/evaluation.json",
+        "sha256": "81ace1441cba04bc473c46918de479c84cd1802f59727a75eb2cfd2ebc814505"
+      },
+      "steps": 3817,
+      "native_setup_wall_s": 44.29784367699176,
+      "native_loop_wall_s": 190.1404749059584,
+      "native_execution_profile": {
+        "command_write_s": 2.7956588151864707,
+        "physics_step_update_s": 173.72522956621833,
+        "snapshot_and_state_s": 1.0775609067641199,
+        "contact_read_s": 8.816799527965486,
+        "checks_and_record_s": 2.1682758040260524,
+        "measured_steps": 3817,
+        "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+      }
+    },
+    {
+      "index": 1,
+      "source": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/g1_contact/pipeline/execution/evaluation.json",
+        "sha256": "5d5e08bdba3ac06bc1fb50c3f4b08b917313931ef7382ba92735ce0f9a6e31cf"
+      },
+      "steps": 2681,
+      "native_setup_wall_s": 82.74738660105504,
+      "native_loop_wall_s": 319.07627133606,
+      "native_execution_profile": {
+        "command_write_s": 2.1910818447358906,
+        "physics_step_update_s": 300.55711459973827,
+        "snapshot_and_state_s": 0.9599675880745053,
+        "contact_read_s": 11.949571802979335,
+        "checks_and_record_s": 2.406639006687328,
+        "measured_steps": 2681,
+        "scope": "Wall time buckets in unchanged control loop; physics includes sim.step and asset updates, contacts includes both reports; final serialization excluded"
+      }
+    }
+  ],
+  "comparison_scope": "Historical observations, not paired identical candidates or physical trajectories; no overall speedup demonstrated",
+  "physical_second_round_failure": "No object met original final lift/load criteria; final object014 source bottom 0.554583mm and all final finger loads zero",
+  "hardware_driver_connected": false,
+  "CanonDex_modified": false
+}

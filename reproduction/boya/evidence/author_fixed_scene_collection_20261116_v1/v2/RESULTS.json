@@ -1,0 +1,80 @@
+{
+  "schema": "anydex_boya_live_world_collection_v1",
+  "status": "stopped",
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_collection.py\", line 136, in run\n    stage(scene,'capture_audit',[py,'-B',p['sources']['audit_entry']['path'],'capture','--capture-dir',str(capture),'--protocol',str(root/'PROTOCOL.json'),'--output',str(output)],[output],p)\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_collection.py\", line 102, in stage\n    if result['status']!='complete':raise RuntimeError(name+': '+str(result.get('error')))\n                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: capture_audit: RuntimeError('Declared subprocess returned 1')\n",
+  "jobs": [
+    {
+      "status": "complete",
+      "request": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v2/runtime/mailbox/000.json",
+        "sha256": "1ad5de8865909ec2ad478626133211c6704f6c05227e803e8bda10447451cbda"
+      },
+      "job": {
+        "status": "complete",
+        "capture": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v2/scenes/00/capture/RESULTS.json",
+          "sha256": "19d25d9e10c83caedae7de02918384a6ddf76c4f614a11a5dc1f05c0b1702604"
+        },
+        "live_state": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v2/scenes/00/capture/LIVE_STATE.json",
+          "sha256": "84b8f1040d1276c5e1040b5d89d48547a4a279e03c9b54852323b63529f37c1f"
+        }
+      },
+      "wall_s": 197.55445109400898
+    }
+  ],
+  "audits": [],
+  "world": {
+    "schema": "anydex_boya_live_world_collection_v1",
+    "status": "closed_after_failure",
+    "Kit_starts": 1,
+    "world_builds": 1,
+    "boundary_resets": 1,
+    "stage_rebuilds": 0,
+    "camera_builds": 1,
+    "bank_size": 6,
+    "actor_handles": {
+      "graspnet_026": 138976822095952,
+      "graspnet_036": 138976150330048,
+      "graspnet_011": 138995681660608,
+      "graspnet_014": 138976691774064,
+      "graspnet_015": 138976690758256,
+      "graspnet_022": 138976687408192
+    },
+    "robot_handle": 138980382477632,
+    "camera_handle": 138999114519792,
+    "sim_handle": 138995684737440,
+    "sim_steps": 750,
+    "events": [
+      {
+        "kind": "between_round_placement",
+        "scene_id": "s40_lift_fit_00003_s2026111601",
+        "sim_step": 0,
+        "active": [
+          "graspnet_026",
+          "graspnet_036",
+          "graspnet_011"
+        ],
+        "actor_state_writes": true,
+        "world_rebuild": false
+      },
+      {
+        "kind": "photograph",
+        "state_sha256": "83ec793e8f660f880fb2385cf8972927adcc30aa951d8f3a2c0294055f8fee5d",
+        "sim_step": 750,
+        "world_builds": 1,
+        "wall_s": 197.49640891700983
+      }
+    ],
+    "phase": "observed",
+    "deferred_closes": 1
+  },
+  "wall_s": 214.97246290906332,
+  "new_training_labels": 0,
+  "diagnostic_positive": 0,
+  "diagnostic_negative": 0,
+  "exclude_training": true,
+  "training_updates": 0,
+  "retries": 0,
+  "bulk_started": false
+}

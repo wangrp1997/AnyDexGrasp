@@ -1,0 +1,80 @@
+{
+  "schema": "anydex_boya_live_world_collection_v1",
+  "status": "stopped",
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_collection.py\", line 147, in run\n    client.submit(2*i+1);job=client.wait(2*i+1);jobs.append(job)\n                             ^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_service_client.py\", line 64, in wait\n    return self._wait_file(self.runtime/'mailbox'/f'{index:03d}.RESULT.json',self.p['stage_timeout_s'])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_service_client.py\", line 51, in _wait_file\n    if self.future.done():raise RuntimeError('Resident worker exited: '+str(self.future.result()))\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Resident worker exited: {'status': 'stopped', 'started_unix_s': 1794825554.6874466, 'process': {'pid': 3130873, 'pgid': 3130873, 'start_ticks': 164449756}, 'returncode': 1, 'finished_unix_s': 1794825948.026769}\n",
+  "jobs": [
+    {
+      "status": "complete",
+      "request": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v3/runtime/mailbox/000.json",
+        "sha256": "1f7c618becd8d953a7d051b189d726dbf091ffa917685ac8caf64c75c1d6ffad"
+      },
+      "job": {
+        "status": "complete",
+        "capture": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v3/scenes/00/capture/RESULTS.json",
+          "sha256": "5766031918c1bf2aecee8f31edf0e2d987c950b392abf498e25c5c1c202797b3"
+        },
+        "live_state": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v3/scenes/00/capture/LIVE_STATE.json",
+          "sha256": "84b8f1040d1276c5e1040b5d89d48547a4a279e03c9b54852323b63529f37c1f"
+        }
+      },
+      "wall_s": 194.6097604939714
+    }
+  ],
+  "audits": [],
+  "world": {
+    "schema": "anydex_boya_live_world_collection_v1",
+    "status": "closed_after_failure",
+    "Kit_starts": 1,
+    "world_builds": 1,
+    "boundary_resets": 1,
+    "stage_rebuilds": 0,
+    "camera_builds": 1,
+    "bank_size": 6,
+    "actor_handles": {
+      "graspnet_026": 138588344334240,
+      "graspnet_036": 138588339558144,
+      "graspnet_011": 138517899877056,
+      "graspnet_014": 138517891291840,
+      "graspnet_015": 138517897945664,
+      "graspnet_022": 138517909549712
+    },
+    "robot_handle": 138582811824672,
+    "camera_handle": 138587825963712,
+    "sim_handle": 138587822406928,
+    "sim_steps": 750,
+    "events": [
+      {
+        "kind": "between_round_placement",
+        "scene_id": "s40_lift_fit_00003_s2026111601",
+        "sim_step": 0,
+        "active": [
+          "graspnet_026",
+          "graspnet_036",
+          "graspnet_011"
+        ],
+        "actor_state_writes": true,
+        "world_rebuild": false
+      },
+      {
+        "kind": "photograph",
+        "state_sha256": "83ec793e8f660f880fb2385cf8972927adcc30aa951d8f3a2c0294055f8fee5d",
+        "sim_step": 750,
+        "world_builds": 1,
+        "wall_s": 194.46499652508646
+      }
+    ],
+    "phase": "observed",
+    "deferred_closes": 1
+  },
+  "wall_s": 394.55736372596584,
+  "new_training_labels": 0,
+  "diagnostic_positive": 0,
+  "diagnostic_negative": 0,
+  "exclude_training": true,
+  "training_updates": 0,
+  "retries": 0,
+  "bulk_started": false
+}

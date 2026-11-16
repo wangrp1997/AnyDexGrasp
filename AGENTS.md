@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：同一物理世界连续拍照/抓取两轮已验收，整体加速未证明
+
+用户明确改为固定场景模拟现实，为后续实机采集组织做准备。新增独立author_live_world/contract/collection/service及只读audit，通用入口author_fixed_scene_collection.py路由v4修复层；一次创建原native机器人、地面、相机和6物体银行，每轮边界才摆放/复位。capture→execute沿同一sim/robot/camera/actors，0清场重建/0观测后物体位姿或速度写入；实测非零速度保留，原750初始化/稳定窗口/250Hz/全部物理门/完整接触/源底面承载保持。初始手/腕重绑定为拍照实测值，原六臂初值及24列逐步目标、掌姿、时间、phase exact；原50settle接预张开，原250close/50hold/lift不变。CPU PhysX连续求解器/银行结构改变，不声称轨迹等价。CanonDex和原冻结源码不改。
+
+public live_world_control_20261116_v4已complete：固定manual index3/4两轮，1Kit/1world/1camera/0stage重建/2边界摆放，CGR1load/2forward、0评分头。首轮raw34/ff/3818步正，026末源底101.800mm/升100.300mm，末th/ff/mf载荷5.62156/5.88714/.31162N，rf/lf0；第二轮raw296/ff/3558步负，014末源底.555mm/末五指载荷0、三体无提起。两次完整capture和runtime audit均PASS、所有原物理门通过，负例保留、不换候选重抓。照片时钟750/5318、执行末4568/8876，原native入口均bound_measured_live_state_without_reset，句柄和相机标定exact。两条仅exclude_training诊断，新增正式fit0/训练0；此前新映射2fit与旧映射26fit+5internal及旧435/八权重不自动合并。
+
+v4父wall2171.808s=36分11.808秒，静态freeze另15.538s；capture worker143.047/286.207s，capture audit165.351/404.183s，prepare99.703/118.546s，execute worker311.405/485.429s，runtime audit80.360/123.752s（首轮audit与次轮capture重叠，不相加冒充outer）。实际native sim.step+asset更新614.993s/接触读取13.709s，只是inclusive时间桶，不归因具体kernel/驱动。旧首轮setup44.298→26.728s但loop190.140→249.236s；新旧次轮候选及步数不同，不能只套setup倍率或旧cold26:54含中断outer报加速。整体尚慢/无净加速证明，不外推采足ETA。
+
+v1缺cam全局、v2原all审计跳过/World/Object主物体、v3新增瞬时角速度.02门误拒原稳定窗口，均各750初始化/0抓取，原错误/源归档保留。v2显式all+object补足原20um审计，v4仅移除新加截断、重算原稳定window并保留实测速度，未放原物理门。全阶段4Kit/2250旧失败初始化+1500新初始化+7376执行=11126环境步/33378活动三体步；6银行体时钟机会数66756非awake工作量。四parent wall合2971.734s不含版本间开发/冻结，未知成本0/抓取重试0。18CPUtests（13新+5既有）通过，通用入口静态freeze通过0Kit，不能拿mockGPU fixture实跑。四版source/input/archive绑定不变，全已登记PGID退出、预约released、所有锁可取/registryreleased，无本轮后台任务。
+
+报告AUTHOR_FIXED_SCENE_COLLECTION_20261116.md，轻证据evidence/author_fixed_scene_collection_20261116_v1；两轮真实RGB与首轮实测姿态图在ignored outputs，0回放积分。固定流程组织已完成，真实Boya驱动/标定/时延状态检查尚未接；仿真CGR/规划时暂停积分保观测绑定，不能声称实机可以暂停。正式单型扩采协议/配额仍未冻结，不自动恢复旧四型4800、训练或继续追加物理。阶段轻量成果push用户origin，大数据public忽略。
+
 ## 2026-11-16 当前：新预闭合g1映射已接完整采集，两场均提起并审核通过，新集2fit，训练0
 
 用户“好的继续”授权先接新映射并做1–2场小批次，本轮固定复用未启动manual_start_v2中index3/4两新布局，均fit；不是授权正式全量。独立author_contact_pipeline贯穿原source碰撞/动作合同/桥接/机械臂准备/原PhysX执行，原冻结源码与CanonDex不改。沿原g1闭合轨迹按raw宽度求虚拟预闭合参考；1.7只选原预张开，按ff/mf/rf/lf首个碰撞清楚分支选姿，无GT调姿/历史标签调参。执行仍原250close至公司包握目标+50hold，不在虚拟参考停手，不要求五指齐触。COLLISION_BRANCHES与独立XML FK/命令审核另存，13合同/映射测试+3接续测试通过。

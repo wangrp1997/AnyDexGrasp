@@ -1,0 +1,4 @@
+{
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_collection_service.py\", line 35, in serve\n    if job['role']=='capture':result=world.capture(job['round_index'],job['scene'],job['output_dir'])\n                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_world.py\", line 213, in capture\n    self.capture_impl(Path(scene_path),Path(output));self.order.photograph()\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_world.py:live_capture\", line 337, in capture\n    expected_K = [[cam['fx'], 0, cam['width']/2], [0, cam['fy'], cam['height']/2], [0, 0, 1]]\n                   ^^^\nNameError: name 'cam' is not defined\n",
+  "sequence": 0
+}

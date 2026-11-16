@@ -1,0 +1,53 @@
+{
+  "schema": "anydex_boya_live_world_collection_v1",
+  "status": "stopped",
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_live_collection.py\", line 134, in run\n    client.submit(2*i);job=client.wait(2*i);jobs.append(job)\n                           ^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_service_client.py\", line 64, in wait\n    return self._wait_file(self.runtime/'mailbox'/f'{index:03d}.RESULT.json',self.p['stage_timeout_s'])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_service_client.py\", line 51, in _wait_file\n    if self.future.done():raise RuntimeError('Resident worker exited: '+str(self.future.result()))\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Resident worker exited: {'status': 'stopped', 'started_unix_s': 1794824005.3202531, 'process': {'pid': 3066953, 'pgid': 3066953, 'start_ticks': 164294819}, 'returncode': 1, 'finished_unix_s': 1794824194.4176443}\n",
+  "jobs": [],
+  "audits": [],
+  "world": {
+    "schema": "anydex_boya_live_world_collection_v1",
+    "status": "closed_after_failure",
+    "Kit_starts": 1,
+    "world_builds": 1,
+    "boundary_resets": 1,
+    "stage_rebuilds": 0,
+    "camera_builds": 1,
+    "bank_size": 6,
+    "actor_handles": {
+      "graspnet_026": 138254876058080,
+      "graspnet_036": 138243055324864,
+      "graspnet_011": 138242964076976,
+      "graspnet_014": 138243058007456,
+      "graspnet_015": 138252554311760,
+      "graspnet_022": 138242979924832
+    },
+    "robot_handle": 138253220490144,
+    "camera_handle": 138253232788816,
+    "sim_handle": 138254062572688,
+    "sim_steps": 750,
+    "events": [
+      {
+        "kind": "between_round_placement",
+        "scene_id": "s40_lift_fit_00003_s2026111601",
+        "sim_step": 0,
+        "active": [
+          "graspnet_026",
+          "graspnet_036",
+          "graspnet_011"
+        ],
+        "actor_state_writes": true,
+        "world_rebuild": false
+      }
+    ],
+    "phase": "settling",
+    "deferred_closes": 1
+  },
+  "wall_s": 190.3959605791606,
+  "new_training_labels": 0,
+  "diagnostic_positive": 0,
+  "diagnostic_negative": 0,
+  "exclude_training": true,
+  "training_updates": 0,
+  "retries": 0,
+  "bulk_started": false
+}

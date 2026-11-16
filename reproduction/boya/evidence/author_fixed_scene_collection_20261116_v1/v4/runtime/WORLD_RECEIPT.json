@@ -1,0 +1,76 @@
+{
+  "schema": "anydex_boya_live_world_collection_v1",
+  "status": "closed",
+  "Kit_starts": 1,
+  "world_builds": 1,
+  "boundary_resets": 2,
+  "stage_rebuilds": 0,
+  "camera_builds": 1,
+  "bank_size": 6,
+  "actor_handles": {
+    "graspnet_026": 123873788243568,
+    "graspnet_036": 123843649672720,
+    "graspnet_011": 123858352588992,
+    "graspnet_014": 123849338445056,
+    "graspnet_015": 123843675449120,
+    "graspnet_022": 123843564310112
+  },
+  "robot_handle": 123849347438768,
+  "camera_handle": 123843524931952,
+  "sim_handle": 123858344093376,
+  "sim_steps": 8876,
+  "events": [
+    {
+      "kind": "between_round_placement",
+      "scene_id": "s40_lift_fit_00003_s2026111601",
+      "sim_step": 0,
+      "active": [
+        "graspnet_026",
+        "graspnet_036",
+        "graspnet_011"
+      ],
+      "actor_state_writes": true,
+      "world_rebuild": false
+    },
+    {
+      "kind": "photograph",
+      "state_sha256": "83ec793e8f660f880fb2385cf8972927adcc30aa951d8f3a2c0294055f8fee5d",
+      "sim_step": 750,
+      "world_builds": 1,
+      "wall_s": 143.00910903303884
+    },
+    {
+      "kind": "execution_finished",
+      "sim_step": 4568,
+      "world_builds": 1,
+      "label": 1
+    },
+    {
+      "kind": "between_round_placement",
+      "scene_id": "s40_lift_fit_00004_s2026111601",
+      "sim_step": 4568,
+      "active": [
+        "graspnet_014",
+        "graspnet_015",
+        "graspnet_022"
+      ],
+      "actor_state_writes": true,
+      "world_rebuild": false
+    },
+    {
+      "kind": "photograph",
+      "state_sha256": "3769a70a56769eb301c625324d3b1ff3b0e62511f5c9fda2de7534955774c355",
+      "sim_step": 5318,
+      "world_builds": 1,
+      "wall_s": 286.13496725517325
+    },
+    {
+      "kind": "execution_finished",
+      "sim_step": 8876,
+      "world_builds": 1,
+      "label": 0
+    }
+  ],
+  "phase": "complete",
+  "deferred_closes": 4
+}

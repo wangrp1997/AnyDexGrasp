@@ -1,0 +1,31 @@
+{
+  "status": "complete",
+  "complete": true,
+  "command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_live_world.py",
+    "runtime",
+    "--prepared-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/live",
+    "--split-manifest",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/s40_collection_20261107_v1/protocol.json",
+    "--output",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/live/RUNTIME_AUDIT.json"
+  ],
+  "started_unix_s": 1794828482.4606051,
+  "outputs": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/live/RUNTIME_AUDIT.json": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/live/RUNTIME_AUDIT.json",
+      "sha256": "28ce4a8377e5974ca2bb135c850046041e8f6834835257452968ad79aad84c81"
+    }
+  },
+  "retry_count": 0,
+  "child_pid": 3236521,
+  "returncode": 0,
+  "wall_s": 123.75224678497761,
+  "log": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/live_world_control_20261116_v4/scenes/01/stages/runtime_audit/process.log",
+    "sha256": "9f56e761d79bfdb34304a012586cb04d16b435ef6130091a97702e559260a2f2"
+  }
+}
