@@ -1,0 +1,139 @@
+{
+  "status": "reviewed_unspawned_CGR_dispatch",
+  "driver": {
+    "process": {
+      "pid": 2867187,
+      "pgid": 2867187,
+      "start_ticks": 163819566
+    },
+    "started_unix_s": 1794819253.4155953
+  },
+  "resource_slots_before": [
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/resource_slots/prepare/0.json",
+      "value": {
+        "reservation_id": "0369799cbf6c4d59914a87c244489a70",
+        "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/00/stages/prepare",
+        "worker": {
+          "pid": 2867187,
+          "pgid": 2867187,
+          "start_ticks": 163819566
+        },
+        "parent_protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/PROTOCOL.json",
+          "sha256": "22e89d8eca7fa2de24224a64e2e984b91229eff0fe64cbaf4db108b34a312313"
+        },
+        "resource": "prepare",
+        "slot": 0,
+        "state": "released",
+        "reserved_unix_s": 1794819354.7273297,
+        "process": {
+          "pid": 2871911,
+          "pgid": 2871911,
+          "start_ticks": 163829781
+        },
+        "pgid": 2871911,
+        "finished_unix_s": 1794819428.3810863
+      }
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/resource_slots/audit/0.json",
+      "value": {
+        "reservation_id": "a25c9f36137e48869c9faf6cac2d82d9",
+        "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/stages/capture_audit",
+        "worker": {
+          "pid": 2867187,
+          "pgid": 2867187,
+          "start_ticks": 163819566
+        },
+        "parent_protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/PROTOCOL.json",
+          "sha256": "22e89d8eca7fa2de24224a64e2e984b91229eff0fe64cbaf4db108b34a312313"
+        },
+        "resource": "audit",
+        "slot": 0,
+        "state": "released",
+        "reserved_unix_s": 1794819914.2515,
+        "process": {
+          "pid": 2896600,
+          "pgid": 2896600,
+          "start_ticks": 163885734
+        },
+        "pgid": 2896600,
+        "finished_unix_s": 1794819958.8573623
+      }
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/resource_slots/observation/0.json",
+      "value": {
+        "reservation_id": "94a3957604264ffd9eca6846c8729c4d",
+        "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/stages/representation",
+        "worker": {
+          "pid": 2867187,
+          "pgid": 2867187,
+          "start_ticks": 163819566
+        },
+        "parent_protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/PROTOCOL.json",
+          "sha256": "22e89d8eca7fa2de24224a64e2e984b91229eff0fe64cbaf4db108b34a312313"
+        },
+        "resource": "observation",
+        "slot": 0,
+        "state": "reserved",
+        "reserved_unix_s": 1794819958.858776
+      }
+    },
+    {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/resource_slots/kit/0.json",
+      "value": {
+        "reservation_id": "a45ed8e874d94379b84e6e0be2786264",
+        "stage_dir": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/stages/capture",
+        "worker": {
+          "pid": 2867187,
+          "pgid": 2867187,
+          "start_ticks": 163819566
+        },
+        "parent_protocol": {
+          "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/PROTOCOL.json",
+          "sha256": "22e89d8eca7fa2de24224a64e2e984b91229eff0fe64cbaf4db108b34a312313"
+        },
+        "resource": "kit",
+        "slot": 0,
+        "state": "released",
+        "reserved_unix_s": 1794819783.91958,
+        "process": {
+          "pid": 2890377,
+          "pgid": 2890377,
+          "start_ticks": 163872700
+        },
+        "pgid": 2890377,
+        "finished_unix_s": 1794819913.7250006
+      }
+    }
+  ],
+  "no_original_process_groups_alive": true,
+  "CGR_STAGE_and_process_log_absent": true,
+  "proof": "Pinned B._stage persists STAGE and opens process.log before the only Popen; neither exists",
+  "original_worker_adapters": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_wave_resources.py",
+    "sha256": "8d642f44ddcf085556807739ad27b97e2c8a621e1e61abc1d9c535b08ef7e80b"
+  },
+  "original_stage_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+    "sha256": "153527cbbfa38a3533bf5759a06331ab1c1896da95f8a575d8b18f7e38240959"
+  },
+  "second_capture_audit": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/capture/INDEPENDENT_CAPTURE_AUDIT.json",
+    "sha256": "c4582db3f657092d429759e55c895c42f3184c3af00129af44a56070a3ae7354"
+  },
+  "first_outcome": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/00/OUTCOME.json",
+    "sha256": "47e8a6edb88d2532172fe8fbeece77abff7a8c39fce479b37b48dc78c14e0fb4"
+  },
+  "consumed_Kit_starts": 3,
+  "consumed_environment_steps": 5317,
+  "remaining_Kit_starts": 1,
+  "remaining_executions": 1,
+  "max_remaining_execution_steps": 8000,
+  "review_unix_s": 1794820203.4162464
+}

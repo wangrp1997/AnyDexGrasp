@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：新预闭合g1映射已接完整采集，两场均提起并审核通过，新集2fit，训练0
+
+用户“好的继续”授权先接新映射并做1–2场小批次，本轮固定复用未启动manual_start_v2中index3/4两新布局，均fit；不是授权正式全量。独立author_contact_pipeline贯穿原source碰撞/动作合同/桥接/机械臂准备/原PhysX执行，原冻结源码与CanonDex不改。沿原g1闭合轨迹按raw宽度求虚拟预闭合参考；1.7只选原预张开，按ff/mf/rf/lf首个碰撞清楚分支选姿，无GT调姿/历史标签调参。执行仍原250close至公司包握目标+50hold，不在虚拟参考停手，不要求五指齐触。COLLISION_BRANCHES与独立XML FK/命令审核另存，13合同/映射测试+3接续测试通过。
+
+public `contact_pilot_20261116_v1`已complete：fit00003 raw34/ff/3817步提起026，末源底101.796mm、升100.203mm，末th/ff/mf/rf/lf载荷5.69679/5.93571/.02753/0/0N；fit00004 raw1929/rf/2681步提起014，末底95.825mm、升94.099mm，末载荷11.77012/5.15991/4.41343/4.78929/0N。两次原全部物理门、完整逐点接触及独立数值审核PASS，新增2条fit正标签、internal0；末受载1.608/1.472s只诊断不加门。选rf不要求该指独占对向载荷，仍按拇指+其他合计。新集export/gesture_1.npz含2x480特征及全三体身份，重载exact；旧映射26fit+5internal=31与旧435均不自动合并。正式训练/新模型/训后外测仍0，新单型正式配额与扩采队列尚未冻结，不自动扩大或恢复旧四型4800。
+
+总控首次在第二场CGR前退出143，原因未证明。第一场标签与第二场capture/audit已完成；第二场仅RESOURCE_WAIT/预约，无STAGE/process.log，原Popen前持久化顺序+主机全PID/PGID核对证明未派发。INTERRUPTION_REVIEW保留原资源状态，审阅释放唯一未启动预约后，独立continue_contact_pilot只完成剩余第二场；0初始化/执行重试、最多剩余1Kit/8000步，原协议/源/记录不回写，最终明确controller_was_interrupted。继承total_scene_budget16/64容量字段不作派发范围，实际只rows[3,4]/g1及更严格4Kit/17500步预算。两阶段所有已登记PGID退出、资源released、3锁可取/registryreleased，无后台任务。
+
+实际4Kit/1500初始化tick+6498执行=7998环境/23994三体步，0未知成本；2原identity CGR、0评分头/训练。完整outer1614.294s含中断恢复，不作正常吞吐；原执行stage273.880/464.457s，未证明整体加速或采满ETA。1ms仍仅映射。旧fit00013纯准备v3另得5210行ready、独立参考宽度/掌姿核对通过，0物理不计新标签；v1 libusb路径和v2新适配源编辑导致SHA拒绝均保留0物理。首成功图outputs/boya_contact_pilot_visual_20261116_v2/actual_execution.png用真实native link/三体pose+源网格，无回放积分，fixed palm按源URDF从pmbase恢复；初版缺合并palm停止保留。不能以两场称总体成功率/净映射收益。报告AUTHOR_CONTACT_PILOT_RESULTS_20261116.md，轻证据evidence/author_contact_pilot_20261116_v1；大数据public忽略，阶段轻成果push用户origin。
+
 ## 2026-11-16 最新语义更正：预闭合构型用于定位，执行仍继续闭合，不要求参考帧先夹住
 
 用户质疑姿态/宽度后明确“也不用太闭合，因为后续继续闭合也能接触到物体”。按此继续：raw宽度对齐的是预闭合参考与目标掌姿，不是接触完成/五指齐触或最终受载状态。统一g1五指握，拇指必须真实接触受载、其余部分可参与；不要强行让虚拟参考点贴CAD后就报抓稳，也不能把未实现的接触停止控制说成完成。开手/接近需清楚；闭合阶段允许手指接触物体，物体会改变实际关节运动，自由FK接触后轨迹不是实际轨迹。前阶段自由FK的负z是风险/未准入，不足以单独判真实必撞桌或失败；后续须判首次物体接触与桌面接触顺序及实际控制，不盲目放门、抬高目标或全体加大闭合。

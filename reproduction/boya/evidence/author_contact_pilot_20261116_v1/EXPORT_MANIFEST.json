@@ -1,0 +1,55 @@
+{
+  "schema": "anydex_boya_preclosure_pilot_export_v1",
+  "mapping_variant": "anydex_boya_preclosure_contact_mapping_v1",
+  "source_bindings": {
+    "protocol": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/PROTOCOL.json",
+      "sha256": "22e89d8eca7fa2de24224a64e2e984b91229eff0fe64cbaf4db108b34a312313"
+    },
+    "results": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/RESULTS.json",
+      "sha256": "8af249433795a36fc32b81670347edfe934335daeb5c0d565fdadae44385c4d2"
+    },
+    "s40_lift_fit_00003_s2026111601:g1:preclosure_v1:runtime_audit": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/00/g1_contact/pipeline/RUNTIME_AUDIT.json",
+      "sha256": "b75f870d941643b338a2fef19a8ec8740e6ab29f091c303379d10fb9f9ad3492"
+    },
+    "s40_lift_fit_00003_s2026111601:g1:preclosure_v1:mapping_audit": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/00/g1_contact/INDEPENDENT_MAPPING_AUDIT.json",
+      "sha256": "4e54f0b00dc93092c6112015a2fb353482c8e80832a90e5d0757435e3642d3fd"
+    },
+    "s40_lift_fit_00004_s2026111601:g1:preclosure_v1:runtime_audit": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/g1_contact/pipeline/RUNTIME_AUDIT.json",
+      "sha256": "433b593580cc3775700d2fddba1b783521931e4b210bd11d5df5f96cf88ee2e4"
+    },
+    "s40_lift_fit_00004_s2026111601:g1:preclosure_v1:mapping_audit": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/scenes/01/g1_contact/INDEPENDENT_MAPPING_AUDIT.json",
+      "sha256": "8b964352344e10858eb48ac94a934554574eef73b5de02512c72825f0fd23857"
+    }
+  },
+  "exporter": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/export_contact_pilot.py",
+    "sha256": "aaf59fdcf0dc7ebe6fe6dbfd6de8a44f3f4d32456c234039da067a1400c7cce3"
+  },
+  "datasets": {
+    "1": {
+      "binding": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/contact_pilot_20261116_v1/export/gesture_1.npz",
+        "sha256": "4946ef98748a3ea3d749efadd346b9d6f9a73e2657dd79db1913ce9f51bc9f41"
+      },
+      "counts": {
+        "fit": 2,
+        "internal": 0
+      },
+      "positive": 2,
+      "negative": 0
+    }
+  },
+  "size_ready": false,
+  "old_mapping_labels_merged": false,
+  "old435_merged": false,
+  "training_updates": 0,
+  "audit_reused": "Full numerical certificates already completed; SHA, record, feature and new mapping/command bindings rechecked",
+  "new_physics_steps": 0,
+  "new_Kit_starts": 0
+}
