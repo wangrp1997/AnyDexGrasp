@@ -1,0 +1,191 @@
+{
+  "status": "prepared_only_not_physically_run",
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "new_training_labels": 0,
+  "training_updates": 0,
+  "fixed_original_null_layouts_preserved": 4,
+  "cpu_tests_passed": 12,
+  "cli_journal_installation_check": "pass",
+  "first_ready_prefix_command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+    "run",
+    "--batch-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/batch",
+    "--max-scenes",
+    "4"
+  ],
+  "artifacts": {
+    "v1": {
+      "queue": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v1/scene_queue/QUEUE.json",
+        "sha256": "3df764a4e1067c56bd9ef8db5a90b6275b1b6d6869434e5fcd09435bfbe0fa88"
+      },
+      "protocol": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v1/batch/BATCH_PROTOCOL.json",
+        "sha256": "a53c13d2aeafe0b8788f173f0b3a6e2b9bb30abc85bee318be552a3358638b36"
+      },
+      "scenes": 4,
+      "ready": 0,
+      "placement_null": 4,
+      "statuses": [
+        {
+          "index": 0,
+          "scene_id": "s40_lift_fit_00000_s2026111601",
+          "split": "fit",
+          "status": "placement_null"
+        },
+        {
+          "index": 1,
+          "scene_id": "s40_lift_fit_00001_s2026111601",
+          "split": "fit",
+          "status": "placement_null"
+        },
+        {
+          "index": 2,
+          "scene_id": "s40_lift_internal_00000_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        },
+        {
+          "index": 3,
+          "scene_id": "s40_lift_internal_00001_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        }
+      ],
+      "started_stage_files": 0,
+      "ledger_files": 0
+    },
+    "v2": {
+      "queue": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/scene_queue/QUEUE.json",
+        "sha256": "6a87a1fe58185e803b2ba70d96b6fa67713b99ef1731650ca4faf8a5ec597959"
+      },
+      "protocol": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/batch/BATCH_PROTOCOL.json",
+        "sha256": "71c312818b94484e95dfe38d0c3d65c5f95f9563e992fdb26628e7eaedd5f105"
+      },
+      "scenes": 16,
+      "ready": 6,
+      "placement_null": 10,
+      "statuses": [
+        {
+          "index": 0,
+          "scene_id": "s40_lift_fit_00000_s2026111601",
+          "split": "fit",
+          "status": "placement_null"
+        },
+        {
+          "index": 1,
+          "scene_id": "s40_lift_fit_00001_s2026111601",
+          "split": "fit",
+          "status": "placement_null"
+        },
+        {
+          "index": 2,
+          "scene_id": "s40_lift_fit_00002_s2026111601",
+          "split": "fit",
+          "status": "placement_null"
+        },
+        {
+          "index": 3,
+          "scene_id": "s40_lift_fit_00003_s2026111601",
+          "split": "fit",
+          "status": "ready"
+        },
+        {
+          "index": 4,
+          "scene_id": "s40_lift_fit_00004_s2026111601",
+          "split": "fit",
+          "status": "ready"
+        },
+        {
+          "index": 5,
+          "scene_id": "s40_lift_fit_00005_s2026111601",
+          "split": "fit",
+          "status": "placement_null"
+        },
+        {
+          "index": 6,
+          "scene_id": "s40_lift_fit_00006_s2026111601",
+          "split": "fit",
+          "status": "ready"
+        },
+        {
+          "index": 7,
+          "scene_id": "s40_lift_fit_00007_s2026111601",
+          "split": "fit",
+          "status": "ready"
+        },
+        {
+          "index": 8,
+          "scene_id": "s40_lift_internal_00000_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        },
+        {
+          "index": 9,
+          "scene_id": "s40_lift_internal_00001_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        },
+        {
+          "index": 10,
+          "scene_id": "s40_lift_internal_00002_s2026111601",
+          "split": "internal",
+          "status": "ready"
+        },
+        {
+          "index": 11,
+          "scene_id": "s40_lift_internal_00003_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        },
+        {
+          "index": 12,
+          "scene_id": "s40_lift_internal_00004_s2026111601",
+          "split": "internal",
+          "status": "ready"
+        },
+        {
+          "index": 13,
+          "scene_id": "s40_lift_internal_00005_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        },
+        {
+          "index": 14,
+          "scene_id": "s40_lift_internal_00006_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        },
+        {
+          "index": 15,
+          "scene_id": "s40_lift_internal_00007_s2026111601",
+          "split": "internal",
+          "status": "placement_null"
+        }
+      ],
+      "started_stage_files": 0,
+      "ledger_files": 0
+    }
+  },
+  "sources": {
+    "prepare_author_collection_start.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/prepare_author_collection_start.py",
+      "sha256": "828e41fb6f88583c82f2abbffcfbce22dea1b10fab597369463c3041b98a5b73"
+    },
+    "author_verified_collection_execute.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_verified_collection_execute.py",
+      "sha256": "dd34be6a7e05d36ac516610637154b1826d3b29380c21e47394468f656b725b6"
+    }
+  },
+  "primary_references": [
+    "https://arxiv.org/html/2502.16420v1#S5.SS3",
+    "https://github.com/graspnet/AnyDexGrasp/blob/main/collect_dh3_grasp_data.py"
+  ],
+  "scientific_scope": "Public-code-aligned candidate collection with Boya/PhysX/automatic lift adaptation; not identical original hardware/labels"
+}

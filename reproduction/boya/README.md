@@ -1,3 +1,27 @@
+2026-11-16 采集交接：已准备新的固定队列 `manual_start_20261116_v2`，8fit场景＋8internal场景／最多64手型槽，6个布局ready、10个placement_null。**仅准备了布局和协议，0Kit/物理/标签/训练，未启动采集**。最初4场全placement_null的v1完整保留；v2仍用相同seed，保留原fit0/1及internal0/1的布局结果，未物理重试、换物体或放宽放置门。正式4800标签目标没有因此采足或启动全量。
+
+当前采集链路：三体布局/750tick初始化与仿真RGB-D → 作者发布CGR → 原公开DH3采集的top500、固定型、随机附加深入、source flip与碰撞过滤 → Boya映射及完整臂路径 → PhysX闭合/提起 → 全三体源底/载荷与数值门判定 → 独立审核 → 保存480维特征、输出索引、0/1标签和全场景split。采集不调用旧Boya评分头，不训练CGR或新评分头。作者Algorithm1是实机试错采集；本地的Boya/UR16e、PhysX、S40派生网格、相机工作域、规划和自动稳定提起标签属于适配，不能称原论文的同一物理/场景/评价设置。论文最终实机实验还包括搬到箱上方放下与人工记录；用户当前范围只要求提起。
+
+在仓库根目录执行以下命令，才会实际启动第一段采集（顺序处理前4场，前三场null保留，最多对第4场运行四型一次；ready布局不保证后续能规划或产生标签）：
+
+```bash
+cd /home/wangrenpeng/AnyDexGrasp
+PY=/home/wangrenpeng/tendon-spin/.venv/bin/python
+BATCH=/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/batch
+"$PY" -B reproduction/boya/author_collection_batch.py run --batch-dir "$BATCH" --max-scenes 4
+```
+
+进度看 `$BATCH/PROGRESS.json`，逐型结果看 `$BATCH/ledger/`，过程日志看 `$BATCH/scenes/*/stages/*/process.log`。只有完整执行并通过独立审核的成功/失败才是有效正/负标签；placement_null、no_candidate、null_geometry、基础设施失败不是负样本。PROGRESS在场景末刷新，型内完成情况以ledger为准。已开始的阶段不自动重试；同目录恢复只继续未开始阶段。未配置自动训练。
+
+确认首场记录后，如需执行该固定队列剩余部分以及导出（均是用户主动执行）：
+
+```bash
+"$PY" -B reproduction/boya/author_collection_batch.py run --batch-dir "$BATCH"
+"$PY" -B reproduction/boya/author_collection_export.py --batch-dir "$BATCH" --output-dir "${BATCH%/batch}/export_v1"
+```
+
+导出会再次核验已采标签，不启动物理或训练。串行PhysX未解决吞吐瓶颈，不给出采满时间承诺。执行使用新薄入口 `author_verified_collection_execute.py`，只安装已验证的完整raw journal/隔离压缩/完整读回与原执行函数，未改控制或判据；raw spool留本批public目录。12项原日志/执行适配检查通过；这次新队列的实际采集仍待用户运行。若要另外准备新队列，用 `prepare_author_collection_start.py --output-dir 新目录 --fit-scenes N --internal-scenes N --seed 整数`（每split 1..8），该脚本只准备不启动；不要重用旧目录，也不要把其目标quota当实际样本数。
+
 2026-11-16 当前：[MuJoCo完整原计划诊断](AUTHOR_MUJOCO_FULL_REPLAY_RESULTS_20261116.md)完成一次3389步回放，函数内部40.13s、其中积分1.83s，但原七门仅5过：手指耦合误差26.42mrad/穿透4.83mm，原成功计划在新后端未提起物体。差异首先出现在close，掌姿跟踪通过；不得报有效采集倍率或采满ETA。末端时间浮点格式错误原样保留，只读整数步网格重算原规则，0物理重跑；审核PASS仅记录完整性。11CPUtests通过，0Kit/新训练标签/训练，累计31不变；新后端不晋级，下一步核耦合约束与闭合接触。下文“仅20步”是此前阶段快照。
 
 2026-11-16 当前：[参考开源后端后的MuJoCo原型](AUTHOR_REFERENCE_BACKEND_PROGRESS_20261116.md)。同源UR16e+Boya/三体场景静态适配通过，24电机/28机器人关节/4mimic，7138行指令映射exact、1476 link FK核验；机器人30源网格，三体总52/53。补回原手XML28组结构排除后，仅20步settle冒烟通过，mj_step合.00304s；非完整采集倍率，尚未完成原物理/标签/完整点字段准入。含首个结构排除缺失前缀合0Kit/40MuJoCo环境步，0完整抓取/新标签/训练，累计31不变。此前单Kit常驻完整对照仅18:18→18:36、未加速，见[完整结果](AUTHOR_COLLECTION_STREAM_BOUND_RESULTS_20261116.md)。原PhysX和全部历史失败保留，未派正式扩采。

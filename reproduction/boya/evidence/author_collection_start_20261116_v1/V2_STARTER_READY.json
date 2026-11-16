@@ -1,0 +1,35 @@
+{
+  "status": "prepared_not_started",
+  "batch": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/batch",
+  "queue": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/scene_queue/QUEUE.json",
+    "sha256": "6a87a1fe58185e803b2ba70d96b6fa67713b99ef1731650ca4faf8a5ec597959"
+  },
+  "protocol": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/batch/BATCH_PROTOCOL.json",
+    "sha256": "71c312818b94484e95dfe38d0c3d65c5f95f9563e992fdb26628e7eaedd5f105"
+  },
+  "fixed_scenes": 16,
+  "placement_nulls": 10,
+  "maximum_gesture_attempts": 64,
+  "formal_target_labels": {
+    "fit_per_gesture": 1000,
+    "internal_per_gesture": 200
+  },
+  "target_counts_are_not_attempt_budget": true,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "execution_storage": "Verified raw journal plus isolated lossless compression/full readback; raw retained on disk",
+  "startup_command": [
+    "/home/wangrenpeng/tendon-spin/.venv/bin/python",
+    "-B",
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_collection_batch.py",
+    "run",
+    "--batch-dir",
+    "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/batch",
+    "--max-scenes",
+    "1"
+  ]
+}

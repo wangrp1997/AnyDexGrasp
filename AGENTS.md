@@ -1,5 +1,13 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 采集交接：新手动队列只准备，未运行，不自动继续实验
+
+用户要求说明如何自己启动及是否沿用原论文。已核原Algorithm1/公开DH3采集代码，明确CGR/top500/固定型/随机extra/source flip/原碰撞逻辑对齐公开代码，但Boya/UR16e/PhysX/S40派生场景/相机域/完整臂规划与自动提起标签属适配，不能称作者原实机环境或完全复现。新增prepare_author_collection_start只生成布局与冻结协议，author_verified_collection_execute只给原串行E.execute安装已通过的verified journal，原控制/物理/判断不改，12项既有执行/日志测试通过。README顶部已有可复制运行/查看/导出命令。
+
+public根manual_start_20261116_v1静态2fit+2internal全4placement_null，结果/协议保留，0Kit/物理。另预备固定manual_start_20261116_v2为8fit+8internal/seed2026111601，16场/最多64槽，6布局ready、10placement_null；相同seed保留原4布局结果，没有物理重试或自动补例。源/输入绑定通过，协议71c312818b94484e95dfe38d0c3d65c5f95f9563e992fdb26628e7eaedd5f105，当前零stage/ledger，0Kit/物理/新标签/训练。新队列未经实际采集，不能宣称已出标签或新入口实跑通过。给用户启动命令是原batch run --max-scenes4（前3null保留，第四场首次ready，最多四型各一次）；不自动执行或扩大预算。starter默认回执的max-scenes1只处理第一条null，用户交接命令以README的4为准。
+
+配置不是正式4800全量；当前有效数据仍26fit+5internal=31，正式训练/新模型/训后外测0。MuJoCo失败支线保留但本轮未继续调参/物理。只有用户执行run或明确要求启动才开始此新队列，当前无本任务后台采集/训练。轻证据evidence/author_collection_start_20261116_v1，代码/说明/证据阶段push，public大输出不入Git，原冻结源/CanonDex不改。
+
 ## 2026-11-16 当前：MuJoCo一条完整原计划40秒，但闭合物理失败，不能正式采集
 
 用户要求继续确认候选后端。新独立author_mujoco_control/full_replay及只读audit完成一次固定历史正例fit_00009/g1；原3389行24位置指令及原六臂float32速度前馈exact，原THJ4/THJ3的0.6Nm覆盖恢复。24位置+6前馈执行器合力后按原关节限矩，28机器人关节/4mimic，原三体初态/质量.1kg/每体-.98N/250Hz及原手28exclude保留，0调门/换候选/重试。此为显式后端/接触/几何变化，不是物理等价认证。
