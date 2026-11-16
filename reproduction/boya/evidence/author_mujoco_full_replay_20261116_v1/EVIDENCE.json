@@ -1,0 +1,107 @@
+{
+  "status": "complete_original_command_replay_physical_admission_failed",
+  "parent_commit": "e69a9a3",
+  "max_attempts": 1,
+  "retries": 0,
+  "Kit_starts": 0,
+  "physics_steps": 3389,
+  "dynamic_object_steps": 10167,
+  "mujoco_candidate_total_environment_steps": 3429,
+  "mujoco_candidate_total_three_body_steps": 10287,
+  "new_training_labels": 0,
+  "valid_dataset_fit": 26,
+  "valid_dataset_internal": 5,
+  "training_updates": 0,
+  "production_ready": false,
+  "gates": {
+    "joint_limits": true,
+    "mimics": false,
+    "penetration": false,
+    "palm_tracking": true,
+    "no_arm_object_support": true,
+    "fixed_base": true,
+    "complete_execution": true
+  },
+  "diagnostic_task_success": false,
+  "full_command_rows": 3389,
+  "contact_points": 31313,
+  "cpu_tests": 11,
+  "raw": {
+    "PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/PROTOCOL.json",
+      "sha256": "d389f59364f451b8ba4eebf1fc521572028ad1b0e2cc9d223b72318568a2ed1b"
+    },
+    "SETUP.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/SETUP.json",
+      "sha256": "fbdd567d340aaeef4a1661ebc691cf0bba3fdcf419f5af9cde3cb61dffcec724"
+    },
+    "RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/RESULTS.json",
+      "sha256": "85415ab9a3b2b67ea00e8bea6de6ce670d7d8e4bf449fff75785f37f73ccbe6f"
+    },
+    "TRACE.jsonl": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/TRACE.jsonl",
+      "sha256": "22d2dc09973cca8c90db7938aaa93ad78a2afd01f09f67411e22bcd986ce85a2"
+    },
+    "model.xml": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/model.xml",
+      "sha256": "933e84b54e3615da01fb12ca708200d69c21683497693decb55500dc6f31bc60"
+    }
+  },
+  "sources": {
+    "author_mujoco_control.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_control.py",
+      "sha256": "9daceeeb486841b3c0f9117abba8bea57faaf60ab2f286bc4e125a6fc0866866"
+    },
+    "author_mujoco_full_replay.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_full_replay.py",
+      "sha256": "b5a9fac5c4ea4e7249b35699f39f300ea82bfc9dac272b19d137d475b3e4bd09"
+    },
+    "audit_author_mujoco_full_replay.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_mujoco_full_replay.py",
+      "sha256": "97103ef4dd2000ebd5fa3d78272d9b89d1f24441ef959eb3e8337effc4b91ade"
+    },
+    "test_author_mujoco_control.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_mujoco_control.py",
+      "sha256": "c38f82009627ca25d125f240cdee683c258a786b2bd5b76e1968b63a084cdd8f"
+    },
+    "AUTHOR_MUJOCO_FULL_REPLAY_RESULTS_20261116.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_MUJOCO_FULL_REPLAY_RESULTS_20261116.md",
+      "sha256": "49468afada206b8931a0f53364aa748cab216b86653dc692cafb02586cb3c009"
+    }
+  },
+  "artifacts": {
+    "CPU_TESTS.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/CPU_TESTS.log",
+      "sha256": "6b64bfa671de0e0963aacfc1c18022a8c58adbb5873dbd3514a4e2c953e0b34f"
+    },
+    "PHYSX_REFERENCE.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/PHYSX_REFERENCE.json",
+      "sha256": "db1fbde370d7477e47f83ba4ba18e996ff5ad2dd34b6f368d48d5ad6604332c6"
+    },
+    "POSTPROCESSING_NOTE.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/POSTPROCESSING_NOTE.json",
+      "sha256": "5c5f89cca7230c0c5978e432d1d51e3a61ed18e1f0e0f7ca875f50e9e18aab00"
+    },
+    "PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/PROTOCOL.json",
+      "sha256": "d389f59364f451b8ba4eebf1fc521572028ad1b0e2cc9d223b72318568a2ed1b"
+    },
+    "READONLY_AUDIT.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/READONLY_AUDIT.json",
+      "sha256": "aeede7ac4ae339f7d0d5aad8693440a970a3a80af0490f2e23f61a859d906cc0"
+    },
+    "RECOMPUTED_EVALUATION.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/RECOMPUTED_EVALUATION.json",
+      "sha256": "32d5a3d0968e5aa46574c2b26bb215ce55607015da0d706862b54f8b3fc2368e"
+    },
+    "RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/RESULTS.json",
+      "sha256": "85415ab9a3b2b67ea00e8bea6de6ce670d7d8e4bf449fff75785f37f73ccbe6f"
+    },
+    "SETUP.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_full_replay_20261116_v1/SETUP.json",
+      "sha256": "fbdd567d340aaeef4a1661ebc691cf0bba3fdcf419f5af9cde3cb61dffcec724"
+    }
+  }
+}

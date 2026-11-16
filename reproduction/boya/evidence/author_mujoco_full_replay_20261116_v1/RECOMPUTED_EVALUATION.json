@@ -1,0 +1,344 @@
+{
+  "gates": {
+    "joint_limits": true,
+    "mimics": false,
+    "penetration": false,
+    "palm_tracking": true,
+    "no_arm_object_support": true,
+    "fixed_base": true,
+    "complete_execution": true
+  },
+  "maxima": {
+    "joint_limit_violation_rad": 0.0,
+    "mimic_error_rad": 0.026422327238273535,
+    "penetration_m": 0.00483180314293651,
+    "palm_position_error_m": 0.00722016641187302,
+    "palm_orientation_error_rad": 0.0896093656583842,
+    "illegal_object_contact_force_n": 0.0,
+    "base_position_drift_m": 0.0,
+    "base_orientation_drift_rad": 0.0
+  },
+  "first_numeric_gate_failure": {
+    "mimics": {
+      "step": 2594,
+      "phase": "close"
+    },
+    "penetration": {
+      "step": 2652,
+      "phase": "close"
+    }
+  },
+  "observed_lift": {
+    "original_object_ids": [
+      "graspnet_014",
+      "graspnet_026",
+      "graspnet_017"
+    ],
+    "object_outcomes": [
+      {
+        "object_id": "graspnet_014",
+        "task_success": false,
+        "observed_final_lift_success": false,
+        "observed_pickup": false,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "trailing_observed_pickup_run_s": 0.0,
+        "prelift_reference_z_m": 0.03127826045237169,
+        "final_reference_rise_m": 0.001235170183601475,
+        "final_source_bottom_m": 0.0003946004079644905,
+        "final_state_still_lifted_and_bearing": false,
+        "first_pickup_time_s": null,
+        "peak_held_reference_rise_m": null,
+        "duration_is_diagnostic_only": true,
+        "final": {
+          "pose_xyzw": [
+            -0.15624943407678182,
+            -0.610598190242854,
+            0.032513430635973166,
+            -0.024661131939406368,
+            -0.4092837535428948,
+            0.7701062428230335,
+            -0.48868702911198514
+          ],
+          "velocity": [
+            0.2943388722954406,
+            0.05259683667289182,
+            -0.03372593756470185,
+            -1.6713985690064925,
+            9.266065322146236,
+            0.0067011524633819874
+          ],
+          "robot_load_n": 0.0,
+          "finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "illegal_robot_support_force_n": 0.0,
+          "source_bottom_m": 0.0003946004079644905,
+          "source_top_m": 0.06307753359330813
+        }
+      },
+      {
+        "object_id": "graspnet_026",
+        "task_success": false,
+        "observed_final_lift_success": false,
+        "observed_pickup": false,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "trailing_observed_pickup_run_s": 0.0,
+        "prelift_reference_z_m": 0.028428789595313822,
+        "final_reference_rise_m": 2.2936513799365343e-14,
+        "final_source_bottom_m": 0.000295547035314158,
+        "final_state_still_lifted_and_bearing": false,
+        "first_pickup_time_s": null,
+        "peak_held_reference_rise_m": null,
+        "duration_is_diagnostic_only": true,
+        "final": {
+          "pose_xyzw": [
+            -0.8310164612157843,
+            0.059560240311227586,
+            0.02842878959533676,
+            0.002415308702771738,
+            0.0028104190629718974,
+            0.9644854670342345,
+            0.2641099235324484
+          ],
+          "velocity": [
+            -5.018106031166265e-11,
+            1.1222163475782187e-11,
+            -1.1336546645293703e-12,
+            -2.52636953259229e-10,
+            -1.0166818951327314e-09,
+            2.1714092478535672e-08
+          ],
+          "robot_load_n": 0.0,
+          "finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "illegal_robot_support_force_n": 0.0,
+          "source_bottom_m": 0.000295547035314158,
+          "source_top_m": 0.06663777317430021
+        }
+      },
+      {
+        "object_id": "graspnet_017",
+        "task_success": false,
+        "observed_final_lift_success": false,
+        "observed_pickup": false,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "trailing_observed_pickup_run_s": 0.0,
+        "prelift_reference_z_m": 0.02693683235441993,
+        "final_reference_rise_m": 3.5616063185153757e-07,
+        "final_source_bottom_m": 0.0004433047634536981,
+        "final_state_still_lifted_and_bearing": false,
+        "first_pickup_time_s": null,
+        "peak_held_reference_rise_m": null,
+        "duration_is_diagnostic_only": true,
+        "final": {
+          "pose_xyzw": [
+            -0.8751043683434757,
+            0.14729545448884312,
+            0.026937188515051783,
+            0.00018187579478700193,
+            -0.002305866065772791,
+            0.2707469262911611,
+            0.9626477818011994
+          ],
+          "velocity": [
+            -0.0004940959911665439,
+            0.0004461700906719695,
+            2.2615163502845902e-05,
+            -0.019455176891079704,
+            -0.021825920218581825,
+            1.600167423591063e-05
+          ],
+          "robot_load_n": 0.0,
+          "finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "illegal_robot_support_force_n": 0.0,
+          "source_bottom_m": 0.0004433047634536981,
+          "source_top_m": 0.05346945775748524
+        }
+      }
+    ],
+    "objects": {
+      "graspnet_014": {
+        "object_id": "graspnet_014",
+        "task_success": false,
+        "observed_final_lift_success": false,
+        "observed_pickup": false,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "trailing_observed_pickup_run_s": 0.0,
+        "prelift_reference_z_m": 0.03127826045237169,
+        "final_reference_rise_m": 0.001235170183601475,
+        "final_source_bottom_m": 0.0003946004079644905,
+        "final_state_still_lifted_and_bearing": false,
+        "first_pickup_time_s": null,
+        "peak_held_reference_rise_m": null,
+        "duration_is_diagnostic_only": true,
+        "final": {
+          "pose_xyzw": [
+            -0.15624943407678182,
+            -0.610598190242854,
+            0.032513430635973166,
+            -0.024661131939406368,
+            -0.4092837535428948,
+            0.7701062428230335,
+            -0.48868702911198514
+          ],
+          "velocity": [
+            0.2943388722954406,
+            0.05259683667289182,
+            -0.03372593756470185,
+            -1.6713985690064925,
+            9.266065322146236,
+            0.0067011524633819874
+          ],
+          "robot_load_n": 0.0,
+          "finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "illegal_robot_support_force_n": 0.0,
+          "source_bottom_m": 0.0003946004079644905,
+          "source_top_m": 0.06307753359330813
+        }
+      },
+      "graspnet_026": {
+        "object_id": "graspnet_026",
+        "task_success": false,
+        "observed_final_lift_success": false,
+        "observed_pickup": false,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "trailing_observed_pickup_run_s": 0.0,
+        "prelift_reference_z_m": 0.028428789595313822,
+        "final_reference_rise_m": 2.2936513799365343e-14,
+        "final_source_bottom_m": 0.000295547035314158,
+        "final_state_still_lifted_and_bearing": false,
+        "first_pickup_time_s": null,
+        "peak_held_reference_rise_m": null,
+        "duration_is_diagnostic_only": true,
+        "final": {
+          "pose_xyzw": [
+            -0.8310164612157843,
+            0.059560240311227586,
+            0.02842878959533676,
+            0.002415308702771738,
+            0.0028104190629718974,
+            0.9644854670342345,
+            0.2641099235324484
+          ],
+          "velocity": [
+            -5.018106031166265e-11,
+            1.1222163475782187e-11,
+            -1.1336546645293703e-12,
+            -2.52636953259229e-10,
+            -1.0166818951327314e-09,
+            2.1714092478535672e-08
+          ],
+          "robot_load_n": 0.0,
+          "finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "illegal_robot_support_force_n": 0.0,
+          "source_bottom_m": 0.000295547035314158,
+          "source_top_m": 0.06663777317430021
+        }
+      },
+      "graspnet_017": {
+        "object_id": "graspnet_017",
+        "task_success": false,
+        "observed_final_lift_success": false,
+        "observed_pickup": false,
+        "qualifying_steps": 0,
+        "longest_observed_pickup_run_s": 0.0,
+        "trailing_observed_pickup_run_s": 0.0,
+        "prelift_reference_z_m": 0.02693683235441993,
+        "final_reference_rise_m": 3.5616063185153757e-07,
+        "final_source_bottom_m": 0.0004433047634536981,
+        "final_state_still_lifted_and_bearing": false,
+        "first_pickup_time_s": null,
+        "peak_held_reference_rise_m": null,
+        "duration_is_diagnostic_only": true,
+        "final": {
+          "pose_xyzw": [
+            -0.8751043683434757,
+            0.14729545448884312,
+            0.026937188515051783,
+            0.00018187579478700193,
+            -0.002305866065772791,
+            0.2707469262911611,
+            0.9626477818011994
+          ],
+          "velocity": [
+            -0.0004940959911665439,
+            0.0004461700906719695,
+            2.2615163502845902e-05,
+            -0.019455176891079704,
+            -0.021825920218581825,
+            1.600167423591063e-05
+          ],
+          "robot_load_n": 0.0,
+          "finger_loads_n": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "illegal_robot_support_force_n": 0.0,
+          "source_bottom_m": 0.0004433047634536981,
+          "source_top_m": 0.05346945775748524
+        }
+      }
+    },
+    "task_success": false,
+    "phase_order_valid": true,
+    "actual_phase_blocks": [
+      "settle",
+      "home_to_pregrasp",
+      "approach",
+      "close",
+      "hold",
+      "lift"
+    ],
+    "required_phases": [
+      "settle",
+      "home_to_pregrasp",
+      "approach",
+      "close",
+      "hold",
+      "lift"
+    ]
+  },
+  "physical_stop": null,
+  "full_command_sequence_returned": true,
+  "diagnostic_task_success": false,
+  "exclude_training": true,
+  "label_eligible": false,
+  "new_labels": 0,
+  "production_ready": false,
+  "evaluation_time_adapter": "Integer step*0.004 only in derived evaluator rows; original raw time preserved"
+}

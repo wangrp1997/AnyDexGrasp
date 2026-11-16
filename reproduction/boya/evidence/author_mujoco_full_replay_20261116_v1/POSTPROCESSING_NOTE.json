@@ -1,0 +1,9 @@
+{
+  "original_runtime_error_preserved": true,
+  "error": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_full_replay.py\", line 139, in run\n    lift=L.evaluate_lift(rows,ids,.004)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py\", line 75, in evaluate_lift\n    raise ValueError('Complete aligned all-body native trace required')\nValueError: Complete aligned all-body native trace required\n",
+  "first_readonly_audit_failed_before_time_grid_adapter": true,
+  "first_audit_error": "ValueError: Complete aligned all-body native trace required",
+  "first_audit_extra_physics_steps": 0,
+  "recovery": "Only derived evaluator time is step*.004; raw engine clock and frozen artifacts unchanged",
+  "physical_reruns": 0
+}

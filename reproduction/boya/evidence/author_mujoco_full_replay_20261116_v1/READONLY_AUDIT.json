@@ -1,0 +1,57 @@
+{
+  "status": "PASS",
+  "scope": "Raw record integrity and original numeric rules; physical parity/production admission NOT certified",
+  "frames": 3389,
+  "original_position_and_velocity_rows_exact": 3389,
+  "contact_points": 31313,
+  "source_bottom_max_recompute_error_m": 0.0,
+  "finger_load_max_recompute_error_n": 0.0,
+  "measured_palm_vs_independent_XML_FK_max_error": 1.3322676295501878e-15,
+  "gates": {
+    "joint_limits": true,
+    "mimics": false,
+    "penetration": false,
+    "palm_tracking": true,
+    "no_arm_object_support": true,
+    "fixed_base": true,
+    "complete_execution": true
+  },
+  "maxima": {
+    "joint_limit_violation_rad": 0.0,
+    "mimic_error_rad": 0.026422327238273535,
+    "penetration_m": 0.00483180314293651,
+    "palm_position_error_m": 0.00722016641187302,
+    "palm_orientation_error_rad": 0.0896093656583842,
+    "illegal_object_contact_force_n": 0.0,
+    "base_position_drift_m": 0.0,
+    "base_orientation_drift_rad": 0.0
+  },
+  "observed_final_lift_success": false,
+  "physical_stop": null,
+  "physics_steps_in_audit": 0,
+  "accumulated_engine_clock_max_error_s": 1.049826892085548e-12,
+  "evaluation_time_adapter": "Integer step*0.004 only in derived evaluator rows; original raw time preserved",
+  "original_runtime_postprocessing_error_preserved": "Traceback (most recent call last):\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_full_replay.py\", line 139, in run\n    lift=L.evaluate_lift(rows,ids,.004)\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_lift.py\", line 75, in evaluate_lift\n    raise ValueError('Complete aligned all-body native trace required')\nValueError: Complete aligned all-body native trace required\n",
+  "bindings": {
+    "PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/PROTOCOL.json",
+      "sha256": "d389f59364f451b8ba4eebf1fc521572028ad1b0e2cc9d223b72318568a2ed1b"
+    },
+    "SETUP.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/SETUP.json",
+      "sha256": "fbdd567d340aaeef4a1661ebc691cf0bba3fdcf419f5af9cde3cb61dffcec724"
+    },
+    "RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/RESULTS.json",
+      "sha256": "85415ab9a3b2b67ea00e8bea6de6ce670d7d8e4bf449fff75785f37f73ccbe6f"
+    },
+    "TRACE.jsonl": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/TRACE.jsonl",
+      "sha256": "22d2dc09973cca8c90db7938aaa93ad78a2afd01f09f67411e22bcd986ce85a2"
+    },
+    "model.xml": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_full_replay_20261116_v1/model.xml",
+      "sha256": "933e84b54e3615da01fb12ca708200d69c21683497693decb55500dc6f31bc60"
+    }
+  }
+}

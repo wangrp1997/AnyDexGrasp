@@ -1,0 +1,566 @@
+{
+  "mujoco": "3.11.0",
+  "command_joint_names": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint",
+    "FAJ1",
+    "FAJ3",
+    "THJ4",
+    "THJ3",
+    "THJ2",
+    "THJ1",
+    "FFJ4",
+    "FFJ3",
+    "FFJ2",
+    "MFJ4",
+    "MFJ3",
+    "MFJ2",
+    "RFJ4",
+    "RFJ3",
+    "RFJ2",
+    "LFJ4",
+    "LFJ3",
+    "LFJ2"
+  ],
+  "measured_joint_names": [
+    "shoulder_pan_joint",
+    "shoulder_lift_joint",
+    "elbow_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint",
+    "FAJ1",
+    "FAJ3",
+    "THJ4",
+    "THJ3",
+    "THJ2",
+    "THJ1",
+    "FFJ4",
+    "FFJ3",
+    "FFJ2",
+    "FFJ1",
+    "MFJ4",
+    "MFJ3",
+    "MFJ2",
+    "MFJ1",
+    "RFJ4",
+    "RFJ3",
+    "RFJ2",
+    "RFJ1",
+    "LFJ4",
+    "LFJ3",
+    "LFJ2",
+    "LFJ1"
+  ],
+  "arm_names": [
+    "elbow_joint",
+    "shoulder_lift_joint",
+    "shoulder_pan_joint",
+    "wrist_1_joint",
+    "wrist_2_joint",
+    "wrist_3_joint"
+  ],
+  "legal_hand_owners": [
+    "ffbase",
+    "ffdistal",
+    "ffmiddle",
+    "ffproximal",
+    "lfbase",
+    "lfdistal",
+    "lfmiddle",
+    "lfproximal",
+    "mfbase",
+    "mfdistal",
+    "mfmiddle",
+    "mfproximal",
+    "pmbase",
+    "rfbase",
+    "rfdistal",
+    "rfmiddle",
+    "rfproximal",
+    "thbase",
+    "thdistal",
+    "thmiddle",
+    "thproximal"
+  ],
+  "objects": [
+    {
+      "object_id": "graspnet_014",
+      "source_parts": 6,
+      "expected_mass_kg": 0.1,
+      "initial_world_pose": [
+        [
+          -0.9737246970105166,
+          0.22063633933639706,
+          0.056389894449379196,
+          -0.712354838848114
+        ],
+        [
+          -0.22170783387523443,
+          -0.9750206286753936,
+          -0.013431681048617163,
+          0.1064591035246849
+        ],
+        [
+          0.052017793399271844,
+          -0.02558084091023161,
+          0.9983184711043848,
+          0.029918581247329712
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_mesh": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_014/mesh/simplified.obj",
+        "sha256": "2891770b517e054b92bd7c5241ac244f26a5c53b2891f62e98f6abb58338c934"
+      }
+    },
+    {
+      "object_id": "graspnet_026",
+      "source_parts": 10,
+      "expected_mass_kg": 0.1,
+      "initial_world_pose": [
+        [
+          -0.8604769039174639,
+          -0.5094401648875515,
+          0.00708634066073565,
+          -0.8309897184371948
+        ],
+        [
+          0.5094775514113301,
+          -0.8604686275511005,
+          0.005134745197280216,
+          0.05958830565214157
+        ],
+        [
+          0.0034817283827447676,
+          0.008028661138058894,
+          0.9999617083507742,
+          0.028447944670915604
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_mesh": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_026/mesh/simplified.obj",
+        "sha256": "fca4b3e77bf9fc5af4290e6228414335e4f9a9b7a1161c60c5b9986ca4087b5c"
+      }
+    },
+    {
+      "object_id": "graspnet_017",
+      "source_parts": 5,
+      "expected_mass_kg": 0.1,
+      "initial_world_pose": [
+        [
+          0.853340324873832,
+          -0.5213089371357313,
+          -0.006876191288539395,
+          -0.8751663565635681
+        ],
+        [
+          0.5213242401483686,
+          0.8533585217895971,
+          0.0005195409506272126,
+          0.14735713601112366
+        ],
+        [
+          0.005597015092760524,
+          -0.004028070442206117,
+          0.9999762237526268,
+          0.02697308547794819
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_mesh": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_017/mesh/simplified.obj",
+        "sha256": "469673faa40dbd3fa8efc73887a6ab19b90f97c01a6a961394b6dc965436ff61"
+      }
+    }
+  ],
+  "mapping": {
+    "0": "/World/ground",
+    "1": "/World/Robot/base_link",
+    "2": "/World/Robot/base_link",
+    "3": "/World/Robot/shoulder_link",
+    "4": "/World/Robot/upper_arm_link",
+    "5": "/World/Robot/forearm_link",
+    "6": "/World/Robot/wrist_1_link",
+    "7": "/World/Robot/wrist_2_link",
+    "8": "/World/Robot/wrist_3_link",
+    "9": "/World/Robot/wrist_3_link",
+    "10": "/World/Robot/wrist_3_link",
+    "11": "/World/Robot/wrist_3_link",
+    "12": "/World/Robot/falink1",
+    "13": "/World/Robot/pmbase",
+    "14": "/World/Robot/pmbase",
+    "15": "/World/Robot/thbase",
+    "16": "/World/Robot/thproximal",
+    "17": "/World/Robot/thmiddle",
+    "18": "/World/Robot/thdistal",
+    "19": "/World/Robot/thdistal",
+    "20": "/World/Robot/ffbase",
+    "21": "/World/Robot/ffproximal",
+    "22": "/World/Robot/ffmiddle",
+    "23": "/World/Robot/ffdistal",
+    "24": "/World/Robot/ffdistal",
+    "25": "/World/Robot/mfbase",
+    "26": "/World/Robot/mfproximal",
+    "27": "/World/Robot/mfmiddle",
+    "28": "/World/Robot/mfdistal",
+    "29": "/World/Robot/mfdistal",
+    "30": "/World/Robot/rfbase",
+    "31": "/World/Robot/rfproximal",
+    "32": "/World/Robot/rfmiddle",
+    "33": "/World/Robot/rfdistal",
+    "34": "/World/Robot/rfdistal",
+    "35": "/World/Robot/lfbase",
+    "36": "/World/Robot/lfproximal",
+    "37": "/World/Robot/lfmiddle",
+    "38": "/World/Robot/lfdistal",
+    "39": "/World/Robot/lfdistal",
+    "40": "/World/Robot/pmbase",
+    "41": "/World/Robot/base_link",
+    "42": "/World/graspnet_014",
+    "43": "/World/graspnet_026",
+    "44": "/World/graspnet_017"
+  },
+  "drive_parameters": {
+    "shoulder_pan_joint": {
+      "stiffness": 1320.0,
+      "damping": 72.6636085,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 330.0,
+      "armature": 0.0
+    },
+    "shoulder_lift_joint": {
+      "stiffness": 1320.0,
+      "damping": 72.6636085,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 330.0,
+      "armature": 0.0
+    },
+    "elbow_joint": {
+      "stiffness": 600.0,
+      "damping": 34.64101615,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 150.0,
+      "armature": 0.0
+    },
+    "wrist_1_joint": {
+      "stiffness": 216.0,
+      "damping": 29.39387691,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 56.0,
+      "armature": 0.0
+    },
+    "wrist_2_joint": {
+      "stiffness": 216.0,
+      "damping": 29.39387691,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 56.0,
+      "armature": 0.0
+    },
+    "wrist_3_joint": {
+      "stiffness": 216.0,
+      "damping": 29.39387691,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 56.0,
+      "armature": 0.0
+    },
+    "FAJ3": {
+      "stiffness": 40.0,
+      "damping": 0.0,
+      "viscous_friction": 0.5,
+      "joint_effort_limit": 1.0,
+      "armature": 0.0002
+    },
+    "FAJ1": {
+      "stiffness": 40.0,
+      "damping": 0.0,
+      "viscous_friction": 0.5,
+      "joint_effort_limit": 1.0,
+      "armature": 0.0002
+    },
+    "THJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.6,
+      "armature": 0.0002
+    },
+    "THJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.6,
+      "armature": 0.0002
+    },
+    "THJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "THJ1": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "MFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "MFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "MFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "RFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "RFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "RFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "LFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "LFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "LFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    },
+    "MFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    },
+    "RFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    },
+    "LFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    }
+  },
+  "source_excludes": [
+    [
+      "fabase",
+      "falink1"
+    ],
+    [
+      "fabase",
+      "pmbase"
+    ],
+    [
+      "falink1",
+      "pmbase"
+    ],
+    [
+      "pmbase",
+      "palm"
+    ],
+    [
+      "palm",
+      "thbase"
+    ],
+    [
+      "palm",
+      "thproximal"
+    ],
+    [
+      "palm",
+      "ffbase"
+    ],
+    [
+      "palm",
+      "mfbase"
+    ],
+    [
+      "palm",
+      "rfbase"
+    ],
+    [
+      "palm",
+      "lfbase"
+    ],
+    [
+      "thbase",
+      "thproximal"
+    ],
+    [
+      "thproximal",
+      "thmiddle"
+    ],
+    [
+      "thmiddle",
+      "thdistal"
+    ],
+    [
+      "ffbase",
+      "ffproximal"
+    ],
+    [
+      "ffbase",
+      "mfbase"
+    ],
+    [
+      "ffproximal",
+      "ffmiddle"
+    ],
+    [
+      "ffmiddle",
+      "ffdistal"
+    ],
+    [
+      "mfbase",
+      "mfproximal"
+    ],
+    [
+      "mfbase",
+      "rfbase"
+    ],
+    [
+      "mfproximal",
+      "mfmiddle"
+    ],
+    [
+      "mfmiddle",
+      "mfdistal"
+    ],
+    [
+      "rfbase",
+      "rfproximal"
+    ],
+    [
+      "rfbase",
+      "lfbase"
+    ],
+    [
+      "rfproximal",
+      "rfmiddle"
+    ],
+    [
+      "rfmiddle",
+      "rfdistal"
+    ],
+    [
+      "lfbase",
+      "lfproximal"
+    ],
+    [
+      "lfproximal",
+      "lfmiddle"
+    ],
+    [
+      "lfmiddle",
+      "lfdistal"
+    ]
+  ],
+  "model_dimensions": {
+    "nq": 49,
+    "nv": 46,
+    "nu": 30,
+    "ngeom": 52
+  },
+  "source_initial_pose_max_error": 0.0,
+  "solver_iterations": 100,
+  "explicit_new_backend": true,
+  "no_runtime_state_writes": true
+}

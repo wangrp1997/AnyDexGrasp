@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：MuJoCo一条完整原计划40秒，但闭合物理失败，不能正式采集
+
+用户要求继续确认候选后端。新独立author_mujoco_control/full_replay及只读audit完成一次固定历史正例fit_00009/g1；原3389行24位置指令及原六臂float32速度前馈exact，原THJ4/THJ3的0.6Nm覆盖恢复。24位置+6前馈执行器合力后按原关节限矩，28机器人关节/4mimic，原三体初态/质量.1kg/每体-.98N/250Hz及原手28exclude保留，0调门/换候选/重试。此为显式后端/接触/几何变化，不是物理等价认证。
+
+3389步全返回/31313接触点，函数内部wall40.125878s（不含进程导入与后续只读审计），其中mj_step1.832797s/观测25.064796s。观测用copyData+forward独立末态Data，不改live状态；点全存明确诊断字段，非PhysX完整filtered合同。新原七门仅5过：mimic误差.026422327rad>.002，穿透4.831803mm>1mm，未提起任何物体；原同计划七门全过、主物体升99.114mm且受载。新首失败2594close为mimic，2652close为穿透，最深2747为thdistal—graspnet014；hold/lift均无机器人—物体接触，掌姿/限位/固定基座/无臂支撑/完成性过。不得把40s或1.83s比旧472s报有效采集倍率或ETA，不晋级新后端。
+
+原后处理因MuJoCo累计时钟与step*.004差1.049827e-12s、超过原1e-12容差而报错，原RESULTS/runtime_error/raw不改。只读审计仅在派生评价行用原整数步网格，另存RECOMPUTED_EVALUATION，0再积分；首次未适配时钟的审核失败保留说明。raw重算PASS只表示3389指令/源底/载荷/七门完整一致，非物理门PASS；源底/载荷误差0，实测掌姿对独立XML FK1.332268e-15。11CPUtests过。本轮0Kit/3389MuJoCo环境/10167三体步，含旧两前缀候选累计3429环境/10287对象步；0新训练标签/训练/CGR，累计有效数据26fit+5internal=31，正式4800及新模型/外测0。
+
+原默认软mimic、接触求解与机器人凸包表示尚未和原PhysX标定，不能断言单一根因。下一步集中核原约束及闭合接触/几何，不放宽门或追逐本条已知成功。报告reproduction/boya/AUTHOR_MUJOCO_FULL_REPLAY_RESULTS_20261116.md，轻证据evidence/author_mujoco_full_replay_20261116_v1；原轨迹/模型在ignored outputs，原冻结源/失败/CanonDex不改。完整物理已结束、无后台任务，不自动扩大预算或生产。
+
 ## 2026-11-16 当前：参考现成后端落成紧凑MuJoCo原型，仍未完整标签准入
 
 用户要求参考开源采集实现并解决异常慢。本轮逐代码核DexGraspBench MjHO/GetaGrip/DexGraspNet及本地AnyDex fork，沿已装MuJoCo3.11直接源网格建场实现独立author_mujoco_preflight/scene_preflight/prefix_smoke/source_filters，无新依赖/Kit/正式采集。定位现有PhysX max_extent.02/vertex64等适配将机器人/手分到12681凸体（上臂3316等）；新候选同源URDF机器人30网格、三体场景总52/53。不能单凭数量归因或声称几何/物理等价，旧20um门仍未在新后端认证。
