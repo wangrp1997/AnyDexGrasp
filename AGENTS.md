@@ -1,5 +1,13 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 候选图已交付，当前等用户自行目视诊断，不启动采集或改映射
+
+用户明确要“原始可用候选与Boya转换后对比图，我来诊断”。已用同一旧fit00013场景生成outputs/boya_candidate_comparison_20261116_v2/index.html：g6/raw1210历史成功、g1/raw1322历史失败、g7/raw1322未执行；3组2040x1740俯/侧视、3组2560x850原RGB-D静态投影及3组全源网格Plotly可旋转左右联动3D。左CGR标尺不是DH3实体手，没有同场作者实机成功证明，不能标成“作者原始已可用”；右为保存pool实际掌姿及原16手关节FK/全部258086三角面，无显示降采样。计算参考点不宣称硬件接触标定；投影图明确静态合成非手实拍。原图/大HTML继续ignore，只push轻代码/README/证据。
+
+原绑定和6PNG全解码/尺寸/历史标签读回通过，同raw1322原始俯视面板pixel exact，源帧到映射参考最大矩阵差5.73e-8。v1因理想候选掌矩阵与pool保存roundtrip约1.74e-8差而逐值断言失败，源码/失败保留0步；v2只接受<=1e-7保存数值roundtrip并用原pool实际pose绘图，未改物理门或原source。HTML生成完成，未做浏览器运行验收。本轮0Kit/物理/CGR/IK/新标签/训练，有效31与模型保持。
+
+纠正前面“13项HOME路径未通过”易误导：所示g7原上层bounded_HOME实为fixed_segments_geometry的approach1270..1299/30样本lfdistal—graspnet005源凸代理相交，最大0.046500060mm，RRT未开始。只能称该例原几何门拒绝，不说全局不可达/真实三角面穿透或原CGR必然无用。图中红小指仅涉事link，不伪造接触点。当前用户要自行诊断，交图后不继续派试抓、调参、改映射或启动此前只prepare的manual队列。生成器render_author_boya_candidate_comparison.py，轻证据evidence/author_candidate_comparison_20261116_v1。
+
 ## 2026-11-16 采集交接：新手动队列只准备，未运行，不自动继续实验
 
 用户要求说明如何自己启动及是否沿用原论文。已核原Algorithm1/公开DH3采集代码，明确CGR/top500/固定型/随机extra/source flip/原碰撞逻辑对齐公开代码，但Boya/UR16e/PhysX/S40派生场景/相机域/完整臂规划与自动提起标签属适配，不能称作者原实机环境或完全复现。新增prepare_author_collection_start只生成布局与冻结协议，author_verified_collection_execute只给原串行E.execute安装已通过的verified journal，原控制/物理/判断不改，12项既有执行/日志测试通过。README顶部已有可复制运行/查看/导出命令。

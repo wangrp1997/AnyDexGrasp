@@ -1,0 +1,378 @@
+{
+  "status": "complete",
+  "scene": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/capture/observed_scene.json",
+    "sha256": "96f7328253816453242d4b147fe93b84bfcb063fa782c54fcf5de0d815b68462"
+  },
+  "observation": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/capture/observation.json",
+    "sha256": "28acbc5bccf876a95e2b4ad23e83c1de8cc95db96a1a2e1c71e44698553c3a43"
+  },
+  "renderer": "CPU orthographic/perspective z-buffer, full original triangle meshes; no decimation",
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/render_author_boya_candidate_comparison.py",
+    "sha256": "2d45a80dd74474bdea0dd416d4eba70982f1a8bf1717ae2ccffd74b81a1d81e5"
+  },
+  "object_sources": {
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/mesh/simplified.obj": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_015/mesh/simplified.obj",
+      "sha256": "f834ec1a5115fd28750e51a434893ca5ac745b5d89ec3ae3ac2682cd6ad347b7"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_029/mesh/simplified.obj": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_029/mesh/simplified.obj",
+      "sha256": "e253c33eeef4c7f03dc2190cd156f6693ee4e7be29e0f5c65d29136d9df958e2"
+    },
+    "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_005/mesh/simplified.obj": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_005/mesh/simplified.obj",
+      "sha256": "0a5a2b17283cb561a30441327debd199c5418a5012c083357c843fcecdddd7d6"
+    }
+  },
+  "cases": [
+    {
+      "gesture": 6,
+      "source_row_index": 1210,
+      "source_top500_rank": 7,
+      "status": "\u5386\u53f2\u5b9e\u9645\u6210\u529f",
+      "historical_task_success": true,
+      "pipeline_stage": "ready",
+      "raw_width_mm": 79.06246185302734,
+      "expanded_width_mm": 134.4061940908432,
+      "reference_width_mm": 130.51790938638098,
+      "raw_depth_mm": 19.999999552965164,
+      "extra_depth_mm": 10.0,
+      "slot_id": "g6:distal_000:ff",
+      "raw_to_mapped_reference_matrix_max_error": 1.7695421350438778e-08,
+      "saved_pool_vs_candidate_pose_roundtrip_max_error": 1.743337130211131e-08,
+      "palm": [
+        [
+          0.8424528932666683,
+          0.3287193982845532,
+          -0.4268684572770173,
+          -0.8265751039985039
+        ],
+        [
+          0.5386302709640179,
+          -0.531915939111314,
+          0.6534086507849112,
+          0.03876356296476641
+        ],
+        [
+          -0.012270037809564722,
+          -0.7803902811483305,
+          -0.625172340448121,
+          0.15968429498391518
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reference": [
+        [
+          0.02277477271854877,
+          -0.5342688560485839,
+          0.8450077772140502,
+          -0.9029140621423721
+        ],
+        [
+          0.08316519626619688,
+          0.8433098994649916,
+          0.53095386147595,
+          0.08707837048814243
+        ],
+        [
+          -0.9962754921100551,
+          0.05818287325667142,
+          0.06363876337633341,
+          0.055475657052663
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "q": [
+        0.1272769426055181,
+        0.05091077704220724,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "image": "g6_source_vs_boya.png",
+      "rgb_image": "g6_rgb_overlay.png",
+      "candidate": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g6/pool/selected_author_candidate.json",
+        "sha256": "4979ef7b8893298fe267b2d6b5c1dccd042c24114b65b85f7c3cb2d4a8eaef79"
+      },
+      "preparation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g6/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "2a62357cc4d7586f033fddeac7df76ef4051111fce170a7a2fcd5eaaf7b3574d"
+      },
+      "evaluation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g6/execution/LIFT_EVALUATION.json",
+        "sha256": "3c3cbb56ad9261f7dfcbe1c96f39b5c4f09406635005ee377121fb562ec36803"
+      }
+    },
+    {
+      "gesture": 1,
+      "source_row_index": 1322,
+      "source_top500_rank": 0,
+      "status": "\u5386\u53f2\u5b9e\u9645\u6293\u53d6\u5931\u8d25",
+      "historical_task_success": false,
+      "pipeline_stage": "ready",
+      "raw_width_mm": 83.86754989624023,
+      "expanded_width_mm": 142.57483184337616,
+      "reference_width_mm": 135.83993319676196,
+      "raw_depth_mm": 29.999999329447746,
+      "extra_depth_mm": 0.0,
+      "slot_id": "g1:distal_000:ff",
+      "raw_to_mapped_reference_matrix_max_error": 5.7298596534138824e-08,
+      "saved_pool_vs_candidate_pose_roundtrip_max_error": 4.694813371397544e-08,
+      "palm": [
+        [
+          0.8959127533180858,
+          -0.43046235184163084,
+          -0.10973833463734525,
+          -0.8318495699044552
+        ],
+        [
+          -0.10001525467641119,
+          -0.4361451136143112,
+          0.8943010615572207,
+          -0.03814252071629262
+        ],
+        [
+          -0.4328247766406391,
+          -0.7902402188684973,
+          -0.43380077133247436,
+          0.1337789102521567
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reference": [
+        [
+          -0.34864979982376093,
+          0.025520045310258862,
+          0.9369055628776549,
+          -0.8796359300613403
+        ],
+        [
+          0.25858928945858844,
+          0.9634488049552848,
+          0.06998562404956486,
+          0.0650539053924733
+        ],
+        [
+          -0.9008745856300608,
+          0.26667417790225667,
+          -0.3425054012578486,
+          0.06466536377581866
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "q": [
+        0.12509698546362286,
+        -0.2501939709272457,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "image": "g1_source_vs_boya.png",
+      "rgb_image": "g1_rgb_overlay.png",
+      "candidate": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/pool/selected_author_candidate.json",
+        "sha256": "439c9e8e2ed0b1a5dd4636fb4cc99ce279aece8844f70d55269793b737a78ab9"
+      },
+      "preparation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "826001b313bd4fbb53aac2c54fc2a259a749c855e66e0f30aae88c92af98f11e"
+      },
+      "evaluation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g1/execution/LIFT_EVALUATION.json",
+        "sha256": "e9595b91c731997e8551f9f717f920afa0ad5a410c651eaafd20d71207dc385c"
+      }
+    },
+    {
+      "gesture": 7,
+      "source_row_index": 1322,
+      "source_top500_rank": 0,
+      "status": "\u89c4\u5212\u62d2\u7edd\uff0c\u672a\u6267\u884c",
+      "historical_task_success": null,
+      "pipeline_stage": "bounded_HOME",
+      "raw_width_mm": 83.86754989624023,
+      "expanded_width_mm": 142.57483184337616,
+      "reference_width_mm": 132.06316808570315,
+      "raw_depth_mm": 29.999999329447746,
+      "extra_depth_mm": 0.0,
+      "slot_id": "g7:distal_000:ff",
+      "raw_to_mapped_reference_matrix_max_error": 5.7298596090049614e-08,
+      "saved_pool_vs_candidate_pose_roundtrip_max_error": 4.879744219810078e-08,
+      "palm": [
+        [
+          0.9103379610504504,
+          -0.3627406711533189,
+          -0.19925863133563151,
+          -0.81430643226111
+        ],
+        [
+          0.012201307991974822,
+          -0.4577253172271095,
+          0.889009933607397,
+          -0.03484844010123572
+        ],
+        [
+          -0.41368578021705604,
+          -0.8117307062447389,
+          -0.41225882135573955,
+          0.12986927596861553
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "reference": [
+        [
+          -0.34864979982376093,
+          0.025520045310258862,
+          0.9369055628776549,
+          -0.8796359300613403
+        ],
+        [
+          0.25858928945858844,
+          0.9634488049552848,
+          0.06998562404956486,
+          0.0650539053924733
+        ],
+        [
+          -0.9008745856300608,
+          0.26667417790225667,
+          -0.3425054012578486,
+          0.06466536377581866
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "q": [
+        0.13834504009588744,
+        -0.06917252004794372,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "image": "g7_source_vs_boya.png",
+      "rgb_image": "g7_rgb_overlay.png",
+      "candidate": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g7/pool/selected_author_candidate.json",
+        "sha256": "4f51e11de1602a2167439c56f2362707bc705a971c7e071a32ccbcc7e8ccc633"
+      },
+      "preparation": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g7/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "019d3468405729a9b90e76d17b1374bb2d1d0542b65a86130ff48344ca9d4eb3"
+      },
+      "evaluation": null
+    }
+  ],
+  "g7_rejection": {
+    "binding": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/production_tail_20261115_v1/run/windows/01/scenes/0000009_s40_lift_fit_00013_s2026111501/g7/home/rrt/fixed_segments_geometry.json",
+      "sha256": "747e65407f4a0b3da9f7791b72c778e8f77427d63644a1e3c9716dcf0a22907a"
+    },
+    "first": {
+      "sample": 521,
+      "kind": "object",
+      "link": "lfdistal",
+      "other": 19,
+      "distance_m": -3.5538160129869973e-06,
+      "command_index": 1270,
+      "phase": "approach",
+      "obstacle_owner": {
+        "object_id": "graspnet_005",
+        "source_part": 0
+      }
+    },
+    "last": {
+      "sample": 550,
+      "kind": "object",
+      "link": "lfdistal",
+      "other": 19,
+      "distance_m": -4.6500060227399936e-05,
+      "command_index": 1299,
+      "phase": "approach",
+      "obstacle_owner": {
+        "object_id": "graspnet_005",
+        "source_part": 0
+      }
+    },
+    "recorded_violations": 30,
+    "maximum_recorded_overlap_mm": 0.046500060227399935,
+    "red_link": "lfdistal",
+    "scope": "Saved source-convex geometry report, not a new physics or triangle-intersection measurement"
+  },
+  "all_cases_share_world_frame": true,
+  "all_panels_share_scale_and_camera": true,
+  "source_CGR_is_author_hardware_verified_success": false,
+  "DH3_physical_mesh_displayed": false,
+  "physical_semantics_of_computed_pad_reference_validated": false,
+  "hand_triangles": 258086,
+  "Kit_starts": 0,
+  "physics_steps": 0,
+  "CGR_forwards": 0,
+  "IK_calls": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "wall_s": 27.5826750760898
+}
