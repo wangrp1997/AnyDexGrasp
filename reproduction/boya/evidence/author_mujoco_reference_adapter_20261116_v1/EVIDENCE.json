@@ -1,0 +1,196 @@
+{
+  "status": "reference_adapter_and_tiny_source_filtered_smoke_complete_full_label_admission_pending",
+  "parent_commit": "6c91045",
+  "new_Kit_starts": 0,
+  "new_physics_steps": 40,
+  "new_three_body_steps": 120,
+  "new_CGR_forwards": 0,
+  "new_grasp_labels": 0,
+  "training_updates": 0,
+  "production_ready": false,
+  "full_grasp_speedup_certified": false,
+  "original_PhysX_native_geometry_tolerance_validated": false,
+  "original_complete_contact_contract_compatible": false,
+  "cpu_tests_passed": 7,
+  "static_failures_before_integration": 4,
+  "physics_prefix_versions": 2,
+  "first_prefix_source_filter_gap_retained": true,
+  "original_frozen_controls_verification": "pass",
+  "former_PhysX_registry": "released",
+  "sources": {
+    "author_mujoco_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_preflight.py",
+      "sha256": "2b321f4fc7452a221834835797cf3aae7bcfdf7d0a46716145e3bbddbc7c0de8",
+      "bytes": 9234
+    },
+    "author_mujoco_scene_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_scene_preflight.py",
+      "sha256": "f8debd1d1a71ce3f075df97ec8fc596a33d04dcc8126fa799d0d329f2b80c8ca",
+      "bytes": 6459
+    },
+    "author_mujoco_prefix_smoke.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_prefix_smoke.py",
+      "sha256": "2db2f54f9683fad68aaecf9675532045b0195c5d6f8d40aa4a38c26f553d2c67",
+      "bytes": 5302
+    },
+    "author_mujoco_source_filters.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_source_filters.py",
+      "sha256": "f6bfcd6e648a5900a93d991d258a8b2d2a2cfbd6f725885a79697ab640e4c9d8",
+      "bytes": 3211
+    },
+    "test_author_mujoco_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/test_author_mujoco_preflight.py",
+      "sha256": "cc1f5053d8cca07a79692f25ba498dd289c6751dc5b828dfae91b60243c90e83",
+      "bytes": 3651
+    },
+    "AUTHOR_REFERENCE_BACKEND_PROGRESS_20261116.md": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/AUTHOR_REFERENCE_BACKEND_PROGRESS_20261116.md",
+      "sha256": "afe81cd988b6389b262d59706b40db2d4d9fe2a810c3b271e93b926bc3b8b7df",
+      "bytes": 6132
+    }
+  },
+  "artifacts": {
+    "CONTACT_SCHEMA_NOTE.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/CONTACT_SCHEMA_NOTE.json",
+      "sha256": "345f29b9563827e1109fba02f42021e7e3a771670ceb06d3470cdc4c6e0d6509",
+      "bytes": 1048
+    },
+    "CPU_TESTS.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/CPU_TESTS.log",
+      "sha256": "db61da385ed9e97bac2d37dd6da0a487c891b9aae0139a963a5e64b7285d1db6",
+      "bytes": 1020
+    },
+    "CPU_TESTS_FINAL.log": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/CPU_TESTS_FINAL.log",
+      "sha256": "e858732f4f858271ee92d6e9eaf0b04a1ebaab6cbc171172bed0be76a611d7e3",
+      "bytes": 1197
+    },
+    "FILTERED_FILTER_MAPPING.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/FILTERED_FILTER_MAPPING.json",
+      "sha256": "8935909a8e030329016002dc225118d37764ea08867c8767df17a728eeec505f",
+      "bytes": 1503
+    },
+    "FILTERED_PREFIX_READBACK.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/FILTERED_PREFIX_READBACK.json",
+      "sha256": "5cef5a3ec5e5d8abc5764f5ce43f346532b9c78dcaab04176aa6618d2f2d9d18",
+      "bytes": 275
+    },
+    "FILTERED_PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/FILTERED_PROTOCOL.json",
+      "sha256": "7fd0f6dc39d364143488eeb5721d872c44dbdf37d3de52867bdc8e9c26c98fe4",
+      "bytes": 1835
+    },
+    "FILTERED_RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/FILTERED_RESULTS.json",
+      "sha256": "79fc10e0a998927164d2e69e47afff61d58821a77b3ec1d910ec50fba0ce581e",
+      "bytes": 429
+    },
+    "FILTERED_SMOKE_RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/FILTERED_SMOKE_RESULTS.json",
+      "sha256": "40670dfb35ddf2ebc7c7dee48716bcd2382d30b4c7b403be290f0b29c8dc8a31",
+      "bytes": 682
+    },
+    "LIBRARIES.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/LIBRARIES.json",
+      "sha256": "d1aad226bd2ab0a262e1b4ed78a59880b589247ee0c30bb4d0d4beee2b19552e",
+      "bytes": 419
+    },
+    "MEASUREMENTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/MEASUREMENTS.json",
+      "sha256": "a9ff432a84fb15ab599250b1f5568bcbf50245d836f51c312cc49324d3d097f9",
+      "bytes": 2336
+    },
+    "PREFIX_INDEPENDENT_READBACK.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/PREFIX_INDEPENDENT_READBACK.json",
+      "sha256": "3db7078b62ac645964eedf5658ca67e2e88e42e999d9f1f5cfcc117754016e58",
+      "bytes": 370
+    },
+    "REFERENCES.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/REFERENCES.json",
+      "sha256": "ab69e0ba98ef5f6317eeaf2710e47c89fcba9ff238ea473b76f1c602b5e61614",
+      "bytes": 1067
+    },
+    "ROBOT_0.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/ROBOT_0.json",
+      "sha256": "02125fb21405b4ab059ba6d6209cd0e0dee94e36c28bd32428c40a0312ee79bc",
+      "bytes": 6457
+    },
+    "ROBOT_1.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/ROBOT_1.json",
+      "sha256": "d4883d460b7bb89cf41d0ba73ef02547ce649ba1082e854f41b2b1646734ade3",
+      "bytes": 6457
+    },
+    "SCENE_0.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/SCENE_0.json",
+      "sha256": "fb79022781eaa1927148efa5283e9d4c5cb62585b0c682f3017136ed4b762f5c",
+      "bytes": 4404
+    },
+    "SCENE_1.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/SCENE_1.json",
+      "sha256": "9825f25330d8cff4880fee29582277cfd568af3dd70cecee3fc183885162c3e9",
+      "bytes": 4419
+    },
+    "SMOKE_COST.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/SMOKE_COST.json",
+      "sha256": "98666126b80b71845f006b520a7093476bd184dbd4cd79635e0a5aadbffd4afe",
+      "bytes": 77
+    },
+    "SMOKE_PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/SMOKE_PROTOCOL.json",
+      "sha256": "baa7d8443eb9bb4c273c0ae362bb79c30acf89594a39844efccf5e9a00dcedcf",
+      "bytes": 2437
+    },
+    "SMOKE_RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/SMOKE_RESULTS.json",
+      "sha256": "be4e4e50f9d48ef5abd937d4d1fe173b42f4c2a293f8916a4afead6391337de4",
+      "bytes": 681
+    },
+    "STATIC_FAILURES.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/evidence/author_mujoco_reference_adapter_20261116_v1/STATIC_FAILURES.json",
+      "sha256": "5758848795346f9d06e36e329e0e55c0db834dc8f96837ce3ba563d9302c5cfe",
+      "bytes": 3303
+    }
+  },
+  "raw_outputs": {
+    "outputs/boya_mujoco_prefix_smoke_20261116_v1/PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_prefix_smoke_20261116_v1/PROTOCOL.json",
+      "sha256": "baa7d8443eb9bb4c273c0ae362bb79c30acf89594a39844efccf5e9a00dcedcf",
+      "bytes": 2437
+    },
+    "outputs/boya_mujoco_prefix_smoke_20261116_v1/RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_prefix_smoke_20261116_v1/RESULTS.json",
+      "sha256": "be4e4e50f9d48ef5abd937d4d1fe173b42f4c2a293f8916a4afead6391337de4",
+      "bytes": 681
+    },
+    "outputs/boya_mujoco_prefix_smoke_20261116_v1/PREFIX_TRACE_AND_CONTACTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_prefix_smoke_20261116_v1/PREFIX_TRACE_AND_CONTACTS.json",
+      "sha256": "afd01dab6801271d6ed58125a088cb9bb9d8724ca85e1af1bc8df924177cfb33",
+      "bytes": 333073
+    },
+    "outputs/boya_mujoco_source_filters_smoke_20261116_v1/PROTOCOL.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_source_filters_smoke_20261116_v1/PROTOCOL.json",
+      "sha256": "7fd0f6dc39d364143488eeb5721d872c44dbdf37d3de52867bdc8e9c26c98fe4",
+      "bytes": 1835
+    },
+    "outputs/boya_mujoco_source_filters_smoke_20261116_v1/RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_source_filters_smoke_20261116_v1/RESULTS.json",
+      "sha256": "79fc10e0a998927164d2e69e47afff61d58821a77b3ec1d910ec50fba0ce581e",
+      "bytes": 429
+    },
+    "outputs/boya_mujoco_source_filters_smoke_20261116_v1/FILTER_MAPPING.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_source_filters_smoke_20261116_v1/FILTER_MAPPING.json",
+      "sha256": "8935909a8e030329016002dc225118d37764ea08867c8767df17a728eeec505f",
+      "bytes": 1503
+    },
+    "outputs/boya_mujoco_source_filters_smoke_20261116_v1/smoke/RESULTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_source_filters_smoke_20261116_v1/smoke/RESULTS.json",
+      "sha256": "40670dfb35ddf2ebc7c7dee48716bcd2382d30b4c7b403be290f0b29c8dc8a31",
+      "bytes": 682
+    },
+    "outputs/boya_mujoco_source_filters_smoke_20261116_v1/smoke/PREFIX_TRACE_AND_CONTACTS.json": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_source_filters_smoke_20261116_v1/smoke/PREFIX_TRACE_AND_CONTACTS.json",
+      "sha256": "621a3c9bf9c1a3e7fc51bb1e22b4a219b2d67006534c0df75af019def1352013",
+      "bytes": 269724
+    }
+  }
+}

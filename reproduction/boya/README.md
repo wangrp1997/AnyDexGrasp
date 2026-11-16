@@ -1,4 +1,6 @@
-2026-11-15 最新只读核查：[原文与现成加速方案](AUTHOR_ACCELERATION_LITERATURE_REVIEW_20261115.md)。作者循环常驻、IsaacLab资产复制、DexGraspNet GPU批量验证和cuRobo GPU规划已有公开实现；当前耗时是本机验证流水线成本，不能当算法速度下限。需补完整生命周期／跨几何复用与流水，不能重复宣布已完成的四型常驻或直接套外部倍数。GPU接触回退等为待查假设，原fetch等待尚未归因。本轮0新物理／标签／训练，未安装cuRobo；累计31条和无后台状态保持。
+2026-11-16 当前：[参考开源后端后的MuJoCo原型](AUTHOR_REFERENCE_BACKEND_PROGRESS_20261116.md)。同源UR16e+Boya/三体场景静态适配通过，24电机/28机器人关节/4mimic，7138行指令映射exact、1476 link FK核验；机器人30源网格，三体总52/53。补回原手XML28组结构排除后，仅20步settle冒烟通过，mj_step合.00304s；非完整采集倍率，尚未完成原物理/标签/完整点字段准入。含首个结构排除缺失前缀合0Kit/40MuJoCo环境步，0完整抓取/新标签/训练，累计31不变。此前单Kit常驻完整对照仅18:18→18:36、未加速，见[完整结果](AUTHOR_COLLECTION_STREAM_BOUND_RESULTS_20261116.md)。原PhysX和全部历史失败保留，未派正式扩采。
+
+2026-11-15 只读核查：[原文与现成加速方案](AUTHOR_ACCELERATION_LITERATURE_REVIEW_20261115.md)。作者循环常驻、IsaacLab资产复制、DexGraspNet GPU批量验证和cuRobo GPU规划已有公开实现；当前耗时是本机验证流水线成本，不能当算法速度下限。需补完整生命周期／跨几何复用与流水，不能重复宣布已完成的四型常驻或直接套外部倍数。GPU接触回退等为待查假设，原fetch等待尚未归因。该轮0新物理／标签／训练，未安装cuRobo；累计31条保持。
 
 2026-11-15 已完成：[原15场景尾批](AUTHOR_PRODUCTION_TAIL_RESULTS_20261115.md)。外层**47.9192分钟**，60槽新增**6fit＋4internal，8正2负**，累计26fit＋5internal=31；fit8/6/6/6、internal1/1/2/1，四型internal均已有记录。10次执行及10capture首次原审核全PASS，32723执行步＋7500初始化tick／120669三体步，20Kit，0重试／未知／训练；日志全读回seal和最终raw SHA通过。独立核1280绑定／导出三体split／旧数据权重保持，92所属stage组和父/observer全退，14槽／16锁释放，无后台任务。原32预算已终结，初失败和旧坏gzip排除保留，未自动派下一批。维持观察到的混合配比和产率，补满每型1000fit＋200internal的两个条件情景约27–33天连续运行；不是可靠工期或统计区间，正式全量仍未启动。
 

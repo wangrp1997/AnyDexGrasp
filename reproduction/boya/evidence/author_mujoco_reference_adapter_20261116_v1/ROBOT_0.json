@@ -1,0 +1,245 @@
+{
+  "status": "static_contract_pass",
+  "schema": "anydex_boya_mujoco_preflight_v1",
+  "mujoco": "3.11.0",
+  "inputs": {
+    "ready": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/READY.json",
+      "sha256": "8a10584ace519a9a82e7219aeaab2d3941444eb8fcb2a26f998da334901e7cbb"
+    },
+    "plan": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/lift_bound/plan.json",
+      "sha256": "bfa4311e28ecded3d77185c7faf06f132fc4f10161fbe21b2d0c19d8abc3267b"
+    },
+    "commands": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/lift_bound/commands.npz",
+      "sha256": "8c54ce882f8ea4fb9fbb36dcd6b772d2f68c83fb4326b992d90e888159412115"
+    }
+  },
+  "source": {
+    "adapter": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_preflight.py",
+      "sha256": "2b321f4fc7452a221834835797cf3aae7bcfdf7d0a46716145e3bbddbc7c0de8"
+    },
+    "native_robot": {
+      "path": "/home/wangrenpeng/CanonDex/canondex/robots/ur16e_boya.py",
+      "sha256": "7176f5b1042c4d4d273a339668e288e7f0b254a4ee7a6d5c07232d885eedc150"
+    }
+  },
+  "command_rows": 3389,
+  "active_motors": 24,
+  "actual_joints": 28,
+  "mimic_equalities": 4,
+  "collision_geoms": 52,
+  "meshes": 51,
+  "compile_wall_s": 0.22361519490368664,
+  "fk_command_states": 18,
+  "fk_link_checks": 738,
+  "max_fk_matrix_error": 1.3322676295501878e-15,
+  "drive_parameters": {
+    "shoulder_pan_joint": {
+      "stiffness": 1320.0,
+      "damping": 72.6636085,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 330.0,
+      "armature": 0.0
+    },
+    "shoulder_lift_joint": {
+      "stiffness": 1320.0,
+      "damping": 72.6636085,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 330.0,
+      "armature": 0.0
+    },
+    "elbow_joint": {
+      "stiffness": 600.0,
+      "damping": 34.64101615,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 150.0,
+      "armature": 0.0
+    },
+    "wrist_1_joint": {
+      "stiffness": 216.0,
+      "damping": 29.39387691,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 56.0,
+      "armature": 0.0
+    },
+    "wrist_2_joint": {
+      "stiffness": 216.0,
+      "damping": 29.39387691,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 56.0,
+      "armature": 0.0
+    },
+    "wrist_3_joint": {
+      "stiffness": 216.0,
+      "damping": 29.39387691,
+      "viscous_friction": 0.0,
+      "joint_effort_limit": 56.0,
+      "armature": 0.0
+    },
+    "FAJ3": {
+      "stiffness": 40.0,
+      "damping": 0.0,
+      "viscous_friction": 0.5,
+      "joint_effort_limit": 1.0,
+      "armature": 0.0002
+    },
+    "FAJ1": {
+      "stiffness": 40.0,
+      "damping": 0.0,
+      "viscous_friction": 0.5,
+      "joint_effort_limit": 1.0,
+      "armature": 0.0002
+    },
+    "THJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "THJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "THJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "THJ1": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "MFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "MFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "MFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "RFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "RFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "RFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "LFJ4": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "LFJ3": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "LFJ2": {
+      "stiffness": 10.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": 0.3,
+      "armature": 0.0002
+    },
+    "FFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    },
+    "MFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    },
+    "RFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    },
+    "LFJ1": {
+      "stiffness": 0.0,
+      "damping": 0.0,
+      "viscous_friction": 0.05,
+      "joint_effort_limit": null,
+      "armature": 0.0002
+    }
+  },
+  "physics_steps": 0,
+  "Kit_starts": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "production_ready": false,
+  "dynamic_equivalence_validated": false,
+  "native_geometry_tolerance_validated": false,
+  "scope": "Static model/command interface only; no object scene, integration, grasp labels or speedup certification"
+}

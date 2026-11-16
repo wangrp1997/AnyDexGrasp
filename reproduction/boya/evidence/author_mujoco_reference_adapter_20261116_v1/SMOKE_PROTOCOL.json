@@ -1,0 +1,48 @@
+{
+  "schema": "anydex_boya_mujoco_prefix_smoke_v1",
+  "max_steps": 20,
+  "phases": [
+    "settle"
+  ],
+  "physics_backend": "MuJoCo CPU explicit change",
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_prefix_smoke.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_prefix_smoke.py",
+      "sha256": "2db2f54f9683fad68aaecf9675532045b0195c5d6f8d40aa4a38c26f553d2c67"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_scene_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_scene_preflight.py",
+      "sha256": "f8debd1d1a71ce3f075df97ec8fc596a33d04dcc8126fa799d0d329f2b80c8ca"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_preflight.py",
+      "sha256": "2b321f4fc7452a221834835797cf3aae7bcfdf7d0a46716145e3bbddbc7c0de8"
+    }
+  },
+  "inputs": {
+    "plan": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/lift_bound/plan.json",
+      "sha256": "bfa4311e28ecded3d77185c7faf06f132fc4f10161fbe21b2d0c19d8abc3267b"
+    },
+    "commands": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/lift_bound/commands.npz",
+      "sha256": "8c54ce882f8ea4fb9fbb36dcd6b772d2f68c83fb4326b992d90e888159412115"
+    },
+    "scene": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/capture/observed_scene.json",
+      "sha256": "6da8fc737aff03081d7e1d56675765068ca8c92aaeda6443decb6631e0838f69"
+    },
+    "command_binding": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/lift_bound/COMMAND_BINDING.json",
+      "sha256": "1219a37e363dabeae233a55ec769d4e45892249aa574a8e2ec5f6bc977dc8308"
+    },
+    "preparation": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/LIFT_PIPELINE_RESULTS.json",
+      "sha256": "78861d772f2259c12563258aee81be0979f9ae501476b97d2ec82d1c7ccc5cdb"
+    }
+  },
+  "retry_budget": 0,
+  "Kit_starts": 0,
+  "exclude_training": true,
+  "new_labels": 0
+}

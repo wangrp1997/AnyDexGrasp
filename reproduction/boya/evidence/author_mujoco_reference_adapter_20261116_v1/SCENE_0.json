@@ -1,0 +1,156 @@
+{
+  "status": "static_scene_contract_pass",
+  "schema": "anydex_boya_mujoco_scene_preflight_v1",
+  "source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_scene_preflight.py",
+    "sha256": "f8debd1d1a71ce3f075df97ec8fc596a33d04dcc8126fa799d0d329f2b80c8ca"
+  },
+  "robot_preflight": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_scene_preflight_20261116_v2/00/RESULTS.json",
+    "sha256": "02125fb21405b4ab059ba6d6209cd0e0dee94e36c28bd32428c40a0312ee79bc"
+  },
+  "measured_scene": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/capture/observed_scene.json",
+    "sha256": "6da8fc737aff03081d7e1d56675765068ca8c92aaeda6443decb6631e0838f69"
+  },
+  "objects": [
+    {
+      "object_id": "graspnet_014",
+      "source_parts": 6,
+      "expected_mass_kg": 0.1,
+      "initial_world_pose": [
+        [
+          -0.9737246970105166,
+          0.22063633933639706,
+          0.056389894449379196,
+          -0.712354838848114
+        ],
+        [
+          -0.22170783387523443,
+          -0.9750206286753936,
+          -0.013431681048617163,
+          0.1064591035246849
+        ],
+        [
+          0.052017793399271844,
+          -0.02558084091023161,
+          0.9983184711043848,
+          0.029918581247329712
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_mesh": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_014/mesh/simplified.obj",
+        "sha256": "2891770b517e054b92bd7c5241ac244f26a5c53b2891f62e98f6abb58338c934"
+      },
+      "actual_mass_kg": 0.09999999999999999,
+      "pose_error": 0.0
+    },
+    {
+      "object_id": "graspnet_026",
+      "source_parts": 10,
+      "expected_mass_kg": 0.1,
+      "initial_world_pose": [
+        [
+          -0.8604769039174639,
+          -0.5094401648875515,
+          0.00708634066073565,
+          -0.8309897184371948
+        ],
+        [
+          0.5094775514113301,
+          -0.8604686275511005,
+          0.005134745197280216,
+          0.05958830565214157
+        ],
+        [
+          0.0034817283827447676,
+          0.008028661138058894,
+          0.9999617083507742,
+          0.028447944670915604
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_mesh": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_026/mesh/simplified.obj",
+        "sha256": "fca4b3e77bf9fc5af4290e6228414335e4f9a9b7a1161c60c5b9986ca4087b5c"
+      },
+      "actual_mass_kg": 0.1,
+      "pose_error": 0.0
+    },
+    {
+      "object_id": "graspnet_017",
+      "source_parts": 5,
+      "expected_mass_kg": 0.1,
+      "initial_world_pose": [
+        [
+          0.853340324873832,
+          -0.5213089371357313,
+          -0.006876191288539395,
+          -0.8751663565635681
+        ],
+        [
+          0.5213242401483686,
+          0.8533585217895971,
+          0.0005195409506272126,
+          0.14735713601112366
+        ],
+        [
+          0.005597015092760524,
+          -0.004028070442206117,
+          0.9999762237526268,
+          0.02697308547794819
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source_mesh": {
+        "path": "/mnt/public/datasets/AnyDexGrasp/boya_s40_assets_20261106_v1/graspnet_017/mesh/simplified.obj",
+        "sha256": "469673faa40dbd3fa8efc73887a6ab19b90f97c01a6a961394b6dc965436ff61"
+      },
+      "actual_mass_kg": 0.1,
+      "pose_error": 0.0
+    }
+  ],
+  "total_qpos": 49,
+  "total_velocity": 46,
+  "total_collision_geoms": 52,
+  "original_motor_rows_checked": 3389,
+  "all_motor_targets_exact": true,
+  "robot_compile_s": 0.09486666088923812,
+  "three_object_compile_s": 0.12874853401444852,
+  "declared_per_object_force_n": [
+    0.0,
+    0.0,
+    -0.98
+  ],
+  "friction": {
+    "tangent": 0.6,
+    "torsional": 0.02,
+    "rolling": 0.0001,
+    "condim": 4
+  },
+  "friction_source": "DexGraspBench-style explicit setting; equivalence to PhysX friction not established",
+  "physics_steps": 0,
+  "Kit_starts": 0,
+  "new_labels": 0,
+  "training_updates": 0,
+  "production_ready": false,
+  "dynamic_and_contact_equivalence_validated": false,
+  "source_geometry_native_tolerance_validated": false,
+  "speedup_measured": false
+}

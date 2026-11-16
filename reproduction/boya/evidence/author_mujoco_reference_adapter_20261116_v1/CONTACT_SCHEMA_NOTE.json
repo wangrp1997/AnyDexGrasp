@@ -1,0 +1,26 @@
+{
+  "scope": "Diagnostic MuJoCo prefix schema only",
+  "all407_native_contact_points_retained": true,
+  "stored_contact_fields": [
+    "geom1",
+    "geom2",
+    "distance_m",
+    "position_world_m",
+    "contact_frame_world",
+    "force_contact_frame"
+  ],
+  "native_struct_fields_complete": false,
+  "original_PhysX_contact_schema_compatible": false,
+  "clarification": "fields_dropped:false in the frozen smoke trace must not be read as a certification of every native MuJoCo/PhysX contact attribute",
+  "raw_trace": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_prefix_smoke_20261116_v1/PREFIX_TRACE_AND_CONTACTS.json",
+    "sha256": "afd01dab6801271d6ed58125a088cb9bb9d8724ca85e1af1bc8df924177cfb33",
+    "bytes": 333073
+  },
+  "filtered_contact_points": 345,
+  "filtered_trace": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_source_filters_smoke_20261116_v1/smoke/PREFIX_TRACE_AND_CONTACTS.json",
+    "sha256": "621a3c9bf9c1a3e7fc51bb1e22b4a219b2d67006534c0df75af019def1352013",
+    "bytes": 269724
+  }
+}

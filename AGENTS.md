@@ -1,5 +1,15 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-16 当前：参考现成后端落成紧凑MuJoCo原型，仍未完整标签准入
+
+用户要求参考开源采集实现并解决异常慢。本轮逐代码核DexGraspBench MjHO/GetaGrip/DexGraspNet及本地AnyDex fork，沿已装MuJoCo3.11直接源网格建场实现独立author_mujoco_preflight/scene_preflight/prefix_smoke/source_filters，无新依赖/Kit/正式采集。定位现有PhysX max_extent.02/vertex64等适配将机器人/手分到12681凸体（上臂3316等）；新候选同源URDF机器人30网格、三体场景总52/53。不能单凭数量归因或声称几何/物理等价，旧20um门仍未在新后端认证。
+
+两场全部7138行24电机指令映射exact，28机器人关节/4mimic，静态36状态/1476 link FK最大1.332e-15，三个对象源初态/各.1kg核对。0积分静态检查通过，7CPUtests过；4次静态开发失败0步及源码保留。新显式摩擦/求解器/约束差异未校准，原ML候选/评分/旧数据不改。
+
+首20步数值通过但独立检查发现漏迁原手XML排除，结构自碰12.393mm/速度16.11，不具原碰撞语义。仅按原XML补齐28组exclude后，另独立20步正常：mj_step .003040s/读回.001417s/函数内部6.363170s/345点/穿透.329270mm；内部计时不含进程导入/最初校验/协议落盘，不是完整采集wall。两版合0Kit/40MuJoCo env/120对象步，0完整抓取/标签/训练；不能报完整倍率/采满ETA。点数全存但诊断字段不是原PhysX完整合同，旧trace fields_dropped:false解释限制见CONTACT_SCHEMA_NOTE，不能拿它认证原全字段。
+
+候选production_ready=false，尚缺完整动态提起、原源底/受载/七门与独立审核对应验收，未自动派完整试抓或扩采。累计有效新数据仍26fit+5internal=31，正式4800/训练/新模型/外测0，原PhysX成本单列且冻结源/失败/CanonDex不改。当前无后台任务。报告reproduction/boya/AUTHOR_REFERENCE_BACKEND_PROGRESS_20261116.md及轻证据evidence/author_mujoco_reference_adapter_20261116_v1；模型/轨迹outputs忽略，阶段轻成果push用户origin。
+
 ## 2026-11-16 当前：修复版完整常驻对照通过，但未加速，本组慢1.62%，已收尾
 
 用户明确追加1Kit后，public stream_collection_bound_control_20261116_v1已完整完成。复用cold1098.021376s，与新resident1115.850096s（18:18→18:36）比较，多17.828720s/1.623713%，冷/常驻比.984022。固定两场原g1，2capture×750及2exec3389/3749均完整，4原独立审核全PASS；两场8组件/50数组RGBD/原CGR/候选/科学指令exact，标签均[1,0]，数值准入通过但不证明物理轨迹等价。单组旧cold复用有顺序/缓存/宿主负载影响，不推总体均值或4800ETA。两组都有相同流水/CGR常驻，不是全流水相对旧8路采集的净收益。

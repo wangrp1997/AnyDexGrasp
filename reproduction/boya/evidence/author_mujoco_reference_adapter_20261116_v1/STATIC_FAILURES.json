@@ -1,0 +1,82 @@
+[
+  {
+    "receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_preflight_20261116_v1/FAILURE.json",
+      "sha256": "c52360b8775fec49508f2141c9c6ef5be2f39a38a9ed7f60adbd34df9b4b83f3",
+      "bytes": 290
+    },
+    "source_snapshot": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_preflight_20261116_v1/FAILED_SOURCE.py",
+      "sha256": "141363d4a246e19c49f81a786d9b282dca82000153aa24018a5171b1a3e678ac",
+      "bytes": 8642
+    },
+    "result": {
+      "status": "static_preflight_failed_before_integration",
+      "error": "NameError ARM_ACTUATION_MODES missing in extracted config namespace",
+      "source_sha256": "141363d4a246e19c49f81a786d9b282dca82000153aa24018a5171b1a3e678ac",
+      "physics_steps": 0,
+      "Kit_starts": 0,
+      "new_labels": 0
+    }
+  },
+  {
+    "receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_preflight_20261116_v2/FAILURE.json",
+      "sha256": "f0725ee6415bf69626e80515a6f6e8d12372f43f29e23db72d7c415467038834",
+      "bytes": 285
+    },
+    "source_snapshot": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_preflight_20261116_v2/FAILED_SOURCE.py",
+      "sha256": "66736a263169989f2ac1d9f147a00851d9e43d948f021d02da6ebdd8014bf2a6",
+      "bytes": 8693
+    },
+    "result": {
+      "status": "static_preflight_failed_before_integration",
+      "error": "Native arm gains omit effort cap; must inherit source URDF cap",
+      "source_sha256": "66736a263169989f2ac1d9f147a00851d9e43d948f021d02da6ebdd8014bf2a6",
+      "physics_steps": 0,
+      "Kit_starts": 0,
+      "new_labels": 0
+    }
+  },
+  {
+    "receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_preflight_20261116_v3/FAILURE.json",
+      "sha256": "0e3be95f1c4ce5052af241a0ad458b1f2582680329c17c8ca8e51c6534586c8a",
+      "bytes": 280
+    },
+    "source_snapshot": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_preflight_20261116_v3/FAILED_SOURCE.py",
+      "sha256": "fcaf28d187b0aed74f80ba26e78f257c5d148a09c7df18c3faa19921ce4ff126",
+      "bytes": 8945
+    },
+    "result": {
+      "status": "static_preflight_failed_before_integration",
+      "error": "MuJoCo3.11 MjsJoint.damping is a three-coefficient vector",
+      "source_sha256": "fcaf28d187b0aed74f80ba26e78f257c5d148a09c7df18c3faa19921ce4ff126",
+      "physics_steps": 0,
+      "Kit_starts": 0,
+      "new_labels": 0
+    }
+  },
+  {
+    "receipt": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_scene_preflight_20261116_v1/FAILURE.json",
+      "sha256": "3f1444a94cf3b9fc674883cce34b810e9cf1bef4de8c22f597004f9132cd4977",
+      "bytes": 345
+    },
+    "source_snapshot": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mujoco_scene_preflight_20261116_v1/FAILED_SOURCE.py",
+      "sha256": "5cc1d2e918a23ba392386074bd442d3c797d09ff4ce7ceaae75eb19282eb8fa4",
+      "bytes": 6222
+    },
+    "result": {
+      "status": "static_scene_preflight_failed_before_integration",
+      "error": "Density-derived compiled mesh mass did not meet exact0.1kg contract; use explicit volume-weighted source-part masses",
+      "source_sha256": "5cc1d2e918a23ba392386074bd442d3c797d09ff4ce7ceaae75eb19282eb8fa4",
+      "physics_steps": 0,
+      "Kit_starts": 0,
+      "new_labels": 0
+    }
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "schema": "anydex_boya_mujoco_source_filters_smoke_v1",
+  "sources": {
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_source_filters.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_source_filters.py",
+      "sha256": "f6bfcd6e648a5900a93d991d258a8b2d2a2cfbd6f725885a79697ab640e4c9d8"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_prefix_smoke.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_prefix_smoke.py",
+      "sha256": "2db2f54f9683fad68aaecf9675532045b0195c5d6f8d40aa4a38c26f553d2c67"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_scene_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_scene_preflight.py",
+      "sha256": "f8debd1d1a71ce3f075df97ec8fc596a33d04dcc8126fa799d0d329f2b80c8ca"
+    },
+    "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_preflight.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mujoco_preflight.py",
+      "sha256": "2b321f4fc7452a221834835797cf3aae7bcfdf7d0a46716145e3bbddbc7c0de8"
+    }
+  },
+  "inputs": {
+    "source_hand_xml": {
+      "path": "/home/wangrenpeng/tendon-spin/assets/grasp/scene.xml",
+      "sha256": "08627d514b8d73e91b55cfc8381f95cc478a59245cf470d15fead1ea912c647e"
+    },
+    "source_prepared": {
+      "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/stream_collection_control_20261116_v1/cold/scenes/00/g1/READY.json",
+      "sha256": "8a10584ace519a9a82e7219aeaab2d3941444eb8fcb2a26f998da334901e7cbb"
+    }
+  },
+  "max_steps": 20,
+  "Kit_starts": 0,
+  "retries": 0,
+  "exclude_training": true,
+  "new_labels": 0,
+  "policy": "Apply the exact existing source contact/exclude list; no data-dependent new filters"
+}
