@@ -1,0 +1,101 @@
+{
+  "status": "policy_comparison_final_review_pass",
+  "counts": {
+    "cgr": {
+      "assigned": 8,
+      "executed": 0,
+      "eligible": 0,
+      "success": 0,
+      "failure": 0,
+      "null": 8
+    },
+    "head": {
+      "assigned": 8,
+      "executed": 1,
+      "eligible": 1,
+      "success": 1,
+      "failure": 0,
+      "null": 7
+    }
+  },
+  "candidate_count_histogram": {
+    "1": 3,
+    "0": 13
+  },
+  "live_observations_scored": 16,
+  "candidate_pools_with_multiple_choices": 0,
+  "head_changed_top1_count": 0,
+  "exact_network_input_pairs": 0,
+  "nonempty_exact_semantic_pool_pairs": [],
+  "both_qualified_pairs": 0,
+  "ranking_benefit_identifiable": false,
+  "cause": "All nonempty pools have exactly one candidate; independent live observations differ; no both-qualified pair",
+  "head_task_win_field_is_not_causal_model_gain": true,
+  "closed_loop_head_to_new_scene_grasp_demonstrated": true,
+  "native_environment_steps": 1132032,
+  "unknown_native_environment_steps": 0,
+  "global_control_ticks": 8844,
+  "native_cost_journal_rows": 17689,
+  "registered_owners": [
+    {
+      "pid": 1967895,
+      "pgid": 1967895,
+      "start_ticks": 183715094
+    },
+    {
+      "pid": 1967966,
+      "pgid": 1967966,
+      "start_ticks": 183715111
+    },
+    {
+      "pid": 1977606,
+      "pgid": 1977606,
+      "start_ticks": 183739128
+    },
+    {
+      "pid": 1977607,
+      "pgid": 1977607,
+      "start_ticks": 183739128
+    },
+    {
+      "pid": 1977608,
+      "pgid": 1977608,
+      "start_ticks": 183739128
+    },
+    {
+      "pid": 1991577,
+      "pgid": 1991577,
+      "start_ticks": 183775610
+    }
+  ],
+  "all_registered_groups_exited": true,
+  "available_locks": [
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/DRIVER.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/audit/0.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/prepare/2.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/prepare/1.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/prepare/0.lock",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/author_collection_gpu0.lock"
+  ],
+  "released_reservations": [
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/audit/0.json",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/prepare/2.json",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/prepare/1.json",
+    "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/resource_slots/prepare/0.json"
+  ],
+  "registry_released": true,
+  "video_files": [],
+  "total_file_bytes": 8158323439,
+  "source_inputs_and_archive_verified": true,
+  "comparison_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/POLICY_COMPARISON_RESULTS.json",
+    "sha256": "5b25b37a06c04be29f5f0a1c8feb82e7a8e62bcc91fa84ce3634553db2859386"
+  },
+  "pipeline_finished": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/PIPELINE_FINISHED.json",
+    "sha256": "2831204d2a471bea6fb6b8bad868d4dd88e0dcb817d1eac643226c2d0ac78814"
+  },
+  "additional_physics_steps": 0,
+  "training_updates": 0,
+  "reviewed_unix_s": 1795019264.6759112
+}

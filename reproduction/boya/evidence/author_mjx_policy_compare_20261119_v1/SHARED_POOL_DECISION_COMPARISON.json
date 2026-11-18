@@ -1,0 +1,298 @@
+{
+  "status": "same_observation_candidate_pool_decision_comparison_complete",
+  "observations": 16,
+  "nonempty_observations": 3,
+  "empty_observations": 13,
+  "multi_candidate_observations": 0,
+  "identical_decisions": 16,
+  "head_changes_top1": 0,
+  "common_input_for_each_counterfactual_policy": true,
+  "physical_counterfactuals_executed": false,
+  "outcome": "No candidate-selection effect on these observed pools; no conclusion about ranking quality on unseen multi-candidate scenes",
+  "head_checkpoint": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/best_0.5.pt",
+    "sha256": "8098c6c42d500730d7332435f686e898f9a79efdebb29382395153f82f6ce14c"
+  },
+  "rows": [
+    {
+      "index": 0,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/00/capture/observation.json",
+        "sha256": "0a8c24ef28b66548e72cf452413083756b57791b9cad0042bb255528700af5d1"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/00/contact/ORIGINAL_POOL.json",
+        "sha256": "5379ac86135ccc93d16b4796b31ccb73443a0ba5bc92030001117943ed9eaa60"
+      },
+      "candidate_count": 1,
+      "selected_if_cgr": "d26cb3da38691cd22d235868b54fbf96bbd65f8367f2790dcd86a7409a061ca8",
+      "selected_if_head": "d26cb3da38691cd22d235868b54fbf96bbd65f8367f2790dcd86a7409a061ca8",
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": [
+        0.0
+      ]
+    },
+    {
+      "index": 1,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/01/capture/observation.json",
+        "sha256": "ae13137a3635dc757bddf2b26b577879f6c18ae5da5535a869859b302a1265f0"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/01/contact/ORIGINAL_POOL.json",
+        "sha256": "5ffc24a140cf991573f565513bc690a25e0eb14571ad00583712ec107e32c68a"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 2,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/02/capture/observation.json",
+        "sha256": "28259b99d0b00cfd2fe4663447885218c8834a1c9455b2466cfc7b2d64e13a3a"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/02/contact/ORIGINAL_POOL.json",
+        "sha256": "d746aa99fc69d143bab5826c1b1bc2be326b2f389d6fcc4e9f0ac8fe645d555d"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 3,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/03/capture/observation.json",
+        "sha256": "44e0bd2d8e16e61ea19a08b38544f5abf8f83fb7771f250d8e8b66ddf5197b42"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/03/contact/ORIGINAL_POOL.json",
+        "sha256": "3522c823a8778bd95638778ea88a24ec8db23a5e462c3ad72256c9d0506b24bb"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 4,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/04/capture/observation.json",
+        "sha256": "0444f7f94b409001d0e16bad1ad1c063c075bd377aa40a49a0788df50f3ee8b2"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/04/contact/ORIGINAL_POOL.json",
+        "sha256": "eae0a91764c86384fd69292ea7be478d34c00f810b5e19241eaebe659f77160e"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 5,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/05/capture/observation.json",
+        "sha256": "cee8219686db6c6dc15197710743d48964fedb9006efeb22128cda4713873543"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/05/contact/ORIGINAL_POOL.json",
+        "sha256": "4d95d43d3e91d097e8673692ebb3732930d169601636adab422386fa3826d786"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 6,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/06/capture/observation.json",
+        "sha256": "ea361c171d2ac09a96575023235bc92b79c54024c5c42447018eafe264ffaa87"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/06/contact/ORIGINAL_POOL.json",
+        "sha256": "8843210afa4d34ef719ae1662ae803b65e6cf4bfab46745938e1e3ee947cffaf"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 7,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/07/capture/observation.json",
+        "sha256": "da5374327350fe90a9a94bc3b79a62c2aedabb10848cce05b3da687ce67af3f6"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/07/contact/ORIGINAL_POOL.json",
+        "sha256": "7ad33bc80b83bf3c4be45812bdcc80b98356e7fd69d47a1674dbadc960c20959"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 8,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/08/capture/observation.json",
+        "sha256": "c06acec63efb5d602151390cdca40ad5578c1a9de1a0f7f7a2aec77850de1f6f"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/08/contact/ORIGINAL_POOL.json",
+        "sha256": "536cd59de4331ff7300fa88eb3cb7f4efefc6b02ce57149f2312e426c4b6f383"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 9,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/09/capture/observation.json",
+        "sha256": "61af45f6d4f46011af3d845d23a557d94dc6a6fb4ee3299e48c9491a32181a53"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/09/contact/ORIGINAL_POOL.json",
+        "sha256": "344f209b7f74e36b9f881d6ee5f671cae9b81b6031f29eeef2a3d9baad3ce29a"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 10,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/10/capture/observation.json",
+        "sha256": "2ee89419d70888882fb27e59e648b8787864265dc3454f2319be74103d33c229"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/10/contact/ORIGINAL_POOL.json",
+        "sha256": "5e2e13e022debd8da35c8df017873a9bbfe24ff1b9ea9c864361135fa7ae3371"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 11,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/11/capture/observation.json",
+        "sha256": "cc9b2e4391181e9599acc3eb2d03331c97884cc4bf872bdb9c5944c6f0367baa"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/11/contact/ORIGINAL_POOL.json",
+        "sha256": "1f595b68612cec144b8ba18b2b6169a79123b8294e76901e77a3efe25232338b"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 12,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/12/capture/observation.json",
+        "sha256": "980d210cae2b1fdd17580b02262b0e017a8ebaecce2f181d18390971c4c6f470"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/12/contact/ORIGINAL_POOL.json",
+        "sha256": "c1ae70706bfe07fa4b12004070e5beb469dd14b691eb6d014a34cbf426ae03c2"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 13,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/13/capture/observation.json",
+        "sha256": "eda214323fa614beea3d0827379a65843c241b8c57b45ef792fd272b8094dd72"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/13/contact/ORIGINAL_POOL.json",
+        "sha256": "b562bdd3a528d304c5704d6b5d15d2025cc3c06f5abacc90b92e30c69b8b16f4"
+      },
+      "candidate_count": 0,
+      "selected_if_cgr": null,
+      "selected_if_head": null,
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": []
+    },
+    {
+      "index": 14,
+      "observed_policy": "cgr",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/14/capture/observation.json",
+        "sha256": "76e4558db446b227e047ec7cf49172cb27e71428f1eaeaf4f211072bc1f57193"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/14/contact/ORIGINAL_POOL.json",
+        "sha256": "0ea0857cbcca3c484e109df081f5ddb453d001010df7cf0e21421cdcf8ac840c"
+      },
+      "candidate_count": 1,
+      "selected_if_cgr": "1650d5e10370aca4b053ddeb27295a08c15ceed01d8e63244e46c2908760d93a",
+      "selected_if_head": "1650d5e10370aca4b053ddeb27295a08c15ceed01d8e63244e46c2908760d93a",
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": [
+        0.05546735227108002
+      ]
+    },
+    {
+      "index": 15,
+      "observed_policy": "head",
+      "observation": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/15/capture/observation.json",
+        "sha256": "73f02fa20166691f257c090d6b7aa5890e41234de4d838833c3ab6c48a6fea57"
+      },
+      "common_original_pool": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/15/contact/ORIGINAL_POOL.json",
+        "sha256": "99aa540bd740f709ae4bd3860c547b840cff97132e4a3f99b13c63a4623ab871"
+      },
+      "candidate_count": 1,
+      "selected_if_cgr": "18a485fec84d92ccf5abb5248b964b3c4e98fdd9e6d462fa6037c405fbe341ef",
+      "selected_if_head": "18a485fec84d92ccf5abb5248b964b3c4e98fdd9e6d462fa6037c405fbe341ef",
+      "identical_decision_on_this_same_pool": true,
+      "head_scores": [
+        0.48893019556999207
+      ]
+    }
+  ],
+  "additional_physics_steps": 0,
+  "training_updates": 0
+}

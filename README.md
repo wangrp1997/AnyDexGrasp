@@ -3,6 +3,8 @@ Dexterous grasp pose detection network built upon [MinkowskiEngine](https://gith
 
 ## 当前扩采入口（2026-11-18）
 
+2026-11-19：[评分头实抓对照已完成](reproduction/boya/AUTHOR_MJX_POLICY_COMPARISON_RESULTS_20261119.md)。8个新布局／16槽，head组唯一实际执行的一次提起与回位及完整审核通过，训后新场景执行闭环已通。但13个候选池为空、3个仅单候选，评分头没有改变任何top1；两边无合格实抓配对且实际观测不同，**此次无法证明排序收益**。保持原采集排序，不自动追加配额；0录像，进程与资源均已收尾。
+
 用户优先跑通闭环，**后续不录视频**。现有20条真实数据已完成[小样本训练与推理验证](reproduction/boya/AUTHOR_MJX_HEAD_PILOT_20261118.md)：16fit／4internal，原模型与训练函数100epoch、100次更新，CPU训练约2.87秒；权重保存重载及原推理逐值核验通过。此为16条工程pilot，正式100条训练规模与新场景评分实抓尚未完成；当前无新采集任务。上一批视频文件为0，占用主要来自完整轨迹/接触JSONL。
 
 **首批100新场景已完成**：正式导出20条（16正／4负，fit16／internal4），7批完整审核通过，实际采集和收尾约72分钟；其余80场为空（37布局、27碰撞筛选无候选、15规划拒绝、1深碰撞停止）。原统计异常已由独立只读收尾补齐，0物理重试；32登记进程组已退、资源释放，当前无本批后台任务、训练0。正式数据在本地ignored `outputs/boya_mjx_fresh_expansion_20261118_v1/formal/`；[最终报告](reproduction/boya/AUTHOR_MJX_FRESH_EXPANSION_RESULTS_20261118.md)与[轻量结果](reproduction/boya/evidence/author_mjx_fresh_expansion_20261118_v1/SUMMARY.json)。以下启动说明与运行快照保留。

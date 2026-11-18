@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-19 最新完成：评分头新布局实抓闭环通过；本次排序收益不可识别
+
+root outputs/boya_mjx_policy_compare_20261119_v1已complete，tool43087 exit0。16固定internal新布局抽样8placement_null保留，8ready全部各跑cgr/head，共16world/8对；权重冻结best_0.5.pt、原碰撞/规划/动作/物理/标签保持，0训练/重试/视频。总wall950.902717s（15分50.903），collector+audit941.678297s。CGR组assigned8/executed0/eligible0/success0/null8；head组assigned8/executed1/eligible1/success1/null7。13槽碰撞筛选后无候选，另外2槽规划几何拒绝，head15唯一候选实抓成功并原回位通过，完整原raw审核PASS。新1条仅exclude_training测试，不加入旧20/模型。旧16fit小模型100更新不改，不自动替换原采集排序或追加数据。
+
+核心结论：16个live候选池13空、3个只有1候选，0多候选、head改变top1数0。8对的网络输入及raw候选特征exact均0；自动汇总semantic_original_pool_exact=6仅六对共同空集合，**非6对可比较候选**；nonempty exact pool pairs0、both qualified pairs0。原自动head_task_wins=1只是含空结果的任务计数，不能称head胜过CGR或提升12.5%；原统计字段不回写，FINAL_REVIEW另明ranking_benefit_identifiable=false。独立物理稳定后的观测不同，原CGR组未执行与head组成功不能作纯排序因果比较。两边都只有0/1可选，任何给定可用池内CGR和head排序决策相同。当前只证明真实新观测→模型打分/选姿→规划→实抓/回位/审核功能闭环，尚无评分收益证据。
+
+另独立SHARED_POOL_DECISION_COMPARISON已对16个新观测逐个使用同一个原始pool分别算两种策略，16/16决策一致（13共同空、3共同选唯一候选），head_changes_top1=0，0额外物理。这个同输入决策对照有效，但不伪造未执行物理结果、不推论未见多候选的模型优劣。成功graspnet_021末源底107.459mm、参考升103.471mm；原1mm诊断false，按既有functional通过，不称严格七门均过。
+
+8844global control/1132032native环境积分，17689行NativeCall完整begin/end未知0<2380800本批上限；35094phase rows/2868357全部contact匹配，独立native-palm FK max5.237115e-7；all_complete_grasps_pass=true是唯一已执行抓的原functional资格，不自动解释成所有16槽原七门过。49source/input/archive/冻结头核验通过，6登记owner/PGID全退、6锁可取/4预约released/registryreleased，无本轮后台任务。实际video文件0，逻辑文件8.158GB主要完整JSONL，保持本地ignore不删原历史证据。
+
+最终报告AUTHOR_MJX_POLICY_COMPARISON_RESULTS_20261119.md，轻证据evidence/author_mjx_policy_compare_20261119_v1；源代码b474966已push，结果轻文档另push并保持Git干净。后续先沿原CGR采集积累有效正负，再在有多个候选、共享观测且独立新布局的评测上验证头；新总配额未获答复，不自动扩到100/300/1000。下文“运行中/冻结未派发”均历史快照。
+
 ## 2026-11-19 当前新授权：固定小样本头与原CGR排序做新布局实抓对照，不录像
 
 用户“好吧对照下再说”授权有限比较，不是追加大规模采集/训练。新root outputs/boya_mjx_policy_compare_20261119_v1，固定seed2026111901先抽16个internal新布局，8placement_null保留，8ready全部用于8对/16槽（每对cgr/head，固定RNG随机分配相邻lane位置），只按建场几何准入，无CGR/IK/抓取结果择场。来自原internal对象池，场景未参与训练/选模，但不称新物体域外测。
