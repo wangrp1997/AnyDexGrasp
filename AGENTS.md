@@ -1,5 +1,241 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-18 新授权：先push并清理，再启动100新场景扩采
+
+用户明确“代码push了吗，大文件和无关文件ignore然后保持工作区干净后开始扩采”。授权范围为前述首批100全新场景（不是保证100有效标签），80fit/20internal、目录32/8对象隔离、g1、16常驻world；不恢复旧4800或训练。新入口run_author_mjx_expansion/author_mjx_expansion_collection，复用已验收hour collect_wave及v9/native_batch v1物理、照片/CGR/实测起点原规划/逐250Hz全字段/功能标签/原回位与闭wave完整审核；新Progress仅去掉小时准入截止。保留1mm诊断/原5mm停止及其他六门，不称严格七门均过或PhysX等价。新增24项CPU检查通过（3新＋21既有），0新增物理测试；完整运行仍须查实际回执。
+
+root outputs/boya_mjx_fresh_expansion_20261118_v1；seed2026111802在任何物理前冻结，100独立抽样覆盖目录40，但63ready场景仅含38种，040/046只在37个placement_null中，不调seed或补布局追覆盖/成功。每场至多一原候选/执行，null消耗配额。16环境7wave最多16665600原生环境积分，独立新预算；0重试。40全覆盖的是抽样意向，不能宣传全部已实际尝试或都有正负。逐体报告分出现、机器人实际接触、手载荷、成功提起，接触未提起只诊断、未触碰旁观体不标负；全局label仍任一原三体被手提起。训练/新权重/训后外测0。
+
+工作区先提交轻量代码/报告/证据至用户origin，outputs/大模型/轨迹/视频/缓存ignored；不删除原失败/诊断，不改历史source/input/archive或CanonDex。启动前入口强制git工作区干净并记录实际commit。是否实际派发与当前进度以PIPELINE_STARTED、collection/RUN_STARTED、collection/BATCH_COUNTERS、PROGRESS及最终EXPANSION_RESULTS/PIPELINE_FAILURE为准，不能把本授权记录当已开始/完成。完整原audit＋staging export通过后另建formal/records/NPZ/MANIFEST提升为本独立MJX功能域正式数据，原staging exclude_training和所有历史记录不回写，不合并旧cohort。正式训练仍须后续授权。
+
+报告AUTHOR_MJX_FRESH_EXPANSION_20261118.md。下文“无后台任务/正式未启动”是此前收尾快照，新批次须检查上述root的实际状态；不要重跑已派发root。
+
+## 2026-11-18 最新收尾：真实一小时39落盘/36时限内已审核，用户接受速度；40物体尚未逐体覆盖
+
+用户明确实际跑一小时，已完成root outputs/boya_mjx_actual_one_hour_20261118_v1（session25548 exit0）。北京时间16:22:27.986244–17:22:27.986244/精确3600s半开窗口含初始化：runtime完整有效标签39（25正14负）；其中36在时限内也完成回位和完整独立审核（22正14负）。事件monotonic_ns独立recount与现场exact，最终39全通过审核。截止后的9条不计入39；在途完整收尾后总48抓/48回位、30正18负，独立export34fit14internal，原head eval过/权重不变0训练。总wall含在途+剩余审核/导出4408.394964s，不用它重定义3600s窗口。先前18.4是短批次折算，不是实测连续一小时；本轮审核与后续采集后台重叠，也不能全归因物理提速。
+
+4关闭wave审计PASS：38872控制/4975616原生env、6507824contact、391692分阶段行匹配、独立palm FK max5.700351e-7。物理沿已验收native_batch v1/entry_v9原settle/motion/evaluation、原250Hz/0.5ms×8/24位置+6FF/完整17字段/原functional政策（1mm诊断、5mm停止及其他六门）；非严格所有抓取七门True，48返回原七门全过。1model/1GPUupload/1renderer/18bank/64新照片，CGR1load64forward，各机器人初始化一次0reset。19登记owner/PGID全退、6锁可取、4资源槽released/registryreleased，当前无本次后台任务。实际4975616<本次独立19046400预算，NativeCall journal全块完成未知0；此前阶段不混计。
+
+用户认为一分钟多一条可接受、询问正式扩采：按整机39/3600平均92.3s/有效标签，严格时限内审核36/3600为100s/条，这是整机出样成本非单环境单条等待。建议复杂并行重构后置，可进入按新布局分批扩采；曾建议100新布局/批，但尚未获明确启动和正式总配额，不自动启动新的正式批次/旧4800/训练。
+
+用户又问40物体正负分布，已核源CATALOG确40（fit32/internal8），并明确回答**目前不是40种都已有正负**。本小时7重复布局预载18种，39有效样本实际仅涉及15种、另25目录对象未入本cohort有效样本；实际成功提起5种：000=9/014=4/021=4/026=5/057=3次。object_outcomes保留真实物体结果；全局label是任一三体提起的抓取成功，不能将legacy target_object_id或场景里没被抓的旁观者当逐对象正负。scene cooccurrence正负分布不是逐对象抓取标签。后续正式采集应覆盖全部40、分清出现/实际尝试/实际提起和缺类，保留自然失败、不强行凑双类/不依失败改控制。不混旧435或其他域/诊断cohort来填覆盖。
+
+报告AUTHOR_MJX_ACTUAL_ONE_HOUR_20261118.md，ACTUAL_HOUR_RESULTS/FINAL_REVIEW/SAMPLE_TIMESTAMPS/OBJECT_COVERAGE_WITHIN_HOUR在本轮root；轻证据evidence/author_mjx_actual_one_hour_20261118_v1。大轨迹/RGBD ignored、本地保存未远程发布；source/input/archive/CanonDex保持。下文“正在运行”均历史快照。
+
+## 2026-11-18 当前实跑：用户明确要求真实一小时计数，16:22:27–17:22:27北京时间，禁止用短批次外推
+
+**最新：3600秒窗口已结束，只剩在途收尾/末批审核，禁止重启计时。截止内runtime有效标签39（25正14负），截止内回位且独立审核通过36（22正14负），源HOUR_COUNTERS在elapsed60.56min确认；截止后初始已有3条tail不计入39。GPU918494/session25548仍在完成第四轮已启动的12抓及回位，前三wave审核已PASS，第四wave结束后需审计/导出/独立recount和资源收尾。review_author_mjx_one_hour.py已写，需在wrapper退出后用host权限执行核PGID及事件计数；未做新物理回放。最终结果尚未生成，不能把尾部加到一小时。**
+
+用户指出“实际一小时绝对不止18条”，明确授权一次真实60分钟测试。新root outputs/boya_mjx_actual_one_hour_20261118_v1、工具session25548，GPU controller host PID/PGID918494；window monotonic_ns1809090849813602..1812690849813602，unix1794990147.9862444..1794993747.9862444。从进程派发前开始，包含冷初始化，半开窗口[start,deadline)。截止后不准启动新抓取，已在途抓取/回位完整收尾，尾部完成独立计，不加进一小时数字。不得提前结束后用倍率报一小时。
+
+16常驻world/1机器人初始化每环境/原18银行，128槽循环全部七个placement-ready布局（0旧标签复用、每次新照片/CGR/原实测起点规划/动作/完整接触与原functional门），仅速度诊断、非独立128新布局，正式训练0。物理沿已实跑native_batch v1与entry_v9原settle/motion/evaluation函数，无新binary/分组异步控制改动。变化为计时准入和已关闭wave的完整独立审核后台并行（prepare≤3/audit≤2），各wave独立不可变JSON段+原绝对float32时钟offset，审核不截字段/不采样。主数为截止前完成有效标签、原回位PASS并独立审核结束的唯一样本；次数字为runtime有效标签、完整抓取、回位和截止后尾部。
+
+author_hour_metrics四CPU测试过（截止排除、晚审核不追溯、null/重复不计、失败回位不算已审核）；3个旧真实tick offset9346的独立审核通过，0新增积分。新hour源/输入/archive均冻结，128槽最多19046400原生环境步，为本次明确一小时测试独立上限，不挪原5M阶段；0重试/0训练/不晋级正式配额。source/input/archive/旧根/CanonDex保持。新source run_author_mjx_one_hour/author_mjx_hour_collection/author_hour_metrics/author_hour_audit/audit_author_mjx_wave_snapshot。截止后需等在途收尾和剩余审核、导出、核所属PGID/锁/registry释放，再报ACTUAL_HOUR_RESULTS里的实测数。
+
+## 2026-11-18 最新检索/收尾：并行主因在整批屏障与主机同步；32槽完整48分33/20标签，新增IO修复仅离线通过
+
+用户再次明确“单环境也不止，检索并行是否没发挥”。已查官方MJWarp/mjlab和作者DexGraspNet原代码：本项目物理核确实16world并行，但entry_v9逐环境照片/CGR后等整批CPU计划，motion等最慢返回才补一wave；native_graph每4ms host拷贝+synchronize_stream，外层逐点解码/逐环境CPU观测+重复JSON。不能称16路持续采集/不能把整体慢归物理，也不能把20.316%计时范围占比当GPU利用率。Dex原validator先simulate一段后读contact，其use_gpu_pipeline=False，非完整臂/相机/逐250Hz全字段合同，不套其速度。
+
+完整root boya_mjx_continuous_queue_control_20261118_v1已collect/audit/export均exit0，session49647结束：32新照片/CGR/规划、20完整抓取13正7负、8nocandidate/4nullgeometry、20回位原七门过；各环境仅初始化1次/换物2次、1model/18bank/1renderer。collect parent1917.017888/外部1925.387044，audit981.679487/export5.675468，完整2912.789502s=48:32.790，20有效诊断/24.718573每小时；独立13fit+7internal，0训练/不合并旧cohort。原JSONL13061330009字节，18702控制/2393856原生、158874分阶段行/3511341点contact全部独立PASS，palm独立FKmax5.176980e-7。原head实际eval过/权重不变。functional保留1mm诊断/5mm停止及其余六门，不说严格原七门全部抓取过。
+
+source/in/out/archive/CanonDex不改。原全scratch同动作196608＋换物32＋本组2393856＝本修复阶段2590496原生步、未知0<5000000；旧阶段成本/未知另列。FINAL_RESOURCE_REVIEW确认12登记owner/PGID全退、3预约槽released、5锁可取/registryreleased，无后台GPU采集/训练。旧“正在运行”段均历史快照。
+
+零积分完整allocation统计与原审核SHA/点数一致：nacon峰614对4352，单world nefc峰316对8192；候选两倍峰向上取2幂2048/1024，仅诊断建议，未运行/不保证未来需求界，保留原overflow不得截字段。root boya_mjx_allocation_review_20261118_v1。
+
+新增无损Journal（4CPUtests过）176实录记录CPU写盘三次轮换中位JSON .455370s、syncbinary .058659/async .063399s，7.763/7.183倍仅该组件，含worker drain/fsync；全部字段/浮点/顺序exact。bulk_contacts 12真packet/1162点同原17字段及派生值canonical exact、函数2.266倍，仅转换函数，0积分。roots boya_lossless_journal_control_20261118_v1、boya_mjx_bulk_contact_control_20261118_v1。
+
+新native_batch_v3/entry_v10接bulk/asyncbinary，显式补回JSON的NaN/Inf拒绝；ExitStack在构造/关闭失败时也收尾所有phase writer，原native cost仍逐行JSON。Native step真实包fixture和3类非有限拒绝通过0积分；v2旧fixture源保持。新auditor_v2兼容json/binary。CPU迁移root boya_mjx_binary_storage_review_20261118_v1对旧remaining_v2完整35282行logical SHA exact，1153480147→714398632字节；binary原独立审核18016分阶段行/232280contact/原门/标签及summary与原JSON exact，0新增积分/标签；其276256是旧物理来源计数，不能再加到本阶段。
+
+outputs/boya_mjx_binary_entry_static_20261118_v1仅freeze前16输入/16world，0Kit/积分/派发；新源/输入/archive核过，最大2380800，与已花2590496合上限4971296<5000000。不能称entry_v10物理吞吐已验收。主调度整批等待和250Hz主机同步仍未改；下一架构重点为独立环境组持续任务队列、GPU成块推进/原停止判据在设备保留、全字段缓冲异步读回/观察/审核，不能让已拍照等待计划的world继续积分破坏绑定，不靠增加环境数或放物理门。正式单型配额仍未冻/训练0，不自动启动该静态根或正式扩采。
+
+报告AUTHOR_MJX_PARALLEL_BOTTLENECKS_20261118.md、AUTHOR_MJX_EXECUTION_FIX_20261118.md；轻证据evidence/author_mjx_execution_fix_20261118_v1。源码/说明/轻证据本地保存，原RGBD/逐点轨迹仍ignored，未远程发布。
+
+## 2026-11-18 当前提速修复：原全scratch staging开销已实测，native单图微对照2.578倍，连续采集已结束/独立审核中
+
+用户指出慢是代码问题。本轮查明旧author_mjx_graph_staging在每个0.5ms子步对全部in-out scratch输入输出复制；16环境每4ms控制8step+forward合553649468字节staging、9次FFI，不能归咎纯GPU物理。新author_mjx_native_graph直接调用已装同一MJX-Warp内核，单CUDA图含8step、一次完整独立observer拷贝+forward，保留全部17接触字段/EFC/原物理及functional门，不热改旧冻结源。三段各128原保存控制、16环境，四模式共196608原生步：old热段19.373629s/native7.516407s，2.577512倍仅热执行段。受载机器人q最大差.001475573rad/v .512053rad/s，旧自身重复也有差，不能称逐值等价；original limit/mimic样本过不代替完整审核。observer_copy候选因同进程JAX lowering缓存未证实际替换，计时剔除。微对照root boya_mjx_execution_path_control_20261118_v1已结束。
+
+新native_batch使用稳定buffer、仅观测lane更新CPU运动学、逐行native费用/全状态日志。2world换物probe root boya_mjx_native_bank_check_20261118_v1已PASS/32原生步：机器人/其他world/时钟/ctrl/warmstart exact、graph地址稳定、0reset/0CPU积分。旧八槽比较16/64只派一wave，不代表每环境持续一小时只一条，不能用总标签/16解释单环境实际产能。
+
+新有限root outputs/boya_mjx_continuous_queue_control_20261118_v1已freeze32槽/16env/2wave并启动，工具session49647、GPU host PID/PGID136066；循环使用全部七个旧placement-ready布局，独立于抓取结果，非32独立新场景，所有照片/CGR/原实测起点规划/抓取/返回重新执行，不复用旧标签。entry_v9及native模块已归档绑定，原冻结源/CanonDex不改。队列最多4761600原生步；加微对照196608与probe32，共上限4958240<本修复阶段5000000；0重试/0正式训练/正式扩采配额仍未冻。通过run_author_mjx_queue_control完成collect→原独立audit→诊断export，不先报完整采集倍率。旧阶段已收尾费用及未知上界单列保持，不混入本阶段。
+
+最新collect已complete/GPU136066退出，当前仅原只读audit host PID/PGID209884及wrapper135997等待（session49647）；未再积分。32新拍照/CGR/规划、20完整抓取13正7负、另8nocandidate/4nullgeometry、20回位原七门全过。parent1917.017888/外部1925.387044s，18702控制/2393856原生；加两个检查本阶段2590496<5000000。推进＋GPU观察/读回389.467255s占parent20.316%，接触解码154.563342s（旧字段contact_decode_and_kinematics_s实际仅decode）、setup80.769334、照片200.234470/CGR45.371332、两波规划worker最长合519.820050、未分区外层526.792105s，不能继续主归因物理/不能把余量全说JSON。JSONL总13061330009字节。原CPU模型XML SHA与旧16 exact；v9 comparison_underfilled沿旧八槽描述值True，实际本轮每wave16输入、各环境2次分配；只读review另解释，不回写冻结字段。完整audit/export/关闭回执尚未完成，不报最终标签率或总体加速；报告AUTHOR_MJX_EXECUTION_FIX_20261118.md和轻证据已记录组件结果。
+
+## 2026-11-18 最新收尾：完整MJX八槽＋1/16/64全流程均PASS，16批次标签吞吐1.662倍，训练0
+
+所有本轮任务结束，无后台采集/训练。新comparison_v4三模式完整collect/audit/export均exit0，env001完整1624.649298s（27:04.649）5标签2正3负/3null、11.079314标签/h；env016 977.738825s（16:17.739）5标签2正3负/3null、18.409824/h；env064 1240.897455s（20:40.897）5标签4正1负/3null、14.505631/h。相对单环境MJX观察倍率16=1.661639、64=1.309253；同8输入、一次固定顺序、实际新照片/候选/路径不同，高模式仅7有布局、64含57空闲环境全部计成本，不当纯物理/同动作倍率或满载产能，不推采满ETA。各次五个实际返回原七门全过，抓取沿既有functional政策（原1mm诊断、其他六门与5mm停止保持），不称全部严格七门过。
+
+每模式1共享模型/18银行体/1renderer/7新照片与CGR/7原规划/5抓，各环境robot初态一次、0reset；所有source scene与静态MODEL.xml SHA exact。全局控制33790/8402/9320，原生环境270320/1075456/4771840。原指令24位置＋6源前馈/实际float32、完整GPU原生17字段及EFC/float32每原生时钟、source极值/载荷/XML FK/lift/返回/真实RGBD和CGR输入均独立复算PASS；匹配33790/37586/37102行，接触357399/648675/662562。实际原评分头输入与loss eval/no_grad过，权重不变0训练。三个各5行NPZ独立，原八槽先行v3＋remaining两个NPZ共5行也独立；不合并旧CPU/PhysX/旧31/435/权重，不算正式新增。
+
+原HOME交接从当次实测六臂通过原native --initial-arm-state传入原RRT/几何/retiming；N1slot2实际偏名义25.911331µrad>旧20µrad假设而计划起点对实测exact，抓取/返回已跑通，不放门、不写robot q。运行时opt-in entry_v8/live_batch_v4/full_comparison_v4使用WARP_STAGED_EX及author_mjx_graph_staging补全部既有in-out数组拷贝，依赖/内核/物理参数不改。微型检查原全qvel阈值仍因物体角Y .012425而失败（默认重复也.00615449），原exit1和RAW保持；只读合同复核不是原阈值PASS或完全等价。当前三个有限完整模式正常跑完，不保证任意长运行稳定。CPU镜像0积分/接触解算，GPU独立post-forward观察；原生字段不当PhysX filtered合同。
+
+先行八槽原成本607680；旧默认图速度组SIGSEGV只有8848 durable控制/70784已知原生，原先0..8上界遗漏1MB日志缓冲已更正：default buffer1048576/textchunk8192/minimal row4927，最多214缓存行＋1在途块，另源首波最多9104控制，故未知0..1720、成本70784..72504。audit_author_mjx_buffered_interruption独立零积分复算，输出boya_mjx_log_buffer_review_v2；旧错误review/protocol字段保持不回写。含1280微检查和正常N1合342384..344104<原1190400，0实际超支。全部三个比较连此前开销6189680..6191400<13094400；连先行主验收本轮6797360..6799080<14284800、0Kit，历史JAX未知0..8等更早阶段单列，不说全项目未知0。
+
+最终host核11个实际GPU根/15 owner与PGID全退、13预约released、21所属锁及GPU0共享锁可取、registry released。原DH3paused、正式单型配额未冻、训练/新模型/外测0，不自动扩采或复跑已派发根。9不同CPU tests（5新＋4既有）过0积分；所有旧source/input/archive/失败/CanonDex保持。完整报告AUTHOR_MJX_FULL_COLLECTION_20261118.md，summary及FINAL_RESOURCE_REVIEW在outputs/boya_mjx_full_comparison_20261118_v4；轻证据evidence/author_mjx_full_collection_20261118_v1。源码/说明/轻证据保存在本工作区，大RGBD/轨迹/逐帧接触仍ignored，未作远程发布。
+
+## 2026-11-18 最新运行：1/16完整对照均PASS，16观察提速1.662倍；最后64环境组执行中
+
+当前仅outputs/boya_mjx_full_comparison_20261118_v4/env_064运行，GPU host PID/PGID3479318、工具session88211，64各机器人初态一次、1共享model/1renderer/18银行体，MODEL.xml与1/16 SHA exact；7有布局槽1000控制稳定后新RGBD/CGR7/规划7，5槽ready（0/1/2/3/5）并行执行，4和6无候选、7placement_null。MAX9523200原生步，所有空闲环境积分/完整接触/状态均计。未完成前不报64性能、标签或满载吞吐。
+
+N16工具session6637已exit0：同八槽5抓2正3负/3null、5返回全七门过；8402全局控制/1075456原生步。完整wall977.738825s=16:17.739，collect723.247813（parent716.983466）/audit252.617269/export1.867882，合格标签18.409824/h。独立audit37586行/648675接触/palm-FK max4.934244e-7，源/命令/判定/导出/head eval通过、权重不变训练0。对N1完整1624.649298s/11.079314标签每小时，观察wall及标签率比1.661639；同输入但各模式稳定窗口/新照片/候选与命令不同，单次固定顺序，非纯物理或同轨迹倍率。主验收旧5条和三个性能cohort独立，正式配额/训练0、DH3paused。
+
+先前默认图崩溃费用最新上界仍是日志缓冲修正后的70784..72504（未知0..1720），不是旧0..8。audit_author_mjx_buffered_interruption零积分独立复算，与手工review一致；新结果outputs/boya_mjx_log_buffer_review_20261118_v2/RESULTS.json，含1280检查和完整N1合342384..344104<1190400。旧错误review/protocol/source/失败保持，不能回写；N16/64独立预算不受此修正影响。
+
+## 2026-11-18 最新：单环境全流程27:04.649通过，16环境运行；崩溃成本上界因日志缓冲已纠正
+
+新comparison_v4/env_001已完整成功退出/审核/导出，工具session69999 exit0。1model/1world/18bank/1camera/robot初态一次/0reset、7新照片/CGR与7规划、5抓取2正3负、3null（geometry/no candidate/placement），5次物理返回全七门过；33790控制/270320原生步。collect外部1438.932056s（parent1434.500734）、audit183.794614/export1.917731，完整wall1624.649298s=27:04.649，5条合格诊断=11.079314/h，slots17.726903/h。原head输入/loss eval过、权重不变、训练0。原1mm仍诊断，functional不是原严格七门全过；旧八槽主验收4正1负另两个根保持独立，不合并这些性能重复数据。
+
+旧comparison_v2/env_001 crash成本原估70784..70792低估，因Path.open默认二进制buffer=文件系统block1MB，旧journal并未逐行flush。新outputs/boya_mjx_log_buffer_review_20261118_v1/CORRECTED_INTERRUPTION_REVIEW（0积分）实测buffer1048576/textchunk8192，保守最小完整global行4927字节，最多214缓存行+1在途块，另源首轮phase最多9104控制/下一capture不存在，故已知70784＋未知0..1720，总70784..72504。旧错误review及protocol保留，新review明确取代旧上界。原N1freeze按72072（旧上界+1280检查）扣，真实先前上界73784；实际完成N1含所有旧失败/检查合342384..344104<1190400，0实际超支。不能再写未知0..8或总0未知。
+
+当前仅comparison_v4/env_016运行，GPU控制器host PID/PGID3437526，工具session6637。静态MODEL.xml与N1 SHA exact；同八槽（7有布局），16各robot初态一次，稳定共1000控制后全部7照片/CGR完成，7CPU规划在3进程内进行，GPU当前暂停积分保观测绑定。全部私有字段staging/原控制/functional门保持。N16独立max2380800原生步；N64同root/env_064仅freeze，max9523200，须等N16完整审核导出后顺序派发。高模式空闲环境全部计成本，不能报满载64吞吐。主验收607680已知步、原DH3paused/正式配额未冻/训练0保持。
+
+## 2026-11-18 最新运行：完整八槽验收PASS；固定buffer/完整原生字段版单环境基线运行中
+
+主验收607680原生环境步、原八槽4正1负3null、v3的3条与remaining_v2的2条独立NPZ及两原始审核PASS保持，正式配额/训练0、DH3paused。旧默认单环境速度组exit -11，8848控制/70784已知原生＋末块0..8不确定，INTERRUPTION_REVIEW已核host owner/PGID3308071全退及锁/预约释放，不能当有效基线。
+
+图模式检查v1字段写法错误在JAX tracing退出0步；v2默认STAGED_EX没拷私有字段，512步后nacon0失败；v3新增author_mjx_graph_staging，只扩充既有in-out数组的stage_in/out拷贝，依赖/内核/物理参数/数组schema不改。三模式WARP、原样重复、修正STAGED_EX各256，共768步。修正所有观察nacon/nefc与默认一致，末各10点/17原生字段/约束载荷恢复；机器人q差2.384186e-7rad/v差1.622527e-5rad/s。混合qposmax8.658506e-6、全qvel .012425在graspnet011角Y（默认自身重复也.00615449）；原0.001全qvel阈值仍失败、原脚本exit1保持。STAGING_READ_ONLY_REVIEW只确认读回合同与实测残差，不把原阈值改成PASS、不声称完全数值等价或长运行崩溃已修。已知检查共1280步、0抓取/标签/训练；最大native预算按70792+1280=72072扣除。
+
+新author_mjx_live_batch_v4/entry_v8/full_comparison_v4均已freeze。当前仅outputs/boya_mjx_full_comparison_20261118_v4/env_001实际运行，GPU控制器host PID/PGID3372871，工具session69999；每环境初态一次，首槽750settle过/原CGR与实测起点原RRT ready，正在完整抓取。N1原1190400总预算扣最坏72072，剩1118328；N16=2380800/N64=9523200，两者在同comparison_v4仅freeze，必须等N1完整计时与审核结束再顺序启动。新三模式均同八槽/同固定缓冲+完整私有字段/原functional门/无候选补抓/0训练，高模式空闲积分全计，不称满载64吞吐。原comparison_v1/v2/v3根和所有失败/source/archive保持，不热续、不以旧组替新速度。
+
+## 2026-11-18 最新纠正：单环境速度基线CUDA图崩溃，暂停高模式；运行固定缓冲兼容检查
+
+之前“基线运行中”的owner3308071已exit -11/PGID全退，root comparison_v2/env_001没有RESULTS/OWNER_SCOPE_FINISHED。首槽完整4127指令正例已RECORD落盘，返回在8848全局控制tick时崩溃，原始日志/源码保持；原GPU日志8848完整行/无截断=70784已知原生步，末未返回块0..8不确定，故比较阶段成本70784..70792，不能报未知0或完整速度。INTERRUPTION_REVIEW已由host确认所属组退/预约released/全局锁可取，0新积分，原registry随后由新有限检查合法接管。该首正例暂不计入原主验收5条合格导出。16/64尚未启动，不能按旧entry派发。
+
+崩溃日志为wp_free_device_async failed to get capture graph及CUDA901，唯一根因未证明，不归因接触/动作。官方MJX与已装3.11源码提供WARP_STAGED_EX稳定buffer模式，避免JAX地址变化反复捕获。新author_mjx_live_batch_v4/entry_v8采用该官方选项，只改执行缓冲/图模式及回执，物理/控制/门保持；尚未完整实跑。新author_mjx_full_comparison_v4计划所有模式全新同版，并从原单环境1190400预算中扣旧崩溃最坏70792及兼容检查512，不按结果换候选。旧comparison_v1/v2/v3和旧来源保持，只能作freeze/失败证据，不能热续。
+
+check_author_mjx_graph_staging首次在JAX Python tracing读错DataWarp.contact字段而退出，未编译/派发积分，0原生步；TRACE_FAILURE_REVIEW保留。新check_author_mjx_graph_staging_v2 root boya_mjx_graph_staging_check_20261118_v2当前运行，SOURCE旧v3同一loaded tick5375/lane0，原WARP与新WARP_STAGED_EX各32控制×8native=合512上限、0抓取/标签/训练，每块前后持久化NATIVE_COST；这是运行时数值检查，不证明长运行崩溃已修。通过后才freeze/派发新的完整1/16/64，所有先前成本另存且扣预算。已完主八槽607680原生/4正1负3null/两NPZ独立/audit均PASS保持，原DH3paused、正式配额未冻/训练0。
+
+## 2026-11-18 最新运行：八槽补组全部审核结束，完整单环境基线运行中
+
+上一条进行中为历史快照。remaining_v2已complete/parent997.744406s，2world/1model/1renderer/各robot初态一次/0机器人reset、9bank/3照片/CGR3/规划3/2抓均正、2物理返回全部七门通过，两波共17266控制/276256原生环境步。只读audit PASS：18016行/232280接触点、GPU掌姿对独立FKmax4.938043e-7，0再积分；独立导出2fit正例，internal0故最低划分检查拒绝（正常保留，无补例/训练）。与旧v3合原八槽4正1负3null，两个根NPZ保持独立；先前224失败＋331200＋276256=607680原生步，低于原1190400。原GPU host PID/PGID3262349已正常返回退出，当前不再属于活动组。
+
+用户授权的完整1/16/64对照已启动单环境：outputs/boya_mjx_full_comparison_20261118_v2/env_001，wrapper host3308007，GPU控制器PID/PGID3308071，完整工具session21121。新v6相机为全源面Numba96射线（七场672条既有回归过），首槽capture6.184s，尚未完成完整八槽。此计时含初始化、完整抓取回位、日志、审计与导出，不能拿组件或旧2.210倍替代。
+
+高模式使用新comparison_20261118_v3，N1只读复用v2正在执行的同一root，不重跑；N16/N64新root/env_016与env_064当前均仅freeze。v7相对v6仅修正freeze中stage_native_budget对高环境数仍写旧pilot1190400的元数据错误：新N16=2380800/N64=9523200，与原max_native_environment_steps一致，保留旧pilot reference1190400；6个实际运行函数AST exact（RUNTIME_CODE_EQUALITY.json），动作/物理/完整验收不改。v2的N16/64仅freeze未派发且有该旧元数据，不使用。高模式新入口author_mjx_full_comparison_v3.py逐模式run，各固定八槽/0候选重试/0训练，高模式有空闲环境且全计成本，不称满载吞吐。N16/64必须等N1完整计时结束再顺序派发；尚无其性能结果。原DH3仍paused，正式配额未冻。
+
+## 2026-11-18 进行中：用户“开始”授权八槽完整MJX验收及1/16/64完整流程对照
+
+固定六个旧ready布局＋两个固定新抽样，最后一槽placement_null，不补抽、不按抓取结果换候选。新增author_mjx_live_batch_v2/批量入口v3完整六臂/手/一次初始化/对象银行/原生GPU逐点接触/相机/CGR/原规划/原24位置与6前馈/物理返回。CPU MjData仅运动学/渲染，0 CPU积分或接触求解；GPU noslip0/CCD1µm独立域，原1mm穿透门保留诊断、原5mm停止及其他六门保持，按既有functional policy判0/1/null，不混CPU/PhysX/旧权重。
+
+full_collection_20261118_v1序列化模型失败0积分；v2刚体模型flex/elem/vert未分配数组解码失败224积分，末7th tick包未完整落盘，保留失败。v3原生331200步/10350控制，首轮3抓（4125/3069/2326控制）2正1负＋1nocandidate，3次完整物理返回全7门过；第二轮3新拍照/CGR/规划完成，因实际回位wrist1偏31.395µrad超过旧固定HOME接口20µrad拒绝，尚无第二轮执行。父1174.126874s，不当正常完整吞吐。READ_ONLY_AUDIT已PASS：26590分阶段行与全局日志/487551接触点逐值核对、全source极值/载荷/独立FK/原门/lift/返回重算一致；GPU掌姿对独立FK最大4.837784e-7。3抓原1mm门均false（1.293/2.030/2.113mm），不可误称原严格七门全过；其他六门和既有functional门过。独立导出3x480、2fit+1internal、标签[1,0,1]，原480→20/loss eval/no_grad通过，权重不变、0训练。
+
+未放HOME门或写机器人回HOME。原native支持--initial-arm-state，新增author_mjx_measured_planning将当次照片实测六轴输入交原RRT/几何/retiming，原bind_live_plan离线通过0积分。remaining_v1仅freeze未启动，因先前成本漏计改独立v5/remaining_v2；后者当前GPU0控制器host PID/PGID3262349，2常驻环境只完成旧4..7四个未执行槽，不重跑旧首3抓，原三体源布局绑定不变。先前331424原生步＋本组最多595200<原1190400预算。第一波1nocandidate/1正，物理返回6056控制7门全过，第二波待完成。原v3与本组不同物理世界，不称八槽一进程连续完成。
+
+完整对照root boya_mjx_full_comparison_20261118_v2仅freeze，未启动，1/16/64各相同八槽；高模式有空闲环境并全部计成本，不能报满载64吞吐。v1对照仅freeze旧慢射线版也未启动。新v6/live_batch_v3仅把相机射线接到既有Numba全三角面扫描，原96条/像素中心/源几何/门均保留；七个已保存RGBD共672条对原Trimesh报告命中exact、深度max3.33e-16m差，0积分/新标签。新版本冻结独立，不热改运行中v5。9项MJX CPU tests过0积分。原DH3仍paused，正式配额未冻/训练0；当前有本轮GPU任务，勿并发启动旧根或绕过GPU0 lease。
+
+## 2026-11-18 最新：MJX主要接触漏检由CCD精度引起，GPU适配已修复，完整采集尚未验收
+
+用户问CPU/GPU差异能否修复，已固定四条件128原生步成对诊断，无接触128步qpos差8.615e-7；同受载初态q/qvel exact、驱动力差9.93e-5但原GPU缺ff/mf/rf distal—014三组接触，约束力最大差3.08645N。GPU source CCD1e-10与float32不适配，改MuJoCo默认1e-6m后接触恢复、约束力差.005184N；CPU该初态CCD两设置的qacc/约束力exact。四指CPU10.901022/4.083208/4.229009/3.786703N，原GPU仅thumb4.242700，其余0；修后10.901093/4.083098/4.228950/3.786740。仅改solver tolerance无效。128步混合qpos差.314631→.000106718；纯机器人关节差.314631→.000029617rad，不能把混合qpos统一写rad。
+
+新增author_mjx_compatibility仅作用GPU模型copy，ccd_tolerance至少原生默认1µm；CPU保持1e-10，其他数值/物理/动作/几何/验收门不改。这是碰撞算法收敛设置，非放穿透门。原冻结source不热改，独立worker/continuation_v4实际1/16/64两轮全部通过，仍每环境初态写一次、换物边界28关节q/qvel/time exact、预载16银行体/完整六臂。64两轮5203.446环境步/s、CPU2354.366，2.210倍；旧5479/2.327不迁作新结果。parent64.000s复用已有Warp缓存，不作采集倍率或ETA。仍为闭合短段，无新拍照/CGR/规划/完整抓取回位及逐帧全部接触。
+
+残差明确保留：64 env0两轮最大关节差.000148324/.002207457rad，但全部可比偶数环境max .000159292/.012840041rad（末约.736°，旧同口径.327435968rad），不能只挑env0报完全一致。端点限位<.000380/mimic<.000393rad仅端点，不当全程七门通过。noslip仍关闭独立域，原CPU采集不改，训练数据不合并。零积分六姿态回归又恢复ffdistal—021的.783N接触；014 close125尚有.103718N拇指弱接触缺失（CPUdist -10.8355µm），未证明唯一根因或全部差异无法避免；不为每条负例调控制或追正，也不以CPU轨迹exact作为新域成功前提。
+
+新根boya_mjx_contact_diagnosis_20261118_v1、boya_mjx_warp_persistent_benchmark_20261118_v4、boya_mjx_ccd_contact_regression_20261118_v1均complete；诊断CPU512+GPU512及矩阵GPU42120=本阶段43144原生env步<44000，回归/4CPUtests0积分，0Kit/完整试抓/CGR/标签/训练。此前阶段43680..43688单列，历史JAX首块未知0..8不抹除。6所属host PID/PGID退出、4锁可取/registryreleased，无后台。报告AUTHOR_MJX_CCD_FIX_20261118.md，轻证据evidence/author_mjx_ccd_fix_20261118_v1。CanonDex/历史冻结/失败/正式数据/权重保持；下一项是剩余碰撞差异与完整有效性/标签审核，不自动正式扩采、训练或恢复DH3。
+
+## 2026-11-18 当前：MJX-Warp 1/16/64常驻环境换物短段通过，完整采集尚未GPU化
+
+用户澄清要MJX GPU并行、每环境机械臂仅初始化一次后换物，并明确开始测试。最新语义也纠正此前逐条失败即调控制的优先级：正常完整失败应保留负例，不要求先力闭合或每条抓起；保持固定协议/不按失败重抓，按整批正例数与覆盖评估。正式配额仍未冻结，不自动训练/扩采。
+
+完整原v3归档模型UR16e六轴+Boya28机器人hinge/30执行器+16银行体，nq140/nv124/254geom。先MJX-JAX真CUDA/完整put_model通过；预分配94552接触槽/379896约束，240秒首次编译及8步首块超时，无有效吞吐。未继续纯JAX16/64。随后官方MJX-Warp独立v3实跑1/16/64各两轮，从固定旧2628闭合快照起、重复原30驱动控制、每轮32x4ms/每控制8x.5ms、另8步预热。每环境机器人只初态写1次，轮界限换两组三物体；q/qvel/time边界原始数组独立exact、模型保持，无机器人重置。没有新拍照/CGR/规划/完整抓取/回位/逐帧完整接触，不将局部测试当整个采集或训练标签。
+
+两轮合计CPU2354.366环境步/s；MJX-Warp1/16/64为122.408/1411.371/5479.466，相对.052/.599/2.327倍。64第二轮9458.116仅该轮，不能替换两轮结果。预热64.793/2.230/2.281秒，后两复用Warp缓存；最终parent120.702秒。一次顺序实验、共享宿主负载，不推总体均值、线性倍率或完整采足ETA。
+
+原noslip5在MJX-JAX无承接字段且MJX-Warp不支持，本测试显式noslip0且CPU匹配，不改原采集域；GPUfloat32/CPUfloat64及碰撞实现有差异。64末态MFJ3与CPU差.327230rad，GPU保存端点限位0/mimic最大约6.26e-6rad只属端点，不称物理等价或完整准入，也未证明单一根因。无需以CPU轨迹exact作为新域每条抓取成功前提；后续仍须完整有效性/接触和标签审核。
+
+初版Warp make_data设备Model参数及下一版共享buffer错误broadcast均0积分退出，旧根/source/archive保留；独立v3按官方vmap(make_data(MjModel))及先shape-check修正。四根outputs/boya_mjx_persistent_benchmark_20261118_v1与boya_mjx_warp_persistent_benchmark_20261118_v1/v2/v3；三CPU各520+成功GPU42120=已知43680，纯JAX首块未知按0..8，合43680..43688<冻44000，不能报未知0。0Kit/完整试抓/CGR/标签/训练；1换物CPUtest过且0积分。新安装在ignored outputs独立MJX/MuJoCo3.11/JAX.12/Warp1.14，原tendon-spin依赖不改，初次解析4.0目录0物理。10所属host PID/PGID已退、5锁可取/registryreleased，无后台。报告AUTHOR_MJX_PERSISTENT_BENCHMARK_20261118.md，轻证据evidence/author_mjx_persistent_benchmark_20261118_v1。CanonDex、旧物理源/失败/正式数据保持，不自动继续原DH3分支。
+
+## 2026-11-17 最新目视反馈：用户指出挤压后脱手，核实HOLD仍追最终角度，未改控制
+
+用户看视频后“挤压之后脱手了”。本轮只读核v3场景1/raw1722/mf/014：close2418..2667、hold2668..2717；2552首次拇指+其他共同受载，2628拇指峰10.876N，hold开始2668食FFJ3实际.4774/目标.8757rad，差约.3983rad，MFJ3实际.5594/目标.8256；保持指令从首到末完全不变，但实际手指仍收拢追该固定目标。2694最后共同受载、物体Y速度-.432m/s、源底24.73mm；2695载荷全0、源底24.95mm；2718 lift首帧全0载荷。与用户所见挤出相符，不是提起阶段才掉落或改标签高度门能解决；不能单靠这些确定闭合幅度、接触方向/几何、摩擦哪项为唯一根因。
+
+接下来优先研究接触后限制继续闭合、保留预紧力与柔顺维持；不能简单首次触碰就零力停住，也不能宣称已有接触停止/力控完成。最新只为目视反馈/只读分析，0物理/CGR/标签/训练，未自行改关节轴、腕轨迹、闭合控制或启动正式采集。视频及v3原数据保持。
+
+## 2026-11-17 最新：三段实际状态视频已交付，等用户自行目视分析，不改控制
+
+用户明确“给我看视频我就能分析为何闭合/保持丢接触”。中断前一句含“轴偏/横向角速度恢复纳入联合控制”，最新重述是先看视频，本轮不据此实现或宣称完成控制修改。新增render_author_mujoco_failure_video只读v3三次TRACE，实际28关节q与三物体pose恢复到独立MjData，mj_kinematics/mj_camlight更新几何，0 mj_step/forward dynamics/CGR/标签修改/训练；没有新抓取。
+
+outputs/boya_mujoco_failure_videos_20261117_v2 complete：trial01/raw1722物体014、trial00/raw1412物体011、trial05/raw1450物体021各651帧/25fps/26.04秒，合集1953帧78.12秒约4.61MB，所有个别与合集完整解码。全approach/close/hold/lift，原250Hz日志隔2步，无插值，五倍慢放；index.html原速=5倍播放文件并支持逐帧。左近景/右俯斜，前臂仅画面隐藏、右palm透明.22，th/ff/mf/rf/lf红蓝绿紫青；橙色按实际最大接触选作观察对象，不作为网络输入或重选抓取。载荷/物体世界XYZ角速度/源底从原日志直接显示，彩色轴是URDF palm link frame，不是虚拟pad/CGR参考中心。三组预览已目视看清；物体pose误差0、掌姿ASCII矩阵误差回执保存，不称同步相机实拍。
+
+v1预览被前臂遮挡，主动核PID/PGID/startticks后SIGINT只中断自有rendergroup，原失败/RENDERER_SOURCE留存。v2 RESULTS complete/ownerfinally结束，工具外层最后exit143原因未证明，不冒称exit0；已独立解码与源SHA核验、host两个所属PGID全退、3锁可取、registryreleased，无后台任务。两个静态渲染模型/0积分，不计新采集建场或吞吐。视频大文件ignore，轻证据evidence/author_mujoco_failure_videos_20261117_v1；说明AUTHOR_MUJOCO_FAILURE_VIDEOS_20261117.md。当前等用户自行分析，不自主调映射/关节轴/角速度恢复或派新试抓/正式采集。
+
+## 2026-11-17 最新决策：用户质疑正例产出，正式扩采未启动，先查提起前接触丢失
+
+用户在讨论论文单型100条后指出当前成功率恐不够。已明确纠正把“有限管线功能通过”误当“适合正式采集”的推断；100/1000＋额外internal仅讨论，正式配额/采集/训练均未启动。v3现有3完整试抓全负不足估总体成功率，也没有同物理版本正例证明；不拿v2的1正例混入平衡、不放门或用更多负例凑100。
+
+只读核v3三条close/hold/lift全状态：raw1412/rf对011、raw1722/mf对014、raw1450/ff对021都曾闭合接触并有短暂拇指+其他手指同时受载；但所有lift期间三体thumb_ticks与bilateral_ticks均0。014在hold源底最高25.324mm、021在close最高16.590mm后回桌，未形成持续提起；不是仅原50mm末升门太严。只能定位接触在提起前丢失，尚不能唯一归因映射、继续闭合挤出、控制或摩擦/接触模型，不能说已证明必须训练头才能抓起。后续先核闭合/保持的接触维持，再以固定未按结果挑选的批次核正例产出，未派新物理/追加试抓。
+
+outputs/boya_mujoco_failure_diagnosis_20261117_v1及轻证据evidence/author_mujoco_failure_diagnosis_20261117_v1保存全分阶段统计/末手q对target。0积分/CGR/标签修改/训练，前阶段成本/原CLOSURE/数据均保持。当前无后台采集。论文100每型是作者条件下少样本结果，不是Boya同量保证；不能把原文训练后测试成功率当其采集起始成功率。
+
+## 2026-11-17 当前：采集管线有限功能验收PASS，v3新增2fit+1internal全负，训练0
+
+用户“好的收尾吧”授权完成限位修正版完整抓取/回位/连续换物及实际数据导出，不是正式扩采或训练。author_mujoco_acceptance新增冻结原manual所有ready索引3/4/6/7/10/12共6场（4fit2internal），最多80000控制/640000源.5ms积分/6抓/6CGR/6规划，每场一次0候选重试。v2仅stiff_limit，完整6场1合格正例（015真实提起）/2nocandidate/3init_unstable，17032控制136256积分/3CGR1抓，parent243.140412s；其正例独立不混入新物理域。源归档/结果保持。
+
+核物体发现旧MuJoCo按重叠凸块推断COM/I，而原PhysX明确用源mesh；009 COMy偏3.65mm/048偏2.68mm。新增author_mujoco_object_dynamics迁回源mesh COM/I/质量.1kg，几何不改；原friction[.6,.02,.0001]在condim4不启用rolling，新增仅table-object维度6pair启用既有.1mm rolling，原混合solref/solimp/摩擦数值保持，hand-object仍4。**这是显式新接触物理域，不能说完全保持原物理或PhysX等价。** 无新增sleep/吸附/焊接/人工零速/观测后物体写入，原门/动作/候选不调。独立3个旧不稳定初始化，一世界4000控制32000积分：两个internal各750过，fit7仍2500不稳，0CGR/抓/标签；结果failed保留。
+
+v3同6场source-inertia/table-rolling已complete：1world/1camera/1reset/1robot初态写入/16bank，5新照片/CGR5forward1load/5规划/3抓取。fit3 2925exec+3025return负；fit4 3217+3317负；fit6nocandidate；fit7init2500fail；internal2nocandidate；internal4 3177+3277负。三抓全6项非penetration原门及回位全7门过，最大joint violation0/.000604592/.000506556rad；pen .756276/2.696441/2.963233mm，后两原1mm false保留诊断，原5mm stop未改；按用户独立functional policy才label0，不冒称原全部严格门过。0候选补抓/追正，全部空标签保留不填0。v3新增独立2fit+1internal=3负（无正），不混v2正例/旧PhysX2fit/31/435或旧权重。
+
+finish_author_mujoco_acceptance实际CLOSURE functional_acceptance_pass：逐帧6250init+9319抓取+9619返回控制的RGBD/source rays/CGR输入hash/24位置6前馈/完整接触载荷/源极值/独立XML FK/七门/lift/返回重算一致；0审核积分/CGR。export/gesture_1.npz实际3x480 float32/label[0,0,0]/int64原depth*4+extra，三体fit/internal源身份隔离、不可pickle、保存重载exact。原训练数据最低2fit+1internal验证器过；原480→20模型/原loss对实际fit/internal eval/no_grad过，权重exact不变，0 backward/optimizer/训练。另probe实际逐条数据过；它只测格式/前向，不放原formal training数量条件。本批3负远不足训练，正式单型配额/生产队列仍未冻，新模型/外测0，新入口仍有限验收，不自动转正式生产。
+
+v3 parent735.265653s=12:15.266，setup102.813218；六outer128.922417/277.745198/34.876352/18.930855/25.942412/123.681532，抓执行26.706082/35.760682/26.645207s、返回9.677420/10.237791/10.833550s。父计时不含Python前置导入/源验证及另行只读审核，不能除3报含全部审核吞吐、套旧PhysX倍率或推采满ETA。v3 25188控制201504原生积分，本轮v2+初始化+v3合46220控制369760积分/4抓/8CGR；另37与39suite微型限位各1600共3200积分，总本轮372960，活动三体原生789840，0Kit/未知/同版本重试。39 tests过；新clock按整数计数/每tick增量/浮点累加界校验，缺.5ms仍拒绝。对象单测初无compiler.angle字段0积分已修。最终0积分16体归档ASCII质量/惯量、207 table-only pair及stiff限位检查过，序列化tol明确非内存exact；另1静态model编译0积分。
+
+两个GPU控制器host PID1946191/PGID1946190及1990506/1990505均退出；初始化CPU诊断raw PID3/PGID1属sandbox，不能拿host systemd当所属进程；已依执行返回/owner结束/锁释放核验，混命名空间初审误判已说明且0信号。4相关锁可取、registryreleased，无后台任务。报告AUTHOR_MUJOCO_COLLECTION_CLOSURE_20261117.md，轻证据evidence/author_mujoco_collection_closure_20261117_v1约867KB，大图像/接触/轨迹ignore。所有旧source/input/archive/raw/失败保持；原版DH3物理仍paused未派，不能误称本轮完整复现原实机。
+
+## 2026-11-17 当前：限位响应独立修正通过，未重跑抓取，训练0
+
+用户追问URDF机械限位并要求不再卡住后，核实编译THJ2 limited1/range[0,1.5708]/LIMIT与CONSTRAINT均启用，但joint.solreflimit仍默认[.02,1]；此前geom.solref.003是接触，不作用于关节挡块。新独立author_mujoco_joint_limits对全部有限hinge统一timeconstant=2native_dt/critical1、solimp不改；源.5ms时即.001s。按官方refsafe边界，不按结局挑参，不改URDF/质量惯量/驱动限矩/mimic/摩擦或动作，不裁剪q/qdot/target，显式新求解器域。World可选rigid_joint_limits、acceptance freeze可选--stiff-joint-limits，默认false，协议及源码绑定，旧根/历史归档不热改。
+
+outputs/boya_mujoco_joint_limits_20261117_v1固定原验收模型，2模型×3空手/外载fixture，各200控制×8积分=1200控制/9600原生。21组非限位响应数组exact、6例无接触/原生warning0。原开手全28关节最大.010007629→.001347146rad（THJ2 .007467271→.000820370）；THJ2下限-1Nm .064423809→.001031698、上限+1Nm .064423809→.001029340；每原生子步统计，3新例均原.002rad门过。外载是自由度诊断扭矩，不能当实际持物接触/全抓取或回位认证。
+
+35项mujoco tests过，新增3限位检查；两次微型测试各1600真实原生积分共3200，与机器人9600分列，总12800，0Kit/CGR/新抓取/标签/训练，不混入此前采集148332积分。独立stiff_limits_static freeze源绑定/opt-in及STATIC_FIXTURE拒绝run通过0积分。所有任务已返回无后台。报告AUTHOR_MUJOCO_JOINT_LIMIT_FIX_20261117.md，轻证据evidence/author_mujoco_joint_limits_20261117_v1。原015提起10.26cm但越限的验收仍failed/labelnull，完整抓取尚未重验，不自动续旧失败、扩采、训练或报总体收益。
+
+## 2026-11-17 当前：采集验收未通过，真实015提起10.26cm，THJ2越限，0训练标签
+
+用户“好的验收”授权有限管线验收，不是全量/训练。新增独立author_mujoco_acceptance/sample，固定原manual队列首两个ready fit索引3/4与首两个ready internal10/12，不按结局更换，最多4抓/4CGR/4规划、48000控制/384000源0.5ms积分，0重试。新functional_sample_v1按用户允许轻微穿透，把原1mm接触门保留诊断，原5mm深碰撞停止/其他六门/有限完整执行/原生警告0保持，正常完成未提起才记0，初始化/无候选/异常/无效执行空标签。原v1仅object-object豁免与所有旧冻结/失败不回写，不称原严格物理等价。
+
+outputs/boya_mujoco_acceptance_20261117_v1实际1world/1camera/1显式reset/1robot写入/10体bank，2capture各750/2CGR forward1load/2规划/1抓取。fit3几何候选0，labelnull；fit4固定raw260原3591步完整，将015末底103.726218mm/升102.566836mm，末th/ff/mf/rf/lf11.619709/4.497066/4.203483/3.867724/0N，但THJ2下限0，settle第5步-.003224rad首越限、hold3059步-.036704rad最大；原penetration2.223393mm诊断，其他五门过。functional也因jointlimit拒绝，记录invalid_execution/labelnull，不把真实提起说成完全未抓起，也不自动写正标签。原命令开手目标与实测初态有跳变，但更大越限在受载hold，不能仅归因交接或只调整初态宣称修好。
+
+3691步完整物理回位只有joint_limits失败，THJ2最大.014695rad；控制并未提前中断，回位末motor误差.010618rad。已完成执行记录在return前落盘，原总控失败/trace保存，后两internal未派发，不能称四场已完整验收。1500初始化+3591抓取+3691返回=8782控制/70256原生积分，活动三体原生步122184，0Kit/未知/重试。parent151.280584s含setup21.206118，次capture14.751846/CGR1.562702/prepare53.012076/execute26.163312/return8.074630；无合格标签，不能除4报吞吐或套旧PhysX倍率。此前20298控制/78076积分与本组合29080/148332，再早3946旧MuJoCo/旧PhysX单列。
+
+read_only audit复算RGBD rays/CGR输入/24位置6前馈/源极值/完整接触载荷/XML FK/原7门与lift/回位exact，PASS仅记录一致。新export已实际重载0行，consumer因实际fit/internal不足blocked；原版480→20模型/loss在二值CPU夹具eval/no_grad前向过、权重exact不变，0训练，夹具不计标签。32项mujoco CPUtests过，新增5样本/1稳定窗口；窗口测试初临时目录错误0积分已修。capture可按原阈值750..2500有限延长、只看末250支撑，不reset；实际两场均750过，延长未动态实跑。新标签政策不合并旧fit/31/435或权重，正式quota未冻。
+
+报告AUTHOR_MUJOCO_COLLECTION_ACCEPTANCE_20261117.md，轻证据evidence/author_mujoco_collection_acceptance_20261117_v1。所属PID1833595/PGID1833594退出、owner结束、registryreleased/两持有锁可取，无后台任务。收尾修正CLIfailed退出非0，0积分，源归档保持，POST_RUN_SOURCE_REVIEW绑定前后版本，旧根不能热续跑。下一步需独立修正并验证THJ2开手/受载/回位行为，不能放门追正或自行扩采。原版DH3原场景对照已做推理/0积分准备，用户“等下”后未派任何原手物理；勿误称已完成动态原手复现。
+
+## 2026-11-17 最新用户规则：物体间穿透只记录，以真实提起受载判成功，0新物理
+
+用户明确“物体穿透应该没事吧只要能抓取起来就行”，覆盖此前对物体—物体接触强制原1mm否决的要求。新增独立author_mujoco_lift_policy及rejudge，schema anydex_boya_object_overlap_diagnostic_lift_v1；仅两端为不同原物体的穿透改为诊断，手—物/物—桌/未知接触及其余原门保持、原5mm深碰撞停止保持，物理参数/控制/完整接触不变。原7门和新acceptance门并存、旧冻结/失败/数据不回写；新collector freeze必须明确绑定当前policy，旧协议不可热跑当前变更。以原源底离桌5mm/末升50mm/拇指+其他手指真实受载判提起，不要求五指齐触、不新增持握秒数。
+
+既有fresh_v3/raw87/ff 0积分重判：object-object最大1.538419mm不再单独否决，其余接触最大1.224830mm仍超原门；所有物体均未提起，observed_lift_task_success和新diagnostic_success仍false，不能仅改判定把失败写成成功。正式fit/训练新增0，未重跑物理/CGR/抓取，稳定门也未改。新增6CPU tests过、累计44不同CPU用例；新版两轮静态freeze过、STATIC_FIXTURE禁实跑。报告AUTHOR_MUJOCO_LIFT_POLICY_20261117.md，轻证据evidence/author_mujoco_object_overlap_policy_20261117_v1。原阶段78076积分/20298控制成本不变，无后台任务。
+
+## 2026-11-17 当前：新观测首轮常驻全流程62.92秒，物理准入未过，已收尾，训练0
+
+用户“好的开始/继续”授权两轮连续诊断与新RGBD/CGR/常驻规划接入。新增author_mujoco_camera/representation/collection/source_options/return及owner、独立只读audit。原冻结源、失败和CanonDex只读。连续保存动作replay_v2已complete：1world/1显式reset/1robot初态写入，3818exec→3918物理返回→换物→3558exec，parent45.466632s，11294控制/原生积分。首抓原7门及提起过，返回7门过；次抓jointlimit .016136rad/penetration2.337462mm未过，不能称合格负标签。0新CGR/正式标签。
+
+相机启动一次，1280x720/K原标定，源三角面视觉mass0/mask0与原碰撞分开；修复URDF discardvisual默认丢纯视觉。前检v4 1world/1camera/2布局/0tick，96射线深度median .214/.230mm、P90 .262/.291mm，视觉加入前后13组质量/惯量/约束/驱动全精度数组exact。前检v1模块路径0world、v2错误用六位XML重载作exact参考、v3纯视觉被丢射线失败均保留0tick；v2-v4各1静态world，不隐去编译成本。
+
+fresh_v1在750×4ms初始化后011原稳定门失败，CGR1load0forward/0抓取；fresh_v2改独立源XML求解器/接触配置，0.5ms native×8保持每4ms原指令，750控制/6000积分，稳定/RGBD/原CGR1load1forward过，但新回执遗漏args字段被原collector拒绝，0抓取。接口修复和0物理只读校验保留。源XML版本复制timestep/tol/CCDtol/solver/cone/impratio/noslip及手/地面contact solver字段，不复制重力/桌面位置，原质量/摩擦/驱动保持，仍不是物理等价认证；与旧DGB接触候选明确分版。协议17500控制tick/140000原生积分，不混步长成本。
+
+fresh_v3 1world/1camera/1显式reset/1robot写入：首轮新拍照→原CGR1forward→原g1/raw87/ff→2952步执行→3052控制返回，首轮outer62.917879s，capture7.960752/CGR1.933032/prepare31.651556/execute14.723239/return6.047653s；一次setup18.017472/CGRload1.203678另列。执行loop12.426064s，native5.116413/observer6.548350s。首轮未提起任何体，7门中仅penetration失败：036—011最大1.538419mm，首次2425hold。次轮750初始化后014原window平移.227026mm/转角.007608rad失败，未拍照/CGR/抓取。parent94.795423s含未完次轮，不能除2报平均，也不能套旧589s/250s报有效采样倍率；“12s”只属旧保存动作余量。
+
+独立只读终审0积分：RGBD/source rays/CGR输入hash/原24目标及6前馈/接触载荷/源极值/XML FK/原7门/控制返回均重算一致；一致性PASS不等于物理准入PASS。当前full_collection_qualified=false，不放门、不补抓/重复已失败抓取追正。接触和稳定性须独立标定，不能从036—011一条接触断言单一根因。新正式fit0/训练0，旧映射/新映射2fit/旧435与八权重不混，不恢复正式配额。
+
+本阶段总20298个4ms控制/78076原生积分/149226活动三体原生步，0Kit，CGR2forward/3load、3抓取尝试（2保存+1新观测）、未知积分0；fresh两初始化失败不抹除，0抓取重试。原上一阶段3946 MuJoCo积分、旧PhysX成本单列。38不同CPUtests过、0积分；最终owner/回执修正仅静态freeze，STATIC_FIXTURE拒绝run，未重派物理。
+
+fresh_v3错误把本进程套入必须Popen的ResourcePool.stage，收尾隔离spawn_attemptedfalse/pgidnull；原隔离/registry/slots归档。主机核验本轮PID1579931/start171625020及PGID均不存在后审阅释放3槽，registryreleased。新author_mujoco_owner以本进程lease管理生命周期，异常/互斥/fixture有测试，不伪造子进程状态。无后台任务。报告AUTHOR_MUJOCO_FRESH_COLLECTION_20261117.md，轻证据evidence/author_mujoco_fresh_collection_20261117_v1；大trace/RGBD/model ignored，原冻结及失败只读。
+
+## 2026-11-17 当前：严格一次重置MuJoCo候选与常驻规划，分别通过，未集成两轮新观测采集
+
+用户强调真实工作台只初始化一次、可换物体，不能把旧单Kit/世界每轮robot.reset+750初始化当完成。新增独立author_mujoco_persistent_world：1活动Model/Data、1显式mj_resetData、1机器人初态写入；启动原适配器中间2编译+最终银行1编译均公开。6预载物体，边界只写物体pose/vel/外力、停放未用体，机器人q/qd与时钟exact保持。仅预载银行换物，未实现任意新CAD热加载；当前版另拒绝身份/几何变化、非法位姿和活动轮换物。
+
+one_world_prefix_20261117_v1两场各64home hold、共128MuJoCo tick，换物2.823/1.046ms，含原生点读取/JSON循环36.202/34.045ms，setup另14.029s；句柄/机器人位置和非零速度/时钟exact。不能把短hold当完整抓取倍率。persistent_replay_20261117_v1原有限两份计划/17500tick/0重试，实际第一条3818步完整后因误调用不存在LIFT.evaluate失败，第二条未开始、0返回步。原错误/轨迹/源码保留；当前改evaluate_lift及补生命周期guard，未重跑修正版物理。
+
+只读full audit0额外积分复算第一条：原24目标+六臂前馈exact、全部7门过，mimic .000764700rad、penetration .975336mm、掌4.814383mm/.007781544rad、臂支撑/基座漂移0；026末底102.370365mm/升100.651363mm，末五指5.219590/5.519123/.650040/0/0N，受载1.616s仅诊断。3818帧67574原生点，源极值/载荷复算差0，掌对XML FK1.4433e-15。诊断正例但正式fit0/训练0。parent24.862611s含world setup12.310721s，其余12.551890含完整观测/JSON/后处理，不能叫纯物理或新RGBD/CGR完整采集，更不能除旧589s报倍率。
+
+新后端显式变更几何/接触/约束/求解器：补源手XML4mimic equality solref/solimp，采用公开DexGraspBench手接触/elliptic/noslip2/impratio10，控制/积分仍4ms而非源XML .5ms。未获PhysX20µm凸体/filtered全字段认证，不称物理或轨迹等价，不放门/重抓追正。新增author_planning_reuse+compiled_kinematics单CPU拥有模型/网格/精确局部FK与状态审核缓存，绑定全几何/物体pose/排除对/tol/精确state；旧源/CanonDex只读。
+
+同2份保存输入原规划161.014982s，basic127.906375/static95.108418/compiled84.143496s，最终观察少47.74%、1.9136倍，仅规划。各6科学数组/候选/26完整几何报告exact，路径相关2SHA各自独立验真。原计时复用、非随机完整采集倍率。初缺libusb0规划和初比较器SHA误拒都保留，独立审核过；当前比较器修复。author_reused_fixed_scene_collection已接常驻规划/资源槽/有限单worker与退出清理，2轮6bank静态freeze v3过，mockGPUfixture禁止run；该入口仍保留旧PhysX每轮robot复位/750初始化，不等于严格一次reset新世界。
+
+29不同CPUtests过、0积分。阶段实际0Kit、3946MuJoCo环境/11838活动三体tick，0额外只读审计tick/重试/新CGR/RGBD/正式标签/训练；另一次全资产静态world0tick，微型单测构模不作采集world。新增正式fit0，新映射2fit及旧26fit+5internal、旧435/八权重不混。尚缺新世界连续两轮物理返回+换物+freshRGBD/CGR/规划/抓取完整验收与outer计时，不自动扩大到正式配额。所有已启动CPU进程返回、无后台任务。报告AUTHOR_PERSISTENT_WORLD_REUSE_20261117.md，轻证据evidence/author_persistent_world_reuse_20261117_v1，大trace/model/输出忽略，旧冻结源和失败不改。
+
 ## 2026-11-17 当前：完整同动作提速控制通过，纠正“物理等待”归因，新增训练0
 
 用户要求参考作者速度实际提速。先查明原native physics_step_update_s跨generator yield，包含外层after_step完整观测/网格/JSON，不能当纯PhysX。此前主要归因物理过早；历史报告/证据不改，本条纠正说明。CPU Fabric独立2Kit×64tick对照实跑，后48步USD .712482s/Fabric .764302s、状态及所有有效接触exact，未提速且未晋级。各另实读2个native reset update_simulation积分，合132步/parent275.701s；线程实验未派发。原生初始化不在SimContext计数，本阶段单独计，不能混旧历史口径。

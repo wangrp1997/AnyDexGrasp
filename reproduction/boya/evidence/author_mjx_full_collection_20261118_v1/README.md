@@ -1,0 +1,3 @@
+本目录为本轮完整MJX八槽及1/16/64有限对照的轻证据。三个性能cohort各5行诊断NPZ分别保存，先行pilot两组3行/2行独立，不合并训练。主要结果见boya_mjx_full_comparison_20261118_v4/COMPARISON_RESULTS.json及FINAL_RESOURCE_REVIEW.json。
+
+旧失败及原错误成本review保留；最新日志缓冲上界更正见boya_mjx_log_buffer_review_20261118_v2/RESULTS.json，unknown0..1720，不再用旧0..8。大逐帧日志/RGBD/源归档通过JSON绝对路径与SHA引用，未复制。所有原始物理/控制/标签审核是0追加积分，formal training0。

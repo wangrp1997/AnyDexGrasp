@@ -1,0 +1,59 @@
+{
+  "status": "diagnostic_export_complete",
+  "dataset": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/export/gesture_1.npz",
+    "sha256": "75667de31ae79fc7f40df3fe58e1780cde6198d9794ad0265b8be3203f4638cb"
+  },
+  "records": 48,
+  "positive": 30,
+  "negative": 18,
+  "fit": 34,
+  "internal": 14,
+  "original_head_input_check": {
+    "status": "published_head_consumer_pass",
+    "fit": 34,
+    "internal": 14,
+    "dataset": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/export/gesture_1.npz",
+      "sha256": "75667de31ae79fc7f40df3fe58e1780cde6198d9794ad0265b8be3203f4638cb"
+    },
+    "weights_unchanged": true,
+    "optimizer_updates": 0,
+    "backward_calls": 0,
+    "training_updates": 0,
+    "forward_checks": [
+      {
+        "rows": 34,
+        "loss": 0.7350848317146301,
+        "output_shape": [
+          34,
+          1,
+          20
+        ]
+      },
+      {
+        "rows": 14,
+        "loss": 0.3571428656578064,
+        "output_shape": [
+          14,
+          1,
+          20
+        ]
+      }
+    ],
+    "initial_head": "Fresh random weights, not a trained/scored collection policy"
+  },
+  "consumer_error": null,
+  "exclude_training": true,
+  "formal_training_eligible": false,
+  "training_updates": 0,
+  "old_data_merged": false,
+  "source_protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/PROTOCOL.json",
+    "sha256": "ca0613ccf23df3be9a0839af5fad06524ef7402a0c8b68fff32adb9732492beb"
+  },
+  "source_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/READ_ONLY_AUDIT.json",
+    "sha256": "2afe56badfa8d91a611b6f38ab358908652c6d1fd216b93ef968dc621ff1e988"
+  }
+}

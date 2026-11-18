@@ -1,0 +1,1353 @@
+{
+  "status": "actual_hour_complete",
+  "window": {
+    "started_monotonic_ns": 1809090849813602,
+    "deadline_monotonic_ns": 1812690849813602,
+    "started_unix_s": 1794990147.9862444,
+    "duration_s": 3600,
+    "cold_start_included": true,
+    "deadline_exclusive": true
+  },
+  "counts": {
+    "window_s": 3600.0,
+    "observed_wall_s": 4393.238165943,
+    "window_elapsed": true,
+    "grasp_attempts_started_within_window": 48,
+    "complete_executions_within_window": 39,
+    "eligible_labels_within_window": 39,
+    "eligible_positive_within_window": 25,
+    "eligible_negative_within_window": 14,
+    "grasp_and_return_within_window": 36,
+    "audited_labels_within_window": 36,
+    "audited_positive_within_window": 22,
+    "audited_negative_within_window": 14,
+    "eligible_labels_including_drain": 48,
+    "audited_labels_including_drain": 48,
+    "timed_out_tail_labels": 9,
+    "eligible_indices_within_window": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      47,
+      50,
+      54,
+      61
+    ],
+    "audited_indices_within_window": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      8,
+      9,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      21,
+      22,
+      24,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35,
+      36,
+      38,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      47
+    ]
+  },
+  "stages": {
+    "collect_and_audit": {
+      "returncode": 0,
+      "wall_s": 4400.797654384049,
+      "process": {
+        "pid": 918494,
+        "pgid": 918494,
+        "start_ticks": 180909085
+      },
+      "process_group_exited": true,
+      "finished_unix_s": 1794994548.784245
+    },
+    "export": {
+      "returncode": 0,
+      "wall_s": 7.578909267205745,
+      "process": {
+        "pid": 1091894,
+        "pgid": 1091894,
+        "start_ticks": 181349166
+      },
+      "process_group_exited": true,
+      "finished_unix_s": 1794994556.3808117
+    }
+  },
+  "total_wall_including_drain_and_export_s": 4408.394964233,
+  "cost": {
+    "CGR_forwards": 64,
+    "planning_jobs": 64,
+    "grasp_attempts": 48
+  },
+  "world": {
+    "backend": "MJX-Warp",
+    "worlds": 16,
+    "world_model_builds": 1,
+    "GPU_model_uploads": 1,
+    "robot_initializations_per_environment": 1,
+    "robot_resets_after_initialization": 0,
+    "global_control_ticks": 38872,
+    "native_steps_per_control": 8,
+    "native_environment_integrations": 4975616,
+    "max_native_environment_integrations": 19046400,
+    "object_bank_size": 18,
+    "object_exchanges": [
+      {
+        "lane": 0,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_000",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_001",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_002",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_003",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_004",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_005",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_006",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_007",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_008",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_009",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_010",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_011",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_012",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_013",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_014",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_015",
+        "tick": 0,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 3877,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4109,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4115,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4115,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4276,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4421,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4437,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 4550,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 5151,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 5453,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 5624,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_016",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_017",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_018",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_019",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_020",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_021",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_022",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_023",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_024",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_025",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_026",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_027",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_028",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_029",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_030",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_031",
+        "tick": 9848,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14451,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14451,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14624,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14624,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14644,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14680,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14691,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14916,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 14920,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 15069,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 15394,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 15563,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 15971,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_032",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_033",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_034",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_035",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_036",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_037",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_038",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_039",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_040",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_041",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_042",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_043",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_044",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_045",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_046",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_047",
+        "tick": 20194,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 23797,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 23797,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 23797,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24115,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24266,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24274,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24410,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24435,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24610,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 24875,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 25147,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 25306,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_048",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_049",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_050",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_051",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_052",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_053",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_054",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_055",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_056",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "s40_lift_fit_00004_s2026111601_hour_057",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "s40_lift_internal_00002_s2026111601_hour_058",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "s40_lift_internal_00004_s2026111601_hour_059",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "s40_lift_fit_00006_s2026111601_hour_060",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "s40_lift_fit_00007_s2026111601_hour_061",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "s40_lift_fit_00000_s2026111801_hour_062",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "s40_lift_fit_00003_s2026111601_hour_063",
+        "tick": 29518,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 2,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 32875,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 6,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33121,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 13,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33121,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 10,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33294,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 8,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33314,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 7,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33480,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 4,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33589,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 11,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33590,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 9,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 33732,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 14,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 34169,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 1,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 34629,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 15,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 34645,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 0,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 38872,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 3,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 38872,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 5,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 38872,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      },
+      {
+        "lane": 12,
+        "scene_id": "external_clear_between_rounds",
+        "tick": 38872,
+        "robot_and_clock_exact": true,
+        "other_lanes_exact": true,
+        "only_object_coordinate_buffers_written": true,
+        "graph_addresses_unchanged": true
+      }
+    ],
+    "renderer_builds": 1,
+    "camera_frames": 64,
+    "source_CPU_model_never_integrated": true,
+    "CPU_contact_solver_used": false,
+    "observation": "Independent post-step GPU forward; CPU kinematics/render mirrors only",
+    "GPU_noslip_iterations": 0,
+    "GPU_graph_mode": "native_single_control_graph",
+    "full_native_state_staging": false,
+    "GPU_CCD": {
+      "schema": "anydex_mjx_float32_ccd_compatibility_v1",
+      "source_ccd_tolerance_m": 1e-10,
+      "gpu_ccd_tolerance_m": 1e-06,
+      "native_default_ccd_tolerance_m": 1e-06,
+      "backend": "mjx-warp",
+      "changed": true,
+      "penetration_acceptance_threshold_changed": false,
+      "solver_tolerance_changed": false,
+      "geometry_changed": false,
+      "control_changed": false
+    },
+    "step_and_GPU_observer_s": 781.5862364913337,
+    "contact_decode_and_kinematics_s": 298.2331056885887,
+    "setup_wall_s": 66.92787065380253,
+    "native_clock_float32": true,
+    "clock_verified_against_every_float32_native_addition": true,
+    "production_ready": false,
+    "training_updates": 0,
+    "same_installed_MJX_Warp_kernels": true,
+    "native_graph_captures": 1,
+    "observer_copy_bytes_per_control": 30752072,
+    "graph_capture_integrations": 0,
+    "CPU_kinematics_lazily_updated": true,
+    "line_buffered_native_cost_journal": true
+  },
+  "source_result": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/RESULTS.json",
+    "sha256": "b053401099b3b3a0b7d745249131c742da8efa00b0df377046d1722f3ef5e919"
+  },
+  "source_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/READ_ONLY_AUDIT.json",
+    "sha256": "2afe56badfa8d91a611b6f38ab358908652c6d1fd216b93ef968dc621ff1e988"
+  },
+  "source_export": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/export/MANIFEST.json",
+    "sha256": "5fb014907e8964764600aef6e393e677aeafcc06549148454a6dc6d6d5d6b4d6"
+  },
+  "repeated_layouts": true,
+  "new_independent_scene_draws": 0,
+  "formal_training_eligible": false,
+  "training_updates": 0
+}

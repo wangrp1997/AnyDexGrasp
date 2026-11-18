@@ -1,0 +1,35 @@
+{
+  "duration_s": 3600,
+  "environments": 16,
+  "queued_slots": 128,
+  "max_native_environment_steps": 19046400,
+  "collection_protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_actual_one_hour_20261118_v1/collection/PROTOCOL.json",
+    "sha256": "ca0613ccf23df3be9a0839af5fad06524ef7402a0c8b68fff32adb9732492beb"
+  },
+  "formal_collection": false,
+  "training_updates": 0,
+  "primary_count": "Distinct eligible labels with complete physical return and independent audit finished inside the exact 3600s wall window",
+  "secondary_counts": [
+    "eligible runtime labels inside window",
+    "complete execution inside window",
+    "physical return inside window",
+    "tail completions after deadline"
+  ],
+  "repeated_layouts": true,
+  "new_independent_scene_draws": 0,
+  "sources": {
+    "finish_author_mjx_collection.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/finish_author_mjx_collection.py",
+      "sha256": "9b6096f4883308cbe05882da762d2f855907bb7ead116b4c8b7e39d40437ee83"
+    },
+    "author_mjx_full_comparison_v4.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mjx_full_comparison_v4.py",
+      "sha256": "015e9bd4eca3b357316e9d70b6b863d340221eac0c0c0e18d53591a997182f17"
+    },
+    "run_author_mjx_one_hour.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_author_mjx_one_hour.py",
+      "sha256": "8e57238dcbbf1e61c74d76c6d3dc03b87d11efc3565cbf3e14d22b3ea7f466f8"
+    }
+  }
+}
