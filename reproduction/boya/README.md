@@ -1,4 +1,6 @@
-2026-11-18 新授权：代码push并保持工作区干净后，启动[首批100新场景扩采](AUTHOR_MJX_FRESH_EXPANSION_20261118.md)。80 fit／20 internal，固定seed2026111802／g1／16环境，沿用已验收native物理和后台完整审核；固定100抽样涵盖40种，63个ready场景涉及38种，另外37个placement_null保留，不补抓。只在完整审核后创建新的formal数据；0训练，不合并旧诊断或旧数据。入口run_author_mjx_expansion.py；运行事实查看outputs/boya_mjx_fresh_expansion_20261118_v1中的PIPELINE_STARTED、collection/RUN_STARTED及BATCH_COUNTERS。
+2026-11-18 最新收尾：[100新场景最终报告](AUTHOR_MJX_FRESH_EXPANSION_RESULTS_20261118.md)。正式20条＝16正4负，fit16／internal4，7批完整raw审核PASS；21次抓取含1次原5mm停止记null，其余80空保留。采集＋审核71分0.6秒，全含统计收尾约71分44秒（文件mtime近似）；不能把派发至晚查的279分钟当采集耗时。原统计KeyError保留，由独立只读元数据收尾完成，0再积分。32所属进程组退出、锁/预约/registry释放，无本批后台任务，训练0。正式数据见ignored outputs/boya_mjx_fresh_expansion_20261118_v1/formal，完成回执EXPANSION_METADATA_COMPLETION和FINAL_REVIEW；不要依据旧PROGRESS误报运行中。实际手接触9种/成功提起7种，仍非40种均有正负；不自动追加新批或训练。
+
+2026-11-18 历史授权：代码push并保持工作区干净后，启动[首批100新场景扩采](AUTHOR_MJX_FRESH_EXPANSION_20261118.md)。80 fit／20 internal，固定seed2026111802／g1／16环境，沿用已验收native物理和后台完整审核；固定100抽样涵盖40种，63个ready场景涉及38种，另外37个placement_null保留，不补抓。只在完整审核后创建新的formal数据；0训练，不合并旧诊断或旧数据。入口run_author_mjx_expansion.py；运行事实查看outputs/boya_mjx_fresh_expansion_20261118_v1中的PIPELINE_STARTED、collection/RUN_STARTED及BATCH_COUNTERS。
 
 2026-11-18 已收尾：[真实一小时测试](AUTHOR_MJX_ACTUAL_ONE_HOUR_20261118.md)已完成并独立重算：**3600秒内39条有效标签落盘（25正14负），其中36条在截止前也完成回位和独立审核（22正14负）**；初始化计入、16环境常驻/0reset，截止后9条尾部不计。39条最终全部审核通过，全含尾部48条；19登记owner/PGID全退/锁与registryreleased，0训练。平均92.3秒/整机落盘样本、100秒/时限内审核样本，可按用户接受速度转向分批新布局/质量覆盖，复杂重构不必作为正式扩采前置。
 

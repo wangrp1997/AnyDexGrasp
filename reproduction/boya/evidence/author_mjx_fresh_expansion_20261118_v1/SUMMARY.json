@@ -1,0 +1,57 @@
+{
+  "status": "audited_fresh_expansion_complete",
+  "scene_draws": 100,
+  "ready_scenes": 63,
+  "physical_grasps": 21,
+  "formal_records": 20,
+  "positive": 16,
+  "negative": 4,
+  "fit": 16,
+  "internal": 4,
+  "null": 80,
+  "terminal_statuses": {
+    "planning_no_candidate": 27,
+    "placement_null": 37,
+    "grasp_success": 16,
+    "planning_null_geometry": 15,
+    "grasp_failure": 4,
+    "invalid_execution": 1
+  },
+  "collection_and_audit_wall_s": 4260.605295123998,
+  "metadata_file_mtime_interval_s": 4303.898552417755,
+  "mtime_interval_is_approximate": true,
+  "native_environment_steps": 5931776,
+  "unknown_native_steps": 0,
+  "source_archive_and_inputs_verified": true,
+  "registered_owners_exited": 32,
+  "locks_available": 7,
+  "reservations_released": 5,
+  "background_tasks_remaining": 0,
+  "training_updates": 0,
+  "raw_failures_preserved": true,
+  "metadata_postprocessing_only": true,
+  "no_candidate_details": {
+    "CGR_has_candidates": 27,
+    "all_candidates_rejected_before_arm_IK_by_collision_filter": 27
+  },
+  "planning_null_details": {
+    "fixed_endpoint_or_non_HOME_collision": 11,
+    "first_RRT_connection_final_tick_or_derivative_gate": 2,
+    "local_IK_seed_nonconvergence": 2,
+    "nonconvergence_is_unreachability_proof": false
+  },
+  "invalid_execution": {
+    "index": 71,
+    "stop": "original_5mm_deep_collision_stop",
+    "label": null,
+    "penetration_m": 0.005063880234956741
+  },
+  "source_formal_manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_expansion_20261118_v1/formal/MANIFEST.json",
+    "sha256": "575ba55dbb7a89db904485f7e28d94a0ff2ce17d81fd6983c7c98914434018bd"
+  },
+  "source_final_review": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_expansion_20261118_v1/FINAL_REVIEW.json",
+    "sha256": "6f51c41173d363578bde7290d08d8d141e9e8dcdd4588b6bcd9dcc23c459c1e8"
+  }
+}

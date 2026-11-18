@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-18 最新完成：100新场景扩采收尾，20正式标签16正4负，训练0
+
+root outputs/boya_mjx_fresh_expansion_20261118_v1已完成，无后台采集/审核/后处理/训练。tool18366原调度exit1是已预知的逐体统计object_outcomes KeyError，原collect+audit与staging export均exit0；独立watch40508 exit0按精确错误完成缺失元数据，原PIPELINE_FAILURE/冻结source/input/archive/标签均保留，0物理重试。正式完成回执EXPANSION_METADATA_COMPLETION.json、formal/MANIFEST及FINAL_REVIEW全部通过；不存在原EXPANSION_RESULTS，不能只据旧PROGRESS.json motion误报仍在运行。
+
+100场/80fit20internal，63ready/37placement_null，63新RGBD/CGR/规划，21实际抓取及21原控制回位通过；20有效正式样本=16正4负（fit16=14正2负、internal4=2正2负），不合并旧cohort。另27planning_no_candidate（全部CGR有候选但碰撞筛选后0，未进入臂IK）、15planning_null_geometry、1invalid_execution，合80null，不标负/不补抓。15规划空中11固定端点或非HOME段碰撞、2首次RRT连接后的逐帧/导数门拒绝、2局部IK种子未收敛（75/80，非不可达证明）；前轮已回答的前7规划空确实全部IK已解，不能把后半新增2例倒灌为此前原因。71执行1902/2351步遇原5mm停止，深度5.063880mm，labelnull且返回通过；因此aggregate all_complete_grasps_pass=false须保留，不说所有21抓均过数值门。20导出行均独立审核与原canonical480→20 head消费/无梯度检查通过，权重不变/训练0。
+
+7wave原完整raw审计PASS，46342global control/5931776native env积分，NativeCall全92685行连续begin/end、未知0<16665600本批预算；完整接触和逐源底/载荷/FK/命令/回位均复核。collector+audit4260.605295s，原调度至统计错误4285.983127s，formal元数据文件mtime距派发约4303.899s（约71分44，仅近似全流程，非独立monotonic计时）。用户晚查时的279分钟是派发至查询，不能称实际采集用时。32登记owner/PGID全退、7锁可取、5预约released/registryreleased，无本批后台任务。
+
+40种抽样/38种ready；29种只代表有效场景中出现，实际机器人接触及手载荷涉及9种，成功提起7种：000=1/002=4/014=2/021=1/022=4/057=3/066=1。不等于40种均被尝试或均有正负；未触碰旁观体仍不是负例。现正式fit16/internal4，旧PhysX等域不合并，旧4800/追加新批次/正式训练均未派发。代码截至f52eb9e已push，收尾报告与轻证据另小提交push并保持Git干净；原大RGBD/轨迹/模型继续ignored。
+
+报告AUTHOR_MJX_FRESH_EXPANSION_RESULTS_20261118.md，轻证据evidence/author_mjx_fresh_expansion_20261118_v1。下一批先依据布局/碰撞候选淘汰和逐体接触缺口决定方案，本条不授权追加物理或训练。下文“运行中”均历史快照。
+
 ## 2026-11-18 新授权：先push并清理，再启动100新场景扩采
 
 实际已启动：root同下，tool session18366，调度host PID/PGID1164791、GPU采集1164862；PIPELINE_STARTED绑定已push的c99d2110c8a7fa45eab8bec717adcd4533fbc328且worktree_clean=true，48绑定源码均tracked/归档exact。38种银行已建好，首wave9个ready槽进入实际GPU稳定推进；0新标签时已确认原生完成94848步且仍推进，非完成计数。最终须查原回执，不把该快照当最终结果。

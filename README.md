@@ -3,6 +3,8 @@ Dexterous grasp pose detection network built upon [MinkowskiEngine](https://gith
 
 ## 当前扩采入口（2026-11-18）
 
+**首批100新场景已完成**：正式导出20条（16正／4负，fit16／internal4），7批完整审核通过，实际采集和收尾约72分钟；其余80场为空（37布局、27碰撞筛选无候选、15规划拒绝、1深碰撞停止）。原统计异常已由独立只读收尾补齐，0物理重试；32登记进程组已退、资源释放，当前无本批后台任务、训练0。正式数据在本地ignored `outputs/boya_mjx_fresh_expansion_20261118_v1/formal/`；[最终报告](reproduction/boya/AUTHOR_MJX_FRESH_EXPANSION_RESULTS_20261118.md)与[轻量结果](reproduction/boya/evidence/author_mjx_fresh_expansion_20261118_v1/SUMMARY.json)。以下启动说明与运行快照保留。
+
 用户已授权在代码推送、工作区清理后，开始首批 **100 个全新场景**：80 fit＋20 internal，目录40物体保持32/8身份隔离，固定g1五指握、16常驻环境。沿用真实一小时已验收的native物理与完整审核，不使用重复旧布局；正常失败保留0，未执行／无候选／无效执行为空，不补抓。固定抽样涵盖40种，几何可建场的63场涉及38种；040和046本批只出现在placement_null，不能声称实际抓取覆盖全部40。
 
 入口为 [`run_author_mjx_expansion.py`](reproduction/boya/run_author_mjx_expansion.py)，本批运行产物在 `outputs/boya_mjx_fresh_expansion_20261118_v1/`（已ignore）。`collection/BATCH_COUNTERS.json` 查看落盘和独立审核数量，`PROGRESS.json` 查看阶段；正式数据仅在完整审核后生成于 `formal/`，训练不自动启动。启动事实以 `PIPELINE_STARTED.json` / `collection/RUN_STARTED.json` 为准；见[扩采协议](reproduction/boya/AUTHOR_MJX_FRESH_EXPANSION_20261118.md)。
