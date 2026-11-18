@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-19 新授权：启动累计100有效fit标签常驻扩采，不录像
+
+用户在“已有16fit，还差84，沿原CGR补到100”方案后明确“那你要启动吗”，现在授权启动该目标。root outputs/boya_mjx_cgr_to100_20261119_v1；new runner run_author_mjx_to100、新author_mjx_quota_collection/progress/data。原CGR固定g1、原250Hz/0.5ms×8/物理/映射/规划/完整接触与审核均不改；正常有效失败也计fit，null不计，无逐体修复、换候选/失败重试/录像/新训练。旧20正式数据的16fit4internal作为冻结基线，诊断/对照标签不加入。
+
+固定seed2026111902，预抽800个新场景（640fit/160internal，4fit+1internal交错），静态480ready/320placement_null。800是最大派发容量而非必须采完；16world整个队列只创建一次机器人/模型/相机/CGR，边界换物，原物理回位保持。累计已有16＋新有效fit完成原回位>=100即停止新wave准入，等待所有完整审核后确认配额，保留在途超额标签，不伪造恰好100。PROGRESS/BATCH_COUNTERS另列processed与unstarted，未派发槽不能当采样失败计有效率。
+
+本批独立上限119040000native环境积分（50wave×18600control×16×8），collect+audit父超时64800s，单计划/审核仍1800s；80GiB空闲空间guard。若800容量/步数/存储边界先到则合法收尾并明确target_not_met，不自动扩预算或重跑。达到目标只自动导出/同域合并，训练本阶段仍0，后续再做。merged/保留原trial/record/hash引用及全部overshoot，正式训练未来按原first100前缀取样。只合并明确formal_training_eligible且相同scientific source/物理/标签域，拒绝重复trial及全三体fit/internal泄漏。
+
+为避免800布局反复读取全源文件，新增纯准备PreparationCache：老文件按dev/inode/size/mtime/ctime复用SHA、最近1秒文件始终重哈希防粗时间戳快速同长改写，源顶点只缓存不修改；准备前后完整未缓存SHA再核。原确定性采样/验证函数及源文件不改。6项CPU测试过（3新配额/缓存＋2既有Progress＋1partial），旧真实场景original/cached完整字典exact，旧20数据分片合并数组exact/重复trial与不同物理拒绝，均0积分/0新标签。早期静态缓存测试发现时间戳粗粒度已在冻结前修复；首merge夹具漏audit引用的失败v1保留，v2补只读symlink后通过，不改生产源或标签。
+
+CAMPAIGN_READY/collection PROTOCOL已冻结，启动以PIPELINE_STARTED/collection RUN_STARTED与native journal为准；此条不把静态freeze当已采集。新源/输入/archive核对后、代码push且Git干净再派发；源/输入/归档/CanonDex及历史数据均保持。来源报告AUTHOR_MJX_TO100_20261119.md；进度优先看collection/BATCH_COUNTERS的cumulative_audited_fit_records、remaining_audited_fit_records，最终CAMPAIGN_RESULTS/merged/MANIFEST或PIPELINE_FAILURE。
+
 ## 2026-11-19 最新完成：评分头新布局实抓闭环通过；本次排序收益不可识别
 
 root outputs/boya_mjx_policy_compare_20261119_v1已complete，tool43087 exit0。16固定internal新布局抽样8placement_null保留，8ready全部各跑cgr/head，共16world/8对；权重冻结best_0.5.pt、原碰撞/规划/动作/物理/标签保持，0训练/重试/视频。总wall950.902717s（15分50.903），collector+audit941.678297s。CGR组assigned8/executed0/eligible0/success0/null8；head组assigned8/executed1/eligible1/success1/null7。13槽碰撞筛选后无候选，另外2槽规划几何拒绝，head15唯一候选实抓成功并原回位通过，完整原raw审核PASS。新1条仅exclude_training测试，不加入旧20/模型。旧16fit小模型100更新不改，不自动替换原采集排序或追加数据。

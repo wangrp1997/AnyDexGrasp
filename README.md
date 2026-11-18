@@ -3,6 +3,8 @@ Dexterous grasp pose detection network built upon [MinkowskiEngine](https://gith
 
 ## 当前扩采入口（2026-11-18）
 
+2026-11-19 用户已明确要求[启动累计100条有效fit扩采](reproduction/boya/AUTHOR_MJX_TO100_20261119.md)：现有16fit还差84，沿原CGR／g1，不录视频，16环境整个队列常驻。800新场景为上限（静态480ready），达到累计100有效fit并完成审核后自动收尾，保留在途超额；只合并原正式同域20条，不混诊断／对照标签。进度看ignored `outputs/boya_mjx_cgr_to100_20261119_v1/collection/BATCH_COUNTERS.json` 的累计已审核fit，启动事实看RUN_STARTED及原生积分日志，最终CAMPAIGN_RESULTS／merged/MANIFEST。
+
 2026-11-19：[评分头实抓对照已完成](reproduction/boya/AUTHOR_MJX_POLICY_COMPARISON_RESULTS_20261119.md)。8个新布局／16槽，head组唯一实际执行的一次提起与回位及完整审核通过，训后新场景执行闭环已通。但13个候选池为空、3个仅单候选，评分头没有改变任何top1；两边无合格实抓配对且实际观测不同，**此次无法证明排序收益**。保持原采集排序，不自动追加配额；0录像，进程与资源均已收尾。
 
 用户优先跑通闭环，**后续不录视频**。现有20条真实数据已完成[小样本训练与推理验证](reproduction/boya/AUTHOR_MJX_HEAD_PILOT_20261118.md)：16fit／4internal，原模型与训练函数100epoch、100次更新，CPU训练约2.87秒；权重保存重载及原推理逐值核验通过。此为16条工程pilot，正式100条训练规模与新场景评分实抓尚未完成；当前无新采集任务。上一批视频文件为0，占用主要来自完整轨迹/接触JSONL。
