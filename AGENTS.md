@@ -2,6 +2,8 @@
 
 ## 2026-11-19 新授权：启动累计100有效fit标签常驻扩采，不录像
 
+**实际已启动，当前不是仅准备状态。** tool session79363，调度host PID/PGID2119361、GPU controller2119614，PIPELINE_STARTED绑定已push commit4a4b7d5且worktree_clean=true。54源/输入/archive exact，40物体银行已建立并进入首wave稳定；启动核验时已完成69248native环境步并继续推进（在途另128，不作最终成本）。此时累计已审核fit16/目标100、新有效0，剩84，仅启动快照。global registry现在属于该root并active，不要将本批当旧已结束任务释放或重启。以实时BATCH_COUNTERS及最终CAMPAIGN_RESULTS为准，无录像。
+
 用户在“已有16fit，还差84，沿原CGR补到100”方案后明确“那你要启动吗”，现在授权启动该目标。root outputs/boya_mjx_cgr_to100_20261119_v1；new runner run_author_mjx_to100、新author_mjx_quota_collection/progress/data。原CGR固定g1、原250Hz/0.5ms×8/物理/映射/规划/完整接触与审核均不改；正常有效失败也计fit，null不计，无逐体修复、换候选/失败重试/录像/新训练。旧20正式数据的16fit4internal作为冻结基线，诊断/对照标签不加入。
 
 固定seed2026111902，预抽800个新场景（640fit/160internal，4fit+1internal交错），静态480ready/320placement_null。800是最大派发容量而非必须采完；16world整个队列只创建一次机器人/模型/相机/CGR，边界换物，原物理回位保持。累计已有16＋新有效fit完成原回位>=100即停止新wave准入，等待所有完整审核后确认配额，保留在途超额标签，不伪造恰好100。PROGRESS/BATCH_COUNTERS另列processed与unstarted，未派发槽不能当采样失败计有效率。
