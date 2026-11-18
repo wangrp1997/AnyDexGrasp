@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-19 当前新授权：固定小样本头与原CGR排序做新布局实抓对照，不录像
+
+用户“好吧对照下再说”授权有限比较，不是追加大规模采集/训练。新root outputs/boya_mjx_policy_compare_20261119_v1，固定seed2026111901先抽16个internal新布局，8placement_null保留，8ready全部用于8对/16槽（每对cgr/head，固定RNG随机分配相邻lane位置），只按建场几何准入，无CGR/IK/抓取结果择场。来自原internal对象池，场景未参与训练/选模，但不称新物体域外测。
+
+新author_mjx_policy_compare_worker只在原碰撞筛选后CGR top10内按已冻结pilot inference_checkpoint（best_0.5.pt）selected-depth分数重排，ties保留原CGR次序；baseline仍原top1，额外head打分只作shadow记录，不影响选择。候选payload/姿态/闭合/碰撞/机械臂规划/原物理门均保持，无换候选fallback/失败重抓/训练/录像。opt-in新controller复用原hour.collect_wave及v9/native_batch v1/F.settle/F.motion与完整独立闭wave审核，仅注入新规划worker，不编辑旧源码。Ranker在各worker加载一次固定头、CPU推理；原CGR仍常驻且原每帧恢复同post-init RNG不变。
+
+两边各自在独立lane按相同源布局稳定/实拍/CGR，初始化坐标配对，不声称稳定后状态/观测或物理轨迹逐值等价。最终逐对核对实际网络输入points/coords、raw候选与特征、语义候选池是否exact；有差异须报告、不得当纯排序因果收益。汇总比较assigned8的任务成功、可规划/实际执行/合格样本、paired wins以及双方合格子集；空/无效仍null，诊断exclude_training不并入旧20或任何模型。
+
+静态freeze完成，16env一wave最多2380800原生环境积分，独立本次预算、最多16次抓取/回位、0重试/训练/video。2个ranking单测及一个旧真实候选池接续检查通过（0新物理）：baseline字典逐值不变，head从原4候选中选rank1，所有candidate SHA与trace保留；这只是工程检查，不是比较效果。新48左右source/input/archive需在实跑前核对，root还未派发时不得宣称已实抓。
+
+入口run_author_mjx_policy_compare freeze/run，COMPARISON_READY/INTENT已落盘；调度事实看PIPELINE_STARTED、collection/RUN_STARTED及BATCH_COUNTERS，最终POLICY_COMPARISON_RESULTS/PIPELINE_FINISHED或PIPELINE_FAILURE。保持工作区干净后启动，轻成果push用户origin，旧source/input/archive/CanonDex/权重/20标签均不改。报告AUTHOR_MJX_POLICY_COMPARISON_20261119.md。当前冻结源码已绑定，后续不热编辑。
+
 ## 2026-11-18 最新：用户优先跑通闭环、明确不录视频；小样本真实训练与推理已完成
 
 用户改为“失败物体先不管，先把流程走通后续提高成功率”，随后问进展/采集ETA并明确不需要视频。此后所有新流程video_recording=false，不启动录像/逐步渲染；必要单次RGBD观测仍保留。此前100场实际video0，磁盘文件逻辑体积28.777GB，其中JSONL25.506GB，不把轨迹接触日志误称视频；不删除或覆盖旧冻结原始证据。
