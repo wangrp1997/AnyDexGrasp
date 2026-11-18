@@ -2,6 +2,10 @@
 
 ## 2026-11-18 新授权：先push并清理，再启动100新场景扩采
 
+实际已启动：root同下，tool session18366，调度host PID/PGID1164791、GPU采集1164862；PIPELINE_STARTED绑定已push的c99d2110c8a7fa45eab8bec717adcd4533fbc328且worktree_clean=true，48绑定源码均tracked/归档exact。38种银行已建好，首wave9个ready槽进入实际GPU稳定推进；0新标签时已确认原生完成94848步且仍推进，非完成计数。最终须查原回执，不把该快照当最终结果。
+
+启动后只读复查发现旧run_author_mjx_expansion.coverage对不完整执行缺object_outcomes会在最终统计KeyError；原物理/标签是正确null，不能因此重跑采集或改已绑定源。新增独立finish_author_expansion_metadata与1个partial CPU测试，已有25检查合计。watch仅等待原调度退出：原成功则不操作；仅遇该精确KeyError且原collect/audit/staging-export完整通过时，独立复核已生成formal NPZ所有科学数组/逐record/hash/原audit，再exclusive补缺失OBJECT_COVERAGE/MANIFEST并写EXPANSION_METADATA_COMPLETION，原PIPELINE_FAILURE和数据保留、0再积分/重试。缺结果计unavailable，不标负；其他失败原样保留不自动重派。watch登记METADATA_WATCH_STARTED/FINISHED/FAILURE，同目录；当前未结束须当后台任务，不能报告无后台。新增后处理源码另commit/push，采集的原48源/输入/archive不改。
+
 用户明确“代码push了吗，大文件和无关文件ignore然后保持工作区干净后开始扩采”。授权范围为前述首批100全新场景（不是保证100有效标签），80fit/20internal、目录32/8对象隔离、g1、16常驻world；不恢复旧4800或训练。新入口run_author_mjx_expansion/author_mjx_expansion_collection，复用已验收hour collect_wave及v9/native_batch v1物理、照片/CGR/实测起点原规划/逐250Hz全字段/功能标签/原回位与闭wave完整审核；新Progress仅去掉小时准入截止。保留1mm诊断/原5mm停止及其他六门，不称严格七门均过或PhysX等价。新增24项CPU检查通过（3新＋21既有），0新增物理测试；完整运行仍须查实际回执。
 
 root outputs/boya_mjx_fresh_expansion_20261118_v1；seed2026111802在任何物理前冻结，100独立抽样覆盖目录40，但63ready场景仅含38种，040/046只在37个placement_null中，不调seed或补布局追覆盖/成功。每场至多一原候选/执行，null消耗配额。16环境7wave最多16665600原生环境积分，独立新预算；0重试。40全覆盖的是抽样意向，不能宣传全部已实际尝试或都有正负。逐体报告分出现、机器人实际接触、手载荷、成功提起，接触未提起只诊断、未触碰旁观体不标负；全局label仍任一原三体被手提起。训练/新权重/训后外测0。

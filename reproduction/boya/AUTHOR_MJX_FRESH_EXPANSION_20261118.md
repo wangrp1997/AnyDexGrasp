@@ -26,3 +26,7 @@ tail -n 20 outputs/boya_mjx_fresh_expansion_20261118_v1/timing/collect_and_audit
 ```
 
 `PIPELINE_STARTED.json`是调度启动；`collection/RUN_STARTED.json`是持GPU锁后的采集启动；`BATCH_COUNTERS.json`区分落盘与审核数量。全部结束以`EXPANSION_RESULTS.json`为准，异常保留`PIPELINE_FAILURE.json`。严禁对已派发root重试。运行产生的数据不会弄脏Git工作区。
+
+实际启动绑定提交`c99d211`，调度1164791、采集1164862，16世界／38银行已经进入首wave实际GPU积分。冻结源码和协议保持，不根据新结果调整控制。
+
+只读复查补充：不完整执行按原规则无object_outcomes，当前冻结入口的最终逐体统计可能因此KeyError。新增独立`finish_author_expansion_metadata.py`只读等待原任务：若原成功则不操作；仅该精确统计错误且原完整collect/audit/staging导出均通过时，复核已经生成的formal NPZ/原record/哈希/科学数组，再以exclusive写入补缺失的覆盖表和MANIFEST，保留原失败回执，并生成`EXPANSION_METADATA_COMPLETION.json`。未评估物体结果记不可用，不当负标签；其他错误不重试。新增partial-outcome测试通过，总25项检查，0新增积分。watch运行状态见METADATA_WATCH_STARTED/FINISHED/FAILURE。
