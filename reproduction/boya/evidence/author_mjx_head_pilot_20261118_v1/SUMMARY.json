@@ -1,0 +1,122 @@
+{
+  "status": "limited_data_training_and_inference_complete",
+  "limited_data_pilot": true,
+  "formal_author_sample_cap_experiment": false,
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/PROTOCOL.json",
+    "sha256": "16dc42b4c161280380f5463221ec8136032d7b4352bee28c12d895efe5a387c2"
+  },
+  "label_counts": {
+    "fit": {
+      "records": 16,
+      "positive": 14,
+      "negative": 2
+    },
+    "internal": {
+      "records": 4,
+      "positive": 2,
+      "negative": 2
+    }
+  },
+  "epochs": 100,
+  "optimizer_updates": 100,
+  "initial_parameter_sha256": "782981cfb25a78af2eb64ed9fc9dd931efc4f1ed6f299f6496f3652753197559",
+  "final_parameter_sha256": "70f39e4f4f64106a772237d437e4cc05846e33bbb981a4f8675686fb64182ba7",
+  "parameters_changed": true,
+  "selected_checkpoints": {
+    "0.5": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/best_0.5.pt",
+      "sha256": "8098c6c42d500730d7332435f686e898f9a79efdebb29382395153f82f6ce14c"
+    },
+    "0.7": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/best_0.7.pt",
+      "sha256": "5220294ed6977f41553b55d46325c7dacfad85bd870ad6e513b551120bfc58a9"
+    }
+  },
+  "final_pilot_checkpoint": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/last_pilot.pt",
+    "sha256": "383d05fa5a3b34bd744d2f64b19c6d16f1e02cbd1c8cac7d7a8bb1dbd95c6220"
+  },
+  "strict_published_inference_reload": {
+    "0.5": {
+      "checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/best_0.5.pt",
+        "sha256": "8098c6c42d500730d7332435f686e898f9a79efdebb29382395153f82f6ce14c"
+      },
+      "published_inference_exact": true,
+      "output_shape": [
+        4,
+        1,
+        20
+      ]
+    },
+    "0.7": {
+      "checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/best_0.7.pt",
+        "sha256": "5220294ed6977f41553b55d46325c7dacfad85bd870ad6e513b551120bfc58a9"
+      },
+      "published_inference_exact": true,
+      "output_shape": [
+        4,
+        1,
+        20
+      ]
+    },
+    "last_pilot": {
+      "checkpoint": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/last_pilot.pt",
+        "sha256": "383d05fa5a3b34bd744d2f64b19c6d16f1e02cbd1c8cac7d7a8bb1dbd95c6220"
+      },
+      "published_inference_exact": true,
+      "output_shape": [
+        4,
+        1,
+        20
+      ]
+    }
+  },
+  "heldout_internal_rows": 4,
+  "internal_selected_scores": [
+    0.1295892745256424,
+    0.5236935019493103,
+    0.2096361219882965,
+    0.0
+  ],
+  "internal_labels": [
+    0,
+    1,
+    0,
+    1
+  ],
+  "internal_metrics": {
+    "0.5": {
+      "true_positive": 1,
+      "false_positive": 0,
+      "true_negative": 2,
+      "false_negative": 1,
+      "accuracy": 0.75
+    },
+    "0.7": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "true_negative": 2,
+      "false_negative": 2,
+      "accuracy": 0.5
+    },
+    "0.9": {
+      "true_positive": 0,
+      "false_positive": 0,
+      "true_negative": 2,
+      "false_negative": 2,
+      "accuracy": 0.5
+    }
+  },
+  "score_semantics": "Original ReLU head output; not a calibrated probability",
+  "new_scene_execution_complete": false,
+  "live_candidate_ranking_integrated": false,
+  "collection_policy_changed": false,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "video_recording": false,
+  "wall_s": 2.8698118159081787
+}

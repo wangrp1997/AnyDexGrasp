@@ -1,0 +1,104 @@
+{
+  "schema": "anydex_mjx_real_label_head_pilot_v1",
+  "seed": 2026111803,
+  "gesture": 1,
+  "limited_data_pilot": true,
+  "formal_author_sample_cap_experiment": false,
+  "source_fit_records": 16,
+  "source_internal_records": 4,
+  "epochs": 100,
+  "recipe": {
+    "epochs": 100,
+    "batch_size": 128,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0005,
+    "poly_power": 0.99,
+    "input_dim": 480,
+    "output_dim": 20,
+    "output_config_override": "num_two_finger_angle=1 matching released models",
+    "loss": "author final-ReLU selected-output MSE",
+    "model_selection": "author save_model validation P/R at .5/.7/.9"
+  },
+  "class_balancing": false,
+  "early_stopping": false,
+  "seed_retries": 0,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "model_input": "Source canonical float32 CGR480, no additional canonicalization",
+  "video_recording": false,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "automatically_installed_in_collection": false,
+  "inputs": {
+    "manifest": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_expansion_20261118_v1/formal/MANIFEST.json",
+      "sha256": "575ba55dbb7a89db904485f7e28d94a0ff2ce17d81fd6983c7c98914434018bd"
+    },
+    "dataset": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_expansion_20261118_v1/formal/gesture_1.npz",
+      "sha256": "532a1e1bf59fabb542b5d5f25574993d9b6a09776affb581afd392046d1662af"
+    }
+  },
+  "sources": {
+    "author_mjx_head_pilot.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mjx_head_pilot.py",
+      "sha256": "639d68b7d74db8acafc8f5513786761deb3cece18d99f3ce2c3f9997566cbeb1"
+    },
+    "author_protocol.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_protocol.py",
+      "sha256": "05afd8f176b41f89c56d8e6130ad887c6e75a059ef9c5b0d453ca4f7c1da54fa"
+    },
+    "author_training.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_training.py",
+      "sha256": "f269d57cb5d20aa135cd9dba1a9c12c148e1b837fd55d297784080b2724bfd00"
+    },
+    "collect_allegro_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_allegro_grasp_data.py",
+      "sha256": "d833b95ab50afcd9924ca6e97b21e6b7f65aa304f9a808599c0cdf48c98b7bbb"
+    },
+    "collect_dh3_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+      "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb"
+    },
+    "utils/collision_detector.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+      "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1"
+    },
+    "train_multifinger.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py",
+      "sha256": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf"
+    },
+    "dataset/multifinger_hand.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/dataset/multifinger_hand.py",
+      "sha256": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e"
+    },
+    "models/minkowski_graspnet.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet.py",
+      "sha256": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d"
+    },
+    "models/loss.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/loss.py",
+      "sha256": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8"
+    },
+    "models/minkowski_graspnet_single_point.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+      "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26"
+    },
+    "utils/solvers.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/utils/solvers.py",
+      "sha256": "a9f2b274f438a1a29c1ae17c22a1f553dbe978354ba7143222a653e17a38f713"
+    }
+  },
+  "label_counts": {
+    "fit": {
+      "records": 16,
+      "positive": 14,
+      "negative": 2
+    },
+    "internal": {
+      "records": 4,
+      "positive": 2,
+      "negative": 2
+    }
+  }
+}

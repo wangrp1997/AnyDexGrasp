@@ -1,5 +1,19 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-18 最新：用户优先跑通闭环、明确不录视频；小样本真实训练与推理已完成
+
+用户改为“失败物体先不管，先把流程走通后续提高成功率”，随后问进展/采集ETA并明确不需要视频。此后所有新流程video_recording=false，不启动录像/逐步渲染；必要单次RGBD观测仍保留。此前100场实际video0，磁盘文件逻辑体积28.777GB，其中JSONL25.506GB，不把轨迹接触日志误称视频；不删除或覆盖旧冻结原始证据。
+
+当前100场早已完成，16fit/4internal有效20条；上一轮只给了下一步计划、尚未训练，本轮按先通闭环启动独立real-label小样本pilot。root outputs/boya_mjx_head_pilot_20261118_v1；新增author_mjx_head_pilot复用原components/CanonicalDataset/train_one_epoch/eval_one_epoch/save_model，原100epoch/Adam/selected-output MSE/PolyLR，16fit=14正2负、4internal=2正2负，0平衡/旧域合并/换seed。正式100/300/1000 sample-cap函数及历史frozen源不改，本次明确limited_data_pilot，不以16条充当正式100条实验，也不套仅synthetic的development_epochs捷径。
+
+实跑CPU单线程100epoch/100次optimizer更新，训练主体wall2.869812s，参数SHA变化；原验证规则选择0.5/0.7权重，另存显式last_pilot（非自动晋级部署）。三份checkpoint weights_only重载、原inference与source eval对4行输出[4,1,20]逐值exact，20行真实候选输出有限。0.5所选头在4条内部验证TP1/FP0/TN2/FN1，仅小样本流程证据，不称75%总体成功率/外测或新场景提起效果。0新增physics/CGR/video；训练进程已退出，无本轮后台任务。旧采集manifest上的training_updates0作为历史保持，新pilot报告累计100更新。
+
+当前已通真实采集/标签/导出→小样本训练→保存重载→已保存真实候选评分，live_candidate_ranking_integrated=false、new_scene_execution_complete=false，未把模型接入新场景规划/实抓，不能称完整训后实抓闭环已验收。优先接推理与少量新场景验证，暂不逐体修到成功；正常有效失败仍作负例，未执行/无效仍为空。
+
+用户“多久采集完”未说明新的有效样本总目标，异步问题已给三选项：先完成训练推理再定扩采／补到100有效fit／补到300有效fit；未答不自动追加队列或大物理预算。按上批16fit/约71分44的单批比例，补到100fit尚缺84，粗略同条件约6.3小时，仅情景估算，布局和宿主负载会变，不是实测采满ETA。论文正式cap不作自动采集目标。
+
+报告AUTHOR_MJX_HEAD_PILOT_20261118.md与轻证据evidence/author_mjx_head_pilot_20261118_v1；checkpoint与scores留ignored outputs，新轻源码/报告push并保持工作区干净。此前“训练0/未开始训练”是pilot启动前历史，不回写原成果。
+
 ## 2026-11-18 最新完成：100新场景扩采收尾，20正式标签16正4负，训练0
 
 root outputs/boya_mjx_fresh_expansion_20261118_v1已完成，无后台采集/审核/后处理/训练。tool18366原调度exit1是已预知的逐体统计object_outcomes KeyError，原collect+audit与staging export均exit0；独立watch40508 exit0按精确错误完成缺失元数据，原PIPELINE_FAILURE/冻结source/input/archive/标签均保留，0物理重试。正式完成回执EXPANSION_METADATA_COMPLETION.json、formal/MANIFEST及FINAL_REVIEW全部通过；不存在原EXPANSION_RESULTS，不能只据旧PROGRESS.json motion误报仍在运行。
