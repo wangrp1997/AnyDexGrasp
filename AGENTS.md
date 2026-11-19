@@ -1,5 +1,11 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-19 共享RGB-D配对已派发
+
+用户同意继续8至12组首选不同的配对。执行根为`outputs/boya_mjx_shared_pair_20261119_v1`，常驻MJX，16环境，固定seed2026111904。从已有internal对象池抽128个新布局，42个通过摆放检查。按抽样顺序录取前8个排名不同的场景，每组CGR首选和评分头首选各一次规划，最多16次抓取。评分使用前一阶段固定末轮预激活MSE权重和发布ReLU推理，平分沿用原CGR次序。规划空与无效执行保持null。配对样本仅供评估，全程不录像。
+
+配对两边使用同一模型、同一控制步的复制积分缓冲、一张RGB-D和一次CGR及碰撞筛选。复制后、规划后均核对GPU缓冲。GPU小缓冲测试通过，0物理积分。历史219场同一相机数据通过CPU双规划检查，2个候选分别选rank0和rank1，均规划ready，0新物理。新入口`run_author_mjx_shared_pair.py`于已推送的b737188启动。运行进度以`collection/PROGRESS.json`、`WAVE_PROGRESS.json`、`BATCH_COUNTERS.json`和`timing/process.log`为准。最终看`COMPARISON_RESULTS.json`和`PIPELINE_FINISHED.json`。该批次上限14284800次原生环境积分，有限布局用完可少于目标。当前无正式采集扩配额或新训练授权。
+
 ## 2026-11-19 最新排查：原评分训练出现32个持续ReLU死区，同数据对照解卡但泛化仍弱
 
 用户要求排查并问“原网络结构／是否数据太少”。明确原正式模型就是发布480→20结构及原ReLU后MSE配方；117条累计数据含79正38负，“1个”仅是16内部验证中11正例有1个过0.5，不是只采到一次成功。新增`author_mjx_head_diagnosis.py`，根`outputs/boya_mjx_head_diagnosis_20261119_v1`，不改任何旧冻结source/input/archive、原模型、旧435或CanonDex；无新采集／CGR／录像。
