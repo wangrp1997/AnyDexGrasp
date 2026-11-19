@@ -1,0 +1,166 @@
+{
+  "status": "complete",
+  "additional_physics_steps": 0,
+  "cases": [
+    {
+      "target": "graspnet_007",
+      "branches": {
+        "original": {
+          "execution": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_00/original/RESULTS.json",
+            "sha256": "08c6a47f64c6fc49caf4932c0a247fa2ccf31447d327dc0a46d9a41f4f327e02"
+          },
+          "target_success": true,
+          "target_final_rise_m": 0.10176273435354233,
+          "trigger": null,
+          "phases": {
+            "close": {
+              "steps": 250,
+              "opposing_1N_steps": 109,
+              "last_opposing_1N_step": 2726,
+              "thumb_loaded_steps": 121,
+              "final_thumb_n": 7.604535400867462,
+              "final_other_fingers_n": 11.447539806365967
+            },
+            "hold": {
+              "steps": 50,
+              "opposing_1N_steps": 50,
+              "last_opposing_1N_step": 2776,
+              "thumb_loaded_steps": 50,
+              "final_thumb_n": 8.672788262367249,
+              "final_other_fingers_n": 11.564208924770355
+            },
+            "lift": {
+              "steps": 500,
+              "opposing_1N_steps": 500,
+              "last_opposing_1N_step": 3276,
+              "thumb_loaded_steps": 500,
+              "final_thumb_n": 8.192855834960938,
+              "final_other_fingers_n": 13.0434227315709
+            }
+          }
+        },
+        "contact_hold": {
+          "execution": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_00/contact_hold/RESULTS.json",
+            "sha256": "7e2f844141c2b47131be41904565e38b586561640c060a263e550a325effb47d"
+          },
+          "target_success": false,
+          "target_final_rise_m": 2.6348978281021118e-05,
+          "trigger": {
+            "step": 2571,
+            "objects": [
+              "graspnet_007"
+            ]
+          },
+          "phases": {
+            "close": {
+              "steps": 250,
+              "opposing_1N_steps": 14,
+              "last_opposing_1N_step": 2577,
+              "thumb_loaded_steps": 22,
+              "final_thumb_n": 0,
+              "final_other_fingers_n": 4.943588614463806
+            },
+            "hold": {
+              "steps": 50,
+              "opposing_1N_steps": 0,
+              "last_opposing_1N_step": null,
+              "thumb_loaded_steps": 0,
+              "final_thumb_n": 0,
+              "final_other_fingers_n": 5.087073981761932
+            },
+            "lift": {
+              "steps": 500,
+              "opposing_1N_steps": 0,
+              "last_opposing_1N_step": null,
+              "thumb_loaded_steps": 121,
+              "final_thumb_n": 0,
+              "final_other_fingers_n": 0
+            }
+          }
+        }
+      }
+    },
+    {
+      "target": "graspnet_044",
+      "branches": {
+        "original": {
+          "execution": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_01/original/RESULTS.json",
+            "sha256": "84a56e2355b9ef275f5d91ec35c36cb7ca5ac0b14d2c7967037a4e59d3a50a0a"
+          },
+          "target_success": true,
+          "target_final_rise_m": 0.1029418520629406,
+          "trigger": null,
+          "phases": {
+            "close": {
+              "steps": 250,
+              "opposing_1N_steps": 125,
+              "last_opposing_1N_step": 3288,
+              "thumb_loaded_steps": 135,
+              "final_thumb_n": 15.031535148620605,
+              "final_other_fingers_n": 17.93719506263733
+            },
+            "hold": {
+              "steps": 50,
+              "opposing_1N_steps": 50,
+              "last_opposing_1N_step": 3338,
+              "thumb_loaded_steps": 50,
+              "final_thumb_n": 14.964945793151855,
+              "final_other_fingers_n": 17.89620327949524
+            },
+            "lift": {
+              "steps": 500,
+              "opposing_1N_steps": 500,
+              "last_opposing_1N_step": 3838,
+              "thumb_loaded_steps": 500,
+              "final_thumb_n": 12.833471298217773,
+              "final_other_fingers_n": 16.235709190368652
+            }
+          }
+        },
+        "contact_hold": {
+          "execution": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_01/contact_hold/RESULTS.json",
+            "sha256": "3808f8042d1b99c04839201157be0d22c07e7dd6b101d3fea28b7800f36c9160"
+          },
+          "target_success": true,
+          "target_final_rise_m": 0.09653162583708763,
+          "trigger": {
+            "step": 3171,
+            "objects": [
+              "graspnet_044"
+            ]
+          },
+          "phases": {
+            "close": {
+              "steps": 250,
+              "opposing_1N_steps": 125,
+              "last_opposing_1N_step": 3288,
+              "thumb_loaded_steps": 135,
+              "final_thumb_n": 4.451723575592041,
+              "final_other_fingers_n": 5.209466457366943
+            },
+            "hold": {
+              "steps": 50,
+              "opposing_1N_steps": 50,
+              "last_opposing_1N_step": 3338,
+              "thumb_loaded_steps": 50,
+              "final_thumb_n": 4.396705150604248,
+              "final_other_fingers_n": 5.195847749710083
+            },
+            "lift": {
+              "steps": 500,
+              "opposing_1N_steps": 500,
+              "last_opposing_1N_step": 3838,
+              "thumb_loaded_steps": 500,
+              "final_thumb_n": 4.175380706787109,
+              "final_other_fingers_n": 4.1752439718693495
+            }
+          }
+        }
+      }
+    }
+  ]
+}

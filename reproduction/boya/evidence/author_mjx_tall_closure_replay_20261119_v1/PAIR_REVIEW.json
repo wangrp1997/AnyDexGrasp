@@ -1,0 +1,148 @@
+{
+  "status": "verified_complete",
+  "cases": [
+    {
+      "index": 0,
+      "historical_label": 1,
+      "historical_outcome_reproduced": true,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "outcome": "grasp_success",
+          "label": 1,
+          "trigger": null,
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0012287882855162024,
+          "steps": 3276,
+          "stop": null,
+          "sustained_load_controls": {
+            "close": 109,
+            "hold": 50,
+            "lift": 500
+          },
+          "lifts": [
+            {
+              "object": "graspnet_007",
+              "rise_m": 0.10176273435354233,
+              "loaded_lift_s": 1.608
+            }
+          ],
+          "exact_arm_wrist_velocity_and_phase": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_00/original/TRACE.jsonl",
+            "sha256": "f72bdcf7e42e32bdb3cc66b0eafd37b0117822ab718f15a113cd2710cc1e69ea"
+          },
+          "target_lifted": true
+        },
+        "contact_hold": {
+          "outcome": "grasp_failure",
+          "label": 0,
+          "trigger": {
+            "step": 2571,
+            "objects": [
+              "graspnet_007"
+            ]
+          },
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0018769341986626387,
+          "steps": 3276,
+          "stop": null,
+          "sustained_load_controls": {
+            "close": 14,
+            "hold": 0,
+            "lift": 0
+          },
+          "lifts": [],
+          "exact_arm_wrist_velocity_and_phase": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_00/contact_hold/TRACE.jsonl",
+            "sha256": "ad99adf7177497d8c8555c0dc0fdb7f5536f56ba027ca36b94342b023c7e6407"
+          },
+          "target_lifted": false
+        }
+      },
+      "target": "graspnet_007",
+      "historical_rise_m": 0.1017412506043911,
+      "original_target_reproduced": true,
+      "source_numerics_recomputed": true
+    },
+    {
+      "index": 1,
+      "historical_label": 1,
+      "historical_outcome_reproduced": true,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "outcome": "grasp_success",
+          "label": 1,
+          "trigger": null,
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0028671263717114925,
+          "steps": 3838,
+          "stop": null,
+          "sustained_load_controls": {
+            "close": 125,
+            "hold": 50,
+            "lift": 500
+          },
+          "lifts": [
+            {
+              "object": "graspnet_044",
+              "rise_m": 0.1029418520629406,
+              "loaded_lift_s": 1.676
+            }
+          ],
+          "exact_arm_wrist_velocity_and_phase": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_01/original/TRACE.jsonl",
+            "sha256": "693084e4d8ffae65375c67f2614c955615bb9c7fe2674ad944a7689057a0604e"
+          },
+          "target_lifted": true
+        },
+        "contact_hold": {
+          "outcome": "grasp_success",
+          "label": 1,
+          "trigger": {
+            "step": 3171,
+            "objects": [
+              "graspnet_044"
+            ]
+          },
+          "strict_1mm_pass": true,
+          "penetration_m": 0.0008869744488038123,
+          "steps": 3838,
+          "stop": null,
+          "sustained_load_controls": {
+            "close": 125,
+            "hold": 50,
+            "lift": 500
+          },
+          "lifts": [
+            {
+              "object": "graspnet_044",
+              "rise_m": 0.09653162583708763,
+              "loaded_lift_s": 1.556
+            }
+          ],
+          "exact_arm_wrist_velocity_and_phase": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_01/contact_hold/TRACE.jsonl",
+            "sha256": "d96c646d181f7e3c48cd1bbce51d470a53cd2a162d1107ebc6f8ae806285c4d4"
+          },
+          "target_lifted": true
+        }
+      },
+      "target": "graspnet_044",
+      "historical_rise_m": 0.10292216017842293,
+      "original_target_reproduced": true,
+      "source_numerics_recomputed": true
+    }
+  ],
+  "native_environment_steps": 122816,
+  "unknown_native_steps": 0,
+  "restore_scope": "Saved capture qpos/qvel/ctrl in reduced object bank, native clock rebased and solver warmstart initialized zero",
+  "no_new_planning": true,
+  "video_recording": false,
+  "training_updates": 0,
+  "exclude_training": true
+}
