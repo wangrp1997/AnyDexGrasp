@@ -1,0 +1,102 @@
+{
+  "status": "verified_complete",
+  "results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_pair_20261119_v1/COMPARISON_RESULTS.json",
+    "sha256": "76e570de882df5dd402c197cc093cf00d39a4425dd8ab70eedeedd3daf30bb9d"
+  },
+  "completion": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_pair_20261119_v1/PIPELINE_FINISHED.json",
+    "sha256": "67900d1af058c051804173c34c66d4c4981f27efe22a4faad8d3e5bab17e916e"
+  },
+  "draws": 29,
+  "placement_ready": 8,
+  "captures": 7,
+  "counts": {
+    "valid_pairs": 3,
+    "both_pass": 0,
+    "both_fail": 0,
+    "rescued": 3,
+    "regressed": 0,
+    "invalid_pairs": 0
+  },
+  "planning": [
+    {
+      "index": 0,
+      "draw": 7,
+      "primary_candidates": 6,
+      "recovery_candidates": null,
+      "selected_rank": 0,
+      "status": "ready",
+      "arm_plans": 1
+    },
+    {
+      "index": 1,
+      "draw": 8,
+      "primary_candidates": 1,
+      "recovery_candidates": null,
+      "selected_rank": 0,
+      "status": "ready",
+      "arm_plans": 1
+    },
+    {
+      "index": 3,
+      "draw": 13,
+      "primary_candidates": 0,
+      "recovery_candidates": 1,
+      "selected_rank": null,
+      "status": "null_geometry",
+      "arm_plans": 1
+    },
+    {
+      "index": 4,
+      "draw": 17,
+      "primary_candidates": 1,
+      "recovery_candidates": null,
+      "selected_rank": null,
+      "status": "null_geometry",
+      "arm_plans": 1
+    },
+    {
+      "index": 5,
+      "draw": 20,
+      "primary_candidates": 1,
+      "recovery_candidates": null,
+      "selected_rank": null,
+      "status": "null_geometry",
+      "arm_plans": 1
+    },
+    {
+      "index": 6,
+      "draw": 25,
+      "primary_candidates": 0,
+      "recovery_candidates": 6,
+      "selected_rank": 0,
+      "status": "ready",
+      "arm_plans": 1
+    },
+    {
+      "index": 7,
+      "draw": 28,
+      "primary_candidates": 0,
+      "recovery_candidates": 0,
+      "selected_rank": null,
+      "status": "no_candidate",
+      "arm_plans": 0
+    }
+  ],
+  "actual_arm_plans": 6,
+  "existing_execution_stops": {
+    "original": {},
+    "contact_hold": {}
+  },
+  "native_environment_steps": 662400,
+  "unknown_native_environment_steps": 0,
+  "runtime_wall_s": 517.6002781828865,
+  "audit_wall_s": 61.41610022587702,
+  "exited_process_groups": 5,
+  "released_resource_slots": 3,
+  "registry_released": true,
+  "available_locks": 5,
+  "video_recording": false,
+  "training_updates": 0
+}
