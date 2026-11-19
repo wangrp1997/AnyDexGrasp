@@ -1,6 +1,10 @@
 # AnyDexGrasp 独立复现工作区
 
-## 2026-11-19 原手净空核对完成，小批CGR后备基线已派发
+## 2026-11-19 小批CGR后备基线完成，补回1个场景并实际提起
+
+v2固定16场，8摆放空、8实拍和CGR。只用原首选有1/8可规划，原排序内最多试5项达到2/8，实际只调用7次候选臂规划。场0首选提起022约96.020mm，场9首选被固定段几何门拒绝，第2个候选提起058约98.642mm。两次均完成回位和原只读审核，按原功能规则合格，最大穿透1.850/2.856mm，原1mm诊断均false。另4个空池和2个全无规划场景保持null，不计抓取负例。小批验证了实际后备收益，未跑总体成功率估算，数据仅供评估。
+
+v2采集含审核819.840s，6260全局步/801280环境积分，含v1启动故障128000共929280。原1批审核通过，12521行native调用无漏计，50源及归档、5个进程组退出、6把锁和4预约释放核对通过，无录像/训练/后台任务。结果在`outputs/boya_mjx_cgr_fallback_20261119_v2/BASELINE_RESULTS.json`及`FINAL_REVIEW.json`，轻证据见`reproduction/boya/evidence/author_mjx_cgr_fallback_20261119_v1`。下文保留启动与恢复记录。
 
 首个物理根v1在1000个全局稳定控制步、128000环境积分及8次CGR后，调度代码因漏导入subprocess在Popen前停止，0规划进程、0抓取。所有三条隔离回执均为spawn_attempted=false；主机进程及锁核对后仅释放该批保留，原回执归档在`resource_failure_archive`，原source/协议、RGB-D及日志保留。新`resume_author_mjx_cgr_fallback.py`补上实际调度依赖，独立真实CPU子进程检查通过，0物理。新根`outputs/boya_mjx_cgr_fallback_20261119_v2`只绑定原16个布局，重新稳定并继续相同实验，最多8次抓取，不重抽布局或重试抓取。新的运行状态以v2的`PIPELINE_STARTED`、`collection/RUN_STARTED`及终态为准；成功回执会同时计入v1的128000已消耗积分。
 
