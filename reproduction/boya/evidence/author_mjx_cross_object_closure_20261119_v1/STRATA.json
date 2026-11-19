@@ -1,0 +1,30 @@
+{
+  "height_boundary_m": 0.05,
+  "source_settled_heights_m": {
+    "graspnet_007": 0.0812673419278475,
+    "graspnet_008": 0.05725961422378982,
+    "graspnet_009": 0.015385997850245796,
+    "graspnet_044": 0.06828853602595977,
+    "graspnet_048": 0.05045801726546397,
+    "graspnet_066": 0.043512841928869575,
+    "graspnet_069": 0.043427135826671834
+  },
+  "excluded_object_id": "graspnet_021",
+  "internal_groups": {
+    "below_50mm": [
+      "graspnet_009",
+      "graspnet_066",
+      "graspnet_069"
+    ],
+    "at_least_50mm": [
+      "graspnet_007",
+      "graspnet_008",
+      "graspnet_044",
+      "graspnet_048"
+    ]
+  },
+  "source_catalog": {
+    "path": "/mnt/public/datasets/AnyDexGrasp/boya_collection_20261114_v1/manual_start_20261116_v2/scene_queue/CATALOG.json",
+    "sha256": "9ec77459365e02720bebdbfbd048b1ea05d5ec0bc11c8100a050514a6f4ea133"
+  }
+}
