@@ -1,0 +1,124 @@
+{
+  "status": "pass",
+  "actual_arm_plans": 11,
+  "plans": [
+    {
+      "index": 0,
+      "status": "null_geometry",
+      "arm_plans": 2,
+      "initial_pool": 0,
+      "chosen_pool": 3,
+      "rank": null
+    },
+    {
+      "index": 1,
+      "status": "ready",
+      "arm_plans": 4,
+      "initial_pool": 5,
+      "chosen_pool": 5,
+      "rank": 3
+    },
+    {
+      "index": 2,
+      "status": "ready",
+      "arm_plans": 2,
+      "initial_pool": 3,
+      "chosen_pool": 3,
+      "rank": 1
+    },
+    {
+      "index": 3,
+      "status": "null_geometry",
+      "arm_plans": 1,
+      "initial_pool": 1,
+      "chosen_pool": 1,
+      "rank": null
+    },
+    {
+      "index": 4,
+      "status": "null_geometry",
+      "arm_plans": 1,
+      "initial_pool": 0,
+      "chosen_pool": 1,
+      "rank": null
+    },
+    {
+      "index": 5,
+      "status": "ready",
+      "arm_plans": 1,
+      "initial_pool": 4,
+      "chosen_pool": 4,
+      "rank": 0
+    },
+    {
+      "index": 6,
+      "status": "no_candidate",
+      "arm_plans": 0,
+      "initial_pool": 0,
+      "chosen_pool": 0,
+      "rank": null
+    },
+    {
+      "index": 7,
+      "status": "no_candidate",
+      "arm_plans": 0,
+      "initial_pool": 0,
+      "chosen_pool": 0,
+      "rank": null
+    }
+  ],
+  "load_loss_diagnostics": [
+    {
+      "index": 1,
+      "trigger": null,
+      "first_four_step_loss": null,
+      "bearing_by_phase": {},
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_01/contact_hold/TRACE.jsonl",
+        "sha256": "a1402ea5f18cbfb77c9cd17605a7df29a79d84f9e591c4b003eb9d81f1f28adc"
+      }
+    },
+    {
+      "index": 2,
+      "trigger": {
+        "step": 2449,
+        "objects": [
+          "graspnet_022"
+        ]
+      },
+      "first_four_step_loss": {
+        "confirmed_step": 3026,
+        "phase": "lift"
+      },
+      "bearing_by_phase": {
+        "close": 104,
+        "hold": 50,
+        "lift": 413
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_02/contact_hold/TRACE.jsonl",
+        "sha256": "3938e4c2d11ad48f217096e97d9cfb816aaa7ac296d5be0c4dacfffb08cea513"
+      }
+    },
+    {
+      "index": 5,
+      "trigger": {
+        "step": 1771,
+        "objects": [
+          "graspnet_044"
+        ]
+      },
+      "first_four_step_loss": null,
+      "bearing_by_phase": {
+        "close": 117,
+        "hold": 50,
+        "lift": 500
+      },
+      "trace": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_05/contact_hold/TRACE.jsonl",
+        "sha256": "c91da3c4c1e1ad79dc5d916ff0bb66f877b59def4201e539e63ed73820e42364"
+      }
+    }
+  ],
+  "additional_physics_steps": 0
+}

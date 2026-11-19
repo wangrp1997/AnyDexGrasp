@@ -1,0 +1,99 @@
+{
+  "status": "verified_complete",
+  "comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/COMPARISON_RESULTS.json",
+    "sha256": "6fb2ba741e31758c5e9ef48139be3eb4422363ccd54d91eedfccccd9602f9ca0"
+  },
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/PROTOCOL.json",
+    "sha256": "b85134e4f834deda673a510e4f070ce57ed419a8307c122481483c08e1835062"
+  },
+  "counts": {
+    "valid_pairs": 3,
+    "both_pass": 0,
+    "both_fail": 2,
+    "rescued": 1,
+    "regressed": 0,
+    "invalid_pairs": 0
+  },
+  "layout_statuses": {
+    "planning_null_geometry": 3,
+    "paired_execution": 3,
+    "planning_no_candidate": 2
+  },
+  "cases": [
+    {
+      "index": 1,
+      "split": "fit",
+      "draw": 3,
+      "paired_state": true,
+      "original_label": 0,
+      "recovery_label": 0,
+      "lifted_objects": {
+        "original": [],
+        "contact_hold": []
+      },
+      "static_hold_triggered": false,
+      "resumed_source_close_controls": 0,
+      "penetration_m": {
+        "original": 7.218302926048636e-05,
+        "contact_hold": 7.218406244646758e-05
+      }
+    },
+    {
+      "index": 2,
+      "split": "fit",
+      "draw": 4,
+      "paired_state": true,
+      "original_label": 0,
+      "recovery_label": 0,
+      "lifted_objects": {
+        "original": [],
+        "contact_hold": []
+      },
+      "static_hold_triggered": true,
+      "resumed_source_close_controls": 0,
+      "penetration_m": {
+        "original": 0.0027836626395583153,
+        "contact_hold": 0.0044655511155724525
+      }
+    },
+    {
+      "index": 5,
+      "split": "internal",
+      "draw": 10,
+      "paired_state": true,
+      "original_label": 0,
+      "recovery_label": 1,
+      "lifted_objects": {
+        "original": [],
+        "contact_hold": [
+          "graspnet_044"
+        ]
+      },
+      "static_hold_triggered": true,
+      "resumed_source_close_controls": 0,
+      "penetration_m": {
+        "original": 0.0025961275678128004,
+        "contact_hold": 0.0007188363815657794
+      }
+    }
+  ],
+  "lifted_objects": {
+    "original": [],
+    "contact_hold": [
+      "graspnet_044"
+    ]
+  },
+  "CGR_forwards": 8,
+  "native_environment_steps": 561920,
+  "unknown_native_environment_steps": 0,
+  "runtime_wall_s": 908.9141620618757,
+  "audit_wall_s": 112.98600699706003,
+  "exited_process_groups": 5,
+  "available_locks": 5,
+  "registry_released": true,
+  "video_recording": false,
+  "training_updates": 0,
+  "exclude_training": true
+}

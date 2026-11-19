@@ -1,0 +1,173 @@
+{
+  "status": "complete",
+  "counts": {
+    "valid_pairs": 3,
+    "both_pass": 0,
+    "both_fail": 2,
+    "rescued": 1,
+    "regressed": 0,
+    "invalid_pairs": 0
+  },
+  "cases": [
+    {
+      "index": 1,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "status": "grasp_failure",
+          "label": 0,
+          "trigger": null,
+          "resumed_source_close_controls": 0,
+          "lifts": [],
+          "strict_1mm_pass": true,
+          "penetration_m": 7.218302926048636e-05,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_01/original/TRACE.jsonl",
+            "sha256": "59b85fcead414d3c44bb94184521bf8f7a0c1066f13d2a0d2d2f90726fb1e51b"
+          }
+        },
+        "contact_hold": {
+          "status": "grasp_failure",
+          "label": 0,
+          "trigger": null,
+          "resumed_source_close_controls": 0,
+          "lifts": [],
+          "strict_1mm_pass": true,
+          "penetration_m": 7.218406244646758e-05,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_01/contact_hold/TRACE.jsonl",
+            "sha256": "a1402ea5f18cbfb77c9cd17605a7df29a79d84f9e591c4b003eb9d81f1f28adc"
+          }
+        }
+      },
+      "draw": 3,
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/scenes/02/cgr_attempts/rank_03/pipeline/pool/selected_author_candidate.json",
+        "sha256": "df8d7d2eb538e640b96641e2f3d3c84ab4af13b8decf9082ea7b3f1e60323782"
+      },
+      "original_lane": 2,
+      "contact_hold_lane": 3,
+      "source_gates_and_contact_loads_recomputed": true
+    },
+    {
+      "index": 2,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "status": "grasp_failure",
+          "label": 0,
+          "trigger": null,
+          "resumed_source_close_controls": 0,
+          "lifts": [],
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0027836626395583153,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_02/original/TRACE.jsonl",
+            "sha256": "2ed20562aa2daf35b2833825d4e5440b188d0c68dcc2335b3373fd7185035f19"
+          }
+        },
+        "contact_hold": {
+          "status": "grasp_failure",
+          "label": 0,
+          "trigger": {
+            "step": 2449,
+            "objects": [
+              "graspnet_022"
+            ]
+          },
+          "resumed_source_close_controls": 0,
+          "lifts": [],
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0044655511155724525,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_02/contact_hold/TRACE.jsonl",
+            "sha256": "3938e4c2d11ad48f217096e97d9cfb816aaa7ac296d5be0c4dacfffb08cea513"
+          }
+        }
+      },
+      "draw": 4,
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/scenes/04/cgr_attempts/rank_01/pipeline/pool/selected_author_candidate.json",
+        "sha256": "db0e99435684a48f3aff5205c5451e3700542b32c522b6da1d382322ac068218"
+      },
+      "original_lane": 4,
+      "contact_hold_lane": 5,
+      "source_gates_and_contact_loads_recomputed": true
+    },
+    {
+      "index": 5,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "status": "grasp_failure",
+          "label": 0,
+          "trigger": null,
+          "resumed_source_close_controls": 0,
+          "lifts": [],
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0025961275678128004,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_05/original/TRACE.jsonl",
+            "sha256": "ceadbf5aa02c52690f23f3acb2799890bf16c1cea189a187c4cf59642613f952"
+          }
+        },
+        "contact_hold": {
+          "status": "grasp_success",
+          "label": 1,
+          "trigger": {
+            "step": 1771,
+            "objects": [
+              "graspnet_044"
+            ]
+          },
+          "resumed_source_close_controls": 0,
+          "lifts": [
+            {
+              "object": "graspnet_044",
+              "rise_m": 0.0931229367852211
+            }
+          ],
+          "strict_1mm_pass": true,
+          "penetration_m": 0.0007188363815657794,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/case_05/contact_hold/TRACE.jsonl",
+            "sha256": "c91da3c4c1e1ad79dc5d916ff0bb66f877b59def4201e539e63ed73820e42364"
+          }
+        }
+      },
+      "draw": 10,
+      "candidate": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/scenes/10/cgr_attempts/rank_00/pipeline/pool/selected_author_candidate.json",
+        "sha256": "e7973fcc8ddec671e4f931cc83c35d33dcc09f7553f1739d72c8bc1e8744e329"
+      },
+      "original_lane": 11,
+      "contact_hold_lane": 10,
+      "source_gates_and_contact_loads_recomputed": true
+    }
+  ],
+  "layout_statuses": {
+    "planning_null_geometry": 3,
+    "paired_execution": 3,
+    "planning_no_candidate": 2
+  },
+  "CGR_forwards": 8,
+  "native_environment_steps": 561920,
+  "unknown_native_environment_steps": 0,
+  "runtime": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/RESULTS.json",
+    "sha256": "fd5c37fb2f3af922ddc9c0521e2dabeab26cc156db04a99718f4035e611af5d3"
+  },
+  "selection": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fresh_closure_recovery_20261120_v1/collection/SELECTION.json",
+    "sha256": "5722e37cd6ad9464c4d0f87aaf65e05b78111293b8acdcafee2b1e608b75528e"
+  },
+  "video_recording": false,
+  "training_updates": 0,
+  "exclude_training": true
+}
