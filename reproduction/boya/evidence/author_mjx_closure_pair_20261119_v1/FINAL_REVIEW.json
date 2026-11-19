@@ -1,0 +1,148 @@
+{
+  "status": "verified_complete",
+  "comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/COMPARISON_RESULTS.json",
+    "sha256": "fab79c94cb5cfecb344167aa72d1b7ad16650ad957d89be9538ba05d78427d97"
+  },
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/PROTOCOL.json",
+    "sha256": "16d41b45e74e1b482f9373d4f26190461666f4263c22a8d9a61d67f91ea65990"
+  },
+  "outcomes": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      3,
+      0,
+      1
+    ],
+    [
+      15,
+      1,
+      1
+    ]
+  ],
+  "counted_rescues": [
+    3
+  ],
+  "historical_failure_not_reproduced": [
+    15
+  ],
+  "native_environment_steps": 207040,
+  "unknown_native_environment_steps": 0,
+  "wall_s": 558.0019900321495,
+  "model_xml_exact_batches": 2,
+  "exited_process_groups": 2,
+  "registry_released": true,
+  "available_locks": 3,
+  "audited_executions": [
+    {
+      "status": "pass",
+      "executions": [
+        {
+          "scene": 0,
+          "mode": "original",
+          "steps": 2580,
+          "numerical_gates_exact": true,
+          "discrepancies": {
+            "source_extrema_m": 0.0,
+            "loads_n": 0.0
+          },
+          "preclose_object_position_max_deviation_from_historical_m": 2.546924609419696e-07,
+          "result": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/batch_0/case_00/original/RESULTS.json",
+            "sha256": "ce66410492f6b44ad2277ea06ac60aadd8763e6805b1a6f196360d74c15d9b83"
+          }
+        },
+        {
+          "scene": 0,
+          "mode": "contact_hold",
+          "steps": 2580,
+          "numerical_gates_exact": true,
+          "discrepancies": {
+            "source_extrema_m": 0.0,
+            "loads_n": 0.0
+          },
+          "preclose_object_position_max_deviation_from_historical_m": 3.7025431450901847e-07,
+          "result": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/batch_0/case_00/contact_hold/RESULTS.json",
+            "sha256": "8c45285adcec718689e32a20d64240645b45c0473e0a78877c24f297dc01e01b"
+          }
+        }
+      ],
+      "additional_physics_steps": 0
+    },
+    {
+      "status": "pass",
+      "executions": [
+        {
+          "scene": 3,
+          "mode": "original",
+          "steps": 3680,
+          "numerical_gates_exact": true,
+          "discrepancies": {
+            "source_extrema_m": 0.0,
+            "loads_n": 0.0
+          },
+          "preclose_object_position_max_deviation_from_historical_m": 3.245987724372032e-06,
+          "result": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/batch_1/case_03/original/RESULTS.json",
+            "sha256": "ec7335e372998de5ad246d747afa189d070bf02043e53e49543a5dae3d0b962f"
+          }
+        },
+        {
+          "scene": 3,
+          "mode": "contact_hold",
+          "steps": 3680,
+          "numerical_gates_exact": true,
+          "discrepancies": {
+            "source_extrema_m": 0.0,
+            "loads_n": 0.0
+          },
+          "preclose_object_position_max_deviation_from_historical_m": 4.210653041856563e-06,
+          "result": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/batch_1/case_03/contact_hold/RESULTS.json",
+            "sha256": "6a4c6310929789d3ddc62c010eb5c260dd9e36a65f1471cdb45833713960a45c"
+          }
+        },
+        {
+          "scene": 15,
+          "mode": "original",
+          "steps": 2837,
+          "numerical_gates_exact": true,
+          "discrepancies": {
+            "source_extrema_m": 0.0,
+            "loads_n": 0.0
+          },
+          "preclose_object_position_max_deviation_from_historical_m": 0.0004973006405434911,
+          "result": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/batch_1/case_15/original/RESULTS.json",
+            "sha256": "599649166454a993c5852e7b31f256abc0e157c28ceb7e8adc6e234ef798df3c"
+          }
+        },
+        {
+          "scene": 15,
+          "mode": "contact_hold",
+          "steps": 2837,
+          "numerical_gates_exact": true,
+          "discrepancies": {
+            "source_extrema_m": 0.0,
+            "loads_n": 0.0
+          },
+          "preclose_object_position_max_deviation_from_historical_m": 1.5545846647912236e-06,
+          "result": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_pair_20261119_v1/batch_1/case_15/contact_hold/RESULTS.json",
+            "sha256": "142c68ee8d3e32665f4b34e8e65fb9274773e2d097db6edbeb8549a6a88e969f"
+          }
+        }
+      ],
+      "additional_physics_steps": 0
+    }
+  ],
+  "video_recording": false,
+  "training_updates": 0,
+  "production_ready": false
+}
