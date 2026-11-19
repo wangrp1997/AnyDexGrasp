@@ -1,0 +1,71 @@
+{
+  "status": "verified_complete",
+  "comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/COMPARISON_RESULTS.json",
+    "sha256": "fa5f2b0dd3844d80d6551cc9b1236ccac2f7e2eaa1df43ac44917554ec9ac5b7"
+  },
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/PROTOCOL.json",
+    "sha256": "8e96ead297fd9da293208cb9b143e74c83de9c8d4ba7201c8727a006067e9643"
+  },
+  "strata": {
+    "below_50mm": {
+      "layout_status": {
+        "planning_no_candidate": 2,
+        "planning_null_geometry": 1,
+        "paired_execution": 1
+      },
+      "outcomes": {
+        "both_pass": 1
+      },
+      "held_lifts": [
+        "graspnet_066"
+      ],
+      "rescued_objects": [],
+      "cases": [
+        {
+          "index": 3,
+          "draw": 27,
+          "outcome": "both_pass",
+          "lifted_objects": {
+            "original": [
+              "graspnet_066"
+            ],
+            "contact_hold": [
+              "graspnet_066"
+            ]
+          }
+        }
+      ]
+    },
+    "at_least_50mm": {
+      "layout_status": {
+        "planning_null_geometry": 3,
+        "planning_no_candidate": 1
+      },
+      "outcomes": {},
+      "held_lifts": [],
+      "rescued_objects": [],
+      "cases": []
+    }
+  },
+  "distinct_rescued_objects": [],
+  "counts": {
+    "valid_pairs": 1,
+    "both_pass": 1,
+    "both_fail": 0,
+    "rescued": 0,
+    "regressed": 0,
+    "invalid_pairs": 0
+  },
+  "CGR_forwards": 8,
+  "native_environment_steps": 404224,
+  "runtime_wall_s": 303.9379466099199,
+  "audit_wall_s": 22.80005492386408,
+  "exited_process_groups": 5,
+  "available_locks": 5,
+  "registry_released": true,
+  "video_recording": false,
+  "training_updates": 0,
+  "exclude_training": true
+}

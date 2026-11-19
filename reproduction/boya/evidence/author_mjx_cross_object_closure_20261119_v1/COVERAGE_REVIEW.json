@@ -1,0 +1,209 @@
+{
+  "status": "complete",
+  "planner_diagnostics": {
+    "empty_candidate_layout": 3,
+    "local_ik_nonconvergence": 4,
+    "fixed_segment_geometry_rejection": 2
+  },
+  "actual_arm_plans": 7,
+  "layouts": [
+    {
+      "index": 0,
+      "draw": 0,
+      "stratum": "below_50mm",
+      "candidate_count": 0,
+      "primary_candidate_count": 0,
+      "status": "no_candidate",
+      "arm_plans": 0,
+      "failures": []
+    },
+    {
+      "index": 1,
+      "draw": 25,
+      "stratum": "below_50mm",
+      "candidate_count": 1,
+      "primary_candidate_count": 1,
+      "status": "null_geometry",
+      "arm_plans": 1,
+      "failures": [
+        {
+          "stage": "local_ik_nonconvergence",
+          "receipt": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/02/cgr_attempts/rank_00/pipeline/arm/native/admission_failure.json",
+            "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+          },
+          "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "draw": 26,
+      "stratum": "below_50mm",
+      "candidate_count": 0,
+      "primary_candidate_count": 0,
+      "status": "no_candidate",
+      "arm_plans": 0,
+      "failures": []
+    },
+    {
+      "index": 3,
+      "draw": 27,
+      "stratum": "below_50mm",
+      "candidate_count": 1,
+      "primary_candidate_count": 1,
+      "status": "ready",
+      "arm_plans": 1,
+      "failures": []
+    },
+    {
+      "index": 4,
+      "draw": 35,
+      "stratum": "at_least_50mm",
+      "candidate_count": 1,
+      "primary_candidate_count": 0,
+      "status": "null_geometry",
+      "arm_plans": 1,
+      "failures": [
+        {
+          "stage": "local_ik_nonconvergence",
+          "receipt": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/08/empty_rescue/cgr_attempts/rank_00/pipeline/arm/native/admission_failure.json",
+            "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+          },
+          "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "draw": 51,
+      "stratum": "at_least_50mm",
+      "candidate_count": 10,
+      "primary_candidate_count": 0,
+      "status": "null_geometry",
+      "arm_plans": 2,
+      "failures": [
+        {
+          "stage": "local_ik_nonconvergence",
+          "receipt": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/10/empty_rescue/cgr_attempts/rank_00/pipeline/arm/native/admission_failure.json",
+            "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+          },
+          "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "rank": 0
+        },
+        {
+          "stage": "local_ik_nonconvergence",
+          "receipt": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/10/empty_rescue/cgr_attempts/rank_01/pipeline/arm/native/admission_failure.json",
+            "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+          },
+          "reason": "Six-arm source bridge exhausted declared seeds; local nonconvergence is not proof of unreachable geometry",
+          "rank": 1
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "draw": 58,
+      "stratum": "at_least_50mm",
+      "candidate_count": 0,
+      "primary_candidate_count": 0,
+      "status": "no_candidate",
+      "arm_plans": 0,
+      "failures": []
+    },
+    {
+      "index": 7,
+      "draw": 62,
+      "stratum": "at_least_50mm",
+      "candidate_count": 2,
+      "primary_candidate_count": 2,
+      "status": "null_geometry",
+      "arm_plans": 2,
+      "failures": [
+        {
+          "stage": "fixed_segment_geometry_rejection",
+          "receipt": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/14/cgr_attempts/rank_00/pipeline/arm/native/admission_failure.json",
+            "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+          },
+          "reason": "Direct path rejected; no obstacle-replanning claim",
+          "rank": 0,
+          "geometry": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/14/cgr_attempts/rank_00/pipeline/home/rrt/fixed_segments_geometry.json",
+            "sha256": "66a024d1e5168a1ea2c2639fe0d76d9a43de78ca8ca4383400396836d9e56992"
+          },
+          "violation_count": 189,
+          "violation_phases": {
+            "approach": 189
+          }
+        },
+        {
+          "stage": "fixed_segment_geometry_rejection",
+          "receipt": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/14/cgr_attempts/rank_01/pipeline/arm/native/admission_failure.json",
+            "sha256": "1c628a445542cb45d38eedefa8ea1ad03b4be6cd299cd2afb49537bc7009aa07"
+          },
+          "reason": "Direct path rejected; no obstacle-replanning claim",
+          "rank": 1,
+          "geometry": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cross_object_closure_20261119_v1/collection/scenes/14/cgr_attempts/rank_01/pipeline/home/rrt/fixed_segments_geometry.json",
+            "sha256": "51b799f83e901ec77c067428218c76e2acc1bbc756ffec5014a5a5c7971c6133"
+          },
+          "violation_count": 14716,
+          "violation_phases": {
+            "home_to_pregrasp": 29,
+            "approach": 14687
+          }
+        }
+      ]
+    }
+  ],
+  "archived_tall_object_positive_controls": {
+    "graspnet_044": {
+      "record": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/formal/records/049.json",
+        "sha256": "233cc3be0df57ef6ca453c883d0c1635ff1c91c091e0d454521902db883e1c08"
+      },
+      "commands": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/49/live/native/commands.npz",
+        "sha256": "13965ad4b98184da76b2a8bb91af1a79962f1332cb503cee39308596926df2e5"
+      },
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/49/capture/observed_scene.json",
+        "sha256": "880aa1483d5d8ff11366e408e07cddf6284b4345c794a1a07f45d4a159bc76bf"
+      },
+      "execution": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/49/execution/RESULTS.json",
+        "sha256": "c31468f880f965d86de80918b6596e3117b106057dde74fa2c8c244fe9b16778"
+      },
+      "source_lift_m": 0.10292216017842293,
+      "original_1mm_gate": false
+    },
+    "graspnet_007": {
+      "record": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/formal/records/309.json",
+        "sha256": "51ecd06dd25944f3767a22610fc8e88114f9c6dc17d9ef79c96d082d731560f2"
+      },
+      "commands": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/309/live/native/commands.npz",
+        "sha256": "081756c7b4d6d2a8d22bb23342f5302aa4f3d890141429cbd5cb6332b698a832"
+      },
+      "scene": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/309/capture/observed_scene.json",
+        "sha256": "ac96c7f291c2583c827eb598ebfd70b2b220dbd155283a59a3ce84d4699b177c"
+      },
+      "execution": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/309/execution/RESULTS.json",
+        "sha256": "7621f695adf75bf16dd11776639c1f7667d395d295868b4dc02880bf3845afb7"
+      },
+      "source_lift_m": 0.1017412506043911,
+      "original_1mm_gate": false
+    }
+  },
+  "additional_physics_steps": 0
+}
