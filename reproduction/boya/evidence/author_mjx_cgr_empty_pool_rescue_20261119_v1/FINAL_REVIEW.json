@@ -1,0 +1,88 @@
+{
+  "status": "verified_complete",
+  "result": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_empty_pool_rescue_20261119_v1/RESCUE_RESULTS.json",
+    "sha256": "79724e28e2ca17914624a0b891b2802b13684121e808aefaa3e69b7281aa2dba"
+  },
+  "finish": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_empty_pool_rescue_20261119_v1/PIPELINE_FINISHED.json",
+    "sha256": "7c84567b4444315cdfd5394bad8e058ab656c037b96787c5a1cf7aeb27e3414b"
+  },
+  "totals": {
+    "primary_empty": 4,
+    "primary_ready": 3,
+    "primary_lifted": 0,
+    "rescue_nonempty": 4,
+    "rescue_ready": 0,
+    "rescue_lifted": 0,
+    "arm_plans": 13
+  },
+  "statuses": {
+    "placement_null": 8,
+    "grasp_failure": 3,
+    "planning_null_geometry": 5
+  },
+  "drawn_scenes": 16,
+  "observed_scenes": 8,
+  "control_ticks": 8460,
+  "native_call_records": 16921,
+  "native_environment_integrations": 1082880,
+  "unknown_native_steps": 0,
+  "trials": [
+    {
+      "index": 3,
+      "mode": "original_cgr",
+      "candidate_rank": 1,
+      "raw_candidate_row": 624,
+      "raw_depth_m": 0.029999999329447746,
+      "extra_depth_m": 0.0,
+      "status": "grasp_failure",
+      "label": 0,
+      "lifts": [],
+      "penetration_max_m": 0.0017105631995946169,
+      "strict_1mm_diagnostic": false,
+      "execution_steps": 3680,
+      "return_steps": 3780
+    },
+    {
+      "index": 14,
+      "mode": "original_cgr",
+      "candidate_rank": 0,
+      "raw_candidate_row": 1061,
+      "raw_depth_m": 0.029999999329447746,
+      "extra_depth_m": 0.0,
+      "status": "grasp_failure",
+      "label": 0,
+      "lifts": [],
+      "penetration_max_m": 0.0023143819998949766,
+      "strict_1mm_diagnostic": false,
+      "execution_steps": 3190,
+      "return_steps": 3290
+    },
+    {
+      "index": 15,
+      "mode": "original_cgr",
+      "candidate_rank": 0,
+      "raw_candidate_row": 783,
+      "raw_depth_m": 0.029999999329447746,
+      "extra_depth_m": 0.0,
+      "status": "grasp_failure",
+      "label": 0,
+      "lifts": [],
+      "penetration_max_m": 0.002666227053850889,
+      "strict_1mm_diagnostic": false,
+      "execution_steps": 2837,
+      "return_steps": 2937
+    }
+  ],
+  "sources_verified": 52,
+  "exited_process_groups": 5,
+  "released_resource_slots": 4,
+  "available_locks": 6,
+  "registry_released": true,
+  "controller_wall_s": 876.3723907009698,
+  "stage_wall_s": 884.7160552758723,
+  "video_recording": false,
+  "training_updates": 0,
+  "additional_physics_steps": 0
+}
