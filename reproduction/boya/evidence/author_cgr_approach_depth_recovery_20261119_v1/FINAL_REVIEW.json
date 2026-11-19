@@ -1,0 +1,199 @@
+{
+  "status": "verified_offline",
+  "baseline": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_fallback_20261119_v2/BASELINE_RESULTS.json",
+    "sha256": "b405274e94ff37442fb0dc1328bf0522de3335c7d562d8ae9003f19928d61024"
+  },
+  "frozen_empty_scenes": 4,
+  "original_baseline_controls": 2,
+  "original_collision_gate_unchanged": true,
+  "counts": [
+    {
+      "scene": 0,
+      "original": 2,
+      "preserving_approach_and_zero_extra": null,
+      "any_variant_has_candidate": false
+    },
+    {
+      "scene": 4,
+      "original": 0,
+      "preserving_approach_and_zero_extra": 1,
+      "any_variant_has_candidate": true
+    },
+    {
+      "scene": 7,
+      "original": 0,
+      "preserving_approach_and_zero_extra": 8,
+      "any_variant_has_candidate": true
+    },
+    {
+      "scene": 8,
+      "original": 0,
+      "preserving_approach_and_zero_extra": 0,
+      "any_variant_has_candidate": false
+    },
+    {
+      "scene": 9,
+      "original": 12,
+      "preserving_approach_and_zero_extra": null,
+      "any_variant_has_candidate": false
+    },
+    {
+      "scene": 14,
+      "original": 0,
+      "preserving_approach_and_zero_extra": 3,
+      "any_variant_has_candidate": true
+    }
+  ],
+  "full_arm_planning_attempts": 6,
+  "plan_ready_count": 3,
+  "plan_ready_scenes": [
+    7,
+    14
+  ],
+  "arm_attempts": [
+    {
+      "scene": 4,
+      "choice": {
+        "source_row": 1777,
+        "source_local_index": 1,
+        "score": 0.3053024709224701,
+        "extra_depth_m": 0.0,
+        "orientation": "unflipped",
+        "slot": "g1:preclose_r1777:rf",
+        "approach_world": [
+          0.2466955929994583,
+          0.21895848513359065,
+          -0.9440330622788047
+        ]
+      },
+      "status": "null_geometry",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/arm_04/scene_04_candidate_0/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "8d7ed6667a825033875429d6c995e988193d4ed0ff81f0ac2ed04393a476395a"
+      }
+    },
+    {
+      "scene": 4,
+      "choice": {
+        "source_row": 1981,
+        "source_local_index": 9,
+        "score": 0.1862151175737381,
+        "extra_depth_m": 0.0,
+        "orientation": "preserve_approach",
+        "slot": "g1:preclose_r1981:ff",
+        "approach_world": [
+          0.07559296488761902,
+          0.30658873097991773,
+          -0.9488356116888009
+        ]
+      },
+      "status": "null_geometry",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/arm_04/scene_04_candidate_1/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "74499f68dd79837bb2e358dd0370bb3679927e3be87990d54c1f621baf679995"
+      }
+    },
+    {
+      "scene": 7,
+      "choice": {
+        "source_row": 1716,
+        "source_local_index": 1,
+        "score": 0.7120153903961182,
+        "extra_depth_m": 0.0,
+        "orientation": "preserve_approach",
+        "slot": "g1:preclose_r1716:rf",
+        "approach_world": [
+          0.07559296488761902,
+          0.30658873097991773,
+          -0.9488356116888009
+        ]
+      },
+      "status": "ready",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/arm_07/scene_07_candidate_0/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "3f433d4d5ee7235a2bb03b872e51d96e5057ebdb6a824e2d327d962ff2b2d867"
+      }
+    },
+    {
+      "scene": 7,
+      "choice": {
+        "source_row": 282,
+        "source_local_index": 2,
+        "score": 0.6787806153297424,
+        "extra_depth_m": 0.0,
+        "orientation": "preserve_approach",
+        "slot": "g1:preclose_r282:lf",
+        "approach_world": [
+          -0.1149248331785202,
+          0.21741923025342222,
+          -0.9692890159449702
+        ]
+      },
+      "status": "ready",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/arm_07/scene_07_candidate_1/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "6742bb27742a39bc94b9d51d181b91710cead5fa687b85bb3df1a4c714f1623d"
+      }
+    },
+    {
+      "scene": 14,
+      "choice": {
+        "source_row": 1731,
+        "source_local_index": 1,
+        "score": 0.700681746006012,
+        "extra_depth_m": 0.0,
+        "orientation": "preserve_approach",
+        "slot": "g1:preclose_r1731:rf",
+        "approach_world": [
+          0.07559296488761902,
+          0.30658873097991773,
+          -0.9488356116888009
+        ]
+      },
+      "status": "ready",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/arm_14/scene_14_candidate_0/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "7a0616600581ccbebcedc82edda9d3415b8695ecc0a50aabf6c9edae69073df0"
+      }
+    },
+    {
+      "scene": 14,
+      "choice": {
+        "source_row": 311,
+        "source_local_index": 2,
+        "score": 0.6677927374839783,
+        "extra_depth_m": 0.0,
+        "orientation": "preserve_approach",
+        "slot": "g1:preclose_r311:ff",
+        "approach_world": [
+          0.07559296488761902,
+          0.30658873097991773,
+          -0.9488356116888009
+        ]
+      },
+      "status": "null_geometry",
+      "plan": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/arm_14/scene_14_candidate_1/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+        "sha256": "1d3217c0c6c6e4a8d88b4ca65285814d7868f95dc357801fa17823f3142c0919"
+      }
+    }
+  ],
+  "bind_check": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/LIVE_BINDING_CHECK.json",
+    "sha256": "c44a232c03b4107a24e25cddc3cf1d03c3d8e42302e5a32ed0eae28d21be6b86"
+  },
+  "strict_offline_only": true,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "video_recording": false,
+  "training_updates": 0,
+  "saved_output_scene08": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/stage3_scene08_v3/SUMMARY.json",
+    "sha256": "fdaabb9ced25609aec30c4e2ce0c3edd3b43932422fc65991826b2b999385cb4"
+  },
+  "detail": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_cgr_approach_depth_recovery_20261119_v1/RESULTS.json",
+    "sha256": "f2e495ea7c3ebe332ff4bd5e90d61f51ead26afe15a0c82dc1b0fcbe4d6f085b"
+  }
+}
