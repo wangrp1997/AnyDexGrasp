@@ -1,0 +1,262 @@
+{
+  "status": "offline_coverage_complete",
+  "source_comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/COMPARISON_RESULTS.json",
+    "sha256": "74c05dbfbb27d8d4f15bc7bac2beafebc47a9a96fec6190ad5b70e2258f436cc"
+  },
+  "source_plane_probe": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/TARGET_FLOOR_DEPTH_DIAGNOSIS.json",
+    "sha256": "21174a63700de090f605710670284cdbb99ab76d9781638bff7c2232a540b510"
+  },
+  "source_plan_scripts": {
+    "recheck_shared_pool.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/recheck_shared_pool.py",
+      "sha256": "e3b345ba5d989ebfea49a8ab9abe9fff8f09e96c66742ab6abc007ad0607643b"
+    },
+    "target_floor_depth_probe.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/target_floor_depth_probe.py",
+      "sha256": "a31f32447248afe73d0987d53cd17f86f04f537e268e04487472bd36934ada2a"
+    }
+  },
+  "candidate_pools": [
+    {
+      "pair": "002",
+      "candidates": 2,
+      "plan_ready_ranks": [
+        1
+      ],
+      "cgr_first_plan_ready": false,
+      "head_first_plan_ready": true,
+      "plans": [
+        {
+          "pair": "002",
+          "rank": 1,
+          "status": "ready",
+          "candidate_sha256": "51425454dfa75d61a95144951a1ebe9b3feb474e5313a2b6494add2cd540a76b",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/04/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "6fe5030dd365fba88913b254227eaad6776d31ae6fa061d0b9e1eba783fde92b"
+          },
+          "reused": true
+        },
+        {
+          "pair": "002",
+          "rank": 0,
+          "status": "null_geometry",
+          "candidate_sha256": "641c9263a5bd74d3402cc198f07ee518db1bb8da8bcf5b6c7446ae5876dbca83",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/05/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "2c21f3da34d1cfa77699f69fcaeb4cc7a3b7b45ec3d5becebedd4b405540847b"
+          },
+          "reused": true
+        }
+      ]
+    },
+    {
+      "pair": "014",
+      "candidates": 6,
+      "plan_ready_ranks": [
+        4
+      ],
+      "cgr_first_plan_ready": false,
+      "head_first_plan_ready": false,
+      "plans": [
+        {
+          "pair": "014",
+          "rank": 5,
+          "candidate_sha256": "fbdead88954611a38bd8819a464aa9666c5981febb7ad5e2241177c18c1dcab1",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/28/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "bfd556b96ad93c805c1933f78b3a28b7d538b37a58461063a287d5fff98ee70a"
+          },
+          "reused": true
+        },
+        {
+          "pair": "014",
+          "rank": 0,
+          "candidate_sha256": "b1b084acdefd328ace3ee2f9af26f55892169becf944cb8fe2a2ca79efe5834a",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/29/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "0008d10b8043eaf3f7eb8a71862cb6e497f0a101bdfd3f3dde84dc490cf0369f"
+          },
+          "reused": true
+        },
+        {
+          "pair": "014",
+          "rank": 1,
+          "candidate_sha256": "140173693354b0a2833fa6c9d5d654b45ae1ec9af1f6320ae9a5fbd499bfe159",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_014/014_rank01/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "017a2c5b9174c12f6c450cf32aa763322c6d692986dd440015ad6cf99726a535"
+          },
+          "reused": false
+        },
+        {
+          "pair": "014",
+          "rank": 2,
+          "candidate_sha256": "70c9a4a8642ff1855a91240aaed670ca5f7699cd21bb2df65f595f43796a0127",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_014/014_rank02/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "379dc64fd3427e4a123f7daea4536c908806c1f6dc61b30a96449060a45752ed"
+          },
+          "reused": false
+        },
+        {
+          "pair": "014",
+          "rank": 3,
+          "candidate_sha256": "75f7347b41b7afe47ba0ddf6821b6cef70ab6db237b006e9fe3187ba4954000e",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_014/014_rank03/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "fad0893e42309b803db5bd52f2d17a6f99632088fea13f71007ecd2dbdbf1cf5"
+          },
+          "reused": false
+        },
+        {
+          "pair": "014",
+          "rank": 4,
+          "candidate_sha256": "3a0de61e7da07dfb11dc51d8a6d80398c5125aa48b7d4865cee6a20ee3c84999",
+          "status": "ready",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_014/014_rank04/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "0a741d820b8c17a4b7546c1aa7c89f1243f890ec448b0dcb0651d3867371a430"
+          },
+          "reused": false
+        }
+      ]
+    },
+    {
+      "pair": "024",
+      "candidates": 2,
+      "plan_ready_ranks": [
+        0
+      ],
+      "cgr_first_plan_ready": true,
+      "head_first_plan_ready": false,
+      "plans": [
+        {
+          "pair": "024",
+          "rank": 1,
+          "status": "null_geometry",
+          "candidate_sha256": "55eaffd0af3d76e628d15b82d3b1ea4380b987c8a94a90a3e0023d680d6916b6",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/48/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "3f00de95bf028b86f69288d72d88ac307fc6e69eb6630174a1f16e753ffec6d0"
+          },
+          "reused": true
+        },
+        {
+          "pair": "024",
+          "rank": 0,
+          "status": "ready",
+          "candidate_sha256": "7afe33d4dfe82cba96f1a4a0bacac5f5f252939cd2bd50c478621ab52f8c75da",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/49/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "4d6add3d8d344015bc7e0e762aeab576b96fb33ef4df0bbc343d4e36a7b990b6"
+          },
+          "reused": true
+        }
+      ]
+    },
+    {
+      "pair": "026",
+      "candidates": 3,
+      "plan_ready_ranks": [
+        2
+      ],
+      "cgr_first_plan_ready": false,
+      "head_first_plan_ready": false,
+      "plans": [
+        {
+          "pair": "026",
+          "rank": 0,
+          "candidate_sha256": "442e14a02a152f2bde4d0125efd89e636384427f7c4db907f9a456ae5578c849",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_026/026_rank00/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "70d34e8bbf6f191a7b1413113837eefa917289df0b8e52d007358e74d89d12d2"
+          },
+          "reused": false
+        },
+        {
+          "pair": "026",
+          "rank": 1,
+          "candidate_sha256": "c3c7c27d0b276cfa3901c1b05b80ea1227d94733af8de205920ffc6753264753",
+          "status": "null_geometry",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_026/026_rank01/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "d886de8dfad51aaad6e3724b3839f7a393c4984b9cdd8978983d9c9a38edb385"
+          },
+          "reused": false
+        },
+        {
+          "pair": "026",
+          "rank": 2,
+          "candidate_sha256": "73b05a646f2fc8be2cdb834fb7519a4969fa7b233e5ef838a55b673e2c212a3c",
+          "status": "ready",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pool_coverage_20261119_v1/additional_026/026_rank02/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "97d0ed94b494c02ae0955b9bc33ed24678153f04fa45b5289baf49320601f9da"
+          },
+          "reused": false
+        }
+      ]
+    },
+    {
+      "pair": "030",
+      "candidates": 2,
+      "plan_ready_ranks": [],
+      "cgr_first_plan_ready": false,
+      "head_first_plan_ready": false,
+      "plans": [
+        {
+          "pair": "030",
+          "rank": 1,
+          "status": "null_geometry",
+          "candidate_sha256": "d9a47d8a6fa652d035044d74118dfb632dbb2265cee3bb61a616083d325d31ca",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/60/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "0ecae5be5e370020a8afb2d0e9b290f0d1f6796829784267892f455803eee900"
+          },
+          "reused": true
+        },
+        {
+          "pair": "030",
+          "rank": 0,
+          "status": "null_geometry",
+          "candidate_sha256": "16b6d750ec3841ccc2ebcf643c79ae71a485ce4085b1e2a23cb18100e58cd2a2",
+          "plan": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/61/contact/pipeline/LIFT_PIPELINE_RESULTS.json",
+            "sha256": "a9a206d31308e3cfe7e265e103c26a7ce0f7c8ede342a699bff32a444fba1f84"
+          },
+          "reused": true
+        }
+      ]
+    }
+  ],
+  "total_post_collision_candidates": 15,
+  "new_offline_plans": 7,
+  "old_plans_reused": 8,
+  "first_cgr_plan_ready": 1,
+  "first_head_plan_ready": 1,
+  "any_plan_ready": 4,
+  "multiple_plan_ready": 0,
+  "plane": {
+    "scenes": 5,
+    "branches": 549,
+    "before_depth_below_1mm": 442,
+    "raw_depth_only_below_1mm": 542,
+    "full_depth_below_1mm": 547,
+    "outside_1mm_band_alone_exceeds_threshold": 480,
+    "scope": "Sampled open-hand surface at proposed endpoint on the first five empty scenes. No dynamic contact measurements."
+  },
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_grasp_labels": 0,
+  "training_updates": 0,
+  "video_recording": false
+}
