@@ -1,0 +1,193 @@
+{
+  "status": "verified_complete",
+  "paired_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/PAIR_REVIEW.json",
+    "sha256": "31be19b542c218965a5d6d0fdc808983dd2ff55435456c74cd4eba9b5219ddfa"
+  },
+  "policy": {
+    "loss_threshold_n": 0.5,
+    "loss_controls": 4,
+    "only_during_close": true,
+    "max_resumptions": 1,
+    "source_close_rows_per_control": 1,
+    "keep_last_position_at_hold_and_lift": true
+  },
+  "cases": [
+    {
+      "target": "graspnet_007",
+      "original": {
+        "status": "grasp_success",
+        "label": 1,
+        "trigger": null,
+        "resumed_source_close_controls": 0,
+        "target_lifted": true,
+        "target_rise_m": 0.10173919796943665,
+        "loaded_lift_s": 1.608,
+        "lifts": [
+          {
+            "object": "graspnet_007",
+            "rise_m": 0.10173919796943665
+          }
+        ],
+        "strict_1mm_pass": false,
+        "penetration_m": 0.0012213644804432988,
+        "arm_wrist_velocity_and_time_exact": true,
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_00/original/TRACE.jsonl",
+          "sha256": "08b25ddf9b72fb0ffe07d0d4345ebbe93b3d8e5d7e258ee6415956fbd3785d53"
+        }
+      },
+      "earlier_static_hold": {
+        "outcome": "grasp_failure",
+        "label": 0,
+        "trigger": {
+          "step": 2571,
+          "objects": [
+            "graspnet_007"
+          ]
+        },
+        "strict_1mm_pass": false,
+        "penetration_m": 0.0018769341986626387,
+        "steps": 3276,
+        "stop": null,
+        "sustained_load_controls": {
+          "close": 14,
+          "hold": 0,
+          "lift": 0
+        },
+        "lifts": [],
+        "exact_arm_wrist_velocity_and_phase": true,
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_00/contact_hold/TRACE.jsonl",
+          "sha256": "ad99adf7177497d8c8555c0dc0fdb7f5536f56ba027ca36b94342b023c7e6407"
+        },
+        "target_lifted": false
+      },
+      "recovering_hold": {
+        "status": "grasp_success",
+        "label": 1,
+        "trigger": {
+          "step": 2570,
+          "objects": [
+            "graspnet_007"
+          ],
+          "resume_after_step": 2583
+        },
+        "resumed_source_close_controls": 143,
+        "target_lifted": true,
+        "target_rise_m": 0.10193723067641258,
+        "loaded_lift_s": 1.616,
+        "lifts": [
+          {
+            "object": "graspnet_007",
+            "rise_m": 0.10193723067641258
+          }
+        ],
+        "strict_1mm_pass": false,
+        "penetration_m": 0.0011793975718319416,
+        "arm_wrist_velocity_and_time_exact": true,
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_00/contact_hold/TRACE.jsonl",
+          "sha256": "f302982a883bdc38e624ad20e8e9b77fb7486988aafe13e639d651f0b2883c08"
+        }
+      },
+      "preclose_state_equality_verified": true,
+      "confirmed_recovery": true
+    },
+    {
+      "target": "graspnet_044",
+      "original": {
+        "status": "grasp_success",
+        "label": 1,
+        "trigger": null,
+        "resumed_source_close_controls": 0,
+        "target_lifted": true,
+        "target_rise_m": 0.10289150476455688,
+        "loaded_lift_s": 1.676,
+        "lifts": [
+          {
+            "object": "graspnet_044",
+            "rise_m": 0.10289150476455688
+          }
+        ],
+        "strict_1mm_pass": false,
+        "penetration_m": 0.0028700882103294134,
+        "arm_wrist_velocity_and_time_exact": true,
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_01/original/TRACE.jsonl",
+          "sha256": "c62fad7f2cd69d02dab0720e40b38215a9fff9603d53512b841e80c4d21d8c0c"
+        }
+      },
+      "earlier_static_hold": {
+        "outcome": "grasp_success",
+        "label": 1,
+        "trigger": {
+          "step": 3171,
+          "objects": [
+            "graspnet_044"
+          ]
+        },
+        "strict_1mm_pass": true,
+        "penetration_m": 0.0008869744488038123,
+        "steps": 3838,
+        "stop": null,
+        "sustained_load_controls": {
+          "close": 125,
+          "hold": 50,
+          "lift": 500
+        },
+        "lifts": [
+          {
+            "object": "graspnet_044",
+            "rise_m": 0.09653162583708763,
+            "loaded_lift_s": 1.556
+          }
+        ],
+        "exact_arm_wrist_velocity_and_phase": true,
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_tall_closure_replay_20261119_v1/case_01/contact_hold/TRACE.jsonl",
+          "sha256": "d96c646d181f7e3c48cd1bbce51d470a53cd2a162d1107ebc6f8ae806285c4d4"
+        },
+        "target_lifted": true
+      },
+      "recovering_hold": {
+        "status": "grasp_success",
+        "label": 1,
+        "trigger": {
+          "step": 3171,
+          "objects": [
+            "graspnet_044"
+          ]
+        },
+        "resumed_source_close_controls": 0,
+        "target_lifted": true,
+        "target_rise_m": 0.09652608260512352,
+        "loaded_lift_s": 1.556,
+        "lifts": [
+          {
+            "object": "graspnet_044",
+            "rise_m": 0.09652608260512352
+          }
+        ],
+        "strict_1mm_pass": true,
+        "penetration_m": 0.0008870727615430951,
+        "arm_wrist_velocity_and_time_exact": true,
+        "trace": {
+          "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_01/contact_hold/TRACE.jsonl",
+          "sha256": "26134815fc19df1a83a05948ed44b15ba62516090f380b1efd92030202698727"
+        }
+      },
+      "preclose_state_equality_verified": true,
+      "confirmed_recovery": false
+    }
+  ],
+  "original_pose_restore": "Saved capture qpos/qvel/ctrl in reduced object bank, native clock rebased and solver warmstart initialized zero",
+  "native_environment_steps": 122816,
+  "unknown_native_steps": 0,
+  "runtime_wall_s": 161.42083877697587,
+  "audit_wall_s": 62.01690072985366,
+  "exited_process_groups": 2,
+  "video_recording": false,
+  "training_updates": 0,
+  "exclude_training": true
+}

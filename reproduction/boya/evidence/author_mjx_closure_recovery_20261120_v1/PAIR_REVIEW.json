@@ -1,0 +1,131 @@
+{
+  "status": "verified_complete",
+  "cases": [
+    {
+      "index": 0,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "status": "grasp_success",
+          "label": 1,
+          "trigger": null,
+          "resumed_source_close_controls": 0,
+          "target_lifted": true,
+          "target_rise_m": 0.10173919796943665,
+          "loaded_lift_s": 1.608,
+          "lifts": [
+            {
+              "object": "graspnet_007",
+              "rise_m": 0.10173919796943665
+            }
+          ],
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0012213644804432988,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_00/original/TRACE.jsonl",
+            "sha256": "08b25ddf9b72fb0ffe07d0d4345ebbe93b3d8e5d7e258ee6415956fbd3785d53"
+          }
+        },
+        "contact_hold": {
+          "status": "grasp_success",
+          "label": 1,
+          "trigger": {
+            "step": 2570,
+            "objects": [
+              "graspnet_007"
+            ],
+            "resume_after_step": 2583
+          },
+          "resumed_source_close_controls": 143,
+          "target_lifted": true,
+          "target_rise_m": 0.10193723067641258,
+          "loaded_lift_s": 1.616,
+          "lifts": [
+            {
+              "object": "graspnet_007",
+              "rise_m": 0.10193723067641258
+            }
+          ],
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0011793975718319416,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_00/contact_hold/TRACE.jsonl",
+            "sha256": "f302982a883bdc38e624ad20e8e9b77fb7486988aafe13e639d651f0b2883c08"
+          }
+        }
+      },
+      "target": "graspnet_007",
+      "historical_rise_m": 0.1017412506043911,
+      "original_target_reproduced": true,
+      "source_numerics_recomputed": true
+    },
+    {
+      "index": 1,
+      "preclose_state_equality_verified": true,
+      "branches": {
+        "original": {
+          "status": "grasp_success",
+          "label": 1,
+          "trigger": null,
+          "resumed_source_close_controls": 0,
+          "target_lifted": true,
+          "target_rise_m": 0.10289150476455688,
+          "loaded_lift_s": 1.676,
+          "lifts": [
+            {
+              "object": "graspnet_044",
+              "rise_m": 0.10289150476455688
+            }
+          ],
+          "strict_1mm_pass": false,
+          "penetration_m": 0.0028700882103294134,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_01/original/TRACE.jsonl",
+            "sha256": "c62fad7f2cd69d02dab0720e40b38215a9fff9603d53512b841e80c4d21d8c0c"
+          }
+        },
+        "contact_hold": {
+          "status": "grasp_success",
+          "label": 1,
+          "trigger": {
+            "step": 3171,
+            "objects": [
+              "graspnet_044"
+            ]
+          },
+          "resumed_source_close_controls": 0,
+          "target_lifted": true,
+          "target_rise_m": 0.09652608260512352,
+          "loaded_lift_s": 1.556,
+          "lifts": [
+            {
+              "object": "graspnet_044",
+              "rise_m": 0.09652608260512352
+            }
+          ],
+          "strict_1mm_pass": true,
+          "penetration_m": 0.0008870727615430951,
+          "arm_wrist_velocity_and_time_exact": true,
+          "trace": {
+            "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_closure_recovery_20261120_v1/case_01/contact_hold/TRACE.jsonl",
+            "sha256": "26134815fc19df1a83a05948ed44b15ba62516090f380b1efd92030202698727"
+          }
+        }
+      },
+      "target": "graspnet_044",
+      "historical_rise_m": 0.10292216017842293,
+      "original_target_reproduced": true,
+      "source_numerics_recomputed": true
+    }
+  ],
+  "native_environment_steps": 122816,
+  "unknown_native_steps": 0,
+  "restore_scope": "Saved capture qpos/qvel/ctrl in reduced object bank, native clock rebased and solver warmstart initialized zero",
+  "no_new_planning": true,
+  "video_recording": false,
+  "training_updates": 0,
+  "exclude_training": true
+}
