@@ -1,0 +1,193 @@
+{
+  "schema": "anydex_mjx_author_g1_fit100_v1",
+  "manifest": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/merged/MANIFEST.json",
+    "sha256": "6da10c8b75a6118d5cb761ea201915352372357d5b4252bcf0d2f1a0060ad8cd"
+  },
+  "dataset": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/merged/gesture_1.npz",
+    "sha256": "bf483751970ef80b6cda5757f52b5693dc357e733991230477f5a1ab80608a8c"
+  },
+  "sources": {
+    "run_author_mjx_fit100.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_author_mjx_fit100.py",
+      "sha256": "bf407a5d51f99e6787e3eb6eadc96a1dac68db0a093ed338f8a3b44ded65cff4"
+    },
+    "author_training.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_training.py",
+      "sha256": "f269d57cb5d20aa135cd9dba1a9c12c148e1b837fd55d297784080b2724bfd00"
+    },
+    "author_protocol.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_protocol.py",
+      "sha256": "05afd8f176b41f89c56d8e6130ad887c6e75a059ef9c5b0d453ca4f7c1da54fa"
+    },
+    "collect_allegro_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_allegro_grasp_data.py",
+      "sha256": "d833b95ab50afcd9924ca6e97b21e6b7f65aa304f9a808599c0cdf48c98b7bbb"
+    },
+    "collect_dh3_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+      "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb"
+    },
+    "utils/collision_detector.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+      "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1"
+    },
+    "train_multifinger.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py",
+      "sha256": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf"
+    },
+    "dataset/multifinger_hand.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/dataset/multifinger_hand.py",
+      "sha256": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e"
+    },
+    "models/minkowski_graspnet.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet.py",
+      "sha256": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d"
+    },
+    "models/loss.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/loss.py",
+      "sha256": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8"
+    },
+    "models/minkowski_graspnet_single_point.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+      "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26"
+    },
+    "utils/solvers.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/utils/solvers.py",
+      "sha256": "a9f2b274f438a1a29c1ae17c22a1f553dbe978354ba7143222a653e17a38f713"
+    }
+  },
+  "seed": 2026111903,
+  "sample_cap": 100,
+  "gesture_id": 1,
+  "device": "cpu",
+  "cpu_threads": 1,
+  "available_fit_records": 101,
+  "selected_fit_trial_ids": [
+    "s40_lift_fit_00002_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00011_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00012_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00028_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00034_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00040_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00041_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00044_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00045_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00050_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00053_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00062_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00067_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00071_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00074_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00077_s2026111802:g1:mjx:7f36ddacdb3e",
+    "s40_lift_fit_00001_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00003_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00007_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00010_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00020_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00022_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00030_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00037_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00041_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00047_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00049_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00050_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00052_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00056_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00060_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00063_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00065_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00066_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00074_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00079_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00084_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00091_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00095_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00098_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00106_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00109_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00110_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00113_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00118_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00122_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00130_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00134_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00140_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00141_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00142_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00148_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00150_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00151_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00155_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00161_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00165_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00166_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00168_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00173_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00183_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00193_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00197_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00209_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00212_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00214_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00216_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00223_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00225_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00226_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00227_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00231_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00236_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00239_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00241_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00244_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00246_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00254_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00257_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00261_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00265_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00266_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00270_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00275_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00283_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00284_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00288_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00289_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00290_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00302_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00305_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00306_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00307_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00310_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00315_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00316_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00318_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00326_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00332_s2026111902:g1:mjx:f3ac5d1be8ec",
+    "s40_lift_fit_00337_s2026111902:g1:mjx:f3ac5d1be8ec"
+  ],
+  "internal_records": 16,
+  "selected_fit_positive": 68,
+  "selected_fit_negative": 32,
+  "internal_positive": 11,
+  "internal_negative": 5,
+  "recipe": {
+    "epochs": 100,
+    "batch_size": 128,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0005,
+    "poly_power": 0.99,
+    "input_dim": 480,
+    "output_dim": 20,
+    "output_config_override": "num_two_finger_angle=1 matching released models",
+    "loss": "author final-ReLU selected-output MSE",
+    "model_selection": "author save_model validation P/R at .5/.7/.9"
+  },
+  "formal_sample_cap100_run": true,
+  "class_balancing": false,
+  "seed_retries": 0,
+  "video_recording": false,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "automatic_collection_policy_replacement": false
+}

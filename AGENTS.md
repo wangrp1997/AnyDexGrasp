@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-19 最新收尾：累计101fit＋16internal已采满，正式100样本头训练完成，召回仍弱
+
+`outputs/boya_mjx_cgr_to100_20261119_v1`已target_complete，原tool79363 exit0，实际父wall19009.471s＝5小时16分49.471秒；不是派发至晚查的10小时。432场实际处理，368未启动槽标quota_reached_not_started，不当失败。110次抓取与回位，97有效（63正34负）、13无效保持null；另164placement_null/108planning_no_candidate/50planning_null_geometry。新增85fit＋12internal，与旧正式16fit＋4internal按同域引用合并为117条＝101fit（68正33负）＋16internal（11正5负），旧诊断/对照/PhysX/435均未混入。达到配额停止准入，在途第101条fit负例保留。
+
+27个wave完整raw独立审核全PASS，97有效样本均审核通过；13invalid导致原aggregate all_complete_grasps_pass=false必须保留，不说110抓原严格七门全过。原1mm诊断、5mm硬停止及其他六门不改。202268global controls/25890304native环境积分，NativeCall404537行begin/end完整、unknown0；完整28920360接触/873952trial rows匹配。54源/输入/archive exact；111登记owner/PGID全退，6锁可取、4预约released、registryreleased，无采集后台。原CAMPAIGN_RESULTS/merged MANIFEST的training_updates0是采集阶段历史事实，不回写。
+
+按累计100后重训的既定流程，新增独立`run_author_mjx_fit100.py`及`outputs/boya_mjx_fit100_20261119_v1`，原author_training/公开源保持。固定first100 fit＝68正32负，全部16internal仅作验证/原选模；第101fit不用于本cap100。seed2026111903，原100epoch/Adam/480→20/selected-output MSE/PolyLR，正式非development，100实际optimizer更新。epoch56选中唯一best_0.5；原发布inference strict重载及16行保存输出exact。训练主体6.720s，含导入/核验的run段41.565s；这是CPU训练耗时，不是采样倍率。tool38200 exit0，0新物理/CGR/视频。原sandbox RUN_STARTED PID3是本地命名空间标识，不能作为host PID3查询/操作。
+
+0.5门在16内部验证TP1/FP0/TN5/FN10，正例召回1/11，当前效果弱；这16条参与过选模，不能称独立外测、模型增益或新头真实抓取成功率。新权重未自动替换原CGR采集策略；下一步先查分数及多候选同观测排序，再做独立新布局评测，不因本状态查询自动追加物理/训练/改门。新训练source/input/archive已绑定，不热编辑或重跑同root。两个阶段均未录像，必要RGBD/原完整轨迹保留ignore，不删除原始证据。
+
+最终报告`reproduction/boya/AUTHOR_MJX_TO100_RESULTS_20261119.md`，轻证据`evidence/author_mjx_to100_20261119_v1`与`evidence/author_mjx_fit100_20261119_v1`；轻代码/文档push用户origin并保持Git干净。下文“运行中/尚未训练”均历史快照，以最终结果与独立FINAL_REVIEW为准；不要重启已结束根。
+
 ## 2026-11-19 新授权：启动累计100有效fit标签常驻扩采，不录像
 
 **实际已启动，当前不是仅准备状态。** tool session79363，调度host PID/PGID2119361、GPU controller2119614，PIPELINE_STARTED绑定已push commit4a4b7d5且worktree_clean=true。54源/输入/archive exact，40物体银行已建立并进入首wave稳定；启动核验时已完成69248native环境步并继续推进（在途另128，不作最终成本）。此时累计已审核fit16/目标100、新有效0，剩84，仅启动快照。global registry现在属于该root并active，不要将本批当旧已结束任务释放或重启。以实时BATCH_COUNTERS及最终CAMPAIGN_RESULTS为准，无录像。

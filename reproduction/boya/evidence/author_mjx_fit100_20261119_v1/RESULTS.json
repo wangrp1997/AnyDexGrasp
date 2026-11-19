@@ -1,0 +1,43 @@
+{
+  "status": "formal_fit100_training_complete",
+  "source_training_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/head/TRAINING_RESULTS.json",
+    "sha256": "5739528206ff4f117b4cfbf957ef45c89111c1c1d5385842d854aedde65a5840"
+  },
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/PROTOCOL.json",
+    "sha256": "cd38dd775454cc94f0ede523c3e38e14c18f30c343e330a38fef776777be0e4a"
+  },
+  "fit_records": 100,
+  "internal_records": 16,
+  "selected_fit_positive": 68,
+  "selected_fit_negative": 32,
+  "optimizer_updates": 100,
+  "selected_checkpoint_count": 1,
+  "strict_published_inference_reload": {
+    "0.5": true
+  },
+  "inference_check": {
+    "checkpoint": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/head/best_0.5.pt",
+      "sha256": "7536fc305d25bc8ef5b7d470d87baf0d1b03a965a03d0950d68ecc4a45b17844"
+    },
+    "score_file": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/INTERNAL_SCORES.npz",
+      "sha256": "130f032eed14bf6fd8ad68975f02831c5063e175d67471d9c6f0d4d23dfdcc93"
+    },
+    "internal_rows": 16,
+    "true_positive": 1,
+    "false_positive": 0,
+    "true_negative": 5,
+    "false_negative": 10,
+    "validation_was_used_for_model_selection": true,
+    "new_scene_physical_success_rate_measured": false
+  },
+  "wall_s": 41.564872544026,
+  "training_only": true,
+  "new_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "video_recording": false,
+  "automatically_installed_in_collection": false
+}

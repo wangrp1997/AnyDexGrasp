@@ -1,4 +1,8 @@
-2026-11-18 最新收尾：[100新场景最终报告](AUTHOR_MJX_FRESH_EXPANSION_RESULTS_20261118.md)。正式20条＝16正4负，fit16／internal4，7批完整raw审核PASS；21次抓取含1次原5mm停止记null，其余80空保留。采集＋审核71分0.6秒，全含统计收尾约71分44秒（文件mtime近似）；不能把派发至晚查的279分钟当采集耗时。原统计KeyError保留，由独立只读元数据收尾完成，0再积分。32所属进程组退出、锁/预约/registry释放，无本批后台任务，训练0。正式数据见ignored outputs/boya_mjx_fresh_expansion_20261118_v1/formal，完成回执EXPANSION_METADATA_COMPLETION和FINAL_REVIEW；不要依据旧PROGRESS误报运行中。实际手接触9种/成功提起7种，仍非40种均有正负；不自动追加新批或训练。
+2026-11-19 最新完成：[累计100有效fit扩采与正式训练结果](AUTHOR_MJX_TO100_RESULTS_20261119.md)。**累计101fit＋16internal＝117条**，新增97条（63正34负），27批完整raw审核通过，实际5小时16分49秒达标后停止。432场实际处理，368剩余槽未派发；13无效执行保留null。源/输入/归档核对通过，111所属组退出，锁/预约释放，无采集后台；无录像。正式同域数据在`outputs/boya_mjx_cgr_to100_20261119_v1/merged`，不合并旧诊断/对照数据。
+
+随后固定前100fit（68正32负）＋16internal，按原100epoch配方完成正式训练，100次实际更新，发布inference重载与保存输出核对通过。`outputs/boya_mjx_fit100_20261119_v1/head/best_0.5.pt`已保存，**内部验证TP1/FP0/TN5/FN10，正例仅识别1/11**，效果仍弱，尚未独立新场景评测或替换原CGR采集策略；内部验证参与过选模，不当外测。两阶段均已结束，不自动追加采集/训练。
+
+2026-11-18 历史收尾：[100新场景最终报告](AUTHOR_MJX_FRESH_EXPANSION_RESULTS_20261118.md)。正式20条＝16正4负，fit16／internal4，7批完整raw审核PASS；21次抓取含1次原5mm停止记null，其余80空保留。采集＋审核71分0.6秒，全含统计收尾约71分44秒（文件mtime近似）；不能把派发至晚查的279分钟当采集耗时。原统计KeyError保留，由独立只读元数据收尾完成，0再积分。32所属进程组退出、锁/预约/registry释放，无本批后台任务，彼时训练0。该20条作为上方累计数据的正式基线，不重复计数。实际手接触9种/成功提起7种，非40种均有正负。
 
 2026-11-18 历史授权：代码push并保持工作区干净后，启动[首批100新场景扩采](AUTHOR_MJX_FRESH_EXPANSION_20261118.md)。80 fit／20 internal，固定seed2026111802／g1／16环境，沿用已验收native物理和后台完整审核；固定100抽样涵盖40种，63个ready场景涉及38种，另外37个placement_null保留，不补抓。只在完整审核后创建新的formal数据；0训练，不合并旧诊断或旧数据。入口run_author_mjx_expansion.py；运行事实查看outputs/boya_mjx_fresh_expansion_20261118_v1中的PIPELINE_STARTED、collection/RUN_STARTED及BATCH_COUNTERS。
 

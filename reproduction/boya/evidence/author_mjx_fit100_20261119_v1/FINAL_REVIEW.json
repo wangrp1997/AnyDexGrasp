@@ -1,0 +1,53 @@
+{
+  "status": "formal_fit100_read_only_review_pass",
+  "source_count": 12,
+  "source_archives_exact": true,
+  "data_and_manifest_exact": true,
+  "first100_prefix_exact": true,
+  "available_fit_records": 101,
+  "selected_fit_records": 100,
+  "internal_records": 16,
+  "epochs": 100,
+  "optimizer_updates": 100,
+  "selected_checkpoints": 1,
+  "published_inference_reload_and_saved_internal_scores_exact": true,
+  "internal_confusion_at_0_5": {
+    "true_positive": 1,
+    "false_positive": 0,
+    "true_negative": 5,
+    "false_negative": 10
+  },
+  "internal_score_distribution": {
+    "positive": {
+      "count": 11,
+      "minimum": 0.0,
+      "median": 0.0,
+      "maximum": 0.502892017364502,
+      "exact_zero": 9
+    },
+    "negative": {
+      "count": 5,
+      "minimum": 0.0,
+      "median": 0.0,
+      "maximum": 0.0,
+      "exact_zero": 5
+    }
+  },
+  "validation_used_for_model_selection": true,
+  "independent_physical_evaluation": false,
+  "tool_session": 38200,
+  "tool_exit_code": 0,
+  "recorded_process_identity_namespace": "sandbox_local_pid_not_host_pid",
+  "automatically_installed": false,
+  "additional_physics_steps": 0,
+  "additional_training_updates": 0,
+  "video_recording": false,
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/PROTOCOL.json",
+    "sha256": "cd38dd775454cc94f0ede523c3e38e14c18f30c343e330a38fef776777be0e4a"
+  },
+  "results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/RESULTS.json",
+    "sha256": "7b844a361ad2e020c9acbc8187367a7a0096ed90ee414ff2707b7e498a109898"
+  }
+}
