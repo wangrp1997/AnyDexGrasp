@@ -1,0 +1,317 @@
+{
+  "status": "head_diagnosis_final_review_pass",
+  "results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_diagnosis_20261119_v1/RESULTS.json",
+    "sha256": "0d883cb37e6d2d321f74d6d058c50751c7cb7744a2eede76a749d0441c7bdb34"
+  },
+  "review_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/audit_author_mjx_head_diagnosis.py",
+    "sha256": "e1a284bf059b71f07d5acc6dbf63cec44854b57a7eefee6f4eace8e2ce1ebcc6"
+  },
+  "original_sources_inputs_archives_and_rows_exact": true,
+  "source_count": 14,
+  "baseline_all100_losses_and_selected_checkpoint_exact": true,
+  "new_diagnostic_optimizer_updates": 400,
+  "original_formal_optimizer_updates": 100,
+  "published_inference": {
+    "original_relu": {
+      "fit": {
+        "records": 100,
+        "positive": 68,
+        "negative": 32,
+        "TP": 36,
+        "FP": 0,
+        "TN": 32,
+        "FN": 32,
+        "MSE": 0.3202080675862875,
+        "ROC_AUC": 0.7573529411764706,
+        "positive_exact_zero": 32,
+        "negative_exact_zero": 31,
+        "minimum": 0.0,
+        "maximum": 1.00482976436615
+      },
+      "internal": {
+        "records": 16,
+        "positive": 11,
+        "negative": 5,
+        "TP": 1,
+        "FP": 0,
+        "TN": 5,
+        "FN": 10,
+        "MSE": 0.6288518116703821,
+        "ROC_AUC": 0.5909090909090909,
+        "positive_exact_zero": 9,
+        "negative_exact_zero": 5,
+        "minimum": 0.0,
+        "maximum": 0.529728353023529
+      },
+      "inference_activation": "original ReLU",
+      "strict_state_reload": true,
+      "training_activation": "relu",
+      "training_recipe_modified": false
+    },
+    "relu_positive_output_bias": {
+      "fit": {
+        "records": 100,
+        "positive": 68,
+        "negative": 32,
+        "TP": 58,
+        "FP": 0,
+        "TN": 32,
+        "FN": 10,
+        "MSE": 0.10054961979934067,
+        "ROC_AUC": 0.921875,
+        "positive_exact_zero": 10,
+        "negative_exact_zero": 30,
+        "minimum": 0.0,
+        "maximum": 1.029917597770691
+      },
+      "internal": {
+        "records": 16,
+        "positive": 11,
+        "negative": 5,
+        "TP": 4,
+        "FP": 0,
+        "TN": 5,
+        "FN": 7,
+        "MSE": 0.377680300139631,
+        "ROC_AUC": 0.6181818181818182,
+        "positive_exact_zero": 4,
+        "negative_exact_zero": 2,
+        "minimum": 0.0,
+        "maximum": 1.335960865020752
+      },
+      "inference_activation": "original ReLU",
+      "strict_state_reload": true,
+      "training_activation": "relu",
+      "training_recipe_modified": true
+    },
+    "linear_output": {
+      "fit": {
+        "records": 100,
+        "positive": 68,
+        "negative": 32,
+        "TP": 68,
+        "FP": 0,
+        "TN": 32,
+        "FN": 0,
+        "MSE": 0.0008614006549643219,
+        "ROC_AUC": 1.0,
+        "positive_exact_zero": 0,
+        "negative_exact_zero": 23,
+        "minimum": 0.0,
+        "maximum": 0.995366096496582
+      },
+      "internal": {
+        "records": 16,
+        "positive": 11,
+        "negative": 5,
+        "TP": 4,
+        "FP": 1,
+        "TN": 4,
+        "FN": 7,
+        "MSE": 0.41183328606648684,
+        "ROC_AUC": 0.5363636363636364,
+        "positive_exact_zero": 3,
+        "negative_exact_zero": 1,
+        "minimum": 0.0,
+        "maximum": 1.1814872026443481
+      },
+      "inference_activation": "original ReLU",
+      "strict_state_reload": true,
+      "training_activation": "linear",
+      "training_recipe_modified": true
+    },
+    "softplus_output": {
+      "fit": {
+        "records": 100,
+        "positive": 68,
+        "negative": 32,
+        "TP": 46,
+        "FP": 0,
+        "TN": 32,
+        "FN": 22,
+        "MSE": 0.16715296311043662,
+        "ROC_AUC": 1.0,
+        "positive_exact_zero": 0,
+        "negative_exact_zero": 32,
+        "minimum": 0.0,
+        "maximum": 0.5586217641830444
+      },
+      "internal": {
+        "records": 16,
+        "positive": 11,
+        "negative": 5,
+        "TP": 2,
+        "FP": 0,
+        "TN": 5,
+        "FN": 9,
+        "MSE": 0.5814318834817762,
+        "ROC_AUC": 0.5909090909090909,
+        "positive_exact_zero": 9,
+        "negative_exact_zero": 5,
+        "minimum": 0.0,
+        "maximum": 0.7197319269180298
+      },
+      "inference_activation": "original ReLU",
+      "strict_state_reload": true,
+      "training_activation": "softplus",
+      "training_recipe_modified": true
+    }
+  },
+  "per_target_label_support": [
+    {
+      "target_index": 0,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 1,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 2,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 3,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 4,
+      "fit": 5,
+      "fit_positive": 4,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 5,
+      "fit": 2,
+      "fit_positive": 1,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 6,
+      "fit": 2,
+      "fit_positive": 2,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 7,
+      "fit": 2,
+      "fit_positive": 2,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 8,
+      "fit": 18,
+      "fit_positive": 13,
+      "internal": 2,
+      "internal_positive": 2
+    },
+    {
+      "target_index": 9,
+      "fit": 3,
+      "fit_positive": 2,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 10,
+      "fit": 3,
+      "fit_positive": 3,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 11,
+      "fit": 2,
+      "fit_positive": 2,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 12,
+      "fit": 52,
+      "fit_positive": 31,
+      "internal": 14,
+      "internal_positive": 9
+    },
+    {
+      "target_index": 13,
+      "fit": 4,
+      "fit_positive": 3,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 14,
+      "fit": 2,
+      "fit_positive": 2,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 15,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 16,
+      "fit": 5,
+      "fit_positive": 3,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 17,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 18,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    },
+    {
+      "target_index": 19,
+      "fit": 0,
+      "fit_positive": 0,
+      "internal": 0,
+      "internal_positive": 0
+    }
+  ],
+  "model_parameter_count": 2627644,
+  "fit_source_objects": 32,
+  "internal_source_objects": 8,
+  "internal_prior_constant_MSE": 0.21490000000000004,
+  "fit_positive_prior": 0.68,
+  "validation_used_for_original_selection": true,
+  "diagnostic_variants_compared_on_same_internal_split": true,
+  "new_physical_grasp_success_rate_measured": false,
+  "additional_physics_steps": 0,
+  "review_optimizer_updates": 0,
+  "new_CGR_forwards": 0,
+  "video_recording": false,
+  "automatically_installed": false
+}

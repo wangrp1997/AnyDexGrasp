@@ -1,5 +1,17 @@
 # AnyDexGrasp 独立复现工作区
 
+## 2026-11-19 最新排查：原评分训练出现32个持续ReLU死区，同数据对照解卡但泛化仍弱
+
+用户要求排查并问“原网络结构／是否数据太少”。明确原正式模型就是发布480→20结构及原ReLU后MSE配方；117条累计数据含79正38负，“1个”仅是16内部验证中11正例有1个过0.5，不是只采到一次成功。新增`author_mjx_head_diagnosis.py`，根`outputs/boya_mjx_head_diagnosis_20261119_v1`，不改任何旧冻结source/input/archive、原模型、旧435或CanonDex；无新采集／CGR／录像。
+
+117行原record/candidate/execution SHA、标签、raw2261→发布canonical480（原函数＋独立half-swap/roll）、raw_depth×4+extra逐行exact；原Loss全部20地址独立检查过。fit100=68正32负，internal16=11正5负，全三体对象隔离保持。fit仅12/20输出档位有标签，index12占52/100、internal14/16，另internal2行index8；internal没有完全未监督地址，不能用地址全缺解释这16行。原selected epoch56的32个fit正例严格0、其选中预激活的ReLU后MSE直接梯度0；不等于BN共享／其他参数全部无梯度。只用fit重估BN，内部TP仍1/11，MSE .632079→.634225，非主要修复。
+
+预声明4个同seed2026111903/同first100/同batch128/原Adam-PolyLR/100epoch CPU对照，各100真实更新，共新增400诊断更新。原ReLU重放全部100epoch train/internal loss及选中epoch56全部tensor exact；第10..99轮相同32正例持续非正预激活，原fit损失约.32。比较统一固定末轮99而非挑最佳：原ReLU fitTP36/68、internalTP1/11/FP0；仅BN7 bias初值+1（结构／损失均原样）fit58/68、internal4/11/FP0；训练预激活MSE fit68/68、internal4/11/FP1；Softplus输出MSE fit68/68、internal4/11/FP0。最后两者改变训练配方，不能称原作者结果或默认替换。原骨干/state_dict形状不改，独立published inference重载用于评估兼容；Softplus的推理激活不同，不能拿原ReLU推理冒充同一输出。
+
+训练预激活MSE末轮fit MSE .000965（batchstats4.21e-7），泛化仍差；Softplus internal MSE .315352仍劣于fit正例率.68常数的.2149。训练死区是实测问题，小样本／覆盖与泛化问题仍在，不能说仅修ReLU就可靠、增加数据一定解决或内部4/11就是实抓成功率。旧435分支11月7日曾独立发现同类现象，本轮新域单独重做，不搬旧5/8成绩／旧权重进来。
+
+2个数值CPU测试通过（发布forward exact/BN probe不写原buffer、末激活隔离及死区梯度），诊断tool86054 exit0，训练run段37.754s，另只读audit入口`audit_author_mjx_head_diagnosis.py`核原源/archive/117行及4末轮权重。原正式100更新保留，诊断400单列；不自动部署诊断头、继续物理或追加训练。报告`AUTHOR_MJX_HEAD_DIAGNOSIS_20261119.md`与轻证据`evidence/author_mjx_head_diagnosis_20261119_v1`，轻源码／证据push用户origin保持工作区干净。大型权重／数组和原始日志继续ignored，不能改已派发新诊断源码。
+
 ## 2026-11-19 最新收尾：累计101fit＋16internal已采满，正式100样本头训练完成，召回仍弱
 
 `outputs/boya_mjx_cgr_to100_20261119_v1`已target_complete，原tool79363 exit0，实际父wall19009.471s＝5小时16分49.471秒；不是派发至晚查的10小时。432场实际处理，368未启动槽标quota_reached_not_started，不当失败。110次抓取与回位，97有效（63正34负）、13无效保持null；另164placement_null/108planning_no_candidate/50planning_null_geometry。新增85fit＋12internal，与旧正式16fit＋4internal按同域引用合并为117条＝101fit（68正33负）＋16internal（11正5负），旧诊断/对照/PhysX/435均未混入。达到配额停止准入，在途第101条fit负例保留。

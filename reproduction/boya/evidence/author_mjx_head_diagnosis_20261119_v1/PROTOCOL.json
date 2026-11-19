@@ -1,0 +1,89 @@
+{
+  "schema": "anydex_mjx_cap100_head_diagnosis_v1",
+  "sources": {
+    "run_author_mjx_fit100.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/run_author_mjx_fit100.py",
+      "sha256": "bf407a5d51f99e6787e3eb6eadc96a1dac68db0a093ed338f8a3b44ded65cff4"
+    },
+    "author_training.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_training.py",
+      "sha256": "f269d57cb5d20aa135cd9dba1a9c12c148e1b837fd55d297784080b2724bfd00"
+    },
+    "author_protocol.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_protocol.py",
+      "sha256": "05afd8f176b41f89c56d8e6130ad887c6e75a059ef9c5b0d453ca4f7c1da54fa"
+    },
+    "collect_allegro_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_allegro_grasp_data.py",
+      "sha256": "d833b95ab50afcd9924ca6e97b21e6b7f65aa304f9a808599c0cdf48c98b7bbb"
+    },
+    "collect_dh3_grasp_data.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/collect_dh3_grasp_data.py",
+      "sha256": "1bcb655fad63a7c2b4f65e29b426b6aa614785d3cea514e0cd290fd05eb8bbcb"
+    },
+    "utils/collision_detector.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/utils/collision_detector.py",
+      "sha256": "f613f98484e790eb3c3c2337023697fa01a96a5d4020091c8bb98cd60e724ba1"
+    },
+    "train_multifinger.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/train_multifinger.py",
+      "sha256": "8f12a094c495ce8bf80fe787e7a583203053aa0e9831288cb8c1d5a7f206fbaf"
+    },
+    "dataset/multifinger_hand.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/dataset/multifinger_hand.py",
+      "sha256": "29e57cb152b65e2c4f84148a8a2e6e2a2cb9247b95387a52b87e3c18d8528e7e"
+    },
+    "models/minkowski_graspnet.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet.py",
+      "sha256": "8b92ae7f48be0926d992d209f97345466fd365ed9d63ad4d6a0a3dab0af8e74d"
+    },
+    "models/loss.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/loss.py",
+      "sha256": "07c0d5de79f969e565b944635f7ed9924a98f4eb6eff5aae4faa008a75473aa8"
+    },
+    "models/minkowski_graspnet_single_point.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/models/minkowski_graspnet_single_point.py",
+      "sha256": "1463ee5804ec72bafbfc0f469041425092817ff6e6b797923db77120e1167b26"
+    },
+    "utils/solvers.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/utils/solvers.py",
+      "sha256": "a9f2b274f438a1a29c1ae17c22a1f553dbe978354ba7143222a653e17a38f713"
+    },
+    "author_mjx_head_diagnosis.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/reproduction/boya/author_mjx_head_diagnosis.py",
+      "sha256": "4f096e05041d8a4e494116238315e9a0bc0dd16bac087a4c6028b7f9f15ffc4c"
+    },
+    "robot_dh3.py": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/robot_dh3.py",
+      "sha256": "7d227451761a429fff87f689e5dcb9c9e215da5ec3c5c594be1e16f3333fa797"
+    }
+  },
+  "input_training": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/head/TRAINING_RESULTS.json",
+    "sha256": "5739528206ff4f117b4cfbf957ef45c89111c1c1d5385842d854aedde65a5840"
+  },
+  "dataset": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/merged/gesture_1.npz",
+    "sha256": "bf483751970ef80b6cda5757f52b5693dc357e733991230477f5a1ab80608a8c"
+  },
+  "original_protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/PROTOCOL.json",
+    "sha256": "cd38dd775454cc94f0ede523c3e38e14c18f30c343e330a38fef776777be0e4a"
+  },
+  "seed": 2026111903,
+  "variants": [
+    "original_relu",
+    "relu_positive_output_bias",
+    "linear_output",
+    "softplus_output"
+  ],
+  "optimizer_update_budget": 400,
+  "fixed_final_epoch_comparison": 99,
+  "class_balancing": false,
+  "physics_steps": 0,
+  "CGR_forwards": 0,
+  "video_recording": false,
+  "automatic_policy_replacement": false,
+  "diagnostic_only": true,
+  "independent_physical_evaluation": false
+}
