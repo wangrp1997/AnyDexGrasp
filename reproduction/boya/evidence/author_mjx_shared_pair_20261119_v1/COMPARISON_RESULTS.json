@@ -1,0 +1,142 @@
+{
+  "status": "finite_draws_complete_underfilled",
+  "stop_reason": "draw_capacity_exhausted",
+  "pairs": [
+    {
+      "draw": 8,
+      "scene_id": "s40_lift_internal_00008_s2026111904",
+      "candidate_count": 2,
+      "policies": {
+        "head": {
+          "status": "grasp_failure",
+          "label": 0,
+          "executed": true,
+          "candidate_sha256": "51425454dfa75d61a95144951a1ebe9b3feb474e5313a2b6494add2cd540a76b",
+          "index": 4
+        },
+        "cgr": {
+          "status": "planning_null_geometry",
+          "label": null,
+          "executed": false,
+          "candidate_sha256": "641c9263a5bd74d3402cc198f07ee518db1bb8da8bcf5b6c7446ae5876dbca83",
+          "index": 5
+        }
+      },
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/pairs/002/ADMISSION.json",
+        "sha256": "17ccce19e5f1599a505570e19feb0cd3bcaedbf02f8400df2c9b82020f2f3a02"
+      }
+    },
+    {
+      "draw": 54,
+      "scene_id": "s40_lift_internal_00054_s2026111904",
+      "candidate_count": 6,
+      "policies": {
+        "head": {
+          "status": "planning_null_geometry",
+          "label": null,
+          "executed": false,
+          "candidate_sha256": "fbdead88954611a38bd8819a464aa9666c5981febb7ad5e2241177c18c1dcab1",
+          "index": 28
+        },
+        "cgr": {
+          "status": "planning_null_geometry",
+          "label": null,
+          "executed": false,
+          "candidate_sha256": "b1b084acdefd328ace3ee2f9af26f55892169becf944cb8fe2a2ca79efe5834a",
+          "index": 29
+        }
+      },
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/pairs/014/ADMISSION.json",
+        "sha256": "5539ed6dcbd6731c4e2d74acbfc686eea38f731c06f70f124088f0c870a80a19"
+      }
+    },
+    {
+      "draw": 87,
+      "scene_id": "s40_lift_internal_00087_s2026111904",
+      "candidate_count": 2,
+      "policies": {
+        "head": {
+          "status": "planning_null_geometry",
+          "label": null,
+          "executed": false,
+          "candidate_sha256": "55eaffd0af3d76e628d15b82d3b1ea4380b987c8a94a90a3e0023d680d6916b6",
+          "index": 48
+        },
+        "cgr": {
+          "status": "grasp_success",
+          "label": 1,
+          "executed": true,
+          "candidate_sha256": "7afe33d4dfe82cba96f1a4a0bacac5f5f252939cd2bd50c478621ab52f8c75da",
+          "index": 49
+        }
+      },
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/pairs/024/ADMISSION.json",
+        "sha256": "ce086fbd9517829c36698a574d6c995d9e226eeb8837c952282d8e3adc797d20"
+      }
+    },
+    {
+      "draw": 100,
+      "scene_id": "s40_lift_internal_00100_s2026111904",
+      "candidate_count": 2,
+      "policies": {
+        "head": {
+          "status": "planning_null_geometry",
+          "label": null,
+          "executed": false,
+          "candidate_sha256": "d9a47d8a6fa652d035044d74118dfb632dbb2265cee3bb61a616083d325d31ca",
+          "index": 60
+        },
+        "cgr": {
+          "status": "planning_null_geometry",
+          "label": null,
+          "executed": false,
+          "candidate_sha256": "16b6d750ec3841ccc2ebcf643c79ae71a485ce4085b1e2a23cb18100e58cd2a2",
+          "index": 61
+        }
+      },
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/pairs/030/ADMISSION.json",
+        "sha256": "804b2a4375d4c627448ecff48c011ab5877ee9aba98c9322366ec73cadcb167e"
+      }
+    }
+  ],
+  "counts": {
+    "head": {
+      "grasp_failure": 1,
+      "planning_null_geometry": 3
+    },
+    "cgr": {
+      "planning_null_geometry": 3,
+      "grasp_success": 1
+    }
+  },
+  "coverage": {
+    "observed_pairs": 37,
+    "multiple_candidates": 5,
+    "different_choices": 4,
+    "pair_initialization_unstable": 5
+  },
+  "both_valid_labels": 0,
+  "paired_physical_wins": {
+    "head": 0,
+    "cgr": 0,
+    "tie": 0
+  },
+  "cost": {
+    "CGR_forwards": 37,
+    "planning_requests": 74,
+    "grasp_attempts": 2,
+    "disagreement_pairs": 4
+  },
+  "wall_s": 2155.130895345006,
+  "native_environment_steps": 3140096,
+  "source_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/READ_ONLY_AUDIT.json",
+    "sha256": "ec8ddb15b3dafe1d4fa0ca636c3621042648d34fa8e81b05a267ca1528edd8d8"
+  },
+  "video_recording": false,
+  "training_updates": 0
+}

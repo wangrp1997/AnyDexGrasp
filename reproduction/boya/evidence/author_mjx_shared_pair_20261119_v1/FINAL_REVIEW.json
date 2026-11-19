@@ -1,0 +1,81 @@
+{
+  "status": "review_pass_underfilled",
+  "comparison": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/COMPARISON_RESULTS.json",
+    "sha256": "74c05dbfbb27d8d4f15bc7bac2beafebc47a9a96fec6190ad5b70e2258f436cc"
+  },
+  "source_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/READ_ONLY_AUDIT.json",
+    "sha256": "ec8ddb15b3dafe1d4fa0ca636c3621042648d34fa8e81b05a267ca1528edd8d8"
+  },
+  "finish_receipt": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/PIPELINE_FINISHED.json",
+    "sha256": "c57b5dc01993f0a283ea7188beb277339909024967d406e959b37bd089f220fe"
+  },
+  "source_archive_verified": 51,
+  "wave_audits_passed": 6,
+  "confirmed_exited_process_groups": 25,
+  "locks_available": 7,
+  "resource_reservations_released": 5,
+  "registry_released": true,
+  "native_journal_rows": 49065,
+  "native_integrations": 3140096,
+  "pending_native_integrations": 0,
+  "unknown_native_integrations": 0,
+  "planning_rejections": {
+    "5": {
+      "policy": "cgr",
+      "reason": "frozen_endpoint_or_non_home_collision",
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/05/contact/pipeline/home/HOME_ROUTE_PREPARATION.json",
+        "sha256": "4bd4a79b02d385798c200fb9570576f32e0efa3ea2c724e74f61ce353158e910"
+      }
+    },
+    "28": {
+      "policy": "head",
+      "reason": "local_ik_seeds_exhausted",
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/28/contact/pipeline/arm/native/admission_failure.json",
+        "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+      }
+    },
+    "29": {
+      "policy": "cgr",
+      "reason": "frozen_endpoint_or_non_home_collision",
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/29/contact/pipeline/home/HOME_ROUTE_PREPARATION.json",
+        "sha256": "f0af42b5b0bd28be13b0601a59a834aaeadaa3586bdf14ee24dcb692d41f8d21"
+      }
+    },
+    "48": {
+      "policy": "head",
+      "reason": "frozen_endpoint_or_non_home_collision",
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/48/contact/pipeline/home/HOME_ROUTE_PREPARATION.json",
+        "sha256": "1dd153686191675bcb0c3c9798910decb0e179c15a500e10ff75c72928623105"
+      }
+    },
+    "60": {
+      "policy": "head",
+      "reason": "local_ik_seeds_exhausted",
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/60/contact/pipeline/arm/native/admission_failure.json",
+        "sha256": "f11324b1dab10cbe3871118a9136b0ac1686930708689470b2c40114aa758ac7"
+      }
+    },
+    "61": {
+      "policy": "cgr",
+      "reason": "frozen_endpoint_or_non_home_collision",
+      "receipt": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/collection/scenes/61/contact/pipeline/home/HOME_ROUTE_PREPARATION.json",
+        "sha256": "9a16596ac1668170a8cd595cefc1ac478d184cc10f31547096f1ce0491107f6d"
+      }
+    }
+  },
+  "audited_success": 1,
+  "audited_failure": 1,
+  "both_valid_pairs": 0,
+  "additional_physics_steps": 0,
+  "training_updates": 0,
+  "video_recording": false
+}
