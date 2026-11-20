@@ -9,6 +9,8 @@ Dexterous grasp pose detection network built upon [MinkowskiEngine](https://gith
 
 后续用另一批归档帧补做了 10 个完整臂规划，找到 4 个两种策略选择不同且均有计划的场景，24 轴实测起点核对一致。这 4 场的原 CGR 历史动作曾因深碰撞停止，仍待新布局的物理提起对照。[配对规划预检](reproduction/boya/evidence/author_mjx_pair_readiness_20261120_v1/SUMMARY.json)
 
+**首批 16 个新布局的对照已结束。** 碰撞筛选后有 9 个空池、4 个单候选池、3 个双候选池。唯一一帧的排名变化在完整规划后消失，两种策略最终选择同一抓姿。整批 0 次成对抓取，提起率差异仍待验证。下一步先提高多可执行候选的覆盖率。[新布局对照](reproduction/boya/evidence/author_mjx_formal_pairs_20261120_v1/SUMMARY.json)
+
 主线使用已有 g1 和原闭合、原 CGR 排序。完整执行但未提起的样本保留为负标签，摆放失败、无候选、规划失败和无效执行保留为空，个别物体的闭合诊断留到后续。采集与评估全程不录视频。
 
 ## 2026-11-18 至 19 的扩采和首次闭环记录
