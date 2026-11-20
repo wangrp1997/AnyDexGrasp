@@ -1,0 +1,64 @@
+{
+  "status": "mainline_read_only_recheck_pass",
+  "stage": "simulation_pipeline_complete_first_model_evaluation",
+  "dataset": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/merged/gesture_1.npz",
+    "sha256": "bf483751970ef80b6cda5757f52b5693dc357e733991230477f5a1ab80608a8c"
+  },
+  "counts": {
+    "fit": 101,
+    "internal": 16,
+    "positive": 79,
+    "negative": 38
+  },
+  "eligible_labels": {
+    "grasp_success": 79,
+    "grasp_failure": 38
+  },
+  "trained_fit_rows": 100,
+  "published_inference_scores_exact": true,
+  "internal_model_selection_confusion": {
+    "tp": 1,
+    "fp": 0,
+    "tn": 5,
+    "fn": 10
+  },
+  "formal_training": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/RESULTS.json",
+    "sha256": "7b844a361ad2e020c9acbc8187367a7a0096ed90ee414ff2707b7e498a109898"
+  },
+  "pilot_new_scene_execution": {
+    "record": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/15/RECORD.json",
+      "sha256": "f6f34f55597078921b6a1f435ea77eec3362d18f75b433242a3a9967d4294bce"
+    },
+    "checkpoint": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_pilot_20261118_v1/best_0.5.pt",
+      "sha256": "8098c6c42d500730d7332435f686e898f9a79efdebb29382395153f82f6ce14c"
+    },
+    "candidate_pool_size": 1,
+    "selected_candidate": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_policy_compare_20261119_v1/collection/scenes/15/contact/pipeline/pool/selected_author_candidate.json",
+      "sha256": "2c3ac43e5ed8e9aa3a088625ce362b0dc292ad27ca0f190b05ed2c39e39796f5"
+    },
+    "observed_label": 1,
+    "full_return_audit": true
+  },
+  "shared_evaluation": {
+    "result": {
+      "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_shared_pair_20261119_v1/COMPARISON_RESULTS.json",
+      "sha256": "74c05dbfbb27d8d4f15bc7bac2beafebc47a9a96fec6190ad5b70e2258f436cc"
+    },
+    "coverage": {
+      "observed_pairs": 37,
+      "multiple_candidates": 5,
+      "different_choices": 4,
+      "pair_initialization_unstable": 5
+    },
+    "both_valid_pairs": 0
+  },
+  "camera_to_grasp_loop_demonstrated": true,
+  "model_ranking_gain_established": false,
+  "additional_physics_steps": 0,
+  "training_updates": 0
+}

@@ -1,7 +1,15 @@
 # AnyDexGrasp
 Dexterous grasp pose detection network built upon [MinkowskiEngine](https://github.com/NVIDIA/MinkowskiEngine).
 
-## 当前扩采入口（2026-11-18）
+## 当前主线（2026-11-20）
+
+**仿真端到端闭环已跑通，目前在第一轮评分头效果验收。** 固定 g1 的常驻 MJX 采集已独立审核并合并 **117 条有效标签（101 fit、16 internal，79 正、38 负）**。首个正式评分头用前 100 条 fit 训练完成，权重重载和内部评分逐值核对通过。早期小样本评分头也已在新仿真场景完成拍照、打分、规划、提起、回位和审核。[端到端复核](reproduction/boya/evidence/author_mjx_mainline_20261120_v1/CHECK.json)
+
+正式头在 16 条内部选模样本上的正例召回是 **1/11**（阈值 0.5）。已有同帧排序对照中，尚无两种策略都完成有效抓取的配对。下一步在新布局的**同帧、已通过完整臂规划的多候选池**内比较排序与提起，按批统计可执行覆盖和有效结果。[正式训练结果](reproduction/boya/AUTHOR_MJX_TO100_RESULTS_20261119.md) · [同帧对照](reproduction/boya/evidence/author_mjx_shared_pair_20261119_v1/FINAL_REVIEW.json)
+
+主线使用已有 g1 和原闭合、原 CGR 排序。完整执行但未提起的样本保留为负标签，摆放失败、无候选、规划失败和无效执行保留为空，个别物体的闭合诊断留到后续。采集与评估全程不录视频。
+
+## 2026-11-18 至 19 的扩采和首次闭环记录
 
 2026-11-19 用户已明确要求[启动累计100条有效fit扩采](reproduction/boya/AUTHOR_MJX_TO100_20261119.md)：现有16fit还差84，沿原CGR／g1，不录视频，16环境整个队列常驻。800新场景为上限（静态480ready），达到累计100有效fit并完成审核后自动收尾，保留在途超额；只合并原正式同域20条，不混诊断／对照标签。进度看ignored `outputs/boya_mjx_cgr_to100_20261119_v1/collection/BATCH_COUNTERS.json` 的累计已审核fit，启动事实看RUN_STARTED及原生积分日志，最终CAMPAIGN_RESULTS／merged/MANIFEST。
 
