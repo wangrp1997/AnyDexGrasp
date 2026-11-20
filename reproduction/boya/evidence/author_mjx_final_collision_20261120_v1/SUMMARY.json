@@ -1,0 +1,112 @@
+{
+  "status": "final_archived_collision_diagnosis_complete",
+  "recommendation": "suspend_boya_learned_ranking_reproduction_keep_cgr_pipeline",
+  "geometry_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_final_collision_20261120_v1/RESULTS.json",
+    "sha256": "2d5cf782b626ee5c8526c758b11574d61addeb02eb2ad48ba68b943a423d8551"
+  },
+  "object_witness_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_final_collision_20261120_v1/OBJECT_WITNESSES.json",
+    "sha256": "3b8ba9a343953264f511d830bcc4f989b72263ab0eba5aaf50ba9afd5831cd90"
+  },
+  "previous_native_audit": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_formal_pairs_20261120_v1/collection/READ_ONLY_AUDIT.json",
+    "sha256": "5e5eda683a34405931f23c2e456f3003d58d68376185050d4fc3b874eca58cc4"
+  },
+  "source_model": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_formal_pairs_20261120_v1/collection/MODEL.xml",
+    "sha256": "40bebb4549fef0109dfa969f726c0f337cc5d9d97e60560bd4ecb1e61bfdbaaf"
+  },
+  "scenes": 16,
+  "original_empty_pools": 9,
+  "matched_original_collision_branches": 1325,
+  "full_source_opening_states": 23,
+  "empty_branch_evidence": {
+    "full_source_hand_into_floor_over_4cm_nominal_sweep": 569,
+    "full_source_hand_into_floor_at_target_by_more_than_1mm": 562,
+    "inside_baked_native_object_shape_over_4cm_nominal_sweep": 18,
+    "unresolved": 0
+  },
+  "empty_scopes": [
+    {
+      "pair": 0,
+      "split": "internal",
+      "into_floor": 70,
+      "inside_native_object": 7
+    },
+    {
+      "pair": 1,
+      "split": "fit",
+      "into_floor": 39,
+      "inside_native_object": 0
+    },
+    {
+      "pair": 3,
+      "split": "fit",
+      "into_floor": 40,
+      "inside_native_object": 0
+    },
+    {
+      "pair": 4,
+      "split": "internal",
+      "into_floor": 43,
+      "inside_native_object": 1
+    },
+    {
+      "pair": 6,
+      "split": "internal",
+      "into_floor": 207,
+      "inside_native_object": 5
+    },
+    {
+      "pair": 10,
+      "split": "internal",
+      "into_floor": 44,
+      "inside_native_object": 0
+    },
+    {
+      "pair": 12,
+      "split": "internal",
+      "into_floor": 47,
+      "inside_native_object": 5
+    },
+    {
+      "pair": 14,
+      "split": "internal",
+      "into_floor": 48,
+      "inside_native_object": 0
+    },
+    {
+      "pair": 15,
+      "split": "fit",
+      "into_floor": 31,
+      "inside_native_object": 0
+    }
+  ],
+  "verified_clear_but_voxel_rejected": [
+    {
+      "pair": 11,
+      "raw_row": 1641,
+      "local_index": 13,
+      "slot": "g1:preclose_r1641:ff",
+      "occupancy": 3,
+      "near_ground_occupancy": 3,
+      "above_height_band_occupancy": 0,
+      "rejected": true,
+      "open_hand_bottom_at_target_m": 0.000438295571079772,
+      "open_hand_bottom_over_approach_m": 0.000438295571079772,
+      "status": "separated_source_and_native_objects_and_ground",
+      "proven_separation_lower_bound_m": 0.0001561885652783257,
+      "original_row_already_admitted": true
+    }
+  ],
+  "additional_candidate_rows_on_any_frame": 0,
+  "original_admitted_branches_with_nominal_floor_intersection": 15,
+  "new_layout_validation_dispatched": false,
+  "launch_condition_reached": false,
+  "new_valid_pairs": 0,
+  "additional_physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_training_labels": 0,
+  "training_updates": 0
+}
