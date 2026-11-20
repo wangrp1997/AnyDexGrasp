@@ -1,0 +1,190 @@
+{
+  "status": "planning_review_complete",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_pair_readiness_20261120_v2/PROTOCOL.json",
+    "sha256": "0cf9847edfe24c7bf0e0423ac104ee84455495b881766b8cd41cec948be5205c"
+  },
+  "result": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_pair_readiness_20261120_v2/RESULTS.json",
+    "sha256": "f547401ec47c00aa24cadc03e10b20602ce8183117a09dd14c48c3abd047268a"
+  },
+  "command_check": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_pair_readiness_20261120_v2/PAIRED_COMMAND_CHECK.json",
+    "sha256": "cabd220e08fcb1c1f40dfae2559c5558f8d424916adafa0d83f729f4c9392429"
+  },
+  "formal_head": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/head/best_0.5.pt",
+    "sha256": "7536fc305d25bc8ef5b7d470d87baf0d1b03a965a03d0950d68ecc4a45b17844"
+  },
+  "saved_pool_counts": {
+    "excluded_training_selection_or_duplicate_pool": 97,
+    "saved_holdout_pools": 171,
+    "candidates:1": 25,
+    "candidates:3": 4,
+    "multi_candidate:fit": 34,
+    "candidates:0": 108,
+    "candidates:10": 8,
+    "candidates:2": 11,
+    "candidates:7": 4,
+    "candidates:9": 1,
+    "candidates:6": 2,
+    "candidates:4": 3,
+    "candidates:5": 4,
+    "candidates:8": 1,
+    "multi_candidate:internal": 4
+  },
+  "frozen_frame_selection": "All first four multi-candidate internal frames, plus first five fit frames with CGR rank 0 ready and a different formal top rank",
+  "completed_alternate_plans": 10,
+  "alternate_plan_statuses": {
+    "ready": 5,
+    "null_geometry": 5
+  },
+  "retained_completed_initial_plans": 3,
+  "frames": [
+    {
+      "index": 26,
+      "split": "fit",
+      "arm_plans": {
+        "0": "ready",
+        "9": "ready"
+      },
+      "cgr_first_ready": 0,
+      "head_first_ready": 9,
+      "different_ready_choices": true
+    },
+    {
+      "index": 191,
+      "split": "fit",
+      "arm_plans": {
+        "0": "ready",
+        "2": "ready"
+      },
+      "cgr_first_ready": 0,
+      "head_first_ready": 2,
+      "different_ready_choices": true
+    },
+    {
+      "index": 204,
+      "split": "internal",
+      "arm_plans": {
+        "0": "null_geometry",
+        "1": "null_geometry"
+      },
+      "cgr_first_ready": null,
+      "head_first_ready": null,
+      "different_ready_choices": false
+    },
+    {
+      "index": 211,
+      "split": "fit",
+      "arm_plans": {
+        "0": "ready",
+        "2": "ready"
+      },
+      "cgr_first_ready": 0,
+      "head_first_ready": 2,
+      "different_ready_choices": true
+    },
+    {
+      "index": 247,
+      "split": "fit",
+      "arm_plans": {
+        "0": "ready",
+        "1": "ready"
+      },
+      "cgr_first_ready": 0,
+      "head_first_ready": 1,
+      "different_ready_choices": true
+    },
+    {
+      "index": 285,
+      "split": "fit",
+      "arm_plans": {
+        "0": "ready",
+        "7": "null_geometry"
+      },
+      "cgr_first_ready": 0,
+      "head_first_ready": null,
+      "different_ready_choices": false
+    },
+    {
+      "index": 304,
+      "split": "internal",
+      "arm_plans": {
+        "0": "null_geometry",
+        "1": "null_geometry",
+        "2": "null_geometry"
+      },
+      "cgr_first_ready": null,
+      "head_first_ready": null,
+      "different_ready_choices": false
+    },
+    {
+      "index": 394,
+      "split": "internal",
+      "arm_plans": {
+        "0": "null_geometry",
+        "1": "null_geometry"
+      },
+      "cgr_first_ready": null,
+      "head_first_ready": null,
+      "different_ready_choices": false
+    },
+    {
+      "index": 429,
+      "split": "internal",
+      "arm_plans": {
+        "0": "ready",
+        "1": "ready"
+      },
+      "cgr_first_ready": 0,
+      "head_first_ready": 0,
+      "different_ready_choices": false
+    }
+  ],
+  "same_frame_two_ready": 5,
+  "different_ready_choices": 4,
+  "internal_head_scores_all_zero": true,
+  "prior_cgr_executions_on_four_paired_frames": [
+    {
+      "index": 26,
+      "label": null,
+      "stop": "original_5mm_deep_collision_stop",
+      "execution": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/26/execution/RESULTS.json",
+        "sha256": "2568f0b6ac1db427ba362afa95d6ffb6a6ccf07fb6a2647813a0163e75b09213"
+      }
+    },
+    {
+      "index": 191,
+      "label": null,
+      "stop": "original_5mm_deep_collision_stop",
+      "execution": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/191/execution/RESULTS.json",
+        "sha256": "eb599cc5179a76c235b5362ed32e1b6b7f314dcc7ff0c090d8348c5768b4948f"
+      }
+    },
+    {
+      "index": 211,
+      "label": null,
+      "stop": "original_5mm_deep_collision_stop",
+      "execution": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/211/execution/RESULTS.json",
+        "sha256": "429823da32690d86fc32f2b19fe446a2d471edc81151badd1c35583423ae7a0f"
+      }
+    },
+    {
+      "index": 247,
+      "label": null,
+      "stop": "original_5mm_deep_collision_stop",
+      "execution": {
+        "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_cgr_to100_20261119_v1/collection/scenes/247/execution/RESULTS.json",
+        "sha256": "761a6e97af69202eee62df4313a94287e2529dc974f6637fbf245ff0a2429bfc"
+      }
+    }
+  ],
+  "completed_paired_physical_trials": 0,
+  "physics_steps": 0,
+  "new_CGR_forwards": 0,
+  "new_training_labels": 0
+}
