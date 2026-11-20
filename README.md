@@ -5,7 +5,7 @@ Dexterous grasp pose detection network built upon [MinkowskiEngine](https://gith
 
 **仿真端到端闭环已跑通，目前在第一轮评分头效果验收。** 固定 g1 的常驻 MJX 采集已独立审核并合并 **117 条有效标签（101 fit、16 internal，79 正、38 负）**。首个正式评分头用前 100 条 fit 训练完成，权重重载和内部评分逐值核对通过。早期小样本评分头也已在新仿真场景完成拍照、打分、规划、提起、回位和审核。[端到端复核](reproduction/boya/evidence/author_mjx_mainline_20261120_v1/CHECK.json)
 
-正式头在 16 条内部选模样本上的正例召回是 **1/11**（阈值 0.5）。已有同帧排序对照中，尚无两种策略都完成有效抓取的配对。下一步在新布局的**同帧、已通过完整臂规划的多候选池**内比较排序与提起，按批统计可执行覆盖和有效结果。[正式训练结果](reproduction/boya/AUTHOR_MJX_TO100_RESULTS_20261119.md) · [同帧对照](reproduction/boya/evidence/author_mjx_shared_pair_20261119_v1/FINAL_REVIEW.json)
+**先保留原 CGR 排序，暂缓正式扩采。** 在 14 个未参与训练或选模的归档布局上，正式头的 ROC-AUC 为 **0.556**，原 CGR 为 **0.622**。0.5 阈值只识别出 2/9 个成功抓取。另查 37 个同帧候选池，5 个多候选池的 15 个抓姿全部有原完整规划结果，每帧最多只有一个可执行抓姿。下一轮评估需要用同一帧至少两个可执行候选，成对比较真实提起，再决定是否扩充训练样本。[留出评估](reproduction/boya/AUTHOR_MJX_HEAD_HOLDOUT_20261120.md)
 
 主线使用已有 g1 和原闭合、原 CGR 排序。完整执行但未提起的样本保留为负标签，摆放失败、无候选、规划失败和无效执行保留为空，个别物体的闭合诊断留到后续。采集与评估全程不录视频。
 

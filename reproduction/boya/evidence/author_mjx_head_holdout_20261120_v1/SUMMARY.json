@@ -1,0 +1,196 @@
+{
+  "status": "read_only_outcome_and_pool_eval_pass",
+  "recommendation": "defer_formal_expansion_keep_original_cgr",
+  "protocol": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_holdout_20261120_v1/PROTOCOL.json",
+    "sha256": "b16d54553f82c9d2e9abdede875cc85ba74924626521cd9fa343159f26adf244"
+  },
+  "full_results": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_holdout_20261120_v1/RESULTS.json",
+    "sha256": "e9a3e0e7d32b7b00d1e09b8a64192373af4adeb4ce17158d6d94667ee794c7e5"
+  },
+  "formal_model": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_fit100_20261119_v1/head/best_0.5.pt",
+    "sha256": "7536fc305d25bc8ef5b7d470d87baf0d1b03a965a03d0950d68ecc4a45b17844"
+  },
+  "diagnostic_model": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_head_diagnosis_20261119_v1/linear_output/final_diagnostic.pt",
+    "sha256": "818f44cf4de1ba29d920a1baafa36953a03e574b6f4dba0f9d773c87f111057f"
+  },
+  "training_source": {
+    "path": "/home/wangrenpeng/AnyDexGrasp/outputs/boya_mjx_mainline_status_20261120_v1/CHECK.json",
+    "sha256": "50bff53b2d834d7d55d5eea4e522455c4da9f64b5b225e690e3ab754b21000c5"
+  },
+  "selection": "All eligible archived runs in listed order; exact source placement de-duplication; exclude training and model-selection layouts",
+  "archive_counts": {
+    "boya_mjx_actual_one_hour_20261118_v1": {
+      "included": 6,
+      "excluded": {
+        "training_selection_or_duplicate_layout": 42
+      }
+    },
+    "boya_mjx_continuous_queue_control_20261118_v1": {
+      "included": 0,
+      "excluded": {
+        "training_selection_or_duplicate_layout": 20
+      }
+    },
+    "boya_mjx_cgr_fallback_20261119_v2": {
+      "included": 2,
+      "excluded": {}
+    },
+    "boya_mjx_cgr_empty_pool_rescue_20261119_v1": {
+      "included": 3,
+      "excluded": {}
+    },
+    "boya_mjx_policy_compare_20261119_v1": {
+      "included": 1,
+      "excluded": {}
+    },
+    "boya_mjx_shared_pair_20261119_v1": {
+      "included": 2,
+      "excluded": {}
+    }
+  },
+  "score_threshold": 0.5,
+  "outcome_metrics": {
+    "all": {
+      "rows": 14,
+      "positive": 9,
+      "negative": 5,
+      "formal_confusion": {
+        "tp": 2,
+        "fp": 1,
+        "tn": 4,
+        "fn": 7
+      },
+      "scores": {
+        "formal_score": {
+          "roc_auc": 0.5555555555555556,
+          "average_precision": 0.6970899470899471
+        },
+        "diagnostic_score": {
+          "roc_auc": 0.5777777777777777,
+          "average_precision": 0.7314814814814815
+        },
+        "cgr_score": {
+          "roc_auc": 0.6222222222222222,
+          "average_precision": 0.8195878195878195
+        }
+      }
+    },
+    "fit": {
+      "rows": 7,
+      "positive": 6,
+      "negative": 1,
+      "formal_confusion": {
+        "tp": 2,
+        "fp": 0,
+        "tn": 1,
+        "fn": 4
+      },
+      "scores": {
+        "formal_score": {
+          "roc_auc": 0.75,
+          "average_precision": 0.9285714285714286
+        },
+        "diagnostic_score": {
+          "roc_auc": 0.6666666666666666,
+          "average_precision": 0.9484126984126984
+        },
+        "cgr_score": {
+          "roc_auc": 0.5,
+          "average_precision": 0.9150793650793649
+        }
+      }
+    },
+    "internal": {
+      "rows": 7,
+      "positive": 3,
+      "negative": 4,
+      "formal_confusion": {
+        "tp": 0,
+        "fp": 1,
+        "tn": 3,
+        "fn": 3
+      },
+      "scores": {
+        "formal_score": {
+          "roc_auc": 0.375,
+          "average_precision": 0.42857142857142855
+        },
+        "diagnostic_score": {
+          "roc_auc": 0.4166666666666667,
+          "average_precision": 0.42063492063492064
+        },
+        "cgr_score": {
+          "roc_auc": 0.6666666666666666,
+          "average_precision": 0.7
+        }
+      }
+    }
+  },
+  "pool_summary": {
+    "observations": 37,
+    "multi_candidate": 5,
+    "complete_kinematic_coverage": 5,
+    "multi_feasible": 0,
+    "formal_changes_top1": 4,
+    "formal_changes_feasible_choice": 0
+  },
+  "multi_candidate_planning": [
+    {
+      "pair": 2,
+      "draw": 8,
+      "candidates": 2,
+      "formal_changes_top1": true,
+      "complete_kinematic_coverage": true,
+      "feasible_candidate_count": 1,
+      "formal_first_feasible": 1,
+      "cgr_first_feasible": 1
+    },
+    {
+      "pair": 14,
+      "draw": 54,
+      "candidates": 6,
+      "formal_changes_top1": false,
+      "complete_kinematic_coverage": true,
+      "feasible_candidate_count": 1,
+      "formal_first_feasible": 4,
+      "cgr_first_feasible": 4
+    },
+    {
+      "pair": 24,
+      "draw": 87,
+      "candidates": 2,
+      "formal_changes_top1": true,
+      "complete_kinematic_coverage": true,
+      "feasible_candidate_count": 1,
+      "formal_first_feasible": 0,
+      "cgr_first_feasible": 0
+    },
+    {
+      "pair": 26,
+      "draw": 89,
+      "candidates": 3,
+      "formal_changes_top1": true,
+      "complete_kinematic_coverage": true,
+      "feasible_candidate_count": 1,
+      "formal_first_feasible": 2,
+      "cgr_first_feasible": 2
+    },
+    {
+      "pair": 30,
+      "draw": 100,
+      "candidates": 2,
+      "formal_changes_top1": true,
+      "complete_kinematic_coverage": true,
+      "feasible_candidate_count": 0,
+      "formal_first_feasible": null,
+      "cgr_first_feasible": null
+    }
+  ],
+  "paired_execution_gain_measured": false,
+  "additional_physics_steps": 0,
+  "training_updates": 0
+}
